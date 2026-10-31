@@ -175,3 +175,10 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .ok-text { color: var(--ok); }
 .callout.ok { border-left-color: var(--ok); } .callout summary { cursor: pointer; } code { font-size: 12px; background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
 .conflicts ul { margin: 6px 0; } .conflicts details summary { cursor: pointer; } .conflicts > ul > li { margin-bottom: 4px; }
+button.play { margin: 0 0 0 auto; } button.play + .danger-btn { margin-left: 0; }
+.install-panel { margin: 10px 0 16px; }
+.install-panel h3 { margin-top: 0; }
+.install-group { margin: 8px 0; }
+.install-group li { margin: 4px 0; }
+.install-group button { font-size: 12px; padding: 3px 8px; }
+.install-log { color: var(--muted); border-top: 1px solid #2f2a3d; padding-top: 6px; }

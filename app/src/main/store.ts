@@ -7,13 +7,13 @@ import type { Settings } from '@shared/api'
 import type { Contribution, UserRule } from '@shared/community'
 
 /** Small JSON files in the app's user-data folder (per user, never inside the install). */
-async function readJson<T>(name: string, fallback: T): Promise<T> {
+export async function readJson<T>(name: string, fallback: T): Promise<T> {
   const file = join(app.getPath('userData'), name)
   if (!existsSync(file)) return fallback
   return JSON.parse(await readFile(file, 'utf8')) as T
 }
 
-async function writeJson(name: string, value: unknown): Promise<void> {
+export async function writeJson(name: string, value: unknown): Promise<void> {
   const file = join(app.getPath('userData'), name)
   await mkdir(dirname(file), { recursive: true })
   // Write-then-rename so a crash never leaves a half-written file behind.

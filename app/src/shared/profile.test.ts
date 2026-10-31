@@ -84,6 +84,23 @@ describe('resolveProfile', () => {
     expect(r.entries.find((e) => e.key === 'mod:lyra-assets')?.origin).toBe('dependency')
   })
 
+  it('treats incompatibilities inside a tested template as notes and ignores conditional ones', () => {
+    const cat: Catalog = {
+      ...catalog,
+      mods: [
+        mod('x', { relations: [
+          { kind: 'incompatible', target: { mod: 'y' }, note: 'only the old version', source: src },
+          { kind: 'incompatible', target: { mod: 'z' }, condition: 'when playing as Miao', source: src }
+        ] }),
+        mod('y'), mod('z')
+      ]
+    }
+    const tested = { ...preset, entries: [{ pack: 'x.pack', from: 'steam' as const, target: { mod: 'x' } }, { pack: 'y.pack', from: 'steam' as const, target: { mod: 'y' } }] }
+    const r = resolveProfile(cat, buildIndex(cat), tested, { extras: ['mod:z'], removed: [] })
+    expect(r.conflicts).toEqual([])
+    expect(r.notes.map((n) => n.note)).toEqual(['only the old version'])
+  })
+
   it('drops removed base entries and reports conflicts', () => {
     const r = resolveProfile(catalog, index, preset, { extras: ['mod:ascension'], removed: ['mod:atb'] })
     expect(r.entries.map((e) => e.key)).not.toContain('mod:atb')

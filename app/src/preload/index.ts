@@ -15,7 +15,17 @@ const api: Api = {
   saveRules: (r) => ipcRenderer.invoke('rules:save', r),
   listContributions: () => ipcRenderer.invoke('contributions:list'),
   addContribution: (c) => ipcRenderer.invoke('contributions:add', c),
-  packConflicts: (paths) => ipcRenderer.invoke('packs:conflicts', paths)
+  packConflicts: (paths) => ipcRenderer.invoke('packs:conflicts', paths),
+  launchGame: (paths) => ipcRenderer.invoke('game:launch', paths),
+  subscribeWorkshop: (ids) => ipcRenderer.invoke('steam:subscribe', ids),
+  installFromFile: (modId) => ipcRenderer.invoke('install:file', modId),
+  installFromLoversLab: (url, modId) => ipcRenderer.invoke('install:loverslab', url, modId),
+  backupPacks: (paths) => ipcRenderer.invoke('install:backup', paths),
+  onSteamProgress: (cb) => {
+    const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
+    ipcRenderer.on('steam:progress', listener)
+    return () => ipcRenderer.removeListener('steam:progress', listener)
+  }
 }
 
 contextBridge.exposeInMainWorld('api', api)

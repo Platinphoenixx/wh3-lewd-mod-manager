@@ -1,0 +1,38 @@
+import { describe, expect, it } from 'vitest'
+import type { Catalog, Mod } from '@catalog/schema'
+import { buildIndex } from './match'
+import { installSourceFor } from './install'
+
+function mod(id: string, sources: Mod['sources']): Mod {
+  return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
+}
+
+const catalog = {
+  schemaVersion: 1, generatedAt: '', sources: [], tiers: [], notes: [], presets: [], campaignGuides: [],
+  external: [{ id: 'ext-mct', name: 'MCT', steamId: '2927955021' }],
+  mods: [
+    mod('both', { steam: [{ id: '111' }], loverslab: { fileId: '1', url: 'https://www.loverslab.com/files/file/1-x/', category: 'mods' } }),
+    mod('ll', { loverslab: { fileId: '2', url: 'https://www.loverslab.com/files/file/2-x/', category: 'mods' } }),
+    mod('dc', { discord: [{ channel: 'x', messageUrl: 'https://discord.com/channels/1/2/3' }] }),
+    mod('nothing', {})
+  ]
+} as unknown as Catalog
+const index = buildIndex(catalog)
+
+describe('installSourceFor', () => {
+  it('prefers Steam, then LoversLab, then Discord', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:both' })).toEqual({ kind: 'steam', id: '111' })
+    expect(installSourceFor(catalog, index, { key: 'mod:ll' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
+    expect(installSourceFor(catalog, index, { key: 'mod:dc' })).toEqual({ kind: 'discord', url: 'https://discord.com/channels/1/2/3' })
+    expect(installSourceFor(catalog, index, { key: 'mod:nothing' })).toEqual({ kind: 'manual', url: undefined })
+  })
+
+  it('uses the Workshop id a template gives and resolves externals', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:ll', steamId: '999', from: 'steam' })).toEqual({ kind: 'steam', id: '999' })
+    expect(installSourceFor(catalog, index, { key: 'external:ext-mct' })).toEqual({ kind: 'steam', id: '2927955021' })
+  })
+
+  it('keeps a template entry that is a download as a download', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:ll', steamId: '999', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
+  })
+})

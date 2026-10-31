@@ -18,6 +18,16 @@ community contributions. App UI and catalog texts are English.
     dependency note; never reads file data otherwise), cached per file (tested)
   - `src/shared/conflicts.ts` overlaps between packs: same file path = real override (higher pack wins);
     same database table = hint only, tables most packs use are ignored (tested)
+  - Install + launch: `src/shared/install.ts` picks the source per missing entry (Steam > LoversLab >
+    Discord > manual, tested); `src/main/steamWorker.ts` is a separate utilityProcess that uses
+    steamworks.js as app 1142710 to subscribe/download and then exits (`steam.ts` drives it);
+    `src/main/installer.ts` installs .pack/.7z/.zip/.rar into data (7zip-bin, node-unrar-js), records
+    them in userData/installed.json, moves stale packs to userData/backup, and opens LoversLab in its own
+    window (persistent partition) to catch the download; `src/shared/launch.ts` + `src/main/launch.ts`
+    write `wh3lmm_mods.txt` (add_working_directory per Workshop folder, `mod "x.pack";` in priority
+    order, first line wins) and start `Warhammer3.exe wh3lmm_mods.txt;`.
+  - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
+    opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
 - `curator/` – Python pipeline that builds the catalog (`pip install -r curator/requirements.txt`).

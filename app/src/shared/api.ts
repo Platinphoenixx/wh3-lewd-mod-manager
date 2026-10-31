@@ -24,6 +24,19 @@ export interface GameScan {
   errors: string[]
 }
 
+export interface InstallResult {
+  ok: boolean
+  message: string
+  packs: string[]
+}
+
+export interface SteamProgress {
+  id: string
+  status: 'subscribed' | 'downloading' | 'installed' | 'failed'
+  current?: number
+  total?: number
+}
+
 /** Per-user settings, stored in the app's user-data folder. */
 export interface Settings {
   /** Game folder chosen by the user when auto-detection fails (…\Total War WARHAMMER III). */
@@ -56,6 +69,18 @@ export interface Api {
   saveRules(rules: UserRule[]): Promise<void>
   listContributions(): Promise<Contribution[]>
   addContribution(c: Contribution): Promise<Contribution[]>
+  /** Lets the user pick a downloaded .pack/.7z/.zip/.rar and installs its packs into the data folder. */
+  installFromFile(modId?: string): Promise<InstallResult>
+  /** Opens a LoversLab file page; the file the user downloads there is installed. */
+  installFromLoversLab(url: string, modId?: string): Promise<InstallResult>
+  /** Moves data-folder packs into a dated backup folder. */
+  backupPacks(paths: string[]): Promise<{ moved: string[]; folder: string }>
+  /** Subscribes to Workshop items via Steam and waits for their downloads. */
+  subscribeWorkshop(ids: string[]): Promise<{ ok: boolean; message?: string; results: { id: string; status: string; error?: string }[] }>
+  /** Progress of running subscriptions; returns a function that stops listening. */
+  onSteamProgress(cb: (p: SteamProgress) => void): () => void
+  /** Writes the mod list for these installed packs (load order) and starts the game. */
+  launchGame(paths: string[]): Promise<{ ok: boolean; message: string; modListPath?: string }>
   /** File overlaps between installed packs; `paths` in load order, highest priority first. */
   packConflicts(paths: string[]): Promise<ConflictReport & { unreadable: string[] }>
 }

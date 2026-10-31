@@ -48,6 +48,11 @@ export interface ResolvedEntry {
 export interface ResolvedProfile {
   entries: ResolvedEntry[]
   conflicts: { a: string; b: string; note?: string }[]
+  /**
+   * Incompatibilities between mods a tested template contains together: the community played them
+   * together, so the catalog's rule only applies in a special case (a variant, a faction, old versions).
+   */
+  notes: { a: string; b: string; note?: string }[]
 }
 
 const OPTIONAL_KINDS: Relation['kind'][] = ['recommends', 'optional']
@@ -94,7 +99,8 @@ export function conflictsIn(index: CatalogIndex, keys: string[]): ResolvedProfil
   const seen = new Set<string>()
   for (const k of keys) {
     for (const r of relationsOf(index, k)) {
-      if (r.kind !== 'incompatible') continue
+      // Rules with a condition ('only when playing as Miao') are not a general conflict.
+      if (r.kind !== 'incompatible' || r.condition) continue
       const other = targetKey(r.target)
       const pair = [k, other].sort().join('|')
       if (set.has(other) && !seen.has(pair)) {
@@ -225,5 +231,8 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     else pos = related.length ? Math.min(...related) : entries.length
     entries.splice(pos, 0, e)
   }
-  return { entries, conflicts: conflictsIn(index, entries.map((e) => e.key)) }
+  const all = conflictsIn(index, entries.map((e) => e.key))
+  const testedTogether = preset.origin === 'tested' ? new Set(entries.filter((e) => e.origin === 'base').map((e) => e.key)) : new Set<string>()
+  const together = (c: { a: string; b: string }) => testedTogether.has(c.a) && testedTogether.has(c.b)
+  return { entries, conflicts: all.filter((c) => !together(c)), notes: all.filter(together) }
 }

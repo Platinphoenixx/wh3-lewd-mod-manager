@@ -26,6 +26,11 @@ export function InstallView() {
       {stale.length > 0 && (
         <section>
           <h2 className="danger">Outdated packs in the data folder</h2>
+          <button onClick={async () => {
+            const r = await window.api.backupPacks(stale.map((w) => w.pack.path))
+            alert(r.moved.length ? `Moved ${r.moved.length} pack(s) to ${r.folder}` : 'Nothing was moved.')
+            data.rescan()
+          }}>Move these packs to a backup folder</button>
           <ul>
             {stale.map((w) => (
               <li key={w.pack.path}>

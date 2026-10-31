@@ -23,7 +23,7 @@ export function App() {
   const [settings, setSettings] = useState<Settings>({})
   const [error, setError] = useState<string | null>(null)
   const [tab, setTab] = useState<Tab>(() => {
-    const h = location.hash.slice(1)
+    const h = location.hash.slice(1).split('-')[0] // e.g. #profiles-order
     return (TABS as readonly string[]).includes(h) ? (h as Tab) : 'profiles'
   })
   const [openModId, setOpenModId] = useState<string | null>(null)

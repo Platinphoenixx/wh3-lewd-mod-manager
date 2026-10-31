@@ -5,6 +5,8 @@ import { candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
 import { ConflictList } from './ConflictList'
+import { InstallPanel } from './InstallPanel'
+import { planLaunch } from '@shared/launch'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -51,9 +53,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   profile: Profile; preset: Preset; onChange(p: Profile): void; onDelete(): void
 }) {
   const data = useData()
-  const [view, setView] = useState<'options' | 'order'>('options')
+  const [view, setView] = useState<'options' | 'order'>(() => (location.hash.endsWith('-order') ? 'order' : 'options'))
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<Set<CandidateGroup>>(new Set())
+  const [launchMessage, setLaunchMessage] = useState<string | null>(null)
   const [hideConflicts, setHideConflicts] = useState(true)
 
   const options = useMemo(() => candidates(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
@@ -83,6 +86,17 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     })
   const groups: CandidateGroup[] = ['recommended', 'character', 'translation', 'other']
   const baseCount = resolved.entries.filter((e) => e.origin === 'base').length
+  const launch = useMemo(() => planLaunch(resolved.entries, (k) => installed.get(k) ?? []), [resolved, installed])
+
+  const play = async () => {
+    if (launch.missing.length) {
+      const list = launch.missing.slice(0, 15).join('\n')
+      const more = launch.missing.length > 15 ? `\n…and ${launch.missing.length - 15} more` : ''
+      if (!confirm(`${launch.missing.length} mods of this profile are not installed:\n\n${list}${more}\n\nStart the game with the ${launch.packs.length} installed packs anyway?`)) return
+    }
+    const r = await window.api.launchGame(launch.packs.map((p) => p.path))
+    setLaunchMessage(r.message)
+  }
 
   return (
     <div className="profile-editor">
@@ -92,9 +106,23 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <span className="badge">{baseCount} from template</span>
         <span className="badge ok">{profile.extras.length} switched on</span>
         <span className="badge">{resolved.entries.length} mods total</span>
+        <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
+          ▶ Play{launch.missing.length ? ` (${launch.missing.length} missing)` : ''}
+        </button>
         <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
       </div>
+      {launchMessage && <p className="callout small">{launchMessage}</p>}
       {preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
+      {resolved.notes.length > 0 && (
+        <details className="callout small">
+          <summary>{resolved.notes.length} special case{resolved.notes.length === 1 ? '' : 's'} to keep in mind (the template uses these mods together)</summary>
+          <ul>
+            {resolved.notes.map((c) => (
+              <li key={c.a + c.b}>{nameOf(data.catalog, data.index, c.a)} ↔ {nameOf(data.catalog, data.index, c.b)}{c.note ? ` – ${c.note}` : ''}</li>
+            ))}
+          </ul>
+        </details>
+      )}
       {resolved.conflicts.length > 0 && (
         <div className="callout warn">
           <strong>Conflicts in this profile</strong>
@@ -146,7 +174,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'order' && (
         <section>
-          <p className="small muted">Top = highest priority (loaded last). Template mods keep the tested community order; switched-on mods are placed by their load-order rules.</p>
+          <InstallPanel missing={resolved.entries.filter((e) => !installed.has(e.key))} />
+          <p className="small muted">Top = highest priority (its files win over the mods below). Template mods keep the tested community order; switched-on mods are placed by their load-order rules.</p>
           <table className="entries">
             <tbody>
               {resolved.entries.map((e, i) => {
