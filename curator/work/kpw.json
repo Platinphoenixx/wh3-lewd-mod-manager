@@ -1,0 +1,1815 @@
+{
+  "docs": [
+    {
+      "character": "Alarielle",
+      "file": "alarielle",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vRNY9beI5txM5m6LMo-FFJYcy3S3kVvKvwdqylN1jR-3am46yAsfsNnwjxDDWloWgd1lSrC3y18aXYA/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [
+        {
+          "name": "Total War: WARHAMMER II - The Queen & The Crone",
+          "why": "to play as Alarielle or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER - Realm of The Wood Elves",
+          "why": "to be able to recruit Drycha after confederation",
+          "required": false
+        },
+        {
+          "name": "Total War: WARHAMMER III - Champions of Chaos",
+          "why": "to play as Azazel or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER II - The Twisted & The Twilight",
+          "why": "to be able to recruit the Sisters of Twilight after confederation",
+          "required": false
+        }
+      ],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Readman BBB",
+          "pack": "!readman_ , BBB",
+          "steamId": "3497485732",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Readman CCC",
+          "pack": "!readman_ , CCC",
+          "steamId": "3501984780",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 6,
+          "name": "Readman TTT",
+          "pack": "!readman_ , TTT",
+          "steamId": "3508604193",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Readman UUU",
+          "pack": "!readman_ , UUU",
+          "steamId": "3534460647",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Readman MMM",
+          "pack": "!readman_ , MMM",
+          "steamId": "3621087383",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": "Place under UUU"
+        },
+        {
+          "order": 9,
+          "name": "Variant Selector",
+          "pack": "marthvariantselector",
+          "steamId": "2888171970",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 10,
+          "name": "Azazel's Realm",
+          "pack": "Compedium_Play_as_Azazel",
+          "steamId": null,
+          "loversLabId": "27930",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 11,
+          "name": "Slanesh Expanded Non Slaanesh",
+          "pack": "Non slaanesh",
+          "steamId": null,
+          "loversLabId": "34542",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Pack name according to the doc: 'Non slaanesh'; the link points to LL 'Slaanesh Expanded - Vassal Dilemmas' (@n_SlaaneshVassals in the other docs). Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 12,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVictories",
+          "steamId": null,
+          "loversLabId": "36630",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 13,
+          "name": "Legendary High Elven Characters",
+          "pack": "red_hef_lords",
+          "steamId": "2897366143",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 14,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 15,
+          "name": "Mod Configuration tool",
+          "pack": "Groovy_mct",
+          "steamId": "2927955021",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 16,
+          "name": "Corrupted Wood Elf units",
+          "pack": "kerb-Alarielle_corrupted",
+          "steamId": "3566849815",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 17,
+          "name": "Alarielle Temptation",
+          "pack": "kerb_alarielle",
+          "steamId": "3644437727",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 18,
+          "name": "Azazel's Realm",
+          "pack": "kerb_Azazel’s Realm",
+          "steamId": "3643871692",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 19,
+          "name": "Kerberos Mod Assets",
+          "pack": "kerberos_mod_assets",
+          "steamId": "3566908399",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 20,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 21,
+          "name": "Lazy’s Corruption Progression Miao",
+          "pack": "li_miaoying",
+          "steamId": "3471237645",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 22,
+          "name": "Lin_allinone_en",
+          "pack": ".",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 23,
+          "name": "Corrupted Drycha",
+          "pack": "Lin_corrupted Drycha",
+          "steamId": "3376933629",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 24,
+          "name": "Generic framework",
+          "pack": "Lin_generic_Framework",
+          "steamId": "3376886102",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 25,
+          "name": "Corrupted Compedium",
+          "pack": "MiaoYingCorrupted_Compedium",
+          "steamId": null,
+          "loversLabId": "23876",
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 26,
+          "name": "OvN Lost World",
+          "pack": "ovn_lost_world",
+          "steamId": "3291116635",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 27,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 28,
+          "name": "Lazy’s Corrupted Resinks Miao Ying",
+          "pack": "zli_miaoying",
+          "steamId": "3471883632",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        }
+      ]
+    },
+    {
+      "character": "Miao",
+      "file": "miao",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vSHdO3DT3DM61xmCg_hXNdJ-ynIIaCzoJNQGrUo7eWkQlJOjvw1wKPaUbJPQgCgVQbHwpe71Ub7Acpu/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [
+        {
+          "name": "Total War: WARHAMMER III - Champions of Chaos",
+          "why": "to play as Azazel or to recruit her after confederation",
+          "required": true
+        }
+      ],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)",
+        "Doc title: 'Links for Miao mommy also <3'"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Variant Selector",
+          "pack": "marthvariantselector",
+          "steamId": "2888171970",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Esign Loi",
+          "pack": "@@all_loi",
+          "steamId": "3503458514",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Steam item contains @@All_Loi_Variant_selector_steam.pack; in the Azazel doc listed as 'Ensign Loi Variant (@@all_loi_V)' with Discord channel 969500846360502302"
+        },
+        {
+          "order": 6,
+          "name": "Soil Corrupted units",
+          "pack": "Soil_Miaoying",
+          "steamId": null,
+          "loversLabId": "32374",
+          "otherUrl": null,
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Mod Configuration tool",
+          "pack": "Groovy_mct",
+          "steamId": "2927955021",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 9,
+          "name": "Azazel's Realm",
+          "pack": "Compedium_Play_as_Azazel",
+          "steamId": "3643871692",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Steam link here (ID 3643871692 = pack kerb_Azazel's_Realm_steam); the other docs list Compedium_Play_as_Azazel with LL 27930"
+        },
+        {
+          "order": 10,
+          "name": "Kerberos Mod Assets",
+          "pack": "kerberos_mod_assets",
+          "steamId": "3566908399",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 11,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 12,
+          "name": "Lazy’s Corruption Progression Miao",
+          "pack": "li_miaoying",
+          "steamId": "3471237645",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 13,
+          "name": "Corrupted Compedium",
+          "pack": "MiaoYingCorrupted_Compedium",
+          "steamId": null,
+          "loversLabId": "23876",
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 14,
+          "name": "Seu_Miaoying",
+          "pack": "Seu_Miaoying",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1375961337120690277",
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 15,
+          "name": "Slaanesh Assaults great bastion",
+          "pack": "Slaanesh_Assults",
+          "steamId": "2851864965",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 16,
+          "name": "Soil_Corrupted units asset",
+          "pack": "Soil_Corrupted units asset",
+          "steamId": null,
+          "loversLabId": "32374",
+          "otherUrl": null,
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 17,
+          "name": "Corrupted chars can seduce",
+          "pack": "tdw_cth_seduce",
+          "steamId": null,
+          "loversLabId": "33808",
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 18,
+          "name": "tdw corrupted buildings",
+          "pack": "tdw_corrupted_buildings",
+          "steamId": null,
+          "loversLabId": "36002",
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 19,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 20,
+          "name": "Lazy’s Corrupted Resinks Miao Ying",
+          "pack": "zli_miaoying",
+          "steamId": "3471883632",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 21,
+          "name": "Soboro Reskin on lab",
+          "pack": null,
+          "steamId": null,
+          "loversLabId": "28994",
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": true,
+          "note": "Bonus: 'Things that should work also'; maybe still work, swap with Miao reskin"
+        }
+      ]
+    },
+    {
+      "character": "Azazel / Archaon / Belakor / Sigvald / Daemon Prince / Mazdamundi",
+      "file": "azazel",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vTZTJP8TA5RC9Z9YKbJiWP3_ex8OfhAOwADUPUi8WYpmdf09HosiXmLL-kqhd4f1iyACBzod1v-7dw-/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [
+        {
+          "name": "Total War: WARHAMMER II - The Queen & The Crone",
+          "why": "to play as Alarielle or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER - Realm of The Wood Elves",
+          "why": "to be able to recruit Drycha after confederation",
+          "required": false
+        },
+        {
+          "name": "Total War: WARHAMMER III - Champions of Chaos",
+          "why": "to play as Azazel or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER II - The Twisted & The Twilight",
+          "why": "to be able to recruit the Sisters of Twilight after confederation",
+          "required": false
+        }
+      ],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Variant Selector",
+          "pack": "marthvariantselector",
+          "steamId": "2888171970",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Readman BBB",
+          "pack": "!readman_ , BBB",
+          "steamId": "3497485732",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 6,
+          "name": "Readman CCC",
+          "pack": "!readman_ , CCC",
+          "steamId": "3501984780",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Readman UUU WoC",
+          "pack": "!readman_ , UUU , WoC",
+          "steamId": "3559919182",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Ensign Loi Variant",
+          "pack": "@@all_loi_V",
+          "steamId": "3503458514",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 9,
+          "name": "Azazel's Realm",
+          "pack": "Compedium_Play_as_Azazel",
+          "steamId": null,
+          "loversLabId": "27930",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 10,
+          "name": "Female Daemonettes",
+          "pack": "@beautiful_slaanesh",
+          "steamId": "2790949528",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 11,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVassals",
+          "steamId": null,
+          "loversLabId": "34542",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 12,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVictories",
+          "steamId": null,
+          "loversLabId": "36630",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 13,
+          "name": "Soil's Corrupted",
+          "pack": "@Soil_Azazel_Corrupted",
+          "steamId": null,
+          "loversLabId": "32374",
+          "otherUrl": null,
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 14,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 15,
+          "name": "Mod Configuration tool",
+          "pack": "Groovy_mct",
+          "steamId": "2927955021",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 16,
+          "name": "Alarielle Temptation",
+          "pack": "kerb_alarielle",
+          "steamId": "3644437727",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 17,
+          "name": "Azazel's Realm",
+          "pack": "kerb_Azazel’s Realm",
+          "steamId": "3643871692",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 18,
+          "name": "Kerberos Mod Assets",
+          "pack": "kerberos_mod_assets",
+          "steamId": "3566908399",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 19,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 20,
+          "name": "Lazy’s Corruption Progression Miao",
+          "pack": "li_miaoying",
+          "steamId": "3471237645",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 21,
+          "name": "Corrupted Compedium",
+          "pack": "MiaoYingCorrupted_Compedium",
+          "steamId": null,
+          "loversLabId": "23876",
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 22,
+          "name": "OvN Lost World",
+          "pack": "ovn_lost_world",
+          "steamId": "3291116635",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 23,
+          "name": "Soil's Corrupted Units",
+          "pack": "Soil_corrupted_units_asset",
+          "steamId": null,
+          "loversLabId": "32374",
+          "otherUrl": null,
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 24,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 25,
+          "name": "Lazy’s Corrupted Resinks Miao Ying",
+          "pack": "zli_miaoying",
+          "steamId": "3471883632",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        }
+      ]
+    },
+    {
+      "character": "Morathi",
+      "file": "morathi",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vTKXhXRPg7sVeQgYSnlU8Yy71WlhS0MPje3-h529zUVswFq92lRqO5m3WH7JWGzcjw-zmBdqkPPmKcS/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [
+        {
+          "name": "Total War: WARHAMMER II - The Queen & The Crone",
+          "why": "to play as Alarielle or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER - Realm of The Wood Elves",
+          "why": "to be able to recruit Drycha after confederation",
+          "required": false
+        },
+        {
+          "name": "Total War: WARHAMMER III - Champions of Chaos",
+          "why": "to play as Azazel or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER II - The Twisted & The Twilight",
+          "why": "to be able to recruit the Sisters of Twilight after confederation",
+          "required": false
+        }
+      ],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Variant Selector",
+          "pack": "marthvariantselector",
+          "steamId": "2888171970",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Cult of pleasure mechanics for morathi",
+          "pack": "!patched_ulrikHD_",
+          "steamId": "3240401070",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 6,
+          "name": "Readman BBB",
+          "pack": "!readman_ , BBB",
+          "steamId": "3497485732",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Readman CCC",
+          "pack": "!readman_ , CCC",
+          "steamId": "3501984780",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Readman UUU Morathi version",
+          "pack": "!readman_ , UUU , Morathi version",
+          "steamId": "3557775008",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 9,
+          "name": "Azazel's Realm",
+          "pack": "Compedium_Play_as_Azazel",
+          "steamId": "3643871692",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Steam link here (ID 3643871692 = pack kerb_Azazel's_Realm_steam); the docs for Alarielle/Azazel/N'kari list Compedium_Play_as_Azazel with LL 27930"
+        },
+        {
+          "order": 10,
+          "name": "Slanesh Expanded Non Slaanesh",
+          "pack": "Non slaanesh",
+          "steamId": null,
+          "loversLabId": "34542",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Pack name according to the doc: 'Non slaanesh'; the link points to LL 'Slaanesh Expanded - Vassal Dilemmas'. Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 11,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVictories",
+          "steamId": null,
+          "loversLabId": "36630",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 12,
+          "name": "Legendary High Elven Characters",
+          "pack": "red_hef_lords",
+          "steamId": "2897366143",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 13,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 14,
+          "name": "Cult of Slaanesh",
+          "pack": "Cult_of_slaanesh",
+          "steamId": "3027059730",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 15,
+          "name": "Mod Configuration tool",
+          "pack": "Groovy_mct",
+          "steamId": "2927955021",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 16,
+          "name": "Corrupted Wood Elf units",
+          "pack": "kerb-Alarielle_corrupted",
+          "steamId": "3566849815",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 17,
+          "name": "Alarielle Temptation",
+          "pack": "kerb_alarielle",
+          "steamId": "3644437727",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 18,
+          "name": "Azazel's Realm",
+          "pack": "kerb_Azazel’s Realm",
+          "steamId": null,
+          "loversLabId": "27930",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "LoversLab link here (LL 27930); in the Miao doc, Compedium_Play_as_Azazel has the Steam link (3643871692)"
+        },
+        {
+          "order": 19,
+          "name": "Kerberos Mod Assets",
+          "pack": "kerberos_mod_assets",
+          "steamId": "3566908399",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 20,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 21,
+          "name": "Lazy’s Corruption Progression Miao",
+          "pack": "li_miaoying",
+          "steamId": "3471237645",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 22,
+          "name": "Lazy’s Corruption Progression Morathi",
+          "pack": "li_morathi",
+          "steamId": "3471237702",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1026019794442539028",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 23,
+          "name": "Lin_allinone_en",
+          "pack": ".",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 24,
+          "name": "Corrupted Drycha",
+          "pack": "Lin_corrupted Drycha",
+          "steamId": "3376933629",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 25,
+          "name": "Generic framework",
+          "pack": "Lin_generic_Framework",
+          "steamId": "3376886102",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 26,
+          "name": "Corrupted Compedium",
+          "pack": "MiaoYingCorrupted_Compedium",
+          "steamId": null,
+          "loversLabId": "23876",
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 27,
+          "name": "OvN Lost World",
+          "pack": "ovn_lost_world",
+          "steamId": "3291116635",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 28,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 29,
+          "name": "Lazy’s Corrupted Resinks Miao Ying",
+          "pack": "zli_miaoying",
+          "steamId": "3471883632",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 30,
+          "name": "Lazy’s Corrupted Resinks Morathi",
+          "pack": "zli_moratahi",
+          "steamId": "3471884231",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1026019794442539028",
+          "optional": false,
+          "note": null
+        }
+      ]
+    },
+    {
+      "character": "N”kari / Dechala / Masque",
+      "file": "nkari-daemons",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vStM7DC9U0KMmYcI7etnrpMxN-xYEzjigaNvpfKKLLXpGyjaaorlBohdHaCTRFu_-KkI_RV5wNJiIJh/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [
+        {
+          "name": "Total War: WARHAMMER II - The Queen & The Crone",
+          "why": "to play as Alarielle or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER - Realm of The Wood Elves",
+          "why": "to be able to recruit Drycha after confederation",
+          "required": false
+        },
+        {
+          "name": "Total War: WARHAMMER III - Champions of Chaos",
+          "why": "to play as Azazel or to recruit her after confederation",
+          "required": true
+        },
+        {
+          "name": "Total War: WARHAMMER II - The Twisted & The Twilight",
+          "why": "to be able to recruit the Sisters of Twilight after confederation",
+          "required": false
+        }
+      ],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Variant Selector",
+          "pack": "marthvariantselector",
+          "steamId": "2888171970",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Readman BBB",
+          "pack": "!readman_ , BBB",
+          "steamId": "3497485732",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 6,
+          "name": "Readman CCC",
+          "pack": "!readman_ , CCC",
+          "steamId": "3501984780",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Readman UUU Nkari",
+          "pack": "!readman_ , UUU , Nkari",
+          "steamId": "3558872079",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1414514757373005856",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Azazel's Realm",
+          "pack": "Compedium_Play_as_Azazel",
+          "steamId": null,
+          "loversLabId": "27930",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 9,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVassals",
+          "steamId": null,
+          "loversLabId": "34542",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 10,
+          "name": "Slanesh Expanded",
+          "pack": "@n_SlaaneshVictories",
+          "steamId": null,
+          "loversLabId": "36630",
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord: 'no but can probably ask'"
+        },
+        {
+          "order": 11,
+          "name": "Legendary High Elven Characters",
+          "pack": "red_hef_lords",
+          "steamId": "2897366143",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 12,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 13,
+          "name": "Mod Configuration tool",
+          "pack": "Groovy_mct",
+          "steamId": "2927955021",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 14,
+          "name": "Corrupted Wood Elf units",
+          "pack": "kerb-Alarielle_corrupted",
+          "steamId": "3566849815",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 15,
+          "name": "Alarielle Temptation",
+          "pack": "kerb_alarielle",
+          "steamId": "3644437727",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 16,
+          "name": "Azazel's Realm",
+          "pack": "kerb_Azazel’s Realm",
+          "steamId": "3643871692",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 17,
+          "name": "Kerberos Mod Assets",
+          "pack": "kerberos_mod_assets",
+          "steamId": "3566908399",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 18,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 19,
+          "name": "Lazy’s Corruption Progression Miao",
+          "pack": "li_miaoying",
+          "steamId": "3471237645",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
+        },
+        {
+          "order": 20,
+          "name": "Lin_allinone_en",
+          "pack": ".",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 21,
+          "name": "Corrupted Drycha",
+          "pack": "Lin_corrupted Drycha",
+          "steamId": "3376933629",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 22,
+          "name": "Generic framework",
+          "pack": "Lin_generic_Framework",
+          "steamId": "3376886102",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1254908017288151040",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 23,
+          "name": "Corrupted Compedium",
+          "pack": "MiaoYingCorrupted_Compedium",
+          "steamId": null,
+          "loversLabId": "23876",
+          "otherUrl": null,
+          "discordChannelId": "969500846360502302",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 24,
+          "name": "Slaanesh Vassal Cults",
+          "pack": "td_slaanesh_vassal",
+          "steamId": "3465580284",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 25,
+          "name": "OvN Lost World",
+          "pack": "ovn_lost_world",
+          "steamId": "3291116635",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 26,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 27,
+          "name": "Lazy’s Corrupted Resinks Miao Ying",
+          "pack": "zli_miaoying",
+          "steamId": "3471883632",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 28,
+          "name": "Play as Dechala",
+          "pack": "Kerb_alar_play_Dechala_patch",
+          "steamId": null,
+          "loversLabId": "42028",
+          "otherUrl": null,
+          "discordChannelId": "1239642838778511552",
+          "optional": false,
+          "note": "LL link points to 'Alarielle, Temptation's Bloom' (patch included/linked there according to the doc)"
+        }
+      ]
+    },
+    {
+      "character": "Katarin",
+      "file": "katarin",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vQ8pHoMiYAXv0ahMV34PhLxsrA_eIO-04wl0oM3yGrNlBNdAcEgIyGlmgcc7mWw6H4wTNT77yLP_aVf/pub",
+      "campaigns": [
+        "IE"
+      ],
+      "dlc": [],
+      "generalNotes": [
+        "Mod list and load order as an image: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png",
+        "Use only with Immortal Empires campaigns",
+        "Recommended mod manager: Steam Workshop ID 2845454582 (read the instructions in the mod description)",
+        "According to the doc, PJ Console is a 'really important mod for fixing stuff'",
+        "According to the doc, the DLC can also be bought after confederating the lord; when the save is reloaded, the lord is then in the recruitment pool (confirmed by a user)",
+        "No DLC needed ('Required DLC: 0. No DLC needed.')"
+      ],
+      "entries": [
+        {
+          "order": 1,
+          "name": "PJ Console",
+          "pack": "pj_console",
+          "steamId": "2791241084",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 2,
+          "name": "Lazy Framework",
+          "pack": "!!li_progression",
+          "steamId": "3464018577",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 3,
+          "name": "MIXER",
+          "pack": "!b_mixer",
+          "steamId": "2859968660",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 4,
+          "name": "Lazy’s Katarin the ice queen remove crown",
+          "pack": ".",
+          "steamId": "2806964197",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": null,
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 5,
+          "name": "Soil Kislev Corrupted Units",
+          "pack": "Soil_kislev",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/1004257551283662848/1437802218748379136",
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 6,
+          "name": "Corrupted Landmarks",
+          "pack": "Corrupted_landmarks",
+          "steamId": "3474483873",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "1121259440872632401",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 7,
+          "name": "Lazy’s Corruption Progression Katarin",
+          "pack": "li_katarin",
+          "steamId": "3471237570",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 8,
+          "name": "Seu Katarin generic",
+          "pack": "Seu_Katarin_generic",
+          "steamId": null,
+          "loversLabId": null,
+          "otherUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1201893021973749780",
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Download only via Discord message (otherUrl)"
+        },
+        {
+          "order": 9,
+          "name": "Corrupted chars can seduce",
+          "pack": "tdw_ kat _seduce",
+          "steamId": null,
+          "loversLabId": "33808",
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": "Pack name in the doc: 'tdw_ kat _seduce'; in the Miao doc: 'tdw_cth_seduce' (same LL download 33808)"
+        },
+        {
+          "order": 10,
+          "name": "Soil Corrupted units asset",
+          "pack": "Soil_Corrupted_units_asset",
+          "steamId": null,
+          "loversLabId": "32374",
+          "otherUrl": null,
+          "discordChannelId": "1004257551283662848",
+          "optional": false,
+          "note": null
+        },
+        {
+          "order": 11,
+          "name": "Lazy’s Corrupted Resinks Katarin",
+          "pack": "zli_katarin",
+          "steamId": "3471883808",
+          "loversLabId": null,
+          "otherUrl": null,
+          "discordChannelId": "965347752219381830",
+          "optional": false,
+          "note": null
+        }
+      ]
+    }
+  ],
+  "steamNames": {
+    "2790949528": "Female Daemonettes",
+    "2791241084": "Console Commands (Modding Tool), the mod works 100000% please just use it and enable the script break warning",
+    "2806964197": "Lazy's Katarin The Ice Queen Remove Crown",
+    "2845454582": "Recommended mod manager (name not in steam_items)",
+    "2851864965": "Slaanesh assaults the great bastion",
+    "2859968660": "MIXER - Mixu's Unlocker",
+    "2888171970": "Variant Selector",
+    "2897366143": "Legendary High Elven Characters [LHEC]",
+    "2927955021": "Mod Configuration Tool - v0.9 Beta",
+    "3027059730": "The Cult of Slaanesh(Storm of Chaos 6th Edition, Slaaneshi Units for Morathi, Marked Dark Elves Units, QoL, Rebalances)",
+    "3240401070": "Cult of Pleasure Mechanics for Morathi [9.0]",
+    "3291116635": "OvN Lost World",
+    "3376886102": "通用框架 (Generic Framework)",
+    "3376933629": "堕落戴查 (Corrupted Drycha)",
+    "3464018577": "Lazy's Corruption Framework",
+    "3465580284": "Slaanesh Vassal Cults (name from doc; td_slaanesh_vassal; not in steam_items)",
+    "3471237570": "Lazy's Corruption Progression Katarin (unlisted)",
+    "3471237645": "Lazy's Corruption Progression Miao Ying (unlisted)",
+    "3471237702": "Lazy's Corruption Progression Morathi (unlisted)",
+    "3471883632": "Lazy's Corrupted Reskins Miao Ying (zli_miaoying_reskins.pack, unlisted)",
+    "3471883808": "Lazy's Corrupted Reskins Katarin (zli_katarin_reskins.pack, unlisted)",
+    "3471884231": "Lazy's Corrupted Reskins Morathi (zli_morathi_reskins.pack, unlisted)",
+    "3474483873": "Corrupted Landmarks",
+    "3497485732": "Readman Alarielle BBB (!Readman_Alarielle_BBB.pack, unlisted)",
+    "3501984780": "Readman Alarielle CCC (!Readman_Alarielle_CCC.pack, unlisted)",
+    "3503458514": "All Loi Variant selector (@@All_Loi_Variant_selector_steam.pack, unlisted)",
+    "3508604193": "Readman Alarielle TTT (!Readman_Alarielle_TTT.pack, unlisted)",
+    "3534460647": "Readman Alarielle UUU (!Readman_Alarielle_UUU.pack, unlisted)",
+    "3557775008": "Readman UUU Morathi Ver (!Readman_Alarielle_UUU_Morathi_Ver.pack, unlisted)",
+    "3558872079": "Readman UUU Nkari Ver (!Readman_Alarielle_UUU_Nkari_Ver.pack, unlisted)",
+    "3559919182": "Readman UUU WoC Ver (!Readman_Alarielle_UUU_WoC_Ver.pack, unlisted)",
+    "3566849815": "Corrupted Wood Elf Units for Slaanesh",
+    "3566908399": "Kerberos Mod Assets (unlisted)",
+    "3621087383": "Readman Manic Minotaur Mayhem",
+    "3643871692": "Azazel's Realm (kerb_Azazel's_Realm_steam.pack, unlisted)",
+    "3644437727": "Alarielle, Temptation's Bloom (kerb_Alarielle_Temptations_Bloom_steam.pack, unlisted)"
+  }
+}

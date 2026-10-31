@@ -1,0 +1,525 @@
+{
+  "ll-40114": {
+    "description": "Miao Ying's Corrupting Alchemy ports three familiar mechanics from other factions to Miao Ying's Cathay campaign: Grom's cauldron (alchemy), Eltharion's prison (here as “Jade Dungeon”) and Throt's flesh lab (here “Chamber of Excess”). Added to these are lord ascension, a separate recruitment list for “Blessed Units”, underground cults and two landmark story arcs.\n\nEverything hinges on the corruption stages from Lazy's Miao Ying Progression: stage 1 unlocks the prison and lord corruption, stage 2 the cauldron (15 recipes, 25 ingredients) along with missions for the landmarks, stage 3 the flesh lab and the ascension of lords from rank 15 (Daemon Prince or Exalted Keeper of Secrets), stage 4 the cults beneath the settlements. Without Lazy's Progression the systems stay locked; without Soil's Corrupted Units, recipe transformations and ascension abilities do not work (warning in the log).\n\nThematically it is about Slaanesh corruption, prisoners (imprisoning, interrogating, “indoctrinating”), mutation/augmentation of units and the transformation of the Cathay lords. At the start, the neighbouring Imperial Wardens and Celestial Loyalists are replaced by two small Slaanesh migrant factions.\n\nThe mod is a playtest (the author asks for feedback; according to the page there are still UI inconsistencies and placeholder portraits) and requires the DLC “The Warden and the Paunch”. Because of the many new displays in the resource bar, the author additionally recommends UI mods against the crowding. According to the author it is compatible with SFO and Corrupted Landmarks. The page does not say whether a new campaign is needed – to be safe, start a new one when adding it.",
+    "features": [
+      "Alchemy/cooking for Cathay: 15 recipes (5 of them secret), 25 ingredients",
+      "Jade Dungeon: take prisoners, execute, indoctrinate, interrogate, upgrade tiers",
+      "Chamber of Excess: Growth Vat, unit and monster augmentation, resource “Exquisite Ichor”",
+      "Lord ascension: Cathay lords turn into Slaanesh forms, and into daemons from rank 15",
+      "Blessed Units recruitment with 25+ unique units",
+      "Underground cults (Alchemist hero) with teleport between tier-5 cults",
+      "Two landmark arcs: corrupted Skaven and Ogres",
+      "Playtest state, requires the DLC “The Warden and the Paunch”"
+    ],
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.png.ab4b4d8685990b19d18c34d8af4e4960.png": {
+        "kind": "loadorder",
+        "caption": "Dependencies / load order according to the author"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.0a3c2b87916cd009dbab711659d5087d.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.5b39f1b68f4f690f578370b4c65b3a1c.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.fa2c8d7f941d222debf5945d8d78fbbc.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.c3b050eb2ab8c5f60918c05eb3454991.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.557155ded3eabbe3888b11d3d04e5275.jpeg": {
+        "kind": "screenshot",
+        "caption": "Cauldron mechanic"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.9ae6fd5d02392a21deff9cba79afe39c.jpeg": {
+        "kind": "screenshot",
+        "caption": "Jade Dungeon (prison)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.ffcf9c449fc2b9259e29eaeebef9f289.jpeg": {
+        "kind": "screenshot",
+        "caption": "Jade Dungeon (prison)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.cd37e7e44abb04d581055be8df592b12.jpeg": {
+        "kind": "screenshot",
+        "caption": "Chamber of Excess (flesh lab)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.510913aacce94c110b82aed7c46fb411.jpeg": {
+        "kind": "screenshot",
+        "caption": "Chamber of Excess (flesh lab)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.png.96673274ca4596b8b1b81061ca80817f.png": {
+        "kind": "screenshot",
+        "caption": "Lord ascension"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.61bc34bc93b216aaf596c35c8e5e02fb.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.9cd4ad7a9f4fc7c3d5e6ab6bab399985.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.jpeg.7eb43f2fac60091d21b7e1b8f76e1fce.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.6a3428f83a05af97973dc2f543150a60.png": {
+        "kind": "screenshot",
+        "caption": "Underground cults"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_07/image.png.7c8e1b6d00daec5bcf4f06dd572149f0.png": {
+        "kind": "screenshot",
+        "caption": "Underground cults"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.4b13a433abb8d898d97c2ca3b45dfc71.jpeg": {
+        "kind": "screenshot",
+        "caption": "Cauldron mechanic"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.ee7c8d21caef92417af1cf3ec6dae1c4.jpeg": {
+        "kind": "screenshot",
+        "caption": "Jade Dungeon (prison)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.32e17e6d775a1db7047494209297f374.jpeg": {
+        "kind": "screenshot",
+        "caption": "Jade Dungeon (prison)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.79a4af01f9702b8769bb2af27ff2490b.jpeg": {
+        "kind": "screenshot",
+        "caption": "Chamber of Excess (flesh lab)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.199ec59a28c4af5332ab24b6e7ac8c9b.jpeg": {
+        "kind": "screenshot",
+        "caption": "Chamber of Excess (flesh lab)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.db859351ddcd7125fb81760bfa2c55a9.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.b76ce8d64497a96fc4bd4b42bcf7dc9d.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_06/image.thumb.jpeg.70b68209c0abb921b72d8342f0fa99c0.jpeg": {
+        "kind": "screenshot",
+        "caption": "Landmarks and campaign map"
+      }
+    }
+  },
+  "ll-30893": {
+    "description": "Corrupted Shenzoo is an early alpha campaign about Shen-zoo, the “Dragon of Light and Hope”, who is considered missing in the Realm of Chaos lore. You play it as your own faction under the Cathay banner, lost in the barren north, with the question of whether it finds its way home or succumbs to corruption.\n\nCurrently only a beginning is playable: finding a home, meeting the first companion and talking to them via a new faction mechanic, passing a custom quest battle (by Kerberos) and freeing a second companion. Planned or partly included are companion heroes (Leiyue, Dachi Shou, Loi, Zhang), random dilemmas, lewd traits with visible progress on the model (e.g. “Bickering” between companions) and an additional, corruptible tech tree.\n\nImportant: it only runs in Immortal Empires (Realm of Chaos is not supported) and starts from the main menu. According to the page, model variants are not finished yet. Since the mod hooks into the faction list (ESL), according to the author it probably cannot be combined with other mods that add factions. The building chains are in a separate pack; with it, Shen-zoo is also playable as a normal Cathay. More something to test and give feedback on than for a long campaign.",
+    "features": [
+      "Playable dragon Shen-zoo under the Cathay banner (Immortal Empires)",
+      "Own faction mechanic for interacting with companions",
+      "Companion heroes: Leiyue, Dachi Shou, Loi, Zhang",
+      "Custom quest battle and splash art",
+      "Lewd traits with model progression, additional corrupted tech tree",
+      "Alpha: expect errors, Realm of Chaos not supported"
+    ],
+    "images": {
+      "https://imgpile.com/images/Gat07h.gif": {
+        "kind": "screenshot",
+        "caption": "Faction mechanic with companions"
+      },
+      "https://imgpile.com/images/Gad43F.png": {
+        "kind": "screenshot",
+        "caption": "Faction mechanic with companions"
+      },
+      "https://imgpile.com/images/GaaS3P.png": {
+        "kind": "screenshot",
+        "caption": "Companion Leiyue"
+      },
+      "https://imgpile.com/images/GaaE9N.png": {
+        "kind": "screenshot",
+        "caption": "Companion Dachi Shou"
+      },
+      "https://imgpile.com/images/Gaavqg.png": {
+        "kind": "screenshot",
+        "caption": "Companion Loi"
+      },
+      "https://imgpile.com/images/Gaa3ac.png": {
+        "kind": "screenshot",
+        "caption": "Companion Zhang"
+      },
+      "https://imgpile.com/images/Gaaa51.png": {
+        "kind": "screenshot"
+      },
+      "https://imgpile.com/images/GaaesL.png": {
+        "kind": "screenshot",
+        "caption": "Quest battle"
+      },
+      "https://imgpile.com/images/GaajWx.png": {
+        "kind": "screenshot",
+        "caption": "Custom splash art"
+      },
+      "https://imgpile.com/images/GaLDMF.png": {
+        "kind": "screenshot",
+        "caption": "Trait “Bickering”"
+      },
+      "https://imgpile.com/images/GaaB0E.png": {
+        "kind": "screenshot",
+        "caption": "Cathay tech tree"
+      },
+      "https://imgpile.com/images/GaagKR.png": {
+        "kind": "screenshot",
+        "caption": "Corrupted tech tree"
+      },
+      "https://www.loverslab.com/resources/emoticons/smile.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-24843": {
+    "description": "A French community translation pack for many NSFW mods for Total War: Warhammer 3. It comes in two files: “Main” with Lazy's Miao Ying, Katarin and Morathi mods, Lewd Landmarks, Corrupted Compendium, Azazel's Realm and others, and “Beastmen” with Community/Savage Beastmen and Candles' Beastmen Events. The translations may lag slightly behind the originals (e.g. Miao Progression v1.8.0).",
+    "features": [
+      "Two files: Main and Beastmen (version 1.11)",
+      "Covers about 20 mods (Lazy, Landmarks, Compendium, Beastmen, etc.)",
+      "Translators: Blackout, AwesomeDio, Irondead, Kierkann, Azo, Myloween"
+    ],
+    "recommendedFor": "For players who want to use the lewd mods in French; choose the matching file (Main or Beastmen) depending on the installed mods.",
+    "images": {}
+  },
+  "ll-24568": {
+    "description": "A reskin for the Slaanesh Chaos warriors: Warriors, Chosen, Knights and Marauders (including the sword-and-shield model of the devout Slaanesh Marauders) get new textures and armour. According to the page, the author's (dbswlgn3786, “Dovakin”) concept for the Slaanesh warriors is masochist and sadist; the models are by Taraanis and LazyIcarus. Version 2.0 revises all armour textures and adjusts skin tones; it is compatible with the “Pike of Slaanesh” mod.\n\nAccording to the author, some voices and the unit cards are not finished yet. The reskin only changes the appearance of the troops, not any game stats.",
+    "features": [
+      "New armour and skin textures for Slaanesh Warriors, Chosen, Knights and Marauders",
+      "Compatible with “Pike of Slaanesh”",
+      "Pure reskin, no game mechanics",
+      "Unit cards and some voices still unfinished according to the author"
+    ],
+    "recommendedFor": "For Slaanesh armies (Chaos campaigns or corrupted lords) that should look uniformly “lewd” on the battlefield too; not a must, purely visual.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141648_1.jpg.4f140a8b89f6fb260de22a1ed4e795b4.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141711_1.jpg.999e2bde321ddf4b045a06c3e2375b4f.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141723_1.jpg.b39bf8816240e31b3f91015964c417eb.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141737_1.jpg.42884cdb4e0c3f94a99bcc1cbd18ddd3.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141759_1.jpg.a46e4d1138ab04fa12b5cbf92895182c.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141808_1.jpg.fb80882a245c6d359d8e1613c4c43f05.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141818_1.jpg.76ec92a367fc2ed4f158b0f3424150c9.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141823_1.jpg.df216bd39d0bea5e87680d67e85ff8f1.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141851_1.jpg.3edd4635aab9dc12193d4ec51770ff9e.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141904_1.jpg.18ca6d430a54dd66fb11a97d13a20674.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130142127_1.jpg.c6425d29da05218d86517944b0e00882.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_12/20221211103556_1.jpg.d37685ee5f0185100defb875140d933b.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141648_1.thumb.jpg.131358c80b8cf645f514b47408b19b69.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141711_1.thumb.jpg.a8cfea9829acfabc68d7a656ed53beae.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141723_1.thumb.jpg.a6bbcffcde059f6e2e87e7108ebc0967.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141737_1.thumb.jpg.ba1a5fdeec3a4f939242f58bfe779182.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141759_1.thumb.jpg.c8b1cfe6f2fbef86c57b9f85edcaae23.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141808_1.thumb.jpg.fda2d310e1bfa30f92e05f7d77c1329e.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141818_1.thumb.jpg.d4910c3b12e2b0c0ab7e1d7c5d03bc0d.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141823_1.thumb.jpg.b88d3ec2c4a80978a8d0d31eeb0aab3a.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141851_1.thumb.jpg.54f46298cec4eb68249c73d2461b3b1f.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130141904_1.thumb.jpg.a944b69dffb4b24bf13ce1c5b03f9a8d.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/20221130142127_1.thumb.jpg.0554eef970a7fa79762076019a82d9ad.jpg": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_12/20221211103556_1.thumb.jpg.6146f2aa84964deddb4579b98163eed2.jpg": {
+        "kind": "screenshot"
+      }
+    }
+  },
+  "ll-41120": {
+    "description": "Elspeth 2026 Wombo-Combo is a reskin combo pack for Elspeth von Draken. By his own account, the author wanted a “sexy, but still mystical” Elspeth for his Franz campaign. Since the March 2026 version, nine variants are packed into one mod, switchable in game via the Variant Selector. There are three types with three variants each: young without visible nipples (like the Steam version), young with visible nipples and shorter cloak colours, and older, closer to the original and with shorter hair.\n\nEach variant has its own portrait and unit card, which change with the selection. The pack combines the author's three earlier versions, three SFW variants by Schess (Steam) and three new variants; the Steam entry “Elspeth Reskin Combo” is therefore redundant. The parts come from the work of several modders (nun's wimple/scarf by LazyIcarus and others); the author stresses that he only assembled them himself. A legacy archive with the four old files is included for reference only and is not needed.",
+    "features": [
+      "9 variants in three types, selectable in game via the Variant Selector",
+      "Own portraits and unit cards per variant",
+      "Includes earlier versions and Steam SFW variants by Schess",
+      "Legacy archive for reference only"
+    ],
+    "recommendedFor": "For anyone playing Elspeth von Draken (e.g. after confederation) with a selectable look; the Variant Selector is needed for switching. Replaces the separate Elspeth reskin files.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_03/ddwadawdawdawvtr4q.png.1a1427eb8ce60f7d874010faf5a0a374.png": {
+        "kind": "screenshot",
+        "caption": "Elspeth variants"
+      },
+      "https://www.loverslab.com/uploads/monthly_2025_04/ewqewq.png.e54b5a854b978f677e17b6962a6bb859.png": {
+        "kind": "screenshot",
+        "caption": "Legacy variants (for reference only)"
+      }
+    }
+  },
+  "ll-27158": {
+    "description": "Chinese translation of “Morathi: Corruption of a Handmaiden” (original by Rat of the Lake) by death13x, with the original author's permission. It is merged with the original mod – so the file already contains the complete mod and replaces it rather than supplementing it. Compatible with version 3.0 of the original; the translator also embellished texts, above all the pet storyline.\n\nThe heroine is exclusive to Morathi: at the start of the game there is a quest to obtain her; for this you must start a new campaign. With “Console Commands” the heroine can also be spawned for other factions or mid-game. She has her own story and a skill tree; unlocking its skills triggers story events and changes the model. She is meant to accompany armies; at sea, according to the author, a T-pose model without a ship appears. Publication is allowed only on LoversLab and 3DM, no Steam upload.",
+    "features": [
+      "Chinese version, merged with the original (replaces the original)",
+      "Compatible with v3.0 of the original",
+      "Extended texts, especially the pet storyline",
+      "Do not upload/share on Steam"
+    ],
+    "recommendedFor": "For Chinese-speaking players who want to use Morathi: Corruption of a Handmaiden. Do not load in addition to the English original, but instead of it.",
+    "images": {}
+  },
+  "ll-34242": {
+    "description": "A small script pack by habus that lets any player faction confederate “cross-faction” via events with certain lords. If one of these lords has been the player's vassal for 20 to 25 turns (random value), an event appears: you can confederate, postpone the decision or decline altogether. For Katarin, Morathi, Yin-Yin and the Fay Enchantress there is a separate pack each with a random event image; the remaining packs use generic images, according to the page.\n\nTo get the lords as vassals in the first place, the author recommends “All Diplomatic Options” from Steam. Particulars: on confederation Morathi receives the model of corruption stage 4 (because the AI cannot raise the stages and, according to the author, a confederated Morathi cannot either); the Fay Enchantress keeps her corruption mechanic. With Azazel's Realm, according to the author, the Katarin, N'Kari and Azazel packs are not needed, but do no harm as long as you do not confederate in the dilemma. The mod also works with the Miao seduce mod.\n\nAdditionally, a bonus pack for Khalida is included (tdw_khalida_switch_skin): after 5 turns without a battle she wears her vanilla skin, in war the army receives a buff and Zeta's skin is used; for this you need one of Zeta's Khalida reskins. There is a merged bundle pack of all 12 confederation mods – use either this or the individual packs.",
+    "features": [
+      "Confederation via event with Katarin, Morathi, Yin-Yin, Fay Enchantress and others",
+      "Event after 20–25 turns of vassalage (random); accept, postpone or decline",
+      "Bundle pack with all 12 confederation mods, savegame-compatible for switching",
+      "Bonus: Khalida skin switch (requires Zeta's reskin)"
+    ],
+    "recommendedFor": "For campaigns in which you win Morathi, Katarin, Yin-Yin or the Fay Enchantress as a vassal and then want to absorb them, no matter which faction you play. For vassalising, a diplomacy mod such as All Diplomatic Options is helpful.",
+    "images": {}
+  },
+  "ll-46561": {
+    "description": "A revised version of the Goblin Horde addon for Greenskins (any lord) by Topgun689. The origins lie with Endo; Tacomarine and Elvslayer contributed addons whose contents (including Elvslayer's events) are integrated here. The author stresses that he is not an experienced modder and is maintaining more of a tinkering project.\n\nOn turn 2 a dilemma appears with a challenge from the goblins; if you pick the first option each time and complete an easy quest, two new buildings unlock with which you recruit slave units. Added to this are the resource “Slaves” (for events and as a replacement for scrap when upgrading slave units), a generic Goblin Enslaver lord who strengthens slave units, new ancillaries (earned by fighting other races, similar to Community Beastmen) and a Rakarth-style mechanic for capturing and recruiting specific units. The theme is enslavement and domination.\n\nThe mod is still a work in progress: ancillaries are being reworked, animations have been partly wobbly since patch 7.0 according to the author, and quest battles need improvement. For players who want to give a Greenskin campaign a lewd layer.",
+    "features": [
+      "Applies to any Greenskin lord, starts via a dilemma on turn 2",
+      "Two new buildings for slave units, new resource “Slaves”",
+      "Generic Goblin Enslaver lord with buffs for slave units",
+      "New ancillaries and capture mechanic (as with Rakarth)",
+      "Includes Tacomarine's addon and Elvslayer's events",
+      "Updated for patch 7.0, still in progress"
+    ],
+    "images": {}
+  },
+  "ll-24600": {
+    "description": "This mod gives Miao Ying's faction a set of Slaanesh and Tzeentch daemon units with tech upgrades, intended for roleplaying the corrupted Miao Ying alongside Lazy's Corrupted Miao Ying Progression. The units are available only to Miao Ying's faction and, according to the author, are not tied to the progression system: you are supposed to build them yourself only once the corruption has advanced far enough.\n\nIncluded are, among others, Slaanesh Marauders, Hellstriders, Seekers, Chosen, Keeper of Secrets, Fiends and Daemonettes (also Exalted) as well as Tzeentch Chosen, Horrors, Chaos Knights, Spawn, Screamers, Flamers, Soul Grinder and more. The tech upgrades are stronger than the base upgrades because daemon units use neither lord skills nor Harmony. With the Dragon Emperor's blessing all units get 69 barrier, according to the page. The author points out that the mod is not balanced.",
+    "features": [
+      "Slaanesh and Tzeentch daemon units for Miao Ying's faction",
+      "Own tech upgrades, stronger than the base upgrades",
+      "Not tied to the progression system, unbalanced",
+      "Author recommends the “Warrior of Slaanesh” reskin"
+    ],
+    "recommendedFor": "For Miao Ying campaigns with Lazy's Progression in which you want to recruit Chaos troops anyway; as a roleplay extra, not for balanced play.",
+    "images": {}
+  },
+  "ll-26591": {
+    "description": "A reskin for Cathay units in the Slaanesh-corrupted style, intended as a visual complement to the Miao Ying corruption stages (“to show what became of Miao Ying and her army”). It was inspired by Ashkaari's Blushing_Moon_Unit_Replacer, which does not cover all Cathay units.\n\nNew looks for: Sky Junks, Sky Lanterns, peasants, Iron Hail Gunners, Crane Gunners, Terracotta Sentinels, artillery crews, Jade Warriors (sword, halberd, crossbow, lancer cavalry), Dragon Guards (halberd, crossbow), Longma Riders and the war drum; Iron Hail Gunners, Jade Warriors and Dragon Guards additionally get officers. The author modified the Crane Gunners – if you see glitches, check for conflicts with other mods (or remove them via RPFM). Purely cosmetic, no game stats.",
+    "features": [
+      "Slaanesh look for almost all Cathay units (ships, infantry, artillery, cavalry)",
+      "Additional officers for Iron Hail Gunners, Jade Warriors, Dragon Guards",
+      "Matches Lazy's Miao Ying corruption stages",
+      "Possible conflict with other mods that change Crane Gunners"
+    ],
+    "recommendedFor": "For Miao Ying campaigns with Lazy's Progression (or any Cathay campaign with a lewd theme), if the whole army should follow the corruption visually.",
+    "images": {}
+  },
+  "ll-39307": {
+    "description": "English translation of RS0371's mod, which replaces banners and building icons with lewd images and rewrites building texts in Slaanesh style. The Chinese original was inaccessible to many; the translator AMchi says he only machine-translated the texts, inserted them roughly and may revise them later. The file is standalone and replaces the Chinese version (do not load in addition). “Immortal Landmarks” and “Landmarks of Legend” are mandatory, otherwise a crash is likely. The author sees the mod as a good complement to lewd campaigns, especially with the Goblin Horde mod.",
+    "features": [
+      "English texts for RS0371's lewd banner/building-icon images",
+      "Standalone, replaces the Chinese version",
+      "Raw software translation",
+      "Requires Immortal Landmarks and Landmarks of Legend"
+    ],
+    "recommendedFor": "For English-speaking players who want RS0371's Slaanesh building texts and lewd images. Use instead of the Chinese original.",
+    "images": {}
+  },
+  "ll-39349": {
+    "description": "Two audio mods by punkdude for Miao Ying, intended for Lazy's Corrupted Miao Ying Progression and Kerberos' Azazel's Realm (play as Azazel or Miao). “Corrupted Miao Audio Overhaul” replaces some voice lines with AI-generated ones that fit a Slaanesh-devoted Miao (e.g. instead of “Storm Dragon” a suggestive self-description and references to the Emperor); not all lines are replaced, so that much of the original voice actress is preserved. “Corrupted Miao Moans” replaces battle cries and screams with sounds, which can be hard to hear in loud battles, however. A third file contains only sample audio for previewing.\n\nInstallation: at the very bottom of the load order, and only enable after Miao has reached stage 4 in Lazy's mod. There are no major conflicts; in Azazel's Realm, cutscenes use some vanilla lines, so Miao says things there that do not match the event text – according to the author a minor inconsistency.",
+    "features": [
+      "Replaces individual voice lines with AI-generated, corrupted variants",
+      "Separate mod for battle cries/sounds",
+      "Sample audio to listen to in the download",
+      "Enable only from Miao stage 4, at the end of the load order"
+    ],
+    "recommendedFor": "For players of Lazy's Miao Ying Progression or Azazel's Realm who also want to adapt the voice output of the corrupted Miao; only useful late in the campaign.",
+    "images": {}
+  },
+  "ll-40981": {
+    "description": "Russian translation of Lazy's Morathi Ascension (version 0.13.0, corruption stages and progression) by Redonkym. The file must be at the very top of the load order; the original and the progression framework are still required. According to the page text, the linked original mod points to a different Lazy file (Katarin) than the title – going by the title, Morathi Ascension is meant.",
+    "features": [
+      "Russian texts for Lazy's Morathi Ascension (v0.13.0)",
+      "Load at the very top, original mod and framework required"
+    ],
+    "recommendedFor": "For Russian-speaking players of Lazy's Morathi Ascension.",
+    "images": {}
+  },
+  "ll-26391": {
+    "description": "Lynn's Horny Norscans is a kitbashing model pack for Norsca: Wulfrik, Chieftains, Throgg, giants, ice wolf chariots, large elephants, Fimir and shaman staves and Werekin wolves get female companions or corresponding decoration (e.g. a shield-maiden on Wulfrik and the Chieftains, three on Throgg, a female companion on the Werekin wolf). The mod is a by-product of Lynn's Community Beastmen work.\n\nImportant note: the author has not touched Warhammer 3 since about Shadows of Change; by her own account the mod has not been updated for the current version and will probably not run correctly. Abandoned; use only with caution or for testing.",
+    "features": [
+      "Female companions/decor for Wulfrik, Chieftains, Throgg, giants and others",
+      "Additional staves for Fimir and shamans",
+      "Not updated, probably not working with the current game",
+      "Author has discontinued development"
+    ],
+    "recommendedFor": "Only for Norsca fans willing to test an outdated reskin; according to the author probably broken.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/cry.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-42262": {
+    "description": "Russian translation of Lazy's Corrupted Miao Ying Progression by DikiyZver; according to the changelog, the update also includes early versions of the translations of Corrupted Compendium and Azazel's Realm. The translation must come before the main mod in the load order; the original mods are additionally required. A complete bundle of the Miao mods can be downloaded for free via the author's Boosty; further translations are announced.",
+    "features": [
+      "Russian texts for Lazy's Corrupted Miao Ying Progression (v1.9.2)",
+      "Early translations for Corrupted Compendium and Azazel's Realm",
+      "Load before the main mod"
+    ],
+    "recommendedFor": "For Russian-speaking players of Miao Ying campaigns with Lazy's Progression.",
+    "images": {}
+  },
+  "ll-24493": {
+    "description": "A work-in-progress addon for Community Beastmen: it adds new dilemmas, events and companions (ancillaries) to the Beastmen faction, including a Cathay migration quest according to the summary. Icons and event images are by Ahmazzan, the event concepts by Sigvald. The mod only works together with Community Beastmen; both mods must be in matching versions, so reload them together and delete the old versions. The page itself gives hardly any other details – the exact scope of the events is unclear according to the page.",
+    "features": [
+      "New dilemmas, events and ancillaries for Beastmen",
+      "Requires Community Beastmen in a matching version",
+      "Work in progress (v0.3.1)"
+    ],
+    "recommendedFor": "For Beastmen campaigns with Community Beastmen that want more variety through additional events and companions; always update both mods together.",
+    "images": {}
+  },
+  "ll-44088": {
+    "description": "A feminine, submissive reskin for Teclis, humorously called “Femboy” Teclis by the author and assembled from assets of other mods (genital model from Community Beastmen, stockings from Zeta's Warmaidens). It runs standalone without other mods – put the file in the data folder. It is intended to be combined with Community Beastmen, because the author plans a corrupted hero version of Teclis. The author admits the result is not perfect.",
+    "features": [
+      "Feminine reskin for Teclis",
+      "Standalone, no other mods needed",
+      "Uses assets from Community Beastmen and Zeta's Warmaidens",
+      "A corrupted hero version is to follow later"
+    ],
+    "recommendedFor": "For Teclis players who want a different look, especially in campaigns with Community Beastmen; purely visual.",
+    "images": {}
+  },
+  "ll-26542": {
+    "description": "A simple reskin that turns Sigvald into a woman – according to the author HuaJS258, his first mod after two days of modding experience. It is inspired by Zeta's “Succubus Legion of the Dark Princess”, offering more clothing styles here instead of pure nudity. A voice change was attempted but does not work. Installation: put the pack in the data folder and enable it in the launcher.",
+    "features": [
+      "Female Sigvald with several clothing styles",
+      "Voice remains unchanged (attempt failed)",
+      "Pure reskin, easy to install"
+    ],
+    "recommendedFor": "For Sigvald playthroughs (Slaanesh side of Chaos or Daemon Prince), if you want a female version of the lord; purely visual.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/wink.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-35880": {
+    "description": "Russian translation of Lazy's Corrupted Miao Ying Progression (version 1.10.0) by Redonkym; according to the author, every line of text was manually checked. The file must be at the very top of the load order; the original is still required.",
+    "features": [
+      "Russian texts for Lazy's Corrupted Miao Ying Progression (v1.10.0)",
+      "Lines manually checked according to the author",
+      "Load at the very top, original required"
+    ],
+    "recommendedFor": "For Russian-speaking players of Miao Ying campaigns with Lazy's Progression.",
+    "images": {}
+  },
+  "ll-27673": {
+    "description": "Korean collection translation (TransKorean) for several corruption submods: Corruption Ascend (Miao Ying, Charina transformation), Candles' Beastmen Events & Ancillaries, Corruption Drycha (Nurgle corruption), Corrupted Compendium (Miao corruption events), SEU Generic Content (corruption events for Miao and Katarin), SEU Miaoying Submod Extension (two daughters plus confederation with Xuzhou and the Celestial Guard) and Endo's Goblin Horde (Greenskin units). The file should be placed above the base translation. Version 1.1.4.",
+    "features": [
+      "Collection pack for seven submods, in Korean",
+      "Includes Corruption Ascend, Corrupted Compendium, Corruption Drycha, Goblin Horde",
+      "Load above the base translation"
+    ],
+    "recommendedFor": "For Korean-speaking players who use these corruption submods; only the parts whose original mods are installed are relevant.",
+    "images": {}
+  },
+  "ll-34640": {
+    "description": "Two reskins for Miao Ying's mortal daughter from the SEU mods (Summons and Stuff): a base version and a more heavily tattooed version. The base model is by DrakyD, the unit card by Crw0. The reskin only works with SEU's Miao Ying mods, which are obtained via Lazy's Discord, and must sit above them in the load order.",
+    "features": [
+      "Two variants: base and more heavily tattooed",
+      "Requires SEU's Miao Ying mods (Lazy's Discord)",
+      "Load above the SEU mods"
+    ],
+    "recommendedFor": "For players of the SEU Miao Ying expansions who want to give the daughter a different look; purely visual.",
+    "images": {}
+  },
+  "ll-47812": {
+    "description": "A small submod by Dwjliel for Endo's reskin of the Slaanesh Devotees (female version, Steam). It makes the depiction more revealing and emphasises the bust; according to the summary it also contains materials for an even more revealing variant. Absolutely requires Endo's base mod from Steam and loads above it.",
+    "features": [
+      "More revealing depiction of the Slaanesh Devotees",
+      "Submod, requires Endo's reskin (Steam)",
+      "Very small, purely visual"
+    ],
+    "recommendedFor": "For players of Endo's female Slaanesh Devotees reskin who want a more revealing look.",
+    "images": {}
+  },
+  "ll-37353": {
+    "description": "A small adjustment of a Cathay flag found on Discord: the Slaanesh emblem is shown in pink. The author stresses that the thanks belong to the original creator; he only hosts his convenient variant. Purely cosmetic, intended for corrupted Cathay/Miao campaigns.",
+    "features": [
+      "Cathay flag with pink Slaanesh emblem",
+      "Purely cosmetic",
+      "Adjustment of a Discord original"
+    ],
+    "recommendedFor": "For Miao Ying or other corrupted Cathay campaigns, if the flag should fit the theme.",
+    "images": {
+      "https://i.imgur.com/8zeT7fO.png": {
+        "kind": "screenshot",
+        "caption": "Adjusted Cathay flag"
+      }
+    }
+  },
+  "ll-26794": {
+    "description": "A revised version of the mod “Sons of Ursun” (Ice Guard of Kislev) by khartoh: the skirt is shorter, more open and tighter. The original mod is not needed, as this file replaces it – do not use both at the same time.",
+    "features": [
+      "Shorter, more open and tighter Ice Guard skirt",
+      "Replaces “Sons of Ursun”, original not needed",
+      "Purely visual reskin"
+    ],
+    "recommendedFor": "For Kislev campaigns with Ice Guard, if you want a more revealing variant of the Sons of Ursun look; install instead of the original.",
+    "images": {}
+  },
+  "ll-24266": {
+    "description": "Chinese translation of a “Palace Archers” submod (pack palace_archers_cn0827.pack) by Rociky. The page contains only the pack name and a one-liner; which original mod exactly is meant is unclear according to the page.",
+    "features": [
+      "Chinese texts for a Palace Archers submod",
+      "Pack file only, hardly any description"
+    ],
+    "recommendedFor": "For Chinese-speaking players who use the corresponding Palace Archers submod.",
+    "images": {}
+  },
+  "ll-24264": {
+    "description": "Chinese translation of the Soil unit pack (Corrupted Units) by Rociky, as the pack soil_corrupted_units_0904_cn.pack. The page only says “Soil unit pack”; the assignment to a specific version of Soil's Corrupted Units is unclear according to the page (the pack name points to the 0904 build).",
+    "features": [
+      "Chinese texts for Soil's Corrupted Units",
+      "Pack file only, hardly any description"
+    ],
+    "recommendedFor": "For Chinese-speaking players who use Soil's Corrupted Units.",
+    "images": {}
+  },
+  "ll-26584": {
+    "description": "Chinese translation of the mod “balthasar_geltina” by Rociky. The page consists of a single sentence (translation of the Geltina mod); it gives no further details about the original.",
+    "features": [
+      "Chinese texts for the Geltina mod (balthasar_geltina)",
+      "Pack file only, hardly any description"
+    ],
+    "recommendedFor": "For Chinese-speaking players who use the Geltina mod.",
+    "images": {}
+  }
+}

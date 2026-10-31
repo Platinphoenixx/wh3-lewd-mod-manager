@@ -1,0 +1,47 @@
+{
+  "url": "https://www.loverslab.com/files/file/36361-community-beastmen-newest-newer-version/",
+  "title": "Community Beastmen: Newest, Newer, Version.",
+  "images": {
+    "thumbnail": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-3.thumb.jpg.cdd36ce38cc1dadebded43331ef2aaf0.jpg",
+    "screenshots": [
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-1.jpg.1fedf53716d104fbed1ef81172e2f109.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-1.thumb.jpg.eaff4cc6dd4a604727ee9aae485eee7e.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-2.jpg.4b6b561f67a24b4c7f1182b8c532d9db.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-2.thumb.jpg.b179e0536a7a1e055eb28c2ad3de77be.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-3.jpg.dfaee9c25ab45ca68332cc0cf0e08be3.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-3.thumb.jpg.cdd36ce38cc1dadebded43331ef2aaf0.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-4.jpg.a4fcd5e800caca6198876ccb2b48a545.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_09/523BeastmenTWW3-4.thumb.jpg.31632761e3a680482741b7956203774f.jpg"
+      }
+    ],
+    "inline": []
+  },
+  "version": "5.2.3.1",
+  "author": "TheManWhoPlans",
+  "tags": [
+    "beastmen",
+    "slave",
+    "total war",
+    "warhammer 3"
+  ],
+  "submitted": "2024-09-11T04:23:00Z",
+  "updated": "2025-08-07T04:20:42Z",
+  "downloads": "6631",
+  "steam_ids": [
+    "3476784883"
+  ],
+  "ll_file_links": [],
+  "description": "UPDATE: seems newer version is out. Checking out what was added ingame since its on steam somehow. Said it includes stuff from the discord.\n\n<https://steamcommunity.com/sharedfiles/filedetails/?id=3476784883>\n\nalso below is a submod, seems other stuff is included but not sure about animations.\n\nSomehow deleted the original first line of text and accidentally saved when editing, but this mod has had many people work on it, below was the first and I wanted to go over them first. I really didnt do much but fiddle around in the tww3 modding tools for a bit.\n\n2. Lynn1999 with extra additions in 2023,\n\n3. and kaladal with some bug fixing in 2024,\n\nI merged lynn's and kaladal's mods together. I found that updating both and using separately worked. Where as just using just lynn's had the invisible chaos spawn, gors, and manticore issue. Using just kaladal's fix had no issues, but then the chariots, heros, and lords had no fun bits. So I assumed they were reusing script but didn't have all the script, so by merging them it cut down the size from 2gb to 1.2.\n\nCurrently Known Issues\n\n-\nMod has no errors, but does have 12 warnings as of right now but I cant find any issues in game. So until someone does I'm just gonna be playing the mod as is.\n\n-\nOn the campaign map, the custom raze/sack images are still there, but not the custom text when hovering over raze or sack button. This isn't related to the errors so I'm not sure where to start on fixing it, but I am sad about it as I always liked that fluff. Not sure if others noticed it was here to begin with.\n\n-\nI may have messed up the 3 custom units recruitment by ai. Shouldn't be that big a deal but basically units had a arbitrary number to signify a order or the like for ai to recruit in. for the 3 units in question it was 9, 5, and 13. CA updated the system where its now tier 1-12345, tier 2-12345, tier 3-12345, tier 4-12345 and just tier 5. I translated 9 to tier 2-4 for example, but as I looked at another mod that was outdated, its had units at 40 and 60 of the old system, so perhaps my translation is not accurate.\n\n-\n\nFIXED uploading new version Jabberslythe has borked textures and looks like a raw chicken, will see if this was because of the merge, if it wasnt may take longer to fix. For some reason when used together or merged, lynn's and the kaladal version change the mesh. Yet apart, work as intended.\n\nPlans\n\n-\nSo after doing a beastman campaign, I have lost my motivation to learn how to add my own stuff since having actually played a 100+ turn beastman campaign, it gets too samey unlike most other races from turn to turn. I will keep it maintained of course till someone posts a version with more stuff or the like, but don't expect any content updates from me. When I looked in the discord it sounded like lynn was still active just doing other stuff.\n\nAdditional Mods\n\n-\nSewerat's Community Beastman Add-on was a little out of date so I added a updated version in the comments on his post.\n\nUPDATE reason it was out of date is it still being worked on. Feel free to use the updated old version, but a new massive version is coming.\n\n-\nCorrupted Candlemancer's Candles' Beastmen Events & Ancillaries 0.3.1, currently out of date, halfway done fixing, but currently stuck on a couple of buffs and the like. I could change the buffs to be something else but I'm trying to figure out how to replicate what the original had. Updated version on the discord <https://discord.com/invite/W4qkrNwUMk>\n\n-\nEndo's Matched Combat, which is what gave me the incentive to do all this can also find on the discord <https://cdn.discordapp.com/attachments/1025523634745385014/1277314490907758602/endo_matched_updated_mod01.pack?ex=66e47251&is=66e320d1&hm=f349214b111df57a2fc38aa17eb38e42c319183774b45206082ded05a845034c&>.\n\nFrom game play seems to work with all Gors, Ungors, poison warhounds (not normal ones for some reason), and some of the smaller heros. Minotaurs also work but seem to rarely do it.\n\nTHIS NEEDS TO BE BELOW THE COMMUNITY BEASTMEN MOD IN THE LOAD ORDER (if above it screws up the 3 custom units unitcards for some reason).\n\nExtra stuff\n\nSo does anyone remembers that \"goblin horny empire\" mod? Not Endo's goblin hordes but the one with the custom faction in cathay with angels and stuff. I ALREADY HAVE THE FILES, It was on here a couple of months ago and it was even updated from 0.1 to 0.2 but then it vanished. I may try to fix it (but where as other mods had max 40 error, the 0.2 ver has 230), but I'm not sure if its ok to even re-release it. I don't even know who made it now since the page is gone. If anyone has any info to share on the who what and why that would be great.",
+  "changelog_latest": "Fixed the Jabberslythe looking like a raw chicken.",
+  "download_url": "https://www.loverslab.com/files/file/36361-community-beastmen-newest-newer-version/?do=download",
+  "id": "36361",
+  "category": "mods",
+  "fetched": "2026-10-31T19:12:36+00:00"
+}

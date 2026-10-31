@@ -1,0 +1,51 @@
+{
+  "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/",
+  "title": "Easy Cross Faction confederation scripts",
+  "images": {
+    "thumbnail": "https://static.loverslab.com/screenshots/monthly_2024_07/Fay.thumb.webp.b09bada15c5351806ce85214cf486729.webp",
+    "screenshots": [
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_07/Fay.webp.746f7a5aa6834b4e6a1f048bee35c2c9.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_07/Fay.thumb.webp.b09bada15c5351806ce85214cf486729.webp"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_07/kat.webp.1dcba83293d69cb7f634d373e1fb08dd.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_07/kat.thumb.webp.62dc451f947c2f97e154d7c28cbe9e54.webp"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_07/morathi.webp.44a52aed2e49adad390e95c5bc6089ce.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_07/morathi.thumb.webp.73c7e8fac288638ff409ce787b825d70.webp"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2024_07/yinyin.webp.8ce10e1f27225b1cb6657357bf53b04e.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2024_07/yinyin.thumb.webp.ad53428c1394da087f3aea91f80d8dd0.webp"
+      }
+    ],
+    "inline": []
+  },
+  "version": "1.0.14",
+  "author": "habus",
+  "tags": [
+    "miao ying",
+    "warhammer 3",
+    "script"
+  ],
+  "submitted": "2024-06-07T23:59:01Z",
+  "updated": "2025-02-16T15:54:05Z",
+  "downloads": "19338",
+  "steam_ids": [
+    "3032439976"
+  ],
+  "ll_file_links": [
+    "23925",
+    "32476",
+    "27930",
+    "33808"
+  ],
+  "description": "A small submod to allow Any Player Faction to get cross-faction confederation via Events with specific Lords\n\nIf any of the Lords is a vassal of the Player Faction for something between 20 to 25 Turns (Randomized value) an Event pops up to allow you to confederate, delay the decision or cancel it completly\n\nTo get them as vassal you can use the \"All Diplomatic Options\" (available via steam workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3032439976> )\n\nSome Details:\n\n-\nThe Katarin, Morathi, Yin-Yin and Fay Enchantress Mod uses a randomized Picture for the Event (will add more Pics for the other Packs in the future)\n\n-\nMorathi <https://www.loverslab.com/files/file/23925-hiatus-lazys-morathi-ascension-stages-reskins/> gets her model changed to corruption stage 4 (since the AI can't do it and as far as i know a confederated Morathi also can't advance the corruption stages)\n\n-\nThe Fay Enchantress <https://www.loverslab.com/files/file/32476-%E5%A0%95%E8%90%BD%E6%B9%96%E7%A5%9E%E4%BB%99%E5%A5%B3-%E5%85%88%E8%A1%8C%E7%89%88-corruption-fay-early-access/> keeps her corruption mechanic after confederation\n\n-\nIn case you use the Azazel's Realm Mod <https://www.loverslab.com/files/file/27930-azazels-realm-miao-and-azazel-campaigns/>, you don't need the Katarin, Nkari and Azazel confed Mod (as far as i know) - they shouldnt break anything as long as you just dont confederate with them if the dilema pops up\n\n-\nalso works with the miao seduce mod: <https://www.loverslab.com/files/file/33808-corrupted-miao-ying-can-seduce/> (yeah, I know shameless self-promotion)\n\n[[SPOILER]]\n\nalso some other small mod for Khalida:\n\ntdw_khalida_switch_skin.pack:\n\n-\nsmall mod from the discord and even if it isnt a confed-script i leave it here as bonus\n\n-\nkhalida gets her vanilla skin when she hasnt fought a battle for 5 turns - else she gets a buff for her Army and uses zetas Skin (\"when Khalida goes to war Asaph regenerates her body to her living form\")\n\n-\nMod-Idea came from Azerty from the Discord\n\n-\nrequires one of zetas Reskins for Khalida: <https://www.nexusmods.com/totalwarwarhammer3/mods/112>\n\n[[/SPOILER]]\n\nSoontm :\n\n-\nbetter description page + some pics\n\n-\nmaybe some better text and picture for the events instead of generics (suggestions are welcome)\n\nIf you encounter any problems feel free to just contact me via the discord <https://discord.com/channels/965342581745668136/1259903817751990303>",
+  "changelog_latest": "tdw_confeds_gen_confed_all_12.pack:\n\n-\nthis is just the merged version of all 12 confed mods\n\n-\nit does the same as the individual packs just to shorten your mod list (if you want)\n\n-\nDON'T use this together with any of the individual ones - IT WILL CRASH YOUR GAME\n\n-\nshould be savegame compatible if you switch the individuals out for the merged pack",
+  "download_url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+  "id": "34242",
+  "category": "mods",
+  "fetched": "2026-10-31T19:12:59+00:00"
+}

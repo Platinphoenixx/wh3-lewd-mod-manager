@@ -1,0 +1,1878 @@
+{
+  "mods": [
+    {
+      "id": "steam-3471237570",
+      "name": "Lazy's Corruption Progression Katarin",
+      "authors": [
+        "LazyIcarus"
+      ],
+      "kind": "progression",
+      "tags": [
+        "lazy",
+        "corruption",
+        "progression",
+        "katarin"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3471237570",
+            "title": "Lazy's Corruption Progression Katarin",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "li_katarin_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237570"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (Steam 3464018577)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237570"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471883808"
+          },
+          "note": "Lazy's Corrupted Reskins Katarin: the stage models",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237570"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/36700717749209525/B6F0940257DAD8CED8FC6B40451E734EA15B868A/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "status": "stable"
+    },
+    {
+      "id": "steam-3471883632",
+      "name": "Lazy's Corrupted Reskins Miao Ying",
+      "authors": [
+        "LazyIcarus"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "lazy",
+        "corruption",
+        "reskin",
+        "miao ying"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3471883632",
+            "title": "Lazy's Corrupted Reskins Miaoying",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "zli_miaoying_reskins.pack",
+          "from": "steam",
+          "steamId": "3471883632"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (3464018577) and Lazy's Corruption Progression Miaoying (3471237645)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471883632"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/36700717752505112/F55A2AFE07AABB59A7C48D5E3C7755944DA35880/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3471883808",
+      "name": "Lazy's Corrupted Reskins Katarin",
+      "authors": [
+        "LazyIcarus"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "lazy",
+        "corruption",
+        "reskin",
+        "katarin"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3471883808",
+            "title": "Lazy's Corrupted Reskins Katarin",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "zli_katarin_reskins.pack",
+          "from": "steam",
+          "steamId": "3471883808"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (Steam 3464018577)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471883808"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471237570"
+          },
+          "note": "Lazy's Corruption Progression Katarin",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471883808"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/36700717752506475/5E00F606FCFDF084B0F7F84B29E8E57BF3560F25/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3471884231",
+      "name": "Lazy's Corrupted Reskins Morathi",
+      "authors": [
+        "LazyIcarus"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "lazy",
+        "corruption",
+        "reskin",
+        "morathi"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3471884231",
+            "title": "Lazy's Corrupted Reskins Morathi",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "zli_morathi_reskins.pack",
+          "from": "steam",
+          "steamId": "3471884231"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (Steam 3464018577)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471884231"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Lazy's Corruption Progression Morathi (Steam 3471237702)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471884231"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/36700717752508035/55E915DC53FAC3BAC20E76A6F314E06086D0FB2B/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3497485732",
+      "name": "Readman Alarielle BBB – Beautiful Bold Buildings",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "tags": [
+        "readman",
+        "alarielle",
+        "buildings",
+        "corruption"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3497485732",
+            "title": "Readman Beautiful Bold Buildings",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_BBB.pack",
+          "from": "steam",
+          "steamId": "3497485732"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for Alarielle, Temptation's Bloom; the page lists no required items",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3497485732"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15928357743294366984/F56093D124D1E629DE34B7936046830BA9EA7D1D/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/10045137629228338370/EAFD98A0D8B6F858A62AFD0AD1F2B5EF71E85E04/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/17183205562271056035/AEFAD2F3A260709A18E60B4967104D6CEBDDF6BE/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/16021011682539192837/0C3384ACAA99DAF0AECDF33C0E7D50FFF0867091/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/14231846370107412363/1515313E8D1148416FF97D14AA985EB73BA6E3FD/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/15869776739395160155/56FDC18DD4123151E2B4148D58945D09887C864E/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13215086382948559567/A3514EC6BC14BF17A2744D4E09207B49A3A6610F/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/17719458363229898316/03719A655C310589AFCAE3CB45876308F4E44ECD/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3501984780",
+      "name": "Readman Alarielle CCC – Coalesced Character Creations",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "tags": [
+        "readman",
+        "alarielle",
+        "models",
+        "variant selector"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3501984780",
+            "title": "Readman Coalesced Character Creations",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_CCC.pack",
+          "from": "steam",
+          "steamId": "3501984780"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for Alarielle, Temptation's Bloom",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3501984780"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Variant Selector (Steam 2888171970)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3501984780"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder.",
+          "The Workshop text only describes the Aliathra variants; the other content is known from community lists and Discord."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15485533954426671914/14702A59786C66E79A2BDF3DCD9709D154E6DE92/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/18242800958631587913/D40D4D22D0542E9F1EF83137661DE2ADFBA48160/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/16623411078931889219/93E756C126DB673D7D23A0660DC036EDCE2D8E38/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11445765718083449370/4E4183C3792EF42055D6D571B522E704DF2958EB/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/14782433479527143580/35A6486E1DAC4FDAF43AAA3AD27BEDCCE1980A57/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/10631445621419362159/60402A3E1B45EEC740DD2F14C8B4C925AF42E758/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/14285428818049746075/592A497930755EE0D114BD02E9140E1C245AECBF/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11962442541550272373/2B09513D4A431E499211341DD4D2D4723186E853/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/16479621570993112738/399610D290E86AFFC90171775D3C8563EF7B7E85/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/14994481532392725017/76E48295E57F2BE30B46FF5542ECF51629631833/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "status": "beta",
+      "installNotes": [
+        "Safe to install or uninstall at any time (author, beta)."
+      ]
+    },
+    {
+      "id": "steam-3508604193",
+      "name": "Readman Alarielle TTT – Twisted Temptation Transformations",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "tags": [
+        "readman",
+        "alarielle",
+        "technologies"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3508604193",
+            "title": "Readman Twisted Temptation Transformations",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_TTT.pack",
+          "from": "steam",
+          "steamId": "3508604193"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for Alarielle, Temptation's Bloom",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3508604193"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Corrupted Landmarks (Steam 3474483873)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3508604193"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (Steam 3464018577)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3508604193"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/14441323001819833201/51ED2A5724539029CD86AA4D313352A3BAA404F0/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/15961249546408734435/5DCE8CD988181011537536ECFF5561ED237E23A5/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11385138534310460084/869110A43FD083CC064448A48886DCC35FD0B85C/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/15413309390950590533/FFD6F26EB2E9FF6D0DD0CA8B5146F41C2282537A/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "installNotes": [
+        "Should be safe to add mid-campaign; make a backup save first (author).",
+        "Built for the ATB required and recommended mods only; other combinations are untested."
+      ]
+    },
+    {
+      "id": "steam-3513079088",
+      "name": "Readman Overtly Optional Overrides (SaveSafe)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "patch",
+      "tags": [
+        "readman",
+        "alarielle",
+        "fix",
+        "nymeria",
+        "vaeri"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3513079088",
+            "title": "Readman Overtly Optional Overrides (SaveSafe)",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_OOO_savesafe.pack",
+          "from": "steam",
+          "steamId": "3513079088"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Fixes for mods in the ATB list",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513079088"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-nymeria-legendary-hero-lord-aranessa-reskin-rat-of-the-lake"
+          },
+          "note": "Nymeria - Legendary Hero/Lord (Steam 3404717872)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513079088"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3485418515"
+          },
+          "note": "Red line buffs for High Elf units",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513079088"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/13402734709601421453/78FBB28EF136F392324F8227C413E9D4470D581D/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/16043760878715035351/3B24F824DDE7D5789BDFDCED7F2D9E8E0FD2AE47/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/18012567926849076944/2C4BFEC3707A932B6EFA20BB117A92490964405F/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/17010854311438133962/AC06ED16FCAE6B92EB0793D637B9D40CD0FFFABE/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/17537659001842119545/64E38CDE00BEDC5881951DEABAE4EFABE6B8DB51/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/9953356512346510069/D2C1378C75F28E7F8C79A90DD9FEEB82FD1F247C/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "knownIssues": [
+        "Crashes without Nymeria installed (Discord, Readman's pinned list)."
+      ],
+      "installNotes": [
+        "Save-safe version: should be safe to add mid-campaign (author)."
+      ]
+    },
+    {
+      "id": "steam-3534460647",
+      "name": "Readman Alarielle UUU – Upgrades Upon Unity",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "tags": [
+        "readman",
+        "alarielle",
+        "handmaidens",
+        "skills"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3534460647",
+            "title": "Readman Upgrades Upon Unity",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_UUU.pack",
+          "from": "steam",
+          "steamId": "3534460647"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for Alarielle, Temptation's Bloom",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3534460647"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3501984780"
+          },
+          "note": "Readman Coalesced Character Creations",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3534460647"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "steamId": "3557775008"
+          },
+          "note": "Only one UUU variant at a time (Morathi)",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "steamId": "3558872079"
+          },
+          "note": "Only one UUU variant at a time (N'Kari)",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "steamId": "3559919182"
+          },
+          "note": "Only one UUU variant at a time (Warriors of Chaos)",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name comes from community mod lists; not verified in a Workshop folder."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/9273107092834250900/12D20EE0BA0397D47B4233241F16A7F5B4BA96EB/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "knownIssues": [
+        "Earning boons by performing feats is broken (author)."
+      ],
+      "installNotes": [
+        "Not safe to remove mid-campaign (author).",
+        "Use only one UUU variant at a time."
+      ]
+    },
+    {
+      "id": "steam-2789944159",
+      "name": "Dead's Kislev Units (not public)",
+      "authors": [],
+      "kind": "units",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "2789944159",
+            "title": null,
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium"
+      },
+      "status": "superseded",
+      "knownIssues": [
+        "Removed from the Steam Workshop: the page returns an error (checked 2026-10-31)."
+      ]
+    },
+    {
+      "id": "steam-2842459897",
+      "name": "No Confederation – All Factions (not public)",
+      "authors": [],
+      "kind": "utility",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "2842459897",
+            "title": null,
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium"
+      },
+      "status": "superseded",
+      "knownIssues": [
+        "Removed from the Steam Workshop: the page returns an error (checked 2026-10-31)."
+      ]
+    },
+    {
+      "id": "steam-3260081389",
+      "name": "UI mod against resource bar crowding (not public)",
+      "authors": [],
+      "kind": "utility",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3260081389",
+            "title": null,
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium"
+      },
+      "status": "superseded",
+      "knownIssues": [
+        "Removed from the Steam Workshop: the page returns an error (checked 2026-10-31)."
+      ]
+    },
+    {
+      "id": "steam-3808407319",
+      "name": "Passing's Corrupted Valkia (old Workshop upload)",
+      "authors": [
+        "PassingByPosts"
+      ],
+      "kind": "campaign",
+      "tags": [
+        "valkia"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3808407319",
+            "title": null,
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-24004"
+          },
+          "note": "Old upload of the same mod; use only the current item 3813939023",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      },
+      "status": "superseded",
+      "knownIssues": [
+        "Removed from the Steam Workshop: the page returns an error (checked 2026-10-31)."
+      ],
+      "installNotes": [
+        "Replaced by Steam 3813939023 (Passing's Corrupted Valkia). Unsubscribe from this item and remove the old .pack from the data folder: both versions use the same pack name, which causes a startup crash or an invisible mod."
+      ]
+    },
+    {
+      "id": "ll-23878",
+      "packs": [
+        {
+          "file": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "optional",
+          "target": {
+            "external": "ext-lua-console"
+          },
+          "note": "Only for troubleshooting: generates script_log_xxx.txt for bug reports on Discord",
+          "condition": "only for troubleshooting",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/23878-lazys-corrupted-miao-ying-progression-stages-reskins/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471883632"
+          },
+          "note": "Lazy's Corrupted Reskins Miaoying: required item on the Miao Ying progression's Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237645"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "The page's steam_ids = 2791799449 is only the Lua Console mod (debug), not this mod",
+          "Campaigns (IE/IEE/RoC) not specified"
+        ]
+      }
+    },
+    {
+      "id": "ll-23925",
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Page: 'Need the framework (!!li_progression_framework.pack - name may change)'. The framework is listed on the Miao Ying page (ll-23878); today the Workshop version (per LL 40114/42028: !li_progression_framework_workshop / Steam 3464018577)",
+          "condition": "only for the gameplay stages; not needed for pure reskins",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/23925-lazys-morathi-ascension-stages-reskins/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471884231"
+          },
+          "note": "Lazy's Corrupted Reskins Morathi: required item on the Morathi progression's Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237702"
+          }
+        }
+      ],
+      "requiresDlc": [
+        "Total War: WARHAMMER II - The Shadow & The Blade (for Malus)"
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "File/pack names of the stage mods are missing in the crawl ('File contents' section empty)",
+          "Campaigns (IE/IEE/RoC) not specified"
+        ]
+      }
+    },
+    {
+      "id": "ll-40114",
+      "packs": [
+        {
+          "file": "miao-assets.pack",
+          "from": "steam",
+          "steamId": "3754311622",
+          "note": "Required: meshes, animations, battle entities, warmachine VFX"
+        },
+        {
+          "file": "miao.pack",
+          "from": "steam",
+          "steamId": "3754310516",
+          "note": "Campaign logic, DB, UI"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corruption Framework (!!li_progression_framework_workshop).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Miao Ying Progression (li_miaoying_progression_workshop, Steam 3471237645 unlisted); without it, corruption stages and mechanics remain locked.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Soil's Corrupted Units (@Soil_Miaoying_Corrupted_Units and soil_corrupted_units_asset); without it, recipe unit transformations and ascension abilities do not work (warning in the log).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mct"
+          },
+          "note": "Mod Configuration Tool (groovy_mct).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "Corrupted Compendium (MiaoYingCorrupted_Compendium_workshop, Steam 3705392682 unlisted): optional additional events/units; may affect Whisperer recruitment.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3259893195"
+          },
+          "note": "UI mod 'Shorter Menu For More Tools'; relieves the overcrowded resource bar.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3260081389"
+          },
+          "note": "UI mod against resource bar crowding (title never known); the Workshop item has been removed (2026-10-31).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Check load direction 'top -> bottom' against the convention 'top = wins'; soil_corrupted_units_asset sits BELOW miao.pack, @Soil_Miaoying_Corrupted_Units above it.",
+          "Page version rc-1.0.0 (playtest) vs. title [8.1.0]."
+        ]
+      }
+    },
+    {
+      "id": "ll-46561",
+      "packs": [
+        {
+          "file": "Goblin_horde_redux.pack",
+          "from": "steam",
+          "steamId": "3629196257",
+          "note": "Name taken from the Workshop title"
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name taken from the Workshop title (Goblin_horde_redux.pack); not verified in a Workshop folder.",
+          "Dependency on the original Endo Goblin Horde mod not clarified (not in the index)."
+        ]
+      }
+    },
+    {
+      "id": "ll-27230",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Individual pack file names are not given ('8 separate pack files' vs. 7 variants)",
+          "Status 'superseded' = LL version replaced by Steam version (per the author)"
+        ]
+      }
+    },
+    {
+      "id": "dc-shenzoo-faction-mod-passingbyposts",
+      "name": "Shenzoo: The Long March Home",
+      "authors": [
+        "PassingbyPosts"
+      ],
+      "kind": "campaign",
+      "tags": [
+        "shenzoo",
+        "cathay",
+        "legendary lord",
+        "story",
+        "alpha"
+      ],
+      "summary": "Alpha faction mod by PassingbyPosts: play as Shenzoo, a new Cathayan legendary lord stranded in Norsca, in a story campaign about finding her way home.",
+      "description": "Shenzoo, the youngest daughter of the Dragon Emperor, starts stranded on the Norscan coast after her fleet is wrecked while she chases a vision of an evil stirring in the west. You rally her scattered forces, make uneasy alliances and recruit former enemies on a long march back towards Cathay.\n\nThe mod adds Shenzoo as a new legendary lord with a unique campaign start, custom voice lines, a faction mechanic for talking to companions in a light-novel style, a narrative campaign and new battles. It is an alpha meant for feedback and bug hunting: Cathayan buildings are usable for now, but the final version is meant to keep you short of troops.\n\nThe Workshop page requires Mixu's Unlocker, MCT and Variant Selector. On Discord the story is described as running until Valkia is defeated and Loi is collected from the Compendium; a Russian version from 2026-06-04 exists and must be loaded above the original.",
+      "features": [
+        "Play as Shenzoo, a new legendary lord with a unique start",
+        "Custom voice lines and a companion dialogue mechanic",
+        "Narrative campaign with new battles",
+        "Requires Mixu's Unlocker, MCT and Variant Selector"
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/12220389727889296665/FDDF98F380A8BE5A676842A298176D64FF1B915E/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/12680421827649730746/7C86B703E48F9577F3A054203938D78913AC13FE/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13905631339265366915/91F85283F4C7260F4F37CF8F6AC05558ACF3FF76/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11538962925154035065/9B11A8E6E2FB767CEE65E625A1FA8094473EB528/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13052930706641725071/9BC550AD49B348FC4692D6209C89A4DD09F2C623/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11953022498451709272/84DB1158702DBA08837C12D2658C179696C284C9/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3546053159",
+            "title": "Shenzoo : The Long March Home [Alpha]",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Shenzoo"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "MIXER - Mixu's Unlocker (Steam 2859968660)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3546053159"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mct"
+          },
+          "note": "Mod Configuration Tool (Steam 2927955021)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3546053159"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Variant Selector (Steam 2888171970)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3546053159"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-walk-with-the-dragon"
+          },
+          "note": "Author: does not work with Walk with the Dragon yet",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3546053159"
+          }
+        }
+      ],
+      "status": "wip",
+      "knownIssues": [
+        "Some models are placeholders.",
+        "Alchemist summon skills do not work.",
+        "The final set-piece battle does not spawn yet (not coded).",
+        "According to the author it does not work with other mods that add an ESL file."
+      ],
+      "installNotes": [
+        "A Russian version (Discord, 2026-06-04) must be loaded above the original."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not known (item not installed)."
+        ]
+      }
+    },
+    {
+      "id": "dc-more-lustful-daemonettes-varieties-standalone",
+      "name": "More Lustful Daemonettes Varieties (Standalone)",
+      "authors": [
+        "Railgun"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "slaanesh",
+        "daemonettes",
+        "reskin",
+        "variant selector"
+      ],
+      "summary": "Compilation of several daemonette model sets mixed with the vanilla ones, from androgynous to more female types, plus lord variety for Disciple armies.",
+      "description": "A merged compilation of daemonette models: the Female Daemonettes and LewdIvan's daemonettes (original and thicker versions) are mixed with the vanilla models, giving a wider range from androgynous to more female types, with some sparsely clothed extra models to match the Slaanesh depiction. It also gives Disciple armies more lord variety. Credits go to The Rogue Roman and LewdIvan for the models.\n\nIt is compatible with Variant Selector, and the Eternal Entourage of Slaanesh reskin is already included, so that mod is not needed separately. The author explains how to remove the futa variants with RPFM for players who do not want them.\n\nPublished on Steam by Railgun; on Discord it was posted by CassieVoter (V4_0). The page says it was updated for game version 8.0.x.",
+      "features": [
+        "Mixes several daemonette model sets with the vanilla ones",
+        "Lord variety for Disciple armies",
+        "Eternal Entourage of Slaanesh reskin included",
+        "Compatible with Variant Selector"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2798840666",
+            "title": "More Lustful Daemonettes Varieties",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "Eternal Entourage of Slaanesh Reskin (2835144549) is already included; do not add it separately."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "The page says 'updated for 8.0.x'; compatibility with later game patches is not stated.",
+          "Pack name not known (item not installed)."
+        ]
+      }
+    },
+    {
+      "id": "steam-2798690094",
+      "name": "More Animation",
+      "authors": [
+        "Hecleas"
+      ],
+      "kind": "utility",
+      "tags": [
+        "general",
+        "battle",
+        "animation"
+      ],
+      "summary": "Battle setting tweak that makes matched-combat animations happen much more often. Adds no animations of its own; save-game compatible.",
+      "description": "More Animation changes battle settings so that melee uses matched combat (paired, synchronised animations) far more often instead of separate attacks. The chance values for matched combat are raised to the maximum, the hit-point thresholds for starting and continuing a matched fight are lowered, and premature kills are removed so that the killing hit lines up with the death animation.\n\nIt does not add new animations, so it should stay compatible with mods that do. The author describes it as save-game compatible and compatible with everything. It is a general gameplay/visual tweak, not a lewd mod.",
+      "features": [
+        "Matched-combat chance raised to the maximum",
+        "Lower hit-point thresholds for matched fights",
+        "Killing blows match death animations",
+        "Save-game compatible"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2798690094",
+            "title": "More Animation"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "more_animation.pack",
+          "from": "steam",
+          "steamId": "2798690094"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3301596500",
+      "name": "[Endo] Kislev",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "kislev"
+      ],
+      "summary": "Reskin that turns all non-hero Kislev units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Kislev reskin depicts all non-hero Kislev units as women in stylised, impractical outfits; the author states there is no full nudity. Ice Witches and Frost Maidens are reskinned as well, and the mod brings new unit cards and robust variants.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Kislev units reskinned",
+        "Ice Witch and Frost Maiden reskins",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3301596500",
+            "title": "[Endo] Kislev"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_kislev_reskin.pack",
+          "from": "steam",
+          "steamId": "3301596500"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3616082403",
+      "name": "[Endo] Dark Elves",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "dark elves"
+      ],
+      "summary": "Reskin that turns all non-hero Dark Elf units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Dark Elf reskin depicts all non-hero Dark Elf units as women in stylised, impractical outfits; the author states there is no full nudity. It adds female voice audio mixed with the existing Dark Elf audio, new unit cards and robust variants. When several of Endo's reskins are used, the author says his separate audio patch (Steam 3622829128) is needed.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Dark Elf units reskinned",
+        "Female voice audio",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3616082403",
+            "title": "[Endo] Dark Elves"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_dark_elf_reskin.pack",
+          "from": "steam",
+          "steamId": "3616082403"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3622829128"
+          },
+          "note": "Audio patch the author says is needed for his reskins to work together",
+          "condition": "only when several of Endo's reskins are used together",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3616082403"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3616234518",
+      "name": "[Endo] High Elves",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "high elves"
+      ],
+      "summary": "Reskin that turns all non-hero High Elf units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's High Elf reskin depicts all non-hero High Elf units as women in stylised, impractical outfits; the author states there is no full nudity. Version 2.0 added the Mistwalker and Ships Company units, improved head and body models and textures, and redesigned several outfits. Some body and armour models are credited to Real.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero High Elf units reskinned",
+        "Mistwalkers and Ships Company included (v2.0)",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3616234518",
+            "title": "[Endo] High Elves"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_high_elf_reskin.pack",
+          "from": "steam",
+          "steamId": "3616234518"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3621449095",
+      "name": "[Endo] Empire",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "empire"
+      ],
+      "summary": "Reskin that turns all non-hero Empire units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Empire reskin depicts all non-hero Empire units as women; the author aimed for a mostly lore-friendly look and kept faction and Regiment of Renown colours. The Arch Lector and Warrior Priests are reskinned too, with new unit cards and robust variants. An addon (Steam 3647816031) mixes vanilla units back in, and the author's audio patch (Steam 3622829128) is needed when several of his reskins are used.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Empire units reskinned",
+        "Arch Lector and Warrior Priest reskins",
+        "Faction and RoR colours kept",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3621449095",
+            "title": "[Endo] Empire"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_empire.pack",
+          "from": "steam",
+          "steamId": "3621449095"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3622829128"
+          },
+          "note": "Audio patch the author says is needed for his reskins to work together",
+          "condition": "only when several of Endo's reskins are used together",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3621449095"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3647816031"
+          },
+          "note": "Addon that mixes vanilla Empire units in with the reskinned ones",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3621449095"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3647419004",
+      "name": "[Endo] Bretonnia",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "bretonnia"
+      ],
+      "summary": "Reskin that turns all non-hero Bretonnia units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Bretonnia reskin depicts all non-hero Bretonnian units as women in stylised, impractical outfits; the author states there is no full nudity and tried to keep the themes accurate. It adds female voice audio, new unit cards and robust variants. For LOD issues the author suggests an LOD enhancer mod; the audio patch (Steam 3622829128) is needed when several of his reskins are used.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Bretonnia units reskinned",
+        "Female voice audio",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3647419004",
+            "title": "[Endo] Bretonnia"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_bretonnia.pack",
+          "from": "steam",
+          "steamId": "3647419004"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3622829128"
+          },
+          "note": "Audio patch the author says is needed for his reskins to work together",
+          "condition": "only when several of Endo's reskins are used together",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3647419004"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3672266382",
+      "name": "[Endo] Wood Elves",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "wood elves"
+      ],
+      "summary": "Reskin that turns all non-hero Wood Elf units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Wood Elf reskin depicts all non-hero Wood Elf units as women in stylised, impractical outfits; the author states there is no full nudity and finds the result fairly lore-friendly. It brings new unit cards and robust variants.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Wood Elf units reskinned",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3672266382",
+            "title": "[Endo] Wood Elves"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_wood_elf_reskin.pack",
+          "from": "steam",
+          "steamId": "3672266382"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3679399151",
+      "name": "[Endo] Cathay",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "cathay"
+      ],
+      "summary": "Reskin that turns all non-hero Cathay units female. No stat or gameplay changes and no dependencies.",
+      "description": "Endo's Cathay reskin depicts all non-hero Cathay units as women in stylised, impractical outfits; the author states there is no full nudity. Only four unit types needed changing. It brings new unit cards and robust variants.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
+      "features": [
+        "All non-hero Cathay units reskinned (four unit types)",
+        "New unit cards",
+        "No stat changes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3679399151",
+            "title": "[Endo] Cathay"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_cathay_reskin.pack",
+          "from": "steam",
+          "steamId": "3679399151"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "steam-3754256443",
+      "name": "Corrupted Compendium Workshop fix",
+      "authors": [
+        "Daedra"
+      ],
+      "kind": "patch",
+      "tags": [
+        "miao ying",
+        "compendium",
+        "fix"
+      ],
+      "summary": "Temporary fix for the Workshop version of the Corrupted Compendium; its author says it resolves an “agent embed failure” issue.",
+      "description": "A Workshop item named after the Compendium's Workshop pack (MiaoYingCorrupted_Compendium_workshop_fix.pack, about 445 MB), uploaded on 29 June. Its only description is that it is a temporary fix to resolve the agent embed failure issue. The page lists no required items.\n\nNothing else is stated: not whether it replaces the Compendium's own Workshop pack or runs next to it, nor whether it is still needed with the current Compendium.",
+      "features": [
+        "Temporary fix for the Corrupted Compendium (Workshop version)"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3754256443",
+            "title": "MiaoYingCorrupted_Compendium_workshop_fix.pack"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "MiaoYingCorrupted_Compendium_workshop_fix.pack",
+          "from": "steam",
+          "steamId": "3754256443"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "The title names the Compendium's Workshop pack; the page gives no further details",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3754256443"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Whether it replaces MiaoYingCorrupted_Compendium_workshop.pack or is loaded together with it is not stated.",
+          "Whether the fix is still needed with the current Compendium version is not stated."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/14229729084357512052/079E8C6A07D830D71C47BAAF500E99D6C1875256/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3622829128",
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3301596500"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3616082403"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3616234518"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3621449095"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3647419004"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3672266382"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3679399151"
+          },
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3622829128"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "steamId": "3301596500"
+          },
+          {
+            "steamId": "3616082403"
+          },
+          {
+            "steamId": "3616234518"
+          },
+          {
+            "steamId": "3621449095"
+          },
+          {
+            "steamId": "3647419004"
+          },
+          {
+            "steamId": "3672266382"
+          },
+          {
+            "steamId": "3679399151"
+          }
+        ],
+        "note": "Place above the Endo reskins (author)."
+      },
+      "sources": {
+        "steam": [
+          {
+            "id": "3622829128",
+            "title": "Endo Audio Merged",
+            "unlisted": true
+          }
+        ]
+      },
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high"
+      }
+    }
+  ],
+  "external": [
+    {
+      "id": "ext-underways-compilation",
+      "name": "The Underways: Compilation",
+      "steamId": "3352576361",
+      "note": "ChopChop's compilation; contains Beastmen: Beastpaths Underways."
+    },
+    {
+      "id": "ext-underways-deeproots-cooldown",
+      "name": "Underways & Deeproots: -1 Cooldown",
+      "steamId": "3352576541"
+    },
+    {
+      "id": "ext-aor-mercenaries-loreful",
+      "name": "AoR Mercenaries - Loreful",
+      "steamId": "2882729230"
+    }
+  ],
+  "notes": []
+}

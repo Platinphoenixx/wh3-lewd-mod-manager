@@ -1,0 +1,45 @@
+# A maintainer reviews a contribution issue (created from the app) and adds the label "accepted".
+# This records it in curator/community.json, rebuilds the catalog, commits, and closes the issue.
+name: Apply accepted contribution
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: catalog-write
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r curator/requirements.txt
+      - name: Record contribution
+        env:
+          ISSUE: ${{ toJson(github.event.issue) }}
+        run: |
+          printf '%s' "$ISSUE" > "$RUNNER_TEMP/issue.json"
+          python curator/apply_contribution.py --issue-file "$RUNNER_TEMP/issue.json"
+      - name: Rebuild and commit
+        run: |
+          python curator/build_catalog.py
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add curator/community.json catalog/catalog.json
+          git diff --cached --quiet || git commit -m "Apply contribution #${{ github.event.issue.number }}"
+          git pull --rebase && git push
+      - name: Close issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close ${{ github.event.issue.number }} --comment "Applied to the catalog. Apps get it with the next catalog update. Thank you!"

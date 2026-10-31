@@ -1,0 +1,2650 @@
+{
+ "mods": [
+  {
+   "id": "ll-26468",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-24466"
+     },
+     "note": "Presumed: the Unified French Translation page lists Community Beastmen and Savage Beastmen as the two Beastmen mods hosted on this LL page; the Chinese page only says 'the two LL packages'",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/26468-chinesetranslationbeastmen-mods/"
+     }
+    },
+    {
+     "kind": "supersedes",
+     "target": {
+      "mod": "ll-24257"
+     },
+     "note": "Page: from now on only this one translation pack is needed for Beastmen content; ll-24257 is the same translator's older Beastmen (Savage Beastmen) translation",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/26468-chinesetranslationbeastmen-mods/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Page does not name the translated 'two LL packages'; ll-24466 (Community Beastmen / Savage Beastmen) is the most likely target. Whether Lynn's Edit (ll-26347) is covered is unknown",
+     "Pack name not given (single file, presumably one .pack); no load order"
+    ]
+   },
+   "_fix": "Lynn's Edit relation removed (no evidence); supersedes ll-24257 added"
+  },
+  {
+   "id": "ll-26584",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Original mod 'balthasar_geltina' (a Balthasar Gelt reskin, by the name) is not found on LL, Steam data or Discord notes",
+     "Pack name not given (single file, presumably one .pack); no dependencies stated"
+    ]
+   }
+  },
+  {
+   "id": "ll-50407",
+   "sources": {
+    "loverslab": {
+     "fileId": "50407",
+     "url": "https://www.loverslab.com/files/file/50407-cathay-heroes-sub-mod-collection-%D0%BF%D0%B0%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/",
+     "category": "mods",
+     "updated": "2026-09-02T14:30:45Z"
+    },
+    "downloads": [
+     {
+      "name": "@heroes_cathay_pack_ru.pack",
+      "url": "https://www.loverslab.com/files/file/50407-cathay-heroes-sub-mod-collection-%D0%BF%D0%B0%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/?do=download",
+      "description": "Standalone pack: the Cathay heroes of the six Steam mods listed on the page with Russian text; per the page it does not need the original mods",
+      "exclusiveGroup": "cathay-ru",
+      "note": "1.42 GB"
+     },
+     {
+      "name": "@heroes_cathay_pack_ru_translation only.pack",
+      "url": "https://www.loverslab.com/files/file/50407-cathay-heroes-sub-mod-collection-%D0%BF%D0%B0%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/?do=download",
+      "description": "Text translation only, without the heroes (for players who use the original Steam hero mods)",
+      "exclusiveGroup": "cathay-ru",
+      "note": "248.86 kB"
+     },
+     {
+      "name": "(X)_Cathay_ALL_XXX ru.pack",
+      "url": "https://www.loverslab.com/files/file/50407-cathay-heroes-sub-mod-collection-%D0%BF%D0%B0%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/?do=download",
+      "description": "Small pack named after Dwjliel's all-in-one (X)_Cathay_ALL_XXX (ll-49648); by its size a Russian text pack for it. Not described on the page",
+      "optional": true,
+      "note": "8.6 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@heroes_cathay_pack_ru.pack",
+     "from": "download",
+     "exclusiveGroup": "cathay-ru",
+     "note": "Standalone hero bundle with Russian text"
+    },
+    {
+     "file": "@heroes_cathay_pack_ru_translation only.pack",
+     "from": "download",
+     "exclusiveGroup": "cathay-ru",
+     "note": "Russian text only, for use with the original Steam hero mods"
+    },
+    {
+     "file": "(X)_Cathay_ALL_XXX ru.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Presumably the Russian text for ll-49648's all-in-one; not described on the page"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-49648"
+     },
+     "note": "Same collection title, and the download '(X)_Cathay_ALL_XXX ru.pack' carries the name of ll-49648's all-in-one",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/50407-cathay-heroes-sub-mod-collection-%D0%BF%D0%B0%D0%BA-%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2-%D0%BA%D0%B0%D1%82%D0%B0%D1%8F-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Whether the bundle may run alongside the original Steam hero mods is not stated",
+     "Purpose of '(X)_Cathay_ALL_XXX ru.pack' inferred from its name and size"
+    ]
+   },
+   "_fix": "Pack names from the real LL file list (with @ and .pack)"
+  },
+  {
+   "id": "ll-24261",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "external": "ext-celestial-dragon-concubines"
+     },
+     "note": "Translation of 'Celestial Dragon Concubines' (天庭龙妃), dated 2022-09-18",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/24261-celestialdragonconcubines_cn0918pack/"
+     }
+    }
+   ],
+   "tier": "translation",
+   "status": "abandoned",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Translation dates from 2022-09; whether it fits the later 'working update' of the original is unknown"
+    ]
+   }
+  },
+  {
+   "id": "ll-26347",
+   "kind": "units",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-24466"
+     },
+     "note": "Edited Community Beastmen with extra content. ll-36361 describes using 'just Lynn's' on its own, so it is presumably a full replacement, not an add-on",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/26347-community-beastmen-lynns-edit/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Whether it needs the base Community Beastmen is not stated; inferred from ll-36361 that it ran on its own",
+     "Pack name not given (single 7z)"
+    ]
+   },
+   "_fix": "Merged into ll-36361 (which supersedes it), per ll-36361's page"
+  },
+  {
+   "id": "ll-24263",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-30462"
+     },
+     "note": "Translates the 2022 Discord release ('Unique Landmarks Main Submod', 2022-09-09, #unique-landmarks), the predecessor of today's Corrupted Landmarks (pack corrupted_landmarks.pack). Will not match the current version",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/24263-corrupted_landmarks_cnpack/"
+     }
+    }
+   ],
+   "tier": "translation",
+   "status": "abandoned",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Identification via the French translation page (lists 'Unique Landmarks Main Submod' 2022-09-09) and the pack name; the 2022 text will not cover the current Corrupted Landmarks"
+    ]
+   }
+  },
+  {
+   "id": "ll-24259",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-30462"
+     },
+     "note": "Translates 'Unique Landmarks Kislev Standalone' (Discord #unique-landmarks, 2022-09-27); today's Corrupted Landmarks contains the Kislev landmarks. Outdated",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/24259-corrupted_landmarks_kislev_cn0929pack/"
+     }
+    }
+   ],
+   "status": "abandoned",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "That the Kislev standalone was later merged into Corrupted Landmarks is inferred (Corrupted Landmarks now has 30 Kislev landmarks)"
+    ]
+   }
+  },
+  {
+   "id": "ll-26794",
+   "relations": [
+    {
+     "kind": "supersedes",
+     "target": {
+      "external": "ext-sons-of-ursun-dovakin"
+     },
+     "note": "Edited version of the Steam mod 'Sons of Ursun' (DOVAKIN, 2953846693); page: the original is not required, this replaces it. Do not use both",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/26794-edited-sons-of-ursun-better-ice-guard/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "The LL page names no link; the Steam mod is the only 'Sons of Ursun' found (Kislev reskin, created four weeks before this upload). This 2023 edit is based on an older state of it",
+     "Pack name not given (single file, presumably one .pack)"
+    ]
+   }
+  },
+  {
+   "id": "ll-42706",
+   "installNotes": [
+    "The page offers a single file (the full version); the reskin-only version is no longer supported"
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "'Recommended Mod to go with this one' is empty on the page",
+     "Pack name not given (single file, presumably one .pack)",
+     "Includes Community Beastmen assets; whether Community Beastmen must also be active is not stated",
+     "Campaigns (IE/IEE/RoC) not stated"
+    ]
+   }
+  },
+  {
+   "id": "ll-40981",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Framework pack only named as '!!li_progression_framework.pack' (Workshop name today: !!li_progression_framework_workshop.pack); version 0.13.0 of the translation vs. the original not checked"
+    ]
+   },
+   "_fix": "Morathi confirmed: the page body is the Russian copy of Lazy's Morathi description; the 23966 link is a copy error"
+  },
+  {
+   "id": "ll-24262",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-23925"
+     },
+     "note": "File name li_morathi_progression (Lazy's 'li_' naming, cf. li_katarin_progression / li_miaoying_progression); page: translation of 'corrupted Morathi'",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/24262-li_morathi_progression_cn0915pack/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Translation from 2022-09, certainly outdated against the Workshop version"
+    ]
+   }
+  },
+  {
+   "id": "ll-24260",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-23878"
+     },
+     "note": "Page: Miao Ying and Katarin main mods plus the diplomacy submod; Lazy's 'Foreign Dickplomacy' is distributed with the Miao page (ll-23878)",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/24260-miao_and_katarin_cn0923pack/"
+     }
+    },
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-23966"
+     },
+     "note": "Katarin main mod (2022 state)",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/24260-miao_and_katarin_cn0923pack/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Translation from 2022-09, certainly outdated against the Workshop versions"
+    ]
+   }
+  },
+  {
+   "id": "ll-24571",
+   "sources": {
+    "loverslab": {
+     "fileId": "24571",
+     "url": "https://www.loverslab.com/files/file/24571-miaoyingtit-katarintit/",
+     "version": "1.0.0",
+     "updated": "2023-04-12T11:17:06Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "Miaoying(tit).pack",
+      "url": "https://www.loverslab.com/files/file/24571-miaoyingtit-katarintit/?do=download",
+      "description": "Miao Ying reskin with open upper clothing",
+      "optional": true,
+      "note": "64.36 MB"
+     },
+     {
+      "name": "katarin(tit).pack",
+      "url": "https://www.loverslab.com/files/file/24571-miaoyingtit-katarintit/?do=download",
+      "description": "Katarin reskin with open upper clothing",
+      "optional": true,
+      "note": "142.28 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "Miaoying(tit).pack",
+     "from": "download",
+     "optional": true,
+     "note": "Miao Ying part; use only if you want this look"
+    },
+    {
+     "file": "katarin(tit).pack",
+     "from": "download",
+     "optional": true,
+     "note": "Katarin part; use only if you want this look"
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "No information on dependencies or on how it interacts with Lazy's stage reskins (load order unknown)"
+    ]
+   }
+  },
+  {
+   "id": "ll-52195",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Unclear whether the two Steam Neferata mods must be installed or only served as sources",
+     "Pack name not given (single 7z)",
+     "Similar Elspeth mod: ll-41120"
+    ]
+   }
+  },
+  {
+   "id": "ll-24266",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Which 'palace archers submod' is translated is not named anywhere (LL, Discord notes, Steam data)",
+     "Dated 2022-08; no dependencies or load order"
+    ]
+   }
+  },
+  {
+   "id": "ll-52134",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Joins via a turn-2 dilemma; whether as a lord of the player's faction or a separate scripted army is not stated",
+     "Pack name not given (single zip)",
+     "Campaigns not stated"
+    ]
+   }
+  },
+  {
+   "id": "ll-43977",
+   "packs": [
+    {
+     "file": "!Readman_Alarielle_YYY.pack",
+     "from": "download",
+     "note": "Name from Readman's tested mod lists (#many-modlist-methods), loaded from the data folder"
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "The author's 'rest of the units' mod is not named (presumably one of the Readman Steam mods)"
+    ]
+   }
+  },
+  {
+   "id": "ll-24257",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-24466"
+     },
+     "note": "Page: translation of the Beastmen submod; 'Savage Beastmen' (v0.4.8) is distributed on the Community Beastmen page per the French translation pack's list",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/24257-savage_beastmen_cn1019pack/"
+     }
+    }
+   ],
+   "tier": "translation",
+   "status": "superseded",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Dated 2022-10; the same translator's later ll-26468 replaces it"
+    ]
+   }
+  },
+  {
+   "id": "ll-24258",
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+     },
+     "note": "File name seu_miaoying_submod_extension_v0.7.0 = SEU's Miao Ying extension (pack seu_miaoying_submod_extension.pack)",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/24258-seu_miaoying_submod_extension_v070_cn0930pack/"
+     }
+    }
+   ],
+   "tier": "translation",
+   "status": "abandoned",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Translates v0.7.0 (2022-09); the current SEU mod is much newer"
+    ]
+   }
+  },
+  {
+   "id": "ll-24875",
+   "sources": {
+    "loverslab": {
+     "fileId": "24875",
+     "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/",
+     "category": "mods",
+     "version": "1.0.3",
+     "updated": "2024-04-29T16:07:24Z"
+    },
+    "downloads": [
+     {
+      "name": "WH3_SigvaldAFix.zip",
+      "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/?do=download",
+      "description": "Main mod with the cultist voice",
+      "exclusiveGroup": "sigvalda-main",
+      "note": "32.3 MB"
+     },
+     {
+      "name": "WH3_SigvaldA.zip",
+      "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/?do=download",
+      "description": "Main mod, silent (no custom voice)",
+      "exclusiveGroup": "sigvalda-main",
+      "note": "32.62 MB"
+     },
+     {
+      "name": "WH3_SigvaldA_lowerheelfix.rar",
+      "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/?do=download",
+      "description": "Main mod with the cultist voice and less high-heel clipping",
+      "exclusiveGroup": "sigvalda-main",
+      "note": "28.48 MB"
+     },
+     {
+      "name": "WH3_SigvaldA_with_soundpack.zip",
+      "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/?do=download",
+      "description": "Main mod without voice files; needs the separate voice pack",
+      "exclusiveGroup": "sigvalda-main",
+      "note": "38.8 MB"
+     },
+     {
+      "name": "sigvaldavoice_pack_fix.rar",
+      "url": "https://www.loverslab.com/files/file/24875-sigvalda-sexy-slaanesh-princess/?do=download",
+      "description": "Voice pack only; needs a main file (meant for WH3_SigvaldA_with_soundpack)",
+      "optional": true,
+      "note": "3.6 MB"
+     }
+    ]
+   },
+   "installNotes": [
+    "Unpack into the Total War WARHAMMER III\\data folder",
+    "Pick exactly one main file: cultist voice, silent, cultist voice + less heel clipping, or the version for the separate voice pack (then also add sigvaldavoice_pack_fix)"
+   ],
+   "knownIssues": [
+    "Discord (#corvo-candid-models, 2026-03-24): the Sigvalda voice is partly broken since patch 7.0 (some lines fall back to the original Sigvald voice)"
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Pack file names inside the archives are unknown",
+     "Possible overlap with 'Female Sigvald Reskin' (ll-26542); not mentioned",
+     "The Discord entry 'Sigvalda model mod (Corv0Modder)' is presumably the same mod (Kargrin/Corv0 showcase channel)"
+    ]
+   },
+   "_fix": "File guide from the page image (via the user)"
+  },
+  {
+   "id": "ll-49568",
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "low",
+    "openQuestions": [
+     "Pack name not given (single rar); no load order or dependencies",
+     "Replaces 'most' banners: overlap/order with other flag mods (ll-41124, ll-37353) unknown"
+    ]
+   }
+  },
+  {
+   "id": "ll-28614",
+   "status": "superseded",
+   "installNotes": [
+    "Put the newest version in the data folder, delete older versions",
+    "Superseded by 'Greenskins Goblin Horde Redux' (ll-46561), which continues this addon (it lists 'changes from Tacomarine's addon')"
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Endo's Goblin Hordes (the base mod) has no link; ll-46561 calls the horde mod Endo's pet project and reworks it",
+     "Pack name not given"
+    ]
+   }
+  },
+  {
+   "id": "ll-25600",
+   "sources": {
+    "loverslab": {
+     "fileId": "25600",
+     "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/",
+     "version": "4.0",
+     "updated": "2023-10-08T19:13:29Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "soil_corrupted_units_0903_hotfixSFO.pack",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/?do=download",
+      "description": "SFO version of Soil's Corrupted Units (0903 hotfix); standalone, use instead of the original",
+      "optional": true,
+      "note": "73.78 MB"
+     },
+     {
+      "name": "ensignLoiSFO.pack",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/?do=download",
+      "description": "SFO stats for Ensign Loi from Corrupted Compendium; needs the Compendium",
+      "optional": true,
+      "note": "9.65 kB"
+     },
+     {
+      "name": "@z_double_skill_points_ensign_loi.pack",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/?do=download",
+      "description": "Tiny patch adding a skill dump for Ensign Loi with '[SFO] Double Skill Points' (Steam 2831951203)",
+      "optional": true,
+      "note": "830 B"
+     },
+     {
+      "name": "seu_miaoying_submod_extensionSFO.pack",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/?do=download",
+      "description": "SFO stats for SEU's First Daughter and Last Shugengan (SEU's Miao Ying extension)",
+      "optional": true,
+      "note": "10.23 kB"
+     },
+     {
+      "name": "Lin_Corruption_AscendSFO.pack",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/?do=download",
+      "description": "SFO stats for Corrupted Ascension (堕落升魔) 1.2",
+      "optional": true,
+      "note": "9.39 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "soil_corrupted_units_0903_hotfixSFO.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Soil's Corrupted Units for SFO; standalone"
+    },
+    {
+     "file": "ensignLoiSFO.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Ensign Loi SFO stats; needs Corrupted Compendium"
+    },
+    {
+     "file": "@z_double_skill_points_ensign_loi.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Only with [SFO] Double Skill Points"
+    },
+    {
+     "file": "seu_miaoying_submod_extensionSFO.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Only with SEU's Miao Ying extension"
+    },
+    {
+     "file": "Lin_Corruption_AscendSFO.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Only with Corrupted Ascension"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "requires",
+     "target": {
+      "external": "ext-sfo"
+     },
+     "note": "All parts are SFO adjustments",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "dc-soil-corrupted-units-submod-soil-corrupted-units-0903-pack"
+     },
+     "note": "soil_corrupted_units_0903_hotfixSFO.pack is the SFO version of the 0903 Soil units; standalone, does not need the original",
+     "condition": "only with soil_corrupted_units_0903_hotfixSFO.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-23876"
+     },
+     "note": "Ensign Loi part: 'Requires Corrupted Compendium'",
+     "condition": "only with ensignLoiSFO.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+     },
+     "note": "SFO changes for SEU's First Daughter and Last Shugengan (pack seu_miaoying_submod_extensionSFO)",
+     "condition": "only with seu_miaoying_submod_extensionSFO.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "ll-27171"
+     },
+     "note": "Part '堕落升魔 (Corruption Ascend) 1.2 SFO Changes'",
+     "condition": "only with Lin_Corruption_AscendSFO.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "requires",
+     "target": {
+      "steamId": "2831951203"
+     },
+     "note": "[SFO] Double Skill Points - only for the small skill dump patch",
+     "condition": "only with @z_double_skill_points_ensign_loi.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "supersedes",
+     "target": {
+      "mod": "ll-25602"
+     },
+     "note": "Same author; ensignLoiSFO.pack here (page v4.0, 2023-10) looks like the updated version of the standalone EnsignLoiSFOSubmod 1.0.0 (2023-01). Do not use both",
+     "source": {
+      "type": "inferred",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    },
+    {
+     "kind": "optional",
+     "target": {
+      "mod": "ll-29487"
+     },
+     "note": "Last line: 'No Corruption Reduction for SFO's new Miao Mechanic' (separate page)",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/25600-various-sfo-submods-soils-corrupted-units-corrupted-compendiums-ensign-loi-seu-extension-mod-first-daughter-and-last-shugengan-corrupted-ascencion/"
+     }
+    }
+   ],
+   "installNotes": [
+    "Pick only the packs for the mods you use; Soil's SFO version is standalone (do not activate the original Soil units)."
+   ],
+   "curation": {
+    "lastChecked": "2026-10-31",
+    "confidence": "medium",
+    "openQuestions": [
+     "Last updated 2023-10; compatibility with current versions of the base mods unknown",
+     "That ensignLoiSFO.pack replaces ll-25602 is inferred (same author, same topic, newer)"
+    ]
+   },
+   "_fix": "Soil part belongs to the 0903 Discord release, not the 2024 repository ll-32374 (the French translation page lists both separately)"
+  },
+  {
+   "id": "ll-23876",
+   "sources": {
+    "loverslab": {
+     "fileId": "23876",
+     "url": "https://www.loverslab.com/files/file/23876-corrupted-compendium/",
+     "version": "1.53",
+     "updated": "2026-05-07T17:16:13Z",
+     "category": "mods"
+    },
+    "steam": [
+     {
+      "id": "3705392682",
+      "unlisted": true,
+      "role": "main"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "CumpendiumLink.txt",
+      "url": "https://www.loverslab.com/files/file/23876-corrupted-compendium/?do=download",
+      "description": "Text file with a link (by its name, to the mod download; the mod itself is on Steam now)",
+      "optional": true,
+      "note": "73 B"
+     },
+     {
+      "name": "Lua_CheatSheet.docx",
+      "url": "https://www.loverslab.com/files/file/23876-corrupted-compendium/?do=download",
+      "description": "Lua cheat sheet (console commands for the events); documentation",
+      "optional": true,
+      "note": "18.75 kB"
+     },
+     {
+      "name": "Miao_flag_new.pack",
+      "url": "https://www.loverslab.com/files/file/23876-corrupted-compendium/?do=download",
+      "description": "Extra flag pack for Miao Ying's faction, by its name; not described on the page",
+      "optional": true,
+      "note": "214.28 kB"
+     },
+     {
+      "name": "acorns_ensign_loi_touchup_patched.pack",
+      "url": "https://www.loverslab.com/files/file/23876-corrupted-compendium/?do=download",
+      "description": "Small Ensign Loi touch-up patch; not described on the page (Discord: an old patch, purpose unclear)",
+      "optional": true,
+      "note": "12.08 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "Miao_flag_new.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Optional flag pack from the LL page"
+    },
+    {
+     "file": "acorns_ensign_loi_touchup_patched.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Optional old Ensign Loi touch-up patch from the LL page"
+    }
+   ]
+  },
+  {
+   "id": "ll-23966",
+   "sources": {
+    "loverslab": {
+     "fileId": "23966",
+     "url": "https://www.loverslab.com/files/file/23966-lazys-corrupted-katarin-stages-reskins/",
+     "category": "mods",
+     "version": "1.0.0",
+     "updated": "2025-06-24T00:06:45Z"
+    },
+    "wiki": [
+     "https://lewdhammer.miraheze.org/wiki/Lewdhammer_Wiki",
+     "https://lewdhammer.miraheze.org/wiki/Katarin"
+    ],
+    "downloads": [
+     {
+      "name": "!li_kat_remove_skin_effects.pack",
+      "url": "https://www.loverslab.com/files/file/23966-lazys-corrupted-katarin-stages-reskins/?do=download",
+      "description": "Optional: removes Katarin's skin effects (from stage 3 on); load above the Katarin reskins",
+      "optional": true,
+      "note": "21.33 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "!li_kat_remove_skin_effects.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Optional skin-effect removal; above the Katarin reskins"
+    }
+   ]
+  },
+  {
+   "id": "ll-24004",
+   "sources": {
+    "loverslab": {
+     "fileId": "24004",
+     "url": "https://www.loverslab.com/files/file/24004-passings-corrupted-valkia/",
+     "category": "mods",
+     "version": "0.81",
+     "updated": "2024-11-16T13:44:50Z"
+    },
+    "discord": [
+     {
+      "channel": "Lazy's Discord (Invite https://discord.gg/W4qkrNwUMk)",
+      "note": "Feedback and questions"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "link.txt",
+      "url": "https://www.loverslab.com/files/file/24004-passings-corrupted-valkia/?do=download",
+      "description": "Text file with the download link; the mod itself is hosted off LoversLab (MEGA per Discord)",
+      "note": "73 B"
+     },
+     {
+      "name": "[Public] Lua Cheat Sheet for Valkia.docx",
+      "url": "https://www.loverslab.com/files/file/24004-passings-corrupted-valkia/?do=download",
+      "description": "Lua cheat sheet for the Valkia events; documentation",
+      "optional": true,
+      "note": "16.66 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "Corrupted_Valkia_Compiled.pack",
+     "from": "download",
+     "note": "Name from Readman's tested mod lists (data folder)"
+    }
+   ]
+  },
+  {
+   "id": "ll-24568",
+   "sources": {
+    "loverslab": {
+     "fileId": "24568",
+     "url": "https://www.loverslab.com/files/file/24568-warrior-of-slaanesh-reskin/",
+     "category": "mods",
+     "version": "2.0",
+     "updated": "2022-12-12T14:39:37Z"
+    },
+    "discord": [
+     {
+      "channel": "LazyIcarus hub Discord",
+      "messageUrl": "https://discord.gg/lazyicarus",
+      "note": "Author 'DOVAKIN' can be contacted there"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "1568747233_WarriorofSlaanesh.pack",
+      "url": "https://www.loverslab.com/files/file/24568-warrior-of-slaanesh-reskin/?do=download",
+      "description": "The reskin pack",
+      "note": "253.78 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "1568747233_WarriorofSlaanesh.pack",
+     "from": "download"
+    }
+   ]
+  },
+  {
+   "id": "ll-24599",
+   "sources": {
+    "loverslab": {
+     "fileId": "24599",
+     "url": "https://www.loverslab.com/files/file/24599-wood-elves-female-hot-and-skimpified/",
+     "category": "mods",
+     "version": "1.0.6",
+     "updated": "2022-12-04T04:19:04Z"
+    },
+    "downloads": [
+     {
+      "name": "WE_eternalguardfem1-6.7z",
+      "url": "https://www.loverslab.com/files/file/24599-wood-elves-female-hot-and-skimpified/?do=download",
+      "description": "Newest file (1-6, matching page version 1.0.6)",
+      "exclusiveGroup": "we-version",
+      "note": "50.41 MB"
+     },
+     {
+      "name": "WE_eternalguardfem1-5.rar",
+      "url": "https://www.loverslab.com/files/file/24599-wood-elves-female-hot-and-skimpified/?do=download",
+      "description": "Older version (1-5 by the file name)",
+      "exclusiveGroup": "we-version",
+      "note": "50.72 MB"
+     },
+     {
+      "name": "WE_eternalguardfem1-4.rar",
+      "url": "https://www.loverslab.com/files/file/24599-wood-elves-female-hot-and-skimpified/?do=download",
+      "description": "Older version (1-4 by the file name)",
+      "exclusiveGroup": "we-version",
+      "note": "33.79 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-24600",
+   "sources": {
+    "loverslab": {
+     "fileId": "24600",
+     "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/",
+     "category": "mods",
+     "version": "1.5",
+     "updated": "2022-11-25T08:13:05Z"
+    },
+    "downloads": [
+     {
+      "name": "jhc_north_pro_demons_v1.5.pack",
+      "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/?do=download",
+      "description": "Current version 1.5 (adds the Tzeentch units and techs)",
+      "exclusiveGroup": "jhc-version",
+      "note": "31.94 kB"
+     },
+     {
+      "name": "jhc_north_pro_demons_v1.4.1.pack",
+      "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/?do=download",
+      "description": "Older version 1.4.1",
+      "exclusiveGroup": "jhc-version",
+      "note": "16.52 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "jhc_north_pro_demons_v1.5.pack",
+     "from": "download",
+     "exclusiveGroup": "jhc-version",
+     "note": "Current version"
+    },
+    {
+     "file": "jhc_north_pro_demons_v1.4.1.pack",
+     "from": "download",
+     "exclusiveGroup": "jhc-version",
+     "note": "Older version; do not use both"
+    }
+   ]
+  },
+  {
+   "id": "ll-24843",
+   "sources": {
+    "loverslab": {
+     "fileId": "24843",
+     "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/",
+     "category": "translations",
+     "version": "1.11",
+     "updated": "2023-09-18T05:33:10Z"
+    },
+    "downloads": [
+     {
+      "name": "LazyIcarus French Translations - Main - v1_11.7z",
+      "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/?do=download",
+      "description": "Main translation (Lazy's mods, Corrupted Compendium, Azazel's Realm, landmarks, Soil, Handmaiden and others)",
+      "note": "1.34 MB"
+     },
+     {
+      "name": "LazyIcarus French Translations - Beastmen - v1_11.7z",
+      "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/?do=download",
+      "description": "Community Beastmen (Savage Beastmen) and Candles' Beastmen Events & Ancillaries",
+      "optional": true,
+      "note": "373.85 kB"
+     }
+    ],
+    "discord": [
+     {
+      "channel": "Translation channel (Lazy/Lewdhammer server)",
+      "messageUrl": "https://discord.com/channels/965342581745668136/1454878484852641852",
+      "note": "Further translations can be submitted here"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-24914",
+   "sources": {
+    "loverslab": {
+     "fileId": "24914",
+     "url": "https://www.loverslab.com/files/file/24914-female-unit-cards/",
+     "version": "1.4.0",
+     "updated": "2023-02-23T21:18:39Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "@female_unit_cards_1_5.7z",
+      "url": "https://www.loverslab.com/files/file/24914-female-unit-cards/?do=download",
+      "description": "Main (SFW) unit cards, version 1.5",
+      "note": "19.13 MB"
+     },
+     {
+      "name": "@female_unit_cards_nsfw_1_5.7z",
+      "url": "https://www.loverslab.com/files/file/24914-female-unit-cards/?do=download",
+      "description": "NSFW unit cards; combinable with the main pack, load above it",
+      "exclusiveGroup": "fuc-nsfw",
+      "optional": true,
+      "note": "7.14 MB"
+     },
+     {
+      "name": "@female_unit_cards_nsfw_slaanesh.7z",
+      "url": "https://www.loverslab.com/files/file/24914-female-unit-cards/?do=download",
+      "description": "Optional NSFW pack for Slaanesh units only (changelog); by its name an alternative to the full NSFW pack",
+      "exclusiveGroup": "fuc-nsfw",
+      "optional": true,
+      "note": "1.37 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-25304",
+   "sources": {
+    "loverslab": {
+     "fileId": "25304",
+     "url": "https://www.loverslab.com/files/file/25304-karla-franz-sexy-empress/",
+     "version": "1.0.2",
+     "updated": "2024-04-07T22:48:00Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "WH3_KarlaBsuit_.rar",
+      "url": "https://www.loverslab.com/files/file/25304-karla-franz-sexy-empress/?do=download",
+      "description": "Bunny suit version (main look)",
+      "exclusiveGroup": "karla-body",
+      "note": "23.86 MB"
+     },
+     {
+      "name": "WH3_KarlaBsuitFullPlate.rar",
+      "url": "https://www.loverslab.com/files/file/25304-karla-franz-sexy-empress/?do=download",
+      "description": "Fully armoured version (from the changelog)",
+      "exclusiveGroup": "karla-body",
+      "note": "47.15 MB"
+     },
+     {
+      "name": "WH3_Karla_textandvoiceFinal.rar",
+      "url": "https://www.loverslab.com/files/file/25304-karla-franz-sexy-empress/?do=download",
+      "description": "Text and female voice pack; works with both versions",
+      "optional": true,
+      "note": "4.36 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-26391",
+   "sources": {
+    "loverslab": {
+     "fileId": "26391",
+     "url": "https://www.loverslab.com/files/file/26391-lynns-horny-norscans/",
+     "category": "mods",
+     "version": "Wolf, Fimir, and Trolls",
+     "updated": "2024-03-28T05:43:54Z"
+    },
+    "downloads": [
+     {
+      "name": "@Lynn's_Horny_Nords.7z",
+      "url": "https://www.loverslab.com/files/file/26391-lynns-horny-norscans/?do=download",
+      "description": "Normal version",
+      "exclusiveGroup": "lynn-nords",
+      "note": "44.03 MB"
+     },
+     {
+      "name": "376244368_@Lynns_Horny_Nords_Xtra_Big.7z",
+      "url": "https://www.loverslab.com/files/file/26391-lynns-horny-norscans/?do=download",
+      "description": "'Xtra Big' version; not explained on the page, presumably an alternative to the normal one",
+      "exclusiveGroup": "lynn-nords",
+      "note": "197.89 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-27230",
+   "sources": {
+    "loverslab": {
+     "fileId": "27230",
+     "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/",
+     "category": "mods",
+     "version": "2.2",
+     "updated": "2025-06-19T14:46:54Z"
+    },
+    "steam": [
+     {
+      "id": "3503458514",
+      "unlisted": true,
+      "role": "main (recommended Steam version)"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "@@All_Loi_Variant_selector.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "All seven variants in one pack, chosen in game with Variant Selector; large",
+      "exclusiveGroup": "loi",
+      "note": "143.59 MB"
+     },
+     {
+      "name": "@@ A Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant A (assets from Slaanesh Corrupted Cathay Roster); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "95.15 MB"
+     },
+     {
+      "name": "@@ B Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant B (assets from Slaanesh Corrupted Cathay Roster); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "95.44 MB"
+     },
+     {
+      "name": "@@ C Loi variant_Stage4.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant C (stage 4 look; assets from Slaanesh Corrupted Cathay Roster); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "95.2 MB"
+     },
+     {
+      "name": "@@ D Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant D (assets from Blushing Moon Unit Replacer); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "36.96 MB"
+     },
+     {
+      "name": "@@ E Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant E (assets from Blushing Moon Unit Replacer); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "37.09 MB"
+     },
+     {
+      "name": "@@ F Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant F (assets from Blushing Moon Unit Replacer); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "37.23 MB"
+     },
+     {
+      "name": "@@ DD Loi variant.pack",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/?do=download",
+      "description": "Variant DD (assets from Blushing Moon Unit Replacer); one individual pack instead of the all-in-one",
+      "exclusiveGroup": "loi",
+      "note": "37.5 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@@All_Loi_Variant_selector.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "All-in-one for Variant Selector; replaces the individual packs"
+    },
+    {
+     "file": "@@ A Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant A (assets from Slaanesh Corrupted Cathay Roster)"
+    },
+    {
+     "file": "@@ B Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant B (assets from Slaanesh Corrupted Cathay Roster)"
+    },
+    {
+     "file": "@@ C Loi variant_Stage4.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant C (stage 4 look; assets from Slaanesh Corrupted Cathay Roster)"
+    },
+    {
+     "file": "@@ D Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant D (assets from Blushing Moon Unit Replacer)"
+    },
+    {
+     "file": "@@ E Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant E (assets from Blushing Moon Unit Replacer)"
+    },
+    {
+     "file": "@@ F Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant F (assets from Blushing Moon Unit Replacer)"
+    },
+    {
+     "file": "@@ DD Loi variant.pack",
+     "from": "download",
+     "exclusiveGroup": "loi",
+     "note": "Variant DD (assets from Blushing Moon Unit Replacer)"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "requires",
+     "target": {
+      "mod": "ll-23876"
+     },
+     "note": "PassingByPosts' Corrupted Compendium and its prerequisites",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/"
+     }
+    },
+    {
+     "kind": "requires",
+     "target": {
+      "external": "ext-variant-selector"
+     },
+     "condition": "only with @@All_Loi_Variant_selector.pack",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/"
+     },
+     "note": "The all-in-one pack requires Variant Selector"
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "external": "ext-rotate-lords"
+     },
+     "note": "Page recommends 'Rotate All Lords and Heroes'",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/27230-ensign-loi-reskin-a-b-c-d-e-f-dd-versions/"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ll-27676",
+   "sources": {
+    "loverslab": {
+     "fileId": "27676",
+     "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/",
+     "version": "1.0.4",
+     "updated": "2025-01-01T19:40:38Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "alivia_alarielle_stage1.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 1 look (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "186.23 MB"
+     },
+     {
+      "name": "alivia_alarielle_stage2.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 2 look (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "186.39 MB"
+     },
+     {
+      "name": "alivia_alarielle_stage3_isha.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 3 look, Isha version (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "189.48 MB"
+     },
+     {
+      "name": "alivia_alarielle_stage3_sla.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 3 look, Slaanesh version (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "225.65 MB"
+     },
+     {
+      "name": "alivia_alarielle_stage4_isha.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 4 look, Isha version (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "188.78 MB"
+     },
+     {
+      "name": "alivia_alarielle_stage4_sla.pack",
+      "url": "https://www.loverslab.com/files/file/27676-alarielle-corruption-mod/?do=download",
+      "description": "Stage 4 look, Slaanesh version (by the file name); use only one file",
+      "exclusiveGroup": "alivia-skin",
+      "note": "225.65 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "alivia_alarielle_stage1.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 1 look (by the file name)"
+    },
+    {
+     "file": "alivia_alarielle_stage2.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 2 look (by the file name)"
+    },
+    {
+     "file": "alivia_alarielle_stage3_isha.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 3 look, Isha version (by the file name)"
+    },
+    {
+     "file": "alivia_alarielle_stage3_sla.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 3 look, Slaanesh version (by the file name)"
+    },
+    {
+     "file": "alivia_alarielle_stage4_isha.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 4 look, Isha version (by the file name)"
+    },
+    {
+     "file": "alivia_alarielle_stage4_sla.pack",
+     "from": "download",
+     "exclusiveGroup": "alivia-skin",
+     "note": "Stage 4 look, Slaanesh version (by the file name)"
+    }
+   ]
+  },
+  {
+   "id": "ll-27930",
+   "sources": {
+    "loverslab": {
+     "fileId": "27930",
+     "url": "https://www.loverslab.com/files/file/27930-azazels-realm-miao-and-azazel-campaigns/",
+     "version": "3.8.1",
+     "updated": "2026-04-16T12:56:54Z",
+     "category": "mods"
+    },
+    "steam": [
+     {
+      "id": "3643871692",
+      "unlisted": true,
+      "role": "main"
+     },
+     {
+      "id": "3566908399",
+      "unlisted": true,
+      "role": "assets (Kerberos Mod Assets)"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "@@Compendium_Play_as_Azazel_Overwrite.zip",
+      "url": "https://www.loverslab.com/files/file/27930-azazels-realm-miao-and-azazel-campaigns/?do=download",
+      "description": "Contains @@Compendium_Play_as_Azazel_Overwrite.pack: Corrupted Compendium integration when playing anyone but Miao; disable it for Miao",
+      "optional": true,
+      "note": "489.88 kB"
+     },
+     {
+      "name": "Aazael Lua Cheatsheet and Flow Charts.odt",
+      "url": "https://www.loverslab.com/files/file/27930-azazels-realm-miao-and-azazel-campaigns/?do=download",
+      "description": "Lua cheat sheet and flow charts for both campaigns; documentation (spoilers)",
+      "optional": true,
+      "note": "1.54 MB"
+     },
+     {
+      "name": "한국어 and 中文 translation of mod progression flow charts.docx",
+      "url": "https://www.loverslab.com/files/file/27930-azazels-realm-miao-and-azazel-campaigns/?do=download",
+      "description": "Korean and Chinese version of the flow charts; documentation",
+      "optional": true,
+      "note": "591.25 kB"
+     }
+    ],
+    "discord": [
+     {
+      "channel": "azazel-realm (submod channel in Lazy's Discord)",
+      "note": "Bug reports"
+     },
+     {
+      "channel": "Channels & Roles: Kerberos's Projects",
+      "note": "Subscribe to the role for update pings"
+     }
+    ],
+    "wiki": [
+     "https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png"
+    ]
+   }
+  },
+  {
+   "id": "ll-28211",
+   "sources": {
+    "loverslab": {
+     "fileId": "28211",
+     "url": "https://www.loverslab.com/files/file/28211-rs0371s-slaaneshs-image-and-text/",
+     "version": null,
+     "updated": "2023-07-26T16:31:30Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "Slaanesh's image and textV1.8-33-1-8-1689150361.zip",
+      "url": "https://www.loverslab.com/files/file/28211-rs0371s-slaaneshs-image-and-text/?do=download",
+      "description": "Full version: images and texts",
+      "exclusiveGroup": "rs0371",
+      "note": "145.19 MB"
+     },
+     {
+      "name": "Slaanesh's imageV1.8-33-1-8-1689150834.zip",
+      "url": "https://www.loverslab.com/files/file/28211-rs0371s-slaaneshs-image-and-text/?do=download",
+      "description": "Optional version without the text changes (the page offers it because reused CA texts can go missing)",
+      "exclusiveGroup": "rs0371",
+      "note": "145.6 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-28994",
+   "sources": {
+    "loverslab": {
+     "fileId": "28994",
+     "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/",
+     "updated": "2023-09-07T17:51:20Z",
+     "category": "mods"
+    },
+    "discord": [
+     {
+      "channel": "Lazy's Discord (channel not named)",
+      "note": "Report bugs in lazyicarus' Discord, per the author."
+     }
+    ],
+    "downloads": [
+     {
+      "name": "Soboro_Miao.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Base pack (head model); first in the order",
+      "note": "23.95 MB"
+     },
+     {
+      "name": "li_miaoying_scale_soboro_st1.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 1 pack; replaces Lazy's matching stage pack",
+      "note": "81.86 MB"
+     },
+     {
+      "name": "li_miaoying_fishnet_soboro_st2.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 2 pack; replaces Lazy's matching stage pack",
+      "note": "91.12 MB"
+     },
+     {
+      "name": "li_miaoying_ballet_soboro_st3.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 3 pack; replaces Lazy's matching stage pack",
+      "note": "79.1 MB"
+     },
+     {
+      "name": "li_miaoying_bare_soboro_st4.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 4 pack; replaces Lazy's matching stage pack",
+      "note": "76.32 MB"
+     },
+     {
+      "name": "li_miaoying_corset_soboro_st5.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 5 pack; replaces Lazy's matching stage pack",
+      "note": "62.93 MB"
+     },
+     {
+      "name": "li_miaoying_plug_soboro_st6.pack",
+      "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/?do=download",
+      "description": "Stage 6 pack; replaces Lazy's matching stage pack",
+      "note": "86.68 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-32374",
+   "sources": {
+    "loverslab": {
+     "fileId": "32374",
+     "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/",
+     "version": "3.0",
+     "updated": "2026-08-04T14:42:01Z",
+     "category": "mods"
+    },
+    "discord": [
+     {
+      "channel": "Lazy's Discord, role 'Soil's projects' (under 'Channels & Roles')",
+      "messageUrl": "https://discord.com/invite/lazyicarus",
+      "note": "Subscribe to the role to receive update pings."
+     }
+    ],
+    "downloads": [
+     {
+      "name": "soil_corrupted_units_asset.7z",
+      "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/?do=download",
+      "description": "Asset pack (soil_corrupted_units_asset.pack); always required",
+      "note": "254.14 MB"
+     },
+     {
+      "name": "@Soil_Miaoying_Corrupted_Units.pack",
+      "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/?do=download",
+      "description": "Unit mod for Miao Ying; requires Lazy's Miao mods",
+      "exclusiveGroup": "soil-faction",
+      "note": "13.39 MB"
+     },
+     {
+      "name": "@Soil_Azazel_Corrupted_Units.pack",
+      "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/?do=download",
+      "description": "Unit mod for Azazel; requires Azazel's Realm and must load above it",
+      "exclusiveGroup": "soil-faction",
+      "note": "956.99 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "soil_corrupted_units_asset.pack",
+     "from": "download",
+     "note": "Asset pack inside soil_corrupted_units_asset.7z (name from Readman's mod lists)"
+    },
+    {
+     "file": "@Soil_Miaoying_Corrupted_Units.pack",
+     "from": "download",
+     "exclusiveGroup": "soil-faction",
+     "note": "Only when playing Miao Ying"
+    },
+    {
+     "file": "@Soil_Azazel_Corrupted_Units.pack",
+     "from": "download",
+     "exclusiveGroup": "soil-faction",
+     "note": "Only when playing Azazel; above Azazel's Realm"
+    }
+   ]
+  },
+  {
+   "id": "ll-33808",
+   "sources": {
+    "loverslab": {
+     "fileId": "33808",
+     "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/",
+     "version": "1.1.4",
+     "updated": "2025-04-11T12:38:12Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "tdw_cth_seduce.pack",
+      "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/?do=download",
+      "description": "Miao Ying version; needs Lazy's Miao progression and Corrupted Compendium",
+      "optional": true,
+      "note": "46.46 kB"
+     },
+     {
+      "name": "tdw_kat_seduce.pack",
+      "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/?do=download",
+      "description": "Katarin version; needs Lazy's Corrupted Katarin",
+      "optional": true,
+      "note": "42.48 kB"
+     },
+     {
+      "name": "tdw_mor_seduce.pack",
+      "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/?do=download",
+      "description": "Morathi version; needs Lazy's Morathi Ascension",
+      "optional": true,
+      "note": "47.27 kB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-34242",
+   "sources": {
+    "loverslab": {
+     "fileId": "34242",
+     "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/",
+     "category": "mods",
+     "version": "1.0.14",
+     "updated": "2025-02-16T15:54:05Z"
+    },
+    "discord": [
+     {
+      "channel": "Support channel of author habus",
+      "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "tdw_confeds_gen_confed_all_12.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "All 12 confederation scripts merged into one pack; never together with the individual packs (crash)",
+      "optional": true,
+      "note": "9.97 MB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_morathi.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Morathi (gets the stage 4 model); not together with the all-in-one pack",
+      "optional": true,
+      "note": "2.4 MB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_valkia.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Valkia; not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.67 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_yinyin.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Yin-Yin; not together with the all-in-one pack",
+      "optional": true,
+      "note": "2.16 MB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_fay.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for the Fay Enchantress (keeps her corruption mechanic); not together with the all-in-one pack",
+      "optional": true,
+      "note": "3.47 MB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_kat.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Katarin; not together with the all-in-one pack",
+      "optional": true,
+      "note": "1.89 MB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_sigi.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Sigvald (by the file name 'sigi'); not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.56 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_twins.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for the Sisters of Twilight (by the file name 'twins'); not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.85 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_azazel.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Azazel; not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.67 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_nkari.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for N'Kari; not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.63 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_miao.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Miao Ying; not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.67 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_alarielle.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Alarielle; not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.87 kB"
+     },
+     {
+      "name": "tdw_confeds_gen_confed_els.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Confederation event for Elspeth (by the file name 'els'); not together with the all-in-one pack",
+      "optional": true,
+      "note": "6.56 kB"
+     },
+     {
+      "name": "tdw_khalida_switch_skin.pack",
+      "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/?do=download",
+      "description": "Bonus mod: Khalida switches between her vanilla skin and a Zeta reskin; needs a Zeta Khalida reskin",
+      "optional": true,
+      "note": "10.05 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "tdw_confeds_gen_confed_all_12.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Merged version of all 12 confederation packs; do NOT combine with the individual packs (crash)"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_morathi.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Morathi); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_valkia.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Valkia); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_yinyin.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Yin-Yin); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_fay.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (the Fay Enchantress); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_kat.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Katarin); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_sigi.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Sigvald); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_twins.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (the Sisters of Twilight); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_azazel.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Azazel); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_nkari.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (N'Kari); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_miao.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Miao Ying); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_alarielle.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Alarielle); not with the all-in-one"
+    },
+    {
+     "file": "tdw_confeds_gen_confed_els.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Individual confederation pack (Elspeth); not with the all-in-one"
+    },
+    {
+     "file": "tdw_khalida_switch_skin.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Bonus: Khalida gets her vanilla skin after 5 turns without a battle"
+    }
+   ]
+  },
+  {
+   "id": "ll-34542",
+   "sources": {
+    "loverslab": {
+     "fileId": "34542",
+     "url": "https://www.loverslab.com/files/file/34542-slaanesh-expanded-vassal-dilemmas/",
+     "version": "1.2.0.",
+     "updated": "2024-10-20T23:23:12Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "@n_SlaaneshVassals.pack",
+      "url": "https://www.loverslab.com/files/file/34542-slaanesh-expanded-vassal-dilemmas/?do=download",
+      "description": "Version for Slaanesh factions (N'Kari, Azazel, Sigvald)",
+      "optional": true,
+      "note": "46.9 MB"
+     },
+     {
+      "name": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+      "url": "https://www.loverslab.com/files/file/34542-slaanesh-expanded-vassal-dilemmas/?do=download",
+      "description": "Version for all other factions; can be combined with the Slaanesh version",
+      "optional": true,
+      "note": "46.75 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@n_SlaaneshVassals.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Slaanesh factions version"
+    },
+    {
+     "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Non-Slaanesh factions version (used in Readman's Alarielle/Morathi lists)"
+    }
+   ]
+  },
+  {
+   "id": "ll-34640",
+   "sources": {
+    "loverslab": {
+     "fileId": "34640",
+     "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/",
+     "category": "mods",
+     "version": "1.0.2",
+     "updated": "2024-07-03T15:44:10Z"
+    },
+    "downloads": [
+     {
+      "name": "mortal_daughter_seu_soil_reskin.pack",
+      "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/?do=download",
+      "description": "Base version",
+      "exclusiveGroup": "seu-daughter",
+      "note": "15.86 MB"
+     },
+     {
+      "name": "mortal_daughter_seu_soil_reskin_moretattoo.pack",
+      "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/?do=download",
+      "description": "Version with more tattoos",
+      "exclusiveGroup": "seu-daughter",
+      "note": "21.2 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "mortal_daughter_seu_soil_reskin.pack",
+     "from": "download",
+     "exclusiveGroup": "seu-daughter",
+     "note": "Base version"
+    },
+    {
+     "file": "mortal_daughter_seu_soil_reskin_moretattoo.pack",
+     "from": "download",
+     "exclusiveGroup": "seu-daughter",
+     "note": "More tattoos"
+    }
+   ]
+  },
+  {
+   "id": "ll-36002",
+   "sources": {
+    "loverslab": {
+     "fileId": "36002",
+     "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/",
+     "category": "mods",
+     "version": "1.5.1",
+     "updated": "2025-12-06T16:12:51Z"
+    },
+    "discord": [
+     {
+      "channel": "habu's support thread",
+      "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303"
+     }
+    ],
+    "downloads": [
+     {
+      "name": "tdw_corrupted_Buildings.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Base pack; requires @Soil_Miaoying_Corrupted_Units.pack; only one of the two",
+      "exclusiveGroup": "tdw-base",
+      "note": "3.08 MB"
+     },
+     {
+      "name": "tdw_corrupted_Buildings_alt.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Same as the base, but with vanilla units instead of Soil's (no Soil mod needed); only one of the two",
+      "exclusiveGroup": "tdw-base",
+      "note": "3.08 MB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_endos_kislev.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds Endo's Kislev reskinned units for corrupted Miao and Katarin",
+      "optional": true,
+      "note": "171.07 MB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_wef.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds Forest of Debauchery units for corrupted Miao",
+      "optional": true,
+      "note": "400.83 MB"
+     },
+     {
+      "name": "!tdw_corrupted_buildings_add_fem_berserker.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds Taraanis' female Kislev berserkers for Miao; needs Nexus mod 179",
+      "optional": true,
+      "note": "6.58 kB"
+     },
+     {
+      "name": "!tdw_corrupted_buildings_add_Amazon_Warrior.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds Taraanis' Amazon Warrior for Miao; needs Nexus mod 185",
+      "optional": true,
+      "note": "5.55 kB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_slaangor.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds a custom hero and units based on Slaanesh Beast Expand (Steam 3321253105)",
+      "optional": true,
+      "note": "102.13 MB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_slaanesh_zealots.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds JFred's Zealots of Slaanesh (Steam 2858576975) for Miao",
+      "optional": true,
+      "note": "21.8 kB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_wos.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds DOVAKIN's Warrior of Slaanesh reskin units for Miao and Katarin; only one of the two",
+      "exclusiveGroup": "tdw-wos",
+      "optional": true,
+      "note": "264.44 MB"
+     },
+     {
+      "name": "tdw_corrupted_buildings_add_wos_vanilla.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Adds vanilla Warriors of Slaanesh for Miao; only one of the two",
+      "exclusiveGroup": "tdw-wos",
+      "optional": true,
+      "note": "10.36 kB"
+     },
+     {
+      "name": "tdw_corrupted_Buildings_slaver.pack",
+      "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/?do=download",
+      "description": "Building-based slave mechanic for Miao and Katarin",
+      "optional": true,
+      "note": "491.2 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "tdw_corrupted_Buildings.pack",
+     "from": "download",
+     "exclusiveGroup": "tdw-base",
+     "note": "Base pack; requires @Soil_Miaoying_Corrupted_Units.pack"
+    },
+    {
+     "file": "tdw_corrupted_Buildings_alt.pack",
+     "from": "download",
+     "exclusiveGroup": "tdw-base",
+     "note": "Same as the base, but with vanilla units instead of Soil's (no Soil mod needed)"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_endos_kislev.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds Endo's Kislev reskinned units for corrupted Miao and Katarin"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_wef.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds Forest of Debauchery units for corrupted Miao"
+    },
+    {
+     "file": "!tdw_corrupted_buildings_add_fem_berserker.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds Taraanis' female Kislev berserkers for Miao; needs Nexus mod 179"
+    },
+    {
+     "file": "!tdw_corrupted_buildings_add_Amazon_Warrior.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds Taraanis' Amazon Warrior for Miao; needs Nexus mod 185"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_slaangor.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds a custom hero and units based on Slaanesh Beast Expand (Steam 3321253105)"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_slaanesh_zealots.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Adds JFred's Zealots of Slaanesh (Steam 2858576975) for Miao"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_wos.pack",
+     "from": "download",
+     "optional": true,
+     "exclusiveGroup": "tdw-wos",
+     "note": "Adds DOVAKIN's Warrior of Slaanesh reskin units for Miao and Katarin"
+    },
+    {
+     "file": "tdw_corrupted_buildings_add_wos_vanilla.pack",
+     "from": "download",
+     "optional": true,
+     "exclusiveGroup": "tdw-wos",
+     "note": "Adds vanilla Warriors of Slaanesh for Miao"
+    },
+    {
+     "file": "tdw_corrupted_Buildings_slaver.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Building-based slave mechanic for Miao and Katarin"
+    }
+   ]
+  },
+  {
+   "id": "ll-36630",
+   "sources": {
+    "loverslab": {
+     "fileId": "36630",
+     "url": "https://www.loverslab.com/files/file/36630-slaanesh-expanded-corruption-confederation/",
+     "category": "mods",
+     "version": "1.1.2.",
+     "updated": "2025-01-04T16:31:57Z"
+    },
+    "downloads": [
+     {
+      "name": "@n_SlaaneshVictories.pack",
+      "url": "https://www.loverslab.com/files/file/36630-slaanesh-expanded-corruption-confederation/?do=download",
+      "description": "Core mod (defeat events and corruption traits)",
+      "note": "34.62 MB"
+     },
+     {
+      "name": "@n_SlaaneshVictories_Confederations.pack",
+      "url": "https://www.loverslab.com/files/file/36630-slaanesh-expanded-corruption-confederation/?do=download",
+      "description": "Optional confederation submod; needs the core mod",
+      "optional": true,
+      "note": "1.8 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@n_SlaaneshVictories.pack",
+     "from": "download",
+     "note": "Core mod"
+    },
+    {
+     "file": "@n_SlaaneshVictories_Confederations.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Optional confederation submod (Alarielle, Temptation's Bloom advises against it)"
+    }
+   ]
+  },
+  {
+   "id": "ll-37162",
+   "sources": {
+    "loverslab": {
+     "fileId": "37162",
+     "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/",
+     "version": "0.0.1",
+     "updated": "2024-10-16T02:37:01Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "@n_SlaaneshVisuals_LL_Only.pack",
+      "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/?do=download",
+      "description": "The mod pack",
+      "note": "70.06 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@n_SlaaneshVisuals_LL_Only.pack",
+     "from": "download"
+    }
+   ]
+  },
+  {
+   "id": "ll-39307",
+   "sources": {
+    "loverslab": {
+     "fileId": "39307",
+     "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/",
+     "category": "translations",
+     "updated": "2025-01-25T07:01:36Z"
+    },
+    "downloads": [
+     {
+      "name": "EFT.pack",
+      "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/?do=download",
+      "description": "The translated mod (standalone)",
+      "note": "202.8 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "EFT.pack",
+     "from": "download",
+     "note": "Standalone English version"
+    }
+   ]
+  },
+  {
+   "id": "ll-39349",
+   "sources": {
+    "loverslab": {
+     "fileId": "39349",
+     "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/",
+     "category": "mods",
+     "updated": "2025-01-26T21:14:24Z"
+    },
+    "downloads": [
+     {
+      "name": "Corrupted_Miao_Audio_Overhaul.pack",
+      "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/?do=download",
+      "description": "Replaces some of Miao's voice lines with corrupted ones",
+      "optional": true,
+      "note": "8.58 MB"
+     },
+     {
+      "name": "Corrupted_Miao_Moans.pack",
+      "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/?do=download",
+      "description": "Replaces her battle grunts and shouts with moans",
+      "optional": true,
+      "note": "1.27 MB"
+     },
+     {
+      "name": "example lines.7z",
+      "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/?do=download",
+      "description": "Sample audio of the overhaul; not a mod",
+      "optional": true,
+      "note": "473.21 kB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "Corrupted_Miao_Audio_Overhaul.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Voice line overhaul; from Miao stage 4 on"
+    },
+    {
+     "file": "Corrupted_Miao_Moans.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Battle sounds; from Miao stage 4 on"
+    }
+   ]
+  },
+  {
+   "id": "ll-41124",
+   "sources": {
+    "loverslab": {
+     "fileId": "41124",
+     "url": "https://www.loverslab.com/files/file/41124-lewd-flags-and-loading-screens-miao-alarielle-others/",
+     "category": "mods",
+     "version": "1.0.2",
+     "updated": "2025-07-27T21:08:22Z"
+    },
+    "downloads": [
+     {
+      "name": "lewd_Miao_flag.pack",
+      "url": "https://www.loverslab.com/files/file/41124-lewd-flags-and-loading-screens-miao-alarielle-others/?do=download",
+      "description": "Corrupted banner for Miao Ying's faction",
+      "optional": true,
+      "note": "3.16 MB"
+     },
+     {
+      "name": "lewd_Alarielle_flag.pack",
+      "url": "https://www.loverslab.com/files/file/41124-lewd-flags-and-loading-screens-miao-alarielle-others/?do=download",
+      "description": "Corrupted banner for Alarielle's faction (Readman's Steam 3536009143 is an HD alternative)",
+      "optional": true,
+      "note": "2.31 MB"
+     },
+     {
+      "name": "lewd_Katarin_flag.pack",
+      "url": "https://www.loverslab.com/files/file/41124-lewd-flags-and-loading-screens-miao-alarielle-others/?do=download",
+      "description": "Banner for Katarin's faction",
+      "optional": true,
+      "note": "217.22 kB"
+     },
+     {
+      "name": "lewd_loading_screens_all_in_one.pack",
+      "url": "https://www.loverslab.com/files/file/41124-lewd-flags-and-loading-screens-miao-alarielle-others/?do=download",
+      "description": "Loading screens for the pictured factions, all in one",
+      "optional": true,
+      "note": "30.96 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "lewd_Miao_flag.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Miao banner"
+    },
+    {
+     "file": "lewd_Alarielle_flag.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Alarielle banner"
+    },
+    {
+     "file": "lewd_Katarin_flag.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Katarin banner"
+    },
+    {
+     "file": "lewd_loading_screens_all_in_one.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Loading screens"
+    }
+   ]
+  },
+  {
+   "id": "ll-42028",
+   "sources": {
+    "loverslab": {
+     "fileId": "42028",
+     "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/",
+     "version": "3.1",
+     "updated": "2026-07-24T13:37:56Z",
+     "category": "mods"
+    },
+    "steam": [
+     {
+      "id": "3644437727",
+      "unlisted": true,
+      "role": "main"
+     },
+     {
+      "id": "3566908399",
+      "unlisted": true,
+      "role": "assets"
+     }
+    ],
+    "discord": [
+     {
+      "channel": "Kerberos Discord",
+      "messageUrl": "https://discord.gg/W4qkrNwUMk",
+      "note": "Author's Discord."
+     },
+     {
+      "channel": "Lazy's Discord, role 'Kerberos's Projects' (Channels & Roles)",
+      "messageUrl": "https://discord.com/invite/lazyicarus",
+      "note": "Update pings; support channel per submod, pinned post with a submod idea list."
+     }
+    ],
+    "wiki": [
+     "https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png"
+    ],
+    "downloads": [
+     {
+      "name": "kerb_alar_PLAY_AS_DECHALA_patch.pack",
+      "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/?do=download",
+      "description": "Patch for playing the campaign as Dechala (Discord: no longer recommended, voice conflict with Alarielle stage 7)",
+      "optional": true,
+      "note": "203.37 kB"
+     },
+     {
+      "name": "kerb_alar_colorblind_patch.pack",
+      "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/?do=download",
+      "description": "Colour-blind patch, by its name; not described in the page text",
+      "optional": true,
+      "note": "1.86 MB"
+     },
+     {
+      "name": "Alarielle Lua Cheatsheet and Flow Charts.odt",
+      "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/?do=download",
+      "description": "Lua cheat sheet and flow chart; documentation (spoilers)",
+      "optional": true,
+      "note": "1.72 MB"
+     },
+     {
+      "name": "한국어 and 中文 translation of Alarielle progression flow charts.odt",
+      "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/?do=download",
+      "description": "Korean and Chinese version of the flow charts; documentation",
+      "optional": true,
+      "note": "1010.28 kB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-42262",
+   "sources": {
+    "loverslab": {
+     "fileId": "42262",
+     "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/",
+     "category": "translations",
+     "version": "1.9.2.(0.2.)",
+     "updated": "2025-06-03T12:58:56Z"
+    },
+    "downloads": [
+     {
+      "name": "!@li_miaoying_progression_stages_RU1.pack",
+      "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/?do=download",
+      "description": "Russian text for Lazy's Miao Ying progression",
+      "note": "171.15 kB"
+     },
+     {
+      "name": "!@@MiaoYingCorrupted_Compendium_RU1.pack",
+      "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/?do=download",
+      "description": "Russian text for Corrupted Compendium (early version per changelog)",
+      "optional": true,
+      "note": "1.47 MB"
+     },
+     {
+      "name": "!@MiaoYing_Azazel_content_RU1.pack",
+      "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/?do=download",
+      "description": "Russian text for Azazel's Realm (early version per changelog)",
+      "optional": true,
+      "note": "1.05 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "!@li_miaoying_progression_stages_RU1.pack",
+     "from": "download",
+     "note": "Miao progression translation"
+    },
+    {
+     "file": "!@@MiaoYingCorrupted_Compendium_RU1.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Compendium translation"
+    },
+    {
+     "file": "!@MiaoYing_Azazel_content_RU1.pack",
+     "from": "download",
+     "optional": true,
+     "note": "Azazel's Realm translation"
+    }
+   ]
+  },
+  {
+   "id": "ll-43659",
+   "sources": {
+    "loverslab": {
+     "fileId": "43659",
+     "url": "https://www.loverslab.com/files/file/43659-community-beastmen-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D1%81%D1%82%D0%B8%D0%BC-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F/",
+     "category": "mods",
+     "updated": "2025-08-11T15:37:55Z"
+    },
+    "downloads": [
+     {
+      "name": "new_community_beastmen_ru.pack",
+      "url": "https://www.loverslab.com/files/file/43659-community-beastmen-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D1%81%D1%82%D0%B8%D0%BC-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F/?do=download",
+      "description": "The translation pack",
+      "note": "1.06 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "new_community_beastmen_ru.pack",
+     "from": "download"
+    }
+   ]
+  },
+  {
+   "id": "ll-46561",
+   "sources": {
+    "loverslab": {
+     "fileId": "46561",
+     "url": "https://www.loverslab.com/files/file/46561-goblin-horde-redux-at-the-right-place-this-time/",
+     "category": "mods",
+     "version": "1.2.3",
+     "updated": "2026-10-04T20:07:12Z"
+    },
+    "steam": [
+     {
+      "id": "3629196257",
+      "unlisted": true
+     }
+    ],
+    "downloads": [
+     {
+      "name": "Goblin_horde_redux1.2.3.rar",
+      "url": "https://www.loverslab.com/files/file/46561-goblin-horde-redux-at-the-right-place-this-time/?do=download",
+      "description": "LoversLab copy of version 1.2.3; alternative to the Steam item 3629196257 (use one of them)",
+      "optional": true,
+      "note": "404.33 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-47932",
+   "sources": {
+    "loverslab": {
+     "fileId": "47932",
+     "url": "https://www.loverslab.com/files/file/47932-lizardmen-reskin-female-anthro-scalies/",
+     "version": "1.2.2",
+     "updated": "2026-10-05T12:14:51Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "@Lizardwomen_Anthro_v1.2.2.zip",
+      "url": "https://www.loverslab.com/files/file/47932-lizardmen-reskin-female-anthro-scalies/?do=download",
+      "description": "Full version (lords and units)",
+      "exclusiveGroup": "lizard",
+      "note": "211.35 MB"
+     },
+     {
+      "name": "@Lizardwomen_Anthro_v1.2.2 (Lords and heroes).zip",
+      "url": "https://www.loverslab.com/files/file/47932-lizardmen-reskin-female-anthro-scalies/?do=download",
+      "description": "Version for lords and heroes only, by the file name",
+      "exclusiveGroup": "lizard",
+      "note": "119.14 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-49648",
+   "sources": {
+    "loverslab": {
+     "fileId": "49648",
+     "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/",
+     "version": "1.9.0 LotET",
+     "updated": "2026-10-13T07:54:54Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "(X)_Cathay_ALL_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "All-in-one of all Cathay files listed below (without @LK_dark). Use it instead of the individual files.",
+      "note": "277.67 MB"
+     },
+     {
+      "name": "(X)_Cathay_Mariko_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Mariko (Steam 3210832217): nude model + strong rebalancing into an assassin; bug fixes, new unit cards. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "6.97 MB"
+     },
+     {
+      "name": "(X)_Cathay_Enhi_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Enhi (Steam 3317294488): nude model + rebalancing into a glass-cannon mage. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "15.05 MB"
+     },
+     {
+      "name": "(X)_Cathay_Xiao_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Xiao (Steam 3271568934): nude model, no balancing. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "89.67 MB"
+     },
+     {
+      "name": "(X)_Cathay_Liu_nao_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Liu (Steam 3639948043): nude model. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "65.7 MB"
+     },
+     {
+      "name": "(X)_Cathay_Taoyan_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Taoyan: not a submod, standalone nude model (Steam mod 3809622795 also adopted the model). Not needed with the all-in-one.",
+      "optional": true,
+      "note": "3.97 MB"
+     },
+     {
+      "name": "(X)_Cathay_Divin_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Hakutaku Diviners (Steam 3270368516): all 3 variants. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "148.86 MB"
+     },
+     {
+      "name": "(X)_Cathay_Shards_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Shards of Dai Ji (Steam 3277998418): all 3 variants. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "11.35 MB"
+     },
+     {
+      "name": "(X)_Cathay_Hollow_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Hollows (Steam 3371888004): less clothing, no nude detail. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "4.64 MB"
+     },
+     {
+      "name": "(X)_Cathay_Build_Hero.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Combines the buildings of the 3 recruitable hero mods (1 building slot). Not needed with the all-in-one.",
+      "optional": true,
+      "note": "327.21 kB"
+     },
+     {
+      "name": "(X)_Cathay_Alt_Hero_XXX.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Combines Divin, Shards, Hollow and buildings in one mod. Not needed with the all-in-one.",
+      "optional": true,
+      "note": "134.15 MB"
+     },
+     {
+      "name": "(X)_@LK_dark_.7z",
+      "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+      "description": "Bonus (not in the all-in-one): Aelesha Sigrika (Steam 3700484893).",
+      "optional": true,
+      "note": "51.3 MB"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ll-50065",
+   "sources": {
+    "loverslab": {
+     "fileId": "50065",
+     "url": "https://www.loverslab.com/files/file/50065-alarielle-temptations-bloom-steam-translate-spanish/",
+     "updated": "2026-07-16T01:25:55Z",
+     "category": "mods"
+    },
+    "downloads": [
+     {
+      "name": "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack",
+      "url": "https://www.loverslab.com/files/file/50065-alarielle-temptations-bloom-steam-translate-spanish/?do=download",
+      "description": "The translation pack",
+      "note": "2.34 MB"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack",
+     "from": "download"
+    }
+   ]
+  }
+ ],
+ "external": [
+  {
+   "id": "ext-celestial-dragon-concubines",
+   "name": "Celestial Dragon Concubines",
+   "note": "Nexus Mods mod (ID 17 per the Discord notes); abandoned since 2022-09, a working update was mentioned on Discord."
+  },
+  {
+   "id": "ext-sons-of-ursun-dovakin",
+   "name": "Sons of Ursun (DOVAKIN)",
+   "steamId": "2953846693",
+   "note": "Kislev unit reskin by DOVAKIN, Steam Workshop 2953846693 (created 2023-03-28)."
+  }
+ ],
+ "notes": []
+}

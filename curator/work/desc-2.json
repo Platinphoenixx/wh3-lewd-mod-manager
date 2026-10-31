@@ -1,0 +1,400 @@
+{
+  "ll-27930": {
+    "description": "**Azazel's Realm** is a campaign expansion built on Lazy's corruption framework, with two quest chains: As **Azazel** (Slaanesh), you steer the fall of **Miao Ying** (Grand Cathay) and **Tzarina Katarin** (Kislev) into corruption, and in the end you decide whether they are confederated into your harem or remain autonomous as allies or vassals. As **Miao Ying** you play the other side: you can resist Azazel's seduction or succumb to it, and afterwards help convert Katarin as well.\n\nThe mod is fully integrated into Lazy's Miao and Katarin progression. According to the page, it also includes around 110 artworks (plus a video) by SOBORO, branching quest chains with multiple routes, three quest battles with voice acting and camera events, portals in Immortal Empires (opened by a corruption event), a quest to revive N'Kari's faction, and bonus scenes featuring Sigvald, Greasus and Yuan Bo, among others. According to the author, Azazel already has an easy campaign and will get even more tools; to compensate, traps have been built in that make the run more challenging.\n\n**How to play:** As Miao, the content begins one turn after corruption level 2 of Lazy's Miao progression. As Azazel, you receive two quests on turn 2 (one per target). Archaon, Be'lakor, Sigvald and the Daemon Prince (Daemons of Chaos) confederate Azazel on turn 1 and play the same quests (full feature parity except for the Daemon Prince, who is not recommended). N'Kari and Morathi are now only supported together with *Alarielle, Temptation's Bloom*. There is no content for playing as Katarin - in that case, disable the mod (and Valkia).\n\n**Important:** The mod changes the starting map significantly (among other things, Valkia is removed and brought back in a controlled way for the endgame crisis moment, and several factions are weakened, strengthened or confederated) so that Azazel, Miao and Katarin are not wiped out prematurely and a strong opponent is ready at the end. It only works in Immortal Empires and IE Expanded, ideally in a new campaign. The Steam items are unlisted and only linked from the LL page. The author insists on PJ's Console with the Context Viewer enabled; without this diagnostic information there is no support. For Miao, according to the author, either 'Slaanesh Assaults The Great Bastion' or 'Miao Ying vs Slaanesh (IE start positions)' is practically mandatory so that her corruption progresses naturally.\n\nFor incompatibilities (SFO, Recruit Defeated Legendary Lords, Corrupted Ascension, Just Good Battle UI, Helper UI and others), see the entry's relations and known issues. The download file also contains a LUA cheat sheet and a flowchart of both campaigns, as well as the optional file @@Compendium_Play_as_Azazel_Overwrite (only when playing as Azazel or as a faction that confederates Azazel; disable it when starting as Miao).",
+    "features": [
+      "Two campaign quest chains: play as Azazel or as Miao Ying",
+      "Integration into Lazy's corruption progression for Miao and Katarin",
+      "Around 110 artworks and a video by SOBORO, some with voiced scenes",
+      "Three quest battles with voice acting and camera events",
+      "Branching routes: confederation or vassal/alliance ending",
+      "Portals in Immortal Empires between Miao and Azazel territory (via corruption event)",
+      "Quest to revive N'Kari's faction",
+      "Altered starting map; Valkia returns as an endgame crisis"
+    ],
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_02/mods_required.png.124a713d1c63273bfc92883a8773bbd4.png": {
+        "kind": "other",
+        "caption": "Overview of the required mods according to the author"
+      },
+      "https://www.loverslab.com/uploads/monthly_2025_03/image.png.b56e9e1f25a28c70e97c7c83b7d9d9e9.png": {
+        "kind": "other",
+        "caption": "Option 'Enable context viewer' in PJ's Console (script error display)"
+      }
+    }
+  },
+  "ll-36361": {
+    "summary": "Outdated merge of the Community Beastmen versions by Lynn1999 and kaladal (approx. 1.2 GB instead of 2 GB). The author himself points to a newer version on Steam; the current page is the collection page 'Community Beastmen ALL versions'.",
+    "description": "This mod merges two versions of the Community Beastmen project: the expansions by **Lynn1999** (2023) and the bug fixes by **kaladal** (2024). According to the author, problems occurred when using either one alone (invisible Chaos Spawn, Gors and Manticore, or missing extras for chariots, heroes and lords); the merge shrinks the mod from about 2 to 1.2 GB.\n\nThe author points out that a newer version now exists on Steam (Workshop ID 3476784883), which is also said to include content from the Discord. He only intends to maintain the mod and will not add any new content. For current use, the collection page 'Community Beastmen ALL versions' is therefore the better choice.\n\nKnown issues according to the page: 12 warnings in the Modtools check (nothing noticeable in the game), missing hover text for Raze/Sack (the images are present) and possibly inaccurate AI recruitment tiers for three custom units. The Jabberslythe texture was faulty for a while and has been fixed, according to the author.\n\nAs optional additions, the page lists Sewerat's Community Beastmen add-on, Candles' Beastmen Events & Ancillaries (in an updated version on the Discord) and Endo's Matched Combat (Discord download, affects Gors, Ungors, Poison Warhounds and small heroes). Endo's pack must be placed **below** the Community Beastmen mod in the load order, otherwise the unit cards of three special units break.",
+    "features": [
+      "Merge of the versions by Lynn1999 and kaladal",
+      "File size reduced from approx. 2 GB to approx. 1.2 GB",
+      "Marked as obsolete on the page itself (newer Steam version)",
+      "Optional add-ons: Sewerat add-on, Candles' Events & Ancillaries, Endo's Matched Combat",
+      "Endo's Matched Combat must be loaded below it"
+    ]
+  },
+  "ll-47842": {
+    "description": "This submod for **Lord Hero Swap** is aimed at players who collect female Legendary Lords via confederation mods and then lead them as heroes in a shared army. The problem according to the author: their skills often only benefit troops that you don't have as another faction. The mod makes sure that no invested skill point is wasted and that the bonuses are usable by every faction.\n\nEight characters are covered: Alarielle, Elspeth von Drakken, Morathi, Miao Ying, Repanse de Lyonnesse, Tzarina Katarin, the Fay Enchantress and the Sisters of Twilight. Each receives an additional skill line (8 points) that, according to the author, thematically reflects her corruption or integration as a harem member, with flavour texts that match the bonus, plus a corruption node as a counterbalance. In addition, the vanilla skills of all 49 skill points were adjusted so that they have at least one faction-independent benefit (exception: sections with four options where three points are required, in which the fourth option may remain unchanged). Ancillaries, mounts and quest items work independently of faction; as a hero, Alarielle receives Greater Arcane Conduit.\n\nOn balance: strong but thematically conceived, some skills have drawbacks; bonuses add up when used together in one army (according to the author, Miao Ying is perhaps borderline). Banners are useless once the characters are heroes. Some quests only start at the beginning of the turn after reaching the level. The main package is '(X)_Hero_Swap_Harem.7z'.\n\nThere is also the optional file '(X)_Hero!Swap_HaremXtra.7z': it adds bullet points in crude language to unit cards and gives Miao, Morathi, Alarielle and Katarin corresponding epithets; it is best activated only after the first heroine has been converted. A Chinese translation is included as a separate file. The prerequisite is New Lord Hero Swap 9.0 (Unofficial Fix) or, for older saves, the original plus the fix mod.",
+    "features": [
+      "Additional skill line (8 points) for eight female Legendary Lords as heroes",
+      "Vanilla skills of all 49 skill points with faction-independent benefits",
+      "Corruption node per character as a counterbalance",
+      "Ancillaries, mounts and quest items usable independently of faction",
+      "Optional Xtra package (unit card texts, epithets)",
+      "Chinese translation as a separate file"
+    ],
+    "recommendedFor": "For profiles in which several female Legendary Lords are collected via confederation mods (e.g. Slaanesh Expanded, Recruit Defeated Legendary Lords, Alarielle, Temptation's Bloom) and turned into heroes of a harem army with Lord Hero Swap. Useless without Lord Hero Swap.",
+    "images": {
+      "//static.loverslab.com/resources/emoticons/smile.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-28110": {
+    "description": "An unfinished corruption mod about **Eltharion** (Yvresse), built on Lazy's corruption framework (`!!li_progression_framework.pack`). The story revolves around the question of whether the 'Grim' is truly emotionless or merely a prisoner of his duties, and how he is turned into a servant of Slaanesh. Because of the faction's Witcher crossover content, Cavill, Mellindirei and Triss also play a role.\n\n**Status according to the page:** Only stage 0 is largely finished. At the start of a new campaign you receive the mission to conquer Gronti Mingol; the mission leads to a quest battle at the Dragon Horn Mine (Eltharion meets a long-standing Slaanesh daemon who is corrupting the land, and is defeated and taken prisoner). Victory and completed battle objectives bring additional bonuses (including strong campaign buffs, details still in progress); the next section starts after a win as well as after a loss.\n\n**Planned:** five stages (encounter, prisoner, brainwashing, decision, rebirth), after which Eltharion, in the service of Slaanesh, is meant to take prisoners from the ranks of the 'righteous' lords, who are 'worked on' in prison and absorbed into the faction. New quests, texts, models, traits, a personal skill line, new prison interactions and special stories with other Legendary Lords are planned for this; the announcement describes Eltharion as female after the transformation. The page is in Chinese/English (the latter machine-translated).\n\nWho it's for: only for players who want to follow the development; not yet usable as a complete campaign.",
+    "features": [
+      "Corruption story for Eltharion (Yvresse) on Lazy's framework",
+      "Stage 0 finished: mission 'Conquer Gronti Mingol' and quest battle at the Dragon Horn Mine",
+      "Planned: 5 stages, new traits, skill line, prison interactions",
+      "Witcher crossover characters in the story (Cavill, Mellindirei, Triss)",
+      "Currently a work in progress"
+    ],
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2023_07/00407-2529168545-_(photorealistic_1)(extremelyintricate_1.4)_cinematiclightultrahighres8kuhdfilmgrain_(exquisitelydetailedski.png.6367eb7664491e645c066cabd02d7250.png": {
+        "kind": "other",
+        "caption": "AI-generated concept images for the planned look (according to the author, the actual look is meant to become 'more Slaaneshi')"
+      },
+      "https://www.loverslab.com/uploads/monthly_2023_07/00435-2529168545-_(photorealistic_1)(extremelyintricate_1.4)_cinematiclightultrahighres8kuhdfilmgrain_(exquisitelydetailedski.png.a3ed2ff0e046f119d21b7c3d139b4890.png": {
+        "kind": "other",
+        "caption": "AI-generated concept images for the planned look (according to the author, the actual look is meant to become 'more Slaaneshi')"
+      }
+    }
+  },
+  "ll-34542": {
+    "description": "The mod adds **dilemmas** that appear when the player subjugates a female Legendary Lord - via vassalization or confederation. There are two versions: one that is only active for Slaanesh factions (N'Kari, Azazel, Sigvald), and one for all other factions (also, at the community's request, for the female lords themselves). Both can be used in parallel. All artworks are by SOBORO.\n\n**Mechanics:** After the first subjugated lord, the base chance of a dilemma is 35% per turn; each subjugated female lord raises it by 5% (as a symbol of growing Slaanesh corruption). If no dilemma occurs, the chance increases turn by turn until one appears. The options are rewards: Slaanesh factions receive or trade Devotees or Souls (including for a random ancillary or a great gift of Slaanesh), other factions receive +10% army replenishment for one turn, 1,000 gold, or can spend gold on an ancillary or a great gift.\n\n**Supported** are Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse and the Sisters of Twilight (1-4 dilemmas each) as well as two shared dilemmas (Alarielle + Morathi, Katarin + Miao Ying). The mod does not provide confederation itself; it only reacts to it. The author additionally recommends 'Trade Any Settlement'; according to the page, 'No Confederation - All Factions' did not work in late 2024 and crashed.",
+    "features": [
+      "Dilemma events when subjugating female Legendary Lords (vassal or confederation)",
+      "Two versions: Slaanesh factions only or all other factions",
+      "Starting chance 35% per turn, +5% per subjugated lord, increasing until triggered",
+      "Rewards: Devotees/Souls or gold, ancillaries, great gift of Slaanesh",
+      "Nine characters and two double dilemmas, artwork by SOBORO"
+    ],
+    "recommendedFor": "For profiles in which female Legendary Lords are confederated or vassalized (e.g. as a Slaanesh faction or with Alarielle, Temptation's Bloom), to accompany the integration with events and rewards. Does not provide confederation itself.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_ALA_01.PNG.398ed2c278de383cd456d667e6cce863.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Alarielle (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_ELSP_01.PNG.1a41fd27dc02b360d2f0f54912d5334f.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Elspeth (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_FEY_01.PNG.88cdf131e9b812ec2d2bddb4e7b89d83.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Fay Enchantress (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_HEL_01.PNG.3ee9127ad78b42b96967127435c750f2.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Hellebron (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_KAT_01.PNG.3cfdd97684c09a34a116a315fcabb553.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Katarin (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_MIAO_01.PNG.32437204f0045c30394940fda3542e97.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Miao Ying (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_10/NV_E_MOR_01.PNG.74d20dd683c08179cd30e4d1a320e9ec.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Morathi (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_REP_01.PNG.e9b7774123bd2ea1488c03ce583c3aaf.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Repanse (SOBORO)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/NV_E_SIS_01.PNG.2551f8da6c36e9dc7a8a80b0e85dea7d.PNG": {
+        "kind": "screenshot",
+        "caption": "Dilemma artwork for Sisters of Twilight (SOBORO)"
+      }
+    }
+  },
+  "ll-25600": {
+    "description": "A collection of **SFO adjustments** (stat overhaul mod) for several corruption and unit mods. All parts align stats and units with SFO:\n\n- **Soil's Corrupted Units (standalone):** Chaos and Vampire units use their SFO counterparts, Bestigors are replaced by SFO Slaangors, and Soil's own units (cultists, Toxic Rocket/Cannon, Corrupted Dragon and others) take over the stats of comparable SFO units. The original does not need to be active.\n- **Ensign Loi (Corrupted Compendium):** She now supplies allied armies with replenishment or training, attacks units and garrisons, and spreads public order; the skill display and names were reworked and stats adjusted.\n- **SEU 'First Daughter / Last Shugengan':** Health set to 10,000 for heroes and lords, melee stats adjusted, dragon form with SFO Chaos Dragon stats.\n- **Corrupted Ascension (Corruption Ascend 1.2):** Unit health at SFO level, adjustments for the Miao transformation and Katarin's Kholek form, among others.\n\nThere is also a small patch for [SFO] Double Skill Points (skill dump) and a pointer to 'No Corruption Reduction for SFO's new Miao Mechanic' as a separate page. Each part requires the corresponding original mod or SFO; the page lists the dependencies per part.",
+    "features": [
+      "Soil's Corrupted Units on SFO stats (standalone)",
+      "Ensign Loi (Corrupted Compendium): reworked abilities and SFO stats",
+      "SEU First Daughter / Last Shugengan: SFO balance",
+      "Corrupted Ascension: unit stats at SFO level",
+      "Small patch for [SFO] Double Skill Points"
+    ],
+    "recommendedFor": "Only for profiles that use SFO and at the same time use Soil's Corrupted Units, the Corrupted Compendium, SEU's First Daughter/Last Shugengan or Corrupted Ascension. Not useful without SFO. Note: Corrupted Ascension is incompatible with Lazy's framework."
+  },
+  "ll-52091": {
+    "description": "Fixes a problem with mods that confederate Chaos lords as a **non-Chaos faction**: the newly added lords often lack the blue skill line (campaign skills). According to the author, the cause is that CA defines one skill line each for Warriors/Daemons of Chaos and for the mono-god factions, and none at all for all other factions.\n\nThe mod does three things: (1) The mono-god variant of the blue line becomes the default line for all factions except Warriors of Chaos; (2) the mono-god-aligned Warriors of Chaos lords (Valkia, Festus, Vilitch, Azazel, Sigvald) use this variant under non-Warriors factions instead of the unusable '+Souls' skills; (3) it reverts a change from version 9.x that had made the line incompletely subculture-specific for Dechala, Ku'gath, Kairos and Generic Tzeentch - this fixes a bug in *Alarielle, Temptation's Bloom*.\n\nWorks with game versions 8.* and 9.*. Before/after images are in the gallery.",
+    "features": [
+      "Default skill line (mono-god variant) for confederated Chaos lords under foreign factions",
+      "Valkia, Festus, Vilitch, Azazel, Sigvald receive a usable blue line",
+      "Fixes the 9.x bug for Dechala, Ku'gath, Kairos, Generic Tzeentch",
+      "Fix for Alarielle, Temptation's Bloom",
+      "Compatible with game versions 8.* and 9.*"
+    ],
+    "recommendedFor": "For profiles with Alarielle, Temptation's Bloom or other mods that confederate Chaos lords as a non-Chaos faction; fixes missing campaign skills.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2026_10/Before.jpg.59ffa0ed196b520e782d78355284109a.jpg": {
+        "kind": "screenshot",
+        "caption": "Before (according to the file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2026_10/After.jpg.327adf48bd382209d3ed224ce3ab7140.jpg": {
+        "kind": "screenshot",
+        "caption": "After (according to the file name)"
+      }
+    }
+  },
+  "ll-46165": {
+    "description": "Collection page for the current state of **Community Beastmen**. The LL download only contains links to the actual files, which is why the update date on LL is not accurate. The author stresses that all other LL pages with 'Community Beastmen' in the name are outdated.\n\nThere are two variants: **new_community_beastmen** (full version, also on Steam; Workshop ID 3476784883, subscribable for auto-updates) for playing *as* Beastmen, and **community_beastmen_light** (download only) for all other factions. Installation: place in the data folder and set far up in the load order.\n\nIncompatibilities: No other animation mods, no custom matched animation mods and not the 'Complete Warmaidens collection' (use its individual faction packs instead) work with any of the versions. In addition, for the main version (not the Light version): Victory Condition Overhaul, Slaanesh Vassals, Recruit Defeated Legendary Lords and complete overhauls such as SFO. The author advises trimming the mod list before a campaign.",
+    "features": [
+      "Current state of Community Beastmen (full version and Light)",
+      "Full version also on Steam, Light version download only",
+      "LL file contains only the links to the current files",
+      "Replaces older Community Beastmen uploads on LL",
+      "Place far up in the load order"
+    ]
+  },
+  "ll-23876": {
+    "description": "The **Corrupted Compendium** expands Lazy's Miao Ying corruption mod. After Miao has been tempted by Slaanesh's servants, she impulsively invites the **Emissary**, a mysterious woman with daemonic intentions, to teach her. As corruption grows, the teacher becomes Miao's lover and more, according to the page.\n\nIncluded are new abilities, ancillaries and banners, dozens of progression events with their own artwork and writing style (with a wide range of themes), a custom hero, concluding battle events with far-reaching consequences, especially for Miao's brother Zhao, and several endings (including one with a female Zhao). Further random events come from Nobodyever and CallerofRains, and the Ensign Loi model from Corv0.\n\n**Start:** At the beginning nothing noticeable is visible, so that you can decide for yourself when the corruption sets in. When Slaanesh corruption 1 is reached, a dilemma appears that starts the mod. Lazy's Miao mod is required. On Steam the mod exists only as an unlisted item (ID 3705392682), linked from the LL page. It can also be combined with Azazel's Realm (there via the overwrite file).",
+    "features": [
+      "Emissary as teacher and companion of Miao Ying",
+      "New abilities, ancillaries and banners",
+      "Dozens of progression events with artwork",
+      "Custom hero and concluding battles with consequences",
+      "Multiple endings, including one with a female Zhao",
+      "Starts via dilemma at Slaanesh corruption 1"
+    ],
+    "recommendedFor": "For everyone who plays Lazy's Miao Ying corruption mod and wants more content about her descent; also part of the recommendations for Azazel's Realm. Useless without Lazy's Miao mod.",
+    "images": {
+      "https://imgpile.com/images/dfOu9l.png": {
+        "kind": "screenshot",
+        "caption": "Custom ancillaries and banners"
+      },
+      "https://imgpile.com/images/dfO78w.png": {
+        "kind": "screenshot",
+        "caption": "Progression events with custom artwork"
+      },
+      "https://imgpile.com/images/dfON3F.png": {
+        "kind": "screenshot",
+        "caption": "Custom hero"
+      },
+      "https://imgpile.com/images/dfO5cu.png": {
+        "kind": "screenshot",
+        "caption": "Custom battles at the end"
+      },
+      "https://imgpile.com/images/dfOw5i.png": {
+        "kind": "screenshot",
+        "caption": "Custom battles at the end"
+      },
+      "https://imgpile.com/images/dfORWk.png": {
+        "kind": "screenshot",
+        "caption": "Custom endings, including one with a female Zhao"
+      },
+      "https://imgpile.com/images/dfObIM.png": {
+        "kind": "screenshot",
+        "caption": "Custom endings, including one with a female Zhao"
+      }
+    }
+  },
+  "ll-28211": {
+    "description": "A Chinese mod by RS0371 (posted on LL as a repost, original on Nexus; according to the page, the uploader does not provide maintenance). It replaces the game's images and texts with Slaanesh or anime motifs: building images and texts (according to the page initially for the Warhammer 2 factions, WH3 factions in progress), faction banners, options and images after battles or when capturing settlements, event images (vanilla events only), parts of the long background and intro texts, pirate unit cards and some loading screens.\n\nIn addition, High Elves may recruit all of the High Elves' special-faction units. There is an optional variant without text changes, because CA reuses images and texts multiple times, which can cause individual texts to be lost. According to the author, there is no conflict with Mixu or known landmark mods, since only the image and text of the original buildings are changed. The file size is about 74 MB.\n\nAll content is in Chinese.",
+    "features": [
+      "Slaanesh/anime motifs for buildings, banners, events and loading screens",
+      "Options and images after battles (Raze/Sack) redesigned",
+      "High Elves can recruit all of the High Elves' special-faction units",
+      "Variant without text changes available",
+      "Chinese texts, repost of the Nexus original"
+    ],
+    "recommendedFor": "Purely cosmetic, for anyone who wants a thoroughly 'Slaaneshified' look of images and text and can read Chinese; according to the author, does not conflict with Mixu or landmark mods."
+  },
+  "ll-52195": {
+    "description": "A **variant selector pack for Neferata** that bundles two Steam mods ('Neferata The Vampire Queen' and 'Beautiful Neferata') and splits them into 16 variants. This lets you choose the look, hat, and unit cards and portrait to match a Vampire or Nagash aesthetic.\n\nThe in-game variants: 1 Purple Vampy (NSFW), 2 SFW Beautiful, 3 SFW Tomb Kingy, 4 Vanilla (SFW), 5 to 16 NSFW variations (according to the author, seemingly similar ones differ in their weapons). For selection, the Variant Selector (Steam, ID 2888171970) is recommended as a soft requirement; without it, an NSFW skin loads by default. According to the page, it is unclear whether the two Steam mods are embedded or additionally required. A similar mod for Elspeth von Drachenfels is linked.",
+    "features": [
+      "16 selectable Neferata variants (NSFW and SFW)",
+      "Hat plus unit cards/portrait depending on the Vampire or Nagash look",
+      "Based on two Steam Neferata mods",
+      "Variant Selector recommended; without it, default NSFW skin"
+    ],
+    "recommendedFor": "For profiles with Neferata (Vampire Counts / Nagash look) who want to freely choose her appearance between SFW and NSFW variants. Include the Variant Selector."
+  },
+  "ll-24914": {
+    "description": "Replaces over **250 unit cards** with illustrations of pretty women. Only cards and info images are swapped, not 3D models. The author stresses that this is not lore-friendly, but tries to preserve the spirit of the original images.\n\nCovered are Empire, Bretonnia, High Elves, Dark Elves, Wood Elves, Norsca, Kislev, Cathay, Chaos Undivided, Khorne, Nurgle, Slaanesh, Tzeentch and Vampire Counts. Cards without Regiment of Renown status get an info image and icon, RoR units only icons (except Tattersouls). According to the author, Chaos factions are to follow later. There are also NSFW cards; if you want to use them together with the SFW cards, set the NSFW pack at a higher priority. Installation: .pack into the data folder. According to the author, the gallery is partly out of date.",
+    "features": [
+      "Over 250 unit cards replaced with female illustrations",
+      "Info image and icon for regular units, icons only for RoR",
+      "14 factions/cultures covered",
+      "Optional NSFW cards (load with higher priority)",
+      "No change to 3D models"
+    ],
+    "recommendedFor": "For profiles that want unit cards matching female 3D models or reskins; purely cosmetic and combinable with most mods.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2023_01/image.thumb.png.bc1a7d3f0d592ee31f4da2f971a0c9c9.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2023_01/image.png.c90627443ee3d98501b62d3d357f88ad.png": {
+        "kind": "screenshot",
+        "caption": "Regiment of Renown cards"
+      },
+      "https://www.loverslab.com/uploads/monthly_2023_02/image.png.7aa24537f11c7b837020b40a2b8f2484.png": {
+        "kind": "screenshot",
+        "caption": "NSFW unit cards"
+      }
+    }
+  },
+  "ll-43977": {
+    "description": "Specifically replaces the **Spawn of Slaanesh** unit with a modular model offering **27 combinations**, so that the unit doesn't look like 16 copies. The mod was originally on Steam but was removed there (Steam ID 3553298407). Many did not want it installed together with the author's remaining units; it is therefore now a separate add-on file.\n\nThe author can be found on Discord under the keyword 'purplebrick' along with his other mods.",
+    "features": [
+      "Replaces Spawn of Slaanesh",
+      "Modular model with 27 combinations",
+      "Standalone, separate from the author's other units"
+    ],
+    "recommendedFor": "For profiles with the author's (Readman's) unit mods that optionally want a more varied Spawn of Slaanesh."
+  },
+  "ll-52134": {
+    "description": "Adds a dilemma on turn 2 that provides **Prince Zanithor**, a daemon prince of Slaanesh (the 'Hunter'), together with a warband and a familiar mage. They are meant to help track down and capture 'queens and ladies' of the world. Zanithor has his own traits and abilities; balance is not the author's concern.\n\nCurrently only one option is supported: a start in the Southlands near Khalida, as help for the Khalida corruption questline. More options are to follow with new questlines. According to the page, compatible with Azazel and N'Kari; it should also work with Be'lakor, Archaon and Sigvald.",
+    "features": [
+      "Dilemma on turn 2 with daemon prince Zanithor, warband and mage",
+      "Own traits and abilities",
+      "Currently the only option: Southlands near Khalida",
+      "Compatible with Azazel and N'Kari; Be'lakor, Archaon, Sigvald probably, according to the author"
+    ],
+    "recommendedFor": "For Slaanesh profiles that also play the Khalida corruption quest and want a hunting party for support.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/smile.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-46549": {
+    "description": "A **collection of female High Elf units** in one package. After installation, all of the author's individual High Elf unit mods must be disabled, otherwise there will be conflicts. Unpack the archive, copy it into the data folder and activate it in the mod manager. The author offers further info and updates on his Patreon page.",
+    "features": [
+      "Female High Elf units bundled in one file",
+      "Replaces the author's individual High Elf unit mods",
+      "Unpack the archive before use"
+    ],
+    "recommendedFor": "For High Elf-focused profiles that want all of the author's female High Elf units in one pack instead of many individual mods; disable the individual mods then."
+  },
+  "ll-35682": {
+    "description": "Provides only **SOBORO's unit cards and 2D portraits** for Miao Ying and leaves Lazy's 3D models unchanged. Lazy's Miao files must stay active; SOBORO's own files must not be active in parallel. If you want SOBORO's 3D models, use their pack instead, which already contains these assets.\n\nKnown bug (inherited from the SOBORO mod): Miao at level 2 faces backwards in the 3D window of the diplomacy menu after loading a savegame.",
+    "features": [
+      "SOBORO's unit cards and 2D portholes for Miao Ying",
+      "Lazy's 3D models are retained",
+      "Do not use together with SOBORO's own files"
+    ],
+    "recommendedFor": "For profiles with Lazy's Miao progression that want SOBORO's card images and portraits without switching the 3D models.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2024_08/image.png.91de440220b82274f3bad32390f18a31.png": {
+        "kind": "screenshot"
+      }
+    }
+  },
+  "ll-25304": {
+    "description": "Turns the Elector **Karl Franz** into a female 'Karla' with a revealing bunny look. The mod brings a new body and face mesh as well as new icons; the voice remains the Elector's for now (according to the page). According to the summary, a full-armour variant and a voice pack with a female voice also exist. The look is based on drawings by SmokedPaprika. Installation: extract into the data folder of Total War Warhammer III.",
+    "features": [
+      "Karl Franz as a female 'Karla'",
+      "New body and face mesh, new icons",
+      "Optional full-armour variant and female voice pack",
+      "Based on art by SmokedPaprika"
+    ],
+    "recommendedFor": "For Empire profiles that want to play Karl Franz as a female character; purely cosmetic."
+  },
+  "ll-27676": {
+    "description": "The corruption mod for Alarielle has been **discontinued**, according to the author. The page remains as a download for the Alarielle skins (use only one of the files) and for the credits: thanks to Waranthil (story), SomeoneElseUnknown (technical) as well as the 3D assets by MustardSFM, Kryiat and Corv0.",
+    "features": [
+      "Only the Alarielle skins of the discontinued corruption mod remain",
+      "Use only one of the skin files per installation",
+      "Mod abandoned; credits on the page"
+    ],
+    "recommendedFor": "For profiles that only want the look of these Alarielle skins, without the discontinued corruption campaign; more current mods exist for Alarielle content."
+  },
+  "ll-40998": {
+    "description": "Updated version of the Wood Elf reskin **Forest of Debauchery** (original by MachineofCat) with a nude or corrupted look. The mod should no longer crash, the `db/variants_tables` were removed for the sake of compatibility, and the Malevolent Branchwraith texture was repaired. The author admits that the Eternal Guard textures look odd and that he cannot fix that.",
+    "features": [
+      "Wood Elf reskin (nude/corrupted) updated",
+      "Crash cause fixed, variants_tables removed",
+      "Malevolent Branchwraith texture repaired",
+      "Eternal Guard textures still odd"
+    ],
+    "recommendedFor": "For Wood Elf profiles that wanted to use the original reskin but had crashes or compatibility problems; replaces the original."
+  },
+  "ll-25677": {
+    "description": "An early proof of concept for 'Lewd Landmarks': a **Wood Elf brothel as a landmark in Carcassonne**. The mod is not connected to any corruption framework. According to the author, it probably requires Mixu's Unlocker. Further content is only open as suggestions; the mod shows the author's modding skill more than extensive content.",
+    "features": [
+      "Wood Elf brothel as a landmark in Carcassonne",
+      "Proof of concept, hardly any content yet",
+      "Independent of corruption frameworks"
+    ]
+  },
+  "ll-25602": {
+    "description": "Adapts **Ensign Loi** from the Corrupted Compendium to SFO: the base is the Waystalker's stats, plus charm melee, magic ammunition (according to the author 'pink balls'), shortened reload time and higher projectile strength. Requires the Corrupted Compendium and SFO.",
+    "features": [
+      "Ensign Loi stats based on the Waystalker (SFO)",
+      "Charm melee and magic ammunition",
+      "Adjusted reload time and projectile strength"
+    ],
+    "recommendedFor": "Only for SFO profiles with the Corrupted Compendium. The collection 'Various SFO Submods' contains a reworked version of the same topic."
+  },
+  "ll-26795": {
+    "description": "A submod for **Dead's Kislev Units** that makes the Ice Guard reindeer riders prettier and adapts them to another mod by the author. Dead's Kislev Units (Steam) is required.",
+    "features": [
+      "Prettier Ice Guard reindeer riders",
+      "Submod for Dead's Kislev Units"
+    ],
+    "recommendedFor": "For Kislev profiles with Dead's Kislev Units and the same author's female Kislev reskins."
+  },
+  "ll-24571": {
+    "description": "Small reskin for **Miao Ying** and **Katarin** with open (not nude) upper clothing - according to the author the only variant with visible cleavage.",
+    "features": [
+      "Reskin for Miao Ying and Katarin",
+      "Open upper clothing, no nudity"
+    ],
+    "recommendedFor": "For Miao/Katarin profiles that want a more revealing but not nude variant.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2022_11/image.png.4e26bc28aa9a7e7ce31a71d9abdc5363.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_11/image.png.6b021603a718193de9029e74dfd088a4.png": {
+        "kind": "screenshot"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2022_11/katarin(tit).png.e36662db7d145d3fc7a1ee60ae960cc9.png": {
+        "kind": "screenshot",
+        "caption": "Katarin (according to the file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2022_11/Miaoying(tit).png.189b30b1e875fbe1bbc3a363d5344eea.png": {
+        "kind": "screenshot",
+        "caption": "Miao Ying (according to the file name)"
+      }
+    }
+  },
+  "ll-24265": {
+    "description": "Chinese translation (`MiaoYingCorrupted_Compendium_cn0829.pack`) of the Corrupted Compendium and, according to the page, of the main mod's additional quests.",
+    "features": [
+      "Chinese texts for the Corrupted Compendium",
+      "Single .pack"
+    ],
+    "recommendedFor": "For Chinese-speaking players who use the Corrupted Compendium."
+  },
+  "ll-24259": {
+    "description": "Chinese translation (`corrupted_landmarks_kislev_cn0929.pack`) of the Kislev landmarks. Its membership in the Corrupted Landmarks series is inferred from the name.",
+    "features": [
+      "Chinese texts for the Kislev landmarks",
+      "Single .pack"
+    ],
+    "recommendedFor": "For Chinese-speaking players with the Kislev landmarks."
+  },
+  "ll-24257": {
+    "description": "Chinese translation (`~savage_beastmen_cn1019.pack`) of a Beastmen submod (according to the file name 'savage_beastmen').",
+    "features": [
+      "Chinese texts for the Savage Beastmen submod",
+      "Single .pack"
+    ],
+    "recommendedFor": "For Chinese-speaking players who use the corresponding Beastmen submod."
+  }
+}

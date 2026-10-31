@@ -1,0 +1,933 @@
+{
+  "steam-3620891624": {
+    "kind": "units",
+    "summary": "Gives Dark Elf lords and heroes on Cold One mounts and chariots the Primal Instincts ability, just like the Cold One Knights have.",
+    "description": "The mod gives Dark Elf lords and heroes on Cold Ones or Cold One Chariots the Primal Instincts ability, just as the Cold One Knights have it. This also applies to the Druchii Anointed.\n\nIt appears in Readman's Morathi mod list.",
+    "features": [
+      "Primal Instincts for Dark Elf lords and heroes on Cold Ones",
+      "Also applies to Cold One Chariots and Druchii Anointed"
+    ],
+    "recommendedFor": "Anyone playing Dark Elves or Morathi who wants mounted commanders to feel more fitting."
+  },
+  "steam-3642222276": {
+    "kind": "units",
+    "summary": "Increases the range of Dark Elf crossbows and hand bows by 20 and adjusts the calibration distance.",
+    "description": "The mod gives Dark Elf crossbows and hand bows +20 range and +10 calibration distance, because the range increases. The Bolt Throwers get +10 range (350 to 360) with no change to calibration, so that they match other artillery.\n\nAccording to its description, it is compatible with the sister mods “Black Ark Corsairs (Repeater Crossbows)” and the “The Cult of Slaanesh” rebalance.",
+    "features": [
+      "+20 range for DE crossbows and hand bows",
+      "+10 range for Bolt Throwers"
+    ],
+    "recommendedFor": "Dark Elf and Morathi players who find ranged-combat range too short."
+  },
+  "steam-3642243727": {
+    "name": "Missing Lore of Magic (8th Ed.) & Greater Arcane Conduit (Dark Elves/Wood Elves)",
+    "kind": "units",
+    "summary": "Adds missing Lores of Magic (8th Edition) and “Greater Arcane Conduit” for Dark Elf and Wood Elf lords.",
+    "description": "The author built this mod for personal use because similar mods did not fit. It adds missing Lores of Magic according to the 8th Edition and gives the Supreme Sorceress and Spellweaver the “Greater Arcane Conduit”, like the Archmage.\n\nAccording to its description, the Dark Elf side is better tested. It is a sister mod of “The Cult of Slaanesh” and appears in Readman's Morathi mod list.",
+    "recommendedFor": "Morathi players and anyone playing Dark Elf or Wood Elf sorceresses."
+  },
+  "steam-3623496262": {
+    "kind": "units",
+    "summary": "Adds a repeater crossbow variant to the Black Ark Corsairs.",
+    "description": "According to the author, the Corsairs with repeater crossbows are meant to fill the gap between Darkshards and Shades. Their melee stats match the hand-bow variant, and their ranged attack matches the Darkshard bow with faster reloading; dual swords are deliberately not offered. The unit has a strength of 100 men.\n\nIt is recruited in the same building and at the same tier as the hand-bow variant and also appears as a garrison.",
+    "features": [
+      "Corsairs with repeater crossbows",
+      "Recruited in the same building as the hand-bow Corsairs"
+    ],
+    "recommendedFor": "Dark Elf and Morathi players who want more ranged options."
+  },
+  "steam-3687970360": {
+    "authors": [
+      "Endo"
+    ],
+    "kind": "reskin",
+    "summary": "Reskin that makes the Dark Elf Slaanesh Devotees (swords and crossbows) female without changing any stats.",
+    "description": "A simple reskin: the Dark Elf Slaanesh Devotees units are depicted as female. Stats and gameplay remain unchanged, and there are no dependencies.\n\nThe mod brings new unit cards, robust variants and its own female voice-over. It is required as a base by the LoversLab entry “XXX – Endo's Slaanesh Devotees”.",
+    "features": [
+      "Female Devotees (swords and crossbows)",
+      "New unit cards and female voice-over",
+      "No stat changes"
+    ]
+  },
+  "steam-2831951203": {
+    "kind": "submod",
+    "summary": "SFO submod: lords and heroes get 2 skill points per level plus a skill dump that gives 1% hit points per skill level.",
+    "description": "The mod is a submod for SFO. Lords and heroes get 2 skill points per level, plus a skill dump that increases the character's hit points by 1% per skill level. Experience per level matches the SFO version.\n\nThe author recommends starting a new campaign; the change also affects the AI. Several SFO submods on LoversLab (Soil's Units, Ensign Loi, SEU Extension, Corrupted Ascension) require it only because of the small skill-dump patch.",
+    "recommendedFor": "Anyone who uses SFO and plays one of the SFO submods mentioned, or wants faster character progression."
+  },
+  "steam-3621055936": {
+    "kind": "submod",
+    "summary": "Submod for “The Cult of Slaanesh”: Marked Master and Marked Sorceress as additional heroes for all Slaanesh factions.",
+    "description": "All Slaanesh factions (mono-god) can recruit two additional Marked heroes: the Marked Master in the same building as the Exalted Hero, and the Marked Sorceress in the same building as the Chaos Sorcerer.\n\nKnown issue according to the author: the heroes carry Slaanesh names like the cultists. He had model/porthole problems but believes they are fixed.",
+    "features": [
+      "Marked Master and Marked Sorceress",
+      "For all pure Slaanesh factions"
+    ],
+    "recommendedFor": "Anyone who uses “The Cult of Slaanesh” and also wants Marked heroes with other Slaanesh factions."
+  },
+  "steam-3259893195": {
+    "kind": "utility",
+    "summary": "UI mod that rearranges and centers the menu bar into 5 buttons per row.",
+    "description": "The mod arranges the menu bar buttons in rows of 5 and centers them on the background image. This lets many additional tool mods with buttons in the resource bar be displayed clearly; the number of displayed buttons adapts to the active tool mods.\n\nTo push the multiplayer telestration down, the author names further mods (“More Buttons For Mechanics” in 2 to 4 rows, or ChopChop's UI mods).",
+    "recommendedFor": "Profiles with many mods that put buttons in the resource bar, e.g. recommended for “Miao Ying's Corrupting Alchemy”."
+  },
+  "steam-2799316652": {
+    "kind": "utility",
+    "summary": "Lets you hand over individual or all units to an AI general in battle. No longer maintained, but according to the author it still works.",
+    "description": "In battle, control of some or all units can be delegated to an AI general; a hotkey lets you temporarily override its orders. The author stresses that the AI general is not smart; some people use it only to run down fleeing enemies after winning.\n\nThe author no longer maintains WH3 mods but expects the mod to keep working. In March 2025, options for pursuit at the end of a battle were added (beta channel). Appears in practically all Readman mod lists.",
+    "features": [
+      "Delegate units to an AI general",
+      "Options for pursuit after victory"
+    ],
+    "recommendedFor": "Anyone who wants to play large battles more relaxed or have fleeing enemies hunted down automatically."
+  },
+  "steam-3032439976": {
+    "kind": "utility",
+    "summary": "Unlocks all diplomacy options: vassalize, liberate and confederate, even for factions that vanilla leaves out.",
+    "description": "Updated version of FiftyTifty's mod, which he has allowed to be continued by someone else. Factions added since patch 4.0 (except the Changeling) can be vassalized or liberated; factions with settlements that do not belong to them can also be liberated.\n\nModified factions cannot be liberated; Maneaters have no vassal options. When playing modified races, many “Liberate” options may appear; in that case the mod should be disabled. “Fudging Vassals” is mentioned as a recommendation; there is a German translation submod by Balthasar23th.",
+    "features": [
+      "Vassalize, liberate, confederate",
+      "Also for factions from patch 4.0",
+      "German submod available"
+    ],
+    "recommendedFor": "Players who want to win lords as vassals with the confederation mod (as recommended by the LoversLab entry “Easy Cross Faction Confederation Scripts”)."
+  },
+  "steam-3368217482": {
+    "kind": "assets",
+    "summary": "Complete overhaul of lighting and weather on all battle maps.",
+    "description": "The mod replaces lighting and weather effects for every battle map, including the maps of Waka's Campaign Battles, GCCM BETA and Custom Siege Map Compilation. There are several hundred environment presets, each with its own combination of lighting, weather and skybox, plus new weather effects, a new moon texture and new skyboxes.\n\nFor each main environment (e.g. Empire, Sylvania, Lustria), about 11 to 14 presets are randomly selected before each battle. The mod appears in almost all Readman mod lists.",
+    "features": [
+      "Hundreds of lighting/weather/skybox presets",
+      "Also covers custom maps from well-known mods",
+      "New moon texture"
+    ],
+    "recommendedFor": "Anyone who wants more atmospheric-looking battles."
+  },
+  "steam-3809988722": {
+    "kind": "reskin",
+    "summary": "Complete Neferata reskin in the style of a royal vampire queen look with a golden dress.",
+    "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. The LoversLab entry “Naughty Neferata! 16 Model variants” requires it.",
+    "recommendedFor": "Anyone playing Neferata with Naughty Neferata (required there) or generally wanting a more refined Neferata."
+  },
+  "steam-3617312541": {
+    "authors": [
+      "Katsuko"
+    ],
+    "kind": "utility",
+    "summary": "Overhauls AI recruitment and army composition: less spam of low-tier units, more thematic and stronger AI armies.",
+    "description": "The mod improves how the AI recruits troops and composes armies. Armies are meant to be stronger, more thematic and more logical, with less low-tier spam and better role distribution (front line, elite, support).\n\nIt appears in almost all Readman mod lists.",
+    "features": [
+      "Less AI unit spam",
+      "Stronger, thematically fitting armies",
+      "Better role distribution"
+    ],
+    "recommendedFor": "Anyone who wants a challenging campaign AI."
+  },
+  "steam-2789858755": {
+    "kind": "utility",
+    "summary": "Extends camera heights in battle, with hotkeys for hiding the UI and for zooming without hiding units.",
+    "description": "The mod allows closer and farther camera heights in battles, handy for screenshots. K turns the UI off, N allows zooming without hiding the units, and Alt+K gives an even more cinematic view.\n\nIn multiplayer it is only usable if the opponent also has the mod. In the prologue, not all keys work.",
+    "features": [
+      "K: hide the UI",
+      "N: zoom without hiding units",
+      "Alt+K: even more cinematic view"
+    ],
+    "recommendedFor": "Anyone who takes screenshots or wants to watch the battle up close."
+  },
+  "steam-2963986848": {
+    "kind": "utility",
+    "summary": "Remixes the battle audio: less shouting, louder firearms, cannons and magic.",
+    "description": "The mod significantly adjusts the attenuation of battle sounds so that shouting no longer drowns out everything, especially from the ground perspective. Firearms, cannons and magic are mixed louder, so that details such as melee sounds are easier to hear.\n\nIt appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone who would rather experience battles with audible differentiation than with constant shouting."
+  },
+  "steam-2998630271": {
+    "kind": "assets",
+    "summary": "Overhauls lighting and weather of the campaign map with around 300 new environments.",
+    "description": "The mod renews lighting and weather of the campaign map: nearly 300 new environments and over 60 new weather effects for Realm of Chaos, Immortal Empires, Immortal Empires Expanded and the Old World map. Visuals and immersion take priority over playability.\n\nThe mod is designed around the “Improved Campaign Camera” mod; the author recommends placing it at the very front of the load order.",
+    "features": [
+      "Around 300 environments, over 60 weather effects",
+      "For RoC, IE, IEE and the Old World map"
+    ],
+    "recommendedFor": "Anyone who wants a more atmospheric campaign map; best combined with a camera mod."
+  },
+  "steam-3566849815": {
+    "authors": [
+      "Habu",
+      "Kerberos"
+    ],
+    "kind": "units",
+    "summary": "Six corrupted Wood Elf units, recruitable via Corrupted Landmarks.",
+    "description": "The mod adds six corrupted Wood Elf units. They can be recruited at corrupted landmarks in every magical forest by Slaanesh Dark Elves (Morathi only) and High Elves (Alarielle only); in the Gaen Vale additionally by other cultures (including Kathay, Kislev, Wood Elves).\n\nRequirements: Corrupted Landmarks and Mixu's Unlocker. Works well together with “Alarielle, Temptation's Bloom”, but is not mandatory. Do not use together with another version of the units from another site; it must be the Steam version. Models by MachineofCat, implementation as units by Habu.",
+    "features": [
+      "Six corrupted Wood Elf units",
+      "Recruitment via Corrupted Landmarks",
+      "Requires Corrupted Landmarks and Mixu's Unlocker"
+    ],
+    "recommendedFor": "Alarielle, Morathi and N'Kari runs according to the KPW guides (listed there as non-optional)."
+  },
+  "steam-2789862740": {
+    "authors": [
+      "Cpecific"
+    ],
+    "kind": "utility",
+    "summary": "Traits manager: set or remove character traits with a double-click.",
+    "description": "With the Traits Manager, trait levels can be set by double-click; an active trait is removed by double-clicking the active level. The lords section is scrollable. Without Memreader the mod works, but with fewer features.\n\nAccording to the author it is compatible with every mod, and savegame- and multiplayer-compatible. The mod does not change the trait limit.",
+    "recommendedFor": "Anyone who wants to test traits deliberately or correct them by hand; appears in the Readman mod lists."
+  },
+  "steam-3240401070": {
+    "authors": [
+      "Ulrik H.D. (Original)"
+    ],
+    "kind": "submod",
+    "summary": "Re-release of the “Cult of Pleasure” mechanic for Morathi, updated to patch 9.0.",
+    "description": "Patched re-release of “Cult of Pleasure mechanics for Morathi” by Ulrik H.D. for the current game; still in development. The mod gives the Cult of Pleasure faction the Seductive Influence mechanic, its own cult and a new hero. The thresholds for the various races are roughly doubled, and settlements can also be subjugated or liberated.\n\nKerberos' Alarielle mod explicitly recommends the patched version; it also appears in the Morathi guide and in Readman's Morathi list.",
+    "features": [
+      "Seductive Influence for Cult of Pleasure",
+      "Own cult and new hero",
+      "Subjugate/liberate on conquest"
+    ],
+    "recommendedFor": "Morathi players."
+  },
+  "steam-2789854789": {
+    "kind": "utility",
+    "summary": "Skips the startup splash screens and warnings and jumps straight to the main menu.",
+    "description": "A quick mod that overrides the splash screens and epilepsy warnings before the main menu. The Tome of Fates video can now also be turned off in the game options. If there are problems, the outdated launch parameter -dx11 should be removed and the files redownloaded/verified.",
+    "recommendedFor": "Anyone who wants to reach the main menu faster."
+  },
+  "steam-3687340593": {
+    "authors": [
+      "Schess"
+    ],
+    "kind": "reskin",
+    "summary": "Elspeth reskin with loose hair in three variants (requires the Variant Selector).",
+    "description": "An Elspeth reskin with loose hair, currently with 3 variants; requires the Variant Selector. It builds on the kitbash reskin by Dwjliel (LoversLab); further credits go to LazyIcarus (face and body), Less is good (accessories, clothing) and Schlossy (hair).\n\nAccording to the LoversLab entry “Elspeth 2026 Wombo-Combo”, this Steam reskin is included there.",
+    "features": [
+      "Three variants",
+      "Requires Variant Selector"
+    ]
+  },
+  "steam-2790566124": {
+    "kind": "assets",
+    "summary": "New experience rank icons with numerals and a visible progress bar.",
+    "description": "The mod replaces the units' rank icons with new ones that have numerals and a bar that fills with each rank; their colors are modeled on the vanilla icons. Only images are replaced, so it can be added or removed at any time."
+  },
+  "steam-2790949528": {
+    "kind": "reskin",
+    "summary": "Reskin of the Slaanesh daemons with a more feminine look (Daemonettes, Alluresses, Heralds, Seekers).",
+    "description": "Daemonettes, Alluresses, Heralds of Slaanesh and Seekers of Slaanesh look more feminine and less androgynous. According to the author the mod is PG-13, with no nudity, and changes neither stats nor database tables; it is compatible with overhauls such as Radious or SFO.\n\nKPW guides for Azazel, Archaon, Be'lakor, Sigvald, Daemon Prince and Mazdamundi include it.",
+    "features": [
+      "More feminine Slaanesh daemons",
+      "No stat changes",
+      "Compatible with Radious/SFO"
+    ],
+    "recommendedFor": "Anyone playing with Slaanesh daemons."
+  },
+  "steam-2794064207": {
+    "kind": "utility",
+    "summary": "Improves vassal behavior: less defection, shared wars and shared vision.",
+    "description": "Only daemon armies from the Realms of Chaos can declare war on vassals. Vassals do not break away from their protector, are at war with its enemies by the next turn at the latest, and peace treaties are concluded in the case of conflicting wars. If vassals like their lord, they share vision and give more loyalty points; strong vassals are weakened slightly.\n\nRecommended by “All Diplomatic Options”; appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone who keeps many vassals, e.g. in confederation campaigns."
+  },
+  "steam-3066410796": {
+    "authors": [
+      "Erynn"
+    ],
+    "kind": "utility",
+    "summary": "Extends the campaign map camera range: zoom out farther, zoom in closer, flatter angle.",
+    "description": "The mod raises the maximum zoom so you see more of the map, and lowers the minimum zoom to get closer to the lords. Settlement UI only fades out at a greater distance, and the camera angle is slightly raised.\n\nOn ultrawide monitors, the edge of the fog is visible when fully zoomed out; this is purely cosmetic.",
+    "recommendedFor": "Anyone who wants a better overview of the campaign map."
+  },
+  "steam-3480317584": {
+    "kind": "units",
+    "summary": "Adds Dark Elf units to the High Elves' “Red Line” skills and Shades to Alith Anar's skills.",
+    "description": "Dark Elf units are added to the High Elves' Red Line skills, and Shades to Alith Anar's unique skills. It is the counterpart to “Red line buffs for High Elf units” and appears in Readman's Alarielle lists.",
+    "recommendedFor": "Alarielle players with Dark Elf units in their army."
+  },
+  "steam-2790774407": {
+    "kind": "utility",
+    "summary": "Adapts several UI windows for high resolutions (recruitment, diplomacy, lord/hero recruitment and others).",
+    "description": "Scales or alters the recruitment screen (for 1440p+), diplomacy, lord/hero recruitment, the objectives screen and the view of multiple enemy/allied armies; also enlarges the Custom Battle panel. Intended for 1080p and higher.\n\nThe author maintains it only as needed; according to the author the mod is compatible with everything and works in multiplayer. If problems occur, the cause is usually another mod with a script error.",
+    "recommendedFor": "Players with high resolutions; appears in the Readman mod lists."
+  },
+  "steam-2854346056": {
+    "name": "Immortal Landmarks",
+    "kind": "utility",
+    "summary": "Greatly extends the landmark system with new landmarks that have unusual effects.",
+    "description": "The mod aims to make the world more dynamic by expanding vanilla's landmark system, including with effects that vanilla landmarks do not use (e.g. a storm in coastal regions). Updated for 8.0.\n\nIt runs without Mixu's Unlocker, but about 80% of the landmarks are missing. A translation of the “RS0371's Slaanesh Image and Text” mod requires it, otherwise a crash is likely.",
+    "recommendedFor": "Anyone who wants more variety on the campaign map."
+  },
+  "steam-3175283222": {
+    "kind": "utility",
+    "summary": "Seduced units remain loyal to Slaanesh even after the battle if Slaanesh wins.",
+    "description": "The mod improves the seduction of units: they keep their loyalty to Slaanesh beyond the end of the battle, provided Slaanesh wins. The author calls it a beta and asks for feedback; some edge cases are not covered.\n\nThe author of “Corrupted Chars can Seduce” strongly recommends it (it makes recruiting captured units very powerful).",
+    "recommendedFor": "Slaanesh runs focused on seducing captured units."
+  },
+  "steam-3471883808": {
+    "name": "Lazy's Corrupted Reskins Katarin",
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "reskin",
+    "summary": "The 3D models for each stage of Lazy's Katarin corruption. Needs the framework and the Katarin progression.",
+    "description": "Model pack for Lazy's Katarin corruption: it holds the 3D model changes for each corruption stage (pack zli_katarin_reskins). It does nothing on its own.\n\nThe Workshop page lists Lazy's Corruption Framework and “Lazy's Corruption Progression Katarin” as required items; the progression in turn requires this pack.\n\nPart of the Steam collection “Lazy's Corruption”. The KPW guides list it for almost every character and it appears in all Readman mod lists.",
+    "features": [
+      "Stage models for Katarin's corruption",
+      "Pairs with Lazy's Corruption Progression Katarin"
+    ]
+  },
+  "steam-3471883632": {
+    "name": "Lazy's Corrupted Reskins Miao Ying",
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "reskin",
+    "summary": "The 3D models for each stage of Lazy's Miao Ying corruption. Needs the framework and the Miao Ying progression.",
+    "description": "Model pack for Lazy's Miao Ying corruption: it holds the 3D model changes for each corruption stage (pack zli_miaoying_reskins.pack). It does nothing on its own.\n\nThe Workshop page lists Lazy's Corruption Framework and “Lazy's Corruption Progression Miaoying” as required items; the progression in turn requires this pack. The author points to the Lewdhammer wiki for how to progress.\n\nPart of the Steam collection “Lazy's Corruption”. The KPW guides list it for Alarielle, Morathi, Miao Ying, N'Kari/Dechala/Masque and Azazel/Archaon/Be'lakor/Sigvald/Daemon Prince runs.",
+    "features": [
+      "Stage models for Miao Ying's corruption",
+      "Pairs with Lazy's Corruption Progression Miaoying"
+    ]
+  },
+  "steam-3471884231": {
+    "name": "Lazy's Corrupted Reskins Morathi",
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "reskin",
+    "summary": "The 3D models for each stage of Lazy's Morathi corruption. Needs the framework and the Morathi progression.",
+    "description": "Model pack for Lazy's Morathi corruption: it holds the 3D model changes for each corruption stage (pack zli_morathi_reskins). It does nothing on its own.\n\nThe Workshop page lists Lazy's Corruption Framework and “Lazy's Corruption Progression Morathi” as required items; the progression in turn requires this pack.\n\nPart of the Steam collection “Lazy's Corruption”; the KPW guide for Morathi lists it.",
+    "features": [
+      "Stage models for Morathi's corruption",
+      "Pairs with Lazy's Corruption Progression Morathi"
+    ]
+  },
+  "steam-3472332568": {
+    "name": "Lazy's Corruption (Collection)",
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "collection",
+    "summary": "Steam collection with the Lazy's Corruption framework, the progression and reskin packs for Katarin, Miao Ying and Morathi, as well as MCT and Corrupted Landmarks.",
+    "description": "The collection contains 11 items: the Lazy's Corruption Framework, the three progression mods (Katarin, Miao Ying, Morathi), the three reskin packs, Mod Configuration Tool, Corrupted Landmarks and two further items.\n\nNotes from the description: “Full gameplay mechanics and 3D model changes”. If there are problems, move MCT to the very top of the load order and unsubscribe from or unload loose stage reskins. The LoversLab pages of Alarielle (ATB) and Azazel's Realm link it as a base.",
+    "features": [
+      "Framework, progression and reskins in one collection",
+      "Includes MCT and Corrupted Landmarks"
+    ]
+  },
+  "steam-3471237570": {
+    "name": "Lazy's Corruption Progression Katarin",
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "progression",
+    "summary": "Lazy's corruption progression for Katarin with four stages (complete). Needs Lazy's Corruption Framework and the Katarin reskin pack.",
+    "description": "Adds a dynamic, progressive corruption arc for Katarin with four stages in total; the author marks it as complete. The 3D models for the stages are not part of this item: they come from “Lazy's Corrupted Reskins Katarin”.\n\nThe Workshop page lists Lazy's Corruption Framework and the Katarin reskin pack as required items. The author points to the Lewdhammer wiki for a guide on how to progress through the stages.\n\nIt belongs to the Steam collection “Lazy's Corruption”. The KPW guides list it for Katarin and for runs with Alarielle, Morathi, Miao Ying, N'Kari/Dechala/Masque and Azazel/Archaon/Be'lakor/Sigvald/Daemon Prince, and it appears in almost all Readman mod lists.",
+    "features": [
+      "Four corruption stages for Katarin (complete)",
+      "Stage models come from Lazy's Corrupted Reskins Katarin",
+      "Requires Lazy's Corruption Framework"
+    ],
+    "recommendedFor": "Anyone using Lazy's corruption series; most community lists include it regardless of the played character."
+  },
+  "steam-2806964197": {
+    "authors": [
+      "LazyIcarus"
+    ],
+    "kind": "submod",
+    "summary": "Optional side mod: removes Katarin's crown in campaign and battle.",
+    "description": "Removes Katarin's crown on the campaign map and in battle, including the 3D portholes; the unit card and 2D portholes remain unchanged. The mod must sit above the base reskins in the load order.\n\nIt appears in the Katarin guide of the KPW list.",
+    "recommendedFor": "Anyone who wants to play Katarin without a crown."
+  },
+  "steam-3559803702": {
+    "authors": [
+      "Murranji"
+    ],
+    "kind": "utility",
+    "summary": "All participating generals (including reinforcements) receive the Defeat trait after a victory over a legendary lord.",
+    "description": "Normally only the main general gets the Defeat trait. With the mod, all generals who took part in the battle receive it after a victory over a legendary lord. It is safe in ongoing games. With the Rhox Legendary Hero mod, reinforcement generals receive the corresponding trait.\n\nIt appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone who wants many generals to collect traits at the same time."
+  },
+  "steam-3810275955": {
+    "name": "Lord Hero Swap – 9.0 Fix (Unofficial) (领主和英雄切换9.0 修复版)",
+    "kind": "utility",
+    "summary": "Unofficial 9.0 repair of the “Lord Hero Swap” mod, which converts lords and heroes into one another with a button.",
+    "description": "The original mod by All is Dust adds a button to lords and heroes to switch between the two forms; it has been completely broken since patch 9.0. This version fixes, among other things, 42 invalid references (crash on load), separate skill trees and names for heroes, the conversion back, and display errors. Existing savegames remain usable.\n\nThe LoversLab entry “Hero-Swap Harem Skills” names it as the replacement requirement for Lords of the End Times.",
+    "features": [
+      "Lord/hero conversion via button",
+      "Fixes crashes since patch 9.0",
+      "Artifacts follow the conversion"
+    ]
+  },
+  "steam-2996269472": {
+    "name": "Lyra the Lioness: Legendary Hero",
+    "kind": "units",
+    "summary": "Adds the legendary heroine Lyra the Lioness to the High Elves.",
+    "description": "Lyra appears as soon as the second building of the hunter chain is built (the one that unlocks White Lions of Chrace). She is a female White Lion of Chrace, strong in melee and with buffs for her army. On foot she is a duelist; on her chariot she is better against infantry.\n\nKerberos' Alarielle mod recommends her, additionally with a variant model via the Variant Selector.",
+    "recommendedFor": "Alarielle players who want an additional High Elf heroine."
+  },
+  "steam-3210832217": {
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Adds the hero Mariko Sama to Cathay, a martial artist with a nodachi.",
+    "description": "Mariko is a martial arts expert who also wields the large nodachi sword. She is undisciplined and often charges at enemies, but can easily camouflage herself and attack opponents unseen.\n\nShe belongs to the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires her.",
+    "recommendedFor": "Players of the Cathay hero collection."
+  },
+  "steam-3596382314": {
+    "kind": "units",
+    "summary": "Gives High Elf and Dark Elf lords/heroes on monster mounts the ability for armored fighters.",
+    "description": "A mod that the author describes as experimental: most High Elf and Dark Elf lords and heroes on monstrous mounts lack the corresponding ability (“Martial/Murderous Prowess”). The mod fixes that; both sides are treated equally.\n\nAccording to the author, the main purpose is not balance. It appears in Readman's Morathi mod list.",
+    "recommendedFor": "Anyone playing mounted commanders with High or Dark Elves."
+  },
+  "steam-2860381227": {
+    "name": "Miao Ying vs Slaanesh – Immortal Empires Start Positions (被色孽包围的妙影)",
+    "kind": "submod",
+    "summary": "Start-position mod: places the Slaanesh legendary lords next to Miao Ying in Immortal Empires.",
+    "description": "The starting positions of all legendary Slaanesh lords are placed next to Miao Ying so that she has enough Slaanesh opponents. There are 5 position swaps (including Sigvald/Villitch, Azazel/Kholek, N'Kari/Snikch, Morathi/Lokhir), each individually switchable off via MCT.\n\nIt is incompatible with “Alarielle, Temptation's Bloom”, since N'Kari must start in Ulthuan there. Azazel's Realm only recommends it if the Bastion mod is not used; the Azazel swap must then be turned off via MCT.",
+    "features": [
+      "5 position swaps, can be turned off via MCT",
+      "Immortal Empires only"
+    ],
+    "recommendedFor": "Miao Ying runs that should have Slaanesh nearby."
+  },
+  "steam-3442905174": {
+    "kind": "utility",
+    "summary": "Increases the likelihood that shooters use indirect fire when friendly troops might be hit; includes Stop Idling and True Sight features.",
+    "description": "Ranged units with bow shots use indirect fire more often when there is a risk of hitting allies. As a result, shooters are also less often prevented from firing for no reason. The mod appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone who places many shooters behind melee units."
+  },
+  "steam-3809129102": {
+    "kind": "reskin",
+    "summary": "Neferata reskin in the Total Warmaidens style, building on Zeta0080's reskin.",
+    "description": "A Neferata reskin that builds on Zeta0080's Neferata reskin and belongs to the author's Total Warmaidens project (Nexus). The face was updated on 17 Oct 2026. If problems occur, the author says it is a mod conflict: place it higher in the load order or disable other mods.\n\nThe LoversLab entry “Naughty Neferata!” lists it as a requirement (“two Steam mods merged”); it is unclear whether it is embedded."
+  },
+  "steam-3404717872": {
+    "name": "Nymeria – Legendary Hero/Lord",
+    "kind": "units",
+    "summary": "Adds the legendary heroine/lady lord Nymeria to all factions, a mix of human and dryad.",
+    "description": "After activating, you receive a mission to win five battles, after which you can recruit Nymeria as a hero or general. She is half human, half tree spirit and from level 12 can switch between a normal form (more of a tank) and a monster form (more damage).\n\nKerberos' Alarielle mod recommends her; as a lord her name is blank.",
+    "recommendedFor": "Alarielle players who want an additional heroine."
+  },
+  "steam-3497485732": {
+    "name": "Readman Beautiful Bold Buildings (BBB)",
+    "authors": [
+      "Readman",
+      "Kerrberos"
+    ],
+    "kind": "submod",
+    "summary": "Readman submod for “Alarielle, Temptation's Bloom”: over 28 new buildings and chains that let you steer Slaanesh corruption, plus reworked gates and Bastion slots.",
+    "description": "A building submod for Kerberos' “Alarielle, Temptation's Bloom”, published on Steam by Readman ([GWD]Dean) together with Kerrberos. It adds new building chains for handling corruption the way you want: an industry chain for trinkets that is about 10% better than the normal one and adds corruption, and a growth chain that is slightly better and also adds corruption, each with its own icon.\n\nGates get unique versions balanced for Slaanesh corruption, with custom garrisons that include heroes. High Elf gates and the Bastion gain spells, one of them a custom spell that combines Phantasmagoria and Lash of Pain. The Bastion's support building slots are unlocked with their own effects. Counting the chains, the mod adds over 28 buildings.\n\nThe Workshop page lists no required items. The KPW guides list it for Alarielle, Morathi, N'Kari and Azazel runs, and it appears in six Readman mod lists.",
+    "recommendedFor": "ATB runs that want more control over how corruption spreads through buildings.",
+    "features": [
+      "Industry (trinket) and growth building chains that add corruption",
+      "Unique gates with hero garrisons and spells",
+      "Unlocked Bastion support slots",
+      "Over 28 buildings in total"
+    ]
+  },
+  "steam-3501984780": {
+    "name": "Readman Coalesced Character Creations (CCC)",
+    "authors": [
+      "Readman",
+      "Kerrberos"
+    ],
+    "kind": "submod",
+    "summary": "Readman submod for “Alarielle, Temptation's Bloom” with alternative character and unit models, selectable through Variant Selector.",
+    "description": "A model submod for Kerberos' “Alarielle, Temptation's Bloom”, published on Steam by Readman ([GWD]Dean) together with Kerrberos. The Workshop text describes variants for Aliathra the Everchild, a character from the ATB suggested mod list: Avelorn colours and heraldry, Slaanesh colours, or her default colours. Community lists and Discord posts describe more content, such as alternative Sisters of Avelorn models, Slaanesh monster units (models by Soilofgenisis), mounted Handmaidens and a Lust Dragon added with ATB 3.1.\n\nThe page requires Marth's Variant Selector. The author calls it a mild beta that is safe to install or uninstall at any time.\n\n“Readman Upgrades Upon Unity” needs this mod. The KPW guides list it for Alarielle, Morathi, N'Kari and Azazel runs; it is in six Readman mod lists.",
+    "recommendedFor": "ATB runs that want more unit and model choice; required if you use Readman UUU.",
+    "features": [
+      "Aliathra variants (Avelorn, Slaanesh or default colours)",
+      "Additional unit and character models for ATB",
+      "Requires Variant Selector",
+      "Safe to add or remove mid-campaign (per the author)"
+    ]
+  },
+  "steam-3592882054": {
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman mod “Germ-Free Garrison Gambit”: splits some factions' multi-purpose buildings into separate buildings when other factions play them.",
+    "description": "CA merges many buildings into a single building with “locked-off effects” when you play as someone else. This leads to chaos when one faction is allowed to recruit another's units. The mod splits cities into separate buildings, for Empire forts, Galleon's Graveyard, Cathay's Bastion and High Elf gates.\n\nAccording to the FAQ, it cannot be removed mid-game. It appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone playing as Alarielle with other factions' buildings."
+  },
+  "steam-3508604193": {
+    "name": "Readman Twisted Temptation Transformations (TTT)",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman submod for “Alarielle, Temptation's Bloom”: 29 extra technologies for Alarielle's Avelorn faction in their own tab.",
+    "description": "A technology submod for Kerberos' “Alarielle, Temptation's Bloom”. It adds 29 technologies to Alarielle the Radiant's Avelorn faction. The original tech tree moves to its own tab, the new technologies sit in a separate tab until they become relevant, and the tech tree art is changed. The author does not spoil what the technologies do.\n\nThe Workshop page requires Corrupted Landmarks and Lazy's Corruption Framework. Per the author it should be safe to add mid-campaign, but you should make a backup save first. Compatibility was only built for the ATB required and recommended mod list.\n\nKerberos recommends it as the tech mod for ATB; it is in the Alarielle guide and two Readman mod lists.",
+    "recommendedFor": "Alarielle runs with ATB.",
+    "features": [
+      "29 new technologies for the Avelorn faction",
+      "Separate tech tab; original tree kept in its own tab",
+      "Requires Corrupted Landmarks and Lazy's Corruption Framework"
+    ]
+  },
+  "steam-3534460647": {
+    "name": "Readman Upgrades Upon Unity (UUU)",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman submod for “Alarielle, Temptation's Bloom”: Handmaidens can ascend through a new Chaos initiative panel and gain new skills, models and a mount.",
+    "description": "Adds a Chaos initiative screen for the Handmaidens in Kerberos' “Alarielle, Temptation's Bloom”. After reaching level 5 and a certain story event, a Handmaiden can “ascend” through a new panel. Corrupted Handmaidens keep their starting trait and gain an extra one, get an extra mount, five new model variants, a new skill tree with custom art, and can pick two of their three exclusive skill lines. They carry all four parts of the Mark of Slaanesh boon and tie into Readman's TTT technologies. The author notes that earning boons through feats is currently broken.\n\nThe Workshop page requires “Readman Coalesced Character Creations”. It is not safe to remove mid-campaign. Only one UUU variant may be active at a time; there are separate versions for Morathi, N'Kari and Warriors of Chaos.\n\nTwo body parts come from Zeta0080's Total Warmaidens III with permission. It is in the Alarielle guide and two Readman mod lists.",
+    "recommendedFor": "Alarielle runs; for other lords, take the matching UUU variant instead.",
+    "features": [
+      "Ascension panel for Handmaidens on the Chaos initiative screen",
+      "New skill tree, extra trait, mount and five model variants for corrupted Handmaidens",
+      "Requires Readman CCC",
+      "Not safe to remove mid-campaign"
+    ]
+  },
+  "steam-3497485581": {
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman submod for ATB: new loading screen, consistent porthole and card perspective.",
+    "description": "“All Aligned Art” is a submod for Kerberos' Alarielle, Temptation's Bloom: a new loading screen with Alarielle and Averlorn heraldry, porthole angles matching CA's perspective, and likewise the unit cards. Affected are the mod characters, the Legendary Elves, as well as Nymeria and Lyra.\n\nIt appears in almost all Readman mod lists.",
+    "features": [
+      "New loading screen",
+      "Consistent porthole and card angles"
+    ],
+    "recommendedFor": "ATB runs that want a unified UI look."
+  },
+  "steam-3618278231": {
+    "authors": [
+      "Readman"
+    ],
+    "kind": "reskin",
+    "summary": "Readman reskin: Devotees of Slaanesh become female crossbow fighters with adjusted heads, bodies and voices.",
+    "description": "The mod replaces the male Devotees of Slaanesh with crossbow women: 3 body variants, 3 head variants, new unit cards and portholes, plus table changes for female voices and matching animations. According to the FAQ, removing it mid-game “should” work.\n\nIt appears in almost all Readman mod lists."
+  },
+  "steam-3620414599": {
+    "authors": [
+      "Readman"
+    ],
+    "kind": "patch",
+    "summary": "Readman's fix for Drycha's broken textures after a CA patch.",
+    "description": "CA broke Drycha's textures in a patch; Readman repaired them. The mod appears in almost all Readman mod lists.",
+    "recommendedFor": "All runs in which Drycha appears."
+  },
+  "steam-3621087383": {
+    "name": "Readman Manic Minotaur Mayhem",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman mod: Alarielle can recruit Gorebull heroes at certain landmarks.",
+    "description": "Pack !Readman_Alarielle_MMM allows Alarielle (Averlorn) to recruit Gorebull heroes at certain landmarks; not every location with more capacity is a recruitment point. The three ancillaries only become available once an additional skill point has been spent. According to the guide, place it below UUU.",
+    "recommendedFor": "Alarielle runs that want minotaur heroes."
+  },
+  "steam-3623616009": {
+    "name": "Readman Safe Sailing Ships",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman mod: Alarielle (Averlorn) may use the High Elf sea lanes.",
+    "description": "Pack !Readman_Alarielle_SSS allows Averlorn to use the High Elf sea lanes. The author criticizes that Averlorn received nothing in the patch, and lets the High Elf queen use the sea lanes.",
+    "recommendedFor": "Alarielle runs that want to travel by ship."
+  },
+  "steam-3557775008": {
+    "name": "Readman UUU Morathi Version",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "UUU variant for Morathi (“Upgrades Upon Unity”).",
+    "description": "Variant of the Readman mod UUU for Morathi (pack !Readman_Alarielle_UUU_Morathi_Ver). Only one UUU variant at a time. In the Morathi guide and in one Readman mod list.\n\nThe Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "Morathi runs."
+  },
+  "steam-3558872079": {
+    "name": "Readman UUU N'Kari Version",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "UUU variant for the Daemons of Slaanesh (“Upgrades Upon Unity”).",
+    "description": "Variant of the Readman mod UUU for N'Kari or Daemons of Slaanesh (pack !Readman_Alarielle_UUU_Nkari_Ver). Only one UUU variant at a time. In the guide for N'Kari/Dechala/Masque.\n\nThe Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "N'Kari, Dechala and Masque runs."
+  },
+  "steam-3559919182": {
+    "name": "Readman UUU WoC Version",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "UUU variant for the Warriors of Chaos (“Upgrades Upon Unity”).",
+    "description": "Variant of the Readman mod UUU for Warriors of Chaos (pack !Readman_Alarielle_UUU_WoC_Ver). Only one UUU variant at a time. In the guide for Azazel/Archaon/Be'lakor/Sigvald/Daemon Prince.\n\nThe Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "Azazel, Archaon, Be'lakor, Sigvald and Daemon Prince runs."
+  },
+  "steam-3485418515": {
+    "kind": "units",
+    "summary": "Adds High Elf units to the Red Lines of Slaanesh, Warriors of Chaos and Wood Elves, as well as to the skills of Drycha and the Sisters of Twilight.",
+    "description": "High Elf units are added to the Red Line skills of Slaanesh, Warriors of Chaos and Wood Elves, as well as to the unique skills of Drycha and the Sisters of Twilight. Updated for 7.x.x. The counterpart is “High elf red line buffs for dark elf units”.",
+    "recommendedFor": "Alarielle and Wood Elf runs with mixed armies."
+  },
+  "steam-3029800597": {
+    "name": "Remove characters traits limit",
+    "kind": "utility",
+    "summary": "Removes the trait limit (40, 80 since 6.3) for all characters.",
+    "description": "The mod removes the default limit for character traits regardless of the value CA sets. The author stresses that it also works when shown as “outdated” (compatible with patch 9.x). All characters can have unlimited traits.\n\nIt appears in almost all Readman mod lists.",
+    "recommendedFor": "Long campaigns with heavy trait accumulation from corruption mods."
+  },
+  "steam-3393253521": {
+    "kind": "utility",
+    "summary": "Units can actually damage surrounded or fleeing units.",
+    "description": "The mod fixes the problem that surrounded or fleeing units take hardly any damage because animations are not played. All units deal small damage on contact with broken or routed units via a hidden, very short attribute, without changing animations. According to the author, only in campaigns, not in Custom Battles.\n\nIt appears in almost all Readman mod lists.",
+    "recommendedFor": "Anyone who wants cavalry and surrounding to be more effective."
+  },
+  "steam-3639948043": {
+    "name": "Sarvente's Custom Characters: Liu",
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's custom character Liu (Cathay).",
+    "description": "Updated continuation of “Sarvente's custom characters: Liu”. The Steam description is very short. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
+  },
+  "steam-3317294488": {
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's Cathay hero Enhi (updated for 9.0).",
+    "description": "Unique Cathay hero who appears near the legendary lord at the start of the game and, like other legendary heroes, cannot die permanently. The summoning script was also updated. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
+  },
+  "steam-3270368516": {
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's Hakutaku Diviners (Cathay hero, for 9.0).",
+    "description": "Cathay hero, recruitable via her own building chain and with her own section in the Alchemists' recruitment tab. Do not use together with the original. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
+  },
+  "steam-3371888004": {
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's Hollows (Cathay hero, for 9.0).",
+    "description": "Cathay hero, recruitable via her own building chain, with her own section in the Astromancers' tab. Do not use together with the original. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission. A “Hollows temp-patch 8.1” is also mentioned on LoversLab."
+  },
+  "steam-3277998418": {
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's Shards of Dai Ji (Cathay hero, for 9.0).",
+    "description": "Cathay hero, recruitable via her own building chain, in the Alchemists' tab. Do not use together with the original. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
+  },
+  "steam-3271568934": {
+    "name": "Sarvente's Custom Characters: Xiao",
+    "authors": [
+      "Sarvente"
+    ],
+    "kind": "units",
+    "summary": "Continued version of Sarvente's Xiao (Cathay hero, for 9.0).",
+    "description": "Unique Cathay hero who appears near the legendary lord at the start of the game and cannot be killed permanently; the summoning script was also updated. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
+  },
+  "steam-3764597913": {
+    "name": "Sarvente Heroes – Chinese Translation (sarvente英雄汉化)",
+    "kind": "translation",
+    "summary": "Chinese translation of the Sarvente heroes and the collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”.",
+    "description": "According to the description, the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan! 1.9.0 LotET” including the original mods was translated into Chinese (with Codex): the file (X)_Cathay_ALL_XXX.7z and all mods listed alongside it.",
+    "recommendedFor": "Chinese-speaking players of the Cathay hero collection."
+  },
+  "steam-3613426737": {
+    "name": "Readman Sigvald Simply Superior",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman mod with buffs for Sigvald's faction when he is faction leader.",
+    "description": "Buffs for Sigvald's faction (only with him as leader): 3 new units, tech changes for the left-behind Hellstriders, buffs for trade buildings and small cities, and for some Undivided and Slaanesh units.",
+    "recommendedFor": "Sigvald runs (pack !Readman_AA_SSS)."
+  },
+  "steam-2851864965": {
+    "kind": "submod",
+    "summary": "Replaces Kurgan warbands with Slaanesh warbands in Miao Ying's campaign.",
+    "description": "For some variety at the Great Bastion: Slaanesh warbands attack instead of Kurgan warbands. According to the author, balance is barely tested. Possible incompatibility with mods that change faction texts or that alter the Bastion. Known bug: after the first wave, the armies apparently stop attacking.\n\nRecommended as almost mandatory in the Miao guide and in Azazel's Realm.",
+    "recommendedFor": "Miao Ying runs."
+  },
+  "steam-3321253105": {
+    "kind": "units",
+    "summary": "Additional Slaanesh units for all Slaanesh factions (N'Kari, Sigvald, Azazel).",
+    "description": "The mod brings further units for all Slaanesh factions. It is the re-release of the author's first mod, because the first version contained unnecessary data. He plans more units.\n\nThe LoversLab entry “Additional corrupted Buildings + Units” requires it.",
+    "recommendedFor": "Slaanesh runs with a larger unit selection."
+  },
+  "steam-3034462109": {
+    "kind": "utility",
+    "summary": "Slaanesh can steal faction leaders via confederation when the last settlement is conquered.",
+    "description": "The mod allows Slaanesh to take over a faction's leader through confederation by capturing its last settlement. It was part of another mod and was split out at a user's request.\n\nThe LoversLab entry “Hero-Swap Harem Skills” names it as one option for collecting characters.",
+    "recommendedFor": "Slaanesh players who want to collect leaders of other factions."
+  },
+  "steam-3304325611": {
+    "name": "Slaanesh UI theme for Miao Ying, Katarin, and Alarielle",
+    "authors": [
+      "Kerberos"
+    ],
+    "kind": "submod",
+    "summary": "Submod for Unique Faction UI: Slaanesh UI for Miao Ying, Katarin and Alarielle.",
+    "description": "The submod gives Miao Ying (Northern Provinces) the Slaanesh UI, as well as Katarin and Alarielle. “Unique Faction UI” is required (otherwise a crash). It must sit above Unique Faction UI in the default order and needs the WH3 Mod Manager (or manual copying from the Workshop folder).\n\nRecommended in Kerberos' Alarielle mod, otherwise the Defender of Ulthuan UI would appear twice from stage 5+.",
+    "recommendedFor": "Runs with Miao Ying, Katarin or Alarielle that want the Slaanesh look in the UI."
+  },
+  "steam-3465580284": {
+    "name": "Slaanesh Vassal Cults",
+    "kind": "submod",
+    "summary": "Non-public Steam item “Slaanesh Vassal Cults” (pack td_slaanesh_vassal), listed in the N'Kari guide.",
+    "description": "Nothing more is known: the KPW guide for N'Kari/Dechala/Masque lists “Slaanesh Vassal Cults” with pack td_slaanesh_vassal and a Steam link. The Steam item is not public; the information comes from community lists."
+  },
+  "steam-2792727547": {
+    "kind": "utility",
+    "summary": "Speeds up the camera movement between player turns.",
+    "description": "A mod that speeds up the camera movement between turns. It is a port of the WH2 mod “Faster end turn Camera” and only changes a default database entry, so no update is needed per patch (despite the yellow launcher flag). Savegame-compatible.",
+    "recommendedFor": "Anyone with long campaigns and many factions."
+  },
+  "steam-2789944159": {
+    "name": "Dead's Kislev Units (removed)",
+    "kind": "units",
+    "summary": "Removed Steam item “Dead's Kislev Units”, named as a requirement by “Pretty Reindeer Riders”; no longer available on the Workshop.",
+    "description": "The LoversLab entry “Pretty Reindeer Riders (Dead's Kislev Units)” names this item as a requirement (“That mod is required”). The Workshop item no longer exists: on 2026-10-31 Steam answered with an error page instead of the item, so it was most likely removed by its author."
+  },
+  "steam-2842459897": {
+    "name": "No Confederation – All Factions (removed)",
+    "kind": "utility",
+    "summary": "Removed Steam item “No Confederation – All Factions”; already reported as not working in December 2024 and no longer on the Workshop.",
+    "description": "The LoversLab entry “Slaanesh Expanded – Vassal Dilemmas” recommends “No Confederation – All Factions”; on 29 Dec 2024 its author wrote that the mod no longer works or crashes. The Workshop item no longer exists: on 2026-10-31 Steam answered with an error page instead of the item, so it was most likely removed by its author."
+  },
+  "steam-3260081389": {
+    "name": "UI mod against resource bar crowding (removed)",
+    "kind": "utility",
+    "summary": "Removed UI mod against an overcrowded resource bar, recommended by “Miao Ying's Corrupting Alchemy”; no longer on the Workshop.",
+    "description": "The LoversLab entry “Miao Ying's Corrupting Alchemy” recommends a UI mod against crowding in the resource bar; its title was never known. The Workshop item no longer exists: on 2026-10-31 Steam answered with an error page instead of the item, so it was most likely removed by its author. The same page also names “Shorter Menu For More Tools” for this purpose."
+  },
+  "steam-3509062568": {
+    "name": "Bugfix “Corrupted Characters Stage Reset” (not public)",
+    "kind": "patch",
+    "summary": "Non-public bugfix against “Corrupted Characters Stage Reset”; title unknown.",
+    "description": "All that is known: the LoversLab entries “Alarielle, Temptation's Bloom” and “Azazel's Realm” name a bugfix against the resetting of corruption stages (“Corrupted Characters Stage Reset”), needed mainly with very many script mods. According to the author it may have been fixed by a CA patch in the meantime. The Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "Runs with very many script mods and stage resets."
+  },
+  "steam-3513079088": {
+    "name": "Readman Overtly Optional Overrides (SaveSafe)",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "patch",
+    "summary": "Readman's save-safe fix collection for mods in the ATB list: portrait, voice and skill-icon fixes for Nymeria and Vaeri, plus Foe Seeker for Vaeri.",
+    "description": "A small override submod for an “Alarielle, Temptation's Bloom” setup that changes other authors' mods with bug fixes and tweaks. It makes Nymeria's portrait and porthole work in her second combat form, gives Nymeria a Treesinger voice instead of Drycha's, fixes the icons of Vaeri's “Speed” and “Extra Lessons” skills, and gives Vaeri the Foe Seeker ability, locked until level 13.\n\nThe Workshop page requires “Nymeria – Legendary Hero/Lord” and “Red line buffs for High Elf units”; according to Discord it crashes without Nymeria. This is the save-safe version, which per the author should be safe to add mid-campaign.",
+    "features": [
+      "Fixes Nymeria's second-form portrait and voice",
+      "Fixes two Vaeri skill icons",
+      "Gives Vaeri Foe Seeker (level 13)",
+      "Save-safe: can be added mid-campaign"
+    ],
+    "recommendedFor": "ATB runs that use Nymeria and the High Elf red-line buffs."
+  },
+  "steam-3528693285": {
+    "name": "Readman Alarielle LLL – Late Lavish Looks",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Readman “Late Lavish Looks”: pink instead of blue bows and arrows.",
+    "description": "Pack !Readman_Alarielle_LLL. According to the Alarielle mod, it brings pink instead of blue bows and arrows. It appears in the Alarielle Late list. The Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "Alarielle runs from the later corruption stages onward."
+  },
+  "steam-3536009143": {
+    "name": "Readman HD Banner Alarielle (not public)",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "assets",
+    "summary": "Readman's HD version of Alarielle's corrupted banner; not public.",
+    "description": "All that is known: two LoversLab entries name the HD flag as an alternative to the “Lewd Flags and Loading Screens”. The Steam item is not public; the information comes from community lists.",
+    "recommendedFor": "Alarielle runs that want a sharper banner."
+  },
+  "steam-3549231458": {
+    "name": "Readman Alarielle FFF pink",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Non-public Readman pack “Readman_Alarielle_FFF_pink”; purpose unknown.",
+    "description": "Only the pack name !Readman_Alarielle_FFF_pink.pack is known. It appears in the Alarielle Late mod list. The Steam item is not public; the information comes from community lists."
+  },
+  "steam-3640040123": {
+    "name": "Readman Miao MYM",
+    "authors": [
+      "Readman"
+    ],
+    "kind": "submod",
+    "summary": "Non-public Readman pack “Readman_Miao_mym”; purpose unknown.",
+    "description": "Only the pack name !Readman_Miao_mym.pack is known. It appears in the Miao Late mod list. The Steam item is not public; the information comes from community lists."
+  },
+  "steam-3730309520": {
+    "name": "Lord Hero Swap Fix (not public)",
+    "kind": "patch",
+    "summary": "Non-public fix for the mod “Lord Hero Swap”; title unknown.",
+    "description": "All that is known: the LoversLab entry “Hero-Swap Harem Skills” names it as a fix mod for the original (not public). The Steam item is not public; the information comes from community lists."
+  },
+  "steam-3809622795": {
+    "kind": "units",
+    "summary": "Cathay hero Taoyan; the Steam description is empty.",
+    "description": "The Steam item is tagged as a unit mod but has no description. According to the LoversLab entry “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, it seems to have taken over the model and “sexified” skill images; the file (X)_Cathay_Taoyan_XXX is independent of it.",
+    "recommendedFor": "Players of the Cathay hero collection (optional)."
+  },
+  "steam-3027059730": {
+    "name": "The Cult of Slaanesh",
+    "kind": "units",
+    "summary": "Large Slaanesh expansion: Slaanesh cult after “Storm of Chaos” for Morathi, Marked Dark Elf units, QoL and rebalances.",
+    "description": "The mod is its own interpretation of a Slaanesh cult, inspired by Morven's “Morathi Simple Slaanesh Expansion” and the Cult of Slaanesh from Storm of Chaos. It brings Slaanesh units for Morathi, Marked Dark Elf units, quality-of-life changes and rebalances. According to the author, the requirements are only recommendations.\n\nThere are submods (all lord types, six spells for Morathi, Marked Units and Marked Heroes for Slaanesh factions, stronger Dechala skills), separate skill dumps, and Chinese and French translations. Listed in the Morathi guide and in Readman's Morathi list."
+  },
+  "steam-2931377022": {
+    "kind": "utility",
+    "summary": "Allows trading any settlements with any known faction you are not at war with.",
+    "description": "Via a new button at the top left, any settlement can be traded with any met faction as long as there is no war; in vanilla this only works near the border. The vanilla restrictions make some trades impossible. The LoversLab entry “Slaanesh Expanded – Vassal Dilemmas” recommends it.",
+    "recommendedFor": "Campaigns with a lot of diplomacy and settlement trading."
+  },
+  "steam-2858576975": {
+    "name": "Zealots of Slaanesh – Unit Mod",
+    "kind": "units",
+    "summary": "Five new Slaanesh units for N'Kari, Morathi, Daemon Prince, Sigvald, Azazel, Archaon and Be'lakor.",
+    "description": "New units: Acolytes, Acolytes (Hybrid), Zealots (Hellscourges), Exalted Zealots and Archangel. For these, the Warriors of Chaos recruit a Chaos Marauder and convert him into an Acolyte in the Slaanesh panel of the warband upgrades; the variants follow through experience.\n\nThe LoversLab entry “Additional corrupted Buildings + Units” requires it."
+  },
+  "steam-3700484893": {
+    "name": "All Faction Legendary Lord: Aelesha Sigrika (全派系传奇领主：艾雷莎·西格莉卡)",
+    "kind": "units",
+    "summary": "Legendary lord Aelesha Sigrika for all factions with an exclusive weapon and a Black Dragon mount.",
+    "description": "The mod offers a legendary lord for all factions; for Dark Elves, a Black Ark is additionally bound. There is a lord version and a minister version, which must not be active together. Skills can also be bought in Custom Battles; the exclusive weapon received “Umbral Siphon” (HP in exchange for wind of magic).\n\nIf there are problems, test it on its own and place it as high as possible in the load order. The collection “Sexy Cathay Heroes” lists it.",
+    "recommendedFor": "Players of the Cathay hero collection."
+  },
+  "steam-3801669633": {
+    "name": "Slaanesh Expedition (色孽远征)",
+    "kind": "campaign",
+    "summary": "Complete playable Slaanesh faction “Slaanesh Expedition” for Immortal Empires (mod is in Chinese, English translation separate).",
+    "description": "The Slaanesh Expedition is a minor faction with the leader Expedition Commander. You hunt legendary figures, corrupt them and lead them into the expedition as Legendary Heroes; 13 figures are available (including Miao Ying, Katarin, Morathi, Alarielle, Hellebron, Drycha, Elspeth). Their old factions become vassals. Rift expeditions allow jumps to distant regions.\n\nTo start: activate Mixu's Unlocker, choose the Slaanesh race in Immortal Empires, and show minor factions. New campaigns only; the mod contains Chinese text, and the English translation is a separate item. The LoversLab entry “Hero-Swap Harem Skills” recommends it (as of 18 Sep 2026).",
+    "features": [
+      "Complete Slaanesh minor faction",
+      "13 corruptible Legendary Heroes",
+      "Rift expeditions",
+      "New campaigns only"
+    ]
+  },
+  "steam-3691683876": {
+    "name": "Alarielle Temptation Bloom & SFO Unit Compatibility Patch (艾拉瑞丽堕落 & SFO 兵种单位兼容补丁)",
+    "authors": [
+      "Avanti Savoia"
+    ],
+    "kind": "patch",
+    "summary": "Compatibility patch: adapts the units of “Alarielle, Temptation's Bloom” to SFO values.",
+    "description": "According to the author, ATB runs with SFO, but the newly added units are too weak in SFO. This patch adjusts their stats to SFO strength. You still need the ATB mod combination (and the Readman CCC package) as well as SFO.",
+    "recommendedFor": "Anyone playing ATB with SFO."
+  },
+  "steam-3376886102": {
+    "name": "Generic Framework (通用框架)",
+    "kind": "framework",
+    "summary": "Shared prerequisite framework for several mods by the same author (scripts and tables).",
+    "description": "More and more of the author's mods use the same scripts and tables. Instead of copying them into every mod and repairing them individually after CA updates, they have been moved into this prerequisite mod (pack Lin_Generic_Framework).\n\nRequired by “Corrupted Ascension”, “Corrupted Drycha”, “Corrupted Fay” and “Summon Servant”. Listed in the KPW guides for Alarielle, Morathi and N'Kari."
+  },
+  "steam-3808407319": {
+    "name": "Passing's Corrupted Valkia (old Workshop upload)",
+    "authors": [
+      "PassingByPosts"
+    ],
+    "kind": "campaign",
+    "summary": "Earlier Workshop upload of Passing's Corrupted Valkia, replaced by Steam 3813939023 and no longer available.",
+    "description": "The first Workshop upload of Passing's Corrupted Valkia (2026-09-26). In October 2026 the author created a new item (Steam 3813939023) and asked players to unsubscribe from this one and delete old .pack files from the data folder: both versions use the same pack name, which leads to a startup crash or an invisible mod.\n\nThe Workshop item no longer exists: on 2026-10-31 Steam answered with an error page instead of the item, so it was most likely removed by its author."
+  },
+  "steam-3622829128": {
+    "name": "Endo Audio Merged",
+    "kind": "patch",
+    "summary": "Merges the audio of Endo's faction reskins so several of them can be used together. Load it above the reskins.",
+    "authors": [
+      "Endo"
+    ],
+    "description": "Each of Endo's faction reskins ships its own audio. When several are active, they overwrite each other; this pack merges the audio of all of them so every reskin keeps its sounds.\n\nIt does nothing on its own: install it together with the Endo reskins and place it **above** them in the load order.",
+    "features": [
+      "Merged audio for all Endo faction reskins",
+      "Needs the reskins themselves",
+      "Load above the reskins"
+    ],
+    "recommendedFor": "Everyone who runs more than one Endo reskin."
+  },
+  "steam-3647816031": {
+    "name": "[Endo] Empire - Mixed",
+    "kind": "submod",
+    "summary": "Add-on for Endo's Empire reskin that mixes vanilla units back in alongside the reskinned ones.",
+    "authors": [
+      "Endo"
+    ],
+    "description": "Small add-on for **[Endo] Empire**: instead of replacing every Empire unit, it mixes vanilla units back in with the reskinned ones. Unit cards and audio stay changed.",
+    "recommendedFor": "Players who want Endo's Empire look on only part of the army."
+  },
+  "steam-2855365665": {
+    "name": "Zoat Elder - Generic Lord + Hero for Wood Elves",
+    "kind": "units",
+    "summary": "Adds the Zoat Elder as a generic lord and the Zoat Warden as a generic hero for all Wood Elf factions. Incompatible with Lazy's progression framework.",
+    "description": "Every Wood Elf faction that holds a magical forest region gets one **Zoat Elder** per such region, once, in the lord recruitment panel; the **Zoat Warden** joins as a generic hero. Works for the AI as well.\n\n**Compatibility:** the Discord FAQ lists this mod as incompatible with Lazy's corruption progression framework, so leave it out of every lewd campaign profile.",
+    "features": [
+      "Zoat Elder generic lord, one per held magical forest",
+      "Zoat Warden generic hero",
+      "Works for AI factions",
+      "Incompatible with Lazy's progression framework (Discord FAQ)"
+    ]
+  },
+  "steam-2876531798": {
+    "name": "Preytons",
+    "kind": "units",
+    "summary": "Adds Preytons, a flying anti-large monster, to the Beastmen. Incompatible with Lazy's progression framework.",
+    "description": "Adds the **Preyton** for the Beastmen: a single-entity flying anti-large unit with vanguard deployment and frenzy, recruited from the tier-5 Creatures building, plus a Regiment of Renown.\n\n**Compatibility:** the Discord FAQ lists this mod as incompatible with Lazy's corruption progression framework, so keep it out of lewd campaign profiles.",
+    "features": [
+      "Preyton flying monster unit for Beastmen",
+      "Regiment of Renown 'The Beast of Bourges'",
+      "Incompatible with Lazy's progression framework (Discord FAQ)"
+    ]
+  },
+  "steam-2856019044": {
+    "name": "Improved LOD",
+    "kind": "utility",
+    "summary": "Graphics tweak that pushes back the distance at which models lose detail; recommended by Kerberos for ATB and Azazel's Realm.",
+    "description": "A movie-pack mod that increases the distance at which model level-of-detail reduction starts, so close-up camera views keep full-quality models (relevant for the reskins in the corruption mods). It may cost a little performance. Being a movie pack, some mod managers do not list it.\n\nRecommended on the Discord for Alarielle, Temptation's Bloom and Azazel's Realm.",
+    "features": [
+      "Keeps full model quality at closer zoom levels",
+      "Movie pack: may not appear in third-party mod managers",
+      "Small possible performance cost"
+    ],
+    "recommendedFor": "Anyone using the high-detail reskins who zooms in on characters."
+  },
+  "steam-3499928880": {
+    "name": "Readman AAA Submod - Lyra 'cute peek' lion",
+    "kind": "submod",
+    "authors": [
+      "Readman"
+    ],
+    "summary": "Optional visual submod for ATB that gives Lyra her lion look from the original 2D portrait.",
+    "description": "Small visual submod for **Alarielle, Temptation's Bloom**: switches Readman's 3D look for the legendary hero Lyra back to the style of her original 2D porthole (lion variant). It never needs updating and should be safe to remove mid-campaign.\n\nUse only one of the two AAA Lyra submods (lion or hair).",
+    "recommendedFor": "ATB players who prefer Lyra's original portrait look; pick either the lion or the hair variant."
+  },
+  "steam-3499900952": {
+    "name": "Readman AAA Submod - Lyra 'cute peek' hair",
+    "kind": "submod",
+    "authors": [
+      "Readman"
+    ],
+    "summary": "Optional visual submod for ATB that gives Lyra the hair style from her original 2D portrait.",
+    "description": "Small visual submod for **Alarielle, Temptation's Bloom**: switches Readman's 3D look for the legendary hero Lyra back to the hair style of her original 2D porthole. It never needs updating and should be safe to remove mid-campaign.\n\nUse only one of the two AAA Lyra submods (lion or hair).",
+    "recommendedFor": "ATB players who prefer Lyra's original portrait look; pick either the lion or the hair variant."
+  },
+  "steam-3754256443": {
+    "name": "Corrupted Compendium workshop fix (obsolete)",
+    "kind": "patch",
+    "summary": "Temporary third-party patch for the Steam Corrupted Compendium (Emissary could not be embedded into armies). Merged into the official Steam version on 2026-06-29; not needed any more.",
+    "description": "A small patch uploaded by a third party (credited as Daedra) after Corrupted Compendium moved to Steam: the Emissary could not be embedded into armies. It was loaded **above** the Steam Compendium.\n\nPassingbyPosts merged the fix into the official Steam Compendium (3705392682) on 2026-06-29 and shipped a further Loi/Emissary embed fix on 2026-08-02, so this upload is obsolete. Remove it and use only the official Steam Compendium.",
+    "features": [],
+    "recommendedFor": ""
+  }
+}

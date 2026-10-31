@@ -1,0 +1,92 @@
+{
+  "_comment": "Preset texts (English Markdown), written by the curator from Readman's .twmods lists, KPW's guides and the Discord notes. coverMods: whose cover images represent the preset.",
+  "readman-alarielle-early": {
+    "description": "The full **Alarielle, Temptation's Bloom (ATB)** story campaign as Readman plays it: Alarielle resists or gives in to Slaanesh's temptations while Kerberos' quest chains let her confederate Drycha, the Sisters of Twilight, N'Kari and eventually Azazel, which ties into **Azazel's Realm** and the Miao Ying / Katarin storylines.\n\nOn top of the shared base (Lazy's framework, Miao and Katarin progression, Corrupted Landmarks, MCT, quality-of-life mods) this list adds Readman's Alarielle packs: lewd buildings (BBB), Slaaneshi units (CCC), a corrupted tech tree (TTT) and the handmaiden ascension mechanic (UUU), plus Narok's Slaanesh Expanded dilemmas, Lin's Corrupted Drycha (with Generic Framework and the English translation) and a few legendary heroes (Lyra, Nymeria, LHEC).\n\n**How to play:** start a new Immortal Empires campaign as Alarielle with this list and keep it until corruption stage 4. From stage 5, switch to *Alarielle – late game*. Do not reorder the list; the author supports only this order.",
+    "highlights": [
+      "Story campaign with 48 scenes and confederation quest chains (ATB)",
+      "Readman BBB, CCC, TTT, UUU: buildings, units, tech tree, handmaiden ascension",
+      "Leads into Azazel's Realm and the Miao Ying / Katarin storylines",
+      "Immortal Empires only; needs The Queen & The Crone, Realm of the Wood Elves, Champions of Chaos and The Twisted & The Twilight for the full roster",
+      "List from January 2026: Corrupted Compendium and Corrupted Valkia have moved to Steam since; use the Steam versions and remove the old LoversLab packs"
+    ],
+    "coverMods": ["ll-42028"]
+  },
+  "readman-alarielle-late": {
+    "description": "The **late-game half of the Alarielle campaign**, meant for the point where Alarielle reaches corruption stage 5. It keeps everything from the early-game list and adds the late visual and story layer: Readman's Late Lavish Looks (LLL) and pink theme (FFF), the Slaanesh UI theme, lewd flags and loading screens, the corrupted Miao audio overhaul and **Passing's Corrupted Valkia** for the end-game crisis of Azazel's Realm.\n\n**Important:** never start a campaign with this list. Switching early, or starting with it, breaks buildings on turn 1. Load it on an existing save once Alarielle has reached stage 5.",
+    "highlights": [
+      "Switch to it at Alarielle corruption stage 5, not before",
+      "Adds late-game looks, Slaanesh UI theme, flags and loading screens",
+      "Includes Corrupted Valkia for the Azazel's Realm end-game crisis (now Steam 3813939023)",
+      "Same DLC and campaign requirements as the early-game list"
+    ],
+    "coverMods": ["ll-42028", "ll-24004"]
+  },
+  "readman-miao-early": {
+    "description": "A **Miao Ying corruption campaign** built on Lazy's original progression series: Miao's stages, reskins and events, extended by PassingByPosts' **Corrupted Compendium** (emissary, extra events and the Ensign Loi storyline), SEU's Miao Ying expansion, Soil's corrupted Cathay units and Habu's corrupted buildings and seduction mechanics.\n\nIt also loads ATB and Azazel's Realm, so Kerberos' crossover content between Miao, Azazel and Alarielle is available, and *Slaanesh assaults the great bastion* for early Slaanesh pressure.\n\n**How to play:** start a new Immortal Empires campaign as Miao Ying with this list. From corruption stage 4, switch to *Miao Ying – late game*.",
+    "highlights": [
+      "Lazy's Miao Ying progression with Corrupted Compendium and SEU's expansion",
+      "Soil's corrupted units and Habu's corrupted buildings for Cathay",
+      "Crossover content with Azazel's Realm and ATB",
+      "Immortal Empires; Champions of Chaos needed to recruit Azazel after confederation",
+      "Do not combine ATB's corrupted wood elf units with tdw_corrupted_buildings_add_wef (author's note)"
+    ],
+    "coverMods": ["ll-23878", "ll-23876"]
+  },
+  "readman-miao-late": {
+    "description": "The **late-game list for Miao Ying**, for saves where Miao has reached corruption stage 4. It adds the Slaanesh-corrupted Cathay roster, the Miao Slaanesh UI, lewd flags and loading screens, Readman's Miao pack (MYM) and **Corrupted Valkia** for the Azazel's Realm end-game crisis.\n\nDo not start a campaign with it; switch from the early-game list once stage 4 is reached.",
+    "highlights": [
+      "Switch at Miao Ying corruption stage 4",
+      "Slaanesh-corrupted Cathay roster and Slaanesh UI",
+      "Corrupted Valkia for the end-game crisis (now Steam 3813939023)"
+    ],
+    "coverMods": ["ll-23878", "ll-26591"]
+  },
+  "readman-katarin-early": {
+    "description": "The smallest list: **Katarin's corruption series** from Lazy (Tzeentch and Slaanesh stages with reskins) on the shared base, plus Soil's corrupted Kislev units, SEU's Katarin addition, Habu's *Corrupted Chars can Seduce* and the optional crown-removal visual submod.\n\nReadman notes he has never played this route himself, so treat it as a community-tested starting point rather than a fully curated campaign. No extra DLC is needed according to KPW's guide.",
+    "highlights": [
+      "Lazy's Katarin progression (2 Tzeentch + 2 Slaanesh stages)",
+      "Soil's Kislev units and SEU's Katarin addition (Discord downloads)",
+      "Optional crown removal for Katarin's reskins",
+      "Less tested than the other lists"
+    ],
+    "coverMods": ["ll-23966"]
+  },
+  "readman-morathi": {
+    "description": "A **Morathi campaign** combining Lazy's Morathi Ascension (stages and reskins) with the ATB / Azazel's Realm ecosystem: Morathi can play the Slaanesh side of Alarielle's story. The list adds the Cult of Pleasure mechanics patch, Cult of Slaanesh hero and lord tweaks, several Dark Elf gameplay mods, Readman's Morathi version of UUU and Lin's Corrupted Drycha.\n\nLazy's Morathi route is on indefinite hiatus since September 2026 and has no stage 5, so the story ends earlier than Alarielle's or Miao's.",
+    "highlights": [
+      "Lazy's Morathi Ascension plus the Slaanesh side of ATB",
+      "Cult of Pleasure and Cult of Slaanesh tweaks, Dark Elf gameplay mods",
+      "Readman UUU (Morathi version)",
+      "Morathi route on hiatus, no stage 5",
+      "Immortal Empires; same DLC set as the Alarielle guide"
+    ],
+    "coverMods": ["ll-23925", "ll-42028"]
+  },
+  "readman-sigvald-early": {
+    "description": "Play **Sigvald** as one of the Slaanesh/Chaos factions that confederate Azazel in ATB and Azazel's Realm. The list adds Readman's *Sigvald Simply Superior*, the Warriors-of-Chaos version of UUU, Female Daemonettes and Soil's corrupted units.\n\nKnown issue: *Sigvald Simply Superior* can crash at the end of a turn when the Chaos AI moves; disable it if that happens.",
+    "highlights": [
+      "Chaos-side route through ATB and Azazel's Realm",
+      "Readman Sigvald Simply Superior and UUU (WoC version)",
+      "Disable Sigvald Simply Superior on end-turn crashes"
+    ],
+    "coverMods": ["ll-27930"]
+  },
+  "readman-slaanesh-daemons-early": {
+    "description": "Play **N'Kari, Dechala or Masque** and experience Alarielle's corruption from Slaanesh's side, a mode ATB supports since version 2.0. The list adds Readman's N'Kari version of UUU, Narok's Slaanesh Expanded dilemmas and Lin's Corrupted Drycha with its translation.\n\nPlaying as Dechala is no longer recommended since ATB 3.0 because of a voice-over conflict with Alarielle's stage 7; N'Kari is the intended choice.",
+    "highlights": [
+      "Slaanesh side of the ATB story",
+      "Readman UUU (N'Kari version), Slaanesh Expanded dilemmas",
+      "Prefer N'Kari; Dechala has a VO conflict since ATB 3.0"
+    ],
+    "coverMods": ["ll-42028"]
+  },
+  "readman-woc-early": {
+    "description": "For **Archaon, Azazel, Be'lakor or a Daemon Prince**: the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
+    "highlights": [
+      "Chaos route of Azazel's Realm (play as Azazel and others)",
+      "Readman UUU (WoC version), Female Daemonettes, Soil's units",
+      "Archaon cannot confederate Valkia, N'Kari or the Changeling"
+    ],
+    "coverMods": ["ll-27930"]
+  }
+}

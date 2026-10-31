@@ -1,0 +1,352 @@
+{
+  "ll-42028": {
+    "summary": "Extensive corruption campaign around Alarielle and Slaanesh (Immortal Empires): quest chains, dilemmas with 48 scenes, corrupted faction mechanics, and a link to Azazel's Realm. Also playable from the Slaanesh side since version 2.0.",
+    "description": "Alarielle, Temptation's Bloom is a standalone story campaign for Alarielle, Queen of the Wood Elves, pitting her against the temptations of Slaanesh. The mod is part of Lazy Icarus' corruption ecosystem (Lazy's Progression Framework, MCT) and, according to the page, contains 48 scenes with texts and images from many contributors, the legendary heroine Vaeri, and around 170 dilemmas. The author warns that despite additional bonuses, the campaign deliberately contains traps: an easy victory as Alarielle is not intended.\n\nGameplay changes a lot: Alarielle's faction mechanics, rites, equipment and followers receive corrupted counterparts that are unlocked gradually. Corruption events open portals to the corrupted World Roots, and quest chains let you confederate Drycha, the Sisters of Twilight, N'Kari and Azazel. With Azazel (and therefore Miao Ying and Katarin), the mod is fully tied into Azazel's Realm, whose gameplay thereby becomes endgame content. The mod also changes the starting balance of the map (among other things, Valkia is removed and brought back for a late-game crisis; Miao Ying, Katarin, N'Kari, Tyrion and Eltharion are strengthened, several starting warlords are weakened) so that the quest chains are not destroyed by the AI and a strong Order bloc stands as the opponent at the end.\n\nThe themes are corruption and seduction by Slaanesh, depicted with explicit scenes (the page mentions tentacles, among other things). Since version 2.0 the story can also be played from the Slaanesh side (N'Kari, Dechala, Masque, Morathi, Azazel along with lords who confederate Azazel); the scenes stay the same. For a first playthrough the author recommends Alarielle (alternatively N'Kari or Morathi). The downloads include a LUA cheat sheet and a flowchart. If you only want the reskins, download just kerberos_mod_assets.pack and choose variants via Variant Selector.\n\nImportant: it only runs in Immortal Empires and Immortal Empires Expanded, and a new game is required. All required mods (Lazy's Framework including the Katarin/Miao progression, Corrupted Landmarks in the Workshop version, groovy_mct, Mixu's Unlocker, PJ Console with Context Viewer enabled, Azazel's Realm, Kerberos Mod Assets) should stay in the default order; some of the Steam items are unlisted and only linked from the LoversLab page. DLCs: The Queen & The Crone (Alarielle), Champions of Chaos (Azazel), Realm of the Wood Elves (Drycha), The Twisted & The Twilight (Sisters of Twilight). Corrupted Ascension, SFO, RDLL (only with AI recruitment disabled), Walk with the Dragon, Legendary Characters by Stratovarius and some UI mods are considered incompatible; do not play as Wood Elves with ATB active. The author links a recommended mod list with load order in the Lewdhammer wiki.",
+    "features": [
+      "Story campaign for Alarielle with 48 scenes and around 170 dilemmas",
+      "New legendary heroine Vaeri (Handmaiden)",
+      "Corrupted faction mechanics, rites, equipment and followers",
+      "Portals to the World Roots; quest chains for confederating Drycha, the Sisters of Twilight, N'Kari and Azazel",
+      "Full integration with Azazel's Realm (Miao Ying / Katarin as endgame)",
+      "Also playable from the Slaanesh side from v2.0 (N'Kari, Dechala, Masque, Morathi, Azazel)",
+      "MCT options for scene pacing; changed starting balance of the map",
+      "Immortal Empires / Immortal Empires Expanded only"
+    ],
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_01/wh3mm_8TytqDu5wi.png.f5330a4188aba21ff3107f27dd46b5c6.png": {
+        "kind": "loadorder",
+        "caption": "Required mods in the mod manager view (wh3mm); per the author, leave them in the default order"
+      },
+      "https://www.loverslab.com/uploads/monthly_2025_03/image.png.b56e9e1f25a28c70e97c7c83b7d9d9e9.png": {
+        "kind": "screenshot",
+        "caption": "Game option “Enable context viewer” (PJ Console) for displaying script errors"
+      },
+      "https://www.loverslab.com/uploads/monthly_2025_10/Untitled.png.0b6adf0f4236c451671a17c0915da1f1.png": {
+        "kind": "screenshot",
+        "caption": "Forest Spirit upgrade buttons (do not select at the same time)"
+      }
+    }
+  },
+  "ll-49648": {
+    "description": "A collection of submods that add nudity to Sarvente's Cathay hero mods (and a few other Steam mods); for some heroes the balance is also reworked. The original Steam mods are required in each case, and the submods sit above them in the load order.\n\nIn detail: Mariko is stripped and significantly toned down (from “god-tier” to a specialized assassin or character killer, plus bug fixes and new unit cards). Enhi becomes a glass-cannon mage with regenerating shields who is quickly punished in melee. Xiao and Liu are undressed with no balance changes. The recruitable hero types Hakutaku Diviners, Shards of Dai Ji and Hollows get their own nudity variants (for Hollows only clothing removed, without details), plus a combined building pack and an Alt Hero package that bundles all three plus buildings. Taoyan is not a submod but a standalone, very revealing model. A bonus submod (@LK_dark) covers the all-faction lord Aelesha Sigrika and is not included in the all-in-one.\n\nPractical notes: (X)_Cathay_ALL_XXX bundles everything except the bonus submod in one file; you can also pick individual heroes. According to the author, the load order is automatic, and all parts except Mariko can be added mid-save. A Chinese translation of the Sarvente heroes is available on Steam.",
+    "features": [
+      "Nudity submods for Mariko, Enhi, Xiao, Liu, Hakutaku Diviners, Shards of Dai Ji and Hollows",
+      "Rebalancing of Mariko (assassin) and Enhi (glass-cannon mage)",
+      "Taoyan as a standalone nude version",
+      "Combined building pack and Alt Hero package",
+      "All-in-one pack (without the bonus submod for Aelesha Sigrika)",
+      "Can be added mid-save, except for Mariko"
+    ],
+    "recommendedFor": "For profiles that use Sarvente's Cathay heroes from the Workshop and want more revealing models (with reworked stats for Mariko and Enhi). Load only the packs whose Steam original is active, or the all-in-one."
+  },
+  "ll-27439": {
+    "description": "An add-on for the Community Beastmen mod that integrates the Beastmen more strongly into its narrative framework. According to the page, only “the main mod Community Beastmen” is required, without naming the exact variant. Part 1 brings new skills (four per generic lord, two per hero) as well as new active abilities for certain lords and heroes.\n\nPassive abilities are rewritten and renamed (example: Primal Fury becomes Primal Lust), and all skill images have been replaced. According to the author, the new skills and abilities give no additional strength in the autoresolve calculation; after testing he considers the mod reasonably balanced. Some of the images come from other artists (credits on the page) and are partly still to be replaced.\n\nA part 2 is announced, centered on hunting female Legendary Lords: for each defeated lady there is a dilemma with a choice between a strong buff or corrupted items, with self-made cover images. This part is not yet included. Older versions can simply be replaced by the new one; after a CA table update the skill trees were temporarily broken, and the latest version is meant to fix that.",
+    "features": [
+      "4 new skills each for generic lords, 2 for heroes",
+      "New active abilities for certain lords and heroes",
+      "Renamed and rewritten passive abilities (e.g. Primal Fury to Primal Lust)",
+      "New skill images",
+      "No effect on autoresolve strength",
+      "Part 2 (hunting female Legendary Lords with dilemmas) only announced"
+    ],
+    "recommendedFor": "For Beastmen profiles with the Community Beastmen main mod that want more skill choices and thematically fitting abilities for lords and heroes. The page does not say which variant of Community Beastmen is meant.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2023_06/image.png.d96b2e1b40697c6701f7a204155d7839.png": {
+        "kind": "screenshot"
+      }
+    }
+  },
+  "ll-23901": {
+    "description": "Forest of Debauchery is a work-in-progress mod meant to fully “corrupt” the Wood Elves. Currently it is a pure unit reskin in Slaanesh style with revealing or nude models; many unit cards come from Squiggy.\n\nAlready included are reskins for Eternal Guard (with and without shield), Wildwood Rangers (incl. Regiment of Renown), Wardancers (incl. RoR), Bladesingers, Sisters of Thorn, Dryads (incl. RoR) and Malevolent Dryads, the heroes Branchwraith and Spellsinger, and the lord Spellweaver. Reskins for all remaining units, heroes, lords and mounts are to follow.\n\nAfter that the author plans a split: one version stays a pure reskin, while the other turns the units into their own roster in the vicinity of the Sisters of Twilight with their own abilities, stats and balancing, more strongly aligned with Slaanesh. This is not yet implemented. The page was last updated in 2022 (version 1.3.2); whether a successor exists is not apparent from the page.",
+    "features": [
+      "Corruption reskin for Wood Elf infantry (Eternal Guard, Wildwood Rangers, Wardancers, Bladesingers, Sisters of Thorn, Dryads)",
+      "Reskins for Branchwraith, Spellsinger and Spellweaver",
+      "New unit cards (including from Squiggy)",
+      "Planned: remaining units, heroes, lords, mounts",
+      "Planned: own Slaanesh roster as a second version"
+    ],
+    "recommendedFor": "For Wood Elf profiles that want purely visually corrupted units. Incomplete (WIP); not all units are done.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2022_09/1885415533_TotalWar_WARHAMMER325_09.202200_24_47(2).thumb.png.6bcbb9603855743bf661e7a7daf60d07.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_09/1866089932_TotalWar_WARHAMMER326_09.202202_52_18.thumb.png.13ad3a50e93e7851dc32a5a7c6e07def.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_09/786450622_TotalWar_WARHAMMER326_09.202215_52_54.thumb.png.265670bdaef471675f60337abdfaec58.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_10/63606932_TotalWar_WARHAMMER302_10.202203_28_40(2).thumb.png.28be6fd7798325b342d5f2ced2e9e32c.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_10/688800084_TotalWar_WARHAMMER302_10.202203_31_03(2).thumb.png.9a9b04376c503306bfdd65ac009dff35.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_09/1050966641_TotalWar_WARHAMMER325_09.202200_23_15(2).thumb.png.4c979ff247096f284ecb15545e8db1e9.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_10/1508479_TotalWar_WARHAMMER302_10.202204_09_06(2).thumb.png.104ab24c866bab3d1a42cfb6f82735d3.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_10/1283385197_TotalWar_WARHAMMER309_10.202206_18_19(2).thumb.png.c364430c4a0f3358c90637e91512bdcb.png": {
+        "kind": "screenshot"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_09/1481090717_TotalWar_WARHAMMER325_09.202200_15_45(2).png.e1e21ab4e1c4b9d5b479b966c6140876.png": {
+        "kind": "screenshot"
+      }
+    }
+  },
+  "ll-33808": {
+    "description": "A small submod that gives corrupted characters the “Seduce Units” mechanic of the Slaanesh factions: enemy units can be seduced and won over. There is one version each for Miao Ying (tdw_cth_seduce), Katarin (tdw_kat_seduce) and Morathi (tdw_mor_seduce).\n\nTechnically, the character's faction starts with a seduce budget of -200% so that other normal lords of the faction do not share the mechanic. From corruption level 3 (Morathi: level 2) the character receives a trait that unlocks a budget above zero and brings more budget and better effects with each further level. Other Legendary Lords with their own corruption mod or from Slaanesh factions (Morathi, Fay Enchantress, Katarin, Azazel, Sigvald, N'Kari) receive their own traits as soon as they are in Miao Ying's or Katarin's faction; Fay Enchantress, for example, makes seducing Bretonnians and other humans cheaper, and Morathi does the same for elves. Only membership counts, not how the lord joined.\n\nThe matching corruption mod is required in each case: Lazy's Miao Ying Progression plus Corrupted Compendium (the tutor there gives a small bonus and can now only be equipped by Miao), Lazy's Corrupted Katarin, or Lazy's Morathi Ascension. The mods for the other lords are not required but useful. The author states compatibility with his Easy Cross Faction Confederation scripts and explicitly recommends Keep Seduced Units (Steam), even though it makes the mechanic very strong.",
+    "features": [
+      "Seduce mechanic for corrupted Miao Ying, Katarin and Morathi",
+      "Unlocked via a trait from corruption level 3 (Morathi from level 2), growing with each level",
+      "Own traits for further Legendary Lords in the faction (e.g. Fay Enchantress, Azazel, Sigvald, N'Kari)",
+      "One version per character (tdw_cth_seduce / tdw_kat_seduce / tdw_mor_seduce)",
+      "Tutor item from Corrupted Compendium can now only be equipped by Miao"
+    ],
+    "recommendedFor": "For profiles with Lazy's corruption mods (Miao Ying, Katarin, Morathi) that want to seduce enemies and recruit their troops. Load only the version for the character you play; very powerful together with Keep Seduced Units.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2025_02/kat_small_chibi_l_300.png.ff3f5cd7de2b4d4758d55fd71a4a71d2.png": {
+        "drop": true
+      },
+      "https://www.loverslab.com/uploads/monthly_2025_02/mor_chi_s100_long.png.a941b3cda5fbe9015dbcb3360753374e.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-52245": {
+    "description": "Battle Angel XXX adds a standalone Legendary Hero named Hitomi, available to all factions and renamable in game. According to the author, it is essentially a rip of a Chinese Steam mod (the page uncertainly names “Shen Zuu”), whose mesh he edited to be considerably more revealing and cleaned of errors.\n\nThe character was heavily rebalanced and toned down: she is a duel specialist as a Light mage and a buffer for her immediate surroundings. The unit card and porthole are AI-generated. The backstory makes Hitomi a former concubine of the Celestial Dragon Emperor who fell to Slaanesh; his “blessing” made her bust grow enormously. Later she escaped to the Old World with a shield passed to her by Khorne, and now joins the player's lord.\n\nThe mod is standalone and requires a new game. The page names no further dependencies.",
+    "features": [
+      "Legendary Hero Hitomi for all factions",
+      "Renamable in game",
+      "Rebalanced as a duel Light mage and area buffer",
+      "Edited model, AI-generated unit card and porthole",
+      "Standalone, new game required"
+    ],
+    "recommendedFor": "For any profile that wants an additional revealing support hero for every faction. New game required.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/default_sad.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-32374": {
+    "description": "Soil's Corrupted Units is a collection of corrupted unit mods for various factions, intended as a complement to other corruption mods. The units are obtained via warband upgrades. You always need two files: the asset pack and the mod for the faction you are currently playing (only that one each).\n\nThe new Miao Ying mod brings a complete corruption roster with a different playstyle (supporting ranged units and melee damage dealers), an additional tech tree, warband upgrades for converting normal units, a scaling malus on standard units (to force the switch), and corrupted main, military and economy buildings. It requires Li's Miao Ying corruption mods; the asset file must be updated for this. The Azazel mod requires Kerberos' Azazel's Realm and must be loaded after it.\n\nAnything that changes the warband upgrades of the faction being played is incompatible (according to the author, mostly only visually). A community fix replaces the asset pack because new textures otherwise partly overwrite standard Cathay units.",
+    "features": [
+      "Corrupted units via warband upgrades",
+      "Miao Ying: complete corruption roster, tech tree, corrupted buildings",
+      "Scaling malus on standard units forces the switch",
+      "Azazel version builds on Azazel's Realm",
+      "Asset pack plus one faction mod required"
+    ],
+    "recommendedFor": "For profiles with Lazy's Miao Ying corruption or Azazel's Realm that want their own corrupted roster and buildings. Load only the mod for the faction you play; replace the asset pack with the fix version (ll-48415) if needed."
+  },
+  "ll-47932": {
+    "description": "A model and animation replacement for the Lizardmen Kroxigor, Saurus and Skinks (lord and units): the lizards are replaced by female anthro models, after around five months of work according to the author. Lizardmen Legendary Lords are unchanged.\n\nEach unit has three model variants (base, Blessed, Regiment of Renown, lord), and each model wears its own tribal war paint matching the faction colors. One model per unit is nude, the other two wear revealing outfits. New unit cards, portraits and portholes are also included. The Kroxigor and Saurus models are by VulgarVictor, the Skink models by Furromantic (each with express permission).\n\nThe mod changes the main_units and land_units tables so that the new models can use different skeletons. It is therefore incompatible with any mod that changes the stats of Kroxigor, Saurus or Skinks. Installation: put the pack in the data folder and enable it; use only one of the files from the download.",
+    "features": [
+      "Female anthro models for Kroxigor, Saurus and Skinks",
+      "Three variants per unit (base, Blessed, RoR, lord), one of them nude",
+      "Tribal war paint matching the faction colors",
+      "New unit cards, portraits and portholes",
+      "Legendary Lords remain unchanged",
+      "Incompatible with mods that change these units' stats"
+    ],
+    "recommendedFor": "For Lizardmen profiles interested in an anthro/scalie look. Do not combine with other Lizardmen unit mods; choose only one file from the download.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_08/image.png.fc4004e84d987ab711c40ce7c0df438b.png": {
+        "kind": "screenshot",
+        "caption": "Unit Cards"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_05/OldBlood.png.e53b0fbed8b99c68830436cf79d30a27.png": {
+        "kind": "screenshot",
+        "caption": "Old Blood"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_05/ScarVet.png.fea71472aacd3d017b95312f62fd9abc.png": {
+        "kind": "screenshot",
+        "caption": "Scar Veteran"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_05/SaurusWarriorsnoshield.png.ebd7ae4bc9a3a16852c8009c57167e98.png": {
+        "kind": "screenshot",
+        "caption": "Saurus units"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_05/Tmpguard.png.604982052c907e3a69fabc8251f5fa49.png": {
+        "kind": "screenshot",
+        "caption": "Saurus units"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_03/AncientKroxigorBattle.png.8c43eb39d0d4876a1c44f5baf85e7b82.png": {
+        "kind": "screenshot",
+        "caption": "Ancient Kroxigor"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_03/BlessedKroxigors.png.77d690b70fecc9b7cee94bb1f6aeb56f.png": {
+        "kind": "screenshot",
+        "caption": "Blessed Kroxigors"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_03/NormalKroxigors.png.8a797d26ad174ec7d0983b2446bcf537.png": {
+        "kind": "screenshot",
+        "caption": "Normal Kroxigors"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_03/BlessedSacredKroxigors.png.d9389c21ffa4cbcadecfa8096d01dfc6.png": {
+        "kind": "screenshot",
+        "caption": "Blessed Sacred Kroxigor"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_03/Screenshot2026-01-24091710.png.6c39413511725502e068bb0930bda54f.png": {
+        "kind": "other",
+        "caption": "Credits: Kroxigor and Saurus model by VulgarVictor"
+      },
+      "https://www.loverslab.com/uploads/monthly_2026_08/image.png.0373e92c69c2e4b6ffbd32eabdedfd3f.png": {
+        "kind": "other",
+        "caption": "Credits: Skink model by Furromantic"
+      }
+    }
+  },
+  "ll-37162": {
+    "description": "Slaanesh Expanded - Visuals is an alpha submod for Zeta's Total Warmaidens III (Original Females Edition, Nexus Mods), meant to match the author's other Slaanesh Expanded mods. The idea: female Legendary Lords keep their default clothing until the player subjugates them through vassalization or confederation; after that they succumb to Slaanesh's influence and their appearance changes.\n\nSupported so far are Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse and the Sisters of Twilight. All other female lords and units still start without clothing (part of Total Warmaidens) until later updates follow. If you want to give the remaining units clothing back, you can use RPFM to delete files under variantmeshes/variantmeshdefinitions in the Warmaidens pack; an in-game setting is planned.\n\nCaution: alpha state, and according to the author it does not work well with other mods that change appearance.",
+    "features": [
+      "Legendary Lords start clothed and change their appearance after subjugation",
+      "Supports 9 lords/groups (including Alarielle, Katarin, Miao Ying, Morathi, Sisters of Twilight)",
+      "Requires Total Warmaidens III (Original Females Edition)",
+      "Alpha state, in-game customization option planned"
+    ],
+    "recommendedFor": "For profiles with Total Warmaidens III and the Slaanesh Expanded mods by Narok- that want the lords' look to change only upon subjugation. Alpha: conflicts with other appearance mods are possible."
+  },
+  "ll-28994": {
+    "description": "A reskin pack that replaces Miao Ying's head from Lazy's Corrupted Miao Ying mod with a version by SOBORO. Only the stage packs are replaced; all other files (framework, progression, etc.) must still come from Lazy.\n\nAccording to the page, the load order is: Soboro_Miao.pack, followed by the six stage packs li_miaoying_scale_soboro_st1, li_miaoying_fishnet_soboro_st2, li_miaoying_ballet_soboro_st3, li_miaoying_bare_soboro_st4, li_miaoying_corset_soboro_st5 and li_miaoying_plug_soboro_st6, i.e. the same order as Lazy's. If you already have Lazy's installed, disable its stage pack and enable this one; for a fresh install, install everything from Lazy except the stage pack, then this pack. Bugs are reported in Lazy Icarus' Discord.",
+    "features": [
+      "Replaces Miao Ying's head model in Lazy's mod with SOBORO's version",
+      "Six stage packs (st1 to st6) in Lazy's order",
+      "Lazy's main files still required, only the stage pack is replaced"
+    ],
+    "recommendedFor": "For profiles with Lazy's Corrupted Miao Ying that prefer SOBORO's version of the head model. Disable Lazy's original stage pack alongside it."
+  },
+  "ll-27171": {
+    "description": "Corrupted Ascension (堕落升魔) is a corruption campaign for Miao Ying based on the Generic Framework (Steam, required). The page is exclusively in Chinese, and campaign or DLC details are missing. Start: Miao Ying's faction receives the artifact quest “Sword of Slaanesh” at the beginning of the game; completing it starts the path of corruption.\n\nCore mechanics: Slaanesh's entourage grows with Miao's actions and is used to expand pleasure palaces and unlock power, among other things to upgrade normal troops into servants of Slaanesh and to let lords and heroes rise along a path of glory. Slaanesh's hegemony arises mainly from the pleasure palaces and unlocks campaign bonuses, traits and artifacts; at level 6 Miao receives daemon form and the ability to spawn daemon princes. The palaces and special landmarks in Cathay provide higher-tier troops or strong economic buildings.\n\nIf you play another faction, the AI Miao progresses automatically; the player gets event messages, and from level 6 (“Slaanesh Empire”) an event appears calling for Miao's defeat. Afterwards you can confederate her or make her faction a vassal. Important: the Alarielle page (ll-42028) declares the mod incompatible with anything based on Lazy's Framework.",
+    "features": [
+      "Corruption progression for Miao Ying (quest “Sword of Slaanesh”)",
+      "Slaanesh entourage: troop upgrades and path of glory for lords and heroes",
+      "Slaanesh hegemony: bonuses, traits, artifacts, daemon form from level 6",
+      "Pleasure palaces and landmarks as a building line",
+      "AI Miao progresses automatically, final event with confederation or vassalization",
+      "Requires the Generic Framework (Steam)"
+    ]
+  },
+  "ll-33604": {
+    "description": "A re-upload of Endo's mods for the Sisters of Sigmar and the Daughters of Kislev, adapted to game patch 5.0.0. The uploader is not the original author but provides the files because Endo and his accounts seemed to have vanished from the web. According to the uploader, Endo had expressly no objection to his work being shared and edited; habus helped get the mod running stably. What exactly the mods change (presumably model and texture replacement) is not described on the page.\n\nImportant: since 03.10.2024 the original author has uploaded new files to Nexus Mods. The uploader recommends downloading from there because they are maintained; this LoversLab file is therefore considered outdated.",
+    "features": [
+      "Endo Sisters of Sigmar and Endo Daughters of Kislev",
+      "Compatible with patch 5.0.0",
+      "Newer original files available on Nexus Mods"
+    ],
+    "recommendedFor": "Only useful as a fallback; better to use the original author's current version on Nexus Mods. For profiles with Sisters of Sigmar / Daughters of Kislev."
+  },
+  "ll-27663": {
+    "description": "Corrupted Drycha (堕落戴查) adds a corruption progression with events, tainted buildings and its own heroes to Drycha, the Wood Elf leader. The page is exclusively in Chinese; faction and campaign details are missing. The Generic Framework (Steam) is required.\n\nIt starts when Drycha personally wins a battle against a Nurgle faction. From a certain point of progress, Nurgle troops can be recruited; in addition there are strong adjustments to the taint (corruption adjustment) and unique legendary heroes. The theme is thus Nurgle corruption rather than Slaanesh.\n\nIf you play another faction, the AI controls Drycha, and the player receives event messages about her progress. Once Drycha has recruited all legendary heroes, an event appears calling for her defeat; afterwards you can confederate her or make her faction a vassal.",
+    "features": [
+      "Corruption progression for Drycha with events",
+      "Tainted buildings and Nurgle troops",
+      "Unique legendary heroes",
+      "AI Drycha progresses automatically, final event with confederation or vassalization",
+      "Requires the Generic Framework (Steam)"
+    ]
+  },
+  "ll-39910": {
+    "description": "A Russian translation of Lazy's Corrupted Katarin (stages and reskins) which, according to the author, is complete and whose lines were checked manually. The original is required. The translation must be at the very top of the load order. The page also explains that each stage mod runs on its own; without the Progression Framework they are pure reskins, and with the framework significant gameplay changes are added.",
+    "features": [
+      "Russian texts for Lazy's Corrupted Katarin",
+      "Complete, manually checked",
+      "Must be at the very top of the load order"
+    ],
+    "recommendedFor": "For Russian-speaking players using Lazy's Corrupted Katarin. The original mod is still required."
+  },
+  "ll-43852": {
+    "description": "Summon Servant (英灵召唤) adds a gacha-style summoning mechanic for all factions: for money you randomly receive equipment or a hero “from the 2D/anime world”. The page is exclusively in Chinese; it does not say how revealing the heroes are. The Generic Framework (Steam) is required.\n\nCurrently there are 9 legendary heroes and 145 pieces of equipment. Each pull on the mechanic yields a hero 5% of the time and equipment 95% of the time. For equipment: common 60%, uncommon 30%, rare 10%.",
+    "features": [
+      "Summoning mechanic for money for all factions",
+      "9 legendary heroes, 145 pieces of equipment",
+      "5% hero, 95% equipment per pull",
+      "Rarity: common 60%, uncommon 30%, rare 10%",
+      "Requires the Generic Framework (Steam)"
+    ]
+  },
+  "ll-32460": {
+    "description": "A small selector submod for Lazy's Corrupted Reskins, intended for players who only use the reskin packs (without the progression campaign). With Variant Selector from the Workshop and the desired reskin packs, you can freely choose between all installed variants. All three characters (Miao Ying, Katarin, Morathi) are supported. All rights belong to Lazyicarus and the author of Variant Selector.\n\nSetup: subscribe to Variant Selector, enable all desired reskin packs, and place this pack below them in the load order.",
+    "features": [
+      "Variant selection for Lazy's reskins (Miao Ying, Katarin, Morathi)",
+      "For players without the progression mods",
+      "Requires Variant Selector (Steam)"
+    ],
+    "recommendedFor": "For profiles that use only Lazy's reskin packs without corruption progression and want to choose the appearance stage freely."
+  },
+  "ll-43295": {
+    "description": "A Valkia reskin in futanari style: Valkia receives her own helmet and an additional rigged (swinging) body model, for which the Gor mesh from Community Beastmen was reused. The author sees it as a gift of Khorne. So far it is only a reskin; whether it becomes a larger mod is open.",
+    "features": [
+      "Valkia reskin with its own helmet",
+      "Additional rigged body model using the Gor mesh from Community Beastmen",
+      "Pure reskin, no campaign mechanics"
+    ],
+    "recommendedFor": "For Warriors of Chaos profiles with Valkia that want a futanari model. Visual only."
+  },
+  "ll-49991": {
+    "description": "A UI mod: a patch added a Twitch logo to the pause menu, which this mod replaces with a picture of a revealing Spellsinger. Two files: TitsNotTwitch.7z replaces only the logo, TitsPauseMenu.7z additionally changes all icons in the pause menu.",
+    "features": [
+      "Replaces the Twitch logo in the pause menu",
+      "Second variant swaps all pause menu icons",
+      "Purely cosmetic, no campaign changes"
+    ],
+    "recommendedFor": "For all profiles that want to get rid of the Twitch logo in the pause menu. Use only one of the two files.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2026_07/img.jpg.5db2d5c57a4b50a0f16bbc610e5c854a.jpg": {
+        "kind": "screenshot",
+        "caption": "Example image for the pause menu mod"
+      }
+    }
+  },
+  "ll-50065": {
+    "description": "A Spanish translation of Alarielle, Temptation's Bloom, specifically for the Steam version. According to the author, it was made quickly, a large part was machine-translated and only roughly reviewed; there are still errors that may be fixed later.",
+    "features": [
+      "Spanish texts for the Steam version of Alarielle, Temptation's Bloom",
+      "Mostly machine-translated, errors possible"
+    ],
+    "recommendedFor": "For Spanish-speaking players who use ATB via Steam. The original is still required."
+  },
+  "ll-48415": {
+    "description": "A community fix for the asset pack of Soil's Corrupted Units. The author corrected all cases he found in which new unit textures overwrite the standard Cathay units. It is a replacement for the original asset pack, not a patch applied on top; so do not load the original in addition.",
+    "features": [
+      "Replaces the asset pack of Soil's Corrupted Units",
+      "Fixes overwritten textures of the standard Cathay units"
+    ],
+    "recommendedFor": "For profiles with Soil's Corrupted Units (e.g. the Miao Ying roster) when standard Cathay units look wrong. Load instead of the original."
+  },
+  "ll-29487": {
+    "description": "A small patch for SFO that removes the corruption reduction from Miao Ying's “Dragon's Wrath” ability. This keeps corruption mods for Cathay usable with SFO, which would otherwise be held back by that ability.",
+    "features": [
+      "Removes the corruption reduction of Dragon's Wrath (SFO)",
+      "Small patch with no other changes"
+    ],
+    "recommendedFor": "For Cathay profiles with SFO and corruption mods for Miao Ying."
+  },
+  "ll-24258": {
+    "description": "Chinese translation (as of 30.09.2022) of the SEU submod extension for Miao Ying (file seu_miaoying_submod_extension_v0.7.0_cn0930.pack). The page consists only of the file name and a note that it is the translation of the SEU submod.",
+    "features": [
+      "Chinese texts for the SEU submod extension (Miao Ying), v0.7.0",
+      "As of 30.09.2022"
+    ],
+    "recommendedFor": "For Chinese-speaking players with the SEU extension for Miao Ying; may not fit newer versions."
+  },
+  "ll-24261": {
+    "description": "Chinese translation (as of 18.09.2022) of the mod Celestial Dragon Concubines (天庭龙妃). The page contains only the file name and this note.",
+    "features": [
+      "Chinese texts for Celestial Dragon Concubines",
+      "As of 18.09.2022"
+    ],
+    "recommendedFor": "For Chinese-speaking players with Celestial Dragon Concubines; the 2022 version may not fit newer releases."
+  },
+  "ll-24263": {
+    "description": "Chinese translation (2022) of the landmark submod corrupted_landmarks. The page does not name the original mod; the file consists only of the pack.",
+    "features": [
+      "Chinese texts for corrupted_landmarks",
+      "As of 2022"
+    ],
+    "recommendedFor": "For Chinese-speaking players with the Corrupted Landmarks; the 2022 translation may not fit the current version."
+  }
+}

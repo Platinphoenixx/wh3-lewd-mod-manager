@@ -1,0 +1,2150 @@
+{
+  "mods": [
+    {
+      "id": "ll-24264",
+      "name": "Soil Corrupted Units - Chinese Translation (soil_corrupted_units_0904_cn)",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation of the Soil unit pack (Corrupted Units) by Rociky. The page only gives the pack name and 'Soil unit pack'.",
+      "tags": [
+        "translation",
+        "chinese",
+        "units"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24264",
+          "url": "https://www.loverslab.com/files/file/24264-soil_corrupted_units_0904_cnpack/",
+          "category": "translations",
+          "updated": "2022-10-23T12:34:01Z"
+        }
+      },
+      "packs": [
+        {
+          "file": "soil_corrupted_units_0904_cn.pack",
+          "from": "download",
+          "note": "Name taken from the page title"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "The page only says 'Soil unit pack'; the link to Soil's Corrupted Units is inferred (pack name soil_corrupted_units_0904).",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/24264-soil_corrupted_units_0904_cnpack/"
+          }
+        }
+      ],
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Which Soil version (0904) is being translated? Does it still apply to Soil's Corrupted Units 3.0?",
+          "Load order not specified."
+        ]
+      }
+    },
+    {
+      "id": "ll-24266",
+      "name": "Palace Archers - Chinese Translation (palace_archers_cn0827)",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation of a 'Palace Archers' submod by Rociky. The page only contains the pack name and a one-liner.",
+      "tags": [
+        "translation",
+        "chinese"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24266",
+          "url": "https://www.loverslab.com/files/file/24266-palace_archers_cn0827pack/",
+          "category": "translations",
+          "updated": "2022-10-23T12:34:01Z"
+        }
+      },
+      "packs": [
+        {
+          "file": "palace_archers_cn0827.pack",
+          "from": "download",
+          "note": "Name taken from the page title"
+        }
+      ],
+      "relations": [],
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Which original mod is the 'palace archers submod'? Not linked on any LL page in the index.",
+          "No dependencies or load order specified."
+        ]
+      }
+    },
+    {
+      "id": "ll-26584",
+      "name": "Balthasar Geltina - Chinese Translation",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation of the mod 'balthasar_geltina' by Rociky. The page consists of a single sentence ('Translation of the Geltina mod').",
+      "tags": [
+        "translation",
+        "chinese"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "26584",
+          "url": "https://www.loverslab.com/files/file/26584-chinesetranslationbalthasar_geltina/",
+          "category": "translations",
+          "updated": "2023-04-09T07:34:54Z"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Original mod 'balthasar_geltina' cannot be identified in the LL index.",
+          "No pack names, no dependencies."
+        ]
+      }
+    },
+    {
+      "id": "ll-24493",
+      "name": "Candles' Beastmen Events & Ancillaries",
+      "authors": [
+        "Corrupted Candlemancer"
+      ],
+      "kind": "submod",
+      "summary": "WIP addon for Community Beastmen: new dilemmas, events and companions/ancillaries for the Beastmen faction, including a Cathay migration quest. Both mods must be in matching versions.",
+      "tags": [
+        "beastmen",
+        "events",
+        "ancillaries",
+        "non-con",
+        "addon"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24493",
+          "url": "https://www.loverslab.com/files/file/24493-candles-beastmen-events-ancillaries/",
+          "category": "mods",
+          "version": "0.3.1",
+          "updated": "2022-12-11T15:06:22Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-24466"
+          },
+          "note": "Community Beastmen; both mods must be re-downloaded together, otherwise a crash.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24493-candles-beastmen-events-ancillaries/"
+          }
+        }
+      ],
+      "tier": "submod",
+      "status": "wip",
+      "knownIssues": [
+        "Old version of one of the two mods with a new version of the other => immediate crash."
+      ],
+      "installNotes": [
+        "Update both mods (this one + Community Beastmen) together and delete the old versions."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Which Community Beastmen variant (24466 v0.11, 36361, 26347 Lynn's Edit, 46165) is required today; the page only links 24466.",
+          "No pack names given."
+        ]
+      }
+    },
+    {
+      "id": "ll-24568",
+      "name": "Warrior of Slaanesh reskin",
+      "authors": [
+        "dbswlgn3786"
+      ],
+      "kind": "reskin",
+      "summary": "Reskin for the Slaanesh Chaos Warriors (Warriors, Chosen, Knights, Marauders) with revised textures and armour. Compatible with the 'Pike of Slaanesh' mod.",
+      "tags": [
+        "reskin",
+        "slaanesh",
+        "chaos warriors"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24568",
+          "url": "https://www.loverslab.com/files/file/24568-warrior-of-slaanesh-reskin/",
+          "category": "mods",
+          "version": "2.0",
+          "updated": "2022-12-12T14:39:37Z"
+        },
+        "discord": [
+          {
+            "channel": "LazyIcarus hub Discord",
+            "messageUrl": "https://discord.gg/lazyicarus",
+            "note": "Author 'DOVAKIN' can be contacted there"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "tier": "reskin",
+      "knownIssues": [
+        "Some voices and unit cards not finished yet (per description)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "No pack names on the page."
+        ]
+      }
+    },
+    {
+      "id": "ll-24600",
+      "name": "Some Slaanesh and Tzeentch Unit for Miao Ying",
+      "authors": [
+        "sbun2012"
+      ],
+      "kind": "units",
+      "summary": "Adds Slaanesh and Tzeentch daemon units with tech upgrades to Miao Ying's faction (Miao Ying's faction only). Intended for roleplaying the corrupted Miao Ying; not tied to the progression system and not balanced.",
+      "tags": [
+        "units",
+        "miao ying",
+        "slaanesh",
+        "tzeentch",
+        "daemons"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24600",
+          "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/",
+          "category": "mods",
+          "version": "1.5",
+          "updated": "2022-11-25T08:13:05Z"
+        }
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "faction": "Cathay (Miao Ying)",
+          "note": "Units only for Miao Ying's faction"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corrupted Miao Ying Progression; the units are not tied to the progression system.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-24568"
+          },
+          "note": "'Strongly recommended' by the author (Warrior of Slaanesh reskin).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24600-some-slaanesh-and-tzeentch-unit-for-miao-ying/"
+          }
+        }
+      ],
+      "knownIssues": [
+        "Not balanced; units are not bound to the corruption stages."
+      ],
+      "installNotes": [
+        "Do not build the units too early, while the corruption has not advanced far enough (author's roleplay rule)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "No pack names; dependency on the Miao progression only implicit."
+        ]
+      }
+    },
+    {
+      "id": "ll-24843",
+      "name": "Unified French Translation Pack (Traductions Francaises)",
+      "authors": [
+        "Myloween"
+      ],
+      "kind": "translation",
+      "summary": "French collection pack for many lewd mods in two files: 'Main' (Lazy mods, Landmarks, Compendium, Azazel's Realm, etc.) and 'Beastmen' (Community Beastmen/Savage Beastmen and Candles' Events).",
+      "tags": [
+        "translation",
+        "french",
+        "pack"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24843",
+          "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/",
+          "category": "translations",
+          "version": "1.11",
+          "updated": "2023-09-18T05:33:10Z"
+        },
+        "downloads": [
+          {
+            "name": "LazyIcarus French Translations - Main - v1_11",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/",
+            "note": "Main translation"
+          },
+          {
+            "name": "LazyIcarus French Translations - Beastmen - v1_11",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/",
+            "note": "Community Beastmen + Candles' Beastmen Events"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "Translation channel (Lazy/Lewdhammer server)",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1454878484852641852",
+            "note": "Further translations can be submitted here"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Corrupted Miao Ying Progression incl. Foreign Dickplomacy and Corruption Adaptation (v1.8.0).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23966"
+          },
+          "note": "Lazy's Corrupted Katarin (v0.3.0).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Lazy's Morathi Ascension (v0.8.0).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-25677"
+          },
+          "note": "Lewd Landmarks.",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "Corrupted Compendium (v0.996).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel's Realm (Miao campaign content, v2.2).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Corrupted Ascension (v1.2).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-25600"
+          },
+          "note": "Soil Corrupted Units SFO Submod (v1.0.1).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Soiled Projects - Corrupted Units Submod (v0903); link to Soil's Corrupted Units inferred.",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24467"
+          },
+          "note": "Morathi: Corruption of a Handmaiden (v2.0.4).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "external": "ext-seu-miaoying-mods"
+          },
+          "note": "Summons and Stuff (Miao Ying Corruption Added Content v1.1.1 and Generic Content v0.2.2), via Discord only.",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "external": "ext-unique-landmarks"
+          },
+          "note": "Unique Landmarks Main/Kislev/Freewin (Discord only).",
+          "condition": "'Main' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24466"
+          },
+          "note": "Community Beastmen v0.11 / Savage Beastmen v0.4.8.",
+          "condition": "'Beastmen' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-26347"
+          },
+          "note": "Community Beastmen Lynn's Edit.",
+          "condition": "'Beastmen' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "external": "ext-endos-beastmen-matched-combat"
+          },
+          "note": "Legacy !community_beastmen.",
+          "condition": "'Beastmen' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24493"
+          },
+          "note": "Candles' Beastmen Events & Ancillaries v0.3.1.",
+          "condition": "'Beastmen' file",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+          }
+        }
+      ],
+      "tier": "translation",
+      "installNotes": [
+        "Two files: Main and Beastmen; choose depending on which mods you have installed.",
+        "Translated versions sometimes lag behind the originals (e.g. Miao Progression v1.8.0)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Load order relative to the originals not specified.",
+          "'Foreign Dickplomacy' and 'Corruption Adaptation' are part of LL 23878 according to the page (same link).",
+          "LL 27949 (Endo's Beastmen Matched Combat) is not in the index; recorded as external only.",
+          "Mapping 'Soiled Projects' -> ll-32374 is an assumption.",
+          "Pack file names inside the two files not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-26391",
+      "name": "Lynn's Horny Norscans",
+      "authors": [
+        "Lynn1999"
+      ],
+      "kind": "reskin",
+      "summary": "Kitbashed models for Norsca: Wulfrik, Chieftains, Throgg, giants, ice wolf chariots, elephants, Fimir and shaman staves, and Werekin wolves receive female companions or decor.",
+      "tags": [
+        "norsca",
+        "reskin",
+        "kitbash"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "26391",
+          "url": "https://www.loverslab.com/files/file/26391-lynns-horny-norscans/",
+          "category": "mods",
+          "version": "Wolf, Fimir, and Trolls",
+          "updated": "2024-03-28T05:43:54Z"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "abandoned",
+      "knownIssues": [
+        "The author has not played WH3 since Shadows of Change; per the disclaimer the mod is probably not updated for the current game version and likely does not work properly."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "No pack names on the page."
+        ]
+      }
+    },
+    {
+      "id": "ll-26542",
+      "name": "Female Sigvald Reskin",
+      "authors": [
+        "HuaJS258"
+      ],
+      "kind": "reskin",
+      "summary": "Simple reskin that turns Sigvald into a woman, with more clothing styles instead of pure nudity. A voice change was attempted but does not work.",
+      "tags": [
+        "reskin",
+        "sigvald",
+        "slaanesh",
+        "female"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "26542",
+          "url": "https://www.loverslab.com/files/file/26542-female-sigvald-reskin/",
+          "category": "mods",
+          "updated": "2023-04-06T17:33:39Z"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "knownIssues": [
+        "Voice change does not work."
+      ],
+      "installNotes": [
+        "Copy the pack file into the data folder of Total War WARHAMMER III and enable it in the launcher."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack name not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-26591",
+      "name": "Slaanesh Corrupted Cathay Roster",
+      "authors": [
+        "HuaJS258"
+      ],
+      "kind": "reskin",
+      "summary": "Reskin for Cathay units (sky junks, lanterns, peasants, gunners, terracotta, artillery, Jade Warriors, Dragon Guards, Longma Riders, war drum) in the Slaanesh-corrupted style, matching the Miao Ying corruption stages.",
+      "tags": [
+        "reskin",
+        "cathay",
+        "slaanesh",
+        "units"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "26591",
+          "url": "https://www.loverslab.com/files/file/26591-slaanesh-corrupted-cathay-roster/",
+          "category": "mods",
+          "version": "1.4.0",
+          "updated": "2023-11-29T01:15:40Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Designed to match the Miao Ying corruption stages; the page names no specific mod.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/26591-slaanesh-corrupted-cathay-roster/"
+          }
+        }
+      ],
+      "tier": "visual-submod",
+      "knownIssues": [
+        "Crane Gunners were modified; other mods that also change them can cause conflicts."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not given.",
+          "Link to LL 23878 inferred only from the description 'Miao Ying Corruption Stages'."
+        ]
+      }
+    },
+    {
+      "id": "ll-26794",
+      "name": "Edited Sons of Ursun - better ice guard!",
+      "authors": [
+        "khartoh"
+      ],
+      "kind": "reskin",
+      "summary": "Revised variant of the 'Sons of Ursun' mod with a shorter, more open and tighter skirt. Replaces the original; the original is not required.",
+      "tags": [
+        "reskin",
+        "kislev",
+        "ice guard",
+        "replacement"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "26794",
+          "url": "https://www.loverslab.com/files/file/26794-edited-sons-of-ursun-better-ice-guard/",
+          "category": "mods",
+          "version": "1.0.0",
+          "updated": "2023-04-25T00:42:29Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "external": "ext-sons-of-ursun"
+          },
+          "note": "Replaces the original mod; do not use both at the same time.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/26794-edited-sons-of-ursun-better-ice-guard/"
+          }
+        }
+      ],
+      "tier": "visual-submod",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Which original 'Sons of Ursun' mod is meant (author, link) is not stated; possibly from 'Dead's Kislev units' (cf. LL 26795)."
+        ]
+      }
+    },
+    {
+      "id": "ll-27158",
+      "name": "Morathi: Corruption of a Handmaiden - Chinese Translation (death13x)",
+      "authors": [
+        "death13x"
+      ],
+      "kind": "translation",
+      "summary": "Chinese version merged with the original of 'Morathi: Corruption of a Handmaiden' (heroine Alivia Aina, v3.0-compatible), extended with embellished texts. Only on LL and 3DM; Steam upload forbidden.",
+      "tags": [
+        "translation",
+        "chinese",
+        "morathi",
+        "agent",
+        "hero"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "27158",
+          "url": "https://www.loverslab.com/files/file/27158-mod-translation-%EF%BC%9Amorathi-corruption-of-a-handmaiden-mod%E6%B1%89%E5%8C%96%EF%BC%9A%E8%8E%AB%E6%8B%89%E6%96%AF%E7%9A%84%E8%85%90%E5%8C%96%E4%BE%8D%E5%A5%B3%EF%BC%8C%E4%BA%8B%E5%8A%A1%E5%AE%98/",
+          "category": "translations",
+          "updated": "2023-05-17T04:16:58Z"
+        }
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Morathi (heroine Alivia Aina)",
+          "faction": "Morathi",
+          "note": "Heroine is Morathi-exclusive; a quest at game start unlocks her, so a new campaign is required."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24467"
+          },
+          "note": "Translation approved by the original author; the file already contains the original, no further downloads needed.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27158-mod-translation-%EF%BC%9Amorathi-corruption-of-a-handmaiden-mod%E6%B1%89%E5%8C%96%EF%BC%9A%E8%8E%AB%E6%8B%89%E6%96%AF%E7%9A%84%E8%85%90%E5%8C%96%E4%BE%8D%E5%A5%B3%EF%BC%8C%E4%BA%8B%E5%8A%A1%E5%AE%98/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-24467"
+          },
+          "note": "Inferred: the translation is merged with the original, so do not enable both.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/27158-mod-translation-%EF%BC%9Amorathi-corruption-of-a-handmaiden-mod%E6%B1%89%E5%8C%96%EF%BC%9A%E8%8E%AB%E6%8B%89%E6%96%AF%E7%9A%84%E8%85%90%E5%8C%96%E4%BE%8D%E5%A5%B3%EF%BC%8C%E4%BA%8B%E5%8A%A1%E5%AE%98/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "2791241084"
+          },
+          "note": "'Console Commands': with 'agent champion alivia_aina' the heroine can be obtained in other factions or mid-game.",
+          "condition": "Only if the heroine is not obtained via the Morathi start quest",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27158-mod-translation-%EF%BC%9Amorathi-corruption-of-a-handmaiden-mod%E6%B1%89%E5%8C%96%EF%BC%9A%E8%8E%AB%E6%8B%89%E6%96%AF%E7%9A%84%E8%85%90%E5%8C%96%E4%BE%8D%E5%A5%B3%EF%BC%8C%E4%BA%8B%E5%8A%A1%E5%AE%98/"
+          }
+        }
+      ],
+      "tier": "translation",
+      "knownIssues": [
+        "T-pose model at sea."
+      ],
+      "installNotes": [
+        "Put the file in the data folder and enable it in the launcher.",
+        "Start a new campaign to receive the heroine normally.",
+        "The heroine accompanies armies; at sea a T-pose model without a ship appears (harmless)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack name not given.",
+          "'Console Commands' (2791241084) assumed; alternatively Lua Console 2791799449."
+        ]
+      }
+    },
+    {
+      "id": "ll-27673",
+      "name": "[TransKorean] Corruption Submod Translation (cepino)",
+      "authors": [
+        "cepino"
+      ],
+      "kind": "translation",
+      "summary": "Korean collection translation for several corruption submods: Corruption Ascend (Miao/Charina), Candles' Beastmen Events, Corruption Drycha, Corrupted Compendium, SEU Generic Content, SEU Miaoying Submod Extension and Endo's Goblin Horde.",
+      "tags": [
+        "translation",
+        "korean",
+        "pack"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "27673",
+          "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/",
+          "category": "translations",
+          "version": "1.1.4",
+          "updated": "2025-12-31T03:27:46Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Corruption Ascend (Miao Ying, Charina transformation).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24493"
+          },
+          "note": "Candles' Beastmen Events & Ancillaries.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27663"
+          },
+          "note": "Corruption Drycha ('Nurgle' corruption; Discord channel forest-of-depravity).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "Corrupted Compendium (Miao corruption events).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "external": "ext-seu-miaoying-mods"
+          },
+          "note": "SEU Generic Content and SEU Miaoying Submod Extension (two daughters, confederation with the Celestial Guard).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46561"
+          },
+          "note": "'Endo's goblin hordes' (Greenskin units); mapping between Redux 46561 and Tacomarine's Addon 28614 unclear.",
+          "condition": "Part 'Endo's goblin hordes'",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27673-transkorean-%ED%83%80%EB%9D%BD-%EC%84%9C%EB%B8%8C%EB%AA%A8%EB%93%9C-%EB%B2%88%EC%97%AD/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "note": "Place the translation mod above the base translation (original: 'base translation on top')."
+      },
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "'Base translation' presumably refers to another Korean translation; target not named.",
+          "Mapping of 'Endo's goblin hordes' to LL 46561 or 28614 unclear (both in the index).",
+          "Pack names not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-30893",
+      "name": "Cathay Corrupted Shenzoo",
+      "authors": [
+        "PassingByPosts"
+      ],
+      "kind": "campaign",
+      "summary": "Alpha campaign mod: playable dragon Shen-zoo (Cathay), lost in the barren north. Own faction mechanic for companions, companion heroes (Leiyue, Dachi Shou, Loi, Zhang), quest battle, lewd traits and corrupted tech tree.",
+      "tags": [
+        "campaign",
+        "cathay",
+        "shenzoo",
+        "dragon",
+        "alpha",
+        "faction"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "30893",
+          "url": "https://www.loverslab.com/files/file/30893-corrupted-shenzoo/",
+          "category": "mods",
+          "version": "0.052",
+          "updated": "2025-05-05T18:38:58Z"
+        },
+        "discord": [
+          {
+            "channel": "Lewd-Community Discord",
+            "messageUrl": "https://discord.gg/W4qkrNwUMk",
+            "note": "Support / questions"
+          }
+        ]
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Shen-zoo",
+          "faction": "Cathay (own faction under the Cathay banner)",
+          "campaigns": [
+            "IE"
+          ],
+          "note": "Realm of Chaos is not supported."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "2888171970"
+          },
+          "note": "Variant Selector (cosmetic only) for model selection; no variants are available yet.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/30893-corrupted-shenzoo/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "steamId": "2888171970"
+          }
+        ],
+        "note": "Variant Selector should sit BELOW Shenzoo in the mod order."
+      },
+      "tier": "campaign",
+      "campaigns": [
+        "IE"
+      ],
+      "status": "wip",
+      "knownIssues": [
+        "Very experimental/alpha, expect errors.",
+        "WH3 allows only one ESL file per game -> probably incompatible with other mods that add factions.",
+        "Model switching via console dilemma only changes the text (tracking variable)."
+      ],
+      "installNotes": [
+        "Can be started from the main menu; Shenzoo under Cathay in Immortal Empires.",
+        "Building chains are in a separate pack (Shenzoo also playable as normal Cathay).",
+        "Put the pack file in the data folder and enable it in the launcher."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack names not given (including the separate building chains pack).",
+          "Incompatibility with faction mods has no concrete target; recorded only as knownIssue/note.",
+          "Steam ID 2888171970 on the page is the Variant Selector, not this mod."
+        ]
+      }
+    },
+    {
+      "id": "ll-34242",
+      "name": "Easy Cross Faction Confederation Scripts",
+      "authors": [
+        "habus"
+      ],
+      "kind": "submod",
+      "summary": "Small script pack that lets any player faction confederate cross-faction via events with certain lords (e.g. Morathi, Katarin, Yin-Yin, Fay Enchantress) after they have been vassals for 20-25 turns. Also includes a merged bundle pack of all 12 confederation mods.",
+      "tags": [
+        "confederation",
+        "script",
+        "events",
+        "khalida",
+        "miao ying"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "34242",
+          "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/",
+          "category": "mods",
+          "version": "1.0.14",
+          "updated": "2025-02-16T15:54:05Z"
+        },
+        "discord": [
+          {
+            "channel": "Support channel of author habus",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "tdw_confeds_gen_confed_all_12.pack",
+          "from": "download",
+          "exclusiveGroup": "confed-bundle",
+          "note": "Merged version of all 12 confederation mods; do NOT use together with the individual packs (crash)."
+        },
+        {
+          "file": "tdw_khalida_switch_skin.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Bonus: Khalida gets her vanilla skin after 5 turns without a battle."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3032439976"
+          },
+          "note": "All Diplomatic Options (Steam): to get the lords as vassals.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "On confederation, Morathi gets the corruption stage 4 model.",
+          "condition": "Only when confederating with Morathi",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-32476"
+          },
+          "note": "After confederation, the Fay Enchantress keeps her corruption mechanic.",
+          "condition": "Only when confederating with the Fay Enchantress",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "With Azazel's Realm the Katarin/N'Kari/Azazel confederation mods are probably unnecessary; according to the author they break nothing as long as you do not confederate.",
+          "condition": "Only if Azazel's Realm is used",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-33808"
+          },
+          "note": "Also works with the Miao seduce mod (Corrupted Chars can Seduce).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-zeta-khalida-reskin"
+          },
+          "note": "tdw_khalida_switch_skin.pack requires a Zeta reskin for Khalida.",
+          "condition": "Only for tdw_khalida_switch_skin.pack",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+          }
+        }
+      ],
+      "tier": "submod",
+      "knownIssues": [
+        "Bundle pack and individual packs at the same time => crash."
+      ],
+      "installNotes": [
+        "Use either the bundle pack OR the individual confederation packs.",
+        "The bundle pack is savegame-compatible when switching from the individual packs."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Names of the 12 individual packs are not given.",
+          "Katarin and Yin-Yin mods are mentioned but not linked.",
+          "Steam ID 3032439976 is 'All Diplomatic Options' (someone else's Workshop mod), not this mod."
+        ]
+      }
+    },
+    {
+      "id": "ll-34640",
+      "name": "SEU's Mortal Daughter of Miao Ying Reskin",
+      "authors": [
+        "soilofgenisis"
+      ],
+      "kind": "reskin",
+      "summary": "Two reskins (base and more heavily tattooed) for Miao Ying's mortal daughter from the SEU mods. Requires SEU's Miao Ying mods, which are obtained via Lazy's Discord.",
+      "tags": [
+        "reskin",
+        "miao ying",
+        "seu",
+        "daughter"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "34640",
+          "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/",
+          "category": "mods",
+          "version": "1.0.2",
+          "updated": "2024-07-03T15:44:10Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-seu-miaoying-mods"
+          },
+          "note": "SEU's Miao Ying mods (Lazy's Discord).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "external": "ext-seu-miaoying-mods"
+          }
+        ],
+        "note": "Place this mod above the SEU mods."
+      },
+      "tier": "visual-submod",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not given.",
+          "Which SEU packs (generic content / submod extension) exactly are required is open."
+        ]
+      }
+    },
+    {
+      "id": "ll-35880",
+      "name": "Lazy's Corrupted Miao Ying Progression - Russian translation (Redonkym)",
+      "authors": [
+        "Redonkym"
+      ],
+      "kind": "translation",
+      "summary": "Russian translation of Lazy's Corrupted Miao Ying Progression (v1.10.0). The original is required; the file must be loaded at the very top.",
+      "tags": [
+        "translation",
+        "russian",
+        "miao ying"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "35880",
+          "url": "https://www.loverslab.com/files/file/35880-lazys-corrupted-miao-ying-progression-russian-translation/",
+          "category": "translations",
+          "version": "1.10.0",
+          "updated": "2024-10-12T16:30:21Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Original mod is required.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/35880-lazys-corrupted-miao-ying-progression-russian-translation/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/35880-lazys-corrupted-miao-ying-progression-russian-translation/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-23878"
+          }
+        ],
+        "note": "File should load first (at the very top in the launcher/mod manager)."
+      },
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack name not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-37353",
+      "name": "Corrupted Cathay (Miao) Flag",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "reskin",
+      "summary": "Small adjustment of a Cathay flag found on Discord: the Slaanesh emblem is shown in pink. Full credit to the original creator.",
+      "tags": [
+        "flag",
+        "cathay",
+        "miao ying",
+        "slaanesh",
+        "assets"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "37353",
+          "url": "https://www.loverslab.com/files/file/37353-corrupted-cathay-miao-flag/",
+          "category": "mods",
+          "updated": "2024-10-25T10:43:41Z"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name and original not given; no dependencies specified (presumably intended for the Miao Ying corruption)."
+        ]
+      }
+    },
+    {
+      "id": "ll-39307",
+      "name": "[ENG] RS0371's Slaanesh Image and Text (Translation)",
+      "authors": [
+        "AMchi"
+      ],
+      "kind": "translation",
+      "summary": "English translation (rough machine translation) of RS0371's mod, which replaces banners and building icons with lewd images and building texts in Slaanesh style. Standalone, but requires Immortal Landmarks and Landmarks of Legend.",
+      "tags": [
+        "translation",
+        "english",
+        "banners",
+        "building icons",
+        "slaanesh",
+        "landmarks"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "39307",
+          "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/",
+          "category": "translations",
+          "updated": "2025-01-25T07:01:36Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-28211"
+          },
+          "note": "Translation of RS0371's Chinese original (LL 28211).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-28211"
+          },
+          "note": "Inferred: the standalone version replaces the Chinese version.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "2854346056"
+          },
+          "note": "Immortal Landmarks (Steam); otherwise CTD.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "2794696516"
+          },
+          "note": "Landmarks of Legend (Steam); otherwise CTD.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-46561"
+          },
+          "note": "Thematically fits campaigns with the Goblin Horde mod; possibly also Tacomarine's Addon 28614.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/39307-eng-rs0371s-slaaneshs-image-and-text/"
+          }
+        }
+      ],
+      "tier": "translation",
+      "knownIssues": [
+        "Texts partly raw machine-translated."
+      ],
+      "installNotes": [
+        "Mod is standalone: put the .pack in the data folder and enable it in the launcher."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack name not given.",
+          "The steam_ids on the page are the dependencies, not this mod."
+        ]
+      }
+    },
+    {
+      "id": "ll-39349",
+      "name": "Corrupted Miao Audio Overhaul",
+      "authors": [
+        "punkdude"
+      ],
+      "kind": "submod",
+      "summary": "Two audio mods for Miao Ying: one replaces some voice lines with AI-generated, Slaanesh-loyal ones; the second replaces battle cries with sounds. Intended for Lazy's Corrupted Miao Ying Progression and Azazel's Realm.",
+      "tags": [
+        "audio",
+        "voice",
+        "miao ying",
+        "ai-generated"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "39349",
+          "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/",
+          "category": "mods",
+          "updated": "2025-01-26T21:14:24Z"
+        }
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "faction": "Cathay (Miao Ying)"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Intended for use with Lazy's Corrupted Miao mod; enable only from corruption stage 4.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel's Realm (play as Azazel or Miao); minor text/audio inconsistencies in cutscenes.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39349-corrupted-miao-audio-overhaul/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "note": "Place at the very bottom of the load order, but only AFTER Miao has reached stage 4."
+      },
+      "tier": "submod",
+      "knownIssues": [
+        "Azazel's Realm uses Miao's vanilla lines in cutscenes; with this mod the spoken lines do not match the text (not game-breaking)."
+      ],
+      "installNotes": [
+        "Two mods + one sample audio file in the download; enable only from Miao stage 4."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack names not given.",
+          "'At the very bottom' is ambiguous relative to the convention 'top = wins'."
+        ]
+      }
+    },
+    {
+      "id": "ll-40981",
+      "name": "Lazy's Morathi Ascension Russian Translation (Redonkym)",
+      "authors": [
+        "Redonkym"
+      ],
+      "kind": "translation",
+      "summary": "Russian translation of Lazy's Morathi Ascension (v0.13.0, stages and progression). Must be loaded at the very top; the original and the progression framework are required.",
+      "tags": [
+        "translation",
+        "russian",
+        "morathi"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "40981",
+          "url": "https://www.loverslab.com/files/file/40981-lazys-morathi-ascension-russian-translation/",
+          "category": "translations",
+          "updated": "2025-04-07T17:48:08Z"
+        },
+        "discord": [
+          {
+            "channel": "Lewd-Community Discord",
+            "messageUrl": "https://discord.gg/W4qkrNwUMk"
+          }
+        ],
+        "wiki": [
+          "https://lewdhammer.miraheze.org/wiki/Lewdhammer_Wiki"
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Title/text refer to Morathi Ascension; however, the page link points to Katarin (23966).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40981-lazys-morathi-ascension-russian-translation/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Original mod is required (LL 23966 is linked in error).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40981-lazys-morathi-ascension-russian-translation/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "pack": "!!li_progression_framework.pack"
+          },
+          "note": "Framework; the name may change, see the original's download list.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40981-lazys-morathi-ascension-russian-translation/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-23925"
+          }
+        ],
+        "note": "File should load first (launcher/mod manager at the very top)."
+      },
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "The page links LL 23966 (Lazy's Corrupted Katarin) as 'original mod', but the title says Morathi - probably a copy-paste error; mapped to 23925.",
+          "Framework pack name only given as '!!li_progression_framework.pack' (name may change)."
+        ]
+      }
+    },
+    {
+      "id": "ll-41120",
+      "name": "Elspeth 2026 Wombo-Combo",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "reskin",
+      "summary": "Reskin combo pack for Elspeth von Draken with 9 variants selectable via the Variant Selector, in three types (young without/with visible nipples, older), including portraits and unit cards. Combines the author's own versions and Steam SFW variants by Schess.",
+      "tags": [
+        "reskin",
+        "elspeth",
+        "variants",
+        "variant selector",
+        "kitbash"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "41120",
+          "url": "https://www.loverslab.com/files/file/41120-elspeth-2026-wombo-combo/",
+          "category": "mods",
+          "version": "2.0",
+          "updated": "2026-03-24T07:33:31Z"
+        },
+        "steam": [
+          {
+            "id": "3687340593",
+            "title": "Elspeth Reskin Combo",
+            "role": "sfw-steam-version"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "2888171970"
+          },
+          "note": "Variant Selector: choose among the 9 variants in game.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/41120-elspeth-2026-wombo-combo/"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "steamId": "3687340593"
+          },
+          "note": "'Elspeth Reskin Combo' (Steam, SFW by Schess) is included in this mod.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/41120-elspeth-2026-wombo-combo/"
+          }
+        }
+      ],
+      "tier": "visual-submod",
+      "installNotes": [
+        "Choose variants in game via the Variant Selector.",
+        "Legacy archive 'Elspeth Legacy.7z' (li_elspeth_karl, _mid, _old, X_elspeth_4karl) for reference only."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack names are only given for the legacy variants (without .pack extension).",
+          "Sources per the credits, no dependency: Steam 3311294751 (Lazy's Elspeth), 3309646724 (unlisted), 3237631592, 3404919620, 3239968422."
+        ]
+      }
+    },
+    {
+      "id": "ll-42262",
+      "name": "Russian translation of Miao Ying mods (DikiyZver)",
+      "authors": [
+        "DikiyZver"
+      ],
+      "kind": "translation",
+      "summary": "Russian translation of Lazy's Corrupted Miao Ying Progression; the update also includes early translations of Corrupted Compendium and Azazel's Realm. A complete bundle of the Miao mods is available for free via the author's Boosty.",
+      "tags": [
+        "translation",
+        "russian",
+        "miao ying",
+        "pack"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "42262",
+          "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/",
+          "category": "translations",
+          "version": "1.9.2.(0.2.)",
+          "updated": "2025-06-03T12:58:56Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Main translation.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "Early version of the Corrupted Compendium translation (per changelog).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Early version of the Azazel's Realm translation (per changelog).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Original mods must be present; collection on the author's Boosty.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42262-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BC%D0%BE%D0%B4%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B7%D0%B0-%D0%BC%D1%8F%D0%BE/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-23878"
+          }
+        ],
+        "note": "Translation must come BEFORE the main mod (original text: 'перед основным модом')."
+      },
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "'Before the main mod' presumably means 'above' by convention (higher priority); not unambiguous.",
+          "Pack names not given.",
+          "Further translations announced / on Boosty."
+        ]
+      }
+    },
+    {
+      "id": "ll-44088",
+      "name": "Femboy Teclis Reskin",
+      "authors": [
+        "DeHess"
+      ],
+      "kind": "reskin",
+      "summary": "Feminine-submissive reskin for Teclis, assembled from assets of other mods (Community Beastmen, Zeta's Warmaidens). Runs standalone, but is meant to be used with Community Beastmen since a corrupted hero mod is planned.",
+      "tags": [
+        "reskin",
+        "teclis",
+        "femboy",
+        "kitbash"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "44088",
+          "url": "https://www.loverslab.com/files/file/44088-femboy-teclis-reskin/",
+          "category": "mods",
+          "updated": "2025-09-01T06:09:11Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "Community Beastmen; the variant is not named, so the Beastmen collection upload by the same author DeHess is assumed here.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/44088-femboy-teclis-reskin/"
+          }
+        }
+      ],
+      "installNotes": [
+        "No other mods needed: put the file in the data folder."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Which Community Beastmen version is meant (24466, 36361, 26347, 46165).",
+          "Pack name not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-46561",
+      "name": "Greenskins Goblin Horde Redux",
+      "authors": [
+        "Topgun689"
+      ],
+      "kind": "units",
+      "summary": "Revised lewd addon for Greenskins (any lord): goblin challenge dilemma, two new buildings for slave units, 'Slaves' resource, new Goblin Enslaver lord, ancillaries and capture mechanic. Includes Tacomarine's addon and Elvslayer's events.",
+      "tags": [
+        "greenskins",
+        "goblins",
+        "slaves",
+        "events",
+        "ancillaries",
+        "addon"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "46561",
+          "url": "https://www.loverslab.com/files/file/46561-goblin-horde-redux-at-the-right-place-this-time/",
+          "category": "mods",
+          "version": "1.2.3",
+          "updated": "2026-10-04T20:07:12Z"
+        },
+        "steam": [
+          {
+            "id": "3629196257",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [],
+      "playAs": [
+        {
+          "character": "Any Greenskin lord",
+          "faction": "Greenskins"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-28614"
+          },
+          "note": "Includes/replaces Tacomarine's Goblin Horde Addon; Elvslayer's events also integrated.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/46561-goblin-horde-redux-at-the-right-place-this-time/"
+          }
+        }
+      ],
+      "status": "wip",
+      "knownIssues": [
+        "Some broken animations since 7.0.",
+        "Quest battles and ancillaries still need reworking."
+      ],
+      "installNotes": [
+        "On turn 2 take the dilemma (first option each time), then complete an easy quest to unlock the buildings."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Steam item 3629196257 is not public in steam_items.json (title unknown).",
+          "Dependency on the original Endo Goblin Horde mod not clarified (not in the index).",
+          "Pack names not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-47812",
+      "name": "XXX - Endo's Slaanesh Devotees",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "submod",
+      "summary": "Submod for Endo's female Slaanesh Devotees reskin: expands the depiction of the breasts and includes materials for a variant with a visible genital area. Requires the Endo base mod on Steam.",
+      "tags": [
+        "reskin",
+        "slaanesh",
+        "devotees",
+        "endo",
+        "submod"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "47812",
+          "url": "https://www.loverslab.com/files/file/47812-xxx-endos-slaanesh-devotees/",
+          "category": "mods",
+          "version": "1.0.1",
+          "updated": "2026-03-22T13:59:36Z"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3687970360"
+          },
+          "note": "[Endo] Female Slaanesh Devotees (Steam) as base.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/47812-xxx-endos-slaanesh-devotees/"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "steamId": "3687970360"
+          },
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/47812-xxx-endos-slaanesh-devotees/"
+          }
+        }
+      ],
+      "tier": "visual-submod",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack name not given; load order relative to the base mod not specified (submods usually sit above their base mod)."
+        ]
+      }
+    },
+    {
+      "id": "ll-40114",
+      "name": "Miao Ying's Corrupting Alchemy",
+      "authors": [
+        "wikuwi"
+      ],
+      "kind": "campaign",
+      "summary": "Ports Grom's cauldron, Eltharion's prison and Throt's flesh lab to Miao Ying's Cathay campaign as alchemy, Jade Dungeon and Chamber of Excess mechanics; adds lord ascension, Blessed Units recruitment, underground cults and two landmark story arcs. Tied to Lazy's Miao Ying corruption stages.",
+      "tags": [
+        "miao ying",
+        "cathay",
+        "alchemy",
+        "mechanics",
+        "prison",
+        "flesh lab",
+        "cults",
+        "playtest"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "40114",
+          "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/",
+          "category": "mods",
+          "version": "rc-1.0.0",
+          "updated": "2026-08-02T15:54:34Z"
+        },
+        "steam": [
+          {
+            "id": "3754310516",
+            "unlisted": true
+          },
+          {
+            "id": "3754311622",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "miao-assets.pack",
+          "from": "steam",
+          "note": "Required: meshes, animations, battle entities, warmachine VFX"
+        },
+        {
+          "file": "miao.pack",
+          "from": "steam",
+          "note": "Campaign logic, DB, UI"
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "faction": "Cathay (Miao Ying)",
+          "note": "Mechanics tied to Lazy's corruption stages 1-4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3464018577"
+          },
+          "note": "Lazy's Corruption Framework (!!li_progression_framework_workshop).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's Miao Ying Progression (li_miaoying_progression_workshop, Steam 3471237645 unlisted); without it, corruption stages and mechanics remain locked.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Soil's Corrupted Units (@Soil_Miaoying_Corrupted_Units and soil_corrupted_units_asset); without it, recipe unit transformations and ascension abilities do not work (warning in the log).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "2927955021"
+          },
+          "note": "Mod Configuration Tool (groovy_mct).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "Corrupted Compendium (MiaoYingCorrupted_Compendium_workshop, Steam 3705392682 unlisted): optional additional events/units; may affect Whisperer recruitment.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3259893195"
+          },
+          "note": "UI mod 'Shorter Menu For More Tools'; relieves the overcrowded resource bar.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3260081389"
+          },
+          "note": "UI mod against resource bar crowding (title unknown, unlisted).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "below": [
+          {
+            "steamId": "3464018577"
+          },
+          {
+            "steamId": "2927955021"
+          },
+          {
+            "mod": "ll-23878"
+          }
+        ],
+        "note": "Mod manager top -> bottom: 1) !!li_progression_framework_workshop (Steam 3464018577) 2) @Soil_Miaoying_Corrupted_Units (LL 32374) 3) groovy_mct (2927955021) 4) li_miaoying_progression_workshop (Steam 3471237645) 5) miao-assets.pack (REQUIRED) 6) miao.pack (this mod) 7) MiaoYingCorrupted_Compendium_workshop (OPTIONAL, Steam 3705392682) 8) soil_corrupted_units_asset (LL 32374)."
+      },
+      "tier": "campaign",
+      "requiresDlc": [
+        "The Warden and the Paunch"
+      ],
+      "status": "beta",
+      "knownIssues": [
+        "Resource bar can look overcrowded.",
+        "Minor UI inconsistencies in cauldron/prison/lab panels.",
+        "Placeholder portraits for some lords in the flesh lab.",
+        "Pleasure Host High Command Facility still in development.",
+        "Replaces Eltharion's prison mechanic and reskins Grom's cauldron UI when playing Cathay."
+      ],
+      "installNotes": [
+        "DLC 'The Warden and the Paunch' required (Grom's cauldron, prison engine).",
+        "Should work with SFO and Corrupted Landmarks according to the author.",
+        "Send feedback to 'rapypy' (Discord)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "It is not stated which of the two Steam IDs 3754310516 / 3754311622 is miao.pack and which is miao-assets.pack.",
+          "Mapping of the unlisted Steam IDs 3471237645 (Lazy Miao Progression) and 3705392682 (Compendium) inferred from their position in the load list.",
+          "Check load direction 'top -> bottom' against the convention 'top = wins'; soil_corrupted_units_asset sits BELOW miao.pack, @Soil_Miaoying_Corrupted_Units above it.",
+          "Steam ID 3260081389 is unlisted, title unknown.",
+          "Page version rc-1.0.0 (playtest) vs. title [8.1.0]."
+        ]
+      }
+    }
+  ],
+  "external": [
+    {
+      "id": "ext-seu-miaoying-mods",
+      "name": "SEU's Miao Ying mods (Summons and Stuff / seu_miaoying_submod_extension / SEU Generic Content)",
+      "note": "Distributed only via Lazy's Discord (no LL entry in the index). Includes Miao Ying Corruption Added Content, Generic Content and Submod Extension (daughters, Shugengan, Celestial Guard)."
+    },
+    {
+      "id": "ext-unique-landmarks",
+      "name": "Unique Landmarks (Main Submod, Kislev Standalone, Freewin Standalone)",
+      "url": "https://discord.com/channels/965342581745668136/969500741058318376",
+      "note": "Distributed only via Discord channel."
+    },
+    {
+      "id": "ext-endos-beastmen-matched-combat",
+      "name": "Endo's Beastmen Matched Combat (legacy !community_beastmen)",
+      "url": "https://www.loverslab.com/files/file/27949-endos-beastmen-matched-combat/",
+      "note": "LL file 27949, not in the index."
+    },
+    {
+      "id": "ext-sons-of-ursun",
+      "name": "Sons of Ursun (original mod)",
+      "note": "Original that 'Edited Sons of Ursun' replaces; author/link not named on the LL page."
+    },
+    {
+      "id": "ext-zeta-khalida-reskin",
+      "name": "Zeta's Khalida Reskins",
+      "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/112",
+      "note": "Nexus; prerequisite for tdw_khalida_switch_skin.pack."
+    }
+  ],
+  "notes": [
+    {
+      "topic": "Discord: Lewd-Community (Lazy / Lewdhammer)",
+      "text": "Several pages point to the Discord invites discord.gg/lazyicarus (LazyIcarus hub; author DOVAKIN of the Warrior of Slaanesh reskin) and discord.gg/W4qkrNwUMk (Lewd-Community; support for Cathay Corrupted Shenzoo and the Morathi translation). The server ID 965342581745668136 appears in channel links (translations: 1454878484852641852; Unique Landmarks: 969500741058318376; Summons and Stuff: 967468098464649327; Soiled Projects: 1004257551283662848; Confed-Scripts support: 1259903817751990303).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/24843-unified-french-translation-pack-traductions-fran%C3%A7aises/"
+      }
+    },
+    {
+      "topic": "Wiki",
+      "text": "Lewdhammer Wiki: https://lewdhammer.miraheze.org/wiki/Lewdhammer_Wiki (linked from the Morathi Ascension translation).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/40981-lazys-morathi-ascension-russian-translation/"
+      }
+    },
+    {
+      "topic": "Translation mods: load order",
+      "text": "Russian translations (Redonkym, DikiyZver) are to be loaded 'first/before the main mod', i.e. at the very top in the launcher/mod manager or above the original; the Korean collection translation is placed above the base translation. Translations require the original mod, and Redonkym's additionally require the progression framework.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/35880-lazys-corrupted-miao-ying-progression-russian-translation/"
+      }
+    },
+    {
+      "topic": "SEU mods via Discord only",
+      "text": "According to the reskin page, SEU's Miao Ying mods (Summons and Stuff, Generic Content, Submod Extension) are obtained only via Lazy's Discord.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/34640-seus-mortal-daughter-of-miao-ying-reskin/"
+      }
+    },
+    {
+      "topic": "Only one faction ESL per game",
+      "text": "According to the Cathay Corrupted Shenzoo page, WH3 allows only one ESL file per game; mods that touch the Faction Editor can probably only be used one at a time (Shenzoo is therefore likely incompatible with other faction mods).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/30893-corrupted-shenzoo/"
+      }
+    },
+    {
+      "topic": "Community Beastmen and Candles' Addon: version matching",
+      "text": "Candles' Beastmen Events & Ancillaries crashes immediately if Community Beastmen and the addon come from different versions; re-download both together.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/24493-candles-beastmen-events-ancillaries/"
+      }
+    },
+    {
+      "topic": "Confed scripts: bundle pack vs. individual packs",
+      "text": "tdw_confeds_gen_confed_all_12.pack is the merged version of all 12 confederation mods and must not be active together with the individual packs (crash).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/34242-easy-cross-faction-confederation-scripts/"
+      }
+    },
+    {
+      "topic": "Miao Ying mods build on the Lazy framework",
+      "text": "Miao Ying's Corrupting Alchemy expects the following in the mod manager (top->bottom): Lazy's Corruption Framework, Soil Corrupted Units, MCT, Lazy's Miao Progression, miao-assets, miao, optionally Corrupted Compendium, Soil Assets. Without Lazy's Progression the mechanics stay locked.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+      }
+    },
+    {
+      "topic": "Translation uploads not on Steam",
+      "text": "According to the author, the Chinese Handmaiden translation (death13x) must not be uploaded to Steam and is only available in the LL translation section and on 3DM.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/27158-mod-translation-%EF%BC%9Amorathi-corruption-of-a-handmaiden-mod%E6%B1%89%E5%8C%96%EF%BC%9A%E8%8E%AB%E6%8B%89%E6%96%AF%E7%9A%84%E8%85%90%E5%8C%96%E4%BE%8D%E5%A5%B3%EF%BC%8C%E4%BA%8B%E5%8A%A1%E5%AE%98/"
+      }
+    }
+  ]
+}

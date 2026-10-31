@@ -1,0 +1,2460 @@
+{
+  "mods": [
+    {
+      "id": "ll-23901",
+      "name": "Forest of Debauchery",
+      "authors": [
+        "MachineofCat"
+      ],
+      "kind": "reskin",
+      "summary": "Work-in-progress corruption reskin for Wood Elf units (Eternal Guard, Wildwood Rangers, Wardancer, Bladesinger, Sisters of Thorn, Dryads, Branchwraiths, Spellsinger, Spellweaver). Later the units are meant to get their own roster, modeled on Slaanesh, with abilities and stats.",
+      "tags": [
+        "woodelves",
+        "corruption",
+        "reskin",
+        "wip"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "23901",
+          "url": "https://www.loverslab.com/files/file/23901-forest-of-debauchery/",
+          "version": "1.3.2",
+          "updated": "2022-10-17T22:28:30Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "wip",
+      "knownIssues": [
+        "Not all units, heroes, lords and mounts are done yet (only the listed reskins)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "No pack file names given on the page.",
+          "There is another file 'Forest of Debauchery UPDATED' (ll-40998, Raykho) - its relationship to this file (successor/fork?) is not mentioned on this page; page last updated in 2022.",
+          "No information on campaigns/DLC."
+        ]
+      }
+    },
+    {
+      "id": "ll-24258",
+      "name": "SEU Miao Ying Submod Extension v0.7.0 - Chinese Translation (cn0930)",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation (as of 30.09.2022) of the SEU submod extension for Miao Ying. The page consists only of the file name and the note '汉化 of the SEU submod'.",
+      "tags": [
+        "translation",
+        "chinese",
+        "miao-ying",
+        "seu"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24258",
+          "url": "https://www.loverslab.com/files/file/24258-seu_miaoying_submod_extension_v070_cn0930pack/",
+          "updated": "2022-10-23T12:34:01Z",
+          "category": "translations"
+        }
+      },
+      "packs": [
+        {
+          "file": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Original mod not clearly named. Candidates in the LL index: ll-34640 (SEU's Mortal Daughter of Miao Ying Reskin) or ll-25600 (Various SFO Submods, contains 'Seu Extension Mod First Daughter and Last Shugengan') - not verified, so no relation set.",
+          "No load order information; very old file (2022), compatibility with current saves unclear."
+        ]
+      }
+    },
+    {
+      "id": "ll-24261",
+      "name": "CelestialDragonConcubines_cn0918 - Chinese Translation",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation (as of 18.09.2022) of the mod 'Celestial Dragon Concubines' (天庭龙妃). The page contains only the file name and this note.",
+      "tags": [
+        "translation",
+        "chinese",
+        "cathay"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24261",
+          "url": "https://www.loverslab.com/files/file/24261-celestialdragonconcubines_cn0918pack/",
+          "updated": "2022-10-23T12:34:01Z",
+          "category": "translations"
+        }
+      },
+      "packs": [
+        {
+          "file": "CelestialDragonConcubines_cn0918.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "The original mod 'Celestial Dragon Concubines' cannot be clearly found in the LL index (104 files) - no relation set.",
+          "Very old file (2022); no load order information."
+        ]
+      }
+    },
+    {
+      "id": "ll-24263",
+      "name": "corrupted_landmarks_cn - Chinese Translation",
+      "authors": [
+        "Rociky"
+      ],
+      "kind": "translation",
+      "summary": "Chinese translation of the landmark submod 'corrupted_landmarks' (地标submod的汉化), as of 2022.",
+      "tags": [
+        "translation",
+        "chinese",
+        "landmarks"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24263",
+          "url": "https://www.loverslab.com/files/file/24263-corrupted_landmarks_cnpack/",
+          "updated": "2022-10-23T12:34:01Z",
+          "category": "translations"
+        }
+      },
+      "packs": [
+        {
+          "file": "corrupted_landmarks_cn.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Derived only from the package name 'corrupted_landmarks'; the page does not name the original mod. The 2022 translation may not fit the current version of ll-30462.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/24263-corrupted_landmarks_cnpack/"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Target mod is only a guess (ll-30462 Corrupted Landmarks by Kerberos 2); there are also ll-24259 (corrupted_landmarks_kislev_cn) and ll-25677 (Lewd Landmarks).",
+          "The translation's version (2022) vs. the current Corrupted Landmarks version (1.11) may be incompatible."
+        ]
+      }
+    },
+    {
+      "id": "ll-27171",
+      "name": "堕落升魔 (Corrupted Ascension)",
+      "authors": [
+        "混沌破龍斩"
+      ],
+      "kind": "progression",
+      "summary": "Corruption campaign for Miao Ying based on the Generic Framework. Starts via the artifact quest 'Sword of Slaanesh'; mechanics: Slaanesh entourage (troop upgrades, path of glory), Slaanesh hegemony (bonuses, traits, artifacts, daemon form from level 6) and pleasure palaces as buildings. For AI Miao the stages progress automatically and end in an event to defeat and confederate/vassalize her.",
+      "tags": [
+        "miao-ying",
+        "slaanesh",
+        "corruption",
+        "generic-framework",
+        "chinese"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "27171",
+          "url": "https://www.loverslab.com/files/file/27171-%E5%A0%95%E8%90%BD%E5%8D%87%E9%AD%94-corrupted-ascension/",
+          "updated": "2026-04-09T12:05:58Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3376886102"
+          },
+          "note": "通用框架 (Generic Framework), Steam Workshop.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27171-%E5%A0%95%E8%90%BD%E5%8D%87%E9%AD%94-corrupted-ascension/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "steamId": "3464018577"
+          },
+          "note": "According to the Alarielle page (ll-42028) and its Chinese description, completely incompatible with anything built on Lazy's Framework (Lazy's Corruption Framework).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "note": "Faction taken from 'Miao Ying's faction' (妙影所在派系); campaign assignment not given on the page."
+        }
+      ],
+      "status": "stable",
+      "installNotes": [
+        "Requires the Generic Framework (Steam 3376886102).",
+        "Do not use together with Lazy's Corruption Framework / mods based on it (e.g. Alarielle, Temptation's Bloom)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "This mod's own Steam Workshop ID is not given on the page (only the framework's); the Alarielle page mentions a Workshop version without an ID.",
+          "Campaigns (IE/IEE/RoC) and DLC requirements not given.",
+          "The incompatibility with Lazy's Framework comes from page ll-42028, not from this page."
+        ]
+      }
+    },
+    {
+      "id": "ll-27439",
+      "name": "Sewerat's Community Beastmen Add-on (Pt.1)",
+      "authors": [
+        "Sk_Sewer Rat"
+      ],
+      "kind": "submod",
+      "summary": "Expansion for Community Beastmen: 4 new skills each for generic lords and 2 for heroes, additional active abilities for certain lords/heroes, renamed passive abilities (e.g. Primal Fury -> Primal Lust) and new skill images. Part 2 (hunting female Legendary Lords with choices) is only announced.",
+      "tags": [
+        "beastmen",
+        "community-beastmen",
+        "skills"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "27439",
+          "url": "https://www.loverslab.com/files/file/27439-sewerats-community-beastmen-add-on-pt1/",
+          "version": "1.1.2",
+          "updated": "2023-09-03T06:26:52Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-24466"
+          },
+          "note": "Page only says 'the main Community Beastmen mod'; ll-24466 (original by PassingByPosts) is the most likely base, but alternatively ll-36361 / ll-46165 / ll-26347 (variants/forks). Not verified.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/27439-sewerats-community-beastmen-add-on-pt1/"
+          }
+        }
+      ],
+      "status": "stable",
+      "knownIssues": [
+        "Skill trees were broken after a CA table update; the latest version should work again (changelog)."
+      ],
+      "installNotes": [
+        "The new version can replace older ones (author: 'you can replace older versions with the newer one')."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Page only says 'the main Community Beastmen' - there are several variants in the LL index (ll-24466 PassingByPosts, ll-36361, ll-46165 DeHess 'ALL versions', ll-26347 Lynn). Which base is meant is not stated.",
+          "No pack file names given."
+        ]
+      }
+    },
+    {
+      "id": "ll-27663",
+      "name": "堕落戴查 (Corrupted Drycha)",
+      "authors": [
+        "混沌破龍斩"
+      ],
+      "kind": "progression",
+      "summary": "Corruption progression for Drycha with events, tainted buildings and her own heroes. Starts with a personally won battle against a Nurgle faction; later Nurgle troops, corruption adjustment and legendary heroes. AI Drycha progresses automatically; at the end an event to defeat and confederate/vassalize her.",
+      "tags": [
+        "drycha",
+        "nurgle",
+        "corruption",
+        "generic-framework",
+        "chinese"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "27663",
+          "url": "https://www.loverslab.com/files/file/27663-%E5%A0%95%E8%90%BD%E6%88%B4%E6%9F%A5-corrupted-drycha/",
+          "updated": "2026-04-09T09:08:59Z",
+          "category": "mods"
+        },
+        "steam": [
+          {
+            "id": "3376933629",
+            "title": "堕落戴查 (Corrupted Drycha)",
+            "role": "main"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3376886102"
+          },
+          "note": "通用框架 (Generic Framework), Steam Workshop.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/27663-%E5%A0%95%E8%90%BD%E6%88%B4%E6%9F%A5-corrupted-drycha/"
+          }
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Drycha",
+          "faction": "Drycha (Wood Elves)",
+          "note": "Faction name not given on the page."
+        }
+      ],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Steam ID 3376933629 ('堕落戴查 (Corrupted Drycha)') was matched only via an identical title; the page itself lists only the framework ID 3376886102.",
+          "Faction name and campaigns (IE/IEE/RoC) not given; DLC requirement per the Alarielle page: Realm of the Wood Elves, to recruit Drycha.",
+          "ll-42028 recommends this mod as 'Lin Corrupted Drycha' (+ English translation pack from Lazy's Discord)."
+        ]
+      }
+    },
+    {
+      "id": "ll-28994",
+      "name": "Soboro Miao Ying Reskin Pack",
+      "authors": [
+        "SOBORO_Bang"
+      ],
+      "kind": "reskin",
+      "summary": "Replaces Miao Ying's head model from Lazy's Corrupted Miao Ying mod with SOBORO's version. Only Lazy's stage packs are replaced; all other Lazy files are still required.",
+      "tags": [
+        "miao-ying",
+        "soboro",
+        "lazy",
+        "reskin"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "28994",
+          "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/",
+          "updated": "2023-09-07T17:51:20Z",
+          "category": "mods"
+        },
+        "discord": [
+          {
+            "channel": "Lazy's Discord (channel not named)",
+            "note": "Report bugs in lazyicarus' Discord, per the author."
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Soboro_Miao.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_scale_soboro_st1.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_fishnet_soboro_st2.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_ballet_soboro_st3.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_bare_soboro_st4.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_corset_soboro_st5.pack",
+          "from": "download"
+        },
+        {
+          "file": "li_miaoying_plug_soboro_st6.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Replaces only Lazy's stage pack; the other files (framework etc.) must come from Lazy.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's standard mod package (everything except the stage pack).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/28994-soboro-miao-ying-reskin-pack/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "note": "Order as with Lazy: Soboro_Miao.pack, li_miaoying_scale_soboro_st1.pack, li_miaoying_fishnet_soboro_st2.pack, li_miaoying_ballet_soboro_st3.pack, li_miaoying_bare_soboro_st4.pack, li_miaoying_corset_soboro_st5.pack, li_miaoying_plug_soboro_st6.pack. Disable Lazy's own stage pack and enable this one instead."
+      },
+      "tier": "visual-submod",
+      "status": "stable",
+      "installNotes": [
+        "Disable Lazy's stage pack and enable this package instead (in the order given above).",
+        "For a fresh install: install all Lazy packs except the stage pack, then this package."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Author writes you need 'lazylcarus' default mod pack'; exact Lazy pack names other than the Soboro packs are not given.",
+          "Whether the order of the listing above (top = higher priority) is meant is not explicitly stated ('same as lazylcarus' mod arrangement order')."
+        ]
+      }
+    },
+    {
+      "id": "ll-29487",
+      "name": "SFO No corruption reduction for Dragon Wrath",
+      "authors": [
+        "boib1150"
+      ],
+      "kind": "patch",
+      "summary": "Small patch for SFO: removes the corruption reduction from Miao Ying's 'Dragon's Wrath' so that corruption mods for Cathay stay usable.",
+      "tags": [
+        "sfo",
+        "miao-ying",
+        "patch",
+        "corruption"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "29487",
+          "url": "https://www.loverslab.com/files/file/29487-sfo-no-corruption-reduction-for-dragon-wrath/",
+          "version": "1.0.2",
+          "updated": "2023-10-07T04:21:21Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-sfo"
+          },
+          "note": "Patches an SFO ability (Dragon's Wrath).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/29487-sfo-no-corruption-reduction-for-dragon-wrath/"
+          }
+        }
+      ],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack file name and exact SFO version not given.",
+          "Load order not given (probably needed below/above SFO, not verified)."
+        ]
+      }
+    },
+    {
+      "id": "ll-32374",
+      "name": "Soil's Corrupted Units",
+      "authors": [
+        "soilofgenisis"
+      ],
+      "kind": "units",
+      "summary": "Collection of corrupted unit mods for several factions (including Miao Ying, Azazel), obtained via warband upgrades. The Miao mod brings a complete corruption roster, tech tree, warband upgrades and corrupted buildings. The asset pack and the mod for the faction currently being played must be loaded.",
+      "tags": [
+        "units",
+        "corruption",
+        "miao-ying",
+        "azazel",
+        "warband-upgrades"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "32374",
+          "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/",
+          "version": "3.0",
+          "updated": "2026-08-04T14:42:01Z",
+          "category": "mods"
+        },
+        "discord": [
+          {
+            "channel": "Lazy's Discord, role 'Soil's projects' (under 'Channels & Roles')",
+            "messageUrl": "https://discord.com/invite/lazyicarus",
+            "note": "Subscribe to the role to receive update pings."
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Page requires 'Li's Miao Ying Corruption Mods' and an update of the assets file.",
+          "condition": "Miao Ying version of the unit mod",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel mod is based on Kerberos' Azazel's Realm (mandatory).",
+          "condition": "Azazel version of the unit mod",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-48415"
+          },
+          "note": "Community fix that replaces the asset pack (textures otherwise partly overwrite vanilla Cathay units).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/"
+          }
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "note": "Miao unit mod"
+        },
+        {
+          "character": "Azazel",
+          "note": "Azazel unit mod, requires Azazel's Realm"
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-27930"
+          }
+        ],
+        "note": "The Azazel unit mod must sit above Kerberos' Azazel's Realm, since it overwrites its files. Enable only the mod for the faction currently being played."
+      },
+      "status": "stable",
+      "knownIssues": [
+        "Incompatible with all mods that change the warband upgrades of the faction being played (per the author mostly only visual/minor)."
+      ],
+      "installNotes": [
+        "Download the asset pack AND the faction-specific mod.",
+        "Enable only the mod for the faction you are currently playing.",
+        "For the new Miao mod, also update the assets file."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack file names and the list of supported factions ('various factions') are not given.",
+          "Relationship to ll-48415 (fix of the asset pack) per its title/changelog there; not mentioned on this page."
+        ]
+      }
+    },
+    {
+      "id": "ll-32460",
+      "name": "Selector Submod for Lazy's Corrupted Reskins",
+      "authors": [
+        "AkaClear"
+      ],
+      "kind": "submod",
+      "summary": "Variant Selector submod for Lazy's Corrupted Reskins for players who use only the reskin packs. Allows free choice between all installed reskin variants (Miao Ying, Katarin, Morathi).",
+      "tags": [
+        "variant-selector",
+        "lazy",
+        "reskin",
+        "miao-ying",
+        "katarin",
+        "morathi"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "32460",
+          "url": "https://www.loverslab.com/files/file/32460-selector-submod-for-lazys-corrupted-reskins/",
+          "updated": "2024-03-12T16:22:47Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Variant Selector from Steam.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32460-selector-submod-for-lazys-corrupted-reskins/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Reskin packs for Miao Ying (only the desired ones).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32460-selector-submod-for-lazys-corrupted-reskins/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-23966"
+          },
+          "note": "Reskin packs for Katarin (only the desired ones).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32460-selector-submod-for-lazys-corrupted-reskins/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Reskin packs for Morathi (only the desired ones); 'all three characters supported'.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/32460-selector-submod-for-lazys-corrupted-reskins/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "ll-23878"
+          },
+          {
+            "mod": "ll-23966"
+          },
+          {
+            "mod": "ll-23925"
+          }
+        ],
+        "note": "Author: enable all reskin packs and place this submod 'below those files'. In catalog terms (higher = later) this is interpreted as lower priority than the reskin packs - but the wording is ambiguous."
+      },
+      "tier": "visual-submod",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Which of the Lazy reskin files exactly are meant (pack names) is not on the page; assignment to ll-23878/23966/23925 derived from 'all three characters'.",
+          "'below those files' could refer to the launcher view or to priority - please check."
+        ]
+      }
+    },
+    {
+      "id": "ll-33604",
+      "name": "Endo Sisters of Sigmar and Endo Daughters of Kislev (v5.0.0)",
+      "authors": [
+        "bbandiinem (Re-Upload)",
+        "Endo (Original)"
+      ],
+      "kind": "reskin",
+      "summary": "Re-upload of Endo's mod for the Sisters of Sigmar and Daughters of Kislev (compatible with game patch 5.0.0). The uploader points out that the original author has since uploaded new files to Nexus Mods and recommends downloading from there.",
+      "tags": [
+        "endo",
+        "sisters-of-sigmar",
+        "kislev",
+        "reupload"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "33604",
+          "url": "https://www.loverslab.com/files/file/33604-endo-sisters-of-sigmar-and-endo-daughters-of-kislev-for-v500/",
+          "version": "5.0.0",
+          "updated": "2024-10-05T08:55:04Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "superseded",
+      "installNotes": [
+        "More recent version by the original author on Nexus: https://www.nexusmods.com/totalwarwarhammer3/mods/228?tab=files (recommended)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "The Nexus original (mod 228) is outside the catalog; whether it fully replaces the LL file is inferred only from the uploader's note.",
+          "No pack names/load order; reskin type (units/lord) not described."
+        ]
+      }
+    },
+    {
+      "id": "ll-33808",
+      "name": "Corrupted Chars can Seduce",
+      "authors": [
+        "habus"
+      ],
+      "kind": "submod",
+      "summary": "Small submod that gives corrupted characters (Miao Ying, Katarin, Morathi) the 'Seduce Units' mechanic of the Slaanesh factions. The faction starts with a -200% seduce budget; from corruption level 3 (Morathi from level 2) the character receives a trait that unlocks the budget and grows with the levels. Further Legendary Lords in the faction receive their own traits.",
+      "tags": [
+        "seduce",
+        "miao-ying",
+        "katarin",
+        "morathi",
+        "lazy-addon"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "33808",
+          "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/",
+          "version": "1.1.4",
+          "updated": "2025-04-11T12:38:12Z",
+          "category": "mods"
+        }
+      },
+      "packs": [
+        {
+          "file": "tdw_cth_seduce.pack",
+          "from": "download",
+          "note": "Miao Ying version; file extension added from the package name."
+        },
+        {
+          "file": "tdw_kat_seduce.pack",
+          "from": "download",
+          "note": "Katarin version; file extension added from the package name."
+        },
+        {
+          "file": "tdw_mor_seduce.pack",
+          "from": "download",
+          "note": "Morathi version; file extension added from the package name."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "condition": "Miao Ying version (tdw_cth_seduce)",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "The tutor from Corrupted Compendium gives Miao a small seduce bonus.",
+          "condition": "Miao Ying version (tdw_cth_seduce)",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23966"
+          },
+          "condition": "Katarin version (tdw_kat_seduce)",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "condition": "Morathi version (tdw_mor_seduce)",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-34242"
+          },
+          "note": "Per the author compatible with 'Easy Cross Faction confederation scripts' (self-promotion).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3175283222"
+          },
+          "note": "Keep Seduced Units - 'fully compatible', the author strongly recommends it (makes recruiting captured units very powerful).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/"
+          }
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "note": "tdw_cth_seduce"
+        },
+        {
+          "character": "Katarin",
+          "note": "tdw_kat_seduce"
+        },
+        {
+          "character": "Morathi",
+          "note": "tdw_mor_seduce"
+        }
+      ],
+      "status": "stable",
+      "installNotes": [
+        "One pack per character; enable only the version(s) for the corruption mods you use.",
+        "Corruption mods for other lords (Morathi, Fay Enchantress, Katharina) are not required but useful."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack names are given without '.pack'; extension added.",
+          "Steam ID 3175283222 in the page links is 'Keep Seduced Units', not this mod itself."
+        ]
+      }
+    },
+    {
+      "id": "ll-37162",
+      "name": "Slaanesh Expanded - Visuals",
+      "authors": [
+        "Narok-"
+      ],
+      "kind": "submod",
+      "summary": "Alpha visual submod for Total Warmaidens III (Original Females Edition): female Legendary Lords stay in default clothing until they are subjugated via vassalization or confederation and then succumb to Slaanesh. Supports Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse and the Sisters of Twilight.",
+      "tags": [
+        "slaanesh-expanded",
+        "visuals",
+        "total-warmaidens",
+        "alpha"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "37162",
+          "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/",
+          "version": "0.0.1",
+          "updated": "2024-10-16T02:37:01Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-total-warmaidens-3"
+          },
+          "note": "Zeta's Total Warmaidens III (Original Females Edition).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "Meant to harmonize with the other Slaanesh Expanded mods by Narok- ('align with my other mods').",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "See above (Slaanesh Expanded - Vassal Dilemmas).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/37162-slaanesh-expanded-visuals/"
+          }
+        }
+      ],
+      "tier": "visual-submod",
+      "status": "beta",
+      "knownIssues": [
+        "Alpha: does not work well with other mods that change appearance.",
+        "All other female lords/units start without clothing until later updates arrive."
+      ],
+      "installNotes": [
+        "If you want clothing back for all other units, you can use RPFM in '@Total Warmaidens III (Original Females Edition)' to delete the unwanted files under variantmeshes > variantmeshdefinitions."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Relationship to ll-36630/ll-34542 interpreted as 'optional' (the page only says 'my other mods'); pack names not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-39910",
+      "name": "Lazy's Corrupted Katarin - Russian Translation",
+      "authors": [
+        "Redonkym"
+      ],
+      "kind": "translation",
+      "summary": "Russian translation of Lazy's Corrupted Katarin (stages + reskins), complete and manually checked per the author. The original is required; the translation must be at the very top of the load order.",
+      "tags": [
+        "translation",
+        "russian",
+        "katarin",
+        "lazy"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "39910",
+          "url": "https://www.loverslab.com/files/file/39910-lazys-corrupted-katarin-russian-translation/",
+          "updated": "2025-02-15T21:38:38Z",
+          "category": "translations"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-23966"
+          },
+          "note": "Translation; the original mod is required.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39910-lazys-corrupted-katarin-russian-translation/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23966"
+          },
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/39910-lazys-corrupted-katarin-russian-translation/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-23966"
+          }
+        ],
+        "note": "File must be loaded first (at the very top in the launcher / mod manager)."
+      },
+      "tier": "translation",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "high",
+        "openQuestions": [
+          "Pack file name not given; translation version 0.4.1 vs. current version of ll-23966 (1.0.0)."
+        ]
+      }
+    },
+    {
+      "id": "ll-42028",
+      "name": "Alarielle, Temptation's Bloom",
+      "authors": [
+        "Kerberos 2"
+      ],
+      "kind": "campaign",
+      "summary": "Standalone corruption campaign for Alarielle (Slaanesh temptation, 48 scenes, Handmaiden Vaeri, corrupted faction mechanics, portals to World Roots, quest chains for confederating Drycha, Sisters of Twilight, N'Kari and Azazel). From version 2.0 also playable as Slaanesh (N'Kari/Dechala/Masque, Morathi, Azazel). Fully integrated with Azazel's Realm; the map's starting balance is changed.",
+      "tags": [
+        "alarielle",
+        "slaanesh",
+        "campaign",
+        "kerberos",
+        "lazy-framework",
+        "story"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "42028",
+          "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/",
+          "version": "3.1",
+          "updated": "2026-07-24T13:37:56Z",
+          "category": "mods"
+        },
+        "steam": [
+          {
+            "id": "3644437727",
+            "unlisted": true,
+            "role": "main"
+          },
+          {
+            "id": "3566908399",
+            "unlisted": true,
+            "role": "assets"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "Kerberos Discord",
+            "messageUrl": "https://discord.gg/W4qkrNwUMk",
+            "note": "Author's Discord."
+          },
+          {
+            "channel": "Lazy's Discord, role 'Kerberos's Projects' (Channels & Roles)",
+            "messageUrl": "https://discord.com/invite/lazyicarus",
+            "note": "Update pings; support channel per submod, pinned post with a submod idea list."
+          }
+        ],
+        "wiki": [
+          "https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png"
+        ]
+      },
+      "packs": [
+        {
+          "file": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
+          "note": "Assets (videos/images for Alarielle and Azazel's Realm). Alone + Variant Selector = reskins only, without the campaign."
+        },
+        {
+          "file": "Alarielle_Temptation_Bloom.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "note": "Name from the Korean list ('Alarielle_Temptation_Bloom'), extension added."
+        },
+        {
+          "file": "Alarielle_Temptation_Bloom_Assets.pack",
+          "from": "steam",
+          "note": "Name from the Korean list, extension added; possibly identical to kerberos_mod_assets.pack (newer page)."
+        },
+        {
+          "file": "MiaoYing_Azazel_content.pack",
+          "from": "steam",
+          "note": "Name from the Korean list (= Azazel's Realm), extension added; Steam item 3643871692 (unlisted)."
+        },
+        {
+          "file": "@n_SlaaneshVictories.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Recommended Narok pack; the author tuned the scripts to it."
+        },
+        {
+          "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Recommended Narok pack; the author tuned the scripts to it."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3472332568"
+          },
+          "note": "'Lazy's Mods + MCT + Corrupted Landmarks' link (Steam 'Lazy's Corruption'). According to the Korean/Chinese list, this includes !li_progression_framework_workshop, li_katarin_progression_workshop, li_miaoying_progression_workshop, zli_katarin_reskins, zli_miaoying_reskins, groovy_mct, corrupted_landmarks.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mct"
+          },
+          "note": "groovy_mct; MCT options control the scene pacing.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Corrupted Landmarks (Kerberos 2) must be the Workshop version; delete the old data-folder version (CN note). Assignment to ll-30462 derived from name/author.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel's Realm (Steam 3643871692, unlisted).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Mixu's Unlocker (also no. 12 on the CN list).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-pj-console"
+          },
+          "note": "According to the English text a real requirement (enable Context Viewer); the Chinese list calls it 'optional'.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23925"
+          },
+          "note": "Lazy's Morathi mods (Steam items 3471237702 and 3471884231, unlisted).",
+          "condition": "Only when playing as Morathi",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "pack": "@n_SlaaneshVictories.pack"
+          },
+          "note": "The author has dedicated script support for this; Slaanesh Victory events only kick in from Alarielle's corruption level 5+.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+          },
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3566849815"
+          },
+          "note": "Corrupted Wood Elf Units for Slaanesh (Kerberos' version of habu's mod; MUST be the Steam version, not Habu's).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-ovn-lost-world"
+          },
+          "note": "Gaen Vale turns into a magical forest; performance cost (freeze at the start of a turn). Requires Mixu's Unlocker.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-27663"
+          },
+          "note": "Lin Corrupted Drycha (Steam 3376933629) + English translation pack from Lazy's Discord; Nurgle content, deliberately not built in as a dependency.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Alarielle and Vaeri unlock variants with progress.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-lhec"
+          },
+          "note": "Brings Lirazel and Aliathra, who appear in the story (small easter eggs).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3497485732"
+          },
+          "note": "Readman - Beautiful Bold Buildings (BBB), submod for ATB: tier-bound Slaanesh buildings.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3501984780"
+          },
+          "note": "Readman Coalesced Character Creations (CCC): lewder Sisters of Avelorn models + 4 Slaanesh monster units (models by Soilofgenisis).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3508604193"
+          },
+          "note": "Readman Twisted Temptation Transformations (TTT): corrupted techs for tree spirits and daemons.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3534460647"
+          },
+          "note": "Readman Upgrades Upon Unity (UUU): Daemonic Ascension / boon mechanic for Handmaidens. Only ONE UUU variant at a time.",
+          "exclusiveGroup": "readman-uuu",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3559919182"
+          },
+          "note": "UUU variant for Warriors of Chaos.",
+          "exclusiveGroup": "readman-uuu",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3557775008"
+          },
+          "note": "UUU variant for Morathi.",
+          "exclusiveGroup": "readman-uuu",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3558872079"
+          },
+          "note": "UUU variant for Daemons of Slaanesh.",
+          "exclusiveGroup": "readman-uuu",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "2996269472"
+          },
+          "note": "Lyra the Lioness (Rat of the Lake); additionally a lewd variant model via Variant Selector.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3404717872"
+          },
+          "note": "Nymeria (Rat of the Lake); as a lord, her name is empty.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-unique-faction-ui"
+          },
+          "note": "Needed for the Slaanesh UI theme.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3304325611"
+          },
+          "note": "Otherwise a duplicate of the Defender of Ulthuan UI from level 5+.",
+          "condition": "Enable only from Alarielle corruption level 5",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3528693285"
+          },
+          "note": "Readman Late Lavish Looks: pink instead of blue bows/arrows.",
+          "condition": "Enable only from Alarielle corruption level 5",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-41124"
+          },
+          "note": "Lewd Flags and Loading Screens.",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3536009143"
+          },
+          "note": "Better HD Alarielle flag by Readman (alternative to ll-41124).",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "3240401070"
+          },
+          "note": "Cult of Pleasure Mechanics for Morathi - use the patched version.",
+          "condition": "Only when playing as Morathi",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3691683876"
+          },
+          "note": "SFO submod by Avanti Savoia (unit compatibility patch), even though SFO itself is not recommended.",
+          "condition": "Only together with SFO",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3509062568"
+          },
+          "note": "Bugfix mod against 'Corrupted Characters Stage Reset' (only if you have too many script-heavy mods; per the author possibly fixed by a CA patch).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Corrupted Ascension: completely incompatible with anything on Lazy's Framework.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-36002"
+          },
+          "note": "Habu's tdw_corrupted_buildings mods are meant for Miao, cause script errors as Alarielle and do nothing. CONTRADICTION: the Korean list includes tdw_corrupted_Buildings_alt.pack / tdw_corrupted_buildings_add_wef.pack under 'Recommended'. The newer English statement is preferred.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-rdll"
+          },
+          "note": "Breaks many functions in ATB and Azazel's Realm.",
+          "condition": "Unless AI recruitment is disabled",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-sfo"
+          },
+          "note": "Confirmed CTD in the Miao/Azazel quest battle; new heroes/units are then unbalanced.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-alarielle-wood-elves"
+          },
+          "note": "Crash on startup; do not leave ATB active when playing Wood Elves yourself.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-walk-with-the-dragon"
+          },
+          "note": "Script errors from turn 1.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-legendary-characters-stratovarius"
+          },
+          "note": "Script errors that silently block corruption progress.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-lord-hero-swap"
+          },
+          "note": "Reportedly prevents an Alarielle quest.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "steamId": "2860381227"
+          },
+          "note": "Do not use anything that moves N'Kari's starting position (he must start in Ulthuan).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-24467"
+          },
+          "note": "Morathi: Corruption of a Handmaiden - not recommended at the same time, not even when playing as Morathi.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-just-good-battle-ui"
+          },
+          "note": "Crash in manual battle with a corrupted Miao.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-helper-ui"
+          },
+          "note": "Like Just Good Battle UI; confirmed CTD in the Miao/Azazel quest battle.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-landmarks-of-legend"
+          },
+          "note": "According to the Korean list it collides with the Corrupted Landmarks (too many landmarks).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "pack": "n_SlaaneshVictories_Confederations.pack"
+          },
+          "note": "Do not use the 'Confederations' variant of the Slaanesh Victories mods (breaks ATB and Azazel's Realm). File name added following the pattern of the other n_ packs, not literally on the page.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Alarielle",
+          "faction": "Wood Elves (Alarielle)",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ]
+        },
+        {
+          "character": "N'Kari",
+          "faction": "Daemons of Slaanesh",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ],
+          "note": "Start is moved to the south of Morathi."
+        },
+        {
+          "character": "Dechala",
+          "faction": "Daemons of Slaanesh",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ]
+        },
+        {
+          "character": "Masque",
+          "faction": "Daemons of Slaanesh",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ]
+        },
+        {
+          "character": "Morathi",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ],
+          "note": "Requires Lazy's Morathi Progression."
+        },
+        {
+          "character": "Azazel",
+          "campaigns": [
+            "IE",
+            "IEE"
+          ],
+          "note": "Also lords who confederate Azazel."
+        }
+      ],
+      "loadOrder": {
+        "note": "Author: leave all required mods in the default load order ('leave in default load order'; never changed manually). The Korean list, by contrast, recommends this order: 1 !li_progression_framework_workshop, 2 Alarielle_Temptation_Bloom, 3 Alarielle_Temptation_Bloom_Assets, 4 corrupted_landmarks, 5 groovy_mct, 6 li_katarin_progression_workshop, 7 li_miaoying_progression_workshop, 8 MiaoYing_Azazel_content, 9 pj_console, 10 zli_katarin_reskins, 11 zli_miaoying_reskins; Chinese list: 'no order needed'. A complete recommended mod list + load order as an image is in the Lewdhammer wiki: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png"
+      },
+      "tier": "campaign",
+      "requiresDlc": [
+        "Total War: WARHAMMER II - The Queen & The Crone (play/recruit Alarielle)",
+        "Total War: WARHAMMER - Realm of The Wood Elves (recruit Drycha)",
+        "Total War: WARHAMMER III - Champions of Chaos (play/recruit Azazel)",
+        "Total War: WARHAMMER II - The Twisted & The Twilight (recruit Sisters of Twilight)"
+      ],
+      "campaigns": [
+        "IE",
+        "IEE"
+      ],
+      "status": "stable",
+      "knownIssues": [
+        "Rite UI (Extended UI): scrolling to corrupted rites can hang - deselect the lord and reopen the panel.",
+        "A confederated corrupted Miao loses her name (known issue of the Lazy series); fix submod pinned in the Azazel's Realm Discord channel.",
+        "The eagle mount does not show Alarielle's corruption model in manual battles.",
+        "Sisters of Twilight: only one sister has the corrupted model in manual battles.",
+        "Do not select the Forest Spirit upgrade buttons at the same time.",
+        "Slaanesh authority when confederating as Warriors of Chaos: first load the save/manual battle, then end the turn once.",
+        "Corrupted characters can fall back to level 0 with too many script-heavy mods (bugfix mod 3509062568).",
+        "Landmark upgrade only after all events of the current level have been seen (MCT interval, default 2 turns)."
+      ],
+      "installNotes": [
+        "All Steam items are unlisted - reachable only via the links on the LL page. If nudity mods are region-blocked: press Windows+R and enter 'steam://openurl/<link>'.",
+        "Always start the mod with a new campaign; IE and IEE only.",
+        "Enable PJ Console + 'Enable context viewer' so that script errors show up as red text; without screenshots of them, no help from the author.",
+        "Kerberos_mod_log.txt in the WH3 install folder shows in turn 1 whether the mod started correctly.",
+        "When playing as Wood Elves yourself, disable ATB (risk of crashes/script errors).",
+        "Enable the later mods (Slaanesh UI, Late Lavish Looks, Flags) only from corruption level 5.",
+        "Only ONE Readman UUU variant at a time.",
+        "Disable all Habu tdw_corrupted_buildings mods when playing as Alarielle."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "It is not clear which Steam items belong to 'Lazy's Mods + MCT + Corrupted Landmarks' (3472332568) and whether Corrupted Landmarks (ll-30462, Steam 3474483873?) is needed separately.",
+          "Pack file names for Alarielle_Temptation_Bloom(.pack), _Assets and MiaoYing_Azazel_content come only from the Korean list, without extension.",
+          "How 'Alarielle_Temptation_Bloom_Assets' relates to 'kerberos_mod_assets.pack' (Steam 3566908399) is unclear.",
+          "Contradiction on Habu's tdw_corrupted_buildings* (KR: recommended, EN: not recommended).",
+          "Assignment of the Narok packs to ll-36630/ll-34542 not verified.",
+          "Lord Hero Swap: 3406868790 vs. 9.0 fix 3810275955 - the page does not say which is meant."
+        ]
+      }
+    },
+    {
+      "id": "ll-43295",
+      "name": "Futa Valkia",
+      "authors": [
+        "DeHess"
+      ],
+      "kind": "reskin",
+      "summary": "Reskin for Valkia with her own helmet and an additional rigged (swinging) body model, for whose mesh the Gor model from Community Beastmen was reused. Pure reskin; a larger mod is only a possibility.",
+      "tags": [
+        "valkia",
+        "khorne",
+        "futa",
+        "reskin"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "43295",
+          "url": "https://www.loverslab.com/files/file/43295-futa-valkia/",
+          "updated": "2025-07-22T06:34:04Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Unclear whether Community Beastmen (e.g. ll-46165) is required as a prerequisite; the page only says the mesh comes from there.",
+          "No pack file names, no mention of Variant Selector."
+        ]
+      }
+    },
+    {
+      "id": "ll-43852",
+      "name": "英灵召唤 (Summon Servant)",
+      "authors": [
+        "混沌破龍斩"
+      ],
+      "kind": "units",
+      "summary": "Adds a summoning mechanic to all factions: for money you randomly receive equipment (95%) or a hero (5%). 9 legendary heroes and 145 pieces of equipment; rarity: common 60%, uncommon 30%, rare 10%.",
+      "tags": [
+        "summon",
+        "heroes",
+        "equipment",
+        "generic-framework",
+        "chinese"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "43852",
+          "url": "https://www.loverslab.com/files/file/43852-%E8%8B%B1%E7%81%B5%E5%8F%AC%E5%94%A4-summon-servant/",
+          "updated": "2026-04-09T09:08:41Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3376886102"
+          },
+          "note": "通用框架 (Generic Framework).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/43852-%E8%8B%B1%E7%81%B5%E5%8F%AC%E5%94%A4-summon-servant/"
+          }
+        }
+      ],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Own Steam ID not given; campaigns/DLC not given.",
+          "It is not apparent how lewd the content is (the description speaks of heroes from the 2D/anime world (二次元))."
+        ]
+      }
+    },
+    {
+      "id": "ll-47932",
+      "name": "Lizardmen Reskin - Female Anthro Scalies",
+      "authors": [
+        "Chatmat"
+      ],
+      "kind": "reskin",
+      "summary": "Model and animation replacement for Lizardmen Kroxigor, Saurus and Skink (lord and units) with female anthro models, three variants each (base, Blessed, RoR, lord) with war paint matching the faction colors. New unit cards, portraits and portholes; Legendary Lords are not changed.",
+      "tags": [
+        "lizardmen",
+        "anthro",
+        "scalie",
+        "reskin",
+        "model"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "47932",
+          "url": "https://www.loverslab.com/files/file/47932-lizardmen-reskin-female-anthro-scalies/",
+          "version": "1.2.2",
+          "updated": "2026-10-05T12:14:51Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "stable",
+      "knownIssues": [
+        "Changes the main_units and land_units tables: incompatible with any mod that changes Kroxigor, Saurus or Skink stats."
+      ],
+      "installNotes": [
+        "Put the pack in the data folder and enable it in the mod manager; use only ONE file from the download section."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Download file names/pack names are not on the page; which variants are available to choose from is unknown.",
+          "Incompatible mods are described only generically (no concrete targets)."
+        ]
+      }
+    },
+    {
+      "id": "ll-48415",
+      "name": "Soil Corrupted assets (fixed vanilla overwrites)",
+      "authors": [
+        "Mr Sanderss"
+      ],
+      "kind": "assets",
+      "summary": "Community fix for the asset pack of Soil's Corrupted Units: corrects the cases in which new unit textures overwrite the standard Cathay units. It is a replacement, not a patch applied on top.",
+      "tags": [
+        "soil",
+        "assets",
+        "fix",
+        "cathay",
+        "texture"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "48415",
+          "url": "https://www.loverslab.com/files/file/48415-soil-corrupted-assets-fixed-vanilla-overwrites/",
+          "version": "1.0.1",
+          "updated": "2026-05-06T16:47:50Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Replaces the asset pack of Soil's Corrupted Units (title/changelog: 'replacement not a patch'). Do not load in addition to the original asset pack.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/48415-soil-corrupted-assets-fixed-vanilla-overwrites/"
+          }
+        }
+      ],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "The page does not name Soil's Corrupted Units explicitly; target mod (ll-32374) derived from the title.",
+          "Pack file name not given; exact load order not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-49648",
+      "name": "Sexy Cathay Heroes Sub-mod Collection +Taoyan!",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "submod",
+      "summary": "Collection of nudity and balance submods for Steam hero mods from Cathay (Sarvente's Mariko, Enhi, Xiao, Liu, Hakutaku Diviners, Shards of Dai Ji, Hollows) plus Taoyan and the all-faction lord Aelesha Sigrika. Some heroes are rebalanced in the process; an all-in-one pack and a combined building pack are included.",
+      "tags": [
+        "cathay",
+        "nudity-patch",
+        "steam-submod",
+        "balance",
+        "dwjliel"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "49648",
+          "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/",
+          "version": "1.9.0 LotET",
+          "updated": "2026-10-13T07:54:54Z",
+          "category": "mods"
+        },
+        "downloads": [
+          {
+            "name": "(X)_Cathay_ALL_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "All-in-one of all Cathay files listed below (without @LK_dark)."
+          },
+          {
+            "name": "(X)_Cathay_Mariko_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Mariko (Steam 3210832217): nude model + strong rebalancing into an assassin; bug fixes, new unit cards."
+          },
+          {
+            "name": "(X)_Cathay_Enhi_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Enhi (Steam 3317294488): nude model + rebalancing into a glass-cannon mage."
+          },
+          {
+            "name": "(X)_Cathay_Xiao_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Xiao (Steam 3271568934): nude model, no balancing."
+          },
+          {
+            "name": "(X)_Cathay_Liu_nao_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Liu (Steam 3639948043): nude model."
+          },
+          {
+            "name": "(X)_Cathay_Taoyan_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Taoyan: not a submod, standalone nude model (Steam mod 3809622795 also adopted the model)."
+          },
+          {
+            "name": "(X)_Cathay_Divin_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Hakutaku Diviners (Steam 3270368516): all 3 variants."
+          },
+          {
+            "name": "(X)_Cathay_Shards_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Shards of Dai Ji (Steam 3277998418): all 3 variants."
+          },
+          {
+            "name": "(X)_Cathay_Hollow_XXX.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Hollows (Steam 3371888004): less clothing, no nude detail."
+          },
+          {
+            "name": "(X)_Cathay_Build_Hero.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Combines the buildings of the 3 recruitable hero mods (1 building slot)."
+          },
+          {
+            "name": "(X)_Cathay_Alt_Hero_XXX",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Combines Divin, Shards, Hollow and buildings in one mod."
+          },
+          {
+            "name": "(X)_@LK_dark.7z",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/?do=download",
+            "note": "Bonus (not in the all-in-one): Aelesha Sigrika (Steam 3700484893)."
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3210832217"
+          },
+          "note": "Mariko Sama (Sarvente).",
+          "condition": "Only for (X)_Cathay_Mariko_XXX or the ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3317294488"
+          },
+          "note": "Sarvente's Enhi (continued).",
+          "condition": "Only for (X)_Cathay_Enhi_XXX or the ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3271568934"
+          },
+          "note": "Sarvente's Xiao (Continued).",
+          "condition": "Only for (X)_Cathay_Xiao_XXX or the ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3639948043"
+          },
+          "note": "Sarvente's custom characters: Liu.",
+          "condition": "Only for (X)_Cathay_Liu_nao_XXX or the ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3270368516"
+          },
+          "note": "Sarvente's Hakutaku Diviners (continued).",
+          "condition": "Only for (X)_Cathay_Divin_XXX / Alt_Hero / ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3277998418"
+          },
+          "note": "Sarvente's Shards of Dai Ji (continued).",
+          "condition": "Only for (X)_Cathay_Shards_XXX / Alt_Hero / ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3371888004"
+          },
+          "note": "Sarvente's Hollows (continued); page refers to the 9.0 link. There is also 'Hollows temp-patch 8.1' (3768502987) - the page does not mention it.",
+          "condition": "Only for (X)_Cathay_Hollow_XXX / Alt_Hero / ALL-in-One",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3700484893"
+          },
+          "note": "All Faction Legendary Lord: Aelesha Sigrika.",
+          "condition": "Only for (X)_@LK_dark",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3809622795"
+          },
+          "note": "Steam mod Taoyan (apparently adopted the model and 'sexified' the skill images); (X)_Cathay_Taoyan_XXX is independent of it.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3764597913"
+          },
+          "note": "Chinese translation of the Sarvente heroes (sarvente英雄汉化).",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "steamId": "3210832217"
+          },
+          {
+            "steamId": "3317294488"
+          },
+          {
+            "steamId": "3271568934"
+          },
+          {
+            "steamId": "3639948043"
+          },
+          {
+            "steamId": "3270368516"
+          },
+          {
+            "steamId": "3277998418"
+          },
+          {
+            "steamId": "3371888004"
+          },
+          {
+            "steamId": "3700484893"
+          }
+        ],
+        "note": "Load order should fit automatically; submods belong above their parent mods. All except Mariko can be added mid-save."
+      },
+      "tier": "visual-submod",
+      "status": "stable",
+      "installNotes": [
+        "The respective Steam parent mods must be subscribed.",
+        "Use either (X)_Cathay_ALL_XXX.7z or individual files; (X)_@LK_dark is not included in the all-in-one.",
+        "All except Mariko can be added mid-game."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack file names inside the .7z archives are not given, hence packs empty.",
+          "Which files are mutually exclusive (ALL vs. individual, Alt_Hero vs. Divin/Shards/Hollow/Build) is not explicit; noted here only as a hint.",
+          "The Steam items belong to the parent mods (not to this mod) and therefore appear only as relations."
+        ]
+      }
+    },
+    {
+      "id": "ll-49991",
+      "name": "Tits Not Twitch",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "utility",
+      "summary": "UI modification: replaces the Twitch logo shown in the pause menu since a patch with an image of a Spellsinger. A second variant additionally replaces all icons of the pause menu.",
+      "tags": [
+        "ui",
+        "pause-menu",
+        "twitch-logo"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "49991",
+          "url": "https://www.loverslab.com/files/file/49991-tits-not-twitch/",
+          "updated": "2026-07-12T03:13:37Z",
+          "category": "mods"
+        },
+        "downloads": [
+          {
+            "name": "TitsNotTwitch.7z",
+            "url": "https://www.loverslab.com/files/file/49991-tits-not-twitch/?do=download",
+            "note": "Replaces only the Twitch logo."
+          },
+          {
+            "name": "TitsPauseMenu.7z",
+            "url": "https://www.loverslab.com/files/file/49991-tits-not-twitch/?do=download",
+            "note": "Changes all icons of the pause menu."
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether the two archives are alternatives (use only one) or combinable is not stated on the page.",
+          "Pack file names not given."
+        ]
+      }
+    },
+    {
+      "id": "ll-50065",
+      "name": "Alarielle Temptations Bloom Steam Translate Spanish",
+      "authors": [
+        "ldma"
+      ],
+      "kind": "translation",
+      "summary": "Spanish translation of Alarielle, Temptation's Bloom, specifically for the Steam version. Per the author a quick, largely machine-made translation with one review pass; there are still errors.",
+      "tags": [
+        "translation",
+        "spanish",
+        "alarielle",
+        "kerberos"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "50065",
+          "url": "https://www.loverslab.com/files/file/50065-alarielle-temptations-bloom-steam-translate-spanish/",
+          "updated": "2026-07-16T01:25:55Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "For the Steam version of Alarielle, Temptation's Bloom.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/50065-alarielle-temptations-bloom-steam-translate-spanish/"
+          }
+        }
+      ],
+      "status": "stable",
+      "knownIssues": [
+        "Many texts machine-translated; several errors possible (author)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack file name and load order guidance not given.",
+          "Is ATB 3.x being translated? Version not stated (page dated 16.07.2026, ATB 3.1 on 24.07.2026)."
+        ]
+      }
+    },
+    {
+      "id": "ll-52245",
+      "name": "Battle Angel XXX - An all faction Legendary Hero",
+      "authors": [
+        "Dwjliel"
+      ],
+      "kind": "units",
+      "summary": "Standalone Legendary Hero (Hitomi), available to all factions, renamable in game and rebalanced as a duel Light mage and area buffer. Based on a Chinese Steam mod whose mesh/errors Dwjliel edited; unit card and porthole are AI-generated.",
+      "tags": [
+        "legendary-hero",
+        "all-factions",
+        "dwjliel",
+        "rebalance"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "52245",
+          "url": "https://www.loverslab.com/files/file/52245-battle-angel-xxx-an-all-faction-legendary-hero/",
+          "updated": "2026-10-17T09:29:22Z",
+          "category": "mods"
+        }
+      },
+      "packs": [],
+      "relations": [],
+      "status": "stable",
+      "installNotes": [
+        "Standalone; new campaign required.",
+        "The Steam original mod ('一个申朱技能，晓模型的英雄.pack', 3574561438) is a different product; the page does not say whether both may be active together."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Relationship to the Steam original 3574561438 (spin-off/rip): usable together or incompatible - not stated.",
+          "Pack file name and campaigns not given; the page's Steam ID points only to the original, hence not entered as sources.steam."
+        ]
+      }
+    }
+  ],
+  "external": [
+    {
+      "id": "ext-sfo",
+      "name": "SFO",
+      "note": "Faction overhaul mod that several pages reference as 'SFO'; Steam ID/title not given on the pages."
+    },
+    {
+      "id": "ext-variant-selector",
+      "name": "Variant Selector",
+      "steamId": "2888171970"
+    },
+    {
+      "id": "ext-mct",
+      "name": "Mod Configuration Tool (MCT)",
+      "steamId": "2927955021",
+      "note": "Named 'groovy_mct' in the pack lists."
+    },
+    {
+      "id": "ext-pj-console",
+      "name": "Console Commands (Modding Tool) / PJ Console",
+      "steamId": "2791241084",
+      "note": "With 'Enable context viewer' enabled, script errors are shown as red text; writes script_log_###.txt."
+    },
+    {
+      "id": "ext-mixu-unlocker",
+      "name": "MIXER - Mixu's Unlocker",
+      "steamId": "2859968660"
+    },
+    {
+      "id": "ext-lhec",
+      "name": "Legendary High Elven Characters [LHEC]",
+      "steamId": "2897366143"
+    },
+    {
+      "id": "ext-ovn-lost-world",
+      "name": "OvN Lost World",
+      "steamId": "3291116635",
+      "note": "Requires Mixu's Unlocker; costs campaign performance."
+    },
+    {
+      "id": "ext-unique-faction-ui",
+      "name": "Unique Faction UI",
+      "steamId": "2789999718"
+    },
+    {
+      "id": "ext-total-warmaidens-3",
+      "name": "Total Warmaidens III (Original Females Edition)",
+      "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/22",
+      "note": "Author Zeta; Nexus Mods."
+    },
+    {
+      "id": "ext-rdll",
+      "name": "Recruit Defeated Legendary Lords (RDLL)",
+      "steamId": "2854819509"
+    },
+    {
+      "id": "ext-landmarks-of-legend",
+      "name": "Landmarks of Legend",
+      "steamId": "2794696516"
+    },
+    {
+      "id": "ext-lord-hero-swap",
+      "name": "Lord Hero Swap",
+      "steamId": "3406868790",
+      "note": "There is also 'Lord Hero Swap - 9.0 Fix (Unofficial)' (3810275955)."
+    },
+    {
+      "id": "ext-alarielle-wood-elves",
+      "name": "Alarielle - wood elves campaign (Xakiroment)",
+      "note": "Wood Elf mechanics for Alarielle; already integrated into ATB."
+    },
+    {
+      "id": "ext-walk-with-the-dragon",
+      "name": "[DEER24/震旦] 与龙同行 (Cathay Units Patch: Walk with the Dragon)"
+    },
+    {
+      "id": "ext-legendary-characters-stratovarius",
+      "name": "Legendary Characters by Stratovarius"
+    },
+    {
+      "id": "ext-just-good-battle-ui",
+      "name": "Just Good Battle UI"
+    },
+    {
+      "id": "ext-helper-ui",
+      "name": "Helper UI"
+    }
+  ],
+  "notes": [
+    {
+      "topic": "Discord: Lazy's Server (roles)",
+      "text": "On Lazy's Discord (https://discord.com/invite/lazyicarus) under 'Channels & Roles' you can subscribe to roles for update pings: 'Kerberos's Projects' (Alarielle, Azazel's Realm, ...) and 'Soil's projects' (Soil's Corrupted Units). Bugs for Lazy submods (e.g. the Soboro Miao reskin) are reported there; there are support channels per submod.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Discord: Kerberos",
+      "text": "Kerberos 2 additionally runs their own Discord: https://discord.gg/W4qkrNwUMk (link on the Alarielle page).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Steam: unlisted Workshop items",
+      "text": "Many lewd mods (Alarielle, Azazel's Realm, Kerberos Mod Assets, Readman submods, Lazy's Morathi) are 'unlisted' on Steam and reachable only via links on the LL page. Where nudity mods are region-blocked, Windows+R -> 'steam://openurl/<workshop-link>' helps.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Debugging: PJ Console and Context Viewer",
+      "text": "For Lazy Framework / Kerberos mods the author requires Console Commands (PJ Console, Steam 2791241084) with 'Enable context viewer' enabled. Script errors appear in red at the top left; search script_log_###.txt in the WH3 folder for 'BIG FAT SCRIPT ERROR'. Kerberos_mod_log.txt shows in turn 1 whether the Alarielle/Azazel mod has started. Without these screenshots there is no support.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Wiki: Mod list and load order",
+      "text": "For a complete recommended lewd mod list including load order, Kerberos points to the Lewdhammer wiki: https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png (image file; by his own account the author never reordered manually, i.e. use the default order).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Framework families: Lazy vs. Generic Framework",
+      "text": "Two separate framework families: (1) Lazy's Corruption Framework (Steam 3464018577 or bundle 3472332568; basis for the Miao/Katarin/Morathi progression, Alarielle, Azazel's Realm). (2) Generic Framework (通用框架, Steam 3376886102) by 混沌破龍斩 for Corrupted Ascension, Corrupted Drycha, Summon Servant. According to the Alarielle page, Corrupted Ascension is incompatible with anything on Lazy's Framework (Habu-style 'tdw_*' and Kerberos mods).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Alarielle/ATB: Habu's building mods",
+      "text": "Habu's tdw_corrupted_buildings* mods are meant for Miao. Disable them when playing as Alarielle (script errors, no benefit); use Kerberos' Steam version 'Corrupted Wood Elf Units for Slaanesh' (3566849815) instead. The Korean variant of the list partly contradicts this.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Alarielle/ATB: Narok packs",
+      "text": "Recommended: @n_SlaaneshVictories.pack and @n_SlaaneshVassals_Non_Slaanesh_Factions.pack (script support in the mod). Do NOT use n_SlaaneshVictories_Confederations. Slaanesh Victories events only kick in from Alarielle corruption level 5+.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Alarielle/ATB: enable mods later",
+      "text": "Useful from corruption level 5: Slaanesh UI theme (3304325611), Readman Late Lavish Looks (3528693285), flags (ll-41124 or Readman HD 3536009143). The Slaanesh UI theme needs Unique Faction UI (2789999718).",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+      }
+    },
+    {
+      "topic": "Soil's Corrupted Units: asset pack",
+      "text": "Soil's Corrupted Units (ll-32374) needs the asset pack + a faction-specific mod. ll-48415 is a community replacement for the asset pack (fixes overwriting of vanilla Cathay units). The Azazel version must sit above Azazel's Realm.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/"
+      }
+    },
+    {
+      "topic": "Dwjliel submods: load order",
+      "text": "Dwjliel (Sexy Cathay Heroes Collection etc.): 'Load order should be automatic, but sub-mods obviously go above their parents.' Submods sit above the Steam parent mods.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+      }
+    },
+    {
+      "topic": "Endo mods: Nexus instead of LL",
+      "text": "Endo's mods were re-uploaded on LL by third parties (e.g. ll-33604). The original author uploaded to Nexus Mods again in 2024-10 (mod 228); the uploader recommends downloading from there.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/33604-endo-sisters-of-sigmar-and-endo-daughters-of-kislev-for-v500/"
+      }
+    },
+    {
+      "topic": "SFO: conflicts with lewd campaigns",
+      "text": "According to Kerberos, SFO causes CTDs in Miao/Azazel quest battles and unbalanced new heroes. For SFO players there are separate mini patches (ll-29487 'No corruption reduction for Dragon Wrath') and the SFO compatibility patch 3691683876 for ATB.",
+      "source": {
+        "type": "loverslab",
+        "url": "https://www.loverslab.com/files/file/29487-sfo-no-corruption-reduction-for-dragon-wrath/"
+      }
+    }
+  ]
+}

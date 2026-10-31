@@ -1,0 +1,412 @@
+{
+  "_comment": "Hand-curated additions. packAliases: pack file (lower-case match) -> catalog target, for packs that LL pages describe without naming. 'confidence' is informational.",
+  "packAliases": {
+    "!Readman_Alarielle_YYY.pack": {
+      "target": {
+        "mod": "ll-43977"
+      },
+      "confidence": "high",
+      "why": "Readman_YYY, identical name"
+    },
+    "MiaoYingCorrupted_Compendium.pack": {
+      "target": {
+        "mod": "ll-23876"
+      },
+      "confidence": "high",
+      "why": "Corrupted Compendium"
+    },
+    "Corrupted_Miao_Audio_Overhaul.pack": {
+      "target": {
+        "mod": "ll-39349"
+      },
+      "confidence": "high",
+      "why": "Corrupted Miao Audio Overhaul"
+    },
+    "Corrupted_Miao_Moans.pack": {
+      "target": {
+        "mod": "ll-39349"
+      },
+      "confidence": "medium",
+      "why": "same author/topic as Audio Overhaul"
+    },
+    "Corrupted_Valkia_Compiled.pack": {
+      "target": {
+        "mod": "ll-24004"
+      },
+      "confidence": "high",
+      "why": "Passing's Corrupted Valkia (MEGA download according to #many-modlist-methods)"
+    },
+    "lewd_loading_screens_all_in_one.pack": {
+      "target": {
+        "mod": "ll-41124"
+      },
+      "confidence": "high",
+      "why": "Lewd Flags and Loading Screens"
+    },
+    "lewd_Miao_flag.pack": {
+      "target": {
+        "mod": "ll-41124"
+      },
+      "confidence": "medium",
+      "why": "Lewd Flags and Loading Screens contains the Miao flag; alternatively ll-37353"
+    },
+    "HuaJS258_corrupted_cathay.pack": {
+      "target": {
+        "mod": "ll-26591"
+      },
+      "confidence": "high",
+      "why": "Slaanesh Corrupted Cathay Roster by HuaJS258"
+    },
+    "tdw_corrupted_buildings_add_wef.pack": {
+      "target": {
+        "mod": "ll-36002"
+      },
+      "confidence": "high",
+      "why": "habus/tdw Additional corrupted Buildings + Units"
+    },
+    "@Soil_Miaoying_Corrupted_Units.pack": {
+      "target": {
+        "mod": "ll-32374"
+      },
+      "confidence": "medium",
+      "why": "Soil's Corrupted Units (Miao part)"
+    },
+    "@Soil_Azazel_Corrupted_Units.pack": {
+      "target": {
+        "mod": "ll-32374"
+      },
+      "confidence": "medium",
+      "why": "Soil's Corrupted Units (Azazel part)"
+    },
+    "@Soil_Kislev_Corrupted_Units.pack": {
+      "target": {
+        "mod": "ll-32374"
+      },
+      "confidence": "low",
+      "why": "according to #many-modlist-methods, from #soiled-projects"
+    },
+    "soil_corrupted_units_asset.pack": {
+      "target": {
+        "mod": "ll-32374"
+      },
+      "confidence": "medium",
+      "why": "Asset pack by Soil; ll-48415 is a corrected alternative"
+    },
+    "seu_miaoying_submod_extension.pack": {
+      "target": {
+        "external": "ext-seu-miaoying-mods"
+      },
+      "confidence": "high",
+      "why": "SEU mods, only via Discord #submods"
+    },
+    "seu_katarin_generic_addition.pack": {
+      "target": {
+        "external": "ext-seu-miaoying-mods"
+      },
+      "confidence": "medium",
+      "why": "SEU mods, only via Discord #submods"
+    },
+    "@n_SlaaneshVassals.pack": {
+      "target": {
+        "mod": "ll-34542"
+      },
+      "confidence": "high",
+      "why": "Slaanesh Expanded - Vassal Dilemmas (Narok)"
+    },
+    "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack": {
+      "target": {
+        "mod": "ll-34542"
+      },
+      "confidence": "high",
+      "why": "Variant of Vassal Dilemmas"
+    },
+    "@n_SlaaneshVictories.pack": {
+      "target": {
+        "mod": "ll-36630"
+      },
+      "confidence": "high",
+      "why": "Slaanesh Expanded - Corruption & Confederation (Narok)"
+    },
+    "n_SlaaneshVictories_Confederations.pack": {
+      "target": {
+        "mod": "ll-36630"
+      },
+      "confidence": "medium",
+      "why": "Variant of Corruption & Confederation"
+    },
+    "@@Compendium_Play_as_Azazel_Overwrite.pack": {
+      "target": {
+        "mod": "ll-27930"
+      },
+      "confidence": "medium",
+      "why": "Azazel's Realm overwrites Compendium for playing as Azazel"
+    },
+    "!!li_progression_framework.pack": {
+      "target": {
+        "steamId": "3464018577"
+      },
+      "confidence": "high",
+      "why": "LL version of the framework; the Steam version is named !!li_progression_framework_workshop.pack"
+    },
+    "endo_matched_updated_mod01.pack": {
+      "target": {
+        "external": "ext-endos-beastmen-matched-combat"
+      },
+      "confidence": "medium",
+      "why": "Endo's Beastmen Matched Combat"
+    },
+    "Lin_AllInOne_en.pack": {
+      "target": {
+        "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+      },
+      "confidence": "high",
+      "why": "English translation of Lin's mods (Corrupted Drycha etc.), Steam 3718883838; Readman's lists use the local pack"
+    },
+    "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack": {
+      "target": {
+        "steamId": "3304325611"
+      },
+      "confidence": "medium",
+      "why": "Local copy of 'Slaanesh UI theme for Miao Ying, Katarin, and Alarielle' (#many-modlist-methods: Miao Ying + Alarielle Slaanesh UI)"
+    }
+  },
+  "mods": [
+    {
+      "id": "ll-42028",
+      "packs": [
+        {
+          "file": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "note": "Main ATB pack (Steam, name from Readman's tested lists)."
+        },
+        {
+          "file": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
+          "note": "Shared assets for ATB and Azazel's Realm; loaded alone with Variant Selector it gives only the reskins."
+        },
+        {
+          "file": "kerb_alar_colorblind_patch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "LoversLab patch: colour-blind friendly corruption visuals."
+        },
+        {
+          "file": "kerb_alar_PLAY_AS_DECHALA_patch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "LoversLab patch for playing as Dechala (not recommended since 3.0)."
+        }
+      ],
+      "_fix": "Pack names per Readman's .twmods lists and the LL file list; the old guesses from the Korean description were wrong."
+    },
+    {
+      "id": "ll-41120",
+      "sources": {
+        "loverslab": {
+          "fileId": "41120",
+          "url": "https://www.loverslab.com/files/file/41120-elspeth-2026-wombo-combo/",
+          "category": "mods",
+          "version": "2.0",
+          "updated": "2026-03-24T07:33:31Z"
+        }
+      },
+      "_fix": "SFW Steam mod 3687340593 is a different mod, which this one replaces"
+    },
+    {
+      "id": "ll-42028",
+      "cleanup": {
+        "staleDataPacks": [
+          "Alarielle_Temptation_Bloom*.pack",
+          "kerb_Alarielle_Temptations_Bloom*.pack",
+          "kerberos_mod_assets.pack"
+        ],
+        "note": "ATB moved to Steam in January 2026. Remove every old LoversLab Alarielle and Azazel .pack from the data folder; a leftover copy takes priority over the Workshop version and crashes. A Steam mod shown with a red name in the launcher means an old copy is still in data."
+      }
+    },
+    {
+      "id": "ll-27930",
+      "cleanup": {
+        "staleDataPacks": [
+          "MiaoYing_Azazel_content.pack",
+          "kerb_Azazel*.pack"
+        ],
+        "note": "Azazel's Realm is on Steam since January 2026; remove old LoversLab packs from data. Keep @@Compendium_Play_as_Azazel_Overwrite.pack, which is still distributed on LoversLab."
+      }
+    },
+    {
+      "id": "ll-30462",
+      "cleanup": {
+        "staleDataPacks": [
+          "*corrupted_landmarks*.pack"
+        ],
+        "note": "Use the Steam version (3474483873) and delete the old LoversLab landmark packs from data. Symptoms of a leftover: Avelorn grove landmark produces wine, elves use orc models, forest buildings cannot be upgraded, or a startup crash naming a high elf unit record."
+      }
+    },
+    {
+      "id": "ll-24004",
+      "cleanup": {
+        "staleDataPacks": [
+          "Corrupted_Valkia_Compiled.pack"
+        ],
+        "unsubscribeSteamIds": [
+          "3808407319"
+        ],
+        "note": "Current version is Steam 3813939023 (unlisted, October 2026). Unsubscribe the earlier Workshop item 3808407319 and remove the old .pack from data: both use the same pack name, which causes a startup crash or an invisible mod."
+      }
+    },
+    {
+      "id": "ll-27171",
+      "cleanup": {
+        "staleDataPacks": [
+          "Lin_Corrupted_Ascension_EnUpdated.pack"
+        ],
+        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838)."
+      }
+    },
+    {
+      "id": "ll-23876",
+      "cleanup": {
+        "note": "The LoversLab file is MiaoYingCorrupted_Compendium.pack, the Steam version (3705392682, since April 2026) is MiaoYingCorrupted_Compendium_workshop.pack. Use only one. Azazel's Realm's play-as overwrite expects the LoversLab name; with the Steam version it crashes at startup (renaming fixes it but breaks the Ensign Loi dependency)."
+      }
+    },
+    {
+      "id": "ll-27930",
+      "packs": [
+        {
+          "file": "kerb_Azazel's_Realm_steam.pack",
+          "from": "steam",
+          "steamId": "3643871692",
+          "note": "Main Azazel's Realm pack (Steam since January 2026)."
+        },
+        {
+          "file": "@@Compendium_Play_as_Azazel_Overwrite.pack",
+          "from": "download",
+          "note": "Still distributed on LoversLab (zip); needed to play as anyone but Miao. Expects the LoversLab Compendium file name."
+        }
+      ],
+      "_fix": "Steam pack name per Readman's lists."
+    }
+  ],
+  "external": [
+    {
+      "id": "ext-legendary-lore",
+      "name": "Legendary Lore",
+      "note": "Incompatible with Corrupted Compendium (Discord FAQ)."
+    }
+  ],
+  "notes": [],
+  "mergeMods": {
+    "dc-corrupted-ascension-lin-chaos-dragon-slayer": "ll-27171",
+    "dc-sigvalda-model-mod-corv0modder": "ll-24875"
+  },
+  "externalToMod": {
+    "ext-seu-miaoying-mods": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension",
+    "ext-unique-landmarks": "dc-unique-landmarks-seducers-of-slaanesh-wood-elf-forests"
+  },
+  "refAliases": {
+    "lazy's corruption framework": {
+      "steamId": "3464018577"
+    },
+    "lazy's framework": {
+      "steamId": "3464018577"
+    },
+    "progression framework": {
+      "steamId": "3464018577"
+    },
+    "li_miaoying_progression": {
+      "mod": "ll-23878"
+    },
+    "lazy's miao progression": {
+      "mod": "ll-23878"
+    },
+    "lazy miao progression": {
+      "mod": "ll-23878"
+    },
+    "lazy's corrupted katarin": {
+      "mod": "ll-23966"
+    },
+    "corrupted compendium": {
+      "mod": "ll-23876"
+    },
+    "compendium": {
+      "mod": "ll-23876"
+    },
+    "azazel's realm": {
+      "mod": "ll-27930"
+    },
+    "corrupted valkia": {
+      "mod": "ll-24004"
+    },
+    "kerberos mod assets": {
+      "steamId": "3566908399"
+    },
+    "corrupted landmarks": {
+      "mod": "ll-30462"
+    },
+    "generic framework": {
+      "steamId": "3376886102"
+    },
+    "corrupted ascension": {
+      "mod": "ll-27171"
+    },
+    "seu's miao": {
+      "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+    },
+    "soil_miaoying_corrupted_units": {
+      "mod": "ll-32374"
+    },
+    "soil corrupted assets": {
+      "mod": "ll-48415"
+    },
+    "dust's corrupted heroes": {
+      "mod": "dc-dust-s-corrupted-heroes-dch"
+    },
+    "legendary high elven characters": {
+      "external": "ext-lhec"
+    },
+    "lhec": {
+      "external": "ext-lhec"
+    },
+    "pj's console": {
+      "external": "ext-pj-console"
+    },
+    "mixu's unlocker": {
+      "external": "ext-mixu-unlocker"
+    },
+    "mixu's mixer": {
+      "external": "ext-mixu-unlocker"
+    },
+    "mct": {
+      "external": "ext-mct"
+    },
+    "variant selector": {
+      "external": "ext-variant-selector"
+    },
+    "sfo": {
+      "external": "ext-sfo"
+    },
+    "readman ccc": {
+      "steamId": "3501984780"
+    },
+    "readman_ttt": {
+      "steamId": "3508604193"
+    },
+    "readman ttt": {
+      "steamId": "3508604193"
+    },
+    "cult of pleasure": {
+      "steamId": "3240401070"
+    },
+    "lazy's corrupted katarin reskins": {
+      "mod": "ll-23966"
+    },
+    "atb": {
+      "mod": "ll-42028"
+    },
+    "legendary lore": {
+      "external": "ext-legendary-lore"
+    }
+  }
+}

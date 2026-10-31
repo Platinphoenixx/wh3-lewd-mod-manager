@@ -1,0 +1,64 @@
+{
+  "url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/",
+  "title": "Corrupted Chars can Seduce",
+  "images": {
+    "thumbnail": "https://static.loverslab.com/screenshots/monthly_2025_02/mor_chibi.thumb.png.95df724c57d60c9b4521830621c69490.png",
+    "screenshots": [
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/kat_chibi2_l_large.png.880a6f33c84d782db43b29ea43721840.png",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/kat_chibi2_l_large.thumb.png.8b694285476b2e2fbbb92f1e9cb0599d.png"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/mor_chibi.png.04661353350007d9cc54c420d3904357.png",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/mor_chibi.thumb.png.95df724c57d60c9b4521830621c69490.png"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/sweetie.webp.69854d5393465c59b441d5a300fcd2d9.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/sweetie.thumb.webp.c25e298724d546acc6137ea3abcb9220.webp"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_kat_seduce_alt.jpg.d9a44a023f79d6796e39393bec50e724.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_kat_seduce_alt.thumb.jpg.57322f9ab3d1031ed716feef48ee5001.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_kat_seduce.jpg.3f1df37711e040bd73636f1c761738c6.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_kat_seduce.thumb.jpg.7ae55bfa0128e7f8656f41737f447b78.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_mor_seduce.jpg.599521bfe19ca73d03d97fe6fdc8220d.jpg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/tdw_mor_seduce.thumb.jpg.abb6866616430ba6718b31a37c65a747.jpg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2025_02/UncleMaio.webp.9ee3f7ebabec8af22d6c0b1fb91c3317.webp",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2025_02/UncleMaio.thumb.webp.a7eddfe38049390fcdde7a49c8682a77.webp"
+      }
+    ],
+    "inline": [
+      "https://www.loverslab.com/uploads/monthly_2025_02/kat_small_chibi_l_300.png.ff3f5cd7de2b4d4758d55fd71a4a71d2.png",
+      "https://www.loverslab.com/uploads/monthly_2025_02/mor_chi_s100_long.png.a941b3cda5fbe9015dbcb3360753374e.png"
+    ]
+  },
+  "version": "1.1.4",
+  "author": "habus",
+  "tags": [
+    "miao ying",
+    "seduce",
+    "requires li mod",
+    "corruption",
+    "warhammer 3",
+    "katarina"
+  ],
+  "submitted": "2024-05-15T03:25:21Z",
+  "updated": "2025-04-11T12:38:12Z",
+  "downloads": "41423",
+  "steam_ids": [
+    "3175283222"
+  ],
+  "ll_file_links": [],
+  "description": "A small submod to allow a corrupted Miao Ying, Katarina or Morathi to use the seduce units mechanic (from slaanesh-factions)\n\n[img https://www.loverslab.com/uploads/monthly_2025_02/kat_small_chibi_l_300.png.ff3f5cd7de2b4d4758d55fd71a4a71d2.png]\n\nSome Details:\n\n-\nthe faction of the Char (Miao Ying, Katarina or Morathi) starts with -200% seduce budget to block other normal lords from the faction from being able to also use seduce\n\n-\nAt corruption-stage 3: Miao Ying or Katarina will be granted a trait, which allows her to get a seduction-budget >0 (and therefore allow her to use the mechanic)\n\n-\nMorathi gets her trait at corruption-stage 2.\n\n-\nthis trait will increase with each corruption stage to give access to more seduce-budget and better effects\n\n-\nRequired Mods:\n\n-\nfor the Miao Ying Version (tdw_cth_seduce):\n\n-\nrequires Lazy's Corrupted Miao Ying Progression Mod\n\n-\nrequires PassingByPosts's Corrupted Compendium Mod\n\n-\nfor the Katarina Version (tdw_kat_seduce):\n\n-\nrequires Lazy's Corrupted Katarin Mod\n\n-\nfor the Morathi Version (tdw_mor_seduce):\n\n-\nrequires Lazy's Morathi Ascension Mod\n\n-\nfor Miao Ying, the Tutor (from the corrupted Compendium mod) gives a small bonus to the seduction budget and is now only equipable by maio\n\n-\nfor all legendary lords who has a corruption mod (Morathi, Fay Enchantress, Katharina) or who are from a slaanesh faction (Azazel, Sigvald, N'Kari) -> they get an individual trait (f.e.: Fay Enchantress gets bonus to seduction cost for bretonians and other humans, Morathi gets bonus for Elves) when they are in maio yings faction (Northern Provinces) or Katarinas faction (Ice Court) which allows them to use the seduction mechanic too (doesn't matter how they join the faction (cheat,scripted events,...), it just checks if the Lord is in the faction)\n\n-\nthe corruption mods for the other lords are not needed, but it obviously makes the most sense with them\n\n-\nworks with Easy Cross Faction confederation scripts(yeah, I know shameless self-promotion)\n\n-\nalso fully compatible with the keep seduced units mods: <https://steamcommunity.com/sharedfiles/filedetails/?id=3175283222> (even if a bit op i strongly suggest it with this mod cause it makes army composition to some kind of pokemon like \"catch them all\")\n\n[img https://www.loverslab.com/uploads/monthly_2025_02/mor_chi_s100_long.png.a941b3cda5fbe9015dbcb3360753374e.png]",
+  "changelog_latest": "in all 3 packs:\n\n-\nfixed an error where other lords from the faction could falsly seduce\n\n-\nshould be savegame compatible",
+  "download_url": "https://www.loverslab.com/files/file/33808-corrupted-chars-can-seduce/?do=download",
+  "id": "33808",
+  "category": "mods",
+  "fetched": "2026-10-31T19:12:52+00:00"
+}

@@ -1,0 +1,541 @@
+{
+  "ll-24004": {
+    "summary": "Alpha corruption mod for Valkia: her cursed shield, which houses the daemon prince Locephax, changes her step by step through a points system, with model changes toward Slaanesh (Khorne path planned), dilemmas, traits, skill trees and a settlement of her own, the Profane Hold.",
+    "description": "**Corrupted Valkia** (Alpha 0.8/0.81) tells the story of Valkia the Bloody's corruption through her cursed shield, which holds the soul and mind of the Slaaneshi daemon prince Locephax. A points system (starting at 105, in steps of 10) controls how her model changes depending on your playstyle: either toward Khorne or into the arms of Slaanesh. At release, 12 of the more than 20 planned model variants are playable, but only the Slaanesh path (author: EphasPassius) is implemented at its core; according to the page, the Khorne path (author: FriendlyKitteh) is not yet implemented.\n\n**Start of the story:** At the beginning Valkia looks like she does in the base game, and you decide when the corruption begins. To do so, you have to retreat from a battle once in the pre-battle view, which triggers the first dilemma and the trait \"Intrigue of the Dark Prince\". After at least three turns, a second retreat triggers the second dilemma, after which Valkia is at stage N0 and the favor of the two gods can rise and fall. Later, randomly generated dilemmas, user-contributed events, lewd traits with visible model effects, custom skill trees (by Misao) and the Profane Hold near Kuark are added, through which you obtain Slaanesh units and heroes.\n\n**Endgame (Slaanesh route):** After stage 6, the gods' favor loses importance; from S9 on, Khorne regards her as lost and sends a crisis against you. After that, you can let Locephax complete the betrayal (he takes over as lord and Valkia is subjugated) or refuse, whereupon N'Kari attacks with his hordes. The themes are corruption, subjugation and dominance, including pregnancy/lactation motifs in the traits.\n\n**Notes:** The page warns that this version is highly experimental. The archive has to be unpacked before the pack goes into the data folder. The points total can so far only be viewed through the log file in the data folder; dilemmas triggered via console do not change the model, for that you have to change the tracking value. Hero characters such as Issath, Harald, Haelga and Kraghar as well as the Runesmith are not yet implemented.",
+    "features": [
+      "Corruption points system with model changes (12 variants in the alpha)",
+      "Slaanesh path with an endgame decision; Khorne path not yet implemented",
+      "Dilemmas, random events and lewd traits with model effects",
+      "Custom skill trees; playable lord Locephax in the endgame",
+      "Profane Hold near Kuark as a source of Slaanesh units and heroes",
+      "Turns most major capitals into Dark Fortresses",
+      "Optional model selection via a variant selector GUI (cosmetic only)"
+    ],
+    "images": {
+      "https://imgpile.com/images/bi69Xu.gif": {
+        "kind": "screenshot",
+        "caption": "Available Valkia models (Locephax variant \"coming soon\" according to the author)"
+      },
+      "https://imgpile.com/images/TgMlS2.png": {
+        "kind": "screenshot",
+        "caption": "Corruption model variants (12 of 20+ planned in the alpha)"
+      },
+      "https://imgpile.com/images/TgKyOR.png": {
+        "kind": "screenshot",
+        "caption": "Battle/campaign models, unit cards and portraits of the variants"
+      },
+      "https://imgpile.com/images/TgM1Gc.png": {
+        "kind": "screenshot",
+        "caption": "Battle/campaign models, unit cards and portraits of the variants"
+      },
+      "https://imgpile.com/images/TgMIHN.png": {
+        "kind": "screenshot",
+        "caption": "Battle/campaign models, unit cards and portraits of the variants"
+      },
+      "https://imgpile.com/images/TgMupW.png": {
+        "kind": "screenshot",
+        "caption": "Battle/campaign models, unit cards and portraits of the variants"
+      },
+      "https://imgpile.com/images/TgMNbP.png": {
+        "kind": "screenshot",
+        "caption": "Battle/campaign models, unit cards and portraits of the variants"
+      },
+      "https://imgpile.com/images/TgMUm1.gif": {
+        "kind": "screenshot",
+        "caption": "Lord Locephax, model variant 1 (of 3 that change dynamically)"
+      },
+      "https://imgpile.com/images/TgMwQL.gif": {
+        "kind": "screenshot",
+        "caption": "Lord Locephax, model variant 2"
+      },
+      "https://imgpile.com/images/TgMRNx.gif": {
+        "kind": "screenshot",
+        "caption": "Lord Locephax, model variant 3"
+      },
+      "https://imgpile.com/images/bi2PhX.gif": {
+        "kind": "screenshot",
+        "caption": "Hero Haelga, the Spear Chieftainess (Khorne path, not yet implemented)"
+      },
+      "https://imgpile.com/images/TgMTPj.gif": {
+        "kind": "screenshot",
+        "caption": "Example dilemma from the Corrupted Compendium (placeholder until custom scenes are illustrated)"
+      },
+      "https://imgpile.com/images/TgMbOo.png": {
+        "kind": "screenshot",
+        "caption": "Trait \"Developing Breasts\" (Slaanesh path)"
+      },
+      "https://imgpile.com/images/TgMh4C.png": {
+        "kind": "screenshot",
+        "caption": "Trait \"Locephax Guidance\" (Slaanesh path)"
+      },
+      "https://imgpile.com/images/TgM9GS.png": {
+        "kind": "screenshot",
+        "caption": "Trait \"Ganged Up On\" (unlock condition still secret according to the author)"
+      },
+      "https://imgpile.com/images/TgMCH8.png": {
+        "kind": "screenshot",
+        "caption": "Trait \"Living Armour\" (Slaanesh path)"
+      },
+      "https://imgpile.com/images/TgMtb3.png": {
+        "kind": "screenshot",
+        "caption": "Trait \"Lactation\" (Slaanesh path)"
+      },
+      "https://imgpile.com/images/T3RKN4.png": {
+        "kind": "screenshot",
+        "caption": "Locephax skill tree: changing auras"
+      },
+      "https://imgpile.com/images/T3GPVW.png": {
+        "kind": "screenshot",
+        "caption": "Locephax skill tree: protective barrier"
+      },
+      "https://imgpile.com/images/T3GYEP.png": {
+        "kind": "screenshot",
+        "caption": "Locephax skill tree: Locephax's combat role"
+      },
+      "https://imgpile.com/images/TgMxml.png": {
+        "kind": "screenshot",
+        "caption": "Endgame event: Khorne's Retribution (Eris leads the Khorne hordes)"
+      },
+      "https://imgpile.com/images/TgMKgw.png": {
+        "kind": "screenshot",
+        "caption": "Endgame decision of the Slaanesh path: Locephax completes his betrayal"
+      },
+      "https://imgpile.com/images/TgMJNF.png": {
+        "kind": "screenshot",
+        "caption": "Refusing the offer: N'Kari and his hordes attack"
+      },
+      "https://imgpile.com/images/TgMYku.png": {
+        "kind": "screenshot",
+        "caption": "Refusing the offer: N'Kari and his hordes attack (second image)"
+      },
+      "https://imgpile.com/images/TgMctM.png": {
+        "kind": "screenshot",
+        "caption": "The Profane Hold near Kuark"
+      },
+      "https://imgpile.com/images/TgMfo4.png": {
+        "kind": "screenshot",
+        "caption": "The eccentric Runesmith (Khorne path, not yet implemented)"
+      },
+      "https://imgpile.com/images/TgMExC.png": {
+        "kind": "screenshot",
+        "caption": "Favor system of both gods within the faction"
+      },
+      "https://imgpile.com/images/TgMs4k.png": {
+        "kind": "screenshot",
+        "caption": "Progression mechanic in point blocks (starting at 105)"
+      },
+      "https://www.loverslab.com/resources/emoticons/smile.png": {
+        "drop": true
+      }
+    }
+  },
+  "ll-36002": {
+    "description": "This modular submod adds extra buildings and units for the corrupted Miao Ying and Katarin. The base (**tdw_corrupted_buildings.pack**) brings many building chains tied to Miao's or Katarin's corruption stage: seven landmarks in wood elf territories, replacements for the defense and market buildings in Kislev and Cathay, recruitment chains for Norsca, beasts and Skinwolves, a Slaanesh temple building for Cathay (7 tiers) and more. Cathay players also get many of the Kislev buildings in Kislev territory.\n\nWhich units are added is up to you via optional add-on packs: Endo's Kislev reskins, MachineofCat's Forest of Debauchery units, Taraani's berserkers and amazons, a Slaangor hero with units, Zealots of Slaanesh and Warriors of Slaanesh (reskin or vanilla, not both). Another pack adds a building-based slave mechanic for Miao and Kat. Important: for the base you need either the Soil unit pack (Miao Corrupted Units) or the **_alt** variant without this dependency, never both.\n\nThe submod requires Lazy's Miao and Katarin progression as well as Mixu's Unlocker. For the add-on packs, the respective original mods must be active where the page says so. According to the author, the Slaangor pack may soon need adjusting, since the unit now exists in the base game. The page itself mentions that a more detailed description with images is still missing.",
+    "features": [
+      "Building chains and landmarks tied to Miao/Katarin corruption stages",
+      "Slaanesh temple chain (7 tiers) for Cathay",
+      "Recruitment buildings for Kislev, Norsca and beast units",
+      "Optional unit packs (Endo, MachineofCat, Taraani, Zealots, Warriors of Slaanesh)",
+      "Optional building-based slave mechanic",
+      "Base available either with Soil units or as an _alt variant with vanilla units"
+    ],
+    "recommendedFor": "For profiles with Lazy's Miao and/or Katarin progression that want more building options and unit variety. Only enable the add-on packs whose original mods are already in the profile.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2024_09/building_icons.thumb.png.ef8c071de43215c6a9fb3ea6e755a0c5.png": {
+        "kind": "other",
+        "caption": "Icons of the added buildings (no longer complete according to the author)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_08/tdw_placeholder.webp.aecb3c470d0d70a6a274596836394ae1.webp": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-23878": {
+    "summary": "Framework and corruption progression for Miao Ying (Cathay) in six stages plus stage 6+ with a birth mechanic, plus a diplomacy mechanic toward Slaanesh/Chaos factions (especially N'Kari) and balance adjustments. The downloads point to the Steam collection.",
+    "description": "This is the central page for **Lazy's Miao Ying progression** and also the **progression framework** on which the Katarin and Morathi progressions are built as well. Each stage is its own mod (reskin plus game mechanics); without the framework the stages are pure reskins, with the framework they bring real gameplay changes. The framework must sit above the stage mods in the load order, otherwise a crash is likely. All files have been moved to Steam; the LL downloads only redirect to the Steam collection.\n\n**Stages at a glance:** Stages 1 to 3 are purely mental (Miao becomes chattier, then provocative, then more adventurous up to humiliation and BDSM), accompanied by cursed high heels (\"Heels of Protection\", later \"Heels of Depravation\") that give more protection but reduce speed and can no longer be taken off. From stage 4, body modifications through piercings follow; in stages 5 and 6 a mutated mount binds itself to her spine, followed by further body changes, a tail, a daemonic arm and tentacles on the shoes. Stage 6+ adds a pregnancy/birth mechanic: she gradually loses her dragon form, Slaanesh's seal drains strength but her magical intensity rises, and depending on the trait level you can \"give birth\" to more weak or stronger units.\n\n**Diplomacy mechanic (\"Foreign Dickplomacy\"):** From stage 2, repeated defeats against N'Kari leave effects on Miao; after four defeats in a row she is confederated or becomes a vassal. This only works with manually fought battles (autoresolve triggers nothing), and Miao does not die in the process. From stage 1 you can also gather progress purely through diplomacy: 20 points per stage, with a non-aggression pact or trade (+1 each), alliance (+2) or vassalage (+3) per turn, each counted at most once. In addition, \"Corruption Adaptation\" adjusts the balance based on corruption level and province corruption.\n\n**Notes:** The theme is voluntary and later forced corruption with transformation and subjugation. Known issue: after a confederation, Miao's name disappears from the next turn on (no fix planned). For errors, the Lazy Discord helps (#faq, then #help) with li_log.txt and script_log (subscribe to the Lua Console mod for that).",
+    "features": [
+      "Progression framework for Miao, Katarin and Morathi",
+      "Six corruption stages plus stage 6+ with a birth mechanic",
+      "Stages usable individually (pure reskins without the framework)",
+      "Diplomacy mechanic toward Slaanesh/Chaos factions, also playable as N'Kari",
+      "\"Corruption Adaptation\": balance depending on corruption level",
+      "Cursed shoes, piercings and mount mutation as story elements",
+      "Download via Steam collection"
+    ],
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2022_10/load_order.png.0af8a6a304f10376db9474ca835af2a3.png": {
+        "kind": "loadorder",
+        "caption": "Load order according to the author (framework above the stage mods)"
+      },
+      "https://www.loverslab.com/uploads/monthly_2022_10/image.png.7570db4792142e7765fe8d14b725690d.png": {
+        "kind": "other",
+        "caption": "Graphic for \"Corruption Adaptation\" (balance adjustments by corruption level)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2022_09/li_miaoying_progression.png.d8db7e5eb88ff14c8ada1b831db910c4.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-28614": {
+    "description": "The add-on extends **Endo's Goblin Hordes** with additional slave and prisoner content for Greenskins. After battles, female prisoners can drop as ancillaries depending on the enemy's culture (three per culture, five for the Empire, seven for the Dwarfs; Skaven and Greenskins drop nothing). According to the page, the drop rate is 15% for normal factions and 10% for Dwarfs. In addition, enemies can be captured in battles and when looting, in order to improve the new slave units with their own upgrades.\n\nThere are also more random dilemmas (still under construction), a new lord, the **Goblin Enslaver**, who is weaker than normal lords but gets army buffs for goblin slave units, bodyguards and mounts, as well as smaller changes: Cathay slaves are back as scout cavalry, prisoner pens give faction bonuses, and the cavalry was rebalanced.\n\n**Important:** According to the author, the mod was broken by a CA update (and by Endo's mod); the author has given up Warhammer modding and releases the mod for others to continue with credit. The page points to a possible updated version, which is untested. Known problems: the mount swap does not change the campaign map model, the balancing is unfinished, and there may be overlaps with a newer goblin faction with its own prisoner resource. Put the newest version in the data folder and delete older ones.",
+    "features": [
+      "Prisoner and slave system for Greenskins",
+      "Ancillary drops of female prisoners by culture (15%, Dwarfs 10%)",
+      "New lord \"Goblin Enslaver\" with bodyguard and mounts",
+      "Upgrades for slave units, prisoner pens with faction bonuses",
+      "Additional dilemmas (WIP)"
+    ],
+    "recommendedFor": "Only for Greenskin campaigns with Endo's Goblin Hordes; because it was broken by CA updates, check beforehand whether an updated version exists.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/joy.png": {
+        "drop": true
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_08/modpage.png.786fda14a887fa9b157b6d7c6e00364c.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-36630": {
+    "description": "**Slaanesh Expanded** adds short event chains that trigger when you defeat one of the female Legendary Lords. There are three tiers per lord. Each tier grants traits that raise Slaanesh corruption on the defeated lord and thus offset her natural anti-corruption (for example Alarielle's \"Power of Nature\" or Miao Ying's faction-wide −2 corruption). The corruption strength is tuned individually for each lord.\n\nIt is triggered by a victory with any army of your faction, played or autoresolved, with no cooldown. If the lord becomes a vassal or is confederated, the events continue with plainer texts at the start of each turn. At tier 3 you can accept or decline a \"Harem\" trait that improves Slaanesh corruption and diplomatic relations between the supported factions faction-wide; the bonuses are tuned so that the lord remains a vassal. Supported are Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse, Sisters of Twilight and Khalida. The mod is intended for Slaanesh factions, but according to the author works with any faction.\n\nThe optional **confederation submod** (requires the main mod) counts victories per lord and, while she is a vassal, one point per turn. From eight points you are asked whether you want to confederate her or leave her as a vassal. Compatibility: the defeat events currently do not apply to characters with multiple corruption stages such as Lazy's Miao or Katarin; vassal and confederation events still work there. The artwork is by SOBORO.",
+    "features": [
+      "Three event tiers per defeated female Legendary Lord",
+      "Traits raise Slaanesh corruption and offset anti-corruption",
+      "Optional Harem trait at tier 3 with a faction buff",
+      "Confederation submod with a point counter (from 8 points)",
+      "Ten supported lords/factions, each with individual tuning",
+      "Works with any faction, intended for Slaanesh"
+    ],
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2025_01/SVictories.PNG.b728263fb651434895e68744cf805512.PNG": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-30462": {
+    "description": "**Corrupted Landmarks** adds a large number of additional landmarks to the game: 32 for Cathay, 30 for Kislev, 23 for Slaanesh, 12 for Warriors of Chaos, 16 for Dark Elves and 15 for High Elves (none for Daemons of Chaos, because their settlement mechanics don't fit). Cathay and Kislev landmarks are unlocked through the corruption stage of Lazy's Miao and Katarin progression respectively; according to the author, both progressions may be needed for the stage lock of the Miao/Kat landmarks.\n\nIn Cathay there is generic Slaanesh unit recruitment as well as hero recruitment (Alluresses, Chaos Sorcerers of Slaanesh) via the existing Slaanesh roster tables, so balance mods for Slaanesh units apply automatically. In Kislev you can recruit Slaanesh and Tzeentch cultists. For Warriors of Chaos, Gaen Vale, Tor Yvresse and Lothern become Dark Fortresses, and the landmarks are most useful for Azazel and Sigvald. The Dark Elf landmarks are spread across Ulthuan and Cathay (fitting Morathi, especially with the author's starting-position swap mod), and the High Elf landmarks are around Alarielle's start; according to the author, a dedicated Alarielle progression with stage unlocks is only planned for later.\n\n**Important:** The mod is now on Steam (3474483873); the LL page serves only as a backup. Before subscribing, delete the old version in the data folder. The load order doesn't matter, and no mandatory dependencies are needed anymore; the mod checks itself whether Lazy's Miao/Kat mods are active. A game restart is required.",
+    "features": [
+      "Over 120 new landmarks for six factions/cultures",
+      "Cathay/Kislev landmarks unlocked by Miao/Katarin corruption stage",
+      "Slaanesh and cultist recruitment as well as hero recruitment via landmarks",
+      "Gaen Vale, Tor Yvresse and Lothern become Dark Fortresses",
+      "No mandatory dependencies, load order doesn't matter",
+      "Available on Steam, LL only as a backup"
+    ],
+    "recommendedFor": "Ideal for profiles with Lazy's Miao or Katarin progression, but also for Azazel, Sigvald or Morathi campaigns. Runs without the progressions, in which case there are no stage unlocks.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2024_11/AverlornLandmarks_small.png.34667e9d7293ed5b2ff92f2f6352d0e3.png": {
+        "kind": "screenshot",
+        "caption": "Landmark overview (file name: Averlorn)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/bWei_Jin.png.7ba45a03b66c564996ab5ce7b4631a1f.png": {
+        "kind": "screenshot",
+        "caption": "Landmark Wei Jin (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/cShan_Yang.png.7feb579723fdf2ad1ce493e00176e477.png": {
+        "kind": "screenshot",
+        "caption": "Landmark Shan Yang (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/dWeng_Chang.png.8a4c351927513264292b8431690a4bd0.png": {
+        "kind": "screenshot",
+        "caption": "Landmark Weng Chang (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/eGaean_Vale_1.png.186a34bfee784d3e969d2a091ebe2691.png": {
+        "kind": "screenshot",
+        "caption": "Gaean Vale (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/fGaean_Vale_2.png.cf4b22aa3fc1b6edad6457ad87d8ad1c.png": {
+        "kind": "screenshot",
+        "caption": "Gaean Vale (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/gSlaanesh_Nan_Gau.png.2cf08c63a3797022d033d3c7cd0324a0.png": {
+        "kind": "screenshot",
+        "caption": "Slaanesh variant of Nan Gau (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2024_01/Praag.png.51b31c380b082060488c33659d861604.png": {
+        "kind": "screenshot",
+        "caption": "Praag (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_11/Nan_Gau.png.c1a830ef7fd95a21601b844b84dc009e.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-23925": {
+    "description": "This page belongs to **Lazy's Morathi Ascension**: a gameplay-driven corruption and ascension progression for Morathi, split into individually loadable stage mods. With the progression framework (found on the Miao Ying page) there are real gameplay changes; without the framework the stages are pure reskins. All of the content is on Steam; the LL downloads redirect there. A progression guide, including the side progression via the Masque, is available on the Lewdhammer wiki.\n\nIn terms of gameplay, the progression relies on a quest chain. Early missions against Alith Anar and Malus were rebuilt as quest battles in January 2025 so that they also work when the opponents have been defeated or wounded. In addition, Alith Anar, Malus, Teclis and N'Kari get large AI bonuses while you play as Morathi, so that they are not wiped out too early and do not block the progression. Morathi serves as the playable character in the Cult of Pleasure.\n\n**Things to note:** According to the author, the story is incomplete and was on hold for a while; work resumed in 2025. Since patch 6.0, Morathi's high heels sink into the ground in battle (unresolved animation problem). How far the story extends by now is not clear from the page.",
+    "features": [
+      "Morathi's corruption and ascension in individually loadable stages",
+      "Quest chain with quest battles against Alith Anar and Malus",
+      "Masque side progression (wiki guide)",
+      "AI bonuses for Alith Anar, Malus, Teclis and N'Kari",
+      "Requires the progression framework for gameplay; otherwise pure reskins",
+      "Content on Steam, story incomplete"
+    ]
+  },
+  "ll-49669": {
+    "description": "A personal compilation of revealing Cathay reskins, built from the Nexus mods Sexiest Grand Cathay, Endo's Cathay, Corrupted Cathay Roster and Warmaidens. The **Warmaidens Resource Pack** is required, as most of the mod is based on it; the other files from the originals are not needed. According to the author, the load order sets itself automatically, and the mod can be added or removed at any time.\n\nChanges include: Bhashiva becomes a human woman (with her own unit card and portrait), the Shugengan Lord and Alchemist appear nude, the Gate Master becomes female (voice only in battle), artillery, sky junks and lanterns are crewed by corrupted women (without new unit cards), plus the Nangau Grenadiers and roughly ten more units with new unit cards, all of which are shown in the screenshots according to the author. Where units became entirely female, the mod also adjusts the voices. Regiments of Renown (RoR) remain unchanged.\n\nTwo small optional add-on files are available: a rename of four units (with crude names) and a jade halberd submod. As a complement, the author recommends the Steam mod \"4K Unit Cards\" for matching card quality.",
+    "features": [
+      "Revealing reskins for several Cathay units",
+      "New unit cards for most of the redesigned units",
+      "Adjusted female voices",
+      "Automatic load order, can be added or removed at any time",
+      "Optional: rename of four units, jade halberd submod"
+    ],
+    "recommendedFor": "For any profile with a Cathay campaign that also wants the standard units to look revealing. The Warmaidens Resource Pack must be in the profile; RoRs remain unchanged.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2026_06/11111.jpg.2ad9499d547a2c157247f6528e6c2f49.jpg": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-27230": {
+    "description": "This reskin set swaps the appearance of **Ensign Loi** from PassingByPosts' Corrupted Compendium. There are seven variants (A, B, C, D, E, F and DD), which you pick based on the screenshots. You either download one of the individual pack files or the **all-in-one pack** (@@All_Loi_Variant_selector.pack), with which you can switch between the variants in the Variant Selector; in that case no individual packs are needed. The author also recommends the mod \"Rotate All Lords and Heroes\".\n\nThe pack must sit above the Corrupted Compendium in the load order, as shown in a screenshot on the page. It can be added, removed or swapped at any time in the middle of a campaign. Variants A to C use assets from HuaJS258's Slaanesh Corrupted Cathay Roster, D, E, F and DD use assets from Ashkaari's Blushing Moon Unit Replacer; the original mods are not needed. Mod managers therefore report a conflict with these originals, which can be ignored.\n\n**Important:** The mod has moved to Steam (ID 3503458514). There, custom unit cards and 2D portraits for all seven variants are included as well, so the author recommends deleting the LL version and using the Steam version.",
+    "features": [
+      "Seven Loi variants (A, B, C, D, E, F, DD)",
+      "All-in-one pack for the Variant Selector, or individual packs",
+      "Can be added or swapped mid-campaign",
+      "Steam version with custom unit cards and 2D portraits"
+    ],
+    "recommendedFor": "For profiles with the Corrupted Compendium that want to change Ensign Loi's look. Prefer the Steam version; load before the Compendium.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2023_05/1833383029_aLoi0.png.5e1786a2ef8aba8673f5c1de5080b1fb.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant A (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/251124386_bLoi0.png.986654cca382e601d668165a79860727.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant B (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/2054375847_cLoi0.png.63f1069ce544678b90c0ed30a35a44db.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant C (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/D.png.3ecd1751ce19c938a23f8112dcc6dedd.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant D (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/DD.png.0ec27a7a029a73c5d7e11babd66fdf9e.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant DD (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/e.png.b2817e82bfb422591f6beb66914df0e3.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant E (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2023_06/f.png.e6b97c48d8028431930e6b2272e2eaa9.png": {
+        "kind": "screenshot",
+        "caption": "Loi, variant F (per file name)"
+      }
+    }
+  },
+  "ll-42706": {
+    "description": "**Futa Witch Elves** replaces the models of Hellebron, Death Hags, Witch Elves and Sisters of Slaughter with futanari variants; for this, models from the Community Beastmen series (Rielle, Sewerrat, Endo and others) and the more muscular Witch Elf models of the Cullbridegoth series (delcastillokenneth1) were combined.\n\nIn addition, the mod brings gameplay content for the Dark Elves: a new, cheap slave unit recruited in the Slave Pen building (as cannon fodder broken by the Witch Elves), a new Witch Elf variant with glaives as a fast anti-large unit, the new lord **Death Hag Matriarch** (so that entire armies can be led by futanari, not just Death Hag heroes) and some strong new skills for Death Hags, the Matriarch and Hellebron.\n\nThere is a full version and a reskin-only version; the latter is no longer supported. Planned but partly dropped: idle and combat animations (too difficult according to the author), a slave gladiator, a rite for the slave limit, random events, landmarks and a possible Valkia recruitment mission.",
+    "features": [
+      "Futanari reskin for Hellebron, Death Hags, Witch Elves and Sisters of Slaughter",
+      "New slave unit from the Slave Pen",
+      "New unit: Witch Elves (Glaives)",
+      "New lord: Death Hag Matriarch",
+      "New skills for Death Hags and Hellebron",
+      "Full version and reskin-only version (the latter without support)"
+    ],
+    "recommendedFor": "For Dark Elf campaigns with Hellebron or Death Hags. Use the full version, as the reskin-only version is no longer supported.",
+    "images": {
+      "https://www.loverslab.com/resources/emoticons/grapes.png": {
+        "drop": true
+      },
+      "https://static.loverslab.com/screenshots/monthly_2025_06/Screenshot2025-06-21140446.jpg.b42f63d40d35a3e65fdf4af961de8d64.jpg": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-52142": {
+    "description": "**Khalida's Corruption** is a quest and corruption mod for Khalida, Queen of Lybaras, following SOBORO's storyline and artwork. You play a Chaos faction (supported: Azazel, N'Kari, Bel'akor, Archaon, Sigvald), set a trap for the queen, take her prisoner, train her and lead her through the corruption system. There is a dedicated skill tree for the corrupted Khalida; the skill trees are based on material from the Community Beastmen mods (TheManWhoPlans), the skins are by Zeta0080, and Kerberos' corruption framework provided the foundation.\n\nAccording to the author, the mod is **standalone** and has no dependencies; it is in **BETA**, and the story will be extended as SOBORO's story continues. The latest fix concerned destroying or capturing Karak Zorn and the Golden Tower for the Dwarf/Lizardmen quest. A cheat sheet in Markdown format is included with the download.\n\nThe author names their mod \"Prince Zanithor\" as a good complement. The page does not describe which exact stages or events there are.",
+    "features": [
+      "Questline around Khalida following SOBORO's storyline",
+      "Playable with Azazel, N'Kari, Bel'akor, Archaon and Sigvald",
+      "Capture, training and corruption system",
+      "Dedicated skill tree for the corrupted Khalida",
+      "Standalone, no dependencies (BETA)"
+    ],
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2026_10/khalida_corruption.png.30102025c8154b777adb1acb0a984b49.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-24467": {
+    "description": "A standalone corruption mod about a **handmaiden** who was captured by Morathi and appears as a Cult of Pleasure hero after the first battle won (hero \"alivia_aina\"). New models and events are unlocked through her skills: \"New Armor\", \"Corrupted\", \"Morathi's Personal Pet\" and \"The Army's Slut\". These skills trigger events (\"New Armor\", \"A Well Deserved Rest\", \"Corrupted\", \"Lusting Officers\", \"Entertainment\" and the events of the last two skills). Events can be skipped if you don't want them.\n\nThe author designed the mod to be playable alongside **Lazy's Morathi mod**; incompatibilities should be reported in the Lazy Discord (channel #lake-tales). With a console mod you can also make the heroine appear for other factions using the command \"agent champion alivia_aina\", although events and texts are written for Morathi. According to the author, the texts are not by a native speaker (clunky English). The event and skill images are screenshots from modded Skyrim; the 3D assets are by Kryiat, FiaVoidWolf and MustardSFM.\n\nThe themes are captivity and subjugation. The pack name is not given on the page.",
+    "features": [
+      "Captured handmaiden as a hero for Morathi (Cult of Pleasure)",
+      "New models unlocked through four skills",
+      "Seven events, skippable",
+      "Standalone, meant to run alongside Lazy's Morathi mod",
+      "Can be spawned for other factions via console (written for Morathi only)"
+    ]
+  },
+  "ll-41124": {
+    "description": "The author collects banners and loading screens here that were previously scattered across Discord. There are separate files for the banners of the **Miao Ying** and **Alarielle** factions as well as an **all-in-one package of loading screens** for several factions, including Chaos with the four Champions of Chaos characters such as Azazel. The images come from various sources, mostly art by Endo/Lettie and game screenshots by Crw0. Everything is purely cosmetic.\n\nFor Alarielle, Readman has a better HD version of the corrupted flag on Steam (ID 3536009143). The author personally only enables the mods from corruption stage 4 for Miao or stage 5 for Alarielle (Temptation's Bloom), together with their Steam mod \"Slaanesh UI theme for Miao Ying, Katarin, and Alarielle\", which also fits.",
+    "features": [
+      "Banners for Miao Ying and Alarielle",
+      "All-in-one loading screens for several factions",
+      "Purely cosmetic",
+      "Matches the author's Slaanesh UI theme"
+    ],
+    "recommendedFor": "For Miao Ying or Alarielle profiles as an optional visual extra. The author only enables the mods at advanced corruption so that banners and progress match.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2025_07/alar.png.62b2c739cc99074bb9c13ed70041e1a0.png": {
+        "kind": "screenshot",
+        "caption": "Corrupted flag for Alarielle (for the author's HD version note)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2025_04/lewd_Alarielle_flag.png.ee80bad360a29bc5c02a5b4058512bb5.png": {
+        "kind": "screenshot",
+        "caption": "Alarielle banner (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2025_04/lewd_katarin_flag.png.992b97ea4bf3874867a9cbf734503619.png": {
+        "kind": "screenshot",
+        "caption": "Katarin banner (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2025_04/cthflags.png.64a4fa15b3753a010551bd01d87f0ac1.png": {
+        "kind": "screenshot",
+        "caption": "Cathay banners (per file name)"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2025_04/cths.png.55bfd0f89cc8dae7f1c0900075d3457d.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-23966": {
+    "description": "This is the LL page for **Lazy's Corrupted Katarin**: Katarin's (Kislev) corruption and ascension in individually loadable stage mods. As with Miao and Morathi: with the progression framework (found on the Miao Ying page) there are gameplay changes; without the framework the stages are pure reskins. The reskins can also be used on their own. Everything was moved to Steam; the LL downloads only redirect to the collection. According to an update, the progression now has settings.\n\nThe page itself does not describe the individual stages; details are provided by the progression guide on the Lewdhammer wiki (Katarin). The mod page also lists no Workshop IDs. Landmarks and buildings for Katarin are provided by the submods \"Corrupted Landmarks\" and \"Additional Corrupted Buildings + Units\".",
+    "features": [
+      "Katarin's (Kislev) corruption and ascension in stage mods",
+      "Reskins usable without the framework",
+      "Real gameplay changes with the framework",
+      "Content via Steam collection, settings available"
+    ]
+  },
+  "ll-50407": {
+    "description": "Russian version of the **Cathay Heroes Sub-mod Collection**: it bundles several Cathay heroes (Mariko Sama, Sarventes Enhi, Xiao, Hakutaku Diviners, Shards of Dai Ji and the Hollows) in a standalone pack (@heroes_cathay_pack_ru); the original mods are not needed. A second file (@heroes_cathay_pack_ru_translation) contains only the texts without the heroes. If you want the pack in English, delete the file with \"translat\" in its name in the \"text\" folder.",
+    "recommendedFor": "For Russian-speaking players who want to use the Cathay heroes collection in Russian; the original hero mods are not needed for this.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2026_07/@heroes_cathay_pack_ru.jpg.bbdfba15c29b1780127e0d352531e1a0.jpg": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-26347": {
+    "description": "An extended version of **Community Beastmen** with additional content. The author started the project shortly after her first experiments with the Asset Editor and calls it \"janky\" herself. She hasn't touched Warhammer 3 since about the release of Shadows of Change; the mod is **not updated for the current version** and probably doesn't work properly. The page does not describe which content exactly was added.",
+    "recommendedFor": "For information only; not suitable for current profiles due to lack of maintenance. Use the current Community Beastmen mod instead.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2023_03/x2.png.2ea437bb3d728fc33417c6e1186d4576.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-43740": {
+    "description": "Russian translation of the **main mod** of the Alarielle campaign \"Temptation's Bloom\". The original is required; the translation must come before it in the load order (above the main mod). Bugs can be reported to the author on Discord. The author offers a complete translation of the add-on mods and a game package for the Alarielle campaign on their Boosty (parts of it freely accessible).",
+    "recommendedFor": "For Russian-speaking players of the Alarielle campaign; covers only the main mod, for add-on mods the author points to their Boosty."
+  },
+  "ll-32476": {
+    "description": "This Chinese-language mod (\"Corrupted Fay\") gives the **Fay Enchantress** a clothing and equipment variant system as well as \"corruption training\": anyone who wears certain equipment for a long time unlocks corruption traits. With a Carcassonne start, all variant equipment is unlocked immediately.\n\nThe mod is still in development and, according to the page, has neither corruption stages nor a story. After a weapon or equipment change, you have to enter a battle manually once so that the character screen updates. The **Generic Framework** (Steam 3376886102) is required. The description is in Chinese, with the author's donation links.",
+    "features": [
+      "Equipment variants for the Fay Enchantress",
+      "Corruption traits from wearing certain equipment for a long time",
+      "All variants unlocked immediately with a Carcassonne start",
+      "No stages or story yet (WIP)"
+    ],
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2024_03/Lin_Corruption_Fay.png.0c57a77cb43e73a3673a6484b4e4c3e3.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-49568": {
+    "description": "A banner pack that replaces most banners on the campaign map and in the UI with **AI-generated images**. It was created with Stable Diffusion WebUI reForge using character LoRAs and an Illustrious style, via img2img from existing artwork or other references. The author plans to add missing factions later. The page does not say which factions exactly are covered.",
+    "features": [
+      "Replaces most banners on the map and UI",
+      "AI-generated images",
+      "Purely cosmetic"
+    ],
+    "recommendedFor": "For all profiles that want a uniform banner look. In case of conflicts with other banner mods, the load order decides.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2026_06/bannersscreenshot.PNG.105412d64a8a2371c6c201e693fb411e.PNG": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-24466": {
+    "description": "**Community Beastmen** is a community framework for beastmen in a dark fantasy setting; the page warns that it is unsuitable for sensitive players (tag: Non-Con). The mod is explicitly open: anyone may build on it or create submods with it as a dependency. Changes can be suggested on Discord for inclusion in the main mod.\n\nThe page describes no details about units or mechanics; it mainly serves as a shared foundation for add-on mods (such as Futa Witch Elves, which uses models from this series).",
+    "features": [
+      "Shared framework for beastmen content",
+      "Open to submods and contributions",
+      "Dark setting, non-con themes according to the tag"
+    ]
+  },
+  "ll-24875": {
+    "description": "Turns Prince Sigvald into the female **Sigvalda**, Princess of Slaanesh. Included are new body and face meshes, icons, in-game texts and names, as well as custom-made voice files. The download comes in variants: pick exactly one main file (cultist voice, silent, cultist voice with less high-heel clipping, or a voiceless version that is combined with the separate voice pack). Unpack into the data folder of Total War Warhammer III.",
+    "features": [
+      "Sigvald as the female Sigvalda",
+      "New body and face meshes",
+      "Adjusted icons, texts and names",
+      "Custom voice files (two packs)"
+    ],
+    "recommendedFor": "For Sigvald or Slaanesh campaigns that want a female Sigvald. Enable both packs for the voices.",
+    "images": {
+      "https://www.loverslab.com/uploads/monthly_2023_08/image.png.f6944c2721db958ee5931e69e8ea6088.png": {
+        "kind": "other",
+        "caption": "Author's visual guide to which files are needed"
+      },
+      "https://static.loverslab.com/screenshots/monthly_2022_12/siggy_109213630_1.jpg.838f2bd5a4db5f4b1a36fabf0655351c.jpg": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-24599": {
+    "description": "Replaces the wood elves' Glade Guardians (infantry and mounted) and Eternal Guardians with female, scantily clad variants, with new meshes, icons and female voices. The pack simply goes into the data folder; the author announces \"more to come\".",
+    "features": [
+      "Glade Guardians (foot and mounted) as female units",
+      "Female Eternal Guardians",
+      "New meshes, icons and voices"
+    ],
+    "recommendedFor": "For wood elf campaigns or profiles with wood elf opponents, if these units should look more revealing.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2022_11/20221120213454_1.jpg.3fef01399f9e605d201854fc849ad09b.jpg": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-43659": {
+    "description": "Russian language patch (Russifier) for the **Steam version of Community Beastmen** (3476784883). The original is required, and the patch must sit above it in the load order.",
+    "recommendedFor": "For Russian-speaking players who use Community Beastmen from Steam.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2025_08/new_community_beastmen_ru.png.34ba5bef37a1c21e71e36664e266c25d.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-26468": {
+    "description": "Chinese translation of the Beastmen mods. It merges the two earlier LL translation packages and also covers new content (including companions). This package alone should now be all that's needed for Beastmen content. The page does not say which original mods exactly are translated.",
+    "recommendedFor": "For Chinese-speaking players with Community Beastmen mods; replaces the older individual packages."
+  },
+  "ll-27144": {
+    "description": "Blender source files with the base models and assets of the Corrupted Valkia mod (version 0.9). This is not a playable mod file, but material for modders who want to build on Corrupted Valkia.",
+    "recommendedFor": "Only for modders; do not install for normal play."
+  },
+  "ll-24260": {
+    "description": "Chinese translation of the base mods of Miao Ying and Katarin as well as the diplomacy submod (as of September 2022, pack: miao_and_katarin_cn0923.pack). The translation is old and probably no longer matches today's versions.",
+    "recommendedFor": "Only for Chinese-speaking players with an old mod version; probably not suitable for current profiles.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2022_10/4144114.png.1d50007c4ceae634083c9d98e2629521.png": {
+        "kind": "cover"
+      }
+    }
+  },
+  "ll-24262": {
+    "description": "Chinese translation of Lazy's \"Corrupted Morathi\" (pack: li_morathi_progression_cn0915.pack, as of September 2022). As with the other legacy translations, it is unclear whether it still matches the current version.",
+    "recommendedFor": "Only for Chinese-speaking players with an old Morathi progression; probably not suitable for current profiles.",
+    "images": {
+      "https://static.loverslab.com/screenshots/monthly_2022_10/4144114.png.9172bb541904c49395f5d368d1b9c870.png": {
+        "kind": "cover"
+      }
+    }
+  }
+}

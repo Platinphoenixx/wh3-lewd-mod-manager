@@ -1,0 +1,28 @@
+# Build output and dependencies
+node_modules/
+dist/
+out/
+curator/.venv/
+__pycache__/
+
+# Logs
+*.log
+
+# Local notes and environment of the maintainer (not for the public repo)
+CLAUDE.local.md
+
+# Private research material: raw Discord notes (user names, quotes) and research scratch files.
+# What they found is already in the curated data and the catalog.
+curator/work/discord-notes.md
+curator/work/research-*.json
+curator/raw/discord/kpw-docs/
+curator/raw/discord/twmods/
+
+# Scratch lists from curation passes
+curator/work/batches.json
+curator/work/hidden_steam_ids.txt
+curator/work/ll_all.json
+curator/work/ll_batches.txt
+curator/work/no_images.txt
+curator/work/stub_ids.txt
+curator/work/report.md

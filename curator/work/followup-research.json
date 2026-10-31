@@ -1,0 +1,26 @@
+{
+  "_comment": "Findings from the Discord search research (research-discord.json), applied as field overrides.",
+  "mods": [
+    {
+      "id": "steam-3754256443",
+      "name": "Corrupted Compendium workshop fix (obsolete)",
+      "kind": "patch",
+      "status": "superseded",
+      "summary": "Temporary third-party patch for the Steam Corrupted Compendium (Emissary could not be embedded into armies). Merged into the official Steam version on 2026-06-29; not needed any more.",
+      "knownIssues": ["Obsolete since 2026-06-29: PassingbyPosts merged the fix into Corrupted Compendium (Steam 3705392682). Remove it."],
+      "relations": [
+        {"kind": "extends", "target": {"mod": "ll-23876"}, "note": "Was loaded above the Steam Compendium as a patch.", "source": {"type": "discord", "url": "https://discord.com/channels/965342581745668136/969500846360502302/1521207443722338404"}}
+      ],
+      "curation": {"lastChecked": "2026-10-31", "confidence": "high"},
+      "_fix": "Discord research: third-party upload (Daedra), found via Steam comments; 'Copied and applied' into 3705392682 by PassingbyPosts the same day."
+    }
+  ],
+  "external": [],
+  "notes": [
+    {
+      "topic": "Corrupted Compendium setup",
+      "text": "Use only the Steam Corrupted Compendium (3705392682, pack MiaoYingCorrupted_Compendium_workshop.pack) and delete the LoversLab MiaoYingCorrupted_Compendium.pack from the data folder. The 'workshop fix' upload (3754256443) is obsolete. Azazel's Realm's @@Compendium_Play_as_Azazel_Overwrite.pack (only needed when playing anyone but Miao) still expects the LoversLab file name and crashes at startup with the Steam version (reported 2026-10-22); renaming fixes the crash but breaks the Ensign Loi dependency.",
+      "source": {"type": "discord", "url": "https://discord.com/channels/965342581745668136/969500846360502302/1529940181933887489"}
+    }
+  ]
+}
