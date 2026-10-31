@@ -170,6 +170,145 @@
       "why": "Local copy of 'Slaanesh UI theme for Miao Ying, Katarin, and Alarielle' (#many-modlist-methods: Miao Ying + Alarielle Slaanesh UI)"
     }
   },
+  "presetReplacements": {
+    "_comment": "Readman's January 2026 lists (twmods) -> newer versions found later. Old pack (case-insensitive) -> new entry, or {remove: true}. build_catalog.py applies them to the tested presets and records each change in Preset.modernized.",
+    "MiaoYingCorrupted_Compendium.pack": {
+      "target": {
+        "mod": "ll-23876"
+      },
+      "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+      "steamId": "3705392682",
+      "from": "steam",
+      "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10).",
+      "source": "https://discord.com/channels/965342581745668136/969500846360502302/1492844101484150895"
+    },
+    "Corrupted_Valkia_Compiled.pack": {
+      "target": {
+        "mod": "ll-24004"
+      },
+      "pack": "Corrupted_Valkia_Compiled.pack",
+      "steamId": "3813939023",
+      "from": "steam",
+      "note": "Corrupted Valkia is on Steam since 2026-09-26; re-created as 3813939023 on 2026-10-05. The old .pack in data and the old Workshop item 3808407319 use the same name and must be removed. May only show in the launcher with the Early Access / new mod manager option.",
+      "source": "https://discord.com/channels/965342581745668136/1002985823282675722/1556594589698367550"
+    },
+    "@Soil_Azazel_Corrupted_Units.pack": {
+      "target": {
+        "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+      },
+      "pack": "@Soil_Corrupted_Units_Merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data.",
+      "source": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575"
+    },
+    "@Soil_Miaoying_Corrupted_Units.pack": {
+      "target": {
+        "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+      },
+      "pack": "@Soil_Corrupted_Units_Merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data.",
+      "source": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575"
+    },
+    "Soil_Elf_Corrupted_Units.pack": {
+      "target": {
+        "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+      },
+      "pack": "@Soil_Corrupted_Units_Merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data.",
+      "source": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575"
+    },
+    "soil_corrupted_units_asset.pack": {
+      "target": {
+        "mod": "ll-48415"
+      },
+      "pack": "soil_corrupted_units_asset.pack",
+      "from": "download",
+      "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged).",
+      "source": "https://discord.com/channels/965342581745668136/1004257551283662848/1499495237104439528"
+    },
+    "tdw_corrupted_Buildings.pack": {
+      "target": {
+        "mod": "dc-tdw-corrupted-buildings-merged"
+      },
+      "pack": "tdw_corrupted_buildings_merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04).",
+      "source": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+    },
+    "tdw_corrupted_buildings_add_endos_kislev.pack": {
+      "target": {
+        "mod": "dc-tdw-corrupted-buildings-merged"
+      },
+      "pack": "tdw_corrupted_buildings_merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04).",
+      "source": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+    },
+    "tdw_corrupted_Buildings_slaver.pack": {
+      "target": {
+        "mod": "dc-tdw-corrupted-buildings-merged"
+      },
+      "pack": "tdw_corrupted_buildings_merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04).",
+      "source": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+    },
+    "tdw_corrupted_buildings_add_slaanesh_zealots.pack": {
+      "target": {
+        "mod": "dc-tdw-corrupted-buildings-merged"
+      },
+      "pack": "tdw_corrupted_buildings_merged.pack",
+      "from": "download",
+      "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04).",
+      "source": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+    },
+    "seu_miaoying_submod_extension.pack": {
+      "target": {
+        "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+      },
+      "pack": "Seu_Reborn_workshop.pack",
+      "steamId": "3760606729",
+      "from": "steam",
+      "note": "Falceon merged the SEU mods into 'SEU Reborn' on Steam (2026-07-12/13; AzR-compatible 2026-07-19; updated 2026-09-27). It replaces seu_miaoying_submod_extension and seu_generic_content; do not use them together.",
+      "source": "https://discord.com/channels/965342581745668136/1121259440872632401/1527406857084473384"
+    },
+    "seu_katarin_generic_addition.pack": {
+      "remove": true,
+      "note": "Falceon 2026-07-16: do not use SEU Katarin generic (older reports link it to crashes); SEU Reborn (Steam 3760606729) contains the generic SEU content.",
+      "source": "https://discord.com/channels/965342581745668136/1121259440872632401/1527440620849860842"
+    },
+    "Lin_AllInOne_en.pack": {
+      "target": {
+        "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+      },
+      "pack": "Lin_AllInOne_en.pack",
+      "steamId": "3718883838",
+      "from": "steam",
+      "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required.",
+      "source": "https://discord.com/channels/965342581745668136/1254908017288151040"
+    },
+    "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack": {
+      "target": {
+        "steamId": "3304325611"
+      },
+      "pack": "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack",
+      "steamId": "3304325611",
+      "from": "steam",
+      "note": "Use the Steam 'Slaanesh UI theme for Miao Ying, Katarin, and Alarielle' (Kerberos; rebased by Readman 2025-12-12/14) instead of a local copy.",
+      "source": "https://discord.com/channels/965342581745668136/1414514757373005856/1448883909537300672"
+    },
+    "@n_SlaaneshVassals.pack": {
+      "target": {
+        "mod": "dc-n-slaaneshvassals-dechala-fix"
+      },
+      "pack": "@n_SlaaneshVassals.pack",
+      "from": "download",
+      "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name).",
+      "source": "https://discord.com/channels/965342581745668136/967468098464649327/1507400955845673054"
+    }
+  },
   "mods": [
     {
       "id": "ll-42028",

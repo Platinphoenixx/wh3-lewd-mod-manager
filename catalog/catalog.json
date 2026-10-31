@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T21:28:24+00:00",
+  "generatedAt": "2026-10-31T21:59:31+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-10-31T21:28:22+00:00",
+      "fetchedAt": "2026-10-31T21:31:52+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -26,7 +26,7 @@
         "Rociky"
       ],
       "kind": "translation",
-      "summary": "Chinese translation that merges the two earlier LL Beastmen translation packages and covers new content (including companions); this package alone should now be all that's needed for Beastmen content.",
+      "summary": "Chinese translation by Rociky that merges the earlier translations of Community Beastmen (Savage Beastmen line) and Candles' Beastmen Events & Ancillaries and covers new content (including companions, plus a follower display fix); afterwards this one pack is all that is needed for Beastmen content.",
       "tags": [],
       "sources": {
         "loverslab": {
@@ -36,7 +36,14 @@
           "version": "1.0.1",
           "updated": "2023-04-02T15:49:11Z",
           "singleFile": "pack?"
-        }
+        },
+        "discord": [
+          {
+            "channel": "#translations-old",
+            "messageUrl": "https://discord.com/channels/965342581745668136/965495472443764776/1092006571342565388",
+            "note": "Translator's post (2023-04-02)"
+          }
+        ]
       },
       "packs": [],
       "relations": [
@@ -45,10 +52,10 @@
           "target": {
             "mod": "ll-24466"
           },
-          "note": "Presumed: the Unified French Translation page lists Community Beastmen and Savage Beastmen as the two Beastmen mods hosted on this LL page; the Chinese page only says 'the two LL packages'",
+          "note": "The translator's Discord post names Community Beastmen (Savage Beastmen line) and Candles' Beastmen Events & Ancillaries as the two translated LL packages",
           "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/26468-chinesetranslationbeastmen-mods/"
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/965495472443764776/1092006571342565388"
           }
         },
         {
@@ -61,15 +68,26 @@
             "type": "inferred",
             "url": "https://www.loverslab.com/files/file/26468-chinesetranslationbeastmen-mods/"
           }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24493"
+          },
+          "note": "Second translated LL package (translator's Discord post, 2023-04-02)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/965495472443764776/1092006571342565388"
+          }
         }
       ],
       "tier": "translation",
       "curation": {
         "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Page does not name the translated 'two LL packages'; ll-24466 (Community Beastmen / Savage Beastmen) is the most likely target. Whether Lynn's Edit (ll-26347) is covered is unknown",
-          "Pack name not given (single file, presumably one .pack); no load order"
+          "Pack name not stated on the page or in the Discord post; no load order.",
+          "Lynn's Edit (ll-26347) is not named. Sewerat's add-on (ll-27439) and the Corrupted Heroes submod have separate Chinese translations."
         ]
       },
       "images": [
@@ -3653,13 +3671,86 @@
       ]
     },
     {
+      "id": "ll-24710",
+      "name": "Balthasar Gelt NSFW Corruption Mod (outdated)",
+      "authors": [
+        "KilanChr"
+      ],
+      "kind": "progression",
+      "summary": "Turned Balthasar Gelt female ('Geltina') with Slaanesh corruption stages (5 stages; the 2023-04 version added quest lines). The LL page only says the mod moved; the successor page (LL 26567) is gone and the author later deleted the mod.",
+      "tags": [
+        "gelt",
+        "empire",
+        "corruption"
+      ],
+      "sources": {
+        "loverslab": {
+          "fileId": "24710",
+          "url": "https://www.loverslab.com/files/file/24710-outdated-balthasar-gelt-nsfw-corruption-mod/",
+          "category": "other",
+          "version": "04/08/23 08:18  AM",
+          "updated": "2023-04-08T08:39:49Z"
+        },
+        "discord": [
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1089797231370055761",
+            "note": "First release (2023-03)"
+          },
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1094177298019794974",
+            "note": "Successor page LL 26567 (2023-04)"
+          },
+          {
+            "channel": "#help",
+            "messageUrl": "https://discord.com/channels/965342581745668136/965347752219381830/1347281012152864809",
+            "note": "No longer supported, deleted by the author (2025)"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Needed for geltina_core_variant (author's post 2023-04-08)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/967468098464649327/1094177298019794974"
+          }
+        }
+      ],
+      "status": "abandoned",
+      "knownIssues": [
+        "No download left: the successor page LL 26567 returns 404 and the author deleted the mod (2025)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name unknown."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://static.loverslab.com/screenshots/monthly_2023_04/GeltinaHelmetEventThumb.png.c8251a51a7e99cf18c34c71b83d7b2e8.png",
+          "thumb": "https://static.loverslab.com/screenshots/monthly_2023_04/GeltinaHelmetEventThumb.thumb.png.74aa2f8c5725c3620ae704b0d71bb921.png",
+          "kind": "screenshot",
+          "source": "loverslab"
+        }
+      ]
+    },
+    {
       "id": "ll-26584",
       "name": "Balthasar Geltina - Chinese Translation",
       "authors": [
         "Rociky"
       ],
       "kind": "translation",
-      "summary": "Chinese translation of the mod 'balthasar_geltina' by Rociky. The page consists of a single sentence ('Translation of the Geltina mod').",
+      "summary": "Chinese translation (v2) by Rociky of the Balthasar Gelt NSFW Corruption Mod ('Geltina', LL 24710 / successor LL 26567): corruption stages 1-5 and landmarks. The original was deleted by its author, so the translation is orphaned.",
       "tags": [
         "translation",
         "chinese"
@@ -3672,19 +3763,59 @@
           "updated": "2023-04-09T07:34:54Z",
           "version": null,
           "singleFile": "pack?"
-        }
+        },
+        "discord": [
+          {
+            "channel": "#translations-old",
+            "messageUrl": "https://discord.com/channels/965342581745668136/965495472443764776/1093819504590598154",
+            "note": "Translation v2 posted 2023-04-07"
+          },
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1094177298019794974",
+            "note": "Original mod, successor page LL 26567"
+          },
+          {
+            "channel": "#help",
+            "messageUrl": "https://discord.com/channels/965342581745668136/965347752219381830/1347281012152864809",
+            "note": "Original described as unsupported and deleted (2025)"
+          }
+        ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-24710"
+          },
+          "note": "Translates the 2023-04 version (successor page LL 26567, now gone); place above the original (translator's post 2023-04-07)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/965495472443764776/1093819504590598154"
+          }
+        }
+      ],
       "tier": "translation",
       "curation": {
         "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Original mod 'balthasar_geltina' (a Balthasar Gelt reskin, by the name) is not found on LL, Steam data or Discord notes",
-          "Pack name not given (single file, presumably one .pack); no dependencies stated"
+          "Pack name not given (single file, presumably one .pack)."
         ]
       },
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-24710"
+          }
+        ],
+        "note": "Above the original mod (translator's post)."
+      },
+      "status": "abandoned",
+      "knownIssues": [
+        "The original mod was deleted by its author (reported 2025-03 and 2025-12); nothing left to translate."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2023_04/1323607889_.thumb.png.a466e9472c91fcc10a0c8339f4fd3dfd.png",
@@ -5177,6 +5308,93 @@
         "LL file contains only the links to the current files",
         "Replaces older Community Beastmen uploads on LL",
         "Place far up in the load order"
+      ]
+    },
+    {
+      "id": "steam-3698534641",
+      "name": "Community Beastmen light version (Steam)",
+      "authors": [],
+      "kind": "units",
+      "summary": "Light version of Community Beastmen on the Workshop (posted 2026-04-03).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3698534641"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#community-beastmen",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1489685661521805392"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Possibly the Workshop copy of community_beastmen_light.pack from ll-46165; uploader and relation unchecked."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/18398136827454084737/BC7D60DB22DC97F344A8049AFE21B7CE10D4CBA7/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3714453899",
+      "name": "Community Beastmen patch (elf meat-shields)",
+      "authors": [
+        "harrylee6373"
+      ],
+      "kind": "patch",
+      "summary": "Patch by harrylee6373 for Community Beastmen (posted 2026-06-08).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3714453899"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#community-beastmen",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1513463210135519283"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1513463210135519283"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Workshop page not readable without login; what exactly it changes and which Community Beastmen version it needs is unchecked."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/11159064731539859032/3FB8C8BDA3E8CEB8D10867D9921F92DBF2D2D516/",
+          "kind": "cover",
+          "source": "steam"
+        }
       ]
     },
     {
@@ -9391,6 +9609,43 @@
       "recommendedFor": "For High Elf-focused profiles that want all of the author's female High Elf units in one pack instead of many individual mods; disable the individual mods then."
     },
     {
+      "id": "steam-3258529495",
+      "name": "High Elves Expanded Hero Skill Trees",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "campaign"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3258529495",
+            "title": "High Elves Expanded Hero Skill Trees",
+            "unlisted": false,
+            "updated": "2026-10-22"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2500139907644625339/31C160F8BBB839BC06090EB2EF23A329E3BCB03E/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-2790774407",
       "name": "High Resolution UI Improvements, IT WORKS",
       "authors": [],
@@ -11695,8 +11950,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "low",
         "openQuestions": [
-          "Mixu's Unlocker only named as 'probably'.",
-          "No pack names."
+          "Mixu's Unlocker only named as 'probably'; on the Discord, Mixu is only linked to other landmark mods (Unique Landmarks, Corrupted Landmarks), not to this one.",
+          "No pack names.",
+          "A user removed 'a generic lewd landmarks mod from LL' while fixing ATB problems (2026-09-13); a possible overlap with Corrupted Landmarks is unverified."
         ]
       },
       "images": [
@@ -13836,7 +14092,7 @@
         "Rociky"
       ],
       "kind": "translation",
-      "summary": "Chinese translation of a 'Palace Archers' submod by Rociky. The page only contains the pack name and a one-liner.",
+      "summary": "Chinese translation by Rociky (palace_archers_cn0827.pack), almost certainly of the Steam mod Palace Archers (2843717500, Slaanesh archer units).",
       "tags": [
         "translation",
         "chinese"
@@ -13858,14 +14114,26 @@
           "note": "Name taken from the page title"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "external": "ext-palace-archers"
+          },
+          "note": "Identified by name and date: Palace Archers was discussed on the Discord in Aug-Sep 2022, matching the cn0827 date; no post about the translation itself found",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1005376705726271518"
+          }
+        }
+      ],
       "tier": "translation",
       "curation": {
         "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Which 'palace archers submod' is translated is not named anywhere (LL, Discord notes, Steam data)",
-          "Dated 2022-08; no dependencies or load order"
+          "Original identified by name and date only.",
+          "No load order given."
         ]
       },
       "images": [
@@ -13934,13 +14202,21 @@
             "optional": true,
             "note": "16.66 kB"
           }
+        ],
+        "steam": [
+          {
+            "id": "3813939023",
+            "title": "Corrupted Valkia",
+            "unlisted": true
+          }
         ]
       },
       "packs": [
         {
           "file": "Corrupted_Valkia_Compiled.pack",
-          "from": "download",
-          "note": "Name from Readman's tested mod lists (data folder)"
+          "from": "steam",
+          "steamId": "3813939023",
+          "note": "Current version on Steam (unlisted, re-created 2026-10-05); same file name as the old MEGA download and the old Workshop item 3808407319, both must be removed"
         }
       ],
       "relations": [
@@ -14008,7 +14284,8 @@
         "Har Ganeth reverts to altar (2026-10-24)"
       ],
       "installNotes": [
-        "Unpack the archive first, then put the pack in the Warhammer 3 data folder and activate it in the mod manager",
+        "Subscribe to the Steam item 3813939023 (unlisted); remove an old Corrupted_Valkia_Compiled.pack from the data folder and unsubscribe from 3808407319.",
+        "The mod may only show in the launcher with the Early Access / new mod manager option (2026-10-19).",
         "Profane Hold is located at Kuark (near the starting position)"
       ],
       "curation": {
@@ -14430,7 +14707,7 @@
         "Zanithor"
       ],
       "kind": "units",
-      "summary": "Adds a dilemma on turn 2 that provides the daemon prince Zanithor (Slaanesh) together with a warband and mage as hunter/companions. Currently only one option (Southlands near Khalida) as support for the Khalida corruption quest.",
+      "summary": "Adds a turn-2 dilemma in which Slaanesh offers the custom daemon prince Zanithor, his warband and a trusted mage, who join the player's side. Standalone without dependencies; currently he spawns only in the Southlands near Khalida, as help for the Khalida corruption quest.",
       "tags": [
         "slaanesh",
         "demon prince",
@@ -14447,6 +14724,11 @@
           "singleFile": "zip"
         },
         "discord": [
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1559150435351400489",
+            "note": "Author's post (pinned, 2026-10-12)"
+          },
           {
             "channel": "967468098464649327",
             "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327"
@@ -14480,13 +14762,16 @@
       "tier": "submod",
       "curation": {
         "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Joins via a turn-2 dilemma; whether as a lord of the player's faction or a separate scripted army is not stated",
-          "Pack name not given (single zip)",
-          "Campaigns not stated"
+          "Pack name not given (single zip).",
+          "Campaign not stated; the Southlands start implies Immortal Empires.",
+          "More spawn options are planned."
         ]
       },
+      "installNotes": [
+        "Standalone, no dependencies; starts on turn 2. Khalida's Corruption is optional (author, 2026-10-12)."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2026_10/Screenshot2026-09-23082921.png.e62fe9e3b34bd9c45737fb166d9c2f77.png",
@@ -15097,6 +15382,55 @@
       "recommendedFor": "All runs in which Drycha appears."
     },
     {
+      "id": "steam-3556421071",
+      "name": "Readman FFF HD Flag (Green)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "assets",
+      "summary": "Green flag variant of Readman's FFF flag mod (posted 2025-12-22).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3556421071"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#atb-alarielle-temptations-bloom",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1452597221160652880"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Workshop page not readable without login; whether it replaces the pink FFF (3549231458) is unchecked; pack name unknown."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10524525675177523632/444B79E452C7A2CFD04ECFE0EBDE0F96DCE145F2/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/18295779248693421558/7FA22E946A3C066655FEC846BA6388EC1142FFAF/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13031366387673783396/6ABC86C9117761F4DB5891489E0F031822438C68/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3536009143",
       "name": "Readman HD Banner Alarielle (not public)",
       "authors": [
@@ -15162,6 +15496,62 @@
       ],
       "description": "All that is known: two LoversLab entries name the HD flag as an alternative to the “Lewd Flags and Loading Screens”. The Steam item is not public; the information comes from community lists.",
       "recommendedFor": "Alarielle runs that want a sharper banner."
+    },
+    {
+      "id": "steam-3798367316",
+      "name": "Readman Large Minotaur Mayhem (LMM)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "summary": "Lets Alarielle (Averlorn) recruit Gorebull heroes from certain landmarks. Alternative version of Readman Manic Minotaur Mayhem (MMM); the ATB mod-list pin suggests LMM if MMM does not work.",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3798367316",
+            "title": "Readman Large Minotaur Mayhem",
+            "updated": "2026-09-27"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#atb-alarielle-temptations-bloom",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1547074872017027143"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Averlorn is ATB's Alarielle faction",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3798367316"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not confirmed (description starts with !Readman_Alarielle_LMM)."
+        ]
+      },
+      "installNotes": [
+        "Use either this or Readman MMM (Steam 3621087383), not both."
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15519585583070258664/6C26890E9C861A228E07B89BC79D8693588593CA/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3621087383",
@@ -15251,6 +15641,90 @@
         }
       ],
       "description": "Only the pack name !Readman_Miao_mym.pack is known. It appears in the Miao Late mod list. The Steam item is not public; the information comes from community lists."
+    },
+    {
+      "id": "steam-3525258474",
+      "name": "Readman OOO variant (Joanna as Handmaiden)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "patch",
+      "summary": "Variant of Readman's Overtly Optional Overrides (High Elves Expanded hero skill) with Joanna as Handmaiden (posted 2026-07-26).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3525258474"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#atb-alarielle-temptations-bloom",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1531064416588664903"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-nymeria-legendary-hero-lord-aranessa-reskin-rat-of-the-lake"
+          },
+          "note": "Required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3258529495"
+          },
+          "note": "Required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3485418515"
+          },
+          "note": "Required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3534460647"
+          },
+          "note": "Required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Workshop page not readable without login; relation to Readman OOO SaveSafe (3513079088) and pack name unchecked."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10152944345246468755/78FBB28EF136F392324F8227C413E9D4470D581D/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3513079088",
@@ -15371,6 +15845,67 @@
       ],
       "recommendedFor": "ATB runs that use Nymeria and the High Elf red-line buffs.",
       "summary": "Readman's save-safe fix collection for mods in the ATB list: portrait, voice and skill-icon fixes for Nymeria and Vaeri, plus Foe Seeker for Vaeri."
+    },
+    {
+      "id": "steam-3800728255",
+      "name": "Readman reskins for the new unit",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "reskin",
+      "summary": "Two Readman reskins for a new unit with a less bright skin (posted 2026-09-13).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3800728255",
+            "role": "reskin 1"
+          },
+          {
+            "id": "3800728339",
+            "role": "reskin 2"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#posting-pertinent-previews",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1414514757373005856/1548566615216627742"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3800728255"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Which unit is meant and whether the two items are alternatives is not stated; pack names unknown."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/11704331293165648156/B0AF8DB996D3E7BD20D24154C3A7E52482A8255C/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11447688351974663605/FCF12BF05A4C77FBB8B5D476F211E6B6697BFBE1/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3623616009",
@@ -15853,6 +16388,59 @@
       ],
       "description": "Variant of the Readman mod UUU for Warriors of Chaos (pack !Readman_Alarielle_UUU_WoC_Ver). Only one UUU variant at a time. In the guide for Azazel/Archaon/Be'lakor/Sigvald/Daemon Prince.\n\nThe Steam item is not public; the information comes from community lists.",
       "recommendedFor": "Azazel, Archaon, Be'lakor, Sigvald and Daemon Prince runs."
+    },
+    {
+      "id": "steam-3625969460",
+      "name": "Readman Wildly Working Wonders (WWW)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "submod",
+      "summary": "Cheat-style submod: Averlorn also gets the original bonuses of the High Elf landmarks (plus Pavaron) on top of the Slaanesh landmark effects.",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3625969460",
+            "title": "Readman Wildly Working Wonders",
+            "updated": "2025-12-18"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#atb-alarielle-temptations-bloom",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1555245213583282232"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Averlorn is ATB's Alarielle faction",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3625969460"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not given."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/16794652060769802703/C6F89D7633A5259C30A5A9B95661E44DDED1030E/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "ll-43977",
@@ -18631,6 +19219,67 @@
       "recommendedFor": "For profiles in which female Legendary Lords are confederated or vassalized (e.g. as a Slaanesh faction or with Alarielle, Temptation's Bloom), to accompany the integration with events and rewards. Does not provide confederation itself."
     },
     {
+      "id": "dc-n-slaaneshvassals-dechala-fix",
+      "name": "Slaanesh Expanded - Vassal Dilemmas: Dechala fix",
+      "authors": [
+        "iilxaeju"
+      ],
+      "kind": "patch",
+      "summary": "Fixed @n_SlaaneshVassals.pack by iilxaeju, posted by Kerberos (pinned in #submods, 2026-05-22), so Narok's Vassal Dilemmas supports playing as Dechala. It replaces the LoversLab file of the same name.",
+      "tags": [
+        "slaanesh",
+        "vassals",
+        "dechala",
+        "fix"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1507400955845673054"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "@n_SlaaneshVassals.pack",
+            "url": "https://discord.com/channels/965342581745668136/967468098464649327/1507400955845673054",
+            "description": "Slaanesh-factions version with Dechala support; replaces the LL file",
+            "note": "47 MB"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@n_SlaaneshVassals.pack",
+          "from": "download",
+          "note": "Same file name as the LoversLab version (ll-34542); replace that file"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "Replaces the LL @n_SlaaneshVassals.pack (Slaanesh factions version)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/967468098464649327/1507400955845673054"
+          }
+        }
+      ],
+      "knownIssues": [
+        "ATB's !n_slaaneshvassals_non_slaanesh_script disables the n_slaaneshvassals listener (iilxaeju, 2025-12-07)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether the fix also covers @n_SlaaneshVassals_Non_Slaanesh_Factions.pack is not stated."
+        ]
+      }
+    },
+    {
       "id": "ll-37162",
       "name": "Slaanesh Expanded - Visuals",
       "authors": [
@@ -18907,6 +19556,180 @@
         }
       ],
       "description": "Nothing more is known: the KPW guide for N'Kari/Dechala/Masque lists “Slaanesh Vassal Cults” with pack td_slaanesh_vassal and a Steam link. The Steam item is not public; the information comes from community lists."
+    },
+    {
+      "id": "steam-3729412021",
+      "name": "Slaanesh Zealots for Dechala",
+      "authors": [],
+      "kind": "units",
+      "summary": "Updated version of Zealots of Slaanesh (Steam 2858576975) for Dechala, whose faction uses a different building set; a stand-alone branch until the original is updated.",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3729412021",
+            "title": "Slaanesh Zealots for Deachala",
+            "updated": "2026-05-20"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#soiled-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1004257551283662848/1566128750624505879"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "steam-2858576975"
+          },
+          "condition": "when playing as Dechala",
+          "note": "Stand-alone branch of the same units",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1566128750624505879"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether MrDustV's merged tdw pack (which includes Zealots updated for Dechala) makes it unnecessary is not stated."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/11406772961861106953/58170DA492B1304E4FA3EFA7A7B1674B5766D903/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3816183901",
+      "name": "Slaanesh's Temptation (romance or corruption route)",
+      "authors": [
+        "cult of slaanesh"
+      ],
+      "kind": "submod",
+      "summary": "Submod with a choice between a romance and a corruption route with quest rewards; usable alongside the corruption mods or standalone. A fix on 2026-10-10 allows playing Azazel together with another corruption mod. Korean original; an English translation is a separate item.",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3816183901"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1557952857968214087"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3816189573"
+          },
+          "note": "English translation",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/967468098464649327/1557953043767763144"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "low",
+        "openQuestions": [
+          "Workshop page not readable without login; requirements and supported characters unchecked."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/12162379559522851751/E2C07671DB497EE6D2AE7A7EEB6DDE223A8C1673/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/10821932241133801910/F7950B58361C2CE51C1B222C8DC7CA6F8CCD84DF/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/9433317869566835042/DAA7F2BEBFCFFABACFD8F05431A59A76E173D929/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13851517352137984258/BA51DCA320788630A3BF70BC5E571B388D7ADAEB/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3816189573",
+      "name": "Slaanesh's Temptation - English translation",
+      "authors": [
+        "cult of slaanesh"
+      ],
+      "kind": "translation",
+      "summary": "English translation of Slaanesh's Temptation (Steam 3816183901).",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3816189573",
+            "title": "!sla_temptation_english.pack",
+            "updated": "2026-10-17"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#submods",
+            "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1557953043767763144"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!sla_temptation_english.pack",
+          "from": "steam",
+          "steamId": "3816189573"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "steam-3816183901"
+          },
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/967468098464649327/1557953043767763144"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium"
+      },
+      "tier": "translation",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/17480210633303162701/E2C07671DB497EE6D2AE7A7EEB6DDE223A8C1673/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "ll-35682",
@@ -19343,22 +20166,109 @@
       ]
     },
     {
-      "id": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units",
-      "name": "Soil Merged Pack (Azazel + Miao + Elf corrupted units)",
-      "authors": [],
-      "kind": "submod",
-      "tags": [],
-      "summary": "Partially tested merged pack. Using the wrong Soil pack gives startup errors; the merged one fixed them (user report 2026-10-29). MrDustV also fixed Soil's Azazel/Miao corrupted units for patch 9.0 (Archaon too).",
+      "id": "dc-soil-elf-corrupted-units",
+      "name": "Soil Elf Corrupted Units",
+      "authors": [
+        "Mr Sanderss"
+      ],
+      "kind": "units",
+      "summary": "Gives Morathi and Alarielle Azazel's corrupted roster from the Nan-Gau and Kislev landmarks (posted in #soiled-projects, 2026-02-06). Now included in the merged Soil pack.",
+      "tags": [
+        "soil",
+        "units",
+        "corruption",
+        "morathi",
+        "alarielle"
+      ],
       "sources": {
         "discord": [
+          {
+            "channel": "#soiled-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1004257551283662848/1469315784743321673"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "Soil_Elf_Corrupted_Units.pack",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1469315784743321673",
+            "note": "958 KB"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Soil_Elf_Corrupted_Units.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [],
+      "status": "superseded",
+      "knownIssues": [
+        "Included in the merged Soil pack (2026-10-26); do not use both."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Requirements not stated in the post (the merged pack needs Corrupted Landmarks and LL 48415)."
+        ]
+      }
+    },
+    {
+      "id": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units",
+      "name": "Soil Merged Pack (Azazel + Miao + Elf corrupted units)",
+      "authors": [
+        "MrDustV"
+      ],
+      "kind": "units",
+      "summary": "MrDustV's merge of Soil's Azazel and Miao Ying corrupted unit packs and the Elf corrupted units into one pack (pinned in #soiled-projects, 2026-10-26), updated for patch 9.0. Partially tested; mainly saves switching packs between playthroughs.",
+      "tags": [
+        "soil",
+        "units",
+        "corruption",
+        "miao-ying",
+        "azazel",
+        "merged"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#soiled-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575",
+            "note": "Pinned merged pack"
+          },
           {
             "channel": "1004257551283662848",
             "messageUrl": "https://discord.com/channels/965342581745668136/1004257551283662848"
           }
+        ],
+        "downloads": [
+          {
+            "name": "@Soil_Corrupted_Units_Merged.pack",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575",
+            "description": "Azazel + Miao Ying + Elf corrupted units in one pack",
+            "note": "14.28 MB"
+          }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Soil_Corrupted_Units_Merged.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "dc-soil-elf-corrupted-units"
+          },
+          "note": "The Elf units are included",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1564383785494249575"
+          }
+        },
         {
           "kind": "requires",
           "target": {
@@ -19380,13 +20290,183 @@
           }
         }
       ],
+      "status": "beta",
+      "installNotes": [
+        "Replaces @Soil_Azazel_Corrupted_Units.pack and @Soil_Miaoying_Corrupted_Units.pack (Soil's Corrupted Units, ll-32374) and Soil_Elf_Corrupted_Units.pack: delete the old packs from data; users report that only disabling them was not enough.",
+        "Soil's Kislev units (@Soil_Kislev_Corrupted_Units.pack, Katarin only) are not part of the merge (2026-10-27).",
+        "Avoid: The old individual Azazel/Miao/Elf versions - turn them off"
+      ],
+      "knownIssues": [
+        "Partially tested (MrDustV, 2026-10-26).",
+        "The tdw corrupted buildings crash with the old Soil packs; MrDustV's merged tdw pack matches this one.",
+        "Longma riders T-pose together with Dynasty of the Damned (Steam 2991431203), reported with Soil's units (2026-02-17)."
+      ],
       "curation": {
         "lastChecked": "2026-10-31",
-        "confidence": "medium"
+        "confidence": "medium",
+        "openQuestions": [
+          "Load order relative to Azazel's Realm is not restated for the merged pack (the old Azazel pack had to sit above it)."
+        ]
       },
-      "installNotes": [
-        "Avoid: The old individual Azazel/Miao/Elf versions - turn them off"
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-soil-merged-pack-azazel-miao-elf-corrupted-units-1.jpg",
+          "kind": "cover",
+          "caption": "Corrupted Cathay flying war machines from Soil's Miao Ying corrupted units (test build shown in #soiled-projects, 2024)",
+          "source": "discord"
+        }
       ]
+    },
+    {
+      "id": "dc-soil-miaoying-corrupted-tech",
+      "name": "Soil Miao Ying corrupted units - own tech tab (Italnerd)",
+      "authors": [
+        "Italnerd"
+      ],
+      "kind": "patch",
+      "summary": "Small patch that moves the technologies of Soil's Miao Ying corrupted units into their own tab (posted in #soiled-projects, 2026-05-07). Made for the tech-tree mods Tech-Tree Compilation (Steam 3117083206) or Cathay Tech-Tree (Steam 2867663404).",
+      "tags": [
+        "soil",
+        "tech",
+        "miao-ying",
+        "ui"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#soiled-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1004257551283662848/1501743442785599611"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "@Soil_Miaoying_Corrupted_tech.pack",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1501743442785599611",
+            "note": "14.57 KB"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@Soil_Miaoying_Corrupted_tech.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Soil's Miao Ying corrupted units",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1501743442785599611"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-tech-tree-compilation"
+          },
+          "exclusiveGroup": "cathay-tech-tree",
+          "note": "Works with this tech-tree mod or the alternative",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1501743442785599611"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-cathay-tech-tree"
+          },
+          "exclusiveGroup": "cathay-tech-tree",
+          "note": "Works with this tech-tree mod or the alternative",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1501743442785599611"
+          }
+        }
+      ],
+      "installNotes": [
+        "Use together with one of the two tech-tree mods (Steam 3117083206 or 2867663404)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether it works without either tech-tree mod is not stated.",
+          "Compatibility with the merged Soil pack is not stated."
+        ]
+      }
+    },
+    {
+      "id": "dc-soil-miaoying-corrupted-units-sfo",
+      "name": "Soil Miao Ying corrupted units - SFO stats (table_duck)",
+      "authors": [
+        "table_duck"
+      ],
+      "kind": "patch",
+      "summary": "Soil's Miao Ying corrupted units with only the unit stats adjusted for SFO (posted in #tdw-habus-projects, 2026-10-29).",
+      "tags": [
+        "soil",
+        "units",
+        "sfo",
+        "miao-ying"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#tdw-habus-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303/1565413966459699301"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "@Soil_Miaoying_Corrupted_Units_SFOmod2.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1565413966459699301"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@Soil_Miaoying_Corrupted_Units_SFOmod2.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Soil's Miao Ying corrupted units",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1565413966459699301"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-sfo"
+          },
+          "note": "Stats are made for SFO",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1565413966459699301"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether it replaces @Soil_Miaoying_Corrupted_Units.pack or loads on top of it is not stated.",
+          "Relation to the merged Soil pack is not stated."
+        ]
+      }
     },
     {
       "id": "ll-32374",
@@ -19960,6 +21040,186 @@
         "Purely cosmetic"
       ],
       "recommendedFor": "For all profiles that want a uniform banner look. In case of conflicts with other banner mods, the load order decides."
+    },
+    {
+      "id": "dc-tdw-corrupted-buildings-merged",
+      "name": "TDW corrupted buildings - merged pack (MrDustV)",
+      "authors": [
+        "MrDustV"
+      ],
+      "kind": "submod",
+      "summary": "One pack (pinned in #tdw-habus-projects, 2026-10-31) that replaces the tdw corrupted-building packs of 'Additional corrupted Buildings + Units' (LL 36002, not updated since 2025) and includes the Zealots unit mod updated for Dechala's buildings; keys are matched to the merged Soil pack. For Miao Ying campaigns.",
+      "tags": [
+        "tdw",
+        "buildings",
+        "corruption",
+        "miao-ying",
+        "merged"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#tdw-habus-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875",
+            "note": "Pinned merged pack"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "tdw_corrupted_buildings_merged.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875",
+            "description": "tdw corrupted buildings + Zealots in one pack",
+            "note": "233 MB"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "tdw_corrupted_buildings_merged.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+          },
+          "note": "Keys were fixed to match the merged Soil pack",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "dc-tdw-patch-9-0-fixes"
+          },
+          "note": "Replaces the patch-9.0 fixes",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
+          }
+        }
+      ],
+      "status": "beta",
+      "installNotes": [
+        "Replaces tdw_corrupted_Buildings.pack, tdw_corrupted_buildings_add_endos_kislev.pack, tdw_corrupted_Buildings_slaver.pack and tdw_corrupted_buildings_add_slaanesh_zealots.pack: remove them.",
+        "Only when playing Miao Ying."
+      ],
+      "knownIssues": [
+        "Kerberos lists tdw_ mods as banned unless you play Miao Ying (2026-09-04).",
+        "Released without testing ('immediate release', 2026-10-31)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium",
+        "openQuestions": [
+          "Exact list of merged tdw packs is inferred from the post ('4 tdw packs'); whether tdw_corrupted_buildings_add_wef.pack is still needed is not stated.",
+          "Whether the Steam Zealots of Slaanesh (2858576975) must be disabled with it is not stated."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-tdw-corrupted-buildings-merged-1.jpg",
+          "kind": "cover",
+          "caption": "Corrupted walls building tooltip 'Walls of Temptation' (corruption stage 4) with garrison of corrupted units, posted in #tdw-habus-projects",
+          "source": "discord"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-tdw-corrupted-buildings-merged-2.jpg",
+          "kind": "screenshot",
+          "caption": "Top tier 'Walls of Submission' (corruption stage 6): stronger walls, tower shots and garrison",
+          "source": "discord"
+        }
+      ]
+    },
+    {
+      "id": "dc-tdw-patch-9-0-fixes",
+      "name": "TDW corrupted buildings - patch 9.0 fixes (Queek Headtaker)",
+      "authors": [
+        "Queek Headtaker"
+      ],
+      "kind": "patch",
+      "summary": "RPFM fixes (2026-10-07/08) so the tdw corrupted-building packs of LL 36002 start after game patch 9.0; buildings appear only after a certain corruption level. Superseded by MrDustV's merged tdw pack.",
+      "tags": [
+        "tdw",
+        "buildings",
+        "fix",
+        "patch-9.0"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "#tdw-habus-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303/1557534178692562976",
+            "note": "tdw_corrupted_Buildings.pack fix"
+          },
+          {
+            "channel": "#tdw-habus-projects",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1259903817751990303/1557692298936979566",
+            "note": "Further fixes incl. MEGA links"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "tdw_corrupted_Buildings.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1557534178692562976",
+            "description": "Fixed main buildings pack (Discord)"
+          },
+          {
+            "name": "tdw_corrupted_buildings_add_slaanesh_zealots.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1557692298936979566",
+            "description": "Fixed Zealots add-on (Discord)"
+          },
+          {
+            "name": "tdw_corrupted_buildings_add_endos_kislev.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1557692298936979566",
+            "description": "Fixed Kislev add-on, MEGA link in the post",
+            "note": "171 MB"
+          },
+          {
+            "name": "tdw_corrupted_Buildings_slaver.pack",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1557692298936979566",
+            "description": "Fixed Slaver add-on, MEGA link in the post",
+            "note": "491 KB"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "tdw_corrupted_Buildings.pack",
+          "from": "download",
+          "note": "Same name as the LL 36002 file"
+        },
+        {
+          "file": "tdw_corrupted_buildings_add_slaanesh_zealots.pack",
+          "from": "download",
+          "note": "Same name as the LL 36002 file"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-36002"
+          },
+          "note": "Fixed copies of its packs (same file names)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1557692298936979566"
+          }
+        }
+      ],
+      "status": "superseded",
+      "knownIssues": [
+        "Superseded by the merged tdw pack (2026-10-31)."
+      ],
+      "curation": {
+        "lastChecked": "2026-10-31",
+        "confidence": "medium"
+      }
     },
     {
       "id": "steam-3027059730",
@@ -20561,7 +21821,27 @@
           "character": "Seducers of Slaanesh"
         }
       ],
-      "status": "wip"
+      "status": "wip",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-unique-landmarks-seducers-of-slaanesh-wood-elf-forests-1.jpg",
+          "kind": "cover",
+          "caption": "Building chain in a Wood Elf forest region: 'Dance of Seduction' unlocks Wardancers (author's screenshot, #unique-landmarks, 2022)",
+          "source": "discord"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-unique-landmarks-seducers-of-slaanesh-wood-elf-forests-2.jpg",
+          "kind": "screenshot",
+          "caption": "'Blooming Grove' building: unlocks the Alluress hero and Dryads, +2 Slaanesh corruption",
+          "source": "discord"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/images/dc-unique-landmarks-seducers-of-slaanesh-wood-elf-forests-3.jpg",
+          "kind": "screenshot",
+          "caption": "'Throbbing Vines' forest building: control, construction and income bonuses",
+          "source": "discord"
+        }
+      ]
     },
     {
       "id": "ll-25600",
@@ -21848,6 +23128,12 @@
       "steamId": "2882729230"
     },
     {
+      "id": "ext-cathay-tech-tree",
+      "name": "Cathay Tech-Tree",
+      "steamId": "2867663404",
+      "note": "50 extra Cathay technologies; alternative supported by the Soil Miao tech-tab patch."
+    },
+    {
       "id": "ext-celestial-dragon-concubines",
       "name": "Celestial Dragon Concubines",
       "note": "Nexus Mods mod (ID 17 per the Discord notes); abandoned since 2022-09, a working update was mentioned on Discord."
@@ -21926,6 +23212,12 @@
       "note": "Requires Mixu's Unlocker; costs campaign performance."
     },
     {
+      "id": "ext-palace-archers",
+      "name": "Palace Archers",
+      "steamId": "2843717500",
+      "note": "Slaanesh archer units (2022); translated by ll-24266."
+    },
+    {
       "id": "ext-pj-console",
       "name": "Console Commands (Modding Tool) / PJ Console",
       "steamId": "2791241084",
@@ -21968,6 +23260,12 @@
       "id": "ext-taraanis-fem-berserker",
       "name": "Taraanis - Kislev female berserkers",
       "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/179"
+    },
+    {
+      "id": "ext-tech-tree-compilation",
+      "name": "Tech-Tree Compilation (New Version)",
+      "steamId": "3117083206",
+      "note": "Adds technologies to all tech trees; supported by the Soil Miao tech-tab patch."
     },
     {
       "id": "ext-total-warmaidens-3",
@@ -22676,7 +23974,8 @@
         },
         {
           "pack": "Lin_AllInOne_en.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3718883838",
           "target": {
             "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
           }
@@ -22698,8 +23997,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -22927,6 +24227,18 @@
           "target": {
             "mod": "dc-morathi-ascension-lazy-stages-optional-original-hair"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "Lin_AllInOne_en.pack",
+          "to": "Lin_AllInOne_en.pack",
+          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
         }
       ],
       "description": "The full **Alarielle, Temptation's Bloom (ATB)** story campaign as Readman plays it: Alarielle resists or gives in to Slaanesh's temptations while Kerberos' quest chains let her confederate Drycha, the Sisters of Twilight, N'Kari and eventually Azazel, which ties into **Azazel's Realm** and the Miao Ying / Katarin storylines.\n\nOn top of the shared base (Lazy's framework, Miao and Katarin progression, Corrupted Landmarks, MCT, quality-of-life mods) this list adds Readman's Alarielle packs: lewd buildings (BBB), Slaaneshi units (CCC), a corrupted tech tree (TTT) and the handmaiden ascension mechanic (UUU), plus Narok's Slaanesh Expanded dilemmas, Lin's Corrupted Drycha (with Generic Framework and the English translation) and a few legendary heroes (Lyra, Nymeria, LHEC).\n\n**How to play:** start a new Immortal Empires campaign as Alarielle with this list and keep it until corruption stage 4. From stage 5, switch to *Alarielle – late game*. Do not reorder the list; the author supports only this order.",
@@ -23209,14 +24521,16 @@
         },
         {
           "pack": "Corrupted_Valkia_Compiled.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3813939023",
           "target": {
             "mod": "ll-24004"
           }
         },
         {
           "pack": "Lin_AllInOne_en.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3718883838",
           "target": {
             "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
           }
@@ -23238,8 +24552,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -23474,6 +24789,23 @@
           "target": {
             "mod": "dc-morathi-ascension-lazy-stages-optional-original-hair"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "Corrupted_Valkia_Compiled.pack",
+          "to": "Corrupted_Valkia_Compiled.pack",
+          "note": "Corrupted Valkia is on Steam since 2026-09-26; re-created as 3813939023 on 2026-10-05. The old .pack in data and the old Workshop item 3808407319 use the same name and must be removed. May only show in the launcher with the Early Access / new mod manager option."
+        },
+        {
+          "from": "Lin_AllInOne_en.pack",
+          "to": "Lin_AllInOne_en.pack",
+          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
         }
       ],
       "description": "The **late-game half of the Alarielle campaign**, meant for the point where Alarielle reaches corruption stage 5. It keeps everything from the early-game list and adds the late visual and story layer: Readman's Late Lavish Looks (LLL) and pink theme (FFF), the Slaanesh UI theme, lewd flags and loading screens, the corrupted Miao audio overhaul and **Passing's Corrupted Valkia** for the end-game crisis of Azazel's Realm.\n\n**Important:** never start a campaign with this list. Switching early, or starting with it, breaks buildings on turn 1. Load it on an existing save once Alarielle has reached stage 5.",
@@ -23759,17 +25091,10 @@
           }
         },
         {
-          "pack": "seu_katarin_generic_addition.pack",
-          "from": "download",
-          "target": {
-            "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
-          }
-        },
-        {
           "pack": "soil_corrupted_units_asset.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-48415"
           }
         },
         {
@@ -23794,6 +25119,18 @@
           "target": {
             "mod": "steam-3471883808"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "seu_katarin_generic_addition.pack",
+          "to": "removed",
+          "note": "Falceon 2026-07-16: do not use SEU Katarin generic (older reports link it to crashes); SEU Reborn (Steam 3760606729) contains the generic SEU content."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
       "description": "The smallest list: **Katarin's corruption series** from Lazy (Tzeentch and Slaanesh stages with reskins) on the shared base, plus Soil's corrupted Kislev units, SEU's Katarin addition, Habu's *Corrupted Chars can Seduce* and the optional crown-removal visual submod.\n\nReadman notes he has never played this route himself, so treat it as a community-tested starting point rather than a fully curated campaign. No extra DLC is needed according to KPW's guide.",
@@ -23935,10 +25272,10 @@
           }
         },
         {
-          "pack": "@Soil_Miaoying_Corrupted_Units.pack",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -23958,8 +25295,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -24117,8 +25455,9 @@
           }
         },
         {
-          "pack": "seu_miaoying_submod_extension.pack",
-          "from": "download",
+          "pack": "Seu_Reborn_workshop.pack",
+          "from": "steam",
+          "steamId": "3760606729",
           "target": {
             "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
           }
@@ -24135,7 +25474,7 @@
           "pack": "soil_corrupted_units_asset.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-48415"
           }
         },
         {
@@ -24147,17 +25486,10 @@
           }
         },
         {
-          "pack": "tdw_corrupted_Buildings.pack",
+          "pack": "tdw_corrupted_buildings_merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-36002"
-          }
-        },
-        {
-          "pack": "tdw_corrupted_buildings_add_endos_kislev.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-36002"
+            "mod": "dc-tdw-corrupted-buildings-merged"
           }
         },
         {
@@ -24191,6 +25523,38 @@
           }
         }
       ],
+      "modernized": [
+        {
+          "from": "@Soil_Miaoying_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        },
+        {
+          "from": "seu_miaoying_submod_extension.pack",
+          "to": "Seu_Reborn_workshop.pack",
+          "note": "Falceon merged the SEU mods into 'SEU Reborn' on Steam (2026-07-12/13; AzR-compatible 2026-07-19; updated 2026-09-27). It replaces seu_miaoying_submod_extension and seu_generic_content; do not use them together."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
+        },
+        {
+          "from": "tdw_corrupted_Buildings.pack",
+          "to": "tdw_corrupted_buildings_merged.pack",
+          "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
+        },
+        {
+          "from": "tdw_corrupted_buildings_add_endos_kislev.pack",
+          "to": "tdw_corrupted_buildings_merged.pack",
+          "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
+        }
+      ],
       "description": "A **Miao Ying corruption campaign** built on Lazy's original progression series: Miao's stages, reskins and events, extended by PassingByPosts' **Corrupted Compendium** (emissary, extra events and the Ensign Loi storyline), SEU's Miao Ying expansion, Soil's corrupted Cathay units and Habu's corrupted buildings and seduction mechanics.\n\nIt also loads ATB and Azazel's Realm, so Kerberos' crossover content between Miao, Azazel and Alarielle is available, and *Slaanesh assaults the great bastion* for early Slaanesh pressure.\n\n**How to play:** start a new Immortal Empires campaign as Miao Ying with this list. From corruption stage 4, switch to *Miao Ying – late game*.",
       "highlights": [
         "Lazy's Miao Ying progression with Corrupted Compendium and SEU's expansion",
@@ -24222,9 +25586,10 @@
       "entries": [
         {
           "pack": "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3304325611",
           "target": {
-            "steamId": "3304325611"
+            "mod": "steam-3304325611"
           }
         },
         {
@@ -24347,10 +25712,10 @@
           }
         },
         {
-          "pack": "@Soil_Miaoying_Corrupted_Units.pack",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -24371,7 +25736,8 @@
         },
         {
           "pack": "Corrupted_Valkia_Compiled.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3813939023",
           "target": {
             "mod": "ll-24004"
           }
@@ -24384,8 +25750,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -24557,8 +25924,9 @@
           }
         },
         {
-          "pack": "seu_miaoying_submod_extension.pack",
-          "from": "download",
+          "pack": "Seu_Reborn_workshop.pack",
+          "from": "steam",
+          "steamId": "3760606729",
           "target": {
             "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
           }
@@ -24575,7 +25943,7 @@
           "pack": "soil_corrupted_units_asset.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-48415"
           }
         },
         {
@@ -24587,17 +25955,10 @@
           }
         },
         {
-          "pack": "tdw_corrupted_Buildings.pack",
+          "pack": "tdw_corrupted_buildings_merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-36002"
-          }
-        },
-        {
-          "pack": "tdw_corrupted_buildings_add_endos_kislev.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-36002"
+            "mod": "dc-tdw-corrupted-buildings-merged"
           }
         },
         {
@@ -24629,6 +25990,48 @@
           "target": {
             "mod": "steam-3471883632"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack",
+          "to": "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack",
+          "note": "Use the Steam 'Slaanesh UI theme for Miao Ying, Katarin, and Alarielle' (Kerberos; rebased by Readman 2025-12-12/14) instead of a local copy."
+        },
+        {
+          "from": "@Soil_Miaoying_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "Corrupted_Valkia_Compiled.pack",
+          "to": "Corrupted_Valkia_Compiled.pack",
+          "note": "Corrupted Valkia is on Steam since 2026-09-26; re-created as 3813939023 on 2026-10-05. The old .pack in data and the old Workshop item 3808407319 use the same name and must be removed. May only show in the launcher with the Early Access / new mod manager option."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        },
+        {
+          "from": "seu_miaoying_submod_extension.pack",
+          "to": "Seu_Reborn_workshop.pack",
+          "note": "Falceon merged the SEU mods into 'SEU Reborn' on Steam (2026-07-12/13; AzR-compatible 2026-07-19; updated 2026-09-27). It replaces seu_miaoying_submod_extension and seu_generic_content; do not use them together."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
+        },
+        {
+          "from": "tdw_corrupted_Buildings.pack",
+          "to": "tdw_corrupted_buildings_merged.pack",
+          "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
+        },
+        {
+          "from": "tdw_corrupted_buildings_add_endos_kislev.pack",
+          "to": "tdw_corrupted_buildings_merged.pack",
+          "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
         }
       ],
       "description": "The **late-game list for Miao Ying**, for saves where Miao has reached corruption stage 4. It adds the Slaanesh-corrupted Cathay roster, the Miao Slaanesh UI, lewd flags and loading screens, Readman's Miao pack (MYM) and **Corrupted Valkia** for the Azazel's Realm end-game crisis.\n\nDo not start a campaign with it; switch from the early-game list once stage 4 is reached.",
@@ -24888,7 +26291,8 @@
         },
         {
           "pack": "Lin_AllInOne_en.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3718883838",
           "target": {
             "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
           }
@@ -24910,8 +26314,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -25140,6 +26545,18 @@
           }
         }
       ],
+      "modernized": [
+        {
+          "from": "Lin_AllInOne_en.pack",
+          "to": "Lin_AllInOne_en.pack",
+          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        }
+      ],
       "description": "A **Morathi campaign** combining Lazy's Morathi Ascension (stages and reskins) with the ATB / Azazel's Realm ecosystem: Morathi can play the Slaanesh side of Alarielle's story. The list adds the Cult of Pleasure mechanics patch, Cult of Slaanesh hero and lord tweaks, several Dark Elf gameplay mods, Readman's Morathi version of UUU and Lin's Corrupted Drycha.\n\nLazy's Morathi route is on indefinite hiatus since September 2026 and has no stage 5, so the story ends earlier than Alarielle's or Miao's.",
       "highlights": [
         "Lazy's Morathi Ascension plus the Slaanesh side of ATB",
@@ -25304,10 +26721,10 @@
           }
         },
         {
-          "pack": "@Soil_Azazel_Corrupted_Units.pack",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -25322,7 +26739,7 @@
           "pack": "@n_SlaaneshVassals.pack",
           "from": "download",
           "target": {
-            "mod": "ll-34542"
+            "mod": "dc-n-slaaneshvassals-dechala-fix"
           }
         },
         {
@@ -25357,8 +26774,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -25535,7 +26953,7 @@
           "pack": "soil_corrupted_units_asset.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-48415"
           }
         },
         {
@@ -25561,6 +26979,28 @@
           "target": {
             "mod": "steam-3471883632"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "@Soil_Azazel_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "@n_SlaaneshVassals.pack",
+          "to": "@n_SlaaneshVassals.pack",
+          "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name)."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
       "description": "Play **Sigvald** as one of the Slaanesh/Chaos factions that confederate Azazel in ATB and Azazel's Realm. The list adds Readman's *Sigvald Simply Superior*, the Warriors-of-Chaos version of UUU, Female Daemonettes and Soil's corrupted units.\n\nKnown issue: *Sigvald Simply Superior* can crash at the end of a turn when the Chaos AI moves; disable it if that happens.",
@@ -25721,7 +27161,7 @@
           "pack": "@n_SlaaneshVassals.pack",
           "from": "download",
           "target": {
-            "mod": "ll-34542"
+            "mod": "dc-n-slaaneshvassals-dechala-fix"
           }
         },
         {
@@ -25757,7 +27197,8 @@
         },
         {
           "pack": "Lin_AllInOne_en.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3718883838",
           "target": {
             "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
           }
@@ -25779,8 +27220,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -25978,6 +27420,23 @@
           }
         }
       ],
+      "modernized": [
+        {
+          "from": "@n_SlaaneshVassals.pack",
+          "to": "@n_SlaaneshVassals.pack",
+          "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name)."
+        },
+        {
+          "from": "Lin_AllInOne_en.pack",
+          "to": "Lin_AllInOne_en.pack",
+          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        }
+      ],
       "description": "Play **N'Kari, Dechala or Masque** and experience Alarielle's corruption from Slaanesh's side, a mode ATB supports since version 2.0. The list adds Readman's N'Kari version of UUU, Narok's Slaanesh Expanded dilemmas and Lin's Corrupted Drycha with its translation.\n\nPlaying as Dechala is no longer recommended since ATB 3.0 because of a voice-over conflict with Alarielle's stage 7; N'Kari is the intended choice.",
       "highlights": [
         "Slaanesh side of the ATB story",
@@ -26134,10 +27593,10 @@
           }
         },
         {
-          "pack": "@Soil_Azazel_Corrupted_Units.pack",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -26152,7 +27611,7 @@
           "pack": "@n_SlaaneshVassals.pack",
           "from": "download",
           "target": {
-            "mod": "ll-34542"
+            "mod": "dc-n-slaaneshvassals-dechala-fix"
           }
         },
         {
@@ -26187,8 +27646,9 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium.pack",
-          "from": "download",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
           "target": {
             "mod": "ll-23876"
           }
@@ -26365,7 +27825,7 @@
           "pack": "soil_corrupted_units_asset.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-48415"
           }
         },
         {
@@ -26391,6 +27851,28 @@
           "target": {
             "mod": "steam-3471883632"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "@Soil_Azazel_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "@n_SlaaneshVassals.pack",
+          "to": "@n_SlaaneshVassals.pack",
+          "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name)."
+        },
+        {
+          "from": "MiaoYingCorrupted_Compendium.pack",
+          "to": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
       "description": "For **Archaon, Azazel, Be'lakor or a Daemon Prince**: the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
@@ -27761,7 +29243,8 @@
       "entries": [
         {
           "pack": "Corrupted_Valkia_Compiled.pack",
-          "from": "download",
+          "from": "steam",
+          "steamId": "3813939023",
           "target": {
             "mod": "ll-24004"
           }

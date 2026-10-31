@@ -2,7 +2,7 @@
 
 Inputs:
     curator/work/part-*.json        {"mods": [...], "external": [...], "notes": [...]} from curation
-    curator/manual.json             optional hand-made entries/overrides (same shape)
+    curator/manual.json             optional hand-made entries/overrides (same shape), presetReplacements
     curator/raw/steam_items.json    Steam id -> title/public/filename/packs
     curator/raw/discord/twmods.json community mod lists (parse_twmods.py) -> presets
     curator/raw/steam_collection_*.json  Steam collections referenced by mods
@@ -468,24 +468,55 @@ def main():
             if lo.get(side):
                 lo[side] = [resolve(m["id"], t, "loadOrder." + side) for t in lo[side]]
 
+    # manual.json presetReplacements: packs of the tested lists that have a newer version since the list was
+    # made (moved to Steam, merged packs, fixes) or must not be used any more ({"remove": true}). Matched by
+    # pack name; every change is recorded in the preset's "modernized" list so the app can show it.
+    replacements = {k.lower(): v for k, v in man.get("presetReplacements", {}).items() if not k.startswith("_")}
+
+    def replacement_entry(rep: dict) -> dict:
+        pe = {"pack": rep["pack"], "from": rep.get("from") or ("steam" if rep.get("steamId") else "download")}
+        if rep.get("steamId"):
+            pe["steamId"] = rep["steamId"]
+        t = rep.get("target") or ({"steamId": rep["steamId"]} if rep.get("steamId") else {"pack": rep["pack"]})
+        pe["target"] = resolve("presetReplacements", dict(t), rep["pack"])
+        return pe
+
+    def entry_key(pe: dict) -> tuple:
+        return pe["pack"].lower(), pe.get("steamId"), pe["from"], json.dumps(pe.get("target"), sort_keys=True)
+
     presets = []
     for stem, entries in twmods.items():
         pid, name, play_as, phase, note = PRESETS.get(stem, (stem.lower(), stem, [], "any", None))
-        out = []
+        out, modernized = [], []
         for e in entries:
             pe = {"pack": e["pack"], "from": "steam" if e["source"] == "steam" else "download"}
             if e.get("steamId"):
                 pe["steamId"] = e["steamId"]
+            rep = replacements.get(e["pack"].lower())
+            if rep and rep.get("remove"):
+                modernized.append({"from": e["pack"], "to": "removed", "note": rep.get("note")})
+                continue
+            if e.get("steamId"):
                 pe["target"] = stub_for(e["steamId"])
             elif e["pack"].lower() in pack_owner:
                 pe["target"] = pack_owner[e["pack"].lower()]
-            else:
+            elif not rep:
                 unresolved.append(f"preset {pid}: lokales Pack {e['pack']} gehört zu keinem Katalog-Mod")
+            if rep:
+                new = replacement_entry(rep)
+                if entry_key(new) != entry_key(pe):  # same file from a new source (Steam, Discord fix) counts as a change
+                    modernized.append({"from": e["pack"], "to": new["pack"], "note": rep.get("note")})
+                    pe = new
+            # Merged packs replace several old ones: keep the first position only.
+            if any(x["pack"].lower() == pe["pack"].lower() for x in out):
+                continue
             out.append(pe)
         presets.append({"id": pid, "name": name, "origin": "tested", "playAs": play_as, "phase": phase, "phaseNote": note,
                         "source": {"type": "discord", "url": MODLIST_CHANNEL, "file": stem + ".twmods",
                                    "author": "Readman / Kerberos"},
                         "entries": out})
+        if modernized:
+            presets[-1]["modernized"] = [{k: v for k, v in x.items() if v} for x in modernized]
 
     guides = []
     for doc in kpw.get("docs", []):
@@ -641,7 +672,14 @@ def main():
         "presets": presets,
         "campaignGuides": guides,
     }
-    OUT.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), "utf-8")
+    # Only a real content change gets a new timestamp: otherwise every scheduled build would commit a
+    # "new" catalog and every app would download it again.
+    previous = load(OUT) if OUT.exists() else None
+    strip = lambda c: {k: v for k, v in c.items() if k not in ("generatedAt", "sources")}
+    if previous and strip(previous) == strip(catalog):
+        catalog["generatedAt"], catalog["sources"] = previous["generatedAt"], previous["sources"]
+    else:
+        OUT.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), "utf-8")
 
     low = [m for m in mods.values() if m.get("curation", {}).get("confidence") == "low" and not m["id"].startswith("steam-")]
     lines = [f"# Katalog-Report ({catalog['generatedAt']})", "",

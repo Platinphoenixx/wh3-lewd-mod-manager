@@ -3,10 +3,13 @@
 Output: curator/raw/ll/<file_id>.json, one per LL file, plus curator/raw/ll/_index.json.
 The raw files keep the description as readable text (spoilers marked, links inline)
 so the curation step can read it without HTML noise.
+Files outside the club listing that belong to the scene (curator/extra_ll.json) are fetched on
+every run too, with category "other".
 
 Usage:
     curator/.venv/Scripts/python curator/crawl_ll.py            # only new/updated files
     curator/.venv/Scripts/python curator/crawl_ll.py --force    # refetch everything
+    curator/.venv/Scripts/python curator/crawl_ll.py --only 43293,24077   # just these ids (index is kept)
 """
 
 import argparse
@@ -30,17 +33,33 @@ CATEGORIES = {
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 DELAY_S = 1.5
 OUT = Path(__file__).parent / "raw" / "ll"
+EXTRA = Path(__file__).parent / "extra_ll.json"
 
 FILE_URL_RE = re.compile(r"^https://www\.loverslab\.com/files/file/(\d+)-[^/?#]+/?$")
 STEAM_ID_RE = re.compile(r"steamcommunity\.com/(?:sharedfiles|workshop)/filedetails/\?(?:[^\"'\s]*&)?id=(\d+)")
 
 
 def fetch(url: str) -> str:
+    return fetch_final(url)[0]
+
+
+def fetch_final(url: str) -> tuple[str, str]:
+    """Body plus the URL after redirects (LL redirects /files/file/<id>/ to the slugged page)."""
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en"})
     with urllib.request.urlopen(req, timeout=60) as r:
         body = r.read().decode("utf-8", errors="replace")
+        final = r.geturl()
     time.sleep(DELAY_S)
-    return body
+    return body, final
+
+
+def extra_entries() -> list[dict]:
+    """LL files outside the club (curator/extra_ll.json), e.g. older mods linked from Discord.
+
+    A bare /files/file/<id>/ is a 404; any slug redirects to the real page.
+    """
+    ids = json.loads(EXTRA.read_text("utf-8")).get("files", []) if EXTRA.exists() else []
+    return [{"id": str(i), "url": f"{BASE}/files/file/{i}-x/", "category": "other", "extra": True} for i in ids]
 
 
 def list_category(cat_id: int, slug: str) -> list[dict]:
@@ -224,20 +243,34 @@ def main():
     index_path = OUT / "_index.json"
     old_index = json.loads(index_path.read_text("utf-8")) if index_path.exists() else {}
 
+    wanted = set(args.only.split(",")) if args.only else None
+    extras = extra_entries()
     entries: list[dict] = []
-    for cat_id, slug in CATEGORIES.items():
-        print(f"listing {slug}", file=sys.stderr)
-        entries += list_category(cat_id, slug)
-    if args.only:
-        wanted = set(args.only.split(","))
-        entries = [e for e in entries if e["id"] in wanted]
+    # With --only, known ids need no listing: their URL is in the index (or extra_ll.json).
+    known = {i: {"id": i, "url": v["url"], "category": v.get("category")} for i, v in old_index.items() if v.get("url")}
+    known |= {e["id"]: e for e in extras}
+    if wanted and wanted <= set(known):
+        entries = [known[i] for i in sorted(wanted)]
+    else:
+        for cat_id, slug in CATEGORIES.items():
+            print(f"listing {slug}", file=sys.stderr)
+            entries += list_category(cat_id, slug)
+        listed = {e["id"] for e in entries}
+        entries += [e for e in extras if e["id"] not in listed]
+        if wanted:
+            entries = [e for e in entries if e["id"] in wanted]
 
     index, changed = {}, []
     for i, e in enumerate(entries, 1):
         path = OUT / f"{e['id']}.json"
         print(f"[{i}/{len(entries)}] {e['url']}", file=sys.stderr)
         try:
-            data = parse_file_page(fetch(e["url"]), e["url"])
+            if e.get("extra"):
+                body, final = fetch_final(e["url"])
+                url = final.split("?")[0] if FILE_URL_RE.match(final.split("?")[0]) else e["url"]
+                data = parse_file_page(body, url)
+            else:
+                data = parse_file_page(fetch(e["url"]), e["url"])
         except Exception as ex:  # keep going, report at the end
             print(f"  FAILED: {ex}", file=sys.stderr)
             index[e["id"]] = old_index.get(e["id"], {}) | {"error": str(ex)}
@@ -252,6 +285,8 @@ def main():
             changed.append(e["id"])
         index[e["id"]] = {k: data[k] for k in ("title", "version", "author", "category", "updated", "url")}
 
+    if wanted:  # partial run: keep everything else in the index
+        index = old_index | index
     removed = sorted(set(old_index) - set(index))
     index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2), "utf-8")
     summary = {"total": len(index), "changed": changed, "removed": removed}

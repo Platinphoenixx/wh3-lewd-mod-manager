@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import type { Mod } from '@catalog/schema'
 import { matchInstalled, targetKey } from '@shared/match'
 import { KIND_LABEL, useData } from './data'
-import { ModCover } from './ModCover'
+import { ModCover, withParents } from './ModCover'
 
 type Source = 'loverslab' | 'steam' | 'discord'
 type Sort = 'name' | 'updated'
@@ -134,7 +134,7 @@ export function CatalogView() {
             return (
               <article key={m.id} className="mod-card" onClick={() => data.openMod(m.id)}>
                 <div className="cover">
-                  <ModCover mods={[m]} placeholder={KIND_LABEL[m.kind]} />
+                  <ModCover mods={withParents(data.index.mods, m)} placeholder={KIND_LABEL[m.kind]} />
                   <span className="kind-chip">{KIND_LABEL[m.kind]}</span>
                   {isInstalled && <span className="installed-chip">installed</span>}
                 </div>

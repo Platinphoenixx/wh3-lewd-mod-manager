@@ -3,7 +3,7 @@ import type { Preset } from '@catalog/schema'
 import { matchInstalled, parseTargetKey } from '@shared/match'
 import { candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
 import { KIND_LABEL, useData } from './data'
-import { ModCover } from './ModCover'
+import { ModCover, withParents } from './ModCover'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -17,7 +17,7 @@ function OptionCard({ c, on, toggle }: { c: Candidate; on: boolean; toggle(): vo
   return (
     <article className={`option ${on ? 'on' : ''} ${c.conflicts.length ? 'has-conflict' : ''}`}>
       <div className="thumb" onClick={() => c.mod && data.openMod(c.mod.id)}>
-        <ModCover mods={[c.mod]} placeholder={c.mod ? KIND_LABEL[c.mod.kind] : 'External'} />
+        <ModCover mods={c.mod ? withParents(data.index.mods, c.mod) : []} placeholder={c.mod ? KIND_LABEL[c.mod.kind] : 'External'} />
       </div>
       <div className="body">
         <label className="option-head">

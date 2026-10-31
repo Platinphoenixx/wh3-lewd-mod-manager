@@ -8,6 +8,18 @@ export function coverCandidates(mod: Mod): string[] {
 }
 
 /**
+ * The mod followed by the mods it extends or requires: patches, fixes and translations rarely have
+ * pictures of their own, so their card falls back to the picture of the mod they belong to.
+ */
+export function withParents(mods: Map<string, Mod>, mod: Mod): Mod[] {
+  const parents = mod.relations
+    .filter((r) => r.kind === 'extends' || r.kind === 'requires')
+    .map((r) => ('mod' in r.target ? mods.get(r.target.mod) : undefined))
+    .filter((m): m is Mod => !!m)
+  return [mod, ...parents]
+}
+
+/**
  * A mod's cover image that never shows a broken icon: when an image fails to load it tries the
  * mod's next image, and shows the placeholder only when none works.
  */

@@ -66,6 +66,19 @@ function PresetDetail({ preset }: { preset: Preset }) {
         {guide?.campaigns?.map((c) => <span key={c} className="badge">{c}</span>)}
       </div>
       {preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
+      {preset.modernized && preset.modernized.length > 0 && (
+        <details className="callout ok">
+          <summary>Updated to the newest versions ({preset.modernized.length} changes since the original list)</summary>
+          <ul className="small">
+            {preset.modernized.map((m) => (
+              <li key={m.from}>
+                <code>{m.from}</code> → {m.to === 'removed' ? <em>removed</em> : <code>{m.to}</code>}
+                {m.note && <div className="muted">{m.note}</div>}
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
       <div className="markdown"><Markdown>{preset.description ?? ''}</Markdown></div>
       {preset.highlights && <ul>{preset.highlights.map((h) => <li key={h}>{h}</li>)}</ul>}
 

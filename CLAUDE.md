@@ -51,6 +51,8 @@ Curated data is layered; later layers override earlier ones field by field (a fi
   from KPW guides and from campaign/progression mods' requirements, so templates follow the catalog.
 - Never guess facts; mark uncertainty in `curation.confidence` / `openQuestions`. Texts neutral, non-graphic.
 - Reading the Discord server is manual and must look like a person reading (no API, no automation).
+  Discord's search only matches exact spellings: try several variants (apostrophes, spaces, underscores)
+  and unique tokens (Steam/LL ids, pack file names, `from:`, `has:link in:`); "no hits" proves little.
 
 ## Conventions
 

@@ -62,6 +62,11 @@ export interface Preset {
   source: { type: "discord" | "loverslab" | "wiki" | "steam" | "derived"; url?: string; file?: string; author?: string; date?: string };
   /** In load order as given by the source: first entry = highest priority. */
   entries: PresetEntry[];
+  /**
+   * Changes the curator made to the source list because packs got newer versions since it was made
+   * (moved to Steam, merged into one pack, fixed re-uploads). to = new pack file, or "removed".
+   */
+  modernized?: { from: string; to: string; note?: string }[];
 }
 
 export interface PresetEntry {
