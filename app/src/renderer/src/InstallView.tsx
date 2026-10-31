@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { matchInstalled, parseTargetKey, staleDataPacks } from '@shared/match'
 import { resolveTarget, useData } from './data'
+import { ConflictList } from './ConflictList'
 
 export function InstallView() {
   const data = useData()
@@ -34,6 +35,14 @@ export function InstallView() {
           </ul>
         </section>
       )}
+
+      <section>
+        <h2>Overlaps between installed mods</h2>
+        <ConflictList
+          paths={[...scan.packs].sort((a, b) => a.file.localeCompare(b.file)).map((p) => p.path)}
+          orderNote="Compared in alphabetical order. Who actually wins depends on your load order – open a profile's load order to see it for that profile."
+        />
+      </section>
 
       <section>
         <h2>Recognised mods ({result.known.size})</h2>

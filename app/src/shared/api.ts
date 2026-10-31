@@ -1,5 +1,6 @@
 import type { Catalog } from '@catalog/schema'
 import type { Contribution, UserRule } from './community'
+import type { ConflictReport } from './conflicts'
 import type { Profile } from './profile'
 
 /** A .pack file found in the game's data folder or a Workshop download folder. */
@@ -55,4 +56,6 @@ export interface Api {
   saveRules(rules: UserRule[]): Promise<void>
   listContributions(): Promise<Contribution[]>
   addContribution(c: Contribution): Promise<Contribution[]>
+  /** File overlaps between installed packs; `paths` in load order, highest priority first. */
+  packConflicts(paths: string[]): Promise<ConflictReport & { unreadable: string[] }>
 }

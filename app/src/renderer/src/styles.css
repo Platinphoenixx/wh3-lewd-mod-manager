@@ -174,3 +174,4 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .option .thumb .placeholder { font-size: 11px; color: var(--muted); }
 .ok-text { color: var(--ok); }
 .callout.ok { border-left-color: var(--ok); } .callout summary { cursor: pointer; } code { font-size: 12px; background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
+.conflicts ul { margin: 6px 0; } .conflicts details summary { cursor: pointer; } .conflicts > ul > li { margin-bottom: 4px; }

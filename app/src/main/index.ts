@@ -5,6 +5,7 @@ import type { Contribution, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
 import { loadCatalog } from './catalog'
 import { scanGame } from './game'
+import { packConflicts } from './pack'
 import {
   addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, saveProfile, saveRules, saveSettings
 } from './store'
@@ -33,6 +34,11 @@ ipcMain.handle('rules:list', () => listRules())
 ipcMain.handle('rules:save', (_e, r: UserRule[]) => saveRules(r))
 ipcMain.handle('contributions:list', () => listContributions())
 ipcMain.handle('contributions:add', (_e, c: Contribution) => addContribution(c))
+// Only paths the last game scan found may be opened (the renderer never names arbitrary files).
+ipcMain.handle('packs:conflicts', async (_e, paths: string[]) => {
+  const known = new Set((await scanGame((await getSettings()).gamePath)).packs.map((p) => p.path))
+  return packConflicts(paths.filter((p) => known.has(p)))
+})
 ipcMain.handle('game:scan', async () => scanGame((await getSettings()).gamePath))
 ipcMain.handle('shell:openExternal', (_e, url: string) => {
   if (/^https?:\/\//.test(url)) return shell.openExternal(url)

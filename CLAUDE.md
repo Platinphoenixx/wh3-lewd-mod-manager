@@ -14,6 +14,10 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
+  - `src/main/pack.ts` reader for .pack indexes (PFH5/PFH6: header, dependency list, file index, RPFM's
+    dependency note; never reads file data otherwise), cached per file (tested)
+  - `src/shared/conflicts.ts` overlaps between packs: same file path = real override (higher pack wins);
+    same database table = hint only, tables most packs use are ignored (tested)
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
 - `curator/` – Python pipeline that builds the catalog (`pip install -r curator/requirements.txt`).

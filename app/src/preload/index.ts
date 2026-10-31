@@ -14,7 +14,8 @@ const api: Api = {
   listRules: () => ipcRenderer.invoke('rules:list'),
   saveRules: (r) => ipcRenderer.invoke('rules:save', r),
   listContributions: () => ipcRenderer.invoke('contributions:list'),
-  addContribution: (c) => ipcRenderer.invoke('contributions:add', c)
+  addContribution: (c) => ipcRenderer.invoke('contributions:add', c),
+  packConflicts: (paths) => ipcRenderer.invoke('packs:conflicts', paths)
 }
 
 contextBridge.exposeInMainWorld('api', api)

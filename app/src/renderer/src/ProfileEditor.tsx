@@ -4,6 +4,7 @@ import { matchInstalled, parseTargetKey } from '@shared/match'
 import { candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
+import { ConflictList } from './ConflictList'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -168,6 +169,11 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               })}
             </tbody>
           </table>
+          <h3>Overlaps in this load order</h3>
+          <ConflictList
+            paths={resolved.entries.flatMap((e) => (installed.get(e.key) ?? []).map((p: { path: string }) => p.path))}
+            orderNote="Installed mods of this profile, compared in the order above: the higher mod's files are the ones the game uses."
+          />
           {profile.removed.length > 0 && (
             <>
               <h3>Removed from the template</h3>
