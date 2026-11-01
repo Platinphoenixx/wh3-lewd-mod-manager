@@ -3175,6 +3175,904 @@
       "knownIssues": [
         "Changes the models of affected units (limb stumps), so it conflicts with reskins of the same units unless a patch exists."
       ]
+    },
+    "111": {
+      "version": "1.1",
+      "updated": "2023-06-30",
+      "packs": [],
+      "openQuestions": [
+        "Nexus shows no file list for this download; the pack name is unknown."
+      ],
+      "knownIssues": [
+        "Some clipping and an overly glossy look (the author is still working on it)."
+      ]
+    },
+    "136": {
+      "version": "2.2",
+      "updated": "2023-12-17",
+      "packs": [
+        {
+          "file": "1_AlarielleB_2.2.pack",
+          "exclusiveGroup": "nx136-ver",
+          "note": "Version 2.2: revised, more detailed skin"
+        },
+        {
+          "file": "1_Alarielle_2.0_armorB.pack",
+          "exclusiveGroup": "nx136-ver",
+          "note": "Version 2.0"
+        }
+      ]
+    },
+    "239": {
+      "version": "1",
+      "updated": "2024-10-28",
+      "packs": [
+        {
+          "file": "@Eliu_Art_Replacer.pack"
+        }
+      ],
+      "loadOrder": "The author: put it at the top of the load order.",
+      "notes": [
+        "Images for Wood Elf units and several Wood Elf unit mods (Cipher Wood Elves, Arahan's Chosen, Extra Wood Elves, Single's units, Wood Elf Female Archers, Wood Elf Furies); mods you do not use break nothing."
+      ]
+    },
+    "203": {
+      "version": "1.0",
+      "updated": "2024-05-16",
+      "packs": [
+        {
+          "file": "01_elspet_tattoo.pack",
+          "note": "Main file"
+        },
+        {
+          "file": "02_elspeth_blackhair.pack",
+          "optional": true,
+          "note": "Black hair"
+        },
+        {
+          "file": "03_cloth_set1.pack",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Full armour"
+        },
+        {
+          "file": "03_shortcloth_set1.pack",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Short outfit, full"
+        },
+        {
+          "file": "03_shortcloth_set2.pack",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Short outfit, revealing"
+        },
+        {
+          "file": "04_elspeth_weapon.pack",
+          "optional": true,
+          "note": "Scythe"
+        }
+      ],
+      "loadOrder": "Order the parts by the number in front of each file.",
+      "knownIssues": [
+        "The original model's animations cause a few flaws the author still wants to fix."
+      ]
+    },
+    "102": {
+      "version": "1.01",
+      "updated": "2023-06-07",
+      "packs": [
+        {
+          "file": "ivan_sexy_dragoness_miao.pack",
+          "exclusiveGroup": "nx102-ver"
+        },
+        {
+          "file": "ivan_sexy_dragoness_miao_crotchbooba.pack",
+          "exclusiveGroup": "nx102-ver",
+          "note": "Variant"
+        }
+      ],
+      "notes": [
+        "Two versions; the author: use only one."
+      ]
+    },
+    "152": {
+      "version": "1.0",
+      "updated": "2023-10-18",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [
+        {
+          "file": "!Ranger WGX.pack"
+        }
+      ]
+    },
+    "206": {
+      "version": "1.0",
+      "updated": "2024-05-31",
+      "packs": [
+        {
+          "file": "@!!!!bigyx_miria.pack"
+        }
+      ]
+    },
+    "167": {
+      "version": "1.0",
+      "updated": "2023-12-03",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [],
+      "openQuestions": [
+        "Nexus shows no file list for this download; the pack name is unknown."
+      ]
+    },
+    "166": {
+      "version": "1.0",
+      "updated": "2023-12-03",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [],
+      "openQuestions": [
+        "Nexus shows no file list for this download; the pack name is unknown."
+      ]
+    },
+    "196": {
+      "version": "2.0",
+      "updated": "2024-04-14",
+      "packs": [
+        {
+          "file": "01_Malikav2.pack",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Skin with tattoo"
+        },
+        {
+          "file": "01_Malika_drow.pack",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Drow style"
+        },
+        {
+          "file": "01_Malika_drow_wet.pack",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Drow style, wet"
+        },
+        {
+          "file": "01_Malika_porcelain.pack",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Porcelain"
+        },
+        {
+          "file": "02_Malika_blackhair.pack",
+          "optional": true,
+          "note": "Black hair"
+        },
+        {
+          "file": "03_light_armor_type2.pack",
+          "optional": true,
+          "note": "Light armour, type 2"
+        },
+        {
+          "file": "04_Malika_sword.pack",
+          "optional": true,
+          "note": "Sword"
+        },
+        {
+          "file": "05_Malika_shield.pack",
+          "optional": true,
+          "note": "Shield"
+        }
+      ],
+      "loadOrder": "Order the parts by the number in front of each file.",
+      "openQuestions": [
+        "The 'light_armor_type1' download lists only 2_Morathi_hair_black.pack in its file preview."
+      ],
+      "notes": [
+        "Built from parts: one skin, then hair, armour and weapons as wanted. Delete files of older versions."
+      ]
+    },
+    "24": {
+      "version": "1.2",
+      "updated": "2023-09-17",
+      "packs": [
+        {
+          "file": "li_miaoying_fishnet_.pack",
+          "note": "Fishnet look"
+        },
+        {
+          "file": "li_miaoying_scale_.pack",
+          "note": "Scale look"
+        }
+      ],
+      "notes": [
+        "Re-upload of LazyIcarus' corrupted Miao Ying, stages 1 and 2, after it was removed from the Workshop."
+      ]
+    },
+    "219": {
+      "version": "2.0",
+      "updated": "2024-09-07",
+      "packs": [],
+      "openQuestions": [
+        "Nexus shows no file list for this download; the pack name is unknown."
+      ],
+      "notes": [
+        "Version 2 has its own skin and normal map instead of borrowed textures; weapons and armour are still to come."
+      ]
+    },
+    "242": {
+      "version": "2.0",
+      "updated": "2025-01-04",
+      "packs": [],
+      "openQuestions": [
+        "Six independent versions (naked, T1, T2, T2 without under-suit, T3, T3 without underwear); Nexus shows no file lists, so the pack names are unknown."
+      ]
+    },
+    "99": {
+      "version": "1.0",
+      "updated": "2023-05-19",
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ],
+      "packs": [
+        {
+          "file": "Lady_Repanse_Naked.pack"
+        }
+      ]
+    },
+    "97": {
+      "version": "1.0",
+      "updated": "2023-05-19",
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ],
+      "packs": [
+        {
+          "file": "Lady_Repanse.pack"
+        }
+      ],
+      "knownIssues": [
+        "New model with a relatively high polygon count."
+      ]
+    },
+    "266": {
+      "version": "1.0",
+      "updated": "2025-04-30",
+      "packs": [
+        {
+          "file": "lady_yuan.pack",
+          "note": "Yuan Bo"
+        },
+        {
+          "file": "lady_zhao.pack",
+          "note": "Zhao Ming"
+        }
+      ],
+      "notes": [
+        "Body model from LIG's Miao Ying; original voices and portraits."
+      ]
+    },
+    "276": {
+      "version": "1.0",
+      "updated": "2025-06-18",
+      "packs": [
+        {
+          "file": "Skimpinettes.pack"
+        }
+      ],
+      "notes": [
+        "Reskins Daemonettes, Alluresses, cultists and heralds."
+      ]
+    },
+    "346": {
+      "version": "5",
+      "updated": "2026-05-05",
+      "packs": [
+        {
+          "file": "D's is Sister of Twilight.pack"
+        }
+      ]
+    },
+    "210": {
+      "version": "1.0",
+      "updated": "2024-08-16",
+      "packs": [
+        {
+          "file": "wood_elf_party.pack",
+          "note": "Main file, no requirements"
+        },
+        {
+          "file": "Singer_party.pack",
+          "optional": true,
+          "note": "Spellsingers without clothes"
+        },
+        {
+          "file": "weaver1.pack",
+          "optional": true,
+          "note": "Lords, starting with the Wild domain (Weaver)"
+        }
+      ],
+      "openQuestions": [
+        "The clothed spellsinger download shows no file list on Nexus; its pack name is unknown."
+      ],
+      "notes": [
+        "Each file is independent."
+      ]
+    },
+    "235": {
+      "version": "1",
+      "updated": "2024-10-22",
+      "packs": [
+        {
+          "file": "soboro_miao_ying_more_exposed.pack"
+        }
+      ]
+    },
+    "134": {
+      "version": "2.0",
+      "updated": "2023-08-18",
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0naked.pack"
+        }
+      ],
+      "notes": [
+        "New model made in Blender, not a reskin of the game's files."
+      ]
+    },
+    "340": {
+      "version": "2",
+      "updated": "2026-04-20",
+      "packs": [
+        {
+          "file": "Fay Edit.pack",
+          "exclusiveGroup": "nx340-ver"
+        },
+        {
+          "file": "Fay Edit_sword&grail.pack",
+          "exclusiveGroup": "nx340-ver",
+          "note": "Sword & Grail version"
+        }
+      ]
+    },
+    "268": {
+      "version": "1.0",
+      "updated": "2025-05-14",
+      "packs": [
+        {
+          "file": "lady_kos.pack"
+        }
+      ],
+      "notes": [
+        "Body model from LazyIcarus' Katarin; original voice and portrait."
+      ]
+    },
+    "140": {
+      "version": "1.0",
+      "updated": "2023-09-17",
+      "packs": [
+        {
+          "file": "li_morathi_third.pack",
+          "note": "Stage 3"
+        },
+        {
+          "file": "li_morathi_fourth.pack",
+          "note": "Stage 4"
+        }
+      ]
+    },
+    "342": {
+      "version": "6",
+      "updated": "2026-05-04",
+      "packs": [
+        {
+          "file": "D's is Aranessa.pack",
+          "exclusiveGroup": "nx342-ver"
+        },
+        {
+          "file": "D's is Aranessa spike ver.pack",
+          "exclusiveGroup": "nx342-ver",
+          "note": "Spike version"
+        }
+      ]
+    },
+    "94": {
+      "version": "1.02",
+      "updated": "2023-05-18",
+      "packs": [
+        {
+          "file": "@Spcat_marauder_sister_brother_data.pack"
+        },
+        {
+          "file": "@Spcat_marauder_sister_brother_m.pack"
+        },
+        {
+          "file": "@Spcat_marauder_sister_brother_v.pack"
+        }
+      ],
+      "notes": [
+        "Battle cries mix male and female voices."
+      ]
+    },
+    "334": {
+      "version": "2",
+      "updated": "2026-04-24",
+      "packs": [
+        {
+          "file": "[LIG]katarin(Lazy ver).pack"
+        }
+      ]
+    },
+    "249": {
+      "version": "1.0",
+      "updated": "2025-01-20",
+      "packs": [
+        {
+          "file": "cathay_sulivar_style_v1.pack",
+          "exclusiveGroup": "nx249-ver",
+          "note": "Classic, full armour"
+        },
+        {
+          "file": "cathay_sulivar_style_v1_nsfw.pack",
+          "exclusiveGroup": "nx249-ver",
+          "note": "More revealing armour"
+        }
+      ]
+    },
+    "335": {
+      "version": "1",
+      "updated": "2026-04-06",
+      "packs": [
+        {
+          "file": "[LIG]Alarielle(19).pack"
+        }
+      ]
+    },
+    "277": {
+      "version": "1.0",
+      "updated": "2025-07-07",
+      "packs": [
+        {
+          "file": "Corrupted_elves.pack"
+        }
+      ]
+    },
+    "344": {
+      "version": "2",
+      "updated": "2026-04-14",
+      "packs": [
+        {
+          "file": "[lazy]elspeth.pack"
+        }
+      ]
+    },
+    "341": {
+      "version": "3",
+      "updated": "2026-04-26",
+      "packs": [
+        {
+          "file": "[LIG]Khalida-makeup-EDIT.pack"
+        }
+      ]
+    },
+    "237": {
+      "version": "1.0",
+      "updated": "2024-10-25",
+      "packs": [
+        {
+          "file": "Savage Skarbrand.pack"
+        }
+      ],
+      "knownIssues": [
+        "Regiments of renown of these units look wrong.",
+        "Not compatible with mods that change the character models of Khorne daemons."
+      ]
+    },
+    "197": {
+      "version": "1.0",
+      "updated": "2024-05-01",
+      "packs": [
+        {
+          "file": "01_Hellebron_dirtyskin.pack",
+          "note": "Main file: skin"
+        },
+        {
+          "file": "02_hellebron_pink_hair.pack",
+          "optional": true,
+          "note": "Pink hair (beta)"
+        },
+        {
+          "file": "03_hellebron_sword.pack",
+          "optional": true,
+          "note": "Curved sword"
+        },
+        {
+          "file": "04_hellebron_armor_set1.pack",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 1"
+        },
+        {
+          "file": "04_hellebron_armor_set2.pack",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 2"
+        },
+        {
+          "file": "04_hellebron_armor_set3.pack",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 3"
+        }
+      ],
+      "loadOrder": "Order the parts by the number in front of each file."
+    },
+    "401": {
+      "version": "3",
+      "updated": "2026-09-18",
+      "packs": [
+        {
+          "file": "D's is n'Kari.pack"
+        }
+      ]
+    },
+    "395": {
+      "version": "2",
+      "updated": "2026-09-15",
+      "packs": [
+        {
+          "file": "D's is Masque.pack"
+        }
+      ]
+    },
+    "137": {
+      "version": "2.0",
+      "updated": "2023-09-06",
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0_dress.pack",
+          "exclusiveGroup": "nx137-ver"
+        },
+        {
+          "file": "1_Alarielle_2.0_dressnopanti.pack",
+          "exclusiveGroup": "nx137-ver",
+          "note": "Without underwear"
+        }
+      ]
+    },
+    "339": {
+      "version": "1",
+      "updated": "2026-04-06",
+      "packs": [
+        {
+          "file": "[LIG]Hellebron(19).pack"
+        }
+      ]
+    },
+    "333": {
+      "version": "2",
+      "updated": "2026-04-05",
+      "packs": [
+        {
+          "file": "[LIG]Valkia.pack"
+        }
+      ]
+    },
+    "236": {
+      "version": "1",
+      "updated": "2024-10-23",
+      "packs": [
+        {
+          "file": "@SistersEnvyCard.pack"
+        }
+      ],
+      "notes": [
+        "Portrait, porthole and unit card only."
+      ]
+    },
+    "145": {
+      "version": "1",
+      "updated": "2023-09-28",
+      "packs": [
+        {
+          "file": "extra_maio_ying_SOBORO.pack"
+        }
+      ]
+    },
+    "359": {
+      "version": "2",
+      "updated": "2026-05-21",
+      "packs": [
+        {
+          "file": "D's is Death Hag.pack"
+        }
+      ]
+    },
+    "349": {
+      "version": "5",
+      "updated": "2026-10-03",
+      "packs": [
+        {
+          "file": "D's is Isabella.pack"
+        }
+      ]
+    },
+    "338": {
+      "version": "1",
+      "updated": "2026-05-22",
+      "packs": [
+        {
+          "file": "[LIG]Miaoying(19).pack",
+          "note": "Both downloads (edit and 'Origin' version) use this file name; pick one"
+        }
+      ]
+    },
+    "336": {
+      "version": "1",
+      "updated": "2026-04-06",
+      "packs": [
+        {
+          "file": "[LIG]Morathi(19).pack"
+        }
+      ]
+    },
+    "103": {
+      "version": "1.0",
+      "updated": "2023-06-08",
+      "packs": [
+        {
+          "file": "Smuthammer_Anthro_miao.pack"
+        }
+      ],
+      "notes": [
+        "Replaces Miao Ying's human form; 4K textures. Original model by petruz."
+      ]
+    },
+    "357": {
+      "version": "2",
+      "updated": "2026-05-12",
+      "packs": [
+        {
+          "file": "D's is Glade Captain.pack"
+        }
+      ]
+    },
+    "352": {
+      "version": "1",
+      "updated": "2026-05-02",
+      "packs": [
+        {
+          "file": "D's is Mage.pack"
+        }
+      ]
+    },
+    "267": {
+      "version": "1.0",
+      "updated": "2025-05-10",
+      "packs": [
+        {
+          "file": "Slaanesh.pack"
+        }
+      ],
+      "notes": [
+        "Only the basic Daemonettes so far."
+      ]
+    },
+    "238": {
+      "version": "1.0",
+      "updated": "2024-10-25",
+      "packs": [
+        {
+          "file": "Savage Kholek.pack"
+        }
+      ],
+      "knownIssues": [
+        "Regiments of renown of these units look wrong.",
+        "Not compatible with mods that change the character models of Dragon Ogres."
+      ]
+    },
+    "201": {
+      "version": "1.0.1",
+      "updated": "2024-05-14",
+      "packs": [
+        {
+          "file": "customLandship.pack"
+        }
+      ],
+      "notes": [
+        "Cosmetic only; body by Sulivarace."
+      ]
+    },
+    "396": {
+      "version": "2",
+      "updated": "2026-09-15",
+      "packs": [
+        {
+          "file": "D's is Dechala.pack"
+        }
+      ]
+    },
+    "347": {
+      "version": "6",
+      "updated": "2026-04-21",
+      "packs": [
+        {
+          "file": "D's is Repanse.pack",
+          "exclusiveGroup": "nx347-ver",
+          "note": "Royal cloak"
+        },
+        {
+          "file": "D's is Repanse_tit_armor.pack",
+          "exclusiveGroup": "nx347-ver",
+          "note": "Revealing armour"
+        }
+      ]
+    },
+    "234": {
+      "version": "1",
+      "updated": "2024-10-21",
+      "packs": [
+        {
+          "file": "soboro_miao_ying_exposed.pack"
+        }
+      ]
+    },
+    "245": {
+      "version": "1",
+      "updated": "2025-01-08",
+      "packs": [
+        {
+          "file": "the_aspring_mid_riff.pack"
+        }
+      ],
+      "notes": [
+        "Compatible with Daughters of Chaos."
+      ]
+    },
+    "414": {
+      "version": "1",
+      "updated": "2026-10-19",
+      "packs": [
+        {
+          "file": "Nips_out_for_Khaine.pack"
+        }
+      ],
+      "requires": [
+        {
+          "steamId": "3497444261"
+        }
+      ],
+      "requiresNote": "Needs Druchii's Cosmetics by Nimue (Workshop).",
+      "notes": [
+        "Witch Elves, Hellebron, some Death Hag variants, the Medusa and the Harpies."
+      ]
+    },
+    "247": {
+      "version": "1",
+      "updated": "2025-01-09",
+      "packs": [
+        {
+          "file": "anthro_miao_ying_smuth.pack"
+        }
+      ]
+    },
+    "244": {
+      "version": "1",
+      "updated": "2025-01-03",
+      "packs": [
+        {
+          "file": "anthro_deathclaw.pack"
+        }
+      ]
+    },
+    "241": {
+      "version": "1",
+      "updated": "2024-12-13",
+      "packs": [
+        {
+          "file": "wrathmonger_bare_ass.pack"
+        }
+      ],
+      "loadOrder": "The author: load it above Daughters of Chaos.",
+      "notes": [
+        "Compatible with Daughters of Chaos."
+      ]
+    },
+    "168": {
+      "version": "1.0",
+      "updated": "2024-01-05",
+      "packs": [
+        {
+          "file": "skadra.pack"
+        }
+      ],
+      "notes": [
+        "New model with the Bloodthirster's animations and effects and Skarbrand's statistics and skill tree."
+      ]
+    },
+    "144": {
+      "version": "1",
+      "updated": "2023-09-28",
+      "packs": [
+        {
+          "file": "extra_maio_ying.pack"
+        }
+      ]
+    },
+    "243": {
+      "version": "1",
+      "updated": "2025-01-03",
+      "packs": [
+        {
+          "file": "sigvald_thicc.pack"
+        }
+      ],
+      "notes": [
+        "Compatible with Daughters of Chaos (female Mirror Guard)."
+      ]
+    },
+    "407": {
+      "version": "1",
+      "updated": "2026-09-27",
+      "packs": [
+        {
+          "file": "[LIG]khalida as neferata.pack"
+        }
+      ],
+      "notes": [
+        "Visual reskin only."
+      ]
+    },
+    "402": {
+      "version": "1",
+      "updated": "2026-09-24",
+      "packs": [
+        {
+          "file": "dka_neferata.pack"
+        }
+      ]
+    },
+    "135": {
+      "version": "2.0",
+      "updated": "2023-08-18",
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0_armorA.pack"
+        }
+      ]
+    },
+    "98": {
+      "version": "1.0",
+      "updated": "2023-05-19",
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ],
+      "packs": [
+        {
+          "file": "Lady_Repanse_armorNSFW.pack"
+        }
+      ],
+      "notes": [
+        "The author's Lady Repanse model with revealing armour."
+      ]
     }
   }
 }

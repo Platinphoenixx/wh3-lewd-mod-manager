@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T20:06:21+00:00",
+  "generatedAt": "2026-11-01T20:19:47+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -46,18 +46,28 @@
           "uploaded": "2026-09-27",
           "endorsements": 1,
           "downloads": 104,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-09-27"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]khalida as neferata.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Visual reskin only."
+      ]
     },
     {
       "id": "nx-35",
@@ -309,7 +319,7 @@
             "id": "2927397735",
             "title": "-BR- More Beautiful N'kari 诱惑",
             "updated": "2026-05-01",
-            "subscribers": 29828
+            "subscribers": 29827
           }
         ]
       },
@@ -367,7 +377,7 @@
             "id": "3681602385",
             "title": "2 Extra Building Slots for Major Settlements",
             "updated": "2026-09-27",
-            "subscribers": 2645
+            "subscribers": 2646
           }
         ]
       },
@@ -605,7 +615,7 @@
             "id": "3397481450",
             "title": "[9.x.x] Land Encounters And Points Of Interest - Events, Towers, Taverns, Boons & Curses + IEE + TOW",
             "updated": "2026-10-15",
-            "subscribers": 10081
+            "subscribers": 10084
           }
         ]
       },
@@ -774,7 +784,7 @@
             "title": "[Dark Elves/Slaanesh]Primal Instincts for Lords and Heroes on Cold One Mounts",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2134
+            "subscribers": 2133
           }
         ]
       },
@@ -834,7 +844,7 @@
             "title": "[Dark Elves]+20 Range for Crossbows and Handbows",
             "unlisted": false,
             "updated": "2026-01-08",
-            "subscribers": 1763
+            "subscribers": 1762
           }
         ]
       },
@@ -894,7 +904,7 @@
             "title": "[Dark Elves]Black Ark Corsairs(Repeater Crossbows)",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2040
+            "subscribers": 2039
           }
         ]
       },
@@ -963,7 +973,7 @@
             "id": "3243402413",
             "title": "[DEER24/震旦] 美化合集 独立版（Cathay Reskin Collection Independent version)",
             "updated": "2024-05-10",
-            "subscribers": 4633
+            "subscribers": 4632
           }
         ]
       },
@@ -1023,7 +1033,7 @@
             "id": "3816446693",
             "title": "【EN patch】The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-09",
-            "subscribers": 1309
+            "subscribers": 1308
           }
         ]
       },
@@ -1080,7 +1090,7 @@
             "id": "3647419004",
             "title": "[Endo] Bretonnia",
             "updated": "2026-10-27",
-            "subscribers": 8279
+            "subscribers": 8280
           }
         ],
         "nexus": {
@@ -1158,7 +1168,7 @@
             "id": "3679399151",
             "title": "[Endo] Cathay",
             "updated": "2026-03-22",
-            "subscribers": 7451
+            "subscribers": 7452
           }
         ],
         "nexus": {
@@ -1342,7 +1352,7 @@
             "id": "3616082403",
             "title": "[Endo] Dark Elves",
             "updated": "2026-04-20",
-            "subscribers": 9885
+            "subscribers": 9886
           }
         ],
         "nexus": {
@@ -1421,7 +1431,7 @@
             "id": "3621449095",
             "title": "[Endo] Empire",
             "updated": "2026-10-27",
-            "subscribers": 8692
+            "subscribers": 8693
           }
         ],
         "nexus": {
@@ -1552,7 +1562,7 @@
             "title": "[Endo] Female Slaanesh Devotees",
             "unlisted": false,
             "updated": "2026-03-28",
-            "subscribers": 8221
+            "subscribers": 8222
           }
         ]
       },
@@ -1615,7 +1625,7 @@
             "id": "3710146959",
             "title": "[Endo] Female Ungors",
             "updated": "2026-04-19",
-            "subscribers": 6217
+            "subscribers": 6218
           }
         ]
       },
@@ -1671,7 +1681,7 @@
             "id": "3616234518",
             "title": "[Endo] High Elves",
             "updated": "2026-10-27",
-            "subscribers": 11635
+            "subscribers": 11636
           }
         ],
         "nexus": {
@@ -1737,7 +1747,7 @@
             "id": "3301596500",
             "title": "[Endo] Kislev",
             "updated": "2026-02-12",
-            "subscribers": 9581
+            "subscribers": 9582
           }
         ],
         "nexus": {
@@ -1805,7 +1815,7 @@
             "id": "3706296778",
             "title": "[Endo] Sisters of Twilight - Alternative",
             "updated": "2026-04-13",
-            "subscribers": 7665
+            "subscribers": 7667
           }
         ]
       },
@@ -1861,7 +1871,7 @@
             "id": "3672266382",
             "title": "[Endo] Wood Elves",
             "updated": "2026-04-13",
-            "subscribers": 10603
+            "subscribers": 10604
           }
         ],
         "nexus": {
@@ -2258,7 +2268,7 @@
             "id": "3810043473",
             "title": "[LIG] Reskin - Neferata",
             "updated": "2026-09-29",
-            "subscribers": 5571
+            "subscribers": 5572
           }
         ]
       },
@@ -2371,7 +2381,7 @@
             "title": "[SFO] Double Skill Points",
             "unlisted": false,
             "updated": "2026-07-18",
-            "subscribers": 44850
+            "subscribers": 44848
           }
         ]
       },
@@ -2420,7 +2430,7 @@
             "title": "[Slaanesh]The Cult of Slaanesh - Marked Heroes for All Slaaneshi Factions Submod",
             "unlisted": false,
             "updated": "2026-01-11",
-            "subscribers": 2050
+            "subscribers": 2049
           }
         ]
       },
@@ -2617,7 +2627,7 @@
             "id": "3576835384",
             "title": "[Ui] BUILDER: 3 Row City & Cults Building Slots",
             "updated": "2026-10-10",
-            "subscribers": 25720
+            "subscribers": 25721
           }
         ]
       },
@@ -2673,7 +2683,7 @@
             "id": "3663734212",
             "title": "[Ui] More Buttons For Mechanics - 2 ROWS+",
             "updated": "2026-09-24",
-            "subscribers": 4845
+            "subscribers": 4847
           }
         ]
       },
@@ -2728,7 +2738,7 @@
             "title": "[Ui] Shorter Menu For More Tools - 5 Buttons Per Row",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 29903
+            "subscribers": 29905
           }
         ]
       },
@@ -3308,7 +3318,7 @@
             "title": "AI General 3",
             "unlisted": false,
             "updated": "2026-09-01",
-            "subscribers": 97573
+            "subscribers": 97572
           }
         ]
       },
@@ -4966,16 +4976,30 @@
           "uploaded": "2023-09-06",
           "endorsements": 17,
           "downloads": 587,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2023-09-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0_dress.pack",
+          "from": "download",
+          "exclusiveGroup": "nx137-ver"
+        },
+        {
+          "file": "1_Alarielle_2.0_dressnopanti.pack",
+          "from": "download",
+          "exclusiveGroup": "nx137-ver",
+          "note": "Without underwear"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5006,16 +5030,23 @@
           "uploaded": "2023-08-18",
           "endorsements": 1,
           "downloads": 288,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2023-08-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0_armorA.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5046,16 +5077,31 @@
           "uploaded": "2023-08-18",
           "endorsements": 48,
           "downloads": 1500,
-          "adult": true
+          "adult": true,
+          "version": "2.2",
+          "updated": "2023-12-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1_AlarielleB_2.2.pack",
+          "from": "download",
+          "exclusiveGroup": "nx136-ver",
+          "note": "Version 2.2: revised, more detailed skin"
+        },
+        {
+          "file": "1_Alarielle_2.0_armorB.pack",
+          "from": "download",
+          "exclusiveGroup": "nx136-ver",
+          "note": "Version 2.0"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5086,18 +5132,28 @@
           "uploaded": "2023-08-18",
           "endorsements": 33,
           "downloads": 761,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2023-08-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1_Alarielle_2.0naked.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "New model made in Blender, not a reskin of the game's files."
+      ]
     },
     {
       "id": "dc-alivia-white-lion-dryad-heroes-resurrection-working-packs",
@@ -5128,7 +5184,7 @@
             "id": "2884240930",
             "title": "Custom Legendary Hero: Ymira",
             "updated": "2025-01-15",
-            "subscribers": 2275
+            "subscribers": 2276
           },
           {
             "id": "3820276885",
@@ -5254,7 +5310,7 @@
             "title": "All Diplomatic Options - Vassalize, Liberate, Confederate",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 79377
+            "subscribers": 79376
           }
         ]
       },
@@ -5681,16 +5737,23 @@
           "uploaded": "2025-01-03",
           "endorsements": 4,
           "downloads": 229,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2025-01-03"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "anthro_deathclaw.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5721,16 +5784,23 @@
           "uploaded": "2025-01-09",
           "endorsements": 4,
           "downloads": 142,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2025-01-09"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "anthro_miao_ying_smuth.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5925,7 +5995,7 @@
             "title": "Asrai Unit Pack (Wood Elves)",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 24790
+            "subscribers": 24789
           }
         ]
       },
@@ -6032,7 +6102,7 @@
             "id": "3149445431",
             "title": "Audio Mixer",
             "updated": "2026-10-30",
-            "subscribers": 251476
+            "subscribers": 251479
           }
         ]
       },
@@ -6086,7 +6156,7 @@
             "id": "2859802328",
             "title": "Auto Resolve Quest Battles - Updated to 9.0.X (Lords of the End Times)",
             "updated": "2026-09-25",
-            "subscribers": 308290
+            "subscribers": 308294
           }
         ]
       },
@@ -6851,7 +6921,7 @@
             "id": "2987723311",
             "title": "Bad Legendary Characters - Legendary Lords / Legendary Heroes",
             "updated": "2026-02-20",
-            "subscribers": 33069
+            "subscribers": 33070
           }
         ]
       },
@@ -7156,7 +7226,7 @@
             "title": "Battle Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 116168
+            "subscribers": 116167
           }
         ]
       },
@@ -7384,7 +7454,7 @@
             "title": "Beautiful Neferata",
             "unlisted": false,
             "updated": "2026-09-29",
-            "subscribers": 16910
+            "subscribers": 16912
           }
         ]
       },
@@ -7532,7 +7602,7 @@
             "id": "3209123287",
             "title": "Belakor's Shadow - Corrupted Daemon Princes overhaul (MCT Support)",
             "updated": "2026-07-09",
-            "subscribers": 7383
+            "subscribers": 7382
           }
         ]
       },
@@ -7725,7 +7795,7 @@
             "id": "2790029103",
             "title": "Better Alliance",
             "updated": "2026-10-25",
-            "subscribers": 36554
+            "subscribers": 36557
           }
         ]
       },
@@ -7779,7 +7849,7 @@
             "id": "2891886534",
             "title": "Better Alliance - Foreign Agents",
             "updated": "2026-10-25",
-            "subscribers": 10297
+            "subscribers": 10298
           }
         ]
       },
@@ -7829,7 +7899,7 @@
             "title": "Better Camera Mod",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 601273
+            "subscribers": 601275
           }
         ]
       },
@@ -8030,18 +8100,28 @@
           "uploaded": "2025-06-19",
           "endorsements": 35,
           "downloads": 1800,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-06-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Skimpinettes.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Reskins Daemonettes, Alluresses, cultists and heralds."
+      ]
     },
     {
       "id": "steam-3509062568",
@@ -8104,7 +8184,7 @@
             "id": "2870464661",
             "title": "Building Slots Extended",
             "updated": "2024-06-25",
-            "subscribers": 41576
+            "subscribers": 41575
           }
         ]
       },
@@ -8242,7 +8322,7 @@
             "id": "3602151164",
             "title": "Building Slots Extended - Compilation",
             "updated": "2026-09-25",
-            "subscribers": 19389
+            "subscribers": 19393
           }
         ]
       },
@@ -8324,16 +8404,23 @@
           "uploaded": "2023-09-28",
           "endorsements": 3,
           "downloads": 85,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2023-09-28"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "extra_maio_ying.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -8364,10 +8451,17 @@
           "uploaded": "2023-09-28",
           "endorsements": 14,
           "downloads": 385,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2023-09-28"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "extra_maio_ying_SOBORO.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -8383,9 +8477,9 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -8417,7 +8511,7 @@
             "id": "3632214035",
             "title": "Calm's N'Kari Reskin",
             "updated": "2026-09-27",
-            "subscribers": 17305
+            "subscribers": 17303
           }
         ]
       },
@@ -8547,7 +8641,7 @@
             "title": "Campaign Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 118362
+            "subscribers": 118360
           }
         ]
       },
@@ -8791,7 +8885,7 @@
             "id": "2927296206",
             "title": "Cataph's Southern Realms (TEB)",
             "updated": "2026-10-12",
-            "subscribers": 90256
+            "subscribers": 90258
           }
         ]
       },
@@ -9336,16 +9430,31 @@
           "uploaded": "2025-01-20",
           "endorsements": 23,
           "downloads": 1300,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-01-20"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cathay_sulivar_style_v1.pack",
+          "from": "download",
+          "exclusiveGroup": "nx249-ver",
+          "note": "Classic, full armour"
+        },
+        {
+          "file": "cathay_sulivar_style_v1_nsfw.pack",
+          "from": "download",
+          "exclusiveGroup": "nx249-ver",
+          "note": "More revealing armour"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -9569,7 +9678,7 @@
             "id": "2845365747",
             "title": "Chaosbulls - Updated and fixed !",
             "updated": "2026-09-25",
-            "subscribers": 10395
+            "subscribers": 10394
           }
         ]
       },
@@ -11197,7 +11306,7 @@
             "title": "Corrupted Landmarks",
             "role": "main",
             "updated": "2026-10-21",
-            "subscribers": 41828
+            "subscribers": 41829
           }
         ],
         "discord": [
@@ -11945,7 +12054,7 @@
             "id": "2831594644",
             "title": "Cultist Expansion: Brass Sisters of Khorne",
             "updated": "2026-09-24",
-            "subscribers": 16152
+            "subscribers": 16153
           }
         ]
       },
@@ -12085,7 +12194,7 @@
             "id": "2821600897",
             "title": "Cultist of Pleasure Reskin",
             "updated": "2026-09-24",
-            "subscribers": 81436
+            "subscribers": 81435
           }
         ]
       },
@@ -12158,18 +12267,28 @@
           "uploaded": "2024-05-13",
           "endorsements": 9,
           "downloads": 399,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2024-05-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "customLandship.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Cosmetic only; body by Sulivarace."
+      ]
     },
     {
       "id": "steam-2895227844",
@@ -12192,7 +12311,7 @@
             "id": "2895227844",
             "title": "[On Hiatus] Custom Matched Combat Animations",
             "updated": "2024-03-27",
-            "subscribers": 54364
+            "subscribers": 54361
           }
         ]
       },
@@ -12338,16 +12457,30 @@
           "uploaded": "2026-04-09",
           "endorsements": 25,
           "downloads": 1300,
-          "adult": true
+          "adult": true,
+          "version": "6",
+          "updated": "2026-05-04"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Aranessa.pack",
+          "from": "download",
+          "exclusiveGroup": "nx342-ver"
+        },
+        {
+          "file": "D's is Aranessa spike ver.pack",
+          "from": "download",
+          "exclusiveGroup": "nx342-ver",
+          "note": "Spike version"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12377,16 +12510,23 @@
           "uploaded": "2026-05-20",
           "endorsements": 13,
           "downloads": 633,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-05-21"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Death Hag.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12417,16 +12557,23 @@
           "uploaded": "2026-09-10",
           "endorsements": 7,
           "downloads": 461,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-09-15"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Dechala.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12456,16 +12603,23 @@
           "uploaded": "2026-05-12",
           "endorsements": 11,
           "downloads": 663,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-05-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Glade Captain.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12496,16 +12650,23 @@
           "uploaded": "2026-04-28",
           "endorsements": 13,
           "downloads": 830,
-          "adult": true
+          "adult": true,
+          "version": "5",
+          "updated": "2026-10-03"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Isabella.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12535,16 +12696,23 @@
           "uploaded": "2026-05-02",
           "endorsements": 11,
           "downloads": 601,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-05-02"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Mage.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12575,16 +12743,23 @@
           "uploaded": "2026-09-09",
           "endorsements": 17,
           "downloads": 717,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-09-15"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Masque.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12615,16 +12790,23 @@
           "uploaded": "2026-09-16",
           "endorsements": 19,
           "downloads": 772,
-          "adult": true
+          "adult": true,
+          "version": "3",
+          "updated": "2026-09-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is n'Kari.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12655,16 +12837,31 @@
           "uploaded": "2026-04-20",
           "endorsements": 6,
           "downloads": 320,
-          "adult": false
+          "adult": false,
+          "version": "6",
+          "updated": "2026-04-21"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Repanse.pack",
+          "from": "download",
+          "exclusiveGroup": "nx347-ver",
+          "note": "Royal cloak"
+        },
+        {
+          "file": "D's is Repanse_tit_armor.pack",
+          "from": "download",
+          "exclusiveGroup": "nx347-ver",
+          "note": "Revealing armour"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12695,16 +12892,23 @@
           "uploaded": "2026-04-18",
           "endorsements": 34,
           "downloads": 1600,
-          "adult": true
+          "adult": true,
+          "version": "5",
+          "updated": "2026-05-05"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "D's is Sister of Twilight.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -12734,18 +12938,28 @@
           "uploaded": "2025-05-10",
           "endorsements": 11,
           "downloads": 233,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-05-10"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Slaanesh.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Only the basic Daemonettes so far."
+      ]
     },
     {
       "id": "nx-40",
@@ -13814,7 +14028,7 @@
             "id": "2978779730",
             "title": "DeepWar AI",
             "updated": "2026-10-30",
-            "subscribers": 24980
+            "subscribers": 24981
           }
         ]
       },
@@ -13870,16 +14084,23 @@
           "uploaded": "2026-09-24",
           "endorsements": 1,
           "downloads": 43,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2026-09-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dka_neferata.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -13903,7 +14124,7 @@
             "title": "Disable startup splash screens / intros",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 135658
+            "subscribers": 135659
           }
         ]
       },
@@ -14312,6 +14533,50 @@
       ]
     },
     {
+      "id": "steam-3497444261",
+      "name": "Druchii Cosmetics (Updated for 9.0.4)",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "graphical"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3497444261",
+            "title": "Druchii Cosmetics (Updated for 9.0.4)",
+            "unlisted": false,
+            "updated": "2026-10-19",
+            "subscribers": 4783
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198042820864/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15085788639986239298/98B52674A65EC234D9E2500779FFA6D1A50A72FA/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "dc-dust-s-corrupted-heroes-dch",
       "name": "Dust's Corrupted Heroes (DCH)",
       "authors": [
@@ -14344,7 +14609,7 @@
             "id": "2897366143",
             "title": "Legendary High Elven Characters [LHEC]",
             "updated": "2026-10-12",
-            "subscribers": 35198
+            "subscribers": 35199
           }
         ]
       },
@@ -15113,7 +15378,7 @@
             "id": "3311294751",
             "title": "Lazy's Elspeth The Graveyard Rose",
             "updated": "2025-12-30",
-            "subscribers": 13042
+            "subscribers": 13043
           }
         ]
       },
@@ -15171,18 +15436,65 @@
           "uploaded": "2024-05-16",
           "endorsements": 47,
           "downloads": 4400,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-05-16"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "01_elspet_tattoo.pack",
+          "from": "download",
+          "note": "Main file"
+        },
+        {
+          "file": "02_elspeth_blackhair.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Black hair"
+        },
+        {
+          "file": "03_cloth_set1.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Full armour"
+        },
+        {
+          "file": "03_shortcloth_set1.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Short outfit, full"
+        },
+        {
+          "file": "03_shortcloth_set2.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx203-cloth",
+          "note": "Short outfit, revealing"
+        },
+        {
+          "file": "04_elspeth_weapon.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Scythe"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Order the parts by the number in front of each file."
+      },
+      "knownIssues": [
+        "The original model's animations cause a few flaws the author still wants to fix."
+      ]
     },
     {
       "id": "ll-28110",
@@ -15381,7 +15693,7 @@
             "id": "3348616922",
             "title": "Embedded editor for Tabletop Caps",
             "updated": "2024-10-15",
-            "subscribers": 4564
+            "subscribers": 4563
           }
         ]
       },
@@ -15444,7 +15756,7 @@
             "id": "3816938215",
             "title": "Empress Caroline Franz (Amber) – female Karl Franz",
             "updated": "2026-10-16",
-            "subscribers": 1758
+            "subscribers": 1759
           }
         ]
       },
@@ -16348,7 +16660,7 @@
             "id": "3349407231",
             "title": "Expanded Building Overhaul",
             "updated": "2026-10-02",
-            "subscribers": 14611
+            "subscribers": 14612
           }
         ]
       },
@@ -16405,7 +16717,7 @@
             "id": "3265184953",
             "title": "Expanded Building: Instant Building",
             "updated": "2026-09-26",
-            "subscribers": 6301
+            "subscribers": 6302
           }
         ]
       },
@@ -16512,16 +16824,23 @@
           "uploaded": "2025-07-07",
           "endorsements": 22,
           "downloads": 808,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-07-07"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Corrupted_elves.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -16552,16 +16871,30 @@
           "uploaded": "2026-04-06",
           "endorsements": 35,
           "downloads": 1800,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-04-20"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Fay Edit.pack",
+          "from": "download",
+          "exclusiveGroup": "nx340-ver"
+        },
+        {
+          "file": "Fay Edit_sword&grail.pack",
+          "from": "download",
+          "exclusiveGroup": "nx340-ver",
+          "note": "Sword & Grail version"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -16694,7 +17027,7 @@
             "title": "Female Daemonettes",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 42894
+            "subscribers": 42893
           }
         ]
       },
@@ -16811,7 +17144,7 @@
             "id": "3223598729",
             "title": "Female Malus Darkblade",
             "updated": "2026-02-27",
-            "subscribers": 2108
+            "subscribers": 2109
           }
         ],
         "nexus": {
@@ -16875,18 +17208,36 @@
           "uploaded": "2023-05-12",
           "endorsements": 24,
           "downloads": 876,
-          "adult": true
+          "adult": true,
+          "version": "1.02",
+          "updated": "2023-05-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Spcat_marauder_sister_brother_data.pack",
+          "from": "download"
+        },
+        {
+          "file": "@Spcat_marauder_sister_brother_m.pack",
+          "from": "download"
+        },
+        {
+          "file": "@Spcat_marauder_sister_brother_v.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Battle cries mix male and female voices."
+      ]
     },
     {
       "id": "nx-152",
@@ -16915,18 +17266,31 @@
           "uploaded": "2023-10-18",
           "endorsements": 46,
           "downloads": 1200,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-10-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!Ranger WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "nx-167",
@@ -16955,18 +17319,27 @@
           "uploaded": "2023-12-03",
           "endorsements": 44,
           "downloads": 1300,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-12-03"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Nexus shows no file list for this download; the pack name is unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "ll-26542",
@@ -17073,18 +17446,27 @@
           "uploaded": "2023-12-03",
           "endorsements": 42,
           "downloads": 1100,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-12-03"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Nexus shows no file list for this download; the pack name is unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "nx-153",
@@ -17513,7 +17895,7 @@
             "id": "3279560220",
             "title": "Force AI Agent Embedding 9.x MOAR' FECTIVE' NOW",
             "updated": "2026-10-17",
-            "subscribers": 12470
+            "subscribers": 12471
           }
         ]
       },
@@ -17775,7 +18157,7 @@
             "id": "2822827945",
             "title": "Formations 3",
             "updated": "2023-11-24",
-            "subscribers": 7863
+            "subscribers": 7864
           }
         ]
       },
@@ -17930,7 +18312,7 @@
             "title": "Fudging Vassals 9.0.4",
             "unlisted": false,
             "updated": "2026-10-26",
-            "subscribers": 57454
+            "subscribers": 57453
           }
         ]
       },
@@ -18277,7 +18659,7 @@
             "id": "3812278307",
             "title": "Global Pcall Listener Fix 9.0.x",
             "updated": "2026-10-03",
-            "subscribers": 4513
+            "subscribers": 4514
           }
         ]
       },
@@ -18395,7 +18777,7 @@
             "id": "2890499031",
             "title": "Godslayer Overhaul by Mortrau",
             "updated": "2026-10-11",
-            "subscribers": 40167
+            "subscribers": 40166
           }
         ]
       },
@@ -18759,17 +19141,61 @@
           "uploaded": "2024-05-01",
           "endorsements": 20,
           "downloads": 2200,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-05-01"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "01_Hellebron_dirtyskin.pack",
+          "from": "download",
+          "note": "Main file: skin"
+        },
+        {
+          "file": "02_hellebron_pink_hair.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Pink hair (beta)"
+        },
+        {
+          "file": "03_hellebron_sword.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Curved sword"
+        },
+        {
+          "file": "04_hellebron_armor_set1.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 1"
+        },
+        {
+          "file": "04_hellebron_armor_set2.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 2"
+        },
+        {
+          "file": "04_hellebron_armor_set3.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx197-armor",
+          "note": "Armour set 3"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
+      },
+      "loadOrder": {
+        "note": "Order the parts by the number in front of each file."
       }
     },
     {
@@ -18799,7 +19225,7 @@
             "id": "3238848431",
             "title": "Helper UI",
             "updated": "2026-10-10",
-            "subscribers": 79154
+            "subscribers": 79156
           }
         ]
       },
@@ -18878,7 +19304,7 @@
             "id": "3239114391",
             "title": "Helper UI 汉化",
             "updated": "2026-10-29",
-            "subscribers": 53290
+            "subscribers": 53292
           }
         ]
       },
@@ -19173,7 +19599,7 @@
             "id": "2931087074",
             "title": "Heroes of Legend: Lords of Time Update",
             "updated": "2026-10-24",
-            "subscribers": 58042
+            "subscribers": 58044
           }
         ]
       },
@@ -19425,7 +19851,7 @@
             "id": "3258529495",
             "title": "High Elves Expanded Hero Skill Trees",
             "updated": "2026-10-22",
-            "subscribers": 9514
+            "subscribers": 9513
           }
         ]
       },
@@ -19952,7 +20378,7 @@
             "id": "3810954587",
             "title": "Seu Imrik x Miao Ying",
             "updated": "2026-09-30",
-            "subscribers": 527
+            "subscribers": 528
           }
         ]
       },
@@ -20317,7 +20743,7 @@
             "id": "3624226937",
             "title": "JS Slaanesh Artillery 9.0 - Daemonic Firepower",
             "updated": "2026-10-10",
-            "subscribers": 2987
+            "subscribers": 2988
           }
         ]
       },
@@ -20373,7 +20799,7 @@
             "id": "3082390369",
             "title": "Just Good Babysitter",
             "updated": "2026-09-26",
-            "subscribers": 89136
+            "subscribers": 89135
           }
         ]
       },
@@ -20687,7 +21113,7 @@
             "id": "2806964197",
             "title": "Lazy's Katarin The Ice Queen Remove Crown",
             "updated": "2025-03-26",
-            "subscribers": 24160
+            "subscribers": 24159
           }
         ]
       },
@@ -21235,18 +21661,28 @@
           "uploaded": "2025-05-15",
           "endorsements": 27,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-05-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "lady_kos.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Body model from LazyIcarus' Katarin; original voice and portrait."
+      ]
     },
     {
       "id": "nx-266",
@@ -21274,18 +21710,34 @@
           "uploaded": "2025-04-30",
           "endorsements": 36,
           "downloads": 1500,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-04-30"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "lady_yuan.pack",
+          "from": "download",
+          "note": "Yuan Bo"
+        },
+        {
+          "file": "lady_zhao.pack",
+          "from": "download",
+          "note": "Zhao Ming"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Body model from LIG's Miao Ying; original voices and portraits."
+      ]
     },
     {
       "id": "nx-97",
@@ -21314,18 +21766,34 @@
           "uploaded": "2023-05-19",
           "endorsements": 36,
           "downloads": 1100,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-05-19"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lady_Repanse.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "New model with a relatively high polygon count."
+      ],
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ]
     },
     {
       "id": "nx-99",
@@ -21354,18 +21822,31 @@
           "uploaded": "2023-05-19",
           "endorsements": 36,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-05-19"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lady_Repanse_Naked.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ]
     },
     {
       "id": "nx-98",
@@ -21394,18 +21875,34 @@
           "uploaded": "2023-05-19",
           "endorsements": 29,
           "downloads": 946,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-05-19"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lady_Repanse_armorNSFW.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/Wikabou"
+        }
+      ],
+      "installNotes": [
+        "The author's Lady Repanse model with revealing armour."
+      ]
     },
     {
       "id": "steam-2833501876",
@@ -21561,7 +22058,7 @@
             "id": "3079915520",
             "title": "Landmarks of Eternity-Immortal Empire Expanded edition (28 new landmarks)",
             "updated": "2026-09-27",
-            "subscribers": 71961
+            "subscribers": 71963
           }
         ]
       },
@@ -21930,7 +22427,7 @@
             "title": "Lazy's Corruption Framework",
             "role": "framework",
             "updated": "2026-10-05",
-            "subscribers": 44857
+            "subscribers": 44858
           },
           {
             "id": "3471237645",
@@ -23355,16 +23852,23 @@
           "uploaded": "2026-04-14",
           "endorsements": 21,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-04-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[lazy]elspeth.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -23485,7 +23989,7 @@
             "id": "2826930183",
             "title": "Legendary Characters",
             "updated": "2025-03-26",
-            "subscribers": 99821
+            "subscribers": 99820
           }
         ]
       },
@@ -23545,7 +24049,7 @@
             "id": "3305404052",
             "title": "Legendary Characters - 9.0",
             "updated": "2026-10-19",
-            "subscribers": 62517
+            "subscribers": 62523
           }
         ]
       },
@@ -23639,7 +24143,7 @@
             "title": "Legendary Lord Defeat Traits for Reinforcing Generals",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 40505
+            "subscribers": 40506
           }
         ]
       },
@@ -24075,16 +24579,23 @@
           "uploaded": "2026-04-06",
           "endorsements": 22,
           "downloads": 1200,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-04-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Alarielle(19).pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24115,16 +24626,23 @@
           "uploaded": "2026-04-06",
           "endorsements": 16,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-04-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Hellebron(19).pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24155,16 +24673,23 @@
           "uploaded": "2026-04-06",
           "endorsements": 24,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-04-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]katarin(Lazy ver).pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24195,16 +24720,23 @@
           "uploaded": "2026-04-06",
           "endorsements": 20,
           "downloads": 1200,
-          "adult": true
+          "adult": true,
+          "version": "3",
+          "updated": "2026-04-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Khalida-makeup-EDIT.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24235,16 +24767,24 @@
           "uploaded": "2026-04-06",
           "endorsements": 13,
           "downloads": 945,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-05-22"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Miaoying(19).pack",
+          "from": "download",
+          "note": "Both downloads (edit and 'Origin' version) use this file name; pick one"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24275,16 +24815,23 @@
           "uploaded": "2026-04-06",
           "endorsements": 12,
           "downloads": 693,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-04-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Morathi(19).pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -24829,7 +25376,7 @@
             "title": "Lord Hero Swap - 9.0 Fix (Unofficial)/领主和英雄切换9.0 修复版（原版失效修复）",
             "unlisted": false,
             "updated": "2026-11-01",
-            "subscribers": 2186
+            "subscribers": 2187
           }
         ]
       },
@@ -24998,7 +25545,7 @@
             "id": "3086916833",
             "title": "Lost Calm: Jurassic Normal SFO",
             "updated": "2026-06-05",
-            "subscribers": 8127
+            "subscribers": 8126
           }
         ]
       },
@@ -25488,7 +26035,7 @@
             "title": "Lyra the Lioness: Legendary Hero",
             "unlisted": false,
             "updated": "2025-01-03",
-            "subscribers": 9537
+            "subscribers": 9538
           }
         ]
       },
@@ -25551,18 +26098,76 @@
           "uploaded": "2024-04-08",
           "endorsements": 43,
           "downloads": 5100,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2024-04-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "01_Malikav2.pack",
+          "from": "download",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Skin with tattoo"
+        },
+        {
+          "file": "01_Malika_drow.pack",
+          "from": "download",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Drow style"
+        },
+        {
+          "file": "01_Malika_drow_wet.pack",
+          "from": "download",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Drow style, wet"
+        },
+        {
+          "file": "01_Malika_porcelain.pack",
+          "from": "download",
+          "exclusiveGroup": "nx196-skin",
+          "note": "Porcelain"
+        },
+        {
+          "file": "02_Malika_blackhair.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Black hair"
+        },
+        {
+          "file": "03_light_armor_type2.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Light armour, type 2"
+        },
+        {
+          "file": "04_Malika_sword.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Sword"
+        },
+        {
+          "file": "05_Malika_shield.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Shield"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "The 'light_armor_type1' download lists only 2_Morathi_hair_black.pack in its file preview.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Order the parts by the number in front of each file."
+      },
+      "installNotes": [
+        "Built from parts: one skin, then hair, armour and weapons as wanted. Delete files of older versions."
+      ]
     },
     {
       "id": "steam-3210832217",
@@ -25633,7 +26238,7 @@
             "title": "Martial and Murderous Prowess for All High Elves and Dark Elves Heroic Mounts",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2093
+            "subscribers": 2092
           }
         ]
       },
@@ -25763,7 +26368,7 @@
             "id": "2896264280",
             "title": "Matched Combat + Reload Animations Submod",
             "updated": "2024-03-29",
-            "subscribers": 26813
+            "subscribers": 26811
           }
         ]
       },
@@ -25997,18 +26602,34 @@
           "uploaded": "2022-10-02",
           "endorsements": 42,
           "downloads": 1000,
-          "adult": true
+          "adult": true,
+          "version": "1.2",
+          "updated": "2023-09-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "li_miaoying_fishnet_.pack",
+          "from": "download",
+          "note": "Fishnet look"
+        },
+        {
+          "file": "li_miaoying_scale_.pack",
+          "from": "download",
+          "note": "Scale look"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Re-upload of LazyIcarus' corrupted Miao Ying, stages 1 and 2, after it was removed from the Workshop."
+      ]
     },
     {
       "id": "nx-206",
@@ -26037,16 +26658,23 @@
           "uploaded": "2024-05-30",
           "endorsements": 44,
           "downloads": 1400,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2024-05-31"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@!!!!bigyx_miria.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -26077,16 +26705,19 @@
           "uploaded": "2024-12-22",
           "endorsements": 37,
           "downloads": 1700,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2025-01-04"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Six independent versions (naked, T1, T2, T2 without under-suit, T3, T3 without underwear); Nexus shows no file lists, so the pack names are unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -26805,7 +27436,7 @@
             "title": "[Dark Elves][Wood Elves]Missing Lore of Magic(8th Ed.) & Greater Arcane Conduit for Lords",
             "unlisted": false,
             "updated": "2026-09-30",
-            "subscribers": 1754
+            "subscribers": 1753
           }
         ]
       },
@@ -26920,7 +27551,7 @@
             "id": "2802810577",
             "title": "Mixu's Legendary Lords",
             "updated": "2026-10-29",
-            "subscribers": 251848
+            "subscribers": 251849
           }
         ]
       },
@@ -27038,7 +27669,7 @@
             "id": "2867839569",
             "title": "Lazy's Morathi Ascension Stage 2 (6.3)",
             "updated": "2025-09-05",
-            "subscribers": 34333
+            "subscribers": 34332
           },
           {
             "id": "3480317584",
@@ -27238,16 +27869,29 @@
           "uploaded": "2023-09-17",
           "endorsements": 26,
           "downloads": 688,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-09-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "li_morathi_third.pack",
+          "from": "download",
+          "note": "Stage 3"
+        },
+        {
+          "file": "li_morathi_fourth.pack",
+          "from": "download",
+          "note": "Stage 4"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -27899,7 +28543,7 @@
             "id": "2798690094",
             "title": "More Animation",
             "updated": "2026-10-02",
-            "subscribers": 26760
+            "subscribers": 26758
           }
         ]
       },
@@ -28025,7 +28669,7 @@
             "title": "More High Angle Fire (includes Stop Idling and True Sight features)",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 45784
+            "subscribers": 45783
           }
         ]
       },
@@ -28099,7 +28743,7 @@
             "id": "2888171970",
             "title": "Variant Selector",
             "updated": "2026-09-24",
-            "subscribers": 233524
+            "subscribers": 233529
           }
         ],
         "discord": [
@@ -28185,7 +28829,7 @@
             "id": "2856024846",
             "title": "More Warband Upgrades for Warriors of Chaos",
             "updated": "2026-10-23",
-            "subscribers": 19951
+            "subscribers": 19948
           }
         ]
       },
@@ -28608,7 +29252,7 @@
             "id": "3830112095",
             "title": "Nagash The Dark Queen",
             "updated": "2026-10-30",
-            "subscribers": 887
+            "subscribers": 889
           }
         ]
       },
@@ -28779,7 +29423,7 @@
             "id": "3810890110",
             "title": "Neferata - from Warhammer Fantasy",
             "updated": "2026-09-30",
-            "subscribers": 805
+            "subscribers": 806
           }
         ],
         "nexus": {
@@ -28980,7 +29624,7 @@
             "id": "3810498134",
             "title": "New Lahmian Lords and Neferata's Handmaidens",
             "updated": "2026-10-03",
-            "subscribers": 10540
+            "subscribers": 10541
           }
         ]
       },
@@ -29035,18 +29679,40 @@
           "uploaded": "2026-10-19",
           "endorsements": 4,
           "downloads": 88,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-10-19"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "Nips_out_for_Khaine.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3497444261"
+          },
+          "note": "Needs Druchii's Cosmetics by Nimue (Workshop).",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/414"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Witch Elves, Hellebron, some Death Hag variants, the Medusa and the Harpies."
+      ]
     },
     {
       "id": "nx-154",
@@ -30567,7 +31233,7 @@
             "title": "Radious Total War Mod - Part 1",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214825
+            "subscribers": 214827
           }
         ]
       },
@@ -30621,7 +31287,7 @@
             "title": "Radious Total War Mod - Part 2",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214553
+            "subscribers": 214554
           }
         ]
       },
@@ -32927,7 +33593,7 @@
             "id": "2826919821",
             "title": "Regiments of Renown - All Factions by Pwner1",
             "updated": "2026-09-27",
-            "subscribers": 8293
+            "subscribers": 8294
           }
         ]
       },
@@ -33031,7 +33697,7 @@
             "title": "Remove characters traits limit",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 182918
+            "subscribers": 182917
           }
         ]
       },
@@ -33381,7 +34047,7 @@
             "id": "2868228422",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon: Jade Pirate Submod",
             "updated": "2026-09-27",
-            "subscribers": 7853
+            "subscribers": 7854
           }
         ]
       },
@@ -33495,7 +34161,7 @@
             "id": "2889689320",
             "title": "精英战帮升级（全派系）/RoR Warband Upgrade（All factions）Ver 9.0",
             "updated": "2026-11-01",
-            "subscribers": 19673
+            "subscribers": 19674
           }
         ]
       },
@@ -33691,7 +34357,7 @@
             "title": "Run 'Em Down - Units Actually Damage Routing Units",
             "unlisted": false,
             "updated": "2025-11-16",
-            "subscribers": 41304
+            "subscribers": 41305
           }
         ]
       },
@@ -34186,7 +34852,7 @@
             "title": "Sarvente's Xiao (Continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5273
+            "subscribers": 5274
           }
         ]
       },
@@ -34234,7 +34900,7 @@
             "title": "Sarvente's Enhi (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 5014
+            "subscribers": 5015
           }
         ]
       },
@@ -34433,18 +35099,29 @@
           "uploaded": "2024-10-25",
           "endorsements": 10,
           "downloads": 494,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-10-25"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Savage Kholek.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Regiments of renown of these units look wrong.",
+        "Not compatible with mods that change the character models of Dragon Ogres."
+      ]
     },
     {
       "id": "nx-237",
@@ -34472,18 +35149,29 @@
           "uploaded": "2024-10-25",
           "endorsements": 20,
           "downloads": 745,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-10-25"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Savage Skarbrand.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Regiments of renown of these units look wrong.",
+        "Not compatible with mods that change the character models of Khorne daemons."
+      ]
     },
     {
       "id": "ll-24257",
@@ -34639,7 +35327,7 @@
             "id": "3030996759",
             "title": "SCM Marienburg (9.0)",
             "updated": "2026-10-22",
-            "subscribers": 51068
+            "subscribers": 51069
           }
         ]
       },
@@ -34702,7 +35390,7 @@
             "id": "3318719948",
             "title": "SCM Skaven Clans - 9.0",
             "updated": "2026-10-18",
-            "subscribers": 32196
+            "subscribers": 32194
           }
         ]
       },
@@ -34843,7 +35531,7 @@
             "id": "3236566964",
             "title": "SCM: Tribes of the North - 9.0",
             "updated": "2026-10-30",
-            "subscribers": 54551
+            "subscribers": 54553
           }
         ]
       },
@@ -36997,7 +37685,7 @@
             "id": "2846183349",
             "title": "Siege AI & Mechanics Overhaul",
             "updated": "2026-10-27",
-            "subscribers": 19948
+            "subscribers": 19949
           }
         ]
       },
@@ -37264,18 +37952,28 @@
           "uploaded": "2024-10-23",
           "endorsements": 14,
           "downloads": 419,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2024-10-23"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@SistersEnvyCard.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Portrait, porthole and unit card only."
+      ]
     },
     {
       "id": "nx-168",
@@ -37303,18 +38001,28 @@
           "uploaded": "2024-01-05",
           "endorsements": 3,
           "downloads": 201,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-01-05"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "skadra.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "New model with the Bloodthirster's animations and effects and Skarbrand's statistics and skill tree."
+      ]
     },
     {
       "id": "dc-skaven-reskin-series-the-dreaded-thirteenth-spell-clan-kisle",
@@ -37490,7 +38198,7 @@
             "id": "3810029219",
             "title": "Skeletor Inspired Nagash VO",
             "updated": "2026-10-07",
-            "subscribers": 11270
+            "subscribers": 11272
           }
         ]
       },
@@ -37604,7 +38312,7 @@
             "title": "Slaanesh assaults the great bastion",
             "unlisted": false,
             "updated": "2025-04-22",
-            "subscribers": 12242
+            "subscribers": 12243
           }
         ]
       },
@@ -37659,7 +38367,7 @@
             "title": "Slaanesh Beast Expand",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 6813
+            "subscribers": 6814
           }
         ]
       },
@@ -38494,7 +39202,7 @@
             "title": "色孽远征— 派系 Mod | Slaanesh Expedition",
             "unlisted": false,
             "updated": "2026-10-21",
-            "subscribers": 3013
+            "subscribers": 3014
           }
         ]
       },
@@ -38557,7 +39265,7 @@
             "id": "3802335820",
             "title": "Slaanesh Expedition - English Translation | 英文补丁",
             "updated": "2026-10-21",
-            "subscribers": 1741
+            "subscribers": 1742
           }
         ]
       },
@@ -38780,7 +39488,7 @@
             "id": "3729412021",
             "title": "Slaanesh Zealots for Deachala",
             "updated": "2026-05-20",
-            "subscribers": 810
+            "subscribers": 811
           }
         ],
         "discord": [
@@ -39014,18 +39722,28 @@
           "uploaded": "2023-06-08",
           "endorsements": 12,
           "downloads": 391,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-06-08"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Smuthammer_Anthro_miao.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Replaces Miao Ying's human form; 4K textures. Original model by petruz."
+      ]
     },
     {
       "id": "nx-102",
@@ -39054,18 +39772,35 @@
           "uploaded": "2023-06-07",
           "endorsements": 47,
           "downloads": 1100,
-          "adult": true
+          "adult": true,
+          "version": "1.01",
+          "updated": "2023-06-07"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "ivan_sexy_dragoness_miao.pack",
+          "from": "download",
+          "exclusiveGroup": "nx102-ver"
+        },
+        {
+          "file": "ivan_sexy_dragoness_miao_crotchbooba.pack",
+          "from": "download",
+          "exclusiveGroup": "nx102-ver",
+          "note": "Variant"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Two versions; the author: use only one."
+      ]
     },
     {
       "id": "nx-234",
@@ -39094,10 +39829,17 @@
           "uploaded": "2024-10-22",
           "endorsements": 6,
           "downloads": 193,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2024-10-21"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "soboro_miao_ying_exposed.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -39113,9 +39855,9 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -39146,10 +39888,17 @@
           "uploaded": "2024-10-22",
           "endorsements": 33,
           "downloads": 966,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2024-10-22"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "soboro_miao_ying_more_exposed.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -39165,9 +39914,9 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -40738,7 +41487,7 @@
             "id": "3386989556",
             "title": "Tabletop Caps: Reborn",
             "updated": "2026-09-26",
-            "subscribers": 34301
+            "subscribers": 34303
           }
         ]
       },
@@ -41154,18 +41903,28 @@
           "uploaded": "2025-01-08",
           "endorsements": 5,
           "downloads": 127,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2025-01-08"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "the_aspring_mid_riff.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Compatible with Daughters of Chaos."
+      ]
     },
     {
       "id": "steam-3816385668",
@@ -41197,7 +41956,7 @@
             "id": "3816385668",
             "title": "The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-19",
-            "subscribers": 3809
+            "subscribers": 3808
           }
         ]
       },
@@ -41622,18 +42381,28 @@
           "uploaded": "2025-01-03",
           "endorsements": 2,
           "downloads": 102,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2025-01-03"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "sigvald_thicc.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Compatible with Daughters of Chaos (female Mirror Guard)."
+      ]
     },
     {
       "id": "nx-241",
@@ -41661,18 +42430,31 @@
           "uploaded": "2024-12-13",
           "endorsements": 3,
           "downloads": 85,
-          "adult": false
+          "adult": false,
+          "version": "1",
+          "updated": "2024-12-13"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "wrathmonger_bare_ass.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: load it above Daughters of Chaos."
+      },
+      "installNotes": [
+        "Compatible with Daughters of Chaos."
+      ]
     },
     {
       "id": "ll-49991",
@@ -41860,18 +42642,24 @@
           "uploaded": "2023-06-27",
           "endorsements": 118,
           "downloads": 4600,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2023-06-30"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Nexus shows no file list for this download; the pack name is unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Some clipping and an overly glossy look (the author is still working on it)."
+      ]
     },
     {
       "id": "ll-28614",
@@ -42115,7 +42903,7 @@
             "title": "Trade Any Settlement",
             "unlisted": false,
             "updated": "2026-10-17",
-            "subscribers": 57765
+            "subscribers": 57766
           }
         ]
       },
@@ -42226,7 +43014,7 @@
             "id": "3601814378",
             "title": "Treasures of the Endless Deeps",
             "updated": "2026-09-25",
-            "subscribers": 23329
+            "subscribers": 23330
           }
         ]
       },
@@ -42344,7 +43132,7 @@
             "id": "2853254034",
             "title": "TW Millennium: Modern Warfare",
             "updated": "2026-10-07",
-            "subscribers": 95913
+            "subscribers": 95911
           }
         ]
       },
@@ -42427,7 +43215,7 @@
             "id": "3244295546",
             "title": "UI Slider",
             "updated": "2025-09-03",
-            "subscribers": 65541
+            "subscribers": 65540
           }
         ]
       },
@@ -42484,7 +43272,7 @@
             "id": "3810929399",
             "title": "Ulrika as a Lahmian Vampire",
             "updated": "2026-10-01",
-            "subscribers": 2442
+            "subscribers": 2443
           }
         ]
       },
@@ -42968,16 +43756,23 @@
           "uploaded": "2026-04-04",
           "endorsements": 16,
           "downloads": 847,
-          "adult": true
+          "adult": true,
+          "version": "2",
+          "updated": "2026-04-05"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Valkia.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -43009,18 +43804,24 @@
           "uploaded": "2024-09-06",
           "endorsements": 40,
           "downloads": 1400,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2024-09-07"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Nexus shows no file list for this download; the pack name is unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Version 2 has its own skin and normal map instead of borrowed textures; weapons and armour are still to come."
+      ]
     },
     {
       "id": "nx-250",
@@ -43399,7 +44200,7 @@
             "id": "3140200173",
             "title": "Victory Conditions Overhaul",
             "updated": "2026-10-31",
-            "subscribers": 241763
+            "subscribers": 241766
           }
         ]
       },
@@ -43583,7 +44384,7 @@
             "id": "3166112259",
             "title": "Warband Mods Compilation",
             "updated": "2026-10-24",
-            "subscribers": 6655
+            "subscribers": 6656
           }
         ]
       },
@@ -43685,7 +44486,7 @@
             "id": "3157105199",
             "title": "Warband UI Framework",
             "updated": "2026-10-29",
-            "subscribers": 42977
+            "subscribers": 42978
           }
         ]
       },
@@ -44530,7 +45331,7 @@
             "id": "2790617009",
             "title": "Westluo的欢愉公主 美飚龙”妙影”独立美化包",
             "updated": "2023-10-30",
-            "subscribers": 22533
+            "subscribers": 22532
           }
         ]
       },
@@ -45010,18 +45811,31 @@
           "uploaded": "2024-10-28",
           "endorsements": 47,
           "downloads": 1400,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2024-10-28"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Eliu_Art_Replacer.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put it at the top of the load order."
+      },
+      "installNotes": [
+        "Images for Wood Elf units and several Wood Elf unit mods (Cipher Wood Elves, Arahan's Chosen, Extra Wood Elves, Single's units, Wood Elf Female Archers, Wood Elf Furies); mods you do not use break nothing."
+      ]
     },
     {
       "id": "nx-210",
@@ -45050,18 +45864,42 @@
           "uploaded": "2024-06-12",
           "endorsements": 34,
           "downloads": 1500,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-08-16"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "wood_elf_party.pack",
+          "from": "download",
+          "note": "Main file, no requirements"
+        },
+        {
+          "file": "Singer_party.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Spellsingers without clothes"
+        },
+        {
+          "file": "weaver1.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Lords, starting with the Wild domain (Weaver)"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "The clothed spellsinger download shows no file list on Nexus; its pack name is unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Each file is independent."
+      ]
     },
     {
       "id": "ll-24599",
@@ -45204,7 +46042,7 @@
             "id": "3746989980",
             "title": "Wyccc's English Patch Collection",
             "updated": "2026-10-31",
-            "subscribers": 3324
+            "subscribers": 3325
           }
         ]
       },
@@ -45923,7 +46761,7 @@
             "id": "3746626798",
             "title": "zeta0080's Beautiful Slaanesh heroes",
             "updated": "2026-06-20",
-            "subscribers": 5096
+            "subscribers": 5098
           }
         ]
       },
@@ -46912,7 +47750,7 @@
             "id": "2853817947",
             "title": "瓦尔基娅reskin",
             "updated": "2022-08-25",
-            "subscribers": 2532
+            "subscribers": 2533
           }
         ]
       },
