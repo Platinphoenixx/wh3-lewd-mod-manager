@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T17:15:15+00:00",
+  "generatedAt": "2026-11-01T19:04:58+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -6046,20 +6046,18 @@
       "status": "stable",
       "installNotes": [
         "Standalone; new campaign required.",
-        "The Steam original mod ('一个申朱技能，晓模型的英雄.pack', 3574561438) is a different product; the page does not say whether both may be active together."
+        "The Steam original mod ('一个申朱技能，晓模型的英雄.pack', 3574561438) is a different product; the page does not say whether both may be active together.",
+        "In custom battles she is listed as “Crusader Angel” among Grand Cathay's lords."
       ],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Relationship to the Steam original 3574561438 (spin-off/rip): usable together or incompatible - not stated.",
-          "Campaigns not given.",
-          "Whether the 51 references to the Sexy Cathay Heroes collection matter in game is unverified; the page calls the mod stand-alone."
+          "Campaigns not given."
         ]
       },
-      "knownIssues": [
-        "The pack refers to 51 model and texture files that are neither in it nor in the base game; all of them are in (X)_Cathay_ALL_XXX.pack from the same author's Sexy Cathay Heroes collection (ll-49648). Without it, parts of the model may show missing textures (not checked in game)."
-      ],
+      "knownIssues": [],
       "authorPages": [
         {
           "site": "loverslab",
@@ -6075,7 +6073,7 @@
           "source": "loverslab"
         }
       ],
-      "description": "Battle Angel XXX adds a standalone Legendary Hero named Hitomi, available to all factions and renamable in game. According to the author, it is essentially a rip of a Chinese Steam mod (the page uncertainly names “Shen Zuu”), whose mesh he edited to be considerably more revealing and cleaned of errors.\n\nThe character was heavily rebalanced and toned down: she is a duel specialist as a Light mage and a buffer for her immediate surroundings. The unit card and porthole are AI-generated. The backstory makes Hitomi a former concubine of the Celestial Dragon Emperor who fell to Slaanesh; his “blessing” made her bust grow enormously. Later she escaped to the Old World with a shield passed to her by Khorne, and now joins the player's lord.\n\nThe mod is standalone and requires a new game. The page names no further dependencies.",
+      "description": "Battle Angel XXX adds a standalone Legendary Hero named Hitomi, available to all factions and renamable in game. According to the author, it is essentially a rip of a Chinese Steam mod (the page uncertainly names “Shen Zuu”), whose mesh he edited to be considerably more revealing and cleaned of errors.\n\nThe character was heavily rebalanced and toned down: she is a duel specialist as a Light mage and a buffer for her immediate surroundings. The unit card and porthole are AI-generated. The backstory makes Hitomi a former concubine of the Celestial Dragon Emperor who fell to Slaanesh; his “blessing” made her bust grow enormously. Later she escaped to the Old World with a shield passed to her by Khorne, and now joins the player's lord.\n\nThe mod is standalone and requires a new game; it needs no other mod (checked in game). In custom battles she appears as “Crusader Angel” among Grand Cathay's lords.",
       "features": [
         "Legendary Hero Hitomi for all factions",
         "Renamable in game",

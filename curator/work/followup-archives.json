@@ -110,19 +110,21 @@
     },
     {
       "id": "ll-52245",
-      "knownIssues": [
-        "The pack refers to 51 model and texture files that are neither in it nor in the base game; all of them are in (X)_Cathay_ALL_XXX.pack from the same author's Sexy Cathay Heroes collection (ll-49648). Without it, parts of the model may show missing textures (not checked in game)."
-      ],
+      "knownIssues": [],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Relationship to the Steam original 3574561438 (spin-off/rip): usable together or incompatible - not stated.",
-          "Campaigns not given.",
-          "Whether the 51 references to the Sexy Cathay Heroes collection matter in game is unverified; the page calls the mod stand-alone."
+          "Campaigns not given."
         ]
       },
-      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-52245.json): 199 references: 59 in the pack, 79 base game, 61 unresolved, 51 of them found only in ll-49648."
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-52245.json): 61 unresolved model/texture references (51 also in ll-49648). Checked in game 2026-11-01 without that collection: the model and textures are complete, so it is not needed.",
+      "installNotes": [
+        "Standalone; new campaign required.",
+        "The Steam original mod ('一个申朱技能，晓模型的英雄.pack', 3574561438) is a different product; the page does not say whether both may be active together.",
+        "In custom battles she is listed as “Crusader Angel” among Grand Cathay's lords."
+      ]
     },
     {
       "id": "ll-41124",
