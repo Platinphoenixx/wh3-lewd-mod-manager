@@ -347,7 +347,7 @@ def main():
                             "thumb": f"https://staticdelivery.nexusmods.com/mods/4717/images/thumbnails/{nid}/{image}",
                             "kind": "cover", "source": "nexus"}] if image else [],
                 "sources": {"nexus": source},
-                "packs": [],
+                "packs": [{"file": f, "from": "download"} for f in nexus_cur.get("packs", {}).get(nid, [])],
                 "relations": [{"kind": "requires", "target": {"mod": n}, "note": "Stated on the Nexus page.",
                                "source": {"type": "nexus", "url": source["url"]}} for n in needs],
                 "curation": {"lastChecked": "2026-11-01", "confidence": "low",

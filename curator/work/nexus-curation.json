@@ -1,158 +1,1115 @@
 {
   "_note": "Nexus Mods finds (read on nexusmods.com, list pages sorted by endorsements, 2026-11-01). Per mod id: kind, faction/character tags, playAs, neutral summary, requirements (nx-<id> or catalog id). 'same' = the mod is already in the catalog under another source; only the Nexus page is added there. Requirements are only those the list text states; the rest is an open question.",
   "same": {
-    "112": "steam-2996322070", "33": "ll-28211", "20": "ll-23901", "74": "ll-26591", "377": "ll-47932", "305": "ll-46549",
-    "198": "steam-3223598729", "226": "steam-3616234518", "295": "steam-3616082403", "307": "steam-3647419004",
-    "320": "steam-3672266382", "228": "steam-3301596500", "323": "steam-3679399151", "227": "steam-3621449095",
+    "112": "steam-2996322070",
+    "33": "ll-28211",
+    "20": "ll-23901",
+    "74": "ll-26591",
+    "377": "ll-47932",
+    "305": "ll-46549",
+    "198": "steam-3223598729",
+    "226": "steam-3616234518",
+    "295": "steam-3616082403",
+    "307": "steam-3647419004",
+    "320": "steam-3672266382",
+    "228": "steam-3301596500",
+    "323": "steam-3679399151",
+    "227": "steam-3621449095",
     "405": "steam-3810890110"
   },
   "mods": {
-    "22": ["framework", "", "", "Total conversion and shared resource pack: turns the units of all 23 factions into female warriors. The faction packs of the Warmaidens series build on it.", []],
-    "41": ["reskin", "slaanesh", "", "Standalone Daemonette reskin by zeta0080, separated from the Slaanesh faction pack.", []],
-    "42": ["reskin", "high elves,dark elves", "", "Warmaidens faction pack: High Elf and Dark Elf lords, heroes and units become female elves.", ["nx-22"]],
-    "7": ["reskin", "dark elves", "", "Dark Elf reskin ported from Warhammer II.", []],
-    "13": ["reskin", "empire", "", "Warmaidens faction pack: almost every Empire unit, lord and hero becomes female.", ["nx-22"]],
-    "30": ["reskin", "cathay", "", "Warmaidens faction pack for Grand Cathay.", ["nx-22"]],
-    "40": ["reskin", "wood elves", "", "Warmaidens faction pack: all Wood Elf units become female.", ["nx-22"]],
-    "28": ["reskin", "tomb kings", "", "Warmaidens faction pack: Tomb Kings skeleton units, lords and heroes become ancient Egyptian female warriors.", ["nx-22"]],
-    "45": ["reskin", "warriors of chaos,norsca,daemons of chaos", "", "Warmaidens faction pack: most Chaos and Norsca units become demon girls.", ["nx-22"]],
-    "37": ["reskin", "kislev", "", "Warmaidens faction pack: Kislev total conversion to female units.", ["nx-22"]],
-    "31": ["reskin", "vampire counts,vampire coast", "", "Warmaidens faction pack for Vampire Counts and Vampire Coast: zombie and vampire girls.", ["nx-22"]],
-    "29": ["reskin", "bretonnia", "", "Warmaidens faction pack: Bretonnia becomes a realm of maiden knights and peasant girls.", ["nx-22"]],
-    "19": ["reskin", "tomb kings", "Khalida", "Catgirl-themed reskin of High Queen Khalida.", []],
-    "122": ["reskin", "kislev", "Katarin", "Standalone reskin of Katarin in six versions; no Warmaidens resource pack needed.", []],
-    "38": ["reskin", "dwarfs", "", "Warmaidens faction pack: all Dwarf units become Valkyrie warriors.", ["nx-22"]],
-    "2": ["units", "slaanesh", "", "New elite hybrid unit for Slaanesh, also available to Azazel and Morathi.", []],
-    "138": ["reskin", "cathay", "Miao Ying", "Standalone nude reskin of Miao Ying by zeta0080 with six versions to choose from.", []],
-    "18": ["reskin", "cathay", "", "Reskin of the Cathay Peasants with new faces, bodies and clothes (Sexiest Grand Cathay series).", []],
-    "61": ["units", "high elves,dark elves,wood elves", "", "New female units for the three elf factions, based on the Pleasure Guard and single-unit mods.", []],
-    "5": ["reskin", "wood elves", "", "Cosmetic: much lighter armour for the Wardancers (ported from Warhammer II).", []],
-    "53": ["reskin", "beastmen", "", "Warmaidens faction pack: most Beastmen units, lords and heroes become beastwomen, with optional variants.", ["nx-22"]],
-    "14": ["reskin", "cathay", "", "Reskin of the Cathay Jade Warriors with new faces, bodies and clothes (Sexiest Grand Cathay series).", []],
-    "17": ["units", "cathay", "", "New unit for Grand Cathay: the Celestial Dragon Concubines (Sexiest Grand Cathay series).", []],
-    "4": ["reskin", "wood elves", "", "Cosmetic: much lighter armour for the Bladesingers (ported from Warhammer II).", []],
-    "16": ["reskin", "dark elves", "Morathi", "New skins and models for Morathi, Death Hags, Witch Elves, Harpies, Sisters of Slaughter and Sorceresses.", []],
-    "47": ["reskin", "greenskins", "", "Warmaidens faction pack: most Greenskin units become female.", ["nx-22"]],
-    "49": ["reskin", "cathay", "", "Reskin of the Cathay Dragon Guard (Sexiest Grand Cathay series).", []],
-    "50": ["reskin", "cathay", "", "Reskin of the Cathay Nan-Gau warriors (Sexiest Grand Cathay series).", []],
-    "56": ["reskin", "skaven", "", "Warmaidens faction pack: almost all Skaven units become rat girls.", ["nx-22"]],
-    "57": ["reskin", "lizardmen", "", "Warmaidens faction pack: Lizardmen infantry, cavalry and some lords become Amazon warriors.", ["nx-22"]],
-    "35": ["reskin", "tomb kings", "Khalida", "LessIsGood's Khalida reskin, re-uploaded after it was removed from Steam.", []],
-    "59": ["reskin", "cathay", "Miao Ying", "Custom Miao Ying reskin; backup of the author's Steam mod.", []],
-    "106": ["reskin", "norsca", "", "Warmaidens faction pack: Norsca becomes Viking shieldmaidens (2025 rework).", ["nx-22"]],
-    "10": ["reskin", "cathay", "", "Old reskin of the Cathay Shugengan lord; the author marks it obsolete (replaced by the newer Shugengan reskin).", []],
-    "55": ["reskin", "ogre kingdoms", "", "Warmaidens faction pack: Ogre infantry, lords and heroes become giant women (not mounted units and hunters).", ["nx-22"]],
-    "185": ["units", "lizardmen", "", "Amazon warriors as mercenary units for the Lizardmen.", []],
-    "93": ["reskin", "bretonnia", "Fay Enchantress", "The Fay Enchantress as a forest nymph, with a largely new mesh and cleaned-up face.", []],
-    "51": ["reskin", "cathay", "", "Reskin of the Cathay Terracotta Sentinel (Sexiest Grand Cathay series).", []],
-    "91": ["units", "empire,bretonnia,cathay", "", "Older female unit expansion for Empire, Bretonnia and Cathay; the author marks it outdated (see Zeta0080 Mortal Expansion).", []],
-    "104": ["reskin", "dark elves", "", "Hydra and Kharibdyss become Medusa-like creatures.", []],
-    "161": ["reskin", "bretonnia", "Repanse", "Turns Repanse into a flying unit.", []],
-    "117": ["assets", "", "", "Replaces loading screen images with AI-generated anime artwork.", []],
-    "179": ["units", "kislev", "", "Female berserkers from the forests of Kislev as a new unit.", []],
-    "191": ["reskin", "bretonnia", "Repanse", "Repanse reskin with four versions to choose from.", []],
-    "76": ["reskin", "empire", "", "Gotrek, Felix and Ulrika as Warmaidens.", []],
-    "123": ["reskin", "vampire counts", "Ulrika", "Standalone Ulrika reskin in four versions; no Warmaidens resource pack needed.", []],
-    "393": ["utility", "", "", "Adds DLSS support (FSR and XeSS through OptiScaler).", [], "general"],
-    "15": ["reskin", "slaanesh,norsca", "Valkia", "A Slaanesh-corrupted Valkia, made from two Steam mods and vanilla Slaanesh materials.", []],
-    "62": ["reskin", "cathay", "", "Reskin of the Cathay Shugengan lord (Sexiest Grand Cathay series).", []],
-    "111": ["reskin", "slaanesh", "", "Remodelled Daemonettes (Smuthammer series by LewdIvan).", []],
-    "114": ["submod", "cathay", "Yin-Yin", "Submod for Roar of the Jade Sea: Yin-Yin, the Sea Dragon: Yin-Yin as a female character.", ["steam-2989226363"]],
-    "195": ["units", "slaanesh", "", "Pikes of Slaanesh Reborn: Slaanesh pike and bow unit that lowers enemy defence.", []],
-    "43": ["reskin", "bretonnia", "Repanse", "Reskin of Repanse.", []],
-    "250": ["units", "cathay,vampire counts,warriors of chaos,slaanesh,empire,kislev,dwarfs,greenskins", "", "Adds 12 Valkyrie units for eight factions.", []],
-    "77": ["reskin", "chaos dwarfs", "", "Warmaidens faction pack: Chaos Dwarfs total conversion.", ["nx-22"]],
-    "214": ["reskin", "bretonnia", "Fay Enchantress", "Fay Enchantress reskin (Sulivarace).", []],
-    "170": ["reskin", "cathay", "Yin-Yin", "Reskin of the whole Sea Dragon faction from Roar of the Jade Sea.", ["steam-2989226363"]],
-    "154": ["reskin", "slaanesh", "N'Kari", "Female version of N'Kari (\"Karia\").", []],
-    "218": ["reskin", "dark elves", "Morathi", "Standalone Morathi reskin by zeta0080 with two versions; no resource pack needed.", []],
-    "100": ["reskin", "warriors of chaos,daemons of chaos", "", "Adds female models to almost all Chaos units, with mixed voices; reworks the four gods and daemon princes.", []],
-    "293": ["assets", "empire", "", "Adds idle animations for Empire units (Endo).", []],
-    "300": ["reskin", "high elves", "Alarielle", "Standalone Alarielle reskin pack, four in one; no resource pack needed.", []],
-    "186": ["reskin", "dark elves", "Morathi", "New Morathi model (Sulivarace).", []],
-    "129": ["reskin", "wood elves", "", "Lighter armour for an Asrai unit.", []],
-    "156": ["reskin", "high elves", "", "New look for the Sisters of Avelorn.", [], "beautification"],
-    "297": ["reskin", "kislev", "Katarin", "Standalone Katarin based on Lazy's Katarin corruption mod.", []],
-    "302": ["reskin", "empire", "", "Endo's Empire reskin, loreful version (female units).", []],
-    "107": ["reskin", "warriors of chaos", "Vilitch", "Model changes for Vilitch.", []],
-    "212": ["units", "wood elves", "", "Furies: warriors corrupted by Drycha, in treeman bark and broken elven armour.", []],
-    "36": ["reskin", "cathay", "Miao Ying", "LessIsGood's Miao Ying reskin, re-uploaded after it was removed from Steam.", []],
-    "153": ["reskin", "high elves", "", "Silverin Guard as women, with new voices.", [], "beautification"],
-    "183": ["reskin", "empire", "Karl Franz", "Female model replacing Karl Franz, with or without cape.", []],
-    "163": ["reskin", "high elves", "", "Female Swordmasters, ported from Real's Warhammer II mod.", [], "beautification"],
-    "365": ["submod", "beastmen", "", "Matched-combat animations for Total Warmaidens with Community Beastmen.", ["nx-22", "ll-46165"]],
-    "308": ["reskin", "dark elves", "Morathi", "Standalone Morathi reskin pack, four in one; no resource pack needed.", []],
-    "299": ["reskin", "slaanesh", "Dechala", "Dechala with less armour.", []],
-    "240": ["utility", "", "", "Extended dismemberment: 200+ supported units and 300+ hand-made parts.", [], "general"],
-    "348": ["units", "empire,bretonnia,kislev,cathay,dwarfs", "", "More than 50 new units for the human and dwarf factions (newest version on the author's Patreon).", []],
-    "160": ["reskin", "high elves", "", "Lothern Sea Guard as women, with new voices.", [], "beautification"],
-    "136": ["reskin", "high elves", "Alarielle", "Alarielle with armour variant B (Sulivarace).", []],
-    "102": ["reskin", "cathay", "Miao Ying", "Miao Ying's dragon form, remodelled (Smuthammer series).", []],
-    "203": ["reskin", "empire", "Elspeth von Draken", "Elspeth von Draken, Sulivarace style.", []],
-    "239": ["assets", "wood elves", "", "Improved Wood Elf images.", []],
-    "152": ["reskin", "high elves", "", "Rangers as women, with new voices.", [], "beautification"],
-    "167": ["reskin", "high elves", "", "Shadow Warriors as women, with new voices.", [], "beautification"],
-    "206": ["reskin", "cathay", "Miao Ying", "Miao Ying reskin with physics.", []],
-    "196": ["reskin", "dark elves", "Malekith", "Female version of Malekith (\"Malika\").", []],
-    "24": ["reskin", "cathay", "Miao Ying", "LazyIcarus' Miao Ying reskin, re-uploaded after it was removed from the Steam Workshop (model and portraits).", []],
-    "166": ["reskin", "high elves", "", "Silver Helms as women, with new voices.", [], "beautification"],
-    "303": ["units", "greenskins", "", "Four new female Greenskin units.", []],
-    "219": ["reskin", "slaanesh,norsca", "Valkia", "Valkia, Sulivarace style (first version).", []],
-    "242": ["reskin", "cathay", "Miao Ying", "New Miao Ying model, Sulivarace style (beta).", []],
-    "97": ["reskin", "bretonnia", "Repanse", "Repanse with a revisited look, horse and sword.", []],
-    "99": ["reskin", "bretonnia", "Repanse", "Repanse variant without armour.", []],
-    "266": ["reskin", "cathay", "", "Female models for Yuan Bo and Zhao Ming.", []],
-    "276": ["reskin", "slaanesh", "", "Anatomically complete Daemonettes.", []],
-    "340": ["reskin", "bretonnia", "Fay Enchantress", "Fay Enchantress edit, partly nude.", []],
-    "210": ["reskin", "wood elves", "Ariel", "Wood Elf characters, Sulivarace style (Ariel first).", []],
-    "346": ["reskin", "wood elves", "Sisters of Twilight", "Sisters of Twilight edit, partly nude, with distinct personalities.", []],
-    "134": ["reskin", "high elves", "Alarielle", "Nude Alarielle; revised version of the author's LoversLab mod.", []],
-    "235": ["reskin", "cathay", "Miao Ying", "SOBORO's Miao Ying with more revealing clothes.", ["ll-28994"]],
-    "98": ["reskin", "bretonnia", "Repanse", "Repanse with revealing armour.", []],
-    "268": ["reskin", "kislev", "", "Female model for Kostaltyn.", []],
-    "140": ["reskin", "dark elves", "Morathi", "LazyIcarus' Morathi reskin; stages 3-4 that are not on the Steam Workshop.", []],
-    "342": ["reskin", "vampire coast", "Aranessa", "Aranessa reskin.", []],
-    "94": ["reskin", "warriors of chaos", "", "Adds female Marauders.", []],
-    "334": ["reskin", "kislev", "Katarin", "Edit of Lazy's Katarin, partly nude.", []],
-    "249": ["reskin", "cathay", "", "Changes all female lords of Cathay, Sulivarace style.", []],
-    "277": ["units", "slaanesh", "", "Fallen elf archers, extracted from the author's Slaanesh overhaul as a separate mod.", []],
-    "335": ["reskin", "high elves", "Alarielle", "See-through Alarielle edit (based on LessIsGood).", []],
-    "406": ["reskin", "vampire counts", "Neferata", "Standalone alternative Neferata reskin by zeta0080; load above the author's race packs.", []],
-    "344": ["reskin", "empire", "Elspeth von Draken", "Edit of Lazy's Elspeth, partly nude.", []],
-    "197": ["reskin", "dark elves", "Hellebron", "Hellebron reskin (Sulivarace).", []],
-    "237": ["reskin", "khorne", "", "Explicit male anatomy for Skarbrand, Bloodletters, Bloodthirsters and Khorne Minotaurs.", []],
-    "341": ["reskin", "tomb kings", "Khalida", "Edit of LessIsGood's Khalida with make-up, partly nude.", []],
-    "401": ["reskin", "slaanesh", "N'Kari", "N'Kari reskin.", []],
-    "137": ["reskin", "high elves", "Alarielle", "Alarielle with a long dress and a new staff.", []],
-    "395": ["reskin", "slaanesh", "Masque", "Masque reskin.", []],
-    "333": ["reskin", "slaanesh,norsca", "Valkia", "Valkia edit, partly nude.", []],
-    "339": ["reskin", "dark elves", "Hellebron", "Hellebron edit, partly nude (based on LessIsGood).", []],
-    "145": ["reskin", "cathay", "Miao Ying", "SOBORO's Miao Ying with a larger bust.", ["ll-28994"]],
-    "236": ["assets", "wood elves", "Sisters of Twilight", "Custom portraits for the Sisters of Twilight, fixed after a game update.", []],
-    "338": ["reskin", "cathay", "Miao Ying", "Miao Ying edit, partly nude (based on LessIsGood).", []],
-    "349": ["reskin", "vampire counts", "Isabella", "Isabella von Carstein edit, partly nude.", []],
-    "359": ["reskin", "dark elves", "", "Death Hag edit, partly nude.", []],
-    "103": ["reskin", "cathay", "Miao Ying", "Anthro dragoness model for Miao Ying (conversion of a model by petruz).", []],
-    "336": ["reskin", "dark elves", "Morathi", "See-through Morathi edit (based on LessIsGood).", []],
-    "267": ["reskin", "slaanesh", "", "Redesigned Daemonettes (Sulivarace).", []],
-    "352": ["reskin", "high elves", "", "High Elf Mage edit, partly nude.", []],
-    "357": ["reskin", "wood elves", "", "Glade Captain edit, partly nude.", []],
-    "238": ["reskin", "warriors of chaos", "", "Explicit male anatomy for Kholek, Dragon Ogres and Dragon Ogre Shaggoths.", []],
-    "201": ["reskin", "dwarfs", "", "A custom nymph figurehead for the landship.", []],
-    "324": ["patch", "", "", "Fixes animation glitches between Radious and the Warmaidens mods.", ["nx-22"]],
-    "396": ["reskin", "slaanesh", "Dechala", "Dechala, armoured edit.", []],
-    "234": ["reskin", "cathay", "Miao Ying", "SOBORO's Miao Ying with revealing clothes.", ["ll-28994"]],
-    "347": ["reskin", "bretonnia", "Repanse", "Repanse in a royal cloak.", []],
-    "245": ["reskin", "warriors of chaos", "", "Exposed midriffs for Chosen and Aspiring Champions (compatible with Daughters of Chaos).", []],
-    "244": ["reskin", "chaos dwarfs", "", "Anthro version of the Deathclaw.", []],
-    "247": ["reskin", "cathay", "Miao Ying", "Anthro version of Miao Ying.", []],
-    "414": ["reskin", "dark elves", "", "Partial nudity for Dark Elves.", []],
-    "144": ["reskin", "cathay", "Miao Ying", "Miao Ying with the bust size of the LessIsGood version.", []],
-    "168": ["reskin", "khorne", "", "New female lord for Khorne (\"Skadra\").", []],
-    "241": ["reskin", "khorne", "", "Wrathmongers without chainmail on the back, like Skarr Bloodwrath.", []],
-    "243": ["reskin", "slaanesh", "Sigvald", "Revealing look for Sigvald and the Mirror Guard (compatible with Daughters of Chaos).", []],
-    "135": ["reskin", "high elves", "Alarielle", "Alarielle with a short dress (armour variant A).", []],
-    "402": ["reskin", "vampire counts", "Neferata", "Neferata reskin with a new face and red instead of purple cloth.", []],
-    "407": ["reskin", "vampire counts", "Neferata", "LessIsGood's Khalida model as a Neferata reskin.", []]
+    "22": [
+      "framework",
+      "",
+      "",
+      "Total conversion and shared resource pack: turns the units of all 23 factions into female warriors. The faction packs of the Warmaidens series build on it.",
+      []
+    ],
+    "41": [
+      "reskin",
+      "slaanesh",
+      "",
+      "Standalone Daemonette reskin by zeta0080, separated from the Slaanesh faction pack.",
+      []
+    ],
+    "42": [
+      "reskin",
+      "high elves,dark elves",
+      "",
+      "Warmaidens faction pack: High Elf and Dark Elf lords, heroes and units become female elves.",
+      [
+        "nx-22"
+      ]
+    ],
+    "7": [
+      "reskin",
+      "dark elves",
+      "",
+      "Dark Elf reskin ported from Warhammer II.",
+      []
+    ],
+    "13": [
+      "reskin",
+      "empire",
+      "",
+      "Warmaidens faction pack: almost every Empire unit, lord and hero becomes female.",
+      [
+        "nx-22"
+      ]
+    ],
+    "30": [
+      "reskin",
+      "cathay",
+      "",
+      "Warmaidens faction pack for Grand Cathay.",
+      [
+        "nx-22"
+      ]
+    ],
+    "40": [
+      "reskin",
+      "wood elves",
+      "",
+      "Warmaidens faction pack: all Wood Elf units become female.",
+      [
+        "nx-22"
+      ]
+    ],
+    "28": [
+      "reskin",
+      "tomb kings",
+      "",
+      "Warmaidens faction pack: Tomb Kings skeleton units, lords and heroes become ancient Egyptian female warriors.",
+      [
+        "nx-22"
+      ]
+    ],
+    "45": [
+      "reskin",
+      "warriors of chaos,norsca,daemons of chaos",
+      "",
+      "Warmaidens faction pack: most Chaos and Norsca units become demon girls.",
+      [
+        "nx-22"
+      ]
+    ],
+    "37": [
+      "reskin",
+      "kislev",
+      "",
+      "Warmaidens faction pack: Kislev total conversion to female units.",
+      [
+        "nx-22"
+      ]
+    ],
+    "31": [
+      "reskin",
+      "vampire counts,vampire coast",
+      "",
+      "Warmaidens faction pack for Vampire Counts and Vampire Coast: zombie and vampire girls.",
+      [
+        "nx-22"
+      ]
+    ],
+    "29": [
+      "reskin",
+      "bretonnia",
+      "",
+      "Warmaidens faction pack: Bretonnia becomes a realm of maiden knights and peasant girls.",
+      [
+        "nx-22"
+      ]
+    ],
+    "19": [
+      "reskin",
+      "tomb kings",
+      "Khalida",
+      "Catgirl-themed reskin of High Queen Khalida.",
+      []
+    ],
+    "122": [
+      "reskin",
+      "kislev",
+      "Katarin",
+      "Standalone reskin of Katarin in six versions; no Warmaidens resource pack needed.",
+      []
+    ],
+    "38": [
+      "reskin",
+      "dwarfs",
+      "",
+      "Warmaidens faction pack: all Dwarf units become Valkyrie warriors.",
+      [
+        "nx-22"
+      ]
+    ],
+    "2": [
+      "units",
+      "slaanesh",
+      "",
+      "New elite hybrid unit for Slaanesh, also available to Azazel and Morathi.",
+      []
+    ],
+    "138": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Standalone nude reskin of Miao Ying by zeta0080 with six versions to choose from.",
+      []
+    ],
+    "18": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Peasants with new faces, bodies and clothes (Sexiest Grand Cathay series).",
+      []
+    ],
+    "61": [
+      "units",
+      "high elves,dark elves,wood elves",
+      "",
+      "New female units for the three elf factions, based on the Pleasure Guard and single-unit mods.",
+      []
+    ],
+    "5": [
+      "reskin",
+      "wood elves",
+      "",
+      "Cosmetic: much lighter armour for the Wardancers (ported from Warhammer II).",
+      []
+    ],
+    "53": [
+      "reskin",
+      "beastmen",
+      "",
+      "Warmaidens faction pack: most Beastmen units, lords and heroes become beastwomen, with optional variants.",
+      [
+        "nx-22"
+      ]
+    ],
+    "14": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Jade Warriors with new faces, bodies and clothes (Sexiest Grand Cathay series).",
+      []
+    ],
+    "17": [
+      "units",
+      "cathay",
+      "",
+      "New unit for Grand Cathay: the Celestial Dragon Concubines (Sexiest Grand Cathay series).",
+      []
+    ],
+    "4": [
+      "reskin",
+      "wood elves",
+      "",
+      "Cosmetic: much lighter armour for the Bladesingers (ported from Warhammer II).",
+      []
+    ],
+    "16": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "New skins and models for Morathi, Death Hags, Witch Elves, Harpies, Sisters of Slaughter and Sorceresses.",
+      []
+    ],
+    "47": [
+      "reskin",
+      "greenskins",
+      "",
+      "Warmaidens faction pack: most Greenskin units become female.",
+      [
+        "nx-22"
+      ]
+    ],
+    "49": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Dragon Guard (Sexiest Grand Cathay series).",
+      []
+    ],
+    "50": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Nan-Gau warriors (Sexiest Grand Cathay series).",
+      []
+    ],
+    "56": [
+      "reskin",
+      "skaven",
+      "",
+      "Warmaidens faction pack: almost all Skaven units become rat girls.",
+      [
+        "nx-22"
+      ]
+    ],
+    "57": [
+      "reskin",
+      "lizardmen",
+      "",
+      "Warmaidens faction pack: Lizardmen infantry, cavalry and some lords become Amazon warriors.",
+      [
+        "nx-22"
+      ]
+    ],
+    "35": [
+      "reskin",
+      "tomb kings",
+      "Khalida",
+      "LessIsGood's Khalida reskin, re-uploaded after it was removed from Steam.",
+      []
+    ],
+    "59": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Custom Miao Ying reskin; backup of the author's Steam mod.",
+      []
+    ],
+    "106": [
+      "reskin",
+      "norsca",
+      "",
+      "Warmaidens faction pack: Norsca becomes Viking shieldmaidens (2025 rework).",
+      [
+        "nx-22"
+      ]
+    ],
+    "10": [
+      "reskin",
+      "cathay",
+      "",
+      "Old reskin of the Cathay Shugengan lord; the author marks it obsolete (replaced by the newer Shugengan reskin).",
+      []
+    ],
+    "55": [
+      "reskin",
+      "ogre kingdoms",
+      "",
+      "Warmaidens faction pack: Ogre infantry, lords and heroes become giant women (not mounted units and hunters).",
+      [
+        "nx-22"
+      ]
+    ],
+    "185": [
+      "units",
+      "lizardmen",
+      "",
+      "Amazon warriors as mercenary units for the Lizardmen.",
+      []
+    ],
+    "93": [
+      "reskin",
+      "bretonnia",
+      "Fay Enchantress",
+      "The Fay Enchantress as a forest nymph, with a largely new mesh and cleaned-up face.",
+      []
+    ],
+    "51": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Terracotta Sentinel (Sexiest Grand Cathay series).",
+      []
+    ],
+    "91": [
+      "units",
+      "empire,bretonnia,cathay",
+      "",
+      "Older female unit expansion for Empire, Bretonnia and Cathay; the author marks it outdated (see Zeta0080 Mortal Expansion).",
+      []
+    ],
+    "104": [
+      "reskin",
+      "dark elves",
+      "",
+      "Hydra and Kharibdyss become Medusa-like creatures.",
+      []
+    ],
+    "161": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Turns Repanse into a flying unit.",
+      []
+    ],
+    "117": [
+      "assets",
+      "",
+      "",
+      "Replaces loading screen images with AI-generated anime artwork.",
+      []
+    ],
+    "179": [
+      "units",
+      "kislev",
+      "",
+      "Female berserkers from the forests of Kislev as a new unit.",
+      []
+    ],
+    "191": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Repanse reskin with four versions to choose from.",
+      []
+    ],
+    "76": [
+      "reskin",
+      "empire",
+      "",
+      "Gotrek, Felix and Ulrika as Warmaidens.",
+      []
+    ],
+    "123": [
+      "reskin",
+      "vampire counts",
+      "Ulrika",
+      "Standalone Ulrika reskin in four versions; no Warmaidens resource pack needed.",
+      []
+    ],
+    "393": [
+      "utility",
+      "",
+      "",
+      "Adds DLSS support (FSR and XeSS through OptiScaler).",
+      [],
+      "general"
+    ],
+    "15": [
+      "reskin",
+      "slaanesh,norsca",
+      "Valkia",
+      "A Slaanesh-corrupted Valkia, made from two Steam mods and vanilla Slaanesh materials.",
+      []
+    ],
+    "62": [
+      "reskin",
+      "cathay",
+      "",
+      "Reskin of the Cathay Shugengan lord (Sexiest Grand Cathay series).",
+      []
+    ],
+    "111": [
+      "reskin",
+      "slaanesh",
+      "",
+      "Remodelled Daemonettes (Smuthammer series by LewdIvan).",
+      []
+    ],
+    "114": [
+      "submod",
+      "cathay",
+      "Yin-Yin",
+      "Submod for Roar of the Jade Sea: Yin-Yin, the Sea Dragon: Yin-Yin as a female character.",
+      [
+        "steam-2989226363"
+      ]
+    ],
+    "195": [
+      "units",
+      "slaanesh",
+      "",
+      "Pikes of Slaanesh Reborn: Slaanesh pike and bow unit that lowers enemy defence.",
+      []
+    ],
+    "43": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Reskin of Repanse.",
+      []
+    ],
+    "250": [
+      "units",
+      "cathay,vampire counts,warriors of chaos,slaanesh,empire,kislev,dwarfs,greenskins",
+      "",
+      "Adds 12 Valkyrie units for eight factions.",
+      []
+    ],
+    "77": [
+      "reskin",
+      "chaos dwarfs",
+      "",
+      "Warmaidens faction pack: Chaos Dwarfs total conversion.",
+      [
+        "nx-22"
+      ]
+    ],
+    "214": [
+      "reskin",
+      "bretonnia",
+      "Fay Enchantress",
+      "Fay Enchantress reskin (Sulivarace).",
+      []
+    ],
+    "170": [
+      "reskin",
+      "cathay",
+      "Yin-Yin",
+      "Reskin of the whole Sea Dragon faction from Roar of the Jade Sea.",
+      [
+        "steam-2989226363"
+      ]
+    ],
+    "154": [
+      "reskin",
+      "slaanesh",
+      "N'Kari",
+      "Female version of N'Kari (\"Karia\").",
+      []
+    ],
+    "218": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "Standalone Morathi reskin by zeta0080 with two versions; no resource pack needed.",
+      []
+    ],
+    "100": [
+      "reskin",
+      "warriors of chaos,daemons of chaos",
+      "",
+      "Adds female models to almost all Chaos units, with mixed voices; reworks the four gods and daemon princes.",
+      []
+    ],
+    "293": [
+      "assets",
+      "empire",
+      "",
+      "Adds idle animations for Empire units (Endo).",
+      []
+    ],
+    "300": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "Standalone Alarielle reskin pack, four in one; no resource pack needed.",
+      []
+    ],
+    "186": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "New Morathi model (Sulivarace).",
+      []
+    ],
+    "129": [
+      "reskin",
+      "wood elves",
+      "",
+      "Lighter armour for an Asrai unit.",
+      []
+    ],
+    "156": [
+      "reskin",
+      "high elves",
+      "",
+      "New look for the Sisters of Avelorn.",
+      [],
+      "beautification"
+    ],
+    "297": [
+      "reskin",
+      "kislev",
+      "Katarin",
+      "Standalone Katarin based on Lazy's Katarin corruption mod.",
+      []
+    ],
+    "302": [
+      "reskin",
+      "empire",
+      "",
+      "Endo's Empire reskin, loreful version (female units).",
+      []
+    ],
+    "107": [
+      "reskin",
+      "warriors of chaos",
+      "Vilitch",
+      "Model changes for Vilitch.",
+      []
+    ],
+    "212": [
+      "units",
+      "wood elves",
+      "",
+      "Furies: warriors corrupted by Drycha, in treeman bark and broken elven armour.",
+      []
+    ],
+    "36": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "LessIsGood's Miao Ying reskin, re-uploaded after it was removed from Steam.",
+      []
+    ],
+    "153": [
+      "reskin",
+      "high elves",
+      "",
+      "Silverin Guard as women, with new voices.",
+      [],
+      "beautification"
+    ],
+    "183": [
+      "reskin",
+      "empire",
+      "Karl Franz",
+      "Female model replacing Karl Franz, with or without cape.",
+      []
+    ],
+    "163": [
+      "reskin",
+      "high elves",
+      "",
+      "Female Swordmasters, ported from Real's Warhammer II mod.",
+      [],
+      "beautification"
+    ],
+    "365": [
+      "submod",
+      "beastmen",
+      "",
+      "Matched-combat animations for Total Warmaidens with Community Beastmen.",
+      [
+        "nx-22",
+        "ll-46165"
+      ]
+    ],
+    "308": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "Standalone Morathi reskin pack, four in one; no resource pack needed.",
+      []
+    ],
+    "299": [
+      "reskin",
+      "slaanesh",
+      "Dechala",
+      "Dechala with less armour.",
+      []
+    ],
+    "240": [
+      "utility",
+      "",
+      "",
+      "Extended dismemberment: 200+ supported units and 300+ hand-made parts.",
+      [],
+      "general"
+    ],
+    "348": [
+      "units",
+      "empire,bretonnia,kislev,cathay,dwarfs",
+      "",
+      "More than 50 new units for the human and dwarf factions (newest version on the author's Patreon).",
+      []
+    ],
+    "160": [
+      "reskin",
+      "high elves",
+      "",
+      "Lothern Sea Guard as women, with new voices.",
+      [],
+      "beautification"
+    ],
+    "136": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "Alarielle with armour variant B (Sulivarace).",
+      []
+    ],
+    "102": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Miao Ying's dragon form, remodelled (Smuthammer series).",
+      []
+    ],
+    "203": [
+      "reskin",
+      "empire",
+      "Elspeth von Draken",
+      "Elspeth von Draken, Sulivarace style.",
+      []
+    ],
+    "239": [
+      "assets",
+      "wood elves",
+      "",
+      "Improved Wood Elf images.",
+      []
+    ],
+    "152": [
+      "reskin",
+      "high elves",
+      "",
+      "Rangers as women, with new voices.",
+      [],
+      "beautification"
+    ],
+    "167": [
+      "reskin",
+      "high elves",
+      "",
+      "Shadow Warriors as women, with new voices.",
+      [],
+      "beautification"
+    ],
+    "206": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Miao Ying reskin with physics.",
+      []
+    ],
+    "196": [
+      "reskin",
+      "dark elves",
+      "Malekith",
+      "Female version of Malekith (\"Malika\").",
+      []
+    ],
+    "24": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "LazyIcarus' Miao Ying reskin, re-uploaded after it was removed from the Steam Workshop (model and portraits).",
+      []
+    ],
+    "166": [
+      "reskin",
+      "high elves",
+      "",
+      "Silver Helms as women, with new voices.",
+      [],
+      "beautification"
+    ],
+    "303": [
+      "units",
+      "greenskins",
+      "",
+      "Four new female Greenskin units.",
+      []
+    ],
+    "219": [
+      "reskin",
+      "slaanesh,norsca",
+      "Valkia",
+      "Valkia, Sulivarace style (first version).",
+      []
+    ],
+    "242": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "New Miao Ying model, Sulivarace style (beta).",
+      []
+    ],
+    "97": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Repanse with a revisited look, horse and sword.",
+      []
+    ],
+    "99": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Repanse variant without armour.",
+      []
+    ],
+    "266": [
+      "reskin",
+      "cathay",
+      "",
+      "Female models for Yuan Bo and Zhao Ming.",
+      []
+    ],
+    "276": [
+      "reskin",
+      "slaanesh",
+      "",
+      "Anatomically complete Daemonettes.",
+      []
+    ],
+    "340": [
+      "reskin",
+      "bretonnia",
+      "Fay Enchantress",
+      "Fay Enchantress edit, partly nude.",
+      []
+    ],
+    "210": [
+      "reskin",
+      "wood elves",
+      "Ariel",
+      "Wood Elf characters, Sulivarace style (Ariel first).",
+      []
+    ],
+    "346": [
+      "reskin",
+      "wood elves",
+      "Sisters of Twilight",
+      "Sisters of Twilight edit, partly nude, with distinct personalities.",
+      []
+    ],
+    "134": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "Nude Alarielle; revised version of the author's LoversLab mod.",
+      []
+    ],
+    "235": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "SOBORO's Miao Ying with more revealing clothes.",
+      [
+        "ll-28994"
+      ]
+    ],
+    "98": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Repanse with revealing armour.",
+      []
+    ],
+    "268": [
+      "reskin",
+      "kislev",
+      "",
+      "Female model for Kostaltyn.",
+      []
+    ],
+    "140": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "LazyIcarus' Morathi reskin; stages 3-4 that are not on the Steam Workshop.",
+      []
+    ],
+    "342": [
+      "reskin",
+      "vampire coast",
+      "Aranessa",
+      "Aranessa reskin.",
+      []
+    ],
+    "94": [
+      "reskin",
+      "warriors of chaos",
+      "",
+      "Adds female Marauders.",
+      []
+    ],
+    "334": [
+      "reskin",
+      "kislev",
+      "Katarin",
+      "Edit of Lazy's Katarin, partly nude.",
+      []
+    ],
+    "249": [
+      "reskin",
+      "cathay",
+      "",
+      "Changes all female lords of Cathay, Sulivarace style.",
+      []
+    ],
+    "277": [
+      "units",
+      "slaanesh",
+      "",
+      "Fallen elf archers, extracted from the author's Slaanesh overhaul as a separate mod.",
+      []
+    ],
+    "335": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "See-through Alarielle edit (based on LessIsGood).",
+      []
+    ],
+    "406": [
+      "reskin",
+      "vampire counts",
+      "Neferata",
+      "Standalone alternative Neferata reskin by zeta0080; load above the author's race packs.",
+      []
+    ],
+    "344": [
+      "reskin",
+      "empire",
+      "Elspeth von Draken",
+      "Edit of Lazy's Elspeth, partly nude.",
+      []
+    ],
+    "197": [
+      "reskin",
+      "dark elves",
+      "Hellebron",
+      "Hellebron reskin (Sulivarace).",
+      []
+    ],
+    "237": [
+      "reskin",
+      "khorne",
+      "",
+      "Explicit male anatomy for Skarbrand, Bloodletters, Bloodthirsters and Khorne Minotaurs.",
+      []
+    ],
+    "341": [
+      "reskin",
+      "tomb kings",
+      "Khalida",
+      "Edit of LessIsGood's Khalida with make-up, partly nude.",
+      []
+    ],
+    "401": [
+      "reskin",
+      "slaanesh",
+      "N'Kari",
+      "N'Kari reskin.",
+      []
+    ],
+    "137": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "Alarielle with a long dress and a new staff.",
+      []
+    ],
+    "395": [
+      "reskin",
+      "slaanesh",
+      "Masque",
+      "Masque reskin.",
+      []
+    ],
+    "333": [
+      "reskin",
+      "slaanesh,norsca",
+      "Valkia",
+      "Valkia edit, partly nude.",
+      []
+    ],
+    "339": [
+      "reskin",
+      "dark elves",
+      "Hellebron",
+      "Hellebron edit, partly nude (based on LessIsGood).",
+      []
+    ],
+    "145": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "SOBORO's Miao Ying with a larger bust.",
+      [
+        "ll-28994"
+      ]
+    ],
+    "236": [
+      "assets",
+      "wood elves",
+      "Sisters of Twilight",
+      "Custom portraits for the Sisters of Twilight, fixed after a game update.",
+      []
+    ],
+    "338": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Miao Ying edit, partly nude (based on LessIsGood).",
+      []
+    ],
+    "349": [
+      "reskin",
+      "vampire counts",
+      "Isabella",
+      "Isabella von Carstein edit, partly nude.",
+      []
+    ],
+    "359": [
+      "reskin",
+      "dark elves",
+      "",
+      "Death Hag edit, partly nude.",
+      []
+    ],
+    "103": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Anthro dragoness model for Miao Ying (conversion of a model by petruz).",
+      []
+    ],
+    "336": [
+      "reskin",
+      "dark elves",
+      "Morathi",
+      "See-through Morathi edit (based on LessIsGood).",
+      []
+    ],
+    "267": [
+      "reskin",
+      "slaanesh",
+      "",
+      "Redesigned Daemonettes (Sulivarace).",
+      []
+    ],
+    "352": [
+      "reskin",
+      "high elves",
+      "",
+      "High Elf Mage edit, partly nude.",
+      []
+    ],
+    "357": [
+      "reskin",
+      "wood elves",
+      "",
+      "Glade Captain edit, partly nude.",
+      []
+    ],
+    "238": [
+      "reskin",
+      "warriors of chaos",
+      "",
+      "Explicit male anatomy for Kholek, Dragon Ogres and Dragon Ogre Shaggoths.",
+      []
+    ],
+    "201": [
+      "reskin",
+      "dwarfs",
+      "",
+      "A custom nymph figurehead for the landship.",
+      []
+    ],
+    "324": [
+      "patch",
+      "",
+      "",
+      "Fixes animation glitches between Radious and the Warmaidens mods.",
+      [
+        "nx-22"
+      ]
+    ],
+    "396": [
+      "reskin",
+      "slaanesh",
+      "Dechala",
+      "Dechala, armoured edit.",
+      []
+    ],
+    "234": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "SOBORO's Miao Ying with revealing clothes.",
+      [
+        "ll-28994"
+      ]
+    ],
+    "347": [
+      "reskin",
+      "bretonnia",
+      "Repanse",
+      "Repanse in a royal cloak.",
+      []
+    ],
+    "245": [
+      "reskin",
+      "warriors of chaos",
+      "",
+      "Exposed midriffs for Chosen and Aspiring Champions (compatible with Daughters of Chaos).",
+      []
+    ],
+    "244": [
+      "reskin",
+      "chaos dwarfs",
+      "",
+      "Anthro version of the Deathclaw.",
+      []
+    ],
+    "247": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Anthro version of Miao Ying.",
+      []
+    ],
+    "414": [
+      "reskin",
+      "dark elves",
+      "",
+      "Partial nudity for Dark Elves.",
+      []
+    ],
+    "144": [
+      "reskin",
+      "cathay",
+      "Miao Ying",
+      "Miao Ying with the bust size of the LessIsGood version.",
+      []
+    ],
+    "168": [
+      "reskin",
+      "khorne",
+      "",
+      "New female lord for Khorne (\"Skadra\").",
+      []
+    ],
+    "241": [
+      "reskin",
+      "khorne",
+      "",
+      "Wrathmongers without chainmail on the back, like Skarr Bloodwrath.",
+      []
+    ],
+    "243": [
+      "reskin",
+      "slaanesh",
+      "Sigvald",
+      "Revealing look for Sigvald and the Mirror Guard (compatible with Daughters of Chaos).",
+      []
+    ],
+    "135": [
+      "reskin",
+      "high elves",
+      "Alarielle",
+      "Alarielle with a short dress (armour variant A).",
+      []
+    ],
+    "402": [
+      "reskin",
+      "vampire counts",
+      "Neferata",
+      "Neferata reskin with a new face and red instead of purple cloth.",
+      []
+    ],
+    "407": [
+      "reskin",
+      "vampire counts",
+      "Neferata",
+      "LessIsGood's Khalida model as a Neferata reskin.",
+      []
+    ]
+  },
+  "packs": {
+    "_note": "Pack files seen in a real download (Nexus id -> files).",
+    "76": [
+      "@Gotrek&Felix.pack"
+    ]
   }
 }

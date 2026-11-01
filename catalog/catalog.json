@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T19:39:28+00:00",
+  "generatedAt": "2026-11-01T19:44:42+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -3067,7 +3067,12 @@
           "adult": true
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Gotrek&Felix.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
