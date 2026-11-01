@@ -183,10 +183,12 @@ const markFilesScript = (hints: FileHint[]) => `;(() => {
       el.dataset.wh3lmm = '1'
       const note = document.createElement('div')
       note.dataset.wh3lmm = '1'
-      note.style.cssText = 'font:13px/1.4 system-ui,sans-serif;margin-top:2px;' + (hint && hint.wanted ? 'color:#c9a25a;font-weight:700' : 'color:#9a9a9a')
+      // Green: the profile's file. Amber: another version, with what it is. Grey: not needed.
+      note.style.cssText = 'font:13px/1.4 system-ui,sans-serif;margin-top:2px;' + (hint && hint.wanted ? 'color:#8fcf74;font-weight:700'
+        : hint && hint.note ? 'color:#d9b25e' : 'color:#7d7d7d;font-style:italic')
       note.textContent = hint && hint.wanted ? '✔ Your profile uses this file' + (hint.note ? ' – ' + hint.note : '')
         : hint ? (hint.note || 'Not the file your profile uses')
-        : 'Preview image for mod managers – not needed'
+        : '✕ Preview image for mod managers – not needed'
       el.after(note)
     }
   }
@@ -235,7 +237,7 @@ const markNexusScript = (hints: FileHint[]) => `;(async () => {
     const title = dt.getAttribute('data-name') || dt.textContent.trim()
     if (used.length) take.push(title)
     const note = document.createElement('div')
-    note.style.cssText = 'font:14px/1.4 system-ui,sans-serif;padding:6px 16px;' + (used.length ? 'background:#22331f;color:#e4eedc;font-weight:700' : 'color:#b5b5b5')
+    note.style.cssText = 'font:14px/1.4 system-ui,sans-serif;padding:6px 16px;' + (used.length ? 'background:#22331f;color:#8fcf74;font-weight:700' : 'color:#d9b25e')
     note.textContent = used.length ? '✔ Your profile uses this file (' + used.map((h) => h.name).join(', ') + ')'
       : found.map((h) => h.name + (h.note ? ' – ' + h.note : '')).join(' · ')
     dt.after(note)
