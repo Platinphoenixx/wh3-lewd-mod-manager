@@ -1,5 +1,5 @@
 import { execFile } from 'node:child_process'
-import { existsSync } from 'node:fs'
+import { existsSync, mkdirSync } from 'node:fs'
 import { copyFile, mkdir, mkdtemp, readdir, rename, rm, stat } from 'node:fs/promises'
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
@@ -160,19 +160,19 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
       if (!win.isDestroyed()) win.close()
       resolve(r)
     }
+    // The save path must be set right inside the event; set any later, Electron shows Windows' save dialog.
     const onDownload = (_e: unknown, item: DownloadItem) => {
-      void mkdir(downloads, { recursive: true }).then(() => {
-        const target = join(downloads, basename(item.getFilename()))
-        item.setSavePath(target)
-        item.once('done', async (_ev, state) => {
-          if (state !== 'completed') return finish({ ok: false, message: `Download ${state}.`, packs: [] })
-          const s = await stat(target)
-          if (!s.size) return finish({ ok: false, message: 'Empty download.', packs: [] })
-          const r = await installFile(target, dataPath, modId)
-          // The packs are in data now; the archive would only fill up the app folder.
-          if (r.ok) await rm(target, { force: true })
-          finish(r)
-        })
+      mkdirSync(downloads, { recursive: true })
+      const target = join(downloads, basename(item.getFilename()))
+      item.setSavePath(target)
+      item.once('done', async (_ev, state) => {
+        if (state !== 'completed') return finish({ ok: false, message: `Download ${state}.`, packs: [] })
+        const s = await stat(target)
+        if (!s.size) return finish({ ok: false, message: 'Empty download.', packs: [] })
+        const r = await installFile(target, dataPath, modId)
+        // The packs are in data now; the archive would only fill up the app folder.
+        if (r.ok) await rm(target, { force: true })
+        finish(r)
       })
     }
     ses.on('will-download', onDownload)
