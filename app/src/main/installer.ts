@@ -255,6 +255,7 @@ type WindowNeeds = { packs: string[] } | { files: number }
 function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, needs: WindowNeeds = { files: 1 }): Promise<InstallResult> {
   const { url } = site
   const ses = session.fromPartition(site.partition)
+  void clearServiceWorkers(ses)
   const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: site.title, webPreferences: { session: ses } })
   const downloads = join(app.getPath('userData'), 'downloads')
   const results: InstallResult[] = []
@@ -309,6 +310,14 @@ const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].
 
 const FILE_LIMIT_MS = 15 * 60 * 1000
 
+/**
+ * The sites' service workers (background scripts the sites register) are not needed in the download windows,
+ * and a stale one can hold up requests. Clearing them keeps the login (cookies stay).
+ */
+async function clearServiceWorkers(ses: Electron.Session): Promise<void> {
+  await ses.clearStorageData({ storages: ['serviceworkers'] }).catch(() => {})
+}
+
 /** What the download windows do, for finding out why one hangs (userData/queue.log, newest at the end). */
 function qlog(text: string): void {
   try {
@@ -340,6 +349,7 @@ export async function downloadQueueFromLoversLab(
   progress: (p: QueueProgress) => void
 ): Promise<{ modId: string; ok: boolean; message: string }[]> {
   const ses = session.fromPartition('persist:loverslab')
+  await clearServiceWorkers(ses)
   const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – downloads for your profile', webPreferences: { session: ses } })
   const downloads = join(app.getPath('userData'), 'downloads')
   await mkdir(downloads, { recursive: true })
@@ -404,7 +414,19 @@ export async function downloadQueueFromLoversLab(
       qlog(`job ${current} ${job.url}`)
       setGuide(`${current}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
       progress({ ...step, status: 'downloading' })
-      void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
+      const pageUrl = job.url.replace(/\/?$/, '/') + '?do=download'
+      let moved = false
+      const onMove = () => (moved = true)
+      win.webContents.once('did-navigate', onMove)
+      void win.loadURL(pageUrl).catch(() => {}) // a download aborts the navigation
+      // Seen in one player's session: the first request to LoversLab never answered, a second one at once.
+      void sleep(20_000).then(() => {
+        win.webContents.removeListener('did-navigate', onMove)
+        if (!moved && !finished.length && !failed && !cancelled && !win.isDestroyed()) {
+          qlog(`no answer after 20 s, loading again: ${pageUrl}`)
+          void win.loadURL(pageUrl).catch(() => {})
+        }
+      })
 
       // Either the file arrives, or the page lists several files (only on the first page, never on a file's own page).
       let expected = 1
