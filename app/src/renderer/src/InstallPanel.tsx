@@ -75,7 +75,8 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
         modId: i.modId ?? i.entry.key,
         name: i.entry.name,
         url: (i.source as { url: string }).url,
-        archives: mod ? archivesFor(mod, i.entry.pack ? [i.entry.pack] : undefined) : undefined
+        archives: mod ? archivesFor(mod, i.entry.pack ? [i.entry.pack] : undefined) : undefined,
+        hints: mod ? downloadHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : undefined
       }
     })
     const r = await window.api.installQueueFromLoversLab(jobs)

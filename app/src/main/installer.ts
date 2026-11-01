@@ -114,20 +114,6 @@ export async function backupPacks(paths: string[], dataPath: string): Promise<{ 
   return { moved, folder }
 }
 
-// Runs on every LL page in the app's LL windows: an info bar, and "Remember me" ticked on the login
-// form, because without it LL only sets session cookies and the login is gone after closing the app.
-const bannerScript = (text: string) => `(() => {
-  const remember = document.querySelector('input[type=checkbox][name=remember_me]')
-  if (remember) remember.checked = true
-  let b = document.getElementById('wh3lmm-banner')
-  if (!b) {
-    b = document.createElement('div')
-    b.id = 'wh3lmm-banner'
-    b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#c9a25a;color:#1a140a;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
-    document.body.prepend(b)
-  }
-  b.textContent = ${JSON.stringify(text)}
-})()`
 const LOGIN_HINT = 'LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login).'
 
 const NEXUS_LOGIN = 'WH3 Lewd Mod Manager: sign in to Nexus Mods here once (this window keeps the login).'
@@ -159,7 +145,8 @@ const NEXUS_SIGNED_IN = `![...document.querySelectorAll('a, button')].some((e) =
 /**
  * Two boxes on top of every page of the LoversLab download window: the sign-in hint (only while signed
  * out – LoversLab shows the member menu #elUserLink when signed in) and, set apart in green, which file
- * to take. "Remember me" is ticked on the login form as in bannerScript.
+ * to take. "Remember me" is ticked on the LoversLab login form, because without it LL only sets session
+ * cookies and the login is gone after closing the app.
  */
 const guideScript = (login: string, file: string, signedIn: string) => `(() => {
   const remember = document.querySelector('input[type=checkbox][name=remember_me]')
@@ -337,13 +324,15 @@ export async function downloadQueueFromLoversLab(
   const downloads = join(app.getPath('userData'), 'downloads')
   await mkdir(downloads, { recursive: true })
   let cancelled = false
-  let banner = ''
+  // The same boxes as the single download window: sign-in (only while signed out) and, in green, the
+  // current mod and which file to take; the page's files are marked from the job's hints.
+  let guide = ''
   win.on('closed', () => (cancelled = true))
   win.on('page-title-updated', (e) => e.preventDefault())
-  win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(bannerScript(banner)).catch(() => {}))
-  const setBanner = (text: string) => {
-    banner = `WH3 Lewd Mod Manager: ${text}`
-    if (!win.isDestroyed()) void win.webContents.executeJavaScript(bannerScript(banner)).catch(() => {})
+  win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(guide).catch(() => {}))
+  const setGuide = (text: string, hints: FileHint[] = []) => {
+    guide = guideScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT}`, text, LL_SIGNED_IN) + markFilesScript(hints)
+    if (!win.isDestroyed()) void win.webContents.executeJavaScript(guide).catch(() => {})
   }
 
   let finished: string[] = []
@@ -370,8 +359,10 @@ export async function downloadQueueFromLoversLab(
       }
       finished = []
       failed = null
-      const waitNote = 'If LoversLab asks you to sign in, do that first (tick "Remember me"). If LoversLab makes a download wait, the queue waits with it. Close this window to stop.'
-      setBanner(`${i + 1} of ${jobs.length}: ${job.name}. ${waitNote}`)
+      const waitNote = 'If LoversLab makes a download wait, the queue waits with it. Close this window to stop.'
+      const hints = job.hints ?? []
+      const wanted = hints.filter((h) => h.wanted).map((h) => `“${h.name}”`)
+      setGuide(`${i + 1} of ${jobs.length} – ${job.name}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
       progress({ ...step, status: 'downloading' })
       void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
 
@@ -383,7 +374,12 @@ export async function downloadQueueFromLoversLab(
         if (new Set(rows.map((r) => r.href)).size < 2) continue
         const picks = pickDownloads(rows, job.archives)
         if (!picks) {
-          setBanner(`${i + 1} of ${jobs.length}: choose one file for ${job.name} – after it the next mod follows. ${waitNote}`)
+          const which = wanted.length
+            ? `click “Download” at ${wanted.join(' and ')} (marked below)`
+            : hints.some((h) => h.note)
+              ? 'choose one file – the notes below say what each one is; preview images (.png) are not needed'
+              : 'choose one file – preview images (.png) are not needed'
+          setGuide(`${i + 1} of ${jobs.length} – ${job.name}: ${which}. After it the next mod follows. ${waitNote}`, hints)
           progress({ ...step, status: 'choose' })
           break // the player's click starts the download
         }

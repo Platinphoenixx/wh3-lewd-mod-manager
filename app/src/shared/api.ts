@@ -100,6 +100,8 @@ export interface LoversLabJob {
   name: string
   url: string
   archives?: string[]
+  /** What the window says about the page's files (the one the profile uses, what the others are). */
+  hints?: FileHint[]
 }
 
 export interface LoversLabProgress {
