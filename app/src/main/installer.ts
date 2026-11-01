@@ -1,6 +1,6 @@
 import { execFile } from 'node:child_process'
 import { appendFileSync, existsSync, mkdirSync, rmSync } from 'node:fs'
-import { copyFile, mkdir, mkdtemp, readdir, rename, rm, stat } from 'node:fs/promises'
+import { copyFile, mkdir, mkdtemp, readdir, readFile, rename, rm, stat } from 'node:fs/promises'
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
 import { app, BrowserWindow, session, type DownloadItem } from 'electron'
@@ -55,6 +55,10 @@ async function extract(archive: string, target: string): Promise<void> {
  */
 export async function installFile(file: string, dataPath: string, modId?: string): Promise<InstallResult> {
   const ext = extname(file).toLowerCase()
+  if (ext === '.txt') {
+    const link = (await readFile(file, 'utf8').catch(() => '')).match(/https?:\/\/\S+/)?.[0]
+    if (link) return { ok: false, message: `The file is hosted elsewhere: ${link} – download it there and drop it onto the app.`, packs: [] }
+  }
   if (ext !== '.pack' && !ARCHIVES.has(ext)) return { ok: false, message: `Unsupported file type: ${basename(file)}`, packs: [] }
   let temp: string | null = null
   try {
@@ -183,6 +187,7 @@ const markFilesScript = (hints: FileHint[]) => `;(() => {
       el.dataset.wh3lmm = '1'
       const note = document.createElement('div')
       note.dataset.wh3lmm = '1'
+      note.dataset.wh3lmmNote = '1'
       // Green: the profile's file. Amber: another version, with what it is. Grey: not needed.
       note.style.cssText = 'font:13px/1.4 system-ui,sans-serif;margin-top:2px;' + (hint && hint.wanted ? 'color:#8fcf74;font-weight:700'
         : hint && hint.note ? 'color:#d9b25e' : 'color:#7d7d7d;font-style:italic')
@@ -304,7 +309,8 @@ export type QueueProgress = LoversLabProgress
 // Files listed on a LoversLab download page (a page with several files).
 const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].map(row => {
   const a = row.querySelector('a[href*="do=download"][href*="r="]')
-  const t = row.querySelector('.ipsType_break, h4, .ipsDataItem_title') || row
+  const t = (row.querySelector('.ipsType_break, h4, .ipsDataItem_title') || row).cloneNode(true)
+  t.querySelectorAll('[data-wh3lmm-note]').forEach((n) => n.remove()) // the window's own notes are not part of the name
   return a ? { href: a.href, name: t.textContent.trim().split(/\\s*\\n/)[0].trim() } : null
 }).filter(Boolean)`
 
@@ -388,7 +394,7 @@ export async function downloadQueueFromLoversLab(
       else failed = `Download ${state}.`
     })
     // The download ends the page; show what is going on instead of an empty window.
-    if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
+    if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”${item.getTotalBytes() > 0 ? ` (${Math.round(item.getTotalBytes() / 1e6)} MB)` : ''}. Large files take a while – LoversLab sets the speed. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
   }
   ses.on('will-download', onDownload)
   const waitFor = async (count: number) => {

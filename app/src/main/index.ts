@@ -1,9 +1,9 @@
-import { existsSync, readdirSync } from 'node:fs'
+import { appendFileSync, existsSync, readdirSync } from 'node:fs'
 import { readFile, stat, writeFile } from 'node:fs/promises'
 import { homedir } from 'node:os'
 import { basename, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { app, BrowserWindow, dialog, ipcMain, net, protocol, shell } from 'electron'
+import { app, BrowserWindow, crashReporter, dialog, ipcMain, net, protocol, shell } from 'electron'
 import type { FileHint } from '@shared/install'
 import { DEFAULTS, type GameScan, type RelayContribution, type RelayReport, type RelayResult, type ScriptReport, type Settings } from '@shared/api'
 import { parseLuaLog } from '@shared/health'
@@ -214,6 +214,19 @@ async function workshopPreview(id: string): Promise<Response> {
   }
   return new Response(null, { status: 404 })
 }
+
+crashReporter.start({ uploadToServer: false })
+const crashLog = (text: string) => {
+  try {
+    appendFileSync(join(app.getPath('userData'), 'queue.log'), `${new Date().toISOString()} ${text}\n`)
+  } catch {
+    // never let logging fail the app
+  }
+}
+app.on('render-process-gone', (_e, _w, d) => crashLog(`renderer gone: ${d.reason} (${d.exitCode})`))
+app.on('child-process-gone', (_e, d) => crashLog(`child process gone: ${d.type} ${d.reason} (${d.exitCode})`))
+process.on('uncaughtException', (err) => crashLog(`uncaught: ${err.stack ?? err}`))
+app.on('will-quit', () => crashLog('app quits'))
 
 app.whenReady().then(() => {
   protocol.handle('wh3lmm', (req) => {
