@@ -435,9 +435,7 @@
    "playAs": [],
    "phase": "",
    "status": "active",
-   "knownIssues": [
-    "A player reported (2026-11-01) that Miao Alchemy (pack + assets) crashes the game at start with the merged pack but not with the old @Soil_Miaoying_Corrupted_Units.pack; not confirmed yet."
-   ],
+   "knownIssues": [],
    "notes": "Partially tested merged pack. Using the wrong Soil pack gives startup errors; the merged one fixed them (user report 2026-10-29). MrDustV also fixed Soil's Azazel/Miao corrupted units for patch 9.0 (Archaon too)."
   },
   {
