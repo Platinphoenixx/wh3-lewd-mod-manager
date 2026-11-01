@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { InstalledPack } from './api'
-import { buildModList, planLaunch } from './launch'
+import { buildModList, pickVariants, planLaunch } from './launch'
 
 const ws = (file: string, id: string): InstalledPack => ({ file, source: 'workshop', steamId: id, path: `E:\\Steam\\workshop\\content\\1142710\\${id}\\${file}`, size: 1, mtime: 0 })
 const data = (file: string): InstalledPack => ({ file, source: 'data', path: `E:\\Game\\data\\${file}`, size: 1, mtime: 0 })
@@ -40,5 +40,24 @@ describe('planLaunch', () => {
     const variants = [data('@@ A Loi variant.pack'), data('@@ B Loi variant.pack')]
     const plan = planLaunch([{ key: 'mod:loi', name: 'Loi', pack: '@@ B Loi variant.pack' }], () => variants)
     expect(plan.packs.map((p) => p.file)).toEqual(['@@ B Loi variant.pack'])
+  })
+})
+
+describe('pickVariants', () => {
+  const groups = new Map([['futa', ['@Legion.pack', '@Legion (no futa).pack']]])
+  const both = [data('@Legion (no futa).pack'), data('@Legion.pack'), data('@reskin1.pack')]
+
+  it('loads one pack per pick-one group, the first in catalog order by default', () => {
+    expect(pickVariants(both, groups).map((p) => p.file)).toEqual(['@Legion.pack', '@reskin1.pack'])
+  })
+
+  it("keeps the player's choice when it is installed", () => {
+    expect(pickVariants(both, groups, { futa: '@legion (no futa).pack' }).map((p) => p.file)).toEqual(['@Legion (no futa).pack', '@reskin1.pack'])
+    expect(pickVariants([data('@Legion.pack')], groups, { futa: '@Legion (no futa).pack' }).map((p) => p.file)).toEqual(['@Legion.pack'])
+  })
+
+  it('is used by planLaunch for mods without an exact template pack', () => {
+    const plan = planLaunch([{ key: 'mod:x', name: 'X', groups, chosen: { futa: '@Legion (no futa).pack' } }], () => both)
+    expect(plan.packs.map((p) => p.file)).toEqual(['@Legion (no futa).pack', '@reskin1.pack'])
   })
 })

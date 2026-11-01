@@ -1,3 +1,4 @@
+import type { Mod } from '@catalog/schema'
 import type { InstalledPack } from './api'
 
 /** Name of the mod list this app writes into the game folder (separate from other managers' files). */
@@ -34,12 +35,40 @@ export function buildModList(packs: InstalledPack[]): string {
   return [...dirs.map((d) => `add_working_directory "${d}";`), ...mods].join('\n') + '\n'
 }
 
+/** Pick-one packs of a mod (same `exclusiveGroup`, e.g. with/without futa models, language): group → files in catalog order. */
+export function variantGroups(mod: Mod | undefined): Map<string, string[]> {
+  const groups = new Map<string, string[]>()
+  for (const p of mod?.packs ?? []) {
+    if (!p.exclusiveGroup) continue
+    groups.set(p.exclusiveGroup, [...(groups.get(p.exclusiveGroup) ?? []), p.file])
+  }
+  return groups
+}
+
+/**
+ * Of the installed packs of one mod, keeps one per pick-one group: the player's choice (`chosen`: group → file)
+ * when it is installed, else the first installed one in catalog order. Packs outside a group all stay.
+ */
+export function pickVariants(all: InstalledPack[], groups: Map<string, string[]>, chosen: Record<string, string> = {}): InstalledPack[] {
+  const drop = new Set<string>()
+  for (const [group, files] of groups) {
+    const lower = files.map((f) => f.toLowerCase())
+    const present = all.filter((p) => lower.includes(p.file.toLowerCase()))
+    if (present.length < 2) continue
+    const want = present.find((p) => p.file.toLowerCase() === chosen[group]?.toLowerCase())
+      ?? [...present].sort((a, b) => lower.indexOf(a.file.toLowerCase()) - lower.indexOf(b.file.toLowerCase()))[0]
+    for (const p of present) if (p !== want) drop.add(p.path)
+  }
+  return all.filter((p) => !drop.has(p.path))
+}
+
 /**
  * Picks the installed packs for profile entries (already in load order). `packsFor` returns the
  * installed packs of one entry, best match first; entries without any are reported as missing.
+ * Of a mod's pick-one variants only one is loaded (see `pickVariants`).
  */
 export function planLaunch(
-  entries: { key: string; name: string; pack?: string }[],
+  entries: { key: string; name: string; pack?: string; groups?: Map<string, string[]>; chosen?: Record<string, string> }[],
   packsFor: (key: string) => InstalledPack[]
 ): LaunchPlan {
   const packs: InstalledPack[] = []
@@ -48,7 +77,7 @@ export function planLaunch(
     const all = packsFor(e.key)
     // A template names the exact pack; other installed packs of the same mod (variants) stay out.
     const exact = e.pack ? all.filter((p) => p.file.toLowerCase() === e.pack!.toLowerCase()) : []
-    const found = exact.length ? exact : all
+    const found = exact.length ? exact : pickVariants(all, e.groups ?? new Map(), e.chosen)
     if (found.length) packs.push(...found)
     else missing.push(e.name)
   }

@@ -9,7 +9,7 @@ import { ModCover, withParents } from './ModCover'
 import { ConflictList } from './ConflictList'
 import { InstallPanel } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
-import { planLaunch } from '@shared/launch'
+import { pickVariants, planLaunch, variantGroups } from '@shared/launch'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
@@ -215,11 +215,32 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     .sort((a, b) => Number(extras.has(b.k)) - Number(extras.has(a.k)) || a.name.localeCompare(b.name))
   const groups: CandidateGroup[] = ['recommended', 'character', 'translation', 'other', 'general']
   const baseCount = resolved.entries.filter((e) => e.origin === 'base').length
+  const groupsOf = (key: string) => {
+    const t = parseTargetKey(key)
+    return variantGroups('mod' in t ? data.index.mods.get(t.mod) : undefined)
+  }
   const launch = useMemo(
-    () => planLaunch(order.map((o) => ({ key: o.key, name: o.name, pack: byKey.get(o.key)?.pack })), (k) => installed.get(k) ?? []),
+    () => planLaunch(
+      order.map((o) => ({ key: o.key, name: o.name, pack: byKey.get(o.key)?.pack, groups: groupsOf(o.key), chosen: profile.variants?.[o.key] })),
+      (k) => installed.get(k) ?? []
+    ),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [order, installed]
+    [order, installed, profile.variants]
   )
+  // Installed pick-one variants of one entry (two or more of a group), for the version choice in the load order.
+  const variantChoices = (key: string) => {
+    const all = installed.get(key) ?? []
+    const loaded = new Set(pickVariants(all, groupsOf(key), profile.variants?.[key]).map((p) => p.file))
+    const mod = (() => { const t = parseTargetKey(key); return 'mod' in t ? data.index.mods.get(t.mod) : undefined })()
+    return [...groupsOf(key)].flatMap(([group, files]) => {
+      const present = files.filter((f) => all.some((p) => p.file.toLowerCase() === f.toLowerCase()))
+      if (present.length < 2) return []
+      const label = (f: string) => mod?.packs.find((p) => p.file === f)?.note ?? f
+      return [{ group, options: present.map((f) => ({ file: f, label: label(f) })), loaded: present.find((f) => loaded.has(f)) ?? present[0] }]
+    })
+  }
+  const chooseVariant = (key: string, group: string, file: string) =>
+    onChange({ ...profile, variants: { ...profile.variants, [key]: { ...profile.variants?.[key], [group]: file } } })
 
   const play = async () => {
     if (launch.missing.length) {
@@ -385,6 +406,14 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                     <td>
                       {'mod' in parseTargetKey(o.key) ? <a onClick={() => data.openMod((parseTargetKey(o.key) as { mod: string }).mod)}>{o.name}</a> : o.name}
                       {e?.pack && <div className="small muted">{e.pack}</div>}
+                      {!e?.pack && variantChoices(o.key).map((v) => (
+                        <div key={v.group} className="small variant-choice">
+                          Version{' '}
+                          <select value={v.loaded} onChange={(ev) => chooseVariant(o.key, v.group, ev.target.value)} title="Several versions of this mod are installed; only the chosen one is loaded">
+                            {v.options.map((x) => <option key={x.file} value={x.file}>{x.label}</option>)}
+                          </select>
+                        </div>
+                      ))}
                       {stale.has(o.key) && (
                         <div className="small warn-text">Older than the last major game update; changes game data.</div>
                       )}

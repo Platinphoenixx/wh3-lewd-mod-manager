@@ -13,6 +13,8 @@ export interface Profile {
   removed: string[]
   /** Positions the user chose for own mods: own key → key of the entry it sits above (null = bottom). */
   pins?: Record<string, string | null>
+  /** Pick-one pack variants the player chose: entry key → exclusiveGroup → pack file (default: first installed). */
+  variants?: Record<string, Record<string, string>>
   createdAt: string
   updatedAt: string
 }
