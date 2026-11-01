@@ -1,0 +1,1168 @@
+{
+ "mod": "ll-41120",
+ "packs": [
+  "(X)_ElspethXXX.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "ElspethXXX/(X)_ElspethXXX.pack": {
+   "files": 214,
+   "dependencies": []
+  }
+ },
+ "fileCount": 214,
+ "byTopFolder": {
+  "variantmeshes": 184,
+  "ui": 23,
+  "db": 6,
+  "marthvs": 1
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 49,
+  "inMod": 26,
+  "inBaseGame": 23,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "sch_elspeth_base",
+   "sch_elspeth_light",
+   "sch_elspeth_hoodless",
+   "sch_elspeth_prp",
+   "sch_elspeth_prpbig",
+   "sch_elspeth_red",
+   "sch_elspeth_mid",
+   "sch_elspeth_old",
+   "sch_elspeth_fork"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "sch_elspeth_base",
+   "wh3_dlc25_emp_elspeth_von_draken",
+   "sch_elspeth_light",
+   "sch_elspeth_hoodless",
+   "sch_elspeth_prp",
+   "sch_elspeth_prpbig",
+   "sch_elspeth_red",
+   "sch_elspeth_mid",
+   "sch_elspeth_old",
+   "sch_elspeth_fork"
+  ],
+  "campaign_character_arts_tables": [
+   "sch_elspeth_base",
+   "none",
+   "wh_main_campaign_emp_ship_heavy",
+   "cam_lord_hu1j_dlc25_elspeth_scythe",
+   "cam_heavy_ship_01",
+   "sch_elspeth_light",
+   "sch_elspeth_hoodless",
+   "sch_elspeth_prp",
+   "sch_elspeth_prpbig",
+   "sch_elspeth_red",
+   "sch_elspeth_mid",
+   "sch_elspeth_old",
+   "sch_elspeth_fork"
+  ],
+  "unit_variants_tables": [
+   "wh3_dlc25_emp_cha_elspeth_von_draken",
+   "sch_elspeth_base",
+   "placeholder",
+   "wh3_dlc25_emp_cha_elspeth_von_draken_carmine_dragon",
+   "wh3_dlc25_emp_cha_elspeth_von_draken_warhorse"
+  ],
+  "variants_tables": [
+   "wh3_dlc25_emp_mnt_warhorse_armoured_elspeth",
+   "emp_warhorse_armoured_elspeth",
+   "sch_elspeth_base",
+   "sch_elspeth_light",
+   "sch_elspeth_hoodless",
+   "sch_elspeth_prp",
+   "sch_elspeth_prpbig",
+   "sch_elspeth_red",
+   "sch_elspeth_mid",
+   "sch_elspeth_old",
+   "sch_elspeth_fork"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/li_elspeth_first_",
+   "size": 220,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_elspeth_first",
+   "size": 223,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_elspeth_first",
+   "size": 340,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/li_elspeth_firstxxx",
+   "size": 188,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "db/variants_tables/li_elspeth_first",
+   "size": 299,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "db/variants_tables/li_elspeth_firstxxx",
+   "size": 337,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "marthvs/mod/schess_elspeth_variantselector.lua",
+   "size": 128,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_elspeth_von_draken_0.png",
+   "size": 20638,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/emp_elspeth_von_draken_0.png",
+   "size": 43246,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_base.png",
+   "size": 41151,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_fork.png",
+   "size": 76025,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_mid.png",
+   "size": 76093,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_old.png",
+   "size": 76025,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_prp.png",
+   "size": 162970,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_prpbig.png",
+   "size": 167710,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/sch_elspeth_red.png",
+   "size": 44373,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_sch_elspeth.bin",
+   "size": 275,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/emp_elspeth_von_draken_0.png",
+   "size": 15622,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_base.png",
+   "size": 17577,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_fork.png",
+   "size": 22530,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_mid.png",
+   "size": 19341,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_old.png",
+   "size": 22530,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_prp.png",
+   "size": 15483,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_prpbig.png",
+   "size": 64988,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/sch_elspeth_red.png",
+   "size": 17210,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings_sch_elspeth.bin",
+   "size": 283,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/skins/default/dlc25_gardens_of_morr/garden_elspeth_map_pin.png",
+   "size": 9245,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/skins/default/dlc25_gardens_of_morr/garden_elspeth_map_pin_hover.png",
+   "size": 9273,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/skins/default/dlc25_gardens_of_morr/garden_frame_char_slot_filled.png",
+   "size": 6112,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "ui/skins/default/dlc25_gardens_of_morr/garden_frame_char_slot_hover.png",
+   "size": 6188,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_elspeth_von_draken.variantmeshdefinition",
+   "size": 422,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_base.variantmeshdefinition",
+   "size": 421,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_fork.variantmeshdefinition",
+   "size": 420,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_hoodless.variantmeshdefinition",
+   "size": 421,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_light.variantmeshdefinition",
+   "size": 417,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_mid.variantmeshdefinition",
+   "size": 419,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_old.variantmeshdefinition",
+   "size": 419,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_prp.variantmeshdefinition",
+   "size": 419,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_prpbig.variantmeshdefinition",
+   "size": 422,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sch_elspeth_red.variantmeshdefinition",
+   "size": 411,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/vmp/vmp_isabella_von_carstein/materials/schlossy_isabella_hair_2a_weighted4_alpha_off.xml.material",
+   "size": 610,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/vmp/vmp_isabella_von_carstein/materials/schlossy_isabella_hair_2b_weighted4_alpha_on.xml.material",
+   "size": 611,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/vmp/vmp_isabella_von_carstein/tex/schlossy_isabella_von_carstein_hair_1.dds",
+   "size": 377165,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/vmp/vmp_isabella_von_carstein/tex/schlossy_isabella_von_carstein_hair_2.dds",
+   "size": 380867,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_first.rigid_model_v2",
+   "size": 2055946,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_first.wsmodel",
+   "size": 719,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_fork.rigid_model_v2",
+   "size": 2192866,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_fork.wsmodel",
+   "size": 947,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_mid.rigid_model_v2",
+   "size": 1525810,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_mid.wsmodel",
+   "size": 581,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_old.rigid_model_v2",
+   "size": 1486520,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_old.wsmodel",
+   "size": 501,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_prp.rigid_model_v2",
+   "size": 1988374,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_prp.wsmodel",
+   "size": 768,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_prpbig.rigid_model_v2",
+   "size": 1996936,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_prpbig.wsmodel",
+   "size": 902,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body hvy_2_weighted2_alpha_on.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body hvy_3_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body hvy_weighted4_alpha_on.xml.material",
+   "size": 563,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body suit_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body suit_2_weighted2_alpha_on.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body suit_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body_2_weighted2_alpha_off.xml.material",
+   "size": 561,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body_2_weighted2_alpha_on.xml.material",
+   "size": 561,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body_weighted4_alpha_on.xml.material",
+   "size": 560,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/brst_shawl_2_weighted2_alpha_on.xml.material",
+   "size": 569,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/eyelash_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/eyelash_2_weighted2_alpha_on.xml.material",
+   "size": 571,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/head2_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/head2_2_weighted2_alpha_on.xml.material",
+   "size": 567,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/head2_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_hair_2_weighted2_alpha_on.xml.material",
+   "size": 588,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_hair_3_weighted2_alpha_off.xml.material",
+   "size": 587,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_hair_weighted4_alpha_on.xml.material",
+   "size": 587,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_head_01_submesh_1_s_2_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_head_01_submesh_1_s_2_weighted2_alpha_on.xml.material",
+   "size": 589,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/hef_princess_head_01_submesh_1_s_weighted4_alpha_on.xml.material",
+   "size": 587,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_body_01_weighted4_alpha_on.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_cloak_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_cloak_2_weighted2_alpha_on.xml.material",
+   "size": 572,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_cloak_weighted4_alpha_on.xml.material",
+   "size": 572,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_feathers_2_weighted2_alpha_on.xml.material",
+   "size": 553,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 550,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 550,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_submesh_9_su_6_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_submesh_9_su_7_weighted2_alpha_off.xml.material",
+   "size": 598,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_submesh_9_su_weighted4_alpha_off.xml.material",
+   "size": 593,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/mar_elspeth_head_01_weighted4_alpha_on.xml.material",
+   "size": 550,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_submesh_0_2_weighted2_alpha_on.xml.material",
+   "size": 568,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_submesh_0_3_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 565,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_hood_submesh_p_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/nun_shawl_export_2_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/schlossy_isabella_hair_2a_2_weighted2_alpha_off.xml.material",
+   "size": 610,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/schlossy_isabella_hair_2b_2_weighted2_alpha_on.xml.material",
+   "size": 612,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/shawl_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/wef_bladesinger_head_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 598,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/wef_bladesinger_head_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 599,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/wef_glade_captain_head_01_submes_2_weighted2_alpha_off.xml.material",
+   "size": 591,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/wef_glade_captain_head_01_submes_weighted4_alpha_on.xml.material",
+   "size": 591,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/li_elspeth_red.rigid_model_v2",
+   "size": 1933124,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/li_elspeth_red.wsmodel",
+   "size": 795,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/materials/head2_2_weighted2_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/body_weighted4_alpha_on.xml.material",
+   "size": 558,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/eyelash_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/head2_2_weighted2_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_body_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_body_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_body_01_weighted4_alpha_on.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 558,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 557,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/mar_elspeth_head_01_weighted4_alpha_on.xml.material",
+   "size": 557,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/nun_hood_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/nun_hood_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/nun_hood_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 563,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/nun_shawl_export_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/nun_shawl_export_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/schlossy_isabella_hair_2a_2_weighted2_alpha_off.xml.material",
+   "size": 610,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/materials/shawl_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/sch_elspeth_hoodless.rigid_model_v2",
+   "size": 1809316,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/sch_elspeth_hoodless.wsmodel",
+   "size": 639,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/schlossy_isabella_von_carstein_01.rigid_model_v2",
+   "size": 2687388,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_first.rigid_model_v2",
+   "size": 1600140,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/li_elspeth_first.wsmodel",
+   "size": 465,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/body_weighted4_alpha_on.xml.material",
+   "size": 558,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/corruption_elspeth_nun/materials/shawl_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_base_colour.dds",
+   "size": 223689,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_material_map.dds",
+   "size": 211395,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_normal.dds",
+   "size": 579688,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_mine.dds",
+   "size": 369856,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_map.dds",
+   "size": 267740,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_nor.dds",
+   "size": 816853,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_base_colour.dds",
+   "size": 144784,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_material_map.dds",
+   "size": 261896,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_hoodless/variantmeshes/variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_normal.dds",
+   "size": 835461,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/body_weighted4_alpha_on.xml.material",
+   "size": 558,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/eyelash_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_body_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_body_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_body_01_weighted4_alpha_on.xml.material",
+   "size": 551,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 558,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 557,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/mar_elspeth_head_01_weighted4_alpha_on.xml.material",
+   "size": 557,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/nun_hood_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/nun_hood_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/nun_hood_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 563,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/nun_shawl_export_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/nun_shawl_export_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/schlossy_isabella_hair_2a_2_weighted2_alpha_off.xml.material",
+   "size": 610,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/materials/shawl_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/sch_elspeth_light.rigid_model_v2",
+   "size": 1887700,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/sch_elspeth_light.wsmodel",
+   "size": 673,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/sch_elspeth_light/schlossy_isabella_von_carstein_01.rigid_model_v2",
+   "size": 2687388,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/1nun_col_mine.dds",
+   "size": 369856,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/[lig]elspeth.pack",
+   "size": 8594307,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/[lig]elspeth.png",
+   "size": 554040,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/body_base_colour.dds",
+   "size": 1793190,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/elspeth_body_b.dds",
+   "size": 1789333,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/hef_princess_head_01_base_colourevd.dds",
+   "size": 500399,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_first.pack",
+   "size": 4188537,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_base_colour.dds",
+   "size": 223689,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_material_map.dds",
+   "size": 211395,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_head_normal.dds",
+   "size": 579688,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/li_elspeth_karl.2pack.pack",
+   "size": 5168376,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/lin_corruption_elspeth_nun.pack",
+   "size": 2001670,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/lin_corruption_elspeth_nun.png",
+   "size": 393226,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/mar_elspeth_body_01_base_colour.dds",
+   "size": 540839,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/mar_elspeth_body_01_base_colourmod.dds",
+   "size": 552263,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/mar_elspeth_head_01_base_colour.dds",
+   "size": 221751,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_mine - copy.dds",
+   "size": 369856,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_mine - wht.dds",
+   "size": 369856,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_mine.dds",
+   "size": 369856,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_mineptat.dds",
+   "size": 361250,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_minertat.dds",
+   "size": 357546,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_col_minetat.dds",
+   "size": 349787,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_map.dds",
+   "size": 267740,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/nun_nor.dds",
+   "size": 816853,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/prp_elspeth_head_base_colour.dds",
+   "size": 222135,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/schlossy_isabella.pack",
+   "size": 18404332,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/schlossy_isabella.png",
+   "size": 219764,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/schlossy_isabella_von_carstein_hair_1.dds",
+   "size": 377165,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/schlossy_isabella_von_carstein_hair_2.dds",
+   "size": 380867,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_base_colour.dds",
+   "size": 144784,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_material_map.dds",
+   "size": 261896,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/corruption_elspeth/tex/shawl_nun_shawl_normal.dds",
+   "size": 835461,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/hef_princess_head_01_submesh_1_s_weighted4_alpha_on.xml.material",
+   "size": 591,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_1_weighted4_alpha_off.xml.material",
+   "size": 597,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_2_weighted4_alpha_off.xml.material",
+   "size": 597,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_3_weighted4_alpha_off.xml.material",
+   "size": 597,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_4_weighted4_alpha_off.xml.material",
+   "size": 597,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_5_weighted4_alpha_off.xml.material",
+   "size": 597,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/materials/mar_elspeth_head_01_submesh_9_su_weighted4_alpha_off.xml.material",
+   "size": 805,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_02_basecolor.dds",
+   "size": 1081029,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_02_material.dds",
+   "size": 720835,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_02_normal.dds",
+   "size": 2323683,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_03_basecolor.dds",
+   "size": 99053,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_04_basecolor.dds",
+   "size": 1472255,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_04_material.dds",
+   "size": 914865,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_04_normal.dds",
+   "size": 3085353,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_05_basecolor.dds",
+   "size": 711784,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_06_basecolor.dds",
+   "size": 1558494,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1j/mar/mar_elspeth/tex/mar_elspeth_head_06_mack.dds",
+   "size": 11831,
+   "pack": "ElspethXXX/(X)_ElspethXXX.pack"
+  }
+ ]
+}

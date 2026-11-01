@@ -1,0 +1,827 @@
+{
+ "mod": "ll-52195",
+ "packs": [
+  "(X)_Naughty_Nef_XXX.pack"
+ ],
+ "dependencies": [],
+ "fileCount": 174,
+ "byTopFolder": {
+  "variantmeshes": 115,
+  "ui": 53,
+  "db": 5,
+  "marthvs": 1
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 138,
+  "inMod": 92,
+  "inBaseGame": 38,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [
+  "Beautiful Neferata.pack",
+  "@zeta_neferata_reskin_stockings.pack"
+ ],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "vmp_neferataV",
+   "vmp_neferataT",
+   "vmp_neferataVAN",
+   "vmp_neferata_t1",
+   "vmp_neferata_t2",
+   "vmp_neferata_t3",
+   "vmp_neferata_t4",
+   "vmp_neferata_t5",
+   "vmp_neferata_t6",
+   "vmp_neferata_v1",
+   "vmp_neferata_v2",
+   "vmp_neferata_v3",
+   "vmp_neferata_v4",
+   "vmp_neferata_v5",
+   "vmp_neferata_v6",
+   "vmp_neferata"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "vmp_neferataV",
+   "wh3_dlc29_vmp_neferata",
+   "vmp_neferataT",
+   "vmp_neferataVAN",
+   "vmp_neferata_t1",
+   "vmp_neferata_t2",
+   "vmp_neferata_t3",
+   "vmp_neferata_t4",
+   "vmp_neferata_t5",
+   "vmp_neferata_t6",
+   "vmp_neferata_v1",
+   "vmp_neferata_v2",
+   "vmp_neferata_v3",
+   "vmp_neferata_v4",
+   "vmp_neferata_v5",
+   "vmp_neferata_v6",
+   "vmp_neferata"
+  ],
+  "campaign_character_arts_tables": [
+   "vmp_neferataV",
+   "none",
+   "wh_main_campaign_vmp_ship_heavy",
+   "cam_hu1ba_dlc29_vmp_neferata_staff_and_sword",
+   "cam_heavy_ship_01",
+   "vmp_neferataT",
+   "vmp_neferataVAN",
+   "vmp_neferata_t1",
+   "vmp_neferata_t2",
+   "vmp_neferata_t3",
+   "vmp_neferata_t4",
+   "vmp_neferata_t5",
+   "vmp_neferata_t6",
+   "vmp_neferata_v1",
+   "vmp_neferata_v2",
+   "vmp_neferata_v3",
+   "vmp_neferata_v4",
+   "vmp_neferata_v5",
+   "vmp_neferata_v6",
+   "vmp_neferata"
+  ],
+  "unit_variants_tables": [
+   "wh3_dlc29_vmp_cha_neferata",
+   "wh3_dlc29_vmp_neferata",
+   "vmp_neferata.",
+   "wh3_dlc29_vmp_cha_neferata_barded_nightmare",
+   "wh3_dlc29_vmp_cha_neferata_barded_nightmare_mp",
+   "placeholder",
+   "wh3_dlc29_vmp_cha_neferata_coven_throne",
+   "vmp_neferata_t4",
+   "wh3_dlc29_vmp_cha_neferata_coven_throne_mp",
+   "wh3_dlc29_vmp_cha_neferata_dread_abyssal",
+   "wh3_dlc29_vmp_cha_neferata_hellsteed",
+   "wh3_dlc29_vmp_cha_neferata_hellsteed_mp",
+   "wh3_dlc29_vmp_cha_neferata_mp",
+   "wh3_dlc29_vmp_cha_neferata_zombie_dragon",
+   "wh3_dlc29_vmp_cha_neferata_zombie_dragon_mp"
+  ],
+  "variants_tables": [
+   "vmp_neferataV",
+   "vmp_neferataT",
+   "vmp_neferataVAN",
+   "vmp_neferata_t1",
+   "vmp_neferata_t2",
+   "vmp_neferata_t3",
+   "vmp_neferata_t4",
+   "vmp_neferata_t5",
+   "vmp_neferata_t6",
+   "vmp_neferata_v1",
+   "vmp_neferata_v2",
+   "vmp_neferata_v3",
+   "vmp_neferata_v4",
+   "vmp_neferata_v5",
+   "vmp_neferata_v6",
+   "vmp_neferata"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/(x)_naughty_nef0a",
+   "size": 234
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/(x)_naughty_nef1a",
+   "size": 203
+  },
+  {
+   "path": "db/campaign_character_arts_tables/(x)_naughty_nef2b",
+   "size": 367
+  },
+  {
+   "path": "db/unit_variants_tables/(x)_naughty_nef3c",
+   "size": 317
+  },
+  {
+   "path": "db/variants_tables/(x)_naughty_nef4c",
+   "size": 206
+  },
+  {
+   "path": "marthvs/mod/naughty_neffy_variantselector.lua",
+   "size": 126
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_0.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t1.png",
+   "size": 150724
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t2.png",
+   "size": 178188
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t3.png",
+   "size": 150724
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t4.png",
+   "size": 178188
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t5.png",
+   "size": 178188
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_t6.png",
+   "size": 178188
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v1.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v2.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v3.png",
+   "size": 148219
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v4.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v5.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_v6.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferatat.png",
+   "size": 178188
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferatav.png",
+   "size": 21533
+  },
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferatavan.png",
+   "size": 22301
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata.png",
+   "size": 263424
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_0.png",
+   "size": 80993
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_t1.png",
+   "size": 226124
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_t2.png",
+   "size": 220124
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_t3.png",
+   "size": 226326
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_t4.png",
+   "size": 259753
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_t5.png",
+   "size": 220124
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v1.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v1.png/vmp_neferata_t6.png",
+   "size": 220124
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v2.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v3.png",
+   "size": 223675
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v4.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v5.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_v6.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferatat.png",
+   "size": 220124
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferatav.png",
+   "size": 77100
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferatavan.png",
+   "size": 60717
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_vmp_neferata.bin",
+   "size": 261
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata.png",
+   "size": 18805
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_0.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t1.png",
+   "size": 105455
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t2.png",
+   "size": 116037
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t3.png",
+   "size": 102554
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t4.png",
+   "size": 18805
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t5.png",
+   "size": 116037
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_t6.png",
+   "size": 116037
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v1.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v2.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v3.png",
+   "size": 102557
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v4.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v5.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_v6.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferatat.png",
+   "size": 116037
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferatav.png",
+   "size": 17701
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferatavan.png",
+   "size": 19517
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings_vmp_neferata.bin",
+   "size": 287
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata.variantmeshdefinition",
+   "size": 322
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t1.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t2.variantmeshdefinition",
+   "size": 315
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t3.variantmeshdefinition",
+   "size": 315
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t4.variantmeshdefinition",
+   "size": 315
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t5.variantmeshdefinition",
+   "size": 315
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t6.variantmeshdefinition",
+   "size": 317
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v1.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v2.variantmeshdefinition",
+   "size": 313
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v3.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v4.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v5.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v6.variantmeshdefinition",
+   "size": 316
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferatat.variantmeshdefinition",
+   "size": 330
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferatav.variantmeshdefinition",
+   "size": 314
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferatavan.variantmeshdefinition",
+   "size": 346
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_body_01_submesh_6_2_weighted2_alpha_off.xml.material",
+   "size": 565
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_body_01_submesh_6_weighted4_alpha_off.xml.material",
+   "size": 567
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 559
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_head_01_weighted4_alpha_on.xml.material",
+   "size": 558
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_su_4_weighted2_alpha_off.xml.material",
+   "size": 566
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_su_weighted4_alpha_off.xml.material",
+   "size": 566
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_submesh_6_3_weighted2_alpha_off.xml.material",
+   "size": 565
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_submesh_6_weighted4_alpha_on.xml.material",
+   "size": 567
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_head_03_su_2_weighted2_alpha_off.xml.material",
+   "size": 567
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_head_03_su_weighted4_alpha_off.xml.material",
+   "size": 567
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_king_head_01_submesh_3_2_weighted2_alpha_off.xml.material",
+   "size": 566
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_king_head_01_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 566
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_prince_torso_01 - clone_weighted4_alpha_on.xml.material",
+   "size": 568
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_prince_torso_01_3_weighted2_alpha_off.xml.material",
+   "size": 560
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_bandage_body_2_weighted2_alpha_off.xml.material",
+   "size": 558
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_bandage_body_weighted4_alpha_on.xml.material",
+   "size": 558
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_lahmian_vampire_hero_head_0_2_weighted2_alpha_off.xml.material",
+   "size": 595
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_lahmian_vampire_hero_head_0_weighted4_alpha_on.xml.material",
+   "size": 594
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_off.xml.material",
+   "size": 561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_0_submes_weighted4_alpha_on.xml.material",
+   "size": 562
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 560
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_sigvald_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 592
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_sigvald_head_01_weighted4_alpha_on.xml.material",
+   "size": 593
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/wef_arahan_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/wef_arahan_head_01_weighted4_alpha_on.xml.material",
+   "size": 560
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_mask.dds",
+   "size": 199
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_material.dds",
+   "size": 4814597
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_normal.dds",
+   "size": 2722816
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/sig_black_long_hair_01_base_colour.dds",
+   "size": 214483
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse.dds",
+   "size": 10412439
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse1.dds",
+   "size": 8274860
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse2.dds",
+   "size": 10352813
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_lahmian_face_base_colour1.dds",
+   "size": 367822
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tmb_neferata_s1.rigid_model_v2",
+   "size": 2156046
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tmb_neferata_s1.wsmodel",
+   "size": 622
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_body_2_weighted2_alpha_off.xml.material",
+   "size": 591
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_body_weighted4_alpha_off.xml.material",
+   "size": 587
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_boots_2_weighted2_alpha_off.xml.material",
+   "size": 561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_boots_weighted4_alpha_off.xml.material",
+   "size": 559
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_2_weighted2_alpha_off.xml.material",
+   "size": 592
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_2_weighted2_alpha_on.xml.material",
+   "size": 595
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_weighted4_alpha_on.xml.material",
+   "size": 594
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashesp_weighted4_alpha_on.xml.material",
+   "size": 596
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collar_2_weighted2_alpha_off.xml.material",
+   "size": 602
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collar_weighted4_alpha_off.xml.material",
+   "size": 601
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collarp_weighted4_alpha_off.xml.material",
+   "size": 604
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_high_priest_body_01_su_2_weighted4_alpha_on.xml.material",
+   "size": 567
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_high_priest_body_01_su_9_weighted2_alpha_on.xml.material",
+   "size": 564
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_torso_01_1_weighted2_alpha_on.xml.material",
+   "size": 561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_2_weighted2_alpha_off.xml.material",
+   "size": 559
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_2_weighted2_alpha_on.xml.material",
+   "size": 558
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_weighted4_alpha_on.xml.material",
+   "size": 559
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2p_weighted4_alpha_on.xml.material",
+   "size": 561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body_2_weighted2_alpha_on.xml.material",
+   "size": 557
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_off.xml.material",
+   "size": 562
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_on.xml.material",
+   "size": 563
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_weighted4_alpha_on.xml.material",
+   "size": 563
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmet_2_weighted2_alpha_off.xml.material",
+   "size": 550
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmet_weighted4_alpha_off.xml.material",
+   "size": 550
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmetp_weighted4_alpha_off.xml.material",
+   "size": 552
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body.dds",
+   "size": 6138721
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body_material_map.dds",
+   "size": 5839399
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body_norm.dds",
+   "size": 13529979
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair.dds",
+   "size": 4553573
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair2.dds",
+   "size": 3976229
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair_material_map.dds",
+   "size": 567561
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair_norm.dds",
+   "size": 7025945
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_diffuse.dds",
+   "size": 1240411
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_diffuse2.dds",
+   "size": 2486308
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_material_map.dds",
+   "size": 3480800
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_normal.dds",
+   "size": 7507012
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_diffuse.dds",
+   "size": 2723761
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_material_map.dds",
+   "size": 2928054
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_normal.dds",
+   "size": 5609182
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/vmp_neferata_01_base_colour2.dds",
+   "size": 3616310
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_0.rigid_model_v2",
+   "size": 6564986
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_0.wsmodel",
+   "size": 415
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_helm.rigid_model_v2",
+   "size": 262558
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_helm.wsmodel",
+   "size": 210
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t1.rigid_model_v2",
+   "size": 8559272
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t1.wsmodel",
+   "size": 583
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t2.rigid_model_v2",
+   "size": 8357258
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t2.wsmodel",
+   "size": 555
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t3.rigid_model_v2",
+   "size": 8526102
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t3.wsmodel",
+   "size": 579
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t4.rigid_model_v2",
+   "size": 9892014
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t4.wsmodel",
+   "size": 504
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t5.rigid_model_v2",
+   "size": 17447072
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t5.wsmodel",
+   "size": 556
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t6.rigid_model_v2",
+   "size": 11022766
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t6.wsmodel",
+   "size": 421
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferatav.rigid_model_v2",
+   "size": 10040512
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferatav.wsmodel",
+   "size": 265
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/materials/neferata_dagger_rigid_alpha_off.xml.material",
+   "size": 584
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/materials/neferata_staff_rigid_alpha_off.xml.material",
+   "size": 589
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_dagger_1h_2.rigid_model_v2",
+   "size": 816876
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_dagger_1h_2.wsmodel",
+   "size": 189
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_staff_2.rigid_model_v2",
+   "size": 1151544
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_staff_2.wsmodel",
+   "size": 186
+  }
+ ]
+}

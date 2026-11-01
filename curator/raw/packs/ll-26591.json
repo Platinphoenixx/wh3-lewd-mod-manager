@@ -1,0 +1,2425 @@
+{
+ "mod": "ll-26591",
+ "packs": [
+  "HuaJS258_corrupted_cathay.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack": {
+   "files": 459,
+   "dependencies": []
+  }
+ },
+ "fileCount": 459,
+ "byTopFolder": {
+  "variantmeshes": 387,
+  "warmachines": 49,
+  "rigidmodels": 15,
+  "db": 8
+ },
+ "tables": [
+  "battle_animations_table_tables",
+  "battle_entities_tables",
+  "battle_personalities_tables",
+  "land_units_tables",
+  "land_units_to_battle_personalities_junctions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 495,
+  "inMod": 237,
+  "inBaseGame": 249,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "rigidmodels/buildings/textures/test_mask.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/cth_flag_02_base_colour.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_2_material_map.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_2_normal.dds",
+   "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/tex/cth_terracotta_sentinel_spear_ror_2h_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/tex/cth_terracotta_sentinel_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour1.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_base_colour03.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_04_base_colour.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "battle_animations_table_tables": [
+   "hu1e_celestial_guard_bannerman_01",
+   "humanoid01e",
+   "hu1e_jade_warrior_bannerman_01",
+   "hu1e_iron_hail_gunners_bannerman_01"
+  ],
+  "battle_entities_tables": [
+   "banner_human",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh_human_male",
+   "infantry_light_effects",
+   "wh_main_unit_combat",
+   "small_entity",
+   "banner_cth"
+  ],
+  "battle_personalities_tables": [
+   "banner_cth_celestial_guard_officer_01",
+   "hu1e_sword_lord",
+   "banner_human",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "hu1e_crossbow_sword_and_shield",
+   "banner_cth_jade_warrior_officer_01",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "banner_cth_iron_hail_gunners_officer_01"
+  ],
+  "land_units_tables": [
+   "wh2_main_leather_30",
+   "inf_ranged",
+   "inf_mis",
+   "wh3_main_unit_long_text_cth_inf_crane_gunners_0",
+   "wh3_main_cth_inf_crane_gunners_0",
+   "hu1e_blunderbuss_sword",
+   "wh3_main_cth_weapon_team_blood",
+   "wh3_main_cth_peasant_sword",
+   "wh3_cth_crane_gun_bullet",
+   "wh_missile_block_65_wood",
+   "wh3_main_unit_short_text_cth_inf_crane_gunners_0",
+   "wh3_main_cth_crane_gunners",
+   "trained",
+   "wh3_main_cth_inf_crane_gunners_0_attributes",
+   "vo_sel_cth_crane_gunners",
+   "vo_sel_generic",
+   "vo_sel_culture",
+   "small",
+   "ranged_direct",
+   "medium",
+   "domination_infantry"
+  ],
+  "land_units_to_battle_personalities_junctions_tables": [
+   "additional_officer",
+   "banner_cth_celestial_guard_officer_01",
+   "wh3_main_cth_inf_dragon_guard_0",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+   "banner_cth_jade_warrior_officer_01",
+   "wh3_main_cth_inf_jade_warriors_0",
+   "wh3_main_cth_inf_jade_warriors_1",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+   "banner_cth_iron_hail_gunners_officer_01",
+   "wh3_main_cth_inf_iron_hail_gunners_0"
+  ],
+  "variants_tables": [
+   "banner_cth_celestial_guard_officer_01",
+   "hu1e/cth/cth_jade_warrior/cth_jade_warrior_01_imposter",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "banner_cth_jade_warrior_officer_01",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "banner_cth_iron_hail_gunners_officer_01",
+   "wh3_main_cth_inf_crane_gunners_0",
+   "cth_iron_crane_gunners",
+   "wh3_dlc24_cth_veh_zhangu_war_drum_driver",
+   "cth_wardrum_driver",
+   "wh3_dlc24_cth_veh_zhangu_war_drum_drummer",
+   "cth_wardrum_dummer"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/battle_animations_table_tables/banner_officers",
+   "size": 226,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/banner_officers",
+   "size": 635,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/battle_personalities_tables/banner_officers",
+   "size": 719,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/land_units_tables/cth",
+   "size": 707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/land_units_to_battle_personalities_junctions_tables/banner_officers",
+   "size": 801,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/variants_tables/banner_officers",
+   "size": 813,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/variants_tables/cth",
+   "size": 165,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "db/variants_tables/cth_wardrum",
+   "size": 248,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_01/cth_prop_banner_01_piece01_destruct01.rigid_model_v2",
+   "size": 56464,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_01/cth_prop_banner_01_tech.cs2.collision",
+   "size": 1176,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_01/cth_prop_banner_01_tech.cs2.parsed",
+   "size": 304,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_02/cth_prop_banner_02_piece01_destruct01.rigid_model_v2",
+   "size": 47352,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_02/cth_prop_banner_02_tech.cs2.collision",
+   "size": 1176,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_02/cth_prop_banner_02_tech.cs2.parsed",
+   "size": 304,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_03/cth_prop_banner_03_piece01_destruct01.rigid_model_v2",
+   "size": 5604,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_03/cth_prop_banner_03_tech.cs2.collision",
+   "size": 1176,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_03/cth_prop_banner_03_tech.cs2.parsed",
+   "size": 304,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_04/cth_prop_banner_04_piece01_destruct01.rigid_model_v2",
+   "size": 7784,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_04/cth_prop_banner_04_tech.cs2.collision",
+   "size": 1176,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_04/cth_prop_banner_04_tech.cs2.parsed",
+   "size": 304,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/textures/cth_buildings_alpha_base_colour.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/textures/cth_buildings_alpha_base_colour01.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/textures/cth_buildings_alpha_base_colour02.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/flag_shape_0_3k_dlc04_faction_bian_zhang_base_colour.dds",
+   "size": 349692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/flag_shape_0_3k_nan_gua_base_colour.dds",
+   "size": 699236,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_0_material_map.dds",
+   "size": 699236,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_0_normal.dds",
+   "size": 699200,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_base_colour.dds",
+   "size": 174924,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_material_map.dds",
+   "size": 349700,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_normal.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour01.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour02.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour3.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_celestial_guard_crossbow_officer_01.variantmeshdefinition",
+   "size": 3543,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_celestial_guard_officer_01.variantmeshdefinition",
+   "size": 2768,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_iron_hail_gunners_officer_01.variantmeshdefinition",
+   "size": 2486,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_jade_warrior_crossbow_officer_01.variantmeshdefinition",
+   "size": 3473,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_jade_warrior_officer_01.variantmeshdefinition",
+   "size": 2188,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/campaign_cth_wardrum.variantmeshdefinition",
+   "size": 150,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_crossbow.variantmeshdefinition",
+   "size": 3799,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_halberd.variantmeshdefinition",
+   "size": 3543,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_horse_heavy.variantmeshdefinition",
+   "size": 810,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_iron_crane_gunners.variantmeshdefinition",
+   "size": 1856,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_iron_hail_gunners.variantmeshdefinition",
+   "size": 4019,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_longma_heavy.variantmeshdefinition",
+   "size": 313,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_longma_rider.variantmeshdefinition",
+   "size": 3503,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior.variantmeshdefinition",
+   "size": 3631,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_crossbow.variantmeshdefinition",
+   "size": 3438,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_crossbow_shield.variantmeshdefinition",
+   "size": 3997,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_halberd.variantmeshdefinition",
+   "size": 3083,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_lancer.variantmeshdefinition",
+   "size": 3415,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_nangau_crew.variantmeshdefinition",
+   "size": 3762,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_oxen.variantmeshdefinition",
+   "size": 284,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_peasant_archer.variantmeshdefinition",
+   "size": 3627,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_peasant_long_spearman.variantmeshdefinition",
+   "size": 3497,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_peasant_spearman.variantmeshdefinition",
+   "size": 3494,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_sky_junk.variantmeshdefinition",
+   "size": 295,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_sky_junk_gunner.variantmeshdefinition",
+   "size": 1468,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_terracotta_sentinel.variantmeshdefinition",
+   "size": 902,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_wardrum_driver.variantmeshdefinition",
+   "size": 3260,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_wardrum_dummer.variantmeshdefinition",
+   "size": 3030,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/cth_terracotta_sentinel_spear_2h_01.rigid_model_v2",
+   "size": 278482,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/cth_terracotta_sentinel_spear_2h_01.wsmodel",
+   "size": 888,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/materials/cth_terracotta_sentinel_spear_2_rigid_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/materials/cth_terracotta_sentinel_spear_2h_01_alpha_off.xml.material",
+   "size": 4905,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/materials/cth_terracotta_sentinel_spear_xl_2h_01_alpha_off.xml.material",
+   "size": 4941,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/tex/cth_terracotta_sentinel_spear_ror_2h_01_mask.dds",
+   "size": 699200,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/tex/cth_terracotta_sentinel_spear_ror_2h_01_material_map.dds",
+   "size": 349692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/tex/cth_terracotta_sentinel_spear_ror_2h_01_normal.dds",
+   "size": 699200,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_props/tex/cth_terracotta_sentinel_spear_ror_2h_02_normal.dds",
+   "size": 349672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/cth_terracotta_sentinel_02.rigid_model_v2",
+   "size": 6624852,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/cth_terracotta_sentinel_02.wsmodel",
+   "size": 6673,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_01_subme_weighted2_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_01_subme_weighted4_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_01_submesh_0_submesh_0_submesh_0_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2765,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_01_weighted2_alpha_off.xml.material",
+   "size": 4928,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_01_weighted4_alpha_off.xml.material",
+   "size": 4928,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_ror_01_weighted2_alpha_off.xml.material",
+   "size": 4972,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/cth_terracotta_sentinel_sla_ror_01_weighted4_alpha_off.xml.material",
+   "size": 4957,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/dae_lord_slaanesh_sword_1h_01_weighted2_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/dae_lord_slaanesh_sword_1h_01_weighted4_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/dae_warrior_slaanesh_sword_1h_0_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/materials/dae_warrior_slaanesh_sword_1h_0_weighted4_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/tex/cth_terracotta_sentinel_01_mask.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/tex/cth_terracotta_sentinel_01_material_map.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/tex/cth_terracotta_sentinel_01_normal.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/gi1b/cth/cth_terracotta_sentinel/tex/cth_terracotta_sentinel_03_base_colour.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/cth_sla_longma_armour_heavy_01.rigid_model_v2",
+   "size": 2402506,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_longma_armour_heavy_01_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_longma_body_01_base_colour.dds",
+   "size": 1398268,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_01_base_colour.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_02_base_colour.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_03_base_colour.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_04_base_colour.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_body_01_base_colour.dds",
+   "size": 1398248,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_khanite_assassin/tex/def_khanite_assassin_head_02_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "size": 47676,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01.rigid_model_v2",
+   "size": 2253232,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_copy.rigid_model_v2",
+   "size": 1725446,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_copy.wsmodel",
+   "size": 5825,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_ror.rigid_model_v2",
+   "size": 2480274,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02.rigid_model_v2",
+   "size": 4992292,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02.wsmodel",
+   "size": 7860,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02_ror.rigid_model_v2",
+   "size": 2366842,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03.rigid_model_v2",
+   "size": 4682012,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_copy.rigid_model_v2",
+   "size": 3684900,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_copy.wsmodel",
+   "size": 6053,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_ror.rigid_model_v2",
+   "size": 2764426,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_04_ror.rigid_model_v2",
+   "size": 2869576,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_officer_1.rigid_model_v2",
+   "size": 2517686,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_officer_2.rigid_model_v2",
+   "size": 5981428,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_1.rigid_model_v2",
+   "size": 3589380,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_2.rigid_model_v2",
+   "size": 6125660,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_3.rigid_model_v2",
+   "size": 4790684,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_alchemist_head_03_submesh_7__weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_alchemist_head_03_submesh_7__weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__1_weighted4_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__weighted2_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_body_01_weighted2_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_body_01_weighted4_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_1_weighted2_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_1_weighted4_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_04_subm_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_04_subm_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_helmet_02_weighted4_alpha_on.xml.material",
+   "size": 2728,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_sla_body_ror_01_weighted2_alpha_off.xml.material",
+   "size": 4968,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_sla_body_ror_01_weighted4_alpha_off.xml.material",
+   "size": 4974,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2611,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2616,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/celestial_body_mask.dds",
+   "size": 1048772,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_astromancer_head_02_sla_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_astromancer_head_03_sla_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial _diffuse_3.dds",
+   "size": 16777412,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial _diffuse_4.dds",
+   "size": 16777412,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_body_01_sla_re_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_body_01_sla_ror_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_01_sla_re_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_02_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_02_sla_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_03_sla_re_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_dragon_iron_human_body_sla_02_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_knight_slaanesh_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_peasant_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla.dds",
+   "size": 2796388,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla_1.dds",
+   "size": 2796388,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla_2.dds",
+   "size": 2796388,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/zhuge_mter.dds",
+   "size": 2796388,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/zhuge_normal.dds",
+   "size": 2796352,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01.rigid_model_v2",
+   "size": 1600150,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01.wsmodel",
+   "size": 6734,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01_copy.rigid_model_v2",
+   "size": 2022420,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01_officer.rigid_model_v2",
+   "size": 2257884,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02.rigid_model_v2",
+   "size": 3604820,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02.wsmodel",
+   "size": 9994,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02_copy.rigid_model_v2",
+   "size": 2301746,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02_officer.rigid_model_v2",
+   "size": 3609428,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03.rigid_model_v2",
+   "size": 2669520,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03.wsmodel",
+   "size": 10586,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03_copy.rigid_model_v2",
+   "size": 3721516,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03_copy_copy.rigid_model_v2",
+   "size": 2507572,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04.rigid_model_v2",
+   "size": 3609428,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04_copy.rigid_model_v2",
+   "size": 1993020,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04_copy_copy.rigid_model_v2",
+   "size": 1322648,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_01_imposter_weighted2_alpha_off.xml.material",
+   "size": 2638,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2685,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2690,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2678,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_02_weighted2_alpha_off.xml.material",
+   "size": 2685,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_02_weighted4_alpha_off.xml.material",
+   "size": 2691,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted2_alpha_off.xml.material",
+   "size": 2727,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted4_alpha_off.xml.material",
+   "size": 2727,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted4_alpha_on.xml.material",
+   "size": 2732,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2600,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2600,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2605,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2598,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 2603,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2542,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_weighted2_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_weighted2_alpha_off.xml.material",
+   "size": 2550,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_weighted2_alpha_on.xml.material",
+   "size": 2595,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_diffuse.dds",
+   "size": 16777412,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour2.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour3.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_head_02_02_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_head_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_02_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_02_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_02_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/ksl_sla_gryphon_legion_head_base_colour.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.rigid_model_v2",
+   "size": 1827268,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.wsmodel",
+   "size": 4178,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01_officer.rigid_model_v2",
+   "size": 2094530,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02.rigid_model_v2",
+   "size": 1795278,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02.wsmodel",
+   "size": 4176,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02_officer.rigid_model_v2",
+   "size": 3141164,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.rigid_model_v2",
+   "size": 1910978,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.wsmodel",
+   "size": 5250,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_04.rigid_model_v2",
+   "size": 2188716,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_04.wsmodel",
+   "size": 5692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.rigid_model_v2",
+   "size": 2227820,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.wsmodel",
+   "size": 6440,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.rigid_model_v2",
+   "size": 640826,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.wsmodel",
+   "size": 2440,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.rigid_model_v2",
+   "size": 542334,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.wsmodel",
+   "size": 2386,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.rigid_model_v2",
+   "size": 601538,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.wsmodel",
+   "size": 3128,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 8388760,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 16777412,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 8388760,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 16777412,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 699192,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_body_sla_01.rigid_model_v2",
+   "size": 820630,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_body_sla_02.rigid_model_v2",
+   "size": 822132,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_body_sla_03.rigid_model_v2",
+   "size": 718172,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_head_01.rigid_model_v2",
+   "size": 429194,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_head_02.rigid_model_v2",
+   "size": 337922,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_head_03.rigid_model_v2",
+   "size": 319576,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/cth_peasant_quiver_01.rigid_model_v2",
+   "size": 155220,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/tex/cth_peasant_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/tex/cth_peasant_body_01_sla_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/tex/cth_peasant_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_peasant/tex/cth_peasant_head_01_sla_base_colour.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_01.rigid_model_v2",
+   "size": 151154,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_02.rigid_model_v2",
+   "size": 165632,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_03.rigid_model_v2",
+   "size": 176760,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_01.rigid_model_v2",
+   "size": 54508,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_02.rigid_model_v2",
+   "size": 54508,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_03.rigid_model_v2",
+   "size": 54508,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_01.rigid_model_v2",
+   "size": 99030,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_02.rigid_model_v2",
+   "size": 98660,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_03.rigid_model_v2",
+   "size": 130148,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_01.rigid_model_v2",
+   "size": 115144,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_02.rigid_model_v2",
+   "size": 86706,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_03.rigid_model_v2",
+   "size": 92920,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_01.rigid_model_v2",
+   "size": 110614,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_02.rigid_model_v2",
+   "size": 139270,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_03.rigid_model_v2",
+   "size": 99716,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_01.rigid_model_v2",
+   "size": 95364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_02.rigid_model_v2",
+   "size": 208852,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_03.rigid_model_v2",
+   "size": 74280,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_01.rigid_model_v2",
+   "size": 64494,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_02.rigid_model_v2",
+   "size": 54490,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_03.rigid_model_v2",
+   "size": 61420,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_01.rigid_model_v2",
+   "size": 148956,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_02.rigid_model_v2",
+   "size": 116956,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_03.rigid_model_v2",
+   "size": 124252,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_04.rigid_model_v2",
+   "size": 100708,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_wardrum_skin.rigid_model_v2",
+   "size": 315340,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_halberd_2h_01_alpha_off.xml.material",
+   "size": 2747,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_halberd_2h_01_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_shield_01_alpha_off.xml.material",
+   "size": 2727,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_rigid_alpha_off.xml.material",
+   "size": 2708,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_rigid_alpha_on.xml.material",
+   "size": 2713,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted2_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted2_alpha_on.xml.material",
+   "size": 2712,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted4_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone _1_weighted2_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone_weighted4_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ _1_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_01_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_01_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h__weighted4_alpha_off.xml.material",
+   "size": 2718,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h__weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_ror_2h_01_alpha_off.xml.material",
+   "size": 4944,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_ror_2h_01_alpha_on.xml.material",
+   "size": 4949,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_helmet_01 - clone_weighted2_alpha_off.xml.material",
+   "size": 2724,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_helmet_01_weighted2_alpha_off.xml.material",
+   "size": 2716,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_lance_2h_01_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_lance_rider_ror_2h_01_alpha_off.xml.material",
+   "size": 4913,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_01_alpha_off.xml.material",
+   "size": 2677,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_01_l - clone_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_01_l_weighted2_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_rider_ror_01_alpha_off.xml.material",
+   "size": 4903,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_ror_01_alpha_off.xml.material",
+   "size": 4924,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_01_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_01_alpha_on.xml.material",
+   "size": 2692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_02 - clone_weighted2_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_02_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_rigid_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_weighted2_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_halberd_2h_01_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_halberd_2h_01_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_lance_2h_01_alpha_off.xml.material",
+   "size": 2672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_shield_01_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_sword_1h_01_alpha_off.xml.material",
+   "size": 2672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_lord_magistrate_sword_1h_01_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_nan_gau_warrior_shield_tower_01_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_nan_gau_warrior_weapons_01_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_bow_01_rigid_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_bow_01_rigid_alpha_on.xml.material",
+   "size": 2633,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_bow_01_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_bow_01_weighted2_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_bow_01_weighted4_alpha_off.xml.material",
+   "size": 2633,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_spear_01_alpha_off.xml.material",
+   "size": 2632,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_spear_01_alpha_on.xml.material",
+   "size": 2637,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_peasant_sword_01_alpha_off.xml.material",
+   "size": 2632,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/hef_alarielle_staff_1h_01_lod1 - clone_weighted2_alpha_on.xml.material",
+   "size": 2682,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/hef_alarielle_staff_1h_01_lod1_weighted2_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/shape_0_weighted - clone_weighted4_alpha_off.xml.material",
+   "size": 2528,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/shape_0_weighted_weighted4_alpha_off.xml.material",
+   "size": 2520,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_celestial_guard_sword_1h_01_base_colour_sla_3.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_halberd_2h_01_base_colour.dds",
+   "size": 174904,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_lance_2h_01_base_colour.dds",
+   "size": 349700,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_shield_01_base_colour.dds",
+   "size": 349672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_sword_1h_01_base_colour.dds",
+   "size": 174904,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_crossbow_2h_01_mask.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_crossbow_2h_01_material_map.dds",
+   "size": 174924,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_crossbow_2h_01_normal.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_lance_2h_01_mask.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_lance_2h_01_material_map.dds",
+   "size": 174924,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_lance_2h_01_normal.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_shield_01_mask.dds",
+   "size": 699200,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_shield_01_material_map.dds",
+   "size": 349692,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_shield_01_normal.dds",
+   "size": 699200,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_sword_1h_01_mask.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_sword_1h_01_material_map.dds",
+   "size": 174924,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_sword_1h_01_normal.dds",
+   "size": 349664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_sla_celestial_guard_halberd_2h_01_base_colour.dds",
+   "size": 349672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_sla_celestial_guard_shield_01_base_colour.dds",
+   "size": 349672,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/cth_ox_01.rigid_model_v2",
+   "size": 1801366,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/cth_ox_01.wsmodel",
+   "size": 1603,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_01_1_weighted4_alpha_off.xml.material",
+   "size": 2574,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_01_weighted2_alpha_off.xml.material",
+   "size": 2566,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_01_weighted4_alpha_off.xml.material",
+   "size": 2566,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_01_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_02_weighted2_alpha_off.xml.material",
+   "size": 2566,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_02_weighted4_alpha_off.xml.material",
+   "size": 2566,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/materials/cth_ox_02_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_01_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_01_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_01_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_01_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_02_base_colour.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_02_base_colour_sla.dds",
+   "size": 1398276,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_02_mask.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_02_material_map.dds",
+   "size": 699212,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/ox1/cth/cth_ox/tex/cth_ox_02_normal.dds",
+   "size": 1398240,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/wsh1/dae/dae_warshrine/materials/dae_warshrine_base_slaanesh_01_weighted2_alpha_off.xml.material",
+   "size": 5281,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/wsh1/dae/dae_warshrine/materials/dae_warshrine_ornament_slaanesh_01_weighted2_alpha_off.xml.material",
+   "size": 5309,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/cth_sky_junk_01.rigid_model_v2",
+   "size": 7278578,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/cth_sky_junk_01.wsmodel",
+   "size": 2632,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/cth_sky_junk_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 4495,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/cth_sky_junk_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 4475,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_base_slaanesh_01_s_weighted2_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_base_slaanesh_01_submesh_28_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_ornament_slaanesh__weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_ornament_slaanesh_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2732,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_lantern/cth_sky_lantern_01.rigid_model_v2",
+   "size": 3106794,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_lantern/cth_sky_lantern_01.wsmodel",
+   "size": 3390,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_lantern/materials/cth_sky_lantern_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 4506,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_lantern/materials/cth_sky_lantern_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 4695,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/aircraft/cth_sky_lantern/materials/dae_shrinemaster_slaanesh_acces_weighted4_alpha_off.xml.material",
+   "size": 2758,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/cth_war_drum_01.rigid_model_v2",
+   "size": 3460044,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/cth_war_drum_01.wsmodel",
+   "size": 2195,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/cth_war_drum_01_destroyed.rigid_model_v2",
+   "size": 3842636,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/cth_war_drum_01_destroyed.wsmodel",
+   "size": 2045,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/cth_war_drum_01_destruct_lod1_rigid_alpha_off.xml.material",
+   "size": 2545,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/ctn_war_drum_01_weighted2_alpha_off.xml.material",
+   "size": 2552,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/dae_warshrine_base_slaanesh_01_s_rigid_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/dae_warshrine_ornament_slaanesh__rigid_alpha_off.xml.material",
+   "size": 2715,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/piece01_destruct01_lod01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2542,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/piece01_destruct01_lod01_submesh_0_weighted2_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/materials/piece01_destruct01_lod01_submesh_2_weighted2_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tech/cth_war_drum_01.anim",
+   "size": 1039,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tech/cth_war_drum_01.bone_inv_trans_mats",
+   "size": 584,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_base_colour.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_base_colour_sla_1.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_mask.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_material_map.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_material_map_sla.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_normal.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_normal_sla.dds",
+   "size": 5592580,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/cth_war_drum_01_specular.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/ctn_war_drum_01_base_colour.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/ctn_war_drum_01_mask.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/ctn_war_drum_01_material_map.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/ctn_war_drum_01_normal.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/engines/cth_war_drum/tex/ctn_war_drum_01_specular.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/materials/cth_sky_junk_01_weighted2_alpha_off.xml.material",
+   "size": 4684,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/materials/cth_sky_junk_01_weighted4_alpha_off.xml.material",
+   "size": 4664,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_junk_01_mask.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_junk_01_material_map.dds",
+   "size": 2796364,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_junk_01_normal.dds",
+   "size": 5592544,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_junk_03_base_colour.dds",
+   "size": 2796344,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_lantern_01_mask.dds",
+   "size": 2796352,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_lantern_01_material_map.dds",
+   "size": 1398268,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sky_lantern_01_normal.dds",
+   "size": 2796352,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  },
+  {
+   "path": "warmachines/tex/cth_sla_sky_lantern_base_colour.dds",
+   "size": 1398248,
+   "pack": "HuaJS258_corrupted_cathay/HuaJS258_corrupted_cathay.pack"
+  }
+ ]
+}

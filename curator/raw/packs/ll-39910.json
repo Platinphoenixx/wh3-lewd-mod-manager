@@ -1,0 +1,194 @@
+{
+ "mod": "ll-39910",
+ "packs": [
+  "!!!!!!li_katarin_russian.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!!!!!!li_katarin_russian.pack": {
+   "files": 33,
+   "dependencies": []
+  }
+ },
+ "fileCount": 33,
+ "byTopFolder": {
+  "text": 33
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/li_katarin_battle_battle_set_piece_armies.loc",
+   "size": 211,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_battle_battle_set_pieces.loc",
+   "size": 642,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_battle_missions.loc",
+   "size": 727,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_abilities.loc",
+   "size": 1840,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_cdir_events_dilemma_choice_details.loc",
+   "size": 1258,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_dilemmas.loc",
+   "size": 38310,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_effect_bundles.loc",
+   "size": 1282,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_effects.loc",
+   "size": 1043,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_daemonize_unit_abilities_additional_ui_effects.loc",
+   "size": 1162,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first.loc",
+   "size": 1648,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 1840,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_dilemmas.loc",
+   "size": 1516,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_effects.loc",
+   "size": 213,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_names.loc",
+   "size": 125,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth.loc",
+   "size": 1690,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth_abilities.loc",
+   "size": 708,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth_cdir_events_dilemma_choice_details.loc",
+   "size": 4350,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth_dilemmas.loc",
+   "size": 45534,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth_effects.loc",
+   "size": 197,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_fourth_names.loc",
+   "size": 129,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second.loc",
+   "size": 1460,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_abilities.loc",
+   "size": 740,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 3462,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_dilemmas.loc",
+   "size": 19004,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_effects.loc",
+   "size": 169,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_names.loc",
+   "size": 133,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third.loc",
+   "size": 1582,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_abilities.loc",
+   "size": 702,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_cdir_events_dilemma_choice_details.loc",
+   "size": 4504,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_dilemmas.loc",
+   "size": 31618,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_effects.loc",
+   "size": 181,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_names.loc",
+   "size": 125,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  },
+  {
+   "path": "text/db/seu_ancillaries_temp.loc",
+   "size": 3560,
+   "pack": "!!!!!!li_katarin_russian.pack"
+  }
+ ]
+}

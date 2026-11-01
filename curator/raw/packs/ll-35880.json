@@ -1,0 +1,264 @@
+{
+ "mod": "ll-35880",
+ "packs": [
+  "!!!!!!li_miaoying_russian.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!!!!!!li_miaoying_russian.pack": {
+   "files": 47,
+   "dependencies": []
+  }
+ },
+ "fileCount": 47,
+ "byTopFolder": {
+  "text": 47
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/li_foreign_diplomacy_cdir_events_dilemma_choice_details.loc",
+   "size": 12904,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_dilemmas.loc",
+   "size": 50896,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_effect_bundles.loc",
+   "size": 1918,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_ancillary_ancillaries__.loc",
+   "size": 1135,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_piece_armies.loc",
+   "size": 213,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_pieces.loc",
+   "size": 889,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_missions.loc",
+   "size": 1273,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_ballet.loc",
+   "size": 1008,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_bare.loc",
+   "size": 706,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_breed.loc",
+   "size": 3442,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_corset.loc",
+   "size": 854,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_fishnet.loc",
+   "size": 626,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_plug.loc",
+   "size": 596,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_ballet.loc",
+   "size": 2096,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_bare.loc",
+   "size": 1664,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_breed.loc",
+   "size": 3984,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_campaign_payload_ui_details_scale.loc",
+   "size": 1548,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 2068,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_bare.loc",
+   "size": 2398,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_breed.loc",
+   "size": 5732,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_corset.loc",
+   "size": 1654,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_fishnet.loc",
+   "size": 1516,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_plug.loc",
+   "size": 1204,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_scale.loc",
+   "size": 2018,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_corset.loc",
+   "size": 2554,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_ballet.loc",
+   "size": 2052,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_bare.loc",
+   "size": 2154,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_breed.loc",
+   "size": 39204,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_corset.loc",
+   "size": 2706,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_fishnet.loc",
+   "size": 1490,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_plug.loc",
+   "size": 4020,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_scale.loc",
+   "size": 1028,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_ballet.loc",
+   "size": 191,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_bare.loc",
+   "size": 201,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_breed.loc",
+   "size": 1405,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_corset.loc",
+   "size": 229,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_fishnet.loc",
+   "size": 193,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_plug.loc",
+   "size": 203,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_fishnet.loc",
+   "size": 1276,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_ballet.loc",
+   "size": 111,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_bare.loc",
+   "size": 109,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_corset.loc",
+   "size": 111,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_fishnet.loc",
+   "size": 109,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_plug.loc",
+   "size": 392,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_scale.loc",
+   "size": 117,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_plug.loc",
+   "size": 1936,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_scale.loc",
+   "size": 990,
+   "pack": "!!!!!!li_miaoying_russian.pack"
+  }
+ ]
+}

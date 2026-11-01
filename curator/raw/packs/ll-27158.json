@@ -1,0 +1,2147 @@
+{
+ "mod": "ll-27158",
+ "packs": [
+  "alivia_morathi_hero3.0cnJ.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "alivia_morathi_hero3.0cnJ.pack": {
+   "files": 234,
+   "dependencies": []
+  }
+ },
+ "fileCount": 234,
+ "byTopFolder": {
+  "ui": 99,
+  "variantmeshes": 64,
+  "db": 63,
+  "text": 5,
+  "script": 2,
+  "marthvs": 1
+ },
+ "tables": [
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "ancillaries_included_agent_subtypes_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "ancillary_to_effects_tables",
+  "banners_permitted_unit_sets_tables",
+  "banners_tables",
+  "battle_entities_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "campaign_character_uniform_ancillary_junctions_tables",
+  "campaign_group_unique_agents_tables",
+  "campaign_mount_animation_set_overrides_tables",
+  "campaign_mounts_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_followup_dilemmas_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "cdir_events_mission_followup_dilemmas_tables",
+  "cdir_events_mission_issuer_junctions_tables",
+  "cdir_events_mission_option_junctions_tables",
+  "cdir_events_mission_payloads_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_ancillaries_junctions_tables",
+  "character_skill_level_to_dilemmas_junctions_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "character_skills_to_quest_ancillaries_tables",
+  "combat_potentials_adjustments_for_banners_junctions_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "land_units_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "main_units_tables",
+  "melee_weapons_tables",
+  "missions_tables",
+  "mounts_tables",
+  "names_tables",
+  "special_ability_phase_attribute_effects_tables",
+  "special_ability_phase_stat_effects_tables",
+  "special_ability_phases_tables",
+  "special_ability_to_special_ability_phase_junctions_tables",
+  "ui_unit_bullet_point_unit_overrides_tables",
+  "unique_agent_component_junctions_tables",
+  "unique_agents_tables",
+  "unit_abilities_tables",
+  "unit_attributes_groups_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_description_short_texts_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_special_abilities_tables",
+  "unit_variants_tables",
+  "units_custom_battle_permissions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 91,
+  "inMod": 50,
+  "inBaseGame": 40,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/def/def_dreadlord_female/tex/def_dreadlord_female_head_01_specular.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_subtypes_tables": [
+   "alivia_aina",
+   "wh_vo_actor_silent",
+   "can_be_saved_loaded"
+  ],
+  "agent_uniforms_tables": [
+   "alivia_aina",
+   "alivia_aina_stage2",
+   "alivia_aina_stage3",
+   "alivia_aina_s4",
+   "alivia_aina_s42"
+  ],
+  "ancillaries_included_agent_subtypes_tables": [
+   "alivia_aina",
+   "alivia_aina_armor",
+   "alivia_aina_banner",
+   "alivia_aina_claw"
+  ],
+  "ancillaries_tables": [
+   "alivia_aina_armor",
+   "wh_main_anc_armour",
+   "armour",
+   "all",
+   "alivia_aina_banner",
+   "wh2_dlc10_anc_magic_standard_banner_of_avelorn",
+   "general",
+   "banner",
+   "alivia_aina_claw",
+   "wh2_main_anc_mount_barded_ithilmar_steed",
+   "mount",
+   "alivia_aina_s4"
+  ],
+  "ancillary_info_tables": [
+   "alivia_aina_armor",
+   "alivia_aina_banner",
+   "alivia_aina_claw"
+  ],
+  "ancillary_to_effects_tables": [
+   "alivia_aina_armor",
+   "wh_main_effect_character_stat_leadership",
+   "character_to_character_own",
+   "wh_main_effect_character_stat_ward_save",
+   "wh_main_effect_attribute_enable_immune_to_psychology",
+   "wh_main_effect_character_stat_armour",
+   "alivia_aina_climax_enable"
+  ],
+  "banners_permitted_unit_sets_tables": [
+   "alivia_aina_banner",
+   "all_units"
+  ],
+  "banners_tables": [
+   "alivia_aina_banner"
+  ],
+  "battle_entities_tables": [
+   "alivia_aina",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh2_hef_elf_female_default",
+   "infantry_effects",
+   "wh_main_generic_character_aura",
+   "wh_main_unit_combat",
+   "small_entity"
+  ],
+  "campaign_character_art_sets_tables": [
+   "champion",
+   "alivia_aina",
+   "alivia_aina_stage2",
+   "alivia_aina_stage3",
+   "alivia_aina_s4",
+   "alivia_aina_s42"
+  ],
+  "campaign_character_arts_tables": [
+   "alivia_aina",
+   "none",
+   "cam_hero_hu1b_hef_spear_and_bow",
+   "cam_heavy_ship_01",
+   "alivia_aina_stage2",
+   "alivia_aina_stage3",
+   "alivia_aina_s4",
+   "alivia_aina_s42"
+  ],
+  "campaign_character_uniform_ancillary_junctions_tables": [
+   "alivia_aina_claw",
+   "alivia_aina",
+   "alivia_aina_s4"
+  ],
+  "campaign_group_unique_agents_tables": [
+   "wh2_main_feature_dark_elves",
+   "alivia_aina"
+  ],
+  "campaign_mount_animation_set_overrides_tables": [
+   "cam_hero_hu1b_hef_spear_and_bow",
+   "alivia_aina_s4",
+   "cam_sla_cha_herald_of_slaanesh_slaanesh_0"
+  ],
+  "campaign_mounts_tables": [
+   "cam_sla_cha_herald_of_slaanesh_slaanesh_0",
+   "alivia_aina_s4"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "alivia_aina_start_hook",
+   "alivia_aina_start",
+   "alivia_aina_start_2",
+   "alivia_aina_start_3",
+   "alivia_aina_start_4",
+   "alivia_aina_main_event_1",
+   "alivia_aina_main_event_1_2",
+   "alivia_aina_main_event_2",
+   "SECOND",
+   "alivia_aina_main_event_2_2",
+   "alivia_aina_main_event_2_3",
+   "alivia_aina_main_event_2_4",
+   "alivia_aina_main_event_2_5",
+   "alivia_aina_main_event_2_6",
+   "alivia_aina_main_event_2_7",
+   "alivia_aina_main_event_2_8",
+   "alivia_aina_main_event_3",
+   "alivia_aina_main_event_3_2",
+   "alivia_aina_main_event_3_3",
+   "alivia_aina_main_event_3_4",
+   "alivia_aina_main_event_5",
+   "alivia_aina_main_event_5_2",
+   "alivia_aina_main_event_5_3",
+   "alivia_aina_main_event_5_4",
+   "alivia_aina_main_event_5_5",
+   "alivia_aina_main_event_6",
+   "alivia_aina_main_event_6_2",
+   "alivia_aina_main_event_6_3",
+   "alivia_aina_main_event_6_4",
+   "alivia_aina_main_event_6_5",
+   "alivia_aina_main_event_7",
+   "alivia_aina_main_event_7_2",
+   "alivia_aina_main_event_7_3",
+   "alivia_aina_main_event_7_4",
+   "alivia_aina_main_event_7_5",
+   "alivia_aina_main_event_81",
+   "alivia_aina_main_event_81_2",
+   "alivia_aina_main_event_81_3",
+   "alivia_aina_main_event_81_4",
+   "alivia_aina_main_event_81_5",
+   "alivia_aina_main_event_82",
+   "alivia_aina_main_event_82_2",
+   "alivia_aina_main_event_82_3",
+   "alivia_aina_main_event_82_4",
+   "alivia_aina_main_event_82_5",
+   "alivia_aina_main_event_82_6"
+  ],
+  "cdir_events_dilemma_followup_dilemmas_tables": [
+   "FIRST",
+   "alivia_aina_start",
+   "alivia_aina_start_2",
+   "alivia_aina_start_3",
+   "alivia_aina_start_4",
+   "alivia_aina_main_event_2",
+   "alivia_aina_main_event_2_2",
+   "alivia_aina_main_event_2_3",
+   "alivia_aina_main_event_2_4",
+   "alivia_aina_main_event_2_5",
+   "alivia_aina_main_event_2_6",
+   "alivia_aina_main_event_2_7",
+   "alivia_aina_main_event_2_8",
+   "alivia_aina_main_event_3",
+   "alivia_aina_main_event_3_2",
+   "alivia_aina_main_event_3_3",
+   "alivia_aina_main_event_3_4",
+   "alivia_aina_main_event_5",
+   "alivia_aina_main_event_5_2",
+   "alivia_aina_main_event_5_3",
+   "alivia_aina_main_event_5_4",
+   "alivia_aina_main_event_5_5",
+   "alivia_aina_main_event_6",
+   "alivia_aina_main_event_6_2",
+   "alivia_aina_main_event_6_3",
+   "alivia_aina_main_event_6_4",
+   "alivia_aina_main_event_6_5",
+   "alivia_aina_main_event_7",
+   "alivia_aina_main_event_7_2",
+   "alivia_aina_main_event_7_3",
+   "alivia_aina_main_event_7_4",
+   "alivia_aina_main_event_7_5",
+   "alivia_aina_main_event_81",
+   "alivia_aina_main_event_81_2",
+   "alivia_aina_main_event_81_3",
+   "alivia_aina_main_event_81_4",
+   "alivia_aina_main_event_82",
+   "alivia_aina_main_event_82_2",
+   "alivia_aina_main_event_82_3",
+   "alivia_aina_main_event_82_4",
+   "alivia_aina_main_event_82_5",
+   "alivia_aina_main_event_82_6"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "alivia_aina_start_hook",
+   "VAR_CHANCE",
+   "default",
+   "GEN_CND_OWNS",
+   "GEN_CND_FACTION_LEADER",
+   "VAR_FOLLOWUP_CHANCE",
+   "GEN_TARGET_CHARACTER",
+   "alivia_aina_main_event_1",
+   "GEN_TARGET_MODEL",
+   "alivia_aina_start",
+   "alivia_aina_main_event_1_2",
+   "alivia_aina_main_event_2",
+   "alivia_aina_main_event_2_2",
+   "alivia_aina_main_event_2_3",
+   "alivia_aina_main_event_2_4",
+   "alivia_aina_main_event_2_5",
+   "alivia_aina_main_event_2_6",
+   "alivia_aina_main_event_2_7",
+   "alivia_aina_main_event_2_8",
+   "alivia_aina_main_event_3",
+   "alivia_aina_main_event_3_2",
+   "alivia_aina_main_event_3_3",
+   "alivia_aina_main_event_3_4",
+   "alivia_aina_start_2",
+   "alivia_aina_start_3",
+   "alivia_aina_start_4",
+   "alivia_aina_main_event_5",
+   "alivia_aina_main_event_81",
+   "alivia_aina_main_event_5_2",
+   "alivia_aina_main_event_5_3",
+   "alivia_aina_main_event_5_4",
+   "alivia_aina_main_event_5_5",
+   "alivia_aina_main_event_6",
+   "alivia_aina_main_event_6_2",
+   "alivia_aina_main_event_6_3",
+   "alivia_aina_main_event_6_4",
+   "alivia_aina_main_event_6_5",
+   "alivia_aina_main_event_7",
+   "alivia_aina_main_event_7_2",
+   "alivia_aina_main_event_7_3",
+   "alivia_aina_main_event_7_4",
+   "alivia_aina_main_event_7_5",
+   "alivia_aina_main_event_81_2",
+   "alivia_aina_main_event_81_3",
+   "alivia_aina_main_event_81_4",
+   "alivia_aina_main_event_81_5",
+   "alivia_aina_main_event_82",
+   "alivia_aina_main_event_82_2",
+   "alivia_aina_main_event_82_3",
+   "alivia_aina_main_event_82_4",
+   "alivia_aina_main_event_82_5",
+   "alivia_aina_main_event_82_6"
+  ],
+  "cdir_events_dilemma_payloads_tables": [],
+  "cdir_events_mission_followup_dilemmas_tables": [
+   "alivia_aina_mission_start",
+   "SUCCESS",
+   "alivia_aina_start"
+  ],
+  "cdir_events_mission_issuer_junctions_tables": [
+   "CLAN_ELDERS",
+   "alivia_aina_mission_start"
+  ],
+  "cdir_events_mission_option_junctions_tables": [
+   "alivia_aina_mission_start",
+   "GEN_TARGET_NONE",
+   "default",
+   "VAR_CHANCE",
+   "VAR_MISSION_LENGTH_INFINITE",
+   "VAR_FOLLOWUP_CHANCE",
+   "VAR_OBJECTIVE_NUM_ARMIES"
+  ],
+  "cdir_events_mission_payloads_tables": [],
+  "character_skill_level_details_tables": [
+   "alivia_aina_training_1",
+   "alivia_aina_training_2",
+   "alivia_aina_training_3",
+   "alivia_aina_training_4",
+   "alivia_aina_training_5",
+   "alivia_aina_training_6",
+   "alivia_aina_training_7",
+   "alivia_aina_training_8",
+   "alivia_aina_training_9",
+   "alivia_aina_training_10",
+   "alivia_aina_choice_special_1",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_main_service_1",
+   "alivia_aina_main_service_4",
+   "alivia_aina_main_service_7"
+  ],
+  "character_skill_level_to_ancillaries_junctions_tables": [
+   "alivia_aina_armor",
+   "alivia_aina_training_2"
+  ],
+  "character_skill_level_to_dilemmas_junctions_tables": [
+   "alivia_aina_training_1",
+   "alivia_aina_main_event_1",
+   "alivia_aina_training_2",
+   "alivia_aina_main_event_2",
+   "alivia_aina_training_3",
+   "alivia_aina_main_event_3",
+   "alivia_aina_training_5",
+   "alivia_aina_main_event_5",
+   "alivia_aina_training_6",
+   "alivia_aina_main_event_6",
+   "alivia_aina_training_7",
+   "alivia_aina_main_event_7",
+   "alivia_aina_choice_special_1",
+   "alivia_aina_main_event_81",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_main_event_82"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "alivia_aina_innate",
+   "wh_main_effect_character_stat_leadership",
+   "character_to_character_own",
+   "wh2_dlc11_enable_immortal_hidden",
+   "alivia_aina_training_0",
+   "alivia_aina_training_1",
+   "wh_main_effect_character_stat_unit_health",
+   "alivia_aina_training_2",
+   "alivia_aina_training_3",
+   "alivia_aina_heal_enable",
+   "alivia_aina_training_4",
+   "wh_main_effect_character_stat_melee_attack",
+   "alivia_aina_training_5",
+   "wh_main_effect_character_stat_weapon_strength",
+   "alivia_aina_training_6",
+   "wh_main_effect_character_stat_speed",
+   "wh2_dlc10_effect_attribute_enable_perfect_vigour",
+   "wh2_dlc16_enable_charmed_attacks",
+   "alivia_aina_training_7",
+   "wh3_main_effect_character_stat_unit_mass_percentage_mod",
+   "wh_main_effect_character_stat_ward_save",
+   "alivia_aina_training_8",
+   "alivia_aina_training_9",
+   "alivia_aina_training_10",
+   "alivia_aina_main_combat_1",
+   "wh_main_effect_character_stat_melee_defence",
+   "alivia_aina_main_combat_1_1",
+   "alivia_aina_main_combat_1_2",
+   "wh_main_effect_character_stat_armour",
+   "alivia_aina_main_combat_1_3",
+   "alivia_aina_main_combat_1_4",
+   "alivia_aina_main_combat_2",
+   "wh_main_effect_ability_enable_deadly_onslaught",
+   "alivia_aina_main_combat_2_1",
+   "alivia_aina_main_combat_2_2",
+   "alivia_aina_main_combat_2_3",
+   "wh_main_effect_character_stat_charge_bonus_add",
+   "alivia_aina_main_combat_3",
+   "wh_main_effect_character_stat_physical_resistance",
+   "wh_main_effect_character_stat_enable_magic_attacks",
+   "alivia_aina_duel_enable",
+   "alivia_aina_main_service_1",
+   "character_to_force_own",
+   "alivia_aina_main_service_2",
+   "wh_main_effect_agent_action_outcome_parent_army_xp_gain",
+   "character_to_force_own_provincewide",
+   "alivia_aina_main_service_3",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "agent_to_parent_army_own",
+   "alivia_aina_main_service_4",
+   "alivia_aina_main_service_5",
+   "wh_main_effect_agent_movement_range_mod",
+   "agent_to_parent_army_general_own",
+   "alivia_aina_main_service_6",
+   "wh_main_effect_force_all_campaign_captives",
+   "character_to_force_own_unseen",
+   "alivia_aina_main_service_7",
+   "alivia_aina_main_service_8",
+   "wh_main_effect_character_mod_ancillary_drop",
+   "alivia_aina_main_service_9",
+   "wh_main_faction_xp_increase_generals",
+   "faction_to_province_own_factionwide",
+   "wh_main_faction_xp_increase_generals_hidden",
+   "faction_to_force_own",
+   "alivia_aina_choice_special_1",
+   "wh2_dlc10_effect_ability_enable_guardian",
+   "alivia_aina_beserk_enable",
+   "alivia_aina_choice_special_1_2",
+   "alivia_aina_choice_special_1_3",
+   "alivia_aina_group_damage_enable",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_group_heal_enable",
+   "alivia_aina_choice_special_2_2",
+   "alivia_aina_group_buff_enable",
+   "alivia_aina_choice_special_2_3",
+   "alivia_aina_skill_dump"
+  ],
+  "character_skill_node_links_tables": [
+   "alivia_aina_main_combat_1_1",
+   "alivia_aina_main_combat_1",
+   "REQUIRED",
+   "alivia_aina_main_combat_1_2",
+   "alivia_aina_main_combat_1_3",
+   "alivia_aina_main_combat_1_4",
+   "alivia_aina_main_combat_2",
+   "SUBSET_REQUIRED",
+   "alivia_aina_main_combat_2_1",
+   "alivia_aina_main_combat_2_2",
+   "alivia_aina_main_combat_2_3",
+   "alivia_aina_main_combat_3",
+   "alivia_aina_training_1",
+   "alivia_aina_training_0",
+   "alivia_aina_training_2",
+   "alivia_aina_training_3",
+   "alivia_aina_training_4",
+   "alivia_aina_training_5",
+   "alivia_aina_training_6",
+   "alivia_aina_training_7",
+   "alivia_aina_main_service_2",
+   "alivia_aina_main_service_1",
+   "alivia_aina_main_service_3",
+   "alivia_aina_main_service_4",
+   "alivia_aina_main_service_5",
+   "alivia_aina_main_service_6",
+   "alivia_aina_main_service_7",
+   "alivia_aina_main_service_8",
+   "alivia_aina_main_service_9",
+   "alivia_aina_choice_special_1_2",
+   "alivia_aina_choice_special_1",
+   "alivia_aina_choice_special_1_3",
+   "alivia_aina_choice_special_2_2",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_choice_special_2_3"
+  ],
+  "character_skill_node_sets_tables": [
+   "champion",
+   "alivia_aina"
+  ],
+  "character_skill_nodes_skill_locks_tables": [
+   "alivia_aina_choice_special_2",
+   "alivia_aina_choice_special_1"
+  ],
+  "character_skill_nodes_tables": [
+   "alivia_aina_skill_dump",
+   "alivia_aina",
+   "alivia_aina_innate",
+   "wh2_main_skill_all_dummy_agent_actions_emp_captain",
+   "alivia_aina_campaign_actions_dummy",
+   "alivia_aina_training_0",
+   "alivia_aina_training_1",
+   "alivia_aina_training_2",
+   "alivia_aina_training_3",
+   "alivia_aina_training_4",
+   "alivia_aina_training_5",
+   "alivia_aina_training_6",
+   "alivia_aina_training_7",
+   "alivia_aina_main_combat_1",
+   "alivia_aina_main_combat_1_1",
+   "alivia_aina_main_combat_1_2",
+   "alivia_aina_main_combat_1_3",
+   "alivia_aina_main_combat_1_4",
+   "alivia_aina_main_combat_2",
+   "alivia_aina_main_combat_2_1",
+   "alivia_aina_main_combat_2_2",
+   "alivia_aina_main_combat_2_3",
+   "alivia_aina_main_combat_3",
+   "alivia_aina_main_service_1",
+   "alivia_aina_main_service_2",
+   "alivia_aina_main_service_3",
+   "alivia_aina_main_service_4",
+   "alivia_aina_main_service_5",
+   "alivia_aina_main_service_6",
+   "alivia_aina_main_service_7",
+   "alivia_aina_main_service_8",
+   "alivia_aina_main_service_9",
+   "alivia_aina_choice_special_1",
+   "alivia_aina_choice_special_1_2",
+   "alivia_aina_choice_special_1_3",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_choice_special_2_2",
+   "alivia_aina_choice_special_2_3"
+  ],
+  "character_skills_tables": [
+   "alivia_aina_skill_dump",
+   "battle_morale.png",
+   "alivia_aina_innate",
+   "alivia_aina_training_0.png",
+   "alivia_aina_training_0",
+   "alivia_aina_training_1.png",
+   "alivia_aina_training_1",
+   "alivia_aina_training_2.png",
+   "alivia_aina_training_2",
+   "alivia_aina_training_3.png",
+   "alivia_aina_training_3",
+   "alivia_aina_training_4.png",
+   "alivia_aina_training_4",
+   "alivia_aina_training_5.png",
+   "alivia_aina_training_5",
+   "alivia_aina_training_6.png",
+   "alivia_aina_training_6",
+   "alivia_aina_training_7.png",
+   "alivia_aina_training_7",
+   "campaign_undivided_points.png",
+   "alivia_aina_training_8",
+   "alivia_aina_training_9",
+   "alivia_aina_training_10",
+   "battle_attack.png",
+   "alivia_aina_main_combat_1",
+   "battle_defence.png",
+   "alivia_aina_main_combat_1_1",
+   "battle_armour.png",
+   "alivia_aina_main_combat_1_2",
+   "character_health.png",
+   "alivia_aina_main_combat_1_3",
+   "alivia_aina_main_combat_1_4",
+   "alivia_aina_main_combat_2",
+   "alivia_aina_main_combat_2_1",
+   "battle_damage.png",
+   "alivia_aina_main_combat_2_2",
+   "battle_charge.png",
+   "alivia_aina_main_combat_2_3",
+   "alivia_aina_main_combat_3",
+   "alivia_aina_main_service_1.png",
+   "alivia_aina_main_service_1",
+   "character_experience.png",
+   "alivia_aina_main_service_2",
+   "campaign_replenishment.png",
+   "alivia_aina_main_service_3",
+   "alivia_aina_main_service_4.png",
+   "alivia_aina_main_service_4",
+   "campaign_movement.png",
+   "alivia_aina_main_service_5",
+   "character_slaves.png",
+   "alivia_aina_main_service_6",
+   "alivia_aina_main_service_7.png",
+   "alivia_aina_main_service_7",
+   "campaign_item.png",
+   "alivia_aina_main_service_8",
+   "alivia_aina_main_service_9",
+   "alivia_aina_choice_special_1.png",
+   "alivia_aina_choice_special_1",
+   "alivia_aina_choice_special_1_2",
+   "alivia_aina_choice_special_1_3",
+   "alivia_aina_choice_special_2.png",
+   "alivia_aina_choice_special_2",
+   "alivia_aina_choice_special_2_2.png",
+   "alivia_aina_choice_special_2_2",
+   "alivia_aina_choice_special_2_3"
+  ],
+  "character_skills_to_quest_ancillaries_tables": [
+   "alivia_aina_armor",
+   "alivia_aina_training_2"
+  ],
+  "combat_potentials_adjustments_for_banners_junctions_tables": [
+   "alivia_aina_banner",
+   "basic_always_apply_if_possible",
+   "melee"
+  ],
+  "dilemmas_tables": [
+   "alivia_aina_start_hook",
+   "dummy title",
+   "politics",
+   "Event",
+   "alivia_aina_start",
+   "all/alivia_aina_start",
+   "alivia_aina_start_2",
+   "all/alivia_aina_start_2",
+   "alivia_aina_start_3",
+   "all/alivia_aina_start_3",
+   "alivia_aina_start_4",
+   "all/alivia_aina_start_4",
+   "alivia_aina_main_event_1",
+   "all/alivia_aina_main_event_1",
+   "alivia_aina_main_event_1_2",
+   "all/alivia_aina_main_event_1_2",
+   "alivia_aina_main_event_2",
+   "all/alivia_aina_main_event_2",
+   "alivia_aina_main_event_2_2",
+   "all/alivia_aina_main_event_2_2",
+   "alivia_aina_main_event_2_3",
+   "all/alivia_aina_main_event_2_3",
+   "alivia_aina_main_event_2_4",
+   "all/alivia_aina_main_event_2_4",
+   "alivia_aina_main_event_2_5",
+   "all/alivia_aina_main_event_2_5",
+   "alivia_aina_main_event_2_6",
+   "all/alivia_aina_main_event_2_6",
+   "alivia_aina_main_event_2_7",
+   "all/alivia_aina_main_event_2_7",
+   "alivia_aina_main_event_2_8",
+   "all/alivia_aina_main_event_2_8",
+   "alivia_aina_main_event_3",
+   "all/alivia_aina_main_event_3",
+   "alivia_aina_main_event_3_2",
+   "all/alivia_aina_main_event_3_2",
+   "alivia_aina_main_event_3_3",
+   "all/alivia_aina_main_event_3_3",
+   "alivia_aina_main_event_3_4",
+   "all/alivia_aina_main_event_3_4",
+   "alivia_aina_main_event_5",
+   "alivia_aina_main_event_5_2",
+   "all/alivia_aina_main_event_5_2",
+   "alivia_aina_main_event_5_3",
+   "all/alivia_aina_main_event_5_3",
+   "alivia_aina_main_event_5_4",
+   "all/alivia_aina_main_event_5_4",
+   "alivia_aina_main_event_5_5",
+   "all/alivia_aina_main_event_5_5",
+   "alivia_aina_main_event_6",
+   "all/alivia_aina_main_event_6",
+   "alivia_aina_main_event_6_2",
+   "all/alivia_aina_main_event_6_2",
+   "alivia_aina_main_event_6_3",
+   "all/alivia_aina_main_event_6_3",
+   "alivia_aina_main_event_6_4",
+   "all/alivia_aina_main_event_6_4",
+   "alivia_aina_main_event_6_5",
+   "all/alivia_aina_main_event_6_5",
+   "alivia_aina_main_event_7",
+   "all/alivia_aina_main_event_7",
+   "alivia_aina_main_event_7_2",
+   "all/alivia_aina_main_event_7_2",
+   "alivia_aina_main_event_7_3",
+   "all/alivia_aina_main_event_7_3",
+   "alivia_aina_main_event_7_4",
+   "all/alivia_aina_main_event_7_4",
+   "alivia_aina_main_event_7_5",
+   "all/alivia_aina_main_event_7_5",
+   "alivia_aina_main_event_81",
+   "all/alivia_aina_main_event_81",
+   "alivia_aina_main_event_81_2",
+   "all/alivia_aina_main_event_81_2",
+   "alivia_aina_main_event_81_3",
+   "all/alivia_aina_main_event_81_3",
+   "alivia_aina_main_event_81_4",
+   "all/alivia_aina_main_event_81_4",
+   "alivia_aina_main_event_81_5",
+   "all/alivia_aina_main_event_81_5",
+   "alivia_aina_main_event_82",
+   "all/alivia_aina_main_event_82",
+   "alivia_aina_main_event_82_2",
+   "all/alivia_aina_main_event_82_2",
+   "alivia_aina_main_event_82_3",
+   "all/alivia_aina_main_event_82_3",
+   "alivia_aina_main_event_82_4",
+   "all/alivia_aina_main_event_82_4",
+   "alivia_aina_main_event_82_5",
+   "all/alivia_aina_main_event_82_5",
+   "alivia_aina_main_event_82_6",
+   "all/alivia_aina_main_event_82_6"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "alivia_aina_duel_enable",
+   "enable",
+   "alivia_aina_duel",
+   "alivia_aina_beserk_enable",
+   "alivia_aina_beserk",
+   "alivia_aina_heal_enable",
+   "alivia_aina_heal",
+   "alivia_aina_group_heal_enable",
+   "alivia_aina_group_heal",
+   "alivia_aina_group_buff_enable",
+   "alivia_aina_group_buff",
+   "alivia_aina_group_damage_enable",
+   "alivia_aina_group_damage",
+   "alivia_aina_climax_enable",
+   "alivia_aina_climax"
+  ],
+  "effect_bundles_tables": [
+   "alivia_aina_banner",
+   "Dedicated Service",
+   "character",
+   "alivia_aina_banner.png"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "alivia_aina_banner",
+   "wh_main_effect_character_stat_ward_save",
+   "character_to_character_own_banner",
+   "start_turn_completed",
+   "wh_main_effect_character_stat_leadership",
+   "wh_main_effect_character_stat_melee_attack"
+  ],
+  "effects_tables": [
+   "alivia_aina_duel_enable",
+   "general_ability.png",
+   "battle",
+   "alivia_aina_beserk_enable",
+   "alivia_aina_heal_enable",
+   "alivia_aina_group_heal_enable",
+   "alivia_aina_group_buff_enable",
+   "alivia_aina_group_damage_enable",
+   "alivia_aina_climax_enable"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "champion",
+   "wh2_main_def_cult_of_pleasure",
+   "alivia_aina"
+  ],
+  "land_units_tables": [
+   "wh2_main_leather_40",
+   "inf_melee",
+   "com",
+   "wh2_dlc10_unit_long_text_hef_cha_handmaiden",
+   "alivia_aina",
+   "hu1b_hellebron_dual_sword",
+   "none",
+   "wh_main_infantry",
+   "trained",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "vo_sel_culture",
+   "small",
+   "melee_highvalue",
+   "high",
+   "domination_characters",
+   "alivia_aina_s4",
+   "hu16_wh3_herald_of_slaanesh"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "wh2_main_faction_abilities_murderous_mastery",
+   "alivia_aina",
+   "wh2_main_faction_abilities_murderous_prowess_indicator"
+  ],
+  "main_units_tables": [
+   "hero",
+   "alivia_aina",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh2_main_vo_culture_High_Elves",
+   "emp_captain",
+   "emp_general_foot",
+   "vo_culture_None",
+   "wh2_dlc10_vo_actor_High_Elves_Sisters_of_Averlorn",
+   "alivia_aina_s4"
+  ],
+  "melee_weapons_tables": [
+   "alivia_aina",
+   "sword",
+   "medium"
+  ],
+  "missions_tables": [
+   "alivia_aina_mission_start",
+   "DEFEAT_N_ARMIES_OF_FACTION",
+   "Fetch Quest",
+   "emp/generic",
+   "Event"
+  ],
+  "mounts_tables": [
+   "alivia_aina_s4",
+   "hu16_wh3_herald_of_slaanesh",
+   "alivia_aina",
+   "body"
+  ],
+  "names_tables": [
+   "names_def_dark_elves",
+   "forename",
+   "family_name",
+   "clan_name",
+   "other"
+  ],
+  "special_ability_phase_attribute_effects_tables": [],
+  "special_ability_phase_stat_effects_tables": [
+   "alivia_aina_duel",
+   "stat_melee_defence",
+   "add",
+   "stat_armour",
+   "alivia_aina_beserk",
+   "stat_melee_attack",
+   "stat_melee_damage_ap",
+   "mult",
+   "stat_melee_damage_base",
+   "alivia_aina_group_buff",
+   "stat_resistance_missile",
+   "alivia_aina_climax",
+   "stat_morale",
+   "alivia_aina_climax_2",
+   "alivia_aina_climax_3"
+  ],
+  "special_ability_phases_tables": [
+   "negative",
+   "alivia_aina_duel",
+   "wh_ability_negative",
+   "positive",
+   "alivia_aina_beserk",
+   "wh_main_generic_buff_attack",
+   "wh_ability_positive",
+   "alivia_aina_heal",
+   "alivia_aina_group_heal",
+   "wh_main_generic_hp_regen_passive",
+   "alivia_aina_group_buff",
+   "wh_main_generic_buff_defence_passive",
+   "alivia_aina_group_damage",
+   "wh_main_spell_death_the_fate_of_bjuna",
+   "alivia_aina_climax",
+   "alivia_aina_climax_2",
+   "alivia_aina_climax_3"
+  ],
+  "special_ability_to_special_ability_phase_junctions_tables": [
+   "alivia_aina_duel",
+   "alivia_aina_beserk",
+   "alivia_aina_heal",
+   "alivia_aina_group_heal",
+   "alivia_aina_group_buff",
+   "alivia_aina_group_damage",
+   "alivia_aina_climax",
+   "alivia_aina_climax_2",
+   "alivia_aina_climax_3"
+  ],
+  "ui_unit_bullet_point_unit_overrides_tables": [
+   "duellist",
+   "alivia_aina",
+   "alivia_aina_s4"
+  ],
+  "unique_agent_component_junctions_tables": [
+   "INDIVIDUALLY_UNIQUE",
+   "alivia_aina"
+  ],
+  "unique_agents_tables": [
+   "alivia_aina",
+   "champion",
+   "FACTION_LEADER"
+  ],
+  "unit_abilities_tables": [
+   "alivia_aina_duel",
+   "wh_type_augment",
+   "wh_main_anc_group_unique",
+   "character",
+   "alivia_aina_heal",
+   "alivia_aina_beserk",
+   "alivia_aina_group_heal",
+   "wh_type_area_of_regeneration",
+   "alivia_aina_group_buff",
+   "wh_type_area_of_augments",
+   "passive",
+   "alivia_aina_group_damage",
+   "wh_type_area_of_direct_damage",
+   "active",
+   "alivia_aina_climax"
+  ],
+  "unit_attributes_groups_tables": [
+   "alivia_aina"
+  ],
+  "unit_attributes_to_groups_junctions_tables": [
+   "encourages",
+   "alivia_aina",
+   "hide_forest"
+  ],
+  "unit_description_short_texts_tables": [
+   "alivia_aina"
+  ],
+  "unit_set_to_unit_junctions_tables": [],
+  "unit_special_abilities_tables": [
+   "alivia_aina_duel",
+   "wh_abilities_generic_debuff",
+   "vo_battle_special_ability_spell_cast_negative",
+   "debuff_unit",
+   "alivia_aina_beserk",
+   "wh_abilities_generic_buff_no_ring",
+   "vo_battle_special_ability_generic_response",
+   "buff_self",
+   "alivia_aina_heal",
+   "wh_abilities_generic_regeneration_no_ring",
+   "alivia_aina_group_heal",
+   "wh_abilities_generic_regeneration",
+   "buff_unit",
+   "alivia_aina_group_buff",
+   "wh_abilities_generic_buff",
+   "alivia_aina_group_damage",
+   "wh_abilities_generic_direct_damage",
+   "hex_melee_area_self",
+   "wh_group_character",
+   "damage_aoe",
+   "alivia_aina_climax"
+  ],
+  "unit_variants_tables": [
+   "alivia_aina"
+  ],
+  "units_custom_battle_permissions_tables": [
+   "wh2_main_def_dark_elves",
+   "alivia_aina"
+  ],
+  "variants_tables": [
+   "alivia_aina",
+   "alivia_aina_stage2",
+   "alivia_aina_stage3",
+   "alivia_aina_s4",
+   "alivia_aina_s42"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_subtypes_tables/alivia_morathi_hero",
+   "size": 183,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/alivia_morathi_hero",
+   "size": 455,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/alivia_morathi_hero",
+   "size": 179,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/alivia_morathi_hero",
+   "size": 495,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/alivia_morathi_hero",
+   "size": 140,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/ancillary_to_effects_tables/alivia_morathi_hero",
+   "size": 540,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/banners_permitted_unit_sets_tables/alivia_morathi_hero",
+   "size": 114,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/banners_tables/alivia_morathi_hero",
+   "size": 131,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/alivia_morathi_hero",
+   "size": 402,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/alivia_morathi_hero",
+   "size": 347,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/alivia_morathi_hero",
+   "size": 825,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_character_uniform_ancillary_junctions_tables/alivia_morathi_hero",
+   "size": 130,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_group_unique_agents_tables/alivia_morathi_hero",
+   "size": 129,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_mount_animation_set_overrides_tables/alivia_morathi_hero",
+   "size": 187,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/campaign_mounts_tables/alivia_morathi_hero",
+   "size": 178,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/alivia_morathi_hero",
+   "size": 1919,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_followup_dilemmas_tables/alivia_morathi_hero",
+   "size": 2120,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/alivia_morathi_hero",
+   "size": 7149,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/alivia_morathi_hero",
+   "size": 83,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_followup_dilemmas_tables/alivia_morathi_hero",
+   "size": 138,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_issuer_junctions_tables/alivia_morathi_hero",
+   "size": 131,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_option_junctions_tables/alivia_morathi_hero",
+   "size": 434,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_payloads_tables/alivia_morathi_hero",
+   "size": 91,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/alivia_morathi_hero",
+   "size": 671,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_ancillaries_junctions_tables/alivia_morathi_hero",
+   "size": 138,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_dilemmas_junctions_tables/alivia_morathi_hero",
+   "size": 545,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/alivia_morathi_hero",
+   "size": 17841,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/alivia_morathi_hero",
+   "size": 3228,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/alivia_morathi_hero",
+   "size": 126,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/alivia_morathi_hero",
+   "size": 211,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/alivia_morathi_hero",
+   "size": 3287,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skills_tables/alivia_morathi_hero",
+   "size": 2731,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/character_skills_to_quest_ancillaries_tables/alivia_morathi_hero",
+   "size": 135,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/combat_potentials_adjustments_for_banners_junctions_tables/alivia_morathi_hero",
+   "size": 150,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/alivia_morathi_hero",
+   "size": 4303,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/alivia_morathi_hero",
+   "size": 488,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/alivia_morathi_hero",
+   "size": 175,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/alivia_morathi_hero",
+   "size": 461,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/effects_tables/alivia_morathi_hero",
+   "size": 681,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/alivia_morathi_hero",
+   "size": 137,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/land_units_tables/alivia_morathi_hero",
+   "size": 936,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/alivia_morathi_hero",
+   "size": 211,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/main_units_tables/alivia_morathi_hero",
+   "size": 678,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/melee_weapons_tables/alivia_morathi_hero",
+   "size": 180,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/missions_tables/alivia_morathi_hero",
+   "size": 268,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/mounts_tables/alivia_morathi_hero",
+   "size": 174,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/names_tables/alivia_morathi_hero",
+   "size": 272,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/special_ability_phase_attribute_effects_tables/alivia_morathi_hero",
+   "size": 91,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/special_ability_phase_stat_effects_tables/alivia_morathi_hero",
+   "size": 683,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/special_ability_phases_tables/alivia_morathi_hero",
+   "size": 1247,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/special_ability_to_special_ability_phase_junctions_tables/alivia_morathi_hero",
+   "size": 538,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/ui_unit_bullet_point_unit_overrides_tables/alivia_morathi_hero",
+   "size": 132,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unique_agent_component_junctions_tables/alivia_morathi_hero",
+   "size": 129,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unique_agents_tables/alivia_morathi_hero",
+   "size": 183,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/alivia_morathi_hero",
+   "size": 847,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_attributes_groups_tables/alivia_morathi_hero",
+   "size": 96,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/alivia_morathi_hero",
+   "size": 144,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_description_short_texts_tables/alivia_morathi_hero",
+   "size": 96,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/alivia_morathi_hero",
+   "size": 91,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/alivia_morathi_hero",
+   "size": 1887,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/alivia_morathi_hero",
+   "size": 144,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/units_custom_battle_permissions_tables/alivia_morathi_hero",
+   "size": 138,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "db/variants_tables/alivia_morathi_hero",
+   "size": 416,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "marthvs/mod/zmvsalivia.lua",
+   "size": 127,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "script/campaign/mod/alivia_morathi_hero_modelchange.lua",
+   "size": 4108,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "script/campaign/mod/alivia_morathi_hero_spawn.lua",
+   "size": 4165,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "text/alivia_morathi_aina.loc",
+   "size": 1122,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "text/alivia_morathi_aina_skills.loc",
+   "size": 9423,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "text/db/alivia_morathi_hero_abilities.loc",
+   "size": 3682,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "text/db/alivia_morathi_hero_dilemmas.loc",
+   "size": 55024,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "text/db/alivia_morathi_hero_dilemmas_choice.loc",
+   "size": 19443,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_beserk.png",
+   "size": 10651,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_climax.png",
+   "size": 9318,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_climax_2.png",
+   "size": 9318,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_climax_3.png",
+   "size": 9318,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_duel.png",
+   "size": 7895,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_group_buff.png",
+   "size": 11011,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_group_damage.png",
+   "size": 9322,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_group_heal.png",
+   "size": 8541,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/alivia_aina_heal.png",
+   "size": 19973,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/ymira_duel2_59.png",
+   "size": 9365,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/ymira_duel_59.png",
+   "size": 8459,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_beserk.png",
+   "size": 10651,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_choice_special_1.png",
+   "size": 19717,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_choice_special_2.png",
+   "size": 20639,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_choice_special_2_2.png",
+   "size": 20228,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_climax.png",
+   "size": 9318,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_duel.png",
+   "size": 7895,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_group_buff.png",
+   "size": 11011,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_group_damage.png",
+   "size": 9322,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_group_heal.png",
+   "size": 8541,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_heal.png",
+   "size": 19973,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_main_service_1.png",
+   "size": 20282,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_main_service_4.png",
+   "size": 13491,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_main_service_7.png",
+   "size": 18697,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_0.png",
+   "size": 20456,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_1.png",
+   "size": 22168,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_2.png",
+   "size": 20534,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_3.png",
+   "size": 19973,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_4.png",
+   "size": 21989,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_5.png",
+   "size": 18111,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_6.png",
+   "size": 22585,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/alivia_aina_training_7.png",
+   "size": 24696,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_1.png",
+   "size": 568989,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2.png",
+   "size": 1989183,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_2.png",
+   "size": 555055,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_3.png",
+   "size": 1284191,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_4.png",
+   "size": 845411,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_5.png",
+   "size": 697669,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_6.png",
+   "size": 728117,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_7.png",
+   "size": 2332712,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_2_8.png",
+   "size": 1989183,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_3.png",
+   "size": 1453921,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_3_2.png",
+   "size": 1453921,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_3_3.png",
+   "size": 992088,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_3_4.png",
+   "size": 493770,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_5_2.png",
+   "size": 700980,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_5_3.png",
+   "size": 729376,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_5_4.png",
+   "size": 493103,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_5_5.png",
+   "size": 457573,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_6.png",
+   "size": 691297,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_6_2.png",
+   "size": 657189,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_6_3.png",
+   "size": 634213,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_6_4.png",
+   "size": 714458,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_6_5.png",
+   "size": 660372,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_7.png",
+   "size": 956194,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_7_2.png",
+   "size": 972365,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_7_3.png",
+   "size": 876379,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_7_4.png",
+   "size": 795791,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_7_5.png",
+   "size": 823218,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_81.png",
+   "size": 576912,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_81_2.png",
+   "size": 800585,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_81_3.png",
+   "size": 613219,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_81_4.png",
+   "size": 719533,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82.png",
+   "size": 310379,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82_2.png",
+   "size": 653269,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82_3.png",
+   "size": 308818,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82_4.png",
+   "size": 361190,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82_5.png",
+   "size": 691570,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_main_event_82_6.png",
+   "size": 819859,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_start.png",
+   "size": 674455,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_start_2.png",
+   "size": 679872,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_start_3.png",
+   "size": 1483324,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/eventpics/all/alivia_aina_start_4.png",
+   "size": 2840230,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/alivia_aina.png",
+   "size": 41560,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/alivia_aina_s4.png",
+   "size": 51330,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/alivia_aina_s42.png",
+   "size": 50227,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/alivia_aina_stage2.png",
+   "size": 55419,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/alivia_aina_stage3.png",
+   "size": 48258,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__alivia_aina_s4.bin",
+   "size": 110,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__alivia_aina_s42.bin",
+   "size": 113,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__alivia_aina_stage2.bin",
+   "size": 122,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__alivia_aina_stage3.bin",
+   "size": 122,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__alivia_morathi_hero.bin",
+   "size": 101,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina.png",
+   "size": 20749,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina_0.png",
+   "size": 20749,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina_s4.png",
+   "size": 16210,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina_s42.png",
+   "size": 146552,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina_stage2.png",
+   "size": 23104,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/alivia_aina_stage3.png",
+   "size": 20910,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__alivia_aina_s4.bin",
+   "size": 110,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__alivia_aina_s42.bin",
+   "size": 113,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__alivia_aina_stage2.bin",
+   "size": 122,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__alivia_aina_stage3.bin",
+   "size": 122,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__alivia_morathi_hero.bin",
+   "size": 101,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/units/alivia_aina.png",
+   "size": 20749,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/units/alivia_aina_s4.png",
+   "size": 16210,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/units/alivia_aina_s42.png",
+   "size": 146552,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/units/alivia_aina_stage2.png",
+   "size": 23104,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "ui/units/alivia_aina_stage3.png",
+   "size": 20910,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/alivia_aina.variantmeshdefinition",
+   "size": 2424,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/alivia_aina_s4.variantmeshdefinition",
+   "size": 930,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/alivia_aina_s42.variantmeshdefinition",
+   "size": 935,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/alivia_aina_stage2.variantmeshdefinition",
+   "size": 867,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/alivia_aina_stage3.variantmeshdefinition",
+   "size": 867,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/alivia_vaeri_stage2.rigid_model_v2",
+   "size": 787852,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/alivia_vaeri_stage2.wsmodel",
+   "size": 4522,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/alivia_vaeri_stage3.rigid_model_v2",
+   "size": 640188,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/alivia_vaeri_stage3.wsmodel",
+   "size": 4610,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/alivia_body_bead_stage42_clean.rigid_model_v2",
+   "size": 4526868,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/alivia_body_bead_stage42_clean.wsmodel",
+   "size": 4776,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/alivia_vaeri_stage4_pet.rigid_model_v2",
+   "size": 5973132,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/alivia_vaeri_stage4_pet.wsmodel",
+   "size": 5421,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_body_slut_belts_weighted4_alpha_on.xml.material",
+   "size": 2479,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_body_slut_sleeves_weighted4_alpha_on.xml.material",
+   "size": 2532,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_handmaiden_head_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_handmaiden_head_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_handmaiden_headpiece_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_handmaiden_headpiece_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_slut_armband_weighted4_alpha_on.xml.material",
+   "size": 2476,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/alivia_slut_dress_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/aliviabody_slut_hands_weighted4_alpha_on.xml.material",
+   "size": 2599,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/aliviabodypet_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/aliviabodyslut_tatto_weighted4_alpha_on.xml.material",
+   "size": 2505,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/pet_alivia_chanins_weighted4_alpha_on.xml.material",
+   "size": 2500,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/pet_alivia_collar_weighted4_alpha_on.xml.material",
+   "size": 2501,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/pet_alivia_dreadlord_legs_weighted4_alpha_on.xml.material",
+   "size": 2612,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/pet_alivia_dreadlord_mask_weighted4_alpha_on.xml.material",
+   "size": 2485,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/materials/pet_alivia_gauntlet_weighted4_alpha_on.xml.material",
+   "size": 2617,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/aina_slut_sleeves.dds",
+   "size": 2796364,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/aina_slut_sleeves_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/alivia_body_normal_deluxe.dds",
+   "size": 524416,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/alivia_slut_dress_pink_v2.dds",
+   "size": 2796364,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/alivia_slut_dress_pink_v2_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/stage4/tex/aliviabody_hands_slut.dds",
+   "size": 699212,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/alivia_vaeri_base.rigid_model_v2",
+   "size": 4389220,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/alivia_vaeri_base.wsmodel",
+   "size": 2179,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/alivia_handmaiden_head_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/alivia_handmaiden_head_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/alivia_handmaiden_headpiece_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/alivia_handmaiden_headpiece_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/aliviabody_weighted4_alpha_off.xml.material",
+   "size": 2399,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/vaeri_base/materials/aliviabody_weighted4_alpha_on.xml.material",
+   "size": 2399,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_chains_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_belt_weighted4_alpha_on.xml.material",
+   "size": 2643,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_body_stage2_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_gauntlet_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_legs_stage2_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_neck_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/materials/alivia_handmaiden_shoulder_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_aina_body_material_map.dds",
+   "size": 699212,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_black_base_color.dds",
+   "size": 524416,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_body_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_body_saturated.dds",
+   "size": 11184972,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_body_slut_final.dds",
+   "size": 11184972,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_def_dreadlord_female_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_def_dreadlord_female_head_normal.dds",
+   "size": 1398256,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_green_less.dds",
+   "size": 524416,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/alivia_hef_handmaiden_everqueen_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/beatrice_saturated2_normal_orange.dds",
+   "size": 22369776,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/pet_alivia_body_lesssa.dds",
+   "size": 11184972,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/pet_chain_base_colour.dds",
+   "size": 699212,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/pet_chain_normal.dds",
+   "size": 1398256,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tex/test_test2.dds",
+   "size": 22369776,
+   "pack": "alivia_morathi_hero3.0cnJ.pack"
+  }
+ ]
+}

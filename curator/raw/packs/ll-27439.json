@@ -1,0 +1,1283 @@
+{
+ "mod": "ll-27439",
+ "packs": [
+  "sewrat_beastmen_addon_c.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "sewrat_beastmen_addon_c.pack": {
+   "files": 102,
+   "dependencies": []
+  }
+ },
+ "fileCount": 102,
+ "byTopFolder": {
+  "ui": 64,
+  "db": 32,
+  "text": 6
+ },
+ "tables": [
+  "cai_character_skill_synergies_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_ancillaries_junctions_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "character_skill_utilization_hints_junctions_tables",
+  "character_skills_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effect_bonus_value_unit_set_unit_ability_junctions_tables",
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables",
+  "effects_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "projectile_shrapnels_tables",
+  "projectiles_explosions_tables",
+  "projectiles_tables",
+  "special_ability_intensity_settings_tables",
+  "special_ability_phase_stat_effects_tables",
+  "special_ability_phases_tables",
+  "special_ability_to_auto_deactivate_flags_tables",
+  "special_ability_to_special_ability_phase_junctions_tables",
+  "unit_abilities_additional_ui_effects_tables",
+  "unit_abilities_tables",
+  "unit_abilities_to_additional_ui_effects_juncs_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_set_unit_ability_junctions_tables",
+  "unit_set_unit_attribute_junctions_tables",
+  "unit_sets_tables",
+  "unit_special_abilities_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "cai_character_skill_synergies_tables": [],
+  "character_skill_level_details_tables": [
+   "sewrat_carsen_b",
+   "sewrat_enlarge_limb",
+   "sewrat_orser_b",
+   "sewrat_carsen_d",
+   "sewrat_sadistic_vision",
+   "sewrat_orser_d",
+   "sewrat_carsen_s",
+   "sewrat_orgmist_s",
+   "sewrat_orser_s",
+   "sewrat_carsen_w",
+   "sewrat_inca_vine",
+   "sewrat_orser_w",
+   "sewrat_sensitive",
+   "sewrat_lusthorde",
+   "sewrat_hounds",
+   "sewrat_gorgy",
+   "sewrat_carin",
+   "sewrat_rapist",
+   "sewrat_brfnzy",
+   "sewrat_grasp",
+   "sewrat_orgasmic_shot",
+   "sewrat_mating_b",
+   "sewrat_mating_d",
+   "sewrat_mating_s",
+   "sewrat_mating_w",
+   "sewrat_inferslave_b",
+   "sewrat_inferslave_d",
+   "sewrat_inferslave_s",
+   "sewrat_inferslave_w",
+   "sewrat_bhdr",
+   "sewrat_brc",
+   "sewrat_infer_noble_slave_b",
+   "sewrat_infer_noble_slave_d",
+   "sewrat_infer_noble_slave_s",
+   "sewrat_infer_noble_slave_w",
+   "sewrat_bounded",
+   "sewrat_relentless"
+  ],
+  "character_skill_level_to_ancillaries_junctions_tables": [],
+  "character_skill_level_to_effects_junctions_tables": [
+   "sewrat_carsen_b",
+   "wh_main_effect_character_line_of_sight_mod",
+   "character_to_character_own",
+   "wh2_dlc16_effect_ability_enable_spot_units_hiding_in_forest",
+   "sewrat_carsen_d",
+   "sewrat_carsen_s",
+   "sewrat_carsen_w",
+   "sewrat_enlarge_limb",
+   "sewrat_enable_enlarge_limb",
+   "sewrat_sadistic_vision",
+   "sewrat_enable_sadistic_vision",
+   "sewrat_orgmist_s",
+   "wh_main_effect_force_stat_magic_resistance",
+   "general_to_force_own",
+   "sewrat_inca_vine",
+   "sewrat_enable_inca_vine",
+   "sewrat_orser_b",
+   "wh2_dlc12_effect_magic_cooldown_all_lores",
+   "wh_main_effect_character_stat_miscast",
+   "wh_main_effect_force_stat_vigour_loss_reduction",
+   "sewrat_orser_d",
+   "sewrat_orser_s",
+   "sewrat_orser_w",
+   "sewrat_lusthorde",
+   "wh_dlc03_effect_force_stat_melee_attack_bst_tier_1",
+   "sewrat_morale_bst_ungor_raider",
+   "wh_main_effect_force_all_campaign_captives",
+   "general_to_force_own_unseen",
+   "sewrat_sensitive",
+   "wh_main_effect_force_stat_speed",
+   "wh_main_effect_force_stat_leadership",
+   "sewrat_hounds",
+   "sewrat_unbreakable_hounds",
+   "sewrat_movement_bst_hounds",
+   "sewrat_enable_hasty_hound",
+   "sewrat_gorgy",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "wh_main_effect_force_stat_melee_attack",
+   "wh_main_effect_force_all_campaign_raid_income",
+   "sewrat_carin",
+   "wh_main_effect_character_stat_ward_save",
+   "sewrat_enable_passive_carnal_instinct",
+   "sewrat_rapist",
+   "wh_main_effect_character_stat_leadership",
+   "sewrat_enable_passive_rapist",
+   "wh2_main_effect_replenishment_lords",
+   "sewrat_brfnzy",
+   "sewrat_enable_passive_ability_breeding_frenzy",
+   "sewrat_grasp",
+   "wh_main_effect_character_stat_speed",
+   "sewrat_enable_beastly_grasp",
+   "sewrat_orgasmic_shot",
+   "sewrat_enable_orgasmic_shot",
+   "sewrat_mating_b",
+   "wh3_main_effect_winds_of_magic_pool_cap",
+   "character_to_force_own_unseen",
+   "sewrat_mating_d",
+   "sewrat_mating_s",
+   "sewrat_mating_w",
+   "wh3_main_effect_corruption_slaanesh_characters",
+   "character_to_province_any",
+   "sewrat_inferslave_b",
+   "sewrat_inferslave_d",
+   "sewrat_inferslave_s",
+   "sewrat_inferslave_w",
+   "wh_main_effect_character_stat_magic_resistance",
+   "sewrat_bhdr",
+   "sewrat_movement_bst_chariot_herd",
+   "agent_to_parent_army_own",
+   "sewrat_melee_attack_bst_chariot_herd",
+   "sewrat_brc",
+   "sewrat_replenish_pen_beast",
+   "sewrat_enable_well_fed_pen_beast",
+   "sewrat_unit_cap_pen_beast_no_hounds",
+   "character_to_faction_unseen",
+   "sewrat_infer_noble_slave_b",
+   "sewrat_infer_noble_slave_d",
+   "sewrat_infer_noble_slave_s",
+   "sewrat_infer_noble_slave_w",
+   "sewrat_enable_infer_noble_slave",
+   "sewrat_bounded",
+   "wh_main_effect_character_stat_armour",
+   "sewrat_enable_bounded",
+   "sewrat_armour_minotaurs",
+   "sewrat_movement_minotaurs",
+   "sewrat_relentless",
+   "wh2_dlc10_effect_attribute_enable_perfect_vigour",
+   "sewrat_vigor_minotaurs",
+   "sewrat_base_weapon_minotaurs"
+  ],
+  "character_skill_node_links_tables": [],
+  "character_skill_node_set_items_tables": [
+   "wh2_dlc17_skill_node_set_bst_great_bray_shaman_beast",
+   "sewrat_carsen_b_node",
+   "sewrat_enlarge_limb_node",
+   "sewrat_orser_b_node",
+   "wh2_dlc17_skill_node_set_bst_great_bray_shaman_death",
+   "sewrat_carsen_d_node",
+   "sewrat_sadistic_vision_node",
+   "sewrat_orser_d_node",
+   "wh2_dlc17_skill_node_set_bst_great_bray_shaman_shadows",
+   "sewrat_carsen_s_node",
+   "sewrat_orgmist_s_node",
+   "sewrat_orser_s_node",
+   "wh2_dlc17_skill_node_set_bst_great_bray_shaman_wild",
+   "sewrat_carsen_w_node",
+   "sewrat_inca_vine_node",
+   "sewrat_orser_w_node",
+   "wh_dlc03_skill_node_set_bst_beastlord",
+   "sewrat_sensitive_node",
+   "sewrat_lusthorde_node",
+   "sewrat_hounds_node",
+   "sewrat_gorgy_node",
+   "wh2_dlc17_skill_node_set_bst_doombull",
+   "sewrat_carin_node",
+   "sewrat_rapist_node",
+   "sewrat_brfnzy_node",
+   "sewrat_grasp_node",
+   "sewrat_orgasmic_shot_node",
+   "wh_dlc03_skill_node_set_bst_bray_shaman_beast",
+   "sewrat_mating_b_node",
+   "wh_dlc03_skill_node_set_bst_bray_shaman_death",
+   "sewrat_mating_d_node",
+   "wh_dlc03_skill_node_set_bst_bray_shaman_shadows",
+   "sewrat_mating_s_node",
+   "wh_dlc03_skill_node_set_bst_bray_shaman_wild",
+   "sewrat_mating_w_node",
+   "sewrat_inferslave_b_node",
+   "sewrat_inferslave_d_node",
+   "sewrat_inferslave_s_node",
+   "sewrat_inferslave_w_node",
+   "wh2_dlc17_skill_node_set_bst_wargor",
+   "sewrat_bhdr_node",
+   "sewrat_brc_node",
+   "sewrat_infer_noble_slave_b_node",
+   "sewrat_infer_noble_slave_d_node",
+   "sewrat_infer_noble_slave_s_node",
+   "sewrat_infer_noble_slave_w_node",
+   "wh_dlc03_skill_node_set_bst_gorebull",
+   "sewrat_bounded_node",
+   "sewrat_relentless_node"
+  ],
+  "character_skill_nodes_skill_locks_tables": [],
+  "character_skill_nodes_tables": [
+   "sewrat_carsen_b",
+   "sewrat_carsen_b_node",
+   "sewrat_enlarge_limb",
+   "sewrat_enlarge_limb_node",
+   "sewrat_orser_b",
+   "sewrat_orser_b_node",
+   "sewrat_carsen_d",
+   "sewrat_carsen_d_node",
+   "sewrat_sadistic_vision",
+   "sewrat_sadistic_vision_node",
+   "sewrat_orser_d",
+   "sewrat_orser_d_node",
+   "sewrat_carsen_s",
+   "sewrat_carsen_s_node",
+   "sewrat_orgmist_s",
+   "sewrat_orgmist_s_node",
+   "sewrat_orser_s",
+   "sewrat_orser_s_node",
+   "sewrat_carsen_w",
+   "sewrat_carsen_w_node",
+   "sewrat_inca_vine",
+   "sewrat_inca_vine_node",
+   "sewrat_orser_w",
+   "sewrat_orser_w_node",
+   "sewrat_sensitive",
+   "sewrat_sensitive_node",
+   "sewrat_lusthorde",
+   "sewrat_lusthorde_node",
+   "sewrat_hounds",
+   "sewrat_hounds_node",
+   "sewrat_gorgy",
+   "sewrat_gorgy_node",
+   "sewrat_carin",
+   "sewrat_carin_node",
+   "sewrat_rapist",
+   "sewrat_rapist_node",
+   "sewrat_brfnzy",
+   "sewrat_brfnzy_node",
+   "sewrat_grasp",
+   "sewrat_grasp_node",
+   "sewrat_orgasmic_shot",
+   "sewrat_orgasmic_shot_node",
+   "sewrat_mating_b",
+   "sewrat_mating_b_node",
+   "sewrat_mating_d",
+   "sewrat_mating_d_node",
+   "sewrat_mating_s",
+   "sewrat_mating_s_node",
+   "sewrat_mating_w",
+   "sewrat_mating_w_node",
+   "sewrat_inferslave_b",
+   "sewrat_inferslave_b_node",
+   "sewrat_inferslave_d",
+   "sewrat_inferslave_d_node",
+   "sewrat_inferslave_s",
+   "sewrat_inferslave_s_node",
+   "sewrat_inferslave_w",
+   "sewrat_inferslave_w_node",
+   "sewrat_bhdr",
+   "sewrat_bhdr_node",
+   "sewrat_brc",
+   "sewrat_brc_node",
+   "sewrat_infer_noble_slave_b",
+   "sewrat_infer_noble_slave_b_node",
+   "sewrat_infer_noble_slave_d",
+   "sewrat_infer_noble_slave_d_node",
+   "sewrat_infer_noble_slave_s",
+   "sewrat_infer_noble_slave_s_node",
+   "sewrat_infer_noble_slave_w",
+   "sewrat_infer_noble_slave_w_node",
+   "sewrat_bounded",
+   "sewrat_bounded_node",
+   "sewrat_relentless",
+   "sewrat_relentless_node"
+  ],
+  "character_skill_utilization_hints_junctions_tables": [],
+  "character_skills_tables": [
+   "sewrat_si_carsen.png",
+   "sewrat_carsen_b",
+   "sewrat_si_en_limb.png",
+   "sewrat_enlarge_limb",
+   "sewrat_si_orser.png",
+   "sewrat_orser_b",
+   "sewrat_carsen_d",
+   "sewrat_si_sadistic_vision.png",
+   "sewrat_sadistic_vision",
+   "sewrat_orser_d",
+   "sewrat_carsen_s",
+   "sewrat_si_ormist.png",
+   "sewrat_orgmist_s",
+   "sewrat_orser_s",
+   "sewrat_carsen_w",
+   "sewrat_is_inca_vine.png",
+   "sewrat_inca_vine",
+   "sewrat_orser_w",
+   "sewrat_si_sensitive.png",
+   "sewrat_sensitive",
+   "sewrat_si_lusthorde.png",
+   "sewrat_lusthorde",
+   "sewrat_si_hounds.png",
+   "sewrat_hounds",
+   "sewrat_si_grand.png",
+   "sewrat_gorgy",
+   "sewrat_si_carlin.png",
+   "sewrat_carin",
+   "sewrat_si_rapist.png",
+   "sewrat_rapist",
+   "sewrat_si_brfnzy.png",
+   "sewrat_brfnzy",
+   "sewrat_si_grasp.png",
+   "sewrat_grasp",
+   "PLACE HOLDER",
+   "sewrat_orgasmic_shot",
+   "sewrat_si_mating.png",
+   "sewrat_mating_b",
+   "sewrat_mating_d",
+   "sewrat_mating_s",
+   "sewrat_mating_w",
+   "sewrat_si_inferslave.png",
+   "sewrat_inferslave_b",
+   "sewrat_inferslave_d",
+   "sewrat_inferslave_s",
+   "sewrat_inferslave_w",
+   "sewrat_si_bhdr.png",
+   "sewrat_bhdr",
+   "sewrat_si_brc.png",
+   "sewrat_brc",
+   "sewrat_si_infer_noble_slave_alt.png",
+   "sewrat_infer_noble_slave_b",
+   "sewrat_infer_noble_slave_d",
+   "sewrat_infer_noble_slave_s",
+   "sewrat_infer_noble_slave_w",
+   "sewrat_si_bounded.png",
+   "sewrat_bounded",
+   "sewrat_si_relentless.png",
+   "sewrat_relentless"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "mod_land_movement_battle",
+   "sewrat_movement_bst_hounds",
+   "bst_dlc03_chaos_warhounds",
+   "melee_attack_mod",
+   "sewrat_melee_attack_bst_hounds",
+   "morale",
+   "sewrat_morale_bst_ungor_raider",
+   "bst_dlc03_ungors",
+   "sewrat_movement_bst_chariot_herd",
+   "sewrat_chariot_herd",
+   "damage_vs_infantry",
+   "sewrat_melee_attack_bst_chariot_herd",
+   "replenishment_percentage_bonus",
+   "sewrat_replenish_pen_beast",
+   "sewrat_pen_beast",
+   "unit_cap",
+   "sewrat_unit_cap_pen_beast_no_hounds",
+   "sewrat_pen_beast_no_hounds",
+   "sewrat_movement_minotaurs",
+   "bst_dlc03_minotaurs",
+   "charge_bonus",
+   "sewrat_charge_minotaurs",
+   "melee_damage_mod_mult",
+   "sewrat_base_weapon_minotaurs",
+   "unit_fatigue_resistance_mod",
+   "sewrat_vigor_minotaurs",
+   "armour_mod",
+   "sewrat_armour_minotaurs"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "sewrat_enable_passive_carnal_instinct",
+   "enable",
+   "sewrat_skill_carnal_instinct",
+   "sewrat_enable_passive_rapist",
+   "sewrat_skill_rapist",
+   "sewrat_enable_beastly_grasp",
+   "sewrat_skill_beastly_grasp",
+   "sewrat_enable_infer_noble_slave",
+   "sewrat_skill_infer_noble_slave",
+   "sewrat_enable_bounded",
+   "sewrat_skill_bounded",
+   "sewrat_enable_passive_ability_breeding_frenzy",
+   "sewrat_skill_breeding_frenzy",
+   "sewrat_enable_inca_vine",
+   "sewrat_skill_inca_vine",
+   "sewrat_enable_sadistic_vision",
+   "sewrat_skill_sadistic_vision",
+   "sewrat_enable_orgasmic_shot",
+   "sewrat_skill_orgasmic_shot"
+  ],
+  "effect_bonus_value_unit_set_unit_ability_junctions_tables": [
+   "enable",
+   "sewrat_enable_well_fed_pen_beast",
+   "sewrat_well_fed_pen_beast",
+   "sewrat_enable_hasty_hound",
+   "sewrat_skill_hastly_hound_group",
+   "sewrat_enable_enlarge_limb",
+   "sewrat_skill_enlarge_unit_group"
+  ],
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables": [
+   "enable",
+   "sewrat_unbreakable_hounds",
+   "sewrat_effect_unbreakable_hounds",
+   "sewrat_perfect_vigour_minotaurs",
+   "sewrat_effect_perfect_vigour_minotaurs"
+  ],
+  "effects_tables": [
+   "sewrat_unbreakable_hounds",
+   "attribute_unbreakable.png",
+   "battle",
+   "sewrat_movement_bst_hounds",
+   "battle_movement.png",
+   "sewrat_melee_attack_bst_hounds",
+   "melee.png",
+   "sewrat_morale_bst_ungor_raider",
+   "morale.png",
+   "both",
+   "sewrat_enable_passive_carnal_instinct",
+   "eb_carin.png",
+   "sewrat_enable_passive_rapist",
+   "eb_rapist.png",
+   "sewrat_enable_beastly_grasp",
+   "eb_grasp_heat.png",
+   "sewrat_movement_bst_chariot_herd",
+   "sewrat_melee_attack_bst_chariot_herd",
+   "sewrat_enable_well_fed_pen_beast",
+   "eb_well_fed.png",
+   "sewrat_replenish_pen_beast",
+   "replenishment.png",
+   "campaign",
+   "sewrat_unit_cap_pen_beast_no_hounds",
+   "unit_capacity.png",
+   "sewrat_enable_infer_noble_slave",
+   "eb_infer_noble_slave.png",
+   "sewrat_enable_bounded",
+   "eb_bounded.png",
+   "sewrat_movement_minotaurs",
+   "sewrat_charge_minotaurs",
+   "charge.png",
+   "sewrat_perfect_vigour_minotaurs",
+   "attribute_fatigue_immune.png",
+   "sewrat_base_weapon_minotaurs",
+   "weapon_damage.png",
+   "sewrat_enable_passive_ability_breeding_frenzy",
+   "eb_breeding_frenzy.png",
+   "sewrat_enable_hasty_hound",
+   "sewrat_enable_inca_vine",
+   "eb_inca_vine.png",
+   "sewrat_enable_sadistic_vision",
+   "eb_sadistic_vision.png",
+   "sewrat_enable_enlarge_limb",
+   "eb_en_limb.png",
+   "sewrat_vigor_minotaurs",
+   "vigour.png",
+   "sewrat_armour_minotaurs",
+   "armour.png",
+   "sewrat_enable_orgasmic_shot",
+   "eb_orgasmic_shot.png"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "sewrat_skill_carnal_instinct",
+   "wh2_dlc17_bst_cha_doombull_0",
+   "sewrat_skill_rapist",
+   "sewrat_skill_beastly_grasp",
+   "sewrat_skill_infer_noble_slave",
+   "wh_dlc03_bst_cha_bray_shaman_beasts_0",
+   "wh_dlc03_bst_cha_bray_shaman_death_0",
+   "wh_dlc03_bst_cha_bray_shaman_shadows_0",
+   "wh_dlc03_bst_cha_bray_shaman_wild_0",
+   "sewrat_skill_bounded",
+   "wh_dlc03_bst_cha_gorebull_0",
+   "sewrat_skill_hasty_hound",
+   "wh_dlc03_bst_inf_chaos_warhounds_0",
+   "wh_dlc03_bst_inf_chaos_warhounds_1",
+   "sewrat_skill_inca_vine",
+   "sewrat_skill_sadistic_vision",
+   "sewrat_skill_orgasmic_shot"
+  ],
+  "projectile_shrapnels_tables": [
+   "cumsplash",
+   "shrapnel_cum",
+   "hemisphere"
+  ],
+  "projectiles_explosions_tables": [
+   "cum_explosion_shrapnel",
+   "percussive",
+   "shockwave",
+   "wh2_dlc10_frostbreath_impact",
+   "wh3_kugath_explosion",
+   "wh3_main_unit_contact_disorientated",
+   "wh_main_unit_explosion_light",
+   "cum_explosion",
+   "cumsplash"
+  ],
+  "projectiles_tables": [
+   "projectile_cum",
+   "misc",
+   "artillery_explosive",
+   "cum_explosion",
+   "shell_spin",
+   "low",
+   "wh2_dlc10_frostbreath",
+   "wh_dlc08_abilities_copious_vomit",
+   "wh_dlc06_unit_contact_discouraged",
+   "high",
+   "placeholder",
+   "shrapnel_cum",
+   "cum_explosion_shrapnel",
+   "axe_spin",
+   "fixed",
+   "wh2_dlc17_unit_contact_dazed",
+   "very_low"
+  ],
+  "special_ability_intensity_settings_tables": [
+   "sewrat_skill_breeding_frenzy",
+   "time_in_melee",
+   "linear_multiplier",
+   "sewrat_skill_bounded"
+  ],
+  "special_ability_phase_stat_effects_tables": [
+   "sewrat_skill_carnal_instinct_phase",
+   "stat_damage_reflection",
+   "add",
+   "stat_melee_defence",
+   "sewrat_skill_rapist_phase",
+   "stat_morale",
+   "sewrat_skill_beastly_grasp_phase",
+   "stat_bonus_vs_infantry",
+   "scalar_entity_acceleration_modifier",
+   "mult",
+   "scalar_charge_speed",
+   "sewrat_skill_well_fed_phase",
+   "stat_mass",
+   "sewrat_skill_infer_noble_slave_phase",
+   "scalar_spell_mastery",
+   "sewrat_skill_bounded_phase",
+   "scalar_splash_attack_power",
+   "stat_charge_bonus",
+   "sewrat_skill_breeding_frenzy_phase",
+   "stat_resistance_all",
+   "stat_resistance_missile",
+   "sewrat_skill_hasty_hound_phase",
+   "stat_melee_attack",
+   "sewrat_skill_sadistic_vision_phase",
+   "sewrat_skill_enlarge_unit_phase"
+  ],
+  "special_ability_phases_tables": [
+   "positive",
+   "sewrat_skill_carnal_instinct_phase",
+   "negative",
+   "sewrat_skill_rapist_phase",
+   "sewrat_skill_beastly_grasp_phase",
+   "wh_main_spell_metal_plague_of_rust",
+   "wh_ability_positive",
+   "sewrat_skill_well_fed_phase",
+   "sewrat_skill_infer_noble_slave_phase",
+   "sewrat_skill_bounded_phase",
+   "sewrat_skill_breeding_frenzy_phase",
+   "sewrat_passive_primal_lust_phase",
+   "sewrat_skill_hasty_hound_phase",
+   "wh_dlc06_unit_contact_sundered_armour",
+   "sewrat_skill_inca_vine_phase",
+   "wh3_main_nurgle_curse_of_the_leper_entity",
+   "wh3_main_spell_nurgle_curse_of_the_leper",
+   "sewrat_skill_sadistic_vision_phase",
+   "sewrat_skill_enlarge_unit_phase"
+  ],
+  "special_ability_to_auto_deactivate_flags_tables": [
+   "other_abilities_just_activated_after_wind_up",
+   "sewrat_skill_infer_noble_slave"
+  ],
+  "special_ability_to_special_ability_phase_junctions_tables": [
+   "sewrat_skill_carnal_instinct_phase",
+   "sewrat_skill_carnal_instinct",
+   "sewrat_skill_rapist_phase",
+   "sewrat_skill_rapist",
+   "sewrat_skill_beastly_grasp_phase",
+   "sewrat_skill_beastly_grasp",
+   "sewrat_skill_well_fed_phase",
+   "sewrat_skill_well_fed",
+   "sewrat_skill_infer_noble_slave_phase",
+   "sewrat_skill_infer_noble_slave",
+   "sewrat_skill_bounded_phase",
+   "sewrat_skill_bounded",
+   "sewrat_skill_breeding_frenzy_phase",
+   "sewrat_skill_breeding_frenzy",
+   "sewrat_skill_hasty_hound_phase",
+   "sewrat_skill_hasty_hound",
+   "sewrat_skill_inca_vine_phase",
+   "sewrat_skill_inca_vine",
+   "sewrat_skill_sadistic_vision_phase",
+   "sewrat_skill_sadistic_vision",
+   "sewrat_skill_enlarge_unit_phase",
+   "sewrat_skill_enlarge_unit"
+  ],
+  "unit_abilities_additional_ui_effects_tables": [
+   "sewrat_beastly_grasp_ui_a",
+   "positive",
+   "sewrat_beastly_grasp_ui_b",
+   "sewrat_skill_inca_vine_ui_a",
+   "sewrat_skill_inca_vine_ui_b",
+   "sewrat_skill_orgasmic_shot_ui_a",
+   "sewrat_skill_orgasmic_shot_ui_b",
+   "negative",
+   "sewrat_skill_orgasmic_shot_ui_c"
+  ],
+  "unit_abilities_tables": [
+   "sewrat_skill_carnal_instinct",
+   "wh2_twa03_lord_passive_beastlords_presence",
+   "wh_type_area_of_augments",
+   "wh_main_anc_group_uncommon",
+   "passive",
+   "sewrat_skill_rapist",
+   "aisi_rapist",
+   "wh_type_area_of_hexes",
+   "sewrat_skill_beastly_grasp",
+   "aisi_beastly_g_alt",
+   "wh_type_augment",
+   "active",
+   "sewrat_skill_well_fed",
+   "aisi_well_fed",
+   "sewrat_skill_infer_noble_slave",
+   "aisi_infer_noble_slave",
+   "sewrat_skill_bounded",
+   "aisi_bounded",
+   "sewrat_skill_breeding_frenzy",
+   "aisi_breeding_frenzy",
+   "sewrat_skill_hasty_hound",
+   "wh2_dlc13_army_abilities_beasts_of_itzl",
+   "sewrat_skill_inca_vine",
+   "aisi_inca_vine_alt",
+   "sewrat_skill_sadistic_vision",
+   "aisi_sadistic_vision",
+   "sewrat_skill_enlarge_unit",
+   "aisi_en_limb",
+   "sewrat_skill_orgasmic_shot",
+   "aisi_orgasmic_shot",
+   "wh_type_magic_missiles"
+  ],
+  "unit_abilities_to_additional_ui_effects_juncs_tables": [
+   "sewrat_skill_beastly_grasp",
+   "sewrat_beastly_grasp_ui_a",
+   "sewrat_beastly_grasp_ui_b",
+   "sewrat_skill_inca_vine",
+   "sewrat_skill_inca_vine_ui_a",
+   "sewrat_skill_inca_vine_ui_b",
+   "sewrat_skill_orgasmic_shot",
+   "sewrat_skill_orgasmic_shot_ui_a",
+   "sewrat_skill_orgasmic_shot_ui_b",
+   "sewrat_skill_orgasmic_shot_ui_c"
+  ],
+  "unit_set_to_unit_junctions_tables": [
+   "wh2_dlc17_bst_cav_tuskgor_chariot_0",
+   "sewrat_chariot_herd",
+   "wh_dlc03_bst_cav_razorgor_chariot_0",
+   "wh_dlc03_bst_inf_razorgor_herd_0",
+   "sewrat_pen_beast",
+   "wh_dlc03_bst_inf_chaos_warhounds_0",
+   "wh_dlc03_bst_inf_chaos_warhounds_1",
+   "wh_dlc03_bst_feral_manticore",
+   "sewrat_pen_beast_no_hounds",
+   "wh_dlc03_bst_inf_bestigor_herd_0",
+   "sewrat_enlarge_unit",
+   "wh_dlc03_bst_inf_centigors_0",
+   "wh_dlc03_bst_inf_centigors_1",
+   "wh_dlc03_bst_inf_centigors_2",
+   "wh_dlc03_bst_inf_gor_herd_0",
+   "wh_dlc03_bst_inf_gor_herd_1",
+   "wh_dlc03_bst_inf_ungor_herd_1",
+   "wh_dlc03_bst_inf_ungor_spearmen_0",
+   "wh_dlc03_bst_inf_ungor_spearmen_1"
+  ],
+  "unit_set_unit_ability_junctions_tables": [
+   "sewrat_well_fed_pen_beast",
+   "sewrat_skill_well_fed",
+   "sewrat_pen_beast",
+   "sewrat_skill_hastly_hound_group",
+   "sewrat_skill_hasty_hound",
+   "bst_dlc03_chaos_warhounds",
+   "sewrat_skill_enlarge_unit_group",
+   "sewrat_skill_enlarge_unit",
+   "sewrat_enlarge_unit"
+  ],
+  "unit_set_unit_attribute_junctions_tables": [
+   "sewrat_effect_unbreakable_hounds",
+   "unbreakable",
+   "bst_dlc03_chaos_warhounds",
+   "sewrat_effect_perfect_vigour_minotaurs",
+   "fatigue_immune",
+   "bst_dlc03_minotaurs"
+  ],
+  "unit_sets_tables": [
+   "sewrat_chariot_herd",
+   "sewrat_pen_beast",
+   "sewrat_pen_beast_no_hounds",
+   "sewrat_enlarge_unit"
+  ],
+  "unit_special_abilities_tables": [
+   "sewrat_skill_carnal_instinct",
+   "vo_battle_special_ability_generic_response",
+   "default",
+   "sewrat_skill_rapist",
+   "sewrat_skill_beastly_grasp",
+   "wh_abilities_generic_buff_active",
+   "sewrat_skill_well_fed",
+   "sewrat_skill_infer_noble_slave",
+   "sewrat_skill_bounded",
+   "sewrat_skill_breeding_frenzy",
+   "sewrat_skill_hasty_hound",
+   "sewrat_skill_inca_vine",
+   "wh_abilities_generic_debuff_active_large",
+   "wh_dlc05_spell_life_the_dwellers_below",
+   "sewrat_skill_sadistic_vision",
+   "sewrat_skill_enlarge_unit",
+   "sewrat_skill_orgasmic_shot",
+   "projectile_cum",
+   "wh_spell_generic_missile",
+   "projectile_single",
+   "wh_main_spell_bound_fireball",
+   "fire_short",
+   "vo_battle_special_ability_spell_cast_fireball",
+   "damage_single",
+   "Fire"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/cai_character_skill_synergies_tables/sewrat_beastmen_addon",
+   "size": 83,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/sewrat_beastmen_addon",
+   "size": 1291,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_ancillaries_junctions_tables/sewrat_beastmen_addon",
+   "size": 91,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/sewrat_beastmen_addon",
+   "size": 7677,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/sewrat_beastmen_addon",
+   "size": 91,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/sewrat_beastmen_addon_c",
+   "size": 2734,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/sewrat_beastmen_addon",
+   "size": 83,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/sewrat_beastmen_addon",
+   "size": 2380,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skill_utilization_hints_junctions_tables/sewrat_beastmen_addon",
+   "size": 83,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/character_skills_tables/sewrat_beastmen_addon",
+   "size": 2371,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/sewrat_beastmen_addon_test",
+   "size": 952,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 686,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_set_unit_ability_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 289,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_set_unit_attribute_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 233,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/effects_tables/sewrat_beastmen_addon_test",
+   "size": 2216,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 896,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/projectile_shrapnels_tables/sewrat_beastmen_addon_test_b",
+   "size": 128,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/projectiles_explosions_tables/sewrat_beastmen_addon_test_b",
+   "size": 515,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/projectiles_tables/sewrat_beastmen_addon_test_b",
+   "size": 735,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/special_ability_intensity_settings_tables/sewrat_beastmen_addon_test_b",
+   "size": 229,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/special_ability_phase_stat_effects_tables/sewrat_beastmen_addon_test",
+   "size": 1579,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/special_ability_phases_tables/sewrat_beastmen_addon_test",
+   "size": 1649,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/special_ability_to_auto_deactivate_flags_tables/sewrat_beastmen_addon_test_b",
+   "size": 161,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/special_ability_to_special_ability_phase_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 820,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_abilities_additional_ui_effects_tables/sewrat_beastmen_addon_test_b",
+   "size": 400,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/sewrat_beastmen_addon_test",
+   "size": 1444,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_abilities_to_additional_ui_effects_juncs_tables/sewrat_beastmen_addon_test_b",
+   "size": 482,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 1538,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_set_unit_ability_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 318,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_set_unit_attribute_junctions_tables/sewrat_beastmen_addon_test",
+   "size": 234,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_sets_tables/sewrat_beastmen_addon_test",
+   "size": 219,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/sewrat_beastmen_addon_test",
+   "size": 2880,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/db/ability.loc",
+   "size": 4282,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/db/ability_addition_ui_description.loc",
+   "size": 1477,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/db/effect.loc",
+   "size": 4976,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/db/skill_tree.loc",
+   "size": 23082,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 153,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "text/removed_skills.txt",
+   "size": 123,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_beastly_g.png",
+   "size": 4488,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_beastly_g_alt.png",
+   "size": 12153,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_beastly_grasp.png",
+   "size": 3575,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_bounded.png",
+   "size": 3531,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_breeding_frenzy.png",
+   "size": 3912,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_en_limb.png",
+   "size": 4299,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_inca_vine.png",
+   "size": 4269,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_inca_vine_alt.png",
+   "size": 11585,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_infer_noble_slave.png",
+   "size": 3924,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_orgasmic_shot.png",
+   "size": 11840,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_orgasmic_shot_alt.png",
+   "size": 7582,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_orgasmic_shot_alt_sec.png",
+   "size": 12740,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_primal_lust.png",
+   "size": 5555,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_rapist.png",
+   "size": 3402,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_sadistic_vision.png",
+   "size": 4418,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_well_fed.png",
+   "size": 3401,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/aisi_whore_greed.png",
+   "size": 3688,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/beastly_g_t.png",
+   "size": 10489,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/grasp_heat.png",
+   "size": 4233,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/icon_formation.png",
+   "size": 2602,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/accuracy_character.png",
+   "size": 4258,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/attribute_unbreakable.png",
+   "size": 4215,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/carin.png",
+   "size": 4236,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_beastly_grasp.png",
+   "size": 4203,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_bounded.png",
+   "size": 4140,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_breeding_frenzy.png",
+   "size": 4220,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_carin.png",
+   "size": 4149,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_en_limb.png",
+   "size": 4457,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_grasp_heat.png",
+   "size": 3916,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_inca_vine.png",
+   "size": 4444,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_infer_noble_slave.png",
+   "size": 4200,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_orgasmic_shot.png",
+   "size": 4674,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_primal_lust.png",
+   "size": 4180,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_rapist.png",
+   "size": 4108,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_sadistic_vision.png",
+   "size": 4617,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/eb_well_fed.png",
+   "size": 4123,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/hih.png",
+   "size": 4238,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/melee.png",
+   "size": 4094,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/morale.png",
+   "size": 4121,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/battle_charge.png",
+   "size": 8219,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/battle_general_ability.png",
+   "size": 8428,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_bhdr.png",
+   "size": 10173,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_bounded.png",
+   "size": 9250,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_brc.png",
+   "size": 9753,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_breeding.png",
+   "size": 8378,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_brfnzy.png",
+   "size": 9822,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_carlin.png",
+   "size": 8327,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_carsen.png",
+   "size": 8684,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_en_limb.png",
+   "size": 8512,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_grand.png",
+   "size": 9409,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_grasp.png",
+   "size": 9352,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_hounds.png",
+   "size": 8883,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_inca_vine.png",
+   "size": 8743,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_infer_noble_slave.png",
+   "size": 9300,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_infer_noble_slave_alt.png",
+   "size": 9723,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_inferslave.png",
+   "size": 9543,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_lusthorde.png",
+   "size": 9456,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_mating.png",
+   "size": 9528,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_ormist.png",
+   "size": 8414,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_orser.png",
+   "size": 8936,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_rapist.png",
+   "size": 8850,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_relentless.png",
+   "size": 8827,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_sadistic_vision.png",
+   "size": 9401,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sewrat_si_sensitive.png",
+   "size": 7987,
+   "pack": "sewrat_beastmen_addon_c.pack"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "mod": "ll-26542",
+ "packs": [
+  "Sigvald_female.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Sigvald_female.pack": {
+   "files": 25,
+   "dependencies": []
+  }
+ },
+ "fileCount": 25,
+ "byTopFolder": {
+  "variantmeshes": 18,
+  "ui": 5,
+  "db": 2
+ },
+ "tables": [
+  "agent_subtypes_tables",
+  "main_units_tables"
+ ],
+ "references": {
+  "total": 66,
+  "inMod": 12,
+  "inBaseGame": 47,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/leather_harness_corset_lod1_subm_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_eternal_guard_head_01_submes_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/materials/dae_chosen_slaanesh_head_03_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/brt_fay_enchantress_head_01_subm_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_1_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_weighted4_alpha_on.xml.material"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_subtypes_tables": [
+   "wh_dlc01_chs_prince_sigvald",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh",
+   "legendary_lords",
+   "cannot_be_loaded_in_campaign"
+  ],
+  "main_units_tables": [
+   "lord",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh_main_vo_culture_Chaos",
+   "lord_infantry_sword",
+   "chaos_lord",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_subtypes_tables/sig",
+   "size": 289,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "db/main_units_tables/sig",
+   "size": 443,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/chaos_sigvald.png",
+   "size": 29143,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/chs_ch_sigvald_0.png",
+   "size": 82627,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_main_chs_chaos/chs_ch_sigvald_0.png",
+   "size": 54428,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/chs_ch_sigvald_0.png",
+   "size": 24857,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_main_chs_chaos/chs_ch_sigvald_0.png",
+   "size": 24857,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/chs_ch_sigvald.variantmeshdefinition",
+   "size": 967,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/chs_sigvald.rigid_model_v2",
+   "size": 3516054,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/chs_sigvald.wsmodel",
+   "size": 13577,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/brt_fay_enchantress_head_01_subm_weighted2_alpha_on.xml.material",
+   "size": 2723,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/dae_chosen_slaanesh_head_03_weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/dae_cultist_of_slaanesh_head_04__weighted2_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/dae_cultist_of_slaanesh_head_04__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/hef_handmaiden_everqueen_body_0_weighted4_alpha_on.xml.material",
+   "size": 2763,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/leather_harness_corset_lod1_subm_weighted2_alpha_off.xml.material",
+   "size": 2489,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/morathibody_lod1_weighted2_alpha_off.xml.material",
+   "size": 2581,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/chs/materials/morathibody_lod1_weighted4_alpha_off.xml.material",
+   "size": 2581,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "Sigvald_female.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/chaos_nude1_diffuse.dds",
+   "size": 8388760,
+   "pack": "Sigvald_female.pack"
+  }
+ ]
+}

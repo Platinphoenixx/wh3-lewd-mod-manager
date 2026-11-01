@@ -1,0 +1,1034 @@
+{
+ "mod": "ll-24493",
+ "packs": [
+  "!candles_beastmen_events_ancillaries.pack"
+ ],
+ "dependencies": [
+  "!community_beastmen.pack"
+ ],
+ "perPack": {
+  "!candles_beastmen_events_ancillaries.pack": {
+   "files": 88,
+   "dependencies": [
+    "!community_beastmen.pack"
+   ]
+  }
+ },
+ "fileCount": 88,
+ "byTopFolder": {
+  "ui": 50,
+  "db": 28,
+  "text": 6,
+  "script": 3,
+  "!to_do_list.txt": 1
+ },
+ "tables": [
+  "ancillaries_included_agent_subtypes_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "ancillary_to_effects_tables",
+  "ancillary_types_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_followup_missions_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "cdir_events_mission_issuer_junctions_tables",
+  "cdir_events_mission_option_junctions_tables",
+  "cdir_events_mission_payloads_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bonus_value_unit_attribute_junctions_tables",
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "missions_tables",
+  "unit_set_unit_attribute_junctions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "ancillaries_included_agent_subtypes_tables": [
+   "wh_dlc03_bst_malagor",
+   "candles_welf_spellsinger_life",
+   "wh_dlc03_bst_bray_shaman_wild",
+   "wh_dlc03_bst_bray_shaman_shadows",
+   "wh_dlc03_bst_bray_shaman_death",
+   "wh_dlc03_bst_bray_shaman_beasts",
+   "wh2_twa04_bst_great_bray_shaman_wild",
+   "wh2_twa04_bst_great_bray_shaman_shadows",
+   "wh2_twa04_bst_great_bray_shaman_death",
+   "wh2_twa04_bst_great_bray_shaman_beasts",
+   "candles_welf_spellsinger_beasts",
+   "candles_welf_spellsinger_shadows",
+   "candles_helf_mage_high",
+   "candles_helf_mage_fire",
+   "candles_helf_mage_heavens",
+   "candles_helf_mage_death",
+   "candles_helf_mage_life",
+   "candles_helf_mage_beasts",
+   "candles_helf_mage_light",
+   "candles_helf_mage_metal",
+   "candles_helf_mage_shadows",
+   "candles_delf_sorceress_beasts",
+   "candles_delf_sorceress_dark",
+   "candles_delf_sorceress_death",
+   "candles_delf_sorceress_fire",
+   "candles_delf_sorceress_shadows",
+   "candles_human_damsel_beasts",
+   "candles_human_damsel_life",
+   "candles_human_damsel_heavens",
+   "candles_human_frost_maiden_ice",
+   "candles_human_frost_maiden_tempest",
+   "candles_human_shugengan_yin",
+   "candles_human_shugengan_yang",
+   "candles_human_alchemist"
+  ],
+  "ancillaries_tables": [
+   "candles_welf_spellsinger_life",
+   "anc_welf_spellsinger",
+   "general",
+   "follower",
+   "all_beastmen_culture",
+   "candles_welf_spellsinger_beasts",
+   "candles_welf_spellsinger_shadows",
+   "candles_welf_glade_captain",
+   "anc_welf_glade_captain",
+   "candles_welf_wardancer",
+   "anc_welf_wardancer",
+   "candles_welf_thorn",
+   "anc_welf_thorn",
+   "candles_welf_branchwraith",
+   "anc_welf_branchwraith",
+   "candles_helf_handmaiden",
+   "anc_helf_handmaiden",
+   "candles_helf_mage_high",
+   "anc_helf_mage",
+   "candles_helf_mage_fire",
+   "candles_helf_mage_heavens",
+   "candles_helf_mage_beasts",
+   "candles_helf_mage_death",
+   "candles_helf_mage_life",
+   "candles_helf_mage_light",
+   "candles_helf_mage_metal",
+   "candles_helf_mage_shadows",
+   "candles_helf_princess",
+   "anc_helf_princess",
+   "candles_delf_sorceress_beasts",
+   "anc_delf_sorceress",
+   "candles_delf_sorceress_dark",
+   "candles_delf_sorceress_death",
+   "candles_delf_sorceress_fire",
+   "candles_delf_sorceress_shadows",
+   "candles_delf_khainite",
+   "anc_delf_khaine",
+   "candles_human_damsel_beasts",
+   "anc_bret_damsel",
+   "candles_human_damsel_life",
+   "candles_human_damsel_heavens",
+   "candles_human_priestess",
+   "anc_emp_priestess",
+   "candles_human_noblewoman",
+   "anc_emp_noblewoman",
+   "candles_human_sister_sigmar",
+   "anc_emp_sis_sigmar",
+   "candles_human_knight",
+   "anc_emp_knight",
+   "candles_human_stablegirl",
+   "anc_emp_stablegirl",
+   "candles_human_frost_maiden_ice",
+   "anc_kisv_frost_maiden",
+   "candles_human_frost_maiden_tempest",
+   "candles_human_ice_guard",
+   "anc_kisv_ice_guard",
+   "candles_human_alchemist",
+   "anc_cath_alchemist",
+   "candles_human_dragon_sow",
+   "anc_cath_dragon_sow",
+   "candles_human_shugengan_yin",
+   "anc_cath_shugengan",
+   "candles_human_shugengan_yang",
+   "candles_human_engineer",
+   "anc_cath_engineer",
+   "candles_human_blushing_disciple",
+   "anc_cath_blushing",
+   "candles_amazon_chieftess",
+   "anc_amazon_chieftess",
+   "candles_amazon_priestess",
+   "anc_amazon_priestess",
+   "candles_amazon_berserker",
+   "anc_amazon_berserker",
+   "candles_amazon_huntress",
+   "anc_amazon_huntress",
+   "candles_araby_dancer",
+   "anc_araby_dancer",
+   "candles_araby_courtesan",
+   "anc_araby_courtesan",
+   "candles_araby_concubine",
+   "anc_araby_concubine",
+   "candles_araby_princess",
+   "anc_araby_princess",
+   "candles_vamp_fledgling",
+   "anc_vamp_fledgling",
+   "candles_chaos_cultist",
+   "anc_chaos_cultist",
+   "candles_norsca_skinwolf",
+   "anc_nors_skin_wolf",
+   "candles_norsca_berserker",
+   "anc_nors_berserker",
+   "candles_beast_bovigor",
+   "anc_beast_bovigor",
+   "candles_beast_femgor",
+   "anc_beast_femgor",
+   "candles_beast_stud",
+   "anc_beast_stud"
+  ],
+  "ancillary_info_tables": [
+   "candles_welf_spellsinger_life",
+   "candles_welf_spellsinger_beasts",
+   "candles_welf_spellsinger_shadows",
+   "candles_welf_glade_captain",
+   "candles_welf_wardancer",
+   "candles_welf_thorn",
+   "candles_welf_branchwraith",
+   "candles_helf_handmaiden",
+   "candles_helf_mage_high",
+   "candles_helf_mage_fire",
+   "candles_helf_mage_heavens",
+   "candles_helf_mage_death",
+   "candles_helf_mage_life",
+   "candles_helf_mage_beasts",
+   "candles_helf_mage_light",
+   "candles_helf_mage_metal",
+   "candles_helf_mage_shadows",
+   "candles_helf_princess",
+   "candles_delf_sorceress_beasts",
+   "candles_delf_sorceress_dark",
+   "candles_delf_sorceress_death",
+   "candles_delf_sorceress_fire",
+   "candles_delf_sorceress_shadows",
+   "candles_delf_khainite",
+   "candles_human_damsel_beasts",
+   "candles_human_damsel_life",
+   "candles_human_damsel_heavens",
+   "candles_human_shepherdess",
+   "candles_human_priestess",
+   "candles_human_noblewoman",
+   "candles_human_sister_sigmar",
+   "candles_human_knight",
+   "candles_human_stablegirl",
+   "candles_human_halfling",
+   "candles_human_frost_maiden_ice",
+   "candles_human_frost_maiden_tempest",
+   "candles_human_ice_guard",
+   "candles_human_alchemist",
+   "candles_human_dragon_sow",
+   "candles_human_shugengan_yin",
+   "candles_human_shugengan_yang",
+   "candles_human_engineer",
+   "candles_human_blushing_disciple",
+   "candles_vamp_fledgling",
+   "candles_chaos_cultist",
+   "candles_chaos_warrior",
+   "candles_chaos_daemonette",
+   "candles_norsca_skinwolf",
+   "candles_norsca_berserker",
+   "candles_norsca_shieldmaiden",
+   "candles_amazon_chieftess",
+   "candles_amazon_priestess",
+   "candles_amazon_berserker",
+   "candles_amazon_huntress",
+   "candles_araby_dancer",
+   "candles_araby_courtesan",
+   "candles_araby_concubine",
+   "candles_araby_princess",
+   "candles_beast_bovigor",
+   "candles_beast_femgor",
+   "candles_beast_stud"
+  ],
+  "ancillary_to_effects_tables": [
+   "candles_welf_spellsinger_life",
+   "wh_dlc05_effect_ability_enable_earth_blood",
+   "character_to_character_own",
+   "wh_dlc05_effect_ability_enable_awakening_of_the_wood",
+   "candles_welf_spellsinger_beasts",
+   "wh_dlc03_effect_ability_enable_flock_of_doom",
+   "wh_dlc03_effect_ability_enable_wyssans_wildform",
+   "candles_welf_spellsinger_shadows",
+   "wh_dlc05_effect_ability_enable_melkoths_mystifying_miasma",
+   "wh_dlc05_effect_ability_enable_enfeebling_foe",
+   "candles_welf_glade_captain",
+   "bst_sv_effect_corrupted_elves_recruit_xp",
+   "character_to_force_own",
+   "candles_welf_wardancer",
+   "wh_main_effect_force_stat_leadership",
+   "candles_welf_thorn",
+   "bst_sv_effect_centigor_speed",
+   "candles_welf_branchwraith",
+   "wh_dlc08_effect_tech_army_campaign_attrition_athel_loren_resistance",
+   "candles_helf_handmaiden",
+   "wh_main_effect_hordebuilding_growth_characters",
+   "general_to_force_own",
+   "candles_helf_mage_high",
+   "wh2_main_effect_ability_enable_hand_of_glory",
+   "wh2_main_effect_ability_enable_apotheosis",
+   "candles_helf_mage_fire",
+   "wh_main_effect_ability_enable_fireball",
+   "wh_main_effect_ability_enable_cascading_fire_cloak",
+   "candles_helf_mage_heavens",
+   "wh_main_effect_ability_enable_wind_blast",
+   "wh_main_effect_ability_enable_harmonic_convergence",
+   "candles_helf_mage_death",
+   "wh_main_effect_ability_enable_spirit_leech",
+   "wh_main_effect_ability_enable_aspect_of_the_dreadknight",
+   "candles_helf_mage_beasts",
+   "candles_helf_mage_life",
+   "candles_helf_mage_light",
+   "wh_main_effect_ability_enable_phas_protection",
+   "wh_main_effect_ability_enable_shems_burning_gaze",
+   "candles_helf_mage_metal",
+   "wh_main_effect_ability_enable_searing_doom",
+   "wh_main_effect_ability_enable_plague_of_rust",
+   "candles_helf_mage_shadows",
+   "candles_helf_princess",
+   "wh2_main_effect_force_stat_leadership_vs_high_elves",
+   "candles_delf_sorceress_beasts",
+   "candles_delf_sorceress_dark",
+   "wh2_main_effect_ability_enable_power_of_darkness",
+   "wh2_main_effect_ability_enable_chillwind",
+   "candles_delf_sorceress_death",
+   "candles_delf_sorceress_fire",
+   "candles_delf_sorceress_shadows",
+   "candles_delf_khainite",
+   "wh_main_effect_force_all_campaign_captives",
+   "character_to_force_own_unseen",
+   "candles_human_damsel_beasts",
+   "candles_human_damsel_life",
+   "candles_human_damsel_heavens",
+   "candles_human_priestess",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "candles_human_knight",
+   "wh_dlc03_effect_tech_unit_xp_levels_centigors",
+   "candles_human_noblewoman",
+   "wh_main_effect_force_stat_leadership_vs_men",
+   "candles_human_sister_sigmar",
+   "wh2_main_effect_agent_action_passive_spread_corruption_buff_chs",
+   "character_to_province_any",
+   "candles_human_stablegirl",
+   "bst_sv_effect_centigor_morale",
+   "candles_human_frost_maiden_ice",
+   "wh3_main_effect_ability_enable_ice_maidens_kiss",
+   "wh3_main_effect_ability_enable_ice_sheet",
+   "candles_human_frost_maiden_tempest",
+   "wh3_main_effect_ability_enable_hailstorm",
+   "wh3_main_effect_ability_enable_gust_of_true_flight",
+   "candles_human_ice_guard",
+   "wh_dlc08_effect_character_stat_enable_frostbite_attacks",
+   "candles_human_alchemist",
+   "candles_human_dragon_sow",
+   "wh_dlc03_effect_tech_unit_xp_levels_ungors",
+   "wh_dlc03_effect_tech_unit_xp_levels_gors",
+   "wh_dlc03_effect_tech_unit_xp_levels_bestigors",
+   "candles_human_shugengan_yin",
+   "wh3_main_effect_ability_enable_cloak_of_jet",
+   "wh3_main_effect_ability_enable_storm_of_shadows",
+   "candles_human_shugengan_yang",
+   "wh3_main_effect_ability_enable_jade_shield",
+   "wh3_main_effect_ability_enable_dragons_breath",
+   "candles_human_engineer",
+   "wh_main_effect_force_stat_armour_chariot",
+   "candles_human_blushing_disciple",
+   "wh2_main_effect_agent_action_passive_spread_corruption_buff_sla",
+   "candles_vamp_fledgling",
+   "wh2_main_effect_agent_action_passive_spread_corruption_buff_vmp",
+   "wh_main_effect_ability_enable_the_hunger",
+   "candles_chaos_cultist",
+   "wh_main_effect_character_mod_ancillary_drop",
+   "candles_norsca_berserker",
+   "wh_main_effect_force_stat_weapon_strength_infantry",
+   "candles_norsca_skinwolf",
+   "wh_main_effect_force_army_campaign_ambush_defence_success_chance",
+   "character_to_force_own_alt_text"
+  ],
+  "ancillary_types_tables": [
+   "anc_welf_glade_captain",
+   "ui/campaign ui/ancillaries/glade_captain.png",
+   "anc_welf_spellsinger",
+   "ui/campaign ui/ancillaries/spellsinger.png",
+   "anc_welf_wardancer",
+   "ui/campaign ui/ancillaries/wardancer.png",
+   "anc_welf_thorn",
+   "ui/campaign ui/ancillaries/thorn_sister.png",
+   "anc_welf_branchwraith",
+   "ui/campaign ui/ancillaries/branchwraith.png",
+   "anc_helf_handmaiden",
+   "ui/campaign ui/ancillaries/handmaiden.png",
+   "anc_helf_mage",
+   "ui/campaign ui/ancillaries/elf_mage.png",
+   "anc_helf_princess",
+   "ui/campaign ui/ancillaries/princess.png",
+   "anc_delf_sorceress",
+   "ui/campaign ui/ancillaries/sorceress.png",
+   "anc_delf_khaine",
+   "ui/campaign ui/ancillaries/daughter_of_khaine.png",
+   "anc_bret_damsel",
+   "ui/campaign ui/ancillaries/damsel.png",
+   "anc_bret_shepherdess",
+   "ui/campaign ui/ancillaries/shepherdess.png",
+   "anc_emp_priestess",
+   "ui/campaign ui/ancillaries/priestess.png",
+   "anc_emp_knight",
+   "ui/campaign ui/ancillaries/knight.png",
+   "anc_emp_noblewoman",
+   "ui/campaign ui/ancillaries/noblewoman.png",
+   "anc_emp_stablegirl",
+   "ui/campaign ui/ancillaries/stable_girl.png",
+   "anc_emp_sis_sigmar",
+   "anc_emp_halfling",
+   "ui/campaign ui/ancillaries/halfling_cook.png",
+   "anc_kisv_frost_maiden",
+   "ui/campaign ui/ancillaries/frost_maiden.png",
+   "anc_kisv_ice_guard",
+   "ui/campaign ui/ancillaries/ice_guard.png",
+   "anc_cath_alchemist",
+   "ui/campaign ui/ancillaries/alchemist.png",
+   "anc_cath_dragon_sow",
+   "ui/campaign ui/ancillaries/shugengan.png",
+   "anc_cath_shugengan",
+   "anc_cath_engineer",
+   "anc_cath_blushing",
+   "ui/campaign ui/ancillaries/cathay_cultist.png",
+   "anc_vamp_fledgling",
+   "ui/campaign ui/ancillaries/fledgling.png",
+   "anc_chaos_cultist",
+   "ui/campaign ui/ancillaries/cultist_1.png",
+   "anc_chaos_warrior",
+   "anc_chaos_daemonette",
+   "anc_nors_skin_wolf",
+   "ui/campaign ui/ancillaries/skin_wolf.png",
+   "anc_nors_berserker",
+   "ui/campaign ui/ancillaries/berserker.png",
+   "anc_nors_shieldmaiden",
+   "anc_amazon_chieftess",
+   "ui/campaign ui/ancillaries/amazon_chieftess.png",
+   "anc_amazon_priestess",
+   "ui/campaign ui/ancillaries/amazon_priestess.png",
+   "anc_amazon_berserker",
+   "ui/campaign ui/ancillaries/amazon_berserker.png",
+   "anc_amazon_huntress",
+   "ui/campaign ui/ancillaries/amazon_huntress.png",
+   "anc_araby_dancer",
+   "anc_araby_courtesan",
+   "anc_araby_concubine",
+   "anc_araby_princess",
+   "anc_beast_bovigor",
+   "anc_beast_femgor",
+   "ui/campaign ui/ancillaries/femgor.png",
+   "anc_beast_stud",
+   "ui/campaign ui/ancillaries/breeding_stud.png"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "candles_conquest_oak_of_ages",
+   "candles_conquest_gaean_vale",
+   "candles_conquest_witchwood",
+   "candles_conquest_quintex",
+   "candles_damsels_in_distress",
+   "SECOND",
+   "candles_feeding _the_fish",
+   "candles_impertinent_elves",
+   "candles_slaughter_or_pleasure",
+   "candles_cathay_caravan"
+  ],
+  "cdir_events_dilemma_followup_missions_tables": [
+   "candles_cathay_caravan",
+   "FIRST",
+   "candles_cathay_migration"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "candles_conquest_oak_of_ages",
+   "GEN_TARGET_FACTION",
+   "default",
+   "VAR_CHANCE",
+   "CND_CULTURE",
+   "wh_dlc03_bst_beastmen",
+   "CND_ROUNDS_UNTIL_NEXT",
+   "candles_conquest_gaean_vale",
+   "candles_conquest_witchwood",
+   "candles_conquest_quintex",
+   "candles_damsels_in_distress",
+   "CND_FIRST_ROUND",
+   "candles_feeding _the_fish",
+   "candles_impertinent_elves",
+   "candles_slaughter_or_pleasure",
+   "candles_cathay_caravan",
+   "VAR_FOLLOWUP_CHANCE"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "candles_conquest_oak_of_ages",
+   "EFFECT_BUNDLE",
+   "default",
+   "candles_damsels_in_distress",
+   "SECOND",
+   "candles_feeding _the_fish",
+   "candles_impertinent_elves",
+   "candles_slaughter_or_pleasure"
+  ],
+  "cdir_events_mission_issuer_junctions_tables": [
+   "CLAN_ELDERS",
+   "candles_cathay_migration"
+  ],
+  "cdir_events_mission_option_junctions_tables": [
+   "candles_cathay_migration",
+   "VAR_CHANCE",
+   "default",
+   "VAR_FOLLOWUP_CHANCE",
+   "VAR_MISSION_LENGTH_INFINITE",
+   "GEN_TARGET_REGION",
+   "GEN_CND_REGION",
+   "wh3_main_combi_region_shang_yang"
+  ],
+  "cdir_events_mission_payloads_tables": [
+   "candles_cathay_migration",
+   "TREASURY",
+   "SUCCESS",
+   "default"
+  ],
+  "dilemmas_tables": [
+   "candles_conquest_oak_of_ages",
+   "event_conquest_oak",
+   "Event",
+   "candles_conquest_lothern",
+   "bst/bray_herd_rises.png",
+   "candles_conquest_naggarond",
+   "candles_conquest_quintex",
+   "candles_conquest_carcasonne",
+   "candles_conquest_witchwood",
+   "event_conquest_witchwood",
+   "candles_conquest_nan_gau",
+   "candles_conquest_gaean_vale",
+   "event_conquest_gaean_vale",
+   "candles_damsels_in_distress",
+   "Damsels in Distress",
+   "candles_feeding _the_fish",
+   "Feeding the Fish",
+   "candles_impertinent_elves",
+   "Impertinent Elves",
+   "candles_slaughter_or_pleasure",
+   "Slaughter or Pleasure",
+   "candles_cathay_caravan"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [],
+  "effect_bonus_value_unit_attribute_junctions_tables": [],
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables": [],
+  "effect_bundles_tables": [
+   "candles_damsels_taken",
+   "Dark Gods Entertained",
+   "faction",
+   "corruption_chaos.png",
+   "candles_damsels_ritual",
+   "magic.png",
+   "candles_merchant_broken",
+   "Captives Cowed",
+   "campaign_movement.png",
+   "candles_merchant_traded",
+   "Corrupted Trinkets",
+   "resistance_magic.png",
+   "candles_scouting_permitted",
+   "Elven Scouts",
+   "agent.png",
+   "candles_scouting_denied",
+   "Excited Bestigor",
+   "charge.png",
+   "candles_slaughter_permitted",
+   "Blood Frenzy",
+   "bestial_rage.png",
+   "candles_slaughter_denied",
+   "Fresh Breeding Stock",
+   "growth.png",
+   "candles_oak_of_ages_conquest",
+   "unit_capacity.png"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "candles_damsels_taken",
+   "wh_main_effect_force_stat_weapon_strength_infantry",
+   "faction_to_force_own",
+   "start_turn_completed",
+   "candles_damsels_ritual",
+   "wh3_main_effect_winds_of_magic_pooled_resource_change_positive_mod",
+   "candles_merchant_broken",
+   "wh_main_effect_force_army_campaign_movement_range",
+   "candles_merchant_traded",
+   "wh_main_effect_force_stat_magic_resistance",
+   "candles_scouting_permitted",
+   "wh_main_effect_agent_field_line_of_sight_mod",
+   "candles_scouting_denied",
+   "wh_dlc03_effect_force_stat_charge_bonus_add_bestigors",
+   "candles_oak_of_ages_conquest",
+   "corrupted_elves_cap",
+   "faction_to_faction_own",
+   "candles_slaughter_permitted",
+   "bst_sv_effect_attribute_minotaur_enable_rampage",
+   "candles_slaughter_denied",
+   "wh_main_effect_hordebuilding_growth_characters"
+  ],
+  "effects_tables": [],
+  "missions_tables": [
+   "candles_cathay_migration",
+   "MOVE_TO_REGION",
+   "bst/bray_herd_rises.png",
+   "ui/eventpics/bst/bray_herd_rises.png",
+   "Quest"
+  ],
+  "unit_set_unit_attribute_junctions_tables": []
+ },
+ "files": [
+  {
+   "path": "!to_do_list.txt",
+   "size": 120,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/ancillary_restricted_characters",
+   "size": 14259,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/ancillary_details",
+   "size": 7900,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/ancillary_list",
+   "size": 1694,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/ancillary_to_effects_tables/ancillary_effects",
+   "size": 8117,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/ancillary_types_tables/ancillary_icon_types",
+   "size": 2442,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/candles_conquest_dilemmas",
+   "size": 236,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/candles_random_dilemmas",
+   "size": 387,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/candles_special_dilemmas",
+   "size": 123,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_followup_missions_tables/~candles_savage_beastmen_expansion",
+   "size": 140,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/candles_conquest_dilemmas",
+   "size": 1239,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/candles_random_dilemmas",
+   "size": 1298,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/candles_special_dilemmas",
+   "size": 429,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/conquest_dilemma_payloads",
+   "size": 200,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/random_dilemma_payloads",
+   "size": 976,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_issuer_junctions_tables/~candles_savage_beastmen_expansion",
+   "size": 130,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_option_junctions_tables/~candles_savage_beastmen_expansion",
+   "size": 452,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_payloads_tables/~candles_savage_beastmen_expansion",
+   "size": 167,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/candles_conquest_dilemmas",
+   "size": 655,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/candles_random_dilemmas",
+   "size": 450,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/candles_special_dilemmas",
+   "size": 158,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/!candles_beastmen_events_ancillaries",
+   "size": 83,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_attribute_junctions_tables/!candles_beastmen_events_ancillaries",
+   "size": 83,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_set_unit_attribute_junctions_tables/!candles_beastmen_events_ancillaries",
+   "size": 83,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/effect_bundles",
+   "size": 784,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/effect_bundles_junction",
+   "size": 1194,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/effects_tables/!candles_beastmen_events_ancillaries",
+   "size": 83,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/missions_tables/~candles_savage_beastmen_expansion",
+   "size": 267,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "db/unit_set_unit_attribute_junctions_tables/!candles_beastmen_events_ancillaries",
+   "size": 83,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "script/campaign/mod/candles_campaign_followers.lua",
+   "size": 16052,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "script/campaign/mod/candles_conquest_dilemmas.lua",
+   "size": 2088,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "script/campaign/mod/candles_special_dilemmas.lua",
+   "size": 810,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/captive_followers.loc",
+   "size": 30874,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/conquest_dilemma_text.loc",
+   "size": 13098,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/effect_bundles.loc",
+   "size": 1776,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/missions.loc",
+   "size": 560,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/random_dilemma_text.loc",
+   "size": 11740,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "text/db/special_dilemmas.loc",
+   "size": 2686,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/alchemist.png",
+   "size": 9585,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_berserker.png",
+   "size": 10197,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_chieftess.png",
+   "size": 10130,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_huntress.png",
+   "size": 10529,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_priestess.png",
+   "size": 10414,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/berserker.png",
+   "size": 9944,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/branchwraith.png",
+   "size": 9415,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/breeding_stud.png",
+   "size": 10445,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/cathay_cultist.png",
+   "size": 10643,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/cultist_1.png",
+   "size": 9765,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/damsel.png",
+   "size": 10210,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/daughter_of_khaine.png",
+   "size": 10878,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/elf_mage.png",
+   "size": 12154,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/femgor.png",
+   "size": 10114,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/fledgling.png",
+   "size": 9406,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/frost_maiden.png",
+   "size": 9208,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/glade_captain.png",
+   "size": 11271,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/halfling_cook.png",
+   "size": 10073,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/handmaiden.png",
+   "size": 12864,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/ice_guard.png",
+   "size": 10060,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/knight.png",
+   "size": 9905,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/noblewoman.png",
+   "size": 9547,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/priestess.png",
+   "size": 9000,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/princess.png",
+   "size": 9470,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/princess2.png",
+   "size": 10563,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/shepherdess.png",
+   "size": 9863,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/shugengan.png",
+   "size": 9680,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/skin_wolf.png",
+   "size": 10327,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/sorceress.png",
+   "size": 10865,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/spellsinger.png",
+   "size": 10047,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/stable_girl.png",
+   "size": 9769,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/thorn_sister.png",
+   "size": 10583,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/wardancer.png",
+   "size": 11080,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/wardancer2.png",
+   "size": 10746,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_conquest_oak.png",
+   "size": 5136470,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_conquest_witchwood.png",
+   "size": 556220,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_01.png",
+   "size": 629938,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_02.png",
+   "size": 1020629,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_03.png",
+   "size": 350360,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_04.png",
+   "size": 2421036,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_05.png",
+   "size": 538473,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_06.png",
+   "size": 1013500,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_07.png",
+   "size": 1243258,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_08.png",
+   "size": 714407,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_09.png",
+   "size": 935960,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_09b.png",
+   "size": 370194,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_elf_10.png",
+   "size": 329729,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_human_01.png",
+   "size": 1039395,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_human_02.png",
+   "size": 421585,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  },
+  {
+   "path": "ui/eventpics/event_human_03.png",
+   "size": 2264753,
+   "pack": "!candles_beastmen_events_ancillaries.pack"
+  }
+ ]
+}

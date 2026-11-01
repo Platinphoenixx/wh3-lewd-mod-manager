@@ -1,0 +1,1088 @@
+{
+ "mod": "ll-46549",
+ "packs": [
+  "!AHigh elves _WGX.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!AHigh elves _WGX/!AHigh elves _WGX.pack": {
+   "files": 181,
+   "dependencies": []
+  }
+ },
+ "fileCount": 181,
+ "byTopFolder": {
+  "variantmeshes": 179,
+  "db": 2
+ },
+ "tables": [
+  "main_units_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 205,
+  "inMod": 141,
+  "inBaseGame": 64,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "main_units_tables": [
+   "hero",
+   "wh2_dlc10_hef_cha_shadow_walker",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh2_main_vo_culture_High_Elves",
+   "wh2_dlc10_hef_hand_of_the_shadow_crown",
+   "wef_infantry_30_degrees",
+   "vo_culture_None",
+   "wh2_dlc10_vo_actor_High_Elves_Sisters_of_Averlorn",
+   "missile_infantry",
+   "wh2_dlc10_hef_inf_shadow_walkers_0",
+   "medium",
+   "missile_infantry_bow",
+   "wh2_dlc10_hef_inf_shadow_warriors_0",
+   "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+   "hef_handmaidens_30",
+   "wh2_dlc10_hef_inf_the_storm_riders_ror_0",
+   "wh2_main_hef_missile_infantry_bow_spear",
+   "wh2_dlc15_hef_inf_archers_ror_0",
+   "light",
+   "melee_infantry",
+   "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+   "wh2_dlc15_hef_mistwalkers_sword",
+   "wef_infantry_15_degrees",
+   "monstrous_cavalry",
+   "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0",
+   "wh2_dlc15_hef_mistwalkers_cavalry",
+   "hef_general_foot",
+   "wh2_dlc15_cam_mnt_hef_griffon",
+   "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+   "wh2_dlc15_hef_mistwalkers_hybrid",
+   "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+   "wh2_dlc15_hef_close_quarters_missile_infantry",
+   "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+   "wh2_dlc15_hef_inf_rangers_0",
+   "wh2_main_infantry_dual_swords",
+   "wh2_dlc15_hef_inf_silverin_guard_0",
+   "infantry_spear",
+   "chariot",
+   "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+   "monstrous_chariot",
+   "default",
+   "warmachine",
+   "wh2_main_hef_art_eagle_claw_bolt_thrower",
+   "very_heavy",
+   "wh_dlc06_bolt_thrower",
+   "melee_cavalry",
+   "wh2_main_hef_cav_ellyrian_reavers_0",
+   "shock_cavalry",
+   "emp_reiksguard",
+   "missile_cavalry",
+   "wh2_main_hef_cav_ellyrian_reavers_1",
+   "missile_cavalry_bow",
+   "wh2_main_hef_cav_ithilmar_chariot",
+   "wh2_main_hef_cav_silver_helms_0",
+   "wh2_main_hef_cav_silver_helms_1",
+   "wh2_main_hef_cav_tiranoc_chariot",
+   "missile_chariot",
+   "wh2_main_hef_inf_archers_0",
+   "wh2_main_hef_inf_archers_1",
+   "wh2_main_hef_inf_gate_guard",
+   "wh2_main_hef_inf_lothern_sea_guard_0",
+   "wh2_main_hef_inf_lothern_sea_guard_1",
+   "wh2_main_hef_inf_phoenix_guard",
+   "infantry_spear_halberd",
+   "def_black_guard",
+   "wh2_main_hef_inf_spearmen_0",
+   "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+   "infantry_sword_great",
+   "wh2_main_hef_inf_white_lions_of_chrace_0",
+   "infantry_axe_great"
+  ],
+  "variants_tables": [
+   "wh2_dlc10_hef_phoenix_guard_ror",
+   "hef_phoenix_guard_ror",
+   "wh2_dlc10_hef_reaver_bow_ror",
+   "hef_reaver_bow_ror",
+   "wh2_dlc10_hef_sea_guard_shields_ror",
+   "hef_sea_guard_shields_ror",
+   "wh2_dlc10_hef_shadow_walker",
+   "hef_shadow_walker",
+   "wh2_dlc10_hef_shadow_warrior",
+   "hef_shadow_warrior",
+   "wh2_dlc10_hef_shadow_warrior_ror",
+   "hef_shadow_warrior_ror",
+   "wh2_dlc10_hef_sisters_of_avelorn",
+   "hef_sisters_of_avelorn",
+   "wh2_dlc10_hef_sisters_of_avelorn_ror",
+   "hef_sisters_of_avelorn_ror",
+   "wh2_dlc10_hef_spearmen_ror",
+   "hef_spearmen_ror",
+   "wh2_dlc10_hef_white_lions_of_chrace_ror",
+   "hef_white_lions_of_chrace_ror",
+   "wh2_dlc15_hef_black_dragon_imrik",
+   "def_black_dragon",
+   "wh2_dlc15_hef_black_dragon_imrik_boss",
+   "wh2_dlc15_hef_mistwalkers_faithbearers",
+   "hef_mistwalkers_faithbearers",
+   "wh2_dlc15_hef_mistwalkers_griffon_knights",
+   "hef_mistwalkers_griffon_knights",
+   "wh2_dlc15_hef_mistwalkers_sentinels",
+   "hef_mistwalkers_sentinels",
+   "wh2_dlc15_hef_mistwalkers_skyhawks",
+   "hef_mistwalkers_skyhawks",
+   "wh2_dlc15_hef_mistwalkers_spireguard",
+   "hef_mistwalkers_spireguard",
+   "wh2_dlc15_hef_rangers",
+   "hef_rangers",
+   "hu1d/hef/hef_ranger/hef_ranger_imposter",
+   "wh2_dlc15_hef_silverin_guard",
+   "hef_silverin_guard",
+   "hu1d/hef/hef_silverin_guard/hef_silverin_guard_imposter",
+   "wh2_main_hef_archer",
+   "hef_archer",
+   "wh2_main_hef_archer_armoured",
+   "hef_archer_armoured",
+   "wh2_main_hef_archer_armoured_ror",
+   "hef_archer_armoured_ror",
+   "wh2_main_hef_charioteer_archer",
+   "hef_archer_charioteer",
+   "wh2_main_hef_charioteer_spear",
+   "hef_spearmen_charioteer",
+   "wh2_main_hef_eagle_claw_bolt_thrower_crew",
+   "hef_sea_guard_crew",
+   "wh2_main_hef_gate_guard",
+   "hef_gate_guard",
+   "wh2_main_hef_phoenix_guard",
+   "hef_phoenix_guard",
+   "wh2_main_hef_reaver",
+   "hef_reaver",
+   "wh2_main_hef_reaver_bow",
+   "hef_reaver_bow",
+   "wh2_main_hef_sea_guard",
+   "hef_sea_guard",
+   "wh2_main_hef_sea_guard_shields",
+   "hef_sea_guard_shields",
+   "wh2_main_hef_silver_helm",
+   "hef_silver_helm",
+   "wh2_main_hef_silver_helm_shield",
+   "hef_silver_helm_shield",
+   "wh2_main_hef_spearmen",
+   "hef_spearmen",
+   "wh2_main_hef_swordmaster",
+   "hef_swordmaster",
+   "wh2_main_hef_white_lions_of_chrace",
+   "hef_white_lions_of_chrace",
+   "wh2_main_hef_white_lions_of_chrace_chariot"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/main_units_tables/highelve",
+   "size": 11087,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "db/variants_tables/helfelf",
+   "size": 5891,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_archer_armoured.variantmeshdefinition",
+   "size": 4035,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_archer_armoured_ror.variantmeshdefinition",
+   "size": 3947,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_archer_charioteer.variantmeshdefinition",
+   "size": 2216,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_archers_base.variantmeshdefinition",
+   "size": 2817,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_gate_guard.variantmeshdefinition",
+   "size": 3914,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_phoenix_guard.variantmeshdefinition",
+   "size": 3860,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_phoenix_guard_ror.variantmeshdefinition",
+   "size": 3848,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_rangers.variantmeshdefinition",
+   "size": 4184,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sea_guard.variantmeshdefinition",
+   "size": 1524,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sea_guard_base.variantmeshdefinition",
+   "size": 3889,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sea_guard_crew.variantmeshdefinition",
+   "size": 1155,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sea_guard_shields.variantmeshdefinition",
+   "size": 2189,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sea_guard_shields_ror.variantmeshdefinition",
+   "size": 5329,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_shadow_walker.variantmeshdefinition",
+   "size": 4763,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_shadow_warrior.variantmeshdefinition",
+   "size": 3953,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_shadow_warrior_ror.variantmeshdefinition",
+   "size": 3953,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_silver_helm.variantmeshdefinition",
+   "size": 1175,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_silver_helm_base.variantmeshdefinition",
+   "size": 2803,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_silver_helm_shield.variantmeshdefinition",
+   "size": 1611,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_silverin_guard.variantmeshdefinition",
+   "size": 4043,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sisters_of_avelorn.variantmeshdefinition",
+   "size": 4640,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sisters_of_avelorn_ror.variantmeshdefinition",
+   "size": 4587,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_spearmen.variantmeshdefinition",
+   "size": 4735,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_spearmen_charioteer.variantmeshdefinition",
+   "size": 1748,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_spearmen_ror.variantmeshdefinition",
+   "size": 4116,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_white_lions_of_chrace.variantmeshdefinition",
+   "size": 2916,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_white_lions_of_chrace_ror.variantmeshdefinition",
+   "size": 2916,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/fe1_female.wsmodel",
+   "size": 1989,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/fe2_female.wsmodel",
+   "size": 1989,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/fe_female.rigid_model_v2",
+   "size": 5233508,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/fe_female.wsmodel",
+   "size": 1985,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/tex/hef_archmage_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/tex/hef_archmage_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/tex/hef_archmage_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/tex/hef_archmage_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/cloth1.rigid_model_v2",
+   "size": 3861436,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/cloth1.wsmodel",
+   "size": 1506,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/hair1.rigid_model_v2",
+   "size": 1358988,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/hair1.wsmodel",
+   "size": 1473,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/hair2.rigid_model_v2",
+   "size": 954156,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/hair2.wsmodel",
+   "size": 1473,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/materials/cloth1_weighted4_alpha_on.xml.material",
+   "size": 2525,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/materials/heel2_weighted4_alpha_on.xml.material",
+   "size": 2454,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/tex/cloth1_basecolor.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/tex/hef_handmaiden_everqueen_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/tex/hef_handmaiden_everqueen_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/tex/hef_handmaiden_everqueen_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_handmaiden_everqueen/tex/hef_handmaiden_everqueen_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head1.rigid_model_v2",
+   "size": 255748,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head1.wsmodel",
+   "size": 813,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head2.rigid_model_v2",
+   "size": 305892,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head2.wsmodel",
+   "size": 813,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head3.rigid_model_v2",
+   "size": 967732,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head3.wsmodel",
+   "size": 1405,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head4.rigid_model_v2",
+   "size": 223148,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head4.wsmodel",
+   "size": 853,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head5.rigid_model_v2",
+   "size": 307476,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head5.wsmodel",
+   "size": 857,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head6.rigid_model_v2",
+   "size": 253948,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head6.wsmodel",
+   "size": 789,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head7.rigid_model_v2",
+   "size": 1354956,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head7.wsmodel",
+   "size": 1457,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head8.rigid_model_v2",
+   "size": 950124,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/head8.wsmodel",
+   "size": 1457,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hair1_weighted4_alpha_on.xml.material",
+   "size": 2454,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hair3_weighted4_alpha_on.xml.material",
+   "size": 2454,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_archers_head_02_weighted4_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_archers_head_04_weighted4_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_archmage_head_weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_handmaiden_everqueen_head2_weighted4_alpha_on.xml.material",
+   "size": 2762,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_handmaiden_everqueen_head_weighted4_alpha_on.xml.material",
+   "size": 2761,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_mage_head_weighted4_alpha_on.xml.material",
+   "size": 2617,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_sisters_of_avelorn_head_01_weighted4_alpha_on.xml.material",
+   "size": 2732,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/materials/hef_sisters_of_avelorn_head_02_weighted4_alpha_on.xml.material",
+   "size": 2732,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_archers_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_mage_cape_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_mage_head_01_base_colour.png",
+   "size": 1521166,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_mage_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_mage_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_mage_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_mage/tex/hef_sisters_of_avelorn_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/hef_sisters_of_avelorn_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/hef_sisters_of_avelorn_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/hef_sisters_of_avelorn_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/hef_sisters_of_avelorn_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/body.rigid_model_v2",
+   "size": 5227460,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/body.wsmodel",
+   "size": 1979,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/body1.wsmodel",
+   "size": 1982,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/body2.wsmodel",
+   "size": 1982,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair.rigid_model_v2",
+   "size": 1203324,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair.wsmodel",
+   "size": 771,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair2.rigid_model_v2",
+   "size": 1093564,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair2.wsmodel",
+   "size": 772,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair3.rigid_model_v2",
+   "size": 790076,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hair3.wsmodel",
+   "size": 772,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hef_archers.rigid_model_v2",
+   "size": 110764,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hef_archers.wsmodel",
+   "size": 830,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hef_archers2.rigid_model_v2",
+   "size": 112780,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/hef_archers2.wsmodel",
+   "size": 831,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/eye_weighted4_alpha_on.xml.material",
+   "size": 2485,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/female1_weighted4_alpha_on.xml.material",
+   "size": 2496,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/female2_weighted4_alpha_on.xml.material",
+   "size": 2496,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/female_weighted4_alpha_on.xml.material",
+   "size": 2495,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/hair1_weighted4_alpha_on.xml.material",
+   "size": 2487,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/hair2_weighted4_alpha_on.xml.material",
+   "size": 2487,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/hair3_weighted4_alpha_on.xml.material",
+   "size": 2487,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/hef_archers_quiver_weighted4_alpha_on.xml.material",
+   "size": 2654,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/materials/pa_weighted4_alpha_on.xml.material",
+   "size": 2449,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/body_normal.dds",
+   "size": 5592560,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/eye_d1.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/eyen.dds",
+   "size": 349680,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/fe_mater.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/female.dds",
+   "size": 11184972,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/female2.dds",
+   "size": 11184972,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/female3.dds",
+   "size": 11184972,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hair.dds",
+   "size": 2667828,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hair_n.dds",
+   "size": 22369776,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_quiver_01_base_colour.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_quiver_01_mask.dds",
+   "size": 349664,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_quiver_01_material_map.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/hef_archers_quiver_01_normal.dds",
+   "size": 349664,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/material.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/material_ml.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/materil_ml.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_archers/tex/pa.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/cloth22.rigid_model_v2",
+   "size": 2210916,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/cloth22.wsmodel",
+   "size": 1494,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/cloth5.rigid_model_v2",
+   "size": 4200348,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/cloth5.wsmodel",
+   "size": 1497,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/materials/cloth2_weighted4_alpha_on.xml.material",
+   "size": 2512,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/materials/cloth3_weighted4_alpha_on.xml.material",
+   "size": 2512,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/materials/heel3_weighted4_alpha_on.xml.material",
+   "size": 2456,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_loremaster_of_hoeth/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2453,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth1.rigid_model_v2",
+   "size": 3215084,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth1.wsmodel",
+   "size": 1388,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth2.rigid_model_v2",
+   "size": 2210916,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth2.wsmodel",
+   "size": 1344,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth3.rigid_model_v2",
+   "size": 3857404,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth3.wsmodel",
+   "size": 1380,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/cloth31.wsmodel",
+   "size": 1436,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/cloth01_weighted4_alpha_on.xml.material",
+   "size": 2448,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/cloth0_weighted4_alpha_on.xml.material",
+   "size": 2510,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/cloth1_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/cloth2_rigid_alpha_on.xml.material",
+   "size": 2504,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/heel2_weighted4_alpha_on.xml.material",
+   "size": 2454,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/materials/heel_rigid_alpha_on.xml.material",
+   "size": 2445,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth1_basecolor.1001.dds",
+   "size": 706404,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth1_basecolor.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth1_normal.dds",
+   "size": 5335488,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth2_basecolor.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth2_metallic1.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth2_normal.dds",
+   "size": 5592560,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth3_basecolor.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth3_metallic.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth3_normal.dds",
+   "size": 5592560,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth5_basecolor.dds",
+   "size": 699212,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth5_metallici.dds",
+   "size": 2796364,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth5_normal.dds",
+   "size": 5592560,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/cloth_metallic.dds",
+   "size": 706404,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/gold.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_ranger/tex/ma.dds",
+   "size": 27012,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen1_imposter.rigid_model_v2",
+   "size": 232572,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen1_imposter.wsmodel",
+   "size": 907,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen2_imposter.rigid_model_v2",
+   "size": 232572,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen2_imposter.wsmodel",
+   "size": 907,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen3_imposter.rigid_model_v2",
+   "size": 232572,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen3_imposter.wsmodel",
+   "size": 907,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen4_imposter.rigid_model_v2",
+   "size": 217652,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/hef_spearmen4_imposter.wsmodel",
+   "size": 907,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/materials/hef_spearmen1_imposter_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/materials/hef_spearmen2_imposter_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/materials/hef_spearmen3_imposter_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/tex/imposter1.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/tex/imposter2.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_spearmen/imposter/tex/imposter3.dds",
+   "size": 174924,
+   "pack": "!AHigh elves _WGX/!AHigh elves _WGX.pack"
+  }
+ ]
+}

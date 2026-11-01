@@ -1,0 +1,197 @@
+{
+ "mod": "ll-25677",
+ "packs": [
+  "lewdlandmarks.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "lewdlandmarks.pack": {
+   "files": 20,
+   "dependencies": []
+  }
+ },
+ "fileCount": 20,
+ "byTopFolder": {
+  "db": 16,
+  "text": 4
+ },
+ "tables": [
+  "building_chain_availability_sets_tables",
+  "building_chain_set_items_tables",
+  "building_chains_tables",
+  "building_culture_variants_tables",
+  "building_effects_junction_tables",
+  "building_instances_tables",
+  "building_levels_tables",
+  "building_set_to_building_junctions_tables",
+  "building_superchains_tables",
+  "building_units_allowed_tables",
+  "building_upgrades_junction_tables",
+  "cai_construction_system_building_values_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effects_tables",
+  "unit_set_to_unit_junctions_tables",
+  "units_to_groupings_military_permissions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "building_chain_availability_sets_tables": [
+   "wild_woods",
+   "wh_main_bas_brt"
+  ],
+  "building_chain_set_items_tables": [
+   "wild_woods",
+   "wh3_main_secondary_addon_landmark_carcassonne"
+  ],
+  "building_chains_tables": [
+   "wild_woods",
+   "money"
+  ],
+  "building_culture_variants_tables": [
+   "wild_woods",
+   "wh_main_PLACEHOLDER",
+   "wood_elves_city_oak_of_ages"
+  ],
+  "building_effects_junction_tables": [
+   "wild_woods",
+   "wh_main_effect_public_order_global",
+   "province_to_province_own_factionwide",
+   "wh_dlc05_faction_political_diplomacy_mod_technology_wood_elves",
+   "faction_to_faction_own_unseen",
+   "wh_dlc05_effect_building_global_recruitment_duration",
+   "province_to_faction_unseen"
+  ],
+  "building_instances_tables": [
+   "wild_woods"
+  ],
+  "building_levels_tables": [
+   "wild_woods"
+  ],
+  "building_set_to_building_junctions_tables": [
+   "wild_woods",
+   "wh2_main_set_landmark"
+  ],
+  "building_superchains_tables": [
+   "wild_woods"
+  ],
+  "building_units_allowed_tables": [],
+  "building_upgrades_junction_tables": [],
+  "cai_construction_system_building_values_tables": [
+   "wild_woods",
+   "cai_support_group"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [],
+  "effects_tables": [],
+  "unit_set_to_unit_junctions_tables": [],
+  "units_to_groupings_military_permissions_tables": []
+ },
+ "files": [
+  {
+   "path": "db/building_chain_availability_sets_tables/lewdlandmarks",
+   "size": 112,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_chain_set_items_tables/lewdlandmarks",
+   "size": 145,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_chains_tables/lewdlandmarks",
+   "size": 133,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_culture_variants_tables/lewdlandmarks",
+   "size": 173,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_effects_junction_tables/lewdlandmarks",
+   "size": 412,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_instances_tables/lewdlandmarks",
+   "size": 99,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_levels_tables/lewdlandmarks",
+   "size": 171,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_set_to_building_junctions_tables/lewdlandmarks",
+   "size": 121,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_superchains_tables/lewdlandmarks",
+   "size": 95,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_units_allowed_tables/lewdlandmarks",
+   "size": 91,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/building_upgrades_junction_tables/lewdlandmarks",
+   "size": 83,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/cai_construction_system_building_values_tables/lewdlandmarks",
+   "size": 209,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/lewdlandmarks",
+   "size": 83,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/effects_tables/lewdlandmarks",
+   "size": 83,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/lewdlandmarks",
+   "size": 91,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "db/units_to_groupings_military_permissions_tables/lewdlandmarks",
+   "size": 83,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "text/landmark_building_chains__.loc",
+   "size": 125,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "text/lewdlandmarks_building_chains__.loc",
+   "size": 119,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "text/lewdlandmarks_building_culture_variants__.loc",
+   "size": 121,
+   "pack": "lewdlandmarks.pack"
+  },
+  {
+   "path": "text/lewdlandmarks_building_short_description_texts__.loc",
+   "size": 597,
+   "pack": "lewdlandmarks.pack"
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "mod": "ll-43295",
+ "packs": [
+  "valkia_futa_reskin.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "valkia_futa_reskin.pack": {
+   "files": 40,
+   "dependencies": []
+  }
+ },
+ "fileCount": 40,
+ "byTopFolder": {
+  "variantmeshes": 40
+ },
+ "tables": [],
+ "references": {
+  "total": 53,
+  "inMod": 23,
+  "inBaseGame": 30,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/dae_valkia_shield_01_rigid.rigid_model_v2",
+   "size": 229196,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/dae_valkia_shield_01_rigid.wsmodel",
+   "size": 912,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/dae_valkia_spear_1h_01.rigid_model_v2",
+   "size": 185180,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/dae_valkia_spear_1h_01.wsmodel",
+   "size": 852,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_shield_01_rigid_alpha_off.xml.material",
+   "size": 2646,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_shield_01_rigid_lod1_submesh_1_rigid_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_shield_01_weighted2_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_shield_01_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_spear_1h_01_alpha_off.xml.material",
+   "size": 4834,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_props/materials/dae_valkia_spear_1h_01_lod1_rigid_alpha_off.xml.material",
+   "size": 6256,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/bst_gor_body_01_mask.dds",
+   "size": 349664,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/bst_gor_body_01_normal.dds",
+   "size": 349664,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/dae_valkia_body_01.rigid_model_v2",
+   "size": 3501652,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/dae_valkia_body_01.wsmodel",
+   "size": 3509,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/dae_valkia_head_01.rigid_model_v2",
+   "size": 1218940,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/dae_valkia_head_01.wsmodel",
+   "size": 4401,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/def_crone_hellebron_head_01_base_colour_zerk_reskin1.dds",
+   "size": 699212,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/def_dreadlord_female_head_01_base_colour.dds",
+   "size": 524416,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/def_dreadlord_female_head_01_base_colour_zerk_reskin1.dds",
+   "size": 699212,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/bst_gor_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2585,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/chs_chariot_01_submesh_17_weighted4_alpha_off.xml.material",
+   "size": 2496,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_body_01_weighted2_alpha_off.xml.material",
+   "size": 2635,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_body_01_weighted4_alpha_off.xml.material",
+   "size": 2635,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_body_01_weighted4_alpha_on.xml.material",
+   "size": 2640,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_head_01_1_weighted2_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_head_01_weighted2_alpha_off.xml.material",
+   "size": 2635,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_head_01_weighted2_alpha_on.xml.material",
+   "size": 2640,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/dae_valkia_head_01_weighted4_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_crone_hellebron_head_01_subm_2_weighted2_alpha_off.xml.material",
+   "size": 2722,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_crone_hellebron_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_1_weighted4_alpha_on.xml.material",
+   "size": 6408,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_2_weighted4_alpha_off.xml.material",
+   "size": 6320,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_6_weighted2_alpha_off.xml.material",
+   "size": 2729,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_7_weighted2_alpha_off.xml.material",
+   "size": 6341,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_8_weighted2_alpha_off.xml.material",
+   "size": 6333,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/materials/def_dreadlord_female_head_03_sub_weighted4_alpha_off.xml.material",
+   "size": 2727,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/valkia_futa_pns_color.dds",
+   "size": 349692,
+   "pack": "valkia_futa_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/wet_mat_map.dds",
+   "size": 16777412,
+   "pack": "valkia_futa_reskin.pack"
+  }
+ ]
+}

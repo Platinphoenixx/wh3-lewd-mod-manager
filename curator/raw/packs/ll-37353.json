@@ -1,0 +1,59 @@
+{
+ "mod": "ll-37353",
+ "packs": [
+  "Corrupted_Cathay_Miao_flag.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Corrupted_Cathay_Miao_flag.pack": {
+   "files": 6,
+   "dependencies": []
+  }
+ },
+ "fileCount": 6,
+ "byTopFolder": {
+  "ui": 6
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_24.png",
+   "size": 1832,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_256.png",
+   "size": 107055,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_64.png",
+   "size": 8349,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_banner.dds",
+   "size": 43832,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_icon.png",
+   "size": 33413,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_rotated.png",
+   "size": 8764,
+   "pack": "Corrupted_Cathay_Miao_flag.pack"
+  }
+ ]
+}

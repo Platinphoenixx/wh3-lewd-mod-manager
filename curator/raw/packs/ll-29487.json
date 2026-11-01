@@ -1,0 +1,60 @@
+{
+ "mod": "ll-29487",
+ "packs": [
+  "SFOMiaoNoCorruptionReduction.pack"
+ ],
+ "dependencies": [
+  "sfo_grimhammer_3_main.pack"
+ ],
+ "perPack": {
+  "SFOMiaoNoCorruptionReduction.pack": {
+   "files": 1,
+   "dependencies": [
+    "sfo_grimhammer_3_main.pack"
+   ]
+  }
+ },
+ "fileCount": 1,
+ "byTopFolder": {
+  "db": 1
+ },
+ "tables": [
+  "effect_bundles_to_effects_junctions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "effect_bundles_to_effects_junctions_tables": [
+   "cth_resource_miao_0",
+   "wh_effect_corruption_reduction_characters_text",
+   "cth_resource_miao_high_dummy",
+   "start_turn_completed",
+   "cth_resource_miao_1",
+   "cth_resource_miao_2",
+   "cth_resource_miao_3",
+   "cth_resource_miao_4",
+   "cth_resource_miao_5",
+   "cth_resource_miao_6",
+   "cth_resource_miao_7",
+   "cth_resource_miao_8",
+   "cth_resource_miao_9",
+   "cth_resource_miao_10",
+   "cth_resource_miao_10_above",
+   "faction_to_character_own_unseen",
+   "cth_resource_miao_10_end"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/nomiaocorruptionreduction",
+   "size": 1735,
+   "pack": "SFOMiaoNoCorruptionReduction.pack"
+  }
+ ]
+}

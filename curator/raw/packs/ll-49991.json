@@ -1,0 +1,89 @@
+{
+ "mod": "ll-49991",
+ "packs": [
+  "TitsNotTwitch.pack",
+  "TitsPauseMenu.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "TitsNotTwitch/TitsNotTwitch.pack": {
+   "files": 1,
+   "dependencies": []
+  },
+  "TitsPauseMenu/TitsPauseMenu.pack": {
+   "files": 10,
+   "dependencies": []
+  }
+ },
+ "fileCount": 10,
+ "byTopFolder": {
+  "ui": 10
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/skins/default/twitch_integration/icon_twitch_logo.png",
+   "size": 98248,
+   "pack": "TitsNotTwitch/TitsNotTwitch.pack"
+  },
+  {
+   "path": "ui/skins/default/twitch_integration/icon_twitch_logo.png",
+   "size": 98248,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_cheat_sheet_icon.png",
+   "size": 8494,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_controls_icon.png",
+   "size": 47015,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_controls_icon_96px.png",
+   "size": 14901,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_game_settings_icon.png",
+   "size": 88458,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_game_settings_icon_96px.png",
+   "size": 20816,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_graphics_icon.png",
+   "size": 43997,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_graphics_icon_96px.png",
+   "size": 15297,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_sound_icon.png",
+   "size": 57740,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  },
+  {
+   "path": "ui/skins/warhammer3/fe_options_sound_icon_96px.png",
+   "size": 14862,
+   "pack": "TitsPauseMenu/TitsPauseMenu.pack"
+  }
+ ]
+}

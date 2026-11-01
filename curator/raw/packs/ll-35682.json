@@ -1,0 +1,169 @@
+{
+ "mod": "ll-35682",
+ "packs": [
+  "@soboro_miao_unit_cards_only.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@soboro_miao_unit_cards_only.pack": {
+   "files": 28,
+   "dependencies": []
+  }
+ },
+ "fileCount": 28,
+ "byTopFolder": {
+  "ui": 28
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28343,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_ballet.png",
+   "size": 50451,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_bare.png",
+   "size": 55287,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_corset.png",
+   "size": 54107,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_fishnet.png",
+   "size": 71110,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_plug.png",
+   "size": 53062,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_plug_preg.png",
+   "size": 40092,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_scale.png",
+   "size": 46954,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_ballet.bin",
+   "size": 180,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_bare.bin",
+   "size": 174,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_corset.bin",
+   "size": 180,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_plug.bin",
+   "size": 174,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_plug_preg.bin",
+   "size": 189,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_li_miaoying_fishnet_soboro_st2.bin",
+   "size": 183,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_li_miaoying_scale_soboro_st1.bin",
+   "size": 199,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_ballet.png",
+   "size": 19505,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_bare.png",
+   "size": 18673,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_corset.png",
+   "size": 18400,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_fishnet.png",
+   "size": 19243,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_plug.png",
+   "size": 16458,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_plug_preg.png",
+   "size": 16181,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_scale.png",
+   "size": 22002,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_ballet.bin",
+   "size": 176,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_bare.bin",
+   "size": 170,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_corset.bin",
+   "size": 176,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_fishnet.bin",
+   "size": 179,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_plug.bin",
+   "size": 170,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_plug_preg.bin",
+   "size": 185,
+   "pack": "@soboro_miao_unit_cards_only.pack"
+  }
+ ]
+}

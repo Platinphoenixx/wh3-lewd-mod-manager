@@ -1,0 +1,2752 @@
+{
+ "mod": "ll-52245",
+ "packs": [
+  "(X)_BattleAngel.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "(X)_BattleAngel/(X)_BattleAngel.pack": {
+   "files": 419,
+   "dependencies": []
+  }
+ },
+ "fileCount": 419,
+ "byTopFolder": {
+  "animations": 244,
+  "variantmeshes": 122,
+  "db": 42,
+  "ui": 5,
+  "text": 2,
+  "materials": 2,
+  "composite_scene": 1,
+  "script": 1
+ },
+ "tables": [
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "battle_animations_table_tables",
+  "battle_entities_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "culture_to_battle_animation_tables_tables",
+  "effect_bonus_value_agent_subtype_junctions_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "faction_starting_general_effects_tables",
+  "land_units_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "main_units_tables",
+  "melee_weapons_tables",
+  "names_tables",
+  "special_ability_groups_tables",
+  "special_ability_groups_to_unit_abilities_junctions_tables",
+  "special_ability_groups_to_units_junctions_tables",
+  "special_ability_to_recharge_contexts_tables",
+  "ui_unit_bullet_point_unit_overrides_tables",
+  "unit_abilities_tables",
+  "unit_abilities_to_additional_ui_effects_juncs_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_description_short_texts_tables",
+  "unit_general_details_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_sets_tables",
+  "unit_special_abilities_tables",
+  "unit_variants_tables",
+  "units_custom_battle_permissions_tables",
+  "units_to_groupings_military_permissions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 199,
+  "inMod": 59,
+  "inBaseGame": 79,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/_variantmodels/character/human/male/chinese/hero/huang_gai/tex/huang_gai_base_colour.dds",
+   "variantmeshes/_variantmodels/character/human/male/chinese/hero/huang_gai/tex/huang_gai_material_map.dds",
+   "variantmeshes/_variantmodels/character/human/male/chinese/hero/huang_gai/tex/huang_gai_normal.dds",
+   "variantmeshes/_variantmodels/character/human/male/chinese/hero/huang_gai/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/dr4/cth/cth_dragon_light/cth_dragon_light_body_01.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1/cth/cth_nao_nao/cth_nao_nao.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_balthazar_gelt/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_sphere_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_sphere_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_back_core_sphere_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_braces_opt_diff.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_braces_opt_mat.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_braces_opt_norm.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_chest_core_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_chest_core_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_chest_core_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_chest_core_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_core_ornament_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_core_ornament_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_core_ornament_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_hakutaku_hair_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_hakutaku_hair_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_hakutaku_hair_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_harness_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_harness_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_harness_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_helmet_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_helmet_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_helmet_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_jacket_opt_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_jacket_opt_mat.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_jacket_opt_norm.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_blade_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_blade_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_blade_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_lashes_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_lashes_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_lashes_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_ornament_blade_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_ornament_blade_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_judge_ornament_blade_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_damaged_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_head_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_head_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_head_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_lord_judge_xiao_damaged_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_ornament_2_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_ornament_2_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_ornament_2_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_suit_opt_diff.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_suit_opt_mat.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_suit_opt_norm.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_sword_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_sword_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_sword_01_material.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/tex/cth_sword_01_normal.dds",
+   "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_a.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_subtypes_tables": [
+   "oxy_cth_miao_ying",
+   "oxy_cth_cha_storm_dragon_0",
+   "wh2_dlc14_vo_actor_Bretonnia_Repanse_De_Lyonese",
+   "cannot_be_loaded_in_campaign",
+   "wh3_main_vo_actor_Cathay_Miao_Ying"
+  ],
+  "agent_uniforms_tables": [
+   "oxy_cth_shen_zhu_human",
+   "oxy_uniform_cth_miao_ying"
+  ],
+  "battle_animations_table_tables": [
+   "hu1_cultist_of_slaanesh_dual_swords",
+   "humanoid01",
+   "flord_hu16c_valkia_range_spell_fix",
+   "humanoid16c",
+   "sucpool_hu16c_valkia_angel_fix_01",
+   "hu16c_wh3_dlc20_valkia_spear_shield"
+  ],
+  "battle_entities_tables": [
+   "sarv_lord_judge_entity",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh2_dlc14_brt_repanse_de_lyonesse_LORD",
+   "infantry_light_effects",
+   "wh_main_generic_character_aura",
+   "wh_main_unit_combat",
+   "small_entity"
+  ],
+  "campaign_character_art_sets_tables": [
+   "champion",
+   "oxy_art_set_cth_miao_ying",
+   "oxy_cth_miao_ying",
+   "oxy_art_set_cth_light_dragon"
+  ],
+  "campaign_character_arts_tables": [
+   "oxy_art_set_cth_miao_ying",
+   "none",
+   "oxy_uniform_cth_miao_ying",
+   "wh3_uniform_cth_ship_lord",
+   "cam_lord_hu16c_wh3_dlc20_valkia_spear_shield",
+   "cam_cathayship_01",
+   "oxy_art_set_cth_light_dragon"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "oxy_skill_innate_cth_shen_zhu",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "agent_to_parent_army_own",
+   "wh3_dlc20_effect_healing_cap_modifier",
+   "wh_main_effect_force_all_campaign_upkeep",
+   "str_abrax_hound_fury",
+   "str_abrax_enable_hound_fury",
+   "character_to_character_own",
+   "wh_main_effect_agent_action_success_chance_enemy_skill",
+   "wh_main_effect_agent_action_success_chance_skill"
+  ],
+  "character_skill_node_links_tables": [
+   "oxy_skill_node_cth_shen_zhu_campaign_1_1",
+   "oxy_skill_node_cth_shen_zhu_campaign_0",
+   "REQUIRED",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_2",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_3",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_4",
+   "oxy_skill_node_cth_shen_zhu_campaign_2",
+   "SUBSET_REQUIRED",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_1",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_2",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_3",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_4",
+   "oxy_skill_node_cth_shen_zhu_campaign_4",
+   "oxy_skill_node_cth_shen_zhu_combat_1_1",
+   "oxy_skill_node_cth_shen_zhu_combat_0",
+   "oxy_skill_node_cth_shen_zhu_combat_1_2",
+   "oxy_skill_node_cth_shen_zhu_combat_1_3",
+   "oxy_skill_node_cth_shen_zhu_combat_1_4",
+   "oxy_skill_node_cth_shen_zhu_combat_2",
+   "oxy_skill_node_cth_shen_zhu_combat_3_1",
+   "oxy_skill_node_cth_shen_zhu_combat_3_2",
+   "oxy_skill_node_cth_shen_zhu_combat_3_3",
+   "oxy_skill_node_cth_shen_zhu_combat_3_4",
+   "oxy_skill_node_cth_shen_zhu_combat_4",
+   "oxy_skill_node_cth_shen_zhu_magic_1_1",
+   "oxy_skill_node_cth_shen_zhu_magic_0",
+   "oxy_skill_node_cth_shen_zhu_magic_1_2",
+   "oxy_skill_node_cth_shen_zhu_magic_1_3",
+   "oxy_skill_node_cth_shen_zhu_magic_1_4",
+   "oxy_skill_node_cth_shen_zhu_magic_1_5",
+   "oxy_skill_node_cth_shen_zhu_magic_2",
+   "oxy_skill_node_cth_shen_zhu_magic_3_1",
+   "oxy_skill_node_cth_shen_zhu_magic_3_2",
+   "oxy_skill_node_cth_shen_zhu_magic_3_3",
+   "oxy_skill_node_cth_shen_zhu_magic_3_4",
+   "oxy_skill_node_cth_shen_zhu_magic_4",
+   "oxy_skill_node_cth_shen_zhu_unique_1",
+   "oxy_skill_node_cth_shen_zhu_unique_0",
+   "oxy_skill_node_cth_shen_zhu_unique_2",
+   "oxy_skill_node_cth_shen_zhu_unique_3",
+   "oxy_skill_node_cth_shen_zhu_unique_4",
+   "oxy_skill_node_cth_shen_zhu_unique_5",
+   "oxy_skill_node_cth_shen_zhu_unique_6",
+   "oxy_skill_node_cth_shen_zhu_unique_7"
+  ],
+  "character_skill_node_set_items_tables": [
+   "oxy_skill_node_set_cth_miao_ying",
+   "oxy_agent_action_scaling_wh3_main_skill_node_set_cth_shen_zhu",
+   "oxy_skill_node_cth_shen_zhu_campaign_0",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_1",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_2",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_3",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_4",
+   "oxy_skill_node_cth_shen_zhu_campaign_2",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_1",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_2",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_3",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_4",
+   "oxy_skill_node_cth_shen_zhu_campaign_4",
+   "oxy_skill_node_cth_shen_zhu_combat_0",
+   "oxy_skill_node_cth_shen_zhu_combat_1_1",
+   "oxy_skill_node_cth_shen_zhu_combat_1_2",
+   "oxy_skill_node_cth_shen_zhu_combat_1_3",
+   "oxy_skill_node_cth_shen_zhu_combat_1_4",
+   "oxy_skill_node_cth_shen_zhu_combat_2",
+   "oxy_skill_node_cth_shen_zhu_combat_3_1",
+   "oxy_skill_node_cth_shen_zhu_combat_3_2",
+   "oxy_skill_node_cth_shen_zhu_combat_3_3",
+   "oxy_skill_node_cth_shen_zhu_combat_3_4",
+   "oxy_skill_node_cth_shen_zhu_combat_4",
+   "oxy_skill_node_cth_shen_zhu_generic_0",
+   "oxy_skill_node_cth_shen_zhu_generic_1",
+   "oxy_skill_node_cth_shen_zhu_innate",
+   "oxy_skill_node_cth_shen_zhu_magic_0",
+   "oxy_skill_node_cth_shen_zhu_magic_1_1",
+   "oxy_skill_node_cth_shen_zhu_magic_1_2",
+   "oxy_skill_node_cth_shen_zhu_magic_1_3",
+   "oxy_skill_node_cth_shen_zhu_magic_1_5",
+   "oxy_skill_node_cth_shen_zhu_magic_2",
+   "oxy_skill_node_cth_shen_zhu_magic_3_1",
+   "oxy_skill_node_cth_shen_zhu_magic_3_2",
+   "oxy_skill_node_cth_shen_zhu_magic_3_3",
+   "oxy_skill_node_cth_shen_zhu_magic_3_4",
+   "oxy_skill_node_cth_shen_zhu_magic_4",
+   "oxy_skill_node_cth_shen_zhu_generic_10",
+   "oxy_skill_node_cth_shen_zhu_unique_0",
+   "oxy_skill_node_cth_shen_zhu_unique_1",
+   "oxy_skill_node_cth_shen_zhu_unique_2",
+   "oxy_skill_node_cth_shen_zhu_unique_3",
+   "oxy_skill_node_cth_shen_zhu_unique_4",
+   "oxy_skill_node_cth_shen_zhu_unique_5",
+   "oxy_skill_node_cth_shen_zhu_unique_6",
+   "oxy_skill_node_cth_shen_zhu_unique_7",
+   "oxy_skill_node_cth_shen_zhu_generic_2",
+   "wh2_main_skill_node_hef_noble_campaign_actions_dummy",
+   "oxy_skill_node_cth_shen_zhu_generic_3",
+   "oxy_skill_node_cth_shen_zhu_generic_4",
+   "oxy_skill_node_cth_shen_zhu_magic_1_4"
+  ],
+  "character_skill_node_sets_tables": [
+   "champion",
+   "oxy_skill_node_set_cth_miao_ying",
+   "oxy_cth_miao_ying"
+  ],
+  "character_skill_nodes_tables": [
+   "wh3_main_skill_agent_action_success_scaling",
+   "oxy_agent_action_scaling_wh3_main_skill_node_set_cth_shen_zhu",
+   "wh_main_skill_all_lord_battle_inspiring_presence",
+   "oxy_skill_node_cth_shen_zhu_campaign_0",
+   "wh_main_skill_emp_lord_campaign_iron_disciplinarian",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_1",
+   "wh3_main_skill_cth_lord_campaign_recruitment_cost",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_2",
+   "wh_main_skill_lord_all_campaign_reassuring_presence",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_3",
+   "wh_main_skill_emp_lord_campaign_fervent",
+   "oxy_skill_node_cth_shen_zhu_campaign_1_4",
+   "wh3_main_skill_cth_lord_campaign_irrepressible",
+   "oxy_skill_node_cth_shen_zhu_campaign_2",
+   "wh_main_skill_all_lord_campaign_lightning_strike",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_1",
+   "wh_main_skill_emp_lord_campaign_quartermaster",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_2",
+   "wh_main_skill_emp_lord_campaign_logistician",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_3",
+   "wh_main_skill_all_lord_campaign_alert",
+   "oxy_skill_node_cth_shen_zhu_campaign_3_4",
+   "wh3_main_skill_cth_lord_campaign_army",
+   "oxy_skill_node_cth_shen_zhu_campaign_4",
+   "wh2_main_skill_lzd_disciplines_unfathomable_presence",
+   "oxy_skill_node_cth_shen_zhu_combat_0",
+   "wh2_main_skill_hef_combat_graceful_strikes",
+   "oxy_skill_node_cth_shen_zhu_combat_1_1",
+   "wh2_main_skill_hef_tyrion_feint_and_riposte",
+   "oxy_skill_node_cth_shen_zhu_combat_1_2",
+   "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+   "oxy_skill_node_cth_shen_zhu_combat_1_3",
+   "wh3_dlc24_skill_all_all_self_colossal_strike",
+   "oxy_skill_node_cth_shen_zhu_combat_1_4",
+   "wh_main_skill_all_all_self_deadly_onslaught",
+   "oxy_skill_node_cth_shen_zhu_combat_2",
+   "wh2_dlc11_skill_all_lord_self_wound-maker",
+   "oxy_skill_node_cth_shen_zhu_combat_3_1",
+   "wh2_dlc11_skill_all_lord_self_blade_master",
+   "oxy_skill_node_cth_shen_zhu_combat_3_2",
+   "wh3_main_skill_cth_miao_ying_speed",
+   "oxy_skill_node_cth_shen_zhu_combat_3_3",
+   "wh3_main_skill_cth_miao_ying_unique_04",
+   "oxy_skill_node_cth_shen_zhu_combat_3_4",
+   "wh3_dlc29_skill_vmp_lahmian_vampire_unique_1",
+   "oxy_skill_node_cth_shen_zhu_combat_4",
+   "wh2_main_skill_def_kindle_the_fury",
+   "oxy_skill_node_cth_shen_zhu_generic_0",
+   "wh2_dlc10_skill_def_crone_self_blood_frenzy",
+   "oxy_skill_node_cth_shen_zhu_generic_1",
+   "oxy_skill_innate_cth_shen_zhu",
+   "oxy_skill_node_cth_shen_zhu_innate",
+   "wh_main_skill_all_magic_light_03_exorcism",
+   "oxy_skill_node_cth_shen_zhu_magic_0",
+   "wh2_main_skill_all_magic_high_01_soul_quench_lord",
+   "oxy_skill_node_cth_shen_zhu_magic_1_1",
+   "wh_main_skill_all_magic_light_02_phas_protection",
+   "oxy_skill_node_cth_shen_zhu_magic_1_2",
+   "wh2_main_skill_all_magic_high_02_apotheosis_slann",
+   "oxy_skill_node_cth_shen_zhu_magic_1_3",
+   "wh_main_skill_all_magic_all_08_power_drain",
+   "oxy_skill_node_cth_shen_zhu_magic_1_5",
+   "wh_main_skill_all_magic_light_04_light_of_battle",
+   "oxy_skill_node_cth_shen_zhu_magic_2",
+   "wh2_main_skill_lzd_disciplines_reservoir",
+   "oxy_skill_node_cth_shen_zhu_magic_3_1",
+   "wh_main_skill_all_magic_light_09_banishment",
+   "oxy_skill_node_cth_shen_zhu_magic_3_2",
+   "wh_main_skill_all_magic_light_05_net_of_amyntok",
+   "oxy_skill_node_cth_shen_zhu_magic_3_3",
+   "wh2_main_skill_lzd_disciplines_arcane_convergence",
+   "oxy_skill_node_cth_shen_zhu_magic_3_4",
+   "wh2_dlc14_skilll_all_magic_all_greater_arcane_conduit",
+   "oxy_skill_node_cth_shen_zhu_magic_4",
+   "wh2_main_skill_all_immortality_hero",
+   "oxy_skill_node_cth_shen_zhu_generic_10",
+   "wh_main_skill_all_lord_battle_rally",
+   "oxy_skill_node_cth_shen_zhu_unique_0",
+   "wh2_main_skill_all_magic_high_03_lore_attribute",
+   "oxy_skill_node_cth_shen_zhu_unique_1",
+   "wh3_main_skill_ksl_kostaltyn_unique_03",
+   "oxy_skill_node_cth_shen_zhu_unique_2",
+   "wh3_dlc27_skill_sla_alluress_shared_3",
+   "oxy_skill_node_cth_shen_zhu_unique_3",
+   "wh3_main_skill_cth_miao_ying_unique_05",
+   "oxy_skill_node_cth_shen_zhu_unique_4",
+   "wh3_main_skill_cth_miao_ying_ranged_unit_range",
+   "oxy_skill_node_cth_shen_zhu_unique_5",
+   "wh3_main_skill_cth_miao_ying_ranged_unit_reload",
+   "oxy_skill_node_cth_shen_zhu_unique_6",
+   "wh_main_skill_all_lord_battle_stand_your_ground",
+   "oxy_skill_node_cth_shen_zhu_unique_7",
+   "wh_main_skill_all_magic_all_06_evasion",
+   "oxy_skill_node_cth_shen_zhu_generic_2",
+   "wh3_main_skill_cth_all_self_will_of_the_dragons",
+   "oxy_skill_node_cth_shen_zhu_generic_3",
+   "wh3_main_skill_cth_magic_yin_05_power_of_yin",
+   "oxy_skill_node_cth_shen_zhu_generic_4",
+   "wh2_main_skill_all_dummy_agent_actions_chs_exalted_hero",
+   "wh2_main_skill_node_hef_noble_campaign_actions_dummy",
+   "wh2_main_skill_all_magic_high_04_hand_of_glory_lord",
+   "oxy_skill_node_cth_shen_zhu_magic_1_4"
+  ],
+  "character_skills_tables": [
+   "battle_attack.png",
+   "oxy_skill_cth_magic_shen_zhu_dummy_phas_protection_storm_of_shadows",
+   "character_magic.png",
+   "oxy_skill_cth_shun_zhu_unique_01",
+   "Master of Storms",
+   "sarv_toyz.png",
+   "oxy_skill_innate_cth_shen_zhu",
+   "Supreme Matriarch",
+   "str_abrax_hound_fury.png",
+   "str_abrax_hound_fury"
+  ],
+  "culture_to_battle_animation_tables_tables": [
+   "hu16c_wh3_dlc20_valkia_spear_shield",
+   "wh_dlc05_wef_wood_elves",
+   "wh3_main_ksl_kislev",
+   "wh_main_emp_empire",
+   "wh3_main_cth_cathay"
+  ],
+  "effect_bonus_value_agent_subtype_junctions_tables": [
+   "success_mod_opponent",
+   "wh3_main_effect_cth_force_subtype_agent_success_mod_yin",
+   "oxy_cth_miao_ying",
+   "ammo_mod",
+   "wh3_main_effect_cth_force_subtype_ammunition_yin",
+   "replenishment_percentage_bonus",
+   "wh3_main_effect_cth_force_subtype_campaign_replenishment_yin",
+   "melee_defence_mod_mult",
+   "wh3_main_effect_cth_force_subtype_melee_defence_yin",
+   "upkeep_mod",
+   "wh3_main_effect_cth_force_subtype_upkeep_mod_yin"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "upkeep_mod",
+   "oxy_effect_upkeep_cth_celestial_dragon",
+   "oxy_cth_celestial_dragon"
+  ],
+  "effect_bundles_tables": [
+   "oxy_lord_trait_cth_shen_zhu",
+   "Crusader Angel",
+   "Ruler of the Northern Provinces",
+   "faction",
+   "character.png"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "oxy_lord_trait_cth_shen_zhu",
+   "wh_main_effect_character_stat_missile_block",
+   "faction_to_force_own",
+   "start_turn_completed",
+   "wh3_main_effect_caravan_cargo_capacity",
+   "faction_to_character_own_unseen_lords_only",
+   "wh3_main_effect_force_stat_leadership_pct_vs_daemons",
+   "faction_to_force_own_unseen",
+   "wh_main_effect_force_stat_ammunition",
+   "wh_dlc05_effect_building_global_recruitment_duration",
+   "faction_to_faction_own_unseen",
+   "wh_main_faction_xp_increase_generals",
+   "faction_to_province_own_unseen"
+  ],
+  "effects_tables": [
+   "oxy_effect_upkeep_cth_celestial_dragon",
+   "military_spending.png",
+   "campaign",
+   "str_abrax_enable_hound_fury",
+   "general_ability.png",
+   "battle"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "champion",
+   "wh3_main_cth_the_northern_provinces",
+   "oxy_cth_miao_ying",
+   "wh_main_emp_middenland",
+   "wh3_main_cth_celestial_loyalists",
+   "wh_dlc05_wef_wood_elves"
+  ],
+  "faction_starting_general_effects_tables": [
+   "oxy_cth_miao_ying",
+   "oxy_lord_trait_cth_shen_zhu"
+  ],
+  "land_units_tables": [
+   "wh2_main_plate_60",
+   "inf_melee",
+   "com",
+   "wh3_main_unit_long_text_cth_cha_storm_dragon_0",
+   "oxy_cth_cha_storm_dragon_0",
+   "hu16c_wh3_dlc20_valkia_spear_shield",
+   "sarv_lord_judge_entity",
+   "sarv_lord_judge_attack",
+   "wh_missile_block_90_metal",
+   "wh_main_infantry",
+   "trained",
+   "vo_sel_wood_elves_wardancers",
+   "vo_sel_generic",
+   "vo_sel_culture",
+   "small",
+   "flying_melee_highvalue",
+   "very_low",
+   "medium",
+   "domination_characters"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "wh3_main_lord_passive_disdain_of_the_dragons",
+   "oxy_cth_cha_storm_dragon_0",
+   "wh3_main_unit_passive_single_entity",
+   "wh_main_character_abilities_arcane_conduit"
+  ],
+  "main_units_tables": [
+   "hero",
+   "oxy_cth_cha_storm_dragon_0",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh3_main_vo_actor_Cathay_Shugengan_Lord",
+   "brt_paladin_pegasus",
+   "cth_general_dragon",
+   "vo_culture_None",
+   "wh2_dlc14_vo_actor_Bretonnia_Repanse_De_Lyonese"
+  ],
+  "melee_weapons_tables": [
+   "sarv_lord_judge_attack",
+   "sword",
+   "medium"
+  ],
+  "names_tables": [
+   "names_cth_cathay",
+   "forename"
+  ],
+  "special_ability_groups_tables": [
+   "oxy_lore_light_dragon",
+   "lore_death",
+   "Play_WH_UI_Ability_Click_Generic_Light",
+   "Death"
+  ],
+  "special_ability_groups_to_unit_abilities_junctions_tables": [
+   "oxy_lore_light_dragon",
+   "wh3_main_lore_passive_power_of_yin",
+   "wh3_main_spell_yin_missile_mirror",
+   "wh3_main_spell_yin_storm_of_shadows",
+   "wh3_main_spell_yin_talons_of_night",
+   "wh_main_lore_passive_exorcism",
+   "wh_main_spell_light_phas_protection",
+   "wh_main_spell_light_net_of_amyntok",
+   "wh_main_spell_light_bironas_timewarp"
+  ],
+  "special_ability_groups_to_units_junctions_tables": [
+   "oxy_lore_light_dragon",
+   "oxy_cth_cha_storm_dragon_0"
+  ],
+  "special_ability_to_recharge_contexts_tables": [
+   "engaged_in_melee",
+   "str_abrax_hound_fury"
+  ],
+  "ui_unit_bullet_point_unit_overrides_tables": [
+   "anti_infantry",
+   "oxy_cth_cha_storm_dragon_0",
+   "duellist",
+   "melee_expert",
+   "armour_piercing_melee"
+  ],
+  "unit_abilities_tables": [
+   "str_abrax_hound_fury",
+   "wh_type_explosion",
+   "wh_main_anc_group_rare",
+   "active"
+  ],
+  "unit_abilities_to_additional_ui_effects_juncs_tables": [
+   "str_abrax_hound_fury",
+   "wh2_main_all_huge_static_aoe"
+  ],
+  "unit_attributes_to_groups_junctions_tables": [
+   "flying",
+   "oxy_cth_cha_storm_dragon_0",
+   "daemonic",
+   "hide_forest",
+   "encourages",
+   "flanking_immune"
+  ],
+  "unit_description_short_texts_tables": [
+   "oxy_cth_cha_storm_dragon_0"
+  ],
+  "unit_general_details_tables": [
+   "wh3_main_cth_cathay_mp",
+   "ui/portraits/units/sarv_lord_judge_0/sarv_lord_judge_0.png",
+   "oxy_cth_cha_storm_dragon_0"
+  ],
+  "unit_set_to_unit_junctions_tables": [
+   "oxy_cth_cha_storm_dragon_0",
+   "wh3_main_cth_cha_storm_dragon_0"
+  ],
+  "unit_sets_tables": [
+   "oxy_cth_celestial_dragon"
+  ],
+  "unit_special_abilities_tables": [
+   "wh3_main_spell_yin_missile_mirror",
+   "cast_up_medium",
+   "wh_abilities_generic_debuff_no_ring",
+   "hex_ranged",
+   "wh3_main_ability_modular",
+   "yin_medium",
+   "vo_battle_special_ability_generic_response",
+   "missile_mirror",
+   "debuff_unit",
+   "Yin",
+   "wh3_main_spell_yin_missile_mirror_upgraded",
+   "wh_main_generic_miscast",
+   "wh3_main_spell_yin_storm_of_shadows",
+   "cast_up_short",
+   "hex_speed_under_fire",
+   "yin_short",
+   "wh3_main_spell_yin_storm_of_shadows_upgraded",
+   "wh_abilities_generic_debuff",
+   "hex_speed_area",
+   "wh3_main_spell_yin_talons_of_night",
+   "cast_up_long",
+   "wh_abilities_generic_vortex",
+   "aoe_ap",
+   "yin_long",
+   "vo_battle_special_ability_spell_cast_wef_shadow",
+   "damage_aoe",
+   "wh3_main_spell_yin_talons_of_night_upgraded",
+   "wh_main_spell_light_net_of_amyntok",
+   "light_medium",
+   "vo_battle_special_ability_spell_cast_negative",
+   "wh_main_spell_light_net_of_amyntok_upgraded",
+   "wh_main_light_miscast",
+   "str_abrax_hound_fury",
+   "wh_army_abilities_generic_explosion",
+   "wh3_main_army_abilities_blade_of_khorne",
+   "Khorne"
+  ],
+  "unit_variants_tables": [
+   "wh3_main_cth_cha_storm_dragon_0",
+   "oxy_cth_cha_storm_dragon_0",
+   "oxy_cth_shen_zhu_human",
+   "placeholder"
+  ],
+  "units_custom_battle_permissions_tables": [
+   "wh3_main_cth_cathay_mp",
+   "oxy_cth_cha_storm_dragon_0",
+   "ui/portraits/portholes/sarv_lord_judge_0/sarv_lord_judge_0.png",
+   "wh3_main_cth_cha_storm_dragon_0"
+  ],
+  "units_to_groupings_military_permissions_tables": [
+   "oxy_cth_cha_storm_dragon_0",
+   "wh3_main_cth"
+  ],
+  "variants_tables": [
+   "oxy_cth_shen_zhu_human"
+  ]
+ },
+ "files": [
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_attack_01.{11w360v}.snd.meta",
+   "size": 391,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_attack_05.{sfs2bw}.snd.meta",
+   "size": 304,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_attack_06_turn90.{goylit}.snd.meta",
+   "size": 364,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_attack_07.{1yctprk}.snd.meta",
+   "size": 442,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_01.{wvhsrn}.snd.meta",
+   "size": 301,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_02.{15eyt3z}.snd.meta",
+   "size": 305,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_03.{1ot7vhv}.snd.meta",
+   "size": 326,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_05_turn90.{1nsbtl5}.snd.meta",
+   "size": 344,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/attacks/flord_hu16c_sps_jumping_attack_01.{16jvtpw}.snd.meta",
+   "size": 421,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/audio/battle/humanoid16c/transitions/flord_hu16c_sps_fly_charge_land_01.{8qiasq}.snd.meta",
+   "size": 282,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_attack_01.anim",
+   "size": 10237,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_attack_01.meta",
+   "size": 260,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_attack_02.anim",
+   "size": 13397,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_attack_02.meta",
+   "size": 258,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_attack_03.anim",
+   "size": 18684,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_jumping_attack_01.anim",
+   "size": 12102,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_jumping_attack_01.anm.meta",
+   "size": 336,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_jumping_attack_02.anim",
+   "size": 12161,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_jumping_attack_02.anm.meta",
+   "size": 306,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_moving_attack_01.anim",
+   "size": 10093,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_moving_attack_01.anm.meta",
+   "size": 282,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_moving_attack_02.anim",
+   "size": 8086,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/attacks/hu1_sp_moving_attack_02.anm.meta",
+   "size": 292,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/celebrate/hu1_sp_celebrate_01.anim",
+   "size": 20172,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/celebrate/hu1_sp_celebrate_01.anm.meta",
+   "size": 89,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/celebrate/hu1_sp_celebrate_03.anim",
+   "size": 13932,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_01.anim",
+   "size": 11974,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_idle_01.anim",
+   "size": 15929,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_idle_02.anm.meta",
+   "size": 57,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_idle_03.anim",
+   "size": 17355,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_idle_03.anm.meta",
+   "size": 57,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/combat_idles/hu1_sp_combat_pose_01.anim",
+   "size": 696,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_back_01.anm.meta",
+   "size": 242,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_front_01.anm.meta",
+   "size": 248,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_front_02.anm.meta",
+   "size": 243,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_left_01.anm.meta",
+   "size": 244,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_left_02.anm.meta",
+   "size": 251,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_death_right_02.anm.meta",
+   "size": 244,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_small_death_back_01.anm.meta",
+   "size": 243,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_small_death_back_03.anm.meta",
+   "size": 202,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_small_death_front_01.anm.meta",
+   "size": 243,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_small_death_front_02.anm.meta",
+   "size": 203,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/deaths/hu1_sp_small_death_left_01.anm.meta",
+   "size": 201,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_back_01.anim",
+   "size": 13676,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_back_02.anim",
+   "size": 10170,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_back_03.anim",
+   "size": 10226,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_front_01.anim",
+   "size": 14000,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_left_01.anim",
+   "size": 14024,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/defends/hu1_sp_defend_right_01.anim",
+   "size": 14082,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/jumps_falls/hu1_sp_jump_fall_01.anim",
+   "size": 4697,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/jumps_falls/hu1_sp_jump_into_01.anim",
+   "size": 3373,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/jumps_falls/hu1_sp_jump_land_01.anim",
+   "size": 6730,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/knockback/hu1_sp_knockback_b_01.anim",
+   "size": 8549,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/knockback/hu1_sp_knockback_r_01.anim",
+   "size": 8868,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_charge_01.anim",
+   "size": 4975,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_combat_move_01.anim",
+   "size": 7035,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_combat_move_02.anm.meta",
+   "size": 84,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_run_01.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_run_02.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_walk_01.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/locomotion/hu1_sp_walk_02.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_combat_step_fwd_01.meta",
+   "size": 207,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_step_bwd_01.anim",
+   "size": 12608,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_step_fwd_01.anim",
+   "size": 12057,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_step_left_01.anim",
+   "size": 12165,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_step_right_01.anim",
+   "size": 12041,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_left_180.anim",
+   "size": 13540,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_left_180.meta",
+   "size": 59,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_left_45.anim",
+   "size": 9711,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_left_90.anim",
+   "size": 12204,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_right_180.anim",
+   "size": 13527,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_right_45.anim",
+   "size": 7481,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/movement/hu1_sp_turn_right_90.anim",
+   "size": 12140,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_back_01.anim",
+   "size": 16829,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_back_02.anim",
+   "size": 34695,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_forward_01.anim",
+   "size": 27367,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_forward_01.anm.meta",
+   "size": 90,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_forward_02.anim",
+   "size": 31082,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_left_01.anim",
+   "size": 15665,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_left_01.anm.meta",
+   "size": 94,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_left_02.anim",
+   "size": 40676,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_right_01.anim",
+   "size": 29913,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reactions/hu1_sp_reaction_right_01.anm.meta",
+   "size": 94,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reload/hu1_bayonet_rifle_reload.anim",
+   "size": 8207,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reload/hu1_bayonet_rifle_reload_to_stand.anim",
+   "size": 5547,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/reload/hu1_bayonet_rifle_stand_to_reload.anim",
+   "size": 11910,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/stand/hu1_bayonet_rifle_aim_to_stand_01.anim",
+   "size": 6038,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/stand/hu1_rifle_stand_pose_01.meta",
+   "size": 227,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/stand/hu1_sp_stand_idle_01.anim",
+   "size": 27384,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/bayonet/stand/hu1_sp_stand_idle_02.anim",
+   "size": 23378,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/flord_hu1_rifle_moving_fire_bwd_01.anm.meta",
+   "size": 200,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/flord_hu1_rifle_moving_fire_fwd.anim",
+   "size": 12111,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/flord_hu1_rifle_moving_fire_left.anim",
+   "size": 12109,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/flord_hu1_rifle_moving_fire_right.anim",
+   "size": 12116,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/flord_hu1_rifle_moving_fire_right_01.anm.meta",
+   "size": 208,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_bwd.anim",
+   "size": 12100,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_bwd_01.anm.meta",
+   "size": 200,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_fwd.anim",
+   "size": 12111,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_fwd_01.anm.meta",
+   "size": 205,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_left.anim",
+   "size": 12109,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_left_01.anm.meta",
+   "size": 208,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/missile_actions/hu1_rifle_moving_fire_right.anim",
+   "size": 12116,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_reload.snd.meta",
+   "size": 105,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_reload_gote.anim",
+   "size": 8817,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_reload_to_stand.anm.meta",
+   "size": 111,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_reload_to_stand.snd.meta",
+   "size": 82,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_reload_to_stand_gote.anim",
+   "size": 5589,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_stand_to_reload.anm.meta",
+   "size": 111,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/reload/hu1_rifle_stand_to_reload_gote.anim",
+   "size": 11711,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/stand/hu1_rifle_stand_pose_01.anm.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/rifle/stand/hu1_rifle_stand_pose_01.meta",
+   "size": 224,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/spear/locomotion/hu1_sp_charge_01.meta",
+   "size": 87,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01/sword_and_pistol/stand/hu1_swp_stand_01.anm.meta",
+   "size": 198,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/staff_and_sword/spell_casting/hu1b_sfsw_cast_long_01.anm.meta",
+   "size": 313,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/staff_and_sword/spell_casting/hu1b_sfsw_cast_medium_01.anm.meta",
+   "size": 298,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/subset/aranessa/attacks/flord_hu1b_cst_hb_attack_06_small.anm.meta",
+   "size": 197,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/subset/elves/spear/attacks/flord_hu1b_elf_sp_jumping_attack_03_small.anm.meta",
+   "size": 282,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/subset/spellsinger/sword/spell_casting/hu1b_elf_spellsinger_sw_cast_long_01.anm.meta",
+   "size": 227,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/subset/spellsinger/sword/spell_casting/hu1b_elf_spellsinger_sw_cast_medium_01.anm.meta",
+   "size": 229,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01b/subset/spellsinger/sword/spell_casting/hu1b_elf_spellsinger_sw_cast_short_01.anm.meta",
+   "size": 234,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01d/hef_spear_and_shield/defends/flord_hu1d_hef_sps_defend_back_1volley_01.anm.meta",
+   "size": 182,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/attacks/flord_fly_hu16c_to_hu1e_sps_attack_02.anim",
+   "size": 81252,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/attacks/flord_hu16c_to_hu1e_1volley_shoot_sps_fly_attack_01.anim",
+   "size": 68587,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/attacks/flord_hu16c_to_hu1e_mechacat_sps_attack_02.anm.meta",
+   "size": 358,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/defends/flord_fly_hu16c_to_hu1e_sps_fly_defend_04.anim",
+   "size": 45315,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/locomotion/flord_fly_hu16c_sps_fly_01.anim",
+   "size": 122453,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/shugengan/attacks/lord_judge_attack_01.anm.meta",
+   "size": 438,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/shugengan/attacks/lord_judge_attack_02.anm.meta",
+   "size": 407,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/shugengan/attacks/lord_judge_attack_03.anm.meta",
+   "size": 725,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/shugengan/attacks/lord_judge_attack_04.anm.meta",
+   "size": 457,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/shugengan/attacks/lord_judge_attack_05.anm.meta",
+   "size": 406,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/stand/flord_fly_hu16c_to_hu1e_sps_fly_stand_01.anim",
+   "size": 88801,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/storm_dragon/attacks/lord_judge_attack_attack_07.anm.meta",
+   "size": 362,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/zhao_ming_human/attack/lord_judge_attack_23.anm.meta",
+   "size": 273,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/zhao_ming_human/attack/lord_judge_attack_24.anm.meta",
+   "size": 288,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/zhao_ming_human/attack/lord_judge_attack_28.anm.meta",
+   "size": 402,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01e/zhao_ming_human/attack/lord_judge_attack_29.anm.meta",
+   "size": 363,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01f/defends/flord_hu1f_shoot_volley_ariel_defend_back_01.anm.meta",
+   "size": 114,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid01f/defends/flord_hu1f_shoot_volley_ariel_forward_01.anm.meta",
+   "size": 112,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid03/crank_gun/hu3_crg_aim_high_shoot_to_stand_03_proto.anm.meta",
+   "size": 671,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid03/crank_gun/hu3_crg_aim_low_shoot_to_stand_03_proto.anm.meta",
+   "size": 670,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid03/crank_gun/hu3_crg_aim_shoot_to_stand_03_proto.anm.meta",
+   "size": 622,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid03/drakegun/missile_actions/flord_hu3_dkg_aim_high_shoot_to_stand_03_proto_12volley.anm.meta",
+   "size": 489,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid03/drakegun/missile_actions/flord_hu3_dkg_aim_shoot_to_stand_03_proto_12volley.anm.meta",
+   "size": 437,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid06g/azazel/locomotion/flord_hu06g_azazel_fly_charge_landed_little_01.anm.meta",
+   "size": 202,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid10/skarbrand_dual_axe/spell_cast/flord_hu10_wh3_skarbrand_dual_axe_cast_forward_short_11volley_01.anm.meta",
+   "size": 473,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid10/skarbrand_dual_axe/spell_cast/flord_hu10_wh3_skarbrand_dual_axe_cast_forward_short_1volley_01.anm.meta",
+   "size": 323,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid10/skarbrand_dual_axe/stand/flord_spell_hu10_wh3_skarbrand_dual_axe_stand_combat_01.anm.meta",
+   "size": 227,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid10/spellcasting/flord_hu10_fly_cast_short_skarfly.anm.meta",
+   "size": 664,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid10/spellcasting/flord_hu10_fly_cast_short_skarfly_1volley.anm.meta",
+   "size": 501,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16b/nkari/attacks/flord_hu16b_nkari_jump_attack_01_fixrange.anm.meta",
+   "size": 470,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16b/sw/knockback/flord_handcannon_shoot_hu16b_sw_knockback_back_01.anm.meta",
+   "size": 89,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_01.anm.meta",
+   "size": 457,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_02.anm.meta",
+   "size": 367,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_04.anm.meta",
+   "size": 444,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_05.anm.meta",
+   "size": 395,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_07.anm.meta",
+   "size": 475,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_angel_01.anm.meta",
+   "size": 240,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_angel_05.anm.meta",
+   "size": 255,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_attack_angel_07.anm.meta",
+   "size": 383,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_01.anm.meta",
+   "size": 328,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_02.anm.meta",
+   "size": 325,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_03.anm.meta",
+   "size": 303,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_05_turn90_angel.anm.meta",
+   "size": 353,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_angel_01.anm.meta",
+   "size": 239,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_angel_02.anm.meta",
+   "size": 238,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_fly_attack_angel_03.anm.meta",
+   "size": 303,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_jumping_attack_01.anm.meta",
+   "size": 407,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_jumping_attack_angel_01.anm.meta",
+   "size": 343,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_moving_attack_01.anm.meta",
+   "size": 292,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_hu16c_sps_vs_hu1_sws_matched_attack_01.meta",
+   "size": 626,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/attacks/flord_shoot_hu16c_sps_fly_attack_01.anm.meta",
+   "size": 376,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/combat_idles/flord_hu16c_sps_combat_ready_01.anm.meta",
+   "size": 63,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/deaths/flord_hu16c_sps_death_01.anm.meta",
+   "size": 89,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/deaths/flord_hu16c_sps_death_face_down_01.anm.meta",
+   "size": 67,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/deaths/flord_hu16c_sps_fly_death_fall_01.anm.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/deaths/flord_hu16c_sps_fly_death_land_01.anm.meta",
+   "size": 242,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_defend_01.anm.meta",
+   "size": 49,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_defend_02.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_defend_03.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_defend_04.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_fly_defend_01.anm.meta",
+   "size": 53,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_fly_defend_02.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_fly_defend_03.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/defends/flord_hu16c_sps_fly_defend_04.anm.meta",
+   "size": 58,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/docking/flord_hu16c_sps_docking_combat_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_charge_02.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_fly_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_fly_charge_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_run_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_walk_01.anm.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/locomotion/flord_hu16c_sps_walk_02.anm.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_step_bwd_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_step_fwd_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_step_left_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_turn_left_45_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_turn_left_90_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_combat_turn_right_45_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_step_bwd_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_step_fwd_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_step_right_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_turn_left_45_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_turn_left_90_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_turn_right_45_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/movement/flord_hu16c_sps_turn_right_90_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/spellcasting/flord_hu16c_sps_fly_spell_01.anm.meta",
+   "size": 465,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/spellcasting/flord_hu16c_sps_spell_01.anm.meta",
+   "size": 349,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_fly_stand_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_fly_stand_idle_01.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_fly_stand_idle_02.anm.meta",
+   "size": 107,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_fly_stand_idle_03.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_fly_stand_idle_04.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_stand_idle_02.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_stand_idle_03.anm.meta",
+   "size": 25,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/stand/flord_hu16c_sps_stand_idle_04.anm.meta",
+   "size": 54,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/transitions/flord_hu16c_sps_fly_charge_land_01.anm.meta",
+   "size": 303,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid16c/transitions/flord_hu16c_sps_take_off_01.anm.meta",
+   "size": 59,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid17/halberd_powerclaw_ikit/stand/flord_hu17_halbert_powerclaw_stand_01_boostfly.anm.meta",
+   "size": 450,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_01.anim",
+   "size": 16779,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_02.anim",
+   "size": 15509,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_02.anm.meta",
+   "size": 257,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_high_stand_02.anm.meta",
+   "size": 821,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_stand_01.anim",
+   "size": 23820,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_stand_01.anm.meta",
+   "size": 1071,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_stand_02.anim",
+   "size": 25264,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_stand_02.anm.meta",
+   "size": 789,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_fire_stand_lightfix_01.anm.meta",
+   "size": 301,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_high_02.anm.meta",
+   "size": 287,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/missile_actions/flord_hu18b_rtg_aim_no_anime_02.anm.meta",
+   "size": 257,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/ratling_gun/stand/flord_hu18b_beast_stand_01.snd.meta",
+   "size": 112,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_aim_high_01.anm.meta",
+   "size": 66,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_01.anm.meta",
+   "size": 158,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_02.anm.meta",
+   "size": 158,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_aim_left_02.anim",
+   "size": 22788,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_aim_right_02.anim",
+   "size": 22620,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_high_01.anm.meta",
+   "size": 192,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/warpfire_thrower/missile_actions/flord_hu18b_wft_fire_high_02.anm.meta",
+   "size": 192,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/windlauncher/missile_actions/flord_hu18b_wl_aim_fire_stand_01.anim",
+   "size": 18760,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/battle/humanoid18b/windlauncher/missile_actions/flord_hu18b_wl_aim_fire_stand_01.anm.meta",
+   "size": 105,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/campaign/database/bin/cam_my_gi1_titan.bin",
+   "size": 711,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/campaign/database/bin/cam_my_hc7_soulfly.bin",
+   "size": 693,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/database/battle/bin/hu16c_wh3_dlc20_valkia_spear_shield.bin",
+   "size": 2359,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "animations/database/battle/bin/sarv_lord_judge.animpack",
+   "size": 2646,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "composite_scene/spells_and_abilities/vitae_extirpation.csc",
+   "size": 730,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/(x)_battle_angel",
+   "size": 229,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/(x)_battle_angel",
+   "size": 142,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/battle_animations_table_tables/(x)_battle_angel",
+   "size": 208,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/(x)_battle_angel",
+   "size": 341,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/(x)_battle_angel",
+   "size": 165,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/(x)_battle_angel",
+   "size": 228,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/(x)_battle_angel",
+   "size": 328,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/(x)_battle_angel",
+   "size": 479,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/(x)_battle_angel",
+   "size": 409,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/(x)_battle_angel",
+   "size": 138,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/(x)_battle_angel",
+   "size": 1331,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/character_skills_tables/(x)_battle_angel",
+   "size": 377,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/(x)_battle_angel",
+   "size": 189,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_agent_subtype_junctions_tables/(x)_battle_angel",
+   "size": 253,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/(x)_battle_angel",
+   "size": 140,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/(x)_battle_angel",
+   "size": 189,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/(x)_battle_angel",
+   "size": 391,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/effects_tables/(x)_battle_angel",
+   "size": 205,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/(x)_battle_angel",
+   "size": 210,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/faction_starting_general_effects_tables/(x)_battle_angel",
+   "size": 129,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/land_units_tables/(x)_battle_angel",
+   "size": 440,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/(x)_battle_angel",
+   "size": 209,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/main_units_tables/(x)_battle_angel",
+   "size": 309,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/melee_weapons_tables/(x)_battle_angel",
+   "size": 158,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/names_tables/(x)_battle_angel",
+   "size": 128,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/special_ability_groups_tables/(x)_battle_angel",
+   "size": 235,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/special_ability_groups_to_unit_abilities_junctions_tables/(x)_battle_angel",
+   "size": 265,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/special_ability_groups_to_units_junctions_tables/(x)_battle_angel",
+   "size": 135,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/special_ability_to_recharge_contexts_tables/(x)_battle_angel",
+   "size": 126,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/ui_unit_bullet_point_unit_overrides_tables/(x)_battle_angel",
+   "size": 171,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/(x)_battle_angel",
+   "size": 162,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_abilities_to_additional_ui_effects_juncs_tables/(x)_battle_angel",
+   "size": 134,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/(x)_battle_angel",
+   "size": 178,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_description_short_texts_tables/(x)_battle_angel",
+   "size": 114,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_general_details_tables/(x)_battle_angel",
+   "size": 172,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/(x)_battle_angel",
+   "size": 134,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_sets_tables/(x)_battle_angel",
+   "size": 123,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/(x)_battle_angel",
+   "size": 892,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/(x)_battle_angel",
+   "size": 154,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/units_custom_battle_permissions_tables/(x)_battle_angel",
+   "size": 191,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/units_to_groupings_military_permissions_tables/(x)_battle_angel",
+   "size": 127,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "db/variants_tables/(x)_battle_angel",
+   "size": 125,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "materials/vfx/fatal_swordscreen_sword_ph.xml.material",
+   "size": 634,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "materials/vfx/lord_judge_swish_emissive.xml.material",
+   "size": 642,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "script/campaign/mod/oxy_cth_shen_zhu_star_agent_spawn.lua",
+   "size": 830,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "text/likelydeletable.loc",
+   "size": 896,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "text/ocheramng.loc",
+   "size": 665,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/sarv_toyz.png",
+   "size": 4393,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__@sarv_lord_judge.bin",
+   "size": 141,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__oxy_cth_shen_an.bin",
+   "size": 147,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/sarv_lord_judge_0/sarv_lord_judge_0.png",
+   "size": 214023,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "ui/portraits/units/sarv_lord_judge_0/sarv_lord_judge_0.png",
+   "size": 145258,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/oxy_cth_shen_zhu_human.variantmeshdefinition",
+   "size": 427,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/oxy_cth_shen_zhu_humanv.variantmeshdefinition",
+   "size": 371,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/oxy_cth_shen_zhu_light_dragon.variantmeshdefinition",
+   "size": 256,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sarv_lord_judge_0.variantmeshdefinition",
+   "size": 377,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/oxy_cth_cha_storm_dragon_1.rigid_model_v2",
+   "size": 7317548,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_body_02_base_colour.dds",
+   "size": 1183559,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_body_02_mask.dds",
+   "size": 59813,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_head_02_base_colour.dds",
+   "size": 1162361,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_head_02_mask.dds",
+   "size": 15033,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/angel_repansa.rigid_model_v2",
+   "size": 3514908,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/angel_repansa.wsmodel",
+   "size": 690,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_battle_pilgrims_legs_03_subm_2_weighted2_alpha_off.xml.material",
+   "size": 559,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_battle_pilgrims_legs_03_subm_weighted4_alpha_off.xml.material",
+   "size": 558,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_fay_enchantre2ss_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_fay_enchantre2ss_body_01_weighted4_alpha_on.xml.material",
+   "size": 568,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_pegasus_01_submesh_0_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 565,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_pegasus_01_submesh_0_submesh_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_pegasus_01_submesh_1_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 576,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_pegasus_01_submesh_1_submesh_weighted4_alpha_on.xml.material",
+   "size": 575,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/brt_royal_pegasus_wings_01_cente_2_weighted2_alpha_off.xml.material",
+   "size": 577,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/cth_astromancer_head_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/cth_astromancer_head_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 567,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/cth_judge_crown_01_2_weighted2_alpha_off.xml.material",
+   "size": 609,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/cth_judge_crown_01_weighted4_alpha_on.xml.material",
+   "size": 610,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/emp_pegasus_02_close_right_2_weighted2_alpha_off.xml.material",
+   "size": 557,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/emp_pegasus_02_close_right_weighted4_alpha_on.xml.material",
+   "size": 556,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/emp_pegasus_wings_02_main_right_2_weighted2_alpha_off.xml.material",
+   "size": 556,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/emp_pegasus_wings_02_main_right_weighted4_alpha_on.xml.material",
+   "size": 556,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/head_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/head_weighted4_alpha_off.xml.material",
+   "size": 569,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_boots1_2_weighted2_alpha_off.xml.material",
+   "size": 607,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_boots1_weighted4_alpha_on.xml.material",
+   "size": 608,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_loremaster_of_hoeth_legs_01_2_weighted2_alpha_off.xml.material",
+   "size": 570,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_loremaster_of_hoeth_legs_01_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_swordmasters_of_hoeth_torso_2_weighted2_alpha_off.xml.material",
+   "size": 561,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/hef_swordmasters_of_hoeth_torso_weighted4_alpha_off.xml.material",
+   "size": 560,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "size": 560,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/maiden2_lod1bdyaad_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hef/materials/maiden2_lod1bdyaad_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/wef/wef_unicorn/materials/emp_pegasus_06_weighted2_alpha_off.xml.material",
+   "size": 565,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/wef/wef_unicorn/yun_mo_yun_pegasus.rigid_model_v2",
+   "size": 812608,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/wef/wef_unicorn/yun_mo_yun_pegasus.wsmodel",
+   "size": 297,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/brt/brt_battle_pilgrims/tex/brt_battle_pilgrims_legs_01_base_colour.dds",
+   "size": 149251,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/brt/brt_necrologist/tex/brt_necrologist_body_2k_pale_01_diffuse.dds",
+   "size": 6870571,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/brt/tex/face_e3_brt.dds",
+   "size": 2029500,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_mask.dds",
+   "size": 199,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_material.dds",
+   "size": 2646581,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_normal.dds",
+   "size": 2722816,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/brt_diffuse.dds",
+   "size": 13473618,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/brt_diffuserbdy.dds",
+   "size": 13438871,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_helmet_01_diffuse.dds",
+   "size": 1918901,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_helmet_01_diffuse_copy.dds",
+   "size": 2035007,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_helmet_01_material.dds",
+   "size": 1663643,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_helmet_01_normal.dds",
+   "size": 3136061,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_back_core_01_weighted4_alpha_on.xml.material",
+   "size": 579,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_back_core_sphere_01_weighted4_alpha_on.xml.material",
+   "size": 801,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_chest_core_01_weighted4_alpha_on.xml.material",
+   "size": 791,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_core_ornament_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 582,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_hakutaku_hair_01_weighted4_alpha_on.xml.material",
+   "size": 579,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_blade_01_weighted4_alpha_on.xml.material",
+   "size": 577,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_bodysuit_01_weighted4_alpha_on.xml.material",
+   "size": 580,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_braces_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 584,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_crown_01_weighted4_alpha_on.xml.material",
+   "size": 577,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_harness_01_weighted4_alpha_on.xml.material",
+   "size": 575,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_jacket_01_weighted4_alpha_on.xml.material",
+   "size": 580,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_ornament_blade_01_weighted4_alpha_on.xml.material",
+   "size": 580,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_sword_01_rigid_alpha_on.xml.material",
+   "size": 783,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_judge_sword_01_weighted2_alpha_on.xml.material",
+   "size": 790,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_lord_judge_01_weighted4_alpha_on.xml.material",
+   "size": 584,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_lord_judge_eyelashes_01_weighted4_alpha_on.xml.material",
+   "size": 579,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_lord_judge_head_01_weighted4_alpha_on.xml.material",
+   "size": 575,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_lord_magistrate_sword_1h_01_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_ornament_01_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/cth_war_compass_01_submesh_337_s_weighted4_alpha_off.xml.material",
+   "size": 546,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_lord_judge/materials/huang_gai_submesh_5_submesh_0_su_weighted4_alpha_off.xml.material",
+   "size": 575,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/body_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/body_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/hair_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 565,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/head_weighted2_alpha_off.xml.material",
+   "size": 560,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/head_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/helmet_weighted2_alpha_off.xml.material",
+   "size": 561,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/helmet_weighted4_alpha_on.xml.material",
+   "size": 562,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/jian_rigid_alpha_off.xml.material",
+   "size": 559,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/jian_rigid_alpha_on.xml.material",
+   "size": 559,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/jianqiao_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/jianqiao_weighted4_alpha_on.xml.material",
+   "size": 569,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/legs_weighted4_alpha_on.xml.material",
+   "size": 561,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/skirt_weighted2_alpha_off.xml.material",
+   "size": 563,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/materials/skirt_weighted4_alpha_on.xml.material",
+   "size": 564,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/body_a.dds",
+   "size": 2645727,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/body_m.dds",
+   "size": 2037040,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/body_n.dds",
+   "size": 4095162,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/hair_a.dds",
+   "size": 1810243,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/hair_m.dds",
+   "size": 626,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/hair_n.dds",
+   "size": 1664744,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_b.dds",
+   "size": 574120,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_b1.dds",
+   "size": 540913,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_b2.dds",
+   "size": 578992,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_c.dds",
+   "size": 588728,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_m.dds",
+   "size": 236,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/head_n.dds",
+   "size": 468514,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/helmet_a.dds",
+   "size": 2472213,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/helmet_m.dds",
+   "size": 1814462,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/helmet_n.dds",
+   "size": 2630359,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/jian_a.dds",
+   "size": 605718,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/jian_m.dds",
+   "size": 576403,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/jian_n.dds",
+   "size": 1105972,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/legs_a.dds",
+   "size": 2449698,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/legs_m.dds",
+   "size": 1984994,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/mxh_hero/mxh_sword_master_01/tex/legs_n.dds",
+   "size": 3685668,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/oxy_cth_cha_storm_dragon_1.rigid_model_v2",
+   "size": 7317548,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_body_02_base_colour.dds",
+   "size": 1183559,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_body_02_mask.dds",
+   "size": 59813,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_head_02_base_colour.dds",
+   "size": 1162361,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/oxy_cth_cha_storm_dragon_1/tex/cth_dragon_iron_head_02_mask.dds",
+   "size": 15033,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/weapons/materials/brt_repanse_sword_2h_01_lod1_rigid_alpha_off.xml.material",
+   "size": 552,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/weapons/materials/emp_balthazar_gelt_01_staff_lod__2_rigid_alpha_off.xml.material",
+   "size": 571,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/weapons/materials/emp_balthazar_gelt_01_staff_lod__rigid_alpha_on.xml.material",
+   "size": 571,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/weapons/repanse_sword.rigid_model_v2",
+   "size": 63750,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/weapons/repanse_sword.wsmodel",
+   "size": 253,
+   "pack": "(X)_BattleAngel/(X)_BattleAngel.pack"
+  }
+ ]
+}

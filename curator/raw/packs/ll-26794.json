@@ -1,0 +1,1629 @@
+{
+ "mod": "ll-26794",
+ "packs": [
+  "1160219805_!SonsofUrsun.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "1160219805_!SonsofUrsun.pack": {
+   "files": 316,
+   "dependencies": []
+  }
+ },
+ "fileCount": 316,
+ "byTopFolder": {
+  "variantmeshes": 311,
+  "ui": 4,
+  "db": 1
+ },
+ "tables": [
+  "main_units_tables"
+ ],
+ "references": {
+  "total": 323,
+  "inMod": 254,
+  "inBaseGame": 69,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "main_units_tables": [
+   "missile_cavalry",
+   "wh3_main_ksl_cav_horse_archers_0",
+   "wh_main_shp_transport",
+   "medium",
+   "wh3_main_vo_culture_Kislev",
+   "missile_cavalry_bow",
+   "emp_reiksguard",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Kislev_Female_Unit",
+   "melee_cavalry",
+   "wh3_main_ksl_cav_kossovite_dervishes_0",
+   "wh3_main_ksl_cav_horse_raiders_0",
+   "cavalry"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/main_units_tables/data",
+   "size": 743,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_horse_archers_0.png",
+   "size": 24221,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_horse_raiders_0.png",
+   "size": 20310,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_ice_guard_0.png",
+   "size": 24715,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_ice_guard_1.png",
+   "size": 24030,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_archers.variantmeshdefinition",
+   "size": 1982,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_gryphon_legion.variantmeshdefinition",
+   "size": 2918,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_ice_guard_glaive.variantmeshdefinition",
+   "size": 3548,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_ice_guard_swords.variantmeshdefinition",
+   "size": 4322,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar.variantmeshdefinition",
+   "size": 1428,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar_armoured_axe_shield.variantmeshdefinition",
+   "size": 1862,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar_armoured_male.variantmeshdefinition",
+   "size": 2765,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar_armoured_spears.variantmeshdefinition",
+   "size": 1156,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar_base.variantmeshdefinition",
+   "size": 2814,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_kossar_spear.variantmeshdefinition",
+   "size": 1440,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_raider.variantmeshdefinition",
+   "size": 1996,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_streltsi.variantmeshdefinition",
+   "size": 3046,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_tsar_guard_2h_sword.variantmeshdefinition",
+   "size": 3100,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_tsar_guard_sword_shield.variantmeshdefinition",
+   "size": 3671,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_war_bear_riders_glaive.variantmeshdefinition",
+   "size": 1727,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_winged_lancer.variantmeshdefinition",
+   "size": 2775,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_01_imposter.rigid_model_v2",
+   "size": 779668,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_01_imposter.wsmodel",
+   "size": 7603,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body1.rigid_model_v2",
+   "size": 2936026,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body1.wsmodel",
+   "size": 5089,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body2.rigid_model_v2",
+   "size": 3101132,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body2.wsmodel",
+   "size": 6305,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body_dervish1.rigid_model_v2",
+   "size": 2703720,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body_dervish1.wsmodel",
+   "size": 3873,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body_dervish2.rigid_model_v2",
+   "size": 2874880,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_body_dervish2.wsmodel",
+   "size": 5089,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head1.rigid_model_v2",
+   "size": 5341274,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head1.wsmodel",
+   "size": 2669,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head2.rigid_model_v2",
+   "size": 5470640,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head2.wsmodel",
+   "size": 2677,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head3.rigid_model_v2",
+   "size": 5309720,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/ksl_archer_head3.wsmodel",
+   "size": 2669,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/archer_hat1_weighted2_alpha_on.xml.material",
+   "size": 2627,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/archer_hat2_weighted4_alpha_off.xml.material",
+   "size": 2622,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/armor1_weighted4_alpha_on.xml.material",
+   "size": 2622,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/armor2_weighted4_alpha_off.xml.material",
+   "size": 2617,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/armor2_weighted4_alpha_on.xml.material",
+   "size": 2622,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/armor3_weighted4_alpha_on.xml.material",
+   "size": 2622,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/body1_lod1_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/body2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/body3_lod1_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/hair2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/hair_lod1_weighted4_alpha_on.xml.material",
+   "size": 2601,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/head2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2601,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/quiver1_weighted4_alpha_on.xml.material",
+   "size": 2619,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/materials/quiver2_weighted4_alpha_on.xml.material",
+   "size": 2619,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body1_base_colour.dds",
+   "size": 174904,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body1_mask.dds",
+   "size": 349680,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body1_material_map.dds",
+   "size": 22369796,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body1_normal.dds",
+   "size": 349680,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body2_base_colour.dds",
+   "size": 22369796,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body2_mask.dds",
+   "size": 144,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body2_material_map.dds",
+   "size": 22369796,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body2_normal.dds",
+   "size": 5592560,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body3_base_colour.dds",
+   "size": 786608,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body3_mask.dds",
+   "size": 144,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body3_material_map.dds",
+   "size": 22369796,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_body3_normal.dds",
+   "size": 786608,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_hair2_base_colour.dds",
+   "size": 1398256,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_hair2_mask.dds",
+   "size": 144,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_hair2_material_map.dds",
+   "size": 1398276,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_hair2_normal.dds",
+   "size": 1398256,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_hair3_base_colour.dds",
+   "size": 1398256,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_head2_base_colour.dds",
+   "size": 2097332,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_head2_mask.dds",
+   "size": 144,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_head2_material_map.dds",
+   "size": 2097332,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_head2_normal.dds",
+   "size": 2097312,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/archer_head3_base_colour.dds",
+   "size": 2097332,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_archer_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_kossar_bow_01_base_colour.dds",
+   "size": 174924,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_kossar_bow_01_mask.dds",
+   "size": 349664,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_kossar_bow_01_material_map.dds",
+   "size": 174924,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_archer/tex/ksl_kossar_bow_01_normal.dds",
+   "size": 349664,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_01_imposter.rigid_model_v2",
+   "size": 261804,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_01_imposter.wsmodel",
+   "size": 4789,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_body1.rigid_model_v2",
+   "size": 1727368,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_body1.wsmodel",
+   "size": 1819,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_body2.rigid_model_v2",
+   "size": 1701898,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_body2.wsmodel",
+   "size": 2147,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_head1.rigid_model_v2",
+   "size": 607324,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_head1.wsmodel",
+   "size": 1487,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_head2.rigid_model_v2",
+   "size": 702412,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_head2.wsmodel",
+   "size": 1487,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_quiver1.rigid_model_v2",
+   "size": 320452,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/ksl_ice_guard_quiver1.wsmodel",
+   "size": 1505,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body1_weighted2_alpha_off.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body1_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body2_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body3_weighted2_alpha_off.xml.material",
+   "size": 2520,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body3_weighted4_alpha_on.xml.material",
+   "size": 2525,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body4_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body5_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body6_weighted2_alpha_off.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_body6_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_head1_weighted4_alpha_on.xml.material",
+   "size": 2655,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_head2_weighted4_alpha_off.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_quiver1_weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/materials/ice_guard_quiver2_weighted4_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/body_basecolour.dds",
+   "size": 11184972,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/body_material_map.dds",
+   "size": 22369796,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/body_normal.dds",
+   "size": 1398256,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_bow_01_base_colour.dds",
+   "size": 174924,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_bow_01_mask.dds",
+   "size": 349664,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_bow_01_material_map.dds",
+   "size": 174924,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_bow_01_normal.dds",
+   "size": 349664,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_ice_guard/tex/ksl_ice_guard_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_01_imposter.rigid_model_v2",
+   "size": 240872,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_01_imposter.wsmodel",
+   "size": 3004,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_body1.rigid_model_v2",
+   "size": 2559804,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_body1.wsmodel",
+   "size": 2294,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_body2.rigid_model_v2",
+   "size": 2708878,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_body2.wsmodel",
+   "size": 3698,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_head1.rigid_model_v2",
+   "size": 372848,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_head1.wsmodel",
+   "size": 890,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_head2.rigid_model_v2",
+   "size": 427232,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/ksl_gryphon_legion_head2.wsmodel",
+   "size": 1590,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body1_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body2_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body3_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body4_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body5_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body6_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body7_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_body8_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_head1_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_head2_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/materials/gryphon_legion_head3_weighted2_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_gryphon_legion/tex/ksl_gryphon_legion_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_01_imposter.rigid_model_v2",
+   "size": 204588,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_01_imposter.wsmodel",
+   "size": 3300,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_body1.rigid_model_v2",
+   "size": 1702070,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_body1.wsmodel",
+   "size": 2658,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_body2.rigid_model_v2",
+   "size": 1811454,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_body2.wsmodel",
+   "size": 3930,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head1.rigid_model_v2",
+   "size": 925130,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head1.wsmodel",
+   "size": 806,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head2.rigid_model_v2",
+   "size": 403400,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head2.wsmodel",
+   "size": 806,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head3.rigid_model_v2",
+   "size": 403114,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/ksl_kossar_head3.wsmodel",
+   "size": 1442,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_body1_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_body2_weighted4_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_body2_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_body3_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_body4_weighted4_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_head1_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/materials/kossar_head2_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar/tex/ksl_kossar_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_01_imposter.rigid_model_v2",
+   "size": 214224,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_01_imposter.wsmodel",
+   "size": 3850,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_body1.rigid_model_v2",
+   "size": 1579150,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_body1.wsmodel",
+   "size": 3773,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_body2.rigid_model_v2",
+   "size": 1502882,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_body2.wsmodel",
+   "size": 3041,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_head1.rigid_model_v2",
+   "size": 459466,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_head1.wsmodel",
+   "size": 1657,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_head2.rigid_model_v2",
+   "size": 434656,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_kossar_armoured_male_head2.wsmodel",
+   "size": 1653,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_tsar_guard_01_imposter.rigid_model_v2",
+   "size": 251748,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/ksl_tsar_guard_01_imposter.wsmodel",
+   "size": 3681,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_body1_weighted4_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_body2_weighted4_alpha_on.xml.material",
+   "size": 2718,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_body3_weighted4_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_body4_weighted4_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_body5_weighted4_alpha_on.xml.material",
+   "size": 2718,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_head1_weighted4_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_head2_weighted4_alpha_off.xml.material",
+   "size": 2713,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/kossar_armoured_male_head4_weighted4_alpha_on.xml.material",
+   "size": 2718,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/tsar_guard_male_head1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/materials/tsar_guard_male_head2_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_kossar_armoured/tex/ksl_kossar_armoured_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_01_imposter.rigid_model_v2",
+   "size": 242520,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_01_imposter.wsmodel",
+   "size": 3528,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_body1.rigid_model_v2",
+   "size": 1611342,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_body1.wsmodel",
+   "size": 2214,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_body2.rigid_model_v2",
+   "size": 1801572,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_body2.wsmodel",
+   "size": 2214,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_head1.rigid_model_v2",
+   "size": 802150,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_head1.wsmodel",
+   "size": 1482,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_head2.rigid_model_v2",
+   "size": 495586,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/ksl_streltsi_head2.wsmodel",
+   "size": 1482,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_body1_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_body2_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_body3_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_body4_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_head1_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_head2_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/materials/streltsi_head4_weighted2_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_streltsi/tex/ksl_streltsi_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_body1.rigid_model_v2",
+   "size": 2594886,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_body1.wsmodel",
+   "size": 2255,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_body2.rigid_model_v2",
+   "size": 2573540,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_body2.wsmodel",
+   "size": 2947,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_head1.rigid_model_v2",
+   "size": 662498,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_head1.wsmodel",
+   "size": 2987,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_head2.rigid_model_v2",
+   "size": 586858,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/ksl_tsar_guard_male_head2.wsmodel",
+   "size": 3687,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_body1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_body2_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_body3_weighted4_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_head1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_head2_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_head3_weighted4_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/materials/tsar_guard_male_mask1_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_boyar_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_boyar_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_boyar_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_boyar_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/ksl_kossar_armoured_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_guard_male_mask_base_colour.dds",
+   "size": 1398276,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_guard_male_mask_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_guard_male_mask_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_guard_male_mask_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_tsar_guard/tex/tsar_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_body1.rigid_model_v2",
+   "size": 1779274,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_body1.wsmodel",
+   "size": 3682,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_body2.rigid_model_v2",
+   "size": 1884342,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_body2.wsmodel",
+   "size": 4386,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_head1.rigid_model_v2",
+   "size": 491346,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_head1.wsmodel",
+   "size": 2270,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_head2.rigid_model_v2",
+   "size": 584546,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_war_bear_riders_head2.wsmodel",
+   "size": 1574,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_01_imposter.rigid_model_v2",
+   "size": 188112,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_01_imposter.wsmodel",
+   "size": 3698,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_body1.rigid_model_v2",
+   "size": 1396794,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_body1.wsmodel",
+   "size": 2304,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_body2.rigid_model_v2",
+   "size": 1495500,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_body2.wsmodel",
+   "size": 2304,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_head1.rigid_model_v2",
+   "size": 406014,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_head1.wsmodel",
+   "size": 1572,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_head2.rigid_model_v2",
+   "size": 538154,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/ksl_winged_lancer_head2.wsmodel",
+   "size": 1572,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_armor1_weighted4_alpha_off.xml.material",
+   "size": 2701,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_armor2_weighted4_alpha_off.xml.material",
+   "size": 2701,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_armor3_weighted4_alpha_off.xml.material",
+   "size": 2701,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_armor4_weighted4_alpha_off.xml.material",
+   "size": 2701,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_body1_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_body2_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_body3_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_body4_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_fur1_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_fur2_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_head1_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/war_bear_riders_head3_weighted2_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_body1_weighted4_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_body2_weighted4_alpha_on.xml.material",
+   "size": 2695,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_body4_weighted4_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_body5_weighted4_alpha_on.xml.material",
+   "size": 2695,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_head1_weighted4_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/materials/winged_lancer_head2_weighted2_alpha_on.xml.material",
+   "size": 2695,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/ksl/ksl_winged_lancer/tex/ksl_winged_lancer_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1160219805_!SonsofUrsun.pack"
+  }
+ ]
+}

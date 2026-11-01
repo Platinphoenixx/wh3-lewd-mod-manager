@@ -243,7 +243,7 @@ def main():
     parts += sorted(glob.glob(str(CURATOR / "work" / "part-*.json")))
     # followup-*.json: field overrides from later curation passes (same shape as a part)
     # Later passes win: LL and Steam follow-ups first, then research, then community contributions.
-    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-community.json": 3}
+    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-archives.json": 3, "followup-community.json": 4}
     parts += sorted(glob.glob(str(CURATOR / "work" / "followup-*.json")), key=lambda p: (order.get(Path(p).name, 2), p))
     manual = CURATOR / "manual.json"
     if manual.exists():
@@ -339,6 +339,36 @@ def main():
         if d.get("loadOrder"):
             lo = m.setdefault("loadOrder", {})
             lo["note"] = "; ".join(x for x in (lo.get("note"), "Discord: " + d["loadOrder"]) if x)
+
+    # Pack analyses (analyze_pack.py → raw/packs/<mod>.json): pack names for mods whose pages do not
+    # name them, and the packs each pack header declares as needed (resolved to mods further down).
+    header_deps = {}
+    for f in sorted(glob.glob(str(CURATOR / "raw" / "packs" / "*.json"))):
+        a = load(f)
+        m = mods.get(a["mod"])
+        if not m:
+            continue
+        if not m.get("packs"):
+            src = "steam" if m.get("sources", {}).get("steam") else "download"
+            per = a.get("perPack") or {p: {} for p in a["packs"]}
+            m["packs"] = []
+            for name in a["packs"]:
+                where = sorted({k.rsplit("/", 1)[0] for k in per if k.rsplit("/", 1)[-1] == name and "/" in k})
+                m["packs"].append({"file": name, "from": src, **({"note": "In " + ", ".join(where)} if where and len(a["packs"]) > 1 else {})})
+        own = {p.lower() for p in a["packs"]}
+        header_deps[m["id"]] = [d for d in a.get("dependencies", []) if d.lower() not in own]
+        # "Pack name not given" is answered now; keep the rest of such questions.
+        cur = m.get("curation") or {}
+        if cur.get("openQuestions"):
+            kept = []
+            for q in cur["openQuestions"]:
+                parts = [c for c in re.split(r";\s*", q) if not (
+                    re.search(r"pack (?:file )?names?|pack file", c, re.I)
+                    and not re.search(r"framework|translation|variant|steam|load order|dependenc|version|campaign|original", c, re.I))]
+                if parts:
+                    s = "; ".join(parts)
+                    kept.append(s[0].upper() + s[1:])
+            cur["openQuestions"] = kept
 
     # Who owns which Steam id / pack.
     steam_owner, pack_owner = {}, {}
@@ -456,9 +486,20 @@ def main():
             unresolved.append(f"{owner_id} {where}: unbekannter externer Mod {v}")
         return t
 
+    for mid, deps in header_deps.items():
+        for dep in deps:
+            mods[mid]["relations"].append({"kind": "requires", "target": {"pack": dep},
+                                           "note": f"Named as a dependency in the mod's pack ({dep})",
+                                           "source": {"type": "inferred"}, "_header": True})
+
     for m in list(mods.values()):
         for r in m.get("relations", []):
             r["target"] = resolve(m["id"], r["target"], r["kind"])
+        # A pack-header dependency adds nothing when a curated relation already names the same mod.
+        curated = {json.dumps(r["target"], sort_keys=True) for r in m.get("relations", []) if not r.get("_header")}
+        m["relations"] = [r for r in m.get("relations", []) if not r.get("_header") or json.dumps(r["target"], sort_keys=True) not in curated]
+        for r in m["relations"]:
+            r.pop("_header", None)
             if r["target"] == {"mod": m["id"]} and r.get("source", {}).get("type") != "discord":
                 self_refs.append(m["id"])
         # A relation to one of the mod's own packs/items (e.g. ATB "requires" its asset pack) is no relation.

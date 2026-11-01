@@ -1,0 +1,2341 @@
+{
+ "mod": "ll-24599",
+ "packs": [
+  "WE_eternalguardfem.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "WE_eternalguardfem1-4/WE_eternalguardfem.pack": {
+   "files": 97,
+   "dependencies": []
+  },
+  "WE_eternalguardfem1-5/WE_eternalguardfem.pack": {
+   "files": 152,
+   "dependencies": []
+  },
+  "WE_eternalguardfem1-6/WE_eternalguardfem.pack": {
+   "files": 202,
+   "dependencies": []
+  }
+ },
+ "fileCount": 202,
+ "byTopFolder": {
+  "variantmeshes": 189,
+  "ui": 12,
+  "db": 1
+ },
+ "tables": [
+  "main_units_tables"
+ ],
+ "references": {
+  "total": 252,
+  "inMod": 149,
+  "inBaseGame": 103,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "main_units_tables": [
+   "melee_infantry",
+   "wh_dlc05_wef_inf_eternal_guard_0",
+   "wh_main_shp_transport",
+   "medium",
+   "wh_dlc05_vo_culture_Wood_Elves",
+   "infantry_spear",
+   "wef_infantry_15_degrees",
+   "vo_culture_None",
+   "wh_dlc05_vo_actor_Wood_Elves_Female_Units",
+   "wh_dlc05_wef_armoury_1",
+   "wh_dlc05_wef_inf_eternal_guard_1",
+   "wef_infantry_30_degrees",
+   "wh_dlc05_wef_inf_eternal_guard_1_qb",
+   "wh_pro04_wef_inf_eternal_guard_ror_0",
+   "melee_cavalry",
+   "wh2_dlc16_wef_cav_glade_riders_2",
+   "heavy",
+   "shock_cavalry",
+   "emp_reiksguard",
+   "missile_infantry",
+   "wh_dlc05_wef_inf_glade_guard_0",
+   "missile_infantry_bow",
+   "wh_dlc05_wef_inf_glade_guard_1",
+   "wef_infantry_45_degrees",
+   "wh_dlc05_wef_inf_glade_guard_1_qb",
+   "wh_dlc05_wef_inf_glade_guard_2",
+   "wh_dlc05_wef_cav_wild_riders_0",
+   "wh_dlc05_wef_wild_riders",
+   "wef_wild_riders",
+   "wh_dlc05_wef_armoury_2",
+   "wh_dlc05_wef_cav_wild_riders_1",
+   "wh_dlc05_wef_inf_deepwood_scouts_0",
+   "wh_dlc05_wef_inf_deepwood_scouts_1",
+   "wh_dlc05_wef_inf_deepwood_scouts_1_qb",
+   "missile_cavalry",
+   "wh_dlc05_wef_cav_glade_riders_0",
+   "missile_cavalry_bow",
+   "wh_dlc05_wef_cav_glade_riders_1",
+   "wh_dlc05_wef_cav_glade_riders_1_qb",
+   "wh_dlc05_wef_inf_wildwood_rangers_0",
+   "wh_dlc05_wef_glaive_infantry",
+   "wh_pro04_wef_inf_wildwood_rangers_ror_0"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/main_units_tables/we_eternalguardfem",
+   "size": 3256,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "db/main_units_tables/we_eternalguardfem",
+   "size": 6086,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "db/main_units_tables/we_eternalguardfem",
+   "size": 6804,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wood_elves_orion.png",
+   "size": 25016,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wood_elves_orion.png",
+   "size": 25016,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_orion_0.png",
+   "size": 67473,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_orion_0.png",
+   "size": 67473,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/wef_orion_0.png",
+   "size": 18966,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/wef_orion_0.png",
+   "size": 18966,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_orion_0.png",
+   "size": 18966,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_orion_0.png",
+   "size": 18966,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_deepwood_scouts.png",
+   "size": 52639,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_deepwood_scouts.png",
+   "size": 52639,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard.png",
+   "size": 24915,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard.png",
+   "size": 24915,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard.png",
+   "size": 24915,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 25818,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 25818,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 25818,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard.png",
+   "size": 71220,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard.png",
+   "size": 71220,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_flaming.png",
+   "size": 16572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_flaming.png",
+   "size": 16572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_poison.png",
+   "size": 16612,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_poison.png",
+   "size": 16612,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wild_riders.png",
+   "size": 73465,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wild_riders.png",
+   "size": 73465,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wildwood_ranger.png",
+   "size": 18800,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_deepwood_scouts.variantmeshdefinition",
+   "size": 3289,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_deepwood_scouts.variantmeshdefinition",
+   "size": 3407,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard.variantmeshdefinition",
+   "size": 3375,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard.variantmeshdefinition",
+   "size": 3375,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard.variantmeshdefinition",
+   "size": 3375,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_shield.variantmeshdefinition",
+   "size": 1273,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_shield.variantmeshdefinition",
+   "size": 1273,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_shield.variantmeshdefinition",
+   "size": 1273,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_spears_set2.variantmeshdefinition",
+   "size": 651,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_spears_set2.variantmeshdefinition",
+   "size": 651,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_spears_set2.variantmeshdefinition",
+   "size": 651,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_guard.variantmeshdefinition",
+   "size": 3301,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_guard.variantmeshdefinition",
+   "size": 3301,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_guard.variantmeshdefinition",
+   "size": 3301,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_riders_spears.variantmeshdefinition",
+   "size": 4919,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_riders_spears.variantmeshdefinition",
+   "size": 4919,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_glade_riders_spears.variantmeshdefinition",
+   "size": 4919,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wild_rider.variantmeshdefinition",
+   "size": 2473,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wild_rider.variantmeshdefinition",
+   "size": 2473,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wild_rider_shield.variantmeshdefinition",
+   "size": 2928,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wild_rider_shield.variantmeshdefinition",
+   "size": 2928,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wildwood_rangers.variantmeshdefinition",
+   "size": 4025,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wildwood_rangers_ror.variantmeshdefinition",
+   "size": 5954,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.rigid_model_v2",
+   "size": 1341468,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.rigid_model_v2",
+   "size": 1341468,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.rigid_model_v2",
+   "size": 1341468,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.wsmodel",
+   "size": 2292,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.wsmodel",
+   "size": 2292,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_2.wsmodel",
+   "size": 2292,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.rigid_model_v2",
+   "size": 2269170,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.rigid_model_v2",
+   "size": 2269170,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.rigid_model_v2",
+   "size": 2269170,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.wsmodel",
+   "size": 2284,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.wsmodel",
+   "size": 2284,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard32a_head_3.wsmodel",
+   "size": 2284,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.rigid_model_v2",
+   "size": 988538,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.rigid_model_v2",
+   "size": 988538,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.rigid_model_v2",
+   "size": 988538,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.wsmodel",
+   "size": 2323,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.wsmodel",
+   "size": 2323,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/eternalguard_skp_head.wsmodel",
+   "size": 2323,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.rigid_model_v2",
+   "size": 988576,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.rigid_model_v2",
+   "size": 988576,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.rigid_model_v2",
+   "size": 988576,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_02.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.rigid_model_v2",
+   "size": 938718,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.rigid_model_v2",
+   "size": 938718,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.rigid_model_v2",
+   "size": 938718,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/gladeguard_skp_head_03.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted2_alpha_off.xml.material",
+   "size": 2478,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted2_alpha_off.xml.material",
+   "size": 2478,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted2_alpha_off.xml.material",
+   "size": 2478,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted4_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted4_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead2_weighted4_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead4_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead4_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead4_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/elfhead_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/hair_head_3_weighted4_alpha_on.xml.material",
+   "size": 2534,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/hair_head_3_weighted4_alpha_on.xml.material",
+   "size": 2534,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/hair_head_3_weighted4_alpha_on.xml.material",
+   "size": 2534,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted2_alpha_off.xml.material",
+   "size": 2513,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted2_alpha_off.xml.material",
+   "size": 2513,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted2_alpha_off.xml.material",
+   "size": 2513,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted4_alpha_on.xml.material",
+   "size": 2518,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted4_alpha_on.xml.material",
+   "size": 2518,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/shorthaircora_weighted4_alpha_on.xml.material",
+   "size": 2518,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2618,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2618,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2618,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_glade_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_glade_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_glade_guard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/wef_eternal_guard_head_01.rigid_model_v2",
+   "size": 193696,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/wef_eternal_guard_head_01.rigid_model_v2",
+   "size": 193696,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/wef_eternal_guard_head_01.rigid_model_v2",
+   "size": 193696,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.rigid_model_v2",
+   "size": 385654,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.rigid_model_v2",
+   "size": 385654,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.rigid_model_v2",
+   "size": 385654,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.wsmodel",
+   "size": 1672,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.wsmodel",
+   "size": 1672,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_2.wsmodel",
+   "size": 1672,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.rigid_model_v2",
+   "size": 521780,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.rigid_model_v2",
+   "size": 521780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.rigid_model_v2",
+   "size": 521780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_leg_3.wsmodel",
+   "size": 1580,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.rigid_model_v2",
+   "size": 251724,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.rigid_model_v2",
+   "size": 251724,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.rigid_model_v2",
+   "size": 251724,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.wsmodel",
+   "size": 925,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.wsmodel",
+   "size": 925,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/eternalguard_skp_legs.wsmodel",
+   "size": 925,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.rigid_model_v2",
+   "size": 239324,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.rigid_model_v2",
+   "size": 239324,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.rigid_model_v2",
+   "size": 239324,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.wsmodel",
+   "size": 915,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.wsmodel",
+   "size": 915,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_01.wsmodel",
+   "size": 915,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.rigid_model_v2",
+   "size": 212190,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.rigid_model_v2",
+   "size": 212190,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.rigid_model_v2",
+   "size": 212190,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.wsmodel",
+   "size": 1603,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.wsmodel",
+   "size": 1603,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/gladeguard_skp_leg_02.wsmodel",
+   "size": 1603,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/shorts_weighted4_alpha_on.xml.material",
+   "size": 2581,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/shorts_weighted4_alpha_on.xml.material",
+   "size": 2581,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/shorts_weighted4_alpha_on.xml.material",
+   "size": 2581,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/tankini_thong_weighted4_alpha_on.xml.material",
+   "size": 2673,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/tankini_thong_weighted4_alpha_on.xml.material",
+   "size": 2673,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/tankini_thong_weighted4_alpha_on.xml.material",
+   "size": 2673,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted2_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted2_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted2_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_02_2_weighted4_alpha_on.xml.material",
+   "size": 2616,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_02_2_weighted4_alpha_on.xml.material",
+   "size": 2616,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_02_2_weighted4_alpha_on.xml.material",
+   "size": 2616,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_03_weighted4_alpha_on.xml.material",
+   "size": 2703,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_03_weighted4_alpha_on.xml.material",
+   "size": 2703,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_03_weighted4_alpha_on.xml.material",
+   "size": 2703,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2600,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2600,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2600,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_glade_guard_legs_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/wef_eternal_guard_legs_01.rigid_model_v2",
+   "size": 208102,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/wef_eternal_guard_legs_01.rigid_model_v2",
+   "size": 208102,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/wef_eternal_guard_legs_01.rigid_model_v2",
+   "size": 208102,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/elf_hair_3_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla2.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla2.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla2.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla3.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla3.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_d_0_sla3.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_mat_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_mat_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_body_mat_0.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_d_sla3.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_mat.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_mat.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/guard_head_mat.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_n.dds",
+   "size": 699216,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_n.dds",
+   "size": 699216,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hair_n.dds",
+   "size": 699216,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_d.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_mat.dds",
+   "size": 174940,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_matdxt3.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_matdxt3.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_matdxt3.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_n.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_n.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/hairb_n.dds",
+   "size": 349712,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/milla_head_normal_wh3.dds",
+   "size": 11184976,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/milla_head_normal_wh3.dds",
+   "size": 11184976,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/milla_head_normal_wh3.dds",
+   "size": 11184976,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/savannah_body_wh3_norm.dds",
+   "size": 16777392,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/savannah_body_wh3_norm.dds",
+   "size": 16777392,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/savannah_body_wh3_norm.dds",
+   "size": 16777392,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mask.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mask.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mask.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/short_norg.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_material_map.dds",
+   "size": 174924,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_material_map.dds",
+   "size": 174924,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_material_map.dds",
+   "size": 174924,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.rigid_model_v2",
+   "size": 905758,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.rigid_model_v2",
+   "size": 905758,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.rigid_model_v2",
+   "size": 905758,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.wsmodel",
+   "size": 2350,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.wsmodel",
+   "size": 2350,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard32a.wsmodel",
+   "size": 2350,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.rigid_model_v2",
+   "size": 906764,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.rigid_model_v2",
+   "size": 906764,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.rigid_model_v2",
+   "size": 906764,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.wsmodel",
+   "size": 2338,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.wsmodel",
+   "size": 2338,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2.wsmodel",
+   "size": 2338,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.rigid_model_v2",
+   "size": 932912,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.rigid_model_v2",
+   "size": 932912,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.rigid_model_v2",
+   "size": 932912,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.wsmodel",
+   "size": 2357,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.wsmodel",
+   "size": 2357,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_2fix.wsmodel",
+   "size": 2357,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.rigid_model_v2",
+   "size": 817724,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.rigid_model_v2",
+   "size": 817724,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.rigid_model_v2",
+   "size": 817724,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.wsmodel",
+   "size": 1606,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.wsmodel",
+   "size": 1606,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3.wsmodel",
+   "size": 1606,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.rigid_model_v2",
+   "size": 985518,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.rigid_model_v2",
+   "size": 985518,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.rigid_model_v2",
+   "size": 985518,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.wsmodel",
+   "size": 2367,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.wsmodel",
+   "size": 2367,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/eternalguard_body_3capef.wsmodel",
+   "size": 2367,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.rigid_model_v2",
+   "size": 882096,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.rigid_model_v2",
+   "size": 882096,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.rigid_model_v2",
+   "size": 882096,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.wsmodel",
+   "size": 1593,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.wsmodel",
+   "size": 1593,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard01_skp_torso.wsmodel",
+   "size": 1593,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.rigid_model_v2",
+   "size": 964990,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.rigid_model_v2",
+   "size": 964990,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.rigid_model_v2",
+   "size": 964990,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.wsmodel",
+   "size": 2266,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.wsmodel",
+   "size": 2266,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/gladeguard_skp_torso_02.wsmodel",
+   "size": 2266,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic3_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic3_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic3_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_3_weighted4_alpha_on.xml.material",
+   "size": 2548,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_3_weighted4_alpha_on.xml.material",
+   "size": 2548,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_3_weighted4_alpha_on.xml.material",
+   "size": 2548,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/elfthic_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/nipring_weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/nipring_weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/nipring_weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01.003_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01.003_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01.003_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted4_alpha_on.xml.material",
+   "size": 2637,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted4_alpha_on.xml.material",
+   "size": 2637,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted4_alpha_on.xml.material",
+   "size": 2637,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2641,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2641,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2641,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_glade_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_glade_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_glade_guard_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/wef_eternal_guard_torso_01.rigid_model_v2",
+   "size": 210988,
+   "pack": "WE_eternalguardfem1-4/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/wef_eternal_guard_torso_01.rigid_model_v2",
+   "size": 210988,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/wef_eternal_guard_torso_01.rigid_model_v2",
+   "size": 210988,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/elfhead2_weighted4_alpha_on.xml.material",
+   "size": 2542,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/elfhead2_weighted4_alpha_on.xml.material",
+   "size": 2542,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/elfrangerhead_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_01_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_01_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_02_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_03.001_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_03.001_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_03_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/materials/wef_waywatchers_head_03_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_1.rigid_model_v2",
+   "size": 1090848,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_1.rigid_model_v2",
+   "size": 1090848,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_1.wsmodel",
+   "size": 2308,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_1.wsmodel",
+   "size": 2308,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_2.rigid_model_v2",
+   "size": 665170,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_2.wsmodel",
+   "size": 1584,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3.rigid_model_v2",
+   "size": 1321316,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3.rigid_model_v2",
+   "size": 1321316,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3a.rigid_model_v2",
+   "size": 906962,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3a.rigid_model_v2",
+   "size": 906962,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3a.wsmodel",
+   "size": 2301,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/waywatcherhead_skp_3a.wsmodel",
+   "size": 2301,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/wef_waywatchers_head_03.rigid_model_v2",
+   "size": 254238,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_waywatchers/head/wef_waywatchers_head_03.rigid_model_v2",
+   "size": 254238,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/elfhead4_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/elfhead4_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/elfthicc2_weighted4_alpha_on.xml.material",
+   "size": 2544,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/elfthicc2_weighted4_alpha_on.xml.material",
+   "size": 2544,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/ellahair_elf_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/ellahair_elf_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/tankini_thong_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/tankini_thong_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2678,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2678,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_head_01_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_head_01_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_torso_02_weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/materials/wef_wildriders_torso_02_weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_body_d_green.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_body_d_green.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_head_d1wildrider.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_head_d1wildrider.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_head_d_green2light2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/guard_head_d_green2light2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/melis_body_diffuse_gladerider.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/melis_body_diffuse_gladerider.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_mat.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_matfix.dds",
+   "size": 699192,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_matfix.dds",
+   "size": 699192,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_n.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/tex/riderella-hair_n.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_head_01.rigid_model_v2",
+   "size": 318312,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_head_01.rigid_model_v2",
+   "size": 318312,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_legs_01.rigid_model_v2",
+   "size": 179614,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_legs_01.rigid_model_v2",
+   "size": 179614,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_torso_02.rigid_model_v2",
+   "size": 341100,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wef_wildriders_torso_02.rigid_model_v2",
+   "size": 341100,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_1.rigid_model_v2",
+   "size": 1152604,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_1.rigid_model_v2",
+   "size": 1152604,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_1.wsmodel",
+   "size": 2213,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_1.wsmodel",
+   "size": 2213,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_2.rigid_model_v2",
+   "size": 7189822,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_2.rigid_model_v2",
+   "size": 7189822,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_2.wsmodel",
+   "size": 2173,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_headskp_2.wsmodel",
+   "size": 2173,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_1.rigid_model_v2",
+   "size": 235632,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_1.rigid_model_v2",
+   "size": 235632,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_1.wsmodel",
+   "size": 1524,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_1.wsmodel",
+   "size": 1524,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_2.rigid_model_v2",
+   "size": 320860,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_2.rigid_model_v2",
+   "size": 320860,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_2.wsmodel",
+   "size": 1488,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_legskp_2.wsmodel",
+   "size": 1488,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_1.rigid_model_v2",
+   "size": 839686,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_1.rigid_model_v2",
+   "size": 839686,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_1.wsmodel",
+   "size": 1514,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_1.wsmodel",
+   "size": 1514,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_2.rigid_model_v2",
+   "size": 894690,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_2.rigid_model_v2",
+   "size": 894690,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_2.wsmodel",
+   "size": 1514,
+   "pack": "WE_eternalguardfem1-5/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildriders/wildrider_torsoskp_2.wsmodel",
+   "size": 1514,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/elfhead_weighted4_alpha_on.xml.material",
+   "size": 2536,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_02_weighted4_alpha_on.xml.material",
+   "size": 2728,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/wef_wildwood_head_01_skp.rigid_model_v2",
+   "size": 500834,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/wef_wildwood_head_01_skp.wsmodel",
+   "size": 1629,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/wef_wildwood_head_02_skp.rigid_model_v2",
+   "size": 839238,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/wef_wildwood_head_02_skp.wsmodel",
+   "size": 1629,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/wef_wildwood_rangers_head_01.rigid_model_v2",
+   "size": 199624,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/materials/leggings_weighted4_alpha_on.xml.material",
+   "size": 2611,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/materials/sexy_bikini_bottom4_weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/materials/wef_wildwood_rangers_legs_02_weighted4_alpha_on.xml.material",
+   "size": 2728,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/wef_wildwood_leg_01_skp.rigid_model_v2",
+   "size": 330534,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/wef_wildwood_leg_01_skp.wsmodel",
+   "size": 1632,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/wef_wildwood_leg_02_skp.rigid_model_v2",
+   "size": 729764,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/wef_wildwood_leg_02_skp.wsmodel",
+   "size": 1676,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/wef_wildwood_rangers_legs_01.rigid_model_v2",
+   "size": 293866,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/bikini4_bottom_n_org.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/hysportyoutfits_leggings_m_.png",
+   "size": 472640,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/hysportyoutfits_leggings_wh3_n.dds",
+   "size": 5592560,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/iman_head_d2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/iman_head_m2.dds",
+   "size": 5592572,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_d.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_d_sca.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_m.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_m_sca.dds",
+   "size": 8388780,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_n_org.dds",
+   "size": 16777392,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanbody_n_sca_org.dds",
+   "size": 16777392,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/imanhead_n_org.dds",
+   "size": 11184976,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/leggings_m_.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/leggings_msk.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/leggings_wh3_n.dds",
+   "size": 1398256,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/pure_cotton_d.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/tex/pure_cotton_m.dds",
+   "size": 699212,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/elfrangerbody1_weighted4_alpha_on.xml.material",
+   "size": 2539,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/sexy_bikini_top4_weighted4_alpha_on.xml.material",
+   "size": 2626,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/wef_wildwood_rangers_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2639,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_rangers_cape_01.rigid_model_v2",
+   "size": 98208,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_01_skp.rigid_model_v2",
+   "size": 764676,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_01_skp.wsmodel",
+   "size": 1671,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_02_skp.rigid_model_v2",
+   "size": 982576,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_02_skp.wsmodel",
+   "size": 2387,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_03_skp.rigid_model_v2",
+   "size": 731138,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/wef_wildwood_torso_03_skp.wsmodel",
+   "size": 1619,
+   "pack": "WE_eternalguardfem1-6/WE_eternalguardfem.pack"
+  }
+ ]
+}

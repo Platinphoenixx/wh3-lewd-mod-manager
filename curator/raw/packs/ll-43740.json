@@ -1,0 +1,34 @@
+{
+ "mod": "ll-43740",
+ "packs": [
+  "!@Alarielle_Temptations_Bloom_Assets_V1.3.2(RU_0.1).pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!@Alarielle_Temptations_Bloom_Assets_V1.3.2(RU_0.1).pack": {
+   "files": 1,
+   "dependencies": []
+  }
+ },
+ "fileCount": 1,
+ "byTopFolder": {
+  "text": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/unit_description_historical_texts__.loc",
+   "size": 1714,
+   "pack": "!@Alarielle_Temptations_Bloom_Assets_V1.3.2(RU_0.1).pack"
+  }
+ ]
+}

@@ -1,0 +1,3485 @@
+{
+ "mod": "ll-32476",
+ "packs": [
+  "Lin_Corrupted_Fay.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Lin_Corrupted_Fay.pack": {
+   "files": 527,
+   "dependencies": []
+  }
+ },
+ "fileCount": 527,
+ "byTopFolder": {
+  "variantmeshes": 395,
+  "ui": 87,
+  "db": 39,
+  "text": 4,
+  "script": 2
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "armory_item_set_items_tables",
+  "armory_item_sets_tables",
+  "armory_item_slot_blacklists_tables",
+  "armory_item_to_category_sets_tables",
+  "armory_item_ui_infos_tables",
+  "armory_item_variant_ui_infos_tables",
+  "armory_item_variants_tables",
+  "armory_items_tables",
+  "armory_items_to_effects_tables",
+  "battle_skeleton_parts_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_trait_levels_tables",
+  "character_traits_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effects_tables",
+  "special_ability_phase_attribute_effects_tables",
+  "special_ability_phase_stat_effects_tables",
+  "special_ability_phases_tables",
+  "special_ability_to_recharge_contexts_tables",
+  "special_ability_to_special_ability_phase_junctions_tables",
+  "trait_info_tables",
+  "trait_level_effects_tables",
+  "unit_abilities_tables",
+  "unit_special_abilities_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 346,
+  "inMod": 335,
+  "inBaseGame": 9,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/tooth_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/eye_nor.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "corrupted_fay_null",
+   "humanoid01b"
+  ],
+  "armory_item_set_items_tables": [
+   "corrupted_fay_head_0_0",
+   "corrupted_fay_0",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_1",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "corrupted_fay_weapon_1_1",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_2",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_3",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_4",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_5",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_6",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_7",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_8",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0",
+   "corrupted_fay_9"
+  ],
+  "armory_item_sets_tables": [
+   "corrupted_fay_0",
+   "corrupted_fay_1",
+   "corrupted_fay_2",
+   "corrupted_fay_3",
+   "corrupted_fay_4",
+   "corrupted_fay_5",
+   "corrupted_fay_6",
+   "corrupted_fay_7",
+   "corrupted_fay_8",
+   "corrupted_fay_9"
+  ],
+  "armory_item_slot_blacklists_tables": [],
+  "armory_item_to_category_sets_tables": [
+   "corrupted_fay_head_0_0",
+   "generic",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "weapon_2_handed",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "weapon_1_handed",
+   "corrupted_fay_weapon_1_1",
+   "weapon_shield",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "slaanesh",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "armory_item_ui_infos_tables": [
+   "corrupted_fay_head_0_0",
+   "generic",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "corrupted_fay_weapon_1_1",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "slaanesh",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "armory_item_variant_ui_infos_tables": [
+   "corrupted_fay_head_0_0",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "corrupted_fay_weapon_1_1",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "armory_item_variants_tables": [
+   "corrupted_fay_head_0_0",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "hu1b_bretonnian_fay_enchantress",
+   "cam_hu1b_elf_spellsinger",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "hu1b_elf_sword_and_bow",
+   "cam_hu1b_elf_sword_and_bow",
+   "corrupted_fay_weapon_1_1",
+   "hu1b_elf_sword_and_shield",
+   "cam_lord_hu1b_elf_sword_and_shield",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "hu1b_elf_2handed_spear",
+   "cam_lord_hu1b_cst_aranessa_halberd",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "armory_items_tables": [
+   "corrupted_fay_head_0_0",
+   "head",
+   "corrupted_fay_torso_0_0",
+   "torso",
+   "corrupted_fay_left_arm_0_0",
+   "left_arm",
+   "corrupted_fay_right_arm_0_0",
+   "right_arm",
+   "corrupted_fay_legs_0_0",
+   "legs",
+   "corrupted_fay_wings_0_0",
+   "wings",
+   "corrupted_fay_tail_0_0",
+   "tail",
+   "corrupted_fay_weapon_0_0",
+   "weapon_1",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "weapon_2",
+   "corrupted_fay_weapon_1_1",
+   "shield",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "armory_items_to_effects_tables": [
+   "corrupted_fay_head_0_0",
+   "wh_main_effect_character_stat_leadership",
+   "character_to_character_own",
+   "corrupted_fay_torso_0_0",
+   "wh_main_effect_character_stat_armour",
+   "corrupted_fay_left_arm_0_0",
+   "wh_main_effect_character_stat_melee_attack",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "wh_main_effect_character_stat_speed",
+   "corrupted_fay_torso_1_0",
+   "wh3_main_effect_character_stat_unit_mass_percentage_mod",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "wh3_main_effect_attribute_enable_devestating_flanker",
+   "corrupted_fay_weapon_1_0",
+   "wh2_main_effect_character_stat_weapon_strength_base",
+   "wh_main_effect_character_stat_ap_damage",
+   "wh_main_effect_character_stat_bonus_vs_infantry",
+   "wh2_dlc10_effect_character_stat_enable_sundering_attacks",
+   "corrupted_fay_weapon_1_1",
+   "wh_main_effect_character_stat_missile_block",
+   "wh_main_effect_character_stat_missile_resistance",
+   "lin_effect_corrupted_fay_reflection",
+   "corrupted_fay_head_2_0",
+   "wh3_main_effect_force_all_campaign_movement_range_post_battle_win",
+   "corrupted_fay_torso_2_0",
+   "wh_main_effect_character_stat_melee_defence",
+   "corrupted_fay_legs_2_0",
+   "wh_main_effect_attribute_enable_vanguard_deployment",
+   "corrupted_fay_weapon_2_0",
+   "wh_main_effect_character_stat_bonus_vs_large",
+   "wh3_dlc24_effect_ability_enable_colossal_strike",
+   "corrupted_fay_weapon_2_1",
+   "wh_main_effect_ability_enable_deadly_onslaught",
+   "corrupted_fay_weapon_2_2",
+   "lin_effect_corrupted_fay_defense",
+   "corrupted_fay_head_3_0",
+   "wh_main_effect_agent_field_line_of_sight_mod",
+   "wh_main_effect_character_stat_leadership_aura_size",
+   "corrupted_fay_torso_3_0",
+   "wh_main_effect_character_stat_physical_resistance",
+   "corrupted_fay_left_arm_3_0",
+   "wh_main_effect_character_stat_weapon_splash_power_mult",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "wh_main_effect_agent_movement_range_mod",
+   "wh_main_effect_force_army_campaign_ambush_defence_success_chance",
+   "character_to_force_own_unseen",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "wh_main_effect_ability_enable_foe-seeker",
+   "corrupted_fay_head_6_0",
+   "wh_main_effect_ability_enable_the_ladys_champion",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "wh_main_effect_ability_enable_hold_the_line",
+   "corrupted_fay_head_7_0",
+   "wh3_dlc20_effect_daemonic_slaanesh",
+   "wh2_dlc17_effect_force_army_battle_enemy_unit_melee_defence",
+   "region_to_force_enemy_unseen",
+   "corrupted_fay_torso_7_0",
+   "wh3_dlc20_effect_ability_enable_soul_feeder",
+   "corrupted_fay_left_arm_7_0",
+   "wh3_main_effect_ability_enable_allure_of_slaanesh",
+   "corrupted_fay_right_arm_7_0",
+   "wh3_main_effect_ability_enable_glamour_of_slaanesh",
+   "corrupted_fay_legs_7_0",
+   "wh3_main_effect_ability_enable_sinful_footing",
+   "corrupted_fay_wings_7_0",
+   "wh_main_effect_attribute_enable_strider",
+   "wh3_dlc20_effect_ability_enable_bound_slicing_shards",
+   "corrupted_fay_weapon_7_0",
+   "wh3_main_effect_character_stat_enable_soporific_musk",
+   "wh3_main_effect_ability_enable_harvester_of_souls",
+   "corrupted_fay_head_8_0",
+   "wh2_dlc17_effect_force_army_battle_enemy_unit_melee_attack",
+   "corrupted_fay_torso_8_0",
+   "wh3_main_effect_ability_enable_soporific_musk",
+   "corrupted_fay_wings_8_0",
+   "wh3_main_effect_ability_enable_bound_lash_of_despair",
+   "corrupted_fay_weapon_8_0",
+   "wh2_main_effect_character_stat_enable_discourage_attacks",
+   "wh_dlc08_effect_ability_enable_frenzy",
+   "corrupted_fay_torso_9_0",
+   "wh_main_effect_character_stat_unit_health",
+   "lin_effect_corrupted_fay_tattoo"
+  ],
+  "battle_skeleton_parts_tables": [
+   "corrupted_fay_head_0_0",
+   "humanoid01b",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "corrupted_fay_weapon_1_1",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "corrupted_fay_null",
+   "wh_dlc07_brt_fay_enchantress"
+  ],
+  "campaign_character_arts_tables": [
+   "corrupted_fay_null",
+   "none",
+   "wh_main_campaign_brt_ship_heavy",
+   "cam_hu1b_elf_spellsinger",
+   "cam_heavy_ship_01"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "wh_dlc07_skill_brt_innate_fay_enchantress",
+   "lin_effect_mist_of_the_lady",
+   "character_to_character_own",
+   "lin_effect_favour_of_the_fay"
+  ],
+  "character_trait_levels_tables": [
+   "lin_trait_corrupted_fay_lame_1",
+   "lin_trait_corrupted_fay_lame",
+   "lin_trait_corrupted_fay_lame_2",
+   "lin_trait_corrupted_fay_lame_3",
+   "lin_trait_corrupted_fay_lame_4",
+   "lin_trait_corrupted_fay_lame_5",
+   "lin_trait_corrupted_fay_blind_1",
+   "lin_trait_corrupted_fay_blind",
+   "lin_trait_corrupted_fay_blind_2",
+   "lin_trait_corrupted_fay_blind_3",
+   "lin_trait_corrupted_fay_blind_4",
+   "lin_trait_corrupted_fay_blind_5",
+   "lin_trait_corrupted_fay_nude_1",
+   "lin_trait_corrupted_fay_nude",
+   "lin_trait_corrupted_fay_nude_2",
+   "lin_trait_corrupted_fay_nude_3",
+   "lin_trait_corrupted_fay_nude_4",
+   "lin_trait_corrupted_fay_nude_5"
+  ],
+  "character_traits_tables": [
+   "lin_trait_corrupted_fay_lame",
+   "slaanesh",
+   "lin_trait_corrupted_fay_blind",
+   "lin_trait_corrupted_fay_nude"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "lin_effect_mist_of_the_lady",
+   "enable",
+   "wh_dlc07_lord_passive_mist_of_the_lady",
+   "lin_effect_favour_of_the_fay",
+   "wh_dlc07_lord_abilities_favour_of_the_fay",
+   "lin_effect_corrupted_fay_defense",
+   "lin_ability_corrupted_fay_defense",
+   "lin_effect_corrupted_fay_reflection",
+   "lin_ability_corrupted_fay_reflection",
+   "lin_effect_corrupted_fay_tattoo",
+   "lin_ability_corrupted_fay_tattoo"
+  ],
+  "effects_tables": [
+   "lin_effect_mist_of_the_lady",
+   "battle",
+   "lin_effect_favour_of_the_fay",
+   "lin_effect_corrupted_fay_defense",
+   "magic_character.png",
+   "lin_effect_corrupted_fay_reflection",
+   "lin_effect_corrupted_fay_tattoo"
+  ],
+  "special_ability_phase_attribute_effects_tables": [
+   "charge_defense",
+   "lin_ability_corrupted_fay_defense",
+   "positive",
+   "lin_ability_corrupted_fay_reflection",
+   "charge_reflection",
+   "silenced",
+   "lin_ability_corrupted_fay_tattoo_2"
+  ],
+  "special_ability_phase_stat_effects_tables": [
+   "lin_ability_corrupted_fay_defense",
+   "stat_mass",
+   "mult",
+   "lin_ability_corrupted_fay_reflection",
+   "stat_damage_reflection",
+   "add",
+   "lin_ability_corrupted_fay_tattoo_1",
+   "stat_resistance_all",
+   "scalar_spell_mastery",
+   "lin_ability_corrupted_fay_tattoo_2"
+  ],
+  "special_ability_phases_tables": [
+   "positive",
+   "lin_ability_corrupted_fay_defense",
+   "lin_ability_corrupted_fay_reflection",
+   "lin_ability_corrupted_fay_tattoo_1",
+   "negative",
+   "lin_ability_corrupted_fay_tattoo_2"
+  ],
+  "special_ability_to_recharge_contexts_tables": [
+   "not_moving",
+   "lin_ability_corrupted_fay_tattoo"
+  ],
+  "special_ability_to_special_ability_phase_junctions_tables": [
+   "lin_ability_corrupted_fay_defense",
+   "lin_ability_corrupted_fay_reflection",
+   "lin_ability_corrupted_fay_tattoo_1",
+   "lin_ability_corrupted_fay_tattoo",
+   "lin_ability_corrupted_fay_tattoo_2"
+  ],
+  "trait_info_tables": [
+   "lin_trait_corrupted_fay_lame",
+   "lin_trait_corrupted_fay_blind",
+   "lin_trait_corrupted_fay_nude"
+  ],
+  "trait_level_effects_tables": [
+   "lin_trait_corrupted_fay_blind_1",
+   "wh3_main_effect_spell_targeting_range_all",
+   "character_to_character_own",
+   "wh_main_effect_agent_action_success_chance_enemy",
+   "lin_trait_corrupted_fay_blind_2",
+   "lin_trait_corrupted_fay_blind_3",
+   "lin_trait_corrupted_fay_blind_4",
+   "wh_main_effect_agent_field_line_of_sight_mod",
+   "lin_trait_corrupted_fay_blind_5",
+   "lin_trait_corrupted_fay_lame_1",
+   "wh2_dlc17_effect_force_campaign_stance_begin_fatigued_2_active",
+   "wh_main_effect_force_stat_vigour_loss_reduction",
+   "lin_trait_corrupted_fay_lame_2",
+   "wh_main_effect_force_campaign_stance_begin_fatigued_3_winded",
+   "lin_trait_corrupted_fay_lame_3",
+   "wh_main_effect_force_campaign_stance_begin_fatigued_4_tired",
+   "lin_trait_corrupted_fay_lame_4",
+   "wh_main_effect_character_stat_speed",
+   "lin_trait_corrupted_fay_lame_5",
+   "wh2_dlc10_effect_attribute_enable_perfect_vigour",
+   "lin_trait_corrupted_fay_nude_1",
+   "wh_main_effect_character_stat_leadership",
+   "wh_main_effect_character_stat_leadership_aura_size",
+   "lin_trait_corrupted_fay_nude_2",
+   "lin_trait_corrupted_fay_nude_3",
+   "lin_trait_corrupted_fay_nude_4",
+   "wh_main_effect_attribute_enable_immune_to_psychology",
+   "wh3_dlc20_effect_expendable_all_non_characters",
+   "character_to_force_own",
+   "lin_trait_corrupted_fay_nude_5",
+   "wh_main_effect_attribute_enable_unbreakable",
+   "character_to_force_own_factionwide"
+  ],
+  "unit_abilities_tables": [
+   "lin_ability_corrupted_fay_defense",
+   "wh_type_augment",
+   "wh_main_anc_group_common",
+   "passive",
+   "lin_ability_corrupted_fay_reflection",
+   "wh_main_anc_group_rare",
+   "lin_ability_corrupted_fay_tattoo",
+   "wh_main_anc_group_unique"
+  ],
+  "unit_special_abilities_tables": [
+   "lin_ability_corrupted_fay_defense",
+   "vo_battle_special_ability_generic_response",
+   "buff_self",
+   "lin_ability_corrupted_fay_reflection",
+   "lin_ability_corrupted_fay_tattoo"
+  ],
+  "variants_tables": [
+   "corrupted_fay_null",
+   "corrupted_fay_head_0_0",
+   "corrupted_fay_torso_0_0",
+   "corrupted_fay_left_arm_0_0",
+   "corrupted_fay_right_arm_0_0",
+   "corrupted_fay_legs_0_0",
+   "corrupted_fay_wings_0_0",
+   "corrupted_fay_tail_0_0",
+   "corrupted_fay_weapon_0_0",
+   "corrupted_fay_torso_1_0",
+   "corrupted_fay_left_arm_1_0",
+   "corrupted_fay_right_arm_1_0",
+   "corrupted_fay_legs_1_0",
+   "corrupted_fay_weapon_1_0",
+   "corrupted_fay_weapon_1_1",
+   "corrupted_fay_head_2_0",
+   "corrupted_fay_torso_2_0",
+   "corrupted_fay_legs_2_0",
+   "corrupted_fay_weapon_2_0",
+   "corrupted_fay_weapon_2_1",
+   "corrupted_fay_weapon_2_2",
+   "corrupted_fay_head_3_0",
+   "corrupted_fay_torso_3_0",
+   "corrupted_fay_left_arm_3_0",
+   "corrupted_fay_right_arm_3_0",
+   "corrupted_fay_legs_3_0",
+   "corrupted_fay_torso_4_0",
+   "corrupted_fay_torso_4_1",
+   "corrupted_fay_torso_4_2",
+   "corrupted_fay_torso_4_3",
+   "corrupted_fay_left_arm_4_0",
+   "corrupted_fay_right_arm_4_0",
+   "corrupted_fay_legs_4_0",
+   "corrupted_fay_legs_4_1",
+   "corrupted_fay_legs_4_2",
+   "corrupted_fay_head_5_0",
+   "corrupted_fay_torso_5_0",
+   "corrupted_fay_torso_5_1",
+   "corrupted_fay_legs_5_0",
+   "corrupted_fay_head_6_0",
+   "corrupted_fay_torso_6_0",
+   "corrupted_fay_torso_6_1",
+   "corrupted_fay_left_arm_6_0",
+   "corrupted_fay_right_arm_6_0",
+   "corrupted_fay_legs_6_0",
+   "corrupted_fay_head_7_0",
+   "corrupted_fay_torso_7_0",
+   "corrupted_fay_left_arm_7_0",
+   "corrupted_fay_right_arm_7_0",
+   "corrupted_fay_legs_7_0",
+   "corrupted_fay_wings_7_0",
+   "corrupted_fay_weapon_7_0",
+   "corrupted_fay_head_8_0",
+   "corrupted_fay_torso_8_0",
+   "corrupted_fay_wings_8_0",
+   "corrupted_fay_weapon_8_0",
+   "corrupted_fay_torso_9_0"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/corrupted_fay事务官制服",
+   "size": 188,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_set_items_tables/corrupted_fay变体装备关联装备组",
+   "size": 2467,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_sets_tables/corrupted_fay变体装备组总表",
+   "size": 253,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_slot_blacklists_tables/corrupted_fay变体装备冲突栏位",
+   "size": 83,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_to_category_sets_tables/corrupted_fay变体装备类型",
+   "size": 2389,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_ui_infos_tables/corrupted_fay变体装备ui类型",
+   "size": 2057,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_variant_ui_infos_tables/corrupted_fay变体装备ui总表",
+   "size": 1515,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_item_variants_tables/corrupted_fay变体装备关联模型、动作、ui",
+   "size": 5064,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_tables/corrupted_fay变体装备总表",
+   "size": 1951,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备0",
+   "size": 578,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备1",
+   "size": 1930,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备2",
+   "size": 2149,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备3",
+   "size": 1482,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备4",
+   "size": 2734,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备5",
+   "size": 1249,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备6",
+   "size": 2012,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备7",
+   "size": 2269,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备8",
+   "size": 1340,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/armory_items_to_effects_tables/corrupted_fay将战役效果赋予变体装备9",
+   "size": 273,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/battle_skeleton_parts_tables/corrupted_fay兵模关联骨骼",
+   "size": 2307,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/corrupted_fay战役角色添加美术",
+   "size": 165,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/corrupted_fay战役角色美术关联制服",
+   "size": 296,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/corrupted_fay将战役效果赋予技能",
+   "size": 308,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/corrupted_fay角色特性等级阶段",
+   "size": 1143,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/character_traits_tables/corrupted_fay角色特性总表",
+   "size": 257,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/corrupted_fay启用技能效果",
+   "size": 476,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/effects_tables/corrupted_fay效果总表",
+   "size": 447,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/special_ability_phase_attribute_effects_tables/corrupted_fay技能阶段与被动状态",
+   "size": 339,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/special_ability_phase_stat_effects_tables/corrupted_fay技能阶段与面板数据",
+   "size": 477,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/special_ability_phases_tables/corrupted_fay技能阶段总表",
+   "size": 560,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/special_ability_to_recharge_contexts_tables/corrupted_fay技能充能条件",
+   "size": 129,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/special_ability_to_special_ability_phase_junctions_tables/corrupted_fay技能与技能阶段",
+   "size": 405,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/trait_info_tables/corrupted_fay特性总表",
+   "size": 182,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/corrupted_fay将战役效果赋予特性_失明的双眼",
+   "size": 1190,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/corrupted_fay将战役效果赋予特性_疲惫的双腿",
+   "size": 1230,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/corrupted_fay将战役效果赋予特性_裸露的身体",
+   "size": 1204,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/corrupted_fay技能总表",
+   "size": 480,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/corrupted_fay配置技能详细数据",
+   "size": 753,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "db/variants_tables/corrupted_fay兵模文件",
+   "size": 4229,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "script/campaign/mod/corrupted_fay堕落训练_湖神仙女.lua",
+   "size": 3260,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "script/campaign/mod/corrupted_fay堕落训练_解锁.lua",
+   "size": 4082,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "text/corrupted_fay湖神仙女_变体装备.loc",
+   "size": 20086,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "text/corrupted_fay湖神仙女_效果说明.loc",
+   "size": 411,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "text/corrupted_fay湖神仙女_法术说明.loc",
+   "size": 1334,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "text/corrupted_fay湖神仙女_特性说明.loc",
+   "size": 7505,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_defense.png",
+   "size": 2641,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_erinyes.png",
+   "size": 3085,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_reflection.png",
+   "size": 3077,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_tattoo.png",
+   "size": 3255,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_valkyrie.png",
+   "size": 3367,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/lin_ability_corrupted_fay_victoria.png",
+   "size": 3570,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/character_details_panel_dae_gifts.twui.xml",
+   "size": 129226,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_0_0.png",
+   "size": 4144,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_2_0.png",
+   "size": 3603,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_3_0.png",
+   "size": 3184,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_5_0.png",
+   "size": 3137,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_6_0.png",
+   "size": 5103,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_7_0.png",
+   "size": 4330,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_head_8_0.png",
+   "size": 4964,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_0_0.png",
+   "size": 345,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_1_0.png",
+   "size": 2247,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_3_0.png",
+   "size": 1206,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_4_0.png",
+   "size": 1620,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_6_0.png",
+   "size": 1008,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_left_arm_7_0.png",
+   "size": 1769,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_0_0.png",
+   "size": 2519,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_1_0.png",
+   "size": 3676,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_2_0.png",
+   "size": 1932,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_3_0.png",
+   "size": 1847,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_4_0.png",
+   "size": 2104,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_4_1.png",
+   "size": 1673,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_4_2.png",
+   "size": 2818,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_5_0.png",
+   "size": 2104,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_6_0.png",
+   "size": 2710,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_legs_7_0.png",
+   "size": 2074,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_0_0.png",
+   "size": 365,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_1_0.png",
+   "size": 2127,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_3_0.png",
+   "size": 1284,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_4_0.png",
+   "size": 1610,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_6_0.png",
+   "size": 1004,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_right_arm_7_0.png",
+   "size": 1514,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_tail_0_0.png",
+   "size": 3296,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_0_0.png",
+   "size": 1761,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_1_0.png",
+   "size": 2312,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_2_0.png",
+   "size": 2600,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_3_0.png",
+   "size": 2656,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_4_0.png",
+   "size": 2264,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_4_1.png",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_4_2.png",
+   "size": 2555,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_4_3.png",
+   "size": 2040,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_5_0.png",
+   "size": 2647,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_5_1.png",
+   "size": 2449,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_6_0.png",
+   "size": 2630,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_6_1.png",
+   "size": 3111,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_7_0.png",
+   "size": 3219,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_8_0.png",
+   "size": 2330,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_torso_9_0.png",
+   "size": 3862,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_0_0.png",
+   "size": 3296,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_1_0.png",
+   "size": 2020,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_1_1.png",
+   "size": 3247,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_2_0.png",
+   "size": 2826,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_2_1.png",
+   "size": 1789,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_2_2.png",
+   "size": 2977,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_7_0.png",
+   "size": 3553,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_weapon_8_0.png",
+   "size": 1330,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_wings_0_0.png",
+   "size": 3296,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_wings_7_0.png",
+   "size": 2768,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/campaign ui/daemon_prince_gifts_icons/corrupted_fay_wings_8_0.png",
+   "size": 3478,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/brt_ch_fay_enchantress_0.png",
+   "size": 24004,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_0_0.png",
+   "size": 29863,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_2_0.png",
+   "size": 28182,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_3_0.png",
+   "size": 27110,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_5_0.png",
+   "size": 24502,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_6_0.png",
+   "size": 51168,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_7_0.png",
+   "size": 36127,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_head_8_0.png",
+   "size": 33507,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_wings_0_0.png",
+   "size": 2174,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_wings_7_0.png",
+   "size": 2174,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/dae_prince/corrupted_fay_wings_8_0.png",
+   "size": 2174,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_corrupted_fay.bin",
+   "size": 167,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_0_0.png",
+   "size": 15586,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_2_0.png",
+   "size": 15726,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_3_0.png",
+   "size": 14473,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_5_0.png",
+   "size": 13834,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_6_0.png",
+   "size": 17830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_7_0.png",
+   "size": 16870,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_head_8_0.png",
+   "size": 14940,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_wings_0_0.png",
+   "size": 1781,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_wings_7_0.png",
+   "size": 1781,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/portraits/units/dae_prince/corrupted_fay_wings_8_0.png",
+   "size": 1781,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/skins/default/2d_porthole_dae_prince_arms.png",
+   "size": 1955,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "ui/skins/default/2d_porthole_dae_prince_arms_mask1.png",
+   "size": 1955,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_0_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_1_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_3_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_4_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_6_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/left_arm_7_0.variantmeshdefinition",
+   "size": 177,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_0_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_1_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_3_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_4_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_6_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/arms/right_arm_7_0.variantmeshdefinition",
+   "size": 179,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_0_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_2_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_3_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_5_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_6_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_7_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/head/head_8_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_0_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_1_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_2_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_3_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_4_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_4_1.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_4_2.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_5_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_6_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/legs/legs_7_0.variantmeshdefinition",
+   "size": 169,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/tail/tail_0_0.variantmeshdefinition",
+   "size": 56,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_0_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_1_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_2_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_3_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_4_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_4_1.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_4_2.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_4_3.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_5_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_5_1.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_6_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_6_1.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_7_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_8_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/torso/torso_9_0.variantmeshdefinition",
+   "size": 301,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_0_0.variantmeshdefinition",
+   "size": 57,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_1_0.variantmeshdefinition",
+   "size": 311,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_1_1.variantmeshdefinition",
+   "size": 302,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_2_0.variantmeshdefinition",
+   "size": 302,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_2_1.variantmeshdefinition",
+   "size": 302,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_2_2.variantmeshdefinition",
+   "size": 302,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_7_0.variantmeshdefinition",
+   "size": 306,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/weapons/weapon_8_0.variantmeshdefinition",
+   "size": 304,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/wings/wings_0_0.variantmeshdefinition",
+   "size": 57,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/wings/wings_7_0.variantmeshdefinition",
+   "size": 171,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay/wings/wings_8_0.variantmeshdefinition",
+   "size": 171,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_fay_null.variantmeshdefinition",
+   "size": 501,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/head_0_0.rigid_model_v2",
+   "size": 4783532,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/head_0_0.wsmodel",
+   "size": 4864,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/left_arm_0_0.rigid_model_v2",
+   "size": 525900,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/left_arm_0_0.wsmodel",
+   "size": 1520,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/legs_0_0.rigid_model_v2",
+   "size": 1867420,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/legs_0_0.wsmodel",
+   "size": 1500,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/bracelet_weighted4_alpha_on.xml.material",
+   "size": 2421,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/circlet_weighted4_alpha_on.xml.material",
+   "size": 2426,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/dress_weighted4_alpha_on.xml.material",
+   "size": 2418,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2387,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2354,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/headwear_weighted4_alpha_on.xml.material",
+   "size": 2430,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/right_arm_0_0.rigid_model_v2",
+   "size": 540108,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/right_arm_0_0.wsmodel",
+   "size": 1521,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/torso_0_0.rigid_model_v2",
+   "size": 6087164,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_0/torso_0_0.wsmodel",
+   "size": 1505,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/left_arm_1_0.rigid_model_v2",
+   "size": 874164,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/left_arm_1_0.wsmodel",
+   "size": 2184,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/legs_1_0.rigid_model_v2",
+   "size": 1723228,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/legs_1_0.wsmodel",
+   "size": 1500,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/hand_weighted4_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/shield_rigid_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/thorn_weighted4_alpha_on.xml.material",
+   "size": 2463,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/upperarmor_weighted4_alpha_on.xml.material",
+   "size": 2471,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/upperchain_weighted4_alpha_on.xml.material",
+   "size": 2471,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/upperlock_weighted4_alpha_on.xml.material",
+   "size": 2467,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/upperthorn_weighted4_alpha_on.xml.material",
+   "size": 2471,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/materials/weapon_rigid_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/right_arm_1_0.rigid_model_v2",
+   "size": 892788,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/right_arm_1_0.wsmodel",
+   "size": 2185,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/chain_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/chain_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/chain_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/hand_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/hand_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/hand_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/heel_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/heel_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/heel_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/shield_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/shield_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/shield_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/thorn_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/thorn_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/thorn_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/upper_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/upper_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/upper_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/weapon_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/weapon_map.dds",
+   "size": 1048724,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/tex/weapon_nor.dds",
+   "size": 2097280,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/torso_1_0.rigid_model_v2",
+   "size": 2838596,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/torso_1_0.wsmodel",
+   "size": 3585,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/weapon_1_0.rigid_model_v2",
+   "size": 567948,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/weapon_1_0.wsmodel",
+   "size": 830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/weapon_1_1.rigid_model_v2",
+   "size": 752556,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_1/weapon_1_1.wsmodel",
+   "size": 830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/head_2_0.rigid_model_v2",
+   "size": 3573228,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/head_2_0.wsmodel",
+   "size": 4180,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/legs_2_0.rigid_model_v2",
+   "size": 1351484,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/legs_2_0.wsmodel",
+   "size": 1500,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2387,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2354,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/helmet_weighted4_alpha_on.xml.material",
+   "size": 2470,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/lower_weighted4_alpha_on.xml.material",
+   "size": 2466,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/shield_rigid_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/upper_weighted4_alpha_on.xml.material",
+   "size": 2466,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/weaponmax_rigid_alpha_on.xml.material",
+   "size": 2451,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/materials/weaponmin_rigid_alpha_on.xml.material",
+   "size": 2451,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/heel_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/heel_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/heel_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/helmet_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/helmet_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/helmet_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/lower_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/lower_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/lower_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/shield_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/shield_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/shield_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/upper_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/upper_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/upper_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmax_col.dds",
+   "size": 1048724,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmax_map.dds",
+   "size": 1048724,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmax_nor.dds",
+   "size": 2097280,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmin_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmin_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/tex/weaponmin_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/torso_2_0.rigid_model_v2",
+   "size": 5368732,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/torso_2_0.wsmodel",
+   "size": 2172,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_0.rigid_model_v2",
+   "size": 628444,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_0.wsmodel",
+   "size": 842,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_1.rigid_model_v2",
+   "size": 721964,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_1.wsmodel",
+   "size": 842,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_2.rigid_model_v2",
+   "size": 544172,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_2/weapon_2_2.wsmodel",
+   "size": 830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/head_3_0.rigid_model_v2",
+   "size": 4738060,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/head_3_0.wsmodel",
+   "size": 3504,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/left_arm_3_0.rigid_model_v2",
+   "size": 969356,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/left_arm_3_0.wsmodel",
+   "size": 848,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/legs_3_0.rigid_model_v2",
+   "size": 1951340,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/legs_3_0.wsmodel",
+   "size": 844,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/angeli_weighted4_alpha_on.xml.material",
+   "size": 2470,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2387,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2354,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/right_arm_3_0.rigid_model_v2",
+   "size": 968780,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/right_arm_3_0.wsmodel",
+   "size": 849,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/tex/angeli_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/tex/angeli_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/tex/angeli_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/torso_3_0.rigid_model_v2",
+   "size": 4760524,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_3/torso_3_0.wsmodel",
+   "size": 2181,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/left_arm_4_0.rigid_model_v2",
+   "size": 682532,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/left_arm_4_0.wsmodel",
+   "size": 844,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_0.rigid_model_v2",
+   "size": 714204,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_0.wsmodel",
+   "size": 1500,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_1.rigid_model_v2",
+   "size": 1576740,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_1.wsmodel",
+   "size": 836,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_2.rigid_model_v2",
+   "size": 1423308,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/legs_4_2.wsmodel",
+   "size": 1500,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/boot_weighted4_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/catsuit_weighted4_alpha_on.xml.material",
+   "size": 2495,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/collar_weighted4_alpha_on.xml.material",
+   "size": 2491,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/corset_weighted4_alpha_on.xml.material",
+   "size": 2491,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/cuff_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/glove_weighted4_alpha_on.xml.material",
+   "size": 2487,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/harness_weighted4_alpha_on.xml.material",
+   "size": 2495,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/neckstrap_weighted4_alpha_on.xml.material",
+   "size": 2503,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/materials/pony_weighted4_alpha_on.xml.material",
+   "size": 2474,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/right_arm_4_0.rigid_model_v2",
+   "size": 681348,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/right_arm_4_0.wsmodel",
+   "size": 845,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteboot_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteboot_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteboot_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecatsuit_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecatsuit_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecatsuit_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecollar_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecollar_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecollar_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecorset_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecorset_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ebonitecorset_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteglove_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteglove_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteglove_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteharness_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteharness_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteharness_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteheel_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteheel_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteheel_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteneckstrap_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteneckstrap_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/eboniteneckstrap_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ponyboot_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ponyboot_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/tex/ponyboot_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_0.rigid_model_v2",
+   "size": 656780,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_0.wsmodel",
+   "size": 849,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_1.rigid_model_v2",
+   "size": 3482796,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_1.wsmodel",
+   "size": 2197,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_2.rigid_model_v2",
+   "size": 1411548,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_2.wsmodel",
+   "size": 2193,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_3.rigid_model_v2",
+   "size": 2423596,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_4/torso_4_3.wsmodel",
+   "size": 2181,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/head_5_0.rigid_model_v2",
+   "size": 3105900,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/head_5_0.wsmodel",
+   "size": 4184,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/legs_5_0.rigid_model_v2",
+   "size": 766284,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/legs_5_0.wsmodel",
+   "size": 1512,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/catsuit_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2387,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2354,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/hairpin_weighted4_alpha_on.xml.material",
+   "size": 2320,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/heel_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotengucatsuit_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotengucatsuit_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotengucatsuit_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotenguheel_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotenguheel_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/tex/nyotenguheel_nor.dds",
+   "size": 262272,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/torso_5_0.rigid_model_v2",
+   "size": 1991196,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/torso_5_0.wsmodel",
+   "size": 1513,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/torso_5_1.rigid_model_v2",
+   "size": 1992892,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_5/torso_5_1.wsmodel",
+   "size": 1513,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/head_6_0.rigid_model_v2",
+   "size": 4924188,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/head_6_0.wsmodel",
+   "size": 4180,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/left_arm_6_0.rigid_model_v2",
+   "size": 607668,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/left_arm_6_0.wsmodel",
+   "size": 1504,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/legs_6_0.rigid_model_v2",
+   "size": 944988,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/legs_6_0.wsmodel",
+   "size": 836,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/armor_weighted4_alpha_on.xml.material",
+   "size": 2466,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/boot_weighted4_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2387,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2354,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/hand_weighted4_alpha_on.xml.material",
+   "size": 2462,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/helmet_weighted4_alpha_on.xml.material",
+   "size": 2470,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/right_arm_6_0.rigid_model_v2",
+   "size": 621876,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/right_arm_6_0.wsmodel",
+   "size": 1505,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/armor_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/armor_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/armor_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/boot_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/boot_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/boot_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/hand_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/hand_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/hand_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/helmet_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/helmet_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/tex/helmet_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/torso_6_0.rigid_model_v2",
+   "size": 2921948,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/torso_6_0.wsmodel",
+   "size": 1505,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/torso_6_1.rigid_model_v2",
+   "size": 5118956,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_6/torso_6_1.wsmodel",
+   "size": 1505,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/head_7_0.rigid_model_v2",
+   "size": 6089580,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/head_7_0.wsmodel",
+   "size": 4204,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/left_arm_7_0.rigid_model_v2",
+   "size": 329580,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/left_arm_7_0.wsmodel",
+   "size": 872,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/legs_7_0.rigid_model_v2",
+   "size": 824236,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/legs_7_0.wsmodel",
+   "size": 1532,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2410,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2435,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2411,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/succubusmain_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/succubussecond_weighted4_alpha_on.xml.material",
+   "size": 2502,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/materials/weapon_rigid_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/right_arm_7_0.rigid_model_v2",
+   "size": 294948,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/right_arm_7_0.wsmodel",
+   "size": 873,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubuseyes_col.dds",
+   "size": 5592580,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubushair_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubushair_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubushead_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubusmain_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubusmain_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubusmain_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubussecond_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubussecond_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/tex/succubussecond_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/torso_7_0.rigid_model_v2",
+   "size": 2063708,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/torso_7_0.wsmodel",
+   "size": 1533,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/weapon_7_0.rigid_model_v2",
+   "size": 558092,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/weapon_7_0.wsmodel",
+   "size": 830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/wings_7_0.rigid_model_v2",
+   "size": 644412,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_7/wings_7_0.wsmodel",
+   "size": 877,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/head_8_0.rigid_model_v2",
+   "size": 3844092,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/head_8_0.wsmodel",
+   "size": 4172,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/body_weighted4_alpha_on.xml.material",
+   "size": 2414,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/eyelash_weighted4_alpha_on.xml.material",
+   "size": 2360,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/eyes_weighted4_alpha_on.xml.material",
+   "size": 2410,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2435,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/head_weighted4_alpha_on.xml.material",
+   "size": 2411,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/horn_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/lower_weighted4_alpha_on.xml.material",
+   "size": 2490,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/tooth_weighted4_alpha_on.xml.material",
+   "size": 2415,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/upper_weighted4_alpha_on.xml.material",
+   "size": 2490,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/weapon_rigid_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/materials/wing_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuseyes_col.dds",
+   "size": 5592580,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubushair_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubushair_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubushead_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuslower2_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuslower_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuslower_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuslower_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubussword_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubussword_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubussword_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubusupper_col.dds",
+   "size": 4194452,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubusupper_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubusupper_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuswing_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuswing_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/tex/succubuswing_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/torso_8_0.rigid_model_v2",
+   "size": 2345292,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/torso_8_0.wsmodel",
+   "size": 2173,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/weapon_8_0.rigid_model_v2",
+   "size": 1498700,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/weapon_8_0.wsmodel",
+   "size": 830,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/wings_8_0.rigid_model_v2",
+   "size": 1205708,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_8/wings_8_0.wsmodel",
+   "size": 837,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_9/materials/body_weighted4_alpha_on.xml.material",
+   "size": 4619,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_9/tex/body_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_9/tex/body_mask.dds",
+   "size": 16777344,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_9/torso_9_0.rigid_model_v2",
+   "size": 1640076,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/corrupted_fay_9/torso_9_0.wsmodel",
+   "size": 837,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/body_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/body_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/body_nor.dds",
+   "size": 16777344,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/circlet_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/circlet_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/circlet_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/dress_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/dress_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/dress_nor.dds",
+   "size": 16777344,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/ebonite_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/eyelash_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/eyes_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/eyes_nor.dds",
+   "size": 1048704,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/hair_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/head_col.dds",
+   "size": 8388756,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/head_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/head_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/headwear_col.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/headwear_map.dds",
+   "size": 524436,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/headwear_nor.dds",
+   "size": 1048724,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/heel_col.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/heel_map.dds",
+   "size": 2097300,
+   "pack": "Lin_Corrupted_Fay.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/corrupted_fay/tex/heel_nor.dds",
+   "size": 4194432,
+   "pack": "Lin_Corrupted_Fay.pack"
+  }
+ ]
+}

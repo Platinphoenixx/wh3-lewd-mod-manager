@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T12:32:07+00:00",
+  "generatedAt": "2026-11-01T13:59:55+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -45,7 +45,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Beastmen_all_in_one_cn0402.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -86,7 +91,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not stated on the page or in the Discord post; no load order.",
+          "No load order.",
           "Lynn's Edit (ll-26347) is not named. Sewerat's add-on (ll-27439) and the Corrupted Heroes submod have separate Chinese translations."
         ]
       },
@@ -1025,7 +1030,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Corrupton_Submods_Kr_1.1.4.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -1104,8 +1114,7 @@
         "confidence": "medium",
         "openQuestions": [
           "'Base translation' presumably refers to another Korean translation; target not named.",
-          "Mapping of 'Endo's goblin hordes' to LL 46561 or 28614 unclear (both in the index).",
-          "Pack names not given."
+          "Mapping of 'Endo's goblin hordes' to LL 46561 or 28614 unclear (both in the index)."
         ]
       },
       "images": [
@@ -3860,7 +3869,12 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "(X)_BattleAngel.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "status": "stable",
       "installNotes": [
@@ -3868,13 +3882,17 @@
         "The Steam original mod ('一个申朱技能，晓模型的英雄.pack', 3574561438) is a different product; the page does not say whether both may be active together."
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Relationship to the Steam original 3574561438 (spin-off/rip): usable together or incompatible - not stated.",
-          "Pack file name and campaigns not given; the page's Steam ID points only to the original, hence not entered as sources.steam."
+          "Campaigns not given.",
+          "Whether the 51 references to the Sexy Cathay Heroes collection matter in game is unverified; the page calls the mod stand-alone."
         ]
       },
+      "knownIssues": [
+        "The pack refers to 51 model and texture files that are neither in it nor in the base game; all of them are in (X)_Cathay_ALL_XXX.pack from the same author's Sexy Cathay Heroes collection (ll-49648). Without it, parts of the model may show missing textures (not checked in game)."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2026_10/dwdqw.jpg.973ee2ccef7517df1a49e97cca43c326.jpg",
@@ -3986,8 +4004,8 @@
           "source": "steam"
         }
       ],
-      "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. The LoversLab entry “Naughty Neferata! 16 Model variants” requires it.",
-      "recommendedFor": "Anyone playing Neferata with Naughty Neferata (required there) or generally wanting a more refined Neferata."
+      "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. Its models are also part of the LoversLab variant pack “Naughty Neferata! 16 Model variants”, which does not need it installed.",
+      "recommendedFor": "Anyone wanting a more refined Neferata without the LoversLab variant pack."
     },
     {
       "id": "steam-3617312541",
@@ -4245,7 +4263,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!candles_beastmen_events_ancillaries.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -4271,8 +4294,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Which Community Beastmen variant (24466 v0.11, 36361, 26347 Lynn's Edit, 46165) is required today; the page only links 24466.",
-          "No pack names given."
+          "Which Community Beastmen variant (24466 v0.11, 36361, 26347 Lynn's Edit, 46165) is required today; the page only links 24466."
         ]
       },
       "images": [
@@ -4637,7 +4659,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!(X)_Cathay_Skin.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -4675,7 +4702,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack names in the main archive are not given",
           "Steam 2866534785 is the recommended 4K Unit Cards mod, not this mod",
           "Relationship to ll-26591 (Slaanesh Corrupted Cathay Roster, HuaJS258) and ll-49648 (Dwjliel Cathay Heroes) not specified"
         ]
@@ -5025,7 +5051,12 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!community_beastmen.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -7390,7 +7421,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1160219805_!SonsofUrsun.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "supersedes",
@@ -7409,8 +7445,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "The LL page names no link; the Steam mod is the only 'Sons of Ursun' found (Kislev reskin, created four weeks before this upload). This 2023 edit is based on an older state of it",
-          "Pack name not given (single file, presumably one .pack)"
+          "The LL page names no link; the Steam mod is the only 'Sons of Ursun' found (Kislev reskin, created four weeks before this upload). This 2023 edit is based on an older state of it"
         ]
       },
       "images": [
@@ -7472,7 +7507,12 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "(X)_ElspethXXX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -7675,7 +7715,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Eltharion_corruption.pack",
+          "from": "download"
+        }
+      ],
       "playAs": [
         {
           "character": "Eltharion",
@@ -7703,7 +7748,6 @@
         "confidence": "medium",
         "openQuestions": [
           "The page does not say which Steam/LL item provides the pack !!li_progression_framework.pack (probably Lazy's framework).",
-          "Own pack name not given.",
           "Campaigns (IE/IEE/RoC) not stated."
         ]
       },
@@ -8318,7 +8362,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "ensignLoiSFO.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -8484,7 +8533,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sigvald_female.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "knownIssues": [
         "Voice change does not work."
@@ -8495,9 +8549,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "high",
-        "openQuestions": [
-          "Pack name not given."
-        ]
+        "openQuestions": []
       },
       "images": [
         {
@@ -8572,7 +8624,23 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@female_unit_cards.pack",
+          "from": "download",
+          "note": "In @female_unit_cards_1_5"
+        },
+        {
+          "file": "@female_unit_cards_nsfw.pack",
+          "from": "download",
+          "note": "In @female_unit_cards_nsfw_1_5"
+        },
+        {
+          "file": "@female_unit_cards_nsfw_slaanesh.pack",
+          "from": "download",
+          "note": "In @female_unit_cards_nsfw_slaanesh"
+        }
+      ],
       "relations": [],
       "loadOrder": {
         "note": "If the NSFW cards are used together with the SFW cards, set the NSFW mod at a higher load priority (further up) than the SFW pack."
@@ -8587,9 +8655,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
-        "openQuestions": [
-          "Pack file names (SFW/NSFW/Slaanesh-only) not given on the page."
-        ]
+        "openQuestions": []
       },
       "images": [
         {
@@ -8742,7 +8808,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "teclis_femboy.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -8763,8 +8834,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Which Community Beastmen version is meant (24466, 36361, 26347, 46165).",
-          "Pack name not given."
+          "Which Community Beastmen version is meant (24466, 36361, 26347, 46165)."
         ]
       },
       "images": [
@@ -8921,7 +8991,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Corrupted_Woodelves_UP.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "supersedes",
@@ -8942,9 +9017,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
-        "openQuestions": [
-          "Pack names not given."
-        ]
+        "openQuestions": []
       },
       "images": [
         {
@@ -9032,7 +9105,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "valkia_futa_reskin.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "status": "stable",
       "curation": {
@@ -9084,7 +9162,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "FutaWitchElvesComplete.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "playAs": [
         {
@@ -9101,7 +9184,6 @@
         "confidence": "medium",
         "openQuestions": [
           "'Recommended Mod to go with this one' is empty on the page",
-          "Pack name not given (single file, presumably one .pack)",
           "Includes Community Beastmen assets; whether Community Beastmen must also be active is not stated",
           "Campaigns (IE/IEE/RoC) not stated"
         ]
@@ -9408,7 +9490,23 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!!!!(X)_Hero_Swap_Harem_cn.pack",
+          "from": "download",
+          "note": "In (X)_Hero_Swap_Harem_cn"
+        },
+        {
+          "file": "(X)_Hero_Swap_Harem.pack",
+          "from": "download",
+          "note": "In (X)_Hero_Swap_Harem"
+        },
+        {
+          "file": "(x)Hero!Swap_HaremXtra.pack",
+          "from": "download",
+          "note": "In (X)_Hero!Swap_HaremXtra"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -9575,7 +9673,12 @@
           "singleFile": "zip"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!AHigh elves _WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "tier": "submod",
       "knownIssues": [
@@ -9589,7 +9692,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given.",
           "The author's individual mods are not named."
         ]
       },
@@ -9869,7 +9971,23 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "WH3_KarlaBsuit.pack",
+          "from": "download",
+          "note": "In WH3_KarlaBsuit_"
+        },
+        {
+          "file": "WH3_KarlaBsuitFullPlate.pack",
+          "from": "download",
+          "note": "In WH3_KarlaBsuitFullPlate"
+        },
+        {
+          "file": "WH3_Karla_textandvoiceFinal.pack",
+          "from": "download",
+          "note": "In WH3_Karla_textandvoiceFinal"
+        }
+      ],
       "relations": [],
       "tier": "reskin",
       "installNotes": [
@@ -9879,7 +9997,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "File name of the main variant (bunny suit) not given; pack names unknown.",
+          "File name of the main variant (bunny suit) not given",
           "The page does not say whether it works with Variant Selector."
         ]
       },
@@ -10080,7 +10198,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "khalida_corruption.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -10138,7 +10261,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given",
           "Faction details (Azazel, N'Kari etc.) are only given as 'supported'; exact faction names/campaigns (IE/IEE/RoC) missing",
           "Khalida is also listed as a supported lord in ll-36630; no interaction described"
         ]
@@ -10339,7 +10461,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!!!!li_katarin_russian.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -10376,7 +10503,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "high",
         "openQuestions": [
-          "Pack file name not given; translation version 0.4.1 vs. current version of ll-23966 (1.0.0)."
+          "Translation version 0.4.1 vs. current version of ll-23966 (1.0.0)."
         ]
       },
       "images": [
@@ -10645,7 +10772,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!!!!li_miaoying_russian.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -10681,9 +10813,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "high",
-        "openQuestions": [
-          "Pack name not given."
-        ]
+        "openQuestions": []
       },
       "images": [
         {
@@ -11539,7 +11669,12 @@
           "https://lewdhammer.miraheze.org/wiki/Lewdhammer_Wiki"
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!!!li_morathi_russian.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -11944,30 +12079,27 @@
           }
         ]
       },
-      "packs": [],
-      "relations": [
+      "packs": [
         {
-          "kind": "requires",
-          "target": {
-            "external": "ext-mixu-unlocker"
-          },
-          "note": "Page: 'Probably requires Mixu's unlocker'",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/25677-lewd-landmarks/"
-          }
+          "file": "lewdlandmarks.pack",
+          "from": "download"
         }
       ],
+      "relations": [],
       "status": "wip",
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
         "openQuestions": [
-          "Mixu's Unlocker only named as 'probably'; on the Discord, Mixu is only linked to other landmark mods (Unique Landmarks, Corrupted Landmarks), not to this one.",
-          "No pack names.",
-          "A user removed 'a generic lewd landmarks mod from LL' while fixing ATB problems (2026-09-13); a possible overlap with Corrupted Landmarks is unverified."
+          "Possible clash with Corrupted Landmarks or other landmark mods over the Carcassonne slot is unverified (those packs are not analysed yet)."
         ]
       },
+      "installNotes": [
+        "The page says it probably needs Mixu's Unlocker, but the pack does not refer to it: it only uses base-game keys (Wood Elves building culture, the Carcassonne landmark slot)."
+      ],
+      "knownIssues": [
+        "Adds a Wood Elf landmark in the Carcassonne landmark slot; other mods that change that slot may clash."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2023_02/The_Parthenon_in_Athens.jpg.3d6d15f3a274383b3fdda1af62883b01.jpg",
@@ -12139,7 +12271,18 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Lizardwomen_Anthro_v1.2.2 (Lords and heroes).pack",
+          "from": "download",
+          "note": "In @Lizardwomen_Anthro_v1.2.2 (Lords and heroes)"
+        },
+        {
+          "file": "@Lizardwomen_Anthro_v1.2.2.pack",
+          "from": "download",
+          "note": "In @Lizardwomen_Anthro_v1.2.2"
+        }
+      ],
       "relations": [],
       "status": "stable",
       "knownIssues": [
@@ -12152,7 +12295,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Download file names/pack names are not on the page; which variants are available to choose from is unknown.",
+          "Which variants are available to choose from is unknown.",
           "Incompatible mods are described only generically (no concrete targets)."
         ]
       },
@@ -13600,7 +13743,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alivia_morathi_hero3.0cnJ.pack",
+          "from": "download"
+        }
+      ],
       "playAs": [
         {
           "character": "Morathi (heroine Alivia Aina)",
@@ -13657,7 +13805,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "high",
         "openQuestions": [
-          "Pack name not given.",
           "'Console Commands' (2791241084) assumed; alternatively Lua Console 2791799449."
         ]
       },
@@ -13928,24 +14075,24 @@
           }
         },
         {
-          "kind": "requires",
+          "kind": "supersedes",
           "target": {
-            "mod": "steam-3809129102"
+            "mod": "steam-3809988722"
           },
-          "note": "Neferata The Vampire Queen - 'Brings together 2 lovely Steam mods'; unclear whether embedded or a dependency",
+          "note": "Not needed: the pack already contains Beautiful Neferata's models and textures (22 identical files). Using both only adds a second copy.",
           "source": {
-            "type": "loverslab",
+            "type": "inferred",
             "url": "https://www.loverslab.com/files/file/52195-naughty-neferata16-model-variants-nsfw/"
           }
         },
         {
-          "kind": "requires",
+          "kind": "supersedes",
           "target": {
-            "mod": "steam-3809988722"
+            "mod": "steam-3809129102"
           },
-          "note": "Beautiful Neferata - as above",
+          "note": "Not needed: the pack brings its own versions of this mod's look. Loaded above Naughty Neferata, it would replace Neferata's default mesh definition and portraits and break the variants.",
           "source": {
-            "type": "loverslab",
+            "type": "inferred",
             "url": "https://www.loverslab.com/files/file/52195-naughty-neferata16-model-variants-nsfw/"
           }
         }
@@ -13955,14 +14102,24 @@
         "Variant list: 1 Purple Vampy (NSFW), 2 SFW Beautiful, 3 SFW Tomb Kingy, 4 Vanilla, 5-16 NSFW variants."
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
-        "openQuestions": [
-          "Unclear whether the two Steam Neferata mods must be installed or only served as sources",
-          "Pack name not given (single 7z)",
-          "Similar Elspeth mod: ll-41120"
-        ]
+        "lastChecked": "2026-11-01",
+        "confidence": "high",
+        "openQuestions": []
       },
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3809129102"
+          },
+          {
+            "mod": "steam-3809988722"
+          }
+        ],
+        "note": "Only matters if the two Steam Neferata mods are kept installed: Naughty Neferata must win over both."
+      },
+      "knownIssues": [
+        "Self-contained: the two Steam Neferata mods the page names were merged into this pack and are not needed. If they stay active, load Naughty Neferata above them."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2026_10/2221.jpg.7f0c01aa7458dad77dfa937c2bbe01a4.jpg",
@@ -14029,7 +14186,7 @@
           "source": "steam"
         }
       ],
-      "description": "A Neferata reskin that builds on Zeta0080's Neferata reskin and belongs to the author's Total Warmaidens project (Nexus). The face was updated on 17 Oct 2026. If problems occur, the author says it is a mod conflict: place it higher in the load order or disable other mods.\n\nThe LoversLab entry “Naughty Neferata!” lists it as a requirement (“two Steam mods merged”); it is unclear whether it is embedded."
+      "description": "A Neferata reskin that builds on Zeta0080's Neferata reskin and belongs to the author's Total Warmaidens project (Nexus). The face was updated on 17 Oct 2026. If problems occur, the author says it is a mod conflict: place it higher in the load order or disable other mods.\n\nThe LoversLab variant pack “Naughty Neferata!” merged this look into its own pack and does not need it installed; loaded above that pack, this mod would replace its default model and portraits."
     },
     {
       "id": "steam-2842459897",
@@ -14617,7 +14774,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dead_kislev_pretty_reindeer_riders.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -14761,7 +14923,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "prince_zanithor.pack",
+          "from": "download"
+        }
+      ],
       "playAs": [
         {
           "character": "Azazel / N'Kari",
@@ -14790,7 +14957,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given (single zip).",
           "Campaign not stated; the Southlands start implies Immortal Empires.",
           "More spawn options are planned."
         ]
@@ -16690,7 +16856,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "EFT.pack",
+          "from": "download",
+          "note": "Two downloads with the same pack name: images only, or images and text. Install one of them."
+        }
+      ],
       "relations": [],
       "tier": "visual-submod",
       "installNotes": [
@@ -16699,13 +16871,15 @@
         "According to the author, no conflict with Mixu or landmark mods."
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given.",
           "An English translation exists (ll-39307)."
         ]
       },
+      "knownIssues": [
+        "Shares 631 flag images with TardBannerPackBetter (ll-49568); the mod loaded higher wins."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2023_07/33-1665364668-2063058850.jpg.1da87540d944d207a591001ce51ab26d.jpg",
@@ -16974,7 +17148,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!@Alarielle_Temptations_Bloom_Assets_V1.3.2(RU_0.1).pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -17014,7 +17193,7 @@
         "confidence": "medium",
         "openQuestions": [
           "'стоять перед' (before/above the main mod) is ambiguous; interpreted as higher in the list, analogous to other RU patches",
-          "Pack name not given; translation of the add-on mods (Steam items) only on Boosty"
+          "Translation of the add-on mods (Steam items) only on Boosty"
         ]
       },
       "images": [
@@ -17405,7 +17584,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -17471,7 +17655,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Which of the Lazy reskin files exactly are meant (pack names) is not on the page; assignment to ll-23878/23966/23925 derived from 'all three characters'.",
+          "Assignment to ll-23878/23966/23925 derived from 'all three characters'.",
           "'below those files' could refer to the launcher view or to priority - please check."
         ]
       },
@@ -17793,7 +17977,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "sewrat_beastmen_addon_c.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -17818,8 +18007,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Page only says 'the main Community Beastmen' - there are several variants in the LL index (ll-24466 PassingByPosts, ll-36361, ll-46165 DeHess 'ALL versions', ll-26347 Lynn). Which base is meant is not stated.",
-          "No pack file names given."
+          "Page only says 'the main Community Beastmen' - there are several variants in the LL index (ll-24466 PassingByPosts, ll-36361, ll-46165 DeHess 'ALL versions', ll-26347 Lynn). Which base is meant is not stated."
         ]
       },
       "images": [
@@ -17955,7 +18143,68 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "(X)_@LK_dark_.pack",
+          "from": "download",
+          "note": "In (X)_@LK_dark_"
+        },
+        {
+          "file": "(X)_Cathay_ALL_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_ALL_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Alt_Hero_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Alt_Hero_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Build_Hero.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Build_Hero"
+        },
+        {
+          "file": "(X)_Cathay_Divin_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Divin_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Enhi_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Enhi_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Hollow_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Hollow_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Liu_nao_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Liu_nao_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Mariko_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Mariko_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Shards_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Shards_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Taoyan_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Taoyan_XXX"
+        },
+        {
+          "file": "(X)_Cathay_Xiao_XXX.pack",
+          "from": "download",
+          "note": "In (X)_Cathay_Xiao_XXX"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -18116,7 +18365,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack file names inside the .7z archives are not given, hence packs empty.",
           "Which files are mutually exclusive (ALL vs. individual, Alt_Hero vs. Divin/Shards/Hollow/Build) is not explicit; noted here only as a hint.",
           "The Steam items belong to the parent mods (not to this mod) and therefore appear only as relations."
         ]
@@ -18212,7 +18460,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SFOMiaoNoCorruptionReduction.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -18460,7 +18713,23 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "WH3_SigvaldA.pack",
+          "from": "download",
+          "note": "In WH3_SigvaldA, WH3_SigvaldAFix, WH3_SigvaldA_lowerheelfix"
+        },
+        {
+          "file": "WH3_SigvaldA_with_soundpack.pack",
+          "from": "download",
+          "note": "In WH3_SigvaldA_with_soundpack"
+        },
+        {
+          "file": "sigvaldavoiceAfix.pack",
+          "from": "download",
+          "note": "In sigvaldavoice_pack_fix"
+        }
+      ],
       "relations": [],
       "tier": "reskin",
       "installNotes": [
@@ -18471,7 +18740,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack file names inside the archives are unknown",
           "Possible overlap with 'Female Sigvald Reskin' (ll-26542); not mentioned",
           "The Discord entry 'Sigvalda model mod (Corv0Modder)' is presumably the same mod (Kargrin/Corv0 showcase channel)"
         ]
@@ -18723,7 +18991,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "HuaJS258_corrupted_cathay.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -18768,7 +19041,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given.",
           "Link to LL 23878 inferred only from the description 'Miao Ying Corruption Stages'."
         ]
       },
@@ -19781,7 +20053,12 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@soboro_miao_unit_cards_only.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -20035,7 +20312,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "soil_corrupted_units_asset.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -20055,7 +20337,7 @@
         "confidence": "medium",
         "openQuestions": [
           "The page does not name Soil's Corrupted Units explicitly; target mod (ll-32374) derived from the title.",
-          "Pack file name not given; exact load order not given."
+          "Exact load order not given."
         ]
       },
       "images": [
@@ -21040,17 +21322,24 @@
           "singleFile": "rar"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "TardBannerPackBetter-V1.00.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "status": "stable",
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
         "openQuestions": [
-          "Pack name not given (single rar); no load order or dependencies",
-          "Replaces 'most' banners: overlap/order with other flag mods (ll-41124, ll-37353) unknown"
+          "Overlap with Lewd Flags and Loading Screens (ll-41124) not checked yet."
         ]
       },
+      "knownIssues": [
+        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2026_06/bannersscreenshot.PNG.105412d64a8a2371c6c201e693fb411e.PNG",
@@ -21325,15 +21614,25 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "TitsNotTwitch.pack",
+          "from": "download",
+          "note": "In TitsNotTwitch"
+        },
+        {
+          "file": "TitsPauseMenu.pack",
+          "from": "download",
+          "note": "In TitsPauseMenu"
+        }
+      ],
       "relations": [],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Whether the two archives are alternatives (use only one) or combinable is not stated on the page.",
-          "Pack file names not given."
+          "Whether the two archives are alternatives (use only one) or combinable is not stated on the page."
         ]
       },
       "images": [
@@ -21575,7 +21874,18 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "lazyicarus_french_translations.pack",
+          "from": "download",
+          "note": "In LazyIcarus French Translations - Main - v1_11"
+        },
+        {
+          "file": "lazyicarus_french_translations_bst.pack",
+          "from": "download",
+          "note": "In LazyIcarus French Translations - Beastmen - v1_11"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -21782,8 +22092,7 @@
           "Load order relative to the originals not specified.",
           "'Foreign Dickplomacy' and 'Corruption Adaptation' are part of LL 23878 according to the page (same link).",
           "LL 27949 (Endo's Beastmen Matched Combat) is not in the index; recorded as external only.",
-          "Mapping 'Soiled Projects' -> ll-32374 is an assumption.",
-          "Pack file names inside the two files not given."
+          "Mapping 'Soiled Projects' -> ll-32374 is an assumption."
         ]
       },
       "images": [
@@ -22320,7 +22629,12 @@
           "singleFile": "zip"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Chaos_Subculture_Fix.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -22343,9 +22657,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
-        "openQuestions": [
-          "Pack name not given."
-        ]
+        "openQuestions": []
       },
       "images": [
         {
@@ -22416,7 +22728,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "WE_eternalguardfem.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "tier": "reskin",
       "installNotes": [
@@ -22500,7 +22817,12 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@alt_endo_slaanesh_devotee.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -22529,7 +22851,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "high",
         "openQuestions": [
-          "Pack name not given; load order relative to the base mod not specified (submods usually sit above their base mod)."
+          "Load order relative to the base mod not specified (submods usually sit above their base mod)."
         ]
       },
       "images": [
@@ -22956,7 +23278,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lin_Corrupted_Fay.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -22996,7 +23323,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "The mod's own Steam ID is not given (steam_ids contains only the Generic Framework); pack name unknown",
+          "The mod's own Steam ID is not given (steam_ids contains only the Generic Framework)",
           "Description only brief in Chinese/English; no load order information",
           "Campaigns (IE/IEE/RoC) not specified"
         ]
@@ -29166,7 +29493,7 @@
       ],
       "entries": [
         {
-          "pack": "Eltharion corruption",
+          "pack": "Eltharion_corruption.pack",
           "from": "download",
           "target": {
             "mod": "ll-28110"
@@ -29197,7 +29524,7 @@
       ],
       "entries": [
         {
-          "pack": "Khalida's Corruption BETA",
+          "pack": "khalida_corruption.pack",
           "from": "download",
           "target": {
             "mod": "ll-52142"
@@ -29392,7 +29719,7 @@
       ],
       "entries": [
         {
-          "pack": "堕落湖神仙女 (Corrupted Fay)",
+          "pack": "Lin_Corrupted_Fay.pack",
           "from": "download",
           "target": {
             "mod": "ll-32476"

@@ -1,0 +1,114 @@
+{
+ "mod": "ll-26468",
+ "packs": [
+  "Beastmen_all_in_one_cn0402.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Beastmen_all_in_one_cn0402.pack": {
+   "files": 17,
+   "dependencies": []
+  }
+ },
+ "fileCount": 17,
+ "byTopFolder": {
+  "text": 17
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/!chinese_captive_followers.loc",
+   "size": 18928,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!chinese_conquest_dilemma_text.loc",
+   "size": 5628,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!chinese_effect_bundles.loc",
+   "size": 1388,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!chinese_missions.loc",
+   "size": 338,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!chinese_random_dilemma_text.loc",
+   "size": 6944,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!chinese_special_dilemmas.loc",
+   "size": 1232,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_campaign_payload_ui_details.loc",
+   "size": 314,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_campaign_post_battle_captive_options.loc",
+   "size": 334,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_culture_settlement_occupation_options.loc",
+   "size": 328,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_dilemmas.loc",
+   "size": 5072,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_effect_bundles.loc",
+   "size": 1497,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_effects.loc",
+   "size": 4268,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_incidents.loc",
+   "size": 332,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_land_units.loc",
+   "size": 327,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_rituals.loc",
+   "size": 137,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_unit_description_historical_texts.loc",
+   "size": 671,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  },
+  {
+   "path": "text/db/!main_savage_beastmen_unit_descrption_short_texts.loc",
+   "size": 643,
+   "pack": "Beastmen_all_in_one_cn0402.pack"
+  }
+ ]
+}

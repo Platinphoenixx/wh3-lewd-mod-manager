@@ -1,0 +1,4078 @@
+{
+ "mod": "ll-42706",
+ "packs": [
+  "FutaWitchElvesComplete.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "FutaWitchElvesComplete.pack": {
+   "files": 626,
+   "dependencies": []
+  }
+ },
+ "fileCount": 626,
+ "byTopFolder": {
+  "variantmeshes": 515,
+  "db": 55,
+  "ui": 52,
+  "art": 2,
+  "db.pack": 1,
+  "text": 1
+ },
+ "tables": [
+  "agent_recruitment_categories_tables",
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "ancillaries_included_agent_subtypes_tables",
+  "ancillaries_required_skills_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "battle_entities_tables",
+  "battle_set_piece_armies_characters_tables",
+  "building_units_allowed_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "campaign_map_attrition_unit_immunities_tables",
+  "cdir_military_generator_unit_qualities_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_ancillaries_junctions_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "character_skills_to_level_reached_criterias_tables",
+  "culture_to_battle_animation_tables_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "land_units_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "main_units_tables",
+  "melee_weapons_tables",
+  "special_ability_phase_attribute_effects_tables",
+  "special_ability_phase_stat_effects_tables",
+  "special_ability_phases_tables",
+  "special_ability_to_invalid_target_flags_tables",
+  "special_ability_to_recharge_contexts_tables",
+  "special_ability_to_special_ability_phase_junctions_tables",
+  "ui_unit_bullet_point_unit_overrides_tables",
+  "ui_unit_groupings_tables",
+  "unit_abilities_tables",
+  "unit_attributes_groups_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_banner_unit_height_offsets_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_set_unit_attribute_junctions_tables",
+  "unit_sets_tables",
+  "unit_special_abilities_tables",
+  "unit_variants_tables",
+  "units_custom_battle_mounts_tables",
+  "units_custom_battle_permissions_tables",
+  "units_to_groupings_military_permissions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 542,
+  "inMod": 263,
+  "inBaseGame": 249,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "avariantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/dae_cultist_of_slaanesh_body_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/jef_cultist_of_slaanesh_body_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_06.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_07.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/body_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/body_material.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/body_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/ccage_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/emp_flagellants_torso_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/face_1_b.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/face_1_m.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/face_1_n.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/face_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/fem_slave_head_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/hef_diffuse1.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/materials/emp_flagellants_head_04_submesh__submesh_0_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_body_01_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_body_02_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_feet_02_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_hair_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_hands_01_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/pen_legs_02_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_flagellants/tex/slave_girl_legs_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/emp/emp_props/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/brt/brt_prophetess/tex_head/head_material.dds",
+   "variantmeshes/wh_variantmodels/hu1b/brt/brt_prophetess/tex_head/head_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1b/brt/brt_prophetess/tex_head/life_head1_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_supreme_sorceress/tex/lef_supreme_sorceress_body_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_back_knee_colour.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_recruitment_categories_tables": [
+   "cullbridegoth_death_hag_matriarch",
+   "ui/common ui/unit_category_icons/wh2_main_def_infantry_dual_daggers.png"
+  ],
+  "agent_subtypes_tables": [
+   "cullbridegoth_death_hag_matriarch",
+   "wh2_main_vo_actor_Dark_Elves_Death_Hag",
+   "can_be_saved_loaded"
+  ],
+  "agent_uniforms_tables": [
+   "wh2_main_def_death_hag_campaign_01",
+   "wh2_main_uniform_def_death_hag_01",
+   "wh2_main_def_death_hag_campaign_02",
+   "wh2_main_uniform_def_death_hag_02",
+   "wh2_main_def_death_hag_campaign_03",
+   "wh2_main_uniform_def_death_hag_03",
+   "cullbridegoth_death_hag_matriarch",
+   "cullbridegoth_death_hag_matriarch_01",
+   "cullbridegoth_death_hag_matriarch_02",
+   "cullbridegoth_death_hag_matriarch_03"
+  ],
+  "ancillaries_included_agent_subtypes_tables": [
+   "cullbridegoth_death_hag_matriarch",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount"
+  ],
+  "ancillaries_required_skills_tables": [
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount"
+  ],
+  "ancillaries_tables": [
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "wh_main_anc_mount_manticore",
+   "mount",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "anc_set_exclusive_dark_elves",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "wh2_main_anc_mount_cauldron_of_blood",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "ancillary_info_tables": [
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount"
+  ],
+  "battle_entities_tables": [
+   "cullbridegoth_slaves",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh_human_male",
+   "infantry_light_effects",
+   "wh_main_unit_combat",
+   "small_entity"
+  ],
+  "battle_set_piece_armies_characters_tables": [
+   "cullbridegoth_death_hag_matriarch",
+   "general",
+   "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch_campaign_01_0.png"
+  ],
+  "building_units_allowed_tables": [
+   "wh2_main_def_slaves_1",
+   "cullbridegoth_slaves",
+   "wh2_main_def_slaves_2",
+   "wh2_main_def_worship_3",
+   "cullbridegoth_witch_elf_glaives"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "cullbridegoth_death_hag_matriarch_01",
+   "cullbridegoth_death_hag_matriarch",
+   "cullbridegoth_death_hag_matriarch_02",
+   "cullbridegoth_death_hag_matriarch_03"
+  ],
+  "campaign_character_arts_tables": [
+   "cullbridegoth_death_hag_matriarch_01",
+   "none",
+   "cullbridegoth_death_hag_matriarch_03",
+   "wh2_main_campaign_def_ship_agent",
+   "cam_lord_hu1b_elf_dual_sword",
+   "cam_light_ship_05",
+   "cullbridegoth_death_hag_matriarch_02"
+  ],
+  "campaign_map_attrition_unit_immunities_tables": [
+   "non_vampire_territory",
+   "cullbridegoth_slaves",
+   "snow",
+   "cullbridegoth_death_hag_matriarch",
+   "cullbridegoth_witch_elf_glaives",
+   "horde_infighting",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "cdir_military_generator_unit_qualities_tables": [
+   "wh3_default_land_melee_infantry_main_frontline_swords",
+   "cullbridegoth_slaves",
+   "tier_1_step_4_units",
+   "wh3_default_land_melee_infantry_main_frontline_spears_high_quality",
+   "cullbridegoth_witch_elf_glaives",
+   "tier_3_step_4_units"
+  ],
+  "character_skill_level_details_tables": [
+   "cullbridegoth_hellebron_iron_lady1",
+   "cullbridegoth_hellebron_mesmerizing_manhood",
+   "cullbridegoth_hellebron_harem",
+   "cullbridegoth_death_hag_matriarch_harem",
+   "combat_grape",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount"
+  ],
+  "character_skill_level_to_ancillaries_junctions_tables": [
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "cullbridegoth_hellebron_iron_lady1",
+   "wh_main_effect_conquest_enable_night_battles",
+   "character_to_character_own",
+   "wh_main_effect_agent_movement_range_mod",
+   "wh_main_effect_character_stat_ward_save",
+   "cullbridegoth_hellebron_mesmerizing_manhood",
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "cullbridegoth_hellebron_demanding_mistress",
+   "cullbridegoth_demanding_mistress_morale",
+   "general_to_force_own",
+   "cullbridegoth_hellebron_musclebound_amazons",
+   "cullbridegoth_musclebound_amazons",
+   "cullbridegoth_hellebron_harem",
+   "wh3_main_effect_agent_action_passive_def_slaves_effect",
+   "character_to_faction_when_on_map_unseen",
+   "cullbridegoth_musclebound_amazons_mass",
+   "cullbridegoth_hellebron_battlefield_dominatrixes",
+   "cullbridegoth_battlefield_dominatrixes_damage",
+   "cullbridegoth_battlefield_dominatrixes_charge",
+   "cullbridegoth_demanding_mistress_defense",
+   "cullbridegoth_death_hag_vanguard",
+   "wh_main_effect_attribute_enable_vanguard_deployment",
+   "cullbridegoth_tip_of_the_spear",
+   "agent_to_parent_army_own",
+   "cullbridegoth_death_hag_matriarch_harem",
+   "wh2_dlc10_skill_def_crone_unique_rapturous_murder",
+   "cullbridegoth_death_hag_matriarch_vanguard",
+   "combat_grape",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "wh_main_effect_enable_mount_manticore",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "wh2_main_effect_enable_mount_def_cauldron"
+  ],
+  "character_skill_node_links_tables": [
+   "cullbridegoth_hellebron_musclebound_amazons_node",
+   "cullbridegoth_hellebron_demanding_mistress_node",
+   "REQUIRED",
+   "cullbridegoth_hellebron_battlefield_dominatrixes_node",
+   "cullbridegoth_death_hag_matriarch_army_1_1",
+   "cullbridegoth_death_hag_matriarch_army_0",
+   "cullbridegoth_death_hag_matriarch_army_1_2",
+   "cullbridegoth_death_hag_matriarch_army_1_3",
+   "cullbridegoth_death_hag_matriarch_army_1_4",
+   "cullbridegoth_death_hag_matriarch_army_1_5",
+   "cullbridegoth_death_hag_matriarch_army_1_6",
+   "cullbridegoth_death_hag_matriarch_army_2",
+   "SUBSET_REQUIRED",
+   "cullbridegoth_death_hag_matriarch_army_3_1",
+   "cullbridegoth_death_hag_matriarch_army_3_2",
+   "cullbridegoth_death_hag_matriarch_army_3_3",
+   "cullbridegoth_death_hag_matriarch_army_3_4",
+   "cullbridegoth_death_hag_matriarch_army_4",
+   "cullbridegoth_death_hag_matriarch_campaign_1_1",
+   "cullbridegoth_death_hag_matriarch_campaign_0",
+   "cullbridegoth_death_hag_matriarch_campaign_1_2",
+   "cullbridegoth_death_hag_matriarch_campaign_1_3",
+   "cullbridegoth_death_hag_matriarch_campaign_1_4",
+   "cullbridegoth_death_hag_matriarch_campaign_2",
+   "cullbridegoth_death_hag_matriarch_campaign_3_1",
+   "cullbridegoth_death_hag_matriarch_campaign_3_2",
+   "cullbridegoth_death_hag_matriarch_campaign_3_3",
+   "cullbridegoth_death_hag_matriarch_campaign_3_4",
+   "cullbridegoth_death_hag_matriarch_campaign_4",
+   "cullbridegoth_death_hag_matriarch_combat_1_1",
+   "cullbridegoth_death_hag_matriarch_combat_0",
+   "cullbridegoth_death_hag_matriarch_combat_1_2",
+   "cullbridegoth_death_hag_matriarch_combat_1_3",
+   "cullbridegoth_death_hag_matriarch_combat_1_4",
+   "cullbridegoth_death_hag_matriarch_combat_2",
+   "cullbridegoth_death_hag_matriarch_combat_3_1",
+   "cullbridegoth_death_hag_matriarch_combat_3_2",
+   "cullbridegoth_death_hag_matriarch_combat_3_3",
+   "cullbridegoth_death_hag_matriarch_combat_3_4",
+   "cullbridegoth_death_hag_matriarch_combat_4",
+   "cullbridegoth_death_hag_matriarch_musclebound_amazons_node",
+   "cullbridegoth_death_hag_matriarch_demanding_mistress_node",
+   "cullbridegoth_death_hag_matriarch_battlefield_dominatrixes_node"
+  ],
+  "character_skill_node_set_items_tables": [
+   "wh2_dlc10_skill_node_set_def_crone",
+   "cullbridegoth_hellebron_iron_lady_node",
+   "cullbridegoth_hellebron_mesmerizing_manhood_node",
+   "cullbridegoth_hellebron_demanding_mistress_node",
+   "cullbridegoth_hellebron_musclebound_amazons_node",
+   "cullbridegoth_hellebron_battlefield_dominatrixes_node",
+   "cullbridegoth_hellebron_harem",
+   "cullbridegoth_skill_node_set_death_hag_matriarch",
+   "cullbridegoth_death_hag_matriarch_army_0",
+   "cullbridegoth_death_hag_matriarch_army_1_1",
+   "cullbridegoth_death_hag_matriarch_army_1_2",
+   "cullbridegoth_death_hag_matriarch_army_1_3",
+   "cullbridegoth_death_hag_matriarch_army_1_4",
+   "cullbridegoth_death_hag_matriarch_army_1_5",
+   "cullbridegoth_death_hag_matriarch_army_1_6",
+   "cullbridegoth_death_hag_matriarch_army_2",
+   "cullbridegoth_death_hag_matriarch_army_3_1",
+   "cullbridegoth_death_hag_matriarch_army_3_2",
+   "cullbridegoth_death_hag_matriarch_army_3_3",
+   "cullbridegoth_death_hag_matriarch_army_3_4",
+   "cullbridegoth_death_hag_matriarch_army_4",
+   "cullbridegoth_death_hag_matriarch_campaign_0",
+   "cullbridegoth_death_hag_matriarch_campaign_1_1",
+   "cullbridegoth_death_hag_matriarch_campaign_1_2",
+   "cullbridegoth_death_hag_matriarch_campaign_1_3",
+   "cullbridegoth_death_hag_matriarch_campaign_1_4",
+   "cullbridegoth_death_hag_matriarch_campaign_2",
+   "cullbridegoth_death_hag_matriarch_campaign_3_1",
+   "cullbridegoth_death_hag_matriarch_campaign_3_2",
+   "cullbridegoth_death_hag_matriarch_campaign_3_3",
+   "cullbridegoth_death_hag_matriarch_campaign_3_4",
+   "cullbridegoth_death_hag_matriarch_campaign_4",
+   "cullbridegoth_death_hag_matriarch_combat_0",
+   "cullbridegoth_death_hag_matriarch_combat_1_1",
+   "cullbridegoth_death_hag_matriarch_combat_1_2",
+   "cullbridegoth_death_hag_matriarch_combat_1_3",
+   "cullbridegoth_death_hag_matriarch_combat_1_4",
+   "cullbridegoth_death_hag_matriarch_combat_2",
+   "cullbridegoth_death_hag_matriarch_combat_3_1",
+   "cullbridegoth_death_hag_matriarch_combat_3_2",
+   "cullbridegoth_death_hag_matriarch_combat_3_3",
+   "cullbridegoth_death_hag_matriarch_combat_3_4",
+   "cullbridegoth_death_hag_matriarch_combat_4",
+   "cullbridegoth_death_hag_matriarch_names_of_power_1",
+   "cullbridegoth_death_hag_matriarch_names_of_power_2",
+   "cullbridegoth_death_hag_matriarch_names_of_power_3",
+   "cullbridegoth_death_hag_matriarch_generic_2",
+   "cullbridegoth_death_hag_matriarch_generic_3",
+   "cullbridegoth_death_hag_matriarch_generic_4",
+   "cullbridegoth_death_hag_matriarch_generic_1",
+   "cullbridegoth_death_hag_matriarch_demanding_mistress_node",
+   "cullbridegoth_death_hag_matriarch_musclebound_amazons_node",
+   "cullbridegoth_death_hag_matriarch_battlefield_dominatrixes_node",
+   "cullbridegoth_death_hag_mesmerizing_manhood_node",
+   "cullbridegoth_death_hag_matriarch_gifts_3",
+   "wh3_dlc24_skill_generic_immortality_lord",
+   "wh3_dlc24_skill_node_all_mentor_lord",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_01",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_02",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_03",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_04",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_05",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_06",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_07",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_08",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_09",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_10",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_11",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_12",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_13",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_14",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_15",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_16",
+   "wh2_main_skill_node_def_dreadlord_fem_innate_17",
+   "wh2_main_skill_node_set_def_death_hag",
+   "cullbridegoth_death_hag_vanguard_node",
+   "cullbridegoth_death_hag_matriarch_harem",
+   "cullbridegoth_death_hag_matriarch_vanguard_node",
+   "combat_grape_node",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount"
+  ],
+  "character_skill_node_sets_tables": [
+   "general",
+   "cullbridegoth_skill_node_set_death_hag_matriarch",
+   "cullbridegoth_death_hag_matriarch"
+  ],
+  "character_skill_nodes_skill_locks_tables": [
+   "wh2_main_skill_def_names_of_power_2",
+   "cullbridegoth_death_hag_matriarch_names_of_power_1",
+   "wh2_main_skill_def_names_of_power_3",
+   "wh2_main_skill_def_names_of_power_1",
+   "cullbridegoth_death_hag_matriarch_names_of_power_2",
+   "cullbridegoth_death_hag_matriarch_names_of_power_3"
+  ],
+  "character_skill_nodes_tables": [
+   "cullbridegoth_hellebron_iron_lady1",
+   "cullbridegoth_hellebron_iron_lady_node",
+   "cullbridegoth_hellebron_mesmerizing_manhood",
+   "cullbridegoth_hellebron_mesmerizing_manhood_node",
+   "cullbridegoth_hellebron_demanding_mistress",
+   "cullbridegoth_hellebron_demanding_mistress_node",
+   "cullbridegoth_hellebron_musclebound_amazons",
+   "cullbridegoth_hellebron_musclebound_amazons_node",
+   "cullbridegoth_hellebron_battlefield_dominatrixes",
+   "cullbridegoth_hellebron_battlefield_dominatrixes_node",
+   "cullbridegoth_hellebron_harem",
+   "wh_main_skill_all_lord_battle_inspiring_presence",
+   "cullbridegoth_death_hag_matriarch_army_0",
+   "wh2_main_skill_def_army_buff_basic_infantry",
+   "cullbridegoth_death_hag_matriarch_army_1_1",
+   "wh2_main_skill_def_army_buff_missile",
+   "cullbridegoth_death_hag_matriarch_army_1_2",
+   "wh2_main_skill_def_army_buff_shades_riders",
+   "cullbridegoth_death_hag_matriarch_army_1_3",
+   "wh2_main_skill_def_army_buff_beasts",
+   "cullbridegoth_death_hag_matriarch_army_1_4",
+   "wh2_main_skill_def_army_buff_coldones",
+   "cullbridegoth_death_hag_matriarch_army_1_5",
+   "wh2_main_skill_def_army_buff_elites",
+   "cullbridegoth_death_hag_matriarch_army_1_6",
+   "wh2_main_skill_def_strength_through_spite",
+   "cullbridegoth_death_hag_matriarch_army_2",
+   "wh2_main_skill_def_army_buff_cull_the_unworthy",
+   "cullbridegoth_death_hag_matriarch_army_3_1",
+   "wh2_main_skill_def_army_buff_rewards_for_ravagers",
+   "cullbridegoth_death_hag_matriarch_army_3_2",
+   "wh2_main_skill_def_army_buff_favour_the_fortunate",
+   "cullbridegoth_death_hag_matriarch_army_3_3",
+   "wh2_main_skill_def_army_buff_confer_bloodlust",
+   "cullbridegoth_death_hag_matriarch_army_3_4",
+   "wh2_main_skill_def_kindle_the_fury",
+   "cullbridegoth_death_hag_matriarch_army_4",
+   "wh_main_skill_all_lord_campaign_route_marcher",
+   "cullbridegoth_death_hag_matriarch_campaign_0",
+   "wh_main_skill_emp_lord_campaign_iron_disciplinarian",
+   "cullbridegoth_death_hag_matriarch_campaign_1_1",
+   "wh2_main_skill_def_campaign_dreaded_slaver",
+   "cullbridegoth_death_hag_matriarch_campaign_1_2",
+   "wh_main_skill_chs_lord_campaign_serve_or_die",
+   "cullbridegoth_death_hag_matriarch_campaign_1_3",
+   "wh2_main_skill_def_campaign_infamous_raider",
+   "cullbridegoth_death_hag_matriarch_campaign_1_4",
+   "wh2_main_skill_def_campaign_draftmaster",
+   "cullbridegoth_death_hag_matriarch_campaign_2",
+   "wh_main_skill_all_lord_campaign_lightning_strike",
+   "cullbridegoth_death_hag_matriarch_campaign_3_1",
+   "wh_main_skill_emp_lord_campaign_quartermaster",
+   "cullbridegoth_death_hag_matriarch_campaign_3_2",
+   "wh2_main_skill_def_campaign_fleeting_shadow",
+   "cullbridegoth_death_hag_matriarch_campaign_3_3",
+   "wh2_main_skill_hef_campaign_elven_healing",
+   "cullbridegoth_death_hag_matriarch_campaign_3_4",
+   "wh2_main_skill_LL_self_defense",
+   "cullbridegoth_death_hag_matriarch_campaign_4",
+   "wh2_main_skill_def_combat_sea_dragon_cloak",
+   "cullbridegoth_death_hag_matriarch_combat_0",
+   "wh2_dlc11_skill_all_lord_self_devastating_charge",
+   "cullbridegoth_death_hag_matriarch_combat_1_1",
+   "wh2_dlc11_skill_all_lord_self_hard_to_hit",
+   "cullbridegoth_death_hag_matriarch_combat_1_2",
+   "wh2_dlc11_skill_all_lord_self_blade_master",
+   "cullbridegoth_death_hag_matriarch_combat_1_3",
+   "wh2_dlc11_skill_all_lord_self_self_indomitable",
+   "cullbridegoth_death_hag_matriarch_combat_1_4",
+   "wh_main_skill_all_all_self_foe-seeker",
+   "cullbridegoth_death_hag_matriarch_combat_2",
+   "wh2_dlc11_skill_all_lord_self_wound-maker",
+   "cullbridegoth_death_hag_matriarch_combat_3_1",
+   "wh2_dlc11_skill_all_lord_self_full_plate_armour",
+   "cullbridegoth_death_hag_matriarch_combat_3_2",
+   "wh2_dlc11_skill_all_lord_self_blade_shield",
+   "cullbridegoth_death_hag_matriarch_combat_3_3",
+   "wh2_dlc11_skill_wef_lord_self_expeditious_endeavour",
+   "cullbridegoth_death_hag_matriarch_combat_3_4",
+   "wh_main_skill_all_all_self_deadly_onslaught",
+   "cullbridegoth_death_hag_matriarch_combat_4",
+   "wh2_main_skill_def_names_of_power_1",
+   "cullbridegoth_death_hag_matriarch_names_of_power_1",
+   "wh2_main_skill_def_names_of_power_2",
+   "cullbridegoth_death_hag_matriarch_names_of_power_2",
+   "wh2_main_skill_def_names_of_power_3",
+   "cullbridegoth_death_hag_matriarch_names_of_power_3",
+   "wh2_main_skill_def_generic_sadistic",
+   "cullbridegoth_death_hag_matriarch_generic_1",
+   "wh2_main_skill_def_generic_eternal_hatred",
+   "cullbridegoth_death_hag_matriarch_generic_2",
+   "wh2_main_skill_def_generic_ward_of_khaine",
+   "cullbridegoth_death_hag_matriarch_generic_3",
+   "wh2_main_skill_def_generic_ward_of_hekarti",
+   "cullbridegoth_death_hag_matriarch_generic_4",
+   "cullbridegoth_death_hag_matriarch_demanding_mistress_node",
+   "cullbridegoth_death_hag_matriarch_musclebound_amazons_node",
+   "cullbridegoth_death_hag_matriarch_battlefield_dominatrixes_node",
+   "cullbridegoth_death_hag_mesmerizing_manhood_node",
+   "cullbridegoth_death_hag_matriarch_harem",
+   "wh2_main_skill_def_witchbrew",
+   "cullbridegoth_death_hag_matriarch_gifts_3",
+   "wh2_main_skill_innate_def_cruel",
+   "wh2_main_skill_node_def_dreadlord_innate_01",
+   "wh2_main_skill_innate_def_malevolent",
+   "wh2_main_skill_node_def_dreadlord_innate_02",
+   "wh2_main_skill_innate_def_malicious",
+   "wh2_main_skill_node_def_dreadlord_innate_03",
+   "wh2_main_skill_innate_def_spiteful",
+   "wh2_main_skill_node_def_dreadlord_innate_04",
+   "wh2_main_skill_innate_def_vicious",
+   "wh2_main_skill_node_def_dreadlord_innate_05",
+   "wh2_main_skill_innate_all_fleet_footed",
+   "wh2_main_skill_node_def_dreadlord_innate_06",
+   "wh2_main_skill_innate_all_cunning",
+   "wh2_main_skill_node_def_dreadlord_innate_07",
+   "wh2_main_skill_innate_all_determined",
+   "wh2_main_skill_node_def_dreadlord_innate_08",
+   "wh2_main_skill_innate_all_confident",
+   "wh2_main_skill_node_def_dreadlord_innate_09",
+   "wh2_main_skill_innate_all_disciplined",
+   "wh2_main_skill_node_def_dreadlord_innate_10",
+   "wh2_main_skill_innate_all_perceptive",
+   "wh2_main_skill_node_def_dreadlord_innate_11",
+   "wh2_main_skill_innate_all_aggressive",
+   "wh2_main_skill_node_def_dreadlord_innate_12",
+   "wh2_main_skill_innate_all_tough",
+   "wh2_main_skill_node_def_dreadlord_innate_13",
+   "wh2_main_skill_innate_all_strong",
+   "wh2_main_skill_node_def_dreadlord_innate_14",
+   "wh2_main_skill_innate_all_weapon_master",
+   "wh2_main_skill_node_def_dreadlord_innate_15",
+   "wh2_main_skill_innate_all_strategist",
+   "wh2_main_skill_node_def_dreadlord_innate_16",
+   "wh2_main_skill_innate_all_tactician",
+   "wh2_main_skill_node_def_dreadlord_innate_17",
+   "cullbridegoth_death_hag_vanguard",
+   "cullbridegoth_death_hag_vanguard_node",
+   "cullbridegoth_death_hag_matriarch_vanguard",
+   "cullbridegoth_death_hag_matriarch_vanguard_node",
+   "combat_grape",
+   "combat_grape_node",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount"
+  ],
+  "character_skills_tables": [
+   "futa_world_domination.png",
+   "cullbridegoth_hellebron_iron_lady1",
+   "mesmerizing_manhood_skill.png",
+   "cullbridegoth_hellebron_mesmerizing_manhood",
+   "demanding_mistress.png",
+   "cullbridegoth_hellebron_demanding_mistress",
+   "battle_ward_save.png",
+   "cullbridegoth_hellebron_musclebound_amazons",
+   "battle_damage.png",
+   "cullbridegoth_hellebron_battlefield_dominatrixes",
+   "campaign_slaves.png",
+   "cullbridegoth_hellebron_harem",
+   "cullbridegoth_death_hag_matriarch_harem",
+   "battle_vanguard_deployment.png",
+   "cullbridegoth_death_hag_vanguard",
+   "cullbridegoth_death_hag_matriarch_vanguard",
+   "combat_grape",
+   "mount_cauldron_of_blood.png",
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "Cauldron of Blood",
+   "mount_manticore.png",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount",
+   "Manticore"
+  ],
+  "character_skills_to_level_reached_criterias_tables": [
+   "cullbridegoth_death_hag_matriarch_cauldron_mount",
+   "cullbridegoth_death_hag_matriarch_wyvern_mount"
+  ],
+  "culture_to_battle_animation_tables_tables": [
+   "hu1_empire_dual_hammer",
+   "wh2_main_def_dark_elves"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "unit_damage_resistance_physical_mod",
+   "cullbridegoth_musclebound_amazons",
+   "def_witchelves_and_sisters_of_slaughter",
+   "unit_mass_percentage_mod",
+   "cullbridegoth_musclebound_amazons_mass",
+   "charge_add",
+   "cullbridegoth_battlefield_dominatrixes_charge",
+   "melee_damage_mod_add",
+   "cullbridegoth_battlefield_dominatrixes_damage",
+   "morale",
+   "cullbridegoth_demanding_mistress_morale",
+   "cullbridegoth_slave_unit_set",
+   "melee_defence_mod",
+   "cullbridegoth_demanding_mistress_defense",
+   "melee_attack_mod",
+   "wh2_main_effect_force_stat_melee_attack_witchelf_blackguard_executioner",
+   "wh2_main_effect_force_stat_melee_defence_def_witchelf_blackguard_executioner",
+   "unit_xp_mod",
+   "wh2_main_effect_building_unit_xp_levels_def_resource_medicine"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "enable",
+   "combat_grape"
+  ],
+  "effect_bonus_value_unit_set_unit_attribute_junctions_tables": [
+   "enable",
+   "cullbridegoth_tip_of_the_spear"
+  ],
+  "effects_tables": [
+   "cullbridegoth_futa_physical_resistance",
+   "resistance_physical.png",
+   "battle",
+   "cullbridegoth_musclebound_amazons",
+   "cullbridegoth_musclebound_amazons_mass",
+   "mass.png",
+   "cullbridegoth_battlefield_dominatrixes_damage",
+   "weapon_damage.png",
+   "cullbridegoth_battlefield_dominatrixes_charge",
+   "charge.png",
+   "cullbridegoth_demanding_mistress_morale",
+   "morale.png",
+   "cullbridegoth_demanding_mistress_defense",
+   "defence.png",
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "general_ability.png",
+   "cullbridegoth_tip_of_the_spear",
+   "attribute_guerrilla_deploy.png",
+   "combat_grape",
+   "wh_main_effect_enable_mount_manticore",
+   "campaign"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "general",
+   "wh2_main_def_har_ganeth",
+   "cullbridegoth_death_hag_matriarch"
+  ],
+  "land_units_tables": [
+   "wh_main_body_0",
+   "inf_melee",
+   "inf_mel",
+   "wh3_dlc23_unit_long_text_chd_inf_goblin_labourers",
+   "cullbridegoth_slaves",
+   "hu1_empire_dual_hammer",
+   "wh_dlc04_infantry_flagellants_blood_dismembers",
+   "cullbridegoth_slave_mace",
+   "none",
+   "wh3_dlc23_unit_short_text_chd_inf_goblin_labourers",
+   "wh_main_infantry_rabble",
+   "trained",
+   "cullbridegoth_slaves_trait_group",
+   "vo_sel_empire_flagellents",
+   "vo_sel_generic",
+   "vo_sel_generic_short",
+   "small",
+   "melee",
+   "medium",
+   "domination_infantry",
+   "wh2_main_body_5",
+   "wh2_main_unit_long_text_def_inf_witch_elves_0",
+   "cullbridegoth_witch_elf_glaives",
+   "hu1b_elf_2handed_spear",
+   "wh2_main_def_infantry_witch_elves_blood_dismembers",
+   "cullbridegoth_witch_elf_glaive",
+   "wh2_main_unit_short_text_def_inf_witch_elves_0",
+   "wh_main_vmp_crypt_ghouls",
+   "wh2_main_def_inf_witch_elves_0",
+   "vo_sel_default",
+   "vo_sel_melee",
+   "vo_sel_culture",
+   "wh2_main_body_10",
+   "com",
+   "wh2_main_unit_long_text_def_cha_death_hag_0",
+   "cullbridegoth_death_hag_matriarch",
+   "hu1b_elf_dual_sword",
+   "wh2_main_def_infantry_death_hag_blood_dismembers",
+   "cullbridegoth_death_hag_matriarch_sword",
+   "wh2_main_unit_short_text_def_cha_death_hag_0",
+   "wh_main_infantry",
+   "wh2_main_def_cha_death_hag_0",
+   "melee_highvalue",
+   "high",
+   "domination_characters",
+   "wh2_main_plate_80",
+   "war_machine",
+   "wh2_main_unit_long_text_def_cha_death_hag_1",
+   "cullbridegoth_death_hag_matriarch_cauldron",
+   "wh2_main_def_death_hag_cauldron",
+   "wh2_main_unit_short_text_def_cha_death_hag_1",
+   "wh_main_chariot",
+   "wh2_main_def_veh_cauldron_of_blood",
+   "wh2_main_def_cha_death_hag_1",
+   "large",
+   "skirmish",
+   "wh2_main_body_80",
+   "war_beast",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "hu1b_elf_bc3_manticore_wb_dual_sword",
+   "wh2_dlc10_def_mnt_manticore",
+   "wh_main_monster",
+   "wh2_dlc10_def_cha_crone_5",
+   "flying_melee_highvalue",
+   "cant_capture"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "wh2_dlc10_def_cha_crone_0",
+   "cullbridegoth_death_hag_matriarch",
+   "wh2_main_character_abilities_witchbrew",
+   "wh2_main_faction_abilities_murderous_mastery",
+   "wh3_main_unit_passive_single_entity",
+   "wh_main_unit_passive_frenzy",
+   "wh2_main_faction_abilities_murderous_prowess_indicator",
+   "combat_grape",
+   "wh2_dlc10_def_cha_crone_1",
+   "wh2_dlc10_def_cha_crone_4",
+   "wh2_dlc10_def_cha_crone_5",
+   "wh2_main_def_cha_death_hag_0",
+   "wh2_main_def_cha_death_hag_1",
+   "cullbridegoth_witch_elf_glaives",
+   "wh3_dlc24_unit_abilities_witchbrew",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "cullbridegoth_death_hag_matriarch_cauldron",
+   "wh2_main_unit_passive_bloodshield_of_khaine",
+   "wh2_main_unit_abilities_fury_of_khaine"
+  ],
+  "main_units_tables": [
+   "melee_infantry",
+   "cullbridegoth_slaves",
+   "wh_main_shp_transport",
+   "medium",
+   "wh_main_vo_culture_Empire",
+   "emp_soldier_15_degrees",
+   "vo_culture_None",
+   "wh_dlc04_vo_actor_Empire_Inf",
+   "cullbridegoth_witch_elf_glaives",
+   "wh2_main_vo_culture_Dark_Elves",
+   "wh2_main_vo_actor_Dark_Elves_Witch_Elves_Inf",
+   "lord",
+   "cullbridegoth_death_hag_matriarch",
+   "heavy",
+   "emp_general_foot",
+   "wh2_main_vo_actor_Dark_Elves_Death_Hag",
+   "cullbridegoth_death_hag_matriarch_cauldron",
+   "wh2_main_cam_mnt_def_cauldron_of_blood",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "wh2_dlc10_cam_mnt_def_manticore"
+  ],
+  "melee_weapons_tables": [
+   "cullbridegoth_slave_mace",
+   "cullbridegoth_death_hag_matriarch_sword",
+   "sword",
+   "large",
+   "wh_main_unit_contact_poison",
+   "cullbridegoth_witch_elf_glaive",
+   "spear",
+   "halberd"
+  ],
+  "special_ability_phase_attribute_effects_tables": [
+   "silenced",
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "positive"
+  ],
+  "special_ability_phase_stat_effects_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "stat_morale",
+   "add",
+   "scalar_speed",
+   "mult",
+   "combat_grape_self",
+   "stat_melee_defence",
+   "combat_grape_enemy"
+  ],
+  "special_ability_phases_tables": [
+   "negative",
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "wh_main_generic_debuff_defence_attack_morale_passive",
+   "positive",
+   "combat_grape_self",
+   "wh_main_generic_buff_attack",
+   "combat_grape_enemy"
+  ],
+  "special_ability_to_invalid_target_flags_tables": [
+   "unit_is_not_commander_class",
+   "combat_grape"
+  ],
+  "special_ability_to_recharge_contexts_tables": [
+   "engaged_in_melee",
+   "combat_grape"
+  ],
+  "special_ability_to_special_ability_phase_junctions_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "combat_grape_enemy",
+   "combat_grape",
+   "combat_grape_self"
+  ],
+  "ui_unit_bullet_point_unit_overrides_tables": [
+   "expendable",
+   "cullbridegoth_slaves",
+   "poor_morale",
+   "anti_infantry",
+   "cullbridegoth_death_hag_matriarch",
+   "damage_dealer",
+   "poison",
+   "anti_large",
+   "cullbridegoth_witch_elf_glaives",
+   "dodge",
+   "madness_of_khaine",
+   "murderous_mastery",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "armour_piercing",
+   "terror",
+   "cullbridegoth_death_hag_matriarch_cauldron",
+   "armoured"
+  ],
+  "ui_unit_groupings_tables": [
+   "cullbridegoth_slaves_icon",
+   "cullbridegoth_slaves",
+   "infantry",
+   "glaive",
+   "cullbridegoth_witch_elf_glaives"
+  ],
+  "unit_abilities_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "mesmerizing_manhood",
+   "wh_type_area_of_hexes",
+   "wh_main_anc_group_rare",
+   "passive",
+   "combat_grape",
+   "wh_type_hex",
+   "active"
+  ],
+  "unit_attributes_groups_tables": [
+   "cullbridegoth_slaves_trait_group",
+   "cullbridegoth_death_hag_matriarch_wyvern"
+  ],
+  "unit_attributes_to_groups_junctions_tables": [
+   "hide_forest",
+   "cullbridegoth_slaves_trait_group",
+   "expendable",
+   "gorger",
+   "wh2_main_def_inf_witch_elves_0",
+   "wh2_dlc10_def_cha_crone_0",
+   "wh2_dlc10_def_cha_crone_1",
+   "wh2_dlc10_def_cha_crone_4",
+   "wh2_dlc10_def_cha_crone_5",
+   "wh2_main_def_cha_death_hag_0",
+   "wh2_main_def_cha_death_hag_1",
+   "wh2_dlc10_def_inf_sisters_of_the_singing_doom_ror_0",
+   "wh2_dlc10_def_inf_sisters_of_slaughter",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "causes_fear",
+   "causes_terror",
+   "encourages",
+   "flying"
+  ],
+  "unit_banner_unit_height_offsets_tables": [
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "unit_set_to_unit_junctions_tables": [
+   "cullbridegoth_slaves",
+   "cullbridegoth_slave_unit_set",
+   "cullbridegoth_witch_elf_glaives",
+   "mp_cap_unit_def_inf_witch_elves",
+   "wh2_dlc10_def_witch_elves_death_hags",
+   "wh2_def_khaine_units",
+   "def_witchelves_and_sisters_of_slaughter",
+   "def_sisters_of_slaughter_rank7",
+   "cullbridegoth_death_hag_matriarch",
+   "def_characters",
+   "wh2_def_death_hag_and_witch_elf",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "all_units_excluding_flying",
+   "mp_cap_group_flying_unit",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "unit_set_unit_attribute_junctions_tables": [
+   "cullbridegoth_tip_of_the_spear",
+   "guerrilla_deploy",
+   "def_witchelves_and_sisters_of_slaughter"
+  ],
+  "unit_sets_tables": [
+   "cullbridegoth_slave_unit_set"
+  ],
+  "unit_special_abilities_tables": [
+   "cullbridegoth_passive_mesmerizing_manhood",
+   "wh_abilities_generic_debuff",
+   "vo_battle_special_ability_spell_cast_negative",
+   "debuff_unit",
+   "combat_grape",
+   "wh_abilities_generic_debuff_no_ring",
+   "hex_speed_under_fire",
+   "wh2_dlc17_lord_abilities_barbed_knuckle_boxing"
+  ],
+  "unit_variants_tables": [
+   "cullbridegoth_slaves",
+   "cullbridegoth_witch_elf_glaives",
+   "cullbridegoth_death_hag_matriarch",
+   "wh2_main_def_death_hag",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "units_custom_battle_mounts_tables": [
+   "cullbridegoth_death_hag_matriarch",
+   "ui/campaign ui/mounts/mount_cauldron_of_blood.png",
+   "cullbridegoth_death_hag_matriarch_cauldron",
+   "ui/campaign ui/mounts/mount_manticore.png",
+   "cullbridegoth_death_hag_matriarch_wyvern"
+  ],
+  "units_custom_battle_permissions_tables": [
+   "wh2_main_def_dark_elves",
+   "cullbridegoth_slaves",
+   "cullbridegoth_witch_elf_glaives",
+   "cullbridegoth_death_hag_matriarch",
+   "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch.png",
+   "cullbridegoth_death_hag_matriarch_01",
+   "cullbridegoth_death_hag_matriarch_wyvern",
+   "cullbridegoth_death_hag_matriarch_cauldron"
+  ],
+  "units_to_groupings_military_permissions_tables": [
+   "cullbridegoth_slaves",
+   "wh2_main_def",
+   "cullbridegoth_witch_elf_glaives"
+  ],
+  "variants_tables": [
+   "cullbridegoth_slaves",
+   "cullbridegoth_witch_elf_glaives",
+   "cullbridegoth_death_hag_matriarch",
+   "def_death_hag",
+   "cullbridegoth_death_hag_matriarch_campaign_01",
+   "def_death_hag_campaign_01",
+   "cullbridegoth_death_hag_matriarch_campaign_02",
+   "def_death_hag_campaign_02",
+   "cullbridegoth_death_hag_matriarch_campaign_03",
+   "def_death_hag_campaign_03"
+  ]
+ },
+ "files": [
+  {
+   "path": "art/campaign/chariots/cam_cbc1/def/def_death_hag_cauldron_of_blood/def_witch_elf_01.rigid_model_v2",
+   "size": 449442,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "art/campaign/chariots/cam_cbc1/def/def_death_hag_cauldron_of_blood/def_witch_elf_02.rigid_model_v2",
+   "size": 476176,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db.pack",
+   "size": 7133592,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/agent_recruitment_categories_tables/cullbridegoth",
+   "size": 205,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/cullbridegoth",
+   "size": 284,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/cullbridegoth",
+   "size": 973,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/cullbridegoth",
+   "size": 251,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ancillaries_required_skills_tables/cullbridegoth",
+   "size": 287,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/cullbridegoth",
+   "size": 516,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/cullbridegoth",
+   "size": 181,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/cullbridegoth",
+   "size": 372,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_characters_tables/cullbridegoth",
+   "size": 333,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/building_units_allowed_tables/cullbridegoth",
+   "size": 280,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/cullbridegoth",
+   "size": 370,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/cullbridegoth",
+   "size": 848,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/campaign_map_attrition_unit_immunities_tables/cullbridegoth",
+   "size": 702,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/cdir_military_generator_unit_qualities_tables/cullbridegoth",
+   "size": 311,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/cullbridegoth",
+   "size": 454,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_ancillaries_junctions_tables/cullbridegoth",
+   "size": 295,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/cullbridegoth",
+   "size": 3321,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/cullbridegoth",
+   "size": 7063,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/cullbridegoth",
+   "size": 7988,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/cullbridegoth",
+   "size": 184,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/cullbridegoth",
+   "size": 641,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/cullbridegoth",
+   "size": 8260,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skills_tables/cullbridegoth",
+   "size": 1355,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/character_skills_to_level_reached_criterias_tables/cullbridegoth",
+   "size": 197,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/cullbridegoth",
+   "size": 132,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/cullbridegoth",
+   "size": 1070,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/cullbridegoth",
+   "size": 213,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_set_unit_attribute_junctions_tables/cullbridegoth",
+   "size": 155,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/effects_tables/cullbridegoth",
+   "size": 1069,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/cullbridegoth",
+   "size": 161,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/land_units_tables/cullbridegoth",
+   "size": 3029,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/data__",
+   "size": 2629,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/main_units_tables/cullbridegoth",
+   "size": 1784,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/melee_weapons_tables/cullbridegoth",
+   "size": 449,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_phase_attribute_effects_tables/cullbridegoth",
+   "size": 154,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_phase_stat_effects_tables/cullbridegoth",
+   "size": 322,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_phases_tables/cullbridegoth",
+   "size": 553,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_to_invalid_target_flags_tables/cullbridegoth",
+   "size": 126,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_to_recharge_contexts_tables/cullbridegoth",
+   "size": 115,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/special_ability_to_special_ability_phase_junctions_tables/cullbridegoth",
+   "size": 265,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ui_unit_bullet_point_unit_overrides_tables/cullbridegoth",
+   "size": 860,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/ui_unit_groupings_tables/cullbridegoth",
+   "size": 201,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/cullbridegoth",
+   "size": 305,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_attributes_groups_tables/cullbridegoth",
+   "size": 159,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/cullbridegoth",
+   "size": 831,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_banner_unit_height_offsets_tables/cullbridegoth",
+   "size": 193,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/cullbridegoth",
+   "size": 1321,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_set_unit_attribute_junctions_tables/cullbridegoth",
+   "size": 174,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_sets_tables/cullbridegoth",
+   "size": 131,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/cullbridegoth",
+   "size": 701,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/cullbridegoth",
+   "size": 735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/units_custom_battle_mounts_tables/cullbridegoth",
+   "size": 341,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/units_custom_battle_permissions_tables/cullbridegoth",
+   "size": 799,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/units_to_groupings_military_permissions_tables/cullbridegoth",
+   "size": 166,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "db/variants_tables/cullbridegoth",
+   "size": 761,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "text/db/cullbridegoth.loc",
+   "size": 12090,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/gorger.png",
+   "size": 2620,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/mesmerizing_manhood.png",
+   "size": 7254,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/battle_vanguard_deployment.png",
+   "size": 6041,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/demanding_mistress.png",
+   "size": 6136,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/futa_domination_skill.png",
+   "size": 7899,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/futa_world_domination.png",
+   "size": 6364,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/mesmerizing_manhood_skill.png",
+   "size": 5276,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/common ui/unit_category_icons/cullbridegoth_slaves_icon.dds",
+   "size": 22000,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/common ui/unit_category_icons/cullbridegoth_slaves_icon.png",
+   "size": 1113,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/common ui/unit_category_icons/glaive.dds",
+   "size": 8320,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/common ui/unit_category_icons/glaive.png",
+   "size": 667,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/def_crone_0.png",
+   "size": 19169,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch.png",
+   "size": 43083,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch_campaign_01_0.png",
+   "size": 44893,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch_campaign_02_0.png",
+   "size": 43757,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cullbridegoth_death_hag_matriarch_campaign_03_0.png",
+   "size": 48180,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/def_crone_0.png",
+   "size": 51918,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/def_death_hag_campaign_01_0.png",
+   "size": 43083,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/def_death_hag_campaign_02_0.png",
+   "size": 43757,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/def_death_hag_campaign_03_0.png",
+   "size": 48180,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_cullbridegoth.bin",
+   "size": 887,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch.png",
+   "size": 43083,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_01_0.png",
+   "size": 44893,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_02_0.png",
+   "size": 43757,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_03_0.png",
+   "size": 48180,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/def_crone_0.png",
+   "size": 51918,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/def_death_hag_campaign_01_0.png",
+   "size": 43083,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/def_death_hag_campaign_02_0.png",
+   "size": 43757,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_main_def_dark_elves/def_death_hag_campaign_03_0.png",
+   "size": 48180,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cullbridegoth_death_hag_matriarch.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cullbridegoth_death_hag_matriarch_campaign_01_0.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cullbridegoth_death_hag_matriarch_campaign_02_0.png",
+   "size": 19002,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cullbridegoth_death_hag_matriarch_campaign_03_0.png",
+   "size": 16805,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/def_crone_0.png",
+   "size": 15676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/def_death_hag_campaign_01_0.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/def_death_hag_campaign_02_0.png",
+   "size": 19002,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/def_death_hag_campaign_03_0.png",
+   "size": 16805,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings_cullbridegoth.bin",
+   "size": 206,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_01_0.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_02_0.png",
+   "size": 19002,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/cullbridegoth_death_hag_matriarch_campaign_03_0.png",
+   "size": 16805,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/def_crone_0.png",
+   "size": 15676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/def_death_hag_campaign_01_0.png",
+   "size": 17747,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/def_death_hag_campaign_02_0.png",
+   "size": 19002,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_main_def_dark_elves/def_death_hag_campaign_03_0.png",
+   "size": 16805,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/icons/cullbridegoth_slaves.png",
+   "size": 20948,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/icons/cullbridegoth_witch_elf_glaives.png",
+   "size": 19946,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/infopics/cullbridegoth_slaves.png",
+   "size": 74258,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/infopics/cullbridegoth_witch_elf_glaives.png",
+   "size": 73199,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/cullbridegoth_slaves.png",
+   "size": 41338,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/cullbridegoth_witch_elf_glaives.png",
+   "size": 31996,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/campaign_def_death_hag_cauldron_of_blood.variantmeshdefinition",
+   "size": 1421,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cullbridegoth_slave_female.variantmeshdefinition",
+   "size": 2813,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cullbridegoth_slave_male.variantmeshdefinition",
+   "size": 4063,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cullbridegoth_slaves.variantmeshdefinition",
+   "size": 195,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cullbridegoth_witch_elf_glaives.variantmeshdefinition",
+   "size": 2956,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_crone.variantmeshdefinition",
+   "size": 1052,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_death_hag.variantmeshdefinition",
+   "size": 2675,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_death_hag_campaign_01.variantmeshdefinition",
+   "size": 2457,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_death_hag_campaign_02.variantmeshdefinition",
+   "size": 2457,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_death_hag_campaign_03.variantmeshdefinition",
+   "size": 2457,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_death_hag_chalice.variantmeshdefinition",
+   "size": 2690,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_sisters_of_slaughter.variantmeshdefinition",
+   "size": 2987,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_witch_elf.variantmeshdefinition",
+   "size": 2875,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_witch_elf_dagger_1h_set1.variantmeshdefinition",
+   "size": 727,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_witch_elf_ror.variantmeshdefinition",
+   "size": 2886,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/materials/emp_flagellants_mace_1h_02_lod1_2_rigid_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/materials/emp_flagellants_mace_1h_02_lod1_rigid_alpha_on.xml.material",
+   "size": 2648,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/materials/emp_flagellants_mace_1h_04_lod1_2_rigid_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/materials/emp_flagellants_mace_1h_04_lod1_rigid_alpha_on.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_01.rigid_model_v2",
+   "size": 27980,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_01.wsmodel",
+   "size": 854,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_02.rigid_model_v2",
+   "size": 88308,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_02.wsmodel",
+   "size": 4642,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_03.rigid_model_v2",
+   "size": 74812,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_03.wsmodel",
+   "size": 854,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_04.rigid_model_v2",
+   "size": 59380,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_04.wsmodel",
+   "size": 854,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_05.rigid_model_v2",
+   "size": 100146,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_props/slave_mace_1h_05.wsmodel",
+   "size": 854,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/bst_gor_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2631,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/bst_ungor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2614,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/chs_marauder_legs_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2653,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/chs_marauder_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2651,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/chs_marauder_legs_02_1_weighted4_alpha_on.xml.material",
+   "size": 2662,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/chs_marauder_legs_02_4_weighted2_alpha_off.xml.material",
+   "size": 2657,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/chs_marauder_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2655,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/def_death_hag_torso_01_submesh_3_submesh_0_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2667,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/def_death_hag_torso_01_submesh_3_submesh_0_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2665,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/def_witch_elves_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/def_witch_elves_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/emp_flagellants_legs_01_1_weighted4_alpha_on.xml.material",
+   "size": 2681,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/emp_flagellants_prisoner_torso___8_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/emp_flagellants_prisoner_torso___weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/hef_alarielle_head_01_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/wef_spellweaver_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/slave_legs.rigid_model_v2",
+   "size": 1133228,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/legs/slave_legs.wsmodel",
+   "size": 15788,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/alivia_alarielle_arm_left_s3_2_weighted2_alpha_off.xml.material",
+   "size": 2422,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/alivia_alarielle_arm_left_s3_weighted4_alpha_on.xml.material",
+   "size": 2425,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_damsel_head_01_submesh_2_2_weighted2_alpha_off.xml.material",
+   "size": 2632,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_damsel_head_01_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 2630,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_questing_knights_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_questing_knights_head_01_weighted4_alpha_on.xml.material",
+   "size": 2724,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_questing_knights_head_05_2_weighted2_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_questing_knights_head_05_weighted4_alpha_on.xml.material",
+   "size": 2724,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_respanse_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_respanse_head_01_submesh_0_s_2_weighted2_alpha_off.xml.material",
+   "size": 2653,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_respanse_head_01_submesh_0_s_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/brt_respanse_head_01_weighted4_alpha_off.xml.material",
+   "size": 2625,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/bst_bestigor_head_05_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2658,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chd_orc_laborer_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chd_orc_laborer_body_01_weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_03__2_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_03__weighted4_alpha_off.xml.material",
+   "size": 2708,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_03_submesh_6_2_weighted2_alpha_off.xml.material",
+   "size": 2762,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_03_submesh_6_weighted4_alpha_off.xml.material",
+   "size": 2760,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_05_weighted2_alpha_on.xml.material",
+   "size": 2755,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_berserkers_head_05_weighted4_alpha_on.xml.material",
+   "size": 2712,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_femmm_legs_01_subme_2_weighted2_alpha_off.xml.material",
+   "size": 2651,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_femmm_legs_01_subme_weighted4_alpha_off.xml.material",
+   "size": 2649,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_head_02_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 2665,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_head_03_submesh_22_2_weighted2_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_head_03_submesh_22_weighted4_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_head_03_submesh_288_2_weighted2_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_head_03_submesh_288_weighted4_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_legs_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2654,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2652,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_legs_01_submesh_58_2_weighted2_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_legs_01_submesh_58_weighted4_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_shaman_body_02_subm_2_weighted2_alpha_off.xml.material",
+   "size": 2717,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_marauder_shaman_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2715,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_sigvald_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 2654,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_sigvald_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_sigvald_head_01_5_weighted2_alpha_off.xml.material",
+   "size": 2654,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/chs_sigvald_head_01_weighted4_alpha_on.xml.material",
+   "size": 2652,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/cst_aranessa_head_01_submesh_21_2_weighted2_alpha_off.xml.material",
+   "size": 2647,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/cst_aranessa_head_01_submesh_21_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_beastmaster_head_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_beastmaster_head_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2650,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_body_02_submesh_22_2_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_body_02_submesh_22_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_2_weighted2_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_submesh_1_2_weighted2_alpha_off.xml.material",
+   "size": 2672,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_submesh__weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/def_witch_elves_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_felix_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2619,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_felix_head_01_weighted4_alpha_on.xml.material",
+   "size": 2622,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_head_04_submesh_9_2_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_head_04_submesh_9_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_head_05_2_weighted2_alpha_off.xml.material",
+   "size": 2661,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_head_05_weighted4_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_legs_04_submesh_172_2_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_legs_04_submesh_172_weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso__2_weighted2_alpha_off.xml.material",
+   "size": 2658,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso___10_weighted2_alpha_off.xml.material",
+   "size": 2677,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso___2_weighted2_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso___4_weighted2_alpha_off.xml.material",
+   "size": 2672,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso___weighted4_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_prisoner_torso__weighted4_alpha_off.xml.material",
+   "size": 2656,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_tattersouls_tor_2_weighted2_alpha_off.xml.material",
+   "size": 2736,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_flagellants_tattersouls_tor_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_head10_2_weighted2_alpha_off.xml.material",
+   "size": 2510,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_head10_weighted4_alpha_on.xml.material",
+   "size": 2513,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_state_troops_head_01_submesh_4_submesh_0_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 2730,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_state_troops_head_01_submesh_4_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_theodore_01_submesh_0_1_weighted2_alpha_off.xml.material",
+   "size": 2635,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_theodore_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2638,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/emp_theodore_01_submesh_20_weighted4_alpha_off.xml.material",
+   "size": 2634,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/gs1_lod1_2_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/gs1_lod1_weighted4_alpha_on.xml.material",
+   "size": 2692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/head_prophe_2_weighted2_alpha_off.xml.material",
+   "size": 2542,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/head_prophe_weighted4_alpha_on.xml.material",
+   "size": 2545,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/hef_phoenix_guard_head_03_2_weighted2_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/hef_phoenix_guard_head_03_weighted4_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/hef_sisters_of_avelorn_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2743,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/hef_sisters_of_avelorn_head_01_weighted4_alpha_off.xml.material",
+   "size": 2741,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/human_head3_2_weighted2_alpha_off.xml.material",
+   "size": 2548,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/human_head3_weighted4_alpha_off.xml.material",
+   "size": 2546,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_15_weighted4_alpha_off.xml.material",
+   "size": 6350,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_2_s_18_weighted2_alpha_off.xml.material",
+   "size": 2644,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_2_s_19_weighted2_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_2_submesh_1_submesh_4_weighted4_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 2661,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/lzd_kroq_gar_body_01_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 6346,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/morathibody_lod1_2_weighted2_alpha_off.xml.material",
+   "size": 2565,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2568,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/nor_wulfrik_01_submesh_123_subme_2_weighted2_alpha_off.xml.material",
+   "size": 2595,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/nor_wulfrik_01_submesh_123_subme_weighted4_alpha_on.xml.material",
+   "size": 2598,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/wef_spellweaver_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2669,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_body_01.rigid_model_v2",
+   "size": 656100,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_body_01.wsmodel",
+   "size": 8667,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_head_01.rigid_model_v2",
+   "size": 573288,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_head_01.wsmodel",
+   "size": 3063,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_head_02.rigid_model_v2",
+   "size": 397204,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_female_head_03.rigid_model_v2",
+   "size": 469892,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_01.rigid_model_v2",
+   "size": 262140,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_01.wsmodel",
+   "size": 3058,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_02.rigid_model_v2",
+   "size": 426804,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_02.wsmodel",
+   "size": 5730,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_03.rigid_model_v2",
+   "size": 262076,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_03.wsmodel",
+   "size": 2274,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_04.rigid_model_v2",
+   "size": 304300,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_04.wsmodel",
+   "size": 4618,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_05.rigid_model_v2",
+   "size": 320124,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_head_05.wsmodel",
+   "size": 4626,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_01.rigid_model_v2",
+   "size": 322636,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_01.wsmodel",
+   "size": 3815,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_02.rigid_model_v2",
+   "size": 421740,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_02.wsmodel",
+   "size": 3079,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_03.rigid_model_v2",
+   "size": 510676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/slave_torso_03.wsmodel",
+   "size": 6039,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/emp_flagellants_head_01_base_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/emp_flagellants_torso_01_material_map.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/female_slave_body_normals.dds",
+   "size": 2097280,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/hairbun_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/head_material.dds",
+   "size": 1048724,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/head_normal.dds",
+   "size": 4194432,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/nipple_color.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_body_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_feet_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_feet_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_hair_02_base_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_hair_03_base_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_hands_01_colour.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_head_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_head_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_head_03_colour.dds",
+   "size": 2097280,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_legs_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/pen_legs_02_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_female_hands_01_colour.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_female_legs_base_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_girl_legs_base_colour.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_goldhand_colour.dds",
+   "size": 1048704,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_goldhand_normals.dds",
+   "size": 1640,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_head_01_base_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_head_01_normal.dds",
+   "size": 4194432,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_helmet_color.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_helmet_normal.dds",
+   "size": 1424,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_legs_01_material_map.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_legs_base_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_torso_01_base_colour.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/def/def_slaves/tex/slave_torso_01_normal.dds",
+   "size": 1048704,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/cst/cst_aranessa/tex/cst_aranessa_head_01_base_colour.dds",
+   "size": 349692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/cm_copy_copy.rigid_model_v2",
+   "size": 3581652,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/cm_copy_copy.wsmodel",
+   "size": 13619,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/cm_copy_copy_copy.rigid_model_v2",
+   "size": 3731702,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/cm_copy_copy_copy.wsmodel",
+   "size": 43786,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/bst_gor_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2621,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/bst_gor_head_01_submesh_26_2_weighted2_alpha_off.xml.material",
+   "size": 2623,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/bst_gor_head_01_submesh_26_weighted4_alpha_on.xml.material",
+   "size": 2626,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/chs_marauder_legs_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/chs_marauder_legs_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2672,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/chs_marauder_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2582,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_body_01_subm_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_body_01_subm_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2713,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_body_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_body_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2703,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_subm_2_weighted2_alpha_off.xml.material",
+   "size": 2701,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_weighted2_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_crone_hellebron_head_01_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_death_hag_legs_01_submesh_6__submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_death_hag_legs_01_submesh_6__weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_death_hag_torso_01_submesh_3_2_weighted2_alpha_off.xml.material",
+   "size": 2665,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_death_hag_torso_01_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_dreadlord_female_torso_01_su_2_weighted2_alpha_off.xml.material",
+   "size": 6421,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_dreadlord_female_torso_01_su_weighted4_alpha_off.xml.material",
+   "size": 6419,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_1_weighted2_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_1_weighted4_alpha_off.xml.material",
+   "size": 2620,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_4_weighted2_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_5_weighted2_alpha_off.xml.material",
+   "size": 2620,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_weighted2_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_khanite_assassin_torso_04_su_weighted4_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_medusa_head_01_submesh_1_sub_2_weighted2_alpha_off.xml.material",
+   "size": 2643,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_medusa_head_01_submesh_1_sub_weighted2_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_medusa_head_01_submesh_1_sub_weighted4_alpha_on.xml.material",
+   "size": 2646,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_supreme_sorceress_body_03_su_2_weighted2_alpha_off.xml.material",
+   "size": 2733,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_supreme_sorceress_body_03_su_weighted2_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_supreme_sorceress_body_03_su_weighted4_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_body_01_submesh__1_weighted4_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_body_01_submesh__4_weighted2_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_body_01_submesh__5_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_body_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_head_03_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_head_03_submesh__weighted2_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/def_witch_elves_head_03_submesh__weighted4_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/hef_alarielle_body_01_submesh_35_weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/hef_alarielle_body_01_submesh_35_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/hellebron_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2555,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/wef_spellweaver_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/wef_spellweaver_body_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2678,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_body_01_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_body_02_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_body_03_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_body_04_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_feet_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_hair_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_helmet_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_legs_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cm_skirt_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cms_head_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cms_head_02_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cms_head_03_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/cullbridegoth_pubes_color.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_crone_hellebron/tex/hellebron_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_body_01.rigid_model_v2",
+   "size": 2626580,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_body_01.wsmodel",
+   "size": 11203,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_01.rigid_model_v2",
+   "size": 1773172,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_01.wsmodel",
+   "size": 8167,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_02.rigid_model_v2",
+   "size": 1571836,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_02.wsmodel",
+   "size": 8171,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_03.rigid_model_v2",
+   "size": 1510348,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/cullpriest_head_03.wsmodel",
+   "size": 6675,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/brt_respanse_head_01_submesh_82__weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/chs_marauder_legs_01_submesh_0_s_2_weighted2_alpha_off.xml.material",
+   "size": 2589,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/chs_marauder_legs_01_submesh_0_s_weighted4_alpha_off.xml.material",
+   "size": 2587,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/chs_marauder_legs_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/chs_marauder_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/cth_alchemist_head_02_submesh_15_weighted2_alpha_off.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/cth_alchemist_head_02_submesh_15_weighted4_alpha_off.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/cth_dragon_storm_human_head_01_s_weighted2_alpha_off.xml.material",
+   "size": 2720,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/cth_dragon_storm_human_head_01_s_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_crone_hellebron_body_01_subm_1_weighted2_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_crone_hellebron_body_01_subm_1_weighted4_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_crone_hellebron_body_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2719,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_crone_hellebron_body_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2719,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_head_01_submesh_0__weighted2_alpha_off.xml.material",
+   "size": 2575,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_head_01_submesh_0__weighted4_alpha_on.xml.material",
+   "size": 2580,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_legs_01_submesh_6__weighted2_alpha_off.xml.material",
+   "size": 2655,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_legs_01_submesh_6__weighted4_alpha_off.xml.material",
+   "size": 2655,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_torso_02_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2655,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_torso_02_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 2655,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_torso_03_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_death_hag_torso_03_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_dreadlord_female_head_01_sub_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_dreadlord_female_head_01_sub_weighted4_alpha_off.xml.material",
+   "size": 6331,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_dreadlord_female_torso_01_su_2_weighted2_alpha_off.xml.material",
+   "size": 6337,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_dreadlord_female_torso_01_su_weighted4_alpha_off.xml.material",
+   "size": 6335,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_khanite_assassin_torso_02_su_weighted2_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_khanite_assassin_torso_02_su_weighted4_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_khanite_assassin_torso_04_su_weighted2_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_khanite_assassin_torso_04_su_weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_medusa_head_01_submesh_1_sub_weighted2_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_medusa_head_01_submesh_1_sub_weighted4_alpha_on.xml.material",
+   "size": 2646,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_sorceress_head_02_submesh_8_weighted2_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_sorceress_head_02_submesh_8_weighted4_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_supreme_sorceress_body_03_su_weighted2_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_supreme_sorceress_body_03_su_weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_body_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_head_01_submesh__1_weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_head_01_submesh__1_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_head_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/def_witch_elves_head_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hagwaist1_lod1_submesh_0_submesh_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_body_01_submesh_35_weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_body_01_submesh_35_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_submesh_4_weighted2_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_submesh_4_weighted4_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_weighted2_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hef_alarielle_head_01_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/hellebron_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2552,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/wef_spellweaver_body_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_armor_colour.dds",
+   "size": 131220,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_hair_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_01b_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_02b_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_03_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_03b_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_04_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_head_04b_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_legarmor_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_neck_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_death_hag/tex/cullpriest_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/cm_dagger_1h_01.rigid_model_v2",
+   "size": 57238,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/cm_sword_1h_01.rigid_model_v2",
+   "size": 67256,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/cull_bride_sword_01.rigid_model_v2",
+   "size": 68166,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/cull_bride_sword_02.rigid_model_v2",
+   "size": 64472,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/cull_bride_sword_03.rigid_model_v2",
+   "size": 76332,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_props/torture_maiden_whip_rigid_01.rigid_model_v2",
+   "size": 112602,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2563,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/dae_cultist_of_slaanesh_body_01__1_weighted4_alpha_off.xml.material",
+   "size": 2738,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/dae_cultist_of_slaanesh_body_01__4_weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/dae_cultist_of_slaanesh_body_01__5_weighted2_alpha_off.xml.material",
+   "size": 2738,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/dae_cultist_of_slaanesh_body_01__weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_dreadlord_female_torso_03_su_2_weighted2_alpha_off.xml.material",
+   "size": 2733,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_dreadlord_female_torso_03_su_weighted4_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_medusa_body_02_submesh_0_sub_2_weighted2_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_medusa_body_02_submesh_0_sub_weighted4_alpha_off.xml.material",
+   "size": 2643,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_medusa_body_02_submesh_54_2_weighted2_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_medusa_body_02_submesh_54_weighted4_alpha_off.xml.material",
+   "size": 2661,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_morathi_body_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_morathi_body_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_morathi_body_01_submesh_27_2_weighted2_alpha_off.xml.material",
+   "size": 2603,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_morathi_body_01_submesh_27_weighted4_alpha_off.xml.material",
+   "size": 2601,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_sisters_of_slaughter_body_0__2_weighted2_alpha_off.xml.material",
+   "size": 2761,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_sisters_of_slaughter_body_0__weighted4_alpha_off.xml.material",
+   "size": 2759,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_sisters_of_slaughter_legs_0__1_weighted4_alpha_off.xml.material",
+   "size": 2761,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_sisters_of_slaughter_legs_0__4_weighted2_alpha_off.xml.material",
+   "size": 2761,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_sisters_of_slaughter_legs_0__weighted4_alpha_on.xml.material",
+   "size": 2764,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_witch_elves_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/materials/def_witch_elves_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2695,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torture_maiden_body_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torture_maiden_breastplate_01_colour.dds",
+   "size": 5592580,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torture_maiden_hair_01_colour.dds",
+   "size": 1398276,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torture_maiden_legs_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torture_maiden_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torturemaiden_hair_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/torturemaiden_head_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/torture_maiden_body_01.rigid_model_v2",
+   "size": 1623868,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/torture_maiden_body_01.wsmodel",
+   "size": 12398,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/torture_maiden_head_01.rigid_model_v2",
+   "size": 601900,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/torture_maiden_head_02.rigid_model_v2",
+   "size": 588478,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/torture_maiden_head_03.rigid_model_v2",
+   "size": 572304,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_body_01.rigid_model_v2",
+   "size": 1843868,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_body_01.wsmodel",
+   "size": 11201,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_01.rigid_model_v2",
+   "size": 1027852,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_01.wsmodel",
+   "size": 7501,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_02.rigid_model_v2",
+   "size": 888500,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_02.wsmodel",
+   "size": 7501,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_03.rigid_model_v2",
+   "size": 920044,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_head_03.wsmodel",
+   "size": 8241,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_body_01.rigid_model_v2",
+   "size": 3094412,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_body_01.wsmodel",
+   "size": 31465,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_01.rigid_model_v2",
+   "size": 712732,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_01.wsmodel",
+   "size": 5701,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_02.rigid_model_v2",
+   "size": 786392,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_02.wsmodel",
+   "size": 6813,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_03.rigid_model_v2",
+   "size": 731740,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cull_bride_ror_head_03.wsmodel",
+   "size": 6445,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cullbride_01.rigid_model_v2",
+   "size": 2354480,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/cullbride_02.rigid_model_v2",
+   "size": 2486030,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/bst_gor_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2642,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/chs_marauder_legs_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/chs_marauder_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2586,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/cth_dragon_storm_human_head_01_s_2_weighted2_alpha_off.xml.material",
+   "size": 2745,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/cth_dragon_storm_human_head_01_s_weighted4_alpha_on.xml.material",
+   "size": 2748,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/dae_daemonette_herald_head_02_su_2_weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/dae_daemonette_herald_head_02_su_weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_crone_hellebron_body_01_subm_4_weighted2_alpha_off.xml.material",
+   "size": 2721,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_crone_hellebron_body_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2719,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_death_hag_legs_01_submesh_52_2_weighted2_alpha_off.xml.material",
+   "size": 2661,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_death_hag_legs_01_submesh_52_weighted4_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_death_hag_torso_02_submesh_3_2_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_death_hag_torso_02_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_dreadlord_female_head_01_sub_weighted4_alpha_off.xml.material",
+   "size": 2727,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_dreadlord_female_legs_02_sub_1_weighted4_alpha_off.xml.material",
+   "size": 2729,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_dreadlord_female_legs_02_sub_4_weighted2_alpha_off.xml.material",
+   "size": 2711,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_dreadlord_female_legs_02_sub_5_weighted2_alpha_off.xml.material",
+   "size": 2729,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_dreadlord_female_legs_02_sub_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_khanite_assassin_torso_04_su_2_weighted2_alpha_off.xml.material",
+   "size": 2733,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_khanite_assassin_torso_04_su_weighted4_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_medusa_head_01_submesh_1_sub_weighted4_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_medusa_head_02_submesh_4_sub_2_weighted2_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_medusa_head_02_submesh_4_sub_weighted4_alpha_off.xml.material",
+   "size": 2643,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_body_01_su_2_weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_body_01_su_weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_body_03_su_2_weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_body_03_su_weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_head_01_su_4_weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_head_01_su_weighted4_alpha_on.xml.material",
+   "size": 2740,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_head_04_su_weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_legs_01_su_2_weighted2_alpha_off.xml.material",
+   "size": 2719,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_supreme_sorceress_legs_01_su_weighted4_alpha_off.xml.material",
+   "size": 2717,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_body_01_submesh__1_weighted4_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_body_01_submesh__4_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_01_submesh_1_2_weighted2_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_01_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_03_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/def_witch_elves_head_03_submesh__weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/girl_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2620,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/girl_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2623,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/hef_alarielle_body_01_submesh_35_2_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/hef_alarielle_body_01_submesh_35_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/wef_arahan_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/wef_arahan_head_01_weighted4_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/wef_spellweaver_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/witcharms_lod1_submesh_0_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/materials/witcharms_lod1_submesh_0_submesh_weighted4_alpha_on.xml.material",
+   "size": 2692,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_eyes_colour.dds",
+   "size": 1398268,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_hair_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_hairb_01_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_body_02_base_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_feet_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_hair_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_head_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_head_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_head_03_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_legs_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cull_bride_ror_neck_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_body_02_colour.dds",
+   "size": 262292,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_breastplate_colour.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_breastplate_mask.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_breastplate_material_map.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_feet_02_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_hairc_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_head_01b_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_head_02b_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_legs_02_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_neck_01_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_vialsb_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbride_vialsc_colour.dds",
+   "size": 524436,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth3_head_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth3_head_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_body_01_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_body_02_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_breastplate_colour.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_breastplate_mask.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_breastplate_material_map.dds",
+   "size": 349700,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_eyes_colour.dds",
+   "size": 1398268,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_feet_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_feet_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_feet_03_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_hair_colour.dds",
+   "size": 1398276,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_head2_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_head2_03_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_head_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_head_02_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_legs_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_neck_01_colour.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_colour_new.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_mask.dds",
+   "size": 349664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_material_map.dds",
+   "size": 174924,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_material_map_new.dds",
+   "size": 524416,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_material_new_new.dds",
+   "size": 4497536,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_normal.dds",
+   "size": 349664,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_normal_new.dds",
+   "size": 1398240,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/sisters_pns_color.dds",
+   "size": 131200,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/wet_mat_map.dds",
+   "size": 16777412,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_marauder_berserkers/chs_marauder_berserkers.rigid_model_v2",
+   "size": 876498,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_marauder_berserkers/torso/chs_marauder_berserkers_torso.rigid_model_v2",
+   "size": 784258,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_marauders/legs1_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_marauders/legs2_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_marauders/legs_colour.dds",
+   "size": 262272,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/materials/def_black_guard_halberd_2h_01_l_submesh_0_submesh_16_rigid_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/materials/def_dreadlord_sword_1h_01_lod1_submesh_0_rigid_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/witch_elf_glaive_2h_01.rigid_model_v2",
+   "size": 220444,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/witch_elf_glaive_2h_01.wsmodel",
+   "size": 1679,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/witch_elf_glaive_2h_02.rigid_model_v2",
+   "size": 146462,
+   "pack": "FutaWitchElvesComplete.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/def/def_props/witch_elf_glaive_2h_02.wsmodel",
+   "size": 835,
+   "pack": "FutaWitchElvesComplete.pack"
+  }
+ ]
+}

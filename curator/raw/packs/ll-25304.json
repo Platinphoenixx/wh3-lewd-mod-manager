@@ -1,0 +1,1967 @@
+{
+ "mod": "ll-25304",
+ "packs": [
+  "WH3_KarlaBsuit.pack",
+  "WH3_KarlaBsuitFullPlate.pack",
+  "WH3_Karla_textandvoiceFinal.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack": {
+   "files": 230,
+   "dependencies": []
+  },
+  "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack": {
+   "files": 38,
+   "dependencies": []
+  },
+  "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack": {
+   "files": 92,
+   "dependencies": []
+  }
+ },
+ "fileCount": 314,
+ "byTopFolder": {
+  "audio": 184,
+  "variantmeshes": 84,
+  "text": 28,
+  "ui": 12,
+  "db": 6
+ },
+ "tables": [
+  "audio_entity_types_tables",
+  "character_skills_tables",
+  "dilemmas_tables",
+  "effect_bundles_tables",
+  "missions_tables",
+  "start_pos_factions_tables"
+ ],
+ "references": {
+  "total": 90,
+  "inMod": 70,
+  "inBaseGame": 20,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "audio_entity_types_tables": [
+   "wh_human_female_fatigue",
+   "wh_human_female_idle",
+   "wh_human_male_LORD_Karl_Franz",
+   "wh_human_female_running",
+   "Battle_Musician_Event",
+   "wh_human_female",
+   "wood",
+   "wh_human_female_walking",
+   "Lord_Hero",
+   "wh_human_male",
+   "hero_default",
+   "hero_combat",
+   "Battle_Individual_Footstep_Landing_Heavy"
+  ],
+  "character_skills_tables": [
+   "trait_human.png",
+   "wh2_dlc13_lord_trait_emp_wulfhart",
+   "Captain of Scouts",
+   "character_ranged_damage.png",
+   "wh_dlc08_skill_emp_lord_unique_balthasar_unique_2",
+   "New Formulations",
+   "character_damage.png",
+   "wh_dlc08_skill_emp_lord_unique_karl_5",
+   "character_attack.png",
+   "wh_dlc08_skill_emp_lord_unique_karl_1",
+   "Imperial Special Forces",
+   "character_experience.png",
+   "wh2_dlc13_skill_emp_wulfhart_unique_0",
+   "Best of the Best",
+   "character_military_spending.png",
+   "wh_dlc08_skill_emp_lord_unique_karl_4",
+   "Majestic Enforcer"
+  ],
+  "dilemmas_tables": [
+   "wh2_dlc13_emp_elector_confederate_reikland",
+   "elector_confederation",
+   "imperial_authority",
+   "wh2_dlc13_demand_return_wh3_main_combi_region_altdorf",
+   "elector_region",
+   "wh2_dlc13_demand_return_wh3_main_combi_region_eilhart",
+   "wh2_dlc13_demand_return_wh3_main_combi_region_grunburg",
+   "wh2_dlc13_demand_return_wh3_main_combi_region_helmgart",
+   "wh2_dlc13_wulfhart_imperial_guards_st_3",
+   "imperial_supplies",
+   "Event"
+  ],
+  "effect_bundles_tables": [
+   "wh_main_lord_trait_emp_karl_franz",
+   "Heir of Sigmar",
+   "faction",
+   "character.png",
+   "wh2_dlc13_lord_trait_emp_wulfhart",
+   "Huntsmarshal of the Empire",
+   "wh2_main_minister_emp_reikland",
+   "Elector Count of Reikland",
+   "character",
+   "hunter_effect_icons_elector_count.png"
+  ],
+  "missions_tables": [
+   "wh_main_mis_emp_declare_war_dwf",
+   "DECLARE_WAR",
+   "War With the Beards",
+   "emp/generic",
+   "rom_event_mission.png",
+   "Military",
+   "wh_main_mis_grn_eliminate_character_in_battle_faction_leader_emp",
+   "ELIMINATE_CHARACTER_IN_BATTLE",
+   "Kill da Empera",
+   "grn/generic",
+   "wh3_dlc23_ie_emp_ulrika_stage_2",
+   "HAVE_AT_LEAST_X_MONEY",
+   "Bait the Bloodborn",
+   "Quest",
+   "wh_dlc05_mis_wef_eliminate_character_in_battle_faction_leader_emp",
+   "wef/generic",
+   "wh_main_mis_vmp_eliminate_character_in_battle_faction_leader_emp",
+   "False Emperor",
+   "vmp/generic",
+   "wh_main_mis_chs_eliminate_character_in_battle_faction_leader_emp",
+   "chs/generic",
+   "wh3_main_ie_qb_emp_karl_franz_ghal_maraz",
+   "FIGHT_SET_PIECE_BATTLE",
+   "Ghal Maraz",
+   "wh_main_qb_emp_karl_franz_ghal_maraz_stage_4_black_fire_pass",
+   "wh3_main_ie_qb_grn_wurrzag_da_great_green_prophet_bonewood_staff",
+   "Bonewood Staff",
+   "wh_dlc06_qb_grn_wurrzag_da_great_green_prophet_bonewood_staff_stage_4_black_fire_pass",
+   "wh_main_mis_grn_engage_force_army_invading_emp",
+   "ENGAGE_FORCE",
+   "Humie Invaderz"
+  ],
+  "start_pos_factions_tables": [
+   "wh_main_emp_empire",
+   "wh3_main_combi",
+   "default",
+   "WH_Empire",
+   "wh3_combi_personality_group_empire_franz",
+   "combi_empire_franz",
+   "wh3_main_emp_cult_of_sigmar",
+   "wh3_combi_personality_group_empire_volkmar",
+   "combi_empire_volkmar",
+   "wh2_dlc13_emp_golden_order",
+   "wh3_combi_personality_group_empire_gelt",
+   "combi_empire_gelt",
+   "wh2_dlc11_vmp_the_barrow_legion",
+   "WH_Vampire_Counts",
+   "wh3_combi_personality_group_vampire_kemmler",
+   "combi_vampire_kemmler",
+   "wh_main_vmp_vampire_counts",
+   "wh3_combi_personality_group_vampire_mannfred",
+   "combi_vampire_mannfred",
+   "wh_main_vmp_schwartzhafen",
+   "wh3_combi_personality_group_vampire_vlad",
+   "combi_vampire_vlad"
+  ]
+ },
+ "files": [
+  {
+   "path": "audio/wwise/english(uk)/1013253277.wem",
+   "size": 8796,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/10211980.wem",
+   "size": 10216,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1022614423.wem",
+   "size": 6127,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1025347546.wem",
+   "size": 12728,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1033971309.wem",
+   "size": 16790,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1036846213.wem",
+   "size": 8659,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1045862659.wem",
+   "size": 13208,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1059498598.wem",
+   "size": 58205,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1062262586.wem",
+   "size": 9084,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1065825676.wem",
+   "size": 232528,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1071280287.wem",
+   "size": 5957,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/107999808.wem",
+   "size": 9414,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/108776248.wem",
+   "size": 20190,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/110396932.wem",
+   "size": 9889,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/112084100.wem",
+   "size": 8417,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/114297572.wem",
+   "size": 5823,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/114594780.wem",
+   "size": 15191,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/122747448.wem",
+   "size": 33723,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/123471703.wem",
+   "size": 9419,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/12924787.wem",
+   "size": 39766,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/131069193.wem",
+   "size": 12780,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/135487758.wem",
+   "size": 11057,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/137906798.wem",
+   "size": 12633,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/145570403.wem",
+   "size": 9807,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/153558099.wem",
+   "size": 6077,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/154506585.wem",
+   "size": 6594,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/157446245.wem",
+   "size": 11230,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/16083316.wem",
+   "size": 6686,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/162279802.wem",
+   "size": 8861,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/168430870.wem",
+   "size": 13028,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/169733708.wem",
+   "size": 8215,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/17061707.wem",
+   "size": 14819,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/171789402.wem",
+   "size": 22550,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/172412809.wem",
+   "size": 170170,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/173741697.wem",
+   "size": 17041,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/177619908.wem",
+   "size": 7034,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/184419806.wem",
+   "size": 29850,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/184432227.wem",
+   "size": 17824,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/185245350.wem",
+   "size": 17422,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/190082506.wem",
+   "size": 9011,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/193722009.wem",
+   "size": 36901,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/194078021.wem",
+   "size": 13338,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/195164469.wem",
+   "size": 10066,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/202692083.wem",
+   "size": 10668,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/204091719.wem",
+   "size": 10888,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/204814216.wem",
+   "size": 6515,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/207111429.wem",
+   "size": 15189,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/210971240.wem",
+   "size": 15632,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/212078341.wem",
+   "size": 6482,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/220687807.wem",
+   "size": 16121,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/222148949.wem",
+   "size": 18984,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/223831074.wem",
+   "size": 42350,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/229846939.wem",
+   "size": 14767,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/230854458.wem",
+   "size": 15681,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/23166591.wem",
+   "size": 19752,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/236398196.wem",
+   "size": 10241,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/240795439.wem",
+   "size": 8367,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/244534261.wem",
+   "size": 7800,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/247946324.wem",
+   "size": 8773,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/265201954.wem",
+   "size": 8331,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/266891984.wem",
+   "size": 10350,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/267922137.wem",
+   "size": 127493,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/268089873.wem",
+   "size": 12540,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/26998452.wem",
+   "size": 19371,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/27212940.wem",
+   "size": 15237,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/274501294.wem",
+   "size": 47157,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/282421199.wem",
+   "size": 6238,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/283592484.wem",
+   "size": 50032,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/293316436.wem",
+   "size": 11159,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/300889727.wem",
+   "size": 7644,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/305395564.wem",
+   "size": 7388,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/309713088.wem",
+   "size": 9472,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/31660541.wem",
+   "size": 5936,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/332704530.wem",
+   "size": 8639,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/335913473.wem",
+   "size": 9134,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/347697153.wem",
+   "size": 8194,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/351966677.wem",
+   "size": 11895,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/355535780.wem",
+   "size": 11396,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/362853655.wem",
+   "size": 7302,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/368215732.wem",
+   "size": 9826,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/376322070.wem",
+   "size": 7897,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/380262798.wem",
+   "size": 27176,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/383681721.wem",
+   "size": 8218,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/38555477.wem",
+   "size": 10070,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/398152561.wem",
+   "size": 13834,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/40900969.wem",
+   "size": 9760,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/41516022.wem",
+   "size": 6167,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/422774152.wem",
+   "size": 16596,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/424434625.wem",
+   "size": 40780,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/441379723.wem",
+   "size": 15420,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/442070254.wem",
+   "size": 7661,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/444615800.wem",
+   "size": 19924,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/44929386.wem",
+   "size": 8679,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/451346985.wem",
+   "size": 29667,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/451699830.wem",
+   "size": 39374,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/452783938.wem",
+   "size": 17434,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/461181108.wem",
+   "size": 14815,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/468705795.wem",
+   "size": 39091,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/469318134.wem",
+   "size": 41408,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/470288475.wem",
+   "size": 7202,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/475571498.wem",
+   "size": 36507,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/506649902.wem",
+   "size": 13751,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/507621533.wem",
+   "size": 9264,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/515145633.wem",
+   "size": 6606,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/516740588.wem",
+   "size": 9234,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/522809420.wem",
+   "size": 16552,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/527094975.wem",
+   "size": 43948,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/537082654.wem",
+   "size": 5354,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/540636890.wem",
+   "size": 9517,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/555990607.wem",
+   "size": 48004,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/556271686.wem",
+   "size": 14954,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/561569616.wem",
+   "size": 13691,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/563954071.wem",
+   "size": 51777,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/568480138.wem",
+   "size": 11325,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/568544612.wem",
+   "size": 17231,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/5705479.wem",
+   "size": 15495,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/577102888.wem",
+   "size": 12469,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/583642911.wem",
+   "size": 7651,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/599647795.wem",
+   "size": 10013,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/599807972.wem",
+   "size": 10861,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/60208899.wem",
+   "size": 18843,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/60529522.wem",
+   "size": 6353,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/608928982.wem",
+   "size": 45739,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/624919783.wem",
+   "size": 30524,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/627053090.wem",
+   "size": 9203,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/631124007.wem",
+   "size": 48817,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/633678470.wem",
+   "size": 9997,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/634816448.wem",
+   "size": 14047,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/638955107.wem",
+   "size": 10109,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/640211651.wem",
+   "size": 7582,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/65570713.wem",
+   "size": 21179,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/656784607.wem",
+   "size": 5448,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/662250042.wem",
+   "size": 8193,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/666371198.wem",
+   "size": 23898,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/66725511.wem",
+   "size": 15557,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/673357839.wem",
+   "size": 29863,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/678269543.wem",
+   "size": 7234,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/679454753.wem",
+   "size": 16974,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/687450515.wem",
+   "size": 129693,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/692197951.wem",
+   "size": 11507,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/695775455.wem",
+   "size": 14847,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/697841807.wem",
+   "size": 13302,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/700253260.wem",
+   "size": 10154,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/701773577.wem",
+   "size": 12556,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/70209757.wem",
+   "size": 6024,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/702850235.wem",
+   "size": 44273,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/71150692.wem",
+   "size": 30056,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/714017807.wem",
+   "size": 141288,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/721573281.wem",
+   "size": 52281,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/737829860.wem",
+   "size": 153023,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/743373307.wem",
+   "size": 23764,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/746037269.wem",
+   "size": 28988,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/750127874.wem",
+   "size": 6614,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/7537707.wem",
+   "size": 14446,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/763287491.wem",
+   "size": 11724,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/766551260.wem",
+   "size": 144825,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/768298292.wem",
+   "size": 6192,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/782140716.wem",
+   "size": 7387,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/785538211.wem",
+   "size": 13694,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/788607407.wem",
+   "size": 4545,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/794699175.wem",
+   "size": 11430,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/799613624.wem",
+   "size": 12101,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/805893972.wem",
+   "size": 44332,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/810212901.wem",
+   "size": 10094,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/816803192.wem",
+   "size": 7163,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/83794733.wem",
+   "size": 10842,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/84369580.wem",
+   "size": 12593,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/847810777.wem",
+   "size": 25567,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/855119369.wem",
+   "size": 17927,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/856345468.wem",
+   "size": 62159,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/857093054.wem",
+   "size": 8404,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/859830903.wem",
+   "size": 12256,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/86251503.wem",
+   "size": 6300,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/872139804.wem",
+   "size": 8529,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/878487795.wem",
+   "size": 13957,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/881239965.wem",
+   "size": 36346,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/894123298.wem",
+   "size": 21582,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/9000710.wem",
+   "size": 30322,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/916573658.wem",
+   "size": 60093,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/92351676.wem",
+   "size": 10938,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/936186411.wem",
+   "size": 131209,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/937906798.wem",
+   "size": 73500,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/981588145.wem",
+   "size": 11757,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/986853614.wem",
+   "size": 5908,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/audio_entity_types_tables/wh3_karla_textandvoice3",
+   "size": 454,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/character_skills_tables/wh3_karlabsuit13",
+   "size": 1465,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/wh3_karlabsuit13",
+   "size": 2681,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/wh3_karlabsuit13",
+   "size": 1001,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/missions_tables/wh3_karlabsuit13",
+   "size": 5762,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "db/start_pos_factions_tables/wh3_karlabsuit13",
+   "size": 15483,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_advice_levels.loc",
+   "size": 2249,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_ancillaries.loc",
+   "size": 1516,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_battle_set_piece_armies.loc",
+   "size": 1159,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_battle_set_pieces.loc",
+   "size": 1932,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_building_flavor_texts.loc",
+   "size": 659,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_campaign_areas_of_interest.loc",
+   "size": 649,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_cdr_events_dilemma_coice_details.loc",
+   "size": 1630,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_character_skill_node_sets.loc",
+   "size": 201,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_character_skills.loc",
+   "size": 2500,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_character_trait_levels.loc",
+   "size": 814,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_dilemmas.loc",
+   "size": 5733,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_diplomacy_strings.loc",
+   "size": 1702,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_effect_bundles.loc",
+   "size": 754,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_frontend_fac_leader.loc",
+   "size": 10801,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_frontend_factions.loc",
+   "size": 4097,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_incidents.loc",
+   "size": 2067,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_initiatives.loc",
+   "size": 231,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_land_units.loc",
+   "size": 679,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_loading_screen_quotes.loc",
+   "size": 720,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_mission_text.loc",
+   "size": 4687,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_missions.loc",
+   "size": 4262,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_scripted_objectives.loc",
+   "size": 735,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_scripted_subtitles.loc",
+   "size": 561,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_skills.loc",
+   "size": 7226,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_start_pos_faction.loc",
+   "size": 37370,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_technologies.loc",
+   "size": 984,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_unit_abilities.loc",
+   "size": 449,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "text/db/k_unit_description_historical_texts.loc",
+   "size": 6263,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_ch_karl_2h_hammer_0.png",
+   "size": 24534,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_ch_karl_2h_hammer_0.png",
+   "size": 31921,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_ch_karl_2h_hammer_000.png",
+   "size": 31921,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_ch_karl_2h_hammer_0old.png",
+   "size": 32639,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/emp_ch_karl_2h_hammer_0orig.png",
+   "size": 24534,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/emp_ch_karl_2h_hammer_0.png",
+   "size": 48637,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/emp_ch_karl_2h_hammer_0.png",
+   "size": 48637,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/emp_ch_karl_2h_hammer_000.png",
+   "size": 79626,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/emp_ch_karl_2h_hammer_000.png",
+   "size": 79626,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 47986,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 49311,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 50783,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_main_emp_empire/emp_ch_karl_00.png",
+   "size": 49311,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/emp_ch_karl_2h_hammer_0.png",
+   "size": 24772,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/emp_ch_karl_2h_hammer_0.png",
+   "size": 24772,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/emp_ch_karl_2h_hammer_000.png",
+   "size": 20579,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/emp_ch_karl_2h_hammer_000.png",
+   "size": 20579,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 20579,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 24772,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_main_emp_empire/emp_ch_karl_0.png",
+   "size": 24772,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "ui/skins/default/emp_ch_karl_0.png",
+   "size": 44540,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "ui/skins/default/emp_ch_karl_0.png",
+   "size": 44540,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "ui/skins/default/emp_ch_karl_0.png",
+   "size": 44540,
+   "pack": "WH3_Karla_textandvoiceFinal/WH3_Karla_textandvoiceFinal.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_ch_karl.variantmeshdefinition",
+   "size": 847,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_ch_karl.variantmeshdefinition",
+   "size": 861,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_ch_karl_2h_hammer.variantmeshdefinition",
+   "size": 847,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_ch_karl_2h_hammer.variantmeshdefinition",
+   "size": 861,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/emp_karl_franz.rigid_model_v2",
+   "size": 977222,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/emp_karl_franz.rigid_model_v2",
+   "size": 977222,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla02.rigid_model_v2",
+   "size": 7386700,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla02.rigid_model_v2",
+   "size": 7386700,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla02.wsmodel",
+   "size": 6888,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla02.wsmodel",
+   "size": 6888,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla_body.rigid_model_v2",
+   "size": 7432864,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla_body.rigid_model_v2",
+   "size": 7432864,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla_body.wsmodel",
+   "size": 7575,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/karla_body.wsmodel",
+   "size": 7575,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_captains_body_01.001_weighted2_alpha_off.xml.material",
+   "size": 2590,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_captains_body_01.001_weighted2_alpha_on.xml.material",
+   "size": 2595,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_captains_body_01.001_weighted4_alpha_on.xml.material",
+   "size": 2595,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_captains_body_01.001_weighted4_alpha_on.xml.material",
+   "size": 2595,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.001_weighted4_alpha_on.xml.material",
+   "size": 2676,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.004_weighted4_alpha_on.xml.material",
+   "size": 2594,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.004_weighted4_alpha_on.xml.material",
+   "size": 2594,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.005_weighted4_alpha_on.xml.material",
+   "size": 2536,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.005_weighted4_alpha_on.xml.material",
+   "size": 2536,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01.008_weighted4_alpha_on.xml.material",
+   "size": 2676,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01_weighted2_alpha_off.xml.material",
+   "size": 2665,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01_weighted2_alpha_on.xml.material",
+   "size": 2670,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_body_01_weighted4_alpha_on.xml.material",
+   "size": 2670,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01.001_weighted2_alpha_off.xml.material",
+   "size": 2669,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01.001_weighted2_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2594,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01_weighted4_alpha_on.xml.material",
+   "size": 2590,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/emp_karl_franz_head_01_weighted4_alpha_on.xml.material",
+   "size": 2670,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlabody_weighted4_alpha_on.xml.material",
+   "size": 2526,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlabody_weighted4_alpha_on.xml.material",
+   "size": 2526,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlacthong_weighted4_alpha_on.xml.material",
+   "size": 2513,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlacthong_weighted4_alpha_on.xml.material",
+   "size": 2513,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlahead_weighted2_alpha_off.xml.material",
+   "size": 2471,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlahead_weighted2_alpha_on.xml.material",
+   "size": 2476,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlahead_weighted4_alpha_on.xml.material",
+   "size": 2518,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlahead_weighted4_alpha_on.xml.material",
+   "size": 2526,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlalegs_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlalegs_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlatop_weighted4_alpha_on.xml.material",
+   "size": 2510,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/karlatop_weighted4_alpha_on.xml.material",
+   "size": 2510,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/lenore_final_138736-skininstanc_weighted2_alpha_off.xml.material",
+   "size": 2542,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/lenore_final_138736-skininstanc_weighted2_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/lenore_final_138736-skininstanc_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/lenore_final_138736-skininstanc_weighted4_alpha_on.xml.material",
+   "size": 2547,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriegarter_58857-skinin_weighted2_alpha_off.xml.material",
+   "size": 2559,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriegarter_58857-skinin_weighted2_alpha_on.xml.material",
+   "size": 2564,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriegarter_58857-skinin_weighted4_alpha_on.xml.material",
+   "size": 2564,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriestockings_12398-ski_weighted2_alpha_off.xml.material",
+   "size": 2565,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriestockings_12398-ski_weighted2_alpha_on.xml.material",
+   "size": 2570,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/p3dblingeriestockings_12398-ski_weighted4_alpha_on.xml.material",
+   "size": 2570,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/platform heels00_weighted4_alpha_on.xml.material",
+   "size": 2474,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/sc_fantasy_amour_skirt_27960-sk_weighted2_alpha_off.xml.material",
+   "size": 2467,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/sc_fantasy_amour_skirt_27960-sk_weighted4_alpha_on.xml.material",
+   "size": 2472,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggabody_weighted4_alpha_on.xml.material",
+   "size": 2397,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggahands.003_weighted2_alpha_off.xml.material",
+   "size": 2478,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggahands.003_weighted2_alpha_on.xml.material",
+   "size": 2483,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggahands.003_weighted4_alpha_on.xml.material",
+   "size": 2525,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggatop.001_weighted2_alpha_off.xml.material",
+   "size": 2465,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggatop.001_weighted2_alpha_on.xml.material",
+   "size": 2470,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/materials/siggatop.001_weighted4_alpha_on.xml.material",
+   "size": 2400,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla16b-finaltest2f.rigid_model_v2",
+   "size": 18657864,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla16b-finaltest2f.wsmodel",
+   "size": 7409,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla16b-finaltestv3.rigid_model_v2",
+   "size": 27113300,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla16b-finaltestv3.wsmodel",
+   "size": 8514,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla_fullbodf.rigid_model_v2",
+   "size": 10786412,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/siggymix_karla_fullbodf.wsmodel",
+   "size": 6268,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/bunnytop_d.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/bunnytop_d.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/bunnytop_mat.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/bunnytop_mat.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/emp_karl_franz_body_01_base_colour.dds",
+   "size": 349692,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/emp_karl_franz_body_01_base_colour.dds",
+   "size": 349692,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_d_gen.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_d_gen.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_m_gen.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_m_gen.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_n.dds",
+   "size": 16777392,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_daeny_n.dds",
+   "size": 16777392,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_head_d.dds",
+   "size": 5592572,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_head_d.dds",
+   "size": 5592572,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karla_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_d.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_d.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_mat.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_mat.dds",
+   "size": 2796364,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_n.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlabot_n.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlatop_n.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/karlatop_n.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrowndiffuse.dds",
+   "size": 699192,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrowndiffuse.dds",
+   "size": 699192,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrowndiffuse1.dds",
+   "size": 699212,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrowndiffuse1.dds",
+   "size": 699212,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrownmat.dds",
+   "size": 699192,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorebrownmat.dds",
+   "size": 699192,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorenormal..dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lenorenormal..dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lionea_body_d.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/lionea_body_mat.dds",
+   "size": 8388780,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/milla_head_normal_wh3.dds",
+   "size": 11184976,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/milla_head_normal_wh3.dds",
+   "size": 11184976,
+   "pack": "WH3_KarlaBsuit_/WH3_KarlaBsuit.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriegartermat.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriegartermatf.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriegarterorgn.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriegartertr.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriegartertr_df.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriestockingsmat.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriestockingsn.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriestockingstx.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/p3dblingeriestockingstx2.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/siggy_leotard_3.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/siggy_leotard_n.dds",
+   "size": 5592560,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/emp/emp_karl_franz/tex/skirt_base_color_1001_d.dds",
+   "size": 1398256,
+   "pack": "WH3_KarlaBsuitFullPlate/WH3_KarlaBsuitFullPlate.pack"
+  }
+ ]
+}

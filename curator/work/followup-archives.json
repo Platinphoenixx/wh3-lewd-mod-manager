@@ -1,0 +1,132 @@
+{
+  "_comment": "Findings from analysing the mods' own packs (curator/analyze_pack.py; results in curator/raw/packs/<mod>.json). Field overrides like the other followup files; applied after the research pass because they rest on the files themselves.",
+  "mods": [
+    {
+      "id": "ll-52195",
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Soft requirement: without the mod, an NSFW skin is loaded by default; with the mod, 16 variants are selectable",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/52195-naughty-neferata16-model-variants-nsfw/"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "steam-3809988722"
+          },
+          "note": "Not needed: the pack already contains Beautiful Neferata's models and textures (22 identical files). Using both only adds a second copy.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/52195-naughty-neferata16-model-variants-nsfw/"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "steam-3809129102"
+          },
+          "note": "Not needed: the pack brings its own versions of this mod's look. Loaded above Naughty Neferata, it would replace Neferata's default mesh definition and portraits and break the variants.",
+          "source": {
+            "type": "inferred",
+            "url": "https://www.loverslab.com/files/file/52195-naughty-neferata16-model-variants-nsfw/"
+          }
+        }
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3809129102"
+          },
+          {
+            "mod": "steam-3809988722"
+          }
+        ],
+        "note": "Only matters if the two Steam Neferata mods are kept installed: Naughty Neferata must win over both."
+      },
+      "knownIssues": [
+        "Self-contained: the two Steam Neferata mods the page names were merged into this pack and are not needed. If they stay active, load Naughty Neferata above them."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "_fix": "Pack analysis 2026-11-01: (X)_Naughty_Nef_XXX.pack, 174 files, no declared dependencies; all 138 model/material/texture references resolve to the pack itself (92) or the base game (38), none only to the Steam mods. 22 of 23 files shared with Beautiful Neferata are byte-identical; all 6 shared with 3809129102 differ (its vmp_neferata.variantmeshdefinition and portraits)."
+    },
+    {
+      "id": "ll-25677",
+      "relations": [],
+      "installNotes": [
+        "The page says it probably needs Mixu's Unlocker, but the pack does not refer to it: it only uses base-game keys (Wood Elves building culture, the Carcassonne landmark slot)."
+      ],
+      "knownIssues": [
+        "Adds a Wood Elf landmark in the Carcassonne landmark slot; other mods that change that slot may clash."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "Possible clash with Corrupted Landmarks or other landmark mods over the Carcassonne slot is unverified (those packs are not analysed yet)."
+        ]
+      },
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-25677.json): db + text only (16 tables, 4 .loc); all keys are base-game keys (wh_main_bas_brt, wh3_main_secondary_addon_landmark_carcassonne, wood_elves_city_oak_of_ages)."
+    },
+    {
+      "id": "ll-49568",
+      "knownIssues": [
+        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "Overlap with Lewd Flags and Loading Screens (ll-41124) not checked yet."
+        ]
+      },
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-49568.json): one pack TardBannerPackBetter-V1.00.pack, 3436 files, all under ui/flags; no dependencies."
+    },
+    {
+      "id": "ll-28211",
+      "packs": [
+        {
+          "file": "EFT.pack",
+          "from": "download",
+          "note": "Two downloads with the same pack name: images only, or images and text. Install one of them."
+        }
+      ],
+      "knownIssues": [
+        "Shares 631 flag images with TardBannerPackBetter (ll-49568); the mod loaded higher wins."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "An English translation exists (ll-39307)."
+        ]
+      },
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-28211.json): both zips hold EFT.pack (1863 ui, 46 text, 2 db files)."
+    },
+    {
+      "id": "ll-52245",
+      "knownIssues": [
+        "The pack refers to 51 model and texture files that are neither in it nor in the base game; all of them are in (X)_Cathay_ALL_XXX.pack from the same author's Sexy Cathay Heroes collection (ll-49648). Without it, parts of the model may show missing textures (not checked in game)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "Relationship to the Steam original 3574561438 (spin-off/rip): usable together or incompatible - not stated.",
+          "Campaigns not given.",
+          "Whether the 51 references to the Sexy Cathay Heroes collection matter in game is unverified; the page calls the mod stand-alone."
+        ]
+      },
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-52245.json): 199 references: 59 in the pack, 79 base game, 61 unresolved, 51 of them found only in ll-49648."
+    }
+  ]
+}

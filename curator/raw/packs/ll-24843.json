@@ -1,0 +1,1760 @@
+{
+ "mod": "ll-24843",
+ "packs": [
+  "lazyicarus_french_translations.pack",
+  "lazyicarus_french_translations_bst.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack": {
+   "files": 327,
+   "dependencies": []
+  },
+  "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack": {
+   "files": 18,
+   "dependencies": []
+  }
+ },
+ "fileCount": 344,
+ "byTopFolder": {
+  "text": 343,
+  "lazy_french_translations_info": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "lazy_french_translations_info/lazyicarus_french_translations_log_v1_11.txt",
+   "size": 28079,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "lazy_french_translations_info/lazyicarus_french_translations_log_v1_11.txt",
+   "size": 28079,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_alivia_morathi_aina.loc",
+   "size": 1244,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_alivia_morathi_aina_skills.loc",
+   "size": 12195,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_corruption_ascend卡捷琳.loc",
+   "size": 3233,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_corruption_ascend堕寒侍女.loc",
+   "size": 1041,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_corruption_ascend妙影.loc",
+   "size": 3659,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_corruption_ascend娼龙舞姬.loc",
+   "size": 1225,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_corruption_ascend腐蚀适应.loc",
+   "size": 2920,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_dottedline_landmark_building_chains__.loc",
+   "size": 139,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_dottedline_lewdlandmarks_building_chains__.loc",
+   "size": 125,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_dottedline_lewdlandmarks_building_culture_variants__.loc",
+   "size": 127,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/!french_dottedline_lewdlandmarks_building_short_description_texts__.loc",
+   "size": 689,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!!!_goba_goblin_buildings.loc",
+   "size": 1607,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!!!_goba_goblin_horde_armory.loc",
+   "size": 3410,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!!!_goba_goblin_ky_captive_followers.loc",
+   "size": 34156,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!!!_goba_goblin_ky_random_dilemma_text.loc",
+   "size": 11098,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!beta_french_cc_miaoscorruptedcompendium_mission.loc",
+   "size": 16982,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!beta_french_cc_miaoscorruptedcompendium_mission_text.loc",
+   "size": 30154,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_alivia_morathi_hero_abilities.loc",
+   "size": 4750,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_alivia_morathi_hero_dilemmas.loc",
+   "size": 133032,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_alivia_morathi_hero_dilemmas_choice.loc",
+   "size": 21331,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_ancillaries__.loc",
+   "size": 873,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_battle_set_piece_armies__.loc",
+   "size": 4073,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_battle_set_pieces__.loc",
+   "size": 1552,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_campaign_payload_ui_details__.loc",
+   "size": 281,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_character_trait_levels__.loc",
+   "size": 6341,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_dilemma.loc",
+   "size": 175772,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_dilemma_choice_details.loc",
+   "size": 20372,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_effect_bundles__.loc",
+   "size": 464,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_incidents.loc",
+   "size": 30174,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_mission.loc",
+   "size": 8212,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_scripted_subtitles__.loc",
+   "size": 949,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_azzy_slaanesh_portals.loc",
+   "size": 584,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ca_li_miao_adaptation_effect_bundles.loc",
+   "size": 2048,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_candles_captive_followers.loc",
+   "size": 32396,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_candles_conquest_dilemma_text.loc",
+   "size": 14634,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_candles_effect_bundles.loc",
+   "size": 1906,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_candles_missions.loc",
+   "size": 640,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_candles_random_dilemma_text.loc",
+   "size": 12718,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_candles_special_dilemmas.loc",
+   "size": 3012,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaocorruptedcompendium_agent_subtypes__.loc",
+   "size": 766,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaocorruptedcompendium_effects.loc",
+   "size": 271,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaocorruptedcompendium_land_units__.loc",
+   "size": 149,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendium_ancillaries.loc",
+   "size": 18498,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendium_character_trait_levels__.loc",
+   "size": 14838,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendium_dliemna.loc",
+   "size": 1095276,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendium_incidents.loc",
+   "size": 115462,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendiumr_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 147822,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendiumr_unit_description_historical_texts__.loc",
+   "size": 221,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_miaoscorruptedcompendiumr_unit_description_short_texts__.loc",
+   "size": 583,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_battle_set_piece_armies__.loc",
+   "size": 7214,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_battle_set_pieces__.loc",
+   "size": 3325,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_cdir_events_dilemma_choice_details__.loc",
+   "size": 16373,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_dilemmas__.loc",
+   "size": 176446,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_missions__.loc",
+   "size": 3470,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_cc_pp_name_changing.loc",
+   "size": 95,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_fd_li_foreign_diplomacy_cdir_events_dilemma_choice_details.loc",
+   "size": 14112,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_fd_li_foreign_diplomacy_dilemmas.loc",
+   "size": 58996,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_fd_li_foreign_diplomacy_effect_bundles.loc",
+   "size": 2172,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_abilities.loc",
+   "size": 2082,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_cdir_events_dilemma_choice_details.loc",
+   "size": 1264,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_dilemmas.loc",
+   "size": 43374,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_effect_bundles.loc",
+   "size": 1336,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_effects.loc",
+   "size": 1043,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_daemonize_unit_abilities_additional_ui_effects.loc",
+   "size": 1170,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_first.loc",
+   "size": 1770,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 1916,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_first_dilemmas.loc",
+   "size": 1748,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_first_effects.loc",
+   "size": 239,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_first_names.loc",
+   "size": 135,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth.loc",
+   "size": 1820,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth_abilities.loc",
+   "size": 774,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth_cdir_events_dilemma_choice_details.loc",
+   "size": 4620,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth_dilemmas.loc",
+   "size": 51164,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth_effects.loc",
+   "size": 189,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_fourth_names.loc",
+   "size": 143,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second.loc",
+   "size": 1540,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second_abilities.loc",
+   "size": 848,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 3546,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second_dilemmas.loc",
+   "size": 21334,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second_effects.loc",
+   "size": 165,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_second_names.loc",
+   "size": 147,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third.loc",
+   "size": 1674,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third_abilities.loc",
+   "size": 812,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third_cdir_events_dilemma_choice_details.loc",
+   "size": 4750,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third_dilemmas.loc",
+   "size": 35850,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third_effects.loc",
+   "size": 185,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_progression_third_names.loc",
+   "size": 139,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_katarin_seu_ancillaries_temp.loc",
+   "size": 3656,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_introduction_battle_set_piece_armies.loc",
+   "size": 223,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_introduction_battle_set_pieces.loc",
+   "size": 1005,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_introduction_missions.loc",
+   "size": 1345,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_ballet.loc",
+   "size": 1050,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_bare.loc",
+   "size": 718,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_breed.loc",
+   "size": 3902,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_corset.loc",
+   "size": 916,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_fishnet.loc",
+   "size": 680,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_abilities_plug.loc",
+   "size": 696,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_ballet.loc",
+   "size": 2264,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_bare.loc",
+   "size": 1950,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_breed.loc",
+   "size": 4098,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_campaign_payload_ui_details_scale.loc",
+   "size": 1800,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 2218,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_bare.loc",
+   "size": 2610,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_breed.loc",
+   "size": 6016,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_corset.loc",
+   "size": 1730,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_fishnet.loc",
+   "size": 1770,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_plug.loc",
+   "size": 1248,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_cdir_events_dilemma_choice_details_scale.loc",
+   "size": 2252,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_corset.loc",
+   "size": 2542,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_ballet.loc",
+   "size": 2292,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_bare.loc",
+   "size": 2230,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_breed.loc",
+   "size": 45092,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_corset.loc",
+   "size": 2848,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_fishnet.loc",
+   "size": 1664,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_plug.loc",
+   "size": 4634,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_dilemmas_scale.loc",
+   "size": 1108,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_ballet.loc",
+   "size": 189,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_bare.loc",
+   "size": 199,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_breed.loc",
+   "size": 1399,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_corset.loc",
+   "size": 191,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_fishnet.loc",
+   "size": 183,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_effects_plug.loc",
+   "size": 209,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_fishnet.loc",
+   "size": 1380,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_ballet.loc",
+   "size": 117,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_bare.loc",
+   "size": 121,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_corset.loc",
+   "size": 115,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_fishnet.loc",
+   "size": 119,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_plug.loc",
+   "size": 486,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_names_scale.loc",
+   "size": 115,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_plug.loc",
+   "size": 2264,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_miaoying_progression_scale.loc",
+   "size": 1078,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_loyalty_campaign_payload_ui_details.loc",
+   "size": 5406,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_loyalty_cdir_events_dilemma_choice_details.loc",
+   "size": 830,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_loyalty_dilemmas.loc",
+   "size": 294,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first.loc",
+   "size": 2260,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_ancillaries.loc",
+   "size": 657,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_battle_battle_set_piece_armies.loc",
+   "size": 221,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_battle_battle_set_pieces.loc",
+   "size": 951,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_battle_missions.loc",
+   "size": 2556,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_campaign_payload_ui_details.loc",
+   "size": 660,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 5686,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_dilemmas.loc",
+   "size": 24506,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_effects.loc",
+   "size": 380,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_names.loc",
+   "size": 202,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_special_ability_phases.loc",
+   "size": 137,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_first_unit_abilities.loc",
+   "size": 612,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second.loc",
+   "size": 10430,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_campaign_payload_ui_details.loc",
+   "size": 468,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 9926,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_dilemmas.loc",
+   "size": 48004,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_effect_bundles.loc",
+   "size": 386,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_effects.loc",
+   "size": 537,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_missions.loc",
+   "size": 3509,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_names.loc",
+   "size": 208,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_special_ability_phases.loc",
+   "size": 304,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_unit_abilities.loc",
+   "size": 1468,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_second_unit_abilities_additional_ui_effects.loc",
+   "size": 305,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third.loc",
+   "size": 10304,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_campaign_payload_ui_details.loc",
+   "size": 945,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_cdir_events_dilemma_choice_details.loc",
+   "size": 9152,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_dilemmas.loc",
+   "size": 50244,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_effects.loc",
+   "size": 400,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_missions.loc",
+   "size": 4273,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_names.loc",
+   "size": 188,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_special_ability_phases.loc",
+   "size": 274,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_unit_abilities.loc",
+   "size": 1838,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_morathi_progression_third_unit_abilities_additional_ui_effects.loc",
+   "size": 209,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_li_perverse_discharge_unit_abilities__.loc",
+   "size": 1088,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_campaign_payload_ui_details.loc",
+   "size": 314,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_campaign_post_battle_captive_options.loc",
+   "size": 614,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_culture_settlement_occupation_options.loc",
+   "size": 638,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_dilemmas.loc",
+   "size": 8488,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_effect_bundles.loc",
+   "size": 2049,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_effects.loc",
+   "size": 6544,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_incidents.loc",
+   "size": 634,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_land_units.loc",
+   "size": 423,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_rituals.loc",
+   "size": 175,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_unit_description_historical_texts.loc",
+   "size": 1343,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_sb_savage_beastmen_unit_descrption_short_texts.loc",
+   "size": 1087,
+   "pack": "LazyIcarus French Translations - Beastmen - v1_11/lazyicarus_french_translations_bst.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_ancillaries.loc",
+   "size": 1352,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_bundles.loc",
+   "size": 17094,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_choices.loc",
+   "size": 24808,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_dilemmas.loc",
+   "size": 18608,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_effects.loc",
+   "size": 398,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_incidents.loc",
+   "size": 12306,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_generic_content_traits.loc",
+   "size": 1136,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_katarin_submod_generic_bundles.loc",
+   "size": 8764,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_katarin_submod_generic_choices.loc",
+   "size": 10300,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_katarin_submod_generic_dilemmas.loc",
+   "size": 7896,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_campaign_payload_ui_details.loc",
+   "size": 745,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_abilities.loc",
+   "size": 3704,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_abilities_ui_effects.loc",
+   "size": 2013,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_agent_subtypes.loc",
+   "size": 1766,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_ancillaries.loc",
+   "size": 2366,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_choices.loc",
+   "size": 4478,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_dilemmas.loc",
+   "size": 8394,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_effects.loc",
+   "size": 2040,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_names.loc",
+   "size": 302,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_short_text.loc",
+   "size": 2761,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_skills.loc",
+   "size": 16270,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_daughters_units.loc",
+   "size": 1365,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_abilities.loc",
+   "size": 1202,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_additional_ui_effects.loc",
+   "size": 530,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_ancillaries.loc",
+   "size": 8438,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_bundles.loc",
+   "size": 1264,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_choices.loc",
+   "size": 16156,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_dilemmas.loc",
+   "size": 35092,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_diplomacy.loc",
+   "size": 1062,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_effects.loc",
+   "size": 3955,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_incidents.loc",
+   "size": 680,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_missions.loc",
+   "size": 1280,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_traits_summon.loc",
+   "size": 15804,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_extension_units.loc",
+   "size": 189,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_generic_bundles.loc",
+   "size": 4050,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_generic_choices.loc",
+   "size": 5374,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_generic_dilemmas.loc",
+   "size": 6618,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_generic_effects.loc",
+   "size": 705,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_yuanshan_fu_choices.loc",
+   "size": 11052,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_yuanshan_fu_dilemmas.loc",
+   "size": 48522,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_yuanshan_fu_traits.loc",
+   "size": 12012,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_zhao_choices.loc",
+   "size": 4346,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_zhao_dilemmas.loc",
+   "size": 12540,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_seu_miaoying_submod_zhao_traits.loc",
+   "size": 920,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_barracks_building_chains__.loc",
+   "size": 1287,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_barracks_building_culture_variants__.loc",
+   "size": 2562,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_barracks_building_short_description_texts__.loc",
+   "size": 6429,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_barracks_chains__.loc",
+   "size": 286,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_units_long.loc",
+   "size": 32560,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_units_name.loc",
+   "size": 5629,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_corrupted_units_short.loc",
+   "size": 14359,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_cu_effects__.loc",
+   "size": 3549,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_sp_soilsfo_units_name.loc",
+   "size": 151,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_cl_corruption_adaption_ksl__.loc",
+   "size": 1584,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_cl_effects__.loc",
+   "size": 205,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_building_chains__.loc",
+   "size": 5405,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_building_culture_variants__.loc",
+   "size": 6209,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_building_short_description_texts__.loc",
+   "size": 26453,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_kislev_building_chains__.loc",
+   "size": 4456,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_kislev_building_culture_variants__.loc",
+   "size": 6772,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_kislev_building_short_description_texts__.loc",
+   "size": 19916,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_we_building_culture_variants__.loc",
+   "size": 3517,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmark_we_building_short_description_texts__.loc",
+   "size": 12167,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_corrupted_landmarks_we_building_chains__.loc",
+   "size": 3627,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_landmark_building_chains__.loc",
+   "size": 4156,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_landmark_building_we_chains__.loc",
+   "size": 1972,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/!french_ul_landmark_kislev_building_chains__.loc",
+   "size": 1620,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_ancillary.loc",
+   "size": 7720,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_building.loc",
+   "size": 12479,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_dilemma_general.loc",
+   "size": 9091,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_dilemma_heros.loc",
+   "size": 40433,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_dilemma_isha_main.loc",
+   "size": 3597,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_dilemma_random.loc",
+   "size": 28916,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_dilemma_sla_main.loc",
+   "size": 14,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_effects.loc",
+   "size": 14,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_resource.loc",
+   "size": 6446,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_ritual_shop_categoryy.loc",
+   "size": 2762,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_ritual_shop_items.loc",
+   "size": 3714,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_traits.loc",
+   "size": 4544,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_units.loc",
+   "size": 1678,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_units_effect.loc",
+   "size": 1993,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/alivia_alarielle_whitelion.loc",
+   "size": 18867,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valk_khorne_training_events_haelga_dilemmas__.loc",
+   "size": 1293092,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valk_khorne_training_events_harald_dilemmas__.loc",
+   "size": 1055115,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valk_khorne_training_events_kraghaws_dilemmas__.loc",
+   "size": 943305,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valkia_name_changing__.loc",
+   "size": 2776,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valkia_progression_events_dilemma_choice__.loc",
+   "size": 71939,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_corrupted_valkia_progression_events_dilemmas__.loc",
+   "size": 768196,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_heroes_haelga_character_skills.loc",
+   "size": 2684,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_heroes_healga_abilities.loc",
+   "size": 2360,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_heroes_kraghaw_abilities.loc",
+   "size": 653,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_heroes_kraghaw_character_skills.loc",
+   "size": 3828,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_heroes_kraghaw_effects.loc",
+   "size": 997,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_misao_heroes_harald_character_skills.loc",
+   "size": 876,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_misao_heroes_issath_abilities.loc",
+   "size": 529,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_misao_heroes_issath_character_skills.loc",
+   "size": 2102,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_misao_heroes_issath_effects.loc",
+   "size": 416,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_profane_hold_dilemma_choice__.loc",
+   "size": 33163,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_profane_hold_dilemmas__.loc",
+   "size": 105508,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_valkia_character_trait_levels__.loc",
+   "size": 25591,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_valkia_effect_bundles__.loc",
+   "size": 246,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_valkia_items.loc",
+   "size": 3140,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_favour_valkia_cdir_events_dilemma_choice_details__.loc",
+   "size": 14067,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_favour_valkia_dliemna__.loc",
+   "size": 33224,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_non_favour_valkia_cdir_events_dilemma_choice_details__.loc",
+   "size": 14,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_non_favour_valkia_dliemna__.loc",
+   "size": 14,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_npc__location_text.loc",
+   "size": 7941,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_npc_incidents.loc",
+   "size": 6313,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_random_lightning.loc",
+   "size": 445,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_z_valkia_end_game_event__.loc",
+   "size": 16442,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_zvalkia_character_trait_levels_duplicated__.loc",
+   "size": 25166,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_zz___valkia_misao_abilities___.loc",
+   "size": 6175,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_zz___valkia_misao_items____.loc",
+   "size": 3257,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/cv_zz___zlocepahax_misao_abilities___.loc",
+   "size": 11748,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/jhc_effects_sla_.loc",
+   "size": 6700,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_balthasar_geltina_traits.loc",
+   "size": 7144,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_building_sets.loc",
+   "size": 788,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_ancillaries.loc",
+   "size": 3282,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_building_chains.loc",
+   "size": 486,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_building_culture_variants__.loc",
+   "size": 405,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_core_missions_desc.loc",
+   "size": 9294,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_dilemmas.loc",
+   "size": 14882,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_dilemmas_choices.loc",
+   "size": 10712,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_short_desc.loc",
+   "size": 3895,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_geltina_skills.loc",
+   "size": 6246,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_systems_core_dilemma_choices.loc",
+   "size": 7284,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/kc_systems_core_dilemma_desc.loc",
+   "size": 5214,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth.loc",
+   "size": 10304,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_missions.loc",
+   "size": 1347,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_set_piece_armies.loc",
+   "size": 225,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_set_pieces.loc",
+   "size": 811,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_campaign_payload_ui_details.loc",
+   "size": 528,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_cdir_events_dilemma_choice_details.loc",
+   "size": 5148,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_dilemmas.loc",
+   "size": 27932,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_effects__.loc",
+   "size": 362,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_missions.loc",
+   "size": 895,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_names.loc",
+   "size": 186,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_special_ability_phases__.loc",
+   "size": 356,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_unit_abilities__.loc",
+   "size": 1266,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_generic_content_temp.loc",
+   "size": 14,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_ancillaries.loc",
+   "size": 1364,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_campaign_payload.loc",
+   "size": 1716,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_effect_bundles.loc",
+   "size": 780,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_effects.loc",
+   "size": 215,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_imrik_domination_imrik_pov_battle.loc",
+   "size": 694,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_imrik_domination_imrik_pov_choices.loc",
+   "size": 7704,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_imrik_domination_imrik_pov_dilemmas.loc",
+   "size": 83044,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_imrik_domination_imrik_pov_missions.loc",
+   "size": 6810,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_romance_imrik_pov_battle.loc",
+   "size": 758,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_romance_imrik_pov_choices.loc",
+   "size": 9330,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_romance_imrik_pov_dilemmas.loc",
+   "size": 100390,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_romance_imrik_pov_missions.loc",
+   "size": 4582,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/seu_miao_imrik_scripted_objectives.loc",
+   "size": 899,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/sewrat_ba_ability.loc",
+   "size": 4282,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/sewrat_ba_ability_addition_ui_description.loc",
+   "size": 1477,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/sewrat_ba_effect.loc",
+   "size": 4976,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/db/sewrat_ba_skill_tree.loc",
+   "size": 23082,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/sewrat_ba_missing_locs.loc",
+   "size": 153,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen虫族女王_个人线.loc",
+   "size": 3316,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen虫族女王_事件.loc",
+   "size": 1872,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen虫族女王_效果.loc",
+   "size": 1407,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen虫族女王_简介.loc",
+   "size": 1252,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen通用_点数回收.loc",
+   "size": 525,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  },
+  {
+   "path": "text/zerg_queen通用_红线.loc",
+   "size": 2414,
+   "pack": "LazyIcarus French Translations - Main - v1_11/lazyicarus_french_translations.pack"
+  }
+ ]
+}

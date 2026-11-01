@@ -1,0 +1,123 @@
+{
+ "mod": "ll-26795",
+ "packs": [
+  "dead_kislev_pretty_reindeer_riders.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "dead_kislev_pretty_reindeer_riders.pack": {
+   "files": 18,
+   "dependencies": []
+  }
+ },
+ "fileCount": 18,
+ "byTopFolder": {
+  "variantmeshes": 18
+ },
+ "tables": [],
+ "references": {
+  "total": 23,
+  "inMod": 9,
+  "inBaseGame": 11,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/witch_color.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/witch_material.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/witch_normal.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_01.rigid_model_v2",
+   "size": 1751196,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_01.wsmodel",
+   "size": 1818,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_02.rigid_model_v2",
+   "size": 1685952,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_02.wsmodel",
+   "size": 1818,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_03.rigid_model_v2",
+   "size": 2397346,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_body_03.wsmodel",
+   "size": 1818,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_01.rigid_model_v2",
+   "size": 383576,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_01.wsmodel",
+   "size": 1148,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_02.rigid_model_v2",
+   "size": 442024,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_02.wsmodel",
+   "size": 1148,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_03.rigid_model_v2",
+   "size": 363078,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/ksl_reindeer_cav_head_03.wsmodel",
+   "size": 1148,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/materials/shades_body_01_1_weighted4_alpha_off.xml.material",
+   "size": 2602,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/materials/shades_body_01_weighted2_alpha_off.xml.material",
+   "size": 2526,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/materials/shades_body_01_weighted4_alpha_off.xml.material",
+   "size": 2600,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/materials/shades_body_01_weighted4_alpha_on.xml.material",
+   "size": 2531,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/tex/icewitchcolor.dds",
+   "size": 8388760,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/ksl/ksl_reindeer_cav/tex/icewitchcolor2.dds",
+   "size": 8388780,
+   "pack": "dead_kislev_pretty_reindeer_riders.pack"
+  }
+ ]
+}

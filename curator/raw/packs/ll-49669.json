@@ -1,0 +1,3482 @@
+{
+ "mod": "ll-49669",
+ "packs": [
+  "!(X)_Cathay_Skin.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack": {
+   "files": 595,
+   "dependencies": []
+  }
+ },
+ "fileCount": 595,
+ "byTopFolder": {
+  "variantmeshes": 515,
+  "ui": 68,
+  "db": 9,
+  "rigidmodels": 3
+ },
+ "tables": [
+  "battle_animations_table_tables",
+  "battle_entities_tables",
+  "battle_personalities_tables",
+  "campaign_character_arts_tables",
+  "land_units_tables",
+  "land_units_to_battle_personalities_junctions_tables",
+  "main_units_tables",
+  "unit_banner_unit_height_offsets_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 655,
+  "inMod": 308,
+  "inBaseGame": 232,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "rigidmodels/buildings/textures/test_mask.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/cth_flag_02_base_colour.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_2_material_map.dds",
+   "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_2_normal.dds",
+   "variantmeshes/_variantmodels/flags/chinese/weighted/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/materials/cth_gatemaster_body_02_submesh_17_3_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1/materials/cth_gatemaster_body_02_submesh_17_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_material.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/def/def_khanite_assassin/tex/def_khanite_assassin_head_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/alchemist_body1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/alchemist_body2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/alchemist_head1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/alchemist_head2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/alchemist_head3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_body2.rigid_model_v2",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_foot1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_foot2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_hair_02_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour1.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_base_colour03.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_peasantgirl1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_peasantgirl2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_peasantgirl3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_peasantgirl4.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_peasantgirl5.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_celestial_guard_body_03_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_04_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jian_01.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jian_02.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/dao.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/dun2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/dun3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/gaidun.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_body1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_body2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_body3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_body4.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head10.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head4.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head6.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head7.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/jade_head8.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body1a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body2a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body3a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body4.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_body4a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head10.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head11.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head12.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head1a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head2a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head3a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head4.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head5.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head6.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head6a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head7.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head7a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head8.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head8a.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/longwei_head9.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_astromancer_body_03_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_astromancer_body_03_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_beauty12a_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_beauty12a_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_celestial_guard_body_01_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_jade_warrior_body_01_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_shugengan_body_01_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_shugengan_body_01_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_1_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_5_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_subme_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/dae_bloodletter_head_02_submesh_21_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/dae_bloodletter_head_02_submesh_21_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/diaochan_alpha_submesh_2_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/diaochan_alpha_submesh_2_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/emp_jade_wizard_head_02_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/materials/emp_jade_wizard_head_02_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/cth/tiger/cth_bhashiva_human.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_body1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_body2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_body3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_head1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_head2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_dragonborn_head3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_gate_body2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_gate_head1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_gate_head2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_gate_head3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/cth_shugengan_body_01.rigid_model_v2",
+   "variantmeshes/wh_variantmodels/hu1e/cth_shugengan_body_01.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/danding1.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/danding2.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/danding3.wsmodel",
+   "variantmeshes/wh_variantmodels/hu1e/materials/cth_celestial_guard_body_03_1_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/materials/cth_lord_magistrate_head_01_2_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/materials/cth_lord_magistrate_head_01_weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1e/taoyan/cth_taoyan1.wsmodel",
+   "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_base_slaanesh_01_s_weighted2_alpha_off.xml.material",
+   "warmachines/aircraft/cth_sky_junk/materials/dae_warshrine_base_slaanesh_01_submesh_28_submesh_0_weighted4_alpha_off.xml.material"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "battle_animations_table_tables": [
+   "hu1e_celestial_guard_bannerman_01",
+   "humanoid01e",
+   "hu1e_jade_warrior_bannerman_01",
+   "hu1e_iron_hail_gunners_bannerman_01",
+   "gi1b_terracotta_sentinel_glaive"
+  ],
+  "battle_entities_tables": [
+   "banner_human",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh_human_male",
+   "infantry_light_effects",
+   "wh_main_unit_combat",
+   "small_entity",
+   "banner_cth"
+  ],
+  "battle_personalities_tables": [
+   "banner_cth_celestial_guard_officer_01",
+   "hu1e_sword_lord",
+   "banner_human",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "hu1e_crossbow_sword_and_shield",
+   "banner_cth_jade_warrior_officer_01",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "banner_cth_iron_hail_gunners_officer_01"
+  ],
+  "campaign_character_arts_tables": [
+   "wh3_cp1_art_set_cth_bhashiva",
+   "none",
+   "wh3_cp1_uniform_cth_bhashiva",
+   "wh3_uniform_cth_ship_lord",
+   "cam_lord_hu1b_elf_dual_sword",
+   "cam_cathayship_01",
+   "wh3_cp1_art_set_cth_taoyan_the_merciless",
+   "wh3_cp1_uniform_cth_taoyan",
+   "wh3_uniform_cth_ship_agent",
+   "cam_hero_hu1e_cp1_taoyan_trident"
+  ],
+  "land_units_tables": [
+   "wh2_main_leather_20",
+   "artillery",
+   "art_fld",
+   "wh3_main_unit_long_text_cth_art_fire_rain_rocket_battery_0",
+   "wh3_main_cth_art_fire_rain_rocket_battery_0",
+   "hu1e_sword",
+   "wh3_main_cth_artillery_crew",
+   "wh3_main_cth_mnt_oxen_draught_artillery",
+   "wh3_main_cth_peasant_sword",
+   "none",
+   "wh3_main_unit_short_text_cth_art_fire_rain_rocket_battery_0",
+   "wh_main_artillery",
+   "trained",
+   "wh3_main_cth_art_grand_cannon_articulation",
+   "wh3_main_cth_art_fire_rain_rocket_battery",
+   "vo_sel_cth_rocket_battery",
+   "vo_sel_artillery",
+   "vo_sel_culture",
+   "small",
+   "ranged_indirect_arty",
+   "medium",
+   "domination_artillery",
+   "wh3_main_unit_long_text_cth_art_grand_cannon_0",
+   "wh3_main_cth_art_grand_cannon_0",
+   "wh3_main_unit_short_text_cth_art_grand_cannon_0",
+   "wh3_main_cth_art_grand_cannon",
+   "vo_sel_cth_grand_cannon",
+   "ranged_direct_arty",
+   "wh2_main_chainmail_100",
+   "war_beast",
+   "cav_shk",
+   "wh3_main_unit_long_text_cth_cav_jade_lancers_0",
+   "wh3_main_cth_cav_jade_lancers_0",
+   "hu1e_hr1_warhorse_lance_and_shield",
+   "wh_main_cavalry_rider_standard_blood",
+   "wh3_main_cth_mnt_horse_heavy",
+   "wh3_main_cth_jade_lancer_lance",
+   "wh_missile_block_30_wood",
+   "wh3_main_unit_short_text_cth_cav_jade_lancers_0",
+   "wh_main_cavalry_ordered",
+   "vo_sel_cth_jade_riders",
+   "vo_sel_cavalry",
+   "large",
+   "melee_flanker_shock",
+   "low",
+   "domination_cav",
+   "melee",
+   "wh2_main_leather_15",
+   "inf_melee",
+   "com",
+   "wh3_main_unit_long_text_cth_cha_alchemist",
+   "wh3_main_cth_cha_alchemist_0",
+   "hu1e_mage_female_hero",
+   "wh3_main_cth_hum_alchemist_blood",
+   "wh3_main_cth_alchemist",
+   "wh3_main_unit_short_text_cth_cha_alchemist",
+   "wh_main_infantry",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "mage_highvalue",
+   "high",
+   "domination_characters",
+   "skirmish",
+   "wh2_main_chainmail_50",
+   "wh3_main_cth_cha_alchemist_1",
+   "hu1e_hr1_warhorse_mage_female_hero",
+   "wh3_main_cth_mnt_horse_hero",
+   "wh_main_cavalry_chaotic",
+   "mage_flanker_highvalue",
+   "wh2_main_leather_30",
+   "wh3_main_cth_cha_alchemist_2",
+   "wh3_main_cth_mnt_sky_lantern",
+   "wh_main_cth_sky_lantern",
+   "wh3_cp1_cth_sky_lantern_crane_gun_bullet",
+   "wh_main_monster",
+   "cant_capture",
+   "wh3_main_unit_long_text_cth_cha_dragon_blooded_shugengan_lord_yang",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_0",
+   "hu1e_mage_lord",
+   "wh3_main_cth_hum_shugengan_yang_blood",
+   "wh3_main_cth_shugengan_lord",
+   "wh3_main_unit_short_text_cth_cha_dragon_blooded_shugengan_lord_yang",
+   "wh2_main_chainmail_70",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_1",
+   "hu1e_hr1_warhorse_mage_lord",
+   "wh_main_monstrous_cavalry",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_2",
+   "hu1e_wh3_cathay_hr1_longma_mage_lord",
+   "wh3_main_cth_mnt_jade_longma_hero",
+   "wh3_main_cth_shugengan_lord_longma",
+   "flying_mage_highvalue",
+   "wh3_main_unit_long_text_cth_cha_dragon_blooded_shugengan_lord_yin",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_0",
+   "wh3_main_cth_hum_shugengan_yin_blood",
+   "wh3_main_unit_short_text_cth_cha_dragon_blooded_shugengan_lord_yin",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_1",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_2",
+   "wh2_main_chainmail_95",
+   "inf_mel",
+   "wh3_main_unit_long_text_cth_inf_dragon_guard_0",
+   "wh3_main_cth_inf_dragon_guard_0",
+   "hu1e_halberd_and_shield",
+   "wh3_main_cth_infantry_heavy_blood_dismembers",
+   "wh3_main_cth_dragon_guard_halberd",
+   "wh_missile_block_35_wood",
+   "wh3_main_unit_short_text_cth_inf_dragon_guard_0",
+   "wh3_main_cth_infantry_celestial_guard_2handed",
+   "vo_sel_cth_dragon_guard",
+   "vo_sel_melee",
+   "melee_anti_large",
+   "domination_infantry_elite",
+   "inf_ranged",
+   "inf_mis",
+   "wh3_main_unit_long_text_cth_inf_dragon_guard_crossbowmen_0",
+   "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+   "hu1e_dragon_guard_crossbow_sword_and_shield",
+   "wh3_main_cth_infantry_blood_dismembers",
+   "wh3_main_cth_dragon_guard_sword",
+   "wh3_main_cth_dragon_crossbow_bolt",
+   "wh3_main_unit_short_text_cth_inf_dragon_guard_crossbowmen_0",
+   "wh3_main_cth_infantry",
+   "vo_sel_cth_dragon_guard_crossbows",
+   "vo_sel_crossbowmen",
+   "ranged_no_skirmish",
+   "domination_infantry",
+   "archer",
+   "wh3_main_unit_long_text_cth_inf_iron_hail_gunners_0",
+   "wh3_main_cth_inf_iron_hail_gunners_0",
+   "hu1e_blunderbuss_sword",
+   "wh3_main_cth_infantry_iron_hail_gunners_blood_dismembers",
+   "wh3_cth_iron_hail_gun_bullet",
+   "wh3_main_unit_short_text_cth_inf_iron_hail_gunners_0",
+   "vo_sel_cth_iron_hail_gunners",
+   "vo_sel_ranged",
+   "ranged_direct",
+   "wh3_main_unit_long_text_cth_inf_jade_warrior_crossbowmen_0",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+   "hu1e_crossbow_and_sword",
+   "wh3_main_cth_jade_crossbowmen_sword",
+   "wh3_cth_crossbow_bolt",
+   "wh3_main_unit_short_text_cth_inf_jade_warrior_crossbowmen_0",
+   "vo_sel_cth_jade_warrior_crossbows",
+   "wh3_main_unit_long_text_cth_inf_jade_warriors_0",
+   "wh3_main_cth_inf_jade_warriors_0",
+   "hu1e_sword_and_shield",
+   "wh3_main_cth_jade_warrior_sword",
+   "wh3_main_unit_short_text_cth_inf_jade_warriors_0",
+   "vo_sel_cth_jade_warriors",
+   "wh3_main_unit_long_text_cth_peasants",
+   "wh3_main_cth_inf_peasant_archers_0",
+   "hu1e_bow_and_sword",
+   "wh3_main_cth_infantry_light_blood_dismembers",
+   "wh3_cth_peasant_bow_arrow",
+   "wh3_main_unit_short_text_cth_inf_peasant_archers_0",
+   "vo_sel_cth_peasant_archers",
+   "vo_sel_missile",
+   "ranged",
+   "domination_infantry_expendable",
+   "wh2_main_body_100",
+   "wh3_main_unit_long_text_cth_mon_terracotta_sentinel_0",
+   "wh3_main_cth_mon_terracotta_sentinel_0",
+   "gi1b_terracotta_sentinel_glaive",
+   "wh3_main_cth_terracotta_sentinel",
+   "wh3_main_unit_short_text_cth_mon_terracotta_sentinel_0",
+   "melee_gatecrusher",
+   "domination_monsters",
+   "wh2_main_leather_80",
+   "wh3_main_unit_long_text_cth_veh_sky_junk_0",
+   "wh3_main_cth_veh_sky_junk_0",
+   "hu1e_skyjunk01_crew_pilot",
+   "wh3_main_cth_sky_junk_gunner_rider",
+   "wh3_main_cth_mnt_sky_junk",
+   "wh_main_cth_sky_junk",
+   "wh3_main_cth_rocket_sky_junk",
+   "wh3_main_unit_short_text_cth_veh_sky_junk_0",
+   "vo_sel_flying",
+   "vo_sel_flying_short",
+   "sky_junk",
+   "wh3_main_cth_veh_sky_junk",
+   "wh3_main_unit_long_text_cth_veh_sky_lantern_0",
+   "wh3_main_cth_veh_sky_lantern_0",
+   "wh3_main_cth_sky_lantern_gunner_rider",
+   "wh3_main_unit_short_text_cth_veh_sky_lantern_0",
+   "sky_lantern",
+   "wh_main_body_0",
+   "wh3_main_cth_inf_peasant_spearmen_1",
+   "hu1e_long_spear",
+   "wh3_main_cth_long_spear",
+   "wh3_main_unit_short_text_cth_inf_peasant_spearmen_1",
+   "wh3_main_cth_infantry_long_spears",
+   "vo_sel_cth_peasant_spearmen",
+   "wh3_main_unit_long_text_cth_inf_crane_gunners_0",
+   "wh3_main_cth_inf_crane_gunners_0zzzzzz",
+   "wh3_main_cth_weapon_team_blood",
+   "wh3_cth_crane_gun_bullet",
+   "wh_missile_block_65_wood",
+   "wh3_main_unit_short_text_cth_inf_crane_gunners_0",
+   "wh3_main_cth_crane_gunners",
+   "wh3_main_cth_inf_crane_gunners_0",
+   "vo_sel_cth_crane_gunners",
+   "wh2_main_leather_60",
+   "wh3_cp1_unit_long_text_cth_cha_bhashiva",
+   "wh3_cp1_cth_cha_bhashiva",
+   "hu1b_hellebron_dual_sword",
+   "wh3_cp1_cth_bhashiva_katara_dual",
+   "wh3_cp1_unit_short_text_cth_cha_bhashiva",
+   "wh_main_infantry_large",
+   "melee_highvalue"
+  ],
+  "land_units_to_battle_personalities_junctions_tables": [
+   "additional_officer",
+   "banner_cth_celestial_guard_officer_01",
+   "wh3_main_cth_inf_dragon_guard_0",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+   "banner_cth_jade_warrior_officer_01",
+   "wh3_main_cth_inf_jade_warriors_0",
+   "wh3_main_cth_inf_jade_warriors_1",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_1",
+   "banner_cth_iron_hail_gunners_officer_01",
+   "wh3_main_cth_inf_iron_hail_gunners_0"
+  ],
+  "main_units_tables": [
+   "warmachine",
+   "wh3_main_cth_art_fire_rain_rocket_battery_0",
+   "wh_main_shp_transport",
+   "medium",
+   "wh3_main_vo_culture_Cathay",
+   "emp_rocket_battery",
+   "cth_cannon",
+   "composite_scene/porthole/cth_wm_fire_rain_rocket_porthole_01.csc",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Cathay_Cathayunit_female",
+   "wh3_main_cth_art_grand_cannon_0",
+   "artillery_cannon",
+   "composite_scene/porthole/cth_wm_grand_cannon_porthole_01.csc",
+   "melee_cavalry",
+   "wh3_main_cth_cav_jade_lancers_0",
+   "shock_cavalry",
+   "emp_reiksguard",
+   "hero",
+   "wh3_main_cth_cha_alchemist_0",
+   "wizard_metal",
+   "cth_general_foot",
+   "wh3_main_vo_actor_Cathay_Alchemist",
+   "wh3_main_cth_cha_alchemist_1",
+   "wizard_metal_cavalry",
+   "wh3_main_cam_mnt_cth_warhorse",
+   "lord",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_0",
+   "heavy",
+   "wh3_lord_wizard_yang",
+   "cth_shugengan_lord",
+   "wh3_main_vo_actor_Cathay_Shugengan_Lord",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_1",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yang_2",
+   "wh3_main_cam_mnt_cth_jade_longma",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_0",
+   "wh3_lord_wizard_yin",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_1",
+   "wh3_main_cth_cha_dragon_blooded_shugengan_lord_yin_2",
+   "melee_infantry",
+   "wh3_main_cth_inf_dragon_guard_0",
+   "infantry_spear_halberd",
+   "cth_dragon_guard",
+   "missile_infantry",
+   "wh3_main_cth_inf_dragon_guard_crossbowmen_0",
+   "missile_infantry_bow",
+   "cth_dragon_guard_crossbow",
+   "wh3_main_cth_inf_jade_warrior_crossbowmen_0",
+   "cth_jade_warrior_crossbow",
+   "wh3_main_cth_inf_jade_warriors_0",
+   "infantry_sword",
+   "cth_jade_warrior_0",
+   "wh3_main_cth_inf_peasant_archers_0",
+   "light",
+   "cth_peasant_archers",
+   "monster",
+   "wh3_main_cth_mon_terracotta_sentinel_0",
+   "very_heavy",
+   "wh3_main_vo_culture_Terracotta_Sentinel",
+   "wh3_main_cth_terracotta_sentinel",
+   "cth_sentinel",
+   "wh_main_vo_actor_default",
+   "wh3_dlc24_cth_cha_gate_master",
+   "wh3_dlc24_cha_gate_master",
+   "emp_general_foot",
+   "wh3_dlc24_cth_cha_gate_master_warhorse",
+   "wh3_main_cth_inf_peasant_spearmen_1",
+   "infantry_spear",
+   "cth_peasant_spearmen"
+  ],
+  "unit_banner_unit_height_offsets_tables": [
+   "wh3_main_cth_mon_terracotta_sentinel_0",
+   "wh3_twa08_cth_mon_terracotta_sentinel_0_ror"
+  ],
+  "variants_tables": [
+   "banner_cth_celestial_guard_officer_01",
+   "hu1e/cth/cth_jade_warrior/cth_jade_warrior_01_imposter",
+   "banner_cth_celestial_guard_crossbow_officer_01",
+   "banner_cth_jade_warrior_officer_01",
+   "banner_cth_jade_warrior_crossbow_officer_01",
+   "banner_cth_iron_hail_gunners_officer_01"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/battle_animations_table_tables/banner_officers",
+   "size": 188,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/banner_officers",
+   "size": 296,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/battle_personalities_tables/banner_officers",
+   "size": 270,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/!cthaay",
+   "size": 275,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/land_units_tables/!!!cthxxx",
+   "size": 2851,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/land_units_to_battle_personalities_junctions_tables/banner_officers",
+   "size": 270,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/main_units_tables/!!!cthxxx",
+   "size": 1326,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/unit_banner_unit_height_offsets_tables/cthxxx",
+   "size": 151,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "db/variants_tables/!banner_officers",
+   "size": 264,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/cth_prop_banner_01/cth_prop_banner_01_piece01_destruct01.rigid_model_v2",
+   "size": 56464,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/textures/cth_buildings_alpha_base_colour01.dds",
+   "size": 1683882,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "rigidmodels/buildings/textures/cth_buildings_alpha_base_colour02.dds",
+   "size": 1737381,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_24.png",
+   "size": 1920,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_256.png",
+   "size": 132801,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_64.png",
+   "size": 1922,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_banner.dds",
+   "size": 9496,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_icon.png",
+   "size": 44396,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/flags/wh3_dlc24_cth_the_celestial_court/mon_rotated.png",
+   "size": 10230,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_cathay1.png",
+   "size": 3037532,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/cth_bhashiva_0.png",
+   "size": 146486,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_01_0.png",
+   "size": 159552,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_02_0.png",
+   "size": 164107,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_03_0.png",
+   "size": 180591,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_alchemist_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_bhashiva_0.png",
+   "size": 262715,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_01_0.png",
+   "size": 186186,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_01_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_02_0.png",
+   "size": 181891,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_02_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_03_0.png",
+   "size": 219184,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_gate_master_campaign_03_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_01_0.png",
+   "size": 163634,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_02_0.png",
+   "size": 215766,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_03_0.png",
+   "size": 184463,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_shugengan_lord_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_taoyan_0.png",
+   "size": 181428,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_01_0.png",
+   "size": 97747,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_02_0.png",
+   "size": 97045,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_03_0.png",
+   "size": 97677,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_alchemist_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_bhashiva_0.png",
+   "size": 311038,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_01_0.png",
+   "size": 91812,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_01_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_02_0.png",
+   "size": 82966,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_02_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_03_0.png",
+   "size": 96248,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_gate_master_campaign_03_0_mask2.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_01_0.png",
+   "size": 102652,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_01_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_02_0.png",
+   "size": 98462,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_02_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_03_0.png",
+   "size": 98356,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_shugengan_lord_campaign_03_0_mask1.png",
+   "size": 139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_taoyan_0.png",
+   "size": 89033,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_cav_jade_lancers_0.png",
+   "size": 94007,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_crane_gunners_0.png",
+   "size": 57042,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_crane_gunners_1.png",
+   "size": 75455,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_0.png",
+   "size": 97575,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_crossbowmen_0.png",
+   "size": 109327,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 58442,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warrior_crossbowmen_0.png",
+   "size": 86987,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warriors_0.png",
+   "size": 81985,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 84231,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_spearmen_1.png",
+   "size": 92447,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_mon_terracotta_sentinel_0.png",
+   "size": 95410,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 17921,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 196923,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh3_main_cth_inf_peasant_spearmen_1.png",
+   "size": 251160,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/flag_shape_0_3k_dlc04_faction_bian_zhang_base_colour.dds",
+   "size": 265712,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/flag_shape_0_3k_nan_gua_base_colour.dds",
+   "size": 532789,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_0_material_map.dds",
+   "size": 398819,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/all/weighted/tex/shape_0_normal.dds",
+   "size": 587013,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_base_colour.dds",
+   "size": 82636,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_material_map.dds",
+   "size": 254651,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_01_normal.dds",
+   "size": 296281,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour01.dds",
+   "size": 772698,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour02.dds",
+   "size": 372438,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour02orig.dds",
+   "size": 398408,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/_variantmodels/flags/chinese/weighted/tex/h_tri_flag_sla_base_colour3.dds",
+   "size": 762365,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/1cth_iron_crane_gunners.variantmeshdefinition",
+   "size": 453,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_celestial_guard_crossbow_officer_01.variantmeshdefinition",
+   "size": 536,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_celestial_guard_officer_01.variantmeshdefinition",
+   "size": 504,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_iron_hail_gunners_officer_01.variantmeshdefinition",
+   "size": 517,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_jade_warrior_crossbow_officer_01.variantmeshdefinition",
+   "size": 554,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/banner_cth_jade_warrior_officer_01.variantmeshdefinition",
+   "size": 494,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist.variantmeshdefinition",
+   "size": 527,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist1.variantmeshdefinition",
+   "size": 508,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist2.variantmeshdefinition",
+   "size": 504,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist3.variantmeshdefinition",
+   "size": 508,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist_campaign_01.variantmeshdefinition",
+   "size": 522,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist_campaign_02.variantmeshdefinition",
+   "size": 522,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist_campaign_03.variantmeshdefinition",
+   "size": 523,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist_campaign_04.variantmeshdefinition",
+   "size": 522,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_alchemist_campaign_05.variantmeshdefinition",
+   "size": 522,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_bhashiva.variantmeshdefinition",
+   "size": 405,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_base.variantmeshdefinition",
+   "size": 150,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_base1.variantmeshdefinition",
+   "size": 493,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_base2.variantmeshdefinition",
+   "size": 483,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_base3.variantmeshdefinition",
+   "size": 505,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_base4.variantmeshdefinition",
+   "size": 494,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_crossbow.variantmeshdefinition",
+   "size": 407,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_dragon_guard_halberd.variantmeshdefinition",
+   "size": 385,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master.variantmeshdefinition",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master1.variantmeshdefinition",
+   "size": 571,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master2.variantmeshdefinition",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master3.variantmeshdefinition",
+   "size": 570,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master_campaign_01.variantmeshdefinition",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master_campaign_02.variantmeshdefinition",
+   "size": 562,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_gate_master_campaign_03.variantmeshdefinition",
+   "size": 562,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_iron_crane_gunners.variantmeshdefinition",
+   "size": 545,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_iron_hail_gunners.variantmeshdefinition",
+   "size": 545,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior.variantmeshdefinition",
+   "size": 709,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_crossbow.variantmeshdefinition",
+   "size": 719,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_jade_warrior_lancer.variantmeshdefinition",
+   "size": 674,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_nan_gau_grenadiers.variantmeshdefinition",
+   "size": 548,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_nangau_crew.variantmeshdefinition",
+   "size": 527,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_peasant_archer.variantmeshdefinition",
+   "size": 612,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_peasant_long_spearman.variantmeshdefinition",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan.variantmeshdefinition",
+   "size": 525,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord.variantmeshdefinition",
+   "size": 397,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord_campaign_01.variantmeshdefinition",
+   "size": 395,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord_campaign_02.variantmeshdefinition",
+   "size": 384,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord_campaign_03.variantmeshdefinition",
+   "size": 384,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord_campaign_04.variantmeshdefinition",
+   "size": 332,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_shugengan_lord_campaign_05.variantmeshdefinition",
+   "size": 333,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_sky_junk_gunner.variantmeshdefinition",
+   "size": 345,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_taoyan.variantmeshdefinition",
+   "size": 520,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_terracotta_sentinel.variantmeshdefinition",
+   "size": 313,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_wardrum_driver.variantmeshdefinition",
+   "size": 536,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_wardrum_dummer.variantmeshdefinition",
+   "size": 501,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/uio_toyan_celestial_lion.variantmeshdefinition",
+   "size": 487,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/cth_sla_longma_armour_heavy_01.rigid_model_v2",
+   "size": 2402506,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_longma_armour_heavy_01_base_colour.dds",
+   "size": 579997,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_longma_body_01_base_colour.dds",
+   "size": 1101992,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_01_base_colour.dds",
+   "size": 526422,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_02_base_colour.dds",
+   "size": 572260,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_03_base_colour.dds",
+   "size": 571839,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_armour_heavy_04_base_colour.dds",
+   "size": 534577,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/cth/cth_longma/tex/cth_sla_longma_body_01_base_colour.dds",
+   "size": 1065993,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_diffuse1n.dds",
+   "size": 4367240,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/cth_diffuse1ns.dds",
+   "size": 4342349,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01.rigid_model_v2",
+   "size": 2253232,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_copy.rigid_model_v2",
+   "size": 1725446,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_copy.wsmodel",
+   "size": 498,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_01_ror.rigid_model_v2",
+   "size": 2480274,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02.rigid_model_v2",
+   "size": 4992292,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02.wsmodel",
+   "size": 674,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_02_ror.rigid_model_v2",
+   "size": 2366842,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03.rigid_model_v2",
+   "size": 4682012,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_copy.rigid_model_v2",
+   "size": 3684900,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_copy.wsmodel",
+   "size": 532,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_03_ror.rigid_model_v2",
+   "size": 2764426,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_04_ror.rigid_model_v2",
+   "size": 2869576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_officer_1.rigid_model_v2",
+   "size": 2517686,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_officer_2.rigid_model_v2",
+   "size": 5981428,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_1.rigid_model_v2",
+   "size": 3589380,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_2.rigid_model_v2",
+   "size": 6125660,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/cth_sla_celestial_guard_body_rider_3.rigid_model_v2",
+   "size": 4790684,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_alchemist_head_03_submesh_7__weighted2_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_alchemist_head_03_submesh_7__weighted4_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__1_weighted4_alpha_on.xml.material",
+   "size": 597,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__weighted2_alpha_off.xml.material",
+   "size": 594,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_astromancer_head_05_submesh__weighted4_alpha_off.xml.material",
+   "size": 593,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_body_01_weighted2_alpha_off.xml.material",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_body_01_weighted4_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_1_weighted2_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_1_weighted4_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_02_subm_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_04_subm_weighted2_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_head_04_subm_weighted4_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_helmet_02_weighted4_alpha_on.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_sla_body_ror_01_weighted2_alpha_off.xml.material",
+   "size": 837,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/cth_celestial_guard_sla_body_ror_01_weighted4_alpha_off.xml.material",
+   "size": 839,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 579,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/celestial_body_mask.dds",
+   "size": 11499,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_astromancer_head_02_sla_base_colour.dds",
+   "size": 903051,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_astromancer_head_03_sla_base_colour.dds",
+   "size": 918284,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial _diffuse_3.dds",
+   "size": 9512531,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial _diffuse_4.dds",
+   "size": 9512366,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_body_01_sla_re_base_colour.dds",
+   "size": 919416,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_body_01_sla_ror_base_colour.dds",
+   "size": 925137,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_01_sla_re_base_colour.dds",
+   "size": 879316,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_02_sla_base_colour.dds",
+   "size": 1053590,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_celestial_guard_head_03_sla_re_base_colour.dds",
+   "size": 888137,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_dragon_iron_human_body_sla_02_base_colour.dds",
+   "size": 1203373,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_knight_slaanesh_cape_01_base_colour.dds",
+   "size": 175418,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/cth_peasant_head_01_mask.dds",
+   "size": 60545,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla.dds",
+   "size": 2074663,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla_1.dds",
+   "size": 2075374,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/haori_colour_sla_2.dds",
+   "size": 2072303,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/zhuge_mter.dds",
+   "size": 2054863,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_celestial_guard/tex/zhuge_normal.dds",
+   "size": 2468821,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01.rigid_model_v2",
+   "size": 1600150,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01.wsmodel",
+   "size": 545,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01_copy.rigid_model_v2",
+   "size": 2022420,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_01_officer.rigid_model_v2",
+   "size": 2257884,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02.rigid_model_v2",
+   "size": 3604820,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02.wsmodel",
+   "size": 672,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02_copy.rigid_model_v2",
+   "size": 2301746,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_02_officer.rigid_model_v2",
+   "size": 3609428,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03.rigid_model_v2",
+   "size": 2669520,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03.wsmodel",
+   "size": 699,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03_copy.rigid_model_v2",
+   "size": 3721516,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_03_copy_copy.rigid_model_v2",
+   "size": 2507572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04.rigid_model_v2",
+   "size": 3609428,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04_copy.rigid_model_v2",
+   "size": 1993020,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_sla_body_04_copy_copy.rigid_model_v2",
+   "size": 1322648,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_body_03.rigid_model_v2",
+   "size": 1047604,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_body_03.wsmodel",
+   "size": 270,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_04.rigid_model_v2",
+   "size": 905648,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_04.wsmodel",
+   "size": 260,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_05.rigid_model_v2",
+   "size": 1093604,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_05.wsmodel",
+   "size": 281,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_09.rigid_model_v2",
+   "size": 1027236,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/cth_jade_warrior_head_09.wsmodel",
+   "size": 263,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 589,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_on.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/cth_jade_warrior_head_04_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted4_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/def_khanite_assassin_head_01_sub_weighted4_alpha_on.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_armor_01_weighted4_alpha_on.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_body_2_weighted2_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_body_stockings_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_body_stockings_weighted4_alpha_on.xml.material",
+   "size": 572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_body_weighted4_alpha_on.xml.material",
+   "size": 578,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_hair_01_weighted4_alpha_on.xml.material",
+   "size": 599,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_hair_02_weighted4_alpha_on.xml.material",
+   "size": 600,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_hair_04_2_weighted2_alpha_off.xml.material",
+   "size": 601,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_hair_05_2_weighted2_alpha_off.xml.material",
+   "size": 599,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_head_03_weighted4_alpha_on.xml.material",
+   "size": 584,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_head_04_2_weighted2_alpha_off.xml.material",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_helmet_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/jade_helmet_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/maiden2_lod1_weighted4_alpha_on.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 608,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 608,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_submesh_weighted2_alpha_on.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_weighted2_alpha_off.xml.material",
+   "size": 563,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/materials/piece01_destruct01_lod01_weighted2_alpha_on.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/body_texture_21_color.dds",
+   "size": 356548,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/body_texture_2_color.dds",
+   "size": 377396,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/body_texture_materialmap.dds",
+   "size": 340824,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/body_texture_normalorange.dds",
+   "size": 662445,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_diffuse.dds",
+   "size": 6279697,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour2.dds",
+   "size": 1177750,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_body_base_colour3.dds",
+   "size": 1187946,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_head_02_02_base_colour.dds",
+   "size": 1046614,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_sla_head_base_colour.dds",
+   "size": 1118351,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_mask.dds",
+   "size": 203,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/cth_jade_warrior_head_material_map.dds",
+   "size": 424736,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/def_supreme_sorceress_head_01__blackhairs_base_colour.dds",
+   "size": 485364,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/def_supreme_sorceress_head_01__blondhairs_base_colour.dds",
+   "size": 492569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior/tex/ksl_sla_gryphon_legion_head_base_colour.dds",
+   "size": 489189,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior_body_03.rigid_model_v2",
+   "size": 1047604,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior_head_04.rigid_model_v2",
+   "size": 1128716,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior_head_04.wsmodel",
+   "size": 290,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior_head_05.rigid_model_v2",
+   "size": 1318792,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_jade_warrior_head_05.wsmodel",
+   "size": 254,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.rigid_model_v2",
+   "size": 1827268,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.wsmodel",
+   "size": 401,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01_officer.rigid_model_v2",
+   "size": 2094530,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02.rigid_model_v2",
+   "size": 1795278,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02.wsmodel",
+   "size": 390,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_02_officer.rigid_model_v2",
+   "size": 3141164,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.rigid_model_v2",
+   "size": 1910978,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.wsmodel",
+   "size": 446,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_04.rigid_model_v2",
+   "size": 2188716,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_04.wsmodel",
+   "size": 506,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.rigid_model_v2",
+   "size": 2227820,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.wsmodel",
+   "size": 553,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.rigid_model_v2",
+   "size": 640826,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.wsmodel",
+   "size": 313,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.rigid_model_v2",
+   "size": 542334,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.wsmodel",
+   "size": 328,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.rigid_model_v2",
+   "size": 601538,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.wsmodel",
+   "size": 374,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_01.rigid_model_v2",
+   "size": 2137156,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_01.wsmodel",
+   "size": 262,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_02.rigid_model_v2",
+   "size": 2116954,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_02.wsmodel",
+   "size": 262,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_03.rigid_model_v2",
+   "size": 2066812,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_03.wsmodel",
+   "size": 266,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_04.rigid_model_v2",
+   "size": 2028850,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_body_04.wsmodel",
+   "size": 264,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_01.rigid_model_v2",
+   "size": 1613764,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_01.wsmodel",
+   "size": 264,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_02.rigid_model_v2",
+   "size": 1403554,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_02.wsmodel",
+   "size": 264,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_03.rigid_model_v2",
+   "size": 1296062,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_03.wsmodel",
+   "size": 248,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_04.rigid_model_v2",
+   "size": 1281272,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_04.wsmodel",
+   "size": 243,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_05.rigid_model_v2",
+   "size": 1315832,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_05.wsmodel",
+   "size": 244,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_06.rigid_model_v2",
+   "size": 1383784,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_warrior_head_06.wsmodel",
+   "size": 261,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 594,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 593,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 584,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 579,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 582,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 592,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 600,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 601,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_01.001_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_01_weighted4_alpha_on.xml.material",
+   "size": 575,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_02.001_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_02_weighted4_alpha_on.xml.material",
+   "size": 577,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_03.001_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_03_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_04.001_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_armor_04_weighted4_alpha_on.xml.material",
+   "size": 576,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_body_weighted4_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_body_weighted4_alpha_on.xml.material",
+   "size": 584,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_hairs_01_weighted4_alpha_on.xml.material",
+   "size": 601,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_hairs_02_weighted4_alpha_on.xml.material",
+   "size": 604,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_hairs_03_weighted4_alpha_on.xml.material",
+   "size": 598,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_01_weighted4_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_01_weighted4_alpha_on.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_02_weighted4_alpha_off.xml.material",
+   "size": 584,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_02_weighted4_alpha_on.xml.material",
+   "size": 587,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_03_weighted4_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_head_03_weighted4_alpha_on.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_mask_2_weighted4_alpha_on.xml.material",
+   "size": 575,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/nangau_mask_weighted4_alpha_on.xml.material",
+   "size": 574,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 199,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 2646581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 2722816,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_texture_2_color.dds",
+   "size": 356548,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_texture_basecolor.dds",
+   "size": 357437,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_texture_materialmap.dds",
+   "size": 340824,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_texture_normalorange.dds",
+   "size": 662445,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 3710680,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 7164423,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 3729206,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 7163763,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_dragon_storm_human_head_01_base_colour_black.dds",
+   "size": 226265,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1164877,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 518764,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1088439,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 481112,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/def_supreme_sorceress_head_01__blackhairs_base_colour.dds",
+   "size": 485364,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/def_supreme_sorceress_head_01__blondhairs_base_colour.dds",
+   "size": 492569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 257764,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_01.rigid_model_v2",
+   "size": 151154,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_02.rigid_model_v2",
+   "size": 165632,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_halberd_2h_03.rigid_model_v2",
+   "size": 176760,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_01.rigid_model_v2",
+   "size": 54508,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_02.rigid_model_v2",
+   "size": 54508,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_shield_03.rigid_model_v2",
+   "size": 54508,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_01.rigid_model_v2",
+   "size": 99030,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_02.rigid_model_v2",
+   "size": 98660,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_celestial_guard_sla_sword_1h_03.rigid_model_v2",
+   "size": 130148,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_01.rigid_model_v2",
+   "size": 115144,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_02.rigid_model_v2",
+   "size": 86706,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_halberd_2h_03.rigid_model_v2",
+   "size": 92920,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_01.rigid_model_v2",
+   "size": 110614,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_02.rigid_model_v2",
+   "size": 139270,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_lance_2h_03.rigid_model_v2",
+   "size": 99716,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_01.rigid_model_v2",
+   "size": 95364,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_02.rigid_model_v2",
+   "size": 208852,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_shield_03.rigid_model_v2",
+   "size": 74280,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_01.rigid_model_v2",
+   "size": 64494,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_02.rigid_model_v2",
+   "size": 54490,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_jade_sla_sword_1h_03.rigid_model_v2",
+   "size": 61420,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_01.rigid_model_v2",
+   "size": 148956,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_02.rigid_model_v2",
+   "size": 116956,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_03.rigid_model_v2",
+   "size": 124252,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_peasant_spear_sla_2h_04.rigid_model_v2",
+   "size": 100708,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_wardrum_skin.rigid_model_v2",
+   "size": 315340,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_halberd_2h_01_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_halberd_2h_01_alpha_on.xml.material",
+   "size": 570,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_ancestral_shield_01_alpha_off.xml.material",
+   "size": 564,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_rigid_alpha_off.xml.material",
+   "size": 566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_rigid_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted2_alpha_on.xml.material",
+   "size": 574,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_crossbow_2h_01_weighted4_alpha_off.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone _1_weighted2_alpha_off.xml.material",
+   "size": 575,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone_weighted4_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ - clone_weighted4_alpha_on.xml.material",
+   "size": 577,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_ _1_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_01_alpha_off.xml.material",
+   "size": 563,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h_01_alpha_on.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h__weighted4_alpha_off.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_2h__weighted4_alpha_on.xml.material",
+   "size": 569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_ror_2h_01_alpha_off.xml.material",
+   "size": 820,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_halberd_ror_2h_01_alpha_on.xml.material",
+   "size": 819,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_helmet_01 - clone_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_helmet_01_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_lance_2h_01_alpha_off.xml.material",
+   "size": 560,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_lance_rider_ror_2h_01_alpha_off.xml.material",
+   "size": 784,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_01_l - clone_weighted2_alpha_off.xml.material",
+   "size": 578,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_shield_01_l_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_02 - clone_weighted2_alpha_off.xml.material",
+   "size": 574,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_celestial_guard_sword_1h_02_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_rigid_alpha_off.xml.material",
+   "size": 563,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/cth_jade_warrior_crossbow_2h_01_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/hef_alarielle_staff_1h_01_lod1 - clone_weighted2_alpha_on.xml.material",
+   "size": 578,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/hef_alarielle_staff_1h_01_lod1_weighted2_alpha_on.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/shape_0_weighted - clone_weighted4_alpha_off.xml.material",
+   "size": 577,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/materials/shape_0_weighted_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_celestial_guard_sword_1h_01_base_colour_sla_3.dds",
+   "size": 936013,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_halberd_2h_01_base_colour.dds",
+   "size": 125223,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_lance_2h_01_base_colour.dds",
+   "size": 266027,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_shield_01_base_colour.dds",
+   "size": 255022,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_sla_sword_1h_01_base_colour.dds",
+   "size": 111404,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_crossbow_2h_01_mask.dds",
+   "size": 107,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_lance_2h_01_mask.dds",
+   "size": 107,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_shield_01_material_map.dds",
+   "size": 226741,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_jade_warrior_sword_1h_01_mask.dds",
+   "size": 107,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_sla_celestial_guard_halberd_2h_01_base_colour.dds",
+   "size": 253314,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/tex/cth_sla_celestial_guard_shield_01_base_colour.dds",
+   "size": 206872,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_sentinel.rigid_model_v2",
+   "size": 3740112,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_sentinel.wsmodel",
+   "size": 471,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_cth_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_cth_body_01_weighted4_alpha_off.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_cth_face_01_2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_cth_face_01_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_under_2_weighted2_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/materials/endo_under_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_acc_01_base_colour.dds",
+   "size": 80714,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_acc_01_material_map.dds",
+   "size": 43136,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_acc_01_normal.dds",
+   "size": 156318,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_base_colour_01.dds",
+   "size": 380740,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_base_colour_02.dds",
+   "size": 1320783,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_base_colour_03.dds",
+   "size": 383623,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_material_map_01.dds",
+   "size": 40537,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_material_map_03.dds",
+   "size": 74127,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_normal_01.dds",
+   "size": 531461,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_body_normal_03.dds",
+   "size": 2730295,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_head_01_base_colour.dds",
+   "size": 155139,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_head_01_material_map.dds",
+   "size": 94340,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_common/tex/endo_cth_head_01_normal.dds",
+   "size": 266120,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_01.rigid_model_v2",
+   "size": 1425708,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_01.wsmodel",
+   "size": 358,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_02.rigid_model_v2",
+   "size": 1410050,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_02.wsmodel",
+   "size": 336,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_03.rigid_model_v2",
+   "size": 977340,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_grenadier_body_03.wsmodel",
+   "size": 308,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_01.rigid_model_v2",
+   "size": 1351200,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_01.wsmodel",
+   "size": 254,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_02.rigid_model_v2",
+   "size": 1281424,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_02.wsmodel",
+   "size": 272,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_03.rigid_model_v2",
+   "size": 1287664,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_body_03.wsmodel",
+   "size": 256,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_01.rigid_model_v2",
+   "size": 547376,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_01.wsmodel",
+   "size": 277,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_02.rigid_model_v2",
+   "size": 379212,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_02.wsmodel",
+   "size": 243,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_03.rigid_model_v2",
+   "size": 354276,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/endo_nan_gau_warrior_head_03.wsmodel",
+   "size": 243,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/cth_jade_warrior_props_01_2_weighted2_alpha_off.xml.material",
+   "size": 557,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/cth_jade_warrior_props_01_weighted4_alpha_off.xml.material",
+   "size": 556,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/cth_peasant_props_01_2_weighted2_alpha_off.xml.material",
+   "size": 554,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/cth_peasant_props_01_weighted4_alpha_off.xml.material",
+   "size": 552,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_cth_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_cth_body_01_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_body_01_weighted4_alpha_off.xml.material",
+   "size": 563,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_body_03_2_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_body_03_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_head_01_weighted4_alpha_on.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_head_02_1_weighted4_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_01_2_weighted2_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_01_weighted4_alpha_off.xml.material",
+   "size": 584,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_01bdt_2_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_01bdt_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_02bdt2_2_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_nan_skin_02bdt2_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_under_2_weighted2_alpha_off.xml.material",
+   "size": 562,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/materials/endo_under_weighted4_alpha_off.xml.material",
+   "size": 562,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_body_01_base_colour.dds",
+   "size": 381029,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_body_01_base_colour2.dds",
+   "size": 320445,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_body_01_base_colour3.dds",
+   "size": 335060,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_body_01_material_map.dds",
+   "size": 76170,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_01_base_colour.dds",
+   "size": 579449,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_01_mask.dds",
+   "size": 23438,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_01_material_map.dds",
+   "size": 516745,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_01_normal.dds",
+   "size": 1086301,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_02_base_colour.dds",
+   "size": 579178,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_02_mask.dds",
+   "size": 23428,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_02_material_map.dds",
+   "size": 516999,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_body_02_normal.dds",
+   "size": 1085483,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_head_base_colour.dds",
+   "size": 617583,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/endo_nan_gau_warrior/tex/endo_nan_gau_warrior_head_material_map.dds",
+   "size": 569531,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_4_weighted2_alpha_off.xml.material",
+   "size": 813,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_subme_2_weighted2_alpha_off.xml.material",
+   "size": 815,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/materials/cth_terracotta_sentinel_01_weighted4_alpha_off.xml.material",
+   "size": 810,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/materials/dark_sentinel_bodynn_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/materials/dark_sentinel_bodynn_weighted4_alpha_on.xml.material",
+   "size": 566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth_gate_body1.rigid_model_v2",
+   "size": 2153802,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth_gate_body1.wsmodel",
+   "size": 560,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/materials/h_tri_flag_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/materials/h_tri_flag_weighted4_alpha_on.xml.material",
+   "size": 573,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_01_back.rigid_model_v2",
+   "size": 1274574,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_01_back.wsmodel",
+   "size": 300,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_01_front.rigid_model_v2",
+   "size": 1280444,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_01_front.wsmodel",
+   "size": 299,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_02_back.rigid_model_v2",
+   "size": 2207350,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_02_back.wsmodel",
+   "size": 267,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_02_front.rigid_model_v2",
+   "size": 2207566,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_02_front.wsmodel",
+   "size": 266,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_03_back.rigid_model_v2",
+   "size": 2157310,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_03_back.wsmodel",
+   "size": 267,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_03_front.rigid_model_v2",
+   "size": 2157454,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_03_front.wsmodel",
+   "size": 267,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_04_back.rigid_model_v2",
+   "size": 2119426,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_04_back.wsmodel",
+   "size": 267,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_04_front.rigid_model_v2",
+   "size": 2119426,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_body_04_front.wsmodel",
+   "size": 267,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_01_back.rigid_model_v2",
+   "size": 1704484,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_01_back.wsmodel",
+   "size": 269,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_01_front.rigid_model_v2",
+   "size": 1704484,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_01_front.wsmodel",
+   "size": 283,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_02_back.rigid_model_v2",
+   "size": 1494274,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_02_back.wsmodel",
+   "size": 282,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_02_front.rigid_model_v2",
+   "size": 1494274,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_02_front.wsmodel",
+   "size": 283,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_03_back.rigid_model_v2",
+   "size": 1474504,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_03_back.wsmodel",
+   "size": 270,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_03_front.rigid_model_v2",
+   "size": 1474504,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_03_front.wsmodel",
+   "size": 282,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_04_back.rigid_model_v2",
+   "size": 2458430,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_04_back.wsmodel",
+   "size": 252,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_04_front.rigid_model_v2",
+   "size": 2458574,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_04_front.wsmodel",
+   "size": 263,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_05_back.rigid_model_v2",
+   "size": 1586846,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_05_back.wsmodel",
+   "size": 262,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_05_front.rigid_model_v2",
+   "size": 1586846,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_05_front.wsmodel",
+   "size": 263,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_06_back.rigid_model_v2",
+   "size": 1356542,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_06_back.wsmodel",
+   "size": 262,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_06_front.rigid_model_v2",
+   "size": 1356542,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/cth_nan_gau_warrior_head_06_front.wsmodel",
+   "size": 252,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_armor_01_team1_weighted4_alpha_on.xml.material",
+   "size": 542,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_armor_01_team_weighted4_alpha_on.xml.material",
+   "size": 542,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_armor_04_team_2_weighted2_alpha_off.xml.material",
+   "size": 581,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_body_team_2_weighted2_alpha_off.xml.material",
+   "size": 585,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_body_team_weighted4_alpha_on.xml.material",
+   "size": 540,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_body_teamfr_2_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_hairs_01_teamfr_weighted4_alpha_on.xml.material",
+   "size": 607,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_hairs_02_teamfr_weighted4_alpha_on.xml.material",
+   "size": 609,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_hairs_03_team_weighted4_alpha_on.xml.material",
+   "size": 595,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_hairs_04_teamfr_weighted4_alpha_on.xml.material",
+   "size": 609,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_head_01_team_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_head_02_team_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e_t1/cth/cth_nan_gau_warrior_wt/materials/nangau_head_03_teamfr_weighted4_alpha_on.xml.material",
+   "size": 590,
+   "pack": "!(X)_Cathay_Skin/!(X)_Cathay_Skin.pack"
+  }
+ ]
+}

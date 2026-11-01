@@ -1,0 +1,302 @@
+{
+ "mod": "ll-47812",
+ "packs": [
+  "@alt_endo_slaanesh_devotee.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "XXXdevotees/@alt_endo_slaanesh_devotee.pack": {
+   "files": 51,
+   "dependencies": []
+  }
+ },
+ "fileCount": 51,
+ "byTopFolder": {
+  "variantmeshes": 51
+ },
+ "tables": [],
+ "references": {
+  "total": 106,
+  "inMod": 45,
+  "inBaseGame": 44,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_02_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_03_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_body_04_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_02_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_02_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_02_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_head_03_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_skin_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_skin_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_skin_01_normal.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sla_devotees_of_slaanesh.variantmeshdefinition",
+   "size": 610,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/sla_devotees_of_slaanesh_crossbows.variantmeshdefinition",
+   "size": 670,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_02.rigid_model_v2",
+   "size": 1354848,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_02.wsmodel",
+   "size": 396,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_03.rigid_model_v2",
+   "size": 1356758,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_03.wsmodel",
+   "size": 392,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_04.rigid_model_v2",
+   "size": 1139292,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_04.wsmodel",
+   "size": 356,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_05.rigid_model_v2",
+   "size": 1083480,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_body_05.wsmodel",
+   "size": 356,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_01.rigid_model_v2",
+   "size": 450692,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_01.wsmodel",
+   "size": 289,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_02.rigid_model_v2",
+   "size": 555230,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_02.wsmodel",
+   "size": 299,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_03.rigid_model_v2",
+   "size": 355448,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/endo_devotee_slaneesh_head_03.wsmodel",
+   "size": 261,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_daemonette_devotee_slaanesh_2_weighted2_alpha_off.xml.material",
+   "size": 573,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_daemonette_devotee_slaanesh_weighted2_alpha_on.xml.material",
+   "size": 573,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 585,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_01_weighted4_alpha_off.xml.material",
+   "size": 582,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_01_weighted4_alpha_on.xml.material",
+   "size": 585,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_02_2_weighted2_alpha_off.xml.material",
+   "size": 585,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_02_weighted4_alpha_off.xml.material",
+   "size": 587,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_02_weighted4_alpha_on.xml.material",
+   "size": 586,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_03_2_weighted2_alpha_off.xml.material",
+   "size": 591,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_03_weighted4_alpha_on.xml.material",
+   "size": 591,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_04_2_weighted2_alpha_off.xml.material",
+   "size": 591,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_body_04_weighted4_alpha_on.xml.material",
+   "size": 591,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_head_01_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_devotee_slaanesh_head_02_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_keeper_devotee_slaanesh_acc_2_weighted2_alpha_off.xml.material",
+   "size": 577,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/dae_keeper_devotee_slaanesh_acc_weighted4_alpha_off.xml.material",
+   "size": 576,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_cold_one_riders_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 554,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_cold_one_riders_body_01_weighted4_alpha_off.xml.material",
+   "size": 553,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_warriors_torso_01_1_weighted4_alpha_on.xml.material",
+   "size": 558,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_warriors_torso_01_4_weighted2_alpha_off.xml.material",
+   "size": 559,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_warriors_torso_01_5_weighted2_alpha_off.xml.material",
+   "size": 557,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/def_warriors_torso_01_weighted4_alpha_off.xml.material",
+   "size": 559,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 575,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_body_01_weighted4_alpha_off.xml.material",
+   "size": 574,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_body_02_2_weighted2_alpha_off.xml.material",
+   "size": 578,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_body_02_weighted4_alpha_off.xml.material",
+   "size": 577,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_01_weighted4_alpha_off.xml.material",
+   "size": 573,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_02_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_03_2_weighted2_alpha_off.xml.material",
+   "size": 573,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/materials/endo_devotee_head_03_weighted4_alpha_off.xml.material",
+   "size": 574,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/dae/endo_devotee_slaanesh/tex/endo_devotee_slaanesh_skin_05_base_colour.dds",
+   "size": 788505,
+   "pack": "XXXdevotees/@alt_endo_slaanesh_devotee.pack"
+  }
+ ]
+}

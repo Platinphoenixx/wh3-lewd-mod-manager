@@ -58,7 +58,15 @@ The project must keep working without anyone's AI subscription.
 
 Curated data is layered; later layers override earlier ones field by field (a field is replaced whole):
 `auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json`
-< `followup-community.json` < `manual.json`; then `community.json` is applied on top.
+< `followup-archives.json` < `followup-community.json` < `manual.json`; then `community.json` is applied
+on top. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
+over all layers – fix texts there.
+- `curator/analyze_pack.py` – reads a mod's .pack files (index + reference files only): file list,
+  declared dependencies, tables, and which packs provide the models/materials/textures it refers to
+  (`--with` suspected requirements, `--vanilla` the game's data folder) → `curator/raw/packs/<mod>.json`.
+  Findings go into `followup-archives.json`. `build_catalog.py` takes pack names (when the curated
+  entry has none) and pack-header dependencies from these files; `curator/pack_report.py` summarises
+  all analyses (cross-mod file needs, shared files) into `work/pack-report.md` (local).
 - `curator/crawl_ll.py` – LoversLab club → `curator/raw/ll/` (page text with `[[SPOILER]]` and `[img …]`
   markers, images, Steam ids). LL pages need a full browser user agent; downloads need a login.
 - `curator/raw/steam_items.json` (public Workshop API), `steam_hidden.json` (pages only visible when

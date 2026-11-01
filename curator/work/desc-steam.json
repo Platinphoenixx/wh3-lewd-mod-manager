@@ -106,8 +106,8 @@
   "steam-3809988722": {
     "kind": "reskin",
     "summary": "Complete Neferata reskin in the style of a royal vampire queen look with a golden dress.",
-    "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. The LoversLab entry “Naughty Neferata! 16 Model variants” requires it.",
-    "recommendedFor": "Anyone playing Neferata with Naughty Neferata (required there) or generally wanting a more refined Neferata."
+    "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. Its models are also part of the LoversLab variant pack “Naughty Neferata! 16 Model variants”, which does not need it installed.",
+    "recommendedFor": "Anyone wanting a more refined Neferata without the LoversLab variant pack."
   },
   "steam-3617312541": {
     "authors": [
@@ -400,7 +400,7 @@
   "steam-3809129102": {
     "kind": "reskin",
     "summary": "Neferata reskin in the Total Warmaidens style, building on Zeta0080's reskin.",
-    "description": "A Neferata reskin that builds on Zeta0080's Neferata reskin and belongs to the author's Total Warmaidens project (Nexus). The face was updated on 17 Oct 2026. If problems occur, the author says it is a mod conflict: place it higher in the load order or disable other mods.\n\nThe LoversLab entry “Naughty Neferata!” lists it as a requirement (“two Steam mods merged”); it is unclear whether it is embedded."
+    "description": "A Neferata reskin that builds on Zeta0080's Neferata reskin and belongs to the author's Total Warmaidens project (Nexus). The face was updated on 17 Oct 2026. If problems occur, the author says it is a mod conflict: place it higher in the load order or disable other mods.\n\nThe LoversLab variant pack “Naughty Neferata!” merged this look into its own pack and does not need it installed; loaded above that pack, this mod would replace its default model and portraits."
   },
   "steam-3404717872": {
     "name": "Nymeria – Legendary Hero/Lord",

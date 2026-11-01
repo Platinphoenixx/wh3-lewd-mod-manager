@@ -1,0 +1,3549 @@
+{
+ "mod": "ll-24914",
+ "packs": [
+  "@female_unit_cards.pack",
+  "@female_unit_cards_nsfw.pack",
+  "@female_unit_cards_nsfw_slaanesh.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@female_unit_cards_1_5/@female_unit_cards.pack": {
+   "files": 489,
+   "dependencies": []
+  },
+  "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack": {
+   "files": 180,
+   "dependencies": []
+  },
+  "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack": {
+   "files": 33,
+   "dependencies": []
+  }
+ },
+ "fileCount": 506,
+ "byTopFolder": {
+  "ui": 506
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_cav_doomfire_warlocks.png",
+   "size": 25726,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_cav_doomfire_warlocks_ror.png",
+   "size": 23929,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_cold_one_dread_knights_ror.png",
+   "size": 19460,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_darkshards_shields_ror.png",
+   "size": 18718,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_darkshards_shields_ror.png",
+   "size": 22341,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_dreadspears_ror.png",
+   "size": 18691,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_dreadspears_ror.png",
+   "size": 19242,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_har_ganeth_executioners_ror.png",
+   "size": 18416,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_har_ganeth_executioners_ror.png",
+   "size": 18590,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_inf_sisters_of_slaughter.png",
+   "size": 23788,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_inf_sisters_of_slaughter.png",
+   "size": 25074,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_witch_elves_ror.png",
+   "size": 19796,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_def_witch_elves_ror.png",
+   "size": 20081,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_cav_dragon_princes_ror.png",
+   "size": 18617,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_dryads.png",
+   "size": 19973,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_shadow_walkers.png",
+   "size": 21296,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_shadow_walkers.png",
+   "size": 21624,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_shadow_warriors.png",
+   "size": 24264,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_shadow_warriors_ror.png",
+   "size": 22363,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_sisters_of_avelorn.png",
+   "size": 20450,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_sisters_of_avelorn.png",
+   "size": 20715,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_sisters_of_avelorn_ror.png",
+   "size": 20478,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_inf_sisters_of_avelorn_ror.png",
+   "size": 20610,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_lothern_sea_guard_ror.png",
+   "size": 21337,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_lothern_sea_guard_ror.png",
+   "size": 21483,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_phoenix_guard_ror.png",
+   "size": 24341,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_spearmen_ror.png",
+   "size": 17390,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_spearmen_ror.png",
+   "size": 17660,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_white_lions_of_chrace_ror.png",
+   "size": 20644,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc10_hef_white_lions_of_chrace_ror.png",
+   "size": 20919,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_deck_gunners.png",
+   "size": 21092,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_deck_gunners.png",
+   "size": 21456,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_deck_gunners_ror.png",
+   "size": 18218,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_deck_gunners_ror.png",
+   "size": 18536,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard.png",
+   "size": 21785,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard.png",
+   "size": 21958,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard_polearm.png",
+   "size": 21823,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard_polearm.png",
+   "size": 22113,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard_ror.png",
+   "size": 19074,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_depth_guard_ror.png",
+   "size": 19417,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_sartosa_free_company.png",
+   "size": 21118,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_sartosa_free_company.png",
+   "size": 21325,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_sartosa_militia.png",
+   "size": 21404,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_sartosa_militia.png",
+   "size": 21523,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_syreens.png",
+   "size": 20486,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_syreens.png",
+   "size": 20513,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands.png",
+   "size": 18627,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands.png",
+   "size": 18962,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands_polearm.png",
+   "size": 21794,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands_polearm.png",
+   "size": 22031,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands_ror.png",
+   "size": 20929,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_deckhands_ror.png",
+   "size": 21194,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob.png",
+   "size": 20867,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob.png",
+   "size": 21110,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_bombers.png",
+   "size": 21969,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_bombers.png",
+   "size": 22287,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_hand_cannon.png",
+   "size": 21261,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_hand_cannon.png",
+   "size": 21509,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_handguns.png",
+   "size": 20313,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_handguns.png",
+   "size": 20367,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_ror.png",
+   "size": 17598,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_cst_zombie_gunnery_mob_ror.png",
+   "size": 17716,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_vmp_crossbowmen.png",
+   "size": 17732,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc11_vmp_handgunners.png",
+   "size": 17659,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_archers.png",
+   "size": 21481,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_archers.png",
+   "size": 22854,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_archers_ror.png",
+   "size": 19254,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_archers_ror.png",
+   "size": 19925,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_crossbowmen_ror.png",
+   "size": 17979,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_crossbowmen_ror.png",
+   "size": 19149,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_empire_knights_everlasting_light_ror.png",
+   "size": 20977,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_empire_knights_morr_ror.png",
+   "size": 20566,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_empire_knights_ostland_ror.png",
+   "size": 20144,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_greatswords_ror.png",
+   "size": 18484,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_greatswords_ror.png",
+   "size": 19105,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_halberdiers_ror.png",
+   "size": 17572,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_halberdiers_ror.png",
+   "size": 18194,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_handgunners_ror.png",
+   "size": 18759,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_huntsmen.png",
+   "size": 24121,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_huntsmen.png",
+   "size": 25556,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_huntsmen_ror.png",
+   "size": 19578,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_huntsmen_ror.png",
+   "size": 20344,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_outriders_ror.png",
+   "size": 19601,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_pistoliers_ror.png",
+   "size": 18476,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_spearmen_ror.png",
+   "size": 17321,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_spearmen_ror.png",
+   "size": 18354,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_swordsmen_ror.png",
+   "size": 17574,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc13_emp_swordsmen_ror.png",
+   "size": 18236,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc14_def_inf_harpies_ror.png",
+   "size": 20225,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc14_def_inf_harpies_ror.png",
+   "size": 20467,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc14_def_mon_bloodwrack_medusa.png",
+   "size": 20775,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_archers_ror_0.png",
+   "size": 18125,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_archers_ror_0.png",
+   "size": 19956,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_rangers.png",
+   "size": 25690,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_rangers.png",
+   "size": 25738,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_silverin_guard.png",
+   "size": 68395,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc15_hef_inf_silverin_guard.png",
+   "size": 71042,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc16_wef_bladesingers.png",
+   "size": 26401,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc16_wef_ror_dryads.png",
+   "size": 19853,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_ark_corsairs.png",
+   "size": 22170,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_ark_corsairs.png",
+   "size": 23412,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_ark_corsairs_handbows.png",
+   "size": 22981,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_ark_corsairs_handbows.png",
+   "size": 24459,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_guard.png",
+   "size": 21461,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_black_guard.png",
+   "size": 22531,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_bleakswords.png",
+   "size": 20188,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_bleakswords.png",
+   "size": 21683,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_cold_one_dread_knights.png",
+   "size": 21323,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_cold_one_knights.png",
+   "size": 22482,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_dark_riders.png",
+   "size": 18847,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_dark_riders_crossbow.png",
+   "size": 20898,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_dark_riders_shield.png",
+   "size": 20272,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_darkshards.png",
+   "size": 21048,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_darkshards.png",
+   "size": 22640,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_darkshards_shields.png",
+   "size": 20708,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_darkshards_shields.png",
+   "size": 22325,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_dreadspears.png",
+   "size": 20656,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_dreadspears.png",
+   "size": 22244,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_har_ganeth_executioners.png",
+   "size": 20463,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_har_ganeth_executioners.png",
+   "size": 21394,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_harpies.png",
+   "size": 21649,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_harpies.png",
+   "size": 22971,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades.png",
+   "size": 22818,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades.png",
+   "size": 24270,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades_dual_weapons.png",
+   "size": 20633,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades_dual_weapons.png",
+   "size": 22033,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades_great_weapons.png",
+   "size": 20137,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_shades_great_weapons.png",
+   "size": 21295,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_witch_elves.png",
+   "size": 21616,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_def_witch_elves.png",
+   "size": 22936,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_archers.png",
+   "size": 21144,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_archers.png",
+   "size": 22156,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_archers_light_armour.png",
+   "size": 19164,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_archers_light_armour.png",
+   "size": 20825,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_cav_dragon_princes.png",
+   "size": 19507,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_ellyrian_reavers.png",
+   "size": 18731,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_ellyrian_reavers_bow.png",
+   "size": 19198,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_inf_gate_guard.png",
+   "size": 20683,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_lothern_sea_guard.png",
+   "size": 23204,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_lothern_sea_guard.png",
+   "size": 24114,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_lothern_sea_guard_shields.png",
+   "size": 19550,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_lothern_sea_guard_shields.png",
+   "size": 21241,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_phoenix_guard.png",
+   "size": 23905,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_phoenix_guard.png",
+   "size": 24104,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_silver_helms.png",
+   "size": 21858,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_silver_helms_shield.png",
+   "size": 21390,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_spearmen.png",
+   "size": 17658,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_spearmen.png",
+   "size": 18514,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_swordmasters_of_hoeth.png",
+   "size": 21845,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_swordmasters_of_hoeth.png",
+   "size": 22008,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_white_lions_of_chrace.png",
+   "size": 22650,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_main_hef_white_lions_of_chrace.png",
+   "size": 22790,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_mkho.png",
+   "size": 19749,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_mkho_lances.png",
+   "size": 20176,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_mnur.png",
+   "size": 19968,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_mnur_lances.png",
+   "size": 19875,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla.png",
+   "size": 20430,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla.png",
+   "size": 21805,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla.png",
+   "size": 21805,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla_lances.png",
+   "size": 20026,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla_lances.png",
+   "size": 21422,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_msla_lances.png",
+   "size": 21422,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_chaos_knights_mtze_lances.png",
+   "size": 20103,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes.png",
+   "size": 22257,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes.png",
+   "size": 23369,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins.png",
+   "size": 23741,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins.png",
+   "size": 26845,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins.png",
+   "size": 26845,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins.png",
+   "size": 23556,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_aspiring_champions_mtze_ror.png",
+   "size": 1078928,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mkho.png",
+   "size": 21492,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons.png",
+   "size": 21737,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mnur.png",
+   "size": 21480,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons.png",
+   "size": 21692,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_msla.png",
+   "size": 22221,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_msla.png",
+   "size": 22757,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_msla.png",
+   "size": 22757,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges.png",
+   "size": 20607,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mtze.png",
+   "size": 21844,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_marauders_mtze_spears.png",
+   "size": 24496,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_mnur.png",
+   "size": 19986,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons.png",
+   "size": 19704,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla.png",
+   "size": 20694,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla.png",
+   "size": 20954,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla.png",
+   "size": 20954,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges.png",
+   "size": 21627,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges.png",
+   "size": 21627,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges.png",
+   "size": 25045,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_mtze.png",
+   "size": 20376,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds.png",
+   "size": 21321,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mkho.png",
+   "size": 21096,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mkho_dualweapons.png",
+   "size": 22757,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mnur.png",
+   "size": 20324,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mnur_greatweapons.png",
+   "size": 20962,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla.png",
+   "size": 21517,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla.png",
+   "size": 24389,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla.png",
+   "size": 24389,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla_hellscourges.png",
+   "size": 25066,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla_hellscourges.png",
+   "size": 25704,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_msla_hellscourges.png",
+   "size": 25704,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mtze.png",
+   "size": 21312,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_chosen_mtze_halberds.png",
+   "size": 22006,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_forsaken_mkho.png",
+   "size": 23585,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_forsaken_msla.png",
+   "size": 23490,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_forsaken_msla_f.png",
+   "size": 25992,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_dlc20_chs_inf_forsaken_msla_f.png",
+   "size": 25992,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_cav_great_longma_riders_0.png",
+   "size": 23823,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_cav_jade_lancers_0.png",
+   "size": 21011,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_cav_peasant_horsemen_0.png",
+   "size": 22488,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_crane_gunners_0.png",
+   "size": 21134,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_0.png",
+   "size": 22826,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_0.png",
+   "size": 23430,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_crossbowmen_0.png",
+   "size": 24103,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_dragon_guard_crossbowmen_0.png",
+   "size": 24240,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 20635,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 22404,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warrior_crossbowmen_0.png",
+   "size": 24166,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warrior_crossbowmen_0.png",
+   "size": 24490,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warrior_crossbowmen_1.png",
+   "size": 24388,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warrior_crossbowmen_1.png",
+   "size": 25587,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warriors_0.png",
+   "size": 21914,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warriors_0.png",
+   "size": 22431,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warriors_1.png",
+   "size": 23816,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_jade_warriors_1.png",
+   "size": 25033,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 23359,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 23626,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_spearmen_1.png",
+   "size": 24952,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_inf_peasant_spearmen_1.png",
+   "size": 24999,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_mon_terracotta_sentinel_0.png",
+   "size": 22684,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_cth_mon_terracotta_sentinel_0.png",
+   "size": 22715,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_cav_bloodcrushers_0.png",
+   "size": 18566,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_cav_skullcrushers_0.png",
+   "size": 21678,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_bloodletters_0.png",
+   "size": 18668,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_bloodletters_1.png",
+   "size": 19239,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_chaos_furies_0.png",
+   "size": 22390,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_chaos_warriors_0.png",
+   "size": 22031,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_chaos_warriors_1.png",
+   "size": 19976,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_kho_inf_chaos_warriors_2.png",
+   "size": 20799,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_gryphon_legion_0.png",
+   "size": 21286,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_horse_archers_0.png",
+   "size": 24221,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_horse_raiders_0.png",
+   "size": 20310,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_war_bear_riders_0.png",
+   "size": 23986,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_war_bear_riders_1.png",
+   "size": 25356,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_cav_winged_lancers_0.png",
+   "size": 24448,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_armoured_kossars_0.png",
+   "size": 21033,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_armoured_kossars_1.png",
+   "size": 24125,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_ice_guard_0.png",
+   "size": 24715,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_ice_guard_1.png",
+   "size": 24030,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_kossars_0.png",
+   "size": 56565,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_kossars_1.png",
+   "size": 21789,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_streltsi_0.png",
+   "size": 22495,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_tsar_guard_0.png",
+   "size": 24365,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_ksl_inf_tsar_guard_1.png",
+   "size": 24460,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_nur_inf_chaos_furies_0.png",
+   "size": 23039,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_nur_inf_forsaken_0.png",
+   "size": 19799,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_nur_inf_plaguebearers_1.png",
+   "size": 20146,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_nur_inf_plaguebearers_2.png",
+   "size": 20569,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_hellstriders_0.png",
+   "size": 24387,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_hellstriders_0.png",
+   "size": 24387,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_hellstriders_1.png",
+   "size": 23646,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_hellstriders_1.png",
+   "size": 23646,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_seekers_of_slaanesh_0.png",
+   "size": 23281,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_cav_seekers_of_slaanesh_0.png",
+   "size": 23281,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_chaos_furies_0.png",
+   "size": 24783,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_chaos_furies_0.png",
+   "size": 24783,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_0.png",
+   "size": 17375,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_0.png",
+   "size": 20302,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_0.png",
+   "size": 20302,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_1.png",
+   "size": 22012,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_1.png",
+   "size": 24496,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_daemonette_1.png",
+   "size": 24496,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_0.png",
+   "size": 22439,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_0.png",
+   "size": 24514,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_0.png",
+   "size": 24514,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_1.png",
+   "size": 22219,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_1.png",
+   "size": 24884,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_1.png",
+   "size": 24884,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_2.png",
+   "size": 22726,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_2.png",
+   "size": 25843,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_inf_marauders_2.png",
+   "size": 25843,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_mon_keeper_of_secrets_0.png",
+   "size": 25151,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_mon_keeper_of_secrets_0.png",
+   "size": 25151,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_mon_soul_grinder_0.png",
+   "size": 23258,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_sla_mon_soul_grinder_0.png",
+   "size": 23258,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_tze_cav_burning_knights_0.png",
+   "size": 18564,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_tze_cav_chaos_knights_0.png",
+   "size": 19679,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_tze_inf_chaos_furies_0.png",
+   "size": 20276,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_main_tze_inf_forsaken_0.png",
+   "size": 23125,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_cth_inf_dragon_guard_ror_0.png",
+   "size": 19913,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_cth_inf_dragon_guard_ror_0.png",
+   "size": 24634,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_ksl_inf_tzar_guard_ror_0.png",
+   "size": 20907,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_nur_inf_plaguebearers_ror_0.png",
+   "size": 20361,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_nur_inf_plaguebearers_ror_0.psd",
+   "size": 179413,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_sla_inf_daemonette_ror_0.png",
+   "size": 19647,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa06_sla_inf_daemonette_ror_0.png",
+   "size": 19647,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa07_cth_cav_jade_longma_riders_ror_0.png",
+   "size": 18393,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa07_ksl_cav_war_bear_riders_ror_0.png",
+   "size": 19781,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa07_tze_cav_doom_knights_ror_0.png",
+   "size": 19600,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa08_cth_mon_terracotta_sentinel_0_ror.png",
+   "size": 17566,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa08_cth_mon_terracotta_sentinel_0_ror.png",
+   "size": 19582,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa08_sla_mon_keeper_of_secrets_0_ror.png",
+   "size": 20306,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh3_twa08_sla_mon_keeper_of_secrets_0_ror.png",
+   "size": 20306,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc01_chs_chosen_halberd.png",
+   "size": 19166,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc01_chs_forsaken.png",
+   "size": 18756,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc01_chs_warriors_great_weapons.png",
+   "size": 18178,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc02_vmp_blood_knights.png",
+   "size": 18289,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_flagellants.png",
+   "size": 21545,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_flagellants.png",
+   "size": 22606,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_free_company_militia.png",
+   "size": 19186,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_free_company_militia.png",
+   "size": 22604,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_knights_blazing_sun.png",
+   "size": 18764,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_royal_gryphites.png",
+   "size": 19572,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_sigmars_sons.png",
+   "size": 18563,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_sigmars_sons.png",
+   "size": 21579,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_silver_bullets.png",
+   "size": 18827,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_silver_bullets.png",
+   "size": 19678,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_stirlands_revenge.png",
+   "size": 19148,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_stirlands_revenge.png",
+   "size": 19611,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_tattersouls.png",
+   "size": 21768,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_tattersouls.png",
+   "size": 25396,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_emp_zintlers.png",
+   "size": 18372,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_chillgheists.png",
+   "size": 20685,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_feasters.png",
+   "size": 18206,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_stalkers.png",
+   "size": 21612,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_sternsmen.png",
+   "size": 18950,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_tithe.png",
+   "size": 20094,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc04_vmp_vereks_reavers.png",
+   "size": 20492,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_deepwood_scouts.png",
+   "size": 20538,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_deepwood_scouts_dual.png",
+   "size": 21408,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_dryads.png",
+   "size": 22034,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard.png",
+   "size": 22133,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 24178,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard.png",
+   "size": 21348,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_flaming.png",
+   "size": 21680,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_guard_poison.png",
+   "size": 21714,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_riders.png",
+   "size": 20843,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_glade_riders_poison.png",
+   "size": 23583,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_hawk_riders.png",
+   "size": 21418,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_sisters_thorn.png",
+   "size": 23892,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wardancers.png",
+   "size": 21673,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wardancers_spear.png",
+   "size": 19741,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_waywatchers.png",
+   "size": 19162,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wild_riders.png",
+   "size": 21107,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wild_riders_shield.png",
+   "size": 21394,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wildwood_ranger.png",
+   "size": 22241,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc06_chs_aspiring_champions.png",
+   "size": 19672,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc06_chs_marauder_horsemasters.png",
+   "size": 21628,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_battle_pilgrims.png",
+   "size": 21998,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_bowmen_fire.png",
+   "size": 19673,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_bowmen_pox.png",
+   "size": 19719,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_foot_squires.png",
+   "size": 21680,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_grail_guardians.png",
+   "size": 20623,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_grail_reliquae.png",
+   "size": 22006,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_knights_errant.png",
+   "size": 21570,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_men_at_arms.png",
+   "size": 21335,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_men_at_arms_shields.png",
+   "size": 20963,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_peasant_mob.png",
+   "size": 19775,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_questing_knights.png",
+   "size": 21970,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_royal_hippogryph_knights.png",
+   "size": 21087,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_royal_pegasus_knights.png",
+   "size": 21441,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc07_brt_spearmen_at_arms.png",
+   "size": 21063,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_berserkers.png",
+   "size": 24158,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_champions.png",
+   "size": 22301,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_champions_great_weapons.png",
+   "size": 21350,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_hunters.png",
+   "size": 21774,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_hunters_javelin.png",
+   "size": 21000,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc08_nor_marauder_spearmen.png",
+   "size": 22002,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_bowmen.png",
+   "size": 19377,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_grail_knights.png",
+   "size": 19588,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_knights_realm.png",
+   "size": 20317,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_men_at_arms_halberd.png",
+   "size": 19929,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_mounted_yeomen.png",
+   "size": 18995,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_mounted_yeomen_archers.png",
+   "size": 18118,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_pegasus_knights.png",
+   "size": 19252,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_brt_spearmen_at_arms_shield.png",
+   "size": 21641,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_chosen.png",
+   "size": 18580,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_chosen_great_weapons.png",
+   "size": 18548,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_knights.png",
+   "size": 19210,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_knights_lance.png",
+   "size": 19339,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_marauder.png",
+   "size": 22899,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_marauder_great_weapons.png",
+   "size": 19168,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_marauder_horsemen.png",
+   "size": 19410,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_marauder_horsemen_throwing_axe.png",
+   "size": 18649,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_warriors.png",
+   "size": 18874,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_chs_warriors_halberd.png",
+   "size": 19153,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_crossbowmen.png",
+   "size": 18707,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_crossbowmen.png",
+   "size": 20653,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_demigryph_knights.png",
+   "size": 17882,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_demigryph_knights_halberd.png",
+   "size": 19388,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_empire_knights.png",
+   "size": 20657,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_greatswords.png",
+   "size": 20617,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_greatswords.png",
+   "size": 22085,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_halberd.png",
+   "size": 17791,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_halberd.png",
+   "size": 22871,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_handgunners.png",
+   "size": 21291,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_handgunners.png",
+   "size": 22780,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_outriders.png",
+   "size": 19875,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_outriders_grenade_launcher.png",
+   "size": 20812,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_pistoliers_brace_pistols.png",
+   "size": 18384,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_reiksguard.png",
+   "size": 20135,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_spearmen.png",
+   "size": 20304,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_spearmen.png",
+   "size": 22207,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_spearmen_shield.png",
+   "size": 19089,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_spearmen_shield.png",
+   "size": 21089,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_swordsmen.png",
+   "size": 19310,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_emp_swordsmen.png",
+   "size": 20880,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_black_knights.png",
+   "size": 18723,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_black_knights_barded_lance.png",
+   "size": 21061,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_cairn_wraith.png",
+   "size": 17692,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_crypt_ghoul.png",
+   "size": 17817,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_grave_guard.png",
+   "size": 16495,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_grave_guard_great_weapons.png",
+   "size": 18274,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_hexwraiths.png",
+   "size": 18764,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_skeleton_warrior_spear.png",
+   "size": 16853,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_skeleton_warrior_sword.png",
+   "size": 20664,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_main_vmp_zombies.png",
+   "size": 20675,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_battle_pilgrims.png",
+   "size": 21538,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_foot_squires.png",
+   "size": 21896,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_knights_errant.png",
+   "size": 18845,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_knights_realm.png",
+   "size": 19396,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_mounted_yeomen_archers.png",
+   "size": 17887,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_brt_ror_questing_knights.png",
+   "size": 19969,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_chs_ror_forsaken.png",
+   "size": 19636,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_chs_ror_knights.png",
+   "size": 19292,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_chs_ror_warriors.png",
+   "size": 20920,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_nor_ror_marauder.png",
+   "size": 24066,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_nor_ror_marauder_berserkers.png",
+   "size": 22084,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_eternal_guard_shield.png",
+   "size": 20732,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_wardancers_spear.png",
+   "size": 18381,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_waywatchers.png",
+   "size": 18623,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_wild_riders.png",
+   "size": 19656,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_wildwood_ranger.png",
+   "size": 19731,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_def_cav_doomfire_warlocks.png",
+   "size": 86594,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_def_inf_sisters_of_slaughter.png",
+   "size": 84422,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_def_inf_sisters_of_slaughter.png",
+   "size": 84998,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_hef_inf_shadow_walkers.png",
+   "size": 75613,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_hef_inf_shadow_walkers.png",
+   "size": 77607,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_hef_inf_shadow_warriors.png",
+   "size": 79390,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_hef_inf_sisters_of_avelorn.png",
+   "size": 74740,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc10_hef_inf_sisters_of_avelorn.png",
+   "size": 75294,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_deck_gunners.png",
+   "size": 75926,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_deck_gunners.png",
+   "size": 76101,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_depth_guard.png",
+   "size": 77685,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_depth_guard.png",
+   "size": 78320,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_depth_guard_polearm.png",
+   "size": 79077,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_depth_guard_polearm.png",
+   "size": 79265,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_sartosa_free_company.png",
+   "size": 72982,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_sartosa_free_company.png",
+   "size": 74091,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_syreens.png",
+   "size": 76744,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_syreens.png",
+   "size": 77056,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_deckhands.png",
+   "size": 73747,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_deckhands.png",
+   "size": 74869,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_deckhands_polearm.png",
+   "size": 77036,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_deckhands_polearm.png",
+   "size": 77474,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob.png",
+   "size": 74755,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob.png",
+   "size": 75258,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_bombers.png",
+   "size": 80151,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_bombers.png",
+   "size": 80257,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_hand_cannon.png",
+   "size": 78232,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_hand_cannon.png",
+   "size": 78498,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_handguns.png",
+   "size": 72049,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc11_cst_zombie_gunnery_mob_handguns.png",
+   "size": 73165,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc13_emp_archers.png",
+   "size": 74636,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc13_emp_archers.png",
+   "size": 76477,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc13_emp_huntsmen.png",
+   "size": 83823,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc13_emp_huntsmen.png",
+   "size": 85431,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc14_def_mon_bloodwrack_medusa.png",
+   "size": 67187,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc15_hef_inf_rangers.png",
+   "size": 81644,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc15_hef_inf_rangers.png",
+   "size": 81767,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc15_hef_inf_silverin_guard.png",
+   "size": 121191,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc15_hef_inf_silverin_guard.png",
+   "size": 123453,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_dlc16_wef_bladesingers.png",
+   "size": 85365,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_ark_corsairs.png",
+   "size": 81268,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_ark_corsairs.png",
+   "size": 81318,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_ark_corsairs_handbows.png",
+   "size": 83012,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_ark_corsairs_handbows.png",
+   "size": 84482,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_guard.png",
+   "size": 77636,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_black_guard.png",
+   "size": 77750,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_bleakswords.png",
+   "size": 71846,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_bleakswords.png",
+   "size": 74033,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_cold_one_dread_knights.png",
+   "size": 79997,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_cold_one_knights.png",
+   "size": 83163,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_dark_riders.png",
+   "size": 68225,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_dark_riders_crossbow.png",
+   "size": 76243,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_dark_riders_shield.png",
+   "size": 77252,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_darkshards.png",
+   "size": 76180,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_darkshards.png",
+   "size": 78456,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_darkshards_shields.png",
+   "size": 75110,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_darkshards_shields.png",
+   "size": 76179,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_dreadspears.png",
+   "size": 76045,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_dreadspears.png",
+   "size": 77773,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_har_ganeth_executioners.png",
+   "size": 72518,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_har_ganeth_executioners.png",
+   "size": 74638,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_harpies.png",
+   "size": 80093,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_harpies.png",
+   "size": 80997,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades.png",
+   "size": 85126,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades.png",
+   "size": 86581,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades_dual_weapons.png",
+   "size": 73119,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades_dual_weapons.png",
+   "size": 74680,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades_great_weapons.png",
+   "size": 73349,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_shades_great_weapons.png",
+   "size": 73991,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_witch_elves.png",
+   "size": 78356,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_def_witch_elves.png",
+   "size": 78904,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_archers.png",
+   "size": 76318,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_archers.png",
+   "size": 77166,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_archers_light_armour.png",
+   "size": 70825,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_archers_light_armour.png",
+   "size": 72397,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_cav_dragon_princes.png",
+   "size": 73444,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_ellyrian_reavers.png",
+   "size": 72094,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_ellyrian_reavers_bow.png",
+   "size": 72963,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_inf_gate_guard.png",
+   "size": 74941,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_inf_gate_guard.png",
+   "size": 76354,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_lothern_sea_guard.png",
+   "size": 85887,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_lothern_sea_guard.png",
+   "size": 86101,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_lothern_sea_guard_shields.png",
+   "size": 73831,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_lothern_sea_guard_shields.png",
+   "size": 76501,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_phoenix_guard.png",
+   "size": 76882,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_phoenix_guard.png",
+   "size": 78695,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_silver_helms.png",
+   "size": 80087,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_silver_helms_shield.png",
+   "size": 84583,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_spearmen.png",
+   "size": 67440,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_spearmen.png",
+   "size": 68746,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_swordmasters_of_hoeth.png",
+   "size": 77179,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_swordmasters_of_hoeth.png",
+   "size": 78558,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_white_lions_of_chrace.png",
+   "size": 83126,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh2_main_hef_white_lions_of_chrace.png",
+   "size": 83449,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_cav_great_longma_riders_0.png",
+   "size": 82577,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_cav_jade_lancers_0.png",
+   "size": 79802,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_cav_peasant_horsemen_0.png",
+   "size": 77412,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_crane_gunners_0.png",
+   "size": 71652,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_dragon_guard_0.png",
+   "size": 77562,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_dragon_guard_0.png",
+   "size": 79019,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_dragon_guard_crossbowmen_0.png",
+   "size": 81146,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_dragon_guard_crossbowmen_0.png",
+   "size": 82361,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 75051,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_iron_hail_gunners_0.png",
+   "size": 76296,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warrior_crossbowmen_0.png",
+   "size": 80577,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warrior_crossbowmen_0.png",
+   "size": 82660,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warrior_crossbowmen_1.png",
+   "size": 83158,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warrior_crossbowmen_1.png",
+   "size": 83237,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warriors_0.png",
+   "size": 73792,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warriors_0.png",
+   "size": 74080,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warriors_1.png",
+   "size": 79665,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_jade_warriors_1.png",
+   "size": 80766,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 81288,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_peasant_archers_0.png",
+   "size": 81538,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_peasant_spearmen.png",
+   "size": 79123,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_inf_peasant_spearmen_1.png",
+   "size": 79331,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_mon_terracotta_sentinel_0.png",
+   "size": 76437,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_cth_mon_terracotta_sentinel_0.png",
+   "size": 77482,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_cav_skullcrushers_0.png",
+   "size": 78481,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_bloodletters_0.png",
+   "size": 69219,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_bloodletters_1.png",
+   "size": 71644,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_chaos_furies_0.png",
+   "size": 80208,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_chaos_warriors_0.png",
+   "size": 79259,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_chaos_warriors_1.png",
+   "size": 72774,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_kho_inf_chaos_warriors_2.png",
+   "size": 74810,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_gryphon_legion_0.png",
+   "size": 79006,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_horse_archers_0.png",
+   "size": 82600,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_horse_raiders_0.png",
+   "size": 75687,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_war_bear_riders_0.png",
+   "size": 79856,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_war_bear_riders_1.png",
+   "size": 86716,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_cav_winged_lancers_0.png",
+   "size": 84485,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_armoured_kossars_0.png",
+   "size": 76021,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_armoured_kossars_1.png",
+   "size": 81411,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_ice_guard_0.png",
+   "size": 83580,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_ice_guard_1.png",
+   "size": 81990,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_kossars_0.png",
+   "size": 71374,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_kossars_1.png",
+   "size": 82442,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_streltsi_0.png",
+   "size": 74527,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_tsar_guard_0.png",
+   "size": 82676,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_ksl_inf_tsar_guard_1.png",
+   "size": 82056,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_nur_inf_chaos_furies_0.png",
+   "size": 82719,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_nur_inf_forsaken_0.png",
+   "size": 72463,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_nur_inf_plaguebearers_1.png",
+   "size": 70848,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_nur_inf_plaguebearers_1_old.png",
+   "size": 72768,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_nur_inf_plaguebearers_2..png",
+   "size": 75102,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_hellstriders_0.png",
+   "size": 82122,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_hellstriders_0.png",
+   "size": 82122,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_hellstriders_1.png",
+   "size": 80880,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_hellstriders_1.png",
+   "size": 80880,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_seekers_of_slaanesh_0.png",
+   "size": 78463,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_cav_seekers_of_slaanesh_0.png",
+   "size": 78463,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_chaos_furies_0.png",
+   "size": 80994,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_chaos_furies_0.png",
+   "size": 80994,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_0.png",
+   "size": 67411,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_0.png",
+   "size": 69793,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_0.png",
+   "size": 69793,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_1.png",
+   "size": 78634,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_1.png",
+   "size": 79676,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_daemonette_1.png",
+   "size": 79676,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_0.png",
+   "size": 77784,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_0.png",
+   "size": 77784,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_0.png",
+   "size": 78903,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_1.png",
+   "size": 80290,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_1.png",
+   "size": 80442,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_1.png",
+   "size": 80442,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_2.png",
+   "size": 82089,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_2.png",
+   "size": 82651,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_inf_marauders_2.png",
+   "size": 82651,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_mon_keeper_of_secrets_0.png",
+   "size": 85800,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_mon_keeper_of_secrets_0.png",
+   "size": 85800,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_mon_soul_grinder_0.png",
+   "size": 80311,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_sla_mon_soul_grinder_0.png",
+   "size": 80311,
+   "pack": "@female_unit_cards_nsfw_slaanesh/@female_unit_cards_nsfw_slaanesh.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_tze_cav_burning_knights_0.png",
+   "size": 77538,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_tze_cav_chaos_knights_0.png",
+   "size": 80265,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_tze_inf_chaos_furies_0.png",
+   "size": 81507,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh3_main_tze_inf_forsaken_0.png",
+   "size": 83749,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc01_chs_chosen_halberd.png",
+   "size": 78350,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc01_chs_forsaken.png",
+   "size": 74844,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc01_chs_warriors_great_weapons.png",
+   "size": 71765,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc02_vmp_blood_knights.png",
+   "size": 79184,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_flagellants.png",
+   "size": 77265,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_flagellants.png",
+   "size": 77720,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_free_company_militia.png",
+   "size": 78078,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_free_company_militia.png",
+   "size": 78724,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_knights_blazing_sun.png",
+   "size": 76148,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_tattersouls.png",
+   "size": 79065,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc04_emp_tattersouls.png",
+   "size": 79770,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_deepwood_scouts.png",
+   "size": 75307,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_dryads.png",
+   "size": 75547,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_eternal_guard.png",
+   "size": 79629,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 86967,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_glade_guard.png",
+   "size": 73881,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_glade_riders.png",
+   "size": 75750,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_hawk_riders.png",
+   "size": 76919,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_sisters_thorn.png",
+   "size": 85082,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_wardancers.png",
+   "size": 80410,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_wardancers_spear.png",
+   "size": 71266,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_waywatchers.png",
+   "size": 72929,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_wild_riders.png",
+   "size": 75365,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_wild_riders_shield.png",
+   "size": 79294,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc05_wef_wildwood_ranger.png",
+   "size": 81317,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc06_chs_aspiring_champions.png",
+   "size": 75385,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc06_chs_marauder_horsemasters.png",
+   "size": 78557,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_battle_pilgrims.png",
+   "size": 81017,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_foot_squires.png",
+   "size": 77524,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_grail_guardians.png",
+   "size": 75640,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_grail_reliquae.png",
+   "size": 75111,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_knights_errant.png",
+   "size": 75240,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_men_at_arms.png",
+   "size": 77216,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_men_at_arms_shields.png",
+   "size": 73948,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_peasant_mob.png",
+   "size": 70348,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_questing_knights.png",
+   "size": 81238,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_royal_hippogryph_knights.png",
+   "size": 77765,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_royal_pegasus_knights.png",
+   "size": 78336,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc07_brt_spearmen_at_arms.png",
+   "size": 75649,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_berserkers.png",
+   "size": 77541,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_champions.png",
+   "size": 82381,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_champions_great_weapons.png",
+   "size": 76665,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_hunters.png",
+   "size": 79570,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_hunters_javelin.png",
+   "size": 75430,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_dlc08_nor_marauder_spearmen.png",
+   "size": 80541,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_bowmen.png",
+   "size": 74286,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_grail_knights.png",
+   "size": 71940,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_knights_realm.png",
+   "size": 75436,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_men_at_arms_halberd.png",
+   "size": 72737,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_mounted_yeomen.png",
+   "size": 68395,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_mounted_yeomen_archers.png",
+   "size": 67764,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_pegasus_knights.png",
+   "size": 71458,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_brt_spearmen_at_arms_shield.png",
+   "size": 77656,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_chosen.png",
+   "size": 74278,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_chosen_great_weapons.png",
+   "size": 74649,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_knights.png",
+   "size": 75741,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_knights_lance.png",
+   "size": 77617,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_marauder.png",
+   "size": 85799,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_marauder_great_weapons.png",
+   "size": 76066,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_marauder_horsemen.png",
+   "size": 71032,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_marauder_horsemen_throwing_axe.png",
+   "size": 67042,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_warriors.png",
+   "size": 74455,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_chs_warriors_halberd.png",
+   "size": 79904,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_crossbowmen.png",
+   "size": 68732,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_crossbowmen.png",
+   "size": 73075,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_demigryph_knights.png",
+   "size": 71403,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_demigryph_knights_halberd.png",
+   "size": 77463,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_empire_knights.png",
+   "size": 83463,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_greatswords.png",
+   "size": 71906,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_greatswords.png",
+   "size": 74381,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_halberd.png",
+   "size": 69634,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_halberd.png",
+   "size": 70417,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_handgunners.png",
+   "size": 74468,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_handgunners.png",
+   "size": 76746,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_outriders.png",
+   "size": 73311,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_outriders_grenade_launcher.png",
+   "size": 74485,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_pistoliers_brace_pistols.png",
+   "size": 69258,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_reiksguard.png",
+   "size": 73812,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_spearmen.png",
+   "size": 71905,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_spearmen.png",
+   "size": 76136,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_spearmen_shield.png",
+   "size": 67416,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_spearmen_shield.png",
+   "size": 71376,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_swordsmen.png",
+   "size": 69651,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_emp_swordsmen.png",
+   "size": 71724,
+   "pack": "@female_unit_cards_nsfw_1_5/@female_unit_cards_nsfw.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_black_knights.png",
+   "size": 75962,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_black_knights_barded_lance.png",
+   "size": 86025,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_cairn_wraith.png",
+   "size": 69371,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_crypt_ghoul.png",
+   "size": 71058,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_grave_guard.png",
+   "size": 71772,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_grave_guard_great_weapons.png",
+   "size": 78316,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_hexwraiths.png",
+   "size": 76088,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_skeleton_warrior_spear.png",
+   "size": 72003,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_skeleton_warrior_sword.png",
+   "size": 82075,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  },
+  {
+   "path": "ui/units/infopics/wh_main_vmp_zombies.png",
+   "size": 77608,
+   "pack": "@female_unit_cards_1_5/@female_unit_cards.pack"
+  }
+ ]
+}

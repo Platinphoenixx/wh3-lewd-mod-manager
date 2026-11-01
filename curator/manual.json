@@ -168,6 +168,13 @@
       },
       "confidence": "medium",
       "why": "Local copy of 'Slaanesh UI theme for Miao Ying, Katarin, and Alarielle' (#many-modlist-methods: Miao Ying + Alarielle Slaanesh UI)"
+    },
+    "sfo_grimhammer_3_main.pack": {
+      "target": {
+        "external": "ext-sfo"
+      },
+      "confidence": "high",
+      "why": "SFO: Grimhammer III main pack; named as a dependency in the headers of SFO submods (ll-25602, ll-29487)"
     }
   },
   "presetReplacements": {

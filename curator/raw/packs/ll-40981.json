@@ -1,0 +1,314 @@
+{
+ "mod": "ll-40981",
+ "packs": [
+  "!!!!!li_morathi_russian.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!!!!!li_morathi_russian.pack": {
+   "files": 57,
+   "dependencies": []
+  }
+ },
+ "fileCount": 57,
+ "byTopFolder": {
+  "text": 57
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/li_morathi_loyalty_campaign_payload_ui_details.loc",
+   "size": 5406,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_loyalty_cdir_events_dilemma_choice_details.loc",
+   "size": 852,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_loyalty_dilemmas.loc",
+   "size": 292,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first.loc",
+   "size": 1900,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_ancillaries.loc",
+   "size": 629,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_battle_set_piece_armies.loc",
+   "size": 380,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_battle_set_pieces.loc",
+   "size": 1856,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_missions.loc",
+   "size": 3013,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_campaign_payload_ui_details.loc",
+   "size": 634,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 5526,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_dilemmas.loc",
+   "size": 22626,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_effects.loc",
+   "size": 390,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_names.loc",
+   "size": 174,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_special_ability_phases.loc",
+   "size": 137,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_unit_abilities.loc",
+   "size": 584,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth.loc",
+   "size": 10764,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_missions.loc",
+   "size": 1291,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_set_piece_armies.loc",
+   "size": 221,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_battle_set_pieces.loc",
+   "size": 825,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_campaign_payload_ui_details.loc",
+   "size": 532,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_cdir_events_dilemma_choice_details.loc",
+   "size": 5440,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_dilemmas.loc",
+   "size": 28726,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_effects__.loc",
+   "size": 408,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_missions.loc",
+   "size": 981,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_names.loc",
+   "size": 190,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_special_ability_phases__.loc",
+   "size": 378,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_fourth_unit_abilities__.loc",
+   "size": 1330,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second.loc",
+   "size": 9848,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_battle_battle_set_piece_armies.loc",
+   "size": 203,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_battle_battle_set_pieces.loc",
+   "size": 789,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_battle_missions.loc",
+   "size": 1163,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_campaign_payload_ui_details.loc",
+   "size": 470,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 9530,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_dilemmas.loc",
+   "size": 44514,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_effect_bundles.loc",
+   "size": 374,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_effects.loc",
+   "size": 587,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_missions.loc",
+   "size": 3235,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_names.loc",
+   "size": 204,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_special_ability_phases.loc",
+   "size": 304,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_unit_abilities.loc",
+   "size": 1330,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_unit_abilities_additional_ui_effects.loc",
+   "size": 303,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third.loc",
+   "size": 9778,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_campaign_payload_ui_details.loc",
+   "size": 891,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_cdir_events_dilemma_choice_details.loc",
+   "size": 9216,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_dilemmas.loc",
+   "size": 44914,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_effect_bundles.loc",
+   "size": 264,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_effect_bundles__.loc",
+   "size": 328,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_effects.loc",
+   "size": 376,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_missions.loc",
+   "size": 3929,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_names.loc",
+   "size": 176,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_special_ability_phases.loc",
+   "size": 274,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_unit_abilities.loc",
+   "size": 1598,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_third_unit_abilities_additional_ui_effects.loc",
+   "size": 211,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_subdom_effect_bundles__.loc",
+   "size": 6336,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_subdom_others__.loc",
+   "size": 767,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/li_morathi_subdom_pooled_resources__.loc",
+   "size": 2006,
+   "pack": "!!!!!li_morathi_russian.pack"
+  },
+  {
+   "path": "text/db/perverse_discharge_unit_abilities__.loc",
+   "size": 956,
+   "pack": "!!!!!li_morathi_russian.pack"
+  }
+ ]
+}

@@ -1,0 +1,1846 @@
+{
+ "mod": "ll-52142",
+ "packs": [
+  "khalida_corruption.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack": {
+   "files": 167,
+   "dependencies": []
+  }
+ },
+ "fileCount": 167,
+ "byTopFolder": {
+  "db": 61,
+  "ui": 39,
+  "variantmeshes": 21,
+  ".git": 18,
+  "script": 14,
+  "text": 10,
+  ".gitignore": 1,
+  "khalida_corruption.sublime-project": 1,
+  ".luarc.json": 1,
+  ".vscode": 1
+ },
+ "tables": [
+  "agent_culture_details_tables",
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "ancillary_to_effects_tables",
+  "battle_set_piece_armies_characters_junctions_tables",
+  "battle_set_piece_armies_characters_tables",
+  "battle_set_piece_armies_junctions_tables",
+  "battle_set_piece_armies_tables",
+  "battle_set_piece_armies_units_junctions_tables",
+  "battle_set_piece_armies_units_tables",
+  "battle_set_pieces_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "campaign_group_unique_agents_tables",
+  "campaign_to_agent_subtypes_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_mission_option_junctions_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "character_trait_levels_tables",
+  "character_traits_tables",
+  "dilemmas_tables",
+  "diplomatic_action_subculture_restrictions_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "incidents_tables",
+  "land_units_tables",
+  "main_units_tables",
+  "mercenary_pool_to_groups_junctions_tables",
+  "mercenary_unit_groups_tables",
+  "missions_tables",
+  "names_groups_tables",
+  "names_tables",
+  "scripted_objectives_tables",
+  "trait_categories_tables",
+  "trait_info_tables",
+  "trait_level_effects_tables",
+  "unique_agent_component_junctions_tables",
+  "unique_agents_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_sets_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 36,
+  "inMod": 17,
+  "inBaseGame": 19,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_culture_details_tables": [
+   "runesmith",
+   "wh_main_chs_chaos",
+   "khalida_hero_slaanesh",
+   "ui/campaign ui/agents/wh_main_wizard.png",
+   "wh3_main_sla_slaanesh"
+  ],
+  "agent_subtypes_tables": [
+   "khalida_hero_slaanesh",
+   "ui/campaign ui/agents/wh_main_wizard.png",
+   "wh2_dlc09_vo_actor_Tomb_Kings_High_Queen_Khalida",
+   "cannot_be_loaded_in_campaign",
+   "khalida_lord_slaanesh"
+  ],
+  "agent_uniforms_tables": [
+   "khalida_variant_st01_campaign",
+   "uniform_khalida_st01",
+   "khalida_variant_st01",
+   "khalida_variant_st02_campaign",
+   "uniform_khalida_st02",
+   "khalida_variant_st02"
+  ],
+  "ancillaries_tables": [
+   "khalida_anc_shackling_rune",
+   "wh_main_anc_armour",
+   "armour",
+   "all"
+  ],
+  "ancillary_info_tables": [
+   "khalida_anc_shackling_rune"
+  ],
+  "ancillary_to_effects_tables": [
+   "khalida_anc_shackling_rune",
+   "khalida_effect_magic_remover",
+   "character_to_character_own",
+   "khalida_effect_magic_adder",
+   "wh2_dlc14_effect_magic_cost_all_lores_percentage"
+  ],
+  "battle_set_piece_armies_characters_junctions_tables": [
+   "khalida_rescue_lizards",
+   "khalida_rescue_slann",
+   "khalida_lizards"
+  ],
+  "battle_set_piece_armies_characters_tables": [
+   "khalida_rescue_slann",
+   "wh_main_lore_heavens",
+   "wh2_main_lzd_cha_slann_mage_priest_heavens_0",
+   "general",
+   "wh2_dlc13_lzd_slann_mage_priest_heavens"
+  ],
+  "battle_set_piece_armies_junctions_tables": [
+   "khalida_rescue_lizards",
+   "khalida_rescue_battle"
+  ],
+  "battle_set_piece_armies_tables": [
+   "test_emblem_army_01",
+   "khalida_rescue_lizards",
+   "wh2_main_lzd_lizardmen_qb1"
+  ],
+  "battle_set_piece_armies_units_junctions_tables": [
+   "khalida_rescue_lizards",
+   "khalida_qb_saurus",
+   "khalida_lizards",
+   "khalida_qb_skinks",
+   "khalida_qb_temple_guard",
+   "khalida_qb_carnosaur"
+  ],
+  "battle_set_piece_armies_units_tables": [
+   "khalida_qb_saurus",
+   "wh2_main_lzd_inf_saurus_warriors_0",
+   "khalida_qb_skinks",
+   "wh2_main_lzd_inf_skink_cohort_1",
+   "khalida_qb_temple_guard",
+   "wh2_main_lzd_inf_temple_guards",
+   "khalida_qb_carnosaur",
+   "wh2_main_lzd_mon_carnosaur_0"
+  ],
+  "battle_set_pieces_tables": [
+   "weather/battle/wh_day_storm_05.environment_group",
+   "khalida_rescue_battle",
+   "script/battle/khalida_rescue_battle.lua",
+   "ambush",
+   "lzd_lakes_infield_a",
+   "catchment_06",
+   "UI/Frontend UI/battle_map_images/lake_incatol.png",
+   "NORMAL"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "art_set_khalida_st01",
+   "wh2_dlc09_tmb_khalida",
+   "art_set_khalida_st02",
+   "runesmith",
+   "art_set_khalida_hero_slaanesh",
+   "khalida_hero_slaanesh",
+   "art_set_khalida_lord_slaanesh",
+   "khalida_lord_slaanesh"
+  ],
+  "campaign_character_arts_tables": [
+   "art_set_khalida_st01",
+   "none",
+   "uniform_khalida_st01",
+   "cam_lord_hu1b_khalida_staff_and_sword",
+   "art_set_khalida_st02",
+   "uniform_khalida_st02",
+   "art_set_khalida_hero_slaanesh",
+   "art_set_khalida_lord_slaanesh"
+  ],
+  "campaign_group_unique_agents_tables": [
+   "wh_main_feature_chaos",
+   "khalida_hero_slaanesh",
+   "wh3_main_feature_slaanesh"
+  ],
+  "campaign_to_agent_subtypes_tables": [
+   "khalida_hero_slaanesh",
+   "wh3_main_combi",
+   "khalida_lord_slaanesh"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "khalida_panel_start",
+   "khalida_panel_ritual_1",
+   "khalida_panel_ritual_2",
+   "khalida_panel_ritual_3",
+   "khalida_panel_dawi_1",
+   "khalida_panel_dawi_2",
+   "khalida_panel_lizards_1",
+   "khalida_panel_lizards_2",
+   "khalida_panel_lizards_3",
+   "khalida_panel_capture_1",
+   "khalida_panel_capture_2",
+   "khalida_panel_capture_3",
+   "khalida_panel_capture_4",
+   "khalida_lord_or_hero",
+   "SECOND",
+   "khalida_panel_train_1",
+   "khalida_panel_train_2",
+   "khalida_panel_train_3",
+   "khalida_panel_train_4",
+   "khalida_panel_final_ritual_1",
+   "khalida_panel_final_ritual_2",
+   "khalida_panel_final_ritual_3",
+   "khalida_panel_final_ritual_4",
+   "khalida_final_choice",
+   "THIRD"
+  ],
+  "cdir_events_mission_option_junctions_tables": [
+   "khalida_lybaras_ritual",
+   "GEN_TARGET_REGION",
+   "default",
+   "GEN_CND_REGION",
+   "wh3_main_combi_region_lybaras",
+   "VAR_MISSION_LENGTH_INFINITE",
+   "khalida_defeat_army",
+   "khalida_journey_dawi",
+   "wh3_main_combi_region_karak_zorn",
+   "khalida_journey_lizards",
+   "wh3_main_combi_region_the_golden_tower",
+   "khalida_vassalize_lybaras",
+   "khalida_train_artifact",
+   "khalida_train_winds",
+   "khalida_train_kills",
+   "khalida_rescue_battle"
+  ],
+  "character_skill_level_details_tables": [
+   "khalida_hs_alarielle_hero_corrupted_0_7",
+   "khalida_hs_khalida_hero_corrupted_poison_slut",
+   "khalida_hs_khalida_hero_corrupted_ability_ungor_mass",
+   "khalida_ls_swollen_womb",
+   "khalida_ls_queen_fallen_kingdom",
+   "khalida_ls_spawn_mother",
+   "khalida_ls_vigour_wellspring",
+   "khalida_ls_poison_slut",
+   "khalida_ls_asap_abandon",
+   "khalida_ls_lahmian_secret",
+   "khalida_ls_changer_embrace"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "khalida_hs_corrupted_heroes_submod_topline_dread",
+   "wh_main_effect_force_all_campaign_post_battle_loot_mod",
+   "character_to_character_own",
+   "khalida_hs_corrupted_heroes_submod_topline_ruination",
+   "wh3_main_effect_corruption_slaanesh_characters",
+   "character_to_province_any",
+   "khalida_hs_corrupted_heroes_submod_topline_missile_resist",
+   "wh_main_effect_character_stat_missile_resistance",
+   "khalida_hs_khalida_hero_corrupted_innate",
+   "wh3_main_effect_battle_barrier_health_add",
+   "khalida_effect_magic_adder",
+   "khalida_hs_khalida_hero_corrupted_swollen_womb",
+   "wh_main_effect_character_stat_unit_health",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "agent_to_parent_army_own",
+   "khalida_hs_khalida_hero_corrupted_fallen_kingdom",
+   "wh_main_effect_attribute_enable_stalk",
+   "wh_main_effect_force_all_campaign_raid_income",
+   "agent_to_parent_army_general_own",
+   "khalida_hs_khalida_hero_corrupted_spawn_mother",
+   "khalida_eff_mon_armour",
+   "khalida_eff_mon_melee_attack",
+   "khalida_eff_mon_physical",
+   "khalida_hs_khalida_hero_corrupted_vigour_wellspring",
+   "wh_main_effect_force_stat_vigour_loss_reduction",
+   "khalida_hs_alarielle_hero_corrupted_0_7",
+   "wh_main_effect_character_stat_leadership",
+   "khalida_hs_corrupted_heroes_submod_immortality",
+   "wh2_main_effect_grant_immortality_hero",
+   "khalida_hs_khalida_hero_corrupted_poison_slut",
+   "wh3_dlc20_effect_attribute_immune_to_contact_stat_effects",
+   "wh_main_effect_character_stat_melee_defence",
+   "khalida_hs_khalida_hero_corrupted_herdwhore_dreaming",
+   "wh3_main_effect_winds_of_magic_pool_cap",
+   "character_to_force_own_unseen",
+   "wh_main_effect_force_stat_enable_magic_attacks",
+   "khalida_hs_khalida_hero_corrupted_asap_abandon",
+   "khalida_hs_khalida_hero_corrupted_lahmian_secret",
+   "khalida_eff_inf_melee_attack",
+   "khalida_hs_khalida_hero_corrupted_changer_embrace",
+   "wh_main_effect_technology_research_points",
+   "character_to_faction_when_on_map_unseen",
+   "khalida_eff_cav_melee_attack",
+   "khalida_hs_khalida_hero_corrupted_ability_ungor_mass",
+   "khalida_eff_inf_melee_defence",
+   "khalida_hs_corrupted_heroes_submod_hero_dummy_actions_scouting",
+   "wh2_dlc15_effect_agent_action_enable_runesmith_hinder_settlement_steal_technology",
+   "wh2_main_effect_agent_action_enable_runesmith_hinder_agent_wound",
+   "wh2_main_effect_agent_action_enable_runesmith_hinder_settlement_scout_settlement",
+   "wh2_main_effect_agent_action_enable_runesmith_passive_spread_public_order",
+   "wh2_main_effect_agent_action_passive_spread_public_order_effect_negative",
+   "character_to_province_enemy",
+   "wh2_main_effect_agent_action_passive_spread_public_order_effect_positive",
+   "character_to_province_own",
+   "wh3_dlc24_effect_agent_action_enable_dignitary_hinder_army_hags_cursemark",
+   "wh2_main_effect_agent_action_enable_runesmith_assist_army_scouting",
+   "khalida_hs_corrupted_heroes_submod_combat_2_1",
+   "khalida_hs_corrupted_heroes_submod_combat_2_2",
+   "khalida_hs_corrupted_heroes_submod_combat_2_3",
+   "wh_main_effect_character_stat_melee_attack",
+   "khalida_hs_corrupted_heroes_submod_combat_2_4",
+   "wh_main_effect_character_stat_charge_bonus_add",
+   "khalida_hs_corrupted_heroes_submod_combat_2_5",
+   "wh_main_effect_character_stat_speed",
+   "wh_main_effect_attribute_enable_strider",
+   "khalida_hs_corrupted_heroes_submod_combat_2_6",
+   "wh2_dlc11_effect_ability_enable_transfix",
+   "khalida_hs_corrupted_heroes_submod_combat_2_7",
+   "khalida_hs_corrupted_heroes_submod_combat_2_8",
+   "wh_main_effect_character_stat_weapon_strength",
+   "khalida_hs_corrupted_heroes_submod_combat_2_9",
+   "wh_main_effect_character_stat_physical_resistance",
+   "khalida_hs_corrupted_heroes_submod_combat_2_10",
+   "wh_main_effect_ability_enable_slippery",
+   "khalida_hs_corrupted_heroes_submod_combat_2_11",
+   "khalida_ls_corrupted_khalida_innate",
+   "khalida_ls_swollen_womb",
+   "general_to_force_own",
+   "khalida_ls_queen_fallen_kingdom",
+   "khalida_ls_spawn_mother",
+   "khalida_ls_vigour_wellspring",
+   "khalida_ls_poison_slut",
+   "khalida_ls_herdwhore_dreaming",
+   "force_to_region_any",
+   "khalida_ls_asap_abandon",
+   "wh3_main_effect_corruption_chaos_characters",
+   "khalida_ls_lahmian_secret",
+   "khalida_ls_changer_embrace",
+   "khalida_ls_corrupted_generic_1",
+   "wh_main_effect_agent_movement_range_mod",
+   "khalida_ls_corrupted_generic_2",
+   "wh_main_effect_force_all_campaign_razing_income",
+   "character_to_character_own_armytext",
+   "khalida_ls_corrupted_generic_3",
+   "wh_main_effect_force_army_campaign_ambush_attack_success_chance",
+   "khalida_ls_corrupted_generic_4",
+   "khalida_ls_corrupted_generic_5",
+   "wh_main_effect_public_order_characters_negative",
+   "character_to_enemy_province",
+   "wh_main_effect_force_stat_leadership_enemy_unit",
+   "character_to_force_enemy_provincewide",
+   "khalida_ls_corrupted_generic_6",
+   "wh_main_effect_character_wound_recovery_time_mod",
+   "khalida_ls_corrupted_generic_8",
+   "wh_main_effect_force_all_campaign_upkeep",
+   "wh_main_effect_force_all_recruitment_points",
+   "general_to_force_own_unseen",
+   "khalida_ls_corrupted_generic_9",
+   "wh_main_effect_force_army_campaign_ambush_defence_success_chance",
+   "wh_main_effect_general_mod_tunnel_interception_chance",
+   "khalida_ls_corrupted_generic_10",
+   "wh_main_effect_character_mod_ancillary_drop",
+   "khalida_ls_corrupted_generic_11",
+   "wh3_main_effect_force_all_campaign_movement_range_post_battle_win"
+  ],
+  "character_skill_node_links_tables": [
+   "khalida_hs_khalida_hero_corrupted_0_3",
+   "khalida_hs_khalida_hero_corrupted_0_2",
+   "REQUIRED",
+   "khalida_hs_khalida_hero_corrupted_0_4",
+   "khalida_hs_khalida_hero_corrupted_0_5",
+   "SUBSET_REQUIRED",
+   "khalida_hs_khalida_hero_corrupted_1_2",
+   "khalida_hs_khalida_hero_corrupted_1_1",
+   "khalida_hs_khalida_hero_corrupted_1_3",
+   "khalida_hs_khalida_hero_corrupted_1_4",
+   "khalida_hs_khalida_hero_corrupted_1_5",
+   "khalida_hs_corrupted_heroes_submod_combat_2_2",
+   "khalida_hs_corrupted_heroes_submod_combat_2_1",
+   "khalida_hs_corrupted_heroes_submod_combat_2_3",
+   "khalida_hs_corrupted_heroes_submod_combat_2_4",
+   "khalida_hs_corrupted_heroes_submod_combat_2_5",
+   "khalida_hs_corrupted_heroes_submod_combat_2_6",
+   "khalida_hs_corrupted_heroes_submod_combat_2_7",
+   "khalida_hs_corrupted_heroes_submod_combat_2_8",
+   "khalida_hs_corrupted_heroes_submod_combat_2_9",
+   "khalida_hs_corrupted_heroes_submod_combat_2_10",
+   "khalida_hs_corrupted_heroes_submod_combat_2_11",
+   "khalida_ls_corrupted_generic_camp_2",
+   "khalida_ls_corrupted_generic_camp_1",
+   "khalida_ls_corrupted_generic_camp_3",
+   "khalida_ls_corrupted_generic_camp_4",
+   "khalida_ls_corrupted_generic_camp_5",
+   "khalida_ls_corrupted_generic_camp_6",
+   "khalida_ls_corrupted_generic_camp_7",
+   "khalida_ls_corrupted_generic_camp_8",
+   "khalida_ls_corrupted_generic_camp_9",
+   "khalida_ls_corrupted_generic_camp_10",
+   "khalida_ls_corrupted_generic_camp_11",
+   "khalida_ls_corrupted_khalida_0_3",
+   "khalida_ls_corrupted_khalida_0_2",
+   "khalida_ls_corrupted_khalida_0_4",
+   "khalida_ls_corrupted_khalida_0_5",
+   "khalida_ls_corrupted_khalida_1_2",
+   "khalida_ls_corrupted_khalida_1_1",
+   "khalida_ls_corrupted_khalida_1_3",
+   "khalida_ls_corrupted_khalida_1_4",
+   "khalida_ls_corrupted_khalida_1_5"
+  ],
+  "character_skill_node_set_items_tables": [
+   "khalida_hs_set",
+   "khalida_hs_corrupted_heroes_topline_dread",
+   "khalida_hs_corrupted_heroes_submod_topline_ruination",
+   "khalida_hs_corrupted_heroes_topline_missile_resist",
+   "khalida_hs_khalida_hero_corrupted_innate",
+   "khalida_hs_khalida_hero_corrupted_0_2",
+   "khalida_hs_khalida_hero_corrupted_0_3",
+   "khalida_hs_khalida_hero_corrupted_0_4",
+   "khalida_hs_khalida_hero_corrupted_0_5",
+   "khalida_hs_corrupted_heroes_submod_service_node",
+   "khalida_hs_corrupted_heroes_submod_immortality_node",
+   "wh3_dlc24_skill_node_all_mentor_hero",
+   "khalida_hs_khalida_hero_corrupted_1_1",
+   "khalida_hs_khalida_hero_corrupted_1_2",
+   "khalida_hs_khalida_hero_corrupted_1_3",
+   "khalida_hs_khalida_hero_corrupted_1_4",
+   "khalida_hs_khalida_hero_corrupted_1_5",
+   "khalida_hs_khalida_hero_corrupted_1_6",
+   "khalida_hs_corrupted_heroes_submod_hero_dummy_actions_scouting",
+   "wh_main_skill_node_dwf_runesmith_campaign_01",
+   "wh3_dlc24_skill_node_ksl_hag_witch_actions_02",
+   "wh3_dlc24_skill_node_ksl_hag_witch_actions_03",
+   "wh3_dlc24_skill_node_ksl_hag_witch_actions_04",
+   "wh3_dlc24_skill_node_ksl_hag_witch_actions_05",
+   "wh3_dlc24_skill_node_ksl_hag_witch_actions_06",
+   "khalida_hs_corrupted_heroes_submod_combat_2_1",
+   "khalida_hs_corrupted_heroes_submod_combat_2_2",
+   "khalida_hs_corrupted_heroes_submod_combat_2_3",
+   "khalida_hs_corrupted_heroes_submod_combat_2_4",
+   "khalida_hs_corrupted_heroes_submod_combat_2_5",
+   "khalida_hs_corrupted_heroes_submod_combat_2_6",
+   "khalida_hs_corrupted_heroes_submod_combat_2_7",
+   "khalida_hs_corrupted_heroes_submod_combat_2_8",
+   "khalida_hs_corrupted_heroes_submod_combat_2_9",
+   "khalida_hs_corrupted_heroes_submod_combat_2_10",
+   "khalida_hs_corrupted_heroes_submod_combat_2_11",
+   "khalida_ls_set",
+   "khalida_ls_corrupted_khalida_innate",
+   "khalida_ls_corrupted_khalida_0_2",
+   "khalida_ls_corrupted_khalida_0_3",
+   "khalida_ls_corrupted_khalida_0_4",
+   "khalida_ls_corrupted_khalida_0_5",
+   "khalida_ls_corrupted_khalida_1_1",
+   "khalida_ls_corrupted_khalida_1_2",
+   "khalida_ls_corrupted_khalida_1_3",
+   "khalida_ls_corrupted_khalida_1_4",
+   "wh3_dlc24_skill_generic_immortality_lord",
+   "khalida_ls_corrupted_khalida_1_5",
+   "khalida_ls_corrupted_generic_camp_1",
+   "khalida_ls_corrupted_generic_camp_2",
+   "khalida_ls_corrupted_generic_camp_3",
+   "khalida_ls_corrupted_generic_camp_4",
+   "khalida_ls_corrupted_generic_camp_5",
+   "khalida_ls_corrupted_generic_camp_6",
+   "khalida_ls_corrupted_generic_camp_7",
+   "khalida_ls_corrupted_generic_camp_8",
+   "khalida_ls_corrupted_generic_camp_9",
+   "khalida_ls_corrupted_generic_camp_10",
+   "khalida_ls_corrupted_generic_camp_11",
+   "wh2_dlc09_skill_tmb_khalida_personal_0",
+   "wh2_dlc09_skill_tmb_khalida_personal_1",
+   "wh2_dlc09_skill_tmb_khalida_personal_2",
+   "wh2_dlc09_skill_tmb_khalida_personal_3",
+   "wh2_dlc09_skill_tmb_khalida_personal_4",
+   "wh2_dlc09_skill_tmb_khalida_personal_5",
+   "wh2_dlc09_skill_tmb_khalida_personal_6",
+   "wh2_dlc09_skill_tmb_khalida_personal_7",
+   "wh2_dlc09_skill_tmb_khalida_personal_8",
+   "wh2_dlc09_skill_tmb_khalida_personal_9",
+   "wh2_dlc09_skill_tmb_khalida_personal_10",
+   "wh2_dlc09_skill_tmb_khalida_army_0",
+   "wh2_dlc09_skill_tmb_khalida_army_1",
+   "wh2_dlc09_skill_tmb_khalida_army_2",
+   "wh2_dlc09_skill_tmb_khalida_army_3",
+   "wh2_dlc09_skill_tmb_khalida_army_4",
+   "wh2_dlc09_skill_tmb_khalida_army_5",
+   "wh2_dlc09_skill_tmb_khalida_army_6",
+   "wh2_dlc09_skill_tmb_khalida_army_7",
+   "wh2_dlc09_skill_tmb_khalida_army_8",
+   "wh2_dlc09_skill_tmb_khalida_army_9",
+   "wh2_dlc09_skill_tmb_khalida_army_10",
+   "wh2_dlc09_skill_tmb_khalida_army_11",
+   "wh2_dlc09_skill_tmb_khalida_army_12"
+  ],
+  "character_skill_node_sets_tables": [
+   "runesmith",
+   "khalida_hs_set",
+   "khalida_hero_slaanesh",
+   "general",
+   "khalida_ls_set",
+   "khalida_lord_slaanesh"
+  ],
+  "character_skill_nodes_skill_locks_tables": [],
+  "character_skill_nodes_tables": [
+   "khalida_hs_corrupted_heroes_submod_topline_dread",
+   "khalida_hs_corrupted_heroes_topline_dread",
+   "khalida_hs_corrupted_heroes_submod_topline_ruination",
+   "khalida_hs_corrupted_heroes_submod_topline_missile_resist",
+   "khalida_hs_corrupted_heroes_topline_missile_resist",
+   "khalida_hs_khalida_hero_corrupted_innate",
+   "khalida_hs_khalida_hero_corrupted_swollen_womb",
+   "khalida_hs_khalida_hero_corrupted_0_2",
+   "khalida_hs_khalida_hero_corrupted_fallen_kingdom",
+   "khalida_hs_khalida_hero_corrupted_0_3",
+   "khalida_hs_khalida_hero_corrupted_spawn_mother",
+   "khalida_hs_khalida_hero_corrupted_0_4",
+   "khalida_hs_khalida_hero_corrupted_vigour_wellspring",
+   "khalida_hs_khalida_hero_corrupted_0_5",
+   "khalida_hs_alarielle_hero_corrupted_0_7",
+   "khalida_hs_corrupted_heroes_submod_service_node",
+   "khalida_hs_corrupted_heroes_submod_immortality",
+   "khalida_hs_corrupted_heroes_submod_immortality_node",
+   "khalida_hs_khalida_hero_corrupted_poison_slut",
+   "khalida_hs_khalida_hero_corrupted_1_1",
+   "khalida_hs_khalida_hero_corrupted_herdwhore_dreaming",
+   "khalida_hs_khalida_hero_corrupted_1_2",
+   "khalida_hs_khalida_hero_corrupted_asap_abandon",
+   "khalida_hs_khalida_hero_corrupted_1_3",
+   "khalida_hs_khalida_hero_corrupted_lahmian_secret",
+   "khalida_hs_khalida_hero_corrupted_1_4",
+   "khalida_hs_khalida_hero_corrupted_changer_embrace",
+   "khalida_hs_khalida_hero_corrupted_1_5",
+   "khalida_hs_khalida_hero_corrupted_ability_ungor_mass",
+   "khalida_hs_khalida_hero_corrupted_1_6",
+   "khalida_hs_corrupted_heroes_submod_hero_dummy_actions_scouting",
+   "khalida_hs_corrupted_heroes_submod_combat_2_1",
+   "khalida_hs_corrupted_heroes_submod_combat_2_2",
+   "khalida_hs_corrupted_heroes_submod_combat_2_3",
+   "khalida_hs_corrupted_heroes_submod_combat_2_4",
+   "khalida_hs_corrupted_heroes_submod_combat_2_5",
+   "khalida_hs_corrupted_heroes_submod_combat_2_6",
+   "khalida_hs_corrupted_heroes_submod_combat_2_7",
+   "khalida_hs_corrupted_heroes_submod_combat_2_8",
+   "khalida_hs_corrupted_heroes_submod_combat_2_9",
+   "khalida_hs_corrupted_heroes_submod_combat_2_10",
+   "khalida_hs_corrupted_heroes_submod_combat_2_11",
+   "khalida_ls_corrupted_khalida_innate",
+   "khalida_ls_swollen_womb",
+   "khalida_ls_corrupted_khalida_0_2",
+   "khalida_ls_queen_fallen_kingdom",
+   "khalida_ls_corrupted_khalida_0_3",
+   "khalida_ls_spawn_mother",
+   "khalida_ls_corrupted_khalida_0_4",
+   "khalida_ls_vigour_wellspring",
+   "khalida_ls_corrupted_khalida_0_5",
+   "khalida_ls_poison_slut",
+   "khalida_ls_corrupted_khalida_1_1",
+   "khalida_ls_herdwhore_dreaming",
+   "khalida_ls_corrupted_khalida_1_2",
+   "khalida_ls_asap_abandon",
+   "khalida_ls_corrupted_khalida_1_3",
+   "khalida_ls_lahmian_secret",
+   "khalida_ls_corrupted_khalida_1_4",
+   "khalida_ls_changer_embrace",
+   "khalida_ls_corrupted_khalida_1_5",
+   "khalida_ls_corrupted_generic_1",
+   "khalida_ls_corrupted_generic_camp_1",
+   "khalida_ls_corrupted_generic_2",
+   "khalida_ls_corrupted_generic_camp_2",
+   "khalida_ls_corrupted_generic_3",
+   "khalida_ls_corrupted_generic_camp_3",
+   "khalida_ls_corrupted_generic_4",
+   "khalida_ls_corrupted_generic_camp_4",
+   "khalida_ls_corrupted_generic_5",
+   "khalida_ls_corrupted_generic_camp_5",
+   "khalida_ls_corrupted_generic_6",
+   "khalida_ls_corrupted_generic_camp_6",
+   "wh_main_skill_all_lord_campaign_lightning_strike",
+   "khalida_ls_corrupted_generic_camp_7",
+   "khalida_ls_corrupted_generic_8",
+   "khalida_ls_corrupted_generic_camp_8",
+   "khalida_ls_corrupted_generic_9",
+   "khalida_ls_corrupted_generic_camp_9",
+   "khalida_ls_corrupted_generic_10",
+   "khalida_ls_corrupted_generic_camp_10",
+   "khalida_ls_corrupted_generic_11",
+   "khalida_ls_corrupted_generic_camp_11"
+  ],
+  "character_skills_tables": [
+   "wh2_twa03_rakarth_free_range.png",
+   "khalida_hs_corrupted_heroes_submod_topline_dread",
+   "wh2_dlc15_skill_hef_imrik_ashen_fields.png",
+   "khalida_hs_corrupted_heroes_submod_topline_ruination",
+   "character_ward_save.png",
+   "khalida_hs_corrupted_heroes_submod_topline_missile_resist",
+   "tzeench_barrier_skill_army.png",
+   "khalida_hs_khalida_hero_corrupted_innate",
+   "khalida_bst_life_swollen.png",
+   "khalida_hs_khalida_hero_corrupted_swollen_womb",
+   "khalida_bst_queen_khalida.png",
+   "khalida_hs_khalida_hero_corrupted_fallen_kingdom",
+   "khalida_bst_mother_spawn.png",
+   "khalida_hs_khalida_hero_corrupted_spawn_mother",
+   "khalida_bst_wellspring.png",
+   "khalida_hs_khalida_hero_corrupted_vigour_wellspring",
+   "campaign_devotees.png",
+   "khalida_hs_alarielle_hero_corrupted_0_7",
+   "character_general_ability.png",
+   "khalida_hs_corrupted_heroes_submod_immortality",
+   "wh_main_unit_contact_poison.png",
+   "khalida_hs_khalida_hero_corrupted_poison_slut",
+   "campaign_tzeentch_points.png",
+   "khalida_hs_khalida_hero_corrupted_herdwhore_dreaming",
+   "campaign_magic.png",
+   "khalida_hs_khalida_hero_corrupted_asap_abandon",
+   "wh2_dlc09_elixir.png",
+   "khalida_hs_khalida_hero_corrupted_lahmian_secret",
+   "khalida_bst_embrace_change.png",
+   "khalida_hs_khalida_hero_corrupted_changer_embrace",
+   "wh2_dlc14_skill_brt_repanse_the_peoples_hero.png",
+   "khalida_hs_khalida_hero_corrupted_ability_ungor_mass",
+   "khalida_bst_battle_attack.png",
+   "khalida_hs_corrupted_heroes_submod_hero_dummy_actions_scouting",
+   "character_health.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_1",
+   "character_defence.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_2",
+   "character_attack.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_3",
+   "character_charge.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_4",
+   "character_speed.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_5",
+   "khalida_hs_corrupted_heroes_submod_combat_2_6",
+   "khalida_hs_corrupted_heroes_submod_combat_2_7",
+   "character_damage.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_8",
+   "khalida_hs_corrupted_heroes_submod_combat_2_9",
+   "character_morale.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_10",
+   "khalida_bst_vigorous_slave_icon.png",
+   "khalida_hs_corrupted_heroes_submod_combat_2_11",
+   "khalida_ls_corrupted_khalida_innate",
+   "khalida_ls_swollen_womb",
+   "khalida_ls_queen_fallen_kingdom",
+   "khalida_ls_spawn_mother",
+   "khalida_ls_vigour_wellspring",
+   "contact_immunity.png",
+   "khalida_ls_poison_slut",
+   "khalida_ls_herdwhore_dreaming",
+   "khalida_ls_asap_abandon",
+   "khalida_ls_lahmian_secret",
+   "khalida_ls_changer_embrace",
+   "campaign_movement.png",
+   "khalida_ls_corrupted_generic_1",
+   "campaign_slaves.png",
+   "khalida_ls_corrupted_generic_2",
+   "campaign_ambush.png",
+   "khalida_ls_corrupted_generic_3",
+   "campaign_replenishment.png",
+   "khalida_ls_corrupted_generic_4",
+   "campaign_public_order.png",
+   "khalida_ls_corrupted_generic_5",
+   "character_wound_time.png",
+   "khalida_ls_corrupted_generic_6",
+   "campaign_subterfuge.png",
+   "khalida_ls_corrupted_generic_8",
+   "khalida_ls_corrupted_generic_9",
+   "character_chaos_corruption.png",
+   "khalida_ls_corrupted_generic_10",
+   "character_experience.png",
+   "khalida_ls_corrupted_generic_11"
+  ],
+  "character_trait_levels_tables": [
+   "khalida_trait_brood_queen"
+  ],
+  "character_traits_tables": [
+   "khalida_trait_brood_queen",
+   "khalida_trait_icon"
+  ],
+  "dilemmas_tables": [
+   "khalida_panel_start",
+   "khalida_corruption/khalida_start",
+   "Event",
+   "UI_CAM_EVENT_Dilemma",
+   "khalida_panel_ritual_1",
+   "khalida_corruption/khalida_ritual_1",
+   "khalida_panel_ritual_2",
+   "khalida_corruption/khalida_ritual_2",
+   "khalida_panel_ritual_3",
+   "khalida_corruption/khalida_ritual_3",
+   "khalida_panel_dawi_1",
+   "khalida_corruption/khalida_dawi_1",
+   "khalida_panel_dawi_2",
+   "khalida_corruption/khalida_dawi_2",
+   "khalida_panel_lizards_1",
+   "khalida_corruption/khalida_lizards_1",
+   "khalida_panel_lizards_2",
+   "khalida_corruption/khalida_lizards_2",
+   "khalida_panel_lizards_3",
+   "khalida_corruption/khalida_lizards_3",
+   "khalida_panel_capture_1",
+   "khalida_corruption/khalida_capture_1",
+   "khalida_panel_capture_2",
+   "khalida_corruption/khalida_capture_2",
+   "khalida_panel_capture_3",
+   "khalida_corruption/khalida_capture_3",
+   "khalida_panel_capture_4",
+   "khalida_corruption/khalida_capture_4",
+   "khalida_lord_or_hero",
+   "sla/victory",
+   "khalida_panel_train_1",
+   "khalida_corruption/khalida_train_1",
+   "khalida_panel_train_2",
+   "khalida_corruption/khalida_train_2",
+   "khalida_panel_train_3",
+   "khalida_corruption/khalida_train_3",
+   "khalida_final_choice",
+   "khalida_corruption/khalida_final_choice",
+   "khalida_panel_train_4",
+   "khalida_corruption/khalida_train_4",
+   "khalida_panel_final_ritual_1",
+   "khalida_corruption/khalida_final_ritual_1",
+   "khalida_panel_final_ritual_2",
+   "khalida_corruption/khalida_final_ritual_2",
+   "khalida_panel_final_ritual_3",
+   "khalida_corruption/khalida_final_ritual_3",
+   "khalida_panel_final_ritual_4",
+   "khalida_corruption/khalida_final_ritual_4"
+  ],
+  "diplomatic_action_subculture_restrictions_tables": [
+   "wh_main_sc_chs_chaos",
+   "wh3_main_sc_sla_slaanesh"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "charge_add",
+   "khalida_eff_cav_charge",
+   "khalida_set_cavalry",
+   "melee_attack_mod",
+   "khalida_eff_cav_melee_attack",
+   "mod_land_movement_battle",
+   "khalida_eff_cav_speed",
+   "unit_damage_resistance_physical_mod",
+   "khalida_eff_mon_physical",
+   "khalida_set_monsters",
+   "khalida_eff_mon_melee_attack",
+   "armour_mod",
+   "khalida_eff_mon_armour",
+   "khalida_eff_inf_melee_attack",
+   "khalida_set_infantry",
+   "melee_defence_mod",
+   "khalida_eff_inf_melee_defence",
+   "morale",
+   "khalida_eff_inf_morale",
+   "khalida_eff_inf_armour"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "khalida_effect_magic_remover",
+   "disable",
+   "wh2_dlc09_spell_nehekhara_djafs_incantation_of_cursed_blades",
+   "wh2_dlc09_spell_nehekhara_djafs_incantation_of_cursed_blades_upgraded",
+   "wh2_dlc09_spell_nehekhara_nerus_incantation_of_protection",
+   "wh2_dlc09_spell_nehekhara_nerus_incantation_of_protection_upgraded",
+   "wh2_dlc09_spell_nehekhara_ptras_incantation_of_righteous_smiting",
+   "wh2_dlc09_spell_nehekhara_ptras_incantation_of_righteous_smiting_upgraded",
+   "wh2_dlc09_spell_nehekhara_sakhmets_incantation_of_the_skullstorm",
+   "wh2_dlc09_spell_nehekhara_sakhmets_incantation_of_the_skullstorm_upgraded",
+   "wh2_dlc09_spell_nehekhara_usekhps_incantation_of_desiccation",
+   "wh2_dlc09_spell_nehekhara_usekhps_incantation_of_desiccation_upgraded",
+   "wh2_dlc09_spell_nehekhara_usirians_incantation_of_vengeance",
+   "wh2_dlc09_spell_nehekhara_usirians_incantation_of_vengeance_upgraded",
+   "khalida_effect_magic_adder",
+   "enable_overchage",
+   "wh3_main_spell_slaanesh_lash_of_slaanesh",
+   "enable",
+   "wh3_main_spell_slaanesh_acquiescence",
+   "wh3_main_spell_slaanesh_hysterical_frenzy",
+   "wh3_main_spell_slaanesh_pavane_of_slaanesh",
+   "wh3_main_spell_slaanesh_phantasmagoria",
+   "wh3_main_spell_slaanesh_slicing_shards",
+   "wh3_main_lore_passive_blissful_rapture"
+  ],
+  "effect_bundles_tables": [
+   "khalida_bundle_winds_attunement",
+   "character",
+   "khalida_bundle_replenishment",
+   "khalida_bundle_final_ritual"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "khalida_bundle_winds_attunement",
+   "wh3_main_effect_winds_of_magic_character",
+   "character_to_character_own",
+   "start_turn_completed",
+   "wh2_dlc14_effect_magic_cost_all_lores_percentage",
+   "khalida_bundle_replenishment",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "character_to_force_own"
+  ],
+  "effects_tables": [
+   "khalida_effect_magic_remover",
+   "magic_character.png",
+   "both",
+   "khalida_effect_magic_adder",
+   "battle",
+   "khalida_eff_cav_charge",
+   "charge.png",
+   "khalida_eff_cav_melee_attack",
+   "melee.png",
+   "khalida_eff_cav_speed",
+   "battle_movement.png",
+   "khalida_eff_mon_physical",
+   "resistance_physical.png",
+   "khalida_eff_mon_melee_attack",
+   "khalida_eff_mon_armour",
+   "armour.png",
+   "khalida_eff_inf_melee_attack",
+   "khalida_eff_inf_melee_defence",
+   "defence.png",
+   "khalida_eff_inf_morale",
+   "morale.png",
+   "khalida_eff_inf_armour"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "runesmith",
+   "wh3_dlc20_chs_azazel",
+   "khalida_hero_slaanesh",
+   "wh_main_chs_chaos",
+   "wh3_main_chs_shadow_legion",
+   "wh3_dlc20_chs_sigvald",
+   "wh3_main_sla_seducers_of_slaanesh"
+  ],
+  "incidents_tables": [
+   "khalida_incident_ritual_start",
+   "sla/victory",
+   "Event",
+   "khalida_incident_ritual_complete",
+   "khalida_incident_capture",
+   "khalida_incident_hold_achieved",
+   "khalida_incident_resolution"
+  ],
+  "land_units_tables": [
+   "wh2_main_bone_55",
+   "inf_melee",
+   "com",
+   "wh2_dlc09_tmb_cha_khalida",
+   "khalida_hero_slaanesh",
+   "hu1b_khalida_staff_and_sword",
+   "wh2_dlc09_tmb_skeleton_khalida",
+   "wh2_dlc09_tmb_staff_khalida",
+   "none",
+   "wh_main_infantry",
+   "trained",
+   "wh2_dlc09_tmb_cha_khalida_0",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "small",
+   "melee_highvalue",
+   "high",
+   "domination_characters",
+   "melee",
+   "khalida_lord_slaanesh"
+  ],
+  "main_units_tables": [
+   "hero",
+   "khalida_hero_slaanesh",
+   "wh_main_shp_transport",
+   "medium",
+   "wh2_dlc09_vo_culture_Tomb_Kings",
+   "wh2_dlc12_wizard_lord_kroak",
+   "tmb_general",
+   "vo_culture_None",
+   "wh2_dlc09_vo_actor_Tomb_Kings_High_Queen_Khalida",
+   "lord",
+   "khalida_lord_slaanesh"
+  ],
+  "mercenary_pool_to_groups_junctions_tables": [
+   "khalida_pool_saurus",
+   "wh_dlc01_chs_units_of_renown_pool",
+   "wh3_dlc20_chs_azazel",
+   "khalida_pool_temple_guard",
+   "khalida_pool_skinks",
+   "khalida_pool_cold_ones",
+   "khalida_pool_carnosaur",
+   "wh_main_chs_chaos",
+   "wh3_main_chs_shadow_legion",
+   "wh3_dlc20_chs_sigvald",
+   "wh3_main_sla_units_of_renown_pool",
+   "wh3_main_sla_seducers_of_slaanesh"
+  ],
+  "mercenary_unit_groups_tables": [
+   "khalida_pool_saurus",
+   "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+   "khalida_pool_temple_guard",
+   "wh2_main_lzd_inf_temple_guards_blessed",
+   "khalida_pool_skinks",
+   "wh2_main_lzd_inf_skink_skirmishers_blessed_0",
+   "khalida_pool_cold_ones",
+   "wh2_main_lzd_cav_cold_ones_1",
+   "khalida_pool_carnosaur",
+   "wh2_main_lzd_mon_carnosaur_blessed_0"
+  ],
+  "missions_tables": [
+   "khalida_lybaras_ritual",
+   "SCRIPTED",
+   "sla/victory",
+   "rom_event_mission.png",
+   "Quest",
+   "khalida_defeat_army",
+   "khalida_vassalize_lybaras",
+   "khalida_journey_dawi",
+   "khalida_journey_lizards",
+   "khalida_train_artifact",
+   "khalida_train_winds",
+   "khalida_train_kills",
+   "khalida_rescue_battle",
+   "FIGHT_SET_PIECE_BATTLE"
+  ],
+  "names_groups_tables": [
+   "khalida_qb_names"
+  ],
+  "names_tables": [
+   "khalida_qb_names",
+   "forename",
+   "family_name"
+  ],
+  "scripted_objectives_tables": [
+   "khalida_rescue_begin"
+  ],
+  "trait_categories_tables": [
+   "khalida_trait_icon",
+   "ui/campaign ui/skills/khalida_trait_brood_queen.png"
+  ],
+  "trait_info_tables": [
+   "khalida_trait_brood_queen"
+  ],
+  "trait_level_effects_tables": [
+   "khalida_trait_brood_queen",
+   "wh3_main_effect_winds_of_magic_character",
+   "character_to_character_own",
+   "wh2_dlc14_effect_magic_cost_all_lores_percentage",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "character_to_force_own",
+   "agent_to_parent_army_own"
+  ],
+  "unique_agent_component_junctions_tables": [
+   "INDIVIDUALLY_UNIQUE",
+   "khalida_hero_slaanesh"
+  ],
+  "unique_agents_tables": [
+   "khalida_hero_slaanesh",
+   "runesmith",
+   "FACTION_LEADER"
+  ],
+  "unit_set_to_unit_junctions_tables": [
+   "melee_cavalry",
+   "khalida_set_cavalry",
+   "missile_cavalry",
+   "monstrous_cavalry",
+   "chariot",
+   "monster",
+   "khalida_set_monsters",
+   "war_beast",
+   "monstrous_infantry",
+   "melee_infantry",
+   "khalida_set_infantry",
+   "missile_infantry"
+  ],
+  "unit_sets_tables": [
+   "khalida_set_cavalry",
+   "khalida_set_monsters",
+   "khalida_set_infantry"
+  ],
+  "unit_variants_tables": [
+   "khalida_hero_slaanesh",
+   "khalida_variant_st02",
+   "khalida_brood_queen",
+   "khalida_lord_slaanesh"
+  ],
+  "variants_tables": [
+   "khalida_variant_st01",
+   "khalida_st01",
+   "khalida_variant_st01_campaign",
+   "khalida_st01_campaign",
+   "khalida_variant_st02",
+   "khalida_st02",
+   "khalida_variant_st02_campaign",
+   "khalida_st02_campaign"
+  ]
+ },
+ "files": [
+  {
+   "path": ".git/config",
+   "size": 130,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/description",
+   "size": 73,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/head",
+   "size": 23,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/applypatch-msg.sample",
+   "size": 478,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/commit-msg.sample",
+   "size": 896,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/fsmonitor-watchman.sample",
+   "size": 4726,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/post-update.sample",
+   "size": 189,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-applypatch.sample",
+   "size": 424,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-commit.sample",
+   "size": 1649,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-merge-commit.sample",
+   "size": 416,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-push.sample",
+   "size": 1374,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-rebase.sample",
+   "size": 4898,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/pre-receive.sample",
+   "size": 544,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/prepare-commit-msg.sample",
+   "size": 1492,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/push-to-checkout.sample",
+   "size": 2783,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/sendemail-validate.sample",
+   "size": 2308,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/hooks/update.sample",
+   "size": 3650,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".git/info/exclude",
+   "size": 240,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".gitignore",
+   "size": 108,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".luarc.json",
+   "size": 836,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": ".vscode/extensions.json",
+   "size": 95,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/agent_culture_details_tables/khalida_forms",
+   "size": 319,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/khalida_forms",
+   "size": 441,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/khalida_uniforms",
+   "size": 293,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/khalida_ancillaries",
+   "size": 198,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/khalida_ancillaries",
+   "size": 111,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/ancillary_to_effects_tables/khalida_ancillaries",
+   "size": 371,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_characters_junctions_tables/khalida_rescue_battle",
+   "size": 147,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_characters_tables/khalida_rescue_battle",
+   "size": 272,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_junctions_tables/khalida_rescue_battle",
+   "size": 130,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_tables/khalida_rescue_battle",
+   "size": 212,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_units_junctions_tables/khalida_rescue_battle",
+   "size": 352,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_piece_armies_units_tables/khalida_rescue_battle",
+   "size": 359,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/battle_set_pieces_tables/khalida_rescue_battle",
+   "size": 329,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/khalida_art_sets",
+   "size": 221,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/khalida_forms",
+   "size": 241,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/khalida_arts",
+   "size": 335,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/khalida_forms",
+   "size": 353,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_group_unique_agents_tables/khalida_forms",
+   "size": 187,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/campaign_to_agent_subtypes_tables/khalida_forms",
+   "size": 161,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/khalida_dilemma_choice_details",
+   "size": 961,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_option_junctions_tables/khalida_mission_options",
+   "size": 1574,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_option_junctions_tables/khalida_rescue_battle",
+   "size": 161,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/khalida_forms",
+   "size": 604,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/khalida_forms",
+   "size": 15775,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/khalida_forms",
+   "size": 5993,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/khalida_forms",
+   "size": 4751,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/khalida_forms",
+   "size": 195,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/khalida_forms",
+   "size": 83,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/khalida_forms",
+   "size": 5126,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_skills_tables/khalida_forms",
+   "size": 4312,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/khalida_traits",
+   "size": 145,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/character_traits_tables/khalida_traits",
+   "size": 153,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/khalida_dilemmas",
+   "size": 2430,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/diplomatic_action_subculture_restrictions_tables/!khalida_chaos_confederation",
+   "size": 143,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/khalida_forms",
+   "size": 746,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/khalida_magic_swap",
+   "size": 2419,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/khalida_effect_bundles",
+   "size": 255,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/khalida_effect_bundles",
+   "size": 491,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effects_tables/khalida_effects",
+   "size": 253,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/effects_tables/khalida_forms",
+   "size": 779,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/khalida_forms",
+   "size": 393,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/incidents_tables/khalida_incidents",
+   "size": 398,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/land_units_tables/khalida_forms",
+   "size": 1081,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/main_units_tables/khalida_forms",
+   "size": 700,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/mercenary_pool_to_groups_junctions_tables/khalida_monster_pool",
+   "size": 2461,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/mercenary_unit_groups_tables/khalida_monster_pool",
+   "size": 471,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/missions_tables/khalida_missions",
+   "size": 908,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/missions_tables/khalida_rescue_battle",
+   "size": 223,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/names_groups_tables/khalida_rescue_battle",
+   "size": 101,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/names_tables/khalida_forms",
+   "size": 172,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/names_tables/khalida_rescue_battle",
+   "size": 172,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/scripted_objectives_tables/khalida_rescue_battle",
+   "size": 114,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/trait_categories_tables/khalida_traits",
+   "size": 157,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/trait_info_tables/khalida_traits",
+   "size": 118,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/khalida_traits",
+   "size": 513,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/unique_agent_component_junctions_tables/khalida_forms",
+   "size": 139,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/unique_agents_tables/khalida_forms",
+   "size": 170,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/khalida_forms",
+   "size": 464,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/unit_sets_tables/khalida_forms",
+   "size": 186,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/khalida_forms",
+   "size": 271,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "db/variants_tables/khalida_variants",
+   "size": 335,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "khalida_corruption.sublime-project",
+   "size": 75,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/battle/khalida_rescue_battle.lua",
+   "size": 775,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/0b_story_panels.lua",
+   "size": 5907,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/0c_khalida_skin.lua",
+   "size": 13170,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/main.lua",
+   "size": 848,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage0a_setup.lua",
+   "size": 9801,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage0b_mod_start.lua",
+   "size": 6322,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage1_ritual_mission.lua",
+   "size": 7165,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage2_journey_dawi.lua",
+   "size": 4836,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage3_journey_lizards.lua",
+   "size": 4996,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage4_defeat_mission.lua",
+   "size": 13081,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage5_capture_lybaras.lua",
+   "size": 12771,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage6_train_khalida.lua",
+   "size": 36525,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage7_monster_pool.lua",
+   "size": 4105,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage8_khalida_forms.lua",
+   "size": 18996,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_ancillaries.loc",
+   "size": 943,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_dilemmas.loc",
+   "size": 38080,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_effects.loc",
+   "size": 946,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_forms.loc",
+   "size": 2376,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_incidents.loc",
+   "size": 3294,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_missions.loc",
+   "size": 5144,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_rescue_battle.loc",
+   "size": 1688,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_skills.loc",
+   "size": 32230,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_stage6_effects.loc",
+   "size": 930,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "text/db/khalida_traits.loc",
+   "size": 645,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_battle_attack.png",
+   "size": 8463,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_embrace_change.png",
+   "size": 9409,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_life_swollen.png",
+   "size": 8233,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_mother_spawn.png",
+   "size": 9012,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_queen_khalida.png",
+   "size": 8789,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_vigorous_slave_icon.png",
+   "size": 8125,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_bst_wellspring.png",
+   "size": 10093,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/khalida_trait_brood_queen.png",
+   "size": 503,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_capture_1.png",
+   "size": 2631605,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_capture_2.png",
+   "size": 2287287,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_capture_3.png",
+   "size": 2621589,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_capture_4.png",
+   "size": 2205354,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_dawi_1.png",
+   "size": 1837849,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_dawi_2.png",
+   "size": 1361757,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_final_choice.png",
+   "size": 1890723,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_final_ritual_1.png",
+   "size": 1734208,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_final_ritual_2.png",
+   "size": 1958381,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_final_ritual_3.png",
+   "size": 2162148,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_final_ritual_4.png",
+   "size": 1993345,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_lizards_1.png",
+   "size": 2426748,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_lizards_2.png",
+   "size": 2030287,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_lizards_3.png",
+   "size": 2549693,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_ritual_1.png",
+   "size": 2131367,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_ritual_2.png",
+   "size": 2393760,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_ritual_3.png",
+   "size": 1904291,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_start.png",
+   "size": 2118726,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_train_1.png",
+   "size": 2297795,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_train_2.png",
+   "size": 2263547,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_train_3.png",
+   "size": 2092155,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/eventpics/khalida_corruption/khalida_train_4.png",
+   "size": 2100491,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/khalida_st01_campaign.png",
+   "size": 617991,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/khalida_st02_campaign.png",
+   "size": 617991,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_khalida_corruption.bin",
+   "size": 328,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_khalida_forms.bin",
+   "size": 346,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/khalida_st01_campaign.png",
+   "size": 457841,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/khalida_st02_campaign.png",
+   "size": 457841,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/units/icons/khalida_brood_queen.png",
+   "size": 457841,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/units/icons/khalida_hero_slaanesh.png",
+   "size": 457841,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "ui/units/icons/khalida_lord_slaanesh.png",
+   "size": 457841,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/khalida_st01.variantmeshdefinition",
+   "size": 1337,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/khalida_st01_campaign.variantmeshdefinition",
+   "size": 860,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/khalida_st02.variantmeshdefinition",
+   "size": 1337,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/khalida_st02_campaign.variantmeshdefinition",
+   "size": 860,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/khalida_st01.rigid_model_v2",
+   "size": 5045468,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/khalida_st01.wsmodel",
+   "size": 11798,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/khalida_st02.rigid_model_v2",
+   "size": 4821396,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/khalida_st02.wsmodel",
+   "size": 9658,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/materials/brt_repanse_hair_01_weighted4_alpha_on.xml.material",
+   "size": 2548,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/materials/chs_sigvald_head_01_1_weighted4_alpha_on.xml.material",
+   "size": 2555,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/materials/chs_sigvald_head_01_weighted4_alpha_off.xml.material",
+   "size": 2548,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/materials/face_lod1_02_lod1_weighted4_alpha_on.xml.material",
+   "size": 2514,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2452,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/black_hair.dds",
+   "size": 699236,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/face_diffuse.dds",
+   "size": 11184996,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/face_mask.dds",
+   "size": 699236,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/face_material_map.dds",
+   "size": 3145876,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/face_normal.dds",
+   "size": 2796368,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/maiden2_material_map.dds",
+   "size": 16777392,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/maiden2_normal.dds",
+   "size": 16777392,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/khalida_corruption/tex/skin_diffuse.dds",
+   "size": 16777412,
+   "pack": "khalida_corruption/khalida_corruption_mod/khalida_corruption.pack"
+  }
+ ]
+}

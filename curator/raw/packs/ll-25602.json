@@ -1,0 +1,120 @@
+{
+ "mod": "ll-25602",
+ "packs": [
+  "ensignLoiSFO.pack"
+ ],
+ "dependencies": [
+  "MiaoYingCorrupted_Compendium.pack",
+  "sfo_grimhammer_3_main.pack"
+ ],
+ "perPack": {
+  "ensignLoiSFO.pack": {
+   "files": 5,
+   "dependencies": [
+    "MiaoYingCorrupted_Compendium.pack",
+    "sfo_grimhammer_3_main.pack"
+   ]
+  }
+ },
+ "fileCount": 5,
+ "byTopFolder": {
+  "db": 5
+ },
+ "tables": [
+  "land_units_tables",
+  "main_units_tables",
+  "melee_weapons_tables",
+  "projectiles_tables",
+  "units_custom_battle_permissions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "land_units_tables": [
+   "wh2_main_chainmail_40",
+   "inf_ranged",
+   "com",
+   "wh3_main_unit_long_text_cth_cha_ensign_loi",
+   "wh3_main_cth_cha_ensign_loi_1",
+   "hu1e_blunderbuss_sword",
+   "wh3_main_cth_jade_warrior_sword1",
+   "wh3_cth_ensign_loi_rifle",
+   "none",
+   "wh3_main_unit_short_text_cth_cha_ensign_loi",
+   "wh_main_hero",
+   "well_trained",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "vo_sel_generic_short",
+   "large",
+   "ranged_highvalue",
+   "high",
+   "domination_characters"
+  ],
+  "main_units_tables": [
+   "hero",
+   "wh3_main_cth_cha_ensign_loi_1",
+   "wh_main_shp_transport",
+   "medium",
+   "wh3_main_vo_culture_Cathay",
+   "dwf_master_engineer",
+   "cth_general_foot",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Slaanesh_Alluress"
+  ],
+  "melee_weapons_tables": [
+   "wh3_main_cth_jade_warrior_sword1",
+   "sword",
+   "small",
+   "wh2_dlc11_unit_contact_charmed"
+  ],
+  "projectiles_tables": [
+   "wh3_cth_ensign_loi_rifle_projectile",
+   "musket",
+   "small_arm_default",
+   "none",
+   "low",
+   "wh3_main_tze_horror_pink_fire_bolt",
+   "wh2_bullet_multi_impact_large",
+   "wh2_dlc09_unit_contact_shieldbreaker",
+   "medium_2"
+  ],
+  "units_custom_battle_permissions_tables": [
+   "wh3_main_cth_cathay_mp",
+   "wh3_main_cth_cha_ensign_loi_1"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/land_units_tables/miaoscorruptedcompendium",
+   "size": 675,
+   "pack": "ensignLoiSFO.pack"
+  },
+  {
+   "path": "db/main_units_tables/miaoscorruptedcompendium",
+   "size": 405,
+   "pack": "ensignLoiSFO.pack"
+  },
+  {
+   "path": "db/melee_weapons_tables/miaoscorruptedcompendium",
+   "size": 232,
+   "pack": "ensignLoiSFO.pack"
+  },
+  {
+   "path": "db/projectiles_tables/miaoscorruptedcompendium",
+   "size": 413,
+   "pack": "ensignLoiSFO.pack"
+  },
+  {
+   "path": "db/units_custom_battle_permissions_tables/ensignloisfo",
+   "size": 154,
+   "pack": "ensignLoiSFO.pack"
+  }
+ ]
+}

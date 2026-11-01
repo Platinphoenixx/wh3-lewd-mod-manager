@@ -1,0 +1,319 @@
+{
+ "mod": "ll-44088",
+ "packs": [
+  "teclis_femboy.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "teclis_femboy.pack": {
+   "files": 57,
+   "dependencies": []
+  }
+ },
+ "fileCount": 57,
+ "byTopFolder": {
+  "variantmeshes": 54,
+  "ui": 3
+ },
+ "tables": [],
+ "references": {
+  "total": 88,
+  "inMod": 32,
+  "inBaseGame": 53,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/cullbridegoth_pns_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/tex/test_mask.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/faction_leaders/hef_teclis_0.png",
+   "size": 25878,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/hef_teclis_0.png",
+   "size": 41595,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/hef_teclis_0.png",
+   "size": 16989,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_props/hef_teclis_staff_1h_01.rigid_model_v2",
+   "size": 101004,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_props/hef_teclis_staff_1h_01.wsmodel",
+   "size": 859,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_props/materials/def_sorceress_staff_1h_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2661,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/cullbridegoth_pns_mask.dds",
+   "size": 349664,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/cullbridegoth_pns_normal.dds",
+   "size": 349664,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/emp_jade_wizard_head_01_base_colour.dds",
+   "size": 524416,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_body_01.rigid_model_v2",
+   "size": 2164156,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_body_01.wsmodel",
+   "size": 19924,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_cape_01.rigid_model_v2",
+   "size": 252,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_cape_01.wsmodel",
+   "size": 164,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_head_01.rigid_model_v2",
+   "size": 828492,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_head_01.wsmodel",
+   "size": 7624,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/hef_teclis_head_01_base_colour.dds",
+   "size": 524416,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/leg normal.dds",
+   "size": 5592560,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/leg_bake1_pbr_metalness.dds",
+   "size": 2796364,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/leg_bake2_pbr_diffuse.dds",
+   "size": 5592580,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/bst_gor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2600,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/bst_ungor_dick_01_2_weighted2_alpha_off.xml.material",
+   "size": 2581,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/bst_ungor_dick_01_weighted4_alpha_on.xml.material",
+   "size": 2584,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/chs_marauder_legs_01_submesh_0_s_2_weighted2_alpha_off.xml.material",
+   "size": 2623,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/chs_marauder_legs_01_submesh_0_s_weighted4_alpha_off.xml.material",
+   "size": 2621,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/def_witch_elves_body_01_submesh__submesh_8_weighted4_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/emp_flagellants_prisoner_torso___2_weighted2_alpha_off.xml.material",
+   "size": 2619,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/emp_flagellants_prisoner_torso___weighted4_alpha_off.xml.material",
+   "size": 2617,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/emp_jade_wizard_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 2609,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/emp_jade_wizard_head_02_weighted4_alpha_on.xml.material",
+   "size": 2612,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alarielle_body_01_submesh_35_14_weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alarielle_body_01_submesh_35_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alarielle_body_01_submesh_37_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alarielle_head_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alarielle_head_01_submesh_12_2_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alith_anar_body_01_1_weighted2_alpha_off.xml.material",
+   "size": 2663,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alith_anar_body_01_2_weighted2_alpha_on.xml.material",
+   "size": 2668,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alith_anar_body_01_weighted4_alpha_off.xml.material",
+   "size": 2669,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alith_anar_head_01_1_weighted4_alpha_on.xml.material",
+   "size": 2676,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_alith_anar_head_01_weighted4_alpha_off.xml.material",
+   "size": 2669,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_handmaiden_everqueen_legs_0__12_weighted2_alpha_off.xml.material",
+   "size": 2762,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_handmaiden_everqueen_legs_0_submesh_2_submesh_0_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2788,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_swordmasters_of_hoeth_torso_2_weighted2_alpha_off.xml.material",
+   "size": 2769,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_swordmasters_of_hoeth_torso_weighted4_alpha_off.xml.material",
+   "size": 2767,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2583,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 2621,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_head_01_4_weighted2_alpha_off.xml.material",
+   "size": 2621,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_head_01_submesh_0_4_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_head_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2625,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/hef_teclis_head_01_weighted4_alpha_on.xml.material",
+   "size": 2624,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/leg_submesh_7_2_weighted2_alpha_off.xml.material",
+   "size": 2513,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/materials/leg_submesh_7_weighted4_alpha_on.xml.material",
+   "size": 2516,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/slave_legs_base_colour.dds",
+   "size": 262272,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/slave_pns_color.dds",
+   "size": 131200,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/slave_torso_01_base_colour.dds",
+   "size": 131200,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/slave_torso_01_normal.dds",
+   "size": 1048704,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/tex/hef_teclis_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "teclis_femboy.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/hef/hef_teclis/wet_mat_map.dds",
+   "size": 16777412,
+   "pack": "teclis_femboy.pack"
+  }
+ ]
+}

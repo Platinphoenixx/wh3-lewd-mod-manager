@@ -1,0 +1,128 @@
+{
+ "mod": "ll-32460",
+ "packs": [
+  "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack": {
+   "files": 16,
+   "dependencies": []
+  }
+ },
+ "fileCount": 16,
+ "byTopFolder": {
+  "script": 11,
+  "db": 4,
+  "marthvs": 1
+ },
+ "tables": [
+  "unit_variants_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "unit_variants_tables": [
+   "wh3_main_cth_cha_storm_dragon_0",
+   "placeholder",
+   "wh3_main_ksl_cha_katarin_0",
+   "wh3_main_ksl_cha_katarin",
+   "wh3_main_ksl_cha_katarin_1",
+   "wh3_main_ksl_cha_katarin_rider",
+   "wh3_main_ksl_cha_katarin_2",
+   "wh2_main_def_cha_morathi",
+   "wh2_main_def_cha_morathi_0",
+   "wh2_main_def_morathi",
+   "wh2_main_def_cha_morathi_1",
+   "wh2_main_def_morathi_mounted"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_corset",
+   "size": 204,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_zdefault",
+   "size": 204,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/li_katarin_zfourth",
+   "size": 391,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/li_morathi_zthird",
+   "size": 297,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "marthvs/mod/!selector_submod_for_lsreskin.lua",
+   "size": 779,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_katarin_fourth.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_katarin_second.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_katarin_third.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_ballet.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_bare.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_corset.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_fishnet.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_plug.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_scale.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_morathi_fourth.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_morathi_third.lua",
+   "size": 0,
+   "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack"
+  }
+ ]
+}

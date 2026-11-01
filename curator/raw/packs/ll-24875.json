@@ -1,0 +1,2859 @@
+{
+ "mod": "ll-24875",
+ "packs": [
+  "WH3_SigvaldA.pack",
+  "WH3_SigvaldA_with_soundpack.pack",
+  "sigvaldavoiceAfix.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack": {
+   "files": 231,
+   "dependencies": []
+  },
+  "WH3_SigvaldA/WH3_SigvaldA.pack": {
+   "files": 74,
+   "dependencies": []
+  },
+  "WH3_SigvaldAFix/WH3_SigvaldA.pack": {
+   "files": 73,
+   "dependencies": []
+  },
+  "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack": {
+   "files": 81,
+   "dependencies": []
+  },
+  "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack": {
+   "files": 81,
+   "dependencies": []
+  }
+ },
+ "fileCount": 315,
+ "byTopFolder": {
+  "audio": 231,
+  "variantmeshes": 50,
+  "text": 22,
+  "db": 9,
+  "ui": 3
+ },
+ "tables": [
+  "agent_subtypes_tables",
+  "audio_entity_random_vocalisations_tables",
+  "audio_vo_actor_groups_tables",
+  "campaign_character_arts_tables",
+  "culture_to_battle_animation_tables_tables",
+  "diplomacy_negotiation_string_options_tables",
+  "frontend_faction_leaders_tables",
+  "land_units_tables",
+  "main_units_tables"
+ ],
+ "references": {
+  "total": 66,
+  "inMod": 39,
+  "inBaseGame": 27,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_subtypes_tables": [
+   "wh_dlc01_chs_prince_sigvald",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent",
+   "wh_dlc01_vo_actor_Chaos_SigvaldTheMagnificent",
+   "legendary_lords",
+   "cannot_be_loaded_in_campaign",
+   "wh_vo_actor_silent",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh"
+  ],
+  "audio_entity_random_vocalisations_tables": [
+   "Battle_Individual_Vocalisation_Slaanesh_Cultist_Idle",
+   "wh_chaos_sigvald_idle",
+   "Battle_Individual_Vocalisation_Slaanesh_Cultist_Breathing",
+   "wh_chaos_sigvald_running",
+   "Battle_Individual_Vocalisation_Slaanesh_Cultist_Breathing_to_stop",
+   "wh_chaos_sigvald_walking",
+   "Battle_Individual_Vocalisation_Human_Female_Walking",
+   "Battle_Individual_Vocalisation_Chaos_Idle_Sigvald",
+   "Battle_Individual_Vocalisation_Chaos_Running_Sigvald",
+   "Battle_Individual_Vocalisation_Chaos_Walking_Sigvald"
+  ],
+  "audio_vo_actor_groups_tables": [
+   "wh_dlc01_vo_actor_Chaos_SigvaldTheMagnificent",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh1",
+   "random",
+   "mm_sigvald",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh2"
+  ],
+  "campaign_character_arts_tables": [
+   "wh_main_art_set_chs_prince_sigvald",
+   "none",
+   "wh_main_uniform_chs_prince_sigvald",
+   "wh_main_campaign_chs_ship_heavy",
+   "cam_lord_hu1b_elf_sword_and_shield",
+   "cam_heavy_ship_04"
+  ],
+  "culture_to_battle_animation_tables_tables": [
+   "hu1b_elf_sword_and_shield",
+   "wh_main_chs_chaos"
+  ],
+  "diplomacy_negotiation_string_options_tables": [
+   "accept",
+   "coc_valkia_dip_accept_01",
+   "diplomacy_Faction_Sigvald",
+   "coc_valkia_dip_accept_03",
+   "accept_ultimatum",
+   "coc_valkia_dip_accept_04",
+   "generic_reject",
+   "coc_valkia_dip_neg_gen_01",
+   "receive",
+   "coc_valkia_dip_neu_gen_01"
+  ],
+  "frontend_faction_leaders_tables": [
+   "wh_main_political_party_chaos_sigvald",
+   "chaos_stirs",
+   "ui/loading_ui/load_images/campaign_chaos1.png",
+   "wh_dlc01_vo_actor_Chaos_SigvaldTheMagnificent",
+   "wh_dlc01_chs_prince_sigvald",
+   "wh3_dlc20_chs_sigvald",
+   "wh_vo_actor_silent",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh"
+  ],
+  "land_units_tables": [
+   "wh2_main_plate_110",
+   "inf_melee",
+   "com",
+   "wh_main_unit_long_text_chs_sigvald_the_magnificent",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent",
+   "hu1b_elf_sword_and_shield",
+   "wh2_dlc16_infantry_sigvald_fast_hero",
+   "wh_dlc01_chs_prince_sigvald",
+   "wh_missile_block_55_metal",
+   "wh_dlc01_unit_short_text_chs_sigvald_the_magnificent",
+   "wh_main_infantry_large",
+   "trained",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent_attributes",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "vo_sel_generic_short",
+   "small_strider",
+   "melee_highvalue",
+   "high",
+   "domination_characters"
+  ],
+  "main_units_tables": [
+   "lord",
+   "wh_dlc01_chs_cha_prince_sigvald_the_magnificent",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh3_main_vo_culture_Slaanesh",
+   "lord_infantry_sword",
+   "emp_general_foot",
+   "vo_culture_None",
+   "wh_dlc01_vo_actor_Chaos_SigvaldTheMagnificent",
+   "mm_sigvald",
+   "wh_main_vo_culture_Chaos"
+  ]
+ },
+ "files": [
+  {
+   "path": "audio/wwise/106434440.wem",
+   "size": 8138,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/115189062.wem",
+   "size": 3786,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/250638240.wem",
+   "size": 96332,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/68688551.wem",
+   "size": 8937,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/73091059.wem",
+   "size": 12320,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/87012708.wem",
+   "size": 18424,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/91478550.wem",
+   "size": 11254,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/93949071.wem",
+   "size": 13578,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1016243947.wem",
+   "size": 21873,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1016692374.wem",
+   "size": 27732,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1017499462.wem",
+   "size": 11836,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1018929583.wem",
+   "size": 35499,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1031402850.wem",
+   "size": 26350,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1042305571.wem",
+   "size": 17881,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1052595622.wem",
+   "size": 10308,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/105623784.wem",
+   "size": 13061,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/106393665.wem",
+   "size": 26598,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1065965187.wem",
+   "size": 11096,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/11051294.wem",
+   "size": 23974,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/110621212.wem",
+   "size": 9369,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/119292226.wem",
+   "size": 9923,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/121457082.wem",
+   "size": 7294,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/124873783.wem",
+   "size": 7051,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/126094446.wem",
+   "size": 8066,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/126817240.wem",
+   "size": 18370,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/127819208.wem",
+   "size": 48012,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/12914665.wem",
+   "size": 6113,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/134694118.wem",
+   "size": 13962,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/135218536.wem",
+   "size": 5814,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/136216252.wem",
+   "size": 9497,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/136285109.wem",
+   "size": 5159,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/139087180.wem",
+   "size": 5492,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/150260682.wem",
+   "size": 15299,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/150627978.wem",
+   "size": 14906,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/153539333.wem",
+   "size": 14377,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/157634747.wem",
+   "size": 4509,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/159665268.wem",
+   "size": 36018,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/16620747.wem",
+   "size": 6365,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/167198030.wem",
+   "size": 24635,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/175611331.wem",
+   "size": 21187,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/178117234.wem",
+   "size": 15355,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/18077116.wem",
+   "size": 4073,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/182679139.wem",
+   "size": 13011,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/183780320.wem",
+   "size": 13604,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/190486718.wem",
+   "size": 7747,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/193295004.wem",
+   "size": 8038,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/197869391.wem",
+   "size": 34378,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/202958245.wem",
+   "size": 15870,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/205858462.wem",
+   "size": 14122,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/208759802.wem",
+   "size": 11478,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/211545586.wem",
+   "size": 28994,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/214441459.wem",
+   "size": 8160,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/217229793.wem",
+   "size": 9278,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/218031268.wem",
+   "size": 6893,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/220966837.wem",
+   "size": 12841,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/226219557.wem",
+   "size": 5535,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/229686287.wem",
+   "size": 7710,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/233064233.wem",
+   "size": 18892,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/234736243.wem",
+   "size": 39884,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/237565534.wem",
+   "size": 13491,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/237757854.wem",
+   "size": 19702,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/240640340.wem",
+   "size": 12100,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/242025470.wem",
+   "size": 66005,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/242996314.wem",
+   "size": 32388,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/24507933.wem",
+   "size": 5949,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/245715498.wem",
+   "size": 31467,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/253223952.wem",
+   "size": 32463,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/267290713.wem",
+   "size": 7231,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/267682239.wem",
+   "size": 8550,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/273599640.wem",
+   "size": 4321,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/275551246.wem",
+   "size": 6317,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/277333750.wem",
+   "size": 4071,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/277368468.wem",
+   "size": 10285,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/283234281.wem",
+   "size": 6522,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/286688136.wem",
+   "size": 31921,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/28815645.wem",
+   "size": 10287,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/289924114.wem",
+   "size": 13069,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/292721490.wem",
+   "size": 10412,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/295112526.wem",
+   "size": 12055,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/297832624.wem",
+   "size": 4959,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/301003182.wem",
+   "size": 37449,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/311697460.wem",
+   "size": 9741,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/322682728.wem",
+   "size": 6646,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/324772056.wem",
+   "size": 19459,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/326641049.wem",
+   "size": 11887,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/33046034.wem",
+   "size": 21204,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/337144940.wem",
+   "size": 5200,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/346047046.wem",
+   "size": 7832,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/347058297.wem",
+   "size": 37704,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/352171057.wem",
+   "size": 5747,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/361629365.wem",
+   "size": 13149,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/362308622.wem",
+   "size": 11207,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/365720754.wem",
+   "size": 11185,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/373368957.wem",
+   "size": 93280,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/383608129.wem",
+   "size": 80254,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/386020914.wem",
+   "size": 11422,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/386259735.wem",
+   "size": 13343,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/387955162.wem",
+   "size": 10101,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/404103419.wem",
+   "size": 15593,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/406785228.wem",
+   "size": 9824,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/41082936.wem",
+   "size": 7883,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/411124347.wem",
+   "size": 14184,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/427017587.wem",
+   "size": 8803,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/430553229.wem",
+   "size": 5293,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/448050344.wem",
+   "size": 11323,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/449488661.wem",
+   "size": 14100,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/454577074.wem",
+   "size": 6194,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/454799525.wem",
+   "size": 9389,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/456923999.wem",
+   "size": 6692,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/459728266.wem",
+   "size": 11218,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/465528057.wem",
+   "size": 8304,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/471649140.wem",
+   "size": 5675,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/47214376.wem",
+   "size": 14232,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/474856270.wem",
+   "size": 8329,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/477588139.wem",
+   "size": 5766,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/485008310.wem",
+   "size": 38541,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/490523902.wem",
+   "size": 26938,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/495837420.wem",
+   "size": 10585,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/497447626.wem",
+   "size": 12706,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/500652377.wem",
+   "size": 11218,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/502084992.wem",
+   "size": 5633,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/50893573.wem",
+   "size": 7959,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/510213185.wem",
+   "size": 13489,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/516884740.wem",
+   "size": 4926,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/519524478.wem",
+   "size": 27255,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/520851808.wem",
+   "size": 101762,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/530392030.wem",
+   "size": 14530,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/53267005.wem",
+   "size": 24695,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/536261776.wem",
+   "size": 105253,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/552066508.wem",
+   "size": 32045,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/556112233.wem",
+   "size": 6050,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/560169694.wem",
+   "size": 10084,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/570265325.wem",
+   "size": 8831,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/572428715.wem",
+   "size": 105536,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/573898950.wem",
+   "size": 10382,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/576880592.wem",
+   "size": 9680,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/577829979.wem",
+   "size": 9160,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/583091240.wem",
+   "size": 29700,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/599676469.wem",
+   "size": 12513,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/603128094.wem",
+   "size": 8119,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/610648626.wem",
+   "size": 3683,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/610755536.wem",
+   "size": 4368,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/615909119.wem",
+   "size": 7648,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/616408673.wem",
+   "size": 4906,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/630206829.wem",
+   "size": 12067,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/632665097.wem",
+   "size": 32825,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/634306053.wem",
+   "size": 7231,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/642084146.wem",
+   "size": 6016,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/64437619.wem",
+   "size": 11464,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/646617566.wem",
+   "size": 36810,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/649991536.wem",
+   "size": 5369,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/652681261.wem",
+   "size": 11183,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/658758008.wem",
+   "size": 9340,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/660210983.wem",
+   "size": 10308,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/661438261.wem",
+   "size": 9490,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/662646679.wem",
+   "size": 37826,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/671238498.wem",
+   "size": 16209,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/677345010.wem",
+   "size": 12939,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/682603291.wem",
+   "size": 11015,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/683743315.wem",
+   "size": 2406,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/691360275.wem",
+   "size": 23965,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/691707759.wem",
+   "size": 12442,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/692564265.wem",
+   "size": 18576,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/692983996.wem",
+   "size": 17881,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/698460272.wem",
+   "size": 5094,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/700838587.wem",
+   "size": 6200,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/707936918.wem",
+   "size": 41363,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/710265243.wem",
+   "size": 23532,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/720455712.wem",
+   "size": 8402,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/722895142.wem",
+   "size": 7356,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/723906584.wem",
+   "size": 15941,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/727467923.wem",
+   "size": 13318,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/73071213.wem",
+   "size": 33465,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/73091059.wem",
+   "size": 12320,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/733860600.wem",
+   "size": 6201,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/734637447.wem",
+   "size": 8275,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/736087021.wem",
+   "size": 9936,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/737290935.wem",
+   "size": 6158,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/75107985.wem",
+   "size": 33924,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/752776426.wem",
+   "size": 12010,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/753616728.wem",
+   "size": 11821,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/754783277.wem",
+   "size": 27453,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/760421439.wem",
+   "size": 123773,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/769806146.wem",
+   "size": 3871,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/771663093.wem",
+   "size": 13254,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/777015015.wem",
+   "size": 6222,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/783629451.wem",
+   "size": 5728,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/784037793.wem",
+   "size": 8038,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/786683213.wem",
+   "size": 7939,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793697997.wem",
+   "size": 10600,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/795312670.wem",
+   "size": 29911,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/798252991.wem",
+   "size": 12841,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/79850606.wem",
+   "size": 9375,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/803158980.wem",
+   "size": 8876,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/803381247.wem",
+   "size": 21813,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/804961156.wem",
+   "size": 13616,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/821109581.wem",
+   "size": 30981,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/82237186.wem",
+   "size": 15708,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/829156543.wem",
+   "size": 10177,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/830472376.wem",
+   "size": 4011,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/83689998.wem",
+   "size": 31594,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/842404957.wem",
+   "size": 5538,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/845132528.wem",
+   "size": 21467,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/853497705.wem",
+   "size": 9209,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/857233137.wem",
+   "size": 4080,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/862703366.wem",
+   "size": 15430,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/864333207.wem",
+   "size": 7750,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/87012708.wem",
+   "size": 18424,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/875365450.wem",
+   "size": 9601,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/878796996.wem",
+   "size": 41569,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/879558343.wem",
+   "size": 21000,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/887227764.wem",
+   "size": 37472,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/887427172.wem",
+   "size": 13333,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/897722869.wem",
+   "size": 5186,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/902758493.wem",
+   "size": 18731,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/92565665.wem",
+   "size": 3923,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/933825551.wem",
+   "size": 35590,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/942846205.wem",
+   "size": 10309,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/956262998.wem",
+   "size": 8624,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/956702252.wem",
+   "size": 41355,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/95936653.wem",
+   "size": 10176,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/963601341.wem",
+   "size": 6895,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/963766121.wem",
+   "size": 33684,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/968009734.wem",
+   "size": 19256,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/975013243.wem",
+   "size": 11019,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/976705079.wem",
+   "size": 6292,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/978902086.wem",
+   "size": 46352,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/985938394.wem",
+   "size": 6657,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/989177586.wem",
+   "size": 16787,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/990913167.wem",
+   "size": 11996,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/995153181.wem",
+   "size": 7321,
+   "pack": "sigvaldavoice_pack_fix/sigvaldavoiceAfix.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/mm_sigvald_data__",
+   "size": 261,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/mm_sigvald_data__",
+   "size": 288,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/mm_sigvald_data__",
+   "size": 288,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/mm_sigvald_data__",
+   "size": 289,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/audio_entity_random_vocalisations_tables/audio_entity_random_vocalizations_tables",
+   "size": 391,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/audio_entity_random_vocalisations_tables/audio_entity_random_vocalizations_tables",
+   "size": 398,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/audio_entity_random_vocalisations_tables/audio_entity_random_vocalizations_tables",
+   "size": 412,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/audio_vo_actor_groups_tables/mm_sigvald_data__",
+   "size": 178,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/audio_vo_actor_groups_tables/mm_sigvald_data__",
+   "size": 213,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/audio_vo_actor_groups_tables/mm_sigvald_data__",
+   "size": 227,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/mm_sigvald_data__",
+   "size": 338,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/mm_sigvald_data__",
+   "size": 338,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/mm_sigvald_data__",
+   "size": 338,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/mm_sigvald_data__",
+   "size": 338,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/mm_sigvald_data__",
+   "size": 129,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/mm_sigvald_data__",
+   "size": 129,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/mm_sigvald_data__",
+   "size": 129,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/mm_sigvald_data__",
+   "size": 129,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/diplomacy_negotiation_string_options_tables/mm_sigvald_data__",
+   "size": 27557,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/diplomacy_negotiation_string_options_tables/mm_sigvald_data__",
+   "size": 27557,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/diplomacy_negotiation_string_options_tables/mm_sigvald_data__",
+   "size": 27557,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/frontend_faction_leaders_tables/mm_sigvald_data__",
+   "size": 427,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/frontend_faction_leaders_tables/mm_sigvald_data__",
+   "size": 454,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/frontend_faction_leaders_tables/mm_sigvald_data__",
+   "size": 454,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/frontend_faction_leaders_tables/mm_sigvald_data__",
+   "size": 455,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/land_units_tables/mm_sigvald_data__",
+   "size": 723,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/land_units_tables/mm_sigvald_data__",
+   "size": 723,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/land_units_tables/mm_sigvald_data__",
+   "size": 723,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/land_units_tables/mm_sigvald_data__",
+   "size": 723,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/main_units_tables/mm_sigvald_data__",
+   "size": 417,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/main_units_tables/mm_sigvald_data__",
+   "size": 417,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "db/main_units_tables/mm_sigvald_data__",
+   "size": 448,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "db/main_units_tables/mm_sigvald_data__",
+   "size": 452,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_diplomacy_strings.loc",
+   "size": 235,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_advice_levels__.loc",
+   "size": 588,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_advice_levels__.loc",
+   "size": 588,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_advice_levels__.loc",
+   "size": 588,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_advice_levels__.loc",
+   "size": 588,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_frontend_faction_leaders__.loc",
+   "size": 1742,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_frontend_faction_leaders__.loc",
+   "size": 1742,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_frontend_faction_leaders__.loc",
+   "size": 1742,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_land_units__.loc",
+   "size": 380,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_land_units__.loc",
+   "size": 380,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_land_units__.loc",
+   "size": 380,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_land_units__.loc",
+   "size": 380,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_names__.loc",
+   "size": 95,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_names__.loc",
+   "size": 95,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_names__.loc",
+   "size": 95,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!mm_sigvald_names__.loc",
+   "size": 95,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/!wh3_sig_building_effect.loc",
+   "size": 347,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!wh3_sig_building_effect.loc",
+   "size": 347,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!wh3_sig_building_effect.loc",
+   "size": 347,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/!wh3_sig_building_effect.loc",
+   "size": 347,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_ancillaries__.loc",
+   "size": 311,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_ancillaries__.loc",
+   "size": 311,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_ancillaries__.loc",
+   "size": 311,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_ancillaries__.loc",
+   "size": 311,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_piece_armies__.loc",
+   "size": 462,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_piece_armies__.loc",
+   "size": 462,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_piece_armies__.loc",
+   "size": 462,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_piece_armies__.loc",
+   "size": 462,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_pieces__.loc",
+   "size": 3183,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_pieces__.loc",
+   "size": 3183,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_pieces__.loc",
+   "size": 3183,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_battle_set_pieces__.loc",
+   "size": 3183,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skill_node_sets__.loc",
+   "size": 239,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skill_node_sets__.loc",
+   "size": 239,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skill_node_sets__.loc",
+   "size": 239,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skill_node_sets__.loc",
+   "size": 239,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skills__.loc",
+   "size": 5290,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skills__.loc",
+   "size": 5290,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skills__.loc",
+   "size": 5290,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_skills__.loc",
+   "size": 5290,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_trait_levels__.loc",
+   "size": 259,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_trait_levels__.loc",
+   "size": 259,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_trait_levels__.loc",
+   "size": 259,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_character_trait_levels__.loc",
+   "size": 259,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_effect_bundles__.loc",
+   "size": 607,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_effect_bundles__.loc",
+   "size": 607,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_effect_bundles__.loc",
+   "size": 607,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_effect_bundles__.loc",
+   "size": 607,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_frontend_faction_leaders__.loc",
+   "size": 1742,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_loading_screen_quotes__.loc",
+   "size": 1127,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_loading_screen_quotes__.loc",
+   "size": 1127,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_loading_screen_quotes__.loc",
+   "size": 1127,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_loading_screen_quotes__.loc",
+   "size": 1127,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_missions__.loc",
+   "size": 5145,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_missions__.loc",
+   "size": 5145,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_missions__.loc",
+   "size": 5145,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_missions__.loc",
+   "size": 5149,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_objectives__.loc",
+   "size": 694,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_objectives__.loc",
+   "size": 694,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_objectives__.loc",
+   "size": 694,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_objectives__.loc",
+   "size": 694,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_subtitles__.loc",
+   "size": 1777,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_subtitles__.loc",
+   "size": 1777,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_subtitles__.loc",
+   "size": 1777,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_scripted_subtitles__.loc",
+   "size": 1777,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_historical_texts__.loc",
+   "size": 1655,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_historical_texts__.loc",
+   "size": 1655,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_historical_texts__.loc",
+   "size": 1659,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_historical_texts__.loc",
+   "size": 1663,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_short_texts__.loc",
+   "size": 477,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_short_texts__.loc",
+   "size": 477,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_short_texts__.loc",
+   "size": 477,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/mm_sigvald_unit_description_short_texts__.loc",
+   "size": 477,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/db/wh3_sig_effects.loc",
+   "size": 538,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/wh3_sig_effects.loc",
+   "size": 538,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/wh3_sig_effects.loc",
+   "size": 538,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/db/wh3_sig_effects.loc",
+   "size": 538,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 636,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 636,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 636,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 636,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/chaos_sigvald.png",
+   "size": 21030,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/chaos_sigvald.png",
+   "size": 21030,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/chaos_sigvald.png",
+   "size": 21030,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/chaos_sigvald.png",
+   "size": 21030,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/chs_ch_sigvald_0.png",
+   "size": 56039,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/chs_ch_sigvald_0.png",
+   "size": 56039,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/chs_ch_sigvald_0.png",
+   "size": 56039,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/chs_ch_sigvald_0.png",
+   "size": 56039,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/chs_ch_sigvald_0.png",
+   "size": 16767,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/chs_ch_sigvald_0.png",
+   "size": 16767,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/chs_ch_sigvald_0.png",
+   "size": 16767,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/chs_ch_sigvald_0.png",
+   "size": 16767,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/chs_ch_sigvald.variantmeshdefinition",
+   "size": 1127,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/chs_ch_sigvald.variantmeshdefinition",
+   "size": 1129,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/chs_ch_sigvald.variantmeshdefinition",
+   "size": 1129,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/chs_ch_sigvald.variantmeshdefinition",
+   "size": 1134,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.rigid_model_v2",
+   "size": 112904,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.rigid_model_v2",
+   "size": 112904,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.rigid_model_v2",
+   "size": 112904,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.rigid_model_v2",
+   "size": 112904,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.wsmodel",
+   "size": 850,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.wsmodel",
+   "size": 850,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.wsmodel",
+   "size": 850,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_shield_02.wsmodel",
+   "size": 850,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.rigid_model_v2",
+   "size": 77072,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.rigid_model_v2",
+   "size": 77072,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.rigid_model_v2",
+   "size": 77072,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.rigid_model_v2",
+   "size": 77072,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.wsmodel",
+   "size": 848,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.wsmodel",
+   "size": 848,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.wsmodel",
+   "size": 848,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_sigvald_sword_1h_02.wsmodel",
+   "size": 848,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_sword_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_sword_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_sword_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/chs_sigvald_sword_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted2_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_legs_02_weighted4_alpha_off.xml.material",
+   "size": 2723,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_1_weighted4_alpha_on.xml.material",
+   "size": 2735,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_1_weighted4_alpha_on.xml.material",
+   "size": 2735,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_1_weighted4_alpha_on.xml.material",
+   "size": 2735,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_1_weighted4_alpha_on.xml.material",
+   "size": 2735,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted2_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted2_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted2_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted2_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted4_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted4_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted4_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/def_dreadlord_female_torso_03_weighted4_alpha_off.xml.material",
+   "size": 2728,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/platform heels00_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/platform heels00_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/platform heels00_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/platform heels00_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggabody_weighted4_alpha_on.xml.material",
+   "size": 2529,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggabody_weighted4_alpha_on.xml.material",
+   "size": 2529,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggabody_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggabody_weighted4_alpha_on.xml.material",
+   "size": 2541,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggahands_weighted4_alpha_on.xml.material",
+   "size": 2530,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggahands_weighted4_alpha_on.xml.material",
+   "size": 2530,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggahands_weighted4_alpha_on.xml.material",
+   "size": 2542,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggahands_weighted4_alpha_on.xml.material",
+   "size": 2542,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggatop_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggatop_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggatop_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/materials/siggatop_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.rigid_model_v2",
+   "size": 3040420,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.rigid_model_v2",
+   "size": 3040420,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.rigid_model_v2",
+   "size": 3040420,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.rigid_model_v2",
+   "size": 3040420,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.wsmodel",
+   "size": 2794,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.wsmodel",
+   "size": 2794,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.wsmodel",
+   "size": 2794,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full.wsmodel",
+   "size": 2794,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.rigid_model_v2",
+   "size": 3042628,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.rigid_model_v2",
+   "size": 3042628,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.rigid_model_v2",
+   "size": 3042628,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.rigid_model_v2",
+   "size": 3042628,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.wsmodel",
+   "size": 2824,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.wsmodel",
+   "size": 2824,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.wsmodel",
+   "size": 2824,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2.wsmodel",
+   "size": 2824,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2_elev.rigid_model_v2",
+   "size": 3042178,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2_elev.rigid_model_v2",
+   "size": 3042178,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2_elev.wsmodel",
+   "size": 2833,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigarda_01full_2_elev.wsmodel",
+   "size": 2833,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigvalda_01a.rigid_model_v2",
+   "size": 3795684,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigvalda_01a.rigid_model_v2",
+   "size": 3795684,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigvalda_01a.rigid_model_v2",
+   "size": 3795684,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/sigvalda_01a.rigid_model_v2",
+   "size": 3795684,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d_pube2_nails.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_d_pube2_nails.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_mat.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_mat.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_mat.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_mat.dds",
+   "size": 8388780,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_n.dds",
+   "size": 16777392,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_n.dds",
+   "size": 16777392,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_n.dds",
+   "size": 16777392,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_body_n.dds",
+   "size": 16777392,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_d_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_diffuse.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_diffuse.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_diffuse.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_diffuse.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_mat_sla.dds",
+   "size": 5592572,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_n.dds",
+   "size": 11184976,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_n.dds",
+   "size": 11184976,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_n.dds",
+   "size": 11184976,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/lionea_head_n.dds",
+   "size": 11184976,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_d.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_d.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_d.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_d.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_mat.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_mat.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_mat.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_mat.dds",
+   "size": 699212,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_n.dds",
+   "size": 1398256,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_n.dds",
+   "size": 1398256,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_n.dds",
+   "size": 1398256,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/body/txt/scarlet_hair_n.dds",
+   "size": 1398256,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/chs_sigvald_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/chs_sigvald_head_01.001_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/chs_sigvald_head_01.002_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/chs_sigvald_head_01.002_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted2_alpha_off.xml.material",
+   "size": 2531,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted2_alpha_off.xml.material",
+   "size": 2531,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted2_alpha_off.xml.material",
+   "size": 2531,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted2_alpha_off.xml.material",
+   "size": 2531,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/sigga_head_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted2_alpha_off.xml.material",
+   "size": 2527,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted2_alpha_off.xml.material",
+   "size": 2527,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted2_alpha_off.xml.material",
+   "size": 2527,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted2_alpha_off.xml.material",
+   "size": 2527,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted4_alpha_on.xml.material",
+   "size": 2532,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted4_alpha_on.xml.material",
+   "size": 2532,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted4_alpha_on.xml.material",
+   "size": 2532,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/materials/siggahair_weighted4_alpha_on.xml.material",
+   "size": 2532,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head.rigid_model_v2",
+   "size": 5603940,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head.rigid_model_v2",
+   "size": 5603940,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head.rigid_model_v2",
+   "size": 5603940,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head.rigid_model_v2",
+   "size": 5603940,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.rigid_model_v2",
+   "size": 2366708,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.rigid_model_v2",
+   "size": 2366708,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.rigid_model_v2",
+   "size": 3432908,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.rigid_model_v2",
+   "size": 3432908,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.wsmodel",
+   "size": 1476,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.wsmodel",
+   "size": 1476,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.wsmodel",
+   "size": 1476,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2.wsmodel",
+   "size": 1476,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2_alt.rigid_model_v2",
+   "size": 1067046,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2_alt.rigid_model_v2",
+   "size": 1067046,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2_alt.wsmodel",
+   "size": 2240,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_2_alt.wsmodel",
+   "size": 2240,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_long.rigid_model_v2",
+   "size": 1553060,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_long.rigid_model_v2",
+   "size": 1553060,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_long.rigid_model_v2",
+   "size": 1553060,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_long.rigid_model_v2",
+   "size": 1553060,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01head_long.wsmodel",
+   "size": 2239,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.rigid_model_v2",
+   "size": 2663674,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.rigid_model_v2",
+   "size": 2663674,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.rigid_model_v2",
+   "size": 2663674,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.rigid_model_v2",
+   "size": 2663674,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.wsmodel",
+   "size": 1477,
+   "pack": "WH3_SigvaldA/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.wsmodel",
+   "size": 1477,
+   "pack": "WH3_SigvaldAFix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.wsmodel",
+   "size": 1477,
+   "pack": "WH3_SigvaldA_lowerheelfix/WH3_SigvaldA.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_sigvald/head/sigarda_01headf.wsmodel",
+   "size": 1477,
+   "pack": "WH3_SigvaldA_with_soundpack/WH3_SigvaldA_with_soundpack.pack"
+  }
+ ]
+}

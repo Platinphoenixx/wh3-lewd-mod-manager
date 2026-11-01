@@ -1,0 +1,350 @@
+{
+ "mod": "ll-52134",
+ "packs": [
+  "prince_zanithor.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack": {
+   "files": 46,
+   "dependencies": []
+  }
+ },
+ "fileCount": 46,
+ "byTopFolder": {
+  "variantmeshes": 24,
+  "db": 13,
+  "script": 3,
+  "text": 3,
+  "ui": 2,
+  "prince_zanithor.png": 1
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "character_trait_levels_tables",
+  "character_traits_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effects_tables",
+  "trait_categories_tables",
+  "trait_info_tables",
+  "trait_level_effects_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 61,
+  "inMod": 22,
+  "inBaseGame": 39,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "zanithor_variant_prince_campaign",
+   "uniform_zanithor_prince",
+   "zanithor_variant_prince"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "art_set_zanithor_prince",
+   "wh3_dlc20_chs_daemon_prince_slaanesh"
+  ],
+  "campaign_character_arts_tables": [
+   "art_set_zanithor_prince",
+   "none",
+   "uniform_zanithor_prince",
+   "cam_lord_hu10e_wh3_daemon_prince_sword"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "zanithor_army_offer",
+   "SECOND"
+  ],
+  "character_trait_levels_tables": [
+   "zanithor_trait_hunter",
+   "zanithor_trait_cultist"
+  ],
+  "character_traits_tables": [
+   "zanithor_trait_hunter",
+   "zanithor_trait_icon",
+   "zanithor_trait_cultist"
+  ],
+  "dilemmas_tables": [
+   "zanithor_army_offer",
+   "zanithor_intro",
+   "Event",
+   "UI_CAM_EVENT_Dilemma"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "zanithor_effect_enable_snare",
+   "enable",
+   "wh2_dlc13_lord_abilities_hunters_snare"
+  ],
+  "effects_tables": [
+   "zanithor_effect_enable_snare",
+   "magic_character.png",
+   "battle"
+  ],
+  "trait_categories_tables": [
+   "zanithor_trait_icon",
+   "ui/campaign ui/agents/wh3_main_sla_cultist.png"
+  ],
+  "trait_info_tables": [
+   "zanithor_trait_hunter",
+   "zanithor_trait_cultist"
+  ],
+  "trait_level_effects_tables": [
+   "zanithor_trait_hunter",
+   "wh_main_effect_force_all_campaign_upkeep",
+   "character_to_force_own",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "wh_main_effect_force_army_campaign_attrition_all_resistance",
+   "zanithor_effect_enable_snare",
+   "character_to_character_own",
+   "zanithor_trait_cultist",
+   "wh_main_effect_character_stat_ward_save"
+  ],
+  "variants_tables": [
+   "zanithor_variant_prince",
+   "zanithor_prince",
+   "zanithor_variant_prince_campaign",
+   "zanithor_prince_campaign"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/zanithor_uniforms",
+   "size": 204,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/zanithor_art_sets",
+   "size": 178,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/zanithor_arts",
+   "size": 216,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/zanithor_dilemma_choice_details",
+   "size": 152,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/zanithor_traits",
+   "size": 193,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/character_traits_tables/zanithor_traits",
+   "size": 210,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/zanithor_dilemmas",
+   "size": 168,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/zanithor_ability_enables",
+   "size": 161,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/effects_tables/zanithor_effects",
+   "size": 170,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/trait_categories_tables/zanithor_traits",
+   "size": 153,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/trait_info_tables/zanithor_traits",
+   "size": 138,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/zanithor_traits",
+   "size": 575,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "db/variants_tables/zanithor_variants",
+   "size": 225,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "prince_zanithor.png",
+   "size": 417389,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "script/campaign/mod/0_zanithor_logger.lua",
+   "size": 1892,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "script/campaign/mod/0a_zanithor_config.lua",
+   "size": 6379,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "script/campaign/mod/stage1_offer_army.lua",
+   "size": 31799,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "text/db/zanithor_dilemmas.loc",
+   "size": 1934,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "text/db/zanithor_effects__.loc",
+   "size": 169,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "text/db/zanithor_traits.loc",
+   "size": 1834,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "ui/eventpics/zanithor_intro.png",
+   "size": 1190332,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_zanithor.bin",
+   "size": 150,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/zanithor_prince.variantmeshdefinition",
+   "size": 375,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/zanithor_prince_campaign.variantmeshdefinition",
+   "size": 375,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/dae_slaanesh_prince_hunter.rigid_model_v2",
+   "size": 7081682,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/dae_slaanesh_prince_hunter.wsmodel",
+   "size": 9294,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_lord_slaanesh_head_04_2_weighted2_alpha_off.xml.material",
+   "size": 6333,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_lord_slaanesh_head_04_submes_2_weighted2_alpha_off.xml.material",
+   "size": 6268,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_lord_slaanesh_head_04_submes_weighted4_alpha_off.xml.material",
+   "size": 6266,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_lord_slaanesh_head_04_weighted2_alpha_on.xml.material",
+   "size": 6336,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_arm_l_base_03_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_arm_l_base_03_submesh_weighted4_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_arm_l_scythe_01_subme_2_weighted2_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_arm_l_scythe_01_subme_weighted4_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_head_adorned_08_subme_2_weighted2_alpha_off.xml.material",
+   "size": 2685,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_head_adorned_08_subme_weighted4_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_legs_daemonette_04_su_2_weighted2_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_legs_daemonette_04_su_weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_legs_daemonette_05_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_tail_fiend_04_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 2677,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_tail_fiend_04_submesh_weighted4_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_tail_fiend_06_weighted4_alpha_on.xml.material",
+   "size": 2672,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_torso_adorned_03_subm_2_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_torso_adorned_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_wings_screamer_01_2_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu10e/dae/dae_prince/zanithor/materials/dae_prince_wings_screamer_01_weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "prince_zanithor/prince_zanithor_mod/prince_zanithor.pack"
+  }
+ ]
+}
