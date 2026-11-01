@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T16:19:39+00:00",
+  "generatedAt": "2026-11-01T16:20:25+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -307,9 +307,7 @@
       "installNotes": [
         "Needs a new campaign after the latest rework."
       ],
-      "knownIssues": [
-        "Reported on the Discord: Miao's Corrupting Alchemy can misbehave with mods that add special events."
-      ],
+      "knownIssues": [],
       "campaigns": [
         "IE",
         "IEE"
@@ -7361,18 +7359,7 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-42028"
-          },
-          "note": "Reported as incompatible by a player in the ATB channel (single report)",
-          "source": {
-            "type": "discord"
-          }
-        }
-      ],
+      "relations": [],
       "installNotes": [
         "Start a new campaign or respec all characters before subscribing."
       ],
@@ -10830,22 +10817,8 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
-          },
-          "note": "Longma riders T-pose when both are active (reported on the Discord).",
-          "source": {
-            "type": "discord",
-            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1473416203962683453"
-          }
-        }
-      ],
-      "knownIssues": [
-        "Longma riders T-pose together with Soil's corrupted units (merged pack)."
-      ],
+      "relations": [],
+      "knownIssues": [],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
@@ -15100,18 +15073,7 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "dc-miao-alchemy"
-          },
-          "note": "Community report: crash when used together with Miao Alchemy",
-          "source": {
-            "type": "discord"
-          }
-        }
-      ],
+      "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
@@ -34524,9 +34486,7 @@
         ]
       },
       "status": "stable",
-      "knownIssues": [
-        "A player reported start-position problems together with Mixu's Unlocker and Immortal Empires Expanded (Steam comments)."
-      ],
+      "knownIssues": [],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/13406041855685685421/783045EB6D75B24EF0B55FBF75B516C1F51FE4BA/",

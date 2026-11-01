@@ -3552,22 +3552,8 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
-          },
-          "note": "Longma riders T-pose when both are active (reported on the Discord).",
-          "source": {
-            "type": "discord",
-            "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1473416203962683453"
-          }
-        }
-      ],
-      "knownIssues": [
-        "Longma riders T-pose together with Soil's corrupted units (merged pack)."
-      ],
+      "relations": [],
+      "knownIssues": [],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
@@ -5946,18 +5932,7 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-42028"
-          },
-          "note": "Reported as incompatible by a player in the ATB channel (single report)",
-          "source": {
-            "type": "discord"
-          }
-        }
-      ],
+      "relations": [],
       "installNotes": [
         "Start a new campaign or respec all characters before subscribing."
       ],
@@ -6490,9 +6465,7 @@
       "installNotes": [
         "Needs a new campaign after the latest rework."
       ],
-      "knownIssues": [
-        "Reported on the Discord: Miao's Corrupting Alchemy can misbehave with mods that add special events."
-      ],
+      "knownIssues": [],
       "campaigns": [
         "IE",
         "IEE"
@@ -7447,18 +7420,7 @@
         ]
       },
       "packs": [],
-      "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "dc-miao-alchemy"
-          },
-          "note": "Community report: crash when used together with Miao Alchemy",
-          "source": {
-            "type": "discord"
-          }
-        }
-      ],
+      "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
