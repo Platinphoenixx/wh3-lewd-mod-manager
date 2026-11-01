@@ -236,7 +236,7 @@ export async function downloadQueueFromLoversLab(
       }
       finished = []
       failed = null
-      const waitNote = 'If LoversLab asks you to sign in, do that first (tick "Remember me"). Any wait LoversLab shows is LoversLab's own; the queue waits for it. Close this window to stop.'
+      const waitNote = 'If LoversLab asks you to sign in, do that first (tick "Remember me"). If LoversLab makes a download wait, the queue waits with it. Close this window to stop.'
       setBanner(`${i + 1} of ${jobs.length}: ${job.name}. ${waitNote}`)
       progress({ ...step, status: 'downloading' })
       void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
