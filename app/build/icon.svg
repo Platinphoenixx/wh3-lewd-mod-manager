@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- App icon: stacked packs (mods in load order) with a small heart; Bronze colours. Source of icon.ico / icon.png. -->
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2c27c"/><stop offset="1" stop-color="#a9823e"/></linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26221d"/><stop offset="1" stop-color="#141311"/></linearGradient>
+  </defs>
+  <rect x="10" y="10" width="236" height="236" rx="44" fill="url(#tile)" stroke="#33302a" stroke-width="4"/>
+  <rect x="58" y="150" width="140" height="40" rx="9" fill="#6e5428"/>
+  <rect x="58" y="104" width="140" height="40" rx="9" fill="#9a7638"/>
+  <rect x="58" y="58" width="140" height="40" rx="9" fill="url(#gold)"/>
+  <path d="M128 66 C120 58 106 62 106 74 C106 86 128 94 128 94 C128 94 150 86 150 74 C150 62 136 58 128 66 Z" fill="#141311"/>
+</svg>
