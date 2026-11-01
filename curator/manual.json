@@ -321,6 +321,16 @@
       "from": "download",
       "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name).",
       "source": "https://discord.com/channels/965342581745668136/967468098464649327/1507400955845673054"
+    },
+    "alivia_dryad.pack": {
+      "target": {
+        "mod": "steam-3820276885"
+      },
+      "pack": "alivia_dryad.pack",
+      "steamId": "3820276885",
+      "from": "steam",
+      "note": "Nymeria (Workshop 3404717872, January 2025) crashes the game at start since the 9.0 update. Mister HP's temporary update 'Nymeria (9.0.3)' replaces it; unsubscribe the old item.",
+      "source": "https://discord.com/channels/965342581745668136/1040374541228191774/1553851316571476119"
     }
   },
   "mods": [
@@ -482,6 +492,66 @@
           "steamId": "3809988722",
           "note": "Pack name from the installed file (app install test, 2026-11-01)."
         }
+      ]
+    },
+    {
+      "id": "steam-3820276885",
+      "name": "Nymeria (9.0.3)",
+      "authors": [
+        "Mister HP"
+      ],
+      "kind": "units",
+      "summary": "Mister HP's temporary update of Alivia's Nymeria for game version 9.0: a dryad-human hybrid legendary hero or lord for all factions.",
+      "tags": [
+        "wood elves",
+        "hero"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3820276885"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "alivia_dryad.pack",
+          "from": "steam",
+          "steamId": "3820276885",
+          "note": "Pack name of the original (3404717872); not yet confirmed for this upload."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "steamId": "3404717872"
+          },
+          "note": "The original crashes the game since the 9.0 update; this is its update.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3820276885"
+          }
+        }
+      ],
+      "cleanup": {
+        "unsubscribeSteamIds": [
+          "3404717872"
+        ],
+        "note": "The old Nymeria upload uses the same pack name and crashes the game since 9.0."
+      },
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack name not yet seen in a download of 3820276885."
+        ]
+      }
+    },
+    {
+      "id": "steam-2996269472",
+      "knownIssues": [
+        "Last updated January 2025, like Nymeria, which crashes the game since the 9.0 update. MrDustV posted a working alivia_whiteLion.pack for 9.0 on Discord (2026-09-27); if the game stops with a database error in alivia_whiteLion.pack, use that and unsubscribe this item."
       ]
     }
   ],

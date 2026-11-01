@@ -849,20 +849,17 @@
    ],
    "channel": "1040374541228191774",
    "messageUrls": [
-    "https://discord.com/channels/965342581745668136/1040374541228191774"
+    "https://discord.com/channels/965342581745668136/1040374541228191774/1553851316571476119"
    ],
    "version": "",
    "date": "2026-10-31",
    "downloads": [
     {
      "name": "alivia_whiteLion.pack, alivia_dryad.pack (MrDustV 2026-09-27)",
-     "messageUrl": "https://discord.com/channels/965342581745668136/1040374541228191774"
+     "messageUrl": "https://discord.com/channels/965342581745668136/1040374541228191774/1553851316571476119"
     }
    ],
-   "steamIds": [
-    "2884240930",
-    "3820276885"
-   ],
+   "steamIds": [],
    "loversLab": [],
    "requires": [],
    "recommends": [],
@@ -872,7 +869,7 @@
    "phase": "",
    "status": "active",
    "knownIssues": [],
-   "notes": "Original 'Resurrection' Steam 2884240930 is no longer maintained. MrDustV posted a working pack (pinned 2026-10-18); Mister HP's updated Steam version 3820276885 adds mounts and QoL (2026-10-31)."
+   "notes": "MrDustV's working versions of Alivia's Lyra (alivia_whiteLion.pack) and Nymeria (alivia_dryad.pack) for game version 9.0, posted 2026-09-27; the Workshop originals (2996269472, 3404717872) are from January 2025. Same pack names as the Workshop items: unsubscribe those when using these. For Nymeria, Mister HP's Workshop update 'Nymeria (9.0.3)' (3820276885) is the Steam way."
   },
   {
    "name": "Nymeria Legendary Hero/Lord + Aranessa reskin (Rat of the Lake)",
@@ -899,7 +896,9 @@
    "playAs": [],
    "phase": "",
    "status": "active",
-   "knownIssues": [],
+   "knownIssues": [
+    "The Nymeria Workshop item (3404717872, last updated January 2025) stops the game at start since the 9.0 update (database error in alivia_dryad.pack, land_units_to_unit_abilites_junctions). Use Mister HP's 'Nymeria (9.0.3)' (Workshop 3820276885) or MrDustV's working pack from Discord."
+   ],
    "notes": "Non-NSFW mods. Readman's OOO mod crashes without Nymeria installed."
   },
   {
