@@ -45,17 +45,43 @@ export interface ScriptLog {
 
 export const normScript = (p: string) => p.replace(/\\/g, '/').toLowerCase()
 
+/**
+ * The game writes a failed mod script as a block (checked in game, 9.0.4):
+ *   Failed to load mod file [script\_lib\mod\x.lua], error is: cannot open x: No such file or directory. Will attempt to require() …
+ *       error loading module x from file x:[string "script\_lib\mod\x.lua"]:2: unexpected symbol near '='
+ *   Failed to load mod: [script\_lib\mod\x.lua]
+ * The first line's message is misleading; the indented line has the real one. One block = one failure,
+ * reported as "script\_lib\mod\x.lua:2: unexpected symbol near '='".
+ */
 export function parseLuaLog(text: string): ScriptLog {
   const log: ScriptLog = { loaded: [], failed: [] }
+  let block: { script?: string; first: string; detail?: string } | null = null
+  const close = () => {
+    if (block) log.failed.push({ line: block.detail ?? block.first, script: block.script ? normScript(block.script) : undefined })
+    block = null
+  }
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.trim()
     if (!line) continue
+    // Indented lines continue the failure above them.
+    if (block && /^\s/.test(raw)) {
+      const m = /\[string "([^"]+)"\]:(\d+):\s*(.*)$/.exec(line)
+      if (m) block.detail ??= `${m[1]}:${m[2]}: ${m[3]}`
+      continue
+    }
+    close()
     const script = /\[([^\]]+\.lua)\]/i.exec(line)?.[1]
     if (/loaded successfully/i.test(line)) {
       if (script) log.loaded.push(normScript(script))
+    } else if (/^Failed to load mod file/i.test(line)) {
+      block = { script, first: line }
+    } else if (/^Failed to load mod: /i.test(line)) {
+      // Summary of a block already counted.
+      if (!log.failed.some((f) => script && f.script === normScript(script))) log.failed.push({ line, script: script ? normScript(script) : undefined })
     } else if (/fail|error|attempt to|traceback|cannot|unable/i.test(line)) {
       log.failed.push({ line, script: script ? normScript(script) : undefined })
     }
   }
+  close()
   return log
 }

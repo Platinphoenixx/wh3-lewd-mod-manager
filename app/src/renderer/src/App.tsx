@@ -76,8 +76,10 @@ export function App() {
       return
     }
     const n = groupFailures(s.failed).length
+    // Stays until closed: the player is often still away from the screen when the game closes.
     notify({
       kind: 'error',
+      timeout: 0,
       text: `Game closed – script errors in ${n} mod${n === 1 ? '' : 's'} during the last session.`,
       actions: [
         { label: 'Report to the modder…', run: () => { setTab('install'); setReportFor(0) } },

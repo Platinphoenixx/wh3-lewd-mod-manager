@@ -41,4 +41,21 @@ describe('health hints', () => {
     expect(log.loaded).toEqual(['script/campaign/mod/good.lua'])
     expect(log.failed).toEqual([{ line: 'Failed to load mod file [script\\campaign\\mod\\Bad.lua], error is: attempt to index a nil value', script: 'script/campaign/mod/bad.lua' }])
   })
+
+  it('reads a failure block as the game writes it (one failure, the real message)', () => {
+    const log = parseLuaLog([
+      '',
+      '****************************',
+      'Loading Mods',
+      'Loading mod file [script\\_lib\\mod\\qa_console.lua]',
+      'Mod [script\\_lib\\mod\\qa_console.lua] loaded successfully',
+      'Loading mod file [script\\_lib\\mod\\wh3lmm_script_test.lua]',
+      '\tFailed to load mod file [script\\_lib\\mod\\wh3lmm_script_test.lua], error is: cannot open wh3lmm_script_test: No such file or directory. Will attempt to require() this file to generate a more meaningful error message:',
+      '\t\terror loading module wh3lmm_script_test from file wh3lmm_script_test:[string "script\\_lib\\mod\\wh3lmm_script_test.lua"]:2: unexpected symbol near \'=\'',
+      'Failed to load mod: [script\\_lib\\mod\\wh3lmm_script_test.lua]',
+      '****************************'
+    ].join('\r\n'))
+    expect(log.loaded).toEqual(['script/_lib/mod/qa_console.lua'])
+    expect(log.failed).toEqual([{ line: 'script\\_lib\\mod\\wh3lmm_script_test.lua:2: unexpected symbol near \'=\'', script: 'script/_lib/mod/wh3lmm_script_test.lua' }])
+  })
 })
