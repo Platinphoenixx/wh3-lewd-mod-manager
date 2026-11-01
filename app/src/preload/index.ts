@@ -25,6 +25,9 @@ const api: Api = {
   installPaths: (paths) => ipcRenderer.invoke('install:paths', paths),
   pathForFile: (file) => webUtils.getPathForFile(file),
   workshopDetails: (ids) => ipcRenderer.invoke('steam:details', ids),
+  importSources: () => ipcRenderer.invoke('import:sources'),
+  importTwmods: () => ipcRenderer.invoke('import:twmods'),
+  scriptReport: () => ipcRenderer.invoke('game:scriptReport'),
   installQueueFromLoversLab: (jobs) => ipcRenderer.invoke('install:loverslabQueue', jobs),
   onQueueProgress: (cb) => {
     const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)

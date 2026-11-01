@@ -718,6 +718,8 @@ def main():
         "notes": notes,
         "presets": presets,
         "campaignGuides": guides,
+        # Major game updates (update.py reads them from the game's Steam announcements).
+        "gameUpdates": load(CURATOR / "raw" / "game_updates.json") if (CURATOR / "raw" / "game_updates.json").exists() else [],
     }
     # Only a real content change gets a new timestamp: otherwise every scheduled build would commit a
     # "new" catalog and every app would download it again.

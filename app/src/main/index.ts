@@ -1,13 +1,16 @@
 import { existsSync, readdirSync } from 'node:fs'
-import { join } from 'node:path'
+import { readFile, stat } from 'node:fs/promises'
+import { basename, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, BrowserWindow, dialog, ipcMain, net, protocol, shell } from 'electron'
-import { DEFAULTS, type GameScan, type Settings } from '@shared/api'
+import { DEFAULTS, type GameScan, type ScriptReport, type Settings } from '@shared/api'
+import { parseLuaLog } from '@shared/health'
+import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@shared/importlist'
 import type { Contribution, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
 import { loadCatalog } from './catalog'
 import { scanGame } from './game'
-import { packConflicts, packFacts } from './pack'
+import { cachedPackIndex, packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
@@ -93,6 +96,47 @@ ipcMain.handle('packs:facts', async (_e, paths: string[]) => {
 })
 ipcMain.handle('steam:details', (_e, ids: string[]) => workshopDetails(ids.filter((x) => /^\d{6,12}$/.test(x))))
 ipcMain.handle('game:scan', () => currentScan())
+// Mod lists of other launchers on this PC; read only, never changed.
+ipcMain.handle('import:sources', async () => {
+  const out: ImportSource[] = []
+  const ca = join(app.getPath('appData'), 'The Creative Assembly', 'Launcher', '20190104-moddata.dat')
+  try {
+    const mods = parseCaModdata(await readFile(ca, 'utf8'))
+    if (mods.length) out.push({ id: 'ca:current', label: 'CA launcher – current mod list', mods })
+  } catch { /* no CA launcher data */ }
+  try {
+    out.push(...parseWh3mm(await readFile(join(app.getPath('appData'), 'wh3mm', 'config.json'), 'utf8')))
+  } catch { /* no WH3 Mod Manager */ }
+  return out
+})
+ipcMain.handle('import:twmods', async (e) => {
+  const pick = await dialog.showOpenDialog(BrowserWindow.fromWebContents(e.sender)!, {
+    title: 'Choose a mod profile exported by the CA launcher', properties: ['openFile'], filters: [{ name: 'Mod profile', extensions: ['twmods'] }]
+  })
+  if (pick.canceled) return null
+  const file = pick.filePaths[0]
+  return { id: `twmods:${file}`, label: basename(file), mods: parseTwmods(await readFile(file, 'utf8')) }
+})
+ipcMain.handle('game:scriptReport', async (): Promise<ScriptReport> => {
+  const scan = await currentScan()
+  const file = scan.gamePath ? join(scan.gamePath, 'lua_mod_log.txt') : ''
+  if (!file || !existsSync(file)) return { written: null, loaded: 0, failed: [] }
+  const log = parseLuaLog(await readFile(file, 'utf8'))
+  // Which installed packs contain the failing scripts (vanilla scripts have none).
+  const owners = new Map<string, string[]>()
+  if (log.failed.some((f) => f.script)) {
+    for (const p of scan.packs) {
+      try {
+        for (const f of (await cachedPackIndex(p.path)).files) if (f.path.endsWith('.lua')) owners.set(f.path, [...(owners.get(f.path) ?? []), p.path])
+      } catch { /* unreadable pack */ }
+    }
+  }
+  return {
+    written: (await stat(file)).mtimeMs,
+    loaded: log.loaded.length,
+    failed: log.failed.map((f) => ({ ...f, packs: f.script ? owners.get(f.script) ?? [] : [] }))
+  }
+})
 ipcMain.handle('shell:openExternal', (_e, url: string) => {
   if (/^https?:\/\//.test(url)) return shell.openExternal(url)
 })

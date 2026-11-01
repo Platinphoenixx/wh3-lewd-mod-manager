@@ -2,6 +2,7 @@ import type { Catalog } from '@catalog/schema'
 import type { Contribution, UserRule } from './community'
 import type { ConflictReport } from './conflicts'
 import type { FactsReport } from './own'
+import type { ImportSource } from './importlist'
 import type { Profile } from './profile'
 
 /** A .pack file found in the game's data folder or a Workshop download folder. */
@@ -25,6 +26,16 @@ export interface GameScan {
   packs: InstalledPack[]
   vanillaPackCount: number
   errors: string[]
+  /** When Steam last updated the game (ms), from its app manifest. */
+  gameUpdated?: number
+}
+
+/** lua_mod_log.txt of the last game start, with the installed packs each failing script comes from. */
+export interface ScriptReport {
+  /** When the log was written (ms); null when there is no log yet. */
+  written: number | null
+  loaded: number
+  failed: { line: string; script?: string; packs: string[] }[]
 }
 
 export interface InstallResult {
@@ -113,6 +124,12 @@ export interface Api {
   installQueueFromLoversLab(jobs: LoversLabJob[]): Promise<{ modId: string; ok: boolean; message: string }[]>
   /** Progress of the LoversLab queue; returns a function that stops listening. */
   onQueueProgress(cb: (p: LoversLabProgress) => void): () => void
+  /** Mod lists found on this PC (CA launcher, WH3 Mod Manager) to import as a profile. */
+  importSources(): Promise<ImportSource[]>
+  /** Lets the player pick a .twmods file exported by the CA launcher. */
+  importTwmods(): Promise<ImportSource | null>
+  /** Script errors of the last game start (lua_mod_log.txt). */
+  scriptReport(): Promise<ScriptReport>
   /** Titles of Workshop items from the player's Steam client, cached; by item id. */
   workshopDetails(ids: string[]): Promise<Record<string, { title: string; updated: number; preview?: string }>>
 }

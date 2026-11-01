@@ -10,6 +10,7 @@ import { ConflictList } from './ConflictList'
 import { InstallPanel } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { planLaunch } from '@shared/launch'
+import { lastMajorUpdate, olderThanGame } from '@shared/health'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -108,6 +109,29 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   )
   const order = useMemo(() => placeOwnMods(baseOrder, ownOn, facts ?? NO_FACTS, profile.pins ?? {}), [baseOrder, ownOn, facts, profile.pins])
   const byKey = new Map(resolved.entries.map((e) => [e.key, e]))
+
+  // Last update of a mod. Steam mods: the Workshop date, else (unlisted items have none) the time Steam
+  // last wrote the installed pack, which is never earlier than the update. LoversLab dates only count
+  // for mods that live on LoversLab alone (moved mods keep an old page). Packs in data: their file date
+  // (archives keep the author's date).
+  const updatedOf = (o: OrderedEntry): number | undefined => {
+    const t = parseTargetKey(o.key)
+    const mod = 'mod' in t ? data.index.mods.get(t.mod) : undefined
+    const packs = installed.get(o.key) ?? []
+    const steamDates = (mod?.sources.steam ?? []).map((s) => s.updated).filter(Boolean).map((d) => Date.parse(d!))
+    if (steamDates.length) return Math.max(...steamDates)
+    if ('steamId' in t && data.workshopDetails[t.steamId]) return data.workshopDetails[t.steamId].updated * 1000
+    const workshop = packs.filter((p) => p.source === 'workshop')
+    if (workshop.length) return Math.max(...workshop.map((p) => p.mtime))
+    if (mod?.sources.steam?.length) return undefined
+    if (mod?.sources.loverslab?.updated) return Date.parse(mod.sources.loverslab.updated)
+    return packs.length ? Math.max(...packs.map((p) => p.mtime)) : undefined
+  }
+  const changesData = (o: OrderedEntry) => o.paths.some((p) => (facts?.packs[p]?.tables.length ?? 0) > 0)
+  // Compared with the last major game update (not hotfixes) the player has installed.
+  const major = lastMajorUpdate(data.catalog.gameUpdates, data.scan?.gameUpdated)
+  const stale = new Set(order.filter((o) => olderThanGame(updatedOf(o), major?.date, changesData(o))).map((o) => o.key))
+  const gameDate = major ? `${new Date(major.date).toISOString().slice(0, 10)} (“${major.title}”)` : ''
 
   // Switch on what was just installed (dropped files, file picker, Workshop link).
   const latest = useRef(profile)
@@ -293,6 +317,12 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
       {view === 'order' && (
         <section>
           <InstallPanel missing={resolved.entries.filter((e) => !installed.has(e.key))} />
+          {stale.size > 0 && (
+            <p className="callout warn small">
+              {stale.size} mod{stale.size === 1 ? '' : 's'} of this profile change game data and were not updated since the last major game update, {gameDate}.
+              Many still work; if the game crashes, check these first (marked below).
+            </p>
+          )}
           <p className="small muted">
             Top = highest priority (its files win over the mods below). Template mods keep the tested community order; switched-on mods are
             placed by their load-order rules; your own mods by what their packs contain – move them with ↑ ↓ if you know better.
@@ -308,6 +338,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                     <td>
                       {'mod' in parseTargetKey(o.key) ? <a onClick={() => data.openMod((parseTargetKey(o.key) as { mod: string }).mod)}>{o.name}</a> : o.name}
                       {e?.pack && <div className="small muted">{e.pack}</div>}
+                      {stale.has(o.key) && (
+                        <div className="small warn-text">Older than the last major game update; changes game data.</div>
+                      )}
                       {o.own && (
                         <>
                           <div className="small muted">{(installed.get(o.key) ?? []).map((p) => p.file).join(', ')}</div>

@@ -37,6 +37,11 @@ community contributions. App UI and catalog texts are English.
     `renderer/src/OwnMods.tsx`: "Your mods" cards, drop-to-install, Workshop link. Titles of unknown
     Workshop items come from the player's Steam client once (userData/workshop-details.json);
     previews via the `wh3lmm://workshop/<id>` protocol.
+  - `src/shared/importlist.ts`: mod lists of the CA launcher (`Launcher/20190104-moddata.dat`, `.twmods`)
+    and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested).
+    `src/shared/health.ts`: mods that change game data and are older than the last major game update
+    (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
+    and script errors from `lua_mod_log.txt` mapped to their packs (tested).
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`

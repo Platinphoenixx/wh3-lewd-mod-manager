@@ -24,6 +24,8 @@ export interface Catalog {
   presets: Preset[];
   /** Per-character guides (KPW's link lists): required DLC, campaign type, what to get. */
   campaignGuides: CampaignGuide[];
+  /** Major game updates, newest first (from the game's Steam announcements; hotfixes excluded). */
+  gameUpdates?: { date: string; title: string }[];
 }
 
 export interface CampaignGuide {

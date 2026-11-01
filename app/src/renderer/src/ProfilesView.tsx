@@ -6,6 +6,7 @@ import type { Profile } from '@shared/profile'
 import { resolveTarget, useData } from './data'
 import { ModCover } from './ModCover'
 import { ProfileEditor } from './ProfileEditor'
+import { ImportDialog } from './ImportDialog'
 
 /** KPW's guide for the characters of a preset (guides name characters loosely, e.g. "Miao"). */
 function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
@@ -133,6 +134,7 @@ export function ProfilesView() {
   const data = useData()
   const [profiles, setProfiles] = useState<Profile[]>([])
   const [selected, setSelected] = useState<{ kind: 'profile' | 'preset'; id: string } | null>(null)
+  const [importing, setImporting] = useState(false)
 
   useEffect(() => {
     window.api.listProfiles().then((list) => {
@@ -169,6 +171,17 @@ export function ProfilesView() {
     <div className="split">
       <div className="sidebar-list">
         <h4>My profiles</h4>
+        <div className="pad"><button className="link" onClick={() => setImporting(true)}>Import a mod list from another launcher…</button></div>
+        {importing && (
+          <ImportDialog
+            onClose={() => setImporting(false)}
+            onCreate={(p) => {
+              setImporting(false)
+              void window.api.saveProfile(p).then(setProfiles)
+              setSelected({ kind: 'profile', id: p.id })
+            }}
+          />
+        )}
         {profiles.length === 0 && <p className="small muted pad">No profiles yet. Pick a template below and create one.</p>}
         <ul>
           {profiles.map((p) => {

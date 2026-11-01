@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs'
 import { readdir, readFile, stat } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { GameScan, InstalledPack } from '@shared/api'
+import { gameUpdatedFromManifest } from '@shared/health'
 
 export const WH3_APP_ID = '1142710'
 const GAME_DIR = 'Total War WARHAMMER III'
@@ -73,6 +74,9 @@ export async function scanGame(gamePathOverride?: string, installed: { pack: str
 
   if (scan.gamePath) {
     scan.dataPath = join(scan.gamePath, 'data')
+    // steamapps/appmanifest_1142710.acf knows when Steam last updated the game.
+    const acf = join(scan.gamePath, '..', '..', `appmanifest_${WH3_APP_ID}.acf`)
+    if (existsSync(acf)) scan.gameUpdated = gameUpdatedFromManifest(await readFile(acf, 'utf8'))
     const manifestPath = join(scan.dataPath, 'manifest.txt')
     const vanilla = existsSync(manifestPath) ? parseManifest(await readFile(manifestPath, 'utf8')) : new Set<string>()
     if (!vanilla.size) scan.errors.push('data/manifest.txt is missing; vanilla packs cannot be told apart from mods.')

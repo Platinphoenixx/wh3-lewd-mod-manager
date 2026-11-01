@@ -1,4 +1,5 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import type { ScriptReport } from '@shared/api'
 import { matchInstalled, parseTargetKey, staleDataPacks } from '@shared/match'
 import { resolveTarget, useData } from './data'
 import { ConflictList } from './ConflictList'
@@ -8,6 +9,21 @@ export function InstallView() {
   const scan = data.scan
   const result = useMemo(() => (scan ? matchInstalled(data.index, scan.packs) : null), [scan, data.index])
   const stale = useMemo(() => (scan ? staleDataPacks(data.index, scan.packs) : []), [scan, data.index])
+  const [scripts, setScripts] = useState<ScriptReport | null>(null)
+  useEffect(() => {
+    window.api.scriptReport().then(setScripts, () => setScripts(null))
+  }, [scan])
+  // Installed pack path -> mod name, for script errors.
+  const nameOfPack = (path: string) => {
+    for (const [key, packs] of result?.known ?? []) {
+      if (packs.some((p) => p.path === path)) {
+        const t = parseTargetKey(key)
+        const r = resolveTarget(data, t)
+        return r.kind === 'mod' ? r.mod.name : r.kind === 'external' ? r.ext.name : r.label
+      }
+    }
+    return path.replace(/^.*[\/]/, '')
+  }
   if (!scan || !result) return <p className="content">Scanning…</p>
 
   return (
@@ -40,6 +56,29 @@ export function InstallView() {
           </ul>
         </section>
       )}
+
+      <section>
+        <h2>Script errors in the last game start</h2>
+        {!scripts?.written && <p className="small muted">No script log yet (the game writes lua_mod_log.txt when it starts).</p>}
+        {scripts?.written && (
+          <>
+            <p className="small muted">
+              lua_mod_log.txt from {new Date(scripts.written).toLocaleString()}: {scripts.loaded} mod scripts loaded, {scripts.failed.length} problem
+              {scripts.failed.length === 1 ? '' : 's'}.
+            </p>
+            {scripts.failed.length > 0 && (
+              <ul className="small">
+                {scripts.failed.map((f, i) => (
+                  <li key={i}>
+                    <strong>{f.packs.length ? f.packs.map(nameOfPack).join(', ') : f.script ? 'base game script' : 'unknown source'}</strong>
+                    <div className="muted">{f.line}</div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </>
+        )}
+      </section>
 
       <section>
         <h2>Overlaps between installed mods</h2>

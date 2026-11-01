@@ -3,6 +3,7 @@
 Steps:
   1. crawl_ll.py         – re-read the LoversLab club (only changed pages are rewritten)
   2. Steam refresh       – public Workshop details for every known item (titles, dates, previews, packs)
+                           and the dates of major game updates from the game's Steam announcements
   3. auto entries        – every LL file / Steam item without a curated entry gets an automatic one
                            (name, author, images, files, first paragraph of the page) marked unverified
   4. build_catalog.py    – rebuild catalog/catalog.json
@@ -73,6 +74,28 @@ def refresh_steam(extra_ids: set[str]) -> dict:
     return {"steam": steam, "changed": changed}
 
 
+NEWS_API = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1142710&count=300&maxlength=1&feeds=steam_community_announcements"
+
+
+def is_major_update(title: str) -> bool:
+    """Release posts of game updates ('Patch 8.1 Now Live', '… is OUT NOW!'); hotfixes and x.y.z patches are not."""
+    return bool(re.search(r"out now|live now|now live", title, re.I)) and not re.search(
+        r"hotfix|beta|\d+\.\d+\.\d+|livestream|show & tell", title, re.I)
+
+
+def refresh_game_updates() -> list:
+    """Dates of the game's major updates from its public Steam announcements → raw/game_updates.json.
+    The app compares mod dates with them (mods older than the last major update are a hint after crashes)."""
+    news = json.load(urllib.request.urlopen(NEWS_API, timeout=60))["appnews"]["newsitems"]
+    found = [{"date": date.fromtimestamp(n["date"]).isoformat(), "title": n["title"].replace("​", "").strip()}
+             for n in news if is_major_update(n["title"])]
+    known = load(CURATOR / "raw" / "game_updates.json", [])
+    merged = {u["date"] + u["title"]: u for u in known + found}
+    out = sorted(merged.values(), key=lambda u: u["date"], reverse=True)
+    save(CURATOR / "raw" / "game_updates.json", out)
+    return out
+
+
 def first_paragraph(text: str, limit: int = 420) -> str:
     """Plain first paragraph of a page text, without spoilers, image markers or links."""
     text = re.sub(r"\[\[SPOILER\]\].*?\[\[/SPOILER\]\]", " ", text, flags=re.S)
@@ -126,6 +149,7 @@ def main() -> int:
     for f in glob.glob(str(CURATOR / "raw" / "ll" / "[0-9]*.json")):
         linked |= set(load(f).get("steam_ids", []))
     st = refresh_steam(linked)
+    refresh_game_updates()
 
     auto = auto_entries()
     save(WORK / "auto-new.json", {"mods": auto, "external": [], "notes": []})
