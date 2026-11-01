@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T20:19:47+00:00",
+  "generatedAt": "2026-11-01T20:43:08+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -11053,7 +11053,7 @@
           "file": "acorns_ensign_loi_touchup_patched.pack",
           "from": "download",
           "optional": true,
-          "note": "Optional old Ensign Loi touch-up patch from the LL page"
+          "note": "Optional old Ensign Loi touch-up patch from the LL page; not needed for Azazel's Realm (Kerberos on Discord, 2026-10-31)"
         }
       ],
       "playAs": [
@@ -40458,7 +40458,7 @@
         "MrDustV"
       ],
       "kind": "units",
-      "summary": "MrDustV's merge of Soil's Azazel and Miao Ying corrupted unit packs and the Elf corrupted units into one pack (pinned in #soiled-projects, 2026-10-26), updated for patch 9.0. Partially tested; mainly saves switching packs between playthroughs.",
+      "summary": "MrDustV's merge of Soil's Azazel and Miao Ying corrupted unit packs and the Elf corrupted units into one pack (pinned in #soiled-projects, 2026-10-26), updated for patch 9.0. Partially tested; mainly saves switching packs between playthroughs. Soil's Kislev corrupted units are not part of it and stay a separate pack.",
       "tags": [
         "soil",
         "units",
