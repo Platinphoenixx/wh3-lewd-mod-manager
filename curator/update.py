@@ -2,7 +2,8 @@
 
 Steps:
   1. crawl_ll.py         – re-read the LoversLab club (only changed pages are rewritten)
-  2. Steam refresh       – public Workshop details for every known item (titles, dates, previews, packs)
+  2. Steam refresh       – public Workshop details for every known item (titles, dates, previews, packs,
+                           subscriber counts)
                            and the dates of major game updates from the game's Steam announcements
   3. auto entries        – every LL file / Steam item without a curated entry gets an automatic one
                            (name, author, images, files, first paragraph of the page) marked unverified
@@ -69,7 +70,7 @@ def refresh_steam(extra_ids: set[str]) -> dict:
                 changed.append(x["publishedfileid"])
             fn = (x.get("filename") or "").rsplit("/", 1)[-1]
             e.update(title=x.get("title"), public=True, updated=x.get("time_updated"), preview_url=x.get("preview_url"),
-                     creator=x.get("creator"),
+                     creator=x.get("creator"), subscriptions=x.get("subscriptions"),
                      tags=[t["tag"] for t in x.get("tags", [])], description=(x.get("description") or "")[:6000])
             if fn.endswith(".pack") and fn not in e.setdefault("packs", []):
                 e["packs"].append(fn)

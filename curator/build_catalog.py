@@ -636,6 +636,10 @@ def main():
         if ll and ll["fileId"] in ll_index:
             ll["version"] = ll_index[ll["fileId"]].get("version") or ll.get("version")
             ll["updated"] = ll_index[ll["fileId"]].get("updated") or ll.get("updated")
+            raw_ll = CURATOR / "raw" / "ll" / f"{ll['fileId']}.json"
+            downloads = str((load(raw_ll) if raw_ll.exists() else {}).get("downloads") or "").replace(",", "")
+            if downloads.isdigit():
+                ll["downloads"] = int(downloads)
         elif ll and ll_index and m.get("status") not in ("superseded", "abandoned"):
             m["status"] = "abandoned"  # the LL page is gone
             m.setdefault("knownIssues", []).append("The LoversLab page was removed.")
@@ -643,6 +647,8 @@ def main():
             info = steam.get(s["id"], {})
             if info.get("updated"):
                 s["updated"] = datetime.fromtimestamp(info["updated"], timezone.utc).date().isoformat()
+            if info.get("subscriptions") is not None:
+                s["subscribers"] = info["subscriptions"]
 
     # LL download lists (read with the user's LL login): every file a mod offers, for the installer.
     ll_files_path = CURATOR / "raw" / "ll_files.json"
@@ -761,6 +767,11 @@ def main():
             if d.get("description") and m.get("curation", {}).get("confidence", "low") == "low":
                 m["curation"] = {"lastChecked": TODAY, "confidence": "medium",
                                  "openQuestions": ["Dependencies taken from the Steam description only."]}
+
+    # Normal gameplay/UI/visual mods that the lewd lists use (manual.json "generalMods").
+    for mid in man.get("generalMods", {}).get("ids", []):
+        if mid in mods and "general" not in mods[mid]["tags"]:
+            mods[mid]["tags"] = mods[mid]["tags"] + ["general"]
 
     # Script errors players sent from the app (counts only, see fetch_reports.py). One player's report is
     # not enough: an error becomes a known issue once 3 different players reported it, and only until the

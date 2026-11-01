@@ -14,6 +14,10 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
+  - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
+    character/faction, recommended by or extending profile mods) and that community lists for the same
+    character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
+    alternatives, removed template mods or other characters' campaigns. UI: `renderer/src/Suggestions.tsx`.
   - `src/renderer/src/Creators.tsx` credits: every creator whose mod is in a profile (makers of the template's
     campaign/progression/framework mods first), with support links (Patreon, Ko-fi, …) and author pages that
     `build_catalog.py` takes from the mods' own pages; Workshop uploader names come from

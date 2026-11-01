@@ -605,5 +605,39 @@
     "legendary lore": {
       "external": "ext-legendary-lore"
     }
+  },
+  "generalMods": {
+    "_note": "Normal gameplay/UI/visual mods players combine with lewd ones; build_catalog.py adds the tag \"general\".",
+    "ids": [
+      "steam-2789854789",
+      "steam-2789858755",
+      "steam-2789862740",
+      "steam-2790566124",
+      "steam-2790774407",
+      "steam-2792727547",
+      "steam-2794064207",
+      "steam-2799316652",
+      "steam-2831951203",
+      "steam-2854346056",
+      "steam-2856019044",
+      "steam-2876531798",
+      "steam-2931377022",
+      "steam-2963986848",
+      "steam-2998630271",
+      "steam-3029800597",
+      "steam-3032439976",
+      "steam-3066410796",
+      "steam-3259893195",
+      "steam-3368217482",
+      "steam-3393253521",
+      "steam-3442905174",
+      "steam-3559803702",
+      "steam-3596382314",
+      "steam-3617312541",
+      "steam-3623496262",
+      "steam-3642222276",
+      "steam-3642243727",
+      "steam-3700484893"
+    ]
   }
 }

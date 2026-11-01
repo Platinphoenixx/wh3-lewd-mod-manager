@@ -124,6 +124,8 @@ export interface Mod {
   sources: {
     loverslab?: {
       fileId: string; url: string; version?: string; updated?: string; category: string
+      /** Download count on LoversLab (from the weekly crawl). */
+      downloads?: number
       /** The page offers exactly one file; value is its type ("pack?", "7z", "rar", "zip", "text/link"). */
       singleFile?: string
       /** The download leads off LoversLab (Steam, Mega, Nexus…). */
@@ -199,6 +201,8 @@ export interface SteamItem {
   updated?: string;
   /** Variant of the mod this item is for, when one mod ships several Steam items. */
   role?: string;
+  /** Current Workshop subscribers (refreshed weekly). */
+  subscribers?: number;
 }
 
 export interface DownloadFile {

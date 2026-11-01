@@ -13,6 +13,8 @@ import { planLaunch } from '@shared/launch'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
+import { suggestForProfile } from '@shared/suggest'
+import { FillProfile } from './Suggestions'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -69,6 +71,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
   const options = useMemo(() => candidates(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
   const resolved = useMemo(() => resolveProfile(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
+  const suggestions = useMemo(() => suggestForProfile(data.catalog, data.index, preset, profile, options), [data.catalog, data.index, preset, profile, options])
 
   // Installed packs by profile key: catalog mods, and the player's own mods (packs the catalog does not know).
   const matched = useMemo(
@@ -151,6 +154,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const toggleExtra = (key: string) =>
     onChange({ ...profile, extras: extras.has(key) ? profile.extras.filter((k) => k !== key) : [...profile.extras, key] })
   const addExtra = (key: string) => !extras.has(key) && onChange({ ...profile, extras: [...profile.extras, key] })
+  const addExtras = (keys: string[]) => {
+    const add = keys.filter((k) => !extras.has(k))
+    if (add.length) onChange({ ...profile, extras: [...profile.extras, ...add], removed: profile.removed.filter((k) => !add.includes(k)) })
+  }
   const toggleBase = (key: string) =>
     onChange({ ...profile, removed: profile.removed.includes(key) ? profile.removed.filter((k) => k !== key) : [...profile.removed, key] })
 
@@ -303,6 +310,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'options' && (
         <>
+          <FillProfile lewd={suggestions.lewd} general={suggestions.general} character={suggestions.character} onAdd={addExtras} />
           <div className="filters inline">
             <input placeholder="Search options…" value={query} onChange={(e) => setQuery(e.target.value)} />
             <label className="toggle"><input type="checkbox" checked={hideConflicts} onChange={(e) => setHideConflicts(e.target.checked)} /> Hide conflicting</label>

@@ -270,3 +270,20 @@ a.plain { color: var(--text); }
 .support-pop a { display: block; padding: 5px 10px; border-radius: 4px; color: var(--text); white-space: nowrap; }
 .support-pop a:hover { background: var(--panel-2); text-decoration: none; }
 .support-pop .muted { display: block; font-size: 11px; }
+
+/* Fill this profile: suggested lewd and general mods with the reason for each. */
+.fill-profile { margin: 4px 0 22px; }
+.fill-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.fill-head h2 { margin: 0; }
+.fill-head .primary { margin: 0 0 0 auto; }
+.fill-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 12px; }
+.fill-col { border: 1px solid var(--line); border-radius: 4px; background: var(--panel); padding: 10px 14px; min-width: 0; }
+.fill-col h3 { display: flex; align-items: baseline; gap: 10px; margin: 0 0 6px; }
+.fill-col h3 .muted { font-weight: 400; font-size: 12px; }
+.fill-col h3 button { margin-left: auto; font-size: 12px; padding: 3px 10px; }
+.fill-row { display: grid; grid-template-columns: 22px 1fr; gap: 2px 6px; padding: 6px 0; border-top: 1px solid var(--line-soft); cursor: pointer; }
+.fill-row:first-of-type { border-top: none; }
+.fill-row input { margin-top: 3px; }
+.fill-row .why { grid-column: 2; font-size: 12px; color: var(--muted); }
+.fill-col .more { margin-top: 6px; font-size: 12px; }
+@media (max-width: 1100px) { .fill-cols { grid-template-columns: 1fr; } }
