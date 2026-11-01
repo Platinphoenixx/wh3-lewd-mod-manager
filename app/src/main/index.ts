@@ -10,7 +10,9 @@ import { scanGame } from './game'
 import { packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
 import { subscribeWorkshop, workshopDetails } from './steam'
-import { backupPacks, downloadFromLoversLab, installFile, installFiles, type InstalledRecord } from './installer'
+import {
+  backupPacks, downloadFromLoversLab, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
+} from './installer'
 import {
   addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings
 } from './store'
@@ -61,6 +63,12 @@ ipcMain.handle('install:loverslab', async (e, url: string, modId?: string) => {
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
   if (!/^https:\/\/www\.loverslab\.com\/files\/file\//.test(url)) return { ok: false, message: 'Not a LoversLab file page.', packs: [] }
   return downloadFromLoversLab(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender))
+})
+ipcMain.handle('install:loverslabQueue', async (e, jobs: QueueJob[]) => {
+  const scan = await currentScan()
+  if (!scan.dataPath) return []
+  const valid = jobs.filter((j) => /^https:\/\/www\.loverslab\.com\/files\/file\//.test(j.url))
+  return downloadQueueFromLoversLab(valid, scan.dataPath, BrowserWindow.fromWebContents(e.sender), (p) => e.sender.send('install:queue', p))
 })
 ipcMain.handle('install:paths', async (_e, paths: string[]) => {
   const scan = await currentScan()

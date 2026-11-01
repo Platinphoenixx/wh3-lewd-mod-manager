@@ -350,11 +350,17 @@ def main():
             continue
         if not m.get("packs"):
             src = "steam" if m.get("sources", {}).get("steam") else "download"
-            per = a.get("perPack") or {p: {} for p in a["packs"]}
-            m["packs"] = []
-            for name in a["packs"]:
-                where = sorted({k.rsplit("/", 1)[0] for k in per if k.rsplit("/", 1)[-1] == name and "/" in k})
-                m["packs"].append({"file": name, "from": src, **({"note": "In " + ", ".join(where)} if where and len(a["packs"]) > 1 else {})})
+            m["packs"] = [{"file": name, "from": src} for name in a["packs"]]
+        # Which LoversLab download holds each pack: perPack keys are "<download without extension>/<path
+        # inside>" for archives, or the pack name itself when the download is the .pack.
+        if m.get("sources", {}).get("loverslab"):
+            for p in m["packs"]:
+                homes = sorted({k.split("/", 1)[0] if "/" in k else k.rsplit(".", 1)[0]
+                                for k in (a.get("perPack") or {}) if k.rsplit("/", 1)[-1].lower() == p["file"].lower()})
+                if len(homes) == 1:
+                    p["archive"] = homes[0]
+                elif homes:
+                    p["note"] = "; ".join(x for x in (p.get("note"), "In several downloads: " + ", ".join(homes)) if x)
         own = {p.lower() for p in a["packs"]}
         header_deps[m["id"]] = [d for d in a.get("dependencies", []) if d.lower() not in own]
         # "Pack name not given" is answered now; keep the rest of such questions.

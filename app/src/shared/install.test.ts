@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { installSourceFor } from './install'
+import { archivesFor, installSourceFor, pickDownloads } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -34,5 +34,33 @@ describe('installSourceFor', () => {
 
   it('keeps a template entry that is a download as a download', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:ll', steamId: '999', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
+  })
+})
+
+describe('LoversLab file choice', () => {
+  const cards = {
+    ...mod('cards', {}),
+    packs: [
+      { file: '@female_unit_cards.pack', from: 'download' as const, archive: '@female_unit_cards_1_5' },
+      { file: '@female_unit_cards_nsfw.pack', from: 'download' as const, archive: '@female_unit_cards_nsfw_1_5' },
+      { file: 'shared.pack', from: 'download' as const }
+    ]
+  }
+  const rows = [
+    { name: '@female_unit_cards_1_5.7z', href: 'a' },
+    { name: '@female_unit_cards_nsfw_1_5.7z', href: 'b' }
+  ]
+
+  it('finds the download of the packs a template wants', () => {
+    expect(archivesFor(cards, ['@Female_Unit_Cards_NSFW.pack'])).toEqual(['@female_unit_cards_nsfw_1_5'])
+    expect(pickDownloads(rows, archivesFor(cards, ['@female_unit_cards_nsfw.pack']))).toEqual([rows[1]])
+  })
+
+  it('leaves the choice to the player when it is not clear', () => {
+    expect(archivesFor(cards)).toBeUndefined() // no template pack: variants are the player's choice
+    expect(archivesFor(cards, ['shared.pack'])).toBeUndefined() // pack without a known download
+    expect(pickDownloads(rows, undefined)).toBeNull()
+    expect(pickDownloads(rows, ['other'])).toBeNull()
+    expect(pickDownloads([rows[0]], undefined)).toEqual([rows[0]]) // a single file needs no choice
   })
 })

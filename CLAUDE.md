@@ -23,7 +23,10 @@ community contributions. App UI and catalog texts are English.
     steamworks.js as app 1142710 to subscribe/download and then exits (`steam.ts` drives it);
     `src/main/installer.ts` installs .pack/.7z/.zip/.rar into data (7zip-bin, node-unrar-js), records
     them in userData/installed.json, moves stale packs to userData/backup, and opens LoversLab in its own
-    window (persistent partition) to catch the download; `src/shared/launch.ts` + `src/main/launch.ts`
+    window (persistent partition) to catch the download; with the setting `autoLoversLab` one window
+    downloads all missing LL mods of a profile in a row (`downloadQueueFromLoversLab`; file choice via
+    `PackRef.archive` + `pickDownloads` in `src/shared/install.ts`, else the player picks; any wait is
+    LoversLab's own in that window, the app adds none and never gets around it); `src/shared/launch.ts` + `src/main/launch.ts`
     write `wh3lmm_mods.txt` (add_working_directory per Workshop folder, `mod "x.pack";` in priority
     order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
     `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).

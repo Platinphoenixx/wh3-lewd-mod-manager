@@ -83,7 +83,7 @@ export function App() {
 
   const data: AppData = {
     catalog: effective, index, scan, rescan, openMod: setOpenModId, blurImages,
-    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, workshopDetails
+    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, settings, workshopDetails
   }
 
   return (

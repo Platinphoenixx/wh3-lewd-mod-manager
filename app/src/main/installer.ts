@@ -7,6 +7,8 @@ import { app, BrowserWindow, session, type DownloadItem } from 'electron'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
+import { pickDownloads, type DownloadRow } from '@shared/install'
+import type { LoversLabJob, LoversLabProgress } from '@shared/api'
 
 const run = promisify(execFile)
 
@@ -112,18 +114,22 @@ export async function backupPacks(paths: string[], dataPath: string): Promise<{ 
   return { moved, folder }
 }
 
-// Runs on every LL page in that window: an info bar, and "Remember me" ticked on the login form,
-// because without it LL only sets session cookies and the login is gone after closing the app.
-const LL_BANNER = `(() => {
+// Runs on every LL page in the app's LL windows: an info bar, and "Remember me" ticked on the login
+// form, because without it LL only sets session cookies and the login is gone after closing the app.
+const bannerScript = (text: string) => `(() => {
   const remember = document.querySelector('input[type=checkbox][name=remember_me]')
   if (remember) remember.checked = true
-  if (document.getElementById('wh3lmm-banner')) return
-  const b = document.createElement('div')
-  b.id = 'wh3lmm-banner'
-  b.textContent = 'WH3 Lewd Mod Manager: LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login), then click "Download" and pick the file. It is installed automatically and this window closes.'
-  b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#7a2f5b;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
-  document.body.prepend(b)
+  let b = document.getElementById('wh3lmm-banner')
+  if (!b) {
+    b = document.createElement('div')
+    b.id = 'wh3lmm-banner'
+    b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#7a2f5b;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
+    document.body.prepend(b)
+  }
+  b.textContent = ${JSON.stringify(text)}
 })()`
+const LOGIN_HINT = 'LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login).'
+const LL_BANNER = bannerScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT} Then click "Download" and pick the file. It is installed automatically and this window closes.`)
 
 /**
  * Opens a LoversLab download page in its own window (persistent LL login, separate from the app).
@@ -164,4 +170,117 @@ export function downloadFromLoversLab(url: string, dataPath: string, modId: stri
     win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(LL_BANNER).catch(() => {}))
     void win.loadURL(url)
   })
+}
+
+export type QueueJob = LoversLabJob
+export type QueueProgress = LoversLabProgress
+
+// Files listed on a LoversLab download page (a page with several files).
+const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].map(row => {
+  const a = row.querySelector('a[href*="do=download"][href*="r="]')
+  const t = row.querySelector('.ipsType_break, h4, .ipsDataItem_title') || row
+  return a ? { href: a.href, name: t.textContent.trim().split(/\\s*\\n/)[0].trim() } : null
+}).filter(Boolean)`
+
+const FILE_LIMIT_MS = 15 * 60 * 1000
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
+/**
+ * Downloads several mods from LoversLab one after another in one visible window, with the saved
+ * login, and installs each. Nothing is clicked for the player: with a free account LoversLab shows
+ * its wait page before every download, and the queue simply waits until LoversLab hands out the file
+ * (or the player clicks its Download button). On pages with several files the queue takes the
+ * downloads the profile needs (pickDownloads); when that is unclear, the player picks the file.
+ */
+export async function downloadQueueFromLoversLab(
+  jobs: QueueJob[],
+  dataPath: string,
+  parent: BrowserWindow | null,
+  progress: (p: QueueProgress) => void
+): Promise<{ modId: string; ok: boolean; message: string }[]> {
+  const ses = session.fromPartition('persist:loverslab')
+  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – downloads for your profile', webPreferences: { session: ses } })
+  const downloads = join(app.getPath('userData'), 'downloads')
+  await mkdir(downloads, { recursive: true })
+  let cancelled = false
+  let banner = ''
+  win.on('closed', () => (cancelled = true))
+  win.on('page-title-updated', (e) => e.preventDefault())
+  win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(bannerScript(banner)).catch(() => {}))
+  const setBanner = (text: string) => {
+    banner = `WH3 Lewd Mod Manager: ${text}`
+    if (!win.isDestroyed()) void win.webContents.executeJavaScript(bannerScript(banner)).catch(() => {})
+  }
+
+  let finished: string[] = []
+  let failed: string | null = null
+  const onDownload = (_e: unknown, item: DownloadItem) => {
+    const target = join(downloads, basename(item.getFilename()))
+    item.setSavePath(target)
+    item.once('done', (_ev, state) => (state === 'completed' ? finished.push(target) : (failed = `Download ${state}.`)))
+  }
+  ses.on('will-download', onDownload)
+  const waitFor = async (count: number) => {
+    for (const t0 = Date.now(); finished.length < count && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; ) await sleep(1000)
+    return finished.length >= count
+  }
+
+  const results: { modId: string; ok: boolean; message: string }[] = []
+  try {
+    for (const [i, job] of jobs.entries()) {
+      const step = { modId: job.modId, index: i + 1, total: jobs.length }
+      if (cancelled) {
+        results.push({ modId: job.modId, ok: false, message: 'Cancelled.' })
+        progress({ ...step, status: 'skipped' })
+        continue
+      }
+      finished = []
+      failed = null
+      const waitNote = 'If LoversLab asks you to sign in, do that first (tick "Remember me"). Any wait LoversLab shows is LoversLab's own; the queue waits for it. Close this window to stop.'
+      setBanner(`${i + 1} of ${jobs.length}: ${job.name}. ${waitNote}`)
+      progress({ ...step, status: 'downloading' })
+      void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
+
+      // Either the file arrives, or the page lists several files (only on the first page, never on a file's own page).
+      let expected = 1
+      for (const t0 = Date.now(); !finished.length && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; await sleep(1000)) {
+        if (win.isDestroyed() || /[?&]r=/.test(win.webContents.getURL())) continue
+        const rows: DownloadRow[] = await win.webContents.executeJavaScript(ROWS_JS).catch(() => [])
+        if (new Set(rows.map((r) => r.href)).size < 2) continue
+        const picks = pickDownloads(rows, job.archives)
+        if (!picks) {
+          setBanner(`${i + 1} of ${jobs.length}: choose the file you want for ${job.name}. ${waitNote}`)
+          progress({ ...step, status: 'choose' })
+          break // the player's click starts the download
+        }
+        expected = picks.length
+        for (const [n, p] of picks.entries()) {
+          void win.loadURL(p.href).catch(() => {})
+          if (!(await waitFor(n + 1))) break
+        }
+        break
+      }
+      const ok = await waitFor(expected)
+      if (!ok) {
+        const message = cancelled ? 'Cancelled.' : failed ?? 'No download arrived in time.'
+        results.push({ modId: job.modId, ok: false, message })
+        progress({ ...step, status: cancelled ? 'skipped' : 'failed', message })
+        continue
+      }
+      const installed = []
+      for (const f of finished) {
+        const r = await installFile(f, dataPath, job.modId)
+        if (r.ok) await rm(f, { force: true })
+        installed.push(r)
+      }
+      const message = installed.map((r) => r.message).join(' · ')
+      const allOk = installed.every((r) => r.ok)
+      results.push({ modId: job.modId, ok: allOk, message })
+      progress({ ...step, status: allOk ? 'installed' : 'failed', message })
+    }
+  } finally {
+    ses.removeListener('will-download', onDownload)
+    if (!win.isDestroyed()) win.close()
+  }
+  return results
 }

@@ -1,4 +1,4 @@
-import type { Catalog } from '@catalog/schema'
+import type { Catalog, Mod } from '@catalog/schema'
 import { parseTargetKey, type CatalogIndex } from './match'
 
 export type InstallSource =
@@ -33,4 +33,39 @@ export function installSourceFor(
   const dc = mod.sources.discord?.find((d) => d.messageUrl)?.messageUrl ?? mod.sources.downloads?.find((d) => d.url.includes('discord.com'))?.url
   if (dc) return { kind: 'discord', url: dc }
   return { kind: 'manual', url: ll?.url ?? mod.sources.downloads?.[0]?.url }
+}
+
+/** One file of a LoversLab download page. */
+export interface DownloadRow {
+  name: string
+  href: string
+}
+
+const stem = (name: string) => name.replace(/\.(7z|zip|rar|pack)$/i, '').toLowerCase()
+
+/**
+ * The LoversLab downloads (archive names without extension, from the pack analysis) that contain the
+ * wanted packs. `wanted` = pack names a template asks for; without it, the mod's packs only count when
+ * there is a single download anyway. Undefined = unknown, the player has to choose.
+ */
+export function archivesFor(mod: Mod, wanted?: string[]): string[] | undefined {
+  const packs = wanted?.length ? mod.packs.filter((p) => wanted.some((w) => w.toLowerCase() === p.file.toLowerCase())) : []
+  if (!packs.length || packs.some((p) => !p.archive)) return undefined
+  return [...new Set(packs.map((p) => p.archive!))]
+}
+
+/**
+ * Which rows of a download page to fetch. A page with one file needs no choice; with several, every
+ * wanted archive has to match exactly one row, otherwise null (the player picks).
+ */
+export function pickDownloads(rows: DownloadRow[], archives?: string[]): DownloadRow[] | null {
+  if (rows.length === 1) return rows
+  if (!archives?.length) return null
+  const picked: DownloadRow[] = []
+  for (const a of archives) {
+    const hits = rows.filter((r) => stem(r.name) === stem(a))
+    if (hits.length !== 1) return null
+    picked.push(hits[0])
+  }
+  return picked
 }

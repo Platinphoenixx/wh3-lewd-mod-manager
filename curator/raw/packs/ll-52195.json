@@ -4,6 +4,12 @@
   "(X)_Naughty_Nef_XXX.pack"
  ],
  "dependencies": [],
+ "perPack": {
+  "(X)_Naughty_Nef_XXX.pack": {
+   "files": 174,
+   "dependencies": []
+  }
+ },
  "fileCount": 174,
  "byTopFolder": {
   "variantmeshes": 115,
@@ -129,699 +135,873 @@
  "files": [
   {
    "path": "db/agent_uniforms_tables/(x)_naughty_nef0a",
-   "size": 234
+   "size": 234,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "db/campaign_character_art_sets_tables/(x)_naughty_nef1a",
-   "size": 203
+   "size": 203,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "db/campaign_character_arts_tables/(x)_naughty_nef2b",
-   "size": 367
+   "size": 367,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "db/unit_variants_tables/(x)_naughty_nef3c",
-   "size": 317
+   "size": 317,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "db/variants_tables/(x)_naughty_nef4c",
-   "size": 206
+   "size": 206,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "marthvs/mod/naughty_neffy_variantselector.lua",
-   "size": 126
+   "size": 126,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_0.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t1.png",
-   "size": 150724
+   "size": 150724,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t2.png",
-   "size": 178188
+   "size": 178188,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t3.png",
-   "size": 150724
+   "size": 150724,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t4.png",
-   "size": 178188
+   "size": 178188,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t5.png",
-   "size": 178188
+   "size": 178188,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_t6.png",
-   "size": 178188
+   "size": 178188,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v1.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v2.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v3.png",
-   "size": 148219
+   "size": 148219,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v4.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v5.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferata_v6.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferatat.png",
-   "size": 178188
+   "size": 178188,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferatav.png",
-   "size": 21533
+   "size": 21533,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/faction_leaders/vmp_neferatavan.png",
-   "size": 22301
+   "size": 22301,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata.png",
-   "size": 263424
+   "size": 263424,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_0.png",
-   "size": 80993
+   "size": 80993,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_t1.png",
-   "size": 226124
+   "size": 226124,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_t2.png",
-   "size": 220124
+   "size": 220124,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_t3.png",
-   "size": 226326
+   "size": 226326,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_t4.png",
-   "size": 259753
+   "size": 259753,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_t5.png",
-   "size": 220124
+   "size": 220124,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v1.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v1.png/vmp_neferata_t6.png",
-   "size": 220124
+   "size": 220124,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v2.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v3.png",
-   "size": 223675
+   "size": 223675,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v4.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v5.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferata_v6.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferatat.png",
-   "size": 220124
+   "size": 220124,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferatav.png",
-   "size": 77100
+   "size": 77100,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/no_culture/vmp_neferatavan.png",
-   "size": 60717
+   "size": 60717,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/portholes/portrait_settings_vmp_neferata.bin",
-   "size": 261
+   "size": 261,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata.png",
-   "size": 18805
+   "size": 18805,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_0.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t1.png",
-   "size": 105455
+   "size": 105455,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t2.png",
-   "size": 116037
+   "size": 116037,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t3.png",
-   "size": 102554
+   "size": 102554,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t4.png",
-   "size": 18805
+   "size": 18805,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t5.png",
-   "size": 116037
+   "size": 116037,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_t6.png",
-   "size": 116037
+   "size": 116037,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v1.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v2.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v3.png",
-   "size": 102557
+   "size": 102557,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v4.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v5.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferata_v6.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferatat.png",
-   "size": 116037
+   "size": 116037,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferatav.png",
-   "size": 17701
+   "size": 17701,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/no_culture/vmp_neferatavan.png",
-   "size": 19517
+   "size": 19517,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "ui/portraits/units/portrait_settings_vmp_neferata.bin",
-   "size": 287
+   "size": 287,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata.variantmeshdefinition",
-   "size": 322
+   "size": 322,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t1.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t2.variantmeshdefinition",
-   "size": 315
+   "size": 315,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t3.variantmeshdefinition",
-   "size": 315
+   "size": 315,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t4.variantmeshdefinition",
-   "size": 315
+   "size": 315,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t5.variantmeshdefinition",
-   "size": 315
+   "size": 315,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_t6.variantmeshdefinition",
-   "size": 317
+   "size": 317,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v1.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v2.variantmeshdefinition",
-   "size": 313
+   "size": 313,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v3.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v4.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v5.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferata_v6.variantmeshdefinition",
-   "size": 316
+   "size": 316,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferatat.variantmeshdefinition",
-   "size": 330
+   "size": 330,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferatav.variantmeshdefinition",
-   "size": 314
+   "size": 314,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/variantmeshdefinitions/vmp_neferatavan.variantmeshdefinition",
-   "size": 346
+   "size": 346,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_body_01_submesh_6_2_weighted2_alpha_off.xml.material",
-   "size": 565
+   "size": 565,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_body_01_submesh_6_weighted4_alpha_off.xml.material",
-   "size": 567
+   "size": 567,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_head_01_2_weighted2_alpha_off.xml.material",
-   "size": 559
+   "size": 559,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_khalida_head_01_weighted4_alpha_on.xml.material",
-   "size": 558
+   "size": 558,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_su_4_weighted2_alpha_off.xml.material",
-   "size": 566
+   "size": 566,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_su_weighted4_alpha_off.xml.material",
-   "size": 566
+   "size": 566,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_submesh_6_3_weighted2_alpha_off.xml.material",
-   "size": 565
+   "size": 565,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_body_01_submesh_6_weighted4_alpha_on.xml.material",
-   "size": 567
+   "size": 567,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_head_03_su_2_weighted2_alpha_off.xml.material",
-   "size": 567
+   "size": 567,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_liche_high_priest_head_03_su_weighted4_alpha_off.xml.material",
-   "size": 567
+   "size": 567,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_king_head_01_submesh_3_2_weighted2_alpha_off.xml.material",
-   "size": 566
+   "size": 566,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_king_head_01_submesh_3_weighted4_alpha_off.xml.material",
-   "size": 566
+   "size": 566,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_prince_torso_01 - clone_weighted4_alpha_on.xml.material",
-   "size": 568
+   "size": 568,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/tmb_tomb_prince_torso_01_3_weighted2_alpha_off.xml.material",
-   "size": 560
+   "size": 560,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_bandage_body_2_weighted2_alpha_off.xml.material",
-   "size": 558
+   "size": 558,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_bandage_body_weighted4_alpha_on.xml.material",
-   "size": 558
+   "size": 558,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_lahmian_vampire_hero_head_0_2_weighted2_alpha_off.xml.material",
-   "size": 595
+   "size": 595,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_lahmian_vampire_hero_head_0_weighted4_alpha_on.xml.material",
-   "size": 594
+   "size": 594,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_off.xml.material",
-   "size": 561
+   "size": 561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_0_submes_weighted4_alpha_on.xml.material",
-   "size": 562
+   "size": 562,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_neferata_01_submesh_1_weighted4_alpha_off.xml.material",
-   "size": 560
+   "size": 560,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_sigvald_head_01_2_weighted2_alpha_off.xml.material",
-   "size": 592
+   "size": 592,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/vmp_sigvald_head_01_weighted4_alpha_on.xml.material",
-   "size": 593
+   "size": 593,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/wef_arahan_head_01_2_weighted2_alpha_off.xml.material",
-   "size": 561
+   "size": 561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/materials/wef_arahan_head_01_weighted4_alpha_on.xml.material",
-   "size": 560
+   "size": 560,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_mask.dds",
-   "size": 199
+   "size": 199,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_material.dds",
-   "size": 4814597
+   "size": 4814597,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/body_normal.dds",
-   "size": 2722816
+   "size": 2722816,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/sig_black_long_hair_01_base_colour.dds",
-   "size": 214483
+   "size": 214483,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse.dds",
-   "size": 10412439
+   "size": 10412439,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse1.dds",
-   "size": 8274860
+   "size": 8274860,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_bandage_diffuse2.dds",
-   "size": 10352813
+   "size": 10352813,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tex/vmp_lahmian_face_base_colour1.dds",
-   "size": 367822
+   "size": 367822,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tmb_neferata_s1.rigid_model_v2",
-   "size": 2156046
+   "size": 2156046,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1/vmp/neferata/tmb_neferata_s1.wsmodel",
-   "size": 622
+   "size": 622,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_body_2_weighted2_alpha_off.xml.material",
-   "size": 591
+   "size": 591,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_body_weighted4_alpha_off.xml.material",
-   "size": 587
+   "size": 587,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_boots_2_weighted2_alpha_off.xml.material",
-   "size": 561
+   "size": 561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_boots_weighted4_alpha_off.xml.material",
-   "size": 559
+   "size": 559,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_2_weighted2_alpha_off.xml.material",
-   "size": 592
+   "size": 592,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_2_weighted2_alpha_on.xml.material",
-   "size": 595
+   "size": 595,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashes_weighted4_alpha_on.xml.material",
-   "size": 594
+   "size": 594,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_hair_lashesp_weighted4_alpha_on.xml.material",
-   "size": 596
+   "size": 596,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collar_2_weighted2_alpha_off.xml.material",
-   "size": 602
+   "size": 602,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collar_weighted4_alpha_off.xml.material",
-   "size": 601
+   "size": 601,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/neferata_outfit_sleeves_collarp_weighted4_alpha_off.xml.material",
-   "size": 604
+   "size": 604,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_high_priest_body_01_su_2_weighted4_alpha_on.xml.material",
-   "size": 567
+   "size": 567,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_high_priest_body_01_su_9_weighted2_alpha_on.xml.material",
-   "size": 564
+   "size": 564,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_torso_01_1_weighted2_alpha_on.xml.material",
-   "size": 561
+   "size": 561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_2_weighted2_alpha_off.xml.material",
-   "size": 559
+   "size": 559,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_2_weighted2_alpha_on.xml.material",
-   "size": 558
+   "size": 558,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2_weighted4_alpha_on.xml.material",
-   "size": 559
+   "size": 559,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body2p_weighted4_alpha_on.xml.material",
-   "size": 561
+   "size": 561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_bandage_body_2_weighted2_alpha_on.xml.material",
-   "size": 557
+   "size": 557,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_off.xml.material",
-   "size": 562
+   "size": 562,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_2_weighted2_alpha_on.xml.material",
-   "size": 563
+   "size": 563,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0_submes_weighted4_alpha_on.xml.material",
-   "size": 563
+   "size": 563,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmet_2_weighted2_alpha_off.xml.material",
-   "size": 550
+   "size": 550,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmet_weighted4_alpha_off.xml.material",
-   "size": 550
+   "size": 550,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_helmetp_weighted4_alpha_off.xml.material",
-   "size": 552
+   "size": 552,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body.dds",
-   "size": 6138721
+   "size": 6138721,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body_material_map.dds",
-   "size": 5839399
+   "size": 5839399,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_body_norm.dds",
-   "size": 13529979
+   "size": 13529979,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair.dds",
-   "size": 4553573
+   "size": 4553573,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair2.dds",
-   "size": 3976229
+   "size": 3976229,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair_material_map.dds",
-   "size": 567561
+   "size": 567561,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_hair_norm.dds",
-   "size": 7025945
+   "size": 7025945,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_diffuse.dds",
-   "size": 1240411
+   "size": 1240411,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_diffuse2.dds",
-   "size": 2486308
+   "size": 2486308,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_material_map.dds",
-   "size": 3480800
+   "size": 3480800,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_outfit_normal.dds",
-   "size": 7507012
+   "size": 7507012,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_diffuse.dds",
-   "size": 2723761
+   "size": 2723761,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_material_map.dds",
-   "size": 2928054
+   "size": 2928054,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/neferata_weapons_normal.dds",
-   "size": 5609182
+   "size": 5609182,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/vmp_neferata_01_base_colour2.dds",
-   "size": 3616310
+   "size": 3616310,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_0.rigid_model_v2",
-   "size": 6564986
+   "size": 6564986,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_0.wsmodel",
-   "size": 415
+   "size": 415,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_helm.rigid_model_v2",
-   "size": 262558
+   "size": 262558,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_helm.wsmodel",
-   "size": 210
+   "size": 210,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t1.rigid_model_v2",
-   "size": 8559272
+   "size": 8559272,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t1.wsmodel",
-   "size": 583
+   "size": 583,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t2.rigid_model_v2",
-   "size": 8357258
+   "size": 8357258,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t2.wsmodel",
-   "size": 555
+   "size": 555,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t3.rigid_model_v2",
-   "size": 8526102
+   "size": 8526102,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t3.wsmodel",
-   "size": 579
+   "size": 579,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t4.rigid_model_v2",
-   "size": 9892014
+   "size": 9892014,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t4.wsmodel",
-   "size": 504
+   "size": 504,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t5.rigid_model_v2",
-   "size": 17447072
+   "size": 17447072,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t5.wsmodel",
-   "size": 556
+   "size": 556,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t6.rigid_model_v2",
-   "size": 11022766
+   "size": 11022766,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_t6.wsmodel",
-   "size": 421
+   "size": 421,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferatav.rigid_model_v2",
-   "size": 10040512
+   "size": 10040512,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferatav.wsmodel",
-   "size": 265
+   "size": 265,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/materials/neferata_dagger_rigid_alpha_off.xml.material",
-   "size": 584
+   "size": 584,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/materials/neferata_staff_rigid_alpha_off.xml.material",
-   "size": 589
+   "size": 589,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_dagger_1h_2.rigid_model_v2",
-   "size": 816876
+   "size": 816876,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_dagger_1h_2.wsmodel",
-   "size": 189
+   "size": 189,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_staff_2.rigid_model_v2",
-   "size": 1151544
+   "size": 1151544,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   },
   {
    "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_staff_2.wsmodel",
-   "size": 186
+   "size": 186,
+   "pack": "(X)_Naughty_Nef_XXX.pack"
   }
  ]
 }

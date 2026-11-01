@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react'
 import type { Catalog, ExternalMod, Mod, ModTarget } from '@catalog/schema'
-import type { GameScan } from '@shared/api'
+import type { GameScan, Settings } from '@shared/api'
 import type { UserRule } from '@shared/community'
 import type { CatalogIndex } from '@shared/match'
 import type { ContributeRequest } from './ContributeDialog'
@@ -19,6 +19,7 @@ export interface AppData {
   contribute(req: ContributeRequest): void
   /** "owner/name" of the GitHub repository for contributions, or "" when none is set. */
   contribRepo: string
+  settings: Settings
   /** Titles of installed Workshop items the catalog does not know (from the player's Steam client). */
   workshopDetails: Record<string, { title: string; updated: number; preview?: string }>
 }

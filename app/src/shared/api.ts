@@ -48,6 +48,23 @@ export interface Settings {
   catalogUrl?: string
   /** GitHub repository ("owner/name") that receives community contributions as issues. */
   contribRepo?: string
+  /** Download all missing LoversLab mods of a profile in one go (LoversLab's own wait still applies). */
+  autoLoversLab?: boolean
+}
+
+export interface LoversLabJob {
+  modId: string
+  name: string
+  url: string
+  archives?: string[]
+}
+
+export interface LoversLabProgress {
+  modId: string
+  index: number
+  total: number
+  status: 'downloading' | 'choose' | 'installed' | 'failed' | 'skipped'
+  message?: string
 }
 
 /** Defaults for the community build: the public repository publishes the catalog and receives contributions. */
@@ -92,6 +109,10 @@ export interface Api {
   installPaths(paths: string[]): Promise<InstallResult>
   /** Local path of a dropped file (Electron no longer exposes File.path). */
   pathForFile(file: File): string
+  /** Downloads LoversLab mods one after another in one window and installs them (setting autoLoversLab). */
+  installQueueFromLoversLab(jobs: LoversLabJob[]): Promise<{ modId: string; ok: boolean; message: string }[]>
+  /** Progress of the LoversLab queue; returns a function that stops listening. */
+  onQueueProgress(cb: (p: LoversLabProgress) => void): () => void
   /** Titles of Workshop items from the player's Steam client, cached; by item id. */
   workshopDetails(ids: string[]): Promise<Record<string, { title: string; updated: number; preview?: string }>>
 }

@@ -25,6 +25,12 @@ const api: Api = {
   installPaths: (paths) => ipcRenderer.invoke('install:paths', paths),
   pathForFile: (file) => webUtils.getPathForFile(file),
   workshopDetails: (ids) => ipcRenderer.invoke('steam:details', ids),
+  installQueueFromLoversLab: (jobs) => ipcRenderer.invoke('install:loverslabQueue', jobs),
+  onQueueProgress: (cb) => {
+    const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
+    ipcRenderer.on('install:queue', listener)
+    return () => ipcRenderer.removeListener('install:queue', listener)
+  },
   onSteamProgress: (cb) => {
     const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
     ipcRenderer.on('steam:progress', listener)

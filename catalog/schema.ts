@@ -216,6 +216,8 @@ export interface PackRef {
   steamId?: string;
   optional?: boolean;
   exclusiveGroup?: string;
+  /** LoversLab download that contains this pack, without extension (e.g. "@female_unit_cards_nsfw_1_5"); from the pack analysis. */
+  archive?: string;
   note?: string;
 }
 
