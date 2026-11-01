@@ -1,8 +1,8 @@
 /**
  * Shape of catalog/catalog.json.
  *
- * The catalog is curated by Claude from LoversLab, the Lewdhammer wiki and the Discord
- * server (see CLAUDE.md). The app only reads it; everything it knows about mods that it
+ * The catalog is curated from LoversLab, the Lewdhammer wiki and the Discord server
+ * (see docs/DEVELOPMENT.md). The app only reads it; everything it knows about mods that it
  * cannot see in the installed .pack files comes from here.
  *
  * Load-order convention (same as the launcher and wh3mm): a mod higher in the list is

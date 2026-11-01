@@ -58,7 +58,7 @@ npm run dist                            # Windows installer + portable exe in ap
 ```
 
 Catalog pipeline (Python 3.12+): `pip install -r curator/requirements.txt`, then `python curator/update.py`.
-See `CLAUDE.md` for the data layout and [`RELEASE.md`](RELEASE.md) for publishing a version.
+See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) for the data layout and [`RELEASE.md`](RELEASE.md) for publishing a version.
 
 ## Credits
 

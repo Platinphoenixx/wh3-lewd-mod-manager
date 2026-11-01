@@ -68,9 +68,9 @@ community contributions. App UI and catalog texts are English.
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
 - `curator/` – Python pipeline that builds the catalog (`pip install -r curator/requirements.txt`).
 
-## Maintenance without AI (the default)
+## Maintenance (automatic, the default)
 
-The project must keep working without anyone's AI subscription.
+The project keeps itself current without anyone's manual work or paid service.
 - `.github/workflows/update-catalog.yml` (weekly): `curator/update.py` re-crawls the LoversLab club,
   refreshes public Steam data, adds automatic entries for uncurated mods (`curator/work/auto-new.json`,
   confidence low), rebuilds the catalog, writes `CHANGES.md`, commits. Versions/dates always come fresh
@@ -85,7 +85,7 @@ The project must keep working without anyone's AI subscription.
 - Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord
   except for showing images.
 
-## Optional curation (by hand or with an AI assistant)
+## Optional curation (by hand)
 
 Curated data is layered; later layers override earlier ones field by field (a field is replaced whole):
 `auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json` < `followup-review.json`
@@ -124,4 +124,4 @@ over all layers – fix texts there.
 - Load order: higher in the list = loaded later = wins.
 - Old LoversLab `.pack` copies in the game's data folder shadow Workshop versions; see `cleanup` rules.
 - Only non-explicit images may be stored in this repository; everything else is linked externally.
-- Machine- or person-specific notes go into `CLAUDE.local.md` (gitignored), never into tracked files.
+- Machine- or person-specific notes stay in local, gitignored files, never in tracked files.
