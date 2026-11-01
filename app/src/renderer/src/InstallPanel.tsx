@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api'
-import { archivesFor, downloadHints, installSourceFor, type InstallSource } from '@shared/install'
+import { archivesFor, downloadHints, installSourceFor, packHints, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
 import { useData } from './data'
 
@@ -43,7 +43,9 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
 
   const fromNexus = async (i: Missing) => {
     setBusy(i.entry.key)
-    const r = await window.api.installFromNexus((i.source as { url: string }).url, i.modId)
+    const mod = i.modId ? data.index.mods.get(i.modId) : undefined
+    const hints = mod ? packHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : []
+    const r = await window.api.installFromNexus((i.source as { url: string }).url, i.modId, hints)
     note(r.message)
     setBusy(null)
     if (r.ok) data.rescan()
@@ -125,12 +127,12 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
       )}
       {others.length > 0 && (
         <div className="install-group">
-          {data.settings.autoLoversLab && fromLLs.length > 0 && (
+          {data.settings.autoLoversLab !== false && fromLLs.length > 1 && (
             <p>
               <button className="primary" disabled={!!busy} onClick={queueAll}>
                 Download {fromLLs.length} mod{fromLLs.length === 1 ? '' : 's'} from LoversLab
               </button>
-              <span className="small muted"> One window works through the list; LoversLab decides if a file needs a wait.</span>
+              <span className="small muted"> One window downloads and installs them one after another; LoversLab decides if a file needs a wait.</span>
             </p>
           )}
           <ul className="small">
@@ -160,7 +162,7 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
           {others.some((i) => i.source.kind === 'nexus') && (
             <p className="small muted">Nexus Mods opens in its own window: sign in once, then click “Manual download” (Premium starts at once). If the sign-in check does not let you through there, open the page in your browser and drop the downloaded file onto this window.</p>
           )}
-          <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it), then pick the file and it is installed automatically.</p>
+          <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it). The window shows which file to take; each window installs what it downloads and then closes.</p>
         </div>
       )}
       {log.length > 0 && <ul className="small install-log">{log.map((l, n) => <li key={n}>{l}</li>)}</ul>}

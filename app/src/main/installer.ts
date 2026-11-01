@@ -130,7 +130,7 @@ const bannerScript = (text: string) => `(() => {
 })()`
 const LOGIN_HINT = 'LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login).'
 
-const NEXUS_BANNER = bannerScript('WH3 Lewd Mod Manager: sign in to Nexus Mods here once (this window keeps the login). Then click "Manual download" on the file you want – not "Mod manager download". It is installed automatically and this window closes.')
+const NEXUS_LOGIN = 'WH3 Lewd Mod Manager: sign in to Nexus Mods here once (this window keeps the login).'
 
 /**
  * Opens a LoversLab download page in its own window (persistent LL login, separate from the app).
@@ -142,17 +142,26 @@ export function downloadFromLoversLab(url: string, dataPath: string, modId: stri
     ? `Take ${wanted.map((h) => `“${h.name}”${h.note ? ` (${h.note})` : ''}`).join(' and ')} – marked in the file list.`
     : hints.some((h) => h.note)
       ? `Which file: ${hints.filter((h) => h.note).map((h) => `“${h.name}” – ${h.note}`).join(' · ')}.`
-      : 'Pick the file you want.'
-  const guide = guideScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT}`, `Click “Download”. ${what} It is installed automatically and this window closes.`)
-  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – pick the file to install', banner: guide + markFilesScript(hints) }, dataPath, modId, parent)
+      : ''
+  const closes = wanted.length > 1
+    ? 'Download them one after another; each is installed automatically and this window closes after the last one.'
+    : wanted.length
+      ? 'Only this one file: it is installed automatically and this window closes.'
+      : 'Download one file only: it is installed automatically and this window closes. For another file of this mod, start the download again.'
+  const guide = guideScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT}`, ['Click “Download”.', what, closes].filter(Boolean).join(' '), LL_SIGNED_IN)
+  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – pick the file to install', banner: guide + markFilesScript(hints) }, dataPath, modId, parent, { files: Math.max(1, wanted.length) })
 }
+
+// LoversLab shows the member menu when signed in; Nexus Mods shows a "Log in" button when signed out.
+const LL_SIGNED_IN = `!!document.querySelector('#elUserLink')`
+const NEXUS_SIGNED_IN = `![...document.querySelectorAll('a, button')].some((e) => /^\\s*(log ?in|sign ?in)\\s*$/i.test(e.textContent || ''))`
 
 /**
  * Two boxes on top of every page of the LoversLab download window: the sign-in hint (only while signed
  * out – LoversLab shows the member menu #elUserLink when signed in) and, set apart in green, which file
  * to take. "Remember me" is ticked on the login form as in bannerScript.
  */
-const guideScript = (login: string, file: string) => `(() => {
+const guideScript = (login: string, file: string, signedIn: string) => `(() => {
   const remember = document.querySelector('input[type=checkbox][name=remember_me]')
   if (remember) remember.checked = true
   let b = document.getElementById('wh3lmm-banner')
@@ -163,9 +172,9 @@ const guideScript = (login: string, file: string) => `(() => {
     document.body.prepend(b)
   }
   b.replaceChildren()
-  const box = (text, css) => { const d = document.createElement('div'); d.style.cssText = 'padding:10px 16px;' + css; d.textContent = text; b.append(d) }
-  if (!document.querySelector('#elUserLink')) box(${JSON.stringify(login)}, 'background:#c9a25a;color:#1a140a')
-  box(${JSON.stringify(file)}, 'background:#22331f;color:#e4eedc;border-bottom:2px solid #6f9a5c')
+  const box = (text, css) => { const d = document.createElement('div'); d.style.cssText = 'padding:10px 16px;' + css; d.textContent = text; b.append(d); return d }
+  if (!(${signedIn})) box(${JSON.stringify(login)}, 'background:#c9a25a;color:#1a140a')
+  box(${JSON.stringify(file)}, 'background:#22331f;color:#e4eedc;border-bottom:2px solid #6f9a5c').id = 'wh3lmm-file'
 })()`
 
 /**
@@ -202,15 +211,65 @@ const markFilesScript = (hints: FileHint[]) => `;(() => {
 })()`
 
 /** The same for a Nexus Mods file page: own persistent Nexus login; Premium downloads start at once. */
-export function downloadFromNexus(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
-  return downloadInWindow({ url, partition: 'persist:nexus', title: 'Nexus Mods – sign in, then pick the file to install', banner: NEXUS_BANNER }, dataPath, modId, parent)
+export function downloadFromNexus(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, hints: FileHint[] = []): Promise<InstallResult> {
+  const wanted = hints.filter((h) => h.wanted).map((h) => h.name)
+  const file = wanted.length
+    ? `Your profile needs ${wanted.join(', ')}. The files that contain ${wanted.length > 1 ? 'them' : 'it'} are marked below – click “Manual download” on each (not “Mod manager download”).`
+    : 'Click “Manual download” on one file (not “Mod manager download”).'
+  const closes = wanted.length
+    ? ' Each is installed automatically; this window closes when everything is installed.'
+    : ' It is installed automatically and this window closes; for another file of this mod, start the download again.'
+  const guide = guideScript(NEXUS_LOGIN, file + closes, NEXUS_SIGNED_IN)
+  return downloadInWindow({ url, partition: 'persist:nexus', title: 'Nexus Mods – pick the file to install', banner: guide + markNexusScript(hints) }, dataPath, modId, parent, wanted.length ? { packs: wanted } : { files: 1 })
 }
 
-function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
+/**
+ * Marks the files on a Nexus Mods files tab. The page lists files by title only, so each file's preview
+ * (the list of its contents that "Preview file contents" opens) is read once to see which packs it holds.
+ * The green box then names the files to take.
+ */
+const markNexusScript = (hints: FileHint[]) => `;(async () => {
+  if (window.__wh3lmmNexus) return
+  window.__wh3lmmNexus = true
+  const hints = ${JSON.stringify(hints)}
+  const take = []
+  for (const dt of document.querySelectorAll('dt.file-expander-header')) {
+    const dd = dt.nextElementSibling
+    const btn = [...(dd ? dd.querySelectorAll('a, button') : [])].find((e) => /Preview file contents/i.test(e.textContent || ''))
+    if (!btn) continue
+    const url = btn.getAttribute('data-manifest-uri') || (btn.getAttribute('data-url')
+      ? 'https://file-metadata.nexusmods.com/file/nexus-files-s3-meta/' + btn.getAttribute('data-gid') + '/' + btn.getAttribute('data-mid') + '/' + btn.getAttribute('data-url') + '.json' : '')
+    if (!url) continue
+    const text = await fetch(url).then((r) => r.text()).catch(() => '')
+    const packs = (text.replace(/\\\\u0026/g, '&').match(/[^"\\/\\\\]+\\.pack/gi) || []).map((p) => p.toLowerCase())
+    const found = hints.filter((h) => packs.includes(h.name.toLowerCase()))
+    if (!found.length) continue
+    const used = found.filter((h) => h.wanted)
+    const title = dt.getAttribute('data-name') || dt.textContent.trim()
+    if (used.length) take.push(title)
+    const note = document.createElement('div')
+    note.style.cssText = 'font:14px/1.4 system-ui,sans-serif;padding:6px 16px;' + (used.length ? 'background:#22331f;color:#e4eedc;font-weight:700' : 'color:#b5b5b5')
+    note.textContent = used.length ? '✔ Your profile uses this file (' + used.map((h) => h.name).join(', ') + ')'
+      : found.map((h) => h.name + (h.note ? ' – ' + h.note : '')).join(' · ')
+    dt.after(note)
+  }
+  const box = document.getElementById('wh3lmm-file')
+  if (box && take.length) box.textContent = 'Take ' + take.map((t) => '“' + t + '”').join(' and ') + ' – marked below. Click “Manual download” on ' + (take.length > 1 ? 'each, one after another' : 'it') + ' (not “Mod manager download”). ' + (take.length > 1 ? 'Each is installed automatically; this window closes after the last one.' : 'Only this one file: it is installed automatically and this window closes.')
+})()`
+
+/**
+ * What a download window waits for before it closes: these packs (Nexus, names known), or a number of
+ * downloaded files (LoversLab). Closing the window earlier keeps what was installed so far.
+ */
+type WindowNeeds = { packs: string[] } | { files: number }
+
+function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, needs: WindowNeeds = { files: 1 }): Promise<InstallResult> {
   const { url } = site
   const ses = session.fromPartition(site.partition)
   const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: site.title, webPreferences: { session: ses } })
   const downloads = join(app.getPath('userData'), 'downloads')
+  const results: InstallResult[] = []
+  const combined = (): InstallResult => ({ ok: results.every((r) => r.ok), message: results.map((r) => r.message).join(' · '), packs: results.flatMap((r) => r.packs) })
   return new Promise((resolve) => {
     let done = false
     const finish = (r: InstallResult) => {
@@ -232,11 +291,14 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
         const r = await installFile(target, dataPath, modId)
         // The packs are in data now; the archive would only fill up the app folder.
         if (r.ok) await rm(target, { force: true })
-        finish(r)
+        results.push(r)
+        const got = new Set(results.flatMap((x) => x.packs.map((p) => basename(p).toLowerCase())))
+        const complete = 'packs' in needs ? needs.packs.every((p) => got.has(p.toLowerCase())) : results.length >= needs.files
+        if (complete || !r.ok) finish(combined())
       })
     }
     ses.on('will-download', onDownload)
-    win.on('closed', () => finish({ ok: false, message: 'Window closed without downloading.', packs: [] }))
+    win.on('closed', () => finish(results.length ? combined() : { ok: false, message: 'Window closed without downloading.', packs: [] }))
     // Keep our title instead of the page's, and show what to do on every page.
     win.on('page-title-updated', (e) => e.preventDefault())
     win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(site.banner).catch(() => {}))
@@ -321,7 +383,7 @@ export async function downloadQueueFromLoversLab(
         if (new Set(rows.map((r) => r.href)).size < 2) continue
         const picks = pickDownloads(rows, job.archives)
         if (!picks) {
-          setBanner(`${i + 1} of ${jobs.length}: choose the file you want for ${job.name}. ${waitNote}`)
+          setBanner(`${i + 1} of ${jobs.length}: choose one file for ${job.name} – after it the next mod follows. ${waitNote}`)
           progress({ ...step, status: 'choose' })
           break // the player's click starts the download
         }

@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, downloadHints, installSourceFor, pickDownloads } from './install'
+import { archivesFor, downloadHints, installSourceFor, packHints, pickDownloads } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -94,5 +94,20 @@ describe('LoversLab file choice', () => {
       { name: '@n_SlaaneshVassals_Non_Slaanesh_Factions.pack', note: 'Version for all other factions', wanted: true }
     ])
     expect(downloadHints(vassals).every((h) => !h.wanted)).toBe(true)
+  })
+
+  it('names the packs a Nexus mod needs: template packs, else the base and the usual variant', () => {
+    const parts = {
+      ...mod('parts', {}),
+      packs: [
+        { file: 'base.pack', from: 'download' as const },
+        { file: 'skin_a.pack', from: 'download' as const, exclusiveGroup: 'skin' },
+        { file: 'skin_b.pack', from: 'download' as const, exclusiveGroup: 'skin' },
+        { file: 'armour.pack', from: 'download' as const, optional: true, exclusiveGroup: 'armour' },
+        { file: 'sword.pack', from: 'download' as const, optional: true }
+      ]
+    }
+    expect(packHints(parts).filter((h) => h.wanted).map((h) => h.name)).toEqual(['base.pack', 'skin_a.pack'])
+    expect(packHints(parts, ['Skin_B.pack']).filter((h) => h.wanted).map((h) => h.name)).toEqual(['skin_b.pack'])
   })
 })

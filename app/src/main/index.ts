@@ -83,11 +83,11 @@ ipcMain.handle('install:paths', async (_e, paths: string[]) => {
   return installFiles(paths.filter((p) => typeof p === 'string'), scan.dataPath)
 })
 // Only Nexus Mods pages of this game open in the Nexus window.
-ipcMain.handle('install:nexus', async (e, url: string, modId?: string) => {
+ipcMain.handle('install:nexus', async (e, url: string, modId?: string, hints?: FileHint[]) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
   if (!/^https:\/\/www\.nexusmods\.com\/totalwarwarhammer3\/mods\/\d+/.test(url)) return { ok: false, message: 'Not a Nexus Mods page of this game.', packs: [] }
-  return downloadFromNexus(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender))
+  return downloadFromNexus(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender), hints ?? [])
 })
 ipcMain.handle('install:backup', async (_e, paths: string[]) => {
   const scan = await currentScan()

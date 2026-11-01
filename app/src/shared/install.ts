@@ -90,6 +90,25 @@ export function downloadHints(mod: Mod, wanted?: string[]): FileHint[] {
 }
 
 /**
+ * The same by pack name, for pages that do not show pack names (Nexus Mods lists files by title; the
+ * window looks into each file's preview). Without template packs, the profile uses what the mod needs:
+ * packs that are neither optional nor a variant, and of each required pick-one group the first (the usual one).
+ */
+export function packHints(mod: Mod, wanted?: string[]): FileHint[] {
+  const want = new Set((wanted ?? []).map((w) => w.toLowerCase()))
+  const useful = mod.packs.some((p) => want.has(p.file.toLowerCase()))
+  const groups = new Set<string>()
+  return mod.packs.map((p) => {
+    let used: boolean
+    if (useful) used = want.has(p.file.toLowerCase())
+    else if (p.optional) used = false
+    else if (p.exclusiveGroup) used = !groups.has(p.exclusiveGroup) && groups.add(p.exclusiveGroup).size > 0
+    else used = true
+    return { name: p.file, note: p.note, wanted: used }
+  })
+}
+
+/**
  * Which rows of a download page to fetch. A page with one file needs no choice; with several, every
  * wanted archive has to match exactly one row, otherwise null (the player picks).
  */

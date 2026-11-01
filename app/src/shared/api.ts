@@ -64,7 +64,7 @@ export interface Settings {
   catalogUrl?: string
   /** GitHub repository ("owner/name") that receives community contributions as issues. */
   contribRepo?: string
-  /** Download all missing LoversLab mods of a profile in one go (LoversLab's own wait still applies). */
+  /** Download all missing LoversLab mods of a profile in one go (on unless false; LoversLab's own wait still applies). */
   autoLoversLab?: boolean
   /** The project's relay (Cloudflare Worker) for reports and contributions without an account. Empty = default. */
   relayUrl?: string
@@ -139,7 +139,7 @@ export interface Api {
   /** Opens a LoversLab file page; the file the user downloads there is installed. */
   installFromLoversLab(url: string, modId?: string, hints?: FileHint[]): Promise<InstallResult>
   /** The same for a Nexus Mods file page (own window and login). */
-  installFromNexus(url: string, modId?: string): Promise<InstallResult>
+  installFromNexus(url: string, modId?: string, hints?: FileHint[]): Promise<InstallResult>
   /** Moves data-folder packs into a dated backup folder. */
   backupPacks(paths: string[]): Promise<{ moved: string[]; folder: string }>
   /** Subscribes to Workshop items via Steam and waits for their downloads. */

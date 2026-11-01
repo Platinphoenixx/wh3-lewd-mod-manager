@@ -55,12 +55,12 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
       <section>
         <h2>LoversLab downloads</h2>
         <label className="toggle">
-          <input type="checkbox" checked={!!settings.autoLoversLab} onChange={(e) => save({ ...settings, autoLoversLab: e.target.checked })} />
+          <input type="checkbox" checked={settings.autoLoversLab !== false} onChange={(e) => save({ ...settings, autoLoversLab: e.target.checked })} />
           Download all missing LoversLab mods of a profile in one go
         </label>
         <p className="small muted">
           One LoversLab window works through the list and installs each file; where a page offers several files, the app takes the one
-          the profile needs or asks you. LoversLab's own rules stay as they are: if LoversLab makes a download wait, the app waits with it. Downloads use your LoversLab account, so only switch this on if that is fine with you.
+          the profile needs or asks you. LoversLab's own rules stay as they are: downloads run one after another, and if LoversLab makes a download wait, the app waits with it. Downloads use your LoversLab account.
           Off: every mod opens its own LoversLab window and you click the download yourself.
         </p>
       </section>

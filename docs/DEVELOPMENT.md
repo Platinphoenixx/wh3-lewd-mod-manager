@@ -32,7 +32,10 @@ community contributions. App UI and catalog texts are English.
     steamworks.js as app 1142710 to subscribe/download and then exits (`steam.ts` drives it);
     `src/main/installer.ts` installs .pack/.7z/.zip/.rar into data (7zip-bin, node-unrar-js), records
     them in userData/installed.json, moves stale packs to userData/backup, and opens LoversLab in its own
-    window (persistent partition) to catch the download; with the setting `autoLoversLab` one window
+    window (persistent partition) to catch the download; the window's boxes say which file to take
+    (`downloadHints`/`packHints`; Nexus files are matched through their content previews) and the
+    sign-in box shows only while signed out; a window closes after the files the profile needs. Unless
+    the setting `autoLoversLab` is false, one window
     downloads all missing LL mods of a profile in a row (`downloadQueueFromLoversLab`; file choice via
     `PackRef.archive` + `pickDownloads` in `src/shared/install.ts`, else the player picks; any wait is
     LoversLab's own in that window, the app adds none and never gets around it); `src/shared/launch.ts` + `src/main/launch.ts`
