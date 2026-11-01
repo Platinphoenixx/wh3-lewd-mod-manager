@@ -17,7 +17,8 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
     character/faction, recommended by or extending profile mods) and that community lists for the same
     character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
-    alternatives, removed template mods or other characters' campaigns. UI: `renderer/src/Suggestions.tsx`.
+    removed template mods or other characters' campaigns. Suggestions that exclude each other (incompatible,
+    versions of one add-on, reskins of the same character) come as one "pick one" choice. UI: `renderer/src/Suggestions.tsx`.
   - `src/renderer/src/Creators.tsx` credits: every creator whose mod is in a profile (makers of the template's
     campaign/progression/framework mods first), with support links (Patreon, Ko-fi, …) and author pages that
     `build_catalog.py` takes from the mods' own pages; Workshop uploader names come from

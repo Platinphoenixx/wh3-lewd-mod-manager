@@ -19,6 +19,17 @@ export interface Suggestion {
   score: number
 }
 
+/** Suggestions that do not go together (two reskins of the same character, incompatible mods): pick one. */
+export interface PickOne {
+  pick: Suggestion[]
+  /** Why only one can be used, e.g. "They all change how Miao Ying looks". */
+  note: string
+  score: number
+}
+
+export type SuggestionEntry = Suggestion | PickOne
+export const isPickOne = (e: SuggestionEntry): e is PickOne => 'pick' in e
+
 /** Factions and races as they appear in catalog tags, with the name to show. */
 const FACTIONS: Record<string, string> = {
   cathay: 'Cathay', kislev: 'Kislev', slaanesh: 'Slaanesh', khorne: 'Khorne', nurgle: 'Nurgle', tzeentch: 'Tzeentch',
@@ -35,7 +46,7 @@ const short = (n: number) => (n >= 10000 ? `${Math.round(n / 1000)}k` : n >= 100
 
 export function suggestForProfile(
   catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>, options: Candidate[]
-): { lewd: Suggestion[]; general: Suggestion[]; character: string } {
+): { lewd: SuggestionEntry[]; general: SuggestionEntry[]; character: string } {
   const removed = new Set(profile.removed)
   const inProfile = new Set([...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras])
   const profileMods = [...inProfile].flatMap((k) => (k.startsWith('mod:') && index.mods.get(k.slice(4)) ? [index.mods.get(k.slice(4))!] : []))
@@ -103,5 +114,54 @@ export function suggestForProfile(
     out[general ? 'general' : 'lewd'].push({ key: c.key, mod: m, reasons: reasons.slice(0, 2), score })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
-  return out
+  return { lewd: pickOneGroups(catalog, out.lewd, characters), general: pickOneGroups(catalog, out.general, characters), character: leadName }
+}
+
+/**
+ * Joins suggestions that exclude each other into "pick one" groups: mods marked incompatible, versions of
+ * the same add-on (a shared exclusiveGroup), and reskins of the same subject (they replace the same models).
+ */
+function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<string, string>): SuggestionEntry[] {
+  const at = new Map(list.map((s, i) => [s.mod.id, i]))
+  const parent = list.map((_, i) => i)
+  const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])))
+  const notes = new Map<number, string>()
+  const join = (a: number, b: number, note: string) => {
+    const ra = find(a)
+    const rb = find(b)
+    if (ra === rb) return
+    parent[rb] = ra
+    notes.set(ra, notes.get(ra) ?? notes.get(rb) ?? note)
+  }
+  for (const [i, sug] of list.entries()) {
+    for (const r of sug.mod.relations) {
+      if (r.kind === 'incompatible' && 'mod' in r.target && at.has(r.target.mod)) join(i, at.get(r.target.mod)!, 'These do not work together')
+    }
+  }
+  for (const m of catalog.mods) {
+    const groups = new Map<string, number[]>()
+    for (const r of m.relations) {
+      if (r.exclusiveGroup && 'mod' in r.target && at.has(r.target.mod)) groups.set(r.exclusiveGroup, [...(groups.get(r.exclusiveGroup) ?? []), at.get(r.target.mod)!])
+    }
+    for (const members of groups.values()) for (const j of members.slice(1)) join(members[0], j, `Versions of the same add-on for ${m.name}`)
+  }
+  // Reskins replace models: two reskins of the same character collide. (Faction-wide reskins often touch
+  // different units, so they are not grouped without a known incompatibility.)
+  const subjects = new Map<string, number>()
+  for (const [i, sug] of list.entries()) {
+    if (sug.mod.kind !== 'reskin') continue
+    const chars = new Set([
+      ...(sug.mod.playAs ?? []).map((p) => p.character),
+      ...sug.mod.tags.map(norm).filter((t) => characters.has(t)).map((t) => characters.get(t)!)
+    ])
+    for (const subject of chars) {
+      if (subjects.has(subject)) join(subjects.get(subject)!, i, `They all change how ${subject} looks`)
+      else subjects.set(subject, i)
+    }
+  }
+  const byRoot = new Map<number, Suggestion[]>()
+  for (const [i, sug] of list.entries()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), sug])
+  const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, members]) =>
+    members.length === 1 ? members[0] : { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score })
+  return entries.sort((a, b) => b.score - a.score)
 }

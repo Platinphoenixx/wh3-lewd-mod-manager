@@ -287,3 +287,10 @@ a.plain { color: var(--text); }
 .fill-row .why { grid-column: 2; font-size: 12px; color: var(--muted); }
 .fill-col .more { margin-top: 6px; font-size: 12px; }
 @media (max-width: 1100px) { .fill-cols { grid-template-columns: 1fr; } }
+.fill-pick { display: block; }
+.fill-pick .pick-head { font-size: 12px; font-weight: 600; margin-bottom: 2px; }
+.fill-pick .pick-head .muted { font-weight: 400; }
+.pick-option { display: grid; grid-template-columns: 22px 1fr; gap: 6px; padding: 3px 0; cursor: pointer; }
+.pick-option input { margin-top: 3px; }
+.pick-option .why { display: block; font-size: 12px; color: var(--muted); }
+input[type='radio'] { accent-color: var(--accent); }
