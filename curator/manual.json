@@ -426,6 +426,48 @@
         }
       ],
       "_fix": "Steam pack name per Readman's lists."
+    },
+    {
+      "id": "ll-52195",
+      "packs": [
+        {
+          "file": "(X)_Naughty_Nef_XXX.pack",
+          "from": "download",
+          "note": "Pack name from the installed file (app install test, 2026-11-01). 7z archive with this single pack; no dependency list in the pack header."
+        }
+      ]
+    },
+    {
+      "id": "ll-37353",
+      "packs": [
+        {
+          "file": "Corrupted_Cathay_Miao_flag.pack",
+          "from": "download",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ]
+    },
+    {
+      "id": "steam-3809129102",
+      "packs": [
+        {
+          "file": "@zeta_neferata_reskin_stockings.pack",
+          "from": "steam",
+          "steamId": "3809129102",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ]
+    },
+    {
+      "id": "steam-3809988722",
+      "packs": [
+        {
+          "file": "Beautiful Neferata.pack",
+          "from": "steam",
+          "steamId": "3809988722",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ]
     }
   ],
   "external": [

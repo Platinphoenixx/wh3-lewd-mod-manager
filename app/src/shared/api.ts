@@ -9,6 +9,8 @@ export interface InstalledPack {
   source: 'workshop' | 'data'
   /** Workshop item id (folder name) for workshop packs. */
   steamId?: string
+  /** Catalog mod this app installed the pack for (from installed.json; data packs only). */
+  modId?: string
   path: string
   size: number
   mtime: number

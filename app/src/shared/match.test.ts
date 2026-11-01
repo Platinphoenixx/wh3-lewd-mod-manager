@@ -52,6 +52,11 @@ describe('match', () => {
     expect(unknown.map((p) => p.file)).toEqual(['something_else.pack'])
   })
 
+  it('recognises packs the app installed for a mod even when the catalog has no pack name', () => {
+    const { known } = matchInstalled(index, [{ ...pack('(X)_Unnamed.pack', 'data'), modId: 'll-23876' }])
+    expect([...known.keys()]).toEqual(['mod:ll-23876'])
+  })
+
   it('marks preset entries installed, missing, or installed in another version', () => {
     const status = presetStatus(index, catalog.presets[0], [
       pack('groovy_mct.pack', 'workshop', '2927955021'),

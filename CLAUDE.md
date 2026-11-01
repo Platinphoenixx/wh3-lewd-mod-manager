@@ -25,7 +25,9 @@ community contributions. App UI and catalog texts are English.
     them in userData/installed.json, moves stale packs to userData/backup, and opens LoversLab in its own
     window (persistent partition) to catch the download; `src/shared/launch.ts` + `src/main/launch.ts`
     write `wh3lmm_mods.txt` (add_working_directory per Workshop folder, `mod "x.pack";` in priority
-    order, first line wins) and start `Warhammer3.exe wh3lmm_mods.txt;`.
+    order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
+    `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).
+    Packs the app installed are matched to their mod via userData/installed.json.
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`

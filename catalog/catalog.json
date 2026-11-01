@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T21:59:31+00:00",
+  "generatedAt": "2026-11-01T12:32:07+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-10-31T21:31:52+00:00",
+      "fetchedAt": "2026-10-31T22:01:00+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -135,7 +135,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -184,7 +184,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -233,7 +233,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -527,7 +527,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -568,7 +568,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -937,7 +937,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -982,7 +982,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1147,7 +1147,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1526,7 +1526,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1715,7 +1715,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -2827,7 +2827,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -2928,7 +2928,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -2972,7 +2972,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -3020,7 +3020,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -3922,7 +3922,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -3963,10 +3963,17 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Beautiful Neferata.pack",
+          "from": "steam",
+          "steamId": "3809988722",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4013,7 +4020,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4063,7 +4070,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4113,7 +4120,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4148,7 +4155,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4193,7 +4200,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4851,7 +4858,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -5565,7 +5572,13 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Corrupted_Cathay_Miao_flag.pack",
+          "from": "download",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -6452,7 +6465,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -6638,7 +6651,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -6679,7 +6692,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -6752,7 +6765,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -6855,7 +6868,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -6984,7 +6997,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -7575,7 +7588,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -7621,7 +7634,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -8382,7 +8395,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -8426,7 +8439,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -8979,7 +8992,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9159,7 +9172,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9205,7 +9218,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9631,7 +9644,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -9673,7 +9686,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9712,7 +9725,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9751,7 +9764,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -9799,7 +9812,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -9943,7 +9956,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -9985,7 +9998,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -10020,7 +10033,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11028,7 +11041,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "high"
       },
       "images": [
@@ -11122,7 +11135,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "loadOrder": {
@@ -11625,7 +11638,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -11677,7 +11690,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11899,7 +11912,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       }
     },
@@ -12069,7 +12082,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "knownIssues": [
@@ -12247,7 +12260,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12285,7 +12298,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12438,7 +12451,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12479,7 +12492,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12524,7 +12537,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12599,7 +12612,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -12647,7 +12660,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -12684,7 +12697,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -12736,7 +12749,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -13283,7 +13296,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -13396,7 +13409,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -13761,7 +13774,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -13895,7 +13908,13 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "(X)_Naughty_Nef_XXX.pack",
+          "from": "download",
+          "note": "Pack name from the installed file (app install test, 2026-11-01). 7z archive with this single pack; no dependency list in the pack header."
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -13987,10 +14006,17 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@zeta_neferata_reskin_stockings.pack",
+          "from": "steam",
+          "steamId": "3809129102",
+          "note": "Pack name from the installed file (app install test, 2026-11-01)."
+        }
+      ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -14069,7 +14095,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -14680,7 +14706,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -14814,7 +14840,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -14857,7 +14883,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -14928,7 +14954,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -14971,7 +14997,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15038,7 +15064,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15319,7 +15345,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15365,7 +15391,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15451,7 +15477,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15584,7 +15610,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15627,7 +15653,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15938,7 +15964,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -15985,7 +16011,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16247,7 +16273,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16300,7 +16326,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16363,7 +16389,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16563,7 +16589,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16607,7 +16633,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16751,7 +16777,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17030,7 +17056,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17071,7 +17097,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17111,7 +17137,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17151,7 +17177,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17191,7 +17217,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17231,7 +17257,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17271,7 +17297,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -17577,7 +17603,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -18542,7 +18568,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -18612,7 +18638,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -18651,7 +18677,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -19413,7 +19439,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -19457,7 +19483,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -19503,7 +19529,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -19542,7 +19568,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -20156,7 +20182,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -20863,7 +20889,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -20906,7 +20932,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "images": [
@@ -20948,7 +20974,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "status": "superseded",
@@ -20979,7 +21005,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -21250,7 +21276,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -21461,7 +21487,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -21813,7 +21839,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "playAs": [
@@ -22111,7 +22137,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium"
       },
       "loadOrder": {
@@ -22545,7 +22571,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -22583,7 +22609,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-10-31",
+        "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."

@@ -3,6 +3,7 @@ import { writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { GameScan } from '@shared/api'
 import { buildModList, MOD_LIST_FILE } from '@shared/launch'
+import { WH3_APP_ID } from './game'
 
 export interface LaunchResult {
   ok: boolean
@@ -25,10 +26,13 @@ export async function launchGame(scan: GameScan, packPaths: string[]): Promise<L
     return { ok: false, message: `Could not write ${MOD_LIST_FILE} into the game folder: ${(e as Error).message}` }
   }
   // The semicolon is part of the game's argument syntax; pass it as one argv value, without a shell.
+  // Without SteamAppId the game restarts itself through Steam, which asks about the "custom
+  // parameter" and then opens the CA launcher with all mods off: the mod list is lost.
   const child = spawn(join(scan.gamePath, 'Warhammer3.exe'), [`${MOD_LIST_FILE};`], {
     cwd: scan.gamePath,
     detached: true,
-    stdio: 'ignore'
+    stdio: 'ignore',
+    env: { ...process.env, SteamAppId: WH3_APP_ID, SteamGameId: WH3_APP_ID }
   })
   const started = await new Promise<string | null>((resolve) => {
     child.once('error', (e) => resolve(e.message))

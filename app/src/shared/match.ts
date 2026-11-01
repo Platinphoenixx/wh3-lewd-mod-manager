@@ -50,6 +50,8 @@ export function targetFor(index: CatalogIndex, pack: InstalledPack): ModTarget |
     const t = index.bySteamId.get(pack.steamId)
     if (t) return t
   }
+  // Packs this app installed itself carry the mod they were downloaded for.
+  if (pack.modId && index.mods.has(pack.modId)) return { mod: pack.modId }
   return index.byPack.get(pack.file.toLowerCase())
 }
 

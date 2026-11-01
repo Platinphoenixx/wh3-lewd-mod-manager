@@ -101,13 +101,26 @@ export async function backupPacks(paths: string[], dataPath: string): Promise<{ 
   return { moved, folder }
 }
 
+// Runs on every LL page in that window: an info bar, and "Remember me" ticked on the login form,
+// because without it LL only sets session cookies and the login is gone after closing the app.
+const LL_BANNER = `(() => {
+  const remember = document.querySelector('input[type=checkbox][name=remember_me]')
+  if (remember) remember.checked = true
+  if (document.getElementById('wh3lmm-banner')) return
+  const b = document.createElement('div')
+  b.id = 'wh3lmm-banner'
+  b.textContent = 'WH3 Lewd Mod Manager: LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login), then click "Download" and pick the file. It is installed automatically and this window closes.'
+  b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#7a2f5b;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
+  document.body.prepend(b)
+})()`
+
 /**
  * Opens a LoversLab download page in its own window (persistent LL login, separate from the app).
  * When the user picks a file, it is saved to the app's download folder and installed.
  */
 export function downloadFromLoversLab(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
   const ses = session.fromPartition('persist:loverslab')
-  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – pick the file to install', webPreferences: { session: ses } })
+  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – sign in, then pick the file to install', webPreferences: { session: ses } })
   const downloads = join(app.getPath('userData'), 'downloads')
   return new Promise((resolve) => {
     let done = false
@@ -125,12 +138,19 @@ export function downloadFromLoversLab(url: string, dataPath: string, modId: stri
         item.once('done', async (_ev, state) => {
           if (state !== 'completed') return finish({ ok: false, message: `Download ${state}.`, packs: [] })
           const s = await stat(target)
-          finish(s.size > 0 ? await installFile(target, dataPath, modId) : { ok: false, message: 'Empty download.', packs: [] })
+          if (!s.size) return finish({ ok: false, message: 'Empty download.', packs: [] })
+          const r = await installFile(target, dataPath, modId)
+          // The packs are in data now; the archive would only fill up the app folder.
+          if (r.ok) await rm(target, { force: true })
+          finish(r)
         })
       })
     }
     ses.on('will-download', onDownload)
     win.on('closed', () => finish({ ok: false, message: 'Window closed without downloading.', packs: [] }))
+    // Keep our title instead of the page's, and show what to do on every LL page.
+    win.on('page-title-updated', (e) => e.preventDefault())
+    win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(LL_BANNER).catch(() => {}))
     void win.loadURL(url)
   })
 }

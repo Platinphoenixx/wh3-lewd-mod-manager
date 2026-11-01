@@ -8,9 +8,9 @@ import { scanGame } from './game'
 import { packConflicts } from './pack'
 import { launchGame } from './launch'
 import { subscribeWorkshop } from './steam'
-import { backupPacks, downloadFromLoversLab, installFile } from './installer'
+import { backupPacks, downloadFromLoversLab, installFile, type InstalledRecord } from './installer'
 import {
-  addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, saveProfile, saveRules, saveSettings
+  addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings
 } from './store'
 
 // WH3LMM_USER_DATA puts profiles/settings into another folder (portable use, tests with throwaway data).
@@ -40,7 +40,9 @@ ipcMain.handle('rules:list', () => listRules())
 ipcMain.handle('rules:save', (_e, r: UserRule[]) => saveRules(r))
 ipcMain.handle('contributions:list', () => listContributions())
 ipcMain.handle('contributions:add', (_e, c: Contribution) => addContribution(c))
-const currentScan = async () => scanGame((await getSettings()).gamePath)
+// Every scan knows which data packs this app installed and for which mod (installed.json).
+const currentScan = async () =>
+  scanGame((await getSettings()).gamePath, await readJson<InstalledRecord[]>('installed.json', []))
 ipcMain.handle('install:file', async (e, modId?: string) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
@@ -63,13 +65,13 @@ ipcMain.handle('install:backup', async (_e, paths: string[]) => {
   return scan.dataPath ? backupPacks(paths.filter((p) => dataPacks.has(p)), scan.dataPath) : { moved: [], folder: '' }
 })
 ipcMain.handle('steam:subscribe', (e, ids: string[]) => subscribeWorkshop(ids.filter((x) => /^\d{6,12}$/.test(x)), e.sender))
-ipcMain.handle('game:launch', async (_e, paths: string[]) => launchGame(await scanGame((await getSettings()).gamePath), paths))
+ipcMain.handle('game:launch', async (_e, paths: string[]) => launchGame(await currentScan(), paths))
 // Only paths the last game scan found may be opened (the renderer never names arbitrary files).
 ipcMain.handle('packs:conflicts', async (_e, paths: string[]) => {
-  const known = new Set((await scanGame((await getSettings()).gamePath)).packs.map((p) => p.path))
+  const known = new Set((await currentScan()).packs.map((p) => p.path))
   return packConflicts(paths.filter((p) => known.has(p)))
 })
-ipcMain.handle('game:scan', async () => scanGame((await getSettings()).gamePath))
+ipcMain.handle('game:scan', () => currentScan())
 ipcMain.handle('shell:openExternal', (_e, url: string) => {
   if (/^https?:\/\//.test(url)) return shell.openExternal(url)
 })

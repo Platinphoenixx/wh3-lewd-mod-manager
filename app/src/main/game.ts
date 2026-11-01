@@ -52,7 +52,7 @@ async function packsIn(dir: string, source: InstalledPack['source'], steamId?: s
 }
 
 /** `gamePathOverride` comes from the user's settings and wins over auto-detection. */
-export async function scanGame(gamePathOverride?: string): Promise<GameScan> {
+export async function scanGame(gamePathOverride?: string, installed: { pack: string; modId?: string }[] = []): Promise<GameScan> {
   const scan: GameScan = { gamePath: null, dataPath: null, workshopPaths: [], packs: [], vanillaPackCount: 0, errors: [] }
   const libs = await libraries()
   if (gamePathOverride) {
@@ -77,6 +77,9 @@ export async function scanGame(gamePathOverride?: string): Promise<GameScan> {
     const vanilla = existsSync(manifestPath) ? parseManifest(await readFile(manifestPath, 'utf8')) : new Set<string>()
     if (!vanilla.size) scan.errors.push('data/manifest.txt is missing; vanilla packs cannot be told apart from mods.')
     const dataPacks = await packsIn(scan.dataPath, 'data')
+    // `installed` = the app's own install records: they name the catalog mod a pack was downloaded for.
+    const installedFor = new Map(installed.filter((r) => r.modId).map((r) => [r.pack.toLowerCase(), r.modId]))
+    for (const p of dataPacks) p.modId = installedFor.get(p.file.toLowerCase())
     scan.vanillaPackCount = dataPacks.filter((p) => vanilla.has(p.file.toLowerCase())).length
     scan.packs.push(...dataPacks.filter((p) => !vanilla.has(p.file.toLowerCase())))
   } else if (libs.length) {

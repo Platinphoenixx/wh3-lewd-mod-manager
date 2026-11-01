@@ -105,7 +105,7 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
               </li>
             ))}
           </ul>
-          <p className="small muted">LoversLab opens in its own window (log in once); pick the file there and it is installed automatically.</p>
+          <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it), then pick the file and it is installed automatically.</p>
         </div>
       )}
       {log.length > 0 && <ul className="small install-log">{log.map((l, n) => <li key={n}>{l}</li>)}</ul>}
