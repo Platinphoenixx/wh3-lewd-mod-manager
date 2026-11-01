@@ -1,5 +1,5 @@
 import { execFile } from 'node:child_process'
-import { existsSync, mkdirSync, rmSync } from 'node:fs'
+import { appendFileSync, existsSync, mkdirSync, rmSync } from 'node:fs'
 import { copyFile, mkdir, mkdtemp, readdir, rename, rm, stat } from 'node:fs/promises'
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
@@ -308,6 +308,15 @@ const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].
 }).filter(Boolean)`
 
 const FILE_LIMIT_MS = 15 * 60 * 1000
+
+/** What the download windows do, for finding out why one hangs (userData/queue.log, newest at the end). */
+function qlog(text: string): void {
+  try {
+    appendFileSync(join(app.getPath('userData'), 'queue.log'), `${new Date().toISOString()} ${text}\n`)
+  } catch {
+    // logging must never break a download
+  }
+}
 const IMAGE = /\.(png|jpe?g|gif|webp)$/i
 
 /** A plain dark page for the queue window while a file downloads. */
@@ -340,6 +349,9 @@ export async function downloadQueueFromLoversLab(
   let guide = ''
   win.on('closed', () => (cancelled = true))
   win.on('page-title-updated', (e) => e.preventDefault())
+  qlog(`queue: ${jobs.length} jobs`)
+  win.webContents.on('did-navigate', (_e, url, code) => qlog(`page ${code} ${url.slice(0, 160)}`))
+  win.webContents.on('did-fail-load', (_e, code, desc, url) => qlog(`load failed ${code} ${desc} ${url.slice(0, 160)}`))
   const onLoversLab = () => !win.isDestroyed() && win.webContents.getURL().startsWith('https://www.loverslab.com/')
   win.webContents.on('did-finish-load', () => void (onLoversLab() && win.webContents.executeJavaScript(guide).catch(() => {})))
   const setGuide = (text: string, hints: FileHint[] = []) => {
@@ -355,11 +367,16 @@ export async function downloadQueueFromLoversLab(
   let failed: string | null = null
   const onDownload = (_e: unknown, item: DownloadItem) => {
     // Preview images are not mods: skip them and keep waiting for the real file.
+    qlog(`download ${item.getFilename()} (${item.getTotalBytes()} bytes) from ${item.getURL().slice(0, 120)}`)
     if (IMAGE.test(item.getFilename())) return item.cancel()
     const target = join(downloads, basename(item.getFilename()))
     rmSync(target, { force: true }) // a leftover of an earlier, interrupted run makes the download hang
     item.setSavePath(target)
-    item.once('done', (_ev, state) => (state === 'completed' ? finished.push(target) : (failed = `Download ${state}.`)))
+    item.once('done', (_ev, state) => {
+      qlog(`done ${state} ${item.getFilename()}`)
+      if (state === 'completed') finished.push(target)
+      else failed = `Download ${state}.`
+    })
     // The download ends the page; show what is going on instead of an empty window.
     if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
   }
@@ -384,6 +401,7 @@ export async function downloadQueueFromLoversLab(
       const hints = job.hints ?? []
       const wanted = hints.filter((h) => h.wanted).map((h) => `“${h.name}”`)
       current = `${i + 1} of ${jobs.length} – ${job.name}`
+      qlog(`job ${current} ${job.url}`)
       setGuide(`${current}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
       progress({ ...step, status: 'downloading' })
       void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
@@ -394,6 +412,7 @@ export async function downloadQueueFromLoversLab(
         if (!onLoversLab() || /[?&]r=/.test(win.webContents.getURL())) continue
         const rows: DownloadRow[] = await pageJs(ROWS_JS, [] as DownloadRow[])
         if (new Set(rows.map((r) => r.href)).size < 2) continue
+        qlog(`file list: ${rows.map((r) => r.name).join(', ')}`)
         const picks = pickDownloads(rows, job.archives)
         if (!picks) {
           const which = wanted.length
@@ -426,6 +445,7 @@ export async function downloadQueueFromLoversLab(
         installed.push(r)
       }
       const message = installed.map((r) => r.message).join(' · ')
+      qlog(`installed: ${message}`)
       const allOk = installed.every((r) => r.ok)
       results.push({ modId: job.modId, ok: allOk, message })
       progress({ ...step, status: allOk ? 'installed' : 'failed', message })
