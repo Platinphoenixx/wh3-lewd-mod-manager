@@ -18,13 +18,15 @@ release is all it takes for players to hear about it.
 
 **WH3 Lewd Mod Manager 0.1.0 – first public version. 18+ only.**
 
-- Catalog of the lewd mods for Total War: Warhammer III (LoversLab, Steam Workshop, Discord) with
+- Catalog of the lewd mods for Total War: Warhammer III (LoversLab, Steam Workshop, Nexus Mods, Discord) with
   requirements, conflicts, load-order rules and images.
 - Profiles from tested community lists and guides, with every optional add-on; your own mods are placed
   in the load order with a reason.
+- *Fill this profile*: suggested lewd and general mods that fit, with pick-one choices for mods that
+  exclude each other.
 - *Made by*: who made what in each list, with their support pages.
-- Installs Workshop items through Steam and LoversLab files with your own login; starts the game with the
-  profile's load order.
+- Installs Workshop items through Steam, LoversLab and Nexus Mods files with your own login; starts the game
+  with the profile's load order, loading only the version you chose when a mod comes in several.
 - Script errors after a game session, with a ready-made report for the modder.
 - Suggestions and problem reports without a GitHub account.
 
