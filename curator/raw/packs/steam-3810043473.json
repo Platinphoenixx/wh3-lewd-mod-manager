@@ -1,0 +1,79 @@
+{
+ "mod": "steam-3810043473",
+ "packs": [
+  "[LIG]Neferata.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "[LIG]Neferata.pack": {
+   "files": 9,
+   "dependencies": []
+  }
+ },
+ "fileCount": 9,
+ "byTopFolder": {
+  "variantmeshes": 8,
+  "ui": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 13,
+  "inMod": 5,
+  "inBaseGame": 4,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [
+  "dka_fantasyneferata.pack",
+  "Beautiful Neferata.pack",
+  "@zeta_neferata_reskin_stockings.pack"
+ ],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/portholes/portrait_settings__liig_nef.bin",
+   "size": 148,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/vmp_neferata.variantmeshdefinition",
+   "size": 999,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/lig_neferata_01.rigid_model_v2",
+   "size": 2288412,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/lig_neferata_01.wsmodel",
+   "size": 749,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/lig_neferata.xml.material",
+   "size": 4672,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/lig_neferata_b.dds",
+   "size": 4194452,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/lig_neferata_mask.dds",
+   "size": 1048704,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/tex/vmp_neferata_weapons_01_base_colour.dds",
+   "size": 262292,
+   "pack": "[LIG]Neferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_props/vmp_neferata_staff_01.rigid_model_v2",
+   "size": 224412,
+   "pack": "[LIG]Neferata.pack"
+  }
+ ]
+}

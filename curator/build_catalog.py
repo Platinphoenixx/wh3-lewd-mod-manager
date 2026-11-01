@@ -243,7 +243,7 @@ def main():
     parts += sorted(glob.glob(str(CURATOR / "work" / "part-*.json")))
     # followup-*.json: field overrides from later curation passes (same shape as a part)
     # Later passes win: LL and Steam follow-ups first, then research, then community contributions.
-    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-archives.json": 3, "followup-community.json": 4}
+    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-review.json": 3, "followup-archives.json": 4, "followup-community.json": 5}
     parts += sorted(glob.glob(str(CURATOR / "work" / "followup-*.json")), key=lambda p: (order.get(Path(p).name, 2), p))
     manual = CURATOR / "manual.json"
     if manual.exists():

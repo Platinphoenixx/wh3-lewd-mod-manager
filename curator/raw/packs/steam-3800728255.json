@@ -1,0 +1,1005 @@
+{
+ "mod": "steam-3800728255",
+ "packs": [
+  "!Readman_Alarielle_ZZZ.pack",
+  "!Readman_Alarielle_ZZZ_alt.pack"
+ ],
+ "dependencies": [
+  "!b_mixer.pack"
+ ],
+ "perPack": {
+  "!Readman_Alarielle_ZZZ.pack": {
+   "files": 95,
+   "dependencies": [
+    "!b_mixer.pack"
+   ]
+  },
+  "!Readman_Alarielle_ZZZ_alt.pack": {
+   "files": 95,
+   "dependencies": [
+    "!b_mixer.pack"
+   ]
+  }
+ },
+ "fileCount": 95,
+ "byTopFolder": {
+  "variantmeshes": 94,
+  ".luarc.json": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 128,
+  "inMod": 57,
+  "inBaseGame": 58,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu6/bst/bst_bestigors/tex/corrupted_white_lions_hair_colour_02.dds",
+   "variantmeshes/wh_variantmodels/hu6/bst/bst_wargor/tex/corrupted_white_lions_head_color.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_fem_ungor/tex/corrupted_elf_head_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_fem_ungor/tex/full_faction_mask.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_props/corrupted_white_lions_axe_01.wsmodel",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_props/corrupted_white_lions_axe_02.wsmodel",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_props/corrupted_white_lions_axe_03.wsmodel",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_props/corrupted_white_lions_axe_04.wsmodel",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_props/corrupted_white_lions_axe_05.wsmodel",
+   "variantmeshes/wh_variantmodels/hu6b/bst/bst_ungor/tex/corrupted_white_lions_legs_color.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_pelt_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_head_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_white_lions_body_01_base_colour.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": ".luarc.json",
+   "size": 342,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": ".luarc.json",
+   "size": 342,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions.variantmeshdefinition",
+   "size": 227,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions.variantmeshdefinition",
+   "size": 227,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions_base.variantmeshdefinition",
+   "size": 438,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions_base.variantmeshdefinition",
+   "size": 438,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions_weapons.variantmeshdefinition",
+   "size": 224,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/corrupted_white_lions_weapons.variantmeshdefinition",
+   "size": 224,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_01.rigid_model_v2",
+   "size": 1647620,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_01.rigid_model_v2",
+   "size": 1647620,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_01.wsmodel",
+   "size": 504,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_01.wsmodel",
+   "size": 504,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_02.rigid_model_v2",
+   "size": 1624716,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_02.rigid_model_v2",
+   "size": 1624716,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_02.wsmodel",
+   "size": 447,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_02.wsmodel",
+   "size": 447,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_03.rigid_model_v2",
+   "size": 1732962,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_03.rigid_model_v2",
+   "size": 1732962,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_03.wsmodel",
+   "size": 558,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_body_03.wsmodel",
+   "size": 558,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_01.rigid_model_v2",
+   "size": 577492,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_01.rigid_model_v2",
+   "size": 577492,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_01.wsmodel",
+   "size": 370,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_01.wsmodel",
+   "size": 370,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_02.rigid_model_v2",
+   "size": 550552,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_02.rigid_model_v2",
+   "size": 550552,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_02.wsmodel",
+   "size": 360,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_02.wsmodel",
+   "size": 360,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_03.rigid_model_v2",
+   "size": 483420,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_03.rigid_model_v2",
+   "size": 483420,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_03.wsmodel",
+   "size": 416,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/corrupted_white_lions_head_03.wsmodel",
+   "size": 416,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_head_acc_03_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_head_acc_03_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_01_2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_01_2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_01_weighted4_alpha_off.xml.material",
+   "size": 566,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_01_weighted4_alpha_off.xml.material",
+   "size": 566,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_03_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_03_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_03_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_horn_03_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_2_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_2_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_2_weighted2_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_2_weighted2_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_submes_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_submes_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_submes_weighted4_alpha_on.xml.material",
+   "size": 589,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_submes_weighted4_alpha_on.xml.material",
+   "size": 589,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_01_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_2_weighted2_alpha_off.xml.material",
+   "size": 576,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_2_weighted2_alpha_off.xml.material",
+   "size": 576,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_4_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_4_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_weighted4_alpha_off.xml.material",
+   "size": 575,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_legs_02_weighted4_alpha_off.xml.material",
+   "size": 575,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_02_2_weighted2_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_02_2_weighted2_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_02_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_02_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_subm_2_weighted2_alpha_off.xml.material",
+   "size": 578,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_subm_2_weighted2_alpha_off.xml.material",
+   "size": 578,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_subm_weighted4_alpha_on.xml.material",
+   "size": 578,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_subm_weighted4_alpha_on.xml.material",
+   "size": 578,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_weighted4_alpha_off.xml.material",
+   "size": 574,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_weighted4_alpha_off.xml.material",
+   "size": 574,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/bst_corrupted_elf_torso_acc_weighted4_alpha_on.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 591,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 591,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_submesh_0__2_weighted2_alpha_off.xml.material",
+   "size": 590,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_submesh_0__2_weighted2_alpha_off.xml.material",
+   "size": 590,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_submesh_0__weighted4_alpha_off.xml.material",
+   "size": 591,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_submesh_0__weighted4_alpha_off.xml.material",
+   "size": 591,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_weighted4_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/corrupted_elf_body_01_weighted4_alpha_off.xml.material",
+   "size": 587,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 604,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 604,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 606,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 606,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_29_weighted4_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_body_01_submesh_29_weighted4_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_head_01_submesh_19_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_head_01_submesh_19_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_head_01_submesh_19_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/dae_tzaangor_head_01_submesh_19_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_2_weighted2_alpha_on.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_2_weighted2_alpha_on.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_weighted4_alpha_on.xml.material",
+   "size": 589,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_01_weighted4_alpha_on.xml.material",
+   "size": 589,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_2_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_2_weighted2_alpha_off.xml.material",
+   "size": 592,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_2_weighted2_alpha_on.xml.material",
+   "size": 574,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_2_weighted2_alpha_on.xml.material",
+   "size": 574,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_weighted4_alpha_on.xml.material",
+   "size": 593,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_hair_02_weighted4_alpha_on.xml.material",
+   "size": 593,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_2_weighted2_alpha_off.xml.material",
+   "size": 583,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_2_weighted2_alpha_on.xml.material",
+   "size": 575,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_2_weighted2_alpha_on.xml.material",
+   "size": 575,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_weighted4_alpha_on.xml.material",
+   "size": 585,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_01_weighted4_alpha_on.xml.material",
+   "size": 585,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_2_weighted2_alpha_on.xml.material",
+   "size": 609,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_2_weighted2_alpha_on.xml.material",
+   "size": 609,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_weighted4_alpha_on.xml.material",
+   "size": 607,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_head_02_weighted4_alpha_on.xml.material",
+   "size": 607,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_01_2_weighted2_alpha_on.xml.material",
+   "size": 568,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_01_2_weighted2_alpha_on.xml.material",
+   "size": 568,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_01_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_01_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_subme_2_weighted2_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_subme_2_weighted2_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_subme_weighted4_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_subme_weighted4_alpha_off.xml.material",
+   "size": 580,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/endo_corrupted_elf_mask_02_weighted4_alpha_off.xml.material",
+   "size": 570,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_1_weighted4_alpha_on.xml.material",
+   "size": 603,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_1_weighted4_alpha_on.xml.material",
+   "size": 603,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_4_weighted2_alpha_off.xml.material",
+   "size": 596,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_4_weighted2_alpha_off.xml.material",
+   "size": 596,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_5_weighted2_alpha_off.xml.material",
+   "size": 601,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_5_weighted2_alpha_off.xml.material",
+   "size": 601,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_weighted4_alpha_off.xml.material",
+   "size": 599,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_cloak_01_weighted4_alpha_off.xml.material",
+   "size": 599,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 605,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_23_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_23_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_23_weighted4_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_23_weighted4_alpha_off.xml.material",
+   "size": 569,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_weighted4_alpha_off.xml.material",
+   "size": 602,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_01_submesh_weighted4_alpha_off.xml.material",
+   "size": 602,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_0_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_0_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_0_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_0_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 617,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 617,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_201_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_201_weighted4_alpha_on.xml.material",
+   "size": 588,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_2_weighted2_alpha_off.xml.material",
+   "size": 586,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_4_weighted2_alpha_off.xml.material",
+   "size": 617,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_4_weighted2_alpha_off.xml.material",
+   "size": 617,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_submesh_58_2_weighted2_alpha_off.xml.material",
+   "size": 620,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_submesh_58_2_weighted2_alpha_off.xml.material",
+   "size": 620,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_submesh_58_weighted4_alpha_on.xml.material",
+   "size": 593,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_submesh_58_weighted4_alpha_on.xml.material",
+   "size": 593,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 615,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/materials/hef_white_lions_torso_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 615,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_body_01_base_colour.dds",
+   "size": 681011,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_body_01_base_colour.dds",
+   "size": 765040,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_head_01_base_colour.dds",
+   "size": 248095,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_head_01_base_colour.dds",
+   "size": 258554,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_head_02_base_colour.dds",
+   "size": 1116736,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/corrupted_white_lions_head_02_base_colour.dds",
+   "size": 1116736,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_mask.dds",
+   "size": 115,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_mask.dds",
+   "size": 115,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_material_map.dds",
+   "size": 390373,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_material_map.dds",
+   "size": 390373,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_normal.dds",
+   "size": 961945,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_body_01_normal.dds",
+   "size": 961945,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_head_01_material_map.dds",
+   "size": 124202,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_head_01_material_map.dds",
+   "size": 124202,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_head_01_normal.dds",
+   "size": 278361,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/endo_corrupted_elf_head_01_normal.dds",
+   "size": 278361,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/full_faction_mask.dds",
+   "size": 115,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/full_faction_mask.dds",
+   "size": 115,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_tzaangor_body_01_base_colour.dds",
+   "size": 4127625,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_tzaangor_body_01_base_colour.dds",
+   "size": 4127625,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_white_lions_cloak_01_base_colour.dds",
+   "size": 233594,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_white_lions_cloak_01_base_colour.dds",
+   "size": 233594,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_white_lions_torso_01_base_colour.dds",
+   "size": 651854,
+   "pack": "!Readman_Alarielle_ZZZ.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6b/bst/endo_corrupted_elf/tex/readman_white_lions_torso_01_base_colour.dds",
+   "size": 651854,
+   "pack": "!Readman_Alarielle_ZZZ_alt.pack"
+  }
+ ]
+}

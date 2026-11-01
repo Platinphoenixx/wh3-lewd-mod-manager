@@ -4586,5 +4586,104 @@
    "graphical"
   ],
   "description": "简体中文汉化\r\n\r\n这是由 Casualfield 制作的 Dark Elves Rework 的简体中文汉化子模组。"
+ },
+ "2803915768": {
+  "public": true,
+  "title": "Johnny's Loreful Nurgle LITE (plagues update)",
+  "updated": 1790388303,
+  "preview_url": "https://images.steamusercontent.com/ugc/1842545889562085253/EDAA5D614E9ED41F040AB27860AD99D1FEDAEA6C/",
+  "tags": [
+   "mod",
+   "battle"
+  ],
+  "description": "Hello!\r\n\r\nThis mod is the SFO counterpart to my Johnny's Loreful Nurgle mod. you can also use if you feel the other one is too strong. does not require SFO.\r\n\r\nwhat does the mod do?\r\nadds two new abilities to all Nurgle units: \r\n\r\ni) pestilential aura\r\n- a slow mortis engine effect to simulate the enemy getting sick.\r\n- has a -2 melee attack debuff for surrounding enemies.\r\n\r\nii) unholy resilience\r\n- adds a slow regen effect - 0.05% per second to nurgle forces that is always active even in combat\r\n- adds 5% missile resistance even in combat.\r\n- this means that nurgle retains the advantage of faster regen and missile resistance when out of combat as per the \"cloud of flies SFO ability\"\r\n\r\nBalancing:\r\n- balancing feedback always welcome\r\n\r\nCompatibility:\r\n- should be compatible with vast majority of  mods\r\n- if you find an incompatibility let me know.\r\n\r\nMod no worky?\r\n- any issues? let me know and I will try to fix.\r\n\r\n[url=https://paypal.me/Johnny32323?country.x=CA&locale.x=en_US] [img]https://i.imgur.com/mJSn17e.jpg[/img] [/url]\r\nLike my mods? help support my modding hobby by donating. Any donation is welcome!\r\n\r\n\r\n"
+ },
+ "2846183349": {
+  "public": true,
+  "title": "Siege AI & Mechanics Overhaul",
+  "updated": 1793064455,
+  "preview_url": "https://images.steamusercontent.com/ugc/1906730844030321710/D0530E31994A9DC155F417E85B44FBE01F2B6DB9/",
+  "tags": [
+   "mod",
+   "overhaul"
+  ],
+  "description": "[h1] This mod changes how siege works in significant ways. Recommended to use with a mod that increases difficulty. Compatible with Ver.9.0.x[/h1]\r\n\r\n[b] This mod aims to improve vanilla WH3 and IE experience. A separate [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2848282302]mod[/url] that modifies only the siege AI & ogre siege equipment has been published! [/b]\r\n\r\n\r\n[b]**** SAVE GAME COMPATIBLE ****[/b]\r\n[b]**** COMPATIBLE WITH MOST GARRISON MODS ****[/b]\r\n\r\n\r\n--- [u]Why I created this mod[/u]:\r\n\r\nI hate it that AI factions starve the siege defenders to death 9 times out of 10.\r\nI hate it that players are forced to play the offensive in siege battles time and time again.\r\n\r\n--- [u]What this mod does[/u]:\r\n[list]\r\n  [*]AI will more often attack walled/minor settlements rather than starving defenders to death.\r\n\r\n  [*]Defensive buildings provide attrition immunity for garrisons; also provide small public order bonus, ammunition bonus (during siege battles) and upkeep reduction (local army). However, due to CA changed how siege turns are calculated, it is impossible as of now to provide siege attrition immunity to local army while allowing enemy to build siege equipment. \r\n\r\n  [*]Players and AI factions cannot build towers and barricades after the battle begins. Initial supply (including buildings, technologies, effects) increases by a lot to compensate.  (inspired by fraggenburg's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2789948438]mod[/url])\r\n\r\n  [*]Losing control of the key building no longer bleeds ticket (Fixed by CA since 4.0), add a 15% missile block buff to key building's buff, add a stronger speed debuff to traps.\r\n\r\n  [*]Increase health of city gates, defensive barricades and walls, increase health for siege towers and ram, increase attack power of ram. (Minor value tweaks for 4.1)\r\n\r\n  [*]Siege equipment can be built more quickly.\r\n\r\n  [*]Enable unused models for higher tier towers.\r\n\r\n  [*]Rework how minor settlement defensive buildings change settlement battle type:\r\n[list]\r\n  [*] Level 1 and 2 minor settlement WITHOUT defensive buildings - skirmish\r\n  [*] Level 2 minor settlement WITH Level 1 defensive buildings - unwalled settlement battle\r\n  [*] Level 3 minor settlement WITH OR WITHOUT defensive buildings - unwalled settlement battle\r\n  [*] Level 3 minor settlement WITH Level 2 defensive buildings - WALLED settlement battle\r\n  [*] Level 2 Dwarf&Bretonnia minor settlement WITH OR WITHOUT defensive buildings - unwalled settlement battle\r\n  [*] Level 3 Bretonnia minor settlement - WALLED settlement battle\r\n[/list]\r\n[/list]\r\n\r\n  [*]Ogre AIs can now build some siege equipments, so that they too will initiate siege assaults more often.\r\n\r\n\r\n[b] Let me know if you encounter any bug or have suggestions for improvement/balancing! [/b]"
+ },
+ "2856367440": {
+  "public": true,
+  "title": "Restore Horde and Recruitment for Chaos",
+  "updated": 1791908872,
+  "preview_url": "https://images.steamusercontent.com/ugc/1776127926584413297/B73A5392E8F907F57C8A8F33BD8BB7E93F10E25E/",
+  "tags": [
+   "mod",
+   "campaign"
+  ],
+  "description": "This mod allows the Warriors of Chaos faction to recruit units normally at a higher price. Also restored the horde feature with some balancing of camp building effects. Many buildings have upkeep costs, but can provide campaign bonuses and set up camps to replenish. \r\n\r\nDue to script limitations, now only legendary lords and daemon princes have hordes. I will see if it is possible to add hordes to other lords.\r\n\r\nIt is required to start a new campaign.\r\n"
+ },
+ "2960261916": {
+  "public": true,
+  "title": "Daughters of Chaos",
+  "updated": 1762196107,
+  "preview_url": "https://images.steamusercontent.com/ugc/2054245495080714901/7BA5E1F058F68180BA6039EBEFD7029E2E307A5A/",
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "Daemon Pirncesses, lords, and heros here\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2990977668\r\n\r\nPlaned Features\r\n\r\n-Unit voicelines\r\n-Belekor mechanic rework so female lords turn into daemon princesses\r\n\r\nThis mod adds new female head and body variations to almost all units in the warriors of chaos and monogod factions units NOT effected are lords and heros, daemons, all monsters except skinwolves and dragon ogre shagoths \r\nMore screenshots in the tables\r\n\r\nCredit to all mods below\r\nAlshua's Cultists\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2984641517\r\nMonogod Forsaken Reskin\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2801957739\r\nSpooky's Slaanesh Cultists - Expanded Variants\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2834975276\r\nChaos Against Baldness.\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2882407345\r\n[LIG] Reskin - Sorceress\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2946827866\r\nSlaanesh Reskin by Storeslem\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2999893352\r\nPants for Marauders and Chieftains\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2998941845\r\n-BR- Ultimate Elven Lords + Variety Pack III 精灵\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2834381558\r\nLazy's Archaon-chan\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2866037946\r\nNorscan Female Berserkers (Norscan Berserker reskin)\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3172003150&searchtext=female\r\n\r\nAlso check out\r\nDaughters of the Maw\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3386767747\r\nDaughters of Kislev\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3000852143\r\nSons and Daughters of Athel Loren\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3405689615\r\nDaughters of Naggaroth\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3613991992\r\nDaughters of Ultuan\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3618353202"
+ },
+ "3139730079": {
+  "public": true,
+  "title": "Daughter of Chaos (Tables)",
+  "updated": 1734418437,
+  "preview_url": "https://images.steamusercontent.com/ugc/2296339440153729192/FAE9D0AEFABD94D5047450C9C727CE8A5AAAD987/",
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "This is required to run daughters of chaos"
+ },
+ "3149445431": {
+  "public": true,
+  "title": "Audio Mixer",
+  "updated": 1793390707,
+  "preview_url": "https://images.steamusercontent.com/ugc/2509159789567158073/0B5AF421A9D12C194606185DE0F90684559BAFF7/",
+  "tags": [
+   "mod",
+   "compilation"
+  ],
+  "description": "[h1]The Audio Mixer[/h1]\r\nWelcome! First of all let me say without the guidance and innovation of Ole and ChaosRobie none of this fun stuff would be possible.\r\n\r\nThe Audio Mixer has 3 main functions:\r\n\r\n[b]1)[/b] Act as a [b]voiceover (VO) audio compatibility mod[/b]:\r\n[list]\r\nTo ensure all VO mods work nicely together a single compatibility mod is needed to combine the inner workings of audio in one place to prevent mods with modded VO from overwriting each other. For those interested the technical reason for this is that only one version of each Dialogue Event in the game's .bnk files can exist, so all modded State Paths in Dialogue Events need to be merged with each other as well as the vanilla State Paths so that there is a single version of each Dialogue Event.[/list]\r\n\r\n[b]2)[/b] [b]Facilitate music modding[/b]:\r\n[list]\r\nTotal War: Warhammer III features an adaptive music system comprised of modular tracks that change dynamically according to events and the environment in game. While technically impressive this can result in music that feels fragmented and without any musical theme, something which many iconic soundtracks in games and film have. With thanks to the vision and direction of composer Eric Gordon Berg, the Audio Mixer implements a replacement music system for campaign and battle replacing the vanilla system with a more traditional playlist system which randomly plays tracks from a playlist. This, as opposed to a fragmented compilation of tracks, forces music to be complete soundtracks that enrich the game with a bold, thematic and vivid feeling of immersion. The frontend system still functions the same as vanilla where music is linked to frontend themes. As it happens the vanilla music system can't be modded directly so a new system was always necessary, and we believe this new system is a better direction for the game's music. You can mod music through the Audio Mixer Music Manager API. For information on how to use the system refer to the documentation in  \r\nthe Audio Mixer's scripts or see Eric Gordon Berg's wonderful [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3581474259][b]Harmony of Shadows - An Original Soundtrack for Cathay[/b][/url].[/list]\r\n\r\n[b]3)[/b] Act as a [b]storage facility for custom movie .dat files[/b]:\r\n[list]\r\nSome audio, for example movie audio, requires .dat files (which are involved in playing the audio) to be in a movie-type pack. If modders wish they can store those .dat files in the Audio Mixer and make it a requirement for mods to avoid the various compatibility and testing issues that making your mod a movie-type pack causes, feel free to send the files over if so.[/list]\r\n\r\nJoin the [url=https://discord.com/channels/373745291289034763/1197167723940155442][b]Modding Den Discord server[/b][/url] to discuss audio further, [url=https://discord.com/channels/373745291289034763/1201320062544511099][b]make a casting call[/b][/url] for your own project, or [url=https://discord.com/channels/373745291289034763/1201928427897098260][b]share your details[/b][/url] as a voice actor.\r\n\r\n[h1]Custom Audio Mods[/h1][list]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3581474259][b]Harmony of Shadows - An Original Soundtrack for Cathay[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3134922105][b]OvN Araby[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873961274][b]OvN Albion[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2989710828][b]OvN Grudgebringers[/b][/url]\r\n[*][url= https://steamcommunity.com/sharedfiles/filedetails/?id=2950121489][b]OvN Citadel of Dusk[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2826930183][b]SCM: Legendary Characters[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3022054734][b]Champions of Undeath (COU)[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2890463744][b]Sigmar's Heirs[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2931087074][b]Heroes of Legend[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3236566964][b]SCM: Tribes of the North[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2834367065][b]R1kko’s Slaanbulls[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3149376064][b]Nosso Da Schnozzla[/b][/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2919542060][b]Dark Land Orcs[/b][/url][/list]\r\n\r\n[h1]Credits[/h1][list]\r\n[*][b]Ole[/b] - For being a kind friend and teacher. Without Ole this would not be possible.\r\n[*][b]ChaosRobie[/b] - For pioneering audio modding and all his audio research.\r\n[*][b]Acephelos[/b] - For helping develop the Asset Editor audio tools, and your much appreciated support behind the scenes.\r\n[*][b]Eric Gordon Berg[/b] - For the pleasure of your music and direction on the Audio Mixer's music system.\r\n[*][b]Kou[/b] - For your much appreciated support behind the scenes.\r\n[*][b]Partypus[/b] - For the awesome thumbnail.\r\n[*][b]Da Modding Den[/b] - For supporting a place for audio discussion.\r\n[*][b]Frodo[/b] - For making RPFM.\r\n[*][b]Creative Assembly[/b] - For audio modding support.\r\n[*][b]Audiokinetic Mike[/b] - Cheers Mike for the non-commercial Wwise licence![/list]\r\n\r\n[h1]FAQ[/h1]\r\nQ: [b]How can I mod audio?[/b]\r\nA: You can mod audio using the Audio Editor tool in the AssetEditor.\r\n\r\nQ: [b]I'm a voice actor (or want to do some voice acting), how can I get involved?[/b]\r\nA: Great! You can share your details in the [url=https://discord.com/channels/373745291289034763/1201928427897098260]Voice Acting thread[/url] in the Modding Den Discord and see what voice acting modders are requesting in the [url=https://discord.com/channels/373745291289034763/1201320062544511099]Casting Calls thread[/url].\r\n\r\nQ: [b]What is VO and non-VO audio?[/b]\r\nA: Read the [url=https://www.tw-modding.com/wiki/Audio_m"
+ },
+ "3608958073": {
+  "public": true,
+  "title": "冰雪蜜城甜蜜蜜（高高的尖耳朵）",
+  "updated": 1790403081,
+  "preview_url": "https://images.steamusercontent.com/ugc/15870850930834901379/924246F2583566093F7BFF0137566322E28F3E33/",
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "原作者不知道犯什么天条了， 所以我来发。沪爷版本。现在修的作者@Elysia Felis\r\n\r\n\r\n感谢Elysia Felis无私奉献，吃水不忘挖井人。"
+ },
+ "3608958660": {
+  "public": true,
+  "title": "你爱我，我爱你，冰雪甜蜜蜜",
+  "updated": 1763620188,
+  "preview_url": "https://images.steamusercontent.com/ugc/13203483734308574242/924246F2583566093F7BFF0137566322E28F3E33/",
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "再次强调，原作者不明原因消失，他一旦上线，我就撤掉这个mod\r\n\r\n这个是全国版本。"
+ },
+ "3816938215": {
+  "public": true,
+  "title": "【Amber】女皇卡洛琳（皇帝卡尔·弗兰兹）",
+  "updated": 1792173513,
+  "preview_url": "https://images.steamusercontent.com/ugc/11271315015174033643/B76A1A1659024C2EB165C3857CF6E95718EF33C3/",
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "伟大的女皇卡洛琳·弗兰兹，包含模型、配音、头像及兵牌。以女皇之名去征服吧~\r\n\r\n本MOD无前置要求，可直接运行。\r\n\r\n外观有两种：变体一为戴头盔版本，也是默认外观；变体二为无头盔版本。\r\n若希望切换两种外观，推荐搭配 Variant Selector：\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2888171970\r\n\r\n造型灵感来源于 soboro大佬\r\n\r\n配音大部分采用原版赫潘斯的语音。涉及名字（赫潘斯→卡洛琳）、阵营（巴洛尼亚→帝国）或信仰（女士→西格玛）等身份信息的进行了重新生成\r\n\r\n另有本地化补充包，可以修改文本以适配女皇·卡洛琳·弗兰茨：\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3816953339\r\n\r\n有任何问题欢迎评论，我有空的话来改~\r\n\r\n────────────────────\r\n\r\nI am not a native English speaker, and this translation has not been proofread by a native speaker. Please forgive any mistakes.\r\n\r\nMeet the great Empress Karoline Franz! This mod includes models, voice lines, portraits and unit cards. Go forth and conquer in the Empress's name!\r\n\r\nNo other mods are required. This mod works on its own.\r\n\r\nTwo appearances are available: Variant 1 wears a helmet and is the default appearance; Variant 2 is unhelmeted.\r\nTo switch between them, we recommend Variant Selector:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2888171970\r\n\r\nVisual inspiration comes from the talented artist soboro.\r\n\r\nMost voice lines use Repanse de Lyonesse's original recordings. Lines containing identity-specific references have been regenerated: her name (Repanse → Karoline), faction (Bretonnia → the Empire), or faith (the Lady → Sigmar).\r\n\r\nSeparate localisation patches adapt the in-game text to Empress Karoline Franz:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3816956298\r\n\r\nIf you encounter any problems, please leave a comment. I'll try to fix them when I have time!\r\n"
  }
 }

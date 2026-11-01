@@ -1,0 +1,520 @@
+{
+ "mod": "steam-3512295439",
+ "packs": [
+  "!Azazel.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!Azazel.pack": {
+   "files": 98,
+   "dependencies": []
+  }
+ },
+ "fileCount": 98,
+ "byTopFolder": {
+  "variantmeshes": 95,
+  "ui": 3
+ },
+ "tables": [],
+ "references": {
+  "total": 104,
+  "inMod": 47,
+  "inBaseGame": 57,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/faction_leaders/dae_azazel_0.png",
+   "size": 23239,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/dae_azazel_0.png",
+   "size": 96729,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/dae_azazel_0.png",
+   "size": 18417,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_azazel.variantmeshdefinition",
+   "size": 600,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/dae_azazel_notred.rigid_model_v2",
+   "size": 7359756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/dae_azazel_notred.wsmodel",
+   "size": 20711,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/chs_forsaken_torso_02_weighted4_alpha_on.xml.material",
+   "size": 2640,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/chs_marauder_chieftain_legs_02_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/cst_cylostra_body_01 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy - clo_1_weighted4_alpha_off.xml.material",
+   "size": 6286,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 6306,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy - clone_weighted4_alpha_off.xml.material",
+   "size": 6311,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_1_weighted4_alpha_off.xml.material",
+   "size": 2623,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_1_weighted4_alpha_on.xml.material",
+   "size": 2613,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_2_weighted4_alpha_on.xml.material",
+   "size": 2608,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_3_weighted4_alpha_on.xml.material",
+   "size": 2614,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_4_weighted4_alpha_off.xml.material",
+   "size": 6302,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_4_weighted4_alpha_on.xml.material",
+   "size": 6318,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_5_weighted4_alpha_off.xml.material",
+   "size": 6285,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_6_weighted4_alpha_off.xml.material",
+   "size": 6292,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01 - clone_copy_weighted4_alpha_on.xml.material",
+   "size": 2612,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_1_weighted4_alpha_off.xml.material",
+   "size": 6284,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_2_weighted2_alpha_off.xml.material",
+   "size": 6300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_copy_5_weighted2_alpha_off.xml.material",
+   "size": 2615,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_copy_6_weighted2_alpha_off.xml.material",
+   "size": 6302,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_copy_7_weighted2_alpha_off.xml.material",
+   "size": 6290,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_copy_8_weighted2_alpha_off.xml.material",
+   "size": 6305,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_submesh_0 - clone_ - clone_copy - clone - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_submesh_0 - clone_ - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2629,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_submesh_0 - clone__2_weighted4_alpha_off.xml.material",
+   "size": 2613,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_submesh_0 - clone__weighted4_alpha_off.xml.material",
+   "size": 2612,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_azazel_01_weighted4_alpha_on.xml.material",
+   "size": 6292,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_fiend_03 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2591,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_khorngor_body_01 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2657,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_khorngor_body_01_1_weighted4_alpha_on.xml.material",
+   "size": 2631,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_khorngor_body_01_weighted4_alpha_off.xml.material",
+   "size": 2624,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_khorngor_body_03 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_khorngor_body_03_weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_knight_tzeentch_shield_01_l _weighted4_alpha_off.xml.material",
+   "size": 6331,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone - clone - clone - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 6513,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone - clone - clone - clone_1_weighted4_alpha_off.xml.material",
+   "size": 6497,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone - clone - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 6505,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone - clone - clone_1_weighted4_alpha_off.xml.material",
+   "size": 6494,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 6489,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone - clone - clone_1_weighted4_alpha_off.xml.material",
+   "size": 6483,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone_1_weighted4_alpha_off.xml.material",
+   "size": 6467,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy - clone_weighted4_alpha_off.xml.material",
+   "size": 6460,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 6457,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ _3_weighted4_alpha_off.xml.material",
+   "size": 2653,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ _5_weighted4_alpha_off.xml.material",
+   "size": 2732,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body_ _weighted4_alpha_off.xml.material",
+   "size": 2763,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_mutalith_vortex_beast_body__copy_3_weighted2_alpha_off.xml.material",
+   "size": 2769,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_nkari_01 - clone_copy - clone_copy - clone_weighted4_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_nkari_01 - clone_copy_1_weighted4_alpha_off.xml.material",
+   "size": 6307,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/dae_nkari_01 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 6300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/def_master_head_01 - clone_copy - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/def_master_head_01 - clone_copy _weighted4_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/hef_white_lion_chariot_01 - clone_copy_weighted4_alpha_off.xml.material",
+   "size": 2525,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/merged_nor_skin_wolves_body_02 - clone_copy_weighted4_alpha_on.xml.material",
+   "size": 2699,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/merged_nor_skin_wolves_body_02 -_weighted4_alpha_on.xml.material",
+   "size": 2606,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/tmb_hierotitan_head_01 - clone_c_weighted4_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu6g/dae/dae_azazel/materials/tmb_hierotitan_head_01 - clone_copy_weighted2_alpha_off.xml.material",
+   "size": 2644,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/chs_forsaken_torso_201_base_colour.dds",
+   "size": 524436,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/chs_marauder_chieftain_legs_201_base_colour.dds",
+   "size": 262292,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azaze_skinl_01_base_colour.dds",
+   "size": 4194452,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_02_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_201_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_blackwing_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_01_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_02_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_03_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_04_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_05_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_06_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_cloth_07_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_feathers_01_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_feathers_02_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_hair_01_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_red_01_base_colour.dds",
+   "size": 4194452,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_red_02_base_colour.dds",
+   "size": 4194452,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_azazel_whitewing_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_fiend_201_base_colour.dds",
+   "size": 2097300,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_201_base_colour.dds",
+   "size": 16777364,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_202_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_301_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_401_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_501_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_502_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_503_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_504_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_khorngor_body_505_base_colour.dds",
+   "size": 8388756,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_knight_tzeentch_shield_02_base_colour.dds",
+   "size": 524436,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_mutalith_vortex_beast_body_202_base_colour.dds",
+   "size": 524436,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_slaughterbrute_202_base_colour.dds",
+   "size": 4194452,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/def_master_head_202_base_colour.dds",
+   "size": 1048724,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/nor_skin_wolves_body_201_base_colour.dds",
+   "size": 524436,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/tmb_hierotitan_head_201_base_colour.dds",
+   "size": 1048724,
+   "pack": "!Azazel.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/tmb_hierotitan_head_202_base_colour.dds",
+   "size": 1048724,
+   "pack": "!Azazel.pack"
+  }
+ ]
+}

@@ -1,0 +1,504 @@
+{
+ "mod": "steam-3810890110",
+ "packs": [
+  "dka_fantasyneferata.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "dka_fantasyneferata.pack": {
+   "files": 94,
+   "dependencies": []
+  }
+ },
+ "fileCount": 94,
+ "byTopFolder": {
+  "variantmeshes": 91,
+  "ui": 3
+ },
+ "tables": [],
+ "references": {
+  "total": 73,
+  "inMod": 12,
+  "inBaseGame": 57,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [
+  "[LIG]Neferata.pack",
+  "Beautiful Neferata.pack",
+  "@zeta_neferata_reskin_stockings.pack"
+ ],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/faction_leaders/vmp_neferata_0.png",
+   "size": 21737,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/vmp_neferata_0.png",
+   "size": 82088,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/vmp_neferata_0.png",
+   "size": 18929,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/1.dds",
+   "size": 331510,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/10.dds",
+   "size": 480587,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/11.dds",
+   "size": 113640,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/2.dds",
+   "size": 1498934,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/3.dds",
+   "size": 391424,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/4.dds",
+   "size": 239848,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/5.dds",
+   "size": 322331,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/6.dds",
+   "size": 221116,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/7.dds",
+   "size": 423144,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/8.dds",
+   "size": 2082474,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/9.dds",
+   "size": 130290,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/tex/may.dds",
+   "size": 429220,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/bod_1_weighted4_alpha_off.xml.material",
+   "size": 576,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/bod_2_weighted2_alpha_off.xml.material",
+   "size": 561,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/bod_5_weighted2_alpha_off.xml.material",
+   "size": 576,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/bod_weighted4_alpha_off.xml.material",
+   "size": 561,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/brace - clone - clone.002_weighted4_alpha_off.xml.material",
+   "size": 576,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/brace.002_1_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/chest_2_weighted2_alpha_off.xml.material",
+   "size": 558,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/chest_weighted4_alpha_off.xml.material",
+   "size": 557,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_body_01_2_weighted2_alpha_off.xml.material",
+   "size": 558,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_body_01_submesh_2_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_body_01_submesh_2_weighted4_alpha_on.xml.material",
+   "size": 563,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_body_01_weighted4_alpha_on.xml.material",
+   "size": 560,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_body_02_submesh_6__weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_legs_01_submesh_0_2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/def_sorceress_legs_01_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 567,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hair_2_weighted2_alpha_off.xml.material",
+   "size": 501,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hair_weighted4_alpha_off.xml.material",
+   "size": 498,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/head_weighted4_alpha_off.xml.material",
+   "size": 567,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_alarielle_body_01_submesh_5_2_weighted2_alpha_off.xml.material",
+   "size": 567,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_alarielle_body_01_submesh_5_weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_27_2_weighted2_alpha_off.xml.material",
+   "size": 828,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_27_weighted4_alpha_off.xml.material",
+   "size": 827,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34  - clone - clone - clone - clone - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 797,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 - clone - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 847,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 - clone - clone_1_weighted4_alpha_off.xml.material",
+   "size": 843,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 - clone - clone_weighted4_alpha_off.xml.material",
+   "size": 853,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 - clone_1_weighted4_alpha_off.xml.material",
+   "size": 846,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 - clone_weighted4_alpha_off.xml.material",
+   "size": 840,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _11_weighted2_alpha_off.xml.material",
+   "size": 794,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _12_weighted2_alpha_off.xml.material",
+   "size": 788,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _13_weighted2_alpha_off.xml.material",
+   "size": 840,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _1_weighted4_alpha_off.xml.material",
+   "size": 806,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _2_weighted2_alpha_off.xml.material",
+   "size": 569,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _2_weighted4_alpha_off.xml.material",
+   "size": 813,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _3_weighted4_alpha_off.xml.material",
+   "size": 841,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _7_weighted4_alpha_off.xml.material",
+   "size": 792,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34 _weighted4_alpha_off.xml.material",
+   "size": 568,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34_11_weighted2_alpha_off.xml.material",
+   "size": 839,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34_12_weighted2_alpha_off.xml.material",
+   "size": 840,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34_13_weighted2_alpha_off.xml.material",
+   "size": 833,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34_14_weighted2_alpha_off.xml.material",
+   "size": 836,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_34_3_weighted2_alpha_off.xml.material",
+   "size": 835,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_47_2_weighted2_alpha_off.xml.material",
+   "size": 839,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_47_5_weighted2_alpha_off.xml.material",
+   "size": 839,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_01_submesh_47_weighted4_alpha_off.xml.material",
+   "size": 839,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/hef_archmage_body_03_submesh_28_weighted4_alpha_off.xml.material",
+   "size": 807,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_khalida_head_01_submesh_17_2_weighted2_alpha_off.xml.material",
+   "size": 570,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_khalida_head_01_submesh_17_weighted4_alpha_off.xml.material",
+   "size": 569,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_priest_torso_03_submes_2_weighted2_alpha_off.xml.material",
+   "size": 573,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_priest_torso_03_submes_weighted4_alpha_on.xml.material",
+   "size": 574,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_priest_torso_04_submesh_1_2_weighted2_alpha_off.xml.material",
+   "size": 582,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_liche_priest_torso_04_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 582,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_herald_body_01_submesh_190_2_weighted2_alpha_off.xml.material",
+   "size": 564,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_herald_body_01_submesh_190_weighted4_alpha_off.xml.material",
+   "size": 563,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_king_body_03_submesh_4_2_weighted2_alpha_off.xml.material",
+   "size": 571,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_king_body_03_submesh_4_weighted4_alpha_off.xml.material",
+   "size": 568,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_legs_03_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 566,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_legs_03_submesh__weighted4_alpha_off.xml.material",
+   "size": 565,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_torso_04_submesh_3_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/tmb_tomb_prince_torso_04_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 571,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_handmaiden_head_03_s_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_handmaiden_head_03_s_weighted4_alpha_off.xml.material",
+   "size": 572,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_hero_head_0_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_hero_head_0_submesh_2_2_weighted2_alpha_off.xml.material",
+   "size": 568,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_hero_head_0_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 566,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_hero_head_0_weighted4_alpha_on.xml.material",
+   "size": 571,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_lord_head_0_submesh_5_2_weighted2_alpha_off.xml.material",
+   "size": 572,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_lahmian_vampire_lord_head_0_submesh_5_weighted4_alpha_on.xml.material",
+   "size": 573,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_2_weighted2_alpha_off.xml.material",
+   "size": 558,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_0.056_weighted4_alpha_on.xml.material",
+   "size": 567,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_28_2_weighted2_alpha_off.xml.material",
+   "size": 556,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_28_weighted4_alpha_off.xml.material",
+   "size": 554,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_34_weighted4_alpha_on.xml.material",
+   "size": 565,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_submesh_9_weighted4_alpha_on.xml.material",
+   "size": 555,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/vmp_neferata_01_weighted4_alpha_off.xml.material",
+   "size": 557,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/wef_spellweaver_body_01_submesh__2_weighted2_alpha_off.xml.material",
+   "size": 570,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/materials/wef_spellweaver_body_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 569,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_01.rigid_model_v2",
+   "size": 5118780,
+   "pack": "dka_fantasyneferata.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1ba/vmp/vmp_neferata/vmp_neferata_01.wsmodel",
+   "size": 2170,
+   "pack": "dka_fantasyneferata.pack"
+  }
+ ]
+}

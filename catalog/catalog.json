@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T15:22:47+00:00",
+  "generatedAt": "2026-11-01T15:52:24+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -1681,7 +1681,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[LIG]Neferata.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [
         {
           "kind": "incompatible",
@@ -1747,6 +1752,9 @@
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Replaces Neferata's model definition (vmp_neferata.variantmeshdefinition), the same file Neferata The Vampire Queen and Naughty Neferata replace: only the mod loaded highest shows."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/14529628292245003988/809BFB76D9880E15938DC724C2FD163F4E4E0F17/",
@@ -2781,7 +2789,7 @@
       "authors": [],
       "kind": "reskin",
       "summary": "Edits Alarielle's body model for a more pronounced figure and trims parts of her clothing; face and hair are untouched.",
-      "description": "An NSFW-leaning body edit for Alarielle: her figure is enhanced and some clothing is trimmed. Only the body file is changed, so mods that change her face or hair should still work unless they also edit the body. A stronger 90% version exists as a separate item (2859425416).\n\nThe author called it a test mod made without owning the DLC, and it was last updated in 2022.",
+      "description": "An older NSFW edit for Alarielle: a clothing model with less coverage plus her two model definitions. A stronger 90% version by the same author exists; use one of them.\n\nATB's asset pack replaces the same two model definitions, so with Alarielle, Temptation's Bloom only one of the two looks can win, depending on the load order. Last updated in 2022.",
       "recommendedFor": "Alarielle players who want a simple body edit, if it still works.",
       "tags": [
         "lewd",
@@ -2798,17 +2806,47 @@
           }
         ]
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "alarielle clothes.pack",
+          "from": "steam"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2859425416"
+          },
+          "note": "The 50% and 90% versions replace the same two model definitions; use one",
+          "source": {
+            "type": "inferred",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859425359"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Replaces Alarielle's model definitions (hef_alarielle*.variantmeshdefinition), which ATB's asset pack kerberos_mod_assets also replaces; the mod loaded higher decides her look",
+          "source": {
+            "type": "inferred",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859425359"
+          }
+        }
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Last updated 2022-09-06; does it still work, and does it clash with Alarielle, Temptation's Bloom or Readman's Alarielle reskins?",
-          "The 50% and 90% versions are probably alternatives (use one)."
+          "Last updated 2022; whether the clothing model still fits the current Alarielle model is unchecked in game."
         ]
       },
+      "knownIssues": [
+        "Replaces only Alarielle's two model definitions plus one clothing model; ATB's asset pack replaces the same definitions, so with ATB only one of the two looks can win."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/1857193848435097393/E76E3B8FAD1F5B362FD1D7157C14ECC528AACB24/",
@@ -2825,7 +2863,7 @@
       ],
       "kind": "reskin",
       "summary": "An NSFW Alarielle reskin from 2022 that removes more of her clothing than the author's 50% version.",
-      "description": "An older NSFW reskin of Alarielle, a stronger variant of the same author's 'Alarielle 50% More Radiant'. The author notes that the arm textures under the sleeves were not reworked. Unlisted on Steam and last updated in 2022, so it may conflict with newer Alarielle reskins and campaign mods that change her model.",
+      "description": "The stronger variant of the author's 'Alarielle 50% More Radiant': an NSFW clothing model with even less coverage plus her two model definitions. Use either this or the 50% version.\n\nATB's asset pack replaces the same two model definitions, so with Alarielle, Temptation's Bloom only one of the two looks can win, depending on the load order. Last updated in 2022.",
       "tags": [
         "lewd",
         "alarielle",
@@ -2841,28 +2879,47 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alarielle clothes2.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [
         {
           "kind": "incompatible",
           "target": {
             "mod": "steam-2859425359"
           },
-          "note": "Same author's 50% version changes the same model; use one of them",
+          "note": "The 50% and 90% versions replace the same two model definitions; use one",
           "source": {
-            "type": "steam",
+            "type": "inferred",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859425416"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Replaces Alarielle's model definitions (hef_alarielle*.variantmeshdefinition), which ATB's asset pack kerberos_mod_assets also replaces; the mod loaded higher decides her look",
+          "source": {
+            "type": "inferred",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2859425416"
           }
         }
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Last updated 2022; compatibility with current game versions and with ATB's Alarielle models is unknown."
+          "Last updated 2022; whether the clothing model still fits the current Alarielle model is unchecked in game."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Replaces only Alarielle's two model definitions plus one clothing model; ATB's asset pack replaces the same definitions, so with ATB only one of the two looks can win."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/1857193848435098040/E76E3B8FAD1F5B362FD1D7157C14ECC528AACB24/",
@@ -4440,6 +4497,43 @@
       ]
     },
     {
+      "id": "steam-3149445431",
+      "name": "Audio Mixer",
+      "authors": [],
+      "kind": "framework",
+      "summary": "A shared audio framework many mods use to add or change voices and sounds.",
+      "description": "Lets mods add or replace sound events without overwriting each other's audio files. Many unit and character mods need it.\n\nRequired by SCM Skaven Clans.",
+      "tags": [
+        "general",
+        "audio",
+        "framework"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3149445431",
+            "title": "Audio Mixer",
+            "updated": "2026-10-30"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2509159789567158073/0B5AF421A9D12C194606185DE0F90684559BAFF7/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-2859802328",
       "name": "Auto Resolve Quest Battles - Updated to 9.0.X (Lords of the End Times)",
       "authors": [],
@@ -4485,7 +4579,9 @@
     {
       "id": "steam-3512295439",
       "name": "Azazel skin",
-      "authors": [],
+      "authors": [
+        "Quiver"
+      ],
       "kind": "reskin",
       "summary": "Small reskin for Azazel that gives him a different armour look.",
       "description": "A reskin for Azazel. The author only notes aiming for metal armour that did not quite match his claw; no other details, stats or requirements are given.\n\nIt was posted on the Discord in the Azazel's Realm channel, so it is an optional visual for Azazel campaigns.",
@@ -4505,17 +4601,24 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!Azazel.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Who is the author (the page only links a Workshop profile)?",
-          "What exactly changes, and is it compatible with Azazel's Realm?"
+          "Compatibility with Azazel's Realm is unchecked (its pack is not analysed yet)."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Replaces Azazel's model definition and portraits; other Azazel reskins change the same files, so only the one loaded highest shows."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/11096794370916218418/DDA5032AC89CF359A70425FC2439AD24970544D0/",
@@ -7737,9 +7840,11 @@
     {
       "id": "steam-3698534641",
       "name": "Community Beastmen light version (Steam)",
-      "authors": [],
+      "authors": [
+        "Lustariya"
+      ],
       "kind": "units",
-      "summary": "Light version of Community Beastmen on the Workshop (posted 2026-04-03).",
+      "summary": "A lighter version of Community Beastmen for players who do not play as the Beastmen; the full version is a separate Workshop item.",
       "tags": [],
       "sources": {
         "steam": [
@@ -7755,13 +7860,23 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-36361"
+          },
+          "note": "Light and full version are alternatives",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3698534641"
+          }
+        }
+      ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
-        "openQuestions": [
-          "Possibly the Workshop copy of community_beastmen_light.pack from ll-46165; uploader and relation unchecked."
-        ]
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
       },
       "images": [
         {
@@ -7773,12 +7888,10 @@
     },
     {
       "id": "steam-3714453899",
-      "name": "Community Beastmen patch (elf meat-shields)",
-      "authors": [
-        "harrylee6373"
-      ],
+      "name": "Community Beastmen sub-patch (elf captives, optional)",
+      "authors": [],
       "kind": "patch",
-      "summary": "Patch by harrylee6373 for Community Beastmen (posted 2026-06-08).",
+      "summary": "Optional cosmetic sub-patch for Community Beastmen: elf captives as decorations on a lord's staff and on gor shields, plus a few event illustrations.",
       "tags": [],
       "sources": {
         "steam": [
@@ -7807,10 +7920,10 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
         "openQuestions": [
-          "Workshop page not readable without login; what exactly it changes and which Community Beastmen version it needs is unchecked."
+          "Which Community Beastmen edition it targets is not stated; several of its changes are already in the main mod."
         ]
       },
       "images": [
@@ -9737,6 +9850,92 @@
       ]
     },
     {
+      "id": "steam-3139730079",
+      "name": "Daughter of Chaos (Tables)",
+      "authors": [],
+      "kind": "assets",
+      "summary": "The table pack that Daughters of Chaos needs to run.",
+      "description": "Database tables for Daughters of Chaos; the mod does not run without it. Required by Hashut's Zharrhammer Overhaul as well.",
+      "tags": [
+        "general",
+        "chaos"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3139730079",
+            "title": "Daughter of Chaos (Tables)",
+            "updated": "2024-12-17"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2296339440153729192/FAE9D0AEFABD94D5047450C9C727CE8A5AAAD987/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2960261916",
+      "name": "Daughters of Chaos",
+      "authors": [],
+      "kind": "units",
+      "summary": "Adds female Chaos lords, heroes and daemon princesses.",
+      "description": "Adds female lords and heroes for the Chaos factions, with daemon princesses in a companion upload. It needs its table pack (Daughter of Chaos (Tables)) to run.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "chaos",
+        "lords",
+        "heroes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2960261916",
+            "title": "Daughters of Chaos",
+            "updated": "2025-11-03"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3139730079"
+          },
+          "note": "Its table pack",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3139730079"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2054245495080714901/7BA5E1F058F68180BA6039EBEFD7029E2E307A5A/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3000852143",
       "name": "Daughters of kislev Now with Gryphon Legion",
       "authors": [],
@@ -11439,6 +11638,56 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/2509159426553285421/0424790CE4984A1FAF9C79DF1B04A14FFF9B16E5/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3816938215",
+      "name": "Empress Caroline Franz (Amber) – female Karl Franz",
+      "authors": [],
+      "kind": "reskin",
+      "summary": "Turns Karl Franz into Empress Caroline Franz with her own model, voice, portraits and unit card.",
+      "description": "A Chinese reskin that replaces Karl Franz with a female version, Empress Caroline Franz, including model, voice lines, portraits and unit card. It needs no other mod; two looks (with and without helmet) can be switched with Variant Selector.\n\nSlaanesh's Temptation recommends it, because Karl Franz then appears among its heroines.",
+      "tags": [
+        "general",
+        "beautification",
+        "empire",
+        "karl franz"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3816938215",
+            "title": "Empress Caroline Franz (Amber) – female Karl Franz",
+            "updated": "2026-10-16"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Switches between the helmet and no-helmet look",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816938215"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/11271315015174033643/B76A1A1659024C2EB165C3857CF6E95718EF33C3/",
           "kind": "cover",
           "source": "steam"
         }
@@ -13352,6 +13601,58 @@
       ]
     },
     {
+      "id": "steam-3822979643",
+      "name": "Goblin Three Kingdoms lords – English translation (peach_garden_boyz_english.pack)",
+      "authors": [
+        "워령"
+      ],
+      "kind": "translation",
+      "summary": "English texts for the Korean goblin Three Kingdoms lords mod by the same author.",
+      "description": "The English text pack for the Korean goblin Three Kingdoms lords mod (Workshop 3822869967) by the same author; it was posted right after the main mod, as a commenter there points out. Use it together with the main mod if you want English names and texts.",
+      "tags": [
+        "general",
+        "translation",
+        "greenskins",
+        "goblins"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3822979643",
+            "title": "!peach_garden_boyz_english.pack",
+            "updated": "2026-10-20"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "steam-3822869967"
+          },
+          "note": "English translation, posted right after the main mod (Steam comments)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3822979643"
+          }
+        }
+      ],
+      "status": "stable",
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/16798530116907749114/72F3422C9AB3ED6BE5AE173AB9914D0DD3597B83/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-2890499031",
       "name": "Godslayer Overhaul by Mortrau",
       "authors": [
@@ -13609,15 +13910,69 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2846183349"
+          },
+          "note": "Required item: Siege AI & Mechanics Overhaul",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3224728562"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2803915768"
+          },
+          "note": "Required item: Johnny's Loreful Nurgle LITE",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3224728562"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2856367440"
+          },
+          "note": "Required item: Restore Horde and Recruitment for Chaos",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3224728562"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2960261916"
+          },
+          "note": "Required item: Daughters of Chaos",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3224728562"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3139730079"
+          },
+          "note": "Required item: Daughter of Chaos (Tables)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3224728562"
+          }
+        }
+      ],
       "status": "beta",
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Page text is unclear: is Johnny's Nurgle Overhaul really required? Its Workshop id is not given.",
-          "Which Steam 'required items' are listed? They are not in the excerpt.",
-          "Incompatible with SFO itself? Not stated."
+          "Whether it works with SFO is not stated."
         ]
       },
       "images": [
@@ -13675,17 +14030,6 @@
             "mod": "steam-3239114391"
           },
           "note": "Simplified Chinese localisation submod",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3238848431"
-          }
-        },
-        {
-          "kind": "optional",
-          "target": {
-            "mod": "steam-3327990553"
-          },
-          "note": "Korean localisation submod",
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3238848431"
@@ -13781,40 +14125,6 @@
           "source": "steam"
         }
       ]
-    },
-    {
-      "id": "steam-3327990553",
-      "name": "Helper UI: Korean translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Korean translation for Helper UI; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Helper UI links it as its Korean localisation submod.",
-      "tags": [
-        "general",
-        "translation",
-        "korean",
-        "ui"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "3327990553",
-            "title": "Helper UI: Korean translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Korean translation and is it current?"
-        ]
-      }
     },
     {
       "id": "ll-47842",
@@ -14181,15 +14491,41 @@
           }
         ]
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@elf ice witch plus.pack",
+          "from": "steam"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3608958073"
+          },
+          "note": "The page: same mod without Enforcer recruitment - do not use both (it is still listed among the required items)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3804202775"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3608958660"
+          },
+          "note": "Full faction patch: two ice witches at the start",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3804202775"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Which Steam id is the sibling version that must not be used together with this one, and which is the original mod?",
-          "Which Steam id is the faction patch mentioned for two ice witches at the start?",
-          "Which High Elf faction(s) can use the character?"
+          "The required-items list names both ice witch uploads although the text says not to use the first one together with this mod."
         ]
       },
       "status": "stable",
@@ -14340,6 +14676,84 @@
       ],
       "description": "Scales or alters the recruitment screen (for 1440p+), diplomacy, lord/hero recruitment, the objectives screen and the view of multiple enemy/allied armies; also enlarges the Custom Battle panel. Intended for 1080p and higher.\n\nThe author maintains it only as needed; according to the author the mod is compatible with everything and works in multiplayer. If problems occur, the cause is usually another mod with a script error.",
       "recommendedFor": "Players with high resolutions; appears in the Readman mod lists."
+    },
+    {
+      "id": "steam-3608958073",
+      "name": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)",
+      "authors": [
+        "Elysia Felis"
+      ],
+      "kind": "units",
+      "summary": "A re-upload of an abandoned ice witch character mod, maintained by another author.",
+      "description": "A Chinese re-upload of an ice witch character mod whose original author disappeared; this is the 'high pointed ears' version, now maintained by Elysia Felis.\n\nHigh elf ice witch plus builds on it and lists it as required.",
+      "tags": [
+        "general",
+        "high elves",
+        "kislev",
+        "ice witch"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3608958073",
+            "title": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)",
+            "updated": "2026-09-26"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15870850930834901379/924246F2583566093F7BFF0137566322E28F3E33/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3608958660",
+      "name": "Ice Witch faction patch (你爱我，我爱你，冰雪甜蜜蜜)",
+      "authors": [],
+      "kind": "patch",
+      "summary": "The full-faction version of the re-uploaded ice witch mod.",
+      "description": "Second upload of the same ice witch mod series, described as the full-faction version; the uploader will remove it if the original author returns.\n\nHigh elf ice witch plus lists it as required (it also gives two ice witches at the start).",
+      "tags": [
+        "general",
+        "high elves",
+        "kislev",
+        "ice witch"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3608958660",
+            "title": "Ice Witch faction patch (你爱我，我爱你，冰雪甜蜜蜜)",
+            "updated": "2025-11-20"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/13203483734308574242/924246F2583566093F7BFF0137566322E28F3E33/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3007996493",
@@ -14614,6 +15028,43 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/16528538533643521554/7DA38D14D5A245310B2EC90718BA448B914B06BD/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2803915768",
+      "name": "Johnny's Loreful Nurgle LITE (plagues update)",
+      "authors": [],
+      "kind": "units",
+      "summary": "A lighter version of Johnny's Loreful Nurgle that adds plague abilities without needing SFO.",
+      "description": "The SFO-style counterpart of Johnny's Loreful Nurgle with two new abilities around plagues; it does not need SFO and can be used if the full version feels too strong.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "nurgle",
+        "campaign"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2803915768",
+            "title": "Johnny's Loreful Nurgle LITE (plagues update)",
+            "updated": "2026-09-26"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1842545889562085253/EDAA5D614E9ED41F040AB27860AD99D1FEDAEA6C/",
           "kind": "cover",
           "source": "steam"
         }
@@ -18087,17 +18538,6 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3079850881"
           }
-        },
-        {
-          "kind": "optional",
-          "target": {
-            "mod": "steam-3082060200"
-          },
-          "note": "Korean translation",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3079850881"
-          }
         }
       ],
       "status": "stable",
@@ -18195,40 +18635,6 @@
           "source": "steam"
         }
       ]
-    },
-    {
-      "id": "steam-3082060200",
-      "name": "Lost Calm: Jurassic Normal: Korean translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Korean translation for Lost Calm: Jurassic Normal; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Lost Calm: Jurassic Normal links it as its Korean translation.",
-      "tags": [
-        "general",
-        "translation",
-        "korean",
-        "lizardmen"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "3082060200",
-            "title": "Lost Calm: Jurassic Normal: Korean translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Korean translation and is it current?"
-        ]
-      }
     },
     {
       "id": "steam-3085589102",
@@ -21011,17 +21417,14 @@
         "zeta0080"
       ],
       "kind": "reskin",
-      "summary": "Zeta0080's reskin that turns Nagash into a female \"Dark Queen\", with AI-generated voice lines; the censored Workshop version of a Total Warmaidens model.",
-      "description": "A reskin by zeta0080 that replaces Nagash with a female \"dark queen\" version, including new voice lines the author made with AI. It is the censored Workshop counterpart of the author's Total Warmaidens series on Nexus Mods, which has an uncensored edition.\n\nIt suits players who already use Zeta's other female reskins (Khalida, Total Warmaidens) and want Nagash to match.\n\nThe research note describes the upload as an Empire reskin with new Empire voice lines (Nexus mod 227, v2.0). That does not match the Workshop title and needs checking.",
+      "summary": "A female 'dark queen' version of Nagash by zeta0080 with new looks and AI-made voice lines; the censored Steam version of his Total Warmaidens series.",
+      "description": "A reskin by zeta0080 that turns Nagash into a female 'dark queen' with new looks and AI-made voice lines. It is the censored Workshop version of the author's Total Warmaidens series; an uncensored edition exists on Nexus Mods.\n\nIt suits players who already use Zeta's other reskins (Khalida, Neferata) and want Nagash to match.",
       "recommendedFor": "Players using zeta0080's Total Warmaidens style reskins.",
       "tags": [
         "general",
-        "reskin",
-        "nagash",
-        "undead",
-        "zeta0080",
         "beautification",
-        "voice"
+        "nagash",
+        "tomb kings"
       ],
       "sources": {
         "steam": [
@@ -21036,10 +21439,9 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "The research note calls it an Empire reskin with new Empire voice lines (Nexus 227 v2.0), but the title says Nagash; which characters it changes needs checking.",
-          "Compatibility with mods that change Nagash's model, stats or skills is unknown."
+          "Combination with the Skeletor-inspired Nagash voice mod is asked about in the comments but not answered."
         ]
       },
       "status": "stable",
@@ -21188,17 +21590,24 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dka_fantasyneferata.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Is the Nexus version (mod 405) different from the Steam upload, e.g. an NSFW variant?",
-          "Does it conflict with the other Neferata reskins (Beautiful Neferata, Neferata The Vampire Queen, [LIG] Reskin - Neferata, Naughty Neferata)?"
+          "Whether the Nexus original (DeliberateKat) has extra variants is not stated."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Shares only Neferata's three portrait images with Beautiful Neferata, Neferata The Vampire Queen and Naughty Neferata; its model comes in its own files (a replacement look, per the uploader). The mod loaded higher decides the portraits."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/11932845283580183786/C7CD49DCBDBE9B2FA51AD36C10D08CB526B86A7F/",
@@ -21957,49 +22366,6 @@
       ],
       "description": "The first Workshop upload of Passing's Corrupted Valkia (2026-09-26). In October 2026 the author created a new item (Steam 3813939023) and asked players to unsubscribe from this one and delete old .pack files from the data folder: both versions use the same pack name, which leads to a startup crash or an invisible mod.\n\nThe Workshop item no longer exists: on 2026-10-31 Steam answered with an error page instead of the item, so it was most likely removed by its author.",
       "summary": "Earlier Workshop upload of Passing's Corrupted Valkia, replaced by Steam 3813939023 and no longer available."
-    },
-    {
-      "id": "steam-3822979643",
-      "name": "peach_garden_boyz_english.pack",
-      "authors": [
-        "cult of slaanesh"
-      ],
-      "kind": "translation",
-      "summary": "Workshop item by the author of Slaanesh's Temptation, uploaded without any description; the name suggests an English text pack.",
-      "description": "This item has no description on the Workshop. Its title is a pack file name ending in “_english”, which suggests it is the English text pack for another mod by the same author, posted together with Workshop item 3822869967.\n\nIt came up next to Slaanesh's Temptation, which is by the same author. What the paired mod adds is not known yet.",
-      "tags": [
-        "lewd",
-        "translation",
-        "english"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "3822979643",
-            "title": "!peach_garden_boyz_english.pack",
-            "updated": "2026-10-20"
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "What does the paired item 3822869967 add, and is this its English translation (as the name suggests)?",
-          "Is the content adult or general? Tagged lewd only because of the author's other work.",
-          "Pack file is probably '!peach_garden_boyz_english.pack' (from the title); not verified."
-        ]
-      },
-      "images": [
-        {
-          "url": "https://images.steamusercontent.com/ugc/16798530116907749114/72F3422C9AB3ED6BE5AE173AB9914D0DD3597B83/",
-          "kind": "cover",
-          "source": "steam"
-        }
-      ]
     },
     {
       "id": "ll-26795",
@@ -22827,12 +23193,12 @@
     },
     {
       "id": "steam-3556421071",
-      "name": "Readman FFF HD Flag (Green)",
+      "name": "Readman Flirty Fallen Flag (Green)",
       "authors": [
         "Readman"
       ],
       "kind": "assets",
-      "summary": "Green flag variant of Readman's FFF flag mod (posted 2025-12-22).",
+      "summary": "ATB submod by Readman: a new faction flag for a late Alarielle, Temptation's Bloom game; safe to add or remove mid-campaign.",
       "tags": [],
       "sources": {
         "steam": [
@@ -22848,13 +23214,23 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for ATB",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3556421071"
+          }
+        }
+      ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
-        "openQuestions": [
-          "Workshop page not readable without login; whether it replaces the pink FFF (3549231458) is unchecked; pack name unknown."
-        ]
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
       },
       "images": [
         {
@@ -23088,12 +23464,12 @@
     },
     {
       "id": "steam-3525258474",
-      "name": "Readman OOO variant (Joanna as Handmaiden)",
+      "name": "Readman OOO – Joanna is a handmaiden",
       "authors": [
         "Readman"
       ],
       "kind": "patch",
-      "summary": "Variant of Readman's Overtly Optional Overrides (High Elves Expanded hero skill) with Joanna as Handmaiden (posted 2026-07-26).",
+      "summary": "Variant of Readman's Overtly Optional Overrides for ATB that also works with High Elves Expanded Hero Skill Trees, so the handmaiden skills show up on Joanna.",
       "tags": [],
       "sources": {
         "steam": [
@@ -23153,14 +23529,23 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3513079088"
+          },
+          "note": "Same overrides as Readman OOO (SaveSafe); use one of the two",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
+          }
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
-        "openQuestions": [
-          "Workshop page not readable without login; relation to Readman OOO SaveSafe (3513079088) and pack name unchecked."
-        ]
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
       },
       "images": [
         {
@@ -23289,67 +23674,6 @@
       ],
       "recommendedFor": "ATB runs that use Nymeria and the High Elf red-line buffs.",
       "summary": "Readman's save-safe fix collection for mods in the ATB list: portrait, voice and skill-icon fixes for Nymeria and Vaeri, plus Foe Seeker for Vaeri."
-    },
-    {
-      "id": "steam-3800728255",
-      "name": "Readman reskins for the new unit",
-      "authors": [
-        "Readman"
-      ],
-      "kind": "reskin",
-      "summary": "Two Readman reskins for a new unit with a less bright skin (posted 2026-09-13).",
-      "tags": [],
-      "sources": {
-        "steam": [
-          {
-            "id": "3800728255",
-            "role": "reskin 1"
-          },
-          {
-            "id": "3800728339",
-            "role": "reskin 2"
-          }
-        ],
-        "discord": [
-          {
-            "channel": "#posting-pertinent-previews",
-            "messageUrl": "https://discord.com/channels/965342581745668136/1414514757373005856/1548566615216627742"
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-30462"
-          },
-          "note": "Required item on the Workshop page",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3800728255"
-          }
-        }
-      ],
-      "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
-        "openQuestions": [
-          "Which unit is meant and whether the two items are alternatives is not stated; pack names unknown."
-        ]
-      },
-      "images": [
-        {
-          "url": "https://images.steamusercontent.com/ugc/11704331293165648156/B0AF8DB996D3E7BD20D24154C3A7E52482A8255C/",
-          "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/11447688351974663605/FCF12BF05A4C77FBB8B5D476F211E6B6697BFBE1/",
-          "kind": "screenshot",
-          "source": "steam"
-        }
-      ]
     },
     {
       "id": "steam-3623616009",
@@ -23887,6 +24211,96 @@
       ]
     },
     {
+      "id": "steam-3800728255",
+      "name": "Readman ZZZ – Corrupted White Lions reskin (Workshop upload)",
+      "authors": [
+        "[GWD]Dean"
+      ],
+      "kind": "reskin",
+      "summary": "Reskin for the corrupted White Lions unit of Corrupted Landmarks, built from Endo's corrupted elf models; two alternative uploads (ZZZ and ZZZ_alt) that change the same files.",
+      "tags": [
+        "lewd",
+        "reskin",
+        "corrupted landmarks",
+        "high elves",
+        "alarielle"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3800728255",
+            "title": "!Readman_Alarielle_ZZZ.pack"
+          },
+          {
+            "id": "3800728339",
+            "title": "!Readman_Alarielle_ZZZ_alt.pack"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#posting-pertinent-previews",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1414514757373005856/1548566615216627742"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_ZZZ.pack",
+          "from": "steam",
+          "steamId": "3800728255"
+        },
+        {
+          "file": "!Readman_Alarielle_ZZZ_alt.pack",
+          "from": "steam",
+          "steamId": "3800728339",
+          "exclusiveGroup": "zzz"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Required item on the Workshop page; provides the corrupted White Lions unit",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3800728255"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Named as a dependency in the mod's pack (!b_mixer.pack)",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "How the _alt version looks different is not described (same file names, different contents)."
+        ]
+      },
+      "description": "Gives the corrupted White Lions unit from Corrupted Landmarks a new look based on Endo's corrupted elf models. The pack only contains models and textures (95 files) and names Mixu's Unlocker as a dependency; the Workshop page lists Corrupted Landmarks as required, which also provides most of the textures it refers to.\n\nThe ZZZ and ZZZ_alt uploads replace exactly the same files, so use one of them. Uploaded by [GWD]Dean; the pack names follow Readman's naming for ATB submods.",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/11704331293165648156/B0AF8DB996D3E7BD20D24154C3A7E52482A8255C/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11447688351974663605/FCF12BF05A4C77FBB8B5D476F211E6B6697BFBE1/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "ll-43977",
       "name": "Readman_YYY",
       "authors": [
@@ -24250,6 +24664,43 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/2195002007214368859/0720A66FA3D9A433345AC56D680729054D46D385/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2856367440",
+      "name": "Restore Horde and Recruitment for Chaos",
+      "authors": [],
+      "kind": "utility",
+      "summary": "Lets the Warriors of Chaos recruit units normally at a higher price and restores their horde mechanic.",
+      "description": "Gives the Warriors of Chaos normal recruitment (at a higher cost) and brings back the horde feature with rebalanced camp buildings.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "warriors of chaos",
+        "campaign"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2856367440",
+            "title": "Restore Horde and Recruitment for Chaos",
+            "updated": "2026-10-13"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1776127926584413297/B73A5392E8F907F57C8A8F33BD8BB7E93F10E25E/",
           "kind": "cover",
           "source": "steam"
         }
@@ -25400,15 +25851,45 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Required item",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3318719948"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3318713041"
+          },
+          "note": "Required item: SCM's Skaven Assets",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3318719948"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3149445431"
+          },
+          "note": "Required item: Audio Mixer",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3318719948"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "What does the mod add in total (playable clans, lords, units)?",
-          "Is the Discord name 'SCM's Skaven Assets' a separate asset item, i.e. is a different Steam id required?",
-          "Why was it posted in the Kerberos updates channel (shared assets or a Kerberos submod)?"
-        ]
+        "confidence": "medium",
+        "openQuestions": []
       },
       "status": "stable",
       "images": [
@@ -26821,6 +27302,44 @@
           "Pack name not known (item not installed)."
         ]
       }
+    },
+    {
+      "id": "steam-2846183349",
+      "name": "Siege AI & Mechanics Overhaul",
+      "authors": [],
+      "kind": "utility",
+      "summary": "Changes how sieges work so the AI attacks and defends settlements more sensibly.",
+      "description": "Reworks siege battles and the related campaign mechanics; the author recommends combining it with a difficulty mod. Works with game version 9.0.x.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "campaign",
+        "battle",
+        "siege"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2846183349",
+            "title": "Siege AI & Mechanics Overhaul",
+            "updated": "2026-10-27"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1906730844030321710/D0530E31994A9DC155F417E85B44FBE01F2B6DB9/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "ll-24875",
@@ -28266,10 +28785,10 @@
       "id": "steam-3816183901",
       "name": "Slaanesh's Temptation (romance or corruption route)",
       "authors": [
-        "cult of slaanesh"
+        "워령"
       ],
       "kind": "submod",
-      "summary": "Submod with a choice between a romance and a corruption route with quest rewards; usable alongside the corruption mods or standalone. A fix on 2026-10-10 allows playing Azazel together with another corruption mod. Korean original; an English translation is a separate item.",
+      "summary": "For Slaanesh factions, Azazel and Sigvald: meet female lords and win them over through quest chains, either by romance or by corruption. Korean original; the story is not finished yet.",
       "tags": [],
       "sources": {
         "steam": [
@@ -28284,7 +28803,12 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "sla_temptation.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -28296,15 +28820,40 @@
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/967468098464649327/1557953043767763144"
           }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "steam-3815238353"
+          },
+          "note": "The Hero Addition Mod is built in (identical files)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816183901"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3816938215"
+          },
+          "note": "Makes Karl Franz female, who then appears among the heroines",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816183901"
+          }
         }
       ],
       "curation": {
-        "lastChecked": "2026-10-31",
-        "confidence": "low",
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
         "openQuestions": [
-          "Workshop page not readable without login; requirements and supported characters unchecked."
+          "Which corruption mods it was tested with is not listed beyond 'works with corruption mods'."
         ]
       },
+      "knownIssues": [
+        "The story is unfinished (author's page)."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/12162379559522851751/E2C07671DB497EE6D2AE7A7EEB6DDE223A8C1673/",
@@ -29654,17 +30203,6 @@
         {
           "kind": "optional",
           "target": {
-            "mod": "steam-2861030555"
-          },
-          "note": "Chinese translation",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2798804755"
-          }
-        },
-        {
-          "kind": "optional",
-          "target": {
             "mod": "steam-3190529954"
           },
           "note": "French translation",
@@ -29690,40 +30228,6 @@
           "source": "steam"
         }
       ]
-    },
-    {
-      "id": "steam-2861030555",
-      "name": "Tabletop Caps - Unique Lord & Faction Rules: Chinese translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Chinese translation for the Tabletop Caps Unique Lord & Faction Rules submod; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Tabletop Caps - Unique Lord & Faction Rules - Submod links it as its Chinese translation.",
-      "tags": [
-        "general",
-        "translation",
-        "chinese",
-        "tabletop caps"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "2861030555",
-            "title": "Tabletop Caps - Unique Lord & Faction Rules: Chinese translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Chinese translation and is it current?"
-        ]
-      }
     },
     {
       "id": "steam-2812165190",
@@ -33148,20 +33652,44 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Required item",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3751193703"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3007996493"
+          },
+          "note": "Required item: Immortal Empires Expanded",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3751193703"
+          }
+        }
+      ],
       "campaigns": [
         "IEE"
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Steam id of the original mod (to add a supersedes relation)?",
-          "Does it require Immortal Empires Expanded (steam-3007996493), as the original's title suggests?",
-          "What does the Sect of Akhalee add, and is it compatible with Alarielle, Temptation's Bloom?"
+          "The original's Workshop id is not linked on the page."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Use it instead of the original Sect of Akhalee mod, not together with it (temporary fix of animation issues)."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/12381552580961147256/2DF43A9C17D30C7D2C908EBBE7CB06C601E26C2E/",
@@ -33705,10 +34233,12 @@
     {
       "id": "steam-2853817947",
       "name": "瓦尔基娅reskin",
-      "authors": [],
+      "authors": [
+        "Deer24"
+      ],
       "kind": "reskin",
-      "summary": "Chinese Valkia reskin that changes her appearance to the author's taste.",
-      "description": "The title means \"Valkia reskin\"; the one-line Chinese description only says that Valkia's look was changed to the author's personal preference. No details on the changes, requirements or compatibility are given, and it was last updated in August 2022.\n\nLinked in an older message in the Corrupted Valkia channel. It replaces her look, so do not combine it with other Valkia reskins.",
+      "summary": "Changes Valkia's head model to the author's own design; it reuses Miao Ying's storm-dragon human-form head and hair textures.",
+      "description": "A Chinese reskin from 2022 that gives Valkia a new head, built from Miao Ying's storm-dragon human-form head and hair textures. Because the pack carries those Miao Ying textures under their original names, it also changes Miao Ying's look in her human form and clashes with Miao Ying reskins.\n\nSteam comments disagree on whether it still works after recent patches.",
       "tags": [
         "general",
         "reskin",
@@ -33725,17 +34255,25 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "hso.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "What does the reskin change, and is it revealing (then tag lewd)?",
-          "Does it still work on 9.x?"
+          "Whether it still works on 9.x is unclear from the comments."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "The pack also replaces Miao Ying's storm-dragon human-form head and hair textures (cth_storm_miaoying), so it changes Miao Ying's look as well and clashes with Miao Ying reskins.",
+        "Steam comments disagree on whether it still works after recent patches."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/1749106328795134065/26D07BCF50EE1AA8D646D89AD76E30BCE7F756A4/",
@@ -33909,9 +34447,11 @@
     {
       "id": "steam-3822869967",
       "name": "고블린 유비 관우 장비 모드",
-      "authors": [],
+      "authors": [
+        "워령"
+      ],
       "kind": "units",
-      "summary": "Korean mod that adds a goblin-focused lord plus legendary lords and heroes styled after Three Kingdoms figures.",
+      "summary": "Adds a goblin-focused Greenskin legendary lord with legendary lords and heroes modelled on Liu Bei, Guan Yu, Zhang Fei and other Three Kingdoms figures.",
       "description": "The Korean description says the mod adds a lord specialised in leading goblins, together with legendary lords and heroes modelled on Three Kingdoms figures (Guan Yu, Zhang Fei, Zhuge Liang, Pang Tong, Fa Zheng, Zhao Yun and Ma Chao). The title translates roughly as \"Goblin Liu Bei, Guan Yu, Zhang Fei mod\". No stats, factions or requirements are given.\n\nIt was posted without comment on the Discord by the author of Slaanesh's Temptation, next to another upload (Steam 3822979643). Nothing points to adult content; it is listed as a general units mod.",
       "tags": [
         "general",
@@ -33929,18 +34469,36 @@
           }
         ]
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "peach_garden_boyz.pack",
+          "from": "steam"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3822979643"
+          },
+          "note": "English translation by the same author",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3822979643"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Which faction(s) get these characters and how are they recruited?",
-          "Is the companion upload Steam 3822979643 required or related?",
-          "Is there an English translation?"
+          "How the new lords are recruited or unlocked is not described."
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "A player reported start-position problems together with Mixu's Unlocker and Immortal Empires Expanded (Steam comments)."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/13406041855685685421/783045EB6D75B24EF0B55FBF75B516C1F51FE4BA/",
@@ -33952,10 +34510,12 @@
     {
       "id": "steam-3815238353",
       "name": "영웅 추가 모드 (Hero Addition Mod)",
-      "authors": [],
+      "authors": [
+        "워령"
+      ],
       "kind": "units",
       "summary": "Korean mod that adds extra generic hero types to several races, each filling a melee, replenishment or mobility role.",
-      "description": "Adds new generic heroes to Cathay, Kislev, Warriors of Chaos, High Elves, Dark Elves, Bretonnia, Vampire Coast, Chaos Dwarfs and Beastmen. The Workshop page is only a short Korean table that lists each hero with a role: melee combat, replenishment (keeping the army topped up) or mobility.\n\nThe heroes appear to be lesser versions of existing characters, for example a Grail Knight hero for Bretonnia or a junior Druzhina for Kislev.\n\nIt was posted as a companion to *Slaanesh's Temptation*, another Korean mod. As far as the page shows, the hero mod itself is a general gameplay add-on without adult content.",
+      "description": "Adds generic heroes for Cathay, Kislev, Warriors of Chaos, High Elves, Dark Elves, Bretonnia, Vampire Coast, Chaos Dwarfs and Beastmen, each with a role (melee, replenishment or mobility).\n\nThe author's Slaanesh's Temptation contains this mod completely (all files and table rows are identical), so with Slaanesh's Temptation it is not needed; use it alone only if you want the heroes without that mod.",
       "features": [
         "Kislev and Warriors of Chaos get two new heroes, the other listed races one each",
         "Each hero has a role: melee, replenishment or mobility",
@@ -33978,18 +34538,22 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "custom_heroes.pack",
+          "from": "steam"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "The Workshop page is a Korean table only; hero names and role meanings are the curator's translation.",
-          "Whether it is by the author of Slaanesh's Temptation (3816183901) and whether it depends on it.",
-          "Whether the in-game texts are Korean only."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
-      "status": "stable",
+      "status": "superseded",
+      "knownIssues": [
+        "Fully included in Slaanesh's Temptation (all 166 files and table rows are part of it); use only one of the two."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/13946347966380973135/577AC479A70E1B350F0EB97CA38BE45084190E7F/",

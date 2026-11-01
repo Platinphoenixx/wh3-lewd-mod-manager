@@ -522,17 +522,6 @@
         {
           "kind": "optional",
           "target": {
-            "steamId": "2861030555"
-          },
-          "note": "Chinese translation",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2798804755"
-          }
-        },
-        {
-          "kind": "optional",
-          "target": {
             "steamId": "3190529954"
           },
           "note": "French translation",
@@ -668,6 +657,36 @@
         ]
       },
       "_fix": "Referenced by steam-2793419054; curated from its Steam page 2026-11-01"
+    },
+    {
+      "id": "steam-2803915768",
+      "name": "Johnny's Loreful Nurgle LITE (plagues update)",
+      "authors": [],
+      "kind": "units",
+      "summary": "A lighter version of Johnny's Loreful Nurgle that adds plague abilities without needing SFO.",
+      "description": "The SFO-style counterpart of Johnny's Loreful Nurgle with two new abilities around plagues; it does not need SFO and can be used if the full version feels too strong.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "nurgle",
+        "campaign"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2803915768",
+            "title": "Johnny's Loreful Nurgle LITE (plagues update)"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
     },
     {
       "id": "steam-2805809756",
@@ -1237,6 +1256,37 @@
       "_fix": "Steam find from the Discord research (context: older link)."
     },
     {
+      "id": "steam-2846183349",
+      "name": "Siege AI & Mechanics Overhaul",
+      "authors": [],
+      "kind": "utility",
+      "summary": "Changes how sieges work so the AI attacks and defends settlements more sensibly.",
+      "description": "Reworks siege battles and the related campaign mechanics; the author recommends combining it with a difficulty mod. Works with game version 9.0.x.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "campaign",
+        "battle",
+        "siege"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2846183349",
+            "title": "Siege AI & Mechanics Overhaul"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
+    },
+    {
       "id": "steam-2848577238",
       "name": "Dragon Breath Attack for Cathay",
       "authors": [],
@@ -1742,6 +1792,36 @@
       "_fix": "Referenced by steam-2853239091; curated from its Steam page 2026-11-01"
     },
     {
+      "id": "steam-2856367440",
+      "name": "Restore Horde and Recruitment for Chaos",
+      "authors": [],
+      "kind": "utility",
+      "summary": "Lets the Warriors of Chaos recruit units normally at a higher price and restores their horde mechanic.",
+      "description": "Gives the Warriors of Chaos normal recruitment (at a higher cost) and brings back the horde feature with rebalanced camp buildings.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "warriors of chaos",
+        "campaign"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2856367440",
+            "title": "Restore Horde and Recruitment for Chaos"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
+    },
+    {
       "id": "steam-2857794526",
       "name": "Warband Cross Race",
       "authors": [],
@@ -2014,41 +2094,6 @@
       },
       "status": "stable",
       "_fix": "Steam find from the Discord research (context: older link)"
-    },
-    {
-      "id": "steam-2861030555",
-      "name": "Tabletop Caps - Unique Lord & Faction Rules: Chinese translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Chinese translation for the Tabletop Caps Unique Lord & Faction Rules submod; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Tabletop Caps - Unique Lord & Faction Rules - Submod links it as its Chinese translation.",
-      "tags": [
-        "general",
-        "translation",
-        "chinese",
-        "tabletop caps"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "2861030555",
-            "title": "Tabletop Caps - Unique Lord & Faction Rules: Chinese translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Chinese translation and is it current?"
-        ]
-      },
-      "_fix": "Referenced by steam-2798804755; curated from its Steam page 2026-11-01 (page not public)"
     },
     {
       "id": "steam-2862374565",
@@ -3141,6 +3186,49 @@
         ]
       },
       "_fix": "Steam find from the Discord research (context: ATB channel, link only)."
+    },
+    {
+      "id": "steam-2960261916",
+      "name": "Daughters of Chaos",
+      "authors": [],
+      "kind": "units",
+      "summary": "Adds female Chaos lords, heroes and daemon princesses.",
+      "description": "Adds female lords and heroes for the Chaos factions, with daemon princesses in a companion upload. It needs its table pack (Daughter of Chaos (Tables)) to run.\n\nRequired by Hashut's Zharrhammer Overhaul.",
+      "tags": [
+        "general",
+        "chaos",
+        "lords",
+        "heroes"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2960261916",
+            "title": "Daughters of Chaos"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3139730079"
+          },
+          "note": "Its table pack",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3139730079"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
     },
     {
       "id": "steam-2962179819",
@@ -4389,17 +4477,6 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3079850881"
           }
-        },
-        {
-          "kind": "optional",
-          "target": {
-            "steamId": "3082060200"
-          },
-          "note": "Korean translation",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3079850881"
-          }
         }
       ],
       "status": "stable",
@@ -4559,41 +4636,6 @@
         ]
       },
       "_fix": "Referenced by steam-3079850881; curated from its Steam page 2026-11-01"
-    },
-    {
-      "id": "steam-3082060200",
-      "name": "Lost Calm: Jurassic Normal: Korean translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Korean translation for Lost Calm: Jurassic Normal; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Lost Calm: Jurassic Normal links it as its Korean translation.",
-      "tags": [
-        "general",
-        "translation",
-        "korean",
-        "lizardmen"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "3082060200",
-            "title": "Lost Calm: Jurassic Normal: Korean translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Korean translation and is it current?"
-        ]
-      },
-      "_fix": "Referenced by steam-3079850881; curated from its Steam page 2026-11-01 (page not public)"
     },
     {
       "id": "steam-3082390369",
@@ -4827,6 +4869,35 @@
       "_fix": "Steam find from the Discord research (context: #miao-alchemy 2026-07-07, linked without comment)."
     },
     {
+      "id": "steam-3139730079",
+      "name": "Daughter of Chaos (Tables)",
+      "authors": [],
+      "kind": "assets",
+      "summary": "The table pack that Daughters of Chaos needs to run.",
+      "description": "Database tables for Daughters of Chaos; the mod does not run without it. Required by Hashut's Zharrhammer Overhaul as well.",
+      "tags": [
+        "general",
+        "chaos"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3139730079",
+            "title": "Daughter of Chaos (Tables)"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
+    },
+    {
       "id": "steam-3140200173",
       "name": "Victory Conditions Overhaul",
       "authors": [],
@@ -4941,6 +5012,36 @@
         ]
       },
       "_fix": "Referenced by steam-2853239091; curated from its Steam page 2026-11-01"
+    },
+    {
+      "id": "steam-3149445431",
+      "name": "Audio Mixer",
+      "authors": [],
+      "kind": "framework",
+      "summary": "A shared audio framework many mods use to add or change voices and sounds.",
+      "description": "Lets mods add or replace sound events without overwriting each other's audio files. Many unit and character mods need it.\n\nRequired by SCM Skaven Clans.",
+      "tags": [
+        "general",
+        "audio",
+        "framework"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3149445431",
+            "title": "Audio Mixer"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
     },
     {
       "id": "steam-3149586330",
@@ -5472,17 +5573,6 @@
             "steamId": "3239114391"
           },
           "note": "Simplified Chinese localisation submod",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3238848431"
-          }
-        },
-        {
-          "kind": "optional",
-          "target": {
-            "steamId": "3327990553"
-          },
-          "note": "Korean localisation submod",
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3238848431"
@@ -6167,41 +6257,6 @@
       },
       "status": "stable",
       "_fix": "Steam find from the Discord research (context: #kerberos-updates 2025-10-12, posted as SCM's Skaven Assets - 6.3)."
-    },
-    {
-      "id": "steam-3327990553",
-      "name": "Helper UI: Korean translation (not public)",
-      "authors": [],
-      "kind": "translation",
-      "summary": "Korean translation for Helper UI; the Workshop page is not public.",
-      "description": "The Steam page of this item cannot be read through the public Workshop API, so its contents are unknown.\n\nIt is in the catalog because Helper UI links it as its Korean localisation submod.",
-      "tags": [
-        "general",
-        "translation",
-        "korean",
-        "ui"
-      ],
-      "sources": {
-        "steam": [
-          {
-            "id": "3327990553",
-            "title": "Helper UI: Korean translation (not public)",
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "status": "stable",
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "low",
-        "openQuestions": [
-          "Is the item still available (hidden, friends-only or removed)?",
-          "Is it really a Korean translation and is it current?"
-        ]
-      },
-      "_fix": "Referenced by steam-3238848431; curated from its Steam page 2026-11-01 (page not public)"
     },
     {
       "id": "steam-3348616922",
@@ -7232,6 +7287,70 @@
       },
       "status": "stable",
       "_fix": "Steam find from the Discord research (context: #atb-alarielle-temptation's-bloom 2026-06-17, link only)."
+    },
+    {
+      "id": "steam-3608958073",
+      "name": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)",
+      "authors": [
+        "Elysia Felis"
+      ],
+      "kind": "units",
+      "summary": "A re-upload of an abandoned ice witch character mod, maintained by another author.",
+      "description": "A Chinese re-upload of an ice witch character mod whose original author disappeared; this is the 'high pointed ears' version, now maintained by Elysia Felis.\n\nHigh elf ice witch plus builds on it and lists it as required.",
+      "tags": [
+        "general",
+        "high elves",
+        "kislev",
+        "ice witch"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3608958073",
+            "title": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
+    },
+    {
+      "id": "steam-3608958660",
+      "name": "Ice Witch faction patch (你爱我，我爱你，冰雪甜蜜蜜)",
+      "authors": [],
+      "kind": "patch",
+      "summary": "The full-faction version of the re-uploaded ice witch mod.",
+      "description": "Second upload of the same ice witch mod series, described as the full-faction version; the uploader will remove it if the original author returns.\n\nHigh elf ice witch plus lists it as required (it also gives two ice witches at the start).",
+      "tags": [
+        "general",
+        "high elves",
+        "kislev",
+        "ice witch"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3608958660",
+            "title": "Ice Witch faction patch (你爱我，我爱你，冰雪甜蜜蜜)"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
     },
     {
       "id": "steam-3619883986",
@@ -9088,6 +9207,49 @@
         ]
       },
       "_fix": "Steam find from the Discord research (context: Katarin channel; EN patch of a non-lewd Katarin faction overhaul)."
+    },
+    {
+      "id": "steam-3816938215",
+      "name": "Empress Caroline Franz (Amber) – female Karl Franz",
+      "authors": [],
+      "kind": "reskin",
+      "summary": "Turns Karl Franz into Empress Caroline Franz with her own model, voice, portraits and unit card.",
+      "description": "A Chinese reskin that replaces Karl Franz with a female version, Empress Caroline Franz, including model, voice lines, portraits and unit card. It needs no other mod; two looks (with and without helmet) can be switched with Variant Selector.\n\nSlaanesh's Temptation recommends it, because Karl Franz then appears among its heroines.",
+      "tags": [
+        "general",
+        "beautification",
+        "empire",
+        "karl franz"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3816938215",
+            "title": "Empress Caroline Franz (Amber) – female Karl Franz"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Switches between the helmet and no-helmet look",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3816938215"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_fix": "Required or recommended by another catalog entry; curated from its Steam page 2026-11-01."
     },
     {
       "id": "steam-3819138832",

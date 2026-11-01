@@ -1,0 +1,53 @@
+{
+ "mod": "steam-2859425359",
+ "packs": [
+  "alarielle clothes.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "alarielle clothes.pack": {
+   "files": 4,
+   "dependencies": []
+  }
+ },
+ "fileCount": 4,
+ "byTopFolder": {
+  "variantmeshes": 4
+ },
+ "tables": [],
+ "references": {
+  "total": 8,
+  "inMod": 2,
+  "inBaseGame": 6,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [
+  "alarielle clothes2.pack",
+  "kerb_Alarielle_Temptations_Bloom_steam.pack",
+  "kerberos_mod_assets.pack"
+ ],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 1029,
+   "pack": "alarielle clothes.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1185,
+   "pack": "alarielle clothes.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_alarielle/alarielle_clothes.rigid_model_v2",
+   "size": 1000628,
+   "pack": "alarielle clothes.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_alarielle/alarielle_clothes.wsmodel",
+   "size": 1213,
+   "pack": "alarielle clothes.pack"
+  }
+ ]
+}

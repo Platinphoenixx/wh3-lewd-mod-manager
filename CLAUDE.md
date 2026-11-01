@@ -60,7 +60,7 @@ The project must keep working without anyone's AI subscription.
 ## Optional curation (by hand or with an AI assistant)
 
 Curated data is layered; later layers override earlier ones field by field (a field is replaced whole):
-`auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json`
+`auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json` < `followup-review.json`
 < `followup-archives.json` < `followup-community.json` < `manual.json`; then `community.json` is applied
 on top. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
 over all layers – fix texts there.

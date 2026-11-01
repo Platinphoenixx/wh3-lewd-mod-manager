@@ -1,0 +1,1698 @@
+{
+ "mod": "steam-3804202775",
+ "packs": [
+  "@elf ice witch plus.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@elf ice witch plus.pack": {
+   "files": 142,
+   "dependencies": []
+  }
+ },
+ "fileCount": 142,
+ "byTopFolder": {
+  "variantmeshes": 73,
+  "db": 64,
+  "ui": 3,
+  "script": 1,
+  "text": 1
+ },
+ "tables": [
+  "agent_culture_details_tables",
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "ancillaries_included_agent_subtypes_tables",
+  "ancillaries_required_skills_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "armed_citizenry_unit_groups_tables",
+  "armed_citizenry_units_to_unit_groups_junctions_tables",
+  "battle_currency_units_cost_values_tables",
+  "battle_entities_tables",
+  "battle_vortexs_tables",
+  "building_effects_junction_tables",
+  "campaign_agent_subtype_factorial_effect_junctions_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "campaign_group_unique_agents_tables",
+  "campaign_map_attrition_unit_immunities_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_ancillaries_junctions_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "character_skills_to_level_reached_criterias_tables",
+  "culture_to_battle_animation_tables_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_agent_junction_tables",
+  "effect_bonus_value_agent_subtype_junctions_tables",
+  "effect_bonus_value_unit_ability_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "land_units_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "main_units_tables",
+  "melee_weapons_tables",
+  "mounts_tables",
+  "names_tables",
+  "special_ability_groups_tables",
+  "special_ability_groups_to_unit_abilities_junctions_tables",
+  "special_ability_groups_to_units_junctions_tables",
+  "special_ability_to_invalid_target_flags_tables",
+  "special_ability_to_invalid_usage_flags_tables",
+  "ui_unit_bullet_point_unit_overrides_tables",
+  "unit_abilities_tables",
+  "unit_abilities_to_additional_ui_effects_juncs_tables",
+  "unit_attributes_groups_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_description_historical_texts_tables",
+  "unit_description_short_texts_tables",
+  "unit_general_details_tables",
+  "unit_special_abilities_tables",
+  "unit_variants_colours_tables",
+  "unit_variants_tables",
+  "units_custom_battle_mounts_tables",
+  "units_custom_battle_permissions_tables",
+  "units_to_groupings_military_permissions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 92,
+  "inMod": 61,
+  "inBaseGame": 29,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hr1/wef/wef_unicorn/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/ice_cloak_tiny_lod1_weighted4_alpha_on.xml.material"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_culture_details_tables": [],
+  "agent_subtypes_tables": [
+   "Elf_ice_witch",
+   "ui/campaign ui/Agents/wh3_main_lore_ice.png",
+   "wh2_main_vo_actor_High_Elves_Mage",
+   "wh3_main_lore_of_ice",
+   "cannot_be_loaded_in_campaign"
+  ],
+  "agent_uniforms_tables": [
+   "Elf_ice_witch"
+  ],
+  "ancillaries_included_agent_subtypes_tables": [
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "ancillaries_required_skills_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "ancillaries_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "wh3_dlc24_anc_mount_frost_wyrm",
+   "mount",
+   "all",
+   "Elf_ice_witch_cavalry",
+   "wh_main_anc_mount_warhorse",
+   "Elf_ice_witch_bear",
+   "wh3_main_anc_mount_war_bear",
+   "Elf_ice_witch_arcane_phoenix",
+   "wh2_dlc15_anc_mount_arcane_phoenix"
+  ],
+  "ancillary_info_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "armed_citizenry_unit_groups_tables": [
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "armed_citizenry_units_to_unit_groups_junctions_tables": [],
+  "battle_currency_units_cost_values_tables": [
+   "supplies_currency",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "battle_entities_tables": [
+   "Elf_ice_witch",
+   "man",
+   "circle",
+   "small",
+   "ignore",
+   "wh3_ksl_ice_witch_LH",
+   "infantry_light_effects",
+   "wh_main_generic_character_aura",
+   "wh_main_unit_combat",
+   "small_entity",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "chariot",
+   "capsule",
+   "large",
+   "rotation",
+   "wh2_chariot_articulation_wood",
+   "artillery_effects",
+   "articulated_entity",
+   "Elf_ice_witch_arcane_phoenix",
+   "giant",
+   "wh_dragon_small_wyvern",
+   "war_beast_effects",
+   "large_entity"
+  ],
+  "battle_vortexs_tables": [
+   "wh_dlc08_unit_contact_frostbite",
+   "Elf_ice_witch_abilities_howling_winter",
+   "composite_scene/spells_and_abilities/howling_winter.csc",
+   "activator_front",
+   "1.ignore",
+   "circle"
+  ],
+  "building_effects_junction_tables": [
+   "wh2_main_hef_mages_1",
+   "Elf_ice_witch_enable",
+   "province_to_province_own_unseen",
+   "wh2_main_hef_mages_2",
+   "wh2_main_hef_mages_3",
+   "wh2_main_special_ghrond_convent_of_sorcery_2_hef",
+   "wh2_main_special_tower_of_hoeth_1",
+   "wh2_main_special_tower_of_hoeth_2",
+   "wh3_dlc27_hef_colony_settlement_major_3",
+   "wh3_dlc27_hef_colony_settlement_major_4",
+   "wh3_dlc27_hef_colony_settlement_major_5",
+   "wh3_dlc27_hef_colony_settlement_minor_3",
+   "wh3_dlc27_hef_dragonship_main_building_3",
+   "force_to_force_own",
+   "wh3_dlc27_hef_dragonship_main_building_4",
+   "wh3_dlc27_hef_dragonship_main_building_5",
+   "wh3_dlc27_hef_dragonship_main_building_aislinn_3",
+   "wh3_dlc27_hef_dragonship_main_building_aislinn_4",
+   "wh3_dlc27_hef_dragonship_main_building_aislinn_5"
+  ],
+  "campaign_agent_subtype_factorial_effect_junctions_tables": [
+   "Elf_ice_witch",
+   "skaven_discoverability_characters",
+   "EFS_ONLY_OWNER"
+  ],
+  "campaign_character_art_sets_tables": [
+   "wizard",
+   "Elf_ice_witch_male",
+   "Elf_ice_witch"
+  ],
+  "campaign_character_arts_tables": [
+   "Elf_ice_witch",
+   "none",
+   "wh2_main_campaign_hef_ship_agent",
+   "cam_hu1_vlad_sword",
+   "cam_medium_ship_05",
+   "Elf_ice_witch_male"
+  ],
+  "campaign_group_unique_agents_tables": [],
+  "campaign_map_attrition_unit_immunities_tables": [
+   "snow",
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [],
+  "cdir_events_dilemma_payloads_tables": [],
+  "character_skill_level_details_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_nullpoint",
+   "Elf_ice_witch_abilities_howling_winter",
+   "Elf_ice_witch_natrue",
+   "Elf_ice_witch_snowflake_pendant",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "character_skill_level_to_ancillaries_junctions_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "Elf_ice_witch_ice_frost_wyrm",
+   "character_to_character_own",
+   "Elf_ice_witch_arcane_phoenix",
+   "Trait_Elf_ice_witch",
+   "wh3_main_effect_ability_cooldown_lore_of_ice",
+   "wh3_main_effect_ability_cooldown_hailstorm",
+   "wh3_main_effect_ability_cooldown_blizzard",
+   "wh3_main_effect_ability_cost_add_lore_of_ice_tempest_common",
+   "wh_main_effect_force_all_campaign_movement_range_bad",
+   "character_to_force_enemy_provincewide",
+   "wh_dlc07_effect_attrition_immunity_snow",
+   "agent_to_parent_army_own",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_snowflake_pendant",
+   "wh3_main_effect_ability_enable_bound_snowflake_pendant",
+   "wh_main_effect_attribute_enable_strider",
+   "wh_main_effect_attribute_enable_vanguard_deployment",
+   "wh2_main_effect_ability_enable_heart_of_avelorn",
+   "wh2_dlc10_effect_ability_enable_star_of_avelorn",
+   "wh3_main_effect_ability_enable_mirror_of_the_ice_queen",
+   "Elf_ice_witch_natrue",
+   "wh_main_effect_agent_field_line_of_sight_mod",
+   "wh_main_effect_province_growth_characters",
+   "character_to_province_own",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "character_to_force_own",
+   "wh_main_effect_ability_enable_seed_of_rebirth",
+   "wh3_main_effect_ability_enable_bound_gastuvas_egg",
+   "Elf_ice_witch_abilities_howling_winter",
+   "enable_Elf_ice_witch_abilities_howling_winter",
+   "wh3_main_effect_ability_enable_bound_frost_shard_glaive",
+   "wh3_main_effect_ability_enable_frost_fang",
+   "Elf_ice_witch_Mana Shield",
+   "wh3_main_effect_battle_barrier_health_add",
+   "wh3_main_effect_battle_barrier_replenish_rate_mod",
+   "wh3_main_effect_ability_enable_permafrost_wards",
+   "wh3_main_effect_ability_enable_the_crystal_cloak",
+   "Elf_ice_witch_nullpoint",
+   "wh_main_effect_character_stat_unit_health"
+  ],
+  "character_skill_node_links_tables": [
+   "Elf_ice_witch_magic_1_1",
+   "Elf_ice_witch_magic_0",
+   "REQUIRED",
+   "Elf_ice_witch_magic_1_2",
+   "Elf_ice_witch_magic_1_3",
+   "Elf_ice_witch_magic_1_4",
+   "Elf_ice_witch_magic_1_5",
+   "Elf_ice_witch_magic_1_6",
+   "Elf_ice_witch_magic_2",
+   "SUBSET_REQUIRED",
+   "Elf_ice_witch_magic_3_1",
+   "Elf_ice_witch_magic_3_2",
+   "Elf_ice_witch_magic_3_3",
+   "Elf_ice_witch_magic_3_4",
+   "Elf_ice_witch_magic_3_5",
+   "Elf_ice_witch_magic_4",
+   "Elf_ice_witch_Combat_02",
+   "Elf_ice_witch_Combat_01",
+   "Elf_ice_witch_Combat_03",
+   "Elf_ice_witch_Combat_04",
+   "Elf_ice_witch_Combat_05",
+   "Elf_ice_witch_Combat_06",
+   "Elf_ice_witch_Combat_07",
+   "Elf_ice_witch_Combat_08",
+   "Elf_ice_witch_Combat_09",
+   "Elf_ice_witch_Combat_10",
+   "Elf_ice_witch_Combat_11",
+   "Elf_ice_witch_Combat_12",
+   "Elf_ice_witch_unique_02",
+   "Elf_ice_witch_unique_01",
+   "Elf_ice_witch_unique_03",
+   "Elf_ice_witch_unique_04",
+   "Elf_ice_witch_unique_05",
+   "Elf_ice_witch_unique_06",
+   "Elf_ice_witch_unique_07",
+   "Elf_ice_witch_unique_08",
+   "Elf_ice_witch_unique_09",
+   "Elf_ice_witch_unique_10",
+   "Elf_ice_witch_unique_11",
+   "Elf_ice_witch_unique_12",
+   "Elf_ice_witch_unique_14",
+   "Elf_ice_witch_unique_13",
+   "Elf_ice_witch_unique_15",
+   "Elf_ice_witch_unique_16",
+   "Elf_ice_witch_unique_17",
+   "Elf_ice_witch_unique_18",
+   "Elf_ice_witch_unique_19",
+   "Elf_ice_witch_unique_20",
+   "Elf_ice_witch_unique_21",
+   "Elf_ice_witch_unique_22",
+   "Elf_ice_witch_unique_23",
+   "Elf_ice_witch_unique_24"
+  ],
+  "character_skill_node_set_items_tables": [
+   "Elf_ice_witch",
+   "Elf_ice_witch_campaign_01",
+   "Elf_ice_witch_campaign_02",
+   "Elf_ice_witch_campaign_03",
+   "Elf_ice_witch_campaign_04",
+   "Elf_ice_witch_campaign_05",
+   "Elf_ice_witch_campaign_06",
+   "Elf_ice_witch_campaign_actions_dummy",
+   "Elf_ice_witch_generic_01",
+   "Elf_ice_witch_generic_02",
+   "Elf_ice_witch_generic_03",
+   "Elf_ice_witch_generic_04",
+   "Elf_ice_witch_generic_05",
+   "Elf_ice_witch_generic_06",
+   "Elf_ice_witch_generic_08",
+   "Elf_ice_witch_generic_09",
+   "Elf_ice_witch_generic_10",
+   "Elf_ice_witch_generic_11",
+   "immo_Elf_ice_witch",
+   "blanc_Elf_ice_witch",
+   "Elf_ice_witch_magic_0",
+   "Elf_ice_witch_magic_1_1",
+   "Elf_ice_witch_magic_1_2",
+   "Elf_ice_witch_magic_1_3",
+   "Elf_ice_witch_magic_1_4",
+   "Elf_ice_witch_magic_1_5",
+   "Elf_ice_witch_magic_1_6",
+   "Elf_ice_witch_magic_2",
+   "Elf_ice_witch_magic_3_1",
+   "Elf_ice_witch_magic_3_2",
+   "Elf_ice_witch_magic_3_3",
+   "Elf_ice_witch_magic_3_4",
+   "Elf_ice_witch_magic_3_5",
+   "Elf_ice_witch_magic_4",
+   "Elf_ice_witch_magic_dummy",
+   "Elf_ice_witch_unique_01",
+   "Elf_ice_witch_unique_02",
+   "Elf_ice_witch_unique_03",
+   "Elf_ice_witch_unique_04",
+   "Elf_ice_witch_unique_05",
+   "Elf_ice_witch_unique_06",
+   "Elf_ice_witch_unique_07",
+   "Elf_ice_witch_unique_08",
+   "Elf_ice_witch_unique_09",
+   "Elf_ice_witch_unique_10",
+   "Elf_ice_witch_unique_11",
+   "Elf_ice_witch_unique_12",
+   "Elf_ice_witch_unique_13",
+   "Elf_ice_witch_unique_14",
+   "Elf_ice_witch_unique_15",
+   "Elf_ice_witch_unique_16",
+   "Elf_ice_witch_unique_17",
+   "Elf_ice_witch_unique_18",
+   "Elf_ice_witch_unique_19",
+   "Elf_ice_witch_unique_20",
+   "Elf_ice_witch_unique_21",
+   "Elf_ice_witch_unique_22",
+   "Elf_ice_witch_unique_23",
+   "Elf_ice_witch_unique_24",
+   "Elf_ice_witch_Combat_01",
+   "Elf_ice_witch_Combat_02",
+   "Elf_ice_witch_Combat_03",
+   "Elf_ice_witch_Combat_04",
+   "Elf_ice_witch_Combat_05",
+   "Elf_ice_witch_Combat_06",
+   "Elf_ice_witch_Combat_07",
+   "Elf_ice_witch_Combat_08",
+   "Elf_ice_witch_Combat_09",
+   "Elf_ice_witch_Combat_10",
+   "Elf_ice_witch_Combat_11",
+   "Elf_ice_witch_Combat_12",
+   "Elf_ice_witch_trait"
+  ],
+  "character_skill_node_sets_tables": [
+   "wizard",
+   "Elf_ice_witch"
+  ],
+  "character_skill_nodes_tables": [
+   "wh2_main_skill_all_hero_assist_army_scouting",
+   "Elf_ice_witch_campaign_01",
+   "wh2_main_skill_all_hero_passive_boost_income",
+   "Elf_ice_witch_campaign_02",
+   "wh2_main_skill_all_hero_hinder_settlement_damage_walls",
+   "Elf_ice_witch_campaign_03",
+   "wh2_main_skill_all_hero_hinder_agent_assassinate",
+   "Elf_ice_witch_campaign_04",
+   "wh2_main_skill_all_hero_hinder_army_assault_units",
+   "Elf_ice_witch_campaign_05",
+   "wh2_main_skill_all_hero_reduce_action_cost",
+   "Elf_ice_witch_campaign_06",
+   "wh3_main_pro_skill_all_dummy_agent_actions_ksl_frost_maiden",
+   "Elf_ice_witch_campaign_actions_dummy",
+   "Elf_ice_witch_Mana Shield",
+   "Elf_ice_witch_generic_01",
+   "Elf_ice_witch_snowflake_pendant",
+   "Elf_ice_witch_generic_02",
+   "wh3_main_skill_ksl_katarin_unique_04",
+   "Elf_ice_witch_generic_03",
+   "Elf_ice_witch_natrue",
+   "Elf_ice_witch_generic_04",
+   "wh3_main_skill_ksl_katarin_unique_01",
+   "Elf_ice_witch_generic_05",
+   "wh3_main_skill_ksl_katarin_unique_snow_leopard_buffs",
+   "Elf_ice_witch_generic_06",
+   "wh3_main_skill_ksl_katarin_unique_02",
+   "Elf_ice_witch_generic_07",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_generic_08",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_generic_09",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_generic_10",
+   "Elf_ice_witch_arcane_phoenix",
+   "Elf_ice_witch_generic_11",
+   "wh2_main_skill_all_immortality_hero",
+   "immo_Elf_ice_witch",
+   "Elf_ice_witch_nullpoint",
+   "blanc_Elf_ice_witch",
+   "wh2_main_skill_hef_teclis_sublime_focus",
+   "Elf_ice_witch_unique_01",
+   "wh3_main_skill_sla_all_unique_missile_resist",
+   "Elf_ice_witch_unique_02",
+   "wh2_dlc15_skill_hef_archmage_potential_energy",
+   "Elf_ice_witch_unique_03",
+   "wh2_main_skill_hef_teclis_charoi",
+   "Elf_ice_witch_unique_04",
+   "wh2_dlc15_skill_hef_archmage_absolute_control",
+   "Elf_ice_witch_unique_05",
+   "Elf_ice_witch_abilities_howling_winter",
+   "Elf_ice_witch_unique_06",
+   "wh2_dlc15_skill_hef_archmage_crackling_potency",
+   "Elf_ice_witch_unique_07",
+   "wh2_main_skill_hef_generic_lileaths_blessing",
+   "Elf_ice_witch_unique_08",
+   "wh2_main_skill_hef_loremaster_unique_0",
+   "Elf_ice_witch_unique_09",
+   "wh2_main_skill_hef_teclis_glamour_of_hoeth",
+   "Elf_ice_witch_unique_10",
+   "wh2_main_skill_hef_teclis_flames_of_the_phoenix",
+   "Elf_ice_witch_unique_11",
+   "wh2_dlc14_skill_hef_teclis_manifold_sorcery",
+   "Elf_ice_witch_unique_12",
+   "wh3_main_skill_ksl_magic_ice_01_ice_maidens_kiss_lord",
+   "Elf_ice_witch_magic_0",
+   "wh3_main_skill_ksl_magic_ice_05_frost_shield",
+   "Elf_ice_witch_magic_1_1",
+   "wh3_main_skill_ksl_magic_tempest_05_freezing_winds",
+   "Elf_ice_witch_magic_1_2",
+   "wh3_main_skill_ksl_magic_ice_02_ice_sheet_lord",
+   "Elf_ice_witch_magic_1_3",
+   "wh3_main_skill_ksl_magic_tempest_01_hailstorm_lord",
+   "Elf_ice_witch_magic_1_4",
+   "wh3_main_skill_ksl_magic_tempest_04_biting_wind_lord",
+   "Elf_ice_witch_magic_1_5",
+   "wh3_main_skill_ksl_magic_ice_04_death_frost_lord",
+   "Elf_ice_witch_magic_1_6",
+   "wh_main_skill_all_magic_all_06_evasion",
+   "Elf_ice_witch_magic_2",
+   "wh3_main_skill_ksl_magic_ice_07_crystal_sanctuary",
+   "Elf_ice_witch_magic_3_1",
+   "wh3_main_skill_ksl_magic_tempest_07_blizzard_lord",
+   "Elf_ice_witch_magic_3_2",
+   "wh3_main_skill_ksl_magic_ice_08_heart_of_winter",
+   "Elf_ice_witch_magic_3_3",
+   "wh_main_skill_all_magic_all_07_earthing",
+   "Elf_ice_witch_magic_3_4",
+   "wh_main_skill_all_magic_all_08_power_drain",
+   "Elf_ice_witch_magic_3_5",
+   "wh2_dlc14_skilll_all_magic_all_greater_arcane_conduit",
+   "Elf_ice_witch_magic_4",
+   "wh3_main_skill_ksl_magic_ice_dummy_ice_maidens_kiss_ice_sheet",
+   "Elf_ice_witch_magic_dummy",
+   "wh2_main_skill_hef_combat_graceful_strikes",
+   "Elf_ice_witch_Combat_01",
+   "wh2_main_skill_hef_combat_valour_of_ages",
+   "Elf_ice_witch_Combat_02",
+   "wh2_dlc11_skill_all_lord_self_hard_to_hit",
+   "Elf_ice_witch_Combat_03",
+   "wh2_dlc11_skill_all_lord_self_blade_master",
+   "Elf_ice_witch_Combat_04",
+   "wh2_dlc11_skill_all_lord_self_self_indomitable",
+   "Elf_ice_witch_Combat_05",
+   "wh2_main_skill_hef_alastar_unique_heroic_killing_blow",
+   "Elf_ice_witch_Combat_06",
+   "wh2_dlc11_skill_all_lord_self_wound-maker",
+   "Elf_ice_witch_Combat_07",
+   "wh2_dlc11_skill_all_lord_self_full_plate_armour",
+   "Elf_ice_witch_Combat_08",
+   "wh2_dlc11_skill_all_lord_self_blade_shield",
+   "Elf_ice_witch_Combat_09",
+   "wh2_dlc11_skill_wef_lord_self_expeditious_endeavour",
+   "Elf_ice_witch_Combat_10",
+   "wh2_dlc10_skill_hef_handmaiden_shield_of_avelorn",
+   "Elf_ice_witch_Combat_11",
+   "wh2_main_skill_hef_tyrion_feint_and_riposte",
+   "Elf_ice_witch_Combat_12",
+   "wh3_dlc27_skill_hef_mage_student_of_the_white_tower",
+   "Elf_ice_witch_unique_13",
+   "wh_main_skill_all_magic_all_11_diviner",
+   "Elf_ice_witch_unique_14",
+   "wh2_dlc10_skill_hef_handmaiden_protector_2",
+   "Elf_ice_witch_unique_15",
+   "wh2_dlc16_skill_wef_spellweaver_unique_1",
+   "Elf_ice_witch_unique_16",
+   "wh2_main_skill_hef_generic_warding_of_hoeth",
+   "Elf_ice_witch_unique_17",
+   "wh2_main_skill_hef_dedication_hoeth",
+   "Elf_ice_witch_unique_18",
+   "wh2_dlc15_skill_hef_archmage_greater_ward",
+   "Elf_ice_witch_unique_19",
+   "wh2_main_skill_hef_tyrion_unique_1_2",
+   "Elf_ice_witch_unique_20",
+   "wh3_dlc27_skill_hef_caradryan_greater_speed_of_asuryan",
+   "Elf_ice_witch_unique_21",
+   "wh3_dlc27_skill_hef_caradryan_keen_gaze",
+   "Elf_ice_witch_unique_22",
+   "wh3_dlc27_skill_hef_caradryan_phoenix_rebirth",
+   "Elf_ice_witch_unique_23",
+   "wh3_dlc27_skill_hef_caradryan_ward_of_asuryan",
+   "Elf_ice_witch_unique_24",
+   "Trait_Elf_ice_witch",
+   "Elf_ice_witch_trait"
+  ],
+  "character_skills_tables": [
+   "trait_ice_court.png",
+   "Trait_Elf_ice_witch",
+   "mount_unicorn.png",
+   "Elf_ice_witch_cavalry",
+   "mount_war_bear.png",
+   "Elf_ice_witch_bear",
+   "mount_frost_wyrm.png",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "mount_arcane_phoenix.png",
+   "Elf_ice_witch_arcane_phoenix",
+   "battle_health.png",
+   "Elf_ice_witch_nullpoint",
+   "character_barrier.png",
+   "Elf_ice_witch_Mana Shield",
+   "wh2_def_aristocratic_name_of_power.png",
+   "Elf_ice_witch_snowflake_pendant",
+   "wh2_dlc10_lord_abilities_mislead.png",
+   "Elf_ice_witch_natrue",
+   "wh3_dlc24_unit_abilities_moon_flare.png",
+   "Elf_ice_witch_abilities_howling_winter"
+  ],
+  "character_skills_to_level_reached_criterias_tables": [
+   "Elf_ice_witch_arcane_phoenix",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear"
+  ],
+  "culture_to_battle_animation_tables_tables": [
+   "hu1_vlad_sword",
+   "wh2_dlc09_tmb_tomb_kings",
+   "wh2_dlc11_cst_vampire_coast",
+   "wh2_main_def_dark_elves",
+   "wh2_main_hef_high_elves",
+   "wh2_main_lzd_lizardmen",
+   "wh2_main_rogue_black_spider_tribe",
+   "wh2_main_rogue_vashnaar",
+   "wh2_main_skv_skaven",
+   "wh3_main_cth_cathay",
+   "wh3_main_kho_khorne",
+   "wh3_main_ksl_kislev",
+   "wh3_main_nur_nurgle",
+   "wh3_main_ogr_ogre_kingdoms",
+   "wh3_main_pro_ksl_kislev",
+   "wh3_main_sla_slaanesh",
+   "wh3_main_tze_tzeentch",
+   "wh_dlc03_bst_beastmen",
+   "wh_dlc05_wef_wood_elves",
+   "wh_main_brt_bretonnia",
+   "wh_main_chs_chaos",
+   "wh_main_dwf_dwarfs",
+   "wh_main_emp_empire",
+   "wh_main_grn_greenskins",
+   "wh_main_vmp_vampire_counts",
+   "hu1_wh3_ice_witch_sword_and_magic",
+   "hu1_wh3_ice_witch_hr1_warhorse_sword_and_magic",
+   "hu1_wh3_ice_witch_be1_warbear_sword_and_magic",
+   "hu1_dlc24_ice_witch_lz02_frostwyrm_sword_and_magic",
+   "hr1_warhorse",
+   "be1_wh3_warbear",
+   "lz02_dlc24_frostwyrm_mount",
+   "bi1_eagle",
+   "hu1b_dlc15_archmage_phoenix_wb_staff_sword"
+  ],
+  "dilemmas_tables": [],
+  "effect_bonus_value_agent_junction_tables": [
+   "Elf_ice_witch_enable",
+   "availability",
+   "wizard",
+   "Elf_ice_witch_cap",
+   "cap"
+  ],
+  "effect_bonus_value_agent_subtype_junctions_tables": [
+   "availability",
+   "Elf_ice_witch_enable",
+   "Elf_ice_witch",
+   "cap",
+   "Elf_ice_witch_cap"
+  ],
+  "effect_bonus_value_unit_ability_junctions_tables": [
+   "enable_Elf_ice_witch_abilities_howling_winter",
+   "enable",
+   "Elf_ice_witch_abilities_howling_winter"
+  ],
+  "effects_tables": [
+   "Elf_ice_witch_arcane_phoenix",
+   "mount.png",
+   "both",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_enable",
+   "general_ability.png",
+   "campaign",
+   "Elf_ice_witch_cap",
+   "unit_capacity.png",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "enable_Elf_ice_witch_abilities_howling_winter"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "wizard",
+   "wh2_main_hef_avelorn",
+   "Elf_ice_witch",
+   "wh2_main_hef_nagarythe",
+   "wh2_main_hef_yvresse",
+   "wh2_dlc15_hef_imrik",
+   "wh2_main_hef_order_of_loremasters",
+   "wh2_main_hef_eataine"
+  ],
+  "land_units_tables": [
+   "wh2_main_leather_65",
+   "inf_melee",
+   "com",
+   "Elf_ice_witch",
+   "hu1_wh3_ice_witch_sword_and_magic",
+   "none",
+   "wh_main_infantry",
+   "trained",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "vo_sel_culture",
+   "small",
+   "mage_highvalue",
+   "high",
+   "domination_characters",
+   "skirmish",
+   "wh2_main_chainmail_70",
+   "war_beast",
+   "Elf_ice_witch_cavalry",
+   "hu1_wh3_ice_witch_hr1_warhorse_sword_and_magic",
+   "horse_Elf_ice_witch",
+   "wh_main_cavalry_chaotic",
+   "large",
+   "mage_flanker_highvalue",
+   "wh2_main_plate_100",
+   "Elf_ice_witch_bear",
+   "hu1_wh3_ice_witch_be1_warbear_sword_and_magic",
+   "bear_Elf_ice_witch",
+   "wh_main_monstrous_cavalry",
+   "vo_sel_generic_short",
+   "wh2_main_plate_120",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "hu1_dlc24_ice_witch_lz02_frostwyrm_sword_and_magic",
+   "wh3_dlc24_ksl_mnt_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix",
+   "hu1b_dlc15_archmage_phoenix_wb_staff_sword",
+   "wh2_dlc15_hef_mnt_arcane_phoenix",
+   "wh2_dlc15_hef_arcane_phoenix",
+   "wh_main_monster",
+   "vo_sel_melee",
+   "flying_melee_mage_highvalue",
+   "cant_capture"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "wh3_main_unit_passive_single_entity",
+   "Elf_ice_witch",
+   "wh3_main_character_abilities_ice_shard",
+   "wh3_main_character_abilities_guardian_call",
+   "wh3_main_character_abilities_glacial_blast",
+   "wh2_main_unit_passive_blizzard_aura",
+   "wh3_main_spell_tempest_blizzard",
+   "Elf_ice_witch_abilities_howling_winter",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "wh_dlc04_unit_passive_chilling_aura",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "main_units_tables": [
+   "hero",
+   "Elf_ice_witch",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh2_main_vo_culture_High_Elves",
+   "wh3_main_wizard_ice",
+   "emp_general_foot",
+   "vo_culture_None",
+   "wh2_main_vo_actor_High_Elves_Mage",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "very_heavy",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "melee_weapons_tables": [
+   "Elf_ice_witch",
+   "sword",
+   "large",
+   "wh_dlc08_unit_contact_frostbite",
+   "Elf_ice_witch_cavalry",
+   "medium",
+   "Elf_ice_witch_bear",
+   "axe",
+   "creatures_claws",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "mounts_tables": [
+   "bear_Elf_ice_witch",
+   "be1_wh3_warbear",
+   "wh3_main_ksl_cav_war_bear_hero",
+   "plate",
+   "wh_main_vo_culture_Kislev",
+   "horse_Elf_ice_witch",
+   "hr1_warhorse",
+   "wh3_main_ksl_mnt_barded_horse_hero",
+   "wh_main_vo_culture_Horse"
+  ],
+  "names_tables": [
+   "names_hef_high_elves",
+   "forename",
+   "names_emp_empire",
+   "names_ksl_kislev",
+   "names_cth_cathay",
+   "names_brt_bretonnia",
+   "names_wef_wood_elves"
+  ],
+  "special_ability_groups_tables": [
+   "wh_Elf_ice_witch__abilities_howling_winter",
+   "lore_heavens",
+   "Play_WH_UI_Ability_Click_Generic_Life",
+   "wh_Elf_ice_witch_tempest_01",
+   "lore_tempest",
+   "Play_WH_UI_Ability_Click_Generic_Heavens",
+   "Tempest",
+   "wh_Elf_ice_witch_tempest_02"
+  ],
+  "special_ability_groups_to_unit_abilities_junctions_tables": [
+   "wh_Elf_ice_witch_tempest_01",
+   "wh3_main_spell_tempest_biting_wind",
+   "wh3_main_spell_tempest_blizzard",
+   "wh3_main_spell_tempest_hailstorm",
+   "wh3_main_lore_passive_freezing_winds",
+   "wh_Elf_ice_witch_tempest_02",
+   "wh3_main_spell_ice_ice_maidens_kiss",
+   "wh3_main_spell_ice_ice_sheet",
+   "wh3_main_spell_ice_death_frost",
+   "wh3_main_spell_ice_crystal_sanctuary",
+   "wh3_main_spell_ice_heart_of_winter",
+   "wh3_main_lore_passive_frost_shield"
+  ],
+  "special_ability_groups_to_units_junctions_tables": [
+   "wh_Elf_ice_witch_tempest_01",
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix",
+   "wh_Elf_ice_witch_tempest_02"
+  ],
+  "special_ability_to_invalid_target_flags_tables": [
+   "on_a_platform",
+   "Elf_ice_witch_abilities_howling_winter"
+  ],
+  "special_ability_to_invalid_usage_flags_tables": [
+   "climbing",
+   "Elf_ice_witch_abilities_howling_winter",
+   "flying_currently"
+  ],
+  "ui_unit_bullet_point_unit_overrides_tables": [
+   "spellcaster",
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "armour_piercing",
+   "Elf_ice_witch_bear",
+   "armoured",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "very_fast",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "unit_abilities_tables": [
+   "Elf_ice_witch_abilities_howling_winter",
+   "wh3_dlc24_unit_abilities_moon_flare",
+   "wh_type_vortex",
+   "wh_main_anc_group_rare",
+   "active",
+   "wh3_main_spell_tempest_blizzard",
+   "wh3_main_spell_tempest_blizzard_upgraded",
+   "spell_previews/tempest/wh3_main_tempest_blizzard",
+   "spell"
+  ],
+  "unit_abilities_to_additional_ui_effects_juncs_tables": [
+   "Elf_ice_witch_abilities_howling_winter",
+   "wh_main_all_weak_against_single",
+   "wh_main_vortex_large_moving_aoe"
+  ],
+  "unit_attributes_groups_tables": [
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "unit_attributes_to_groups_junctions_tables": [
+   "encourages",
+   "Elf_ice_witch",
+   "hide_forest",
+   "Elf_ice_witch_cavalry",
+   "causes_fear",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "causes_terror",
+   "Elf_ice_witch_arcane_phoenix",
+   "flying"
+  ],
+  "unit_description_historical_texts_tables": [
+   "Elf_ice_witch"
+  ],
+  "unit_description_short_texts_tables": [
+   "Elf_ice_witch"
+  ],
+  "unit_general_details_tables": [],
+  "unit_special_abilities_tables": [
+   "Elf_ice_witch_abilities_howling_winter",
+   "wh_abilities_generic_vortex",
+   "always_use_only_land",
+   "wh_dlc08_abilities_howling_winter",
+   "vo_battle_special_ability_spell_cast_wef_shadow",
+   "damage_aoe"
+  ],
+  "unit_variants_colours_tables": [
+   "officer",
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "unit_variants_tables": [
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "units_custom_battle_mounts_tables": [
+   "Elf_ice_witch",
+   "ui/campaign ui/mounts/mount_arcane_phoenix.png",
+   "Elf_ice_witch_arcane_phoenix",
+   "ui/campaign ui/mounts/mount_frost_wyrm.png",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "ui/campaign ui/mounts/mount_warhorse.png",
+   "Elf_ice_witch_cavalry",
+   "ui/campaign ui/mounts/mount_war_bear.png",
+   "Elf_ice_witch_bear"
+  ],
+  "units_custom_battle_permissions_tables": [
+   "wh2_main_hef_high_elves",
+   "Elf_ice_witch",
+   "ui/portraits/portholes/no_culture/Elf_ice_witch.png",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "units_to_groupings_military_permissions_tables": [
+   "Elf_ice_witch",
+   "wh3_main_cth",
+   "wh3_main_dae",
+   "wh3_main_kho",
+   "wh3_main_ksl",
+   "wh3_main_nur",
+   "wh3_main_ogr",
+   "wh3_main_sla",
+   "wh3_main_tze",
+   "wh2_dlc09_tomb_kings",
+   "wh2_dlc09_tomb_kings_arkhan",
+   "wh2_dlc11_group_vampire_coast",
+   "wh2_dlc11_group_vampire_coast_sartosa",
+   "wh2_dlc12_grn_leaf_cutterz_tribe",
+   "wh2_dlc16_group_drycha",
+   "wh2_main_def",
+   "wh2_main_hef",
+   "wh2_main_lzd",
+   "wh2_main_skv",
+   "wh3_dlc20_group_chs_azazel",
+   "wh3_dlc20_group_chs_festus_glottkin",
+   "wh3_dlc20_group_chs_vilitch",
+   "wh3_dlc29_group_chs_archaon",
+   "wh3_dlc20_group_chs_valkia",
+   "wh3_main_def_morathi",
+   "wh3_main_group_belakor",
+   "wh_dlc03_group_beastmen",
+   "wh_dlc05_group_wood_elves",
+   "wh_main_group_bretonnia",
+   "wh_main_group_chaos",
+   "wh_main_group_dwarfs",
+   "wh_main_group_empire",
+   "wh_main_group_empire_reikland",
+   "wh_main_group_greenskins",
+   "wh_main_group_norsca",
+   "wh_main_group_savage_orcs",
+   "wh_main_group_vampire_counts",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_arcane_phoenix"
+  ],
+  "variants_tables": [
+   "bear_Elf_ice_witch",
+   "VariantMeshes/wh_variantmodels/br1/ksl/ksl_bear/tech",
+   "ksl_elemental_bear",
+   "br1/ksl/ksl_bear/ksl_bear_imposter",
+   "horse_Elf_ice_witch",
+   "hr1/ksl/ksl_horse/ksl_horse_heavy_white_01_imposter",
+   "Elf_ice_witch",
+   "Elf_ice_witch_cavalry",
+   "Elf_ice_witch_bear",
+   "Elf_ice_witch_ice_frost_wyrm",
+   "Elf_ice_witch_arcane_phoenix"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_culture_details_tables/elf_ice_witch",
+   "size": 91,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/elf_ice_witch",
+   "size": 281,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/elf_ice_witch",
+   "size": 155,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/elf_ice_witch",
+   "size": 246,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/ancillaries_required_skills_tables/elf_ice_witch",
+   "size": 305,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/elf_ice_witch",
+   "size": 678,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/elf_ice_witch",
+   "size": 186,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/armed_citizenry_unit_groups_tables/elf_ice_witch",
+   "size": 201,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/armed_citizenry_units_to_unit_groups_junctions_tables/elf_ice_witch",
+   "size": 83,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/battle_currency_units_cost_values_tables/elf_ice_witch",
+   "size": 278,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/elf_ice_witch",
+   "size": 1659,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/battle_vortexs_tables/elf_ice_witch",
+   "size": 351,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/building_effects_junction_tables/elf_ice_witch",
+   "size": 1735,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/campaign_agent_subtype_factorial_effect_junctions_tables/elf_ice_witch",
+   "size": 161,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/elf_ice_witch",
+   "size": 202,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/elf_ice_witch",
+   "size": 490,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/campaign_group_unique_agents_tables/elf_ice_witch",
+   "size": 83,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/campaign_map_attrition_unit_immunities_tables/elf_ice_witch",
+   "size": 231,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/��\tyh�",
+   "size": 91,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/elf_ice_witch",
+   "size": 83,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/��z\ty",
+   "size": 83,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/elf_ice_witch",
+   "size": 426,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_ancillaries_junctions_tables/elf_ice_witch",
+   "size": 313,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/elf_ice_witch",
+   "size": 8541,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/elf_ice_witch",
+   "size": 6038,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/elf_ice_witch",
+   "size": 3012,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/elf_ice_witch",
+   "size": 128,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/elf_ice_witch",
+   "size": 6511,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skills_tables/elf_ice_witch",
+   "size": 821,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/character_skills_to_level_reached_criterias_tables/elf_ice_witch",
+   "size": 218,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/elf_ice_witch",
+   "size": 13321,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/elf_ice_witch",
+   "size": 91,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/��\ty",
+   "size": 91,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_agent_junction_tables/elf_ice_witch",
+   "size": 159,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_agent_subtype_junctions_tables/elf_ice_witch",
+   "size": 173,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_ability_junctions_tables/elf_ice_witch",
+   "size": 178,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/effects_tables/elf_ice_witch",
+   "size": 575,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/elf_ice_witch",
+   "size": 381,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/land_units_tables/elf_ice_witch",
+   "size": 2636,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/elf_ice_witch",
+   "size": 2597,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/main_units_tables/elf_ice_witch",
+   "size": 1587,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/melee_weapons_tables/elf_ice_witch",
+   "size": 776,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/mounts_tables/elf_ice_witch",
+   "size": 341,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/names_tables/elf_ice_witch",
+   "size": 621,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/special_ability_groups_tables/elf_ice_witch",
+   "size": 684,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/special_ability_groups_to_unit_abilities_junctions_tables/elf_ice_witch",
+   "size": 731,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/special_ability_groups_to_units_junctions_tables/elf_ice_witch",
+   "size": 657,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/special_ability_to_invalid_target_flags_tables/elf_ice_witch",
+   "size": 138,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/special_ability_to_invalid_usage_flags_tables/elf_ice_witch",
+   "size": 191,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/ui_unit_bullet_point_unit_overrides_tables/elf_ice_witch",
+   "size": 589,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/elf_ice_witch",
+   "size": 435,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_abilities_to_additional_ui_effects_juncs_tables/elf_ice_witch",
+   "size": 375,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_attributes_groups_tables/elf_ice_witch",
+   "size": 201,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/elf_ice_witch",
+   "size": 627,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_description_historical_texts_tables/elf_ice_witch",
+   "size": 98,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_description_short_texts_tables/elf_ice_witch",
+   "size": 98,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_general_details_tables/elf_ice_witch",
+   "size": 83,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/elf_ice_witch",
+   "size": 448,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_variants_colours_tables/elf_ice_witch",
+   "size": 494,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/elf_ice_witch",
+   "size": 525,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/units_custom_battle_mounts_tables/elf_ice_witch",
+   "size": 430,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/units_custom_battle_permissions_tables/elf_ice_witch",
+   "size": 644,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/units_to_groupings_military_permissions_tables/elf_ice_witch",
+   "size": 8222,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "db/variants_tables/elf_ice_witch",
+   "size": 728,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "script/campaign/mod/elf_ice_witch.lua",
+   "size": 1265,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "text/db/elf_ice_witch.loc",
+   "size": 8894,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/elf_ice_witch.png",
+   "size": 150789,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_ice.bin",
+   "size": 289,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/elf_ice_witch.png",
+   "size": 958873,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch.variantmeshdefinition",
+   "size": 1309,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch_arcane_phoenix.variantmeshdefinition",
+   "size": 1325,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch_bear.variantmeshdefinition",
+   "size": 1325,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch_cavalry.variantmeshdefinition",
+   "size": 1325,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch_ice_frost_wyrm.variantmeshdefinition",
+   "size": 1325,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/elf_ice_witch_male.variantmeshdefinition",
+   "size": 1325,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/horse_elf_ice_witch.variantmeshdefinition",
+   "size": 292,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/ice_unicorn_01.rigid_model_v2",
+   "size": 1282196,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/ice_unicorn_01.wsmodel",
+   "size": 1478,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/materials/icicle_01_lod1_submesh_2_weighted4_alpha_off.xml.material",
+   "size": 2531,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/materials/ksl_horse_armour_heavy_01_submes_weighted4_alpha_off.xml.material",
+   "size": 6305,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/materials/ksl_horse_armour_heavy_01_weighted4_alpha_on.xml.material",
+   "size": 6233,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/materials/ksl_horse_heavy_01_weighted4_alpha_off.xml.material",
+   "size": 2597,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/materials/wef_unicorn_01_weighted4_alpha_off.xml.material",
+   "size": 2589,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/ice_horse_base_colour.dds",
+   "size": 5592580,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/ice_horse_mask.dds",
+   "size": 699216,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/ice_horse_material_map.dds",
+   "size": 5592580,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/ice_horse_normal.dds",
+   "size": 5592580,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/icicles_base_colour.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/icicles_mask.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/icicles_material_map.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hr1/ksl/ksl_horse/tex/icicles_normal.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_body.rigid_model_v2",
+   "size": 2588076,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_body.wsmodel",
+   "size": 4488,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_head2.rigid_model_v2",
+   "size": 1136116,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_head2.wsmodel",
+   "size": 3193,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_ice_cloak.rigid_model_v2",
+   "size": 955148,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_ice_cloak.wsmodel",
+   "size": 817,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_naria_hair.rigid_model_v2",
+   "size": 242148,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_naria_hair.wsmodel",
+   "size": 762,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_wing.rigid_model_v2",
+   "size": 427932,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/ice_princess_wing.wsmodel",
+   "size": 760,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/arm_right_weighted4_alpha_on.xml.material",
+   "size": 2504,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/body_weighted4_alpha_on.xml.material",
+   "size": 6226,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/elbow_weighted4_alpha_on.xml.material",
+   "size": 2507,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/eyes_weighted4_alpha_off.xml.material",
+   "size": 2514,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/face_weighted4_alpha_on.xml.material",
+   "size": 2528,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2477,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/hef_princess_head_03_weighted4_alpha_off.xml.material",
+   "size": 2632,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/hef_princess_head_weighted4_alpha_off.xml.material",
+   "size": 2648,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/knee_pad_weighted4_alpha_on.xml.material",
+   "size": 2720,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/ksl_ice_witch_body_01_weighted4_alpha_on.xml.material",
+   "size": 6355,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/ksl_katarin_sword_1h_01_lod1_rigid_alpha_off.xml.material",
+   "size": 6265,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/naria_weighted4_alpha_on.xml.material",
+   "size": 2461,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/neck_weighted4_alpha_on.xml.material",
+   "size": 2496,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/materials/shenti_weighted4_alpha_on.xml.material",
+   "size": 6237,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/sword_1h.rigid_model_v2",
+   "size": 137260,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/sword_1h.wsmodel",
+   "size": 827,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/armor_col.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/armor_map.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/armor_nor.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/base_colour_blue_eyes.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/blue_eyes_material_map.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/blue_eyes_normal.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/dae_exalted_lord_of_change_body_01_base_colour_ice.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/elf_wintersnow_armor_01_dn_1_mask.dds",
+   "size": 1398256,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/elf_wintersnow_armor_01_dn_2.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/elf_wintersnow_hair_01_dn_1.dds",
+   "size": 349680,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/face_base_colour.dds",
+   "size": 349680,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hair_bump.dds",
+   "size": 349680,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hand_base_color_2048.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hand_map.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hand_normal.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/head1_material.dds",
+   "size": 174904,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/head_diffuse.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/head_material.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/head_normal.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hef_princess_head_01_base_colour1.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hef_princess_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hef_princess_head_01_material_map.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/hef_princess_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/princess_head_02_material_map.dds",
+   "size": 349700,
+   "pack": "@elf ice witch plus.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ice_princess/tex/princess_head_02_normal.dds",
+   "size": 1398276,
+   "pack": "@elf ice witch plus.pack"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "mod": "steam-2853817947",
+ "packs": [
+  "hso.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "hso.pack": {
+   "files": 13,
+   "dependencies": []
+  }
+ },
+ "fileCount": 13,
+ "byTopFolder": {
+  "variantmeshes": 12,
+  "meimo.dds": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 3,
+  "inMod": 1,
+  "inBaseGame": 2,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "meimo.dds",
+   "size": 2097280,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_valkia.variantmeshdefinition",
+   "size": 874,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/dae_valkia_head_01.rigid_model_v2",
+   "size": 3331256,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_hair_base_colour.dds",
+   "size": 5592560,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_hair_material_map.dds",
+   "size": 2796344,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_hair_normal.dds",
+   "size": 5592560,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_01_base_colour.dds",
+   "size": 349692,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_01_mask.dds",
+   "size": 699200,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_01_material_map.dds",
+   "size": 349692,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_01_normal.dds",
+   "size": 699200,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_base_colour.dds",
+   "size": 5592580,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_material_map.dds",
+   "size": 2796344,
+   "pack": "hso.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_head_normal.dds",
+   "size": 5592560,
+   "pack": "hso.pack"
+  }
+ ]
+}
