@@ -7,7 +7,7 @@ import { app, BrowserWindow, session, type DownloadItem } from 'electron'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
-import { pickDownloads, type DownloadRow } from '@shared/install'
+import { pickDownloads, type DownloadRow, type FileHint } from '@shared/install'
 import type { LoversLabJob, LoversLabProgress } from '@shared/api'
 
 const run = promisify(execFile)
@@ -137,9 +137,46 @@ const NEXUS_BANNER = bannerScript('WH3 Lewd Mod Manager: sign in to Nexus Mods h
  * Opens a LoversLab download page in its own window (persistent LL login, separate from the app).
  * When the user picks a file, it is saved to the app's download folder and installed.
  */
-export function downloadFromLoversLab(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
-  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – sign in, then pick the file to install', banner: LL_BANNER }, dataPath, modId, parent)
+export function downloadFromLoversLab(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, hints: FileHint[] = []): Promise<InstallResult> {
+  const wanted = hints.filter((h) => h.wanted).map((h) => `"${h.name}"`)
+  const banner = wanted.length
+    ? bannerScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT} Then click "Download" and take ${wanted.join(' and ')} – marked in the list. It is installed automatically and this window closes.`)
+    : LL_BANNER
+  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – sign in, then pick the file to install', banner: banner + markFilesScript(hints) }, dataPath, modId, parent)
 }
+
+/**
+ * Marks the files of a LoversLab download list: the one the profile uses, what the others are (catalog
+ * notes), and preview images the game does not need. Re-runs while the page changes (the file list opens
+ * as a dialog after "Download").
+ */
+const markFilesScript = (hints: FileHint[]) => `;(() => {
+  const hints = ${JSON.stringify(hints)}
+  const stem = (n) => n.trim().toLowerCase().replace(/\\.(7z|zip|rar|pack)$/, '')
+  const mark = () => {
+    for (const el of document.querySelectorAll('body *')) {
+      if (el.children.length || el.dataset.wh3lmm || el.closest('#wh3lmm-banner')) continue
+      const text = (el.textContent || '').trim()
+      if (!/\\.(7z|zip|rar|pack|png|jpe?g)$/i.test(text) || text.length > 200) continue
+      const hint = hints.find((h) => stem(h.name) === stem(text))
+      const image = /\\.(png|jpe?g)$/i.test(text)
+      if (!hint && !image) continue
+      el.dataset.wh3lmm = '1'
+      const note = document.createElement('div')
+      note.dataset.wh3lmm = '1'
+      note.style.cssText = 'font:13px/1.4 system-ui,sans-serif;margin-top:2px;' + (hint && hint.wanted ? 'color:#c9a25a;font-weight:700' : 'color:#9a9a9a')
+      note.textContent = hint && hint.wanted ? '✔ Your profile uses this file' + (hint.note ? ' – ' + hint.note : '')
+        : hint ? (hint.note || 'Not the file your profile uses')
+        : 'Preview image for mod managers – not needed'
+      el.after(note)
+    }
+  }
+  mark()
+  if (!window.__wh3lmmMarks) {
+    window.__wh3lmmMarks = new MutationObserver(() => { clearTimeout(window.__wh3lmmT); window.__wh3lmmT = setTimeout(mark, 150) })
+    window.__wh3lmmMarks.observe(document.body, { childList: true, subtree: true })
+  }
+})()`
 
 /** The same for a Nexus Mods file page: own persistent Nexus login; Premium downloads start at once. */
 export function downloadFromNexus(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {

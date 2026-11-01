@@ -4,6 +4,7 @@ import { homedir } from 'node:os'
 import { basename, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, BrowserWindow, dialog, ipcMain, net, protocol, shell } from 'electron'
+import type { FileHint } from '@shared/install'
 import { DEFAULTS, type GameScan, type RelayContribution, type RelayReport, type RelayResult, type ScriptReport, type Settings } from '@shared/api'
 import { parseLuaLog } from '@shared/health'
 import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@shared/importlist'
@@ -64,11 +65,11 @@ ipcMain.handle('install:file', async (e, modId?: string) => {
   })
   return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId)
 })
-ipcMain.handle('install:loverslab', async (e, url: string, modId?: string) => {
+ipcMain.handle('install:loverslab', async (e, url: string, modId?: string, hints?: FileHint[]) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
   if (!/^https:\/\/www\.loverslab\.com\/files\/file\//.test(url)) return { ok: false, message: 'Not a LoversLab file page.', packs: [] }
-  return downloadFromLoversLab(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender))
+  return downloadFromLoversLab(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender), hints ?? [])
 })
 ipcMain.handle('install:loverslabQueue', async (e, jobs: QueueJob[]) => {
   const scan = await currentScan()

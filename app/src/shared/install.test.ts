@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, installSourceFor, pickDownloads } from './install'
+import { archivesFor, downloadHints, installSourceFor, pickDownloads } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -69,5 +69,30 @@ describe('LoversLab file choice', () => {
     expect(pickDownloads(rows, undefined)).toBeNull()
     expect(pickDownloads(rows, ['other'])).toBeNull()
     expect(pickDownloads([rows[0]], undefined)).toEqual([rows[0]]) // a single file needs no choice
+  })
+
+  const vassals = {
+    ...mod('vassals', {
+      downloads: [
+        { name: '@n_SlaaneshVassals.pack', url: 'https://www.loverslab.com/files/file/1-x/?do=download', description: 'Version for Slaanesh factions' },
+        { name: '@n_SlaaneshVassals_Non_Slaanesh_Factions.pack', url: 'https://www.loverslab.com/files/file/1-x/?do=download', description: 'Version for all other factions' }
+      ]
+    }),
+    packs: [
+      { file: '@n_SlaaneshVassals.pack', from: 'download' as const, optional: true },
+      { file: '@n_SlaaneshVassals_Non_Slaanesh_Factions.pack', from: 'download' as const, optional: true }
+    ]
+  }
+
+  it('treats a pack offered directly on the page as its own download', () => {
+    expect(archivesFor(vassals, ['@n_SlaaneshVassals_Non_Slaanesh_Factions.pack'])).toEqual(['@n_slaaneshvassals_non_slaanesh_factions'])
+  })
+
+  it('tells the download window which file the profile uses and what the others are', () => {
+    expect(downloadHints(vassals, ['@n_SlaaneshVassals_Non_Slaanesh_Factions.pack'])).toEqual([
+      { name: '@n_SlaaneshVassals.pack', note: 'Version for Slaanesh factions', wanted: false },
+      { name: '@n_SlaaneshVassals_Non_Slaanesh_Factions.pack', note: 'Version for all other factions', wanted: true }
+    ])
+    expect(downloadHints(vassals).every((h) => !h.wanted)).toBe(true)
   })
 })

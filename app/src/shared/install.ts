@@ -53,8 +53,40 @@ const stem = (name: string) => name.replace(/\.(7z|zip|rar|pack)$/i, '').toLower
  */
 export function archivesFor(mod: Mod, wanted?: string[]): string[] | undefined {
   const packs = wanted?.length ? mod.packs.filter((p) => wanted.some((w) => w.toLowerCase() === p.file.toLowerCase())) : []
-  if (!packs.length || packs.some((p) => !p.archive)) return undefined
-  return [...new Set(packs.map((p) => p.archive!))]
+  const archives = packs.map((p) => archiveOf(mod, p.file, p.archive))
+  if (!archives.length || archives.some((a) => !a)) return undefined
+  return [...new Set(archives as string[])]
+}
+
+/** The download that holds a pack: the analysed archive, or the pack itself when the page offers it directly. */
+function archiveOf(mod: Mod, file: string, archive?: string): string | undefined {
+  if (archive) return archive
+  return mod.sources.downloads?.some((d) => d.name.toLowerCase() === file.toLowerCase()) ? stem(file) : undefined
+}
+
+/** A note for one file of a mod's download page, shown in the download window. */
+export interface FileHint {
+  name: string
+  note?: string
+  /** The profile uses this file. */
+  wanted: boolean
+}
+
+/**
+ * What the download window tells the player about the files of a page: which one the profile uses
+ * (`wanted` = pack names the template asks for) and what the others are, from the catalog's notes.
+ */
+export function downloadHints(mod: Mod, wanted?: string[]): FileHint[] {
+  const want = new Set(archivesFor(mod, wanted) ?? [])
+  const hints = new Map<string, FileHint>()
+  const add = (name: string, note?: string) => {
+    const key = stem(name)
+    const old = hints.get(key)
+    hints.set(key, { name: old?.name ?? name, note: old?.note ?? note, wanted: want.has(key) })
+  }
+  for (const d of mod.sources.downloads ?? []) if (!/discord\.com/.test(d.url)) add(d.name, d.description)
+  for (const p of mod.packs) if (p.archive) add(p.archive, p.note)
+  return [...hints.values()]
 }
 
 /**

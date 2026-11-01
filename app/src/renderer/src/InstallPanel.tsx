@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api'
-import { archivesFor, installSourceFor, type InstallSource } from '@shared/install'
+import { archivesFor, downloadHints, installSourceFor, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
 import { useData } from './data'
 
@@ -51,7 +51,10 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
 
   const fromLL = async (i: Missing) => {
     setBusy(i.entry.key)
-    const r = await window.api.installFromLoversLab((i.source as { url: string }).url, i.modId)
+    // The window marks the file this profile uses and says what the other files are.
+    const mod = i.modId ? data.index.mods.get(i.modId) : undefined
+    const hints = mod ? downloadHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : []
+    const r = await window.api.installFromLoversLab((i.source as { url: string }).url, i.modId, hints)
     note(r.message)
     setBusy(null)
     if (r.ok) data.rescan()
