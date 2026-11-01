@@ -1,5 +1,5 @@
 import { execFile } from 'node:child_process'
-import { existsSync, mkdirSync } from 'node:fs'
+import { existsSync, mkdirSync, rmSync } from 'node:fs'
 import { copyFile, mkdir, mkdtemp, readdir, rename, rm, stat } from 'node:fs/promises'
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
@@ -273,6 +273,7 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
       if (IMAGE.test(item.getFilename())) return item.cancel() // preview images are not mods
       mkdirSync(downloads, { recursive: true })
       const target = join(downloads, basename(item.getFilename()))
+      rmSync(target, { force: true }) // a leftover of an earlier, interrupted run makes the download hang
       item.setSavePath(target)
       item.once('done', async (_ev, state) => {
         if (state !== 'completed') return finish({ ok: false, message: `Download ${state}.`, packs: [] })
@@ -356,6 +357,7 @@ export async function downloadQueueFromLoversLab(
     // Preview images are not mods: skip them and keep waiting for the real file.
     if (IMAGE.test(item.getFilename())) return item.cancel()
     const target = join(downloads, basename(item.getFilename()))
+    rmSync(target, { force: true }) // a leftover of an earlier, interrupted run makes the download hang
     item.setSavePath(target)
     item.once('done', (_ev, state) => (state === 'completed' ? finished.push(target) : (failed = `Download ${state}.`)))
     // The download ends the page; show what is going on instead of an empty window.
