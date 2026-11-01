@@ -28,7 +28,7 @@ export function installSourceFor(
   if (!('mod' in t)) return { kind: 'manual' }
   const mod = index.mods.get(t.mod)
   if (!mod) return { kind: 'manual' }
-  const steam = mod.sources.steam?.find((s) => !s.title?.toLowerCase().includes('(removed)'))
+  const steam = mod.sources.steam?.find((s) => !s.removed && !s.title?.toLowerCase().includes('(removed)'))
   if (steam && mod.status !== 'superseded') return { kind: 'steam', id: steam.id }
   const ll = mod.sources.loverslab
   if (ll && !ll.externalDownload) return { kind: 'loverslab', url: ll.url }

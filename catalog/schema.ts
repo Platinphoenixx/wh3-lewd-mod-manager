@@ -205,6 +205,8 @@ export interface SteamItem {
   role?: string;
   /** Current Workshop subscribers (refreshed weekly). */
   subscribers?: number;
+  /** Removed from the Workshop; the app installs from the mod's other source instead. */
+  removed?: boolean;
 }
 
 export interface DownloadFile {

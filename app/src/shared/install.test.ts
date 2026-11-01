@@ -15,7 +15,8 @@ const catalog = {
     mod('ll', { loverslab: { fileId: '2', url: 'https://www.loverslab.com/files/file/2-x/', category: 'mods' } }),
     mod('dc', { discord: [{ channel: 'x', messageUrl: 'https://discord.com/channels/1/2/3' }] }),
     mod('nx', { nexus: { modId: '22', url: 'https://www.nexusmods.com/totalwarwarhammer3/mods/22' }, discord: [{ channel: 'x', messageUrl: 'https://discord.com/channels/1/2/4' }] }),
-    mod('nothing', {})
+    mod('nothing', {}),
+    mod('gone', { steam: [{ id: '333', removed: true }], loverslab: { fileId: '3', url: 'https://www.loverslab.com/files/file/3-x/', category: 'mods' } })
   ]
 } as unknown as Catalog
 const index = buildIndex(catalog)
@@ -27,6 +28,10 @@ describe('installSourceFor', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:ll' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
     expect(installSourceFor(catalog, index, { key: 'mod:dc' })).toEqual({ kind: 'discord', url: 'https://discord.com/channels/1/2/3' })
     expect(installSourceFor(catalog, index, { key: 'mod:nothing' })).toEqual({ kind: 'manual', url: undefined })
+  })
+
+  it('skips Workshop items that were removed from Steam', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:gone' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/3-x/' })
   })
 
   it('uses the Workshop id a template gives and resolves externals', () => {

@@ -721,6 +721,7 @@ def main():
     # Mechanical facts always come fresh from the latest crawl, never from curation: LL version/date,
     # Steam update time. This keeps the catalog current without any manual or AI step.
     ll_index = load(CURATOR / "raw" / "ll" / "_index.json")
+    steam_gone = load(CURATOR / "raw" / "steam_hidden.json") if (CURATOR / "raw" / "steam_hidden.json").exists() else {}
     for m in mods.values():
         ll = m.get("sources", {}).get("loverslab")
         if ll and ll["fileId"] in ll_index:
@@ -735,6 +736,10 @@ def main():
             m.setdefault("knownIssues", []).append("The LoversLab page was removed.")
         for s in m.get("sources", {}).get("steam") or []:
             info = steam.get(s["id"], {})
+            # Gone from the Workshop (the public API knows nothing and even the logged-in page fails): the app
+            # must not try to subscribe, it uses the mod's other source.
+            if not info.get("public") and "removed" in ((steam_gone.get(s["id"]) or {}).get("error") or ""):
+                s["removed"] = True
             if info.get("updated"):
                 s["updated"] = datetime.fromtimestamp(info["updated"], timezone.utc).date().isoformat()
             if info.get("subscriptions") is not None:

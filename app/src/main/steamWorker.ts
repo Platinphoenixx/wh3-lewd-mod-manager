@@ -50,7 +50,9 @@ async function run(ids: string[]): Promise<Result[]> {
         await sleep(POLL_MS)
       }
     } catch (e) {
-      results.push({ id, status: 'failed', error: (e as Error).message })
+      // Steam answers "file not found" for items that were deleted or hidden on the Workshop.
+      const message = (e as Error).message
+      results.push({ id, status: 'failed', error: /not found/i.test(message) ? 'not on the Workshop any more (removed or hidden by its author)' : message })
       post({ type: 'progress', id, status: 'failed' })
     }
   }
