@@ -66,28 +66,24 @@
         "The page says it probably needs Mixu's Unlocker, but the pack does not refer to it: it only uses base-game keys (Wood Elves building culture, the Carcassonne landmark slot)."
       ],
       "knownIssues": [
-        "Adds a Wood Elf landmark in the Carcassonne landmark slot; other mods that change that slot may clash."
+        "Adds a Wood Elf landmark in the Carcassonne landmark slot. Corrupted Landmarks does not use that slot (checked); other landmark mods are unchecked."
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": [
-          "Possible clash with Corrupted Landmarks or other landmark mods over the Carcassonne slot is unverified (those packs are not analysed yet)."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
-      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-25677.json): db + text only (16 tables, 4 .loc); all keys are base-game keys (wh_main_bas_brt, wh3_main_secondary_addon_landmark_carcassonne, wood_elves_city_oak_of_ages)."
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-25677.json): db + text only (16 tables, 4 .loc); all keys are base-game keys (wh_main_bas_brt, wh3_main_secondary_addon_landmark_carcassonne, wood_elves_city_oak_of_ages). Compared with Corrupted Landmarks (ll-30462): no shared files, no shared landmark keys (it uses 119 other landmark slots, not Carcassonne)."
     },
     {
       "id": "ll-49568",
       "knownIssues": [
-        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
+        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text, 19 with Lewd Flags and Loading Screens (Alarielle's Avelorn flags) and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": [
-          "Overlap with Lewd Flags and Loading Screens (ll-41124) not checked yet."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-49568.json): one pack TardBannerPackBetter-V1.00.pack, 3436 files, all under ui/flags; no dependencies."
     },
@@ -127,6 +123,13 @@
         ]
       },
       "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-52245.json): 199 references: 59 in the pack, 79 base game, 61 unresolved, 51 of them found only in ll-49648."
+    },
+    {
+      "id": "ll-41124",
+      "knownIssues": [
+        "Shares 19 flag images with TardBannerPackBetter (Alarielle's Avelorn flags); the mod loaded higher wins."
+      ],
+      "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-41124.json): 4 packs, 28 files, all under ui/."
     }
   ]
 }

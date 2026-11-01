@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T14:03:36+00:00",
+  "generatedAt": "2026-11-01T14:41:37+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -6197,7 +6197,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "corrupted_landmarks.pack",
+          "from": "steam",
+          "archive": "corrupted_landmarks"
+        }
+      ],
       "relations": [
         {
           "kind": "optional",
@@ -6231,6 +6237,16 @@
           "note": "Clawspeakers recruitment conflicts with Corrupted Compendium (Lilacy 2026-05-24)",
           "source": {
             "type": "discord"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Named as a dependency in the mod's pack (!b_mixer.pack)",
+          "source": {
+            "type": "inferred"
           }
         }
       ],
@@ -11915,25 +11931,29 @@
           "file": "lewd_Miao_flag.pack",
           "from": "download",
           "optional": true,
-          "note": "Miao banner"
+          "note": "Miao banner",
+          "archive": "lewd_Miao_flag"
         },
         {
           "file": "lewd_Alarielle_flag.pack",
           "from": "download",
           "optional": true,
-          "note": "Alarielle banner"
+          "note": "Alarielle banner",
+          "archive": "lewd_Alarielle_flag"
         },
         {
           "file": "lewd_Katarin_flag.pack",
           "from": "download",
           "optional": true,
-          "note": "Katarin banner"
+          "note": "Katarin banner",
+          "archive": "lewd_Katarin_flag"
         },
         {
           "file": "lewd_loading_screens_all_in_one.pack",
           "from": "download",
           "optional": true,
-          "note": "Loading screens"
+          "note": "Loading screens",
+          "archive": "lewd_loading_screens_all_in_one"
         }
       ],
       "relations": [
@@ -11970,11 +11990,13 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack names of the LL downloads not given",
           "Steam IDs 3536009143 and 3304325611 are related mods by other/the same authors, not this mod",
           "Possible overlap with other banner/flag mods (e.g. ll-49568, ll-37353)"
         ]
       },
+      "knownIssues": [
+        "Shares 19 flag images with TardBannerPackBetter (Alarielle's Avelorn flags); the mod loaded higher wins."
+      ],
       "images": [
         {
           "url": "https://static.loverslab.com/screenshots/monthly_2025_04/bsts.png.5188bb9f8f2661dc9dbf2493838a5235.png",
@@ -12111,16 +12133,14 @@
       "status": "wip",
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": [
-          "Possible clash with Corrupted Landmarks or other landmark mods over the Carcassonne slot is unverified (those packs are not analysed yet)."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "installNotes": [
         "The page says it probably needs Mixu's Unlocker, but the pack does not refer to it: it only uses base-game keys (Wood Elves building culture, the Carcassonne landmark slot)."
       ],
       "knownIssues": [
-        "Adds a Wood Elf landmark in the Carcassonne landmark slot; other mods that change that slot may clash."
+        "Adds a Wood Elf landmark in the Carcassonne landmark slot. Corrupted Landmarks does not use that slot (checked); other landmark mods are unchecked."
       ],
       "images": [
         {
@@ -14082,7 +14102,8 @@
         {
           "file": "(X)_Naughty_Nef_XXX.pack",
           "from": "download",
-          "note": "Pack name from the installed file (app install test, 2026-11-01). 7z archive with this single pack; no dependency list in the pack header."
+          "note": "Pack name from the installed file (app install test, 2026-11-01). 7z archive with this single pack; no dependency list in the pack header.",
+          "archive": "(X)_Naughty_Nef_XXX"
         }
       ],
       "relations": [
@@ -21365,13 +21386,11 @@
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": [
-          "Overlap with Lewd Flags and Loading Screens (ll-41124) not checked yet."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "knownIssues": [
-        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
+        "Replaces about 3,400 faction flag and banner images (ui/flags). It shares 631 of them with RS0371's Slaanesh's image and text, 19 with Lewd Flags and Loading Screens (Alarielle's Avelorn flags) and 6 with Corrupted Cathay (Miao) Flag: the mod loaded higher decides which image shows."
       ],
       "images": [
         {
@@ -28396,7 +28415,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }
@@ -28573,7 +28591,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }
@@ -28805,7 +28822,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }
@@ -29012,7 +29028,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }
@@ -29254,7 +29269,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }
@@ -29439,7 +29453,6 @@
         {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
-          "steamId": "3474483873",
           "target": {
             "mod": "ll-30462"
           }

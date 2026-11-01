@@ -1,0 +1,189 @@
+{
+ "mod": "ll-41124",
+ "packs": [
+  "lewd_Alarielle_flag.pack",
+  "lewd_Katarin_flag.pack",
+  "lewd_Miao_flag.pack",
+  "lewd_loading_screens_all_in_one.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "lewd_Alarielle_flag.pack": {
+   "files": 8,
+   "dependencies": []
+  },
+  "lewd_Katarin_flag.pack": {
+   "files": 7,
+   "dependencies": []
+  },
+  "lewd_loading_screens_all_in_one.pack": {
+   "files": 7,
+   "dependencies": []
+  },
+  "lewd_Miao_flag.pack": {
+   "files": 7,
+   "dependencies": []
+  }
+ },
+ "fileCount": 28,
+ "byTopFolder": {
+  "ui": 28
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_24.png",
+   "size": 4387,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_256.png",
+   "size": 139693,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_64.png",
+   "size": 11679,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_banner.dds",
+   "size": 1048724,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_banner_battle.dds",
+   "size": 1048724,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_icon.png",
+   "size": 77330,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_icon_01.png",
+   "size": 77330,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh2_main_hef_avelorn/mon_rotated.png",
+   "size": 14212,
+   "pack": "lewd_Alarielle_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_24.png",
+   "size": 1810,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_256.png",
+   "size": 104726,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_64.png",
+   "size": 8082,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_banner.dds",
+   "size": 65664,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_icon.png",
+   "size": 30069,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_rotated.png",
+   "size": 8431,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_24.png",
+   "size": 1908,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_256.png",
+   "size": 90755,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_64.png",
+   "size": 7740,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_64_glow.png",
+   "size": 2982,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_banner.dds",
+   "size": 32896,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_icon.png",
+   "size": 77599,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_ksl_the_ice_court/mon_rotated.png",
+   "size": 7755,
+   "pack": "lewd_Katarin_flag.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_beastmen1.png",
+   "size": 2830955,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_cathay1.png",
+   "size": 3093843,
+   "pack": "lewd_Miao_flag.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_cathay1.png",
+   "size": 3093843,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_champions1.png",
+   "size": 8947517,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_chaos1.png",
+   "size": 8947517,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_kislev1.png",
+   "size": 3594143,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_slaanesh1.png",
+   "size": 2214227,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  },
+  {
+   "path": "ui/loading_ui/load_images/campaign_wood_elves1.png",
+   "size": 2830955,
+   "pack": "lewd_loading_screens_all_in_one.pack"
+  }
+ ]
+}

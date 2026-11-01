@@ -175,6 +175,13 @@
       },
       "confidence": "high",
       "why": "SFO: Grimhammer III main pack; named as a dependency in the headers of SFO submods (ll-25602, ll-29487)"
+    },
+    "!b_mixer.pack": {
+      "target": {
+        "external": "ext-mixu-unlocker"
+      },
+      "confidence": "high",
+      "why": "MIXER - Mixu's Unlocker (Steam 2859968660); pack name from Readman's .twmods lists, named as a dependency in Corrupted Landmarks' pack header"
     }
   },
   "presetReplacements": {
