@@ -62,7 +62,9 @@ community contributions. App UI and catalog texts are English.
     install id in userData/install-id.json).
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
-  - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`
+  - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
+    (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md). `src/main/appUpdate.ts` asks
+    GitHub's latest release at most daily and the app shows a card when it is newer; it never updates itself.
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
 - `curator/` – Python pipeline that builds the catalog (`pip install -r curator/requirements.txt`).
 

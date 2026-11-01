@@ -30,3 +30,6 @@ curator/work/pack-report.md
 
 # Wrangler state of the relay (local caches, account details)
 relay/.wrangler/
+
+# Packaged app (npm run dist)
+app/release/

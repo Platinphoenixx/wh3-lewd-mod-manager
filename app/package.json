@@ -9,14 +9,12 @@
     "build": "electron-vite build",
     "start": "electron-vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "dist": "electron-vite build && electron-builder --win --publish never"
   },
   "dependencies": {
     "7zip-bin": "5.2.0",
     "node-unrar-js": "2.0.2",
-    "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "react-markdown": "10.1.0",
     "steamworks.js": "0.4.0"
   },
   "devDependencies": {
@@ -25,9 +23,63 @@
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.1.2",
     "electron": "45.2.0",
+    "electron-builder": "26.17.0",
     "electron-vite": "6.0.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-markdown": "10.1.0",
     "typescript": "7.0.2",
     "vite": "8.3.5",
     "vitest": "5.0.5"
+  },
+  "author": "Platinphoenixx",
+  "homepage": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager",
+  "build": {
+    "appId": "io.github.platinphoenixx.wh3lmm",
+    "productName": "WH3 Lewd Mod Manager",
+    "copyright": "Catalog and app: community project; mods belong to their creators",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**",
+      "package.json",
+      "!node_modules/7zip-bin/{mac,linux}/**",
+      "!node_modules/steamworks.js/dist/{osx,linux64}/**"
+    ],
+    "extraResources": [
+      {
+        "from": "../catalog/catalog.json",
+        "to": "catalog.json"
+      }
+    ],
+    "asarUnpack": [
+      "node_modules/7zip-bin/**",
+      "node_modules/steamworks.js/**"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "WH3-Lewd-Mod-Manager-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "WH3-Lewd-Mod-Manager-${version}-portable.${ext}"
+    }
   }
 }

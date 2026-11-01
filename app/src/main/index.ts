@@ -14,6 +14,7 @@ import { loadCatalog } from './catalog'
 import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
+import { checkAppUpdate } from './appUpdate'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
   backupPacks, downloadFromLoversLab, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
@@ -96,6 +97,7 @@ ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapsh
 ipcMain.handle('game:lastLaunch', () => readJson<LaunchSnapshot | null>('last-launch.json', null))
 ipcMain.handle('app:version', () => app.getVersion())
 ipcMain.handle('app:home', () => homedir())
+ipcMain.handle('app:update', async () => checkAppUpdate((await getSettings()).contribRepo || DEFAULTS.contribRepo))
 
 // The relay gets only what the player saw in the dialog, plus a random id made once on this PC so the
 // weekly update can count players instead of reports.

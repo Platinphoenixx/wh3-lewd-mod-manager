@@ -158,6 +158,8 @@ export interface Api {
   sendReport(report: RelayReport): Promise<RelayResult>
   /** Sends a contribution to the project's relay, which files it as a GitHub issue. */
   sendContribution(c: RelayContribution): Promise<RelayResult>
+  /** A newer release of the app on GitHub (checked at most daily), or null. */
+  appUpdate(): Promise<{ version: string; url: string } | null>
   /** File overlaps between installed packs; `paths` in load order, highest priority first. */
   packConflicts(paths: string[]): Promise<ConflictReport & { unreadable: string[] }>
   /** Dependencies, file counts, tables and shared files of installed packs (to place own mods). */

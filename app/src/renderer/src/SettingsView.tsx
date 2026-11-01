@@ -6,9 +6,11 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
   const data = useData()
   const [settings, setSettings] = useState<Settings | null>(null)
   const [saved, setSaved] = useState(false)
+  const [version, setVersion] = useState('')
 
   useEffect(() => {
     window.api.getSettings().then(setSettings)
+    window.api.appVersion().then(setVersion)
   }, [])
   if (!settings) return null
 
@@ -81,6 +83,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
           onBlur={() => save(settings)}
         />
       </section>
+      <p className="small muted">WH3 Lewd Mod Manager {version} · <a onClick={() => window.api.openExternal(`https://github.com/${DEFAULTS.contribRepo}/releases`)}>Releases</a></p>
       {saved && <p className="small muted">Saved. Catalog changes apply after restarting the app.</p>}
     </div>
   )

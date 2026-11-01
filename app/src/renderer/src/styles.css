@@ -45,7 +45,9 @@ ul { padding-left: 20px; }
 .topbar nav button.active { color: var(--text); border-bottom-color: var(--accent); }
 .topbar .meta { margin-left: auto; color: var(--muted); font-size: 12px; }
 .toggle { display: flex; align-items: center; gap: 6px; font-size: 13px; }
-main { flex: 1; overflow: hidden; }
+main { flex: 1; min-height: 0; overflow: hidden; }
+/* Views that are a single page (Installation, Community, Settings) scroll inside main. */
+main > .content { height: 100%; }
 
 .split { display: flex; height: 100%; }
 .sidebar-list { list-style: none; margin: 0; padding: 8px; width: 300px; flex: 0 0 300px; overflow-y: auto; background: var(--panel); border-right: 1px solid var(--line); }

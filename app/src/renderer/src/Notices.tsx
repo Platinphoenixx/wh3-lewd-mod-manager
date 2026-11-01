@@ -22,7 +22,7 @@ interface Notice extends NoticeInput {
   version: number
 }
 
-const LABEL: Record<NoticeKind, [string, string]> = { error: ['✕', 'Error'], info: ['i', 'Info'], done: ['✓', 'Done'] }
+const LABEL: Record<NoticeKind, [string, string]> = { error: ['✕', 'Error'], info: ['•', 'Info'], done: ['✓', 'Done'] }
 let counter = 0
 
 export function useNotices() {

@@ -67,6 +67,15 @@ export function App() {
     const n = groupFailures(scripts?.failed ?? []).length
     setTabCount('install', n ? { n, error: true, title: `Script errors in ${n} mod${n === 1 ? '' : 's'} at the last game start` } : null)
   }, [scripts, setTabCount])
+  // A newer app release (asked at most daily): one card with the download page; nothing installs by itself.
+  useEffect(() => {
+    window.api.appUpdate().then((u) => u && notify({
+      kind: 'info',
+      timeout: 0,
+      text: `Version ${u.version} of WH3 Lewd Mod Manager is available.`,
+      actions: [{ label: 'Open download page', run: () => void window.api.openExternal(u.url) }]
+    }), () => {})
+  }, [notify])
   useEffect(() => window.api.onGameExited(async ({ startedAt }) => {
     const s = await window.api.scriptReport().catch(() => null)
     setScripts(s)
