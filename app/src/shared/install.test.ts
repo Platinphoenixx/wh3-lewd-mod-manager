@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, downloadHints, installSourceFor, packHints, pickDownloads } from './install'
+import { archivesFor, downloadHints, installSourceFor, packHints, pickDownloads, wantedPacks } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -94,6 +94,22 @@ describe('LoversLab file choice', () => {
       { name: '@n_SlaaneshVassals_Non_Slaanesh_Factions.pack', note: 'Version for all other factions', wanted: true }
     ])
     expect(downloadHints(vassals).every((h) => !h.wanted)).toBe(true)
+  })
+
+  it("picks the version for the profile's character when the template names no file", () => {
+    const seduce = {
+      ...mod('seduce', {}),
+      packs: [
+        { file: 'tdw_cth_seduce.pack', from: 'download' as const, note: "Miao Ying version; needs Lazy's Miao progression" },
+        { file: 'tdw_kat_seduce.pack', from: 'download' as const, note: "Katarin version; needs Lazy's Corrupted Katarin" },
+        { file: 'tdw_mor_seduce.pack', from: 'download' as const, note: 'Morathi version; needs Morathi Ascension' }
+      ]
+    }
+    expect(wantedPacks(seduce, undefined, ['Miao'])).toEqual(['tdw_cth_seduce.pack'])
+    expect(wantedPacks(seduce, 'Corrupted Chars can Seduce', ['Katarin'])).toEqual(['tdw_kat_seduce.pack'])
+    expect(wantedPacks(seduce, 'tdw_mor_seduce.pack', ['Miao'])).toEqual(['tdw_mor_seduce.pack']) // the template wins
+    expect(wantedPacks(seduce, undefined, ['Alarielle'])).toBeUndefined()
+    expect(wantedPacks(seduce, undefined, [])).toBeUndefined()
   })
 
   it('names the packs a Nexus mod needs: template packs, else the base and the usual variant', () => {

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api'
-import { archivesFor, downloadHints, installSourceFor, packHints, type InstallSource } from '@shared/install'
+import { archivesFor, downloadHints, installSourceFor, packHints, wantedPacks, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
 import { useData } from './data'
 
@@ -11,8 +11,13 @@ interface Missing {
 }
 
 /** Everything a profile still needs, grouped by where it comes from, with one action per group/entry. */
-export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
+/** characters = the profile's characters: for mods with one version per character, theirs is taken. */
+export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEntry[]; characters?: string[] }) {
   const data = useData()
+  const wanted = (i: Missing) => {
+    const mod = i.modId ? data.index.mods.get(i.modId) : undefined
+    return mod ? wantedPacks(mod, i.entry.pack, characters) : undefined
+  }
   const [busy, setBusy] = useState<string | null>(null)
   const [log, setLog] = useState<string[]>([])
   const [progress, setProgress] = useState<Record<string, SteamProgress>>({})
@@ -44,7 +49,7 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
   const fromNexus = async (i: Missing) => {
     setBusy(i.entry.key)
     const mod = i.modId ? data.index.mods.get(i.modId) : undefined
-    const hints = mod ? packHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : []
+    const hints = mod ? packHints(mod, wanted(i)) : []
     const r = await window.api.installFromNexus((i.source as { url: string }).url, i.modId, hints)
     note(r.message)
     setBusy(null)
@@ -55,7 +60,7 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
     setBusy(i.entry.key)
     // The window marks the file this profile uses and says what the other files are.
     const mod = i.modId ? data.index.mods.get(i.modId) : undefined
-    const hints = mod ? downloadHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : []
+    const hints = mod ? downloadHints(mod, wanted(i)) : []
     const r = await window.api.installFromLoversLab((i.source as { url: string }).url, i.modId, hints)
     note(r.message)
     setBusy(null)
@@ -75,8 +80,8 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
         modId: i.modId ?? i.entry.key,
         name: i.entry.name,
         url: (i.source as { url: string }).url,
-        archives: mod ? archivesFor(mod, i.entry.pack ? [i.entry.pack] : undefined) : undefined,
-        hints: mod ? downloadHints(mod, i.entry.pack ? [i.entry.pack] : undefined) : undefined
+        archives: mod ? archivesFor(mod, wanted(i)) : undefined,
+        hints: mod ? downloadHints(mod, wanted(i)) : undefined
       }
     })
     const r = await window.api.installQueueFromLoversLab(jobs)

@@ -64,6 +64,28 @@ function archiveOf(mod: Mod, file: string, archive?: string): string | undefined
   return mod.sources.downloads?.some((d) => d.name.toLowerCase() === file.toLowerCase()) ? stem(file) : undefined
 }
 
+/**
+ * The packs of a mod a profile needs: the one its template names, else – for mods with one version per
+ * character ("Miao Ying version", "Katarin version") – the versions for the profile's characters. Undefined
+ * when that does not narrow it down (no match, or every version matches).
+ */
+export function wantedPacks(mod: Mod, templatePack: string | undefined, characters: string[] = []): string[] | undefined {
+  if (templatePack && mod.packs.some((p) => p.file.toLowerCase() === templatePack.toLowerCase())) return [templatePack]
+  const word = (s: string) => s.toLowerCase().replace(/[^a-z' ]/g, ' ').split(/\s+/).filter(Boolean)
+  const names = characters.flatMap((c) => word(c).slice(0, 1)).filter((w) => w.length >= 4)
+  if (!names.length || mod.packs.length < 2) return undefined
+  const describe = (file: string) => [
+    mod.packs.find((p) => p.file === file)?.note ?? '',
+    ...(mod.sources.downloads ?? []).filter((d) => d.name.toLowerCase() === file.toLowerCase()).map((d) => d.description ?? '')
+  ].join(' ')
+  // Only the first words of a note count ("Katarin version; needs …"), not characters named as requirements.
+  const forChar = mod.packs.filter((p) => {
+    const head = word(describe(p.file).split(/[;:(]/)[0]).slice(0, 3)
+    return names.some((n) => head.includes(n))
+  })
+  return forChar.length && forChar.length < mod.packs.length ? forChar.map((p) => p.file) : undefined
+}
+
 /** A note for one file of a mod's download page, shown in the download window. */
 export interface FileHint {
   name: string

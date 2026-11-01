@@ -433,7 +433,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'install' && (
         <section>
-          <InstallPanel missing={missingEntries} />
+          <InstallPanel missing={missingEntries} characters={preset.playAs} />
           <p className="step-next"><button onClick={() => goTo('order')}>Next: 3 · Load order &amp; play →</button></p>
         </section>
       )}
