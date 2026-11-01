@@ -117,17 +117,19 @@
    ],
    "steamIds": [],
    "loversLab": [],
-   "requires": [],
+   "requires": [
+    "https://www.loverslab.com/files/file/23966-lazys-corrupted-katarin-stages-reskins/"
+   ],
    "recommends": [],
    "incompatible": [],
-   "loadOrder": "Above the Katarin reskin mods",
+   "loadOrder": "Above the Katarin reskin mods (author's post)",
    "playAs": [
     "Katarin"
    ],
    "phase": "Stage 4",
    "status": "active",
    "knownIssues": [],
-   "notes": ""
+   "notes": "Optional add-on by LazyIcarus for his Katarin corruption reskins: stage 4 shows pubic hair instead of the tattoo. Download via MEGA from his #downloads post."
   },
   {
    "name": "Lazy's Valkia Reskin",
@@ -433,7 +435,9 @@
    "playAs": [],
    "phase": "",
    "status": "active",
-   "knownIssues": [],
+   "knownIssues": [
+    "A player reported (2026-11-01) that Miao Alchemy (pack + assets) crashes the game at start with the merged pack but not with the old @Soil_Miaoying_Corrupted_Units.pack; not confirmed yet."
+   ],
    "notes": "Partially tested merged pack. Using the wrong Soil pack gives startup errors; the merged one fixed them (user report 2026-10-29). MrDustV also fixed Soil's Azazel/Miao corrupted units for patch 9.0 (Archaon too)."
   },
   {
@@ -465,8 +469,10 @@
     "Miao Ying"
    ],
    "phase": "",
-   "status": "active",
-   "knownIssues": [],
+   "status": "superseded",
+   "knownIssues": [
+    "Outdated: posted 2022-09-03; called 'pretty old' by its author in 2024 and 'like 3 years outdated, remove it' in 2026. Use the current Soil corrupted units (merged pack and Soil assets) instead."
+   ],
    "notes": "Adds unit recruitment to the landmarks mod and Cathay cultist units; weakens Jade/Celestial Dragon units with corruption. Steam requirements removed in 0903."
   },
   {
@@ -491,8 +497,10 @@
    "loadOrder": "Above the required Warband Upgrade Ultimate",
    "playAs": [],
    "phase": "",
-   "status": "active",
-   "knownIssues": [],
+   "status": "abandoned",
+   "knownIssues": [
+    "Made in 2023 for the old Soil 0903 units (file Warband_cths_to_soilunit, or a RoR version); reported not to work with the newer Soil assets (2024-03). The current Soil packs bring their own warband upgrade, which Warband Upgrade Ultimate is said to block (2026-06)."
+   ],
    "notes": "Lets Cathay units be upgraded to corrupted ones. Variants exist for SFO and RoR."
   },
   {
@@ -1844,7 +1852,7 @@
    "phase": "",
    "status": "active",
    "knownIssues": [],
-   "notes": "Mods on Google Drive https://drive.google.com/drive/folders/1yJHI855iXbhkkv7b38q97g32T2X061CL and Nexus (WH3 mods 102, 103). Ivan's daemonette pack replaces vanilla daemonettes (favored + generic)."
+   "notes": "LewdIvan's adult models for the Slaanesh daemonettes (favoured and generic), Fiends and Steeds of Slaanesh, Kaira Fateweaver and Miao Ying's dragon form, shared on Google Drive (https://drive.google.com/drive/folders/1yJHI855iXbhkkv7b38q97g32T2X061CL) and Nexus Mods (WH3 mods 102 and 103, login needed). The daemonette pack replaces the vanilla daemonettes."
   },
   {
    "name": "More Lustful Daemonettes Varieties (Standalone)",
