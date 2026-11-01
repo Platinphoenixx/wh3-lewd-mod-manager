@@ -270,6 +270,7 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
     }
     // The save path must be set right inside the event; set any later, Electron shows Windows' save dialog.
     const onDownload = (_e: unknown, item: DownloadItem) => {
+      if (IMAGE.test(item.getFilename())) return item.cancel() // preview images are not mods
       mkdirSync(downloads, { recursive: true })
       const target = join(downloads, basename(item.getFilename()))
       item.setSavePath(target)
@@ -306,6 +307,13 @@ const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].
 }).filter(Boolean)`
 
 const FILE_LIMIT_MS = 15 * 60 * 1000
+const IMAGE = /\.(png|jpe?g|gif|webp)$/i
+
+/** A plain dark page for the queue window while a file downloads. */
+const statusPage = (text: string) => 'data:text/html;charset=utf-8,' + encodeURIComponent(
+  `<!doctype html><meta charset="utf-8"><body style="margin:0;background:#151311;color:#e4eedc;font:16px/1.5 system-ui,sans-serif">` +
+  `<div style="background:#22331f;border-bottom:2px solid #6f9a5c;padding:14px 18px">${text.replace(/[<&]/g, (c) => (c === '<' ? '&lt;' : '&amp;'))}</div></body>`
+)
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 /**
@@ -331,18 +339,27 @@ export async function downloadQueueFromLoversLab(
   let guide = ''
   win.on('closed', () => (cancelled = true))
   win.on('page-title-updated', (e) => e.preventDefault())
-  win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(guide).catch(() => {}))
+  const onLoversLab = () => !win.isDestroyed() && win.webContents.getURL().startsWith('https://www.loverslab.com/')
+  win.webContents.on('did-finish-load', () => void (onLoversLab() && win.webContents.executeJavaScript(guide).catch(() => {})))
   const setGuide = (text: string, hints: FileHint[] = []) => {
     guide = guideScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT}`, text, LL_SIGNED_IN) + markFilesScript(hints)
-    if (!win.isDestroyed()) void win.webContents.executeJavaScript(guide).catch(() => {})
+    if (onLoversLab()) void win.webContents.executeJavaScript(guide).catch(() => {})
   }
+  // A page script on a page that is not there (a download ends the navigation) never answers: wait at most 3 s.
+  const pageJs = <T>(code: string, fallback: T): Promise<T> =>
+    Promise.race([win.webContents.executeJavaScript(code).catch(() => fallback), sleep(3000).then(() => fallback)])
+  let current = ''
 
   let finished: string[] = []
   let failed: string | null = null
   const onDownload = (_e: unknown, item: DownloadItem) => {
+    // Preview images are not mods: skip them and keep waiting for the real file.
+    if (IMAGE.test(item.getFilename())) return item.cancel()
     const target = join(downloads, basename(item.getFilename()))
     item.setSavePath(target)
     item.once('done', (_ev, state) => (state === 'completed' ? finished.push(target) : (failed = `Download ${state}.`)))
+    // The download ends the page; show what is going on instead of an empty window.
+    if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
   }
   ses.on('will-download', onDownload)
   const waitFor = async (count: number) => {
@@ -364,15 +381,16 @@ export async function downloadQueueFromLoversLab(
       const waitNote = 'If LoversLab makes a download wait, the queue waits with it. Close this window to stop.'
       const hints = job.hints ?? []
       const wanted = hints.filter((h) => h.wanted).map((h) => `“${h.name}”`)
-      setGuide(`${i + 1} of ${jobs.length} – ${job.name}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
+      current = `${i + 1} of ${jobs.length} – ${job.name}`
+      setGuide(`${current}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
       progress({ ...step, status: 'downloading' })
       void win.loadURL(job.url.replace(/\/?$/, '/') + '?do=download').catch(() => {}) // a download aborts the navigation
 
       // Either the file arrives, or the page lists several files (only on the first page, never on a file's own page).
       let expected = 1
       for (const t0 = Date.now(); !finished.length && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; await sleep(1000)) {
-        if (win.isDestroyed() || /[?&]r=/.test(win.webContents.getURL())) continue
-        const rows: DownloadRow[] = await win.webContents.executeJavaScript(ROWS_JS).catch(() => [])
+        if (!onLoversLab() || /[?&]r=/.test(win.webContents.getURL())) continue
+        const rows: DownloadRow[] = await pageJs(ROWS_JS, [] as DownloadRow[])
         if (new Set(rows.map((r) => r.href)).size < 2) continue
         const picks = pickDownloads(rows, job.archives)
         if (!picks) {
