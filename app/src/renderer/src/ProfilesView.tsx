@@ -230,7 +230,10 @@ export function ProfilesView() {
         {profile && !preset && <p className="callout warn">The template of this profile is no longer in the catalog.</p>}
         {selected?.kind === 'preset' && preset && (
           <>
-            <button className="primary" onClick={() => create(preset)}>Create profile from this template</button>
+            <div className="use-list">
+              <button className="primary" onClick={() => create(preset)}>Use this list</button>
+              <span className="small muted">Makes your own copy of the list. In it you decide the optional parts, install what is missing and start the game.</span>
+            </div>
             <PresetDetail preset={preset} />
           </>
         )}

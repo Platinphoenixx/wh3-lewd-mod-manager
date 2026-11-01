@@ -20,7 +20,7 @@ release is all it takes for players to hear about it.
 
 - Catalog of the lewd mods for Total War: Warhammer III (LoversLab, Steam Workshop, Nexus Mods, Discord) with
   requirements, conflicts, load-order rules and images.
-- Profiles from tested community lists and guides, with every optional add-on; your own mods are placed
+- Profiles from tested community lists and guides in three steps (choices, install, play), with every optional add-on; your own mods are placed
   in the load order with a reason.
 - *Fill this profile*: suggested lewd and general mods that fit, with pick-one choices for mods that
   exclude each other.

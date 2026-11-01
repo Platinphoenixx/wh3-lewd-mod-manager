@@ -13,8 +13,8 @@ import { pickVariants, planLaunch, variantGroups } from '@shared/launch'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
-import { suggestForProfile } from '@shared/suggest'
-import { FillProfile } from './Suggestions'
+import { isPickOne, suggestForProfile, type Suggestion } from '@shared/suggest'
+import { DecideChoices, SuggestedMods } from './Suggestions'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -64,7 +64,14 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   profile: Profile; preset: Preset; onChange(p: Profile): void; onDelete(): void
 }) {
   const data = useData()
-  const [view, setView] = useState<'options' | 'order'>(() => (location.hash.endsWith('-order') ? 'order' : 'options'))
+  // Steps: 1 choices, 2 install, 3 load order & play; "credits" is the Made by list. Without a choice the
+  // profile opens where there is something to do: install while mods are missing, else load order & play.
+  type View = 'choices' | 'install' | 'order' | 'credits'
+  const [chosenView, setView] = useState<View | null>(() => {
+    const m = location.hash.match(/-(choices|options|install|order|credits)$/)
+    return m ? (m[1] === 'options' ? 'choices' : (m[1] as View)) : null
+  })
+  const [browsing, setBrowsing] = useState(false)
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<Set<CandidateGroup>>(new Set())
   const [hideConflicts, setHideConflicts] = useState(true)
@@ -72,6 +79,11 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const options = useMemo(() => candidates(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
   const resolved = useMemo(() => resolveProfile(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
   const suggestions = useMemo(() => suggestForProfile(data.catalog, data.index, preset, profile, options), [data.catalog, data.index, preset, profile, options])
+  // Choices the player turned down stay away; pick-one choices go to "Decide", single suggestions to "Add more".
+  const declined = new Set(profile.declined ?? [])
+  const entries = [...suggestions.lewd, ...suggestions.general]
+  const picks = entries.filter(isPickOne).filter((p) => !p.pick.some((s) => declined.has(s.key)))
+  const singles = (list: typeof suggestions.lewd) => list.filter((e): e is Suggestion => !isPickOne(e) && !declined.has(e.key))
 
   // Installed packs by profile key: catalog mods, and the player's own mods (packs the catalog does not know).
   const matched = useMemo(
@@ -84,6 +96,12 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return m
   }, [matched])
   const installed = useMemo(() => new Map([...matched.known, ...ownGroups]), [matched, ownGroups])
+  const missingEntries = resolved.entries.filter((e) => !installed.has(e.key))
+  const view: View = chosenView ?? (missingEntries.length ? 'install' : 'order')
+  const goTo = (v: View) => {
+    setView(v)
+    document.querySelector('.content')?.scrollTo({ top: 0 })
+  }
   const installedKeys = useMemo(() => {
     const m = new Map<string, string>()
     for (const [k, packs] of installed) for (const p of packs) m.set(p.file.toLowerCase(), k)
@@ -303,7 +321,20 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         </button>
         <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
       </div>
-      <MadeBy preset={preset} works={worksOf(data, order.map((o) => parseTargetKey(o.key)))} />
+      <nav className="subtabs steps">
+        <button className={view === 'choices' ? 'active' : ''} onClick={() => goTo('choices')}>
+          1 · Choices{picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}
+        </button>
+        <button className={view === 'install' ? 'active' : ''} onClick={() => goTo('install')}>
+          2 · Install{missingEntries.length > 0 && <span className="muted"> ({missingEntries.length} missing)</span>}
+        </button>
+        <button className={view === 'order' ? 'active' : ''} onClick={() => goTo('order')}>3 · Load order &amp; play</button>
+        <span className="spacer" />
+        <button className={view === 'credits' ? 'active' : ''} onClick={() => goTo('credits')}>Made by</button>
+      </nav>
+      <p className="small muted">
+        Three steps: decide the optional parts, install what is missing, then press Play. Every step can be revisited; the profile is saved as you go.
+      </p>
       {preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
       {resolved.notes.length > 0 && (
         <details className="callout small">
@@ -325,18 +356,35 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           </ul>
         </div>
       )}
-      <nav className="subtabs">
-        <button className={view === 'options' ? 'active' : ''} onClick={() => setView('options')}>Options ({options.length + ownGroups.size})</button>
-        <button className={view === 'order' ? 'active' : ''} onClick={() => setView('order')}>Load order ({order.length})</button>
-      </nav>
-
-      {view === 'options' && (
+      {view === 'choices' && (
         <>
-          <FillProfile lewd={suggestions.lewd} general={suggestions.general} character={suggestions.character} onAdd={addExtras} />
-          <div className="filters inline">
-            <input placeholder="Search options…" value={query} onChange={(e) => setQuery(e.target.value)} />
-            <label className="toggle"><input type="checkbox" checked={hideConflicts} onChange={(e) => setHideConflicts(e.target.checked)} /> Hide conflicting</label>
-          </div>
+          <DecideChoices
+            picks={picks}
+            onApply={(add, no) => {
+              const keep = add.filter((k) => !extras.has(k))
+              onChange({
+                ...profile,
+                extras: [...profile.extras, ...keep],
+                removed: profile.removed.filter((k) => !keep.includes(k)),
+                declined: [...new Set([...(profile.declined ?? []), ...no])]
+              })
+            }}
+          />
+          <SuggestedMods
+            lewd={singles(suggestions.lewd)}
+            general={singles(suggestions.general)}
+            character={suggestions.character}
+            total={options.length}
+            browsing={browsing}
+            onAdd={addExtras}
+            onBrowse={() => setBrowsing(!browsing)}
+          />
+          {onCards.length > 0 && (
+            <section>
+              <h3>Switched on ({onCards.length})</h3>
+              <div className="options">{onCards.map((c) => <OptionCard key={c.key} c={c} on toggle={() => toggleExtra(c.key)} />)}</div>
+            </section>
+          )}
           <section>
             <h3>Your mods ({ownKeys.length})</h3>
             <AddOwnMod />
@@ -354,13 +402,13 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               </div>
             )}
           </section>
-          {onCards.length > 0 && (
-            <section>
-              <h3>Switched on</h3>
-              <div className="options">{onCards.map((c) => <OptionCard key={c.key} c={c} on toggle={() => toggleExtra(c.key)} />)}</div>
-            </section>
+          {browsing && (
+            <div className="filters inline">
+              <input placeholder="Search options…" value={query} onChange={(e) => setQuery(e.target.value)} />
+              <label className="toggle"><input type="checkbox" checked={hideConflicts} onChange={(e) => setHideConflicts(e.target.checked)} /> Hide conflicting</label>
+            </div>
           )}
-          {groups.map((g) => {
+          {browsing && groups.map((g) => {
             const list = visible.filter((c) => c.group === g)
             if (!list.length) return null
             const collapsible = g === 'other' || g === 'translation' || g === 'general'
@@ -379,12 +427,27 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               </section>
             )
           })}
+          <p className="step-next"><button onClick={() => goTo('install')}>Next: 2 · Install →</button></p>
         </>
       )}
 
+      {view === 'install' && (
+        <section>
+          <InstallPanel missing={missingEntries} />
+          <p className="step-next"><button onClick={() => goTo('order')}>Next: 3 · Load order &amp; play →</button></p>
+        </section>
+      )}
+
+      {view === 'credits' && <MadeBy preset={preset} works={worksOf(data, order.map((o) => parseTargetKey(o.key)))} />}
+
       {view === 'order' && (
         <section>
-          <InstallPanel missing={resolved.entries.filter((e) => !installed.has(e.key))} />
+          {missingEntries.length > 0 && (
+            <p className="callout warn small">
+              {missingEntries.length} mod{missingEntries.length === 1 ? ' is' : 's are'} not installed yet.{' '}
+              <button className="link" onClick={() => goTo('install')}>Install {missingEntries.length === 1 ? 'it' : 'them'}</button>
+            </p>
+          )}
           {stale.size > 0 && (
             <p className="callout warn small">
               {stale.size} mod{stale.size === 1 ? '' : 's'} of this profile change game data and were not updated since the last major game update, {gameDate}.
@@ -461,6 +524,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               <ul>{profile.removed.map((k) => <li key={k}>{nameOf(data.catalog, data.index, k)} <button className="link" onClick={() => toggleBase(k)}>restore</button></li>)}</ul>
             </>
           )}
+          <p className="step-next">
+            <button className="primary" onClick={play} disabled={!data.scan?.gamePath}>▶ Play with this load order</button>
+          </p>
         </section>
       )}
     </div>

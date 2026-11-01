@@ -15,6 +15,8 @@ export interface Profile {
   pins?: Record<string, string | null>
   /** Pick-one pack variants the player chose: entry key → exclusiveGroup → pack file (default: first installed). */
   variants?: Record<string, Record<string, string>>
+  /** Suggestions the player turned down ("None of these"); they are not offered again. */
+  declined?: string[]
   createdAt: string
   updatedAt: string
 }
