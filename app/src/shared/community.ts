@@ -24,7 +24,7 @@ export interface Contribution {
   /** Structured content; becomes a JSON block in the issue so curators can apply it mechanically. */
   payload: Record<string, unknown>
   createdAt: string
-  sentAs?: 'issue' | 'clipboard'
+  sentAs?: 'issue' | 'clipboard' | 'relay'
 }
 
 export const CONTRIBUTION_LABEL: Record<ContributionType, string> = {

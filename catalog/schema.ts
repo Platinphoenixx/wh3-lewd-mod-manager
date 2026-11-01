@@ -137,6 +137,12 @@ export interface Mod {
     wiki?: string[];
   };
 
+  /** Support links found on the mod's own pages (Patreon, Ko-fi, …); a page may also credit collaborators. */
+  /** owner = the creator the link belongs to, when that is not this mod's author (credited on their page). */
+  support?: { platform: string; url: string; owner?: string }[];
+  /** The uploader's pages: LoversLab profile, Steam Workshop files. */
+  authorPages?: { site: "loverslab" | "steam"; name?: string; url: string }[];
+
   /** .pack filenames this mod installs. Used to recognise it in the data/workshop folders. */
   packs: PackRef[];
 
@@ -275,6 +281,10 @@ export interface ExternalMod {
   steamId?: string;
   url?: string;
   note?: string;
+  /** Workshop uploader and their support links, like Mod.authors / authorPages / support. */
+  authors?: string[];
+  authorPages?: Mod["authorPages"];
+  support?: Mod["support"];
 }
 
 export interface Note {

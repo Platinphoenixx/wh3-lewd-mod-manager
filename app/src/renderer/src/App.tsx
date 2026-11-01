@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
-import { DEFAULTS, type GameScan, type Settings } from '@shared/api'
+import { DEFAULTS, type GameScan, type ScriptReport, type Settings } from '@shared/api'
 import { withUserRules, type UserRule } from '@shared/community'
 import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
@@ -12,6 +12,9 @@ import { CommunityView } from './CommunityView'
 import { ModDetail } from './ModDetail'
 import { ContributeDialog, type ContributeRequest } from './ContributeDialog'
 import { announceInstalled } from './OwnMods'
+import { NoticeStack, useNotices } from './Notices'
+import { ReportDialog } from './ReportDialog'
+import { groupFailures } from '@shared/report'
 
 const TABS = ['profiles', 'catalog', 'install', 'community', 'settings'] as const
 type Tab = (typeof TABS)[number]
@@ -30,6 +33,18 @@ export function App() {
   const [openModId, setOpenModId] = useState<string | null>(null)
   const [contributing, setContributing] = useState<ContributeRequest | null>(null)
   const [blurImages, setBlurImages] = useState(() => localStorage.getItem('blurImages') === '1')
+  const { notices, notify, dismiss } = useNotices()
+  const [tabCounts, setTabCounts] = useState<Partial<Record<Tab, { n: number; error?: boolean; title: string }>>>({})
+  const setTabCount = useCallback<AppData['setTabCount']>((t, c) => setTabCounts((m) => {
+    if (!c && !m[t]) return m
+    if (c && m[t]?.n === c.n && m[t]?.error === c.error && m[t]?.title === c.title) return m
+    const next = { ...m }
+    if (c) next[t] = c
+    else delete next[t]
+    return next
+  }), [])
+  const [scripts, setScripts] = useState<ScriptReport | null>(null)
+  const [reportFor, setReportFor] = useState<number | null>(null)
 
   const rescan = useCallback(() => {
     window.api.scanGame().then(setScan, (e) => setError(String(e)))
@@ -43,6 +58,33 @@ export function App() {
   }, [rescan])
 
   useEffect(() => localStorage.setItem('blurImages', blurImages ? '1' : '0'), [blurImages])
+
+  // Script errors of the last game start: counted on the Installation tab, read again when a game the app started closes.
+  useEffect(() => {
+    window.api.scriptReport().then(setScripts, () => setScripts(null))
+  }, [scan])
+  useEffect(() => {
+    const n = groupFailures(scripts?.failed ?? []).length
+    setTabCount('install', n ? { n, error: true, title: `Script errors in ${n} mod${n === 1 ? '' : 's'} at the last game start` } : null)
+  }, [scripts, setTabCount])
+  useEffect(() => window.api.onGameExited(async ({ startedAt }) => {
+    const s = await window.api.scriptReport().catch(() => null)
+    setScripts(s)
+    if (!s?.written || s.written < startedAt) return // the game did not get far enough to write its log
+    if (!s.failed.length) {
+      notify({ kind: 'done', text: 'Game closed – no script errors.' })
+      return
+    }
+    const n = groupFailures(s.failed).length
+    notify({
+      kind: 'error',
+      text: `Game closed – script errors in ${n} mod${n === 1 ? '' : 's'} during the last session.`,
+      actions: [
+        { label: 'Report to the modder…', run: () => { setTab('install'); setReportFor(0) } },
+        { label: 'Details', run: () => setTab('install') }
+      ]
+    })
+  }), [notify])
 
   const saveRules = useCallback((next: UserRule[]) => {
     setRules(next)
@@ -63,15 +105,14 @@ export function App() {
 
   // Files dropped anywhere are installed; an open profile switches them on (see OwnMods).
   const [dragging, setDragging] = useState(false)
-  const [dropMessage, setDropMessage] = useState<string | null>(null)
   const onDrop = async (e: DragEvent) => {
     e.preventDefault()
     setDragging(false)
     const paths = [...e.dataTransfer.files].map((f) => window.api.pathForFile(f)).filter(Boolean)
     if (!paths.length) return
-    setDropMessage('Installing…')
+    notify({ id: 'drop', kind: 'info', text: 'Installing…', timeout: 0 })
     const r = await window.api.installPaths(paths)
-    setDropMessage(r.message)
+    notify({ id: 'drop', kind: r.ok ? 'done' : 'error', text: r.message })
     if (r.ok) {
       rescan()
       announceInstalled({ packs: r.packs })
@@ -83,7 +124,8 @@ export function App() {
 
   const data: AppData = {
     catalog: effective, index, scan, rescan, openMod: setOpenModId, blurImages,
-    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, settings, workshopDetails
+    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, relayUrl: settings.relayUrl || DEFAULTS.relayUrl, settings, workshopDetails,
+    notify, setTabCount, scripts, openReport: setReportFor
   }
 
   return (
@@ -99,12 +141,14 @@ export function App() {
         onDrop={onDrop}
       >
         {dragging && <div className="drop-overlay" onDragLeave={() => setDragging(false)}>Drop .pack, .7z, .zip or .rar files to install them</div>}
-        {dropMessage && <div className="toast" onClick={() => setDropMessage(null)}>{dropMessage} <span className="muted">(click to close)</span></div>}
         <header className="topbar">
           <h1>WH3 Lewd Mod Manager</h1>
           <nav>
             {TABS.map((t) => (
-              <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>{TAB_LABEL[t]}</button>
+              <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>
+                {TAB_LABEL[t]}
+                {tabCounts[t] && <span className={`tab-count${tabCounts[t].error ? ' error' : ''}`} title={tabCounts[t].title}>{tabCounts[t].n}</span>}
+              </button>
             ))}
           </nav>
           <label className="toggle">
@@ -124,6 +168,8 @@ export function App() {
         </main>
         {openModId && <ModDetail id={openModId} onClose={() => setOpenModId(null)} />}
         {contributing && <ContributeDialog req={contributing} onClose={() => setContributing(null)} />}
+        {reportFor !== null && scripts?.failed[reportFor] && <ReportDialog failure={reportFor} onClose={() => setReportFor(null)} />}
+        <NoticeStack notices={notices} dismiss={dismiss} />
       </div>
     </DataContext.Provider>
   )

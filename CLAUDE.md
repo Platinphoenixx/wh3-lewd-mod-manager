@@ -14,6 +14,10 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
+  - `src/renderer/src/Creators.tsx` credits: every creator whose mod is in a profile (makers of the template's
+    campaign/progression/framework mods first), with support links (Patreon, Ko-fi, …) and author pages that
+    `build_catalog.py` takes from the mods' own pages; Workshop uploader names come from
+    `curator/raw/steam_creators.json` (refreshed by `update.py`).
   - `src/main/pack.ts` reader for .pack indexes (PFH5/PFH6: header, dependency list, file index, RPFM's
     dependency note; never reads file data otherwise), cached per file (tested)
   - `src/shared/conflicts.ts` overlaps between packs: same file path = real override (higher pack wins);
@@ -42,6 +46,20 @@ community contributions. App UI and catalog texts are English.
     `src/shared/health.ts`: mods that change game data and are older than the last major game update
     (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
     and script errors from `lua_mod_log.txt` mapped to their packs (tested).
+  - Problem reports: `src/shared/report.ts` (tested) builds a Markdown report for modders from a launch
+    snapshot (`userData/last-launch.json`, written by ▶ Play: load order, origin base/extra/own, template,
+    game version from Warhammer3.exe + Steam build) and the script log: differences from the template, mods
+    older than the last major update, file overlaps; user names and local folders are replaced
+    (`anonymize`). Main sends `game:exited` when a started game closes; the app then reads the log again.
+    UI: `ReportDialog.tsx` (copy for Discord / full / save), `Notices.tsx` (message cards with action and
+    timer), tab counters (`setTabCount`), image placeholders while loading (`data-done`, set in `main.tsx`).
+  - Made by (`renderer/src/Creators.tsx`): one line per creator of a template/profile with their mods, what
+    those do, and one ♥ Support menu; `build_catalog.py` marks support links that belong to someone credited on
+    another author's page (`support[].owner`).
+  - Sending without an account: `relay/` (Cloudflare Worker, setup in `relay/README.md`, tests
+    `node relay/worker.test.mjs`) stores problem reports privately and files contributions as GitHub issues;
+    the app posts from the main process (`relay:report`, `relay:contribution`, `DEFAULTS.relayUrl`, random
+    install id in userData/install-id.json).
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`
@@ -55,6 +73,9 @@ The project must keep working without anyone's AI subscription.
   refreshes public Steam data, adds automatic entries for uncurated mods (`curator/work/auto-new.json`,
   confidence low), rebuilds the catalog, writes `CHANGES.md`, commits. Versions/dates always come fresh
   from the raw data on every build.
+- `curator/fetch_reports.py` (called by update.py when the secrets RELAY_URL / RELAY_EXPORT_TOKEN exist) writes
+  only counts per error to `curator/raw/error_reports.json`; build_catalog.py makes errors reported by 3+ players
+  a known issue of the mod until the mod is updated.
 - `.github/workflows/apply-contribution.yml`: a maintainer labels an app-created issue `accepted` →
   `curator/apply_contribution.py` records it in `curator/community.json` → `build_catalog.py` applies it
   (rules → relations/load order, feedback → counters + known issues, corrections → community notes,

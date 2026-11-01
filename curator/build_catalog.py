@@ -18,8 +18,10 @@ Usage:
 """
 
 import glob
+import html
 import json
 import re
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -225,6 +227,39 @@ def apply_community(mods: dict) -> None:
                 "curation": {"lastChecked": c.get("accepted"), "confidence": "low",
                              "openQuestions": [f"Community suggestion, not reviewed in detail: {c.get('url')}"]},
             })
+
+
+# Support links (Patreon, Ko-fi, …) as they appear on a mod's own pages. They are kept per mod, not per
+# author: a page may also credit collaborators with their links.
+SUPPORT_RE = re.compile(
+    r"https?://(?:www\.)?((?:patreon\.com|ko-fi\.com|subscribestar\.(?:com|adult)|buymeacoffee\.com|paypal\.me|boosty\.to"
+    r"|afdian\.(?:net|com))/[\w\-./@?=]+|[\w\-]+\.fanbox\.cc)", re.I)
+SUPPORT_PLATFORM = [("patreon.com", "Patreon"), ("ko-fi.com", "Ko-fi"), ("subscribestar.", "SubscribeStar"),
+                    ("buymeacoffee.com", "Buy Me a Coffee"), ("paypal.me", "PayPal"), ("boosty.to", "Boosty"),
+                    ("afdian.", "Afdian"), ("fanbox.cc", "pixivFANBOX")]
+
+
+def unescape(text: str) -> str:
+    """HTML entities, also double-escaped ones (LoversLab names like "Calm&amp;amp;NormalTime")."""
+    while (plain := html.unescape(text)) != text:
+        text = plain
+    return text
+
+
+def support_links(*texts: str) -> list:
+    out = []
+    for text in texts:
+        for raw in SUPPORT_RE.findall(text or ""):
+            u = raw.split("?")[0].rstrip("/.)]")
+            if re.search(r"patreon\.com/(?:posts|join|checkout)/", u, re.I):
+                continue  # a single post or checkout page, not the creator's page
+            u = re.sub(r"patreon\.com/c/", "patreon.com/", u, flags=re.I)
+            u = re.sub(r"/posts$", "", u)
+            url = "https://" + u
+            if not any(x["url"].lower() == url.lower() for x in out):
+                platform = next((p for k, p in SUPPORT_PLATFORM if k in u.lower()), "Support")
+                out.append({"platform": platform, "url": url})
+    return out
 
 
 def load(path):
@@ -640,9 +675,39 @@ def main():
     desc = {}
     for f in sorted(glob.glob(str(CURATOR / "work" / "desc-*.json"))):
         desc |= load(f)
+    creator_names = {k: unescape(v) for k, v in (load(CURATOR / "raw" / "steam_creators.json") if (CURATOR / "raw" / "steam_creators.json").exists() else {}).items()}
+    # External mods (MCT, Variant Selector, …) get the same credits from their Workshop item.
+    for e in external.values():
+        if e.get("steamId") and (cid := (steam.get(e["steamId"]) or {}).get("creator")):
+            if creator_names.get(cid):
+                e.setdefault("authors", [creator_names[cid]])
+            e["authorPages"] = [{k: v for k, v in {"site": "steam", "name": creator_names.get(cid),
+                                 "url": f"https://steamcommunity.com/profiles/{cid}/myworkshopfiles/?appid=1142710"}.items() if v}]
+            if links := support_links((steam.get(e["steamId"]) or {}).get("description", "")):
+                e["support"] = links
     for m in mods.values():
-        imgs = []
+        # Support links and author pages from the mod's own LoversLab and Workshop pages.
         ll = m.get("sources", {}).get("loverslab")
+        ll_raw = load(CURATOR / "raw" / "ll" / f"{ll['fileId']}.json") if ll and (CURATOR / "raw" / "ll" / f"{ll['fileId']}.json").exists() else {}
+        steam_ids = [s["id"] for s in m.get("sources", {}).get("steam", []) or []] if m.get("kind") != "collection" else []
+        texts = [ll_raw.get("description", "")] + [(steam.get(i) or {}).get("description", "") for i in steam_ids] \
+            + [(steam_hidden.get(i) or {}).get("description", "") for i in steam_ids]
+        if links := support_links(*texts):
+            m["support"] = links
+        pages = []
+        if ll_raw.get("author_url"):
+            pages.append({"site": "loverslab", "name": unescape(ll_raw.get("author") or "") or None, "url": ll_raw["author_url"]})
+        for i in steam_ids[:1]:
+            if cid := (steam.get(i) or {}).get("creator"):
+                pages.append({"site": "steam", "name": creator_names.get(cid),
+                              "url": f"https://steamcommunity.com/profiles/{cid}/myworkshopfiles/?appid=1142710"})
+                # Mods without a curated author are credited to their Workshop uploader.
+                if not m.get("authors") and creator_names.get(cid):
+                    m["authors"] = [creator_names[cid]]
+        if pages:
+            m["authorPages"] = [{k: v for k, v in p.items() if v} for p in pages]
+
+        imgs = []
         raw_path = CURATOR / "raw" / "ll" / f"{ll['fileId']}.json" if ll else None
         if raw_path and raw_path.exists():
             ri = load(raw_path).get("images") or {}
@@ -696,6 +761,41 @@ def main():
             if d.get("description") and m.get("curation", {}).get("confidence", "low") == "low":
                 m["curation"] = {"lastChecked": TODAY, "confidence": "medium",
                                  "openQuestions": ["Dependencies taken from the Steam description only."]}
+
+    # Script errors players sent from the app (counts only, see fetch_reports.py). One player's report is
+    # not enough: an error becomes a known issue once 3 different players reported it, and only until the
+    # mod gets an update after the last report.
+    reports_path = CURATOR / "raw" / "error_reports.json"
+    for e in load(reports_path) if reports_path.exists() else []:
+        m = mods.get(e.get("modId") or "")
+        if not m or e["players"] < 3:
+            continue
+        src = m.get("sources", {})
+        dates = [s.get("updated") for s in src.get("steam") or [] if s.get("updated")] + [(src.get("loverslab") or {}).get("updated")]
+        if any(d and d[:10] > e["last"][:10] for d in dates):
+            continue
+        message = e["signature"].split(" | ", 1)[-1]
+        games = f", game {', '.join(e['games'])}" if e.get("games") else ""
+        m.setdefault("knownIssues", []).append(f"Script error reported by {e['players']} players through the app{games}: {message}")
+
+    # Support links often sit on other people's pages (a campaign page links its submodder's Patreon).
+    # A link belongs to the author on whose mods it appears most, relative to how many mods they have;
+    # on everyone else's mods it is marked with that owner.
+    per_author, link_count = Counter(), defaultdict(Counter)
+    for m in list(mods.values()) + list(external.values()):
+        if m.get("authors"):
+            m["authors"] = [unescape(a) for a in m["authors"]]  # LL pages give "Calm&amp;NormalTime"
+    for m in list(mods.values()) + list(external.values()):
+        if a := (m.get("authors") or [None])[0]:
+            per_author[a] += 1
+            for s in m.get("support", []):
+                link_count[s["url"].lower()][a] += 1
+    owner = {u: max(c, key=lambda a: (c[a] / per_author[a], c[a])) for u, c in link_count.items()}
+    for m in list(mods.values()) + list(external.values()):
+        a = (m.get("authors") or [None])[0]
+        for s in m.get("support", []):
+            if owner.get(s["url"].lower(), a) != a:
+                s["owner"] = owner[s["url"].lower()]
 
     preset_desc = load(CURATOR / "work" / "preset-desc.json") if (CURATOR / "work" / "preset-desc.json").exists() else {}
     for p in presets:

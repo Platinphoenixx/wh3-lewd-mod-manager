@@ -166,11 +166,12 @@ def parse_file_page(html: str, url: str) -> dict:
         t = value.select_one("time")
         info[label.get_text(strip=True).lower()] = t["datetime"] if t else value.get_text(" ", strip=True)
 
-    author = None
+    author = author_url = None
     for p in soup.select("p.ipsType_large"):
         a = p.select_one("a[href*='/profile/']")
         if a and p.get_text(" ", strip=True).startswith("By "):
             author = a.get_text(strip=True)
+            author_url = a.get("href", "").split("?")[0] or None
             break
 
     tags = [t.get_text(strip=True) for t in soup.select(".ipsTags a.ipsTag span, .ipsTags .ipsTag span")]
@@ -217,6 +218,7 @@ def parse_file_page(html: str, url: str) -> dict:
         "images": {"thumbnail": og["content"] if og else None, "screenshots": screenshots, "inline": inline},
         "version": version,
         "author": author,
+        "author_url": author_url,
         "tags": tags,
         "submitted": info.get("submitted"),
         "updated": info.get("updated") or info.get("published") or info.get("submitted"),

@@ -3,6 +3,7 @@ import Markdown from 'react-markdown'
 import type { DownloadFile, ModImage, Relation } from '@catalog/schema'
 import { matchInstalled, targetKey } from '@shared/match'
 import { KIND_LABEL, resolveTarget, steamUrl, useData } from './data'
+import { CreatorSection } from './Creators'
 
 const RELATION_TITLE: Record<Relation['kind'], string> = {
   requires: 'Requires',
@@ -87,6 +88,7 @@ export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
           {mod.curation.confidence !== 'high' && <span className="badge warn">{mod.curation.confidence} confidence</span>}
         </div>
         {mod.authors.length > 0 && <p className="muted">by {mod.authors.join(', ')}</p>}
+        <CreatorSection mod={mod} />
         {mod.communityReports && (
           <p className="small">
             Community: <span className="ok-text">{mod.communityReports.works} works</span> · <span className="warn-text">{mod.communityReports.issues} with issues</span> ·{' '}

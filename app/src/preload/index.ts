@@ -16,7 +16,18 @@ const api: Api = {
   listContributions: () => ipcRenderer.invoke('contributions:list'),
   addContribution: (c) => ipcRenderer.invoke('contributions:add', c),
   packConflicts: (paths) => ipcRenderer.invoke('packs:conflicts', paths),
-  launchGame: (paths) => ipcRenderer.invoke('game:launch', paths),
+  launchGame: (paths, snapshot) => ipcRenderer.invoke('game:launch', paths, snapshot),
+  lastLaunch: () => ipcRenderer.invoke('game:lastLaunch'),
+  onGameExited: (cb) => {
+    const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
+    ipcRenderer.on('game:exited', listener)
+    return () => ipcRenderer.removeListener('game:exited', listener)
+  },
+  appVersion: () => ipcRenderer.invoke('app:version'),
+  saveTextFile: (name, text) => ipcRenderer.invoke('dialog:saveText', name, text),
+  homeDir: () => ipcRenderer.invoke('app:home'),
+  sendReport: (r) => ipcRenderer.invoke('relay:report', r),
+  sendContribution: (c) => ipcRenderer.invoke('relay:contribution', c),
   subscribeWorkshop: (ids) => ipcRenderer.invoke('steam:subscribe', ids),
   installFromFile: (modId) => ipcRenderer.invoke('install:file', modId),
   installFromLoversLab: (url, modId) => ipcRenderer.invoke('install:loverslab', url, modId),

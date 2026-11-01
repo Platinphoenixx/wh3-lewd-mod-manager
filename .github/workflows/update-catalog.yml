@@ -25,6 +25,10 @@ jobs:
           python-version: '3.12'
       - run: pip install -r curator/requirements.txt
       - name: Update
+        env:
+          # Problem reports from the relay (relay/README.md); without these secrets that step is skipped.
+          RELAY_URL: ${{ secrets.RELAY_URL }}
+          RELAY_EXPORT_TOKEN: ${{ secrets.RELAY_EXPORT_TOKEN }}
         run: python curator/update.py
       - name: Commit if anything changed
         run: |

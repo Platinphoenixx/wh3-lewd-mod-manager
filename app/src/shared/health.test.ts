@@ -1,10 +1,17 @@
 import { describe, expect, it } from 'vitest'
-import { gameUpdatedFromManifest, lastMajorUpdate, olderThanGame, parseLuaLog } from './health'
+import { gameBuildFromManifest, gameUpdatedFromManifest, lastMajorUpdate, olderThanGame, parseLuaLog, updateName } from './health'
 
 describe('health hints', () => {
   it('reads the last game update from the Steam manifest', () => {
     expect(gameUpdatedFromManifest('"AppState"\n{\n\t"appid"\t\t"1142710"\n\t"lastupdated"\t\t"1793470983"\n}')).toBe(1793470983000)
     expect(gameUpdatedFromManifest('')).toBeUndefined()
+    expect(gameBuildFromManifest('\t"buildid"\t\t"25961564"\n')).toBe('25961564')
+  })
+
+  it('names updates without the announcement wording', () => {
+    expect(updateName('Lords of the End Times is OUT NOW!')).toBe('Lords of the End Times')
+    expect(updateName('Patch 8.1 Now Live')).toBe('Patch 8.1')
+    expect(updateName('Bhashiva Character Pack & Update 8.0 Out Now!')).toBe('Bhashiva Character Pack & Update 8.0')
   })
 
   it('takes the newest major update the player has installed', () => {

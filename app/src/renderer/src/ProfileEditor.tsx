@@ -10,7 +10,9 @@ import { ConflictList } from './ConflictList'
 import { InstallPanel } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { planLaunch } from '@shared/launch'
+import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
+import type { LaunchSnapshot } from '@shared/report'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -63,7 +65,6 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const [view, setView] = useState<'options' | 'order'>(() => (location.hash.endsWith('-order') ? 'order' : 'options'))
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<Set<CandidateGroup>>(new Set())
-  const [launchMessage, setLaunchMessage] = useState<string | null>(null)
   const [hideConflicts, setHideConflicts] = useState(true)
 
   const options = useMemo(() => candidates(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
@@ -219,9 +220,46 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
       const more = launch.missing.length > 15 ? `\n…and ${launch.missing.length - 15} more` : ''
       if (!confirm(`${launch.missing.length} mods of this profile are not installed:\n\n${list}${more}\n\nStart the game with the ${launch.packs.length} installed packs anyway?`)) return
     }
-    const r = await window.api.launchGame(launch.packs.map((p) => p.path))
-    setLaunchMessage(r.message)
+    const started = new Set(launch.packs.map((p) => p.path))
+    const baseIndex = new Map(resolved.entries.filter((e) => e.origin === 'base').map((e, i) => [e.key, i]))
+    // What is started, kept by the app for problem reports (differences from the template, outdated mods).
+    const snapshot: LaunchSnapshot = {
+      at: Date.now(),
+      profile: { id: profile.id, name: profile.name },
+      template: { id: preset.id, name: preset.name, author: preset.source.author },
+      game: { version: data.scan?.gameVersion, build: data.scan?.gameBuild, lastMajor: major },
+      entries: order.map((o) => ({
+        key: o.key,
+        name: o.name,
+        origin: o.own ? 'own' : byKey.get(o.key)?.origin === 'base' ? 'base' : 'extra',
+        source: sourceOf(o.key),
+        updated: updatedOf(o),
+        changesData: changesData(o),
+        stale: stale.has(o.key),
+        templateIndex: baseIndex.get(o.key),
+        paths: o.paths.filter((p) => started.has(p))
+      })),
+      removed: profile.removed.map((k) => nameOf(data.catalog, data.index, k))
+    }
+    const r = await window.api.launchGame(launch.packs.map((p) => p.path), snapshot)
+    data.notify({ id: 'launch', kind: r.ok ? 'done' : 'error', text: r.message })
   }
+  const sourceOf = (key: string): string | undefined => {
+    const t = parseTargetKey(key)
+    if ('steamId' in t) return `Workshop ${t.steamId}`
+    if ('pack' in t) return 'data folder'
+    const mod = 'mod' in t ? data.index.mods.get(t.mod) : undefined
+    if (mod?.sources.steam?.length) return `Workshop ${mod.sources.steam[0].id}`
+    if (mod?.sources.loverslab) return `LoversLab ${mod.sources.loverslab.fileId}`
+    return undefined
+  }
+
+  // Missing mods of the open profile as a counter on the Profiles tab.
+  const missing = launch.missing.length
+  useEffect(() => {
+    data.setTabCount('profiles', missing ? { n: missing, title: `${missing} mod${missing === 1 ? '' : 's'} of this profile not installed` } : null)
+    return () => data.setTabCount('profiles', null)
+  }, [missing, data.setTabCount])
 
   return (
     <div className="profile-editor">
@@ -236,7 +274,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         </button>
         <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
       </div>
-      {launchMessage && <p className="callout small">{launchMessage}</p>}
+      <MadeBy preset={preset} works={worksOf(data, order.map((o) => parseTargetKey(o.key)))} />
       {preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
       {resolved.notes.length > 0 && (
         <details className="callout small">

@@ -58,6 +58,7 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
     req.type === 'rule' ? !!f.other :
     !!f.field && !!f.suggestion
 
+  let viaGithub = false
   const submit = async () => {
     const now = new Date().toISOString()
     const title =
@@ -77,6 +78,19 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
       data.saveRules([...data.rules, rule])
     }
     const repo = data.contribRepo
+    const body = issueBody(c, data.catalog.generatedAt.slice(0, 10))
+    // Without an account: the project's relay files the issue. GitHub in the browser stays the fallback.
+    if (data.relayUrl && !viaGithub) {
+      const r = await window.api.sendContribution({ type: req.type, title, body })
+      if (r.ok) {
+        c.sentAs = 'relay'
+        setDone(`${r.message}${r.url ? ` It is public at ${r.url}` : ''}`)
+        await window.api.addContribution(c)
+        return
+      }
+      setDone(`Could not send it (${r.message}). Try again later or use “Open as GitHub issue”.`)
+      return
+    }
     if (repo) {
       c.sentAs = 'issue'
       await window.api.openExternal(issueUrl(repo, c, data.catalog.generatedAt.slice(0, 10)))
@@ -157,7 +171,8 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
               </>
             )}
             <div className="form-actions">
-              <button className="primary" disabled={!valid} onClick={submit}>{data.contribRepo ? 'Open as GitHub issue' : 'Copy for sending'}</button>
+              {data.relayUrl && <button className="primary" disabled={!valid} onClick={() => { viaGithub = false; void submit() }}>Send (no account needed)</button>}
+              <button className={data.relayUrl ? '' : 'primary'} disabled={!valid} onClick={() => { viaGithub = true; void submit() }}>{data.contribRepo ? 'Open as GitHub issue' : 'Copy for sending'}</button>
               <button onClick={onClose}>Cancel</button>
             </div>
           </div>

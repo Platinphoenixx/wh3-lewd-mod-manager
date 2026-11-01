@@ -4,6 +4,7 @@ import type { ConflictReport } from './conflicts'
 import type { FactsReport } from './own'
 import type { ImportSource } from './importlist'
 import type { Profile } from './profile'
+import type { LaunchSnapshot } from './report'
 
 /** A .pack file found in the game's data folder or a Workshop download folder. */
 export interface InstalledPack {
@@ -28,6 +29,9 @@ export interface GameScan {
   errors: string[]
   /** When Steam last updated the game (ms), from its app manifest. */
   gameUpdated?: number
+  /** Version of Warhammer3.exe ("9.0.4") and Steam's build number. */
+  gameVersion?: string
+  gameBuild?: string
 }
 
 /** lua_mod_log.txt of the last game start, with the installed packs each failing script comes from. */
@@ -61,6 +65,33 @@ export interface Settings {
   contribRepo?: string
   /** Download all missing LoversLab mods of a profile in one go (LoversLab's own wait still applies). */
   autoLoversLab?: boolean
+  /** The project's relay (Cloudflare Worker) for reports and contributions without an account. Empty = default. */
+  relayUrl?: string
+}
+
+/** What a problem report sends to the relay (the app adds a random install id). */
+export interface RelayReport {
+  app: string
+  game?: string
+  catalog: string
+  modId?: string
+  modName: string
+  /** Same error, same signature: lets the weekly update count players per error. */
+  signature: string
+  text: string
+}
+
+export interface RelayContribution {
+  type: 'new-mod' | 'feedback' | 'rule' | 'correction'
+  title: string
+  body: string
+}
+
+export interface RelayResult {
+  ok: boolean
+  message: string
+  /** GitHub issue of a sent contribution. */
+  url?: string
 }
 
 export interface LoversLabJob {
@@ -79,9 +110,11 @@ export interface LoversLabProgress {
 }
 
 /** Defaults for the community build: the public repository publishes the catalog and receives contributions. */
-export const DEFAULTS: Required<Pick<Settings, 'catalogUrl' | 'contribRepo'>> = {
+export const DEFAULTS: Required<Pick<Settings, 'catalogUrl' | 'contribRepo' | 'relayUrl'>> = {
   catalogUrl: 'https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/catalog.json',
-  contribRepo: 'Platinphoenixx/wh3-lewd-mod-manager'
+  contribRepo: 'Platinphoenixx/wh3-lewd-mod-manager',
+  // Set once the relay is deployed (relay/README.md); until then sending falls back to GitHub / clipboard.
+  relayUrl: ''
 }
 
 /** What the renderer may call in the main process (exposed by the preload script). */
@@ -110,8 +143,21 @@ export interface Api {
   subscribeWorkshop(ids: string[]): Promise<{ ok: boolean; message?: string; results: { id: string; status: string; error?: string }[] }>
   /** Progress of running subscriptions; returns a function that stops listening. */
   onSteamProgress(cb: (p: SteamProgress) => void): () => void
-  /** Writes the mod list for these installed packs (load order) and starts the game. */
-  launchGame(paths: string[]): Promise<{ ok: boolean; message: string; modListPath?: string }>
+  /** Writes the mod list for these installed packs (load order) and starts the game; the snapshot is kept for problem reports. */
+  launchGame(paths: string[], snapshot?: LaunchSnapshot): Promise<{ ok: boolean; message: string; modListPath?: string }>
+  /** What the app started last (load order, template, versions). */
+  lastLaunch(): Promise<LaunchSnapshot | null>
+  /** Called when a game the app started has closed; returns a function that stops listening. */
+  onGameExited(cb: (e: { startedAt: number; ranMs: number }) => void): () => void
+  appVersion(): Promise<string>
+  /** Save dialog for a text file; returns the chosen path or null. */
+  saveTextFile(defaultName: string, text: string): Promise<string | null>
+  /** The player's home folder (to keep it out of reports). */
+  homeDir(): Promise<string>
+  /** Sends a problem report to the project's relay (nothing else is sent). */
+  sendReport(report: RelayReport): Promise<RelayResult>
+  /** Sends a contribution to the project's relay, which files it as a GitHub issue. */
+  sendContribution(c: RelayContribution): Promise<RelayResult>
   /** File overlaps between installed packs; `paths` in load order, highest priority first. */
   packConflicts(paths: string[]): Promise<ConflictReport & { unreadable: string[] }>
   /** Dependencies, file counts, tables and shared files of installed packs (to place own mods). */

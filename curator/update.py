@@ -6,7 +6,8 @@ Steps:
                            and the dates of major game updates from the game's Steam announcements
   3. auto entries        – every LL file / Steam item without a curated entry gets an automatic one
                            (name, author, images, files, first paragraph of the page) marked unverified
-  4. build_catalog.py    – rebuild catalog/catalog.json
+  4. fetch_reports.py   – counts of script errors players sent from the app (needs the relay secrets)
+     build_catalog.py    – rebuild catalog/catalog.json
   5. CHANGES.md          – what changed, for maintainers and release notes
 
 Usage:
@@ -20,6 +21,7 @@ import re
 import subprocess
 import sys
 import urllib.parse
+import time
 import urllib.request
 from datetime import date
 from pathlib import Path
@@ -67,6 +69,7 @@ def refresh_steam(extra_ids: set[str]) -> dict:
                 changed.append(x["publishedfileid"])
             fn = (x.get("filename") or "").rsplit("/", 1)[-1]
             e.update(title=x.get("title"), public=True, updated=x.get("time_updated"), preview_url=x.get("preview_url"),
+                     creator=x.get("creator"),
                      tags=[t["tag"] for t in x.get("tags", [])], description=(x.get("description") or "")[:6000])
             if fn.endswith(".pack") and fn not in e.setdefault("packs", []):
                 e["packs"].append(fn)
@@ -74,7 +77,25 @@ def refresh_steam(extra_ids: set[str]) -> dict:
     return {"steam": steam, "changed": changed}
 
 
-NEWS_API = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1142710&count=300&maxlength=1&feeds=steam_community_announcements"
+def refresh_creators(steam: dict) -> dict:
+    """Display names of the Workshop creators (public profile XML), asked once per creator and kept in
+    raw/steam_creators.json; the app credits them next to their mods."""
+    path = CURATOR / "raw" / "steam_creators.json"
+    names = load(path, {})
+    for cid in sorted({v.get("creator") for v in steam.values() if v.get("creator")} - set(names)):
+        try:
+            xml = urllib.request.urlopen(f"https://steamcommunity.com/profiles/{cid}/?xml=1", timeout=30).read().decode("utf-8", "replace")
+            m = re.search(r"<steamID><!\[CDATA\[(.*?)\]\]></steamID>", xml, re.S)
+            if m and m.group(1).strip():
+                names[cid] = m.group(1).strip()
+        except OSError:
+            continue  # try again next run
+        time.sleep(1)
+    save(path, names)
+    return names
+
+
+NEWS_API ="https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1142710&count=300&maxlength=1&feeds=steam_community_announcements"
 
 
 def is_major_update(title: str) -> bool:
@@ -143,12 +164,16 @@ def main() -> int:
     before_ll = {m["id"]: (m["sources"].get("loverslab") or {}).get("version") for m in before.get("mods", [])}
 
     subprocess.run([py, str(CURATOR / "crawl_ll.py")], check=True)
+    # Problem reports players sent from the app (counts only; skipped without the relay secrets).
+    subprocess.run([py, str(CURATOR / "fetch_reports.py")], check=False)
     run = load(CURATOR / "raw" / "ll" / "_last_run.json", {"changed": [], "removed": []})
 
     linked = set()
     for f in glob.glob(str(CURATOR / "raw" / "ll" / "[0-9]*.json")):
         linked |= set(load(f).get("steam_ids", []))
+    linked |= {e["steamId"] for e in before.get("external", []) if e.get("steamId")}  # credits for MCT & co.
     st = refresh_steam(linked)
+    refresh_creators(st["steam"])
     refresh_game_updates()
 
     auto = auto_entries()

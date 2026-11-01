@@ -1,0 +1,12 @@
+# Cloudflare Worker that receives problem reports and contributions from the app (see README.md).
+name = "wh3lmm-relay"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+REPO = "Platinphoenixx/wh3-lewd-mod-manager"
+
+# Created once with: npx wrangler kv namespace create REPORTS  (put the printed id here)
+[[kv_namespaces]]
+binding = "REPORTS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"

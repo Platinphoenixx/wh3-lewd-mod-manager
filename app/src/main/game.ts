@@ -2,7 +2,8 @@ import { existsSync } from 'node:fs'
 import { readdir, readFile, stat } from 'node:fs/promises'
 import { join } from 'node:path'
 import type { GameScan, InstalledPack } from '@shared/api'
-import { gameUpdatedFromManifest } from '@shared/health'
+import { execFile } from 'node:child_process'
+import { gameBuildFromManifest, gameUpdatedFromManifest } from '@shared/health'
 
 export const WH3_APP_ID = '1142710'
 const GAME_DIR = 'Total War WARHAMMER III'
@@ -76,7 +77,12 @@ export async function scanGame(gamePathOverride?: string, installed: { pack: str
     scan.dataPath = join(scan.gamePath, 'data')
     // steamapps/appmanifest_1142710.acf knows when Steam last updated the game.
     const acf = join(scan.gamePath, '..', '..', `appmanifest_${WH3_APP_ID}.acf`)
-    if (existsSync(acf)) scan.gameUpdated = gameUpdatedFromManifest(await readFile(acf, 'utf8'))
+    if (existsSync(acf)) {
+      const text = await readFile(acf, 'utf8')
+      scan.gameUpdated = gameUpdatedFromManifest(text)
+      scan.gameBuild = gameBuildFromManifest(text)
+    }
+    scan.gameVersion = await exeVersion(join(scan.gamePath, 'Warhammer3.exe'))
     const manifestPath = join(scan.dataPath, 'manifest.txt')
     const vanilla = existsSync(manifestPath) ? parseManifest(await readFile(manifestPath, 'utf8')) : new Set<string>()
     if (!vanilla.size) scan.errors.push('data/manifest.txt is missing; vanilla packs cannot be told apart from mods.')
@@ -100,4 +106,20 @@ export async function scanGame(gamePathOverride?: string, installed: { pack: str
     }
   }
   return scan
+}
+
+let versionCache: { path: string; mtime: number; version?: string } | null = null
+
+/** Product version of the game's exe ("9.0.4"), read by Windows once per exe file version. */
+async function exeVersion(exe: string): Promise<string | undefined> {
+  const mtime = (await stat(exe).catch(() => null))?.mtimeMs
+  if (!mtime) return undefined
+  if (versionCache?.path === exe && versionCache.mtime === mtime) return versionCache.version
+  const raw = await new Promise<string>((resolve) =>
+    execFile('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', `(Get-Item -LiteralPath '${exe.replace(/'/g, "''")}').VersionInfo.ProductVersion`],
+      { timeout: 15000, windowsHide: true }, (_e, out) => resolve(String(out ?? '').trim())))
+  // "9.0.4.0" -> "9.0.4"
+  const version = /^\d+(\.\d+)*$/.test(raw) ? raw.split('.').slice(0, 3).join('.') : undefined
+  versionCache = { path: exe, mtime, version }
+  return version
 }

@@ -1,13 +1,15 @@
 import { existsSync, readdirSync } from 'node:fs'
-import { readFile, stat } from 'node:fs/promises'
+import { readFile, stat, writeFile } from 'node:fs/promises'
+import { homedir } from 'node:os'
 import { basename, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, BrowserWindow, dialog, ipcMain, net, protocol, shell } from 'electron'
-import { DEFAULTS, type GameScan, type ScriptReport, type Settings } from '@shared/api'
+import { DEFAULTS, type GameScan, type RelayContribution, type RelayReport, type RelayResult, type ScriptReport, type Settings } from '@shared/api'
 import { parseLuaLog } from '@shared/health'
 import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@shared/importlist'
 import type { Contribution, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
+import type { LaunchSnapshot } from '@shared/report'
 import { loadCatalog } from './catalog'
 import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts } from './pack'
@@ -17,7 +19,7 @@ import {
   backupPacks, downloadFromLoversLab, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
 } from './installer'
 import {
-  addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings
+  addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings, writeJson
 } from './store'
 
 // WH3LMM_USER_DATA puts profiles/settings into another folder (portable use, tests with throwaway data).
@@ -28,7 +30,7 @@ function createWindow(): void {
     width: 1400,
     height: 900,
     title: 'WH3 Lewd Mod Manager',
-    backgroundColor: '#15131a',
+    backgroundColor: '#141311',
     webPreferences: { preload: join(__dirname, '../preload/index.js'), sandbox: false }
   })
   // Links in mod descriptions open in the user's browser, never inside the app.
@@ -84,7 +86,47 @@ ipcMain.handle('install:backup', async (_e, paths: string[]) => {
   return scan.dataPath ? backupPacks(paths.filter((p) => dataPacks.has(p)), scan.dataPath) : { moved: [], folder: '' }
 })
 ipcMain.handle('steam:subscribe', (e, ids: string[]) => subscribeWorkshop(ids.filter((x) => /^\d{6,12}$/.test(x)), e.sender))
-ipcMain.handle('game:launch', async (_e, paths: string[]) => launchGame(await currentScan(), paths))
+// The snapshot of what was started is kept for problem reports; the renderer hears when the game closes.
+ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapshot) => {
+  const startedAt = Date.now()
+  const r = await launchGame(await currentScan(), paths, (ranMs) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs }))
+  if (r.ok && snapshot) await writeJson('last-launch.json', { ...snapshot, at: startedAt })
+  return r
+})
+ipcMain.handle('game:lastLaunch', () => readJson<LaunchSnapshot | null>('last-launch.json', null))
+ipcMain.handle('app:version', () => app.getVersion())
+ipcMain.handle('app:home', () => homedir())
+
+// The relay gets only what the player saw in the dialog, plus a random id made once on this PC so the
+// weekly update can count players instead of reports.
+async function relay(path: string, body: object): Promise<RelayResult> {
+  const base = ((await getSettings()).relayUrl || DEFAULTS.relayUrl).replace(/\/$/, '')
+  if (!base) return { ok: false, message: 'Sending is not set up yet.' }
+  try {
+    const res = await net.fetch(base + path, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
+    const r = (await res.json().catch(() => ({}))) as Partial<RelayResult>
+    return { ok: res.ok && !!r.ok, message: r.message ?? `The relay answered ${res.status}.`, url: r.url }
+  } catch (e) {
+    return { ok: false, message: `Could not reach the relay: ${(e as Error).message}` }
+  }
+}
+async function installId(): Promise<string> {
+  const saved = await readJson<{ id?: string }>('install-id.json', {})
+  if (saved.id) return saved.id
+  const id = crypto.randomUUID()
+  await writeJson('install-id.json', { id })
+  return id
+}
+ipcMain.handle('relay:report', async (_e, r: RelayReport) => relay('/report', { ...r, installId: await installId() }))
+ipcMain.handle('relay:contribution', (_e, c: RelayContribution) => relay('/contribution', c))
+ipcMain.handle('dialog:saveText', async (e, name: string, text: string) => {
+  const pick = await dialog.showSaveDialog(BrowserWindow.fromWebContents(e.sender)!, {
+    defaultPath: name.replace(/[<>:"/\\|?*]/g, '_'), filters: [{ name: 'Markdown', extensions: ['md'] }, { name: 'Text', extensions: ['txt'] }]
+  })
+  if (pick.canceled || !pick.filePath) return null
+  await writeFile(pick.filePath, text, 'utf8')
+  return pick.filePath
+})
 // Only paths the last game scan found may be opened (the renderer never names arbitrary files).
 ipcMain.handle('packs:conflicts', async (_e, paths: string[]) => {
   const known = new Set((await currentScan()).packs.map((p) => p.path))

@@ -53,6 +53,7 @@
   },
   "version": "1.1.2.",
   "author": "Narok-",
+  "author_url": "https://www.loverslab.com/profile/1652524-narok/",
   "tags": [
     "warhammer 3",
     "warhammer",
@@ -61,7 +62,7 @@
   ],
   "submitted": "2024-09-21T23:57:52Z",
   "updated": "2025-01-04T16:31:57Z",
-  "downloads": "80855",
+  "downloads": "80930",
   "steam_ids": [],
   "ll_file_links": [],
   "description": "Summary:\n\nThis mod introduces short event chains that trigger when the player defeats one of the female Legendary Lords (LL). There are three event levels per LL. The purpose of this mod is to add an in-game friendly way to give traits that apply Slaanesh Corruption to the LL's that offset their natural anti-corruption mechanics.\n\nThere is also an optional confederation submod. Both mods are required for the confederation function to work correctly.\n\nNote: This mod is intended to be used with a Slaanesh faction, but by popular demand it will work with any faction. Including the female lords.\n\nKey Features:\n\nTriggering the Events:\n\n-\nDefeat one of the female LL's with any army belonging to your faction.\n\n-\nIt should work with played and auto-resolve battles.\n\n-\nIf you make one of the LL's a vassal or confederate them then the events will progress at the start of every turn. The event text is different than if you have defeated the lord in battle, but more basic. Defeating the LL's is the intended mechanic.\n\n-\nThere is no cooldown.\n\nTrait Info:\n\n-\nAll traits apply increased Slaanesh corruption to the defeated LL, with the amount increasing every level.\n\n-\nThe corruption amount is tailored for each LL.\n\n-\nAt level 3, you have the option to apply or decline a \"Harem\" trait. The bonus applies a faction-wide Slaanesh corruption & a diplomatic relations buff between all supported factions. The bonuses are balanced around the LL remaining a vassal.\n\n-\nSome lords have additional unique traits, such as Alarielle to offset her 'Power of Nature' or Miao Yings faction-wide -2 corruption.\n\nSupported Factions:\n\n-\nAlarielle\n\n-\nElspeth\n\n-\nFay Enchantress\n\n-\nHellebron\n\n-\nKatarin\n\n-\nMiao Ying\n\n-\nMorathi\n\n-\nRepanse\n\n-\nSisters of Twilight\n\n-\nKhalida\n\nConfederation Submod:\n\n-\nRequires the core mod to work.\n\n-\nAdds a background counter for each lord. Every victory in battle adds one point. Once they are made a vassal they will also gain one point per turn.\n\n-\nIf the specific legendary lord is a vassal, and you have eight or more points you will be prompted to confederate them or leave them as a vassal.\n\nCompatibility:\n\n-\nCurrently the defeat events won't trigger on characters that use multiple corruption stages, such as Lazy's Miao or Kat. However, the subjugation events will still trigger if either of those two are made vassals/confederated. I may eventually fix this conflict in the future.\n\nAdditional info:\n\n-\nSOBORO is the real hero here for doing amazing Warhammer 3 artwork, here's their Fanbox site if anyone wants to throw some support their way: https://so-boro.fanbox.cc <https://so-boro.fanbox.cc/>\n\n-\nAdditional Feedback/suggestions are welcome! If anyone finds any bugs or has recommendations, feel free to leave a comment!",
@@ -69,5 +70,5 @@
   "download_url": "https://www.loverslab.com/files/file/36630-slaanesh-expanded-corruption-confederation/?do=download",
   "id": "36630",
   "category": "mods",
-  "fetched": "2026-10-31T19:13:03+00:00"
+  "fetched": "2026-11-01T16:26:48+00:00"
 }

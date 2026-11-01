@@ -17,10 +17,11 @@
   },
   "version": null,
   "author": "SuccinctScrivener",
+  "author_url": "https://www.loverslab.com/profile/172847-succinctscrivener/",
   "tags": [],
   "submitted": "2026-10-10T05:01:02Z",
   "updated": "2026-10-10T05:01:02Z",
-  "downloads": "121",
+  "downloads": "125",
   "steam_ids": [],
   "ll_file_links": [],
   "description": "You may have noticed in some mods that confederate chaos factions as a non-chaos faction, that some of the newly confederated lords are missing their blue line of skills (campaign skills). This is because the lords have one line of skills defined for when you are playing the Warriors of Chaos or Daemons of Chaos faction and another for when you are playing one of the monogod factions. However, due to the poor way this is set up by CA, if you are playing any other faction, the characters simply have no skills defined for the blue line. The truly bizarre part is that CA swaps out the entire skill line, even though they only need to have separate versions of the particular skill nodes that actually differ. Fortunately it is relatively easy fix this problem by setting up one of those skill lines as the default line, since the subculture specific skill line at the same place on the skill tree always overwrites the other when applicable.\n\nThis mod does 3 things:\n\n-\nMakes the monogod version of the of the blue skill line the default skill line for the affected chaos lord characters, to be used by all factions other than Warriors of Chaos.\n\n-\nAs a bonus, makes the monogod aligned Warriors of Chaos legendary lords (Valkia, Festus, Vilitch, Azazel, Sigvald) use the monogod version of the blue skill line when controlled by a non-Warriors of Chaos faction, rather than having the useless +Souls gained skills.\n\n-\nFor some reason, version 9.* made several additional chaos lords (Dechala, Ku'gath, Kairos, Generic Tzeentch) blue line skills subculture specific, despite not having a version defined for any other subcultures! This mod reverts that change, fixing a bug with Alarielle, Temptation's Bloom. I'm assuming this change was done as part of implementing Archaon's new confederation mechanics, but it is entirely incomplete and accomplishes nothing.\n\nThis mod should work with both versions 8.* and 9.*.\n\nAs this is a relatively simple bugfix, feel free to do whatever with them, such as to include these fixes a mod which needs them or to upload this mod other sites, although credit would be appreciated.",
@@ -28,5 +29,5 @@
   "download_url": "https://www.loverslab.com/files/file/52091-wheres-my-blue-line-chaos-subculture-fix/?do=download",
   "id": "52091",
   "category": "mods",
-  "fetched": "2026-10-31T19:11:35+00:00"
+  "fetched": "2026-11-01T16:25:19+00:00"
 }

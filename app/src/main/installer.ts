@@ -123,7 +123,7 @@ const bannerScript = (text: string) => `(() => {
   if (!b) {
     b = document.createElement('div')
     b.id = 'wh3lmm-banner'
-    b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#7a2f5b;color:#fff;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
+    b.style.cssText = 'position:sticky;top:0;z-index:2147483647;background:#c9a25a;color:#1a140a;font:15px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center'
     document.body.prepend(b)
   }
   b.textContent = ${JSON.stringify(text)}

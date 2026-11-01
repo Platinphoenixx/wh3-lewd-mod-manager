@@ -7,6 +7,7 @@ import { resolveTarget, useData } from './data'
 import { ModCover } from './ModCover'
 import { ProfileEditor } from './ProfileEditor'
 import { ImportDialog } from './ImportDialog'
+import { MadeBy, worksOf } from './Creators'
 
 /** KPW's guide for the characters of a preset (guides name characters loosely, e.g. "Miao"). */
 function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
@@ -82,6 +83,8 @@ function PresetDetail({ preset }: { preset: Preset }) {
       )}
       <div className="markdown"><Markdown>{preset.description ?? ''}</Markdown></div>
       {preset.highlights && <ul>{preset.highlights.map((h) => <li key={h}>{h}</li>)}</ul>}
+
+      <MadeBy preset={preset} works={worksOf(data, preset.entries.flatMap((e) => (e.target ? [e.target] : [])))} />
 
       {guide && guide.dlc.length > 0 && (
         <section>

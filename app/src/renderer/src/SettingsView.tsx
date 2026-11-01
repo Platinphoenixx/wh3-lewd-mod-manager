@@ -72,6 +72,14 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
           onChange={(e) => setSettings({ ...settings, contribRepo: e.target.value.trim() })}
           onBlur={() => save(settings)}
         />
+        <p className="small muted">Relay that sends suggestions and problem reports without a GitHub account (only for testing another one).</p>
+        <input
+          className="wide"
+          placeholder={DEFAULTS.relayUrl || 'https://…workers.dev'}
+          value={settings.relayUrl ?? ''}
+          onChange={(e) => setSettings({ ...settings, relayUrl: e.target.value.trim() })}
+          onBlur={() => save(settings)}
+        />
       </section>
       {saved && <p className="small muted">Saved. Catalog changes apply after restarting the app.</p>}
     </div>

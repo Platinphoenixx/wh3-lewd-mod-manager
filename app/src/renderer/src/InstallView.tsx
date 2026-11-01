@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
-import type { ScriptReport } from '@shared/api'
+import { useMemo } from 'react'
+import { lastMajorUpdate } from '@shared/health'
 import { matchInstalled, parseTargetKey, staleDataPacks } from '@shared/match'
 import { resolveTarget, useData } from './data'
+import { packOwner } from './ReportDialog'
+import { groupFailures } from '@shared/report'
 import { ConflictList } from './ConflictList'
 
 export function InstallView() {
@@ -9,21 +11,10 @@ export function InstallView() {
   const scan = data.scan
   const result = useMemo(() => (scan ? matchInstalled(data.index, scan.packs) : null), [scan, data.index])
   const stale = useMemo(() => (scan ? staleDataPacks(data.index, scan.packs) : []), [scan, data.index])
-  const [scripts, setScripts] = useState<ScriptReport | null>(null)
-  useEffect(() => {
-    window.api.scriptReport().then(setScripts, () => setScripts(null))
-  }, [scan])
-  // Installed pack path -> mod name, for script errors.
-  const nameOfPack = (path: string) => {
-    for (const [key, packs] of result?.known ?? []) {
-      if (packs.some((p) => p.path === path)) {
-        const t = parseTargetKey(key)
-        const r = resolveTarget(data, t)
-        return r.kind === 'mod' ? r.mod.name : r.kind === 'external' ? r.ext.name : r.label
-      }
-    }
-    return path.replace(/^.*[\/]/, '')
-  }
+  const scripts = data.scripts
+  // One entry per mod, its lines counted.
+  const errors = useMemo(() => groupFailures(scripts?.failed ?? []), [scripts])
+  const major = lastMajorUpdate(data.catalog.gameUpdates, scan?.gameUpdated)
   if (!scan || !result) return <p className="content">Scanning…</p>
 
   return (
@@ -31,6 +22,13 @@ export function InstallView() {
       <section>
         <h2>Game</h2>
         <p>{scan.gamePath ?? 'Not found'}</p>
+        {(scan.gameVersion || major) && (
+          <p className="small">
+            {scan.gameVersion && <>Version <strong>{scan.gameVersion}</strong>{scan.gameBuild && ` (Steam build ${scan.gameBuild})`}</>}
+            {scan.gameVersion && major && ' · '}
+            {major && `last major update: ${major.title}, ${new Date(major.date).toISOString().slice(0, 10)}`}
+          </p>
+        )}
         <p className="small muted">
           {scan.vanillaPackCount} vanilla packs · {scan.packs.filter((p) => p.source === 'data').length} mod packs in data ·{' '}
           {scan.packs.filter((p) => p.source === 'workshop').length} Workshop packs in {scan.workshopPaths.length} folder(s)
@@ -66,16 +64,20 @@ export function InstallView() {
               lua_mod_log.txt from {new Date(scripts.written).toLocaleString()}: {scripts.loaded} mod scripts loaded, {scripts.failed.length} problem
               {scripts.failed.length === 1 ? '' : 's'}.
             </p>
-            {scripts.failed.length > 0 && (
-              <ul className="small">
-                {scripts.failed.map((f, i) => (
-                  <li key={i}>
-                    <strong>{f.packs.length ? f.packs.map(nameOfPack).join(', ') : f.script ? 'base game script' : 'unknown source'}</strong>
-                    <div className="muted">{f.line}</div>
-                  </li>
-                ))}
-              </ul>
-            )}
+            {errors.map(({ index, lines }) => {
+              const f = scripts.failed[index]
+              return (
+                <div key={index} className="callout warn small script-error">
+                  <div>
+                    <strong>{f.packs.length ? f.packs.map((p) => packOwner(data, p).name).join(', ') : f.script ? 'base game script' : 'unknown source'}</strong>
+                    {f.packs.length > 0 && <span className="muted"> ({f.packs.map((p) => p.replace(/^.*[\\/]/, '')).join(', ')})</span>}
+                    {lines.slice(0, 3).map((l) => <div key={l.line} className="muted">{l.line}{l.count > 1 && ` · ${l.count}×`}</div>)}
+                    {lines.length > 3 && <div className="muted">… and {lines.length - 3} more lines (all in the report)</div>}
+                  </div>
+                  <button className="primary" style={{ margin: 0 }} onClick={() => data.openReport(index)}>Report to the modder…</button>
+                </div>
+              )
+            })}
           </>
         )}
       </section>

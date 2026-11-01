@@ -1,9 +1,10 @@
 import { createContext, useContext } from 'react'
 import type { Catalog, ExternalMod, Mod, ModTarget } from '@catalog/schema'
-import type { GameScan, Settings } from '@shared/api'
+import type { GameScan, ScriptReport, Settings } from '@shared/api'
 import type { UserRule } from '@shared/community'
 import type { CatalogIndex } from '@shared/match'
 import type { ContributeRequest } from './ContributeDialog'
+import type { NoticeInput } from './Notices'
 
 export interface AppData {
   /** Catalog with the user's own rules merged in. */
@@ -19,9 +20,19 @@ export interface AppData {
   contribute(req: ContributeRequest): void
   /** "owner/name" of the GitHub repository for contributions, or "" when none is set. */
   contribRepo: string
+  /** The project's relay for sending without an account, or "" when none is set up. */
+  relayUrl: string
   settings: Settings
   /** Titles of installed Workshop items the catalog does not know (from the player's Steam client). */
   workshopDetails: Record<string, { title: string; updated: number; preview?: string }>
+  /** Shows a message card; returns its id. */
+  notify(n: NoticeInput): string
+  /** A counter on a tab (e.g. missing mods of the open profile); null removes it. */
+  setTabCount(tab: 'profiles' | 'install', count: { n: number; error?: boolean; title: string } | null): void
+  /** Script errors of the last game start (lua_mod_log.txt). */
+  scripts: ScriptReport | null
+  /** Opens the problem report for one failing script (index into scripts.failed). */
+  openReport(failure: number): void
 }
 
 export const DataContext = createContext<AppData | null>(null)

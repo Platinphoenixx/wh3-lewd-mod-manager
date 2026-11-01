@@ -9,12 +9,22 @@ export function gameUpdatedFromManifest(acf: string): number | undefined {
   return m ? Number(m[1]) * 1000 : undefined
 }
 
+/** The update's name without the announcement wording ("Patch 8.1 Now Live" -> "Patch 8.1"). */
+export function updateName(title: string): string {
+  return title.replace(/\s*(\bis\s+)?(out now|now live|live now)[!.]*\s*$/i, '').trim() || title
+}
+
+/** Steam's build number of the installed game ("buildid" in the app manifest). */
+export function gameBuildFromManifest(acf: string): string | undefined {
+  return /"buildid"\s+"(\d+)"/i.exec(acf)?.[1]
+}
+
 /**
  * The last major game update the player has installed: the newest catalog entry that is not newer
  * than Steam's last update of the game (when known). Hotfixes are not in the list.
  */
 export function lastMajorUpdate(updates: { date: string; title: string }[] | undefined, installed?: number): { date: number; title: string } | undefined {
-  const list = (updates ?? []).map((u) => ({ date: Date.parse(u.date), title: u.title })).filter((u) => !installed || u.date <= installed)
+  const list = (updates ?? []).map((u) => ({ date: Date.parse(u.date), title: updateName(u.title) })).filter((u) => !installed || u.date <= installed)
   return list.sort((a, b) => b.date - a.date)[0]
 }
 
