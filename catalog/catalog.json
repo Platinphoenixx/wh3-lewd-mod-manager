@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T19:44:42+00:00",
+  "generatedAt": "2026-11-01T20:06:21+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -86,18 +86,35 @@
           "uploaded": "2022-10-12",
           "endorsements": 186,
           "downloads": 6100,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2022-10-21"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "uncensored.Khalida.pack",
+          "from": "download",
+          "note": "Base skin by LessIsGood"
+        },
+        {
+          "file": "[LIG]Khalida_braless.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Braless version; load it above the base pack"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Re-upload of LessIsGood's Khalida skin after it was removed from Steam."
+      ]
     },
     {
       "id": "nx-36",
@@ -126,16 +143,23 @@
           "uploaded": "2022-10-12",
           "endorsements": 58,
           "downloads": 1300,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2022-10-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "miao_ying.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -165,18 +189,37 @@
           "uploaded": "2022-08-26",
           "endorsements": 203,
           "downloads": 4000,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2022-08-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "lightBladeSinger.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Dismemberment and blood do not work with this unit."
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "installNotes": [
+        "Made to go with Stoney2's Liberated Elven Females."
+      ]
     },
     {
       "id": "nx-5",
@@ -204,18 +247,37 @@
           "uploaded": "2022-08-26",
           "endorsements": 242,
           "downloads": 5000,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2022-08-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "lightWarDancers.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Dismemberment and blood do not work with this unit."
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "installNotes": [
+        "Body from Maidens of Norsca by Less Is Good (LIG)."
+      ]
     },
     {
       "id": "steam-2927397735",
@@ -247,7 +309,7 @@
             "id": "2927397735",
             "title": "-BR- More Beautiful N'kari 诱惑",
             "updated": "2026-05-01",
-            "subscribers": 29827
+            "subscribers": 29828
           }
         ]
       },
@@ -481,7 +543,7 @@
             "id": "3575516470",
             "title": "[9.0]Alarielle - wood elves campaign",
             "updated": "2026-09-25",
-            "subscribers": 3429
+            "subscribers": 3430
           }
         ]
       },
@@ -712,7 +774,7 @@
             "title": "[Dark Elves/Slaanesh]Primal Instincts for Lords and Heroes on Cold One Mounts",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2133
+            "subscribers": 2134
           }
         ]
       },
@@ -961,7 +1023,7 @@
             "id": "3816446693",
             "title": "【EN patch】The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-09",
-            "subscribers": 1308
+            "subscribers": 1309
           }
         ]
       },
@@ -1018,7 +1080,7 @@
             "id": "3647419004",
             "title": "[Endo] Bretonnia",
             "updated": "2026-10-27",
-            "subscribers": 8278
+            "subscribers": 8279
           }
         ],
         "nexus": {
@@ -1096,7 +1158,7 @@
             "id": "3679399151",
             "title": "[Endo] Cathay",
             "updated": "2026-03-22",
-            "subscribers": 7450
+            "subscribers": 7451
           }
         ],
         "nexus": {
@@ -1280,7 +1342,7 @@
             "id": "3616082403",
             "title": "[Endo] Dark Elves",
             "updated": "2026-04-20",
-            "subscribers": 9882
+            "subscribers": 9885
           }
         ],
         "nexus": {
@@ -1359,7 +1421,7 @@
             "id": "3621449095",
             "title": "[Endo] Empire",
             "updated": "2026-10-27",
-            "subscribers": 8691
+            "subscribers": 8692
           }
         ],
         "nexus": {
@@ -1490,7 +1552,7 @@
             "title": "[Endo] Female Slaanesh Devotees",
             "unlisted": false,
             "updated": "2026-03-28",
-            "subscribers": 8220
+            "subscribers": 8221
           }
         ]
       },
@@ -2196,7 +2258,7 @@
             "id": "3810043473",
             "title": "[LIG] Reskin - Neferata",
             "updated": "2026-09-29",
-            "subscribers": 5567
+            "subscribers": 5571
           }
         ]
       },
@@ -2309,7 +2371,7 @@
             "title": "[SFO] Double Skill Points",
             "unlisted": false,
             "updated": "2026-07-18",
-            "subscribers": 44852
+            "subscribers": 44850
           }
         ]
       },
@@ -2555,7 +2617,7 @@
             "id": "3576835384",
             "title": "[Ui] BUILDER: 3 Row City & Cults Building Slots",
             "updated": "2026-10-10",
-            "subscribers": 25713
+            "subscribers": 25720
           }
         ]
       },
@@ -2611,7 +2673,7 @@
             "id": "3663734212",
             "title": "[Ui] More Buttons For Mechanics - 2 ROWS+",
             "updated": "2026-09-24",
-            "subscribers": 4846
+            "subscribers": 4845
           }
         ]
       },
@@ -2666,7 +2728,7 @@
             "title": "[Ui] Shorter Menu For More Tools - 5 Buttons Per Row",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 29901
+            "subscribers": 29903
           }
         ]
       },
@@ -3064,7 +3126,9 @@
           "uploaded": "2023-04-23",
           "endorsements": 131,
           "downloads": 6900,
-          "adult": true
+          "adult": true,
+          "version": "12.0",
+          "updated": "2025-12-06"
         }
       },
       "packs": [
@@ -3073,14 +3137,35 @@
           "from": "download"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack; not together with the all-in-one pack.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/76"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3594429287",
@@ -3108,7 +3193,7 @@
             "id": "3594429287",
             "title": "AI Camping Settlements Fix 9.x",
             "updated": "2026-10-23",
-            "subscribers": 9139
+            "subscribers": 9140
           }
         ]
       },
@@ -3223,7 +3308,7 @@
             "title": "AI General 3",
             "unlisted": false,
             "updated": "2026-09-01",
-            "subscribers": 97569
+            "subscribers": 97573
           }
         ]
       },
@@ -5043,7 +5128,7 @@
             "id": "2884240930",
             "title": "Custom Legendary Hero: Ymira",
             "updated": "2025-01-15",
-            "subscribers": 2276
+            "subscribers": 2275
           },
           {
             "id": "3820276885",
@@ -5169,7 +5254,7 @@
             "title": "All Diplomatic Options - Vassalize, Liberate, Confederate",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 79375
+            "subscribers": 79377
           }
         ]
       },
@@ -5280,18 +5365,37 @@
           "uploaded": "2024-03-04",
           "endorsements": 155,
           "downloads": 6800,
-          "adult": true
+          "adult": true,
+          "version": "1.0.3",
+          "updated": "2024-11-22"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Amazon Warrior.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Some clipping; high polygon models, so the author advises against armies made only of this unit."
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "installNotes": [
+        "Recruited from level 3 Saurus barracks by all Lizardmen factions."
+      ]
     },
     {
       "id": "nx-57",
@@ -5319,17 +5423,32 @@
           "uploaded": "2022-12-30",
           "endorsements": 187,
           "downloads": 9900,
-          "adult": true
+          "adult": true,
+          "version": "12.74fix",
+          "updated": "2026-09-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Amazon Warriors of the old one.pack",
+          "from": "download",
+          "exclusiveGroup": "nx57-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Amazon Warriors of the old one_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx57-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/57"
@@ -5338,11 +5457,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-117",
@@ -5368,16 +5496,162 @@
           "uploaded": "2023-07-03",
           "endorsements": 137,
           "downloads": 7300,
-          "adult": true
+          "adult": true,
+          "version": "1.2",
+          "updated": "2023-07-31"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@anime_loading_screens.pack",
+          "from": "download",
+          "note": "Complete version, all factions"
+        },
+        {
+          "file": "@anime_loading_screens_cathay.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_daemons.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_wood_elves.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_ogre_kingdoms.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_chaos_dwarfs.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_norsca.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_lizardmen.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_high_elves.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_greenskins.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_empire.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_bretonnia.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_skaven.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_khorne.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_chaos.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_beastmen.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_tzeentch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_vampire_counts.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_tomb_kings.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_dwarfs.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_vampire_coast.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_dark_elves.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_kislev.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_slaanesh.pack",
+          "from": "download",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -5481,13 +5755,13 @@
             "id": "2866037946",
             "title": "Lazy's Archaon-chan",
             "updated": "2025-09-05",
-            "subscribers": 13187
+            "subscribers": 13188
           },
           {
             "id": "2866038031",
             "title": "Lazy's Archaon-chan Slaanesh Cultist Voiceover",
             "updated": "2025-09-05",
-            "subscribers": 8330
+            "subscribers": 8331
           }
         ]
       },
@@ -5635,6 +5909,50 @@
       ]
     },
     {
+      "id": "steam-2985506863",
+      "name": "Asrai Unit Pack (Wood Elves)",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2985506863",
+            "title": "Asrai Unit Pack (Wood Elves)",
+            "unlisted": false,
+            "updated": "2026-09-24",
+            "subscribers": 24790
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561197996098704/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2106054788501886072/0C807B73228C1B953353157BD1569548D311200B/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-2996698889",
       "name": "ATC 艾克的桌面数据大修 Arksaitace's Tabletop Codex Overhaul",
       "authors": [
@@ -5664,7 +5982,7 @@
             "id": "2996698889",
             "title": "ATC 艾克的桌面数据大修 Arksaitace‘s Tabletop Codex Overhaul",
             "updated": "2026-10-24",
-            "subscribers": 12814
+            "subscribers": 12815
           }
         ]
       },
@@ -5714,7 +6032,7 @@
             "id": "3149445431",
             "title": "Audio Mixer",
             "updated": "2026-10-30",
-            "subscribers": 251474
+            "subscribers": 251476
           }
         ]
       },
@@ -5768,7 +6086,7 @@
             "id": "2859802328",
             "title": "Auto Resolve Quest Battles - Updated to 9.0.X (Lords of the End Times)",
             "updated": "2026-09-25",
-            "subscribers": 308270
+            "subscribers": 308290
           }
         ]
       },
@@ -5816,7 +6134,7 @@
             "id": "3512295439",
             "title": "Azazel skin",
             "updated": "2025-06-29",
-            "subscribers": 3034
+            "subscribers": 3035
           }
         ]
       },
@@ -6906,7 +7224,7 @@
             "id": "3000867445",
             "title": "Beastmen Tech-Tree",
             "updated": "2026-09-25",
-            "subscribers": 3893
+            "subscribers": 3894
           }
         ]
       },
@@ -7021,18 +7339,31 @@
           "uploaded": "2023-05-12",
           "endorsements": 149,
           "downloads": 4700,
-          "adult": true
+          "adult": true,
+          "version": "1.2",
+          "updated": "2023-05-20"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Beautiful Fay Enchantress.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Not compatible with other mods that change the Fay Enchantress' look."
+      ],
+      "installNotes": [
+        "Safe to add or remove mid-campaign; changes her for the player and the AI. Also on the Steam Workshop."
+      ]
     },
     {
       "id": "steam-3809988722",
@@ -7053,7 +7384,7 @@
             "title": "Beautiful Neferata",
             "unlisted": false,
             "updated": "2026-09-29",
-            "subscribers": 16904
+            "subscribers": 16910
           }
         ]
       },
@@ -7116,17 +7447,38 @@
           "uploaded": "2022-12-16",
           "endorsements": 242,
           "downloads": 13100,
-          "adult": true
+          "adult": true,
+          "version": "11.72",
+          "updated": "2025-06-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Beastwoman.pack",
+          "from": "download",
+          "exclusiveGroup": "nx53-futa",
+          "note": "Without futa models"
+        },
+        {
+          "file": "@Beastwoman_futa.pack",
+          "from": "download",
+          "exclusiveGroup": "nx53-futa",
+          "note": "With futa models"
+        },
+        {
+          "file": "@matched_combat_community_beastmen.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Endo's Matched Combat for Beastmen (v2.0, 2026-06-27)"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/53"
@@ -7135,11 +7487,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3209123287",
@@ -7171,7 +7532,7 @@
             "id": "3209123287",
             "title": "Belakor's Shadow - Corrupted Daemon Princes overhaul (MCT Support)",
             "updated": "2026-07-09",
-            "subscribers": 7382
+            "subscribers": 7383
           }
         ]
       },
@@ -7288,7 +7649,7 @@
             "title": "Better AI Army Builder",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 10860
+            "subscribers": 10861
           }
         ]
       },
@@ -7364,7 +7725,7 @@
             "id": "2790029103",
             "title": "Better Alliance",
             "updated": "2026-10-25",
-            "subscribers": 36551
+            "subscribers": 36554
           }
         ]
       },
@@ -7418,7 +7779,7 @@
             "id": "2891886534",
             "title": "Better Alliance - Foreign Agents",
             "updated": "2026-10-25",
-            "subscribers": 10295
+            "subscribers": 10297
           }
         ]
       },
@@ -7468,7 +7829,7 @@
             "title": "Better Camera Mod",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 601272
+            "subscribers": 601273
           }
         ]
       },
@@ -7529,7 +7890,7 @@
             "title": "Better Sound Levels Mod v8.0",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 10862
+            "subscribers": 10864
           }
         ]
       },
@@ -7591,18 +7952,57 @@
           "uploaded": "2025-12-28",
           "endorsements": 41,
           "downloads": 2100,
-          "adult": true
+          "adult": true,
+          "version": "9.0",
+          "updated": "2026-09-27"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@zeta0080_orc_expansion.pack",
+          "from": "download",
+          "exclusiveGroup": "nx303-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta0080_orc_expansion_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx303-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/303"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "The new units use futa models; with the all-in-one pack, the No Futa Patch from the resource pack page removes them."
+      ]
     },
     {
       "id": "nx-276",
@@ -7773,7 +8173,7 @@
             "id": "2870574022",
             "title": "Building Slots Extended (Major Settlements Only)",
             "updated": "2024-06-25",
-            "subscribers": 2894
+            "subscribers": 2895
           }
         ]
       },
@@ -7842,7 +8242,7 @@
             "id": "3602151164",
             "title": "Building Slots Extended - Compilation",
             "updated": "2026-09-25",
-            "subscribers": 19385
+            "subscribers": 19389
           }
         ]
       },
@@ -8017,7 +8417,7 @@
             "id": "3632214035",
             "title": "Calm's N'Kari Reskin",
             "updated": "2026-09-27",
-            "subscribers": 17303
+            "subscribers": 17305
           }
         ]
       },
@@ -8147,7 +8547,7 @@
             "title": "Campaign Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 118358
+            "subscribers": 118362
           }
         ]
       },
@@ -8391,7 +8791,7 @@
             "id": "2927296206",
             "title": "Cataph's Southern Realms (TEB)",
             "updated": "2026-10-12",
-            "subscribers": 90253
+            "subscribers": 90256
           }
         ]
       },
@@ -9052,7 +9452,7 @@
             "id": "3357763311",
             "title": "Champions Of Undeath: Blood Knight Heretics - Updated for 9.0",
             "updated": "2026-09-30",
-            "subscribers": 14698
+            "subscribers": 14700
           }
         ]
       },
@@ -9109,16 +9509,35 @@
           "uploaded": "2023-05-20",
           "endorsements": 76,
           "downloads": 3300,
-          "adult": true
+          "adult": true,
+          "version": "3.1",
+          "updated": "2023-08-08"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Spcat_cho_sisters_iiii.pack",
+          "from": "download",
+          "note": "Tables; enable both packs"
+        },
+        {
+          "file": "@Spc_variants.pack",
+          "from": "download",
+          "note": "Models; enable both packs"
+        },
+        {
+          "file": "spc_text_eng.pack",
+          "from": "download",
+          "optional": true,
+          "note": "English texts"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -9150,7 +9569,7 @@
             "id": "2845365747",
             "title": "Chaosbulls - Updated and fixed !",
             "updated": "2026-09-25",
-            "subscribers": 10394
+            "subscribers": 10395
           }
         ]
       },
@@ -9260,7 +9679,7 @@
             "id": "3272229259",
             "title": "CHOPPER: Skill Tree Sorter | UPDATE IN PROGRESS",
             "updated": "2026-08-04",
-            "subscribers": 9658
+            "subscribers": 9659
           }
         ]
       },
@@ -9892,28 +10311,32 @@
           "uploaded": "2026-06-27",
           "endorsements": 54,
           "downloads": 3400,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2026-10-22"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@sexfight_animations.pack",
+          "from": "download",
+          "exclusiveGroup": "nx365-ver",
+          "note": "Matched animations for most humanoid skeletons (v1, 2026-10-22)"
+        },
+        {
+          "file": "@matched_combat_community_beastmen.pack",
+          "from": "download",
+          "exclusiveGroup": "nx365-ver",
+          "note": "Beastmen units only (v2.0); do not combine with the other version"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
-          "source": {
-            "type": "nexus",
-            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/365"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-46165"
-          },
-          "note": "Stated on the Nexus page.",
+          "note": "The version made for Total Warmaidens; uses the author's beastwomen models.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/365"
@@ -9922,11 +10345,17 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3819138832",
@@ -10768,7 +11197,7 @@
             "title": "Corrupted Landmarks",
             "role": "main",
             "updated": "2026-10-21",
-            "subscribers": 41827
+            "subscribers": 41828
           }
         ],
         "discord": [
@@ -11117,7 +11546,7 @@
             "title": "Corrupted Wood Elf Units for Slaanesh",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 20808
+            "subscribers": 20809
           }
         ]
       },
@@ -11328,7 +11757,7 @@
             "title": "Cpecific's Traits Manager (+win64)",
             "unlisted": false,
             "updated": "2026-10-15",
-            "subscribers": 98696
+            "subscribers": 98701
           }
         ]
       },
@@ -11516,7 +11945,7 @@
             "id": "2831594644",
             "title": "Cultist Expansion: Brass Sisters of Khorne",
             "updated": "2026-09-24",
-            "subscribers": 16150
+            "subscribers": 16152
           }
         ]
       },
@@ -11586,7 +12015,7 @@
             "id": "2881916371",
             "title": "Cultist Expansion: Pleasure Cultist +",
             "updated": "2026-09-24",
-            "subscribers": 14914
+            "subscribers": 14915
           }
         ]
       },
@@ -11656,7 +12085,7 @@
             "id": "2821600897",
             "title": "Cultist of Pleasure Reskin",
             "updated": "2026-09-24",
-            "subscribers": 81437
+            "subscribers": 81436
           }
         ]
       },
@@ -12344,17 +12773,24 @@
           "uploaded": "2022-10-17",
           "endorsements": 413,
           "downloads": 18800,
-          "adult": true
+          "adult": true,
+          "version": "12.5",
+          "updated": "2026-05-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Dancers from the Forest.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/40"
@@ -12363,11 +12799,23 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "knownIssues": [
+        "Armies led by a non-elf lord show pale skin instead of the usual colour."
+      ],
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-7",
@@ -12395,18 +12843,28 @@
           "uploaded": "2022-09-02",
           "endorsements": 439,
           "downloads": 9600,
-          "adult": true
+          "adult": true,
+          "version": "1",
+          "updated": "2022-09-01"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "WH3_Dark_Elf_Debaucheries.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Also changes Hellebron. Alternative Morathi textures without black hands and feet are inside the pack; switching needs RPFM (rename body_color2 to body_color)."
+      ]
     },
     {
       "id": "steam-3062374987",
@@ -12624,7 +13082,7 @@
             "id": "3139730079",
             "title": "Daughter of Chaos (Tables)",
             "updated": "2024-12-17",
-            "subscribers": 4695
+            "subscribers": 4694
           }
         ]
       },
@@ -12672,7 +13130,7 @@
             "id": "2960261916",
             "title": "Daughters of Chaos",
             "updated": "2025-11-03",
-            "subscribers": 4936
+            "subscribers": 4935
           }
         ]
       },
@@ -13190,17 +13648,32 @@
           "uploaded": "2022-10-07",
           "endorsements": 429,
           "downloads": 19900,
-          "adult": true
+          "adult": true,
+          "version": "12.6",
+          "updated": "2026-05-28"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Daughters of the Dragon.pack",
+          "from": "download",
+          "exclusiveGroup": "nx30-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Daughters of the Dragon_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx30-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/30"
@@ -13209,11 +13682,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-37",
@@ -13241,17 +13723,24 @@
           "uploaded": "2022-10-13",
           "endorsements": 406,
           "downloads": 17700,
-          "adult": true
+          "adult": true,
+          "version": "11.93fix",
+          "updated": "2025-10-23"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Daughters of the Motherland.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/37"
@@ -13260,11 +13749,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2789944159",
@@ -13316,7 +13814,7 @@
             "id": "2978779730",
             "title": "DeepWar AI",
             "updated": "2026-10-30",
-            "subscribers": 24981
+            "subscribers": 24980
           }
         ]
       },
@@ -13405,7 +13903,7 @@
             "title": "Disable startup splash screens / intros",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 135659
+            "subscribers": 135658
           }
         ]
       },
@@ -13467,18 +13965,41 @@
           "uploaded": "2024-11-08",
           "endorsements": 50,
           "downloads": 2900,
-          "adult": true
+          "adult": true,
+          "version": "9.0.0",
+          "updated": "2026-09-25"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "chin_dismember_ultimate.pack",
+          "from": "download",
+          "note": "All-in-one, all races"
+        },
+        {
+          "file": "@chin_dismember_RAD_patch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Patch for Radious (8.1.0)"
+        },
+        {
+          "file": "@chin_dismember_SFO_patch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Patch for SFO (8.1.0)"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Changes the models of affected units (limb stumps), so it conflicts with reskins of the same units unless a patch exists."
+      ]
     },
     {
       "id": "dc-dovakin-reskin-series-death-hag-glade-captain-sister-of-twil",
@@ -13507,7 +14028,7 @@
             "id": "3724771813",
             "title": "D's is Glade Captain_Alternative",
             "updated": "2026-05-12",
-            "subscribers": 1518
+            "subscribers": 1517
           },
           {
             "id": "3720019982",
@@ -13519,7 +14040,7 @@
             "id": "3718454296",
             "title": "D's is Mage_Alternative",
             "updated": "2026-05-02",
-            "subscribers": 1522
+            "subscribers": 1523
           },
           {
             "id": "3718979014",
@@ -13537,7 +14058,7 @@
             "id": "3719229291",
             "title": "D's is Aranessa_spike ver.",
             "updated": "2026-05-04",
-            "subscribers": 448
+            "subscribers": 449
           },
           {
             "id": "3710620391",
@@ -13754,7 +14275,7 @@
             "id": "2962179819",
             "title": "Drill of Hashut mechanism for Immortal Empires",
             "updated": "2026-06-12",
-            "subscribers": 14656
+            "subscribers": 14654
           }
         ]
       },
@@ -13810,20 +14331,20 @@
           {
             "id": "3815990781",
             "title": "Dusts Corrupted Heroes",
-            "updated": "2026-10-30",
-            "subscribers": 2673
+            "updated": "2026-11-01",
+            "subscribers": 2675
           },
           {
             "id": "3829276482",
             "title": "Citadel of Dusk Standalone (Dust)",
-            "updated": "2026-10-29",
-            "subscribers": 294
+            "updated": "2026-11-01",
+            "subscribers": 296
           },
           {
             "id": "2897366143",
             "title": "Legendary High Elven Characters [LHEC]",
             "updated": "2026-10-12",
-            "subscribers": 35201
+            "subscribers": 35198
           }
         ]
       },
@@ -13916,7 +14437,7 @@
             "id": "2991431203",
             "title": "Dynasty of the Damned [7.0]",
             "updated": "2026-02-17",
-            "subscribers": 15229
+            "subscribers": 15227
           }
         ]
       },
@@ -14592,7 +15113,7 @@
             "id": "3311294751",
             "title": "Lazy's Elspeth The Graveyard Rose",
             "updated": "2025-12-30",
-            "subscribers": 13044
+            "subscribers": 13042
           }
         ]
       },
@@ -14789,18 +15310,54 @@
           "uploaded": "2023-01-28",
           "endorsements": 248,
           "downloads": 11800,
-          "adult": true
+          "adult": true,
+          "version": "9.0",
+          "updated": "2026-09-27"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@zeta_elf_expansion.pack",
+          "from": "download",
+          "exclusiveGroup": "nx61-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta_elf_expansion_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx61-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/61"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3348616922",
@@ -14887,7 +15444,7 @@
             "id": "3816938215",
             "title": "Empress Caroline Franz (Amber) – female Karl Franz",
             "updated": "2026-10-16",
-            "subscribers": 1756
+            "subscribers": 1758
           }
         ]
       },
@@ -15187,18 +15744,34 @@
           "uploaded": "2025-12-16",
           "endorsements": 62,
           "downloads": 3100,
-          "adult": false
+          "adult": false,
+          "version": "1.1.5",
+          "updated": "2026-02-04"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@endo_empire_loreful.pack",
+          "from": "download"
+        },
+        {
+          "file": "@endo_empire_mixed.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Mixes vanilla male units back in for variety"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "All Empire units (not heroes) plus Arch Lector and Warrior Priests, with new unit cards; mostly lore-friendly looks."
+      ]
     },
     {
       "id": "nx-293",
@@ -15226,18 +15799,40 @@
           "uploaded": "2025-10-22",
           "endorsements": 76,
           "downloads": 2000,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2025-12-17"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@endo_idles.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "nx-302"
+          },
+          "note": "The animations were made for Endo's Empire Reskin and may not line up as well without it.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/293"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Idle animations for Empire infantry."
+      ]
     },
     {
       "id": "ll-27230",
@@ -15753,7 +16348,7 @@
             "id": "3349407231",
             "title": "Expanded Building Overhaul",
             "updated": "2026-10-02",
-            "subscribers": 14609
+            "subscribers": 14611
           }
         ]
       },
@@ -15856,7 +16451,7 @@
             "title": "EXPERIENCE RANKS",
             "unlisted": false,
             "updated": "2023-09-08",
-            "subscribers": 31678
+            "subscribers": 31679
           }
         ]
       },
@@ -16099,7 +16694,7 @@
             "title": "Female Daemonettes",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 42891
+            "subscribers": 42894
           }
         ]
       },
@@ -16167,18 +16762,31 @@
           "uploaded": "2023-11-07",
           "endorsements": 49,
           "downloads": 1300,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-11-07"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!lothern_sea_guard WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "steam-3223598729",
@@ -16505,18 +17113,31 @@
           "uploaded": "2023-10-18",
           "endorsements": 57,
           "downloads": 1500,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-10-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!Silverin_Guard WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "nx-163",
@@ -16545,18 +17166,31 @@
           "uploaded": "2023-11-14",
           "endorsements": 55,
           "downloads": 1500,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-11-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!ASwordmaster.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "ll-24914",
@@ -16879,7 +17513,7 @@
             "id": "3279560220",
             "title": "Force AI Agent Embedding 9.x MOAR' FECTIVE' NOW",
             "updated": "2026-10-17",
-            "subscribers": 12468
+            "subscribers": 12470
           }
         ]
       },
@@ -17141,7 +17775,7 @@
             "id": "2822827945",
             "title": "Formations 3",
             "updated": "2023-11-24",
-            "subscribers": 7864
+            "subscribers": 7863
           }
         ]
       },
@@ -17200,18 +17834,31 @@
           "uploaded": "2025-12-09",
           "endorsements": 51,
           "downloads": 2100,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-12-09"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "freeDechala.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ]
     },
     {
       "id": "nx-16",
@@ -17240,18 +17887,28 @@
           "uploaded": "2022-09-19",
           "endorsements": 202,
           "downloads": 5100,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2022-09-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "$free_the_morathi.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Also changes the Harpies of the Beastmen and the units of renown Singing Doom and Harpy Crows."
+      ]
     },
     {
       "id": "steam-2794064207",
@@ -17273,7 +17930,7 @@
             "title": "Fudging Vassals 9.0.4",
             "unlisted": false,
             "updated": "2026-10-26",
-            "subscribers": 57451
+            "subscribers": 57454
           }
         ]
       },
@@ -17335,18 +17992,35 @@
           "uploaded": "2024-07-03",
           "endorsements": 59,
           "downloads": 2000,
-          "adult": true
+          "adult": true,
+          "version": "1.0.2",
+          "updated": "2024-08-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "wef_furies.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Lots of clipping.",
+        "Removes some visual effects from Malus Darkblade's animation, which this unit shares."
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ]
     },
     {
       "id": "ll-43295",
@@ -17529,7 +18203,7 @@
             "title": "通用框架 (Generic Framework)",
             "unlisted": false,
             "updated": "2026-10-12",
-            "subscribers": 43705
+            "subscribers": 43706
           }
         ]
       },
@@ -17603,7 +18277,7 @@
             "id": "3812278307",
             "title": "Global Pcall Listener Fix 9.0.x",
             "updated": "2026-10-03",
-            "subscribers": 4516
+            "subscribers": 4513
           }
         ]
       },
@@ -17721,7 +18395,7 @@
             "id": "2890499031",
             "title": "Godslayer Overhaul by Mortrau",
             "updated": "2026-10-11",
-            "subscribers": 40161
+            "subscribers": 40167
           }
         ]
       },
@@ -17770,7 +18444,7 @@
             "title": "Grand Campaign Camera",
             "unlisted": false,
             "updated": "2023-11-30",
-            "subscribers": 6871
+            "subscribers": 6870
           }
         ]
       },
@@ -18204,7 +18878,7 @@
             "id": "3239114391",
             "title": "Helper UI 汉化",
             "updated": "2026-10-29",
-            "subscribers": 53289
+            "subscribers": 53290
           }
         ]
       },
@@ -18931,17 +19605,32 @@
           "uploaded": "2022-10-13",
           "endorsements": 288,
           "downloads": 13200,
-          "adult": true
+          "adult": true,
+          "version": "12.2fix",
+          "updated": "2026-01-27"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@HighDwarf_maidens.pack",
+          "from": "download",
+          "exclusiveGroup": "nx38-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@HighDwarf_maidens_Chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx38-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/38"
@@ -18950,11 +19639,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3608958073",
@@ -19080,7 +19778,7 @@
             "id": "3007996493",
             "title": "Immortal Empires Expanded",
             "updated": "2026-10-28",
-            "subscribers": 239208
+            "subscribers": 239221
           }
         ]
       },
@@ -19148,7 +19846,7 @@
             "title": "Immortal Landmarks",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 182054
+            "subscribers": 182058
           }
         ]
       },
@@ -19198,7 +19896,7 @@
             "title": "Improved LOD",
             "unlisted": false,
             "updated": "2023-11-23",
-            "subscribers": 32038
+            "subscribers": 32042
           }
         ]
       },
@@ -19306,18 +20004,63 @@
           "uploaded": "2023-09-08",
           "endorsements": 270,
           "downloads": 10000,
-          "adult": true
+          "adult": true,
+          "version": "2.1",
+          "updated": "2025-05-29"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Zeta0080_MiaoYing.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@Zeta0080_MiaoYing _Soboro.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@Zeta0080_MiaoYing_Diao Chan.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_high_heels.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_high_heels_new.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_soboro_heels.pack",
+          "from": "download",
+          "exclusiveGroup": "nx138-ver"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above the author's faction packs to replace their default Miao Ying."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no other mod needed; six styles, pick one."
+      ]
     },
     {
       "id": "steam-3773211997",
@@ -19452,17 +20195,24 @@
           "uploaded": "2023-04-28",
           "endorsements": 114,
           "downloads": 6200,
-          "adult": true
+          "adult": true,
+          "version": "11.9",
+          "updated": "2025-08-09"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Chaosdawi Maidens.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/77"
@@ -19471,11 +20221,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2803915768",
@@ -19497,7 +20256,7 @@
             "id": "2803915768",
             "title": "Johnny's Loreful Nurgle LITE (plagues update)",
             "updated": "2026-09-26",
-            "subscribers": 4767
+            "subscribers": 4766
           }
         ]
       },
@@ -19614,7 +20373,7 @@
             "id": "3082390369",
             "title": "Just Good Babysitter",
             "updated": "2026-09-26",
-            "subscribers": 89135
+            "subscribers": 89136
           }
         ]
       },
@@ -19757,18 +20516,36 @@
           "uploaded": "2024-02-13",
           "endorsements": 57,
           "downloads": 1800,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-02-13"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "karla_v1.pack",
+          "from": "download",
+          "exclusiveGroup": "nx183-ver",
+          "note": "Without cape"
+        },
+        {
+          "file": "karla_v1_cape.pack",
+          "from": "download",
+          "exclusiveGroup": "nx183-ver",
+          "note": "With cape"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Visual glitches on the hammer at close zoom (normal map)."
+      ]
     },
     {
       "id": "ll-25304",
@@ -20027,18 +20804,48 @@
           "uploaded": "2022-09-25",
           "endorsements": 340,
           "downloads": 12500,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2023-01-28"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "[BUST]Katlida Robes.pack",
+          "from": "download",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Robed"
+        },
+        {
+          "file": "[BUST]Katlida Topless.pack",
+          "from": "download",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Topless"
+        },
+        {
+          "file": "[BUST]Katlida Robes No Tail.pack",
+          "from": "download",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Robed, no tail"
+        },
+        {
+          "file": "[BUST]Katlida Robes No Tail - TitsOut.pack",
+          "from": "download",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Topless, no tail"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Four versions, pick one. Made with assets by LIG, LazyIcarus and Asseteditor."
+      ]
     },
     {
       "id": "steam-3175283222",
@@ -20059,7 +20866,7 @@
             "title": "Keep Seduced Units",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 5873
+            "subscribers": 5874
           }
         ]
       },
@@ -20113,7 +20920,7 @@
             "id": "2996322070",
             "title": "Khalida the Queen",
             "updated": "2026-11-01",
-            "subscribers": 37021
+            "subscribers": 37027
           }
         ],
         "nexus": {
@@ -20307,18 +21114,37 @@
           "uploaded": "2024-01-14",
           "endorsements": 133,
           "downloads": 5500,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2024-08-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "fem_berserker.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "requiresDlc": [
+        "Shadows of Change"
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "installNotes": [
+        "Two variants: dual axes, and fewer great axes with splash attacks. Recruiting them in a campaign needs Mother Ostankya's DLC."
+      ]
     },
     {
       "id": "steam-3430763383",
@@ -20350,7 +21176,7 @@
             "id": "3430763383",
             "title": "Kislev Units",
             "updated": "2026-09-26",
-            "subscribers": 4554
+            "subscribers": 4551
           }
         ]
       },
@@ -20665,7 +21491,7 @@
             "id": "3025510782",
             "title": "Landmarks of Eternity",
             "updated": "2026-09-24",
-            "subscribers": 96595
+            "subscribers": 96594
           }
         ]
       },
@@ -20735,7 +21561,7 @@
             "id": "3079915520",
             "title": "Landmarks of Eternity-Immortal Empire Expanded edition (28 new landmarks)",
             "updated": "2026-09-27",
-            "subscribers": 71958
+            "subscribers": 71961
           }
         ]
       },
@@ -21104,7 +21930,7 @@
             "title": "Lazy's Corruption Framework",
             "role": "framework",
             "updated": "2026-10-05",
-            "subscribers": 44856
+            "subscribers": 44857
           },
           {
             "id": "3471237645",
@@ -22570,17 +23396,44 @@
           "uploaded": "2022-11-03",
           "endorsements": 407,
           "downloads": 42700,
-          "adult": true
+          "adult": true,
+          "version": "12.74fix",
+          "updated": "2026-09-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Chaos Warmaidens_undivided.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Chaos Undivided and Norsca; the five packs are separate races, pick the ones you want"
+        },
+        {
+          "file": "@Magical Succubus_Tze.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Tzeentch"
+        },
+        {
+          "file": "@Nasty Succubus_Nur.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Nurgle"
+        },
+        {
+          "file": "@Scarlet Succubus_kho.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Khorne"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/45"
@@ -22589,11 +23442,23 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "The download also holds the Slaanesh Legion packs; they are the same files as Succubus Legion of the Dark Princess (listed there)."
+      ]
     },
     {
       "id": "steam-2826930183",
@@ -22620,7 +23485,7 @@
             "id": "2826930183",
             "title": "Legendary Characters",
             "updated": "2025-03-26",
-            "subscribers": 99823
+            "subscribers": 99821
           }
         ]
       },
@@ -22680,7 +23545,7 @@
             "id": "3305404052",
             "title": "Legendary Characters - 9.0",
             "updated": "2026-10-19",
-            "subscribers": 62509
+            "subscribers": 62517
           }
         ]
       },
@@ -22774,7 +23639,7 @@
             "title": "Legendary Lord Defeat Traits for Reinforcing Generals",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 40507
+            "subscribers": 40505
           }
         ]
       },
@@ -23449,18 +24314,46 @@
           "uploaded": "2023-07-27",
           "endorsements": 64,
           "downloads": 1700,
-          "adult": true
+          "adult": true,
+          "version": "1.0.1",
+          "updated": "2023-07-28"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "Asrai Unit Pack Submod.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2985506863"
+          },
+          "note": "Reskin of the Oak Guard unit from Cipher's Asrai Unit Pack (Wood Elves) on the Workshop.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/129"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Above Asrai Unit Pack."
+      },
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ]
     },
     {
       "id": "steam-2858308116",
@@ -23540,7 +24433,7 @@
             "id": "3718883838",
             "title": "Lin_AllInOne_en.pack",
             "updated": "2026-10-10",
-            "subscribers": 1922
+            "subscribers": 1923
           },
           {
             "id": "3676463688",
@@ -23789,7 +24682,7 @@
             "id": "3607399515",
             "title": "Lizardmen Units - Amazons",
             "updated": "2026-10-28",
-            "subscribers": 10153
+            "subscribers": 10151
           }
         ]
       },
@@ -23854,7 +24747,7 @@
             "id": "2998525410",
             "title": "Local Recruitment for Warriors of Chaos",
             "updated": "2026-09-25",
-            "subscribers": 42938
+            "subscribers": 42940
           }
         ]
       },
@@ -23936,7 +24829,7 @@
             "title": "Lord Hero Swap - 9.0 Fix (Unofficial)/领主和英雄切换9.0 修复版（原版失效修复）",
             "unlisted": false,
             "updated": "2026-11-01",
-            "subscribers": 2185
+            "subscribers": 2186
           }
         ]
       },
@@ -23997,7 +24890,7 @@
             "id": "3079850881",
             "title": "Lost Calm: Jurassic Normal (updated for Patch 9)",
             "updated": "2026-10-05",
-            "subscribers": 77659
+            "subscribers": 77657
           }
         ]
       },
@@ -24105,7 +24998,7 @@
             "id": "3086916833",
             "title": "Lost Calm: Jurassic Normal SFO",
             "updated": "2026-06-05",
-            "subscribers": 8131
+            "subscribers": 8127
           }
         ]
       },
@@ -24194,7 +25087,7 @@
             "id": "3085589102",
             "title": "Lost Calm: Nakai Submod",
             "updated": "2026-09-27",
-            "subscribers": 22398
+            "subscribers": 22397
           }
         ]
       },
@@ -24595,7 +25488,7 @@
             "title": "Lyra the Lioness: Legendary Hero",
             "unlisted": false,
             "updated": "2025-01-03",
-            "subscribers": 9538
+            "subscribers": 9537
           }
         ]
       },
@@ -24740,7 +25633,7 @@
             "title": "Martial and Murderous Prowess for All High Elves and Dark Elves Heroic Mounts",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2092
+            "subscribers": 2093
           }
         ]
       },
@@ -24870,7 +25763,7 @@
             "id": "2896264280",
             "title": "Matched Combat + Reload Animations Submod",
             "updated": "2024-03-29",
-            "subscribers": 26815
+            "subscribers": 26813
           }
         ]
       },
@@ -25218,7 +26111,7 @@
             "id": "2817813739",
             "title": "Miao Ying vs Slaanesh face off (campaign balance) [Immortal Empires & Realms of Chaos]",
             "updated": "2023-10-23",
-            "subscribers": 2001
+            "subscribers": 2000
           }
         ]
       },
@@ -25693,18 +26586,28 @@
           "uploaded": "2023-01-20",
           "endorsements": 185,
           "downloads": 6600,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-01-19"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "miaoyinreskin1.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Unsubscribe other Miao Ying reskins and remove them from the Workshop folder; the Steam copy uses the same file name. If it still does not show, the author suggests renaming the files to 0miaoyinreskin1.pack / .png."
+      ]
     },
     {
       "id": "ll-24571",
@@ -26069,7 +26972,7 @@
             "id": "2815354316",
             "title": "Mod Configuration Tool [LEGACY]",
             "updated": "2023-02-04",
-            "subscribers": 34281
+            "subscribers": 34282
           }
         ]
       },
@@ -26135,13 +27038,13 @@
             "id": "2867839569",
             "title": "Lazy's Morathi Ascension Stage 2 (6.3)",
             "updated": "2025-09-05",
-            "subscribers": 34334
+            "subscribers": 34333
           },
           {
             "id": "3480317584",
             "title": "High elf red line buffs for dark elf units",
             "updated": "2025-05-21",
-            "subscribers": 15013
+            "subscribers": 15015
           },
           {
             "id": "2868970620",
@@ -26515,18 +27418,131 @@
           "uploaded": "2024-03-07",
           "endorsements": 66,
           "downloads": 9300,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2024-03-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "1_Morathi_fresh_skin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_amber_skin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_porcelain_skin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_slanesh_skin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_fresh_skin_wet.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_amber_skin_wet.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_slanesh_skin_wet.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "2_Morathi_hair_white.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_red.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_black.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_blood.pack",
+          "from": "download",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "morathi_armorv1.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "morathi_armorv2.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "morathi_fullarmor.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "4_Morathi_ground_weapon.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Weapon on foot"
+        },
+        {
+          "file": "5_Morathi_mounted_weapon.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Weapon when mounted"
+        },
+        {
+          "file": "morathi_staff.pack",
+          "from": "download",
+          "optional": true
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Order the parts by the number in front of each file: 1 skin, 2 hair, 3 armour, 4 weapon on foot, 5 mounted weapon."
+      },
+      "installNotes": [
+        "Built from parts: one skin, one hair, then armour and weapons as wanted. Each skin has a wet variant. Remove the files of older versions."
+      ]
     },
     {
       "id": "ll-24467",
@@ -26883,7 +27899,7 @@
             "id": "2798690094",
             "title": "More Animation",
             "updated": "2026-10-02",
-            "subscribers": 26759
+            "subscribers": 26760
           }
         ]
       },
@@ -27009,7 +28025,7 @@
             "title": "More High Angle Fire (includes Stop Idling and True Sight features)",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 45785
+            "subscribers": 45784
           }
         ]
       },
@@ -27169,7 +28185,7 @@
             "id": "2856024846",
             "title": "More Warband Upgrades for Warriors of Chaos",
             "updated": "2026-10-23",
-            "subscribers": 19950
+            "subscribers": 19951
           }
         ]
       },
@@ -27225,7 +28241,7 @@
             "id": "3292995911",
             "title": "Morgan's Heroes (aka, Tamurkhan's Chieftain Porting)",
             "updated": "2026-10-28",
-            "subscribers": 4484
+            "subscribers": 4485
           }
         ]
       },
@@ -27287,7 +28303,7 @@
             "id": "3313629415",
             "title": "Murranji's Great Bastion Expansion Mod",
             "updated": "2026-09-25",
-            "subscribers": 6701
+            "subscribers": 6702
           }
         ]
       },
@@ -27592,7 +28608,7 @@
             "id": "3830112095",
             "title": "Nagash The Dark Queen",
             "updated": "2026-10-30",
-            "subscribers": 876
+            "subscribers": 887
           }
         ]
       },
@@ -27890,18 +28906,50 @@
           "uploaded": "2025-12-04",
           "endorsements": 64,
           "downloads": 3000,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2025-12-04"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@katarin_reskins_4th.pack",
+          "from": "download",
+          "exclusiveGroup": "nx297-ver"
+        },
+        {
+          "file": "@katarin_reskins_dark_4th.pack",
+          "from": "download",
+          "exclusiveGroup": "nx297-ver",
+          "note": "Dark"
+        },
+        {
+          "file": "@katarin_reskins_white_4th.pack",
+          "from": "download",
+          "exclusiveGroup": "nx297-ver",
+          "note": "White"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above the author's other mods to replace their Katarin."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed; three versions, pick one. The author: compatible with Lazy's Katarin corruption mod."
+      ]
     },
     {
       "id": "steam-3810498134",
@@ -27932,7 +28980,7 @@
             "id": "3810498134",
             "title": "New Lahmian Lords and Neferata's Handmaidens",
             "updated": "2026-10-03",
-            "subscribers": 10533
+            "subscribers": 10540
           }
         ]
       },
@@ -28027,18 +29075,61 @@
           "uploaded": "2023-10-19",
           "endorsements": 101,
           "downloads": 4600,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2023-12-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Nkarinaked.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Reworked model without armour"
+        },
+        {
+          "file": "Kariafuta.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Futa version"
+        },
+        {
+          "file": "Kariafuta_armor.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Futa version with armour"
+        },
+        {
+          "file": "Karia_1.0.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version (1.0)"
+        },
+        {
+          "file": "Kariabeta.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version, beta"
+        },
+        {
+          "file": "Kariastat.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version, other file"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "The armoured and the 'ornament' versions show no file list on Nexus; their pack names are unknown.",
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Several independent versions; pick one."
+      ]
     },
     {
       "id": "steam-2842459897",
@@ -28094,17 +29185,24 @@
           "uploaded": "2023-06-16",
           "endorsements": 183,
           "downloads": 11100,
-          "adult": true
+          "adult": true,
+          "version": "12.11",
+          "updated": "2025-12-24"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Norsca_reskin.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/106"
@@ -28113,11 +29211,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3716025482",
@@ -28259,7 +29366,7 @@
             "id": "3404717872",
             "title": "Nymeria - Legendary Hero/Lord",
             "updated": "2025-01-10",
-            "subscribers": 5778
+            "subscribers": 5777
           },
           {
             "id": "3406065086",
@@ -28820,18 +29927,55 @@
           "uploaded": "2022-08-19",
           "endorsements": 285,
           "downloads": 7900,
-          "adult": true
+          "adult": true,
+          "version": "1.0.5",
+          "updated": "2023-07-05"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "pleasurePikesNoGift.pack",
+          "from": "download",
+          "exclusiveGroup": "nx2-ver",
+          "note": "All female"
+        },
+        {
+          "file": "pleasurePikesDouble.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx2-x2",
+          "note": "Double unit size (futa version)"
+        },
+        {
+          "file": "pleasurePikesNoGiftDouble.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx2-x2",
+          "note": "Double unit size (all-female version)"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Replaced by Pikes of Slaanesh Reborn. Its futa version used pleasurePikes.pack, the same file name as the Reborn main pack, so that file is recognised as the Reborn version; use only one of them.",
+        "High polygon count; can lower the frame rate."
+      ],
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "installNotes": [
+        "Also available to Morathi."
+      ],
+      "status": "superseded"
     },
     {
       "id": "nx-195",
@@ -28859,18 +30003,53 @@
           "uploaded": "2024-04-06",
           "endorsements": 117,
           "downloads": 5000,
-          "adult": true
+          "adult": true,
+          "version": "1.0.2",
+          "updated": "2026-10-31"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "pleasurePikes.pack",
+          "from": "download",
+          "note": "Main file; the download comes in three versions with this same name (normal, almost SFW, with futa models), pick one"
+        },
+        {
+          "file": "pleasurePikesX2.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Double unit size with lowered stats; needs a main file and must be above it"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "nx-2"
+          },
+          "note": "The author's newer version.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/195"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The X2 add-on must be above the main pack."
+      },
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ]
     },
     {
       "id": "nx-13",
@@ -28898,17 +30077,32 @@
           "uploaded": "2022-09-11",
           "endorsements": 430,
           "downloads": 21500,
-          "adult": true
+          "adult": true,
+          "version": "13.21",
+          "updated": "2026-10-30"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Flowers of the Empire.pack",
+          "from": "download",
+          "exclusiveGroup": "nx13-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Flowers of the Empire_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx13-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/13"
@@ -28917,11 +30111,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "ll-26795",
@@ -29209,18 +30412,69 @@
           "uploaded": "2023-07-06",
           "endorsements": 302,
           "downloads": 9300,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2024-12-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Katarin_classic.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Classic"
+        },
+        {
+          "file": "@Katarin_classic_boots.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Classic, boots"
+        },
+        {
+          "file": "@Alternative Katarin_1.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 1"
+        },
+        {
+          "file": "@Alternative Katarin_1boots.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 1, boots"
+        },
+        {
+          "file": "@Alternative Katarin_2.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 2"
+        },
+        {
+          "file": "@Alternative Katarin_2boots.pack",
+          "from": "download",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 2, boots"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed. The author: compatible with Khan-Queen's Sleigh."
+      ]
     },
     {
       "id": "nx-42",
@@ -29249,17 +30503,30 @@
           "uploaded": "2022-10-21",
           "endorsements": 480,
           "downloads": 38800,
-          "adult": true
+          "adult": true,
+          "version": "12.5",
+          "updated": "2026-05-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Queen's Maiden.pack",
+          "from": "download",
+          "note": "High Elves"
+        },
+        {
+          "file": "@Darkmaidens.pack",
+          "from": "download",
+          "note": "Dark Elves"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/42"
@@ -29268,11 +30535,236 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": [
+          "Read on the Nexus mod page; not checked in game."
+        ]
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    {
+      "id": "steam-2791750313",
+      "name": "Radious Total War Mod - Part 1",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "overhaul"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2791750313",
+            "title": "Radious Total War Mod - Part 1",
+            "unlisted": false,
+            "updated": "2026-10-30",
+            "subscribers": 214825
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
         "confidence": "low",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Known only from references; kind, dependencies and purpose unchecked."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://patreon.com/Team_Radious"
+        },
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/TeamRadious"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198005554297/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1811018144584924763/75B03D3D24892D61966C90CB23B9CF18A13C677C/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2791750896",
+      "name": "Radious Total War Mod - Part 2",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "overhaul"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2791750896",
+            "title": "Radious Total War Mod - Part 2",
+            "unlisted": false,
+            "updated": "2026-10-30",
+            "subscribers": 214553
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://patreon.com/Team_Radious"
+        },
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/TeamRadious"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198005554297/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1811018144584929261/BDCC2D7E10C24A7FEDE037CD720C00AA3BFA8AFF/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2791750075",
+      "name": "Radious Total War Mod - Part 3",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "overhaul"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2791750075",
+            "title": "Radious Total War Mod - Part 3",
+            "unlisted": false,
+            "updated": "2026-10-30",
+            "subscribers": 214354
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://patreon.com/Team_Radious"
+        },
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/TeamRadious"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198014224864/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1857180040779150015/1CF3DC3C8F9B64C5A32BB52EFF70115C7A528CE2/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2813892035",
+      "name": "Radious Total War Mod - Part 4 - Assets",
+      "authors": [],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "overhaul"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2813892035",
+            "title": "Radious Total War Mod - Part 4 - Assets",
+            "unlisted": false,
+            "updated": "2026-10-30",
+            "subscribers": 211822
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://patreon.com/Team_Radious"
+        },
+        {
+          "platform": "PayPal",
+          "url": "https://paypal.me/TeamRadious"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198005554297/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1806519246755984426/AA093975F6D807293745E71494288ABF5D34BE03/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3499928880",
@@ -31323,7 +32815,7 @@
             "id": "3801443992",
             "title": "Recruitment of All-Race Units · Foreign Barracks",
             "updated": "2026-10-27",
-            "subscribers": 3900
+            "subscribers": 3902
           }
         ]
       },
@@ -31435,7 +32927,7 @@
             "id": "2826919821",
             "title": "Regiments of Renown - All Factions by Pwner1",
             "updated": "2026-09-27",
-            "subscribers": 8294
+            "subscribers": 8293
           }
         ]
       },
@@ -31539,7 +33031,7 @@
             "title": "Remove characters traits limit",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 182917
+            "subscribers": 182918
           }
         ]
       },
@@ -31602,18 +33094,28 @@
           "uploaded": "2022-10-29",
           "endorsements": 116,
           "downloads": 3000,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2022-10-29"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "0repanse.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Mesh from Black Desert Online and the RRC Lydia mod; formerly on Steam."
+      ]
     },
     {
       "id": "nx-161",
@@ -31642,18 +33144,46 @@
           "uploaded": "2023-11-10",
           "endorsements": 139,
           "downloads": 6000,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2026-09-24"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@repanse_angel.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/161"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above the author's faction pack to replace the default Repanse."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2789865816",
@@ -31682,7 +33212,7 @@
             "id": "2789865816",
             "title": "Resized Lords Heroes 3",
             "updated": "2026-10-21",
-            "subscribers": 17328
+            "subscribers": 17327
           }
         ]
       },
@@ -31731,7 +33261,7 @@
             "id": "2856367440",
             "title": "Restore Horde and Recruitment for Chaos",
             "updated": "2026-10-13",
-            "subscribers": 10583
+            "subscribers": 10582
           }
         ]
       },
@@ -31786,7 +33316,7 @@
             "id": "2989226363",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon",
             "updated": "2025-09-09",
-            "subscribers": 44849
+            "subscribers": 44850
           }
         ]
       },
@@ -31908,7 +33438,7 @@
             "id": "3753323752",
             "title": "RogueTotalWar: Warhammer Spire",
             "updated": "2026-09-26",
-            "subscribers": 12672
+            "subscribers": 12670
           }
         ]
       },
@@ -31965,7 +33495,7 @@
             "id": "2889689320",
             "title": "精英战帮升级（全派系）/RoR Warband Upgrade（All factions）Ver 9.0",
             "updated": "2026-11-01",
-            "subscribers": 19672
+            "subscribers": 19673
           }
         ]
       },
@@ -32161,7 +33691,7 @@
             "title": "Run 'Em Down - Units Actually Damage Routing Units",
             "unlisted": false,
             "updated": "2025-11-16",
-            "subscribers": 41301
+            "subscribers": 41304
           }
         ]
       },
@@ -32656,7 +34186,7 @@
             "title": "Sarvente's Xiao (Continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5274
+            "subscribers": 5273
           }
         ]
       },
@@ -32704,7 +34234,7 @@
             "title": "Sarvente's Enhi (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 5015
+            "subscribers": 5014
           }
         ]
       },
@@ -32752,7 +34282,7 @@
             "title": "Sarvente's Hakutaku Diviners (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 4831
+            "subscribers": 4830
           }
         ]
       },
@@ -32848,7 +34378,7 @@
             "title": "Sarvente's Shards of Dai Ji (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5762
+            "subscribers": 5760
           }
         ]
       },
@@ -33109,7 +34639,7 @@
             "id": "3030996759",
             "title": "SCM Marienburg (9.0)",
             "updated": "2026-10-22",
-            "subscribers": 51070
+            "subscribers": 51068
           }
         ]
       },
@@ -33172,7 +34702,7 @@
             "id": "3318719948",
             "title": "SCM Skaven Clans - 9.0",
             "updated": "2026-10-18",
-            "subscribers": 32197
+            "subscribers": 32196
           }
         ]
       },
@@ -33254,7 +34784,7 @@
             "id": "3318713041",
             "title": "SCM's Skaven Assets - 9.0",
             "updated": "2026-10-11",
-            "subscribers": 32196
+            "subscribers": 32195
           }
         ]
       },
@@ -33313,7 +34843,7 @@
             "id": "3236566964",
             "title": "SCM: Tribes of the North - 9.0",
             "updated": "2026-10-30",
-            "subscribers": 54548
+            "subscribers": 54551
           }
         ]
       },
@@ -33370,17 +34900,43 @@
           "uploaded": "2024-01-06",
           "endorsements": 108,
           "downloads": 4700,
-          "adult": true
+          "adult": true,
+          "version": "5.0",
+          "updated": "2024-06-27"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@seadragon_reskin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx170-ver",
+          "note": "Normal unit sizes"
+        },
+        {
+          "file": "@seadragon_reskin1.5.pack",
+          "from": "download",
+          "exclusiveGroup": "nx170-ver",
+          "note": "Larger unit sizes (1.5x)"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "steam-2989226363"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs Roar of the Jade Sea (Workshop) and the Warmaidens Resource Pack.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/170"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs Roar of the Jade Sea (Workshop) and the Warmaidens Resource Pack.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/170"
@@ -33389,11 +34945,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2878134329",
@@ -34060,16 +35625,31 @@
           "uploaded": "2022-09-18",
           "endorsements": 228,
           "downloads": 6300,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2022-09-18"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_CelestialConcubines_ENG.pack",
+          "from": "download",
+          "exclusiveGroup": "nx17-lang",
+          "note": "English"
+        },
+        {
+          "file": "SexierGrandCathay_CelestialConcubines_FR.pack",
+          "from": "download",
+          "exclusiveGroup": "nx17-lang",
+          "note": "French texts; use instead of the English pack"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -34099,18 +35679,28 @@
           "uploaded": "2022-12-10",
           "endorsements": 196,
           "downloads": 5100,
-          "adult": true
+          "adult": true,
+          "version": "1.2",
+          "updated": "2022-12-29"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_CelestialGuards.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "nx-14",
@@ -34138,18 +35728,28 @@
           "uploaded": "2022-09-11",
           "endorsements": 233,
           "downloads": 5900,
-          "adult": true
+          "adult": true,
+          "version": "1.3",
+          "updated": "2022-12-11"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_JadeWarriors.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "nx-50",
@@ -34177,18 +35777,28 @@
           "uploaded": "2022-12-12",
           "endorsements": 187,
           "downloads": 4700,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2022-12-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay - Nan Gau Warriors.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "nx-18",
@@ -34216,18 +35826,28 @@
           "uploaded": "2022-09-24",
           "endorsements": 257,
           "downloads": 6000,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2022-12-11"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Peasant.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "nx-62",
@@ -34255,18 +35875,40 @@
           "uploaded": "2023-02-05",
           "endorsements": 121,
           "downloads": 3400,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-02-05"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Shugengan.pack",
+          "from": "download"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "nx-10"
+          },
+          "note": "The author's newer version.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/62"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "nx-10",
@@ -34294,18 +35936,29 @@
           "uploaded": "2022-09-08",
           "endorsements": 164,
           "downloads": 2900,
-          "adult": true
+          "adult": true,
+          "version": "1.2",
+          "updated": "2022-09-11"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexiestGrandCathay_Shugengan.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "The author marks it obsolete; the newer Sexiest Grand Cathay - Shugengan replaces it."
+      ],
+      "status": "superseded"
     },
     {
       "id": "nx-51",
@@ -34333,18 +35986,28 @@
           "uploaded": "2022-12-13",
           "endorsements": 145,
           "downloads": 4100,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2022-12-13"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Terracotta.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
     },
     {
       "id": "ll-49648",
@@ -34782,17 +36445,44 @@
           "uploaded": "2022-12-02",
           "endorsements": 198,
           "downloads": 10900,
-          "adult": true
+          "adult": true,
+          "version": "12.73fix",
+          "updated": "2026-08-14"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Ms Greenskins.pack",
+          "from": "download",
+          "exclusiveGroup": "nx47-ver",
+          "note": "With futa models, English"
+        },
+        {
+          "file": "@Ms Greenskins_no_futa.pack",
+          "from": "download",
+          "exclusiveGroup": "nx47-ver",
+          "note": "Without futa models, English"
+        },
+        {
+          "file": "@Ms Greenskins _ch.pack",
+          "from": "download",
+          "exclusiveGroup": "nx47-ver",
+          "note": "With futa models, Simplified Chinese"
+        },
+        {
+          "file": "@Ms Greenskins_no_futa_ch.pack",
+          "from": "download",
+          "exclusiveGroup": "nx47-ver",
+          "note": "Without futa models, Simplified Chinese"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/47"
@@ -34801,11 +36491,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-104",
@@ -34833,18 +36532,34 @@
           "uploaded": "2023-06-09",
           "endorsements": 145,
           "downloads": 4600,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-06-09"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@def_hydra_nude.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed; only the models and animations change, not the unit statistics."
+      ]
     },
     {
       "id": "nx-123",
@@ -34873,18 +36588,57 @@
           "uploaded": "2023-07-06",
           "endorsements": 128,
           "downloads": 3700,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-07-06"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Ulrika.pack",
+          "from": "download",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Bare feet"
+        },
+        {
+          "file": "@Ulrika_1.pack",
+          "from": "download",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Bare feet, second style"
+        },
+        {
+          "file": "@Ulrika_a.pack",
+          "from": "download",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Boots"
+        },
+        {
+          "file": "@Ulrika_1a.pack",
+          "from": "download",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Boots, second style"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed."
+      ]
     },
     {
       "id": "ll-29487",
@@ -35243,7 +36997,7 @@
             "id": "2846183349",
             "title": "Siege AI & Mechanics Overhaul",
             "updated": "2026-10-27",
-            "subscribers": 19952
+            "subscribers": 19948
           }
         ]
       },
@@ -35457,18 +37211,31 @@
           "uploaded": "2023-10-27",
           "endorsements": 64,
           "downloads": 1800,
-          "adult": false
+          "adult": false,
+          "version": "1.0",
+          "updated": "2023-10-27"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!sisters_of_avelorn WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ]
     },
     {
       "id": "nx-236",
@@ -35580,7 +37347,7 @@
             "id": "3238432277",
             "title": "The Dreaded Thirteenth Spell. Elspeth von Ratten.",
             "updated": "2024-05-07",
-            "subscribers": 1471
+            "subscribers": 1470
           }
         ]
       },
@@ -35654,17 +37421,24 @@
           "uploaded": "2022-12-23",
           "endorsements": 187,
           "downloads": 10000,
-          "adult": true
+          "adult": true,
+          "version": "13.0",
+          "updated": "2026-10-01"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Skv_revolution.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/56"
@@ -35673,11 +37447,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3810029219",
@@ -35821,7 +37604,7 @@
             "title": "Slaanesh assaults the great bastion",
             "unlisted": false,
             "updated": "2025-04-22",
-            "subscribers": 12241
+            "subscribers": 12242
           }
         ]
       },
@@ -35876,7 +37659,7 @@
             "title": "Slaanesh Beast Expand",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 6812
+            "subscribers": 6813
           }
         ]
       },
@@ -36711,7 +38494,7 @@
             "title": "色孽远征— 派系 Mod | Slaanesh Expedition",
             "unlisted": false,
             "updated": "2026-10-21",
-            "subscribers": 3012
+            "subscribers": 3013
           }
         ]
       },
@@ -36774,7 +38557,7 @@
             "id": "3802335820",
             "title": "Slaanesh Expedition - English Translation | 英文补丁",
             "updated": "2026-10-21",
-            "subscribers": 1740
+            "subscribers": 1741
           }
         ]
       },
@@ -36953,7 +38736,7 @@
             "title": "Slaanesh Vassal Cults",
             "unlisted": false,
             "updated": "2026-10-16",
-            "subscribers": 6165
+            "subscribers": 6167
           }
         ]
       },
@@ -38618,7 +40401,7 @@
         "zeta0080"
       ],
       "kind": "reskin",
-      "summary": "Standalone Daemonette reskin by zeta0080, separated from the Slaanesh faction pack.",
+      "summary": "Warmaidens faction pack for Slaanesh: every Slaanesh unit, or in the Succubus Legion download only Daemonettes, Keepers, lords and heroes.",
       "tags": [
         "slaanesh"
       ],
@@ -38637,18 +40420,72 @@
           "uploaded": "2022-10-21",
           "endorsements": 580,
           "downloads": 36300,
-          "adult": true
+          "adult": true,
+          "version": "12.11",
+          "updated": "2025-12-24"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@Slaanesh Legion.pack",
+          "from": "download",
+          "exclusiveGroup": "nx41-legion",
+          "note": "With futa models"
+        },
+        {
+          "file": "@Slaanesh Legion (no futa).pack",
+          "from": "download",
+          "exclusiveGroup": "nx41-legion",
+          "note": "Without futa models"
+        },
+        {
+          "file": "@Succubus.pack",
+          "from": "download",
+          "exclusiveGroup": "nx41-succubus",
+          "note": "With futa models"
+        },
+        {
+          "file": "@Succubus(no futa).pack",
+          "from": "download",
+          "exclusiveGroup": "nx41-succubus",
+          "note": "Without futa models"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/41"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "knownIssues": [
+        "Changes skeletons and animations of Chaos Warriors and Chosen units, which can conflict with other mods."
+      ],
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Two downloads: Warmaidens of Dark Princess (all Slaanesh units) and Succubus Legion (Daemonettes, Keepers, lords and heroes; no human units). The Slaanesh Legion packs are also part of League of Evil Girls."
+      ]
     },
     {
       "id": "dc-summon-servant-jeanne-d-arc-and-alter-mct",
@@ -38671,7 +40508,7 @@
             "id": "3552538974",
             "title": "英灵召唤 (Summon Servant)",
             "updated": "2026-10-12",
-            "subscribers": 17143
+            "subscribers": 17144
           }
         ]
       },
@@ -38774,7 +40611,7 @@
             "id": "2798804755",
             "title": "Tabletop Caps - Unique Lord & Faction Rules - Submod",
             "updated": "2026-09-27",
-            "subscribers": 10802
+            "subscribers": 10804
           }
         ]
       },
@@ -38901,7 +40738,7 @@
             "id": "3386989556",
             "title": "Tabletop Caps: Reborn",
             "updated": "2026-09-26",
-            "subscribers": 34302
+            "subscribers": 34301
           }
         ]
       },
@@ -39360,7 +41197,7 @@
             "id": "3816385668",
             "title": "The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-19",
-            "subscribers": 3808
+            "subscribers": 3809
           }
         ]
       },
@@ -39434,7 +41271,7 @@
             "id": "3270391569",
             "title": "The Cult of Slaanesh",
             "updated": "2026-09-30",
-            "subscribers": 7913
+            "subscribers": 7914
           }
         ]
       },
@@ -39555,16 +41392,31 @@
           "uploaded": "2024-08-22",
           "endorsements": 109,
           "downloads": 4500,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-08-22"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "the_fay_dress.pack",
+          "from": "download",
+          "exclusiveGroup": "nx214-ver",
+          "note": "With a transparent dress"
+        },
+        {
+          "file": "the_fay.pack",
+          "from": "download",
+          "exclusiveGroup": "nx214-ver",
+          "note": "Without the dress"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -39597,7 +41449,7 @@
             "id": "2880515805",
             "title": "The Jade-Blooded Vampires: Curse of Nongchang (9.0 Update - BETA)",
             "updated": "2026-10-03",
-            "subscribers": 39186
+            "subscribers": 39187
           }
         ]
       },
@@ -39655,7 +41507,7 @@
             "id": "3166984131",
             "title": "The Phoenix Court (High Elf Politics)",
             "updated": "2026-10-16",
-            "subscribers": 41291
+            "subscribers": 41292
           }
         ]
       },
@@ -39940,7 +41792,7 @@
             "id": "3809644140",
             "title": "可隐藏的UI组件  - Toggleable UI Components",
             "updated": "2026-10-31",
-            "subscribers": 7991
+            "subscribers": 7992
           }
         ]
       },
@@ -40153,18 +42005,95 @@
           "uploaded": "2022-09-29",
           "endorsements": 2200,
           "downloads": 401200,
-          "adult": true
+          "adult": true,
+          "version": "13.21",
+          "updated": "2026-10-30"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@reskin1.pack",
+          "from": "download",
+          "note": "Resource pack, part 1; most mods of the series need both parts active"
+        },
+        {
+          "file": "@reskin2.pack",
+          "from": "download",
+          "note": "Resource pack, part 2"
+        },
+        {
+          "file": "@Total Warmaidens III.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "tw3-edition",
+          "note": "All-in-one total conversion with every faction pack of the series; use it instead of the single faction packs"
+        },
+        {
+          "file": "@Total Warmaidens III (Original Females Edition).pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "tw3-edition",
+          "note": "Changes only the game's original female lords and units; meant to work with SFO"
+        },
+        {
+          "file": "_hv_reskin_lod.pack",
+          "from": "download",
+          "optional": true,
+          "note": "LOD fix by Hooveric for the reskinned models; the author highly recommends it"
+        },
+        {
+          "file": "@sexfight_animations.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Endo's Matched Combat 3.0: sex-themed matched animations for most humanoid skeletons; changes battle balance"
+        },
+        {
+          "file": "@No_futa_patch.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Removes the futa models; load it above @Total Warmaidens III.pack"
+        },
+        {
+          "file": "@warmaidens_chinese_translation.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Simplified Chinese unit names"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-sfo"
+          },
+          "note": "The total conversion changes the game's unit models like SFO does; the Original Females edition is meant to work with SFO.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/22"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "knownIssues": [
+        "Conflicts with mods that change the game's unit models (reskins), give heroes new mounts or change unit statistics (for example removing the elite unit limit).",
+        "Set Unit Detail to Ultra in the graphics settings; lower settings can stretch limbs or lose textures.",
+        "Most models missing: the resource pack is not active. With a DLC unlocker, turn off the blood packs."
+      ],
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2931377022",
@@ -40186,7 +42115,7 @@
             "title": "Trade Any Settlement",
             "unlisted": false,
             "updated": "2026-10-17",
-            "subscribers": 57762
+            "subscribers": 57765
           }
         ]
       },
@@ -40297,7 +42226,7 @@
             "id": "3601814378",
             "title": "Treasures of the Endless Deeps",
             "updated": "2026-09-25",
-            "subscribers": 23330
+            "subscribers": 23329
           }
         ]
       },
@@ -40360,7 +42289,7 @@
             "id": "3578974048",
             "title": "Treasures of the Endless Oceans",
             "updated": "2026-09-25",
-            "subscribers": 14736
+            "subscribers": 14737
           }
         ]
       },
@@ -40498,7 +42427,7 @@
             "id": "3244295546",
             "title": "UI Slider",
             "updated": "2025-09-03",
-            "subscribers": 65545
+            "subscribers": 65541
           }
         ]
       },
@@ -40555,7 +42484,7 @@
             "id": "3810929399",
             "title": "Ulrika as a Lahmian Vampire",
             "updated": "2026-10-01",
-            "subscribers": 2441
+            "subscribers": 2442
           }
         ]
       },
@@ -41126,18 +43055,66 @@
           "uploaded": "2025-02-02",
           "endorsements": 116,
           "downloads": 7300,
-          "adult": true
+          "adult": true,
+          "version": "2.1fix",
+          "updated": "2026-09-30"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@valkryie_legions.pack",
+          "from": "download",
+          "exclusiveGroup": "nx250-ver",
+          "note": "English"
+        },
+        {
+          "file": "@valkryie_legions_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        },
+        {
+          "file": "@valkryie_legions1.5.pack",
+          "from": "download",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Larger unit sizes (1.5x), English"
+        },
+        {
+          "file": "@valkryie_legions1.5_Chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Larger unit sizes (1.5x), Simplified Chinese"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/250"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "ll-25600",
@@ -41422,7 +43399,7 @@
             "id": "3140200173",
             "title": "Victory Conditions Overhaul",
             "updated": "2026-10-31",
-            "subscribers": 241757
+            "subscribers": 241763
           }
         ]
       },
@@ -41481,16 +43458,23 @@
           "uploaded": "2023-06-21",
           "endorsements": 59,
           "downloads": 2200,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2023-06-21"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@spc_vilitch.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -41599,7 +43583,7 @@
             "id": "3166112259",
             "title": "Warband Mods Compilation",
             "updated": "2026-10-24",
-            "subscribers": 6652
+            "subscribers": 6655
           }
         ]
       },
@@ -41701,7 +43685,7 @@
             "id": "3157105199",
             "title": "Warband UI Framework",
             "updated": "2026-10-29",
-            "subscribers": 42974
+            "subscribers": 42977
           }
         ]
       },
@@ -41802,7 +43786,7 @@
             "id": "2853239091",
             "title": "Warband Upgrade Ultimate",
             "updated": "2026-10-23",
-            "subscribers": 168883
+            "subscribers": 168886
           }
         ]
       },
@@ -42018,18 +44002,25 @@
           "uploaded": "2026-09-05",
           "endorsements": 128,
           "downloads": 7600,
-          "adult": false
+          "adult": false,
+          "version": "0.4.5",
+          "updated": "2026-10-25"
         }
       },
       "packs": [],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "Not a .pack: extract dinput8.dll and wh3_dlss.ini next to Warhammer3.exe; the app cannot install it.",
+        "The game sets the resolution scale when DLSS runs; set it back to 100% if needed.",
+        "Optional depth buffer add-on, only for ReShade depth effects."
+      ]
     },
     {
       "id": "nx-324",
@@ -42055,17 +44046,68 @@
           "uploaded": "2026-03-08",
           "endorsements": 8,
           "downloads": 391,
-          "adult": true
+          "adult": true,
+          "version": "1.1",
+          "updated": "2026-03-15"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "RadiousWarmaiden patch.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/324"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750313"
+          },
+          "note": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/324"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750896"
+          },
+          "note": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/324"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750075"
+          },
+          "note": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/324"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/324"
@@ -42074,10 +44116,13 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
+      },
+      "loadOrder": {
+        "note": "This patch first (highest priority), then the Warmaidens packs, then Radious."
       }
     },
     {
@@ -42106,17 +44151,32 @@
           "uploaded": "2022-10-06",
           "endorsements": 385,
           "downloads": 18900,
-          "adult": true
+          "adult": true,
+          "version": "12.7",
+          "updated": "2026-06-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Warmaidens of the Lady.pack",
+          "from": "download",
+          "exclusiveGroup": "nx29-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Warmaidens of the Lady_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx29-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/29"
@@ -42125,11 +44185,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-31",
@@ -42158,17 +44227,30 @@
           "uploaded": "2022-10-07",
           "endorsements": 395,
           "downloads": 32500,
-          "adult": true
+          "adult": true,
+          "version": "13.21",
+          "updated": "2026-10-30"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Vampire Girls.pack",
+          "from": "download",
+          "note": "Vampire Counts"
+        },
+        {
+          "file": "@Pirate Girls.pack",
+          "from": "download",
+          "note": "Vampire Coast"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/31"
@@ -42177,11 +44259,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-28",
@@ -42209,17 +44300,32 @@
           "uploaded": "2022-10-06",
           "endorsements": 412,
           "downloads": 18900,
-          "adult": true
+          "adult": true,
+          "version": "13.0",
+          "updated": "2026-10-01"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Ancient Warmaidens.pack",
+          "from": "download",
+          "exclusiveGroup": "nx28-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Ancient Warmaidens_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx28-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/28"
@@ -42228,11 +44334,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "ll-24568",
@@ -42415,7 +44530,7 @@
             "id": "2790617009",
             "title": "Westluo的欢愉公主 美飚龙”妙影”独立美化包",
             "updated": "2023-10-30",
-            "subscribers": 22532
+            "subscribers": 22533
           }
         ]
       },
@@ -42634,16 +44749,23 @@
           "uploaded": "2022-09-12",
           "endorsements": 125,
           "downloads": 3000,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2022-09-12"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Westluo_BR_sla_ValkiaTheBeautiful.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
       }
     },
@@ -42821,17 +44943,24 @@
           "uploaded": "2022-12-18",
           "endorsements": 156,
           "downloads": 7300,
-          "adult": true
+          "adult": true,
+          "version": "11.73",
+          "updated": "2025-06-26"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Womaneater.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
           "target": {
             "mod": "nx-22"
           },
-          "note": "Stated on the Nexus page.",
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
           "source": {
             "type": "nexus",
             "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/55"
@@ -42840,11 +44969,20 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-239",
@@ -43066,7 +45204,7 @@
             "id": "3746989980",
             "title": "Wyccc's English Patch Collection",
             "updated": "2026-10-31",
-            "subscribers": 3318
+            "subscribers": 3324
           }
         ]
       },
@@ -43209,10 +45347,17 @@
           "uploaded": "2023-07-02",
           "endorsements": 118,
           "downloads": 3800,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2023-10-11"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Yinyin.pack",
+          "from": "download"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -43228,11 +45373,17 @@
       ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-2858576975",
@@ -43253,7 +45404,7 @@
             "title": "Zealots of Slaanesh | Unit Mod",
             "unlisted": false,
             "updated": "2024-08-21",
-            "subscribers": 14274
+            "subscribers": 14273
           }
         ]
       },
@@ -43310,18 +45461,58 @@
           "uploaded": "2023-05-11",
           "endorsements": 145,
           "downloads": 6800,
-          "adult": true
+          "adult": true,
+          "version": "10.2fix",
+          "updated": "2024-10-01"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@zeta mortal's expansion_nexus.pack",
+          "from": "download",
+          "exclusiveGroup": "nx91-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta mortal's expansion_chinese_nexus.pack",
+          "from": "download",
+          "exclusiveGroup": "nx91-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack from Total Warmaidens III.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/91"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "knownIssues": [
+        "The author marks it outdated; Zeta0080 Mortal Expansion is the current version."
+      ],
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "status": "superseded"
     },
     {
       "id": "nx-300",
@@ -43350,18 +45541,53 @@
           "uploaded": "2025-12-11",
           "endorsements": 68,
           "downloads": 3000,
-          "adult": true
+          "adult": true,
+          "version": "1.1fix",
+          "updated": "2025-12-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@everqueen_zeta0080.pack",
+          "from": "download",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_high_heels.pack",
+          "from": "download",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_warrior_queen.pack",
+          "from": "download",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_warrior_queen_stockings.pack",
+          "from": "download",
+          "exclusiveGroup": "nx300-ver"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above the author's other packs to replace their Alarielle."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed; four versions, pick one."
+      ]
     },
     {
       "id": "nx-308",
@@ -43390,18 +45616,53 @@
           "uploaded": "2026-01-17",
           "endorsements": 52,
           "downloads": 3100,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2026-01-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Morathi_reskin_origin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_new_reskin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_hef_queen.pack",
+          "from": "download",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_sla_reskin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx308-ver"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above Total Warmaidens and other standalone packs to replace their Morathi."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed; four versions, pick one."
+      ]
     },
     {
       "id": "nx-348",
@@ -43433,18 +45694,54 @@
           "uploaded": "2026-04-23",
           "endorsements": 50,
           "downloads": 2800,
-          "adult": true
+          "adult": true,
+          "version": "9.0",
+          "updated": "2026-09-27"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@zeta mortal's expansion.pack",
+          "from": "download",
+          "exclusiveGroup": "nx348-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta mortal's expansion_chinese.pack",
+          "from": "download",
+          "exclusiveGroup": "nx348-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/348"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "nx-406",
@@ -43473,18 +45770,45 @@
           "uploaded": "2026-09-27",
           "endorsements": 22,
           "downloads": 1100,
-          "adult": true
+          "adult": true,
+          "version": "2.0",
+          "updated": "2026-10-17"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@zeta_neferata_reskin_original.pack",
+          "from": "download",
+          "exclusiveGroup": "nx406-ver",
+          "note": "Original"
+        },
+        {
+          "file": "@zeta_neferata_reskin_uncensored.pack",
+          "from": "download",
+          "exclusiveGroup": "nx406-ver",
+          "note": "Uncensored"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load above the author's other mods."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed; two versions, pick one."
+      ]
     },
     {
       "id": "nx-191",
@@ -43513,18 +45837,66 @@
           "uploaded": "2024-03-15",
           "endorsements": 132,
           "downloads": 5800,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-03-14"
         }
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "@repanse_the_arc.pack",
+          "from": "download",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Repanse the Arc: same as the default in Total Warmaidens"
+        },
+        {
+          "file": "@repanse_paladin.pack",
+          "from": "download",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Paladin: long blonde hair, Empire style"
+        },
+        {
+          "file": "@repanse_classic.pack",
+          "from": "download",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Classic: no headwear, short hair"
+        },
+        {
+          "file": "@repanse_peasant_girl.pack",
+          "from": "download",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Peasant girl"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-22"
+          },
+          "note": "Needs the Warmaidens Resource Pack (8.2 or newer).",
+          "source": {
+            "type": "nexus",
+            "url": "https://www.nexusmods.com/totalwarwarhammer3/mods/191"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "With the author's other mods: at the top, just below @reskin1 and @reskin2."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
     },
     {
       "id": "steam-3746626798",
@@ -43551,7 +45923,7 @@
             "id": "3746626798",
             "title": "zeta0080's Beautiful Slaanesh heroes",
             "updated": "2026-06-20",
-            "subscribers": 5094
+            "subscribers": 5096
           }
         ]
       },
@@ -43719,18 +46091,45 @@
           "uploaded": "2024-09-05",
           "endorsements": 100,
           "downloads": 3900,
-          "adult": true
+          "adult": true,
+          "version": "1.0",
+          "updated": "2024-09-05"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@zeta0080_Morathi.pack",
+          "from": "download",
+          "exclusiveGroup": "nx218-ver",
+          "note": "Dark Queen: the same model as in Total Warmaidens"
+        },
+        {
+          "file": "@PhoenixQueen.pack",
+          "from": "download",
+          "exclusiveGroup": "nx218-ver",
+          "note": "Phoenix Queen"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."
+          "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "loadOrder": {
+        "note": "Load it on top to replace the default model."
+      },
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "installNotes": [
+        "Standalone, no resource pack needed."
+      ]
     },
     {
       "id": "steam-2855365665",
@@ -43751,7 +46150,7 @@
             "title": "Zoat Elder - Generic Lord + Hero for Wood Elves",
             "unlisted": false,
             "updated": "2026-10-01",
-            "subscribers": 8471
+            "subscribers": 8472
           }
         ]
       },
@@ -44032,7 +46431,7 @@
             "id": "3376917062",
             "title": "堕落升魔 (Corrupted Ascension)",
             "updated": "2026-10-23",
-            "subscribers": 18856
+            "subscribers": 18857
           }
         ]
       },

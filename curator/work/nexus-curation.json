@@ -29,7 +29,7 @@
       "reskin",
       "slaanesh",
       "",
-      "Standalone Daemonette reskin by zeta0080, separated from the Slaanesh faction pack.",
+      "Warmaidens faction pack for Slaanesh: every Slaanesh unit, or in the Succubus Legion download only Daemonettes, Keepers, lords and heroes.",
       []
     ],
     "42": [
@@ -1111,5 +1111,2070 @@
     "76": [
       "@Gotrek&Felix.pack"
     ]
+  },
+  "details": {
+    "22": {
+      "version": "13.21",
+      "updated": "2026-10-30",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "packs": [
+        {
+          "file": "@reskin1.pack",
+          "note": "Resource pack, part 1; most mods of the series need both parts active"
+        },
+        {
+          "file": "@reskin2.pack",
+          "note": "Resource pack, part 2"
+        },
+        {
+          "file": "@Total Warmaidens III.pack",
+          "optional": true,
+          "exclusiveGroup": "tw3-edition",
+          "note": "All-in-one total conversion with every faction pack of the series; use it instead of the single faction packs"
+        },
+        {
+          "file": "@Total Warmaidens III (Original Females Edition).pack",
+          "optional": true,
+          "exclusiveGroup": "tw3-edition",
+          "note": "Changes only the game's original female lords and units; meant to work with SFO"
+        },
+        {
+          "file": "_hv_reskin_lod.pack",
+          "optional": true,
+          "note": "LOD fix by Hooveric for the reskinned models; the author highly recommends it"
+        },
+        {
+          "file": "@sexfight_animations.pack",
+          "optional": true,
+          "note": "Endo's Matched Combat 3.0: sex-themed matched animations for most humanoid skeletons; changes battle balance"
+        },
+        {
+          "file": "@No_futa_patch.pack",
+          "optional": true,
+          "note": "Removes the futa models; load it above @Total Warmaidens III.pack"
+        },
+        {
+          "file": "@warmaidens_chinese_translation.pack",
+          "optional": true,
+          "note": "Simplified Chinese unit names"
+        }
+      ],
+      "incompatible": [
+        {
+          "target": {
+            "external": "ext-sfo"
+          },
+          "note": "The total conversion changes the game's unit models like SFO does; the Original Females edition is meant to work with SFO."
+        }
+      ],
+      "knownIssues": [
+        "Conflicts with mods that change the game's unit models (reskins), give heroes new mounts or change unit statistics (for example removing the elite unit limit).",
+        "Set Unit Detail to Ultra in the graphics settings; lower settings can stretch limbs or lose textures.",
+        "Most models missing: the resource pack is not active. With a DLC unlocker, turn off the blood packs."
+      ]
+    },
+    "41": {
+      "version": "12.11",
+      "updated": "2025-12-24",
+      "packs": [
+        {
+          "file": "@Slaanesh Legion.pack",
+          "exclusiveGroup": "nx41-legion",
+          "note": "With futa models"
+        },
+        {
+          "file": "@Slaanesh Legion (no futa).pack",
+          "exclusiveGroup": "nx41-legion",
+          "note": "Without futa models"
+        },
+        {
+          "file": "@Succubus.pack",
+          "exclusiveGroup": "nx41-succubus",
+          "note": "With futa models"
+        },
+        {
+          "file": "@Succubus(no futa).pack",
+          "exclusiveGroup": "nx41-succubus",
+          "note": "Without futa models"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "knownIssues": [
+        "Changes skeletons and animations of Chaos Warriors and Chosen units, which can conflict with other mods."
+      ],
+      "notes": [
+        "Two downloads: Warmaidens of Dark Princess (all Slaanesh units) and Succubus Legion (Daemonettes, Keepers, lords and heroes; no human units). The Slaanesh Legion packs are also part of League of Evil Girls."
+      ]
+    },
+    "42": {
+      "version": "12.5",
+      "updated": "2026-05-14",
+      "packs": [
+        {
+          "file": "@Queen's Maiden.pack",
+          "note": "High Elves"
+        },
+        {
+          "file": "@Darkmaidens.pack",
+          "note": "Dark Elves"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "13": {
+      "version": "13.21",
+      "updated": "2026-10-30",
+      "packs": [
+        {
+          "file": "@Flowers of the Empire.pack",
+          "exclusiveGroup": "nx13-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Flowers of the Empire_chinese.pack",
+          "exclusiveGroup": "nx13-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "30": {
+      "version": "12.6",
+      "updated": "2026-05-28",
+      "packs": [
+        {
+          "file": "@Daughters of the Dragon.pack",
+          "exclusiveGroup": "nx30-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Daughters of the Dragon_chinese.pack",
+          "exclusiveGroup": "nx30-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "40": {
+      "version": "12.5",
+      "updated": "2026-05-14",
+      "packs": [
+        {
+          "file": "@Dancers from the Forest.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "knownIssues": [
+        "Armies led by a non-elf lord show pale skin instead of the usual colour."
+      ]
+    },
+    "28": {
+      "version": "13.0",
+      "updated": "2026-10-01",
+      "packs": [
+        {
+          "file": "@Ancient Warmaidens.pack",
+          "exclusiveGroup": "nx28-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Ancient Warmaidens_chinese.pack",
+          "exclusiveGroup": "nx28-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "45": {
+      "version": "12.74fix",
+      "updated": "2026-09-24",
+      "packs": [
+        {
+          "file": "@Chaos Warmaidens_undivided.pack",
+          "optional": true,
+          "note": "Chaos Undivided and Norsca; the five packs are separate races, pick the ones you want"
+        },
+        {
+          "file": "@Magical Succubus_Tze.pack",
+          "optional": true,
+          "note": "Tzeentch"
+        },
+        {
+          "file": "@Nasty Succubus_Nur.pack",
+          "optional": true,
+          "note": "Nurgle"
+        },
+        {
+          "file": "@Scarlet Succubus_kho.pack",
+          "optional": true,
+          "note": "Khorne"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "notes": [
+        "The download also holds the Slaanesh Legion packs; they are the same files as Succubus Legion of the Dark Princess (listed there)."
+      ]
+    },
+    "37": {
+      "version": "11.93fix",
+      "updated": "2025-10-23",
+      "packs": [
+        {
+          "file": "@Daughters of the Motherland.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "31": {
+      "version": "13.21",
+      "updated": "2026-10-30",
+      "packs": [
+        {
+          "file": "@Vampire Girls.pack",
+          "note": "Vampire Counts"
+        },
+        {
+          "file": "@Pirate Girls.pack",
+          "note": "Vampire Coast"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "29": {
+      "version": "12.7",
+      "updated": "2026-06-12",
+      "packs": [
+        {
+          "file": "@Warmaidens of the Lady.pack",
+          "exclusiveGroup": "nx29-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Warmaidens of the Lady_chinese.pack",
+          "exclusiveGroup": "nx29-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "38": {
+      "version": "12.2fix",
+      "updated": "2026-01-27",
+      "packs": [
+        {
+          "file": "@HighDwarf_maidens.pack",
+          "exclusiveGroup": "nx38-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@HighDwarf_maidens_Chinese.pack",
+          "exclusiveGroup": "nx38-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "53": {
+      "version": "11.72",
+      "updated": "2025-06-12",
+      "packs": [
+        {
+          "file": "@Beastwoman.pack",
+          "exclusiveGroup": "nx53-futa",
+          "note": "Without futa models"
+        },
+        {
+          "file": "@Beastwoman_futa.pack",
+          "exclusiveGroup": "nx53-futa",
+          "note": "With futa models"
+        },
+        {
+          "file": "@matched_combat_community_beastmen.pack",
+          "optional": true,
+          "note": "Endo's Matched Combat for Beastmen (v2.0, 2026-06-27)"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "47": {
+      "version": "12.73fix",
+      "updated": "2026-08-14",
+      "packs": [
+        {
+          "file": "@Ms Greenskins.pack",
+          "exclusiveGroup": "nx47-ver",
+          "note": "With futa models, English"
+        },
+        {
+          "file": "@Ms Greenskins_no_futa.pack",
+          "exclusiveGroup": "nx47-ver",
+          "note": "Without futa models, English"
+        },
+        {
+          "file": "@Ms Greenskins _ch.pack",
+          "exclusiveGroup": "nx47-ver",
+          "note": "With futa models, Simplified Chinese"
+        },
+        {
+          "file": "@Ms Greenskins_no_futa_ch.pack",
+          "exclusiveGroup": "nx47-ver",
+          "note": "Without futa models, Simplified Chinese"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "56": {
+      "version": "13.0",
+      "updated": "2026-10-01",
+      "packs": [
+        {
+          "file": "@Skv_revolution.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "57": {
+      "version": "12.74fix",
+      "updated": "2026-09-24",
+      "packs": [
+        {
+          "file": "@Amazon Warriors of the old one.pack",
+          "exclusiveGroup": "nx57-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@Amazon Warriors of the old one_chinese.pack",
+          "exclusiveGroup": "nx57-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "106": {
+      "version": "12.11",
+      "updated": "2025-12-24",
+      "packs": [
+        {
+          "file": "@Norsca_reskin.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "55": {
+      "version": "11.73",
+      "updated": "2025-06-26",
+      "packs": [
+        {
+          "file": "@Womaneater.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "77": {
+      "version": "11.9",
+      "updated": "2025-08-09",
+      "packs": [
+        {
+          "file": "@Chaosdawi Maidens.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III; not together with its all-in-one pack, which already contains this faction.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "250": {
+      "version": "2.1fix",
+      "updated": "2026-09-30",
+      "packs": [
+        {
+          "file": "@valkryie_legions.pack",
+          "exclusiveGroup": "nx250-ver",
+          "note": "English"
+        },
+        {
+          "file": "@valkryie_legions_chinese.pack",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        },
+        {
+          "file": "@valkryie_legions1.5.pack",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Larger unit sizes (1.5x), English"
+        },
+        {
+          "file": "@valkryie_legions1.5_Chinese.pack",
+          "exclusiveGroup": "nx250-ver",
+          "note": "Larger unit sizes (1.5x), Simplified Chinese"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "61": {
+      "version": "9.0",
+      "updated": "2026-09-27",
+      "packs": [
+        {
+          "file": "@zeta_elf_expansion.pack",
+          "exclusiveGroup": "nx61-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta_elf_expansion_chinese.pack",
+          "exclusiveGroup": "nx61-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "91": {
+      "version": "10.2fix",
+      "updated": "2024-10-01",
+      "packs": [
+        {
+          "file": "@zeta mortal's expansion_nexus.pack",
+          "exclusiveGroup": "nx91-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta mortal's expansion_chinese_nexus.pack",
+          "exclusiveGroup": "nx91-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack from Total Warmaidens III.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "status": "superseded",
+      "supersededBy": "nx-348",
+      "knownIssues": [
+        "The author marks it outdated; Zeta0080 Mortal Expansion is the current version."
+      ]
+    },
+    "348": {
+      "version": "9.0",
+      "updated": "2026-09-27",
+      "packs": [
+        {
+          "file": "@zeta mortal's expansion.pack",
+          "exclusiveGroup": "nx348-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta mortal's expansion_chinese.pack",
+          "exclusiveGroup": "nx348-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "303": {
+      "version": "9.0",
+      "updated": "2026-09-27",
+      "packs": [
+        {
+          "file": "@zeta0080_orc_expansion.pack",
+          "exclusiveGroup": "nx303-lang",
+          "note": "English texts"
+        },
+        {
+          "file": "@zeta0080_orc_expansion_chinese.pack",
+          "exclusiveGroup": "nx303-lang",
+          "note": "Simplified Chinese texts; use instead of the English pack."
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (@reskin1 + @reskin2) from Total Warmaidens III.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "notes": [
+        "The new units use futa models; with the all-in-one pack, the No Futa Patch from the resource pack page removes them."
+      ]
+    },
+    "365": {
+      "version": "1",
+      "updated": "2026-10-22",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "packs": [
+        {
+          "file": "@sexfight_animations.pack",
+          "exclusiveGroup": "nx365-ver",
+          "note": "Matched animations for most humanoid skeletons (v1, 2026-10-22)"
+        },
+        {
+          "file": "@matched_combat_community_beastmen.pack",
+          "exclusiveGroup": "nx365-ver",
+          "note": "Beastmen units only (v2.0); do not combine with the other version"
+        }
+      ],
+      "requiresNote": "The version made for Total Warmaidens; uses the author's beastwomen models.",
+      "requires": [
+        "nx-22"
+      ]
+    },
+    "324": {
+      "version": "1.1",
+      "updated": "2026-03-15",
+      "packs": [
+        {
+          "file": "RadiousWarmaiden patch.pack"
+        }
+      ],
+      "requires": [
+        "nx-22",
+        {
+          "steamId": "2791750313"
+        },
+        {
+          "steamId": "2791750896"
+        },
+        {
+          "steamId": "2791750075"
+        },
+        {
+          "steamId": "2813892035"
+        }
+      ],
+      "requiresNote": "Needs both Total Warmaidens III (all assets, No Futa Patch and LOD fix) and Radious Parts 1-4 from the Workshop.",
+      "loadOrder": "This patch first (highest priority), then the Warmaidens packs, then Radious."
+    },
+    "122": {
+      "version": "2.0",
+      "updated": "2024-12-06",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "requires": [],
+      "packs": [
+        {
+          "file": "@Katarin_classic.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Classic"
+        },
+        {
+          "file": "@Katarin_classic_boots.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Classic, boots"
+        },
+        {
+          "file": "@Alternative Katarin_1.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 1"
+        },
+        {
+          "file": "@Alternative Katarin_1boots.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 1, boots"
+        },
+        {
+          "file": "@Alternative Katarin_2.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 2"
+        },
+        {
+          "file": "@Alternative Katarin_2boots.pack",
+          "exclusiveGroup": "nx122-ver",
+          "note": "Alternative 2, boots"
+        }
+      ],
+      "notes": [
+        "Standalone, no resource pack needed. The author: compatible with Khan-Queen's Sleigh."
+      ]
+    },
+    "138": {
+      "version": "2.1",
+      "updated": "2025-05-29",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@Zeta0080_MiaoYing.pack",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@Zeta0080_MiaoYing _Soboro.pack",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@Zeta0080_MiaoYing_Diao Chan.pack",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_high_heels.pack",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_high_heels_new.pack",
+          "exclusiveGroup": "nx138-ver"
+        },
+        {
+          "file": "@MiaoYing_soboro_heels.pack",
+          "exclusiveGroup": "nx138-ver"
+        }
+      ],
+      "loadOrder": "Load above the author's faction packs to replace their default Miao Ying.",
+      "notes": [
+        "Standalone, no other mod needed; six styles, pick one."
+      ]
+    },
+    "123": {
+      "version": "1.0",
+      "updated": "2023-07-06",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "requires": [],
+      "packs": [
+        {
+          "file": "@Ulrika.pack",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Bare feet"
+        },
+        {
+          "file": "@Ulrika_1.pack",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Bare feet, second style"
+        },
+        {
+          "file": "@Ulrika_a.pack",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Boots"
+        },
+        {
+          "file": "@Ulrika_1a.pack",
+          "exclusiveGroup": "nx123-ver",
+          "note": "Boots, second style"
+        }
+      ],
+      "notes": [
+        "Standalone, no resource pack needed."
+      ]
+    },
+    "218": {
+      "version": "1.0",
+      "updated": "2024-09-05",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@zeta0080_Morathi.pack",
+          "exclusiveGroup": "nx218-ver",
+          "note": "Dark Queen: the same model as in Total Warmaidens"
+        },
+        {
+          "file": "@PhoenixQueen.pack",
+          "exclusiveGroup": "nx218-ver",
+          "note": "Phoenix Queen"
+        }
+      ],
+      "loadOrder": "Load it on top to replace the default model.",
+      "notes": [
+        "Standalone, no resource pack needed."
+      ]
+    },
+    "300": {
+      "version": "1.1fix",
+      "updated": "2025-12-17",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@everqueen_zeta0080.pack",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_high_heels.pack",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_warrior_queen.pack",
+          "exclusiveGroup": "nx300-ver"
+        },
+        {
+          "file": "@everqueen_warrior_queen_stockings.pack",
+          "exclusiveGroup": "nx300-ver"
+        }
+      ],
+      "loadOrder": "Load above the author's other packs to replace their Alarielle.",
+      "notes": [
+        "Standalone, no resource pack needed; four versions, pick one."
+      ]
+    },
+    "308": {
+      "version": "1.0",
+      "updated": "2026-01-17",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@Morathi_reskin_origin.pack",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_new_reskin.pack",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_hef_queen.pack",
+          "exclusiveGroup": "nx308-ver"
+        },
+        {
+          "file": "@Morathi_sla_reskin.pack",
+          "exclusiveGroup": "nx308-ver"
+        }
+      ],
+      "loadOrder": "Load above Total Warmaidens and other standalone packs to replace their Morathi.",
+      "notes": [
+        "Standalone, no resource pack needed; four versions, pick one."
+      ]
+    },
+    "406": {
+      "version": "2.0",
+      "updated": "2026-10-17",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@zeta_neferata_reskin_original.pack",
+          "exclusiveGroup": "nx406-ver",
+          "note": "Original"
+        },
+        {
+          "file": "@zeta_neferata_reskin_uncensored.pack",
+          "exclusiveGroup": "nx406-ver",
+          "note": "Uncensored"
+        }
+      ],
+      "loadOrder": "Load above the author's other mods.",
+      "notes": [
+        "Standalone, no resource pack needed; two versions, pick one."
+      ]
+    },
+    "191": {
+      "version": "1.0",
+      "updated": "2024-03-14",
+      "packs": [
+        {
+          "file": "@repanse_the_arc.pack",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Repanse the Arc: same as the default in Total Warmaidens"
+        },
+        {
+          "file": "@repanse_paladin.pack",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Paladin: long blonde hair, Empire style"
+        },
+        {
+          "file": "@repanse_classic.pack",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Classic: no headwear, short hair"
+        },
+        {
+          "file": "@repanse_peasant_girl.pack",
+          "exclusiveGroup": "nx191-ver",
+          "note": "Peasant girl"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack (8.2 or newer).",
+      "loadOrder": "With the author's other mods: at the top, just below @reskin1 and @reskin2.",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "161": {
+      "version": "2.0",
+      "updated": "2026-09-24",
+      "packs": [
+        {
+          "file": "@repanse_angel.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack.",
+      "loadOrder": "Load above the author's faction pack to replace the default Repanse.",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "76": {
+      "version": "12.0",
+      "updated": "2025-12-06",
+      "packs": [
+        {
+          "file": "@Gotrek&Felix.pack"
+        }
+      ],
+      "requires": [
+        "nx-22"
+      ],
+      "requiresNote": "Needs the Warmaidens Resource Pack; not together with the all-in-one pack.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "104": {
+      "version": "1.0",
+      "updated": "2023-06-09",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@def_hydra_nude.pack"
+        }
+      ],
+      "notes": [
+        "Standalone, no resource pack needed; only the models and animations change, not the unit statistics."
+      ]
+    },
+    "114": {
+      "version": "2.0",
+      "updated": "2023-10-11",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "packs": [
+        {
+          "file": "@Yinyin.pack"
+        }
+      ]
+    },
+    "170": {
+      "version": "5.0",
+      "updated": "2024-06-27",
+      "packs": [
+        {
+          "file": "@seadragon_reskin.pack",
+          "exclusiveGroup": "nx170-ver",
+          "note": "Normal unit sizes"
+        },
+        {
+          "file": "@seadragon_reskin1.5.pack",
+          "exclusiveGroup": "nx170-ver",
+          "note": "Larger unit sizes (1.5x)"
+        }
+      ],
+      "requires": [
+        "steam-2989226363",
+        "nx-22"
+      ],
+      "requiresNote": "Needs Roar of the Jade Sea (Workshop) and the Warmaidens Resource Pack.",
+      "loadOrder": "The author: put the Warmaidens packs at the top of the load order (highest priority).",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ]
+    },
+    "297": {
+      "version": "1.0",
+      "updated": "2025-12-04",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/Warmaidens292"
+        }
+      ],
+      "requires": [],
+      "packs": [
+        {
+          "file": "@katarin_reskins_4th.pack",
+          "exclusiveGroup": "nx297-ver"
+        },
+        {
+          "file": "@katarin_reskins_dark_4th.pack",
+          "exclusiveGroup": "nx297-ver",
+          "note": "Dark"
+        },
+        {
+          "file": "@katarin_reskins_white_4th.pack",
+          "exclusiveGroup": "nx297-ver",
+          "note": "White"
+        }
+      ],
+      "loadOrder": "Load above the author's other mods to replace their Katarin.",
+      "notes": [
+        "Standalone, no resource pack needed; three versions, pick one. The author: compatible with Lazy's Katarin corruption mod."
+      ]
+    },
+    "_note": "Read on each mod page (description and files tab, 2026-11-01): version, last update, packs from the file previews (exclusiveGroup = pick one), requirements, conflicts, load order, known issues, support. Overrides the list-page guesses.",
+    "7": {
+      "version": "1",
+      "updated": "2022-09-01",
+      "packs": [
+        {
+          "file": "WH3_Dark_Elf_Debaucheries.pack"
+        }
+      ],
+      "notes": [
+        "Also changes Hellebron. Alternative Morathi textures without black hands and feet are inside the pack; switching needs RPFM (rename body_color2 to body_color)."
+      ]
+    },
+    "19": {
+      "version": "1.1",
+      "updated": "2023-01-28",
+      "packs": [
+        {
+          "file": "[BUST]Katlida Robes.pack",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Robed"
+        },
+        {
+          "file": "[BUST]Katlida Topless.pack",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Topless"
+        },
+        {
+          "file": "[BUST]Katlida Robes No Tail.pack",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Robed, no tail"
+        },
+        {
+          "file": "[BUST]Katlida Robes No Tail - TitsOut.pack",
+          "exclusiveGroup": "nx19-ver",
+          "note": "Topless, no tail"
+        }
+      ],
+      "notes": [
+        "Four versions, pick one. Made with assets by LIG, LazyIcarus and Asseteditor."
+      ]
+    },
+    "2": {
+      "version": "1.0.5",
+      "updated": "2023-07-05",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "status": "superseded",
+      "packs": [
+        {
+          "file": "pleasurePikesNoGift.pack",
+          "exclusiveGroup": "nx2-ver",
+          "note": "All female"
+        },
+        {
+          "file": "pleasurePikesDouble.pack",
+          "optional": true,
+          "exclusiveGroup": "nx2-x2",
+          "note": "Double unit size (futa version)"
+        },
+        {
+          "file": "pleasurePikesNoGiftDouble.pack",
+          "optional": true,
+          "exclusiveGroup": "nx2-x2",
+          "note": "Double unit size (all-female version)"
+        }
+      ],
+      "knownIssues": [
+        "Replaced by Pikes of Slaanesh Reborn. Its futa version used pleasurePikes.pack, the same file name as the Reborn main pack, so that file is recognised as the Reborn version; use only one of them.",
+        "High polygon count; can lower the frame rate."
+      ],
+      "notes": [
+        "Also available to Morathi."
+      ]
+    },
+    "195": {
+      "version": "1.0.2",
+      "updated": "2026-10-31",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "supersedes": [
+        "nx-2"
+      ],
+      "packs": [
+        {
+          "file": "pleasurePikes.pack",
+          "note": "Main file; the download comes in three versions with this same name (normal, almost SFW, with futa models), pick one"
+        },
+        {
+          "file": "pleasurePikesX2.pack",
+          "optional": true,
+          "note": "Double unit size with lowered stats; needs a main file and must be above it"
+        }
+      ],
+      "loadOrder": "The X2 add-on must be above the main pack."
+    },
+    "18": {
+      "version": "1.1",
+      "updated": "2022-12-11",
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Peasant.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "14": {
+      "version": "1.3",
+      "updated": "2022-12-11",
+      "packs": [
+        {
+          "file": "SexierGrandCathay_JadeWarriors.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "17": {
+      "version": "1.1",
+      "updated": "2022-09-18",
+      "packs": [
+        {
+          "file": "SexierGrandCathay_CelestialConcubines_ENG.pack",
+          "exclusiveGroup": "nx17-lang",
+          "note": "English"
+        },
+        {
+          "file": "SexierGrandCathay_CelestialConcubines_FR.pack",
+          "exclusiveGroup": "nx17-lang",
+          "note": "French texts; use instead of the English pack"
+        }
+      ]
+    },
+    "49": {
+      "version": "1.2",
+      "updated": "2022-12-29",
+      "packs": [
+        {
+          "file": "SexierGrandCathay_CelestialGuards.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "50": {
+      "version": "1.0",
+      "updated": "2022-12-12",
+      "packs": [
+        {
+          "file": "SexierGrandCathay - Nan Gau Warriors.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "51": {
+      "version": "1.0",
+      "updated": "2022-12-13",
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Terracotta.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "62": {
+      "version": "1.0",
+      "updated": "2023-02-05",
+      "supersedes": [
+        "nx-10"
+      ],
+      "packs": [
+        {
+          "file": "SexierGrandCathay_Shugengan.pack"
+        }
+      ],
+      "knownIssues": [
+        "Only a reskin; may conflict with other mods that change the same unit."
+      ]
+    },
+    "10": {
+      "version": "1.2",
+      "updated": "2022-09-11",
+      "status": "superseded",
+      "packs": [
+        {
+          "file": "SexiestGrandCathay_Shugengan.pack"
+        }
+      ],
+      "knownIssues": [
+        "The author marks it obsolete; the newer Sexiest Grand Cathay - Shugengan replaces it."
+      ]
+    },
+    "5": {
+      "version": "1.0.1",
+      "updated": "2022-08-26",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "lightWarDancers.pack"
+        }
+      ],
+      "knownIssues": [
+        "Dismemberment and blood do not work with this unit."
+      ],
+      "notes": [
+        "Body from Maidens of Norsca by Less Is Good (LIG)."
+      ]
+    },
+    "4": {
+      "version": "1.0.1",
+      "updated": "2022-08-26",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "lightBladeSinger.pack"
+        }
+      ],
+      "knownIssues": [
+        "Dismemberment and blood do not work with this unit."
+      ],
+      "notes": [
+        "Made to go with Stoney2's Liberated Elven Females."
+      ]
+    },
+    "16": {
+      "version": "1.0.1",
+      "updated": "2022-09-24",
+      "packs": [
+        {
+          "file": "$free_the_morathi.pack"
+        }
+      ],
+      "notes": [
+        "Also changes the Harpies of the Beastmen and the units of renown Singing Doom and Harpy Crows."
+      ]
+    },
+    "35": {
+      "version": "1",
+      "updated": "2022-10-21",
+      "packs": [
+        {
+          "file": "uncensored.Khalida.pack",
+          "note": "Base skin by LessIsGood"
+        },
+        {
+          "file": "[LIG]Khalida_braless.pack",
+          "optional": true,
+          "note": "Braless version; load it above the base pack"
+        }
+      ],
+      "notes": [
+        "Re-upload of LessIsGood's Khalida skin after it was removed from Steam."
+      ]
+    },
+    "59": {
+      "version": "1.0",
+      "updated": "2023-01-19",
+      "packs": [
+        {
+          "file": "miaoyinreskin1.pack"
+        }
+      ],
+      "knownIssues": [
+        "Unsubscribe other Miao Ying reskins and remove them from the Workshop folder; the Steam copy uses the same file name. If it still does not show, the author suggests renaming the files to 0miaoyinreskin1.pack / .png."
+      ]
+    },
+    "185": {
+      "version": "1.0.3",
+      "updated": "2024-11-22",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "Amazon Warrior.pack"
+        }
+      ],
+      "knownIssues": [
+        "Some clipping; high polygon models, so the author advises against armies made only of this unit."
+      ],
+      "notes": [
+        "Recruited from level 3 Saurus barracks by all Lizardmen factions."
+      ]
+    },
+    "93": {
+      "version": "1.2",
+      "updated": "2023-05-20",
+      "packs": [
+        {
+          "file": "Beautiful Fay Enchantress.pack"
+        }
+      ],
+      "knownIssues": [
+        "Not compatible with other mods that change the Fay Enchantress' look."
+      ],
+      "notes": [
+        "Safe to add or remove mid-campaign; changes her for the player and the AI. Also on the Steam Workshop."
+      ]
+    },
+    "117": {
+      "version": "1.2",
+      "updated": "2023-07-31",
+      "packs": [
+        {
+          "file": "@anime_loading_screens.pack",
+          "note": "Complete version, all factions"
+        },
+        {
+          "file": "@anime_loading_screens_cathay.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_daemons.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_wood_elves.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_ogre_kingdoms.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_chaos_dwarfs.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_norsca.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_lizardmen.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_high_elves.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_greenskins.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_empire.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_bretonnia.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_skaven.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_khorne.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_chaos.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_beastmen.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_tzeentch.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_vampire_counts.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_tomb_kings.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_dwarfs.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_vampire_coast.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_dark_elves.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_kislev.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        },
+        {
+          "file": "@anime_loading_screens_slaanesh.pack",
+          "optional": true,
+          "note": "One faction only; for use without the complete version"
+        }
+      ]
+    },
+    "179": {
+      "version": "1.0.1",
+      "updated": "2024-08-26",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "fem_berserker.pack"
+        }
+      ],
+      "requiresDlc": [
+        "Shadows of Change"
+      ],
+      "notes": [
+        "Two variants: dual axes, and fewer great axes with splash attacks. Recruiting them in a campaign needs Mother Ostankya's DLC."
+      ]
+    },
+    "15": {
+      "version": "1.0",
+      "updated": "2022-09-12",
+      "packs": [
+        {
+          "file": "Westluo_BR_sla_ValkiaTheBeautiful.pack"
+        }
+      ]
+    },
+    "393": {
+      "version": "0.4.5",
+      "updated": "2026-10-25",
+      "packs": [],
+      "notes": [
+        "Not a .pack: extract dinput8.dll and wh3_dlss.ini next to Warhammer3.exe; the app cannot install it.",
+        "The game sets the resolution scale when DLSS runs; set it back to 100% if needed.",
+        "Optional depth buffer add-on, only for ReShade depth effects."
+      ]
+    },
+    "43": {
+      "version": "1.0",
+      "updated": "2022-10-29",
+      "packs": [
+        {
+          "file": "0repanse.pack"
+        }
+      ],
+      "notes": [
+        "Mesh from Black Desert Online and the RRC Lydia mod; formerly on Steam."
+      ]
+    },
+    "214": {
+      "version": "1.0",
+      "updated": "2024-08-22",
+      "packs": [
+        {
+          "file": "the_fay_dress.pack",
+          "exclusiveGroup": "nx214-ver",
+          "note": "With a transparent dress"
+        },
+        {
+          "file": "the_fay.pack",
+          "exclusiveGroup": "nx214-ver",
+          "note": "Without the dress"
+        }
+      ]
+    },
+    "154": {
+      "version": "2.0",
+      "updated": "2023-12-12",
+      "packs": [
+        {
+          "file": "Nkarinaked.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Reworked model without armour"
+        },
+        {
+          "file": "Kariafuta.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Futa version"
+        },
+        {
+          "file": "Kariafuta_armor.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Futa version with armour"
+        },
+        {
+          "file": "Karia_1.0.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version (1.0)"
+        },
+        {
+          "file": "Kariabeta.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version, beta"
+        },
+        {
+          "file": "Kariastat.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "First version, other file"
+        }
+      ],
+      "openQuestions": [
+        "The armoured and the 'ornament' versions show no file list on Nexus; their pack names are unknown."
+      ],
+      "notes": [
+        "Several independent versions; pick one."
+      ]
+    },
+    "293": {
+      "version": "1.1",
+      "updated": "2025-12-17",
+      "packs": [
+        {
+          "file": "@endo_idles.pack"
+        }
+      ],
+      "recommends": [
+        {
+          "target": "nx-302",
+          "note": "The animations were made for Endo's Empire Reskin and may not line up as well without it."
+        }
+      ],
+      "notes": [
+        "Idle animations for Empire infantry."
+      ]
+    },
+    "100": {
+      "version": "3.1",
+      "updated": "2023-08-08",
+      "packs": [
+        {
+          "file": "@Spcat_cho_sisters_iiii.pack",
+          "note": "Tables; enable both packs"
+        },
+        {
+          "file": "@Spc_variants.pack",
+          "note": "Models; enable both packs"
+        },
+        {
+          "file": "spc_text_eng.pack",
+          "optional": true,
+          "note": "English texts"
+        }
+      ]
+    },
+    "186": {
+      "version": "2.0",
+      "updated": "2024-03-17",
+      "packs": [
+        {
+          "file": "1_Morathi_fresh_skin.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_amber_skin.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_porcelain_skin.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_slanesh_skin.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_fresh_skin_wet.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_amber_skin_wet.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "1_Morathi_slanesh_skin_wet.pack",
+          "exclusiveGroup": "nx186-skin",
+          "note": "Skin"
+        },
+        {
+          "file": "2_Morathi_hair_white.pack",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_red.pack",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_black.pack",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "2_Morathi_hair_blood.pack",
+          "exclusiveGroup": "nx186-hair",
+          "note": "Hair"
+        },
+        {
+          "file": "morathi_armorv1.pack",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "morathi_armorv2.pack",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "morathi_fullarmor.pack",
+          "optional": true,
+          "exclusiveGroup": "nx186-armor",
+          "note": "Armour"
+        },
+        {
+          "file": "4_Morathi_ground_weapon.pack",
+          "optional": true,
+          "note": "Weapon on foot"
+        },
+        {
+          "file": "5_Morathi_mounted_weapon.pack",
+          "optional": true,
+          "note": "Weapon when mounted"
+        },
+        {
+          "file": "morathi_staff.pack",
+          "optional": true
+        }
+      ],
+      "loadOrder": "Order the parts by the number in front of each file: 1 skin, 2 hair, 3 armour, 4 weapon on foot, 5 mounted weapon.",
+      "notes": [
+        "Built from parts: one skin, one hair, then armour and weapons as wanted. Each skin has a wet variant. Remove the files of older versions."
+      ]
+    },
+    "156": {
+      "version": "1.0",
+      "updated": "2023-10-27",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [
+        {
+          "file": "!sisters_of_avelorn WGX.pack"
+        }
+      ]
+    },
+    "153": {
+      "version": "1.0",
+      "updated": "2023-10-18",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [
+        {
+          "file": "!Silverin_Guard WGX.pack"
+        }
+      ]
+    },
+    "160": {
+      "version": "1.0",
+      "updated": "2023-11-07",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [
+        {
+          "file": "!lothern_sea_guard WGX.pack"
+        }
+      ]
+    },
+    "163": {
+      "version": "1.0",
+      "updated": "2023-11-14",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://www.patreon.com/warhammer3mods"
+        }
+      ],
+      "packs": [
+        {
+          "file": "!ASwordmaster.pack"
+        }
+      ]
+    },
+    "129": {
+      "version": "1.0.1",
+      "updated": "2023-07-28",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "Asrai Unit Pack Submod.pack"
+        }
+      ],
+      "requires": [
+        {
+          "steamId": "2985506863"
+        }
+      ],
+      "requiresNote": "Reskin of the Oak Guard unit from Cipher's Asrai Unit Pack (Wood Elves) on the Workshop.",
+      "loadOrder": "Above Asrai Unit Pack."
+    },
+    "302": {
+      "version": "1.1.5",
+      "updated": "2026-02-04",
+      "packs": [
+        {
+          "file": "@endo_empire_loreful.pack"
+        },
+        {
+          "file": "@endo_empire_mixed.pack",
+          "optional": true,
+          "note": "Mixes vanilla male units back in for variety"
+        }
+      ],
+      "notes": [
+        "All Empire units (not heroes) plus Arch Lector and Warrior Priests, with new unit cards; mostly lore-friendly looks."
+      ]
+    },
+    "212": {
+      "version": "1.0.2",
+      "updated": "2024-08-26",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "wef_furies.pack"
+        }
+      ],
+      "knownIssues": [
+        "Lots of clipping.",
+        "Removes some visual effects from Malus Darkblade's animation, which this unit shares."
+      ]
+    },
+    "107": {
+      "version": "1.0",
+      "updated": "2023-06-21",
+      "packs": [
+        {
+          "file": "@spc_vilitch.pack"
+        }
+      ]
+    },
+    "36": {
+      "version": "1",
+      "updated": "2022-10-12",
+      "packs": [
+        {
+          "file": "miao_ying.pack"
+        }
+      ]
+    },
+    "183": {
+      "version": "1.0",
+      "updated": "2024-02-13",
+      "packs": [
+        {
+          "file": "karla_v1.pack",
+          "exclusiveGroup": "nx183-ver",
+          "note": "Without cape"
+        },
+        {
+          "file": "karla_v1_cape.pack",
+          "exclusiveGroup": "nx183-ver",
+          "note": "With cape"
+        }
+      ],
+      "knownIssues": [
+        "Visual glitches on the hammer at close zoom (normal map)."
+      ]
+    },
+    "299": {
+      "version": "1.0",
+      "updated": "2025-12-09",
+      "support": [
+        {
+          "platform": "Buy Me a Coffee",
+          "url": "https://buymeacoffee.com/taraanis"
+        }
+      ],
+      "packs": [
+        {
+          "file": "freeDechala.pack"
+        }
+      ]
+    },
+    "240": {
+      "version": "9.0.0",
+      "updated": "2026-09-25",
+      "packs": [
+        {
+          "file": "chin_dismember_ultimate.pack",
+          "note": "All-in-one, all races"
+        },
+        {
+          "file": "@chin_dismember_RAD_patch.pack",
+          "optional": true,
+          "note": "Patch for Radious (8.1.0)"
+        },
+        {
+          "file": "@chin_dismember_SFO_patch.pack",
+          "optional": true,
+          "note": "Patch for SFO (8.1.0)"
+        }
+      ],
+      "knownIssues": [
+        "Changes the models of affected units (limb stumps), so it conflicts with reskins of the same units unless a patch exists."
+      ]
+    }
   }
 }

@@ -132,7 +132,7 @@ export interface Mod {
       externalDownload?: boolean
     };
     /** The mod's Nexus Mods page (read by hand; numbers as of that reading). */
-    nexus?: { modId: string; url: string; uploaded?: string; endorsements?: number; downloads?: number; adult?: boolean };
+    nexus?: { modId: string; url: string; uploaded?: string; endorsements?: number; downloads?: number; adult?: boolean; version?: string; updated?: string };
     /** Workshop items that belong to this mod. Many are unlisted and only linked from LL. */
     steam?: SteamItem[];
     /** Files that are only distributed on LL / Discord as downloads. */

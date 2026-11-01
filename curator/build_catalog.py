@@ -319,6 +319,38 @@ def main():
         except ValueError:
             return None
 
+    def apply_nexus_details(m: dict, det: dict, source: dict):
+        """What the mod page itself says (work/nexus-curation.json "details") replaces the list-page guesses."""
+        page = {"type": "nexus", "url": source["url"]}
+        target = lambda t: t if isinstance(t, dict) else {"mod": t}
+        source.update({k: det[k] for k in ("version", "updated") if det.get(k)})
+        if det.get("packs"):
+            m["packs"] = [{"file": p["file"], "from": "download", **{k: p[k] for k in ("optional", "exclusiveGroup", "note") if k in p}}
+                          for p in det["packs"]]
+        if "requires" in det:
+            m["relations"] = [r for r in m["relations"] if r["kind"] != "requires"]
+            m["relations"] += [{"kind": "requires", "target": target(t), "note": det.get("requiresNote") or "Stated on the Nexus page.", "source": page}
+                               for t in det["requires"]]
+        m["relations"] += [{"kind": "incompatible", "target": target(c["target"]), "note": c["note"], "source": page}
+                           for c in det.get("incompatible", [])]
+        m["relations"] += [{"kind": "supersedes", "target": target(t), "note": "The author's newer version.", "source": page}
+                           for t in det.get("supersedes", [])]
+        m["relations"] += [{"kind": "recommends", "target": target(r["target"]), "note": r["note"], "source": page}
+                           for r in det.get("recommends", [])]
+        if det.get("requiresDlc"):
+            m["requiresDlc"] = det["requiresDlc"]
+        if det.get("loadOrder"):
+            m["loadOrder"] = {"note": det["loadOrder"]}
+        for k in ("knownIssues", "support"):
+            if det.get(k):
+                m[k] = det[k]
+        if det.get("notes"):
+            m["installNotes"] = det["notes"]
+        if det.get("status"):
+            m["status"] = det["status"]
+        m["curation"] = {"lastChecked": "2026-11-01", "confidence": "medium",
+                         "openQuestions": det.get("openQuestions", []) + ["Read on the Nexus mod page; not checked in game."]}
+
     for f in sorted(glob.glob(str(CURATOR / "raw" / "nexus" / "list-*.txt"))):
         for line in open(f, encoding="utf-8"):
             p = [x.strip() for x in line.split(" | ")]
@@ -353,6 +385,8 @@ def main():
                 "curation": {"lastChecked": "2026-11-01", "confidence": "low",
                              "openQuestions": ["From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."]},
             })
+            if (det := nexus_cur.get("details", {}).get(nid)):
+                apply_nexus_details(mods[mid], det, source)
             if not mods[mid]["playAs"]:
                 del mods[mid]["playAs"]
             # Characters reskinned here are not playable characters of a campaign: playAs is for campaigns.

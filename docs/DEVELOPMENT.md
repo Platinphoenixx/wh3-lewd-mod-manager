@@ -66,7 +66,9 @@ community contributions. App UI and catalog texts are English.
     the app posts from the main process (`relay:report`, `relay:contribution`, `DEFAULTS.relayUrl`, random
     install id in userData/install-id.json).
   - Nexus Mods: entries read by hand from nexusmods.com (`curator/raw/nexus/list-*.txt`, curated with neutral texts
-    in `curator/work/nexus-curation.json`, mirrors of catalog mods only get `sources.nexus`). No automatic Nexus
+    in `curator/work/nexus-curation.json`, mirrors of catalog mods only get `sources.nexus`). Its `details` hold what a
+    mod page itself says (version, packs from the file previews with pick-one groups, requirements, conflicts, load
+    order, known issues, support) and replace the list-page guesses. No automatic Nexus
     crawl: its numbers stay as read. The app downloads Nexus files in its own window (`persist:nexus`, like
     LoversLab), with the player's browser as fallback.
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
