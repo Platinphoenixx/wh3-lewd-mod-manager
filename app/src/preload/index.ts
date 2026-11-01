@@ -1,4 +1,4 @@
-import { contextBridge, ipcRenderer } from 'electron'
+import { contextBridge, ipcRenderer, webUtils } from 'electron'
 import type { Api } from '@shared/api'
 
 const api: Api = {
@@ -21,6 +21,10 @@ const api: Api = {
   installFromFile: (modId) => ipcRenderer.invoke('install:file', modId),
   installFromLoversLab: (url, modId) => ipcRenderer.invoke('install:loverslab', url, modId),
   backupPacks: (paths) => ipcRenderer.invoke('install:backup', paths),
+  packFacts: (paths) => ipcRenderer.invoke('packs:facts', paths),
+  installPaths: (paths) => ipcRenderer.invoke('install:paths', paths),
+  pathForFile: (file) => webUtils.getPathForFile(file),
+  workshopDetails: (ids) => ipcRenderer.invoke('steam:details', ids),
   onSteamProgress: (cb) => {
     const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
     ipcRenderer.on('steam:progress', listener)

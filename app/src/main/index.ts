@@ -1,14 +1,16 @@
+import { existsSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { app, BrowserWindow, dialog, ipcMain, shell } from 'electron'
-import { DEFAULTS, type Settings } from '@shared/api'
+import { pathToFileURL } from 'node:url'
+import { app, BrowserWindow, dialog, ipcMain, net, protocol, shell } from 'electron'
+import { DEFAULTS, type GameScan, type Settings } from '@shared/api'
 import type { Contribution, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
 import { loadCatalog } from './catalog'
 import { scanGame } from './game'
-import { packConflicts } from './pack'
+import { packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
-import { subscribeWorkshop } from './steam'
-import { backupPacks, downloadFromLoversLab, installFile, type InstalledRecord } from './installer'
+import { subscribeWorkshop, workshopDetails } from './steam'
+import { backupPacks, downloadFromLoversLab, installFile, installFiles, type InstalledRecord } from './installer'
 import {
   addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings
 } from './store'
@@ -41,8 +43,9 @@ ipcMain.handle('rules:save', (_e, r: UserRule[]) => saveRules(r))
 ipcMain.handle('contributions:list', () => listContributions())
 ipcMain.handle('contributions:add', (_e, c: Contribution) => addContribution(c))
 // Every scan knows which data packs this app installed and for which mod (installed.json).
+let lastScan: GameScan | null = null
 const currentScan = async () =>
-  scanGame((await getSettings()).gamePath, await readJson<InstalledRecord[]>('installed.json', []))
+  (lastScan = await scanGame((await getSettings()).gamePath, await readJson<InstalledRecord[]>('installed.json', [])))
 ipcMain.handle('install:file', async (e, modId?: string) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
@@ -59,6 +62,11 @@ ipcMain.handle('install:loverslab', async (e, url: string, modId?: string) => {
   if (!/^https:\/\/www\.loverslab\.com\/files\/file\//.test(url)) return { ok: false, message: 'Not a LoversLab file page.', packs: [] }
   return downloadFromLoversLab(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender))
 })
+ipcMain.handle('install:paths', async (_e, paths: string[]) => {
+  const scan = await currentScan()
+  if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
+  return installFiles(paths.filter((p) => typeof p === 'string'), scan.dataPath)
+})
 ipcMain.handle('install:backup', async (_e, paths: string[]) => {
   const scan = await currentScan()
   const dataPacks = new Set(scan.packs.filter((p) => p.source === 'data').map((p) => p.path))
@@ -71,6 +79,11 @@ ipcMain.handle('packs:conflicts', async (_e, paths: string[]) => {
   const known = new Set((await currentScan()).packs.map((p) => p.path))
   return packConflicts(paths.filter((p) => known.has(p)))
 })
+ipcMain.handle('packs:facts', async (_e, paths: string[]) => {
+  const known = new Set((await currentScan()).packs.map((p) => p.path))
+  return packFacts(paths.filter((p) => known.has(p)))
+})
+ipcMain.handle('steam:details', (_e, ids: string[]) => workshopDetails(ids.filter((x) => /^\d{6,12}$/.test(x))))
 ipcMain.handle('game:scan', () => currentScan())
 ipcMain.handle('shell:openExternal', (_e, url: string) => {
   if (/^https?:\/\//.test(url)) return shell.openExternal(url)
@@ -85,7 +98,24 @@ ipcMain.handle('dialog:pickFolder', async () => {
   return r.canceled ? null : r.filePaths[0]
 })
 
+// wh3lmm://workshop/<id> serves the preview image Steam puts next to a Workshop item's pack.
+protocol.registerSchemesAsPrivileged([{ scheme: 'wh3lmm', privileges: { standard: true, secure: true } }])
+
+async function workshopPreview(id: string): Promise<Response> {
+  if (!/^\d{6,12}$/.test(id)) return new Response(null, { status: 404 })
+  for (const dir of (lastScan ?? (await currentScan())).workshopPaths) {
+    const item = join(dir, id)
+    const png = existsSync(item) ? readdirSync(item).find((f) => f.toLowerCase().endsWith('.png')) : undefined
+    if (png) return net.fetch(pathToFileURL(join(item, png)).toString())
+  }
+  return new Response(null, { status: 404 })
+}
+
 app.whenReady().then(() => {
+  protocol.handle('wh3lmm', (req) => {
+    const u = new URL(req.url)
+    return u.host === 'workshop' ? workshopPreview(u.pathname.slice(1)) : new Response(null, { status: 404 })
+  })
   createWindow()
   app.on('activate', () => BrowserWindow.getAllWindows().length === 0 && createWindow())
 })

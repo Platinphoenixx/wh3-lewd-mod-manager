@@ -183,3 +183,15 @@ button.play { margin: 0 0 0 auto; } button.play + .danger-btn { margin-left: 0; 
 .install-group li { margin: 4px 0; }
 .install-group button { font-size: 12px; padding: 3px 8px; }
 .install-log { color: var(--muted); border-top: 1px solid #2f2a3d; padding-top: 6px; }
+
+/* Own mods */
+.badge.own { background: #2a2350; color: #b9a8ff; }
+.ok-text { color: var(--ok); }
+.own-add { margin-bottom: 12px; }
+.own-add-row { display: flex; gap: 8px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+.own-add-row input { flex: 1; min-width: 240px; }
+.row-actions { white-space: nowrap; }
+.row-actions .link { margin-right: 6px; }
+.drop-overlay { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; font-size: 22px; background: rgba(21, 19, 26, 0.85); border: 3px dashed var(--accent); pointer-events: none; }
+.toast { position: fixed; right: 20px; bottom: 20px; z-index: 40; max-width: 520px; padding: 10px 14px; border-radius: var(--radius); background: var(--panel-2); border-left: 3px solid var(--accent); cursor: pointer; }
+.entries td p { margin: 2px 0; }

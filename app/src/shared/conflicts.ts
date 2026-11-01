@@ -34,7 +34,7 @@ export interface ConflictReport {
 }
 
 // Bookkeeping files every RPFM-made pack carries; they say nothing about conflicts.
-const IGNORED = /\.rpfm_reserved$|^settings\.|^notes\./
+export const IGNORED = /\.rpfm_reserved$|^settings\.|^notes\./
 
 export function kindOf(path: string): string {
   if (path.startsWith('db/')) return 'db'
@@ -48,7 +48,7 @@ export function kindOf(path: string): string {
 }
 
 /** "db/units_tables/my_mod" → "units_tables". */
-function tableOf(path: string): string | null {
+export function tableOf(path: string): string | null {
   const m = /^db\/([^/]+)\//.exec(path)
   return m ? m[1] : null
 }

@@ -1,5 +1,6 @@
 import type { Catalog, Mod, ModTarget, Preset, Relation } from '@catalog/schema'
 import { parseTargetKey, targetKey, type CatalogIndex } from './match'
+import { isOwnKey } from './own'
 
 /** A user's profile: a community preset as base, plus switched-on extras and switched-off base entries. */
 export interface Profile {
@@ -10,6 +11,8 @@ export interface Profile {
   extras: string[]
   /** targetKeys of base entries the user switched off. */
   removed: string[]
+  /** Positions the user chose for own mods: own key → key of the entry it sits above (null = bottom). */
+  pins?: Record<string, string | null>
   createdAt: string
   updatedAt: string
 }
@@ -206,7 +209,8 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
   })
 
   const have = new Set(entries.map((e) => e.key))
-  const extras = profile.extras.filter((k) => !have.has(k))
+  // The player's own mods are placed later from their pack contents (placeOwnMods).
+  const extras = profile.extras.filter((k) => !have.has(k) && !isOwnKey(k))
   const deps = missingDependencies(index, extras, new Set([...have, ...extras]))
   const toPlace: ResolvedEntry[] = [
     ...extras.map((k) => ({ key: k, name: nameOf(catalog, index, k), origin: 'extra' as const })),

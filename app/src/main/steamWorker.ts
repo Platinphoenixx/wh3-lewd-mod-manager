@@ -5,6 +5,7 @@
  *
  * Messages: in  { ids: string[] }
  *           out { type: 'progress', id, status, current?, total? } … { type: 'done', results } | { type: 'error', message }
+ *           in  { details: string[] } → out { type: 'details', items: { id, title, updated, preview? }[] }
  */
 import * as steamworks from 'steamworks.js'
 
@@ -56,10 +57,20 @@ async function run(ids: string[]): Promise<Result[]> {
   return results
 }
 
+/** Title and last update of Workshop items, as the Steam client reports them (no download). */
+async function details(ids: string[]) {
+  const client = steamworks.init(APP_ID)
+  const { items } = await client.workshop.getItems(ids.map((id) => BigInt(id)))
+  return items
+    .filter((i) => !!i)
+    .map((i) => ({ id: String(i!.publishedFileId), title: i!.title, updated: i!.timeUpdated, preview: i!.previewUrl }))
+}
+
 process.parentPort.once('message', async (e) => {
-  const ids: string[] = (e.data?.ids ?? []).filter((x: unknown) => typeof x === 'string' && /^\d{6,12}$/.test(x))
+  const valid = (list: unknown) => ((list ?? []) as unknown[]).filter((x): x is string => typeof x === 'string' && /^\d{6,12}$/.test(x))
   try {
-    post({ type: 'done', results: await run(ids) })
+    if (e.data?.details) post({ type: 'details', items: await details(valid(e.data.details)) })
+    else post({ type: 'done', results: await run(valid(e.data?.ids)) })
   } catch (err) {
     // Typical causes: Steam not running, or the account does not own the game.
     post({ type: 'error', message: (err as Error).message })

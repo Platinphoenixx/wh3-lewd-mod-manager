@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
 import { DEFAULTS, type GameScan, type Settings } from '@shared/api'
 import { withUserRules, type UserRule } from '@shared/community'
@@ -11,6 +11,7 @@ import { SettingsView } from './SettingsView'
 import { CommunityView } from './CommunityView'
 import { ModDetail } from './ModDetail'
 import { ContributeDialog, type ContributeRequest } from './ContributeDialog'
+import { announceInstalled } from './OwnMods'
 
 const TABS = ['profiles', 'catalog', 'install', 'community', 'settings'] as const
 type Tab = (typeof TABS)[number]
@@ -52,17 +53,53 @@ export function App() {
   const effective = useMemo(() => (catalog ? withUserRules(catalog, rules) : null), [catalog, rules])
   const index = useMemo(() => (effective ? buildIndex(effective) : null), [effective])
 
+  // Names for Workshop items the catalog does not know, asked once per item from the Steam client.
+  const [workshopDetails, setWorkshopDetails] = useState<AppData['workshopDetails']>({})
+  useEffect(() => {
+    if (!scan || !index) return
+    const ids = [...new Set(scan.packs.filter((p) => p.steamId && !index.bySteamId.has(p.steamId)).map((p) => p.steamId!))]
+    if (ids.length) window.api.workshopDetails(ids).then(setWorkshopDetails, () => {})
+  }, [scan, index])
+
+  // Files dropped anywhere are installed; an open profile switches them on (see OwnMods).
+  const [dragging, setDragging] = useState(false)
+  const [dropMessage, setDropMessage] = useState<string | null>(null)
+  const onDrop = async (e: DragEvent) => {
+    e.preventDefault()
+    setDragging(false)
+    const paths = [...e.dataTransfer.files].map((f) => window.api.pathForFile(f)).filter(Boolean)
+    if (!paths.length) return
+    setDropMessage('Installing…')
+    const r = await window.api.installPaths(paths)
+    setDropMessage(r.message)
+    if (r.ok) {
+      rescan()
+      announceInstalled({ packs: r.packs })
+    }
+  }
+
   if (error) return <div className="fatal">Could not start: {error}</div>
   if (!effective || !index) return <div className="loading">Loading catalog…</div>
 
   const data: AppData = {
     catalog: effective, index, scan, rescan, openMod: setOpenModId, blurImages,
-    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo
+    rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, workshopDetails
   }
 
   return (
     <DataContext.Provider value={data}>
-      <div className={`app ${blurImages ? 'blur-images' : ''}`}>
+      <div
+        className={`app ${blurImages ? 'blur-images' : ''}`}
+        onDragOver={(e) => {
+          if (![...e.dataTransfer.types].includes('Files')) return
+          e.preventDefault()
+          setDragging(true)
+        }}
+        onDragLeave={(e) => e.currentTarget === e.target && setDragging(false)}
+        onDrop={onDrop}
+      >
+        {dragging && <div className="drop-overlay" onDragLeave={() => setDragging(false)}>Drop .pack, .7z, .zip or .rar files to install them</div>}
+        {dropMessage && <div className="toast" onClick={() => setDropMessage(null)}>{dropMessage} <span className="muted">(click to close)</span></div>}
         <header className="topbar">
           <h1>WH3 Lewd Mod Manager</h1>
           <nav>

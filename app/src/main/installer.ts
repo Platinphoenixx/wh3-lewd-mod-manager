@@ -81,6 +81,17 @@ export async function installFile(file: string, dataPath: string, modId?: string
   }
 }
 
+/** Installs several files at once (files dropped onto the window). */
+export async function installFiles(files: string[], dataPath: string): Promise<InstallResult> {
+  const results = []
+  for (const f of files) results.push(await installFile(f, dataPath))
+  return {
+    ok: results.some((r) => r.ok),
+    message: results.map((r) => r.message).filter(Boolean).join(' · '),
+    packs: results.flatMap((r) => r.packs)
+  }
+}
+
 /** Moves data-folder packs into a dated backup folder (never deletes). */
 export async function backupPacks(paths: string[], dataPath: string): Promise<{ moved: string[]; folder: string }> {
   const folder = join(app.getPath('userData'), 'backup', new Date().toISOString().replace(/[:.]/g, '-'))

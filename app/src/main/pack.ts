@@ -1,6 +1,7 @@
 import { open, stat } from 'node:fs/promises'
 import { basename } from 'node:path'
 import { analyzeConflicts, type ConflictReport } from '@shared/conflicts'
+import { collectFacts, type FactsReport } from '@shared/own'
 
 /**
  * Reader for the index of Total War .pack files (PFH5/PFH6, as used by Warhammer III).
@@ -121,6 +122,23 @@ export async function packConflicts(paths: string[]): Promise<ConflictReport & {
     }
   }
   return { ...analyzeConflicts(packs), unreadable }
+}
+
+/** Dependencies, file counts, tables and shared files of the given packs (for placing own mods). */
+export async function packFacts(paths: string[]): Promise<FactsReport> {
+  const packs: Parameters<typeof collectFacts>[0] = []
+  const unreadable: string[] = []
+  for (const p of paths) {
+    try {
+      const index = await cachedPackIndex(p)
+      packs.push({ path: p, files: index.files, dependencies: index.dependencies })
+    } catch {
+      unreadable.push(p)
+    }
+  }
+  const report = collectFacts(packs)
+  for (const p of unreadable) report.packs[p] = null
+  return report
 }
 
 export async function readPackIndex(path: string): Promise<PackIndex> {

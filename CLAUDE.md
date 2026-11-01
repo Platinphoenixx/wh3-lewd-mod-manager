@@ -28,6 +28,12 @@ community contributions. App UI and catalog texts are English.
     order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
     `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).
     Packs the app installed are matched to their mod via userData/installed.json.
+  - Own mods (installed packs the catalog does not know): `src/shared/own.ts` keys them
+    (`steamId:<id>` / `pack:<file>`), collects pack facts (dependencies, shared files, tables) and places
+    them in a profile's load order with a reason; user moves are stored as `Profile.pins` (tested).
+    `renderer/src/OwnMods.tsx`: "Your mods" cards, drop-to-install, Workshop link. Titles of unknown
+    Workshop items come from the player's Steam client once (userData/workshop-details.json);
+    previews via the `wh3lmm://workshop/<id>` protocol.
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`

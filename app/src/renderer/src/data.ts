@@ -19,6 +19,8 @@ export interface AppData {
   contribute(req: ContributeRequest): void
   /** "owner/name" of the GitHub repository for contributions, or "" when none is set. */
   contribRepo: string
+  /** Titles of installed Workshop items the catalog does not know (from the player's Steam client). */
+  workshopDetails: Record<string, { title: string; updated: number; preview?: string }>
 }
 
 export const DataContext = createContext<AppData | null>(null)

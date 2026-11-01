@@ -6,6 +6,8 @@ import { KIND_LABEL, useData } from './data'
 export interface ContributeRequest {
   type: ContributionType
   modId?: string
+  /** Form fields filled in advance (e.g. what the app knows about an own mod). */
+  prefill?: Record<string, string>
 }
 
 const RULE_KINDS: { value: UserRule['kind']; label: string }[] = [
@@ -45,7 +47,7 @@ function ModPicker({ value, onChange, exclude }: { value: string; onChange(v: st
 export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onClose(): void }) {
   const data = useData()
   const mod: Mod | undefined = req.modId ? data.index.mods.get(req.modId) : undefined
-  const [f, setF] = useState<Record<string, string>>({ verdict: 'works', ruleKind: 'requires' })
+  const [f, setF] = useState<Record<string, string>>({ verdict: 'works', ruleKind: 'requires', ...req.prefill })
   const [applyLocally, setApplyLocally] = useState(true)
   const [done, setDone] = useState<string | null>(null)
   const set = (k: string) => (e: { target: { value: string } }) => setF({ ...f, [k]: e.target.value })

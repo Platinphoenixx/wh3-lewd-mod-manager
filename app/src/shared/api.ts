@@ -1,6 +1,7 @@
 import type { Catalog } from '@catalog/schema'
 import type { Contribution, UserRule } from './community'
 import type { ConflictReport } from './conflicts'
+import type { FactsReport } from './own'
 import type { Profile } from './profile'
 
 /** A .pack file found in the game's data folder or a Workshop download folder. */
@@ -85,4 +86,12 @@ export interface Api {
   launchGame(paths: string[]): Promise<{ ok: boolean; message: string; modListPath?: string }>
   /** File overlaps between installed packs; `paths` in load order, highest priority first. */
   packConflicts(paths: string[]): Promise<ConflictReport & { unreadable: string[] }>
+  /** Dependencies, file counts, tables and shared files of installed packs (to place own mods). */
+  packFacts(paths: string[]): Promise<FactsReport>
+  /** Installs files dropped onto the window (.pack/.7z/.zip/.rar). */
+  installPaths(paths: string[]): Promise<InstallResult>
+  /** Local path of a dropped file (Electron no longer exposes File.path). */
+  pathForFile(file: File): string
+  /** Titles of Workshop items from the player's Steam client, cached; by item id. */
+  workshopDetails(ids: string[]): Promise<Record<string, { title: string; updated: number; preview?: string }>>
 }
