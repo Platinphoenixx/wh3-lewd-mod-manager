@@ -436,7 +436,7 @@ def main():
         if mid in merge_mods:
             mid = existing = merge_mods[mid]
         m = mods.setdefault(mid, {
-            "id": mid, "name": d["name"], "authors": d.get("authors", []), "kind": "submod", "tags": [],
+            "id": mid, "name": d["name"], "authors": d.get("authors", []), "kind": d.get("kind", "submod"), "tags": [],
             "summary": d.get("notes") or "", "sources": {}, "packs": [], "relations": [],
             "curation": {"lastChecked": TODAY, "confidence": "medium"},
         })
