@@ -6,6 +6,8 @@ export interface CatalogIndex {
   mods: Map<string, Mod>
   bySteamId: Map<string, ModTarget>
   byPack: Map<string, ModTarget>
+  /** Catalog mods that list a pack as a Workshop file (lower case): that same file counts for all of them. */
+  packOwners: Map<string, string[]>
 }
 
 export function targetKey(t: ModTarget): string {
@@ -22,6 +24,7 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
   const mods = new Map(catalog.mods.map((m) => [m.id, m]))
   const bySteamId = new Map<string, ModTarget>()
   const byPack = new Map<string, ModTarget>()
+  const packOwners = new Map<string, string[]>()
   for (const e of catalog.external) {
     if (e.steamId) bySteamId.set(e.steamId, { external: e.id })
   }
@@ -31,6 +34,8 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
     for (const s of m.sources.steam ?? []) if (!bySteamId.has(s.id)) bySteamId.set(s.id, { mod: m.id })
     for (const p of m.packs ?? []) {
       if (!byPack.has(p.file.toLowerCase())) byPack.set(p.file.toLowerCase(), { mod: m.id })
+      const owners = packOwners.get(p.file.toLowerCase()) ?? []
+      if (p.from === 'steam' && !owners.includes(m.id)) packOwners.set(p.file.toLowerCase(), [...owners, m.id])
       if (p.steamId && !bySteamId.has(p.steamId)) bySteamId.set(p.steamId, { mod: m.id })
     }
   }
@@ -42,7 +47,7 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
       if (e.steamId && !bySteamId.has(e.steamId)) bySteamId.set(e.steamId, e.target)
     }
   }
-  return { mods, bySteamId, byPack }
+  return { mods, bySteamId, byPack, packOwners }
 }
 
 export function targetFor(index: CatalogIndex, pack: InstalledPack): ModTarget | undefined {
@@ -67,6 +72,11 @@ export function matchInstalled(index: CatalogIndex, packs: InstalledPack[]) {
     }
     const key = targetKey(t)
     known.set(key, [...(known.get(key) ?? []), p])
+    // A Workshop file is there for every mod that lists it (e.g. a mod that moved to Steam and its new items).
+    for (const id of p.source === 'workshop' ? index.packOwners?.get(p.file.toLowerCase()) ?? [] : []) {
+      const other = `mod:${id}`
+      if (other !== key && !(known.get(other) ?? []).some((x) => x.path === p.path)) known.set(other, [...(known.get(other) ?? []), p])
+    }
   }
   return { known, unknown }
 }

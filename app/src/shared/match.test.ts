@@ -57,6 +57,23 @@ describe('match', () => {
     expect([...known.keys()]).toEqual(['mod:ll-23876'])
   })
 
+  it('counts a Workshop file for every mod that lists it, a download only for the mod it was installed for', () => {
+    const shared: Catalog = {
+      ...catalog,
+      mods: [
+        mod('ll-23966', { packs: [{ file: 'zli_katarin_reskins.pack', from: 'steam' }] }),
+        mod('steam-3471883808', { sources: { steam: [{ id: '3471883808' }] }, packs: [{ file: 'zli_katarin_reskins.pack', from: 'steam', steamId: '3471883808' }] }),
+        mod('ll-32374', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download' }] }),
+        mod('ll-48415', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download' }] })
+      ],
+      presets: []
+    }
+    const workshop: InstalledPack = { file: 'zli_katarin_reskins.pack', source: 'workshop', steamId: '3471883808', path: 'W:/3471883808/zli_katarin_reskins.pack', size: 1, mtime: 0 }
+    const old: InstalledPack = { file: 'soil_corrupted_units_asset.pack', source: 'data', path: 'D:/data/soil_corrupted_units_asset.pack', size: 1, mtime: 0, modId: 'll-32374' }
+    const { known } = matchInstalled(buildIndex(shared), [workshop, old])
+    expect([...known.keys()].sort()).toEqual(['mod:ll-23966', 'mod:ll-32374', 'mod:steam-3471883808'])
+  })
+
   it('marks preset entries installed, missing, or installed in another version', () => {
     const status = presetStatus(index, catalog.presets[0], [
       pack('groovy_mct.pack', 'workshop', '2927955021'),

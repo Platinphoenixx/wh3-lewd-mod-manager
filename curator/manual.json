@@ -553,6 +553,114 @@
       "knownIssues": [
         "Last updated January 2025, like Nymeria, which crashes the game since the 9.0 update. MrDustV posted a working alivia_whiteLion.pack for 9.0 on Discord (2026-09-27); if the game stops with a database error in alivia_whiteLion.pack, use that and unsubscribe this item."
       ]
+    },
+    {
+      "id": "ll-23966",
+      "packs": [
+        {
+          "file": "li_katarin_progression_workshop.pack",
+          "from": "steam",
+          "note": "Moved to Steam: Lazy's Corruption Progression Katarin (3471237570)."
+        },
+        {
+          "file": "zli_katarin_reskins.pack",
+          "from": "steam",
+          "note": "Moved to Steam: Lazy's Corrupted Reskins Katarin (3471883808)."
+        },
+        {
+          "file": "!li_kat_remove_skin_effects.pack",
+          "from": "download",
+          "optional": true
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "source": {
+            "type": "loverslab"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471237570"
+          },
+          "note": "The progression now lives on Steam.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237570"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3471883808"
+          },
+          "note": "The reskins now live on Steam.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471883808"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-32374",
+      "packs": [
+        {
+          "file": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Old asset pack; use the fixed re-upload 'Soil Corrupted assets (fixed vanilla overwrites)' instead – same file name, it replaces this one."
+        },
+        {
+          "file": "@Soil_Miaoying_Corrupted_Units.pack",
+          "from": "download",
+          "exclusiveGroup": "soil-faction",
+          "note": "Only when playing Miao Ying"
+        },
+        {
+          "file": "@Soil_Azazel_Corrupted_Units.pack",
+          "from": "download",
+          "exclusiveGroup": "soil-faction",
+          "note": "Only when playing Azazel; above Azazel's Realm"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Page requires 'Li's Miao Ying Corruption Mods' and an update",
+          "source": {
+            "type": "loverslab"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel mod is based on Kerberos' Azazel's Realm (mandatory).",
+          "source": {
+            "type": "loverslab"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-48415"
+          },
+          "note": "The asset pack, in its fixed version (the original makes new unit textures overwrite standard Cathay units).",
+          "source": {
+            "type": "loverslab"
+          }
+        }
+      ]
     }
   ],
   "external": [

@@ -515,7 +515,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           </table>
           <h3>Overlaps in this load order</h3>
           <ConflictList
-            paths={order.flatMap((o) => o.paths)}
+            paths={[...new Set(order.flatMap((o) => o.paths))]}
             orderNote="Installed mods of this profile, compared in the order above: the higher mod's files are the ones the game uses."
           />
           {profile.removed.length > 0 && (

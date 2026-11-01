@@ -337,7 +337,8 @@ const IMAGE = /\.(png|jpe?g|gif|webp)$/i
 /** A plain dark page for the queue window while a file downloads. */
 const statusPage = (text: string) => 'data:text/html;charset=utf-8,' + encodeURIComponent(
   `<!doctype html><meta charset="utf-8"><body style="margin:0;background:#151311;color:#e4eedc;font:16px/1.5 system-ui,sans-serif">` +
-  `<div style="background:#22331f;border-bottom:2px solid #6f9a5c;padding:14px 18px">${text.replace(/[<&]/g, (c) => (c === '<' ? '&lt;' : '&amp;'))}</div></body>`
+  `<div style="background:#22331f;border-bottom:2px solid #6f9a5c;padding:14px 18px">${text.replace(/[<&]/g, (c) => (c === '<' ? '&lt;' : '&amp;'))}</div>` +
+  `<div id="p" style="padding:24px 18px;font-size:28px;color:#8fcf74">…</div></body>`
 )
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
@@ -394,6 +395,11 @@ export async function downloadQueueFromLoversLab(
       else failed = `Download ${state}.`
     })
     // The download ends the page; show what is going on instead of an empty window.
+    item.on('updated', () => {
+      const total = item.getTotalBytes()
+      if (total > 0 && !win.isDestroyed() && win.webContents.getURL().startsWith('data:'))
+        void win.webContents.executeJavaScript(`document.getElementById('p').textContent = '${Math.floor((item.getReceivedBytes() / total) * 100)} %'`).catch(() => {})
+    })
     if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”${item.getTotalBytes() > 0 ? ` (${Math.round(item.getTotalBytes() / 1e6)} MB)` : ''}. Large files take a while – LoversLab sets the speed. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
   }
   ses.on('will-download', onDownload)
