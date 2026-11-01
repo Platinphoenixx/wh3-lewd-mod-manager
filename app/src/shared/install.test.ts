@@ -14,13 +14,15 @@ const catalog = {
     mod('both', { steam: [{ id: '111' }], loverslab: { fileId: '1', url: 'https://www.loverslab.com/files/file/1-x/', category: 'mods' } }),
     mod('ll', { loverslab: { fileId: '2', url: 'https://www.loverslab.com/files/file/2-x/', category: 'mods' } }),
     mod('dc', { discord: [{ channel: 'x', messageUrl: 'https://discord.com/channels/1/2/3' }] }),
+    mod('nx', { nexus: { modId: '22', url: 'https://www.nexusmods.com/totalwarwarhammer3/mods/22' }, discord: [{ channel: 'x', messageUrl: 'https://discord.com/channels/1/2/4' }] }),
     mod('nothing', {})
   ]
 } as unknown as Catalog
 const index = buildIndex(catalog)
 
 describe('installSourceFor', () => {
-  it('prefers Steam, then LoversLab, then Discord', () => {
+  it('prefers Steam, then LoversLab, then Nexus, then Discord', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:nx' })).toEqual({ kind: 'nexus', url: 'https://www.nexusmods.com/totalwarwarhammer3/mods/22?tab=files' })
     expect(installSourceFor(catalog, index, { key: 'mod:both' })).toEqual({ kind: 'steam', id: '111' })
     expect(installSourceFor(catalog, index, { key: 'mod:ll' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
     expect(installSourceFor(catalog, index, { key: 'mod:dc' })).toEqual({ kind: 'discord', url: 'https://discord.com/channels/1/2/3' })

@@ -41,6 +41,14 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
     data.rescan()
   }
 
+  const fromNexus = async (i: Missing) => {
+    setBusy(i.entry.key)
+    const r = await window.api.installFromNexus((i.source as { url: string }).url, i.modId)
+    note(r.message)
+    setBusy(null)
+    if (r.ok) data.rescan()
+  }
+
   const fromLL = async (i: Missing) => {
     setBusy(i.entry.key)
     const r = await window.api.installFromLoversLab((i.source as { url: string }).url, i.modId)
@@ -130,6 +138,12 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
                 {i.source.kind === 'loverslab' && (
                   <button disabled={!!busy} onClick={() => fromLL(i)}>Download from LoversLab</button>
                 )}
+                {i.source.kind === 'nexus' && (
+                  <>
+                    <button disabled={!!busy} onClick={() => fromNexus(i)}>Download from Nexus Mods</button>{' '}
+                    <button className="link" onClick={() => window.api.openExternal((i.source as { url: string }).url)}>open in browser</button>
+                  </>
+                )}
                 {i.source.kind === 'discord' && (
                   <button onClick={() => window.api.openExternal((i.source as { url: string }).url)}>Open Discord post</button>
                 )}
@@ -140,6 +154,9 @@ export function InstallPanel({ missing }: { missing: ResolvedEntry[] }) {
               </li>
             ))}
           </ul>
+          {others.some((i) => i.source.kind === 'nexus') && (
+            <p className="small muted">Nexus Mods opens in its own window: sign in once, then click “Manual download” (Premium starts at once). If the sign-in check does not let you through there, open the page in your browser and drop the downloaded file onto this window.</p>
+          )}
           <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it), then pick the file and it is installed automatically.</p>
         </div>
       )}

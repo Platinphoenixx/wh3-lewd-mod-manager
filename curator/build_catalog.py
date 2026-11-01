@@ -304,6 +304,62 @@ def main():
             external.setdefault(e["id"], e)
         notes += d.get("notes", [])
 
+    # Nexus Mods finds (read by hand on nexusmods.com, raw/nexus/list-*.txt; curated in work/nexus-curation.json).
+    # Mods that are mirrors of catalog entries only get their Nexus page added.
+    nexus_cur_path = CURATOR / "work" / "nexus-curation.json"
+    nexus_cur = load(nexus_cur_path) if nexus_cur_path.exists() else {"same": {}, "mods": {}}
+
+    def count(v: str) -> int:
+        v = v.strip().lower().replace(",", "")
+        return int(float(v[:-1]) * 1000) if v.endswith("k") else int(float(v)) if v.replace(".", "").isdigit() else 0
+
+    def nexus_date(v: str):
+        try:
+            return datetime.strptime(v.replace("Sept", "Sep"), "%d %b %Y").date().isoformat()
+        except ValueError:
+            return None
+
+    for f in sorted(glob.glob(str(CURATOR / "raw" / "nexus" / "list-*.txt"))):
+        for line in open(f, encoding="utf-8"):
+            p = [x.strip() for x in line.split(" | ")]
+            if len(p) < 10:
+                continue
+            nid, title, author, adult, uploaded, _updated, endorse, downloads, image, summary = p[:10]
+            source = {"modId": nid, "url": f"https://www.nexusmods.com/totalwarwarhammer3/mods/{nid}",
+                      "uploaded": nexus_date(uploaded), "endorsements": count(endorse), "downloads": count(downloads),
+                      "adult": adult == "A"}
+            source = {k: v for k, v in source.items() if v not in (None, "")}
+            if (same := nexus_cur["same"].get(nid)) and same in mods:
+                mods[same].setdefault("sources", {})["nexus"] = source
+                continue
+            cur = nexus_cur["mods"].get(nid)
+            if not cur:
+                continue  # not part of the lewd scene (game-wide tools, translations, savegames)
+            kind, tags, play_as, text, needs = cur[:5]
+            extra_tags = cur[5:]
+            mid = f"nx-{nid}"
+            mods.setdefault(mid, {
+                "id": mid, "name": title, "authors": [author], "kind": kind,
+                "summary": text,
+                "tags": [t for t in tags.split(",") if t] + [t for t in extra_tags if t],
+                "playAs": [{"character": c} for c in play_as.split(",") if c] or None,
+                "images": [{"url": f"https://staticdelivery.nexusmods.com/mods/4717/images/{nid}/{image}",
+                            "thumb": f"https://staticdelivery.nexusmods.com/mods/4717/images/thumbnails/{nid}/{image}",
+                            "kind": "cover", "source": "nexus"}] if image else [],
+                "sources": {"nexus": source},
+                "packs": [],
+                "relations": [{"kind": "requires", "target": {"mod": n}, "note": "Stated on the Nexus page.",
+                               "source": {"type": "nexus", "url": source["url"]}} for n in needs],
+                "curation": {"lastChecked": "2026-11-01", "confidence": "low",
+                             "openQuestions": ["From the Nexus list page only: requirements, pack names and conflicts not checked on the mod page."]},
+            })
+            if not mods[mid]["playAs"]:
+                del mods[mid]["playAs"]
+            # Characters reskinned here are not playable characters of a campaign: playAs is for campaigns.
+            if kind != "campaign":
+                chars = [c["character"] for c in mods[mid].pop("playAs", [])]
+                mods[mid]["tags"] += [c.lower() for c in chars]
+
     # Steam collections become mods whose items are requirements.
     for f in glob.glob(str(CURATOR / "raw" / "steam_collection_*.json")):
         c = load(f)["response"]["collectiondetails"][0]

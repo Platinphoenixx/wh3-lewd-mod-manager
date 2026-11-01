@@ -294,3 +294,4 @@ a.plain { color: var(--text); }
 .pick-option input { margin-top: 3px; }
 .pick-option .why { display: block; font-size: 12px; color: var(--muted); }
 input[type='radio'] { accent-color: var(--accent); }
+.fill-pick .more { margin: 2px 0 0 28px; font-size: 12px; }

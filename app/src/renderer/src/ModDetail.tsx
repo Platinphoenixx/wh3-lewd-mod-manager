@@ -188,6 +188,9 @@ export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
           <h3>Sources</h3>
           <ul className="links">
             {ll && <li><a href={ll.url} target="_blank">LoversLab {ll.version ? `v${ll.version}` : ''} ({ll.updated?.slice(0, 10)})</a></li>}
+            {mod.sources.nexus && (
+              <li><a href={mod.sources.nexus.url} target="_blank">Nexus Mods{mod.sources.nexus.adult ? ' (adult content, sign-in needed)' : ''}</a></li>
+            )}
             {mod.sources.steam?.map((s) => (
               <li key={s.id}><a href={steamUrl(s.id)} target="_blank">Steam: {s.title ?? s.id}{s.unlisted ? ' (unlisted)' : ''}</a></li>
             ))}

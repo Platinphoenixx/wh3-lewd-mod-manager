@@ -17,7 +17,7 @@ import { launchGame } from './launch'
 import { checkAppUpdate } from './appUpdate'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
-  backupPacks, downloadFromLoversLab, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
+  backupPacks, downloadFromLoversLab, downloadFromNexus, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
 } from './installer'
 import {
   addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings, writeJson
@@ -80,6 +80,13 @@ ipcMain.handle('install:paths', async (_e, paths: string[]) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
   return installFiles(paths.filter((p) => typeof p === 'string'), scan.dataPath)
+})
+// Only Nexus Mods pages of this game open in the Nexus window.
+ipcMain.handle('install:nexus', async (e, url: string, modId?: string) => {
+  const scan = await currentScan()
+  if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
+  if (!/^https:\/\/www\.nexusmods\.com\/totalwarwarhammer3\/mods\/\d+/.test(url)) return { ok: false, message: 'Not a Nexus Mods page of this game.', packs: [] }
+  return downloadFromNexus(url, scan.dataPath, modId, BrowserWindow.fromWebContents(e.sender))
 })
 ipcMain.handle('install:backup', async (_e, paths: string[]) => {
   const scan = await currentScan()

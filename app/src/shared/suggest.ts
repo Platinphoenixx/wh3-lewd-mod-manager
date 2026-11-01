@@ -102,6 +102,7 @@ export function suggestForProfile(
 
     const subs = Math.max(0, ...(m.sources.steam ?? []).map((s) => s.subscribers ?? 0))
     const downloads = m.sources.loverslab?.downloads ?? 0
+    const nexus = m.sources.nexus?.downloads ?? 0
     let score = 0
     const reasons: string[] = []
     if (ks) { score += 6 * ks + k; reasons.push(`In ${ks} of ${same.length} community lists for ${leadName}`) }
@@ -111,6 +112,7 @@ export function suggestForProfile(
     else if (fits.length) { score += Math.min(4, fits.length * 1.5); reasons.push(`For ${fits.slice(0, 2).join(', ')}`) }
     if (subs) { score += Math.log10(subs); reasons.push(`${short(subs)} Workshop subscribers`) }
     else if (downloads) { score += Math.log10(downloads) + 0.5; reasons.push(`${short(downloads)} LoversLab downloads`) }
+    else if (nexus) { score += Math.log10(nexus) + 0.5; reasons.push(`${short(nexus)} Nexus downloads`) }
     out[general ? 'general' : 'lewd'].push({ key: c.key, mod: m, reasons: reasons.slice(0, 2), score })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))

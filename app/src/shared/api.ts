@@ -137,6 +137,8 @@ export interface Api {
   installFromFile(modId?: string): Promise<InstallResult>
   /** Opens a LoversLab file page; the file the user downloads there is installed. */
   installFromLoversLab(url: string, modId?: string): Promise<InstallResult>
+  /** The same for a Nexus Mods file page (own window and login). */
+  installFromNexus(url: string, modId?: string): Promise<InstallResult>
   /** Moves data-folder packs into a dated backup folder. */
   backupPacks(paths: string[]): Promise<{ moved: string[]; folder: string }>
   /** Subscribes to Workshop items via Steam and waits for their downloads. */

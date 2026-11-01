@@ -4,13 +4,15 @@ import { matchInstalled, targetKey } from '@shared/match'
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
 
-type Source = 'loverslab' | 'steam' | 'discord'
+type Source = 'loverslab' | 'steam' | 'nexus' | 'discord'
 type Sort = 'name' | 'updated'
 
-const SOURCE_LABEL: Record<Source, string> = { loverslab: 'LoversLab', steam: 'Steam Workshop', discord: 'Discord' }
+const SOURCE_LABEL: Record<Source, string> = { loverslab: 'LoversLab', steam: 'Steam Workshop', nexus: 'Nexus Mods', discord: 'Discord' }
 
 function updatedOf(m: Mod): string {
-  return m.sources.loverslab?.updated ?? ''
+  // Newest known date of any source (LoversLab update, Workshop update, Nexus upload).
+  return [m.sources.loverslab?.updated, ...(m.sources.steam ?? []).map((s) => s.updated), m.sources.nexus?.uploaded]
+    .filter((d): d is string => !!d).sort().pop() ?? ''
 }
 
 /** One lower-case string per mod with everything worth searching. */
@@ -81,7 +83,7 @@ export function CatalogView() {
           m,
           text: haystack(m),
           chars: characters(m),
-          srcs: (['loverslab', 'steam', 'discord'] as Source[]).filter((s) => (s === 'steam' ? m.sources.steam?.length : m.sources[s])),
+          srcs: (['loverslab', 'steam', 'nexus', 'discord'] as Source[]).filter((s) => (s === 'steam' ? m.sources.steam?.length : m.sources[s])),
           outdated: ['superseded', 'abandoned'].includes(m.status ?? ''),
           content: contentOf(m)
         })),

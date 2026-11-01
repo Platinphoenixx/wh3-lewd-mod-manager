@@ -3,6 +3,7 @@ import { isPickOne, type Suggestion, type SuggestionEntry } from '@shared/sugges
 import { useData } from './data'
 
 const SHOWN = 10
+const PICK_SHOWN = 5
 const NONE = '-'
 
 /**
@@ -67,7 +68,7 @@ export function FillProfile({ lewd, general, character, onAdd }: {
         {shown.map((e) => isPickOne(e) ? (
           <div key={groupId(e)} className="fill-row fill-pick">
             <div className="pick-head">Pick one <span className="muted">– {e.note}</span></div>
-            {[...e.pick.map((s) => ({ key: s.key, s })), { key: NONE, s: null }].map(({ key, s }) => (
+            {[...(expanded.has(groupId(e)) ? e.pick : e.pick.slice(0, PICK_SHOWN)).map((s) => ({ key: s.key, s })), { key: NONE, s: null }].map(({ key, s }) => (
               <label key={key} className="pick-option">
                 <input
                   type="radio"
@@ -78,6 +79,9 @@ export function FillProfile({ lewd, general, character, onAdd }: {
                 {s ? <span>{name(s)}<span className="why">{s.reasons.join(' · ')}</span></span> : <span className="muted">None of these</span>}
               </label>
             ))}
+            {e.pick.length > PICK_SHOWN && (
+              <div className="more"><a onClick={() => toggle(setExpanded, groupId(e))}>{expanded.has(groupId(e)) ? 'Fewer options' : `${e.pick.length - PICK_SHOWN} more options`}</a></div>
+            )}
           </div>
         ) : (
           <label key={e.key} className="fill-row">

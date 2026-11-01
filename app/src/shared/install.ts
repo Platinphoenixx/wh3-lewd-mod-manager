@@ -4,12 +4,14 @@ import { parseTargetKey, type CatalogIndex } from './match'
 export type InstallSource =
   | { kind: 'steam'; id: string }
   | { kind: 'loverslab'; url: string }
+  | { kind: 'nexus'; url: string }
   | { kind: 'discord'; url: string }
   | { kind: 'manual'; url?: string }
 
 /**
- * Where to get a missing profile entry. Steam comes first (it updates itself), then LoversLab,
- * then a Discord post; anything else has to be added by hand from wherever it is linked.
+ * Where to get a missing profile entry. Steam comes first (it updates itself), then LoversLab, then
+ * Nexus Mods (opened in the player's own browser), then a Discord post; anything else has to be added by
+ * hand from wherever it is linked.
  */
 export function installSourceFor(
   catalog: Catalog,
@@ -30,6 +32,7 @@ export function installSourceFor(
   if (steam && mod.status !== 'superseded') return { kind: 'steam', id: steam.id }
   const ll = mod.sources.loverslab
   if (ll && !ll.externalDownload) return { kind: 'loverslab', url: ll.url }
+  if (mod.sources.nexus) return { kind: 'nexus', url: `${mod.sources.nexus.url}?tab=files` }
   const dc = mod.sources.discord?.find((d) => d.messageUrl)?.messageUrl ?? mod.sources.downloads?.find((d) => d.url.includes('discord.com'))?.url
   if (dc) return { kind: 'discord', url: dc }
   return { kind: 'manual', url: ll?.url ?? mod.sources.downloads?.[0]?.url }

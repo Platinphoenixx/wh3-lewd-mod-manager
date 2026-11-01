@@ -12,7 +12,7 @@ export function packOwner(data: AppData, path: string): { name: string; url?: st
     const r = resolveTarget(data, parseTargetKey(key))
     if (r.kind === 'mod') {
       const s = r.mod.sources
-      return { name: r.mod.name, url: s.loverslab?.url ?? (s.steam?.[0] ? steamUrl(s.steam[0].id) : undefined), key }
+      return { name: r.mod.name, url: s.loverslab?.url ?? (s.steam?.[0] ? steamUrl(s.steam[0].id) : s.nexus?.url), key }
     }
     return { name: r.kind === 'external' ? r.ext.name : r.label, key }
   }

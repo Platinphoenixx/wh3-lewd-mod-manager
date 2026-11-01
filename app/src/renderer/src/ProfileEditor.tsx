@@ -258,6 +258,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     const mod = 'mod' in t ? data.index.mods.get(t.mod) : undefined
     if (mod?.sources.steam?.length) return `Workshop ${mod.sources.steam[0].id}`
     if (mod?.sources.loverslab) return `LoversLab ${mod.sources.loverslab.fileId}`
+    if (mod?.sources.nexus) return `Nexus ${mod.sources.nexus.modId}`
     return undefined
   }
 

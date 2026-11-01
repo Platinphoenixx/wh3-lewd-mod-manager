@@ -131,13 +131,25 @@ const bannerScript = (text: string) => `(() => {
 const LOGIN_HINT = 'LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login).'
 const LL_BANNER = bannerScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT} Then click "Download" and pick the file. It is installed automatically and this window closes.`)
 
+const NEXUS_BANNER = bannerScript('WH3 Lewd Mod Manager: sign in to Nexus Mods here once (this window keeps the login). Then click "Manual download" on the file you want – not "Mod manager download". It is installed automatically and this window closes.')
+
 /**
  * Opens a LoversLab download page in its own window (persistent LL login, separate from the app).
  * When the user picks a file, it is saved to the app's download folder and installed.
  */
 export function downloadFromLoversLab(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
-  const ses = session.fromPartition('persist:loverslab')
-  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – sign in, then pick the file to install', webPreferences: { session: ses } })
+  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – sign in, then pick the file to install', banner: LL_BANNER }, dataPath, modId, parent)
+}
+
+/** The same for a Nexus Mods file page: own persistent Nexus login; Premium downloads start at once. */
+export function downloadFromNexus(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
+  return downloadInWindow({ url, partition: 'persist:nexus', title: 'Nexus Mods – sign in, then pick the file to install', banner: NEXUS_BANNER }, dataPath, modId, parent)
+}
+
+function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null): Promise<InstallResult> {
+  const { url } = site
+  const ses = session.fromPartition(site.partition)
+  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: site.title, webPreferences: { session: ses } })
   const downloads = join(app.getPath('userData'), 'downloads')
   return new Promise((resolve) => {
     let done = false
@@ -165,9 +177,9 @@ export function downloadFromLoversLab(url: string, dataPath: string, modId: stri
     }
     ses.on('will-download', onDownload)
     win.on('closed', () => finish({ ok: false, message: 'Window closed without downloading.', packs: [] }))
-    // Keep our title instead of the page's, and show what to do on every LL page.
+    // Keep our title instead of the page's, and show what to do on every page.
     win.on('page-title-updated', (e) => e.preventDefault())
-    win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(LL_BANNER).catch(() => {}))
+    win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(site.banner).catch(() => {}))
     void win.loadURL(url)
   })
 }

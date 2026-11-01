@@ -131,6 +131,8 @@ export interface Mod {
       /** The download leads off LoversLab (Steam, Mega, Nexus…). */
       externalDownload?: boolean
     };
+    /** The mod's Nexus Mods page (read by hand; numbers as of that reading). */
+    nexus?: { modId: string; url: string; uploaded?: string; endorsements?: number; downloads?: number; adult?: boolean };
     /** Workshop items that belong to this mod. Many are unlisted and only linked from LL. */
     steam?: SteamItem[];
     /** Files that are only distributed on LL / Discord as downloads. */
@@ -190,7 +192,7 @@ export interface ModImage {
   /** cover = title image, screenshot = in-game, loadorder = mod-manager screenshot, other = diagrams etc. */
   kind: "cover" | "screenshot" | "loadorder" | "other";
   caption?: string;           // English
-  source: "loverslab" | "steam" | "discord" | "wiki";
+  source: "loverslab" | "steam" | "discord" | "wiki" | "nexus";
 }
 
 export interface SteamItem {
@@ -264,7 +266,7 @@ export interface Relation {
   /** Alternatives: of all "recommends"/"optional" relations sharing a group, pick at most one. */
   exclusiveGroup?: string;
   /** "community" = accepted community contribution, "user" = the local user's own rule (never in catalog.json). */
-  source: { type: "loverslab" | "discord" | "wiki" | "steam" | "inferred" | "community" | "user"; url?: string };
+  source: { type: "loverslab" | "discord" | "wiki" | "steam" | "nexus" | "inferred" | "community" | "user"; url?: string };
 }
 
 export interface LoadOrderRule {

@@ -32,6 +32,7 @@ const api: Api = {
   subscribeWorkshop: (ids) => ipcRenderer.invoke('steam:subscribe', ids),
   installFromFile: (modId) => ipcRenderer.invoke('install:file', modId),
   installFromLoversLab: (url, modId) => ipcRenderer.invoke('install:loverslab', url, modId),
+  installFromNexus: (url, modId) => ipcRenderer.invoke('install:nexus', url, modId),
   backupPacks: (paths) => ipcRenderer.invoke('install:backup', paths),
   packFacts: (paths) => ipcRenderer.invoke('packs:facts', paths),
   installPaths: (paths) => ipcRenderer.invoke('install:paths', paths),

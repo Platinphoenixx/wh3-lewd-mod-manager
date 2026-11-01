@@ -65,6 +65,10 @@ community contributions. App UI and catalog texts are English.
     `node relay/worker.test.mjs`) stores problem reports privately and files contributions as GitHub issues;
     the app posts from the main process (`relay:report`, `relay:contribution`, `DEFAULTS.relayUrl`, random
     install id in userData/install-id.json).
+  - Nexus Mods: entries read by hand from nexusmods.com (`curator/raw/nexus/list-*.txt`, curated with neutral texts
+    in `curator/work/nexus-curation.json`, mirrors of catalog mods only get `sources.nexus`). No automatic Nexus
+    crawl: its numbers stay as read. The app downloads Nexus files in its own window (`persist:nexus`, like
+    LoversLab), with the player's browser as fallback.
   - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
     opens a view directly.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
