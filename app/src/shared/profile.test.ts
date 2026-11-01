@@ -23,7 +23,8 @@ const catalog: Catalog = {
     mod('other-es', { kind: 'translation', relations: [{ kind: 'extends', target: { mod: 'elsewhere' }, source: src }] }),
     mod('alarielle-skin', { kind: 'reskin', playAs: [{ character: 'Alarielle' }] }),
     mod('ascension', { kind: 'campaign', relations: [{ kind: 'incompatible', target: { mod: 'framework' }, source: src }] }),
-    mod('unrelated', {})
+    mod('unrelated', {}),
+    mod('ui-mod', { kind: 'utility', tags: ['general', 'ui'] })
   ],
   presets: [{
     id: 'alarielle', name: 'Alarielle', playAs: ['Alarielle'], phase: 'early', origin: 'tested', source: { type: 'discord' },
@@ -45,6 +46,7 @@ describe('candidates', () => {
     expect(byKey.get('mod:atb-es')?.group).toBe('translation')
     expect(byKey.get('mod:alarielle-skin')?.group).toBe('character')
     expect(byKey.get('mod:unrelated')?.group).toBe('other')
+    expect(byKey.get('mod:ui-mod')?.group).toBe('general')
   })
 
   it('offers only translations of mods in the profile and never the profile mods themselves', () => {

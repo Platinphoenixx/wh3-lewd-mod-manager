@@ -82,6 +82,10 @@ over all layers – fix texts there.
 - `curator/parse_twmods.py` turns CA launcher mod lists (.twmods) into tested presets.
 - `curator/build_catalog.py` → `catalog/catalog.json` + `curator/work/report.md`. It also derives presets
   from KPW guides and from campaign/progression mods' requirements, so templates follow the catalog.
+- `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
+  Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
+  profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.
+  `work/research-steam-skipped.txt` lists what is deliberately not in the catalog, with the reason.
 - Never guess facts; mark uncertainty in `curation.confidence` / `openQuestions`. Texts neutral, non-graphic.
 - Reading the Discord server is manual and must look like a person reading (no API, no automation).
   Discord's search only matches exact spellings: try several variants (apostrophes, spaces, underscores)

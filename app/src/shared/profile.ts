@@ -17,8 +17,8 @@ export interface Profile {
   updatedAt: string
 }
 
-export type CandidateGroup = 'recommended' | 'character' | 'translation' | 'other'
-const GROUP_RANK: Record<CandidateGroup, number> = { recommended: 0, character: 1, translation: 2, other: 3 }
+export type CandidateGroup = 'recommended' | 'character' | 'translation' | 'other' | 'general'
+const GROUP_RANK: Record<CandidateGroup, number> = { recommended: 0, character: 1, translation: 2, other: 3, general: 4 }
 
 export interface Candidate {
   key: string
@@ -180,10 +180,11 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
     const hit = m.playAs?.find((p) => chars.some((c) => p.character.toLowerCase().includes(c.split(' ')[0])))
     if (hit) add(`mod:${m.id}`, 'character', `For ${hit.character}`)
   }
-  // 3. The rest of the catalog (no translations of things that are not in the profile, no collections).
+  // 3. The rest of the catalog (no translations of things that are not in the profile, no collections);
+  //    normal gameplay/UI mods (tag "general") in their own group.
   for (const m of catalog.mods) {
     if (m.kind === 'translation' || m.kind === 'collection') continue
-    add(`mod:${m.id}`, 'other', '')
+    add(`mod:${m.id}`, m.tags.includes('general') ? 'general' : 'other', '')
   }
   const list = [...found.values()]
   for (const c of list) {

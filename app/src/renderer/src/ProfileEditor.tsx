@@ -15,7 +15,8 @@ const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
   character: 'For your character',
   translation: 'Translations',
-  other: 'More compatible mods'
+  other: 'More lewd mods',
+  general: 'General mods (gameplay, UI, visuals)'
 }
 
 const NO_FACTS: FactsReport = { packs: {}, overlaps: [] }
@@ -180,7 +181,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     .map((k) => ({ k, name: ownName(data, k, installed.get(k) ?? []) }))
     .filter((o) => !q || o.name.toLowerCase().includes(q))
     .sort((a, b) => Number(extras.has(b.k)) - Number(extras.has(a.k)) || a.name.localeCompare(b.name))
-  const groups: CandidateGroup[] = ['recommended', 'character', 'translation', 'other']
+  const groups: CandidateGroup[] = ['recommended', 'character', 'translation', 'other', 'general']
   const baseCount = resolved.entries.filter((e) => e.origin === 'base').length
   const launch = useMemo(
     () => planLaunch(order.map((o) => ({ key: o.key, name: o.name, pack: byKey.get(o.key)?.pack })), (k) => installed.get(k) ?? []),
@@ -270,7 +271,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           {groups.map((g) => {
             const list = visible.filter((c) => c.group === g)
             if (!list.length) return null
-            const collapsible = g === 'other' || g === 'translation'
+            const collapsible = g === 'other' || g === 'translation' || g === 'general'
             const collapsed = collapsible && !expanded.has(g) && !q
             return (
               <section key={g}>

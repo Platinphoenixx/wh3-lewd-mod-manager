@@ -55,12 +55,18 @@ function toggler<T>(set: Set<T>, setter: (s: Set<T>) => void) {
   }
 }
 
+// The catalog tags normal gameplay/UI/visual mods "general"; everything else belongs to the lewd scene.
+type Content = 'lewd' | 'general'
+const contentOf = (m: Mod): Content => (m.tags.includes('general') ? 'general' : 'lewd')
+const CONTENT_LABEL: Record<Content, string> = { lewd: 'Lewd mods', general: 'General mods' }
+
 export function CatalogView() {
   const data = useData()
   const [query, setQuery] = useState('')
   const [kinds, setKinds] = useState<Set<Mod['kind']>>(new Set())
   const [chars, setChars] = useState<Set<string>>(new Set())
   const [sources, setSources] = useState<Set<Source>>(new Set())
+  const [contents, setContents] = useState<Set<Content>>(new Set())
   const [showTranslations, setShowTranslations] = useState(false)
   const [showOutdated, setShowOutdated] = useState(false)
   const [onlyInstalled, setOnlyInstalled] = useState(false)
@@ -76,7 +82,8 @@ export function CatalogView() {
           text: haystack(m),
           chars: characters(m),
           srcs: (['loverslab', 'steam', 'discord'] as Source[]).filter((s) => (s === 'steam' ? m.sources.steam?.length : m.sources[s])),
-          outdated: ['superseded', 'abandoned'].includes(m.status ?? '')
+          outdated: ['superseded', 'abandoned'].includes(m.status ?? ''),
+          content: contentOf(m)
         })),
     [data.catalog]
   )
@@ -90,7 +97,7 @@ export function CatalogView() {
       (!q || q.split(/\s+/).every((w) => x.text.includes(w)))
   )
   const result = base
-    .filter((x) => (!kinds.size || kinds.has(x.m.kind)) && (!chars.size || x.chars.some((c) => chars.has(c))) && (!sources.size || x.srcs.some((s) => sources.has(s))))
+    .filter((x) => (!kinds.size || kinds.has(x.m.kind)) && (!chars.size || x.chars.some((c) => chars.has(c))) && (!sources.size || x.srcs.some((s) => sources.has(s))) && (!contents.size || contents.has(x.content)))
     .sort((a, b) => (sort === 'name' ? a.m.name.localeCompare(b.m.name) : updatedOf(b.m).localeCompare(updatedOf(a.m)) || a.m.name.localeCompare(b.m.name)))
 
   // Facet counts reflect the other active filters, so you can see where a click will lead.
@@ -102,7 +109,8 @@ export function CatalogView() {
   const kindCounts = count((x) => [x.m.kind])
   const charCounts = count((x) => x.chars)
   const sourceCounts = count((x) => x.srcs)
-  const active = kinds.size + chars.size + sources.size
+  const contentCounts = count((x) => [x.content])
+  const active = kinds.size + chars.size + sources.size + contents.size
 
   return (
     <div className="catalog2">
@@ -113,10 +121,11 @@ export function CatalogView() {
           <label><input type="checkbox" checked={showOutdated} onChange={(e) => setShowOutdated(e.target.checked)} /><span>Outdated / removed</span></label>
           <label><input type="checkbox" checked={onlyInstalled} onChange={(e) => setOnlyInstalled(e.target.checked)} /><span>Installed only</span></label>
         </div>
+        <Facet title="Content" values={contentCounts} selected={contents} onToggle={toggler(contents, setContents)} label={(c) => CONTENT_LABEL[c]} />
         <Facet title="Kind" values={kindCounts} selected={kinds} onToggle={toggler(kinds, setKinds)} label={(k) => KIND_LABEL[k]} />
         <Facet title="Play as / character" values={charCounts} selected={chars} onToggle={toggler(chars, setChars)} label={(c) => c} />
         <Facet title="Source" values={sourceCounts} selected={sources} onToggle={toggler(sources, setSources)} label={(s) => SOURCE_LABEL[s]} />
-        {active > 0 && <button onClick={() => { setKinds(new Set()); setChars(new Set()); setSources(new Set()) }}>Clear filters ({active})</button>}
+        {active > 0 && <button onClick={() => { setKinds(new Set()); setChars(new Set()); setSources(new Set()); setContents(new Set()) }}>Clear filters ({active})</button>}
       </aside>
       <section className="results">
         <div className="toolbar">

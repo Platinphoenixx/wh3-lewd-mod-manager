@@ -945,6 +945,12 @@
           "The page's steam_ids = 2791799449 is only the Lua Console mod (debug), not this mod",
           "Campaigns (IE/IEE/RoC) not specified"
         ]
+      },
+      "cleanup": {
+        "unsubscribeSteamIds": [
+          "2797705839"
+        ],
+        "note": "The old Workshop item 2797705839 is deprecated by LazyIcarus; unsubscribe from it."
       }
     },
     {
