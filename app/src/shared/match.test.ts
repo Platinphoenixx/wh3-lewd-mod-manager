@@ -63,6 +63,8 @@ describe('match', () => {
       mods: [
         mod('ll-23966', { packs: [{ file: 'zli_katarin_reskins.pack', from: 'steam' }] }),
         mod('steam-3471883808', { sources: { steam: [{ id: '3471883808' }] }, packs: [{ file: 'zli_katarin_reskins.pack', from: 'steam', steamId: '3471883808' }] }),
+        mod('steam-3820276885', { packs: [{ file: 'alivia_dryad.pack', from: 'steam', steamId: '3820276885' }] }),
+        mod('steam-3404717872', { sources: { steam: [{ id: '3404717872' }] }, packs: [{ file: 'alivia_dryad.pack', from: 'steam', steamId: '3404717872' }] }),
         mod('ll-32374', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download' }] }),
         mod('ll-48415', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download' }] })
       ],
@@ -70,8 +72,9 @@ describe('match', () => {
     }
     const workshop: InstalledPack = { file: 'zli_katarin_reskins.pack', source: 'workshop', steamId: '3471883808', path: 'W:/3471883808/zli_katarin_reskins.pack', size: 1, mtime: 0 }
     const old: InstalledPack = { file: 'soil_corrupted_units_asset.pack', source: 'data', path: 'D:/data/soil_corrupted_units_asset.pack', size: 1, mtime: 0, modId: 'll-32374' }
-    const { known } = matchInstalled(buildIndex(shared), [workshop, old])
-    expect([...known.keys()].sort()).toEqual(['mod:ll-23966', 'mod:ll-32374', 'mod:steam-3471883808'])
+    const oldUpload: InstalledPack = { file: 'alivia_dryad.pack', source: 'workshop', steamId: '3404717872', path: 'W:/3404717872/alivia_dryad.pack', size: 1, mtime: 0 }
+    const { known } = matchInstalled(buildIndex(shared), [workshop, old, oldUpload])
+    expect([...known.keys()].sort()).toEqual(['mod:ll-23966', 'mod:ll-32374', 'mod:steam-3404717872', 'mod:steam-3471883808'])
   })
 
   it('marks preset entries installed, missing, or installed in another version', () => {

@@ -6,8 +6,11 @@ export interface CatalogIndex {
   mods: Map<string, Mod>
   bySteamId: Map<string, ModTarget>
   byPack: Map<string, ModTarget>
-  /** Catalog mods that list a pack as a Workshop file (lower case): that same file counts for all of them. */
-  packOwners: Map<string, string[]>
+  /**
+   * Catalog mods that list a pack as a Workshop file (lower case), with the Workshop item they name: the same
+   * file counts for all of them, unless one names another item (a re-upload with the same pack name).
+   */
+  packOwners: Map<string, { mod: string; steamId?: string }[]>
 }
 
 export function targetKey(t: ModTarget): string {
@@ -24,7 +27,7 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
   const mods = new Map(catalog.mods.map((m) => [m.id, m]))
   const bySteamId = new Map<string, ModTarget>()
   const byPack = new Map<string, ModTarget>()
-  const packOwners = new Map<string, string[]>()
+  const packOwners = new Map<string, { mod: string; steamId?: string }[]>()
   for (const e of catalog.external) {
     if (e.steamId) bySteamId.set(e.steamId, { external: e.id })
   }
@@ -35,7 +38,7 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
     for (const p of m.packs ?? []) {
       if (!byPack.has(p.file.toLowerCase())) byPack.set(p.file.toLowerCase(), { mod: m.id })
       const owners = packOwners.get(p.file.toLowerCase()) ?? []
-      if (p.from === 'steam' && !owners.includes(m.id)) packOwners.set(p.file.toLowerCase(), [...owners, m.id])
+      if (p.from === 'steam' && !owners.some((o) => o.mod === m.id)) packOwners.set(p.file.toLowerCase(), [...owners, { mod: m.id, steamId: p.steamId }])
       if (p.steamId && !bySteamId.has(p.steamId)) bySteamId.set(p.steamId, { mod: m.id })
     }
   }
@@ -73,8 +76,9 @@ export function matchInstalled(index: CatalogIndex, packs: InstalledPack[]) {
     const key = targetKey(t)
     known.set(key, [...(known.get(key) ?? []), p])
     // A Workshop file is there for every mod that lists it (e.g. a mod that moved to Steam and its new items).
-    for (const id of p.source === 'workshop' ? index.packOwners?.get(p.file.toLowerCase()) ?? [] : []) {
-      const other = `mod:${id}`
+    for (const o of p.source === 'workshop' ? index.packOwners?.get(p.file.toLowerCase()) ?? [] : []) {
+      if (o.steamId && p.steamId && o.steamId !== p.steamId) continue
+      const other = `mod:${o.mod}`
       if (other !== key && !(known.get(other) ?? []).some((x) => x.path === p.path)) known.set(other, [...(known.get(other) ?? []), p])
     }
   }
