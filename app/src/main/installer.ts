@@ -129,7 +129,6 @@ const bannerScript = (text: string) => `(() => {
   b.textContent = ${JSON.stringify(text)}
 })()`
 const LOGIN_HINT = 'LoversLab only allows downloads when you are logged in. Sign in here once with "Remember me" ticked (this window then keeps the login).'
-const LL_BANNER = bannerScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT} Then click "Download" and pick the file. It is installed automatically and this window closes.`)
 
 const NEXUS_BANNER = bannerScript('WH3 Lewd Mod Manager: sign in to Nexus Mods here once (this window keeps the login). Then click "Manual download" on the file you want – not "Mod manager download". It is installed automatically and this window closes.')
 
@@ -138,12 +137,36 @@ const NEXUS_BANNER = bannerScript('WH3 Lewd Mod Manager: sign in to Nexus Mods h
  * When the user picks a file, it is saved to the app's download folder and installed.
  */
 export function downloadFromLoversLab(url: string, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, hints: FileHint[] = []): Promise<InstallResult> {
-  const wanted = hints.filter((h) => h.wanted).map((h) => `"${h.name}"`)
-  const banner = wanted.length
-    ? bannerScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT} Then click "Download" and take ${wanted.join(' and ')} – marked in the list. It is installed automatically and this window closes.`)
-    : LL_BANNER
-  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – sign in, then pick the file to install', banner: banner + markFilesScript(hints) }, dataPath, modId, parent)
+  const wanted = hints.filter((h) => h.wanted)
+  const what = wanted.length
+    ? `Take ${wanted.map((h) => `“${h.name}”${h.note ? ` (${h.note})` : ''}`).join(' and ')} – marked in the file list.`
+    : hints.some((h) => h.note)
+      ? `Which file: ${hints.filter((h) => h.note).map((h) => `“${h.name}” – ${h.note}`).join(' · ')}.`
+      : 'Pick the file you want.'
+  const guide = guideScript(`WH3 Lewd Mod Manager: ${LOGIN_HINT}`, `Click “Download”. ${what} It is installed automatically and this window closes.`)
+  return downloadInWindow({ url, partition: 'persist:loverslab', title: 'LoversLab – pick the file to install', banner: guide + markFilesScript(hints) }, dataPath, modId, parent)
 }
+
+/**
+ * Two boxes on top of every page of the LoversLab download window: the sign-in hint (only while signed
+ * out – LoversLab shows the member menu #elUserLink when signed in) and, set apart in green, which file
+ * to take. "Remember me" is ticked on the login form as in bannerScript.
+ */
+const guideScript = (login: string, file: string) => `(() => {
+  const remember = document.querySelector('input[type=checkbox][name=remember_me]')
+  if (remember) remember.checked = true
+  let b = document.getElementById('wh3lmm-banner')
+  if (!b) {
+    b = document.createElement('div')
+    b.id = 'wh3lmm-banner'
+    b.style.cssText = 'position:sticky;top:0;z-index:2147483647;font:15px/1.4 system-ui,sans-serif;text-align:center'
+    document.body.prepend(b)
+  }
+  b.replaceChildren()
+  const box = (text, css) => { const d = document.createElement('div'); d.style.cssText = 'padding:10px 16px;' + css; d.textContent = text; b.append(d) }
+  if (!document.querySelector('#elUserLink')) box(${JSON.stringify(login)}, 'background:#c9a25a;color:#1a140a')
+  box(${JSON.stringify(file)}, 'background:#22331f;color:#e4eedc;border-bottom:2px solid #6f9a5c')
+})()`
 
 /**
  * Marks the files of a LoversLab download list: the one the profile uses, what the others are (catalog
