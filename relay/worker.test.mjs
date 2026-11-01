@@ -3,8 +3,10 @@ import assert from 'node:assert/strict'
 import worker from './worker.js'
 
 const store = new Map()
+const counts = new Map() // fake rate limiter: 5 per key
 const env = {
   REPO: 'owner/repo', GITHUB_TOKEN: 'gh', EXPORT_TOKEN: 'export', SALT: 'salt',
+  LIMITER: { limit: async ({ key }) => { counts.set(key, (counts.get(key) ?? 0) + 1); return { success: counts.get(key) <= 5 } } },
   REPORTS: {
     get: async (k) => store.get(k) ?? null,
     put: async (k, v) => void store.set(k, v),
@@ -48,9 +50,10 @@ assert.deepEqual(issues[0].labels, ['feedback'])
 assert.equal(issues[0].auth, 'Bearer gh')
 assert.equal((await call('POST', '/contribution', { type: 'spam', title: 't', body: 'b' })).status, 400)
 
-// 20 requests per hour per sender; the counter key does not contain the IP.
+// 5 sends per minute per sender; the limiter key does not contain the IP, and nothing but reports is in KV.
 let last
-for (let i = 0; i < 25; i++) last = await call('POST', '/report', { ...report, installId: 'i' + i })
+for (let i = 0; i < 8; i++) last = await call('POST', '/report', { ...report, installId: 'i' + i })
 assert.equal(last.status, 429)
-assert.ok([...store.keys()].every((k) => !k.includes('1.2.3.4')))
+assert.ok([...counts.keys()].every((k) => !k.includes('1.2.3.4')))
+assert.ok([...store.keys()].every((k) => k.startsWith('report:')))
 console.log('relay tests passed')

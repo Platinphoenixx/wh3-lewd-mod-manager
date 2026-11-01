@@ -9,8 +9,8 @@ the app without any account. Free Cloudflare plan; nothing to maintain once it r
 | `POST /contribution` | Becomes a GitHub issue in the project repository, labelled with its type – the same as a contribution made on GitHub; a maintainer labels it `accepted` as before. |
 | `GET /reports` | All stored reports, for the weekly catalog update (needs the export token). |
 
-Privacy: no IP addresses or names are stored. The rate limit (20 per hour) counts under a salted hash
-of the IP that expires after the hour. Reports carry a random id the app made once per installation,
+Privacy: no IP addresses or names are stored. The rate limit counts under a salted hash
+of the IP (5 per minute, Cloudflare's rate limiter; nothing of it is stored). Reports carry a random id the app made once per installation,
 so the weekly update counts players, not reports. Only counts reach the public repository
 (`curator/raw/error_reports.json`); an error appears in the catalog once 3 or more players reported it.
 
@@ -26,15 +26,14 @@ so the weekly update counts players, not reports. Only counts reach the public r
    npx wrangler kv namespace create REPORTS
    ```
    Put the printed id into `wrangler.toml` (`id = …`).
-4. Secrets (each command asks for the value):
+4. `npx wrangler deploy` – prints the address (`https://wh3lmm-relay.<name>.workers.dev`).
+5. Secrets (the worker has to exist first):
    ```
-   npx wrangler secret put GITHUB_TOKEN     # the token from step 2
-   npx wrangler secret put EXPORT_TOKEN     # any long random text; also goes to GitHub, step 6
-   npx wrangler secret put SALT             # any other long random text
+   npx wrangler secret put GITHUB_TOKEN     # paste the token from step 2
+   .\set-secrets.ps1                        # makes EXPORT_TOKEN and SALT, stores them in Cloudflare and
+                                            # RELAY_EXPORT_TOKEN in the GitHub repository (needs gh auth login)
    ```
-5. `npx wrangler deploy` – prints the address (`https://wh3lmm-relay.<name>.workers.dev`).
-6. GitHub repository → Settings → Secrets and variables → Actions: add `RELAY_URL` (the address) and
-   `RELAY_EXPORT_TOKEN` (the export token from step 4).
+6. `gh secret set RELAY_URL --body <address>` (or GitHub → Settings → Secrets and variables → Actions).
 7. Put the address into `DEFAULTS.relayUrl` in `app/src/shared/api.ts` and release the app.
 
 ## Reading reports

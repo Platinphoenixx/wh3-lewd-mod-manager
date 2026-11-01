@@ -113,8 +113,8 @@ export interface LoversLabProgress {
 export const DEFAULTS: Required<Pick<Settings, 'catalogUrl' | 'contribRepo' | 'relayUrl'>> = {
   catalogUrl: 'https://raw.githubusercontent.com/Platinphoenixx/wh3-lewd-mod-manager/main/catalog/catalog.json',
   contribRepo: 'Platinphoenixx/wh3-lewd-mod-manager',
-  // Set once the relay is deployed (relay/README.md); until then sending falls back to GitHub / clipboard.
-  relayUrl: ''
+  // The project's relay (relay/README.md); empty would fall back to GitHub / clipboard.
+  relayUrl: 'https://wh3lmm-relay.noita.workers.dev'
 }
 
 /** What the renderer may call in the main process (exposed by the preload script). */

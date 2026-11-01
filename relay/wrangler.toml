@@ -9,4 +9,13 @@ REPO = "Platinphoenixx/wh3-lewd-mod-manager"
 # Created once with: npx wrangler kv namespace create REPORTS  (put the printed id here)
 [[kv_namespaces]]
 binding = "REPORTS"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "936137df028843c7999917b94b6f7b62"
+
+# Rate limit per sender (salted IP hash): 5 sends per minute. Free plan; does not use KV.
+[[ratelimits]]
+name = "LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 5
+  period = 60

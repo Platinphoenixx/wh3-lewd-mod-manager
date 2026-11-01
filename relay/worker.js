@@ -8,15 +8,14 @@
  *                       → becomes a GitHub issue in the project repo, like contributions made on GitHub
  *   GET  /reports       all stored reports, for the weekly catalog update (Authorization: Bearer EXPORT_TOKEN)
  *
- * Nothing about the sender is stored: no IP address, no name. A rate limit counts requests per hour
- * under a salted hash of the IP that expires after that hour.
+ * Nothing about the sender is stored: no IP address, no name. Cloudflare's rate limiter counts
+ * requests per minute under a salted hash of the IP (kept in memory only, not in KV).
  *
- * Bindings (wrangler.toml): KV namespace REPORTS, variable REPO ("owner/name").
+ * Bindings (wrangler.toml): KV namespace REPORTS, rate limiter LIMITER, variable REPO ("owner/name").
  * Secrets: GITHUB_TOKEN (issues: write on REPO only), EXPORT_TOKEN, SALT.
  */
 
 const MAX_TEXT = 30000
-const PER_HOUR = 20
 const TYPES = ['new-mod', 'feedback', 'rule', 'correction']
 
 export default {
@@ -48,14 +47,12 @@ async function limited(request, env) {
   const ip = request.headers.get('cf-connecting-ip') ?? 'unknown'
   const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(env.SALT + ip))
   const key = 'rl:' + [...new Uint8Array(digest)].slice(0, 12).map((b) => b.toString(16).padStart(2, '0')).join('')
-  const n = Number((await env.REPORTS.get(key)) ?? 0)
-  if (n >= PER_HOUR) return true
-  await env.REPORTS.put(key, String(n + 1), { expirationTtl: 3600 })
-  return false
+  const { success } = await env.LIMITER.limit({ key })
+  return !success
 }
 
 async function report(request, env) {
-  if (await limited(request, env)) return json({ ok: false, message: 'Too many reports from here in the last hour.' }, 429)
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many reports from here; please wait a minute.' }, 429)
   const b = await request.json()
   const entry = {
     at: new Date().toISOString(),
@@ -75,7 +72,7 @@ async function report(request, env) {
 }
 
 async function contribution(request, env) {
-  if (await limited(request, env)) return json({ ok: false, message: 'Too many contributions from here in the last hour.' }, 429)
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many contributions from here; please wait a minute.' }, 429)
   const b = await request.json()
   const type = TYPES.includes(b.type) ? b.type : null
   if (!type) throw new UserError('Unknown contribution type.')
