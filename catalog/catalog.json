@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T18:55:49+00:00",
+  "generatedAt": "2026-11-02T19:18:16+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -319,7 +319,7 @@
             "id": "2927397735",
             "title": "-BR- More Beautiful N'kari 诱惑",
             "updated": "2026-05-01",
-            "subscribers": 29830
+            "subscribers": 29831
           }
         ]
       },
@@ -455,7 +455,7 @@
             "id": "3039004186",
             "title": "3D Porthole Lighting Fix",
             "updated": "2025-06-14",
-            "subscribers": 10060
+            "subscribers": 10058
           }
         ]
       },
@@ -588,7 +588,7 @@
             "id": "3575516470",
             "title": "[9.0]Alarielle - wood elves campaign",
             "updated": "2026-09-25",
-            "subscribers": 3426
+            "subscribers": 3425
           }
         ]
       },
@@ -667,7 +667,7 @@
             "id": "3397481450",
             "title": "[9.x.x] Land Encounters And Points Of Interest - Events, Towers, Taverns, Boons & Curses + IEE + TOW",
             "updated": "2026-10-15",
-            "subscribers": 10094
+            "subscribers": 10093
           }
         ]
       },
@@ -1407,7 +1407,7 @@
             "id": "3243402413",
             "title": "[DEER24/震旦] 美化合集 独立版（Cathay Reskin Collection Independent version)",
             "updated": "2024-05-10",
-            "subscribers": 4628
+            "subscribers": 4629
           }
         ]
       },
@@ -1463,12 +1463,23 @@
             "title": "[EN patch] RogueTotalWar: Warhammer Spire",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 8152
+            "subscribers": 8153
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3753323752"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -1520,7 +1531,7 @@
             "id": "3816446693",
             "title": "【EN patch】The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-09",
-            "subscribers": 1324
+            "subscribers": 1325
           }
         ]
       },
@@ -1586,12 +1597,23 @@
             "title": "[EN] Legendary Heroes: Battle for Warhammer",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 3660
+            "subscribers": 3661
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3472458214"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -1719,7 +1741,7 @@
             "id": "3679399151",
             "title": "[Endo] Cathay",
             "updated": "2026-03-22",
-            "subscribers": 7467
+            "subscribers": 7469
           }
         ],
         "nexus": {
@@ -1787,7 +1809,7 @@
             "id": "3683061804",
             "title": "[Endo] Combined Faction Reskins",
             "updated": "2026-10-27",
-            "subscribers": 10618
+            "subscribers": 10622
           }
         ]
       },
@@ -1838,6 +1860,53 @@
       ]
     },
     {
+      "id": "steam-3698854498",
+      "name": "[Endo] Cultist of Slaanesh",
+      "authors": [
+        "endotw"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "graphical"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3698854498",
+            "title": "[Endo] Cultist of Slaanesh",
+            "unlisted": false,
+            "updated": "2026-04-09",
+            "subscribers": 21976
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "endotw",
+          "url": "https://steamcommunity.com/profiles/76561199752849398/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/12013212889277330892/5C61CB9043213AE8F78E726662AE43BE1DB6FBBA/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3702690266",
       "name": "[Endo] Damsel",
       "authors": [
@@ -1867,7 +1936,7 @@
             "id": "3702690266",
             "title": "[Endo] Damsel",
             "updated": "2026-04-13",
-            "subscribers": 15036
+            "subscribers": 15038
           }
         ]
       },
@@ -1929,7 +1998,7 @@
             "id": "3616082403",
             "title": "[Endo] Dark Elves",
             "updated": "2026-04-20",
-            "subscribers": 9901
+            "subscribers": 9902
           }
         ],
         "nexus": {
@@ -2008,7 +2077,7 @@
             "id": "3621449095",
             "title": "[Endo] Empire",
             "updated": "2026-10-27",
-            "subscribers": 8701
+            "subscribers": 8702
           }
         ],
         "nexus": {
@@ -2090,7 +2159,7 @@
             "title": "[Endo] Empire - Mixed",
             "unlisted": false,
             "updated": "2026-03-30",
-            "subscribers": 3277
+            "subscribers": 3278
           }
         ]
       },
@@ -2225,7 +2294,7 @@
             "id": "3710146959",
             "title": "[Endo] Female Ungors",
             "updated": "2026-04-19",
-            "subscribers": 6234
+            "subscribers": 6235
           }
         ]
       },
@@ -2287,7 +2356,7 @@
             "id": "3616234518",
             "title": "[Endo] High Elves",
             "updated": "2026-10-27",
-            "subscribers": 11649
+            "subscribers": 11650
           }
         ],
         "nexus": {
@@ -2353,7 +2422,7 @@
             "id": "3301596500",
             "title": "[Endo] Kislev",
             "updated": "2026-02-12",
-            "subscribers": 9595
+            "subscribers": 9596
           }
         ],
         "nexus": {
@@ -2421,7 +2490,7 @@
             "id": "3706296778",
             "title": "[Endo] Sisters of Twilight - Alternative",
             "updated": "2026-04-13",
-            "subscribers": 7688
+            "subscribers": 7690
           }
         ]
       },
@@ -2483,7 +2552,7 @@
             "id": "3672266382",
             "title": "[Endo] Wood Elves",
             "updated": "2026-04-13",
-            "subscribers": 10621
+            "subscribers": 10623
           }
         ],
         "nexus": {
@@ -2829,7 +2898,7 @@
             "id": "2958844147",
             "title": "[LIG] Reskin - Handmaiden",
             "updated": "2026-06-25",
-            "subscribers": 17059
+            "subscribers": 17060
           }
         ]
       },
@@ -3005,7 +3074,7 @@
             "title": "[SFO] Double Skill Points",
             "unlisted": false,
             "updated": "2026-07-18",
-            "subscribers": 44826
+            "subscribers": 44827
           }
         ]
       },
@@ -3076,7 +3145,28 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3674941543"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3027059730"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -3123,7 +3213,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3027059730"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -3170,7 +3271,38 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3621055936"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3624977934"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3027059730"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -3217,7 +3349,28 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3621055936"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3642243727"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -3264,7 +3417,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3027059730"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -3329,6 +3493,100 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/13760432286109284176/3D9A2D4D4972D2FAB1FA2ED62F37E06C03777C01/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3674941543",
+      "name": "[Slaanesh]Chaos Warriors and Chosen of Slaanesh with Glaives",
+      "authors": [
+        "Murray222"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3674941543",
+            "title": "[Slaanesh]Chaos Warriors and Chosen of Slaanesh with Glaives",
+            "unlisted": false,
+            "updated": "2026-03-20",
+            "subscribers": 1348
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Murray222",
+          "url": "https://steamcommunity.com/profiles/76561197965725186/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15588759467000014837/15643AF720EE748D6FBBBA9847264D0698A3D9AF/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3624977934",
+      "name": "[Slaanesh]Much Stronger Unique Skills for Dechala",
+      "authors": [
+        "Murray222"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "campaign"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3624977934",
+            "title": "[Slaanesh]Much Stronger Unique Skills for Dechala",
+            "unlisted": false,
+            "updated": "2025-12-17",
+            "subscribers": 2252
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Murray222",
+          "url": "https://steamcommunity.com/profiles/76561197965725186/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10738336798148903922/8327D41D9C3329B2D7E034799E8EFF560CC3E571/",
           "kind": "cover",
           "source": "steam"
         }
@@ -3623,7 +3881,7 @@
             "id": "3663734212",
             "title": "[Ui] More Buttons For Mechanics - 2 ROWS+",
             "updated": "2026-09-24",
-            "subscribers": 4861
+            "subscribers": 4860
           }
         ]
       },
@@ -3684,7 +3942,7 @@
             "title": "[Ui] Shorter Menu For More Tools - 5 Buttons Per Row",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 29903
+            "subscribers": 29900
           }
         ]
       },
@@ -4233,7 +4491,7 @@
             "title": "Agent Hero Forever - Gotrek & Felix + Ulrika",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 10951
+            "subscribers": 10952
           }
         ]
       },
@@ -4287,7 +4545,7 @@
             "id": "3594429287",
             "title": "AI Camping Settlements Fix 9.x",
             "updated": "2026-10-23",
-            "subscribers": 9159
+            "subscribers": 9161
           }
         ]
       },
@@ -4851,7 +5109,7 @@
             "title": "艾拉瑞丽堕落（Alarielle Temptation Bloom） & SFO 兵种单位兼容补丁",
             "unlisted": false,
             "updated": "2026-08-01",
-            "subscribers": 2106
+            "subscribers": 2107
           }
         ]
       },
@@ -6506,7 +6764,7 @@
             "title": "All Diplomatic Options - Vassalize, Liberate, Confederate",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 79430
+            "subscribers": 79432
           }
         ]
       },
@@ -6567,7 +6825,7 @@
             "title": "全派系传奇领主：艾雷莎·西格莉卡【All Faction Legendary Lord: Aelesha Sigrika】",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 6064
+            "subscribers": 6065
           }
         ]
       },
@@ -6633,12 +6891,23 @@
             "title": "Alshua's Ellyrion (High Elf Cavalry)",
             "unlisted": false,
             "updated": "2026-10-16",
-            "subscribers": 25639
+            "subscribers": 25641
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -6813,7 +7082,7 @@
             "title": "Animals for Wood Elves",
             "unlisted": false,
             "updated": "2026-10-04",
-            "subscribers": 24667
+            "subscribers": 24668
           }
         ]
       },
@@ -7144,7 +7413,7 @@
             "id": "2866038031",
             "title": "Lazy's Archaon-chan Slaanesh Cultist Voiceover",
             "updated": "2025-09-05",
-            "subscribers": 8335
+            "subscribers": 8334
           }
         ]
       },
@@ -7453,7 +7722,7 @@
             "id": "3149445431",
             "title": "Audio Mixer",
             "updated": "2026-10-30",
-            "subscribers": 251618
+            "subscribers": 251619
           }
         ]
       },
@@ -7524,7 +7793,7 @@
             "id": "2859802328",
             "title": "Auto Resolve Quest Battles - Updated to 9.0.X (Lords of the End Times)",
             "updated": "2026-09-25",
-            "subscribers": 308499
+            "subscribers": 308504
           }
         ]
       },
@@ -7679,7 +7948,7 @@
             "id": "3512295439",
             "title": "Azazel skin",
             "updated": "2025-06-29",
-            "subscribers": 3031
+            "subscribers": 3032
           }
         ]
       },
@@ -8458,7 +8727,7 @@
             "id": "2987723311",
             "title": "Bad Legendary Characters - Legendary Lords / Legendary Heroes",
             "updated": "2026-02-20",
-            "subscribers": 33037
+            "subscribers": 33038
           }
         ]
       },
@@ -8895,7 +9164,7 @@
             "id": "3346259963",
             "title": "Beastmen: Beastpaths Underways",
             "updated": "2026-10-18",
-            "subscribers": 2895
+            "subscribers": 2896
           }
         ]
       },
@@ -9084,7 +9353,7 @@
             "title": "Beautiful Neferata",
             "unlisted": false,
             "updated": "2026-09-29",
-            "subscribers": 17042
+            "subscribers": 17046
           }
         ]
       },
@@ -9235,7 +9504,7 @@
             "id": "3209123287",
             "title": "Belakor's Shadow - Corrupted Daemon Princes overhaul (MCT Support)",
             "updated": "2026-07-09",
-            "subscribers": 7389
+            "subscribers": 7388
           }
         ]
       },
@@ -9364,7 +9633,7 @@
             "title": "Better AI Army Builder",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 10864
+            "subscribers": 10863
           }
         ]
       },
@@ -9440,7 +9709,7 @@
             "id": "2790029103",
             "title": "Better Alliance",
             "updated": "2026-10-25",
-            "subscribers": 36595
+            "subscribers": 36593
           }
         ]
       },
@@ -9500,7 +9769,7 @@
             "id": "2891886534",
             "title": "Better Alliance - Foreign Agents",
             "updated": "2026-10-25",
-            "subscribers": 10314
+            "subscribers": 10313
           }
         ]
       },
@@ -9556,7 +9825,7 @@
             "title": "Better Camera Mod",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 601422
+            "subscribers": 601424
           }
         ]
       },
@@ -9664,7 +9933,7 @@
             "title": "Better Sound Levels Mod v8.0",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 10878
+            "subscribers": 10879
           }
         ]
       },
@@ -9846,7 +10115,7 @@
             "title": "Bonepilla Championz",
             "unlisted": false,
             "updated": "2024-12-18",
-            "subscribers": 12333
+            "subscribers": 12334
           }
         ]
       },
@@ -9893,7 +10162,7 @@
             "title": "Bruiser Careers",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 13124
+            "subscribers": 13123
           }
         ]
       },
@@ -10059,7 +10328,7 @@
             "id": "2870464661",
             "title": "Building Slots Extended",
             "updated": "2024-06-25",
-            "subscribers": 41575
+            "subscribers": 41573
           }
         ]
       },
@@ -10414,7 +10683,7 @@
             "id": "3632214035",
             "title": "Calm's N'Kari Reskin",
             "updated": "2026-09-27",
-            "subscribers": 17320
+            "subscribers": 17321
           }
         ]
       },
@@ -10483,7 +10752,7 @@
             "id": "3485519396",
             "title": "Campaign AI Tweaks",
             "updated": "2026-10-31",
-            "subscribers": 6023
+            "subscribers": 6022
           }
         ]
       },
@@ -10555,7 +10824,7 @@
             "title": "Campaign Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 118427
+            "subscribers": 118425
           }
         ]
       },
@@ -10806,7 +11075,7 @@
             "id": "2927296206",
             "title": "Cataph's Southern Realms (TEB)",
             "updated": "2026-10-12",
-            "subscribers": 90279
+            "subscribers": 90282
           }
         ]
       },
@@ -11419,7 +11688,7 @@
             "title": "Celestial Hurricanum",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 6711
+            "subscribers": 6710
           }
         ]
       },
@@ -11541,7 +11810,7 @@
             "title": "Champions of Undeath: Audio Assets",
             "unlisted": false,
             "updated": "2026-10-31",
-            "subscribers": 17748
+            "subscribers": 17747
           }
         ]
       },
@@ -11598,7 +11867,7 @@
             "id": "3357763311",
             "title": "Champions Of Undeath: Blood Knight Heretics - Updated for 9.0",
             "updated": "2026-09-30",
-            "subscribers": 14720
+            "subscribers": 14719
           }
         ]
       },
@@ -11742,7 +12011,7 @@
             "id": "2845365747",
             "title": "Chaosbulls - Updated and fixed !",
             "updated": "2026-09-25",
-            "subscribers": 10396
+            "subscribers": 10395
           }
         ]
       },
@@ -11802,7 +12071,7 @@
             "title": "Children of the Woods (Immortal Empires Edition)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 16261
+            "subscribers": 16262
           }
         ]
       },
@@ -11919,7 +12188,7 @@
             "title": "ChopChop's WH3: Assets",
             "unlisted": false,
             "updated": "2026-10-18",
-            "subscribers": 30921
+            "subscribers": 30923
           }
         ]
       },
@@ -12031,7 +12300,7 @@
             "id": "3829276482",
             "title": "Citadel of Dusk Standalone (Dust)",
             "updated": "2026-11-02",
-            "subscribers": 323
+            "subscribers": 324
           }
         ]
       },
@@ -13748,7 +14017,7 @@
             "title": "Corrupted Landmarks",
             "role": "main",
             "updated": "2026-10-21",
-            "subscribers": 41850
+            "subscribers": 41852
           }
         ],
         "discord": [
@@ -14115,7 +14384,7 @@
             "title": "Corrupted Wood Elf Units for Slaanesh",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 20822
+            "subscribers": 20823
           }
         ]
       },
@@ -14552,7 +14821,7 @@
             "id": "2831594644",
             "title": "Cultist Expansion: Brass Sisters of Khorne",
             "updated": "2026-09-24",
-            "subscribers": 16158
+            "subscribers": 16159
           }
         ]
       },
@@ -14704,7 +14973,7 @@
             "id": "2821600897",
             "title": "Cultist of Pleasure Reskin",
             "updated": "2026-09-24",
-            "subscribers": 81463
+            "subscribers": 81461
           }
         ]
       },
@@ -14758,6 +15027,53 @@
       ]
     },
     {
+      "id": "steam-2860203054",
+      "name": "Cultist of Slaanesh - Reborn",
+      "authors": [
+        "JFred"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "graphical"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2860203054",
+            "title": "Cultist of Slaanesh - Reborn",
+            "unlisted": false,
+            "updated": "2022-12-02",
+            "subscribers": 11834
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "JFred",
+          "url": "https://steamcommunity.com/profiles/76561198006831442/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1826794690253216009/001C864A85C30308B9411B1C72D433B23A11DFF3/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3677448789",
       "name": "Cultist of Slaanesh Reskin Compilation - No Nose Piercing Variants Add On Submod",
       "authors": [
@@ -14781,7 +15097,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3672168482"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -14828,7 +15155,58 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2821600897"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2860203054"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791323616"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3698854498"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -14846,6 +15224,53 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/12784874145801154323/0DBC449E46DE3DD59E16473EEE8E51196A94BA57/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-2791323616",
+      "name": "Cure for Alopecia - a Slaanesh Cultist reskin",
+      "authors": [
+        "Lorghul"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "graphical"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "2791323616",
+            "title": "Cure for Alopecia - a Slaanesh Cultist reskin",
+            "unlisted": false,
+            "updated": "2024-05-18",
+            "subscribers": 6669
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Lorghul",
+          "url": "https://steamcommunity.com/profiles/76561197971028025/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1826780743282271644/2FD6CBED7B28C67D2942F618A45119C19170D050/",
           "kind": "cover",
           "source": "steam"
         }
@@ -14921,7 +15346,7 @@
             "id": "2895227844",
             "title": "[On Hiatus] Custom Matched Combat Animations",
             "updated": "2024-03-27",
-            "subscribers": 54334
+            "subscribers": 54330
           }
         ]
       },
@@ -15016,7 +15441,7 @@
             "id": "3772766792",
             "title": "[Reskin]可爱吸血鬼——吸血鬼伯爵娘化（Cute Girls of Vampire Counts）",
             "updated": "2026-10-21",
-            "subscribers": 2130
+            "subscribers": 2131
           }
         ]
       },
@@ -15672,7 +16097,7 @@
             "title": "Dark Dark Elves UI",
             "unlisted": false,
             "updated": "2026-03-12",
-            "subscribers": 1695
+            "subscribers": 1694
           }
         ]
       },
@@ -15773,7 +16198,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3722469550"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -15862,7 +16298,7 @@
             "title": "Dark Elves Executioner Heroes",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 6456
+            "subscribers": 6455
           }
         ]
       },
@@ -15909,12 +16345,23 @@
             "title": "Dark Elves Menagerie",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2357
+            "subscribers": 2356
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3709288693"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -15966,7 +16413,7 @@
             "id": "3062374987",
             "title": "Dark Elves Rework",
             "updated": "2026-09-26",
-            "subscribers": 4269
+            "subscribers": 4268
           }
         ]
       },
@@ -16194,7 +16641,38 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3062374987"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3314798644"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3392092308"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -16288,7 +16766,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3709288693"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -16392,12 +16881,33 @@
             "title": "Dark Land Orcs",
             "unlisted": false,
             "updated": "2026-10-10",
-            "subscribers": 62827
+            "subscribers": 62825
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3149445431"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -16439,7 +16949,7 @@
             "id": "3139730079",
             "title": "Daughter of Chaos (Tables)",
             "updated": "2024-12-17",
-            "subscribers": 4698
+            "subscribers": 4699
           }
         ]
       },
@@ -16504,7 +17014,7 @@
             "id": "2960261916",
             "title": "Daughters of Chaos",
             "updated": "2025-11-03",
-            "subscribers": 4940
+            "subscribers": 4941
           }
         ]
       },
@@ -17322,7 +17832,7 @@
             "id": "2978779730",
             "title": "DeepWar AI",
             "updated": "2026-10-30",
-            "subscribers": 24993
+            "subscribers": 24995
           }
         ]
       },
@@ -17424,7 +17934,7 @@
             "title": "Disable startup splash screens / intros",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 135671
+            "subscribers": 135668
           }
         ]
       },
@@ -17540,7 +18050,7 @@
             "title": "Dogs of War",
             "unlisted": false,
             "updated": "2026-09-30",
-            "subscribers": 7745
+            "subscribers": 7746
           }
         ]
       },
@@ -17654,13 +18164,13 @@
             "id": "3720019982",
             "title": "D's is Sister of Twilight_Alternative",
             "updated": "2026-05-05",
-            "subscribers": 1439
+            "subscribers": 1440
           },
           {
             "id": "3718454296",
             "title": "D's is Mage_Alternative",
             "updated": "2026-05-02",
-            "subscribers": 1526
+            "subscribers": 1527
           },
           {
             "id": "3718979014",
@@ -18107,7 +18617,7 @@
             "title": "Druchii",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 8268
+            "subscribers": 8267
           }
         ]
       },
@@ -18160,7 +18670,7 @@
             "title": "Druchii Cosmetics (Updated for 9.0.4)",
             "unlisted": false,
             "updated": "2026-10-19",
-            "subscribers": 4785
+            "subscribers": 4786
           }
         ]
       },
@@ -18213,7 +18723,7 @@
             "id": "3556592733",
             "title": "戴查美化 (Drycha Reskin)",
             "updated": "2025-10-07",
-            "subscribers": 3455
+            "subscribers": 3456
           }
         ]
       },
@@ -18282,7 +18792,7 @@
             "id": "3815990781",
             "title": "Dusts Corrupted Heroes",
             "updated": "2026-11-01",
-            "subscribers": 2766
+            "subscribers": 2768
           }
         ]
       },
@@ -18402,12 +18912,23 @@
             "title": "Dwarf Lords of Legend",
             "unlisted": false,
             "updated": "2026-10-01",
-            "subscribers": 13039
+            "subscribers": 13037
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -18449,7 +18970,7 @@
             "title": "Dwarf Thunderbarge MKII",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 47614
+            "subscribers": 47616
           }
         ]
       },
@@ -18506,7 +19027,7 @@
             "id": "2991431203",
             "title": "Dynasty of the Damned [7.0]",
             "updated": "2026-02-17",
-            "subscribers": 15207
+            "subscribers": 15205
           }
         ]
       },
@@ -19666,7 +20187,7 @@
             "id": "3816938215",
             "title": "Empress Caroline Franz (Amber) – female Karl Franz",
             "updated": "2026-10-16",
-            "subscribers": 1769
+            "subscribers": 1770
           }
         ]
       },
@@ -20621,7 +21142,7 @@
             "id": "3349407231",
             "title": "Expanded Building Overhaul",
             "updated": "2026-10-02",
-            "subscribers": 14617
+            "subscribers": 14618
           }
         ]
       },
@@ -20687,12 +21208,23 @@
             "title": "Expanded Building: Bastions, Forts & Gates",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 19264
+            "subscribers": 19265
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3592152960"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -20741,7 +21273,7 @@
             "id": "3265184953",
             "title": "Expanded Building: Instant Building",
             "updated": "2026-09-26",
-            "subscribers": 6308
+            "subscribers": 6309
           }
         ]
       },
@@ -20792,7 +21324,7 @@
             "title": "Expanded Roster - Greenskins - Goblin Pack",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 32651
+            "subscribers": 32649
           }
         ]
       },
@@ -20853,7 +21385,7 @@
             "title": "Expanded Roster - Greenskins - Orc Pack",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 40004
+            "subscribers": 40003
           }
         ]
       },
@@ -20915,7 +21447,7 @@
             "title": "EXPERIENCE RANKS",
             "unlisted": false,
             "updated": "2023-09-08",
-            "subscribers": 31689
+            "subscribers": 31688
           }
         ]
       },
@@ -21238,7 +21770,7 @@
             "title": "Female Daemonettes",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 42899
+            "subscribers": 42898
           }
         ]
       },
@@ -22385,7 +22917,7 @@
             "id": "2822827945",
             "title": "Formations 3",
             "updated": "2023-11-24",
-            "subscribers": 7863
+            "subscribers": 7862
           }
         ]
       },
@@ -22545,7 +23077,7 @@
             "title": "Frost Dragon",
             "unlisted": false,
             "updated": "2026-10-31",
-            "subscribers": 10481
+            "subscribers": 10483
           }
         ]
       },
@@ -22866,7 +23398,7 @@
             "title": "通用框架 (Generic Framework)",
             "unlisted": false,
             "updated": "2026-10-12",
-            "subscribers": 43729
+            "subscribers": 43730
           }
         ]
       },
@@ -22987,7 +23519,7 @@
             "id": "3812278307",
             "title": "Global Pcall Listener Fix 9.0.x",
             "updated": "2026-10-03",
-            "subscribers": 4612
+            "subscribers": 4619
           }
         ]
       },
@@ -23043,7 +23575,7 @@
             "id": "3822979643",
             "title": "!peach_garden_boyz_english.pack",
             "updated": "2026-10-20",
-            "subscribers": 22
+            "subscribers": 21
           }
         ]
       },
@@ -23117,7 +23649,7 @@
             "id": "2890499031",
             "title": "Godslayer Overhaul by Mortrau",
             "updated": "2026-10-11",
-            "subscribers": 40189
+            "subscribers": 40190
           }
         ]
       },
@@ -23183,7 +23715,7 @@
             "title": "Grand Campaign Camera",
             "unlisted": false,
             "updated": "2023-11-30",
-            "subscribers": 6871
+            "subscribers": 6872
           }
         ]
       },
@@ -23237,7 +23769,7 @@
             "title": "Grand Order of the Reiksguard",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 14350
+            "subscribers": 14348
           }
         ]
       },
@@ -23439,7 +23971,7 @@
             "title": "Guv's Make Us Special: Alastair the White Lion (WH3) (Updated Patch 9.0.3 / 2026-10-11)",
             "unlisted": false,
             "updated": "2026-10-11",
-            "subscribers": 6120
+            "subscribers": 6121
           }
         ]
       },
@@ -23542,7 +24074,7 @@
             "id": "3224728562",
             "title": "Hashut's Zharrhammer Overhaul (Complete Standalone BETA)",
             "updated": "2026-11-02",
-            "subscribers": 2101
+            "subscribers": 2102
           }
         ]
       },
@@ -23744,7 +24276,7 @@
             "id": "3238848431",
             "title": "Helper UI",
             "updated": "2026-10-10",
-            "subscribers": 79225
+            "subscribers": 79226
           }
         ]
       },
@@ -24143,7 +24675,7 @@
             "id": "2931087074",
             "title": "Heroes of Legend: Lords of Time Update",
             "updated": "2026-10-24",
-            "subscribers": 58058
+            "subscribers": 58056
           }
         ]
       },
@@ -24403,7 +24935,7 @@
             "id": "3480317584",
             "title": "High elf red line buffs for dark elf units",
             "updated": "2025-05-21",
-            "subscribers": 15020
+            "subscribers": 15022
           }
         ]
       },
@@ -24469,7 +25001,7 @@
             "id": "3258529495",
             "title": "High Elves Expanded Hero Skill Trees",
             "updated": "2026-10-22",
-            "subscribers": 9510
+            "subscribers": 9511
           }
         ]
       },
@@ -24593,7 +25125,7 @@
             "title": "High Resolution UI Improvements, IT WORKS",
             "unlisted": false,
             "updated": "2026-10-06",
-            "subscribers": 120959
+            "subscribers": 120956
           }
         ]
       },
@@ -24729,7 +25261,7 @@
             "title": "Hooveric Reskin (HV Reskin)",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 65346
+            "subscribers": 65348
           }
         ]
       },
@@ -24884,7 +25416,7 @@
             "id": "3608958073",
             "title": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)",
             "updated": "2026-09-26",
-            "subscribers": 2687
+            "subscribers": 2688
           }
         ]
       },
@@ -24999,7 +25531,7 @@
             "id": "3007996493",
             "title": "Immortal Empires Expanded",
             "updated": "2026-10-28",
-            "subscribers": 239555
+            "subscribers": 239553
           }
         ]
       },
@@ -25073,7 +25605,7 @@
             "title": "Immortal Landmarks",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 182147
+            "subscribers": 182146
           }
         ]
       },
@@ -25140,7 +25672,7 @@
             "title": "Improved LOD",
             "unlisted": false,
             "updated": "2023-11-23",
-            "subscribers": 32093
+            "subscribers": 32095
           }
         ]
       },
@@ -25359,7 +25891,7 @@
             "id": "3773211997",
             "title": "集成战略 (Integrated Strategies)",
             "updated": "2026-10-08",
-            "subscribers": 2420
+            "subscribers": 2421
           }
         ]
       },
@@ -25579,7 +26111,7 @@
             "title": "Ivan Radinov - Commander of the Gryphon Legion",
             "unlisted": false,
             "updated": "2026-10-13",
-            "subscribers": 32544
+            "subscribers": 32546
           }
         ]
       },
@@ -25633,7 +26165,7 @@
             "id": "2803915768",
             "title": "Johnny's Loreful Nurgle LITE (plagues update)",
             "updated": "2026-09-26",
-            "subscribers": 4768
+            "subscribers": 4769
           }
         ]
       },
@@ -25809,7 +26341,7 @@
             "id": "3082390369",
             "title": "Just Good Babysitter",
             "updated": "2026-09-26",
-            "subscribers": 89310
+            "subscribers": 89312
           }
         ]
       },
@@ -25895,7 +26427,7 @@
             "id": "3071058010",
             "title": "Just Good UI Mod",
             "updated": "2026-10-30",
-            "subscribers": 50066
+            "subscribers": 50065
           }
         ]
       },
@@ -26135,7 +26667,7 @@
             "id": "2806964197",
             "title": "Lazy's Katarin The Ice Queen Remove Crown",
             "updated": "2025-03-26",
-            "subscribers": 24160
+            "subscribers": 24158
           }
         ]
       },
@@ -26341,7 +26873,7 @@
             "title": "Keep Seduced Units",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 5871
+            "subscribers": 5870
           }
         ]
       },
@@ -26401,7 +26933,7 @@
             "id": "2996322070",
             "title": "Khalida the Queen",
             "updated": "2026-11-01",
-            "subscribers": 37059
+            "subscribers": 37061
           }
         ],
         "nexus": {
@@ -26667,7 +27199,7 @@
             "id": "3430763383",
             "title": "Kislev Units",
             "updated": "2026-09-26",
-            "subscribers": 4555
+            "subscribers": 4556
           }
         ]
       },
@@ -26746,7 +27278,7 @@
             "title": "Kislev Units Assets",
             "unlisted": false,
             "updated": "2026-08-29",
-            "subscribers": 2115
+            "subscribers": 2116
           }
         ]
       },
@@ -27176,7 +27708,7 @@
             "title": "Land of Chivalry",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 9275
+            "subscribers": 9274
           }
         ]
       },
@@ -27239,7 +27771,7 @@
             "id": "3025510782",
             "title": "Landmarks of Eternity",
             "updated": "2026-09-24",
-            "subscribers": 96639
+            "subscribers": 96643
           }
         ]
       },
@@ -27315,7 +27847,7 @@
             "id": "3079915520",
             "title": "Landmarks of Eternity-Immortal Empire Expanded edition (28 new landmarks)",
             "updated": "2026-09-27",
-            "subscribers": 72010
+            "subscribers": 72007
           }
         ]
       },
@@ -28615,7 +29147,7 @@
             "id": "2805809756",
             "title": "Lazy's Katarin the Ice Queen (should work with any version, even if it says it's outdated)",
             "updated": "2026-01-10",
-            "subscribers": 97849
+            "subscribers": 97848
           }
         ]
       },
@@ -29134,7 +29666,7 @@
             "id": "2854968438",
             "title": "Lazy's Valkia the Gorequeen Blonde",
             "updated": "2023-09-17",
-            "subscribers": 1420
+            "subscribers": 1419
           }
         ]
       },
@@ -29441,7 +29973,7 @@
             "id": "3305404052",
             "title": "Legendary Characters - 9.0",
             "updated": "2026-10-19",
-            "subscribers": 62586
+            "subscribers": 62589
           }
         ]
       },
@@ -29575,7 +30107,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2826930183"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -29617,12 +30160,23 @@
             "title": "Legendary Characters Assets - 9.0",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 61875
+            "subscribers": 61878
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3305404052"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -30929,7 +31483,7 @@
             "id": "2998525410",
             "title": "Local Recruitment for Warriors of Chaos",
             "updated": "2026-09-25",
-            "subscribers": 42969
+            "subscribers": 42971
           }
         ]
       },
@@ -31092,7 +31646,7 @@
             "title": "Lords of the Night - Konrad & Sylvanian Levy",
             "unlisted": false,
             "updated": "2026-10-13",
-            "subscribers": 15337
+            "subscribers": 15336
           }
         ]
       },
@@ -31153,7 +31707,7 @@
             "id": "3079850881",
             "title": "Lost Calm: Jurassic Normal (updated for Patch 9)",
             "updated": "2026-10-05",
-            "subscribers": 77660
+            "subscribers": 77657
           }
         ]
       },
@@ -31267,7 +31821,7 @@
             "id": "3086916833",
             "title": "Lost Calm: Jurassic Normal SFO",
             "updated": "2026-06-05",
-            "subscribers": 8114
+            "subscribers": 8115
           }
         ]
       },
@@ -31532,7 +32086,7 @@
             "id": "3081886544",
             "title": "Lustria Jurassic 中文汉化合集",
             "updated": "2026-06-21",
-            "subscribers": 18480
+            "subscribers": 18479
           }
         ]
       },
@@ -31669,12 +32223,23 @@
             "title": "Lustria Rises - Lizardmen Overhaul",
             "unlisted": false,
             "updated": "2026-11-01",
-            "subscribers": 32023
+            "subscribers": 32024
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -31915,7 +32480,7 @@
             "title": "Lyra the Lioness: Legendary Hero",
             "unlisted": false,
             "updated": "2025-01-03",
-            "subscribers": 9544
+            "subscribers": 9545
           }
         ]
       },
@@ -32263,7 +32828,7 @@
             "id": "2896264280",
             "title": "Matched Combat + Reload Animations Submod",
             "updated": "2024-03-29",
-            "subscribers": 26801
+            "subscribers": 26799
           }
         ]
       },
@@ -32862,7 +33427,7 @@
             "id": "2860381227",
             "title": "Miao Ying vs Slaanesh (Immortal Empires start positions) 被色孽包围的妙影(仅限超凡帝国)",
             "updated": "2025-04-15",
-            "subscribers": 6783
+            "subscribers": 6784
           }
         ]
       },
@@ -33615,7 +34180,7 @@
             "id": "3006052748",
             "title": "Missing Special Herdstones",
             "updated": "2026-06-29",
-            "subscribers": 3525
+            "subscribers": 3526
           }
         ]
       },
@@ -33740,12 +34305,23 @@
             "title": "Mixu's Legendary Lords: Asset Pack",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 250420
+            "subscribers": 250421
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2802810577"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -33790,7 +34366,7 @@
             "id": "2815354316",
             "title": "Mod Configuration Tool [LEGACY]",
             "updated": "2023-02-04",
-            "subscribers": 34270
+            "subscribers": 34271
           }
         ]
       },
@@ -33862,7 +34438,7 @@
             "id": "2867839569",
             "title": "Lazy's Morathi Ascension Stage 2 (6.3)",
             "updated": "2025-09-05",
-            "subscribers": 34332
+            "subscribers": 34336
           },
           {
             "id": "2868970620",
@@ -34145,7 +34721,7 @@
             "id": "2855142590",
             "title": "Morathi Simple Slaanesh Expansion - Cult of Pleasure Can Recruit Slaanesh Daemons",
             "updated": "2023-04-16",
-            "subscribers": 5588
+            "subscribers": 5587
           }
         ]
       },
@@ -35008,7 +35584,7 @@
             "id": "2888171970",
             "title": "Variant Selector",
             "updated": "2026-09-24",
-            "subscribers": 233714
+            "subscribers": 233719
           }
         ],
         "discord": [
@@ -35172,7 +35748,7 @@
             "id": "3292995911",
             "title": "Morgan's Heroes (aka, Tamurkhan's Chieftain Porting)",
             "updated": "2026-10-28",
-            "subscribers": 4493
+            "subscribers": 4494
           }
         ]
       },
@@ -35241,7 +35817,7 @@
             "title": "Moulder's Menagerie (Chimaerats, Stormfiends, and More!)",
             "unlisted": false,
             "updated": "2026-10-10",
-            "subscribers": 40050
+            "subscribers": 40053
           }
         ]
       },
@@ -35520,7 +36096,7 @@
             "id": "3261219491",
             "title": "Musk Deer Princess Knight [For Radious]——麝香鹿姬骑士团(Radious数据)",
             "updated": "2026-10-19",
-            "subscribers": 906
+            "subscribers": 905
           }
         ]
       },
@@ -35645,7 +36221,7 @@
             "id": "2803359123",
             "title": "Musk Deer Princess Knight [For SFO]——麝香鹿姬骑士团(SFO数据)",
             "updated": "2026-10-19",
-            "subscribers": 2760
+            "subscribers": 2761
           }
         ]
       },
@@ -35826,7 +36402,7 @@
             "id": "3830112095",
             "title": "Nagash The Dark Queen",
             "updated": "2026-10-30",
-            "subscribers": 1050
+            "subscribers": 1052
           }
         ]
       },
@@ -36204,7 +36780,7 @@
             "id": "3810498134",
             "title": "New Lahmian Lords and Neferata's Handmaidens",
             "updated": "2026-10-03",
-            "subscribers": 10587
+            "subscribers": 10591
           }
         ]
       },
@@ -36635,7 +37211,7 @@
             "id": "3820276885",
             "title": "Nymeria (9.0.3)",
             "updated": "2026-10-15",
-            "subscribers": 254
+            "subscribers": 255
           }
         ]
       },
@@ -36710,7 +37286,7 @@
             "id": "3404717872",
             "title": "Nymeria - Legendary Hero/Lord",
             "updated": "2025-01-10",
-            "subscribers": 5775
+            "subscribers": 5776
           },
           {
             "id": "3406065086",
@@ -36779,12 +37355,33 @@
             "title": "OvN Lost Factions: Grudgebringers",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 60774
+            "subscribers": 60779
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3149445431"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -37484,7 +38081,7 @@
             "title": "Pleasureseekers of Slaanesh and Tzeentch Great Winged Terrors",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 11750
+            "subscribers": 11749
           }
         ]
       },
@@ -37710,7 +38307,7 @@
             "title": "Preytons",
             "unlisted": false,
             "updated": "2026-10-10",
-            "subscribers": 7803
+            "subscribers": 7802
           }
         ]
       },
@@ -38036,7 +38633,7 @@
             "title": "Radious Total War Mod - Part 1",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214945
+            "subscribers": 214953
           }
         ]
       },
@@ -38130,7 +38727,7 @@
             "title": "Radious Total War Mod - Part 2",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214670
+            "subscribers": 214679
           }
         ]
       },
@@ -38224,7 +38821,7 @@
             "title": "Radious Total War Mod - Part 3",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214470
+            "subscribers": 214478
           }
         ]
       },
@@ -38320,7 +38917,7 @@
             "title": "Radious Total War Mod - Part 4 - Assets",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 211938
+            "subscribers": 211947
           }
         ]
       },
@@ -39371,7 +39968,7 @@
             "title": "Readman Manic Minotaur Mayhem",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 1904
+            "subscribers": 1905
           }
         ]
       },
@@ -39730,7 +40327,7 @@
             "title": "Readman Safe Sailing Ships",
             "unlisted": false,
             "updated": "2025-12-14",
-            "subscribers": 1025
+            "subscribers": 1026
           }
         ]
       },
@@ -39799,7 +40396,7 @@
             "title": "Sigvald Simply Superior",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 838
+            "subscribers": 839
           }
         ]
       },
@@ -40350,7 +40947,7 @@
             "id": "3625969460",
             "title": "Readman Wildly Working Wonders",
             "updated": "2025-12-18",
-            "subscribers": 1306
+            "subscribers": 1307
           }
         ],
         "discord": [
@@ -40882,7 +41479,7 @@
             "title": "Regiments of Renown Compilation",
             "unlisted": false,
             "updated": "2026-10-04",
-            "subscribers": 46581
+            "subscribers": 46582
           }
         ]
       },
@@ -40943,7 +41540,7 @@
             "title": "Reloading Animations",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 143578
+            "subscribers": 143575
           }
         ]
       },
@@ -41055,7 +41652,7 @@
             "title": "Remove characters traits limit",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 182998
+            "subscribers": 182995
           }
         ]
       },
@@ -41236,7 +41833,7 @@
             "id": "2789865816",
             "title": "Resized Lords Heroes 3",
             "updated": "2026-10-21",
-            "subscribers": 17328
+            "subscribers": 17327
           }
         ]
       },
@@ -41291,7 +41888,7 @@
             "id": "2856367440",
             "title": "Restore Horde and Recruitment for Chaos",
             "updated": "2026-10-13",
-            "subscribers": 10584
+            "subscribers": 10585
           }
         ]
       },
@@ -41352,7 +41949,7 @@
             "id": "2989226363",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon",
             "updated": "2025-09-09",
-            "subscribers": 44859
+            "subscribers": 44860
           }
         ]
       },
@@ -41423,7 +42020,7 @@
             "id": "2868228422",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon: Jade Pirate Submod",
             "updated": "2026-09-27",
-            "subscribers": 7849
+            "subscribers": 7848
           }
         ]
       },
@@ -41507,7 +42104,7 @@
             "id": "3753323752",
             "title": "RogueTotalWar: Warhammer Spire",
             "updated": "2026-09-26",
-            "subscribers": 12674
+            "subscribers": 12675
           }
         ]
       },
@@ -41793,7 +42390,7 @@
             "title": "Run 'Em Down - Units Actually Damage Routing Units",
             "unlisted": false,
             "updated": "2025-11-16",
-            "subscribers": 41325
+            "subscribers": 41322
           }
         ]
       },
@@ -42409,7 +43006,7 @@
             "title": "Sarvente's Xiao (Continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5282
+            "subscribers": 5283
           }
         ]
       },
@@ -42463,7 +43060,7 @@
             "title": "Sarvente's Enhi (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 5022
+            "subscribers": 5023
           }
         ]
       },
@@ -42517,7 +43114,7 @@
             "title": "Sarvente's Frostblood Upyr` (Continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 3818
+            "subscribers": 3819
           }
         ]
       },
@@ -42564,7 +43161,7 @@
             "title": "Sarvente's Hakutaku Diviners (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 4834
+            "subscribers": 4836
           }
         ]
       },
@@ -42618,7 +43215,7 @@
             "title": "Sarvente's Hollows (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 3909
+            "subscribers": 3911
           }
         ]
       },
@@ -42672,7 +43269,7 @@
             "title": "Sarvente's Ice Matriarchs (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 7965
+            "subscribers": 7967
           }
         ]
       },
@@ -42766,7 +43363,7 @@
             "title": "Sarvente's Shards of Dai Ji (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5769
+            "subscribers": 5770
           }
         ]
       },
@@ -43062,7 +43659,7 @@
             "id": "3030996759",
             "title": "SCM Marienburg (9.0)",
             "updated": "2026-10-22",
-            "subscribers": 51084
+            "subscribers": 51086
           }
         ]
       },
@@ -43131,7 +43728,7 @@
             "id": "3318719948",
             "title": "SCM Skaven Clans - 9.0",
             "updated": "2026-10-18",
-            "subscribers": 32227
+            "subscribers": 32231
           }
         ]
       },
@@ -43219,7 +43816,7 @@
             "id": "3318713041",
             "title": "SCM's Skaven Assets - 9.0",
             "updated": "2026-10-11",
-            "subscribers": 32221
+            "subscribers": 32222
           }
         ]
       },
@@ -45235,7 +45832,7 @@
             "id": "2902803962",
             "title": "SFO w/ Warband Upgrades Ultimate",
             "updated": "2026-08-13",
-            "subscribers": 17759
+            "subscribers": 17760
           }
         ]
       },
@@ -45368,7 +45965,7 @@
             "title": "SFO: Grimhammer III - UPDATE IN PROGRESS",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 329335
+            "subscribers": 329340
           }
         ]
       },
@@ -45589,7 +46186,7 @@
             "id": "2846183349",
             "title": "Siege AI & Mechanics Overhaul",
             "updated": "2026-10-27",
-            "subscribers": 19965
+            "subscribers": 19966
           }
         ]
       },
@@ -46124,7 +46721,7 @@
             "id": "3810029219",
             "title": "Skeletor Inspired Nagash VO",
             "updated": "2026-10-07",
-            "subscribers": 11327
+            "subscribers": 11331
           }
         ]
       },
@@ -46324,7 +46921,7 @@
             "title": "Slaanesh assaults the great bastion",
             "unlisted": false,
             "updated": "2025-04-22",
-            "subscribers": 12240
+            "subscribers": 12239
           }
         ]
       },
@@ -47231,7 +47828,7 @@
             "title": "色孽远征— 派系 Mod | Slaanesh Expedition",
             "unlisted": false,
             "updated": "2026-10-21",
-            "subscribers": 3042
+            "subscribers": 3041
           }
         ]
       },
@@ -47321,7 +47918,7 @@
             "id": "3802335820",
             "title": "Slaanesh Expedition - English Translation | 英文补丁",
             "updated": "2026-10-21",
-            "subscribers": 1759
+            "subscribers": 1758
           }
         ]
       },
@@ -47457,7 +48054,7 @@
             "title": "Slaanesh UI theme for Miao Ying, Katarin, and Alarielle",
             "unlisted": false,
             "updated": "2026-10-05",
-            "subscribers": 6471
+            "subscribers": 6472
           }
         ]
       },
@@ -49235,7 +49832,7 @@
             "title": "Speedy Turn Camera",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 130581
+            "subscribers": 130582
           }
         ]
       },
@@ -49647,7 +50244,7 @@
             "id": "2812165190",
             "title": "Tabletop Caps Compatibility Patch (Various - Loreful)",
             "updated": "2026-10-03",
-            "subscribers": 6694
+            "subscribers": 6693
           }
         ]
       },
@@ -49721,7 +50318,7 @@
             "id": "3386989556",
             "title": "Tabletop Caps: Reborn",
             "updated": "2026-09-26",
-            "subscribers": 34335
+            "subscribers": 34336
           }
         ]
       },
@@ -50195,7 +50792,7 @@
             "title": "Terracotta Automatons and Panda Riders",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 9800
+            "subscribers": 9799
           }
         ]
       },
@@ -50801,7 +51398,7 @@
             "id": "2880515805",
             "title": "The Jade-Blooded Vampires: Curse of Nongchang (9.0 Update - BETA)",
             "updated": "2026-10-03",
-            "subscribers": 39199
+            "subscribers": 39201
           }
         ]
       },
@@ -50866,7 +51463,7 @@
             "title": "The Motherland",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 22307
+            "subscribers": 22306
           }
         ]
       },
@@ -50928,7 +51525,7 @@
             "id": "3166984131",
             "title": "The Phoenix Court (High Elf Politics)",
             "updated": "2026-10-16",
-            "subscribers": 41308
+            "subscribers": 41306
           }
         ]
       },
@@ -50992,7 +51589,7 @@
             "id": "3662333210",
             "title": "The Ubersreik Five",
             "updated": "2026-09-25",
-            "subscribers": 7174
+            "subscribers": 7175
           }
         ]
       },
@@ -51248,7 +51845,7 @@
             "id": "3809644140",
             "title": "可隐藏的UI组件  - Toggleable UI Components",
             "updated": "2026-10-31",
-            "subscribers": 8115
+            "subscribers": 8117
           }
         ]
       },
@@ -51591,7 +52188,7 @@
             "title": "Trade Any Settlement",
             "unlisted": false,
             "updated": "2026-10-17",
-            "subscribers": 57807
+            "subscribers": 57805
           }
         ]
       },
@@ -51783,7 +52380,7 @@
             "id": "3578974048",
             "title": "Treasures of the Endless Oceans",
             "updated": "2026-09-25",
-            "subscribers": 14735
+            "subscribers": 14734
           }
         ]
       },
@@ -51844,7 +52441,7 @@
             "id": "2853254034",
             "title": "TW Millennium: Modern Warfare",
             "updated": "2026-10-07",
-            "subscribers": 95939
+            "subscribers": 95937
           }
         ]
       },
@@ -51934,7 +52531,7 @@
             "id": "3244295546",
             "title": "UI Slider",
             "updated": "2025-09-03",
-            "subscribers": 65570
+            "subscribers": 65565
           }
         ]
       },
@@ -52461,7 +53058,7 @@
             "title": "Unique Steam Tanks",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 31180
+            "subscribers": 31181
           }
         ]
       },
@@ -52773,7 +53370,7 @@
             "title": "Vampires of Nehekhara",
             "unlisted": false,
             "updated": "2026-10-07",
-            "subscribers": 15930
+            "subscribers": 15928
           }
         ]
       },
@@ -53089,7 +53686,7 @@
             "id": "3140200173",
             "title": "Victory Conditions Overhaul",
             "updated": "2026-10-31",
-            "subscribers": 241920
+            "subscribers": 241918
           }
         ]
       },
@@ -53403,7 +54000,7 @@
             "id": "3157105199",
             "title": "Warband UI Framework",
             "updated": "2026-11-01",
-            "subscribers": 43056
+            "subscribers": 43058
           }
         ]
       },
@@ -53510,7 +54107,7 @@
             "id": "2853239091",
             "title": "Warband Upgrade Ultimate",
             "updated": "2026-11-01",
-            "subscribers": 168948
+            "subscribers": 168951
           }
         ]
       },
@@ -53642,7 +54239,7 @@
             "id": "3148915120",
             "title": "Warband Upgrades for Radious",
             "updated": "2026-10-24",
-            "subscribers": 23631
+            "subscribers": 23632
           }
         ]
       },
@@ -54685,7 +55282,7 @@
             "id": "3813041953",
             "title": "Wolf Daughters of the Empire",
             "updated": "2026-10-09",
-            "subscribers": 1352
+            "subscribers": 1354
           }
         ]
       },
@@ -55044,7 +55641,7 @@
             "id": "3746989980",
             "title": "Wyccc's English Patch Collection",
             "updated": "2026-10-31",
-            "subscribers": 3429
+            "subscribers": 3430
           }
         ]
       },
@@ -55822,7 +56419,7 @@
             "id": "3746626798",
             "title": "zeta0080's Beautiful Slaanesh heroes",
             "updated": "2026-06-20",
-            "subscribers": 5117
+            "subscribers": 5119
           }
         ]
       },
@@ -55882,7 +56479,7 @@
             "id": "3793414250",
             "title": "zeta0080's Khalida Reborn!",
             "updated": "2026-09-03",
-            "subscribers": 3122
+            "subscribers": 3123
           }
         ]
       },
@@ -55942,7 +56539,7 @@
             "id": "3808748835",
             "title": "Zeta0080's Khalida reskin Stockings Version",
             "updated": "2026-09-26",
-            "subscribers": 3630
+            "subscribers": 3632
           }
         ]
       },
@@ -56133,12 +56730,23 @@
             "title": "【English Translation】All Faction Legendary Lord: Aelesha Sigrika",
             "unlisted": false,
             "updated": "2026-04-17",
-            "subscribers": 3613
+            "subscribers": 3614
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3700484893"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -56844,7 +57452,7 @@
             "id": "3467363192",
             "title": "单独招募堕落升魔中的卡捷琳和妙影，还有艾拉瑞丽",
             "updated": "2026-10-04",
-            "subscribers": 3111
+            "subscribers": 3110
           }
         ]
       },
@@ -57161,7 +57769,7 @@
             "title": "堕落戴查 (Corrupted Drycha)",
             "role": "main",
             "updated": "2026-10-28",
-            "subscribers": 19463
+            "subscribers": 19462
           }
         ],
         "discord": [
@@ -57532,7 +58140,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3801443992"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -57591,7 +58210,7 @@
             "id": "3552538974",
             "title": "英灵召唤 (Summon Servant)",
             "updated": "2026-10-12",
-            "subscribers": 17152
+            "subscribers": 17154
           }
         ]
       },
@@ -57709,7 +58328,7 @@
             "id": "2793419054",
             "title": "麝香鹿姬骑士团[全派系]——Musk Deer Knight [For All Factions]",
             "updated": "2026-10-19",
-            "subscribers": 21231
+            "subscribers": 21232
           }
         ]
       },
