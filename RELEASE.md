@@ -23,7 +23,9 @@ release is all it takes for players to hear about it.
 - Profiles from tested community lists and guides in three steps (choices, install, play), with every optional add-on; your own mods are placed
   in the load order with a reason.
 - *Fill this profile*: suggested lewd and general mods that fit, with pick-one choices for mods that
-  exclude each other.
+  exclude each other; a reskin says which look in your list it would replace, and only what players of the
+  list really use is selected for you.
+- Every template is launch-tested: it reaches the main menu with game version 9.0.4.
 - *Made by*: who made what in each list, with their support pages.
 - Installs Workshop items through Steam, LoversLab and Nexus Mods files with your own login; starts the game
   with the profile's load order, loading only the version you chose when a mod comes in several.
