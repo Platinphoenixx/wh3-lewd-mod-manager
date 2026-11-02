@@ -494,8 +494,11 @@ def main():
         if not m:
             continue
         if not m.get("packs"):
-            src = "steam" if m.get("sources", {}).get("steam") else "download"
-            m["packs"] = [{"file": name, "from": src} for name in a["packs"]]
+            # A pack the mod's Workshop items contain comes from Steam; one from a LoversLab analysis is a download.
+            src_ = m.get("sources", {})
+            on_steam = {p.lower() for s in src_.get("steam") or [] for p in steam.get(s["id"], {}).get("packs") or []}
+            m["packs"] = [{"file": name, "from": "steam" if name.lower() in on_steam or (src_.get("steam") and not src_.get("loverslab"))
+                           else "download"} for name in a["packs"]]
         # Which LoversLab download holds each pack: perPack keys are "<download without extension>/<path
         # inside>" for archives, or the pack name itself when the download is the .pack.
         if m.get("sources", {}).get("loverslab"):
