@@ -79,6 +79,7 @@ community contributions. App UI and catalog texts are English.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
     (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md). `src/main/appUpdate.ts` asks
     GitHub's latest release at most daily and the app shows a card when it is newer; it never updates itself.
+    Settings show the version with the build date and commit (`__BUILD_INFO__`, set in `electron.vite.config.ts`).
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
 - `curator/` – Python pipeline that builds the catalog (`pip install -r curator/requirements.txt`).
 
