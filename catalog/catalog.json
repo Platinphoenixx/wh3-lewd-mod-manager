@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T22:39:02+00:00",
+  "generatedAt": "2026-11-02T22:52:51+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -745,7 +745,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "M_Manticore_GreatEagle_AP.pack",
+          "from": "steam",
+          "steamId": "3790048842"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -893,7 +899,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!M_Legendary_Lords_Spells.pack",
+          "from": "steam",
+          "steamId": "3785410528"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1119,7 +1131,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_Chaos_Waste_Immunity.pack",
+          "from": "steam",
+          "steamId": "3679962308"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1166,7 +1184,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_Death_Hag_Mount.pack",
+          "from": "steam",
+          "steamId": "3683093781"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1213,7 +1237,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_GlobalRecruitment_EncampmentStance_Tech.pack",
+          "from": "steam",
+          "steamId": "3634785497"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1260,7 +1290,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_HandBolt.pack",
+          "from": "steam",
+          "steamId": "3637615296"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1307,7 +1343,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_Lord_Hero_Mounts.pack",
+          "from": "steam",
+          "steamId": "3790048649"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1354,7 +1396,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DarkElves_Fleetmaster.pack",
+          "from": "steam",
+          "steamId": "3716628605"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -1467,7 +1515,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "adam_rogue_warhammer[EN].pack",
+          "from": "steam",
+          "steamId": "3753323879"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -1601,7 +1655,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!xu_Arthas1.0.pack",
+          "from": "steam",
+          "steamId": "3507032824"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -1882,7 +1942,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@endo_cultist_of_slaanesh.pack",
+          "from": "steam",
+          "steamId": "3698854498"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -3144,7 +3210,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sla_Chaos_Warriors_Chosen_Cult_of_Slaanesh.pack",
+          "from": "steam",
+          "steamId": "3674980633"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -3212,7 +3284,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_Marked_Units_For_Slaanesh.pack",
+          "from": "steam",
+          "steamId": "3681555170"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -3270,7 +3348,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sla_Dechala_Skills_Cult_of_Slaanesh.pack",
+          "from": "steam",
+          "steamId": "3624978156"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -3348,7 +3432,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_All_Def_Magic_Lore_Sla.pack",
+          "from": "steam",
+          "steamId": "3670333218"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -3416,7 +3506,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_Slaanesh_Painseekers.pack",
+          "from": "steam",
+          "steamId": "3723920359"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -3474,7 +3570,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sla_High_Mistress.pack",
+          "from": "steam",
+          "steamId": "3716015925"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -3521,7 +3623,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sla_Chaos_Warriors_Chosen.pack",
+          "from": "steam",
+          "steamId": "3674941543"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -3568,7 +3676,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Sla_Dechala_Skills.pack",
+          "from": "steam",
+          "steamId": "3624977934"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -4001,7 +4115,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "underways_and_rails.pack",
+          "from": "steam",
+          "steamId": "2964841140"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -4496,7 +4616,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "agent_hero_forever_en.pack",
+          "from": "steam",
+          "steamId": "2864165834"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -6826,7 +6952,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alshua_ellyrion.pack",
+          "from": "steam",
+          "steamId": "2965870624"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -7017,7 +7149,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!calm_animals_for_wood_elves.pack",
+          "from": "steam",
+          "steamId": "2934267802"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -7887,7 +8025,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!gunking_kalashnikov_stolichnaya.pack",
+          "from": "steam",
+          "steamId": "2803934674"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -9835,7 +9979,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!better_recruitment_ui.pack",
+          "from": "steam",
+          "steamId": "3743254314"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -10065,7 +10215,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "froeb_bonepillar_champions.pack",
+          "from": "steam",
+          "steamId": "2857203588"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -10112,7 +10268,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!bruiser_careers.pack",
+          "from": "steam",
+          "steamId": "3383170428"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -11638,7 +11800,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cr_empire_unit_dumping_ground.pack",
+          "from": "steam",
+          "steamId": "2906452595"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -11760,7 +11928,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!conquest_of_the_blood_dragons_audio_test.pack",
+          "from": "steam",
+          "steamId": "3606572700"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -12021,7 +12195,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "werebeastspol.pack",
+          "from": "steam",
+          "steamId": "2855839105"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -12138,7 +12318,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "chop_wh_assets.pack",
+          "from": "steam",
+          "steamId": "3592152960"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -12328,7 +12514,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "hertz_province_patrols_wh3.pack",
+          "from": "steam",
+          "steamId": "2848892868"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -14985,7 +15177,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!Cultist_Reborn.pack",
+          "from": "steam",
+          "steamId": "2860203054"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -15032,7 +15230,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_Cultist_Reskin_Com_No_Nose_Piercing.pack",
+          "from": "steam",
+          "steamId": "3677448789"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -15090,7 +15294,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_Cultist_Reskin_Com.pack",
+          "from": "steam",
+          "steamId": "3672168482"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -15188,7 +15398,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cure_for_alopecia.pack",
+          "from": "steam",
+          "steamId": "2791323616"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -16037,7 +16253,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf-def-ui.pack",
+          "from": "steam",
+          "steamId": "3657771496"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -16133,7 +16355,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "CF-def_units_assets.pack",
+          "from": "steam",
+          "steamId": "3709288693"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -16191,7 +16419,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dark-dark-elves_textures.pack",
+          "from": "steam",
+          "steamId": "3392092308"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -16238,7 +16472,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "CF-Executioness.pack",
+          "from": "steam",
+          "steamId": "3314798644"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -16285,7 +16525,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf-def_menagerie.pack",
+          "from": "steam",
+          "steamId": "3724435998"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -16576,7 +16822,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf-def_rhox_rite_scrollbar.pack",
+          "from": "steam",
+          "steamId": "3469202819"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -16654,7 +16906,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf_def_sie.pack",
+          "from": "steam",
+          "steamId": "3729317718"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -16701,7 +16959,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "CF-def_units.pack",
+          "from": "steam",
+          "steamId": "3722469550"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -16821,7 +17085,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "froeb_dark_land_orcs.pack",
+          "from": "steam",
+          "steamId": "2919542060"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -17747,7 +18017,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dead_jade_army_pack.pack",
+          "from": "steam",
+          "steamId": "2790444587"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -18044,7 +18320,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@xou_dogs_of_war.pack",
+          "from": "steam",
+          "steamId": "3400152543"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -18097,7 +18379,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@z_double_skill_points.pack",
+          "from": "steam",
+          "steamId": "2789845079"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -18611,7 +18899,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@xou_def.pack",
+          "from": "steam",
+          "steamId": "2939571754"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -18906,7 +19200,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!phy_dwarf_lords_of_legend.pack",
+          "from": "steam",
+          "steamId": "3323183179"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -18964,7 +19264,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cody_dwf_thunderbarge.pack",
+          "from": "steam",
+          "steamId": "2852872304"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -20135,7 +20441,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!zfcr_empire_master_engineer.pack",
+          "from": "steam",
+          "steamId": "2861599189"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -21205,7 +21517,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!chop_bastion_fort_gate.pack",
+          "from": "steam",
+          "steamId": "3357512115"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -21321,7 +21639,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@exp_roster_goblins.pack",
+          "from": "steam",
+          "steamId": "2863393121"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -21382,7 +21706,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@exp_roster_orcs.pack",
+          "from": "steam",
+          "steamId": "2861674142"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -21498,7 +21828,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alshua_factional_regiments.pack",
+          "from": "steam",
+          "steamId": "2868273452"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -23084,7 +23420,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf_ksl_frost_dragon.pack",
+          "from": "steam",
+          "steamId": "3731098276"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -23477,7 +23819,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "geo_work.pack",
+          "from": "steam",
+          "steamId": "2989311137"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -23784,7 +24132,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@xou_order_reiksguard.pack",
+          "from": "steam",
+          "steamId": "2863391715"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -23986,7 +24340,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "guv_make_us_special_alastar.pack",
+          "from": "steam",
+          "steamId": "2860045252"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -24033,7 +24393,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "guvs_memorial_kevin_lloyd_mod.pack",
+          "from": "steam",
+          "steamId": "2981028368"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -25276,7 +25642,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "_hv_reskin.pack",
+          "from": "steam",
+          "steamId": "2789978667"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -25329,7 +25701,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@namKirRok.pack",
+          "from": "steam",
+          "steamId": "3558377448"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -25376,7 +25754,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "hv_reskin_st_ksl.pack",
+          "from": "steam",
+          "steamId": "3067304669"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -26013,7 +26397,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dust_dwf_invasions_deeps.pack",
+          "from": "steam",
+          "steamId": "3317929558"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -26126,7 +26516,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!xou_kislev_ivan.pack",
+          "from": "steam",
+          "steamId": "2803817483"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -26301,7 +26697,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "meh_jungle_swarms.pack",
+          "from": "steam",
+          "steamId": "3072066204"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -27283,7 +27685,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "cf-Ksl-units_assets.pack",
+          "from": "steam",
+          "steamId": "3728518383"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -27713,7 +28121,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@xou_brt_bretonnia.pack",
+          "from": "steam",
+          "steamId": "2877685936"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -30116,7 +30530,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!str_legendary_assets.pack",
+          "from": "steam",
+          "steamId": "2961860864"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -30174,7 +30594,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!scm_legendary_assets.pack",
+          "from": "steam",
+          "steamId": "3305404660"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -31660,7 +32086,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@xou_vmp_carsteins.pack",
+          "from": "steam",
+          "steamId": "2873912948"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -32237,7 +32669,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!obsidian_lustria_rises.pack",
+          "from": "steam",
+          "steamId": "2940793412"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -32711,7 +33149,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "DD_bst_upgrades.pack",
+          "from": "steam",
+          "steamId": "2866545631"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -32983,7 +33427,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cr_elf_unit_dumping_ground.pack",
+          "from": "steam",
+          "steamId": "2870172362"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -34407,7 +34857,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "ab_mixu_legendary_lords_models.pack",
+          "from": "steam",
+          "steamId": "2802811244"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -35919,7 +36375,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cr_skaven_unit_dumping_ground.pack",
+          "from": "steam",
+          "steamId": "2857187582"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -35966,7 +36428,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Murranji_empire_forts.pack",
+          "from": "steam",
+          "steamId": "3368430596"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -36084,7 +36552,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Murranji_land_encounters.pack",
+          "from": "steam",
+          "steamId": "3398495447"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -36137,7 +36611,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "z_Murranji_varied_sea_enemies.pack",
+          "from": "steam",
+          "steamId": "3370118816"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -37469,7 +37949,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "ovn_grudgebringers.pack",
+          "from": "steam",
+          "steamId": "2989710828"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -38201,7 +38687,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cr_daemon_unit_dumping_ground.pack",
+          "from": "steam",
+          "steamId": "2795725577"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -41599,7 +42091,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@ror_series_compilation.pack",
+          "from": "steam",
+          "steamId": "3029586263"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -41660,7 +42158,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "marthreload.pack",
+          "from": "steam",
+          "steamId": "2858832821"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -43234,7 +43738,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@mustdy_sarv_upyr.pack",
+          "from": "steam",
+          "steamId": "3317174452"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -43389,7 +43899,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@mustdy_sarv_ice_matriarch.pack",
+          "from": "steam",
+          "steamId": "3267625028"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -43436,7 +43952,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@mustdy_sarv_necrologist.pack",
+          "from": "steam",
+          "steamId": "3270320801"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -46139,7 +46661,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "sfo_grimhammer_3_main.pack",
+          "from": "steam",
+          "steamId": "2792731173"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -46988,7 +47516,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!uber_sky_cohort.pack",
+          "from": "steam",
+          "steamId": "2914843377"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -50095,7 +50629,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "spookys_def_expanded_variants_compilation.pack",
+          "from": "steam",
+          "steamId": "2860327071"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -50141,7 +50681,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dead_cult_possessed_unit_V2.pack",
+          "from": "steam",
+          "steamId": "2891621259"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -50773,7 +51319,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Ty_TDQueen3.pack",
+          "from": "steam",
+          "steamId": "2865263701"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -51000,7 +51552,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!cr_cathay_unit_dumping_ground.pack",
+          "from": "steam",
+          "steamId": "2790046660"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -51671,7 +52229,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!kislev.pack",
+          "from": "steam",
+          "steamId": "2789857474"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -53184,7 +53748,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!uber_brt_unique_reliquae.pack",
+          "from": "steam",
+          "steamId": "3388802859"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -53304,7 +53874,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!zfcr_unique_steam_tanks.pack",
+          "from": "steam",
+          "steamId": "2855238321"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -53621,7 +54197,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "A_VampiresofNehekhara.pack",
+          "from": "steam",
+          "steamId": "2872414549"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -55954,7 +56536,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!wyccc_more_building_slot.pack",
+          "from": "steam",
+          "steamId": "3761720336"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -56989,7 +57577,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@LK_dark_dafashilingzhuyingwen.pack",
+          "from": "steam",
+          "steamId": "3700484699"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -58354,7 +58948,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!!!foreign_recruit_en.pack",
+          "from": "steam",
+          "steamId": "3814300791"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
