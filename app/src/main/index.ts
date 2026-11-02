@@ -63,7 +63,8 @@ ipcMain.handle('install:file', async (e, modId?: string) => {
     properties: ['openFile'],
     filters: [{ name: 'Mod files', extensions: ['pack', '7z', 'zip', 'rar'] }]
   })
-  return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId)
+  // The picked download is moved into the game, not copied: nothing is left behind in Downloads.
+  return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId, true)
 })
 ipcMain.handle('install:loverslab', async (e, url: string, modId?: string, hints?: FileHint[]) => {
   const scan = await currentScan()

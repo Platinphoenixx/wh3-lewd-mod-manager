@@ -53,7 +53,11 @@ async function extract(archive: string, target: string): Promise<void> {
  * Installs a downloaded .pack or archive into the game's data folder. Only .pack files are copied;
  * anything else in an archive (readmes, images, scripts) is ignored.
  */
-export async function installFile(file: string, dataPath: string, modId?: string): Promise<InstallResult> {
+/**
+ * Installs a .pack or an archive with packs into data. moveSource: a file the player picked or dropped is
+ * removed after a successful install (it now lives in data), unless it already is in the data folder.
+ */
+export async function installFile(file: string, dataPath: string, modId?: string, moveSource = false): Promise<InstallResult> {
   const ext = extname(file).toLowerCase()
   if (ext === '.txt') {
     const link = (await readFile(file, 'utf8').catch(() => '')).match(/https?:\/\/\S+/)?.[0]
@@ -79,7 +83,13 @@ export async function installFile(file: string, dataPath: string, modId?: string
       else records.push(rec)
     }
     await writeJson('installed.json', records)
-    return { ok: true, message: `Installed ${packs.map((p) => basename(p)).join(', ')}`, packs: packs.map((p) => basename(p)) }
+    const moved = moveSource && join(file, '..').toLowerCase() !== dataPath.toLowerCase()
+    if (moved) await rm(file, { force: true })
+    return {
+      ok: true,
+      message: `Installed ${packs.map((p) => basename(p)).join(', ')}${moved ? ` (moved from ${basename(join(file, '..'))})` : ''}`,
+      packs: packs.map((p) => basename(p))
+    }
   } catch (e) {
     return { ok: false, message: `Installing ${basename(file)} failed: ${(e as Error).message}`, packs: [] }
   } finally {
@@ -90,7 +100,7 @@ export async function installFile(file: string, dataPath: string, modId?: string
 /** Installs several files at once (files dropped onto the window). */
 export async function installFiles(files: string[], dataPath: string): Promise<InstallResult> {
   const results = []
-  for (const f of files) results.push(await installFile(f, dataPath))
+  for (const f of files) results.push(await installFile(f, dataPath, undefined, true))
   return {
     ok: results.some((r) => r.ok),
     message: results.map((r) => r.message).filter(Boolean).join(' · '),
