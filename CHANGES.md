@@ -1,3 +1,3 @@
-# Catalog update 2026-10-31
+# Catalog update 2026-11-02
 
 No changes.
