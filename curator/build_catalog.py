@@ -551,7 +551,10 @@ def main():
     apply_community(mods)
 
     for m in deferred:
-        if m["id"].startswith("steam-"):
+        if m["id"] in mods:
+            # A Discord-only entry (dc-…) exists only from the Discord step on.
+            mods[m["id"]] |= m
+        elif m["id"].startswith("steam-"):
             stub_for(m["id"].removeprefix("steam-"))
             mods[m["id"]] |= m
         else:

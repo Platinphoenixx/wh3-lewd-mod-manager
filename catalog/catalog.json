@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T08:52:05+00:00",
+  "generatedAt": "2026-11-02T11:33:48+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -14585,7 +14585,14 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "dusts_corrupted_heroes_workshop.pack",
+          "from": "steam",
+          "steamId": "3815990781",
+          "note": "Seen in a download of this item (2026-11-02)."
+        }
+      ],
       "relations": [
         {
           "kind": "recommends",
@@ -14620,6 +14627,13 @@
           "character": "Citadel of Dusk"
         }
       ],
+      "cleanup": {
+        "staleDataPacks": [
+          "dusts_corrupted_heroes.pack",
+          "Pulvis_Libinde*.pack"
+        ],
+        "note": "Moved to Steam in October 2026 (3815990781, pack dusts_corrupted_heroes_workshop.pack). Remove the old Discord packs (dusts_corrupted_heroes.pack, Pulvis_Libinde*.pack) from data, otherwise the mod is loaded twice."
+      },
       "authorPages": [
         {
           "site": "steam",
@@ -21151,6 +21165,17 @@
       },
       "packs": [],
       "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "steam-3471883808"
+          },
+          "note": "Optional visual variant for Lazy's Katarin reskins, posted by LazyIcarus in #downloads.",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/966121189762281492/974110211637923910"
+          }
+        },
         {
           "kind": "requires",
           "target": {

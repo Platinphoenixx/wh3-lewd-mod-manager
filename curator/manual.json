@@ -702,6 +702,24 @@
           "note": "Morathi version; file extension added from the package name."
         }
       ]
+    },
+    {
+      "id": "dc-dust-s-corrupted-heroes-dch",
+      "packs": [
+        {
+          "file": "dusts_corrupted_heroes_workshop.pack",
+          "from": "steam",
+          "steamId": "3815990781",
+          "note": "Seen in a download of this item (2026-11-02)."
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "dusts_corrupted_heroes.pack",
+          "Pulvis_Libinde*.pack"
+        ],
+        "note": "Moved to Steam in October 2026 (3815990781, pack dusts_corrupted_heroes_workshop.pack). Remove the old Discord packs (dusts_corrupted_heroes.pack, Pulvis_Libinde*.pack) from data, otherwise the mod is loaded twice."
+      }
     }
   ],
   "external": [
