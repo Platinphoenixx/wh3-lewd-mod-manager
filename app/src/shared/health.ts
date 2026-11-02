@@ -73,8 +73,9 @@ export function parseLuaLog(text: string): ScriptLog {
     const script = /\[([^\]]+\.lua)\]/i.exec(line)?.[1]
     if (/loaded successfully/i.test(line)) {
       if (script) log.loaded.push(normScript(script))
-    } else if (/^Loading mod file \[/i.test(line)) {
-      // A script name like pj_error_wrapping.lua is not a failure.
+    } else if (/^Loading mod file \[/i.test(line) || /\(\) not found, continuing$/i.test(line)) {
+      // A script name like pj_error_wrapping.lua is not a failure, nor is a script without a function of its
+      // name (the game tries one per script in a campaign: "pj_error_wrapping() not found, continuing").
     } else if (/^Failed to load mod file/i.test(line)) {
       block = { script, first: line }
     } else if (/^Failed to load mod: /i.test(line)) {

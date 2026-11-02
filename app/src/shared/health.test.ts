@@ -65,7 +65,9 @@ describe('health hints', () => {
       'Failed to execute loaded mod file [script\\_lib\\mod\\!kerb_alar.lua], error is: [string "script\\_lib\\mod\\!kerb_alar.lua"]:1: attempt to index global \'mother_ostankya_features\' (a nil value)',
       'Failed to load mod: [script\\_lib\\mod\\!kerb_alar.lua]',
       'Loading mod file [script\\_lib\\mod\\pj_error_wrapping.lua]',
-      'Mod [script\\_lib\\mod\\pj_error_wrapping.lua] loaded successfully'
+      'Mod [script\\_lib\\mod\\pj_error_wrapping.lua] loaded successfully',
+      // In a campaign the game calls a function named like each script; a missing one is normal.
+      'pj_error_wrapping() not found, continuing'
     ].join('\r\n'))
     expect(log.loaded).toEqual(['script/_lib/mod/pj_error_wrapping.lua'])
     expect(log.failed.map((f) => f.script)).toEqual(['script/_lib/mod/!kerb_alar.lua'])
