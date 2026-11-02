@@ -142,9 +142,13 @@ over all layers – fix texts there.
   pack so the player's choice applies; a pack a KPW guide names is taken as named; Steam collections are no entries).
   `manual.json` `presetReplacements` apply to all templates; `noTemplate` lists mods that get no derived template
   (with the reason, e.g. they stop the game at launch).
-- Launch test of the templates (2026-11-02, game 9.0.4): every template was started once with exactly its packs; a
-  template that stops the game gets a known issue with the game's own report (`crash_report/bad_mods_report.txt`)
-  and is fixed through `presetReplacements` or `noTemplate`.
+- `curator/launch_test.py` (Windows, the game installed): starts the game once per template with exactly its packs
+  (hard links in a test folder, its own list file; data folder and the player's lists untouched) and records main
+  menu / database error (the game's `crash_report/bad_mods_report.txt`) / crash / script errors.
+  `plan --game <folder> --packs <download folders>` lists what is missing; `run` does the starts (Steam running, PC not
+  in use, about 1 h for all templates); helper `launch_test_watch.ps1`. Run it after a major game update. A template
+  that stops the game gets a known issue with the game's report and is fixed through `presetReplacements` or
+  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu.
 - `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
   Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
   profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.
