@@ -1905,6 +1905,156 @@
    "knownIssues": [],
    "notes": "Translations forum threads: Chinese mod translations (Shea), French community pack (Cassie), Korean (corrupted mods), Russian translations for Slaanesh Expanded, SEU Miao extension (Steam 3749585405), Miao Alchemy, ATB (Steam 3760360240), Soil Miaoying/Azazel corrupted units.",
    "kind": "translation"
+  },
+  {
+   "name": "ATB submod: keep Lin's Nurgle Ariel",
+   "authors": [],
+   "channel": "1239642838778511552",
+   "messageUrls": [
+    "https://discord.com/channels/965342581745668136/1239642838778511552/1457398987962191973"
+   ],
+   "version": "",
+   "date": "2026-01-04",
+   "downloads": [
+    {
+     "name": "kerb_Alarielle_Keep_Nurgle_Ariel.pack",
+     "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1457398987962191973"
+    }
+   ],
+   "steamIds": [],
+   "loversLab": [],
+   "requires": [
+    "Alarielle, Temptation's Bloom (LL 42028)"
+   ],
+   "recommends": [
+    "Lin's Corrupted Drycha (LL 27663)"
+   ],
+   "incompatible": [],
+   "loadOrder": "",
+   "playAs": [],
+   "phase": "",
+   "status": "active",
+   "knownIssues": [],
+   "notes": "Posted and pinned by ATB's author (2026-01-04): with Lin's Corrupted Drycha you keep Lin's Nurgle-corrupted Ariel and also get the Skaven-corrupted Ariel of ATB's stage 6 questline. Activate it before the stage 4 Drycha confederation; ATB supports it from the update after 2026-01-04.",
+   "kind": "submod"
+  },
+  {
+   "name": "SFO stats for ATB's corrupted wood elf units",
+   "authors": [],
+   "channel": "1239642838778511552",
+   "messageUrls": [
+    "https://discord.com/channels/965342581745668136/1239642838778511552/1491857485957431478"
+   ],
+   "version": "",
+   "date": "2026-04-09",
+   "downloads": [
+    {
+     "name": "!!!sfo_corrupted_wood_elves.pack",
+     "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1491857485957431478"
+    }
+   ],
+   "steamIds": [],
+   "loversLab": [],
+   "requires": [
+    "Alarielle, Temptation's Bloom (LL 42028)",
+    "SFO - Steel Faith Overhaul"
+   ],
+   "recommends": [],
+   "incompatible": [],
+   "loadOrder": "",
+   "playAs": [],
+   "phase": "",
+   "status": "active",
+   "knownIssues": [],
+   "notes": "Posted by a Modder-role member and pinned by ATB's author (2026-04-09): ATB's corrupted wood elf units with SFO stats.",
+   "kind": "patch"
+  },
+  {
+   "name": "dd_bst: Community Beastmen slaves for Marks of the Wild",
+   "authors": [],
+   "channel": "1025523634745385014",
+   "messageUrls": [
+    "https://discord.com/channels/965342581745668136/1025523634745385014/1451994011584692335"
+   ],
+   "version": "",
+   "date": "2025-12-20",
+   "downloads": [
+    {
+     "name": "!dd_bst.pack",
+     "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1451994011584692335"
+    }
+   ],
+   "steamIds": [],
+   "loversLab": [],
+   "requires": [
+    "Community Beastmen (LL 46165)",
+    "Marks of the Wild - Unit Upgrades for the Beastmen"
+   ],
+   "recommends": [],
+   "incompatible": [],
+   "loadOrder": "",
+   "playAs": [],
+   "phase": "",
+   "status": "active",
+   "knownIssues": [],
+   "notes": "Submod for 'Marks of the Wild - Unit Upgrades for the Beastmen' that lets its upgrades use the slaves Community Beastmen gives; pinned by the Community Beastmen author (2025-12-20).",
+   "kind": "submod"
+  },
+  {
+   "name": "Sisters of Druchii (dark elf reskin of the Sisters of Twilight)",
+   "authors": [],
+   "channel": "967468098464649327",
+   "messageUrls": [
+    "https://discord.com/channels/965342581745668136/967468098464649327/1494377523155304550"
+   ],
+   "version": "",
+   "date": "2026-04-16",
+   "downloads": [
+    {
+     "name": "dka_sisters_of_druchii.pack",
+     "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1494377523155304550"
+    }
+   ],
+   "steamIds": [],
+   "loversLab": [],
+   "requires": [],
+   "recommends": [],
+   "incompatible": [],
+   "loadOrder": "",
+   "playAs": [],
+   "phase": "",
+   "status": "active",
+   "knownIssues": [],
+   "notes": "Posted in #submods by a Modder-role member (2026-04-16). Changes the same Sisters of Twilight files as other reskins of them (for example the DOVAKIN series): use one.",
+   "kind": "reskin"
+  },
+  {
+   "name": "Translucent Katarin (reskin)",
+   "authors": [],
+   "channel": "967468098464649327",
+   "messageUrls": [
+    "https://discord.com/channels/965342581745668136/967468098464649327/1553307763508256778"
+   ],
+   "version": "",
+   "date": "2026-09-26",
+   "downloads": [
+    {
+     "name": "dka_translucent_katarin.pack",
+     "messageUrl": "https://discord.com/channels/965342581745668136/967468098464649327/1553307763508256778"
+    }
+   ],
+   "steamIds": [],
+   "loversLab": [],
+   "requires": [],
+   "recommends": [],
+   "incompatible": [],
+   "loadOrder": "",
+   "playAs": [],
+   "phase": "",
+   "status": "active",
+   "knownIssues": [],
+   "notes": "Posted in #submods by a Modder-role member (2026-09-26). Changes the same Katarin files as other Katarin reskins: use one.",
+   "kind": "reskin"
   }
  ]
 }
