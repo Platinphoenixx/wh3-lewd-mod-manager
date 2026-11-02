@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T18:53:08+00:00",
+  "generatedAt": "2026-11-02T18:55:49+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -2101,7 +2101,18 @@
           "steamId": "3647816031"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3621449095"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -3005,7 +3016,18 @@
           "steamId": "2831951203"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2792731173"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -3342,7 +3364,18 @@
           "steamId": "3621055936"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3027059730"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -6545,7 +6578,18 @@
           "steamId": "3700484893"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3700484699"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -14082,7 +14126,28 @@
           "steamId": "3566849815"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -25019,7 +25084,18 @@
           "steamId": "2854346056"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -30911,7 +30987,18 @@
           "steamId": "3730309520"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-lord-hero-swap"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -32333,6 +32420,17 @@
         {
           "kind": "requires",
           "target": {
+            "mod": "steam-3318713041"
+          },
+          "note": "Its battle-assets pack takes 129 of its 196 outside model references from SCM's Skaven Assets (Clan Grudge and other Skaven models); without it those units have no models",
+          "condition": "for its Skaven units",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
             "mod": "ll-40114"
           },
           "note": "Miao Alchemy asset mod (3754311622)",
@@ -32936,6 +33034,17 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3318713041"
+          },
+          "note": "Its battle-assets pack takes 129 of its 196 outside model references from SCM's Skaven Assets (Clan Grudge and other Skaven models); without it those units have no models",
+          "condition": "for its Skaven units",
+          "source": {
+            "type": "inferred"
           }
         },
         {
@@ -37938,7 +38047,38 @@
           "steamId": "2791750313"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 302 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750075"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750896"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -38001,7 +38141,38 @@
           "steamId": "2791750896"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 715 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750075"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750313"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -38064,7 +38235,38 @@
           "steamId": "2791750075"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 49 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750313"
+          },
+          "note": "Its pack header names Radious_WH3_Mod_Part1.pack as a dependency",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750896"
+          },
+          "note": "Its pack header names Radious_WH3_Mod_Part2.pack as a dependency",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -38129,7 +38331,38 @@
           "steamId": "2813892035"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750075"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750313"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750896"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "low",
@@ -38659,6 +38892,16 @@
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3501984780"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Uses 20 model files from Corrupted Landmarks, and a Modder confirmed on Discord (2026-08-05) that CCC crashes when the Corrupted Landmarks entry it looks for is missing",
+          "source": {
+            "type": "inferred"
           }
         }
       ],
@@ -39939,7 +40182,38 @@
           "steamId": "3558872079"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3501984780"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -40002,7 +40276,38 @@
           "steamId": "3559919182"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3501984780"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -41838,7 +42143,108 @@
           "steamId": "3764597913"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3317294488"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3317174452"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3270368516"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3371888004"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3267625028"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3270320801"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3277998418"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3271568934"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3210832217"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3639948043"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -42093,6 +42499,53 @@
       "description": "Unique Cathay hero who appears near the legendary lord at the start of the game and, like other legendary heroes, cannot die permanently. The summoning script was also updated. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission."
     },
     {
+      "id": "steam-3317174452",
+      "name": "Sarvente's Frostblood Upyr` (Continued)",
+      "authors": [
+        "MustDy"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3317174452",
+            "title": "Sarvente's Frostblood Upyr` (Continued)",
+            "unlisted": false,
+            "updated": "2026-09-28",
+            "subscribers": 3818
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "MustDy",
+          "url": "https://steamcommunity.com/profiles/76561197979522039/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2385305837884790028/EECCA58C9B0F5983FCFD5996AC7E7A73F5EC9511/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3270368516",
       "name": "Sarvente's Hakutaku Diviners (continued)",
       "authors": [
@@ -42199,6 +42652,100 @@
         }
       ],
       "description": "Cathay hero, recruitable via her own building chain, with her own section in the Astromancers' tab. Do not use together with the original. Part of the LoversLab collection “Sexy Cathay Heroes Sub-mod Collection +Taoyan!”, which requires it. The original author has withdrawn from WH3 modding; community members are continuing the mod with permission. A “Hollows temp-patch 8.1” is also mentioned on LoversLab."
+    },
+    {
+      "id": "steam-3267625028",
+      "name": "Sarvente's Ice Matriarchs (continued)",
+      "authors": [
+        "MustDy"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3267625028",
+            "title": "Sarvente's Ice Matriarchs (continued)",
+            "unlisted": false,
+            "updated": "2026-09-27",
+            "subscribers": 7965
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "MustDy",
+          "url": "https://steamcommunity.com/profiles/76561197979522039/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2457357161729289997/E6052536003F637D9409CCF5F09AFBFC500501F3/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3270320801",
+      "name": "Sarvente's Necrologists (continued)",
+      "authors": [
+        "MustDy"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3270320801",
+            "title": "Sarvente's Necrologists (continued)",
+            "unlisted": false,
+            "updated": "2026-09-27",
+            "subscribers": 3993
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "MustDy",
+          "url": "https://steamcommunity.com/profiles/76561197979522039/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2457357436946609429/039B31F0914D99537148361FB8066A97875111A2/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-3277998418",
@@ -46695,7 +47242,28 @@
           "steamId": "3801669633"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3802335820"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -46900,7 +47468,18 @@
           "steamId": "3304325611"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-unique-faction-ui"
+          },
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium",
@@ -55533,6 +56112,53 @@
         "Zoat Warden generic hero",
         "Works for AI factions",
         "Incompatible with Lazy's progression framework (Discord FAQ)"
+      ]
+    },
+    {
+      "id": "steam-3700484699",
+      "name": "【English Translation】All Faction Legendary Lord: Aelesha Sigrika",
+      "authors": [
+        "Lk"
+      ],
+      "kind": "units",
+      "tags": [
+        "mod",
+        "units"
+      ],
+      "summary": "",
+      "sources": {
+        "steam": [
+          {
+            "id": "3700484699",
+            "title": "【English Translation】All Faction Legendary Lord: Aelesha Sigrika",
+            "unlisted": false,
+            "updated": "2026-04-17",
+            "subscribers": 3613
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "low",
+        "openQuestions": [
+          "Known only from references; kind, dependencies and purpose unchecked."
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Lk",
+          "url": "https://steamcommunity.com/profiles/76561198834548806/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/9848535482673511632/85A14D5AA4F41DF4F40A68F986A4610A3780BAC7/",
+          "kind": "cover",
+          "source": "steam"
+        }
       ]
     },
     {

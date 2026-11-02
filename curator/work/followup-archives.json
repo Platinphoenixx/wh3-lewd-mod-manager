@@ -147,6 +147,118 @@
           }
         }
       ]
+    },
+    {
+      "id": "steam-2791750313",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 302 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-2791750896",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 715 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-2791750075",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2813892035"
+          },
+          "note": "Its pack uses 49 model files that only Part 4 (Assets) ships; the Workshop page links all four parts",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750313"
+          },
+          "note": "Its pack header names Radious_WH3_Mod_Part1.pack as a dependency",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2791750896"
+          },
+          "note": "Its pack header names Radious_WH3_Mod_Part2.pack as a dependency",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3501984780",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Uses 20 model files from Corrupted Landmarks, and a Modder confirmed on Discord (2026-08-05) that CCC crashes when the Corrupted Landmarks entry it looks for is missing",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dc-miao-alchemy",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3318713041"
+          },
+          "note": "Its battle-assets pack takes 129 of its 196 outside model references from SCM's Skaven Assets (Clan Grudge and other Skaven models); without it those units have no models",
+          "condition": "for its Skaven units",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-40114",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3318713041"
+          },
+          "note": "Its battle-assets pack takes 129 of its 196 outside model references from SCM's Skaven Assets (Clan Grudge and other Skaven models); without it those units have no models",
+          "condition": "for its Skaven units",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
     }
   ]
 }

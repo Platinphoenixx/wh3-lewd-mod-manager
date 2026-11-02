@@ -677,9 +677,10 @@ def main():
     req_data = load(req_path) if req_path.exists() else {}
     steam_req, collections = req_data.get("items", {}), set(req_data.get("collections", []))
     only_recommended = req_data.get("recommendationsOnly", {})
-    for m in list(mods.values()):
+
+    def add_steam_required(m: dict) -> None:
         if m.get("kind") == "collection":
-            continue
+            return
         own = {s["id"] for s in m.get("sources", {}).get("steam") or []}
         for s in m.get("sources", {}).get("steam") or []:
             if s.get("removed") or s["id"] in collections:
@@ -695,7 +696,7 @@ def main():
                     m["relations"].append({"kind": kind, "target": {"steamId": child}, "note": note,
                                            "source": {"type": "steam"}, "_steamreq": True})
 
-    for m in list(mods.values()):
+    def finish_relations(m: dict) -> None:
         for r in m.get("relations", []):
             r["target"] = resolve(m["id"], r["target"], r["kind"])
         # Generated relations add nothing when a curated one already names the same mod (the curated one may
@@ -724,6 +725,15 @@ def main():
         for side in ("above", "below"):
             if lo.get(side):
                 lo[side] = [resolve(m["id"], t, "loadOrder." + side) for t in lo[side]]
+
+    # Resolving creates Steam stubs for referenced items; those get their own required items too (which may
+    # create further stubs), until no new mod appears.
+    finished = set()
+    while todo := [m for m in list(mods.values()) if m["id"] not in finished]:
+        for m in todo:
+            add_steam_required(m)
+            finish_relations(m)
+            finished.add(m["id"])
 
     # manual.json presetReplacements: packs of the tested lists that have a newer version since the list was
     # made (moved to Steam, merged packs, fixes) or must not be used any more ({"remove": true}). Matched by
