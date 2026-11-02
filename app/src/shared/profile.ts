@@ -47,6 +47,8 @@ export interface ResolvedEntry {
   /** 'base' = from the preset, 'extra' = switched on, 'dependency' = pulled in by an extra. */
   origin: 'base' | 'extra' | 'dependency'
   pack?: string
+  /** Every pack the template lists for this mod (e.g. Azazel's Realm's main pack and its overwrite); all are loaded. */
+  packs?: string[]
   steamId?: string
   from?: 'steam' | 'download'
   requiredBy?: string
@@ -209,8 +211,14 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
   const entries: ResolvedEntry[] = []
   preset.entries.forEach((e, i) => {
     const key = baseKeys(preset)[i]
-    if (removed.has(key) || entries.some((x) => x.key === key)) return
-    entries.push({ key, name: nameOf(catalog, index, key), origin: 'base', pack: e.pack, steamId: e.steamId, from: e.from })
+    if (removed.has(key)) return
+    const known = entries.find((x) => x.key === key)
+    if (known) {
+      // A second pack of the same mod in the template: it belongs to that entry and is loaded with it.
+      if (!known.packs?.some((p) => p.toLowerCase() === e.pack.toLowerCase())) known.packs = [...(known.packs ?? []), e.pack]
+      return
+    }
+    entries.push({ key, name: nameOf(catalog, index, key), origin: 'base', pack: e.pack, packs: [e.pack], steamId: e.steamId, from: e.from })
   })
 
   const have = new Set(entries.map((e) => e.key))

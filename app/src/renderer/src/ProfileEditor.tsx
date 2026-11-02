@@ -101,7 +101,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const missingEntries = resolved.entries.flatMap((e) => {
     if (!installed.has(e.key)) return [e]
     const t = parseTargetKey(e.key)
-    const lack = missingPacks('mod' in t ? data.index.mods.get(t.mod) : undefined, e.pack, installed.get(e.key) ?? [])
+    const lack = missingPacks('mod' in t ? data.index.mods.get(t.mod) : undefined, e.packs ?? e.pack, installed.get(e.key) ?? [])
     if (!lack.length) return []
     return [{ ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }]
   })
@@ -248,7 +248,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   }
   const launch = useMemo(
     () => planLaunch(
-      order.map((o) => ({ key: o.key, name: o.name, pack: byKey.get(o.key)?.pack, groups: groupsOf(o.key), chosen: profile.variants?.[o.key] })),
+      order.map((o) => ({ key: o.key, name: o.name, pack: byKey.get(o.key)?.pack, packs: byKey.get(o.key)?.packs, groups: groupsOf(o.key), chosen: profile.variants?.[o.key] })),
       (k) => installed.get(k) ?? []
     ),
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -68,15 +68,16 @@ export function pickVariants(all: InstalledPack[], groups: Map<string, string[]>
  * Of a mod's pick-one variants only one is loaded (see `pickVariants`).
  */
 export function planLaunch(
-  entries: { key: string; name: string; pack?: string; groups?: Map<string, string[]>; chosen?: Record<string, string> }[],
+  entries: { key: string; name: string; pack?: string; packs?: string[]; groups?: Map<string, string[]>; chosen?: Record<string, string> }[],
   packsFor: (key: string) => InstalledPack[]
 ): LaunchPlan {
   const packs: InstalledPack[] = []
   const missing: string[] = []
   for (const e of entries) {
     const all = packsFor(e.key)
-    // A template names the exact pack; other installed packs of the same mod (variants) stay out.
-    const exact = e.pack ? all.filter((p) => p.file.toLowerCase() === e.pack!.toLowerCase()) : []
+    // A template names the exact packs; other installed packs of the same mod (variants) stay out.
+    const named = (e.packs ?? (e.pack ? [e.pack] : [])).map((p) => p.toLowerCase())
+    const exact = named.length ? all.filter((p) => named.includes(p.file.toLowerCase())) : []
     const found = exact.length ? exact : pickVariants(all, e.groups ?? new Map(), e.chosen)
     if (found.length) packs.push(...found)
     else missing.push(e.name)

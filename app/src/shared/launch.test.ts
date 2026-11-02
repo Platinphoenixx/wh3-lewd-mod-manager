@@ -36,6 +36,12 @@ describe('planLaunch', () => {
     expect(plan.missing).toEqual(['B'])
   })
 
+  it('loads every pack a template names for one mod', () => {
+    const azr = [data('@@Compendium_Play_as_Azazel_Overwrite.pack'), ws("kerb_Azazel's_Realm_steam.pack", '3643871692'), data('azr_other_variant.pack')]
+    const plan = planLaunch([{ key: 'mod:azr', name: 'AZR', pack: '@@Compendium_Play_as_Azazel_Overwrite.pack', packs: ['@@Compendium_Play_as_Azazel_Overwrite.pack', "kerb_Azazel's_Realm_steam.pack"] }], () => azr)
+    expect(plan.packs.map((p) => p.file)).toEqual(['@@Compendium_Play_as_Azazel_Overwrite.pack', "kerb_Azazel's_Realm_steam.pack"])
+  })
+
   it('uses only the pack a template names when a mod has several installed (variants)', () => {
     const variants = [data('@@ A Loi variant.pack'), data('@@ B Loi variant.pack')]
     const plan = planLaunch([{ key: 'mod:loi', name: 'Loi', pack: '@@ B Loi variant.pack' }], () => variants)

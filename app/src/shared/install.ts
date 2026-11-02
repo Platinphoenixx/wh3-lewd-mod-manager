@@ -46,12 +46,16 @@ export function installSourceFor(
  * packs that are neither optional nor a variant, and of a required pick-one group at least one. A mod with
  * only some of them (e.g. Kerberos' shared assets without the main ATB pack) is not installed.
  */
-export function missingPacks(mod: Mod | undefined, templatePack: string | undefined, installed: { file: string }[]): PackRef[] {
+export function missingPacks(mod: Mod | undefined, templatePacks: string | string[] | undefined, installed: { file: string }[]): PackRef[] {
   const have = new Set(installed.map((p) => p.file.toLowerCase()))
   const out: PackRef[] = []
-  const named = templatePack && /\.pack$/i.test(templatePack) ? mod?.packs.find((p) => p.file.toLowerCase() === templatePack.toLowerCase()) : undefined
-  if (templatePack && /\.pack$/i.test(templatePack) && !have.has(templatePack.toLowerCase()))
-    out.push(named ?? { file: templatePack, from: 'download' })
+  const listed = (Array.isArray(templatePacks) ? templatePacks : templatePacks ? [templatePacks] : []).filter((p) => /\.pack$/i.test(p))
+  let named: PackRef | undefined
+  for (const t of listed) {
+    const ref = mod?.packs.find((p) => p.file.toLowerCase() === t.toLowerCase())
+    named ??= ref
+    if (!have.has(t.toLowerCase())) out.push(ref ?? { file: t, from: 'download' })
+  }
   const groups = new Map<string, PackRef[]>()
   for (const p of mod?.packs ?? []) {
     if (p.optional) continue
