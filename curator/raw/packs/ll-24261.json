@@ -1,0 +1,44 @@
+{
+ "mod": "ll-24261",
+ "packs": [
+  "CelestialDragonConcubines_cn0918.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "CelestialDragonConcubines_cn0918.pack": {
+   "files": 3,
+   "dependencies": []
+  }
+ },
+ "fileCount": 3,
+ "byTopFolder": {
+  "text": 3
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/cth_celestialconcubines_description_historical.loc",
+   "size": 353,
+   "pack": "CelestialDragonConcubines_cn0918.pack"
+  },
+  {
+   "path": "text/cth_celestialconcubines_land_units.loc",
+   "size": 125,
+   "pack": "CelestialDragonConcubines_cn0918.pack"
+  },
+  {
+   "path": "text/cth_celestialconcubines_shorts_text.loc",
+   "size": 255,
+   "pack": "CelestialDragonConcubines_cn0918.pack"
+  }
+ ]
+}

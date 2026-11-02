@@ -1,0 +1,34 @@
+{
+ "mod": "ll-50065",
+ "packs": [
+  "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack": {
+   "files": 1,
+   "dependencies": []
+  }
+ },
+ "fileCount": 1,
+ "byTopFolder": {
+  "text": 1
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/!!!!!!translated_locs.loc",
+   "size": 2453740,
+   "pack": "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack"
+  }
+ ]
+}

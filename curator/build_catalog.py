@@ -507,7 +507,20 @@ def main():
                 elif homes:
                     p["note"] = "; ".join(x for x in (p.get("note"), "In several downloads: " + ", ".join(homes)) if x)
         own = {p.lower() for p in a["packs"]}
-        header_deps[m["id"]] = [d for d in a.get("dependencies", []) if d.lower() not in own]
+        # Per pack: a dependency of an optional or pick-one pack (or of a pack the entry does not list) only
+        # holds with that pack, so it becomes a condition instead of a requirement of the whole mod.
+        deps = {}
+        for key, info in (a.get("perPack") or {}).items():
+            name = key.rsplit("/", 1)[-1]
+            ref = next((p for p in m["packs"] if p["file"].lower() == name.lower()), None)
+            cond = None if ref and not ref.get("optional") and not ref.get("exclusiveGroup") else f"only with {name}"
+            for d in info.get("dependencies") or []:
+                if d.lower() not in own and (d not in deps or cond is None):
+                    deps[d] = cond
+        for d in a.get("dependencies", []):
+            if d.lower() not in own and d not in deps:
+                deps[d] = None
+        header_deps[m["id"]] = deps
         # "Pack name not given" is answered now; keep the rest of such questions.
         cur = m.get("curation") or {}
         if cur.get("openQuestions"):
@@ -649,9 +662,10 @@ def main():
         return t
 
     for mid, deps in header_deps.items():
-        for dep in deps:
+        for dep, cond in deps.items():
             mods[mid]["relations"].append({"kind": "requires", "target": {"pack": dep},
                                            "note": f"Named as a dependency in the mod's pack ({dep})",
+                                           **({"condition": cond} if cond else {}),
                                            "source": {"type": "inferred"}, "_header": True})
 
     for m in list(mods.values()):

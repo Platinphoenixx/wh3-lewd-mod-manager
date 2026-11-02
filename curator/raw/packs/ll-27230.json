@@ -1,0 +1,2448 @@
+{
+ "mod": "ll-27230",
+ "packs": [
+  "@@ A Loi variant.pack",
+  "@@ B Loi variant.pack",
+  "@@ C Loi variant_Stage4.pack",
+  "@@ D Loi variant.pack",
+  "@@ DD Loi variant.pack",
+  "@@ E Loi variant.pack",
+  "@@ F Loi variant.pack",
+  "@@All_Loi_Variant_selector.pack"
+ ],
+ "dependencies": [
+  "MiaoYingCorrupted_Compendium.pack"
+ ],
+ "perPack": {
+  "@@ A Loi variant.pack": {
+   "files": 53,
+   "dependencies": []
+  },
+  "@@ B Loi variant.pack": {
+   "files": 53,
+   "dependencies": []
+  },
+  "@@ C Loi variant_Stage4.pack": {
+   "files": 53,
+   "dependencies": []
+  },
+  "@@ D Loi variant.pack": {
+   "files": 42,
+   "dependencies": []
+  },
+  "@@ DD Loi variant.pack": {
+   "files": 44,
+   "dependencies": []
+  },
+  "@@ E Loi variant.pack": {
+   "files": 42,
+   "dependencies": []
+  },
+  "@@ F Loi variant.pack": {
+   "files": 42,
+   "dependencies": []
+  },
+  "@@All_Loi_Variant_selector.pack": {
+   "files": 129,
+   "dependencies": [
+    "MiaoYingCorrupted_Compendium.pack"
+   ]
+  }
+ },
+ "fileCount": 131,
+ "byTopFolder": {
+  "variantmeshes": 115,
+  "common_resources": 10,
+  "db": 4,
+  "marthvs": 1,
+  "ui": 1
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 129,
+  "inMod": 84,
+  "inBaseGame": 44,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_04_base_colour.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "wh3_main_cth_cha_ensign_loi_1_campaign_a",
+   "wh3_main_cth_cha_ensign_loi_1_a",
+   "wh3_main_cth_cha_ensign_loi_1_battle_a",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_b",
+   "wh3_main_cth_cha_ensign_loi_1_b",
+   "wh3_main_cth_cha_ensign_loi_1_battle_b",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_c",
+   "wh3_main_cth_cha_ensign_loi_1_c",
+   "wh3_main_cth_cha_ensign_loi_1_battle_c",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_d",
+   "wh3_main_cth_cha_ensign_loi_1_d",
+   "wh3_main_cth_cha_ensign_loi_1_battle_d",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_dd",
+   "wh3_main_cth_cha_ensign_loi_1_dd",
+   "wh3_main_cth_cha_ensign_loi_1_battle_dd",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_e",
+   "wh3_main_cth_cha_ensign_loi_1_e",
+   "wh3_main_cth_cha_ensign_loi_1_battle_e",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_f",
+   "wh3_main_cth_cha_ensign_loi_1_f",
+   "wh3_main_cth_cha_ensign_loi_1_battle_f"
+  ],
+  "campaign_character_art_sets_tables": [
+   "champion",
+   "wh3_main_cth_cha_ensign_loi_1_a",
+   "wh3_main_cth_cathay",
+   "wh3_main_cth_cha_ensign_loi_1",
+   "wh3_main_cth_cha_ensign_loi_1_b",
+   "wh3_main_cth_cha_ensign_loi_1_c",
+   "wh3_main_cth_cha_ensign_loi_1_d",
+   "wh3_main_cth_cha_ensign_loi_1_dd",
+   "wh3_main_cth_cha_ensign_loi_1_e",
+   "wh3_main_cth_cha_ensign_loi_1_f"
+  ],
+  "campaign_character_arts_tables": [
+   "wh3_main_cth_cha_ensign_loi_1_a",
+   "none",
+   "wh3_uniform_cth_ship_agent",
+   "cam_hu1e_sword_lord",
+   "cam_cathayship_01",
+   "wh3_main_cth_cha_ensign_loi_1_b",
+   "wh3_main_cth_cha_ensign_loi_1_c",
+   "wh3_main_cth_cha_ensign_loi_1_d",
+   "wh3_main_cth_cha_ensign_loi_1_dd",
+   "wh3_main_cth_cha_ensign_loi_1_e",
+   "wh3_main_cth_cha_ensign_loi_1_f"
+  ],
+  "variants_tables": [
+   "wh3_main_cth_cha_ensign_loi_1_a",
+   "wh3_main_cth_cha_ensign_loi_1_battle_a",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_a",
+   "wh3_main_cth_cha_ensign_loi_campaign_a",
+   "wh3_main_cth_cha_ensign_loi_1_b",
+   "wh3_main_cth_cha_ensign_loi_1_battle_b",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_b",
+   "wh3_main_cth_cha_ensign_loi_campaign_b",
+   "wh3_main_cth_cha_ensign_loi_1_c",
+   "wh3_main_cth_cha_ensign_loi_1_battle_c",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_c",
+   "wh3_main_cth_cha_ensign_loi_campaign_c",
+   "wh3_main_cth_cha_ensign_loi_1_d",
+   "wh3_main_cth_cha_ensign_loi_1_battle_d",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_d",
+   "wh3_main_cth_cha_ensign_loi_campaign_d",
+   "wh3_main_cth_cha_ensign_loi_1_dd",
+   "wh3_main_cth_cha_ensign_loi_1_battle_dd",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_dd",
+   "wh3_main_cth_cha_ensign_loi_campaign_dd",
+   "wh3_main_cth_cha_ensign_loi_1_e",
+   "wh3_main_cth_cha_ensign_loi_1_battle_e",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_e",
+   "wh3_main_cth_cha_ensign_loi_campaign_e",
+   "wh3_main_cth_cha_ensign_loi_1_f",
+   "wh3_main_cth_cha_ensign_loi_1_battle_f",
+   "wh3_main_cth_cha_ensign_loi_1_campaign_f",
+   "wh3_main_cth_cha_ensign_loi_campaign_f"
+  ]
+ },
+ "files": [
+  {
+   "path": "common_resources/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_l.rigid_model_v2",
+   "size": 426182,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_l.rigid_model_v2",
+   "size": 426182,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_l.wsmodel",
+   "size": 1259,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_l.wsmodel",
+   "size": 1259,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.rigid_model_v2",
+   "size": 603324,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.rigid_model_v2",
+   "size": 603324,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.rigid_model_v2",
+   "size": 603324,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.rigid_model_v2",
+   "size": 603324,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.wsmodel",
+   "size": 1259,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.wsmodel",
+   "size": 1259,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.wsmodel",
+   "size": 1259,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/female_body_s.wsmodel",
+   "size": 1259,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/material/female_body_weighted4_alpha_off.xml.material",
+   "size": 2503,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/material/female_body_weighted4_alpha_off.xml.material",
+   "size": 2503,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/material/female_body_weighted4_alpha_off.xml.material",
+   "size": 2503,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/material/female_body_weighted4_alpha_off.xml.material",
+   "size": 2503,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/material/female_body_weighted4_alpha_off.xml.material",
+   "size": 2503,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_base_color.dds",
+   "size": 2796364,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_base_color.dds",
+   "size": 2796364,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_base_color.dds",
+   "size": 2796364,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_base_color.dds",
+   "size": 2796364,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_base_color.dds",
+   "size": 2796364,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_material_map.dds",
+   "size": 2796364,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_material_map.dds",
+   "size": 2796364,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_material_map.dds",
+   "size": 2796364,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_material_map.dds",
+   "size": 2796364,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_material_map.dds",
+   "size": 2796364,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal.dds",
+   "size": 5592560,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal.dds",
+   "size": 5592560,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal.dds",
+   "size": 5592560,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal.dds",
+   "size": 5592560,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal.dds",
+   "size": 5592560,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal_orange.dds",
+   "size": 5592560,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal_orange.dds",
+   "size": 5592560,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal_orange.dds",
+   "size": 5592560,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal_orange.dds",
+   "size": 5592560,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "common_resources/female_body/tex/female_body_normal_orange.dds",
+   "size": 5592560,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/miaoscorruptedcompendium_add_var_select",
+   "size": 1222,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/miaoscorruptedcompendium_add_var_select",
+   "size": 834,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/miaoscorruptedcompendium_add_var_select",
+   "size": 1653,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "db/variants_tables/miaoscorruptedcompendium_add_var_select",
+   "size": 1980,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "marthvs/mod/tdw_loi_reskin_var_select.lua",
+   "size": 320,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_tdw_ensign_loi_var_select.bin",
+   "size": 2216,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/black_mask.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1650,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1650,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1.variantmeshdefinition",
+   "size": 1855,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_a.variantmeshdefinition",
+   "size": 1650,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_b.variantmeshdefinition",
+   "size": 1650,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_c.variantmeshdefinition",
+   "size": 1855,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_d.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_dd.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_e.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_1_f.variantmeshdefinition",
+   "size": 1538,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1421,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1530,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1530,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign.variantmeshdefinition",
+   "size": 1735,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_a.variantmeshdefinition",
+   "size": 1530,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_b.variantmeshdefinition",
+   "size": 1530,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_c.variantmeshdefinition",
+   "size": 1735,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_d.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_dd.variantmeshdefinition",
+   "size": 1421,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_e.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wh3_main_cth_cha_ensign_loi_campaign_f.variantmeshdefinition",
+   "size": 1418,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "size": 47676,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "size": 47676,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "size": 47676,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_body1.rigid_model_v2",
+   "size": 47676,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.rigid_model_v2",
+   "size": 1827268,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.rigid_model_v2",
+   "size": 1827268,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.wsmodel",
+   "size": 4178,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_01.wsmodel",
+   "size": 4178,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.rigid_model_v2",
+   "size": 1910978,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.rigid_model_v2",
+   "size": 1910978,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.wsmodel",
+   "size": 5250,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_03.wsmodel",
+   "size": 5250,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.rigid_model_v2",
+   "size": 2227820,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.rigid_model_v2",
+   "size": 2227820,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.wsmodel",
+   "size": 6440,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_body_05.wsmodel",
+   "size": 6440,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.rigid_model_v2",
+   "size": 640826,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.rigid_model_v2",
+   "size": 640826,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.wsmodel",
+   "size": 2440,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_01.wsmodel",
+   "size": 2440,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.rigid_model_v2",
+   "size": 542334,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.rigid_model_v2",
+   "size": 542334,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.wsmodel",
+   "size": 2386,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_02.wsmodel",
+   "size": 2386,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.rigid_model_v2",
+   "size": 601538,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.rigid_model_v2",
+   "size": 601538,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.wsmodel",
+   "size": 3128,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/cth_nan_gau_sla_head_03.wsmodel",
+   "size": 3128,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted2_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_jade_warrior_body_02_submesh_weighted4_alpha_off.xml.material",
+   "size": 2682,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_body_02_subm_weighted4_alpha_off.xml.material",
+   "size": 2709,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted2_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_01_weighted4_alpha_on.xml.material",
+   "size": 2705,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_02_subm_weighted4_alpha_on.xml.material",
+   "size": 2715,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted2_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_nan_gau_warrior_head_03_subm_weighted4_alpha_off.xml.material",
+   "size": 2710,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted2_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_off.xml.material",
+   "size": 2662,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/cth_peasant_body_03_submesh_12_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/dae_cultist_of_slaanesh_head_03__weighted4_alpha_on.xml.material",
+   "size": 2752,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/hef_sisters_of_avelorn_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2734,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/materials/maiden2_lod1_weighted4_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 8388760,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 8388760,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 8388760,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse01.dds",
+   "size": 8388760,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 16777412,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 16777412,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 16777412,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse02.dds",
+   "size": 16777412,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 8388760,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 8388760,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 8388760,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse03.dds",
+   "size": 8388760,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 16777412,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 16777412,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 16777412,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_diffuse04.dds",
+   "size": 16777412,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_jade_sla_body_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 699192,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 699192,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 699192,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_base_colour02.dds",
+   "size": 699192,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_mask.dds",
+   "size": 1398240,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_body_normal.dds",
+   "size": 1398240,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_05_base_colour.dds",
+   "size": 1398276,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_mask.dds",
+   "size": 1398240,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_nan_gau_warrior_head_normal.dds",
+   "size": 1398240,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 699192,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 699192,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 699192,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/cth_peasant_body_base_colour_sla.dds",
+   "size": 699192,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "@@ A Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "@@ B Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "@@ C Loi variant_Stage4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nan_gau_warrior/tex/hef_sisters_of_sla_cape_01_base_colour.dds",
+   "size": 349700,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_01_s.rigid_model_v2",
+   "size": 1704912,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_01_s.rigid_model_v2",
+   "size": 1704912,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_01_s.wsmodel",
+   "size": 1777,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_01_s.wsmodel",
+   "size": 1777,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_02_s.rigid_model_v2",
+   "size": 1843870,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_02_s.rigid_model_v2",
+   "size": 1843870,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_02_s.wsmodel",
+   "size": 1777,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_02_s.wsmodel",
+   "size": 1777,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_l.rigid_model_v2",
+   "size": 1990364,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_l.rigid_model_v2",
+   "size": 1990364,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_l.wsmodel",
+   "size": 1777,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_l.wsmodel",
+   "size": 1777,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_s.rigid_model_v2",
+   "size": 1987892,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_s.rigid_model_v2",
+   "size": 1987892,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_s.wsmodel",
+   "size": 1777,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/cth_bhsm_cultist_armor_03_s.wsmodel",
+   "size": 1777,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_alchemist_weighted4_alpha_on_emissive.xml.material",
+   "size": 3016,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_alchemist_weighted4_alpha_on_emissive.xml.material",
+   "size": 3016,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_alchemist_weighted4_alpha_on_emissive.xml.material",
+   "size": 3016,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_alchemist_weighted4_alpha_on_emissive.xml.material",
+   "size": 3016,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_alchemist_weighted4_alpha_on_emissive.xml.material",
+   "size": 3016,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_nangau_weighted4_alpha_on_emissive.xml.material",
+   "size": 3001,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_nangau_weighted4_alpha_on_emissive.xml.material",
+   "size": 3001,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_nangau_weighted4_alpha_on_emissive.xml.material",
+   "size": 3001,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_nangau_weighted4_alpha_on_emissive.xml.material",
+   "size": 3001,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_01_nangau_weighted4_alpha_on_emissive.xml.material",
+   "size": 3001,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_nangau_test_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_nangau_test_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_nangau_test_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_nangau_test_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_nangau_test_weighted4_alpha_on.xml.material",
+   "size": 2688,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_test_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_test_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_test_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_test_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/material/cth_bshm_cultist_armor_test_weighted4_alpha_on.xml.material",
+   "size": 2660,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_emissive.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_emissive.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_emissive.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_emissive.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_emissive.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_material_map.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_material_map.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_material_map.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_material_map.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_alchemist_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_emissive.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_emissive.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_emissive.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_emissive.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_emissive.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_material_map.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_material_map.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_material_map.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_material_map.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_nangau_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/armor/tex/cth_bshm_cultist_armor_test_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.rigid_model_v2",
+   "size": 440142,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.rigid_model_v2",
+   "size": 440142,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.rigid_model_v2",
+   "size": 440142,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.rigid_model_v2",
+   "size": 440142,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.rigid_model_v2",
+   "size": 440142,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.wsmodel",
+   "size": 886,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.wsmodel",
+   "size": 886,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.wsmodel",
+   "size": 886,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.wsmodel",
+   "size": 886,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/cth_bhsm_cultist_mask_01.wsmodel",
+   "size": 886,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_01.rigid_model_v2",
+   "size": 454232,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_01.rigid_model_v2",
+   "size": 454232,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_01.wsmodel",
+   "size": 876,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_01.wsmodel",
+   "size": 876,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.rigid_model_v2",
+   "size": 297228,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.rigid_model_v2",
+   "size": 297228,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.rigid_model_v2",
+   "size": 297228,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.rigid_model_v2",
+   "size": 297228,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.rigid_model_v2",
+   "size": 297228,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.wsmodel",
+   "size": 876,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.wsmodel",
+   "size": 876,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.wsmodel",
+   "size": 876,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.wsmodel",
+   "size": 876,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/heads/cth_bhsm_cultist_head_02.wsmodel",
+   "size": 876,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_head_weighted4_alpha_on.xml.material",
+   "size": 2822,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_head_weighted4_alpha_on.xml.material",
+   "size": 2822,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_head_weighted4_alpha_on.xml.material",
+   "size": 2822,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_head_weighted4_alpha_on.xml.material",
+   "size": 2822,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_head_weighted4_alpha_on.xml.material",
+   "size": 2822,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_mask_01_weighted4_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_mask_01_weighted4_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_mask_01_weighted4_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_mask_01_weighted4_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/materials/cth_bshm_cultist_mask_01_weighted4_alpha_off.xml.material",
+   "size": 2616,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_material_map.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_material_map.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_material_map.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_material_map.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_material_map.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_bshm_cultist_mask_normal_orange.dds",
+   "size": 1398256,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_cultist_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_cultist_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_cultist_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_cultist_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_nangau/tex/cth_cultist_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_alchemist_vial_01.rigid_model_v2",
+   "size": 24752,
+   "pack": "@@ D Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_alchemist_vial_01.rigid_model_v2",
+   "size": 24752,
+   "pack": "@@ DD Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_alchemist_vial_01.rigid_model_v2",
+   "size": 24752,
+   "pack": "@@ E Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_alchemist_vial_01.rigid_model_v2",
+   "size": 24752,
+   "pack": "@@ F Loi variant.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_props/cth_alchemist_vial_01.rigid_model_v2",
+   "size": 24752,
+   "pack": "@@All_Loi_Variant_selector.pack"
+  }
+ ]
+}

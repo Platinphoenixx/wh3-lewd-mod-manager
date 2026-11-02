@@ -1,0 +1,419 @@
+{
+ "mod": "ll-43659",
+ "packs": [
+  "new_community_beastmen_ru.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "new_community_beastmen_ru.pack": {
+   "files": 78,
+   "dependencies": []
+  }
+ },
+ "fileCount": 78,
+ "byTopFolder": {
+  "text": 78
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/aaa_missing_locs.loc",
+   "size": 1774,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@aaaaatext_replacement.loc",
+   "size": 8785,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@amissinge.loc",
+   "size": 1318,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_ability.loc",
+   "size": 18624,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_agent_subtype.loc",
+   "size": 1329,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_agent_subtype_legendary_heroes.loc",
+   "size": 378,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_battle_set_piece.loc",
+   "size": 4078,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_battle_set_piece_army.loc",
+   "size": 1840,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_character_skill.loc",
+   "size": 78250,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_effect.loc",
+   "size": 14736,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_land_unit.loc",
+   "size": 2362,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_mission.loc",
+   "size": 10706,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_mission_legendary_heroes.loc",
+   "size": 1024,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_mission_payload_text.loc",
+   "size": 448,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_names.loc",
+   "size": 802,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_special_abilitiy_groups.loc",
+   "size": 777,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@corrupted_unit_mounts.loc",
+   "size": 438,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@description_historical.loc",
+   "size": 6998,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@description_short_text.loc",
+   "size": 6570,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_ability.loc",
+   "size": 27183,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_ancillary.loc",
+   "size": 23578,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_battle_set_piece.loc",
+   "size": 3290,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_battle_set_piece_army.loc",
+   "size": 3948,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_building_culture_varaints_loc.loc",
+   "size": 713,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_building_short_description.loc",
+   "size": 2981,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_campaign_payload_ui_details.loc",
+   "size": 221,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_cdir_events_dilemma_choice_details.loc",
+   "size": 29114,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_cdir_events_random_dilemma_choice_details.loc",
+   "size": 12918,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_character_skill.loc",
+   "size": 672,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_dilemma.loc",
+   "size": 584964,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_dilemma_random.loc",
+   "size": 9254,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_effect_bundles.loc",
+   "size": 14694,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_effects.loc",
+   "size": 14242,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_land_unit.loc",
+   "size": 5605,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_mercenary_unit_groups_.loc",
+   "size": 161,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_mission.loc",
+   "size": 10865,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_names.loc",
+   "size": 2079,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_pool_resource.loc",
+   "size": 674,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_pool_resource_factor.loc",
+   "size": 1330,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_special_abilities_groups.loc",
+   "size": 139,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@sewrat_units_custom_battle_permission.loc",
+   "size": 191,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@special_ability_groups.loc",
+   "size": 14,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@special_ability_phases__.loc",
+   "size": 521,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@@ui_bullet_point_enums.loc",
+   "size": 1480,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@savage_beastmen_culture_settlement_occupation_options.loc",
+   "size": 578,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/@savage_beastmen_effects.loc",
+   "size": 6260,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/ability.loc",
+   "size": 4354,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/ability_addition_ui_description.loc",
+   "size": 1529,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/candles_abilities.loc",
+   "size": 294,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/captive_followers.loc",
+   "size": 31108,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/conquest_dilemma_text.loc",
+   "size": 34330,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/effect.loc",
+   "size": 5318,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/effect_bundles.loc",
+   "size": 3729,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/effect_tables.loc",
+   "size": 760,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_battle_set_piece_armies__.loc",
+   "size": 5477,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_battle_set_pieces__.loc",
+   "size": 1406,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_dilemma.loc",
+   "size": 12620,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_dilemma_choice_details.loc",
+   "size": 2161,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_missions.loc",
+   "size": 25310,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/jojo_names__.loc",
+   "size": 83,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/migration_dilemma_.loc",
+   "size": 1332,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/missions.loc",
+   "size": 1234,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/random_dilemma_text.loc",
+   "size": 11604,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_campaign_payload_ui_details.loc",
+   "size": 322,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_campaign_post_battle_captive_options.loc",
+   "size": 530,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_dilemmas.loc",
+   "size": 7654,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_effect_bundles.loc",
+   "size": 1949,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_incidents.loc",
+   "size": 492,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_land_units.loc",
+   "size": 433,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_rituals.loc",
+   "size": 179,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_unit_description_historical_texts.loc",
+   "size": 1133,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_unit_descrption_short_texts.loc",
+   "size": 945,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/sewrat_special_ability_groups.txt",
+   "size": 145,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/skill_tree.loc",
+   "size": 23330,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/db/special_dilemmas.loc",
+   "size": 4536,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/missing_locs.loc",
+   "size": 5412,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/removed_skills.txt",
+   "size": 123,
+   "pack": "new_community_beastmen_ru.pack"
+  },
+  {
+   "path": "text/zzz_missing_locs.loc",
+   "size": 3249,
+   "pack": "new_community_beastmen_ru.pack"
+  }
+ ]
+}

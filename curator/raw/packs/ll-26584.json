@@ -1,0 +1,69 @@
+{
+ "mod": "ll-26584",
+ "packs": [
+  "balthasar_geltina_cn_0409.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "balthasar_geltina_cn_0409.pack": {
+   "files": 8,
+   "dependencies": []
+  }
+ },
+ "fileCount": 8,
+ "byTopFolder": {
+  "text": 8
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/!balthasar_geltina_traits.loc",
+   "size": 2335,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_building_sets.loc",
+   "size": 788,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_building_chains.loc",
+   "size": 430,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_building_culture_variants__.loc",
+   "size": 341,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_core_missions_desc.loc",
+   "size": 4812,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_dilemmas.loc",
+   "size": 5272,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_dilemmas_choices.loc",
+   "size": 4992,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  },
+  {
+   "path": "text/db/!kc_geltina_short_desc.loc",
+   "size": 1189,
+   "pack": "balthasar_geltina_cn_0409.pack"
+  }
+ ]
+}

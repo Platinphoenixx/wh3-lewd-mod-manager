@@ -1,0 +1,139 @@
+{
+ "mod": "ll-24265",
+ "packs": [
+  "MiaoYingCorrupted_Compendium_cn0829.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "MiaoYingCorrupted_Compendium_cn0829.pack": {
+   "files": 22,
+   "dependencies": []
+  }
+ },
+ "fileCount": 22,
+ "byTopFolder": {
+  "text": 22
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/1li_miao_adaptation_effect_bundles.loc",
+   "size": 934,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaocorruptedcompendium_agent_subtypes__.loc",
+   "size": 572,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaocorruptedcompendium_effects.loc",
+   "size": 185,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaocorruptedcompendium_land_units__.loc",
+   "size": 133,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_ancillaries.loc",
+   "size": 10694,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_character_trait_levels__.loc",
+   "size": 7714,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_dliemna.loc",
+   "size": 324229,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_incidents.loc",
+   "size": 41571,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_mission.loc",
+   "size": 8014,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendium_mission_text.loc",
+   "size": 13266,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendiumr_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 92428,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendiumr_unit_description_historical_texts__.loc",
+   "size": 195,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1miaoscorruptedcompendiumr_unit_description_short_texts__.loc",
+   "size": 279,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_battle_set_piece_armies__.loc",
+   "size": 4496,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_battle_set_pieces__.loc",
+   "size": 2149,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_cdir_events_dilemma_choice_details__.loc",
+   "size": 12905,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_dilemmas__.loc",
+   "size": 62466,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_missions__.loc",
+   "size": 2376,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/1pp_name_changing.loc",
+   "size": 71,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_piece_armies.loc",
+   "size": 187,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_pieces.loc",
+   "size": 551,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_missions.loc",
+   "size": 691,
+   "pack": "MiaoYingCorrupted_Compendium_cn0829.pack"
+  }
+ ]
+}

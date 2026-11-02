@@ -1,0 +1,935 @@
+{
+ "mod": "ll-24571",
+ "packs": [
+  "Miaoying(tit).pack",
+  "katarin(tit).pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "katarin(tit).pack": {
+   "files": 81,
+   "dependencies": []
+  },
+  "Miaoying(tit).pack": {
+   "files": 63,
+   "dependencies": []
+  }
+ },
+ "fileCount": 144,
+ "byTopFolder": {
+  "variantmeshes": 110,
+  "db": 18,
+  "ui": 12,
+  "text": 4
+ },
+ "tables": [
+  "battle_vortexs_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "effect_bonus_value_unit_set_unit_ability_junctions_tables",
+  "effects_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "projectile_bombardments_tables",
+  "projectiles_tables",
+  "special_ability_phase_displays_tables",
+  "special_ability_phases_tables",
+  "special_ability_to_special_ability_phase_junctions_tables",
+  "unit_abilities_tables",
+  "unit_abilities_to_additional_ui_effects_juncs_tables",
+  "unit_set_unit_ability_junctions_tables",
+  "unit_special_abilities_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 96,
+  "inMod": 81,
+  "inBaseGame": 15,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "battle_vortexs_tables": [
+   "wh2_dlc11_spell_deep_tidecall",
+   "miao_deluge",
+   "target_near_edge",
+   "1.ignore",
+   "circle"
+  ],
+  "character_skill_level_details_tables": [
+   "miao_ying_deluge",
+   "miao_ying_judgment"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "miao_ying_deluge",
+   "wh_main_effect_ability_enable_miao_deluge_e",
+   "character_to_character_own",
+   "miao_ying_judgment",
+   "wh_main_effect_ability_enable_miao_judgment_e"
+  ],
+  "character_skill_nodes_tables": [
+   "miao_ying_deluge",
+   "wh3_main_skill_node_set_cth_miao_ying",
+   "wh3_main_skill_node_cth_miao_ying_deluge_node",
+   "miao_ying_judgment",
+   "wh3_main_skill_node_cth_miao_ying_judgment_node"
+  ],
+  "character_skills_tables": [
+   "miao_deluge.png",
+   "miao_ying_deluge",
+   "Flash Flood",
+   "miao_judgment.png",
+   "miao_ying_judgment"
+  ],
+  "effect_bonus_value_unit_set_unit_ability_junctions_tables": [
+   "enable",
+   "wh_main_effect_ability_enable_miao_deluge_e",
+   "wh_main_character_abilities_miao_deluge_enable",
+   "wh_main_effect_ability_enable_miao_judgment_e",
+   "wh_main_character_abilities_miao_judgment_enable"
+  ],
+  "effects_tables": [
+   "wh_main_effect_ability_enable_miao_deluge_e",
+   "general_ability.png",
+   "battle",
+   "wh_main_effect_ability_enable_miao_judgment_e"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "wh_main_character_abilities_miao_bolt",
+   "wh3_main_cth_cha_storm_dragon_1",
+   "wh_main_character_abilities_miao_deluge",
+   "wh3_main_cth_cha_storm_dragon_0",
+   "wh_main_character_abilities_miao_judgment"
+  ],
+  "projectile_bombardments_tables": [
+   "miao_judgment",
+   "miao_storm",
+   "above_target",
+   "wh_main_heavens_urannons_thunderbolt_bomb_spawn",
+   "wh_main_spell_heavens_urannons_thunderbolt"
+  ],
+  "projectiles_tables": [
+   "miao_bolt",
+   "misc",
+   "artillery_explosive",
+   "wh3_main_ksl_tower_explosion_lightning",
+   "none",
+   "low",
+   "wh3_projectile_ksl_lightning_tower",
+   "wh2_dragon_breath_ice_multi",
+   "wh_dlc06_unit_contact_sundered_armour",
+   "high_magic",
+   "miao_storm",
+   "wh_main_spell_heavens_comet_of_casandora_upgraded",
+   "shell_spin",
+   "wh_main_spell_heavens_urannons_thunderbolt",
+   "wh_magic_urannons_thunderbolt"
+  ],
+  "special_ability_phase_displays_tables": [
+   "wh3_main_abilities_cth_eye_of_storm",
+   "miao_bolt",
+   "top"
+  ],
+  "special_ability_phases_tables": [
+   "negative",
+   "wh_main_character_abilities_miao_bolt",
+   "wh2_dlc11_lord_abilities_storm_of_the_night",
+   "wh_main_spell_heavens_curse_of_the_midnight_wind",
+   "wh_main_character_abilities_miao_judgment"
+  ],
+  "special_ability_to_special_ability_phase_junctions_tables": [
+   "wh_main_character_abilities_miao_bolt",
+   "wh_main_character_abilities_miao_judgment"
+  ],
+  "unit_abilities_tables": [
+   "wh_main_character_abilities_miao_bolt",
+   "miao_bolt",
+   "wh_type_magic_missiles",
+   "wh_main_anc_group_uncommon",
+   "bound",
+   "wh_main_character_abilities_miao_judgment",
+   "miao_judgment",
+   "wh_type_bombardment",
+   "wh_main_character_abilities_miao_deluge",
+   "miao_deluge",
+   "wh_type_breath"
+  ],
+  "unit_abilities_to_additional_ui_effects_juncs_tables": [
+   "wh_main_character_abilities_miao_judgment",
+   "wh_main_projectile_powerful_explosion",
+   "wh2_main_all_magical_damage_major",
+   "wh_main_all_strong_against_multiple",
+   "wh2_main_bombardment_medium_strike_aoe",
+   "wh_main_character_abilities_miao_bolt",
+   "wh_main_projectile_effective_long_range",
+   "wh_main_all_good_vs_large",
+   "wh_main_all_strong_against_single",
+   "wh_main_character_abilities_miao_deluge",
+   "wh_main_all_weak_against_single",
+   "wh2_main_all_magical_damage_minor",
+   "wh_main_all_poor_vs_large"
+  ],
+  "unit_set_unit_ability_junctions_tables": [
+   "wh_main_character_abilities_miao_deluge_enable",
+   "wh_main_character_abilities_miao_deluge",
+   "wh3_main_cth_cha_storm_dragon_0",
+   "wh_main_character_abilities_miao_judgment_enable",
+   "wh_main_character_abilities_miao_judgment"
+  ],
+  "unit_special_abilities_tables": [
+   "wh_main_character_abilities_miao_bolt",
+   "miao_bolt",
+   "cast_up_medium",
+   "wh_spell_generic_missiles",
+   "projectile_single",
+   "wh2_main_spell_ruin_warp_lightning",
+   "yin_long",
+   "vo_battle_special_ability_spell_cast_negative",
+   "damage_unit",
+   "wh_main_character_abilities_miao_judgment",
+   "miao_judgment",
+   "wh_spell_generic_bombardment_small",
+   "aoe_bombardment",
+   "wh_main_spell_heavens_urannons_thunderbolt",
+   "heavens_long",
+   "wh3_main_yang_might_heaven_earth",
+   "wh_main_character_abilities_miao_deluge",
+   "cast_up_short",
+   "wh_abilities_generic_breath",
+   "miao_deluge",
+   "vortex_breath",
+   "wh2_dlc11_spell_deep_tidecall",
+   "deep_short",
+   "wh2_dlc11_denizens_of_the_deep_start",
+   "wh2_dlc11_denizens_of_the_deep"
+  ],
+  "variants_tables": [
+   "wh3_main_cth_cha_storm_dragon_0",
+   "cth_storm_dragon_human2"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/battle_vortexs_tables/miao_storm",
+   "size": 325,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/miao_storm",
+   "size": 157,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/miao_storm",
+   "size": 293,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/miao_storm",
+   "size": 343,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/character_skills_tables/miao_storm",
+   "size": 441,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/effect_bonus_value_unit_set_unit_ability_junctions_tables/miao_storm",
+   "size": 289,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/effects_tables/miao_storm",
+   "size": 289,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/miao_storm",
+   "size": 305,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/projectile_bombardments_tables/miao_storm",
+   "size": 252,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/projectiles_tables/miao_storm",
+   "size": 754,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/special_ability_phase_displays_tables/miao_storm",
+   "size": 147,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/special_ability_phases_tables/miao_storm",
+   "size": 509,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/special_ability_to_special_ability_phase_junctions_tables/miao_storm",
+   "size": 269,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/unit_abilities_tables/miao_storm",
+   "size": 440,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/unit_abilities_to_additional_ui_effects_juncs_tables/miao_storm",
+   "size": 996,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/unit_set_unit_ability_junctions_tables/miao_storm",
+   "size": 331,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/unit_special_abilities_tables/miao_storm",
+   "size": 1414,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "db/variants_tables/lig_my_data",
+   "size": 165,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "text/db/miao_storm_character_skill_level_details__.loc",
+   "size": 347,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "text/db/miao_storm_character_skills__.loc",
+   "size": 950,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "text/db/miao_storm_effects__.loc",
+   "size": 473,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "text/db/miao_storm_unit_abilities__.loc",
+   "size": 1082,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/miao_bolt.png",
+   "size": 10005,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/miao_deluge.png",
+   "size": 9673,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/battle ui/ability_icons/miao_judgment.png",
+   "size": 7979,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/miao_bolt.png",
+   "size": 10005,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/miao_deluge.png",
+   "size": 9673,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/campaign ui/skills/miao_judgment.png",
+   "size": 7979,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_katarin_second.bin",
+   "size": 290,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh3_main_cth_cathay/cth_storm_dragon_human_0.png",
+   "size": 53723,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh3_main_ksl_kislev/ksl_katarin_second.png",
+   "size": 54906,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_katarin_second.bin",
+   "size": 290,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "ui/portraits/units/wh3_main_cth_cathay/cth_storm_dragon_human_0.png",
+   "size": 18314,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "ui/portraits/units/wh3_main_ksl_kislev/ksl_katarin_second.png",
+   "size": 527975,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_miao_ying_dragon.variantmeshdefinition",
+   "size": 475,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human2.variantmeshdefinition",
+   "size": 645,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_katarin.variantmeshdefinition",
+   "size": 988,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_katarin_cloth_sim.variantmeshdefinition",
+   "size": 1044,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/dr4/cth/cth_dragon_storm/cth_dragon_storm_head_11.rigid_model_v2",
+   "size": 3399942,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/floating_ice_crown.rigid_model_v2",
+   "size": 78844,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/floating_ice_crown.wsmodel",
+   "size": 836,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/floating_inner_ice_crown.rigid_model_v2",
+   "size": 41578,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/floating_inner_ice_crown.wsmodel",
+   "size": 842,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/katarin_second.rigid_model_v2",
+   "size": 9167110,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/katarin_second.wsmodel",
+   "size": 12220,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/katarin_second_campaign.rigid_model_v2",
+   "size": 9167110,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/katarin_second_campaign.wsmodel",
+   "size": 12229,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/ksl_katarin_second.wsmodel",
+   "size": 13551,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/ksl_katarin_second_campaign.wsmodel",
+   "size": 13561,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/acc_earring_lod1_weighted4_alpha_on.xml.material",
+   "size": 2616,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/acc_hand_lod1_weighted4_alpha_on.xml.material",
+   "size": 4594,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/armlet_closed_lod1_weighted4_alpha_on.xml.material",
+   "size": 2613,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/armor_cloak_lod1_weighted4_alpha_on.xml.material",
+   "size": 2545,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/armor_second_lod1_weighted4_alpha_on.xml.material",
+   "size": 2641,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/body_demonic_fourth_lod1_weighted4_alpha_on.xml.material",
+   "size": 2628,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/body_demonic_second_lod1_weighted4_alpha_on.xml.material",
+   "size": 4641,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/boots_lod1_weighted4_alpha_on.xml.material",
+   "size": 2506,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/boots_shin_guard_lod1_weighted4_alpha_on.xml.material",
+   "size": 2589,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/disc_open_lod1_weighted4_alpha_on.xml.material",
+   "size": 2603,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/finger_guards_lod1_weighted4_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/fluff_lod1_weighted4_alpha_on.xml.material",
+   "size": 2634,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/hair_sky116_mat_lod1_weighted4_alpha_on.xml.material",
+   "size": 2454,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/head_details_lod1_weighted4_alpha_on.xml.material",
+   "size": 2641,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/head_hp_exp_lod1_weighted4_alpha_on.xml.material",
+   "size": 2592,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ice_crown_filled_lod1_weighted4_alpha_on.xml.material",
+   "size": 2645,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ice_crown_spin_lod1_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/knee_pad_weighted4_alpha_on.xml.material",
+   "size": 2603,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ksl_frost_maiden_body_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ksl_frost_maiden_body_01_submesh_weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ksl_katarin_body_01_submesh_58_weighted4_alpha_on.xml.material",
+   "size": 2654,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ksl_katarin_crown_02_weighted2_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/materials/ksl_katarin_head_01_1_weighted2_alpha_on.xml.material",
+   "size": 2645,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/accessories_base_colour.dds",
+   "size": 2796364,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/accessories_material_map.dds",
+   "size": 2796364,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/accessories_normal.dds",
+   "size": 5592560,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/body_fourth_mask.dds",
+   "size": 11184976,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/boots.dds",
+   "size": 2796364,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/boots_material_map.dds",
+   "size": 2796364,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/boots_normal.dds",
+   "size": 5592560,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_disc_of_tzeentch_doom_ror_01_base_colour.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_disc_of_tzeentch_doom_ror_01_mask.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_disc_of_tzeentch_doom_ror_01_material_map.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_disc_of_tzeentch_doom_ror_01_normal.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_exalted_lord_of_change_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_exalted_lord_of_change_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_exalted_lord_of_change_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_exalted_lord_of_change_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_horror_accessories_01_base_colour.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_horror_accessories_01_mask.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_horror_accessories_01_material_map.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/dae_horror_accessories_01_normal.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/head_hp_base_colour.dds",
+   "size": 11184972,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/head_hp_mask.dds",
+   "size": 699216,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/head_hp_material_map.dds",
+   "size": 11184972,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/head_hp_normal.dds",
+   "size": 22369776,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/kat_body_second_base_colour.dds",
+   "size": 5592572,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/kat_body_second_material_map.dds",
+   "size": 5592572,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/kat_body_second_normal.dds",
+   "size": 11184976,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/kat_frost_maiden_body_01_base_colour.dds",
+   "size": 1398276,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/kat_frost_maiden_body_01_base_colourx.dds",
+   "size": 1398276,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_02_base_colour.dds",
+   "size": 1398276,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_02_mask.dds",
+   "size": 1398256,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_02_material_map.dds",
+   "size": 1398276,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_body_02_normal.dds",
+   "size": 1398256,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_head_01_base_colour.dds",
+   "size": 349692,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_head_01_mask.dds",
+   "size": 699200,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_head_01_material_map.dds",
+   "size": 349692,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/ksl_katarin_head_01_normal.dds",
+   "size": 699200,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/s116_material_map.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/sky116 darker.dds",
+   "size": 699212,
+   "pack": "katarin(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_lod1_weighted4_alpha_on.xml.material",
+   "size": 2576,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted2_alpha_off.xml.material",
+   "size": 4862,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_lod1_weighted4_alpha_on.xml.material",
+   "size": 2572,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_lod1_weighted4_alpha_on.xml.material",
+   "size": 2576,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted2_alpha_off.xml.material",
+   "size": 4857,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2572,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying.rigid_model_v2",
+   "size": 5520504,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying.wsmodel",
+   "size": 2871,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_base_colour.dds",
+   "size": 1398276,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_material_map.dds",
+   "size": 1398276,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_normal.dds",
+   "size": 1398240,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_base_colour.dds",
+   "size": 11184996,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_material_map.dds",
+   "size": 11184996,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_normal.dds",
+   "size": 11184976,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_base_colour.dds",
+   "size": 1398276,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_mask.dds",
+   "size": 1398256,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_material_map.dds",
+   "size": 1398276,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_normal.dds",
+   "size": 1398256,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_base_colour.dds",
+   "size": 699236,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "Miaoying(tit).pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "Miaoying(tit).pack"
+  }
+ ]
+}

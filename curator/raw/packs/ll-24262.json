@@ -1,0 +1,149 @@
+{
+ "mod": "ll-24262",
+ "packs": [
+  "li_morathi_progression_cn0915.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "li_morathi_progression_cn0915.pack": {
+   "files": 24,
+   "dependencies": []
+  }
+ },
+ "fileCount": 24,
+ "byTopFolder": {
+  "text": 24
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/li_morathi_progression_first.loc",
+   "size": 1084,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_ancillaries.loc",
+   "size": 373,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_battle_set_piece_armies.loc",
+   "size": 183,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_battle_set_pieces.loc",
+   "size": 613,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_battle_missions.loc",
+   "size": 1350,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_campaign_payload_ui_details.loc",
+   "size": 444,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 3976,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_dilemmas.loc",
+   "size": 8688,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_effects.loc",
+   "size": 284,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_names.loc",
+   "size": 134,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_special_ability_phases.loc",
+   "size": 137,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_first_unit_abilities.loc",
+   "size": 328,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second.loc",
+   "size": 6570,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_campaign_payload_ui_details.loc",
+   "size": 408,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 5968,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_dilemmas.loc",
+   "size": 15834,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_effect_bundles.loc",
+   "size": 274,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_effects.loc",
+   "size": 409,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_missions.loc",
+   "size": 1813,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_names.loc",
+   "size": 134,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_special_ability_phases.loc",
+   "size": 304,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_unit_abilities.loc",
+   "size": 788,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/li_morathi_progression_second_unit_abilities_additional_ui_effects.loc",
+   "size": 219,
+   "pack": "li_morathi_progression_cn0915.pack"
+  },
+  {
+   "path": "text/db/perverse_discharge_unit_abilities__.loc",
+   "size": 658,
+   "pack": "li_morathi_progression_cn0915.pack"
+  }
+ ]
+}

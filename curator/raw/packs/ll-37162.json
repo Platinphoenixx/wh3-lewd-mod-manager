@@ -1,0 +1,333 @@
+{
+ "mod": "ll-37162",
+ "packs": [
+  "@n_SlaaneshVisuals_LL_Only.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@n_SlaaneshVisuals_LL_Only.pack": {
+   "files": 29,
+   "dependencies": []
+  }
+ },
+ "fileCount": 29,
+ "byTopFolder": {
+  "variantmeshes": 23,
+  "db": 5,
+  "script": 1
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 120,
+  "inMod": 0,
+  "inBaseGame": 120,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "wh2_dlc10_hef_alarielle_campaign_orig",
+   "wh2_dlc10_uniform_hef_alarielle_orig",
+   "wh2_dlc10_hef_alarielle_orig",
+   "wh2_dlc10_def_crone_hellebron_orig",
+   "wh2_dlc10_uniform_def_crone_hellebron_orig",
+   "wh2_main_def_morathi_orig",
+   "wh2_main_uniform_def_morathi_orig",
+   "wh2_dlc14_brt_ch_repanse_de_lyonesse_orig",
+   "wh2_dlc14_uniform_brt_repanse_orig",
+   "wh_dlc07_brt_ch_fay_enchantress_orig",
+   "wh_dlc07_uniform_brt_fay_enchantress_orig",
+   "wh3_dlc25_emp_cha_elspeth_von_draken_orig",
+   "wh3_dlc25_uniform_emp_elspeth_von_draken_orig",
+   "wh3_main_ksl_cha_katarin_orig",
+   "wh3_main_uniform_ksl_katarin_orig",
+   "wh3_main_cth_cha_storm_dragon_0_orig",
+   "wh3_main_uniform_cth_miao_ying_orig",
+   "wh2_dlc16_wef_sisters_of_twilight_campaign_orig",
+   "wh2_dlc16_uniform_wef_sisters_of_twilight_orig",
+   "wh2_dlc16_wef_arahan_orig"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "wh2_dlc10_art_set_hef_alarielle_orig",
+   "wh2_dlc10_hef_alarielle",
+   "wh2_dlc10_art_set_def_crone_hellebron_orig",
+   "wh2_dlc10_def_crone_hellebron",
+   "wh2_dlc14_art_set_brt_repanse_orig",
+   "wh2_dlc14_brt_repanse",
+   "wh_dlc07_art_set_brt_fay_enchantress_orig",
+   "wh_dlc07_brt_fay_enchantress",
+   "wh2_main_art_set_def_morathi_orig",
+   "wh2_main_def_morathi",
+   "wh3_dlc25_art_set_emp_elspeth_von_draken_orig",
+   "wh3_dlc25_emp_elspeth_von_draken",
+   "wh3_main_art_set_ksl_katarin_orig",
+   "wh3_main_ksl_katarin",
+   "wh3_main_art_set_cth_miao_ying_orig",
+   "wh3_main_cth_miao_ying",
+   "wh2_dlc16_art_set_wef_sisters_of_twilight_orig",
+   "wh2_dlc16_wef_sisters_of_twilight"
+  ],
+  "campaign_character_arts_tables": [
+   "wh2_dlc10_art_set_hef_alarielle_orig",
+   "none",
+   "wh2_dlc10_uniform_hef_alarielle_orig",
+   "wh2_main_campaign_hef_ship_transport",
+   "cam_lord_hu1b_alarielle_staff_and_sword",
+   "cam_medium_ship_05",
+   "wh2_dlc10_art_set_def_crone_hellebron_orig",
+   "wh2_dlc10_uniform_def_crone_hellebron_orig",
+   "wh2_main_campaign_def_ship_army",
+   "cam_lord_hu1b_elf_dual_sword",
+   "cam_light_ship_05",
+   "wh2_main_art_set_def_morathi_orig",
+   "wh2_main_uniform_def_morathi_orig",
+   "cam_lord_hu1b_def_staff_and_sword",
+   "wh2_dlc14_art_set_brt_repanse_orig",
+   "wh2_dlc14_uniform_brt_repanse_orig",
+   "wh_main_campaign_brt_ship_heavy",
+   "cam_lord_hu1_dlc14_repanse_2handed_sword",
+   "cam_heavy_ship_01",
+   "wh_dlc07_art_set_brt_fay_enchantress_orig",
+   "wh_dlc07_uniform_brt_fay_enchantress_orig",
+   "cam_hu1b_elf_spellsinger",
+   "wh3_dlc25_art_set_emp_elspeth_von_draken_orig",
+   "wh3_dlc25_uniform_emp_elspeth_von_draken_orig",
+   "wh_main_campaign_emp_ship_heavy",
+   "cam_lord_hu1j_dlc25_elspeth_scythe",
+   "wh3_main_art_set_ksl_katarin_orig",
+   "wh3_main_uniform_ksl_katarin_orig",
+   "wh3_uniform_ksl_ship_lord",
+   "cam_lord_hu1_wh3_katarin_staff_and_sword",
+   "cam_ksl_ship_01",
+   "wh3_main_art_set_cth_miao_ying_orig",
+   "wh3_main_uniform_cth_miao_ying_orig",
+   "wh3_uniform_cth_ship_lord",
+   "cam_hu1e_mage_storm_dragon",
+   "cam_cathayship_01",
+   "wh2_dlc16_art_set_wef_sisters_of_twilight_orig",
+   "wh2_dlc16_uniform_wef_sisters_of_twilight_orig",
+   "wh_dlc05_campaign_wef_ship_transport",
+   "cam_lord_et1_dlc16_sisters_of_twilight_bi1_wb_bow",
+   "cam_transport_ship_03"
+  ],
+  "unit_variants_tables": [
+   "wh2_dlc10_hef_cha_alarielle_the_radiant_0_orig",
+   "wh2_dlc10_hef_cha_alarielle_the_radiant_0",
+   "wh2_dlc10_hef_alarielle_orig",
+   "placeholder",
+   "wh2_dlc10_def_cha_crone_0_orig",
+   "wh2_dlc10_def_cha_crone_0",
+   "wh2_dlc10_def_crone_hellebron_orig",
+   "wh2_dlc14_brt_cha_repanse_de_lyonesse_0_orig",
+   "wh2_dlc14_brt_cha_repanse_de_lyonesse_0",
+   "wh2_dlc14_brt_ch_repanse_de_lyonesse_orig",
+   "wh_dlc07_brt_cha_fay_enchantress_orig",
+   "wh_dlc07_brt_cha_fay_enchantress_0",
+   "wh_dlc07_brt_ch_fay_enchantress_orig",
+   "wh2_main_def_cha_morathi_orig",
+   "wh2_main_def_cha_morathi_0",
+   "wh2_main_def_morathi_orig",
+   "wh3_dlc25_emp_cha_elspeth_von_draken_orig",
+   "wh3_dlc25_emp_cha_elspeth_von_draken",
+   "wh3_main_ksl_cha_katarin_0_orig",
+   "wh3_main_ksl_cha_katarin_0",
+   "wh3_main_ksl_cha_katarin_orig",
+   "wh3_main_cth_cha_storm_dragon_0_orig",
+   "wh3_main_cth_cha_storm_dragon_0",
+   "wh2_dlc16_wef_cha_sisters_of_twilight_0_orig",
+   "wh2_dlc16_wef_cha_sisters_of_twilight_0",
+   "wh2_dlc16_wef_arahan_orig"
+  ],
+  "variants_tables": [
+   "wh2_dlc10_hef_alarielle_orig",
+   "hef_alarielle_orig",
+   "wh2_dlc10_hef_alarielle_campaign_orig",
+   "hef_alarielle_campaign_orig",
+   "wh2_dlc14_brt_ch_repanse_barded_warhorse_orig",
+   "brt_warhorse_barded_repanse_orig",
+   "wh2_dlc14_brt_ch_repanse_barded_warhorse_campaign_orig",
+   "wh2_dlc14_brt_ch_repanse_de_lyonesse_orig",
+   "brt_repanse_de_lyonesse_orig",
+   "wh_dlc07_brt_ch_fay_enchantress_orig",
+   "brt_ch_fay_enchantress_orig",
+   "wh_dlc07_brt_silvaron_orig",
+   "brt_silvaron_orig",
+   "wh3_dlc25_emp_cha_elspeth_von_draken_orig",
+   "emp_elspeth_von_draken_orig",
+   "wh3_main_cth_cha_storm_dragon_0_orig",
+   "cth_storm_dragon_human_orig",
+   "wh2_dlc10_def_crone_hellebron_orig",
+   "def_crone_orig",
+   "wh2_main_def_morathi_orig",
+   "def_morathi_orig",
+   "wh2_main_def_morathi_mounted_orig",
+   "def_morathi_mounted_orig",
+   "wh3_main_ksl_cha_katarin_orig",
+   "ksl_katarin_orig",
+   "wh3_main_ksl_cha_katarin_rider_orig",
+   "wh2_dlc16_wef_arahan_orig",
+   "wef_arahan_orig",
+   "wh2_dlc16_wef_naestra_orig",
+   "wef_naestra_orig",
+   "wh2_dlc16_wef_sisters_forest_dragon_campaign_orig",
+   "wef_forest_dragon_ceithinhar_01_orig",
+   "wh2_dlc16_wef_sisters_of_twilight_campaign_orig",
+   "wef_sisters_of_twilight_campaign_orig"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/@n_slaaneshvisuals",
+   "size": 1491,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/@n_slaaneshvisuals",
+   "size": 880,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/@n_slaaneshvisuals",
+   "size": 2465,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/@n_slaaneshvisuals",
+   "size": 1201,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "db/variants_tables/@n_slaaneshvisuals",
+   "size": 1759,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "script/campaign/mod/@n_slaaneshvisuals.lua",
+   "size": 7038,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/brt_ch_fay_enchantress_orig.variantmeshdefinition",
+   "size": 625,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/brt_repanse_de_lyonesse_orig.variantmeshdefinition",
+   "size": 1065,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_orig.variantmeshdefinition",
+   "size": 950,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_crone_orig.variantmeshdefinition",
+   "size": 1243,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_morathi_mounted.variantmeshdefinition",
+   "size": 1027,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/def_morathi_orig.variantmeshdefinition",
+   "size": 2227,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/emp_elspeth_von_draken_orig.variantmeshdefinition",
+   "size": 791,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign_orig.variantmeshdefinition",
+   "size": 1189,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_orig.variantmeshdefinition",
+   "size": 1033,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_archmage_orig.variantmeshdefinition",
+   "size": 3736,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_handmaiden_orig.variantmeshdefinition",
+   "size": 5441,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_mage_campaign_01_orig.variantmeshdefinition",
+   "size": 2936,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_mage_campaign_02_orig.variantmeshdefinition",
+   "size": 2936,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_mage_orig.variantmeshdefinition",
+   "size": 4258,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_princess_campaign_01_orig.variantmeshdefinition",
+   "size": 2949,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_princess_campaign_02_orig.variantmeshdefinition",
+   "size": 2949,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_princess_orig.variantmeshdefinition",
+   "size": 3989,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sisters_of_avelorn_orig.variantmeshdefinition",
+   "size": 5188,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_sisters_of_avelorn_ror_orig.variantmeshdefinition",
+   "size": 5300,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/ksl_katarin_orig.variantmeshdefinition",
+   "size": 985,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_arahan_orig.variantmeshdefinition",
+   "size": 1144,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_naestra_orig.variantmeshdefinition",
+   "size": 1150,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_sisters_of_twilight_campaign_orig.variantmeshdefinition",
+   "size": 991,
+   "pack": "@n_SlaaneshVisuals_LL_Only.pack"
+  }
+ ]
+}

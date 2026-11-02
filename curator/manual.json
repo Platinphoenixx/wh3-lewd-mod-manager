@@ -1,6 +1,20 @@
 {
   "_comment": "Hand-curated additions. packAliases: pack file (lower-case match) -> catalog target, for packs that LL pages describe without naming. 'confidence' is informational.",
   "packAliases": {
+    "Lin_Corruption_Ascend.pack": {
+      "target": {
+        "mod": "ll-27171"
+      },
+      "confidence": "high",
+      "why": "Pre-2024-12 pack of Corrupted Ascension: named in the pack header of its SFO submod (Lin_Corruption_AscendSFO.pack); Discord help 2025-01-03 calls Lin_corruption_ascend its legacy version"
+    },
+    "!landmarks_of_legend_wh3.pack": {
+      "target": {
+        "external": "ext-landmarks-of-legend"
+      },
+      "confidence": "high",
+      "why": "Named as dependency in the pack headers of Heroes of Legend: Lords of Time (same author, The_Inquisitor) and of RS0371's EFT.pack; not checked in the Workshop folder (subscription did not start)"
+    },
     "!Readman_Alarielle_YYY.pack": {
       "target": {
         "mod": "ll-43977"
@@ -437,9 +451,11 @@
       "id": "ll-27171",
       "cleanup": {
         "staleDataPacks": [
-          "Lin_Corrupted_Ascension_EnUpdated.pack"
+          "Lin_Corrupted_Ascension_EnUpdated.pack",
+          "Lin_Corruption_Ascend.pack",
+          "Lin_Corrupted_Ascend.pack"
         ],
-        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838)."
+        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838). Lin_Corruption_Ascend.pack is the pack from before the 2024-12 framework update (players also write Lin_Corrupted_Ascend); with it still active the new models do not work and a new campaign is needed."
       }
     },
     {
@@ -644,7 +660,7 @@
           "file": "@Soil_Kislev_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Katarin (Kislev)"
+          "note": "Only when playing Katarin (Kislev). Not in the LoversLab download: Kerberos' fixed pack (2025-11-11) is posted on Discord (#soiled-projects)."
         }
       ],
       "relations": [

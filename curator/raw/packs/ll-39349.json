@@ -1,0 +1,1020 @@
+{
+ "mod": "ll-39349",
+ "packs": [
+  "Corrupted_Miao_Audio_Overhaul.pack",
+  "Corrupted_Miao_Moans.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Corrupted_Miao_Audio_Overhaul.pack": {
+   "files": 150,
+   "dependencies": []
+  },
+  "Corrupted_Miao_Moans.pack": {
+   "files": 47,
+   "dependencies": []
+  }
+ },
+ "fileCount": 197,
+ "byTopFolder": {
+  "audio": 195,
+  "text": 2
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "audio/wwise/english(uk)/1040445567.wem",
+   "size": 67552,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/1052768944.wem",
+   "size": 54182,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/123530470.wem",
+   "size": 27417,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/152623629.wem",
+   "size": 43185,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/154805934.wem",
+   "size": 7612,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/169834354.wem",
+   "size": 37793,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/190268970.wem",
+   "size": 29466,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/208467103.wem",
+   "size": 37835,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/210701269.wem",
+   "size": 30046,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/240664747.wem",
+   "size": 33538,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/245778378.wem",
+   "size": 31573,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/250184745.wem",
+   "size": 13056,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/272333582.wem",
+   "size": 18611,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/280339589.wem",
+   "size": 29089,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/29597578.wem",
+   "size": 7728,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/298820795.wem",
+   "size": 67552,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/307522254.wem",
+   "size": 14872,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/308709787.wem",
+   "size": 28603,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/310611364.wem",
+   "size": 39926,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/321792658.wem",
+   "size": 20728,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/335536365.wem",
+   "size": 32469,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/345957359.wem",
+   "size": 35279,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/365772215.wem",
+   "size": 29671,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/369783836.wem",
+   "size": 34136,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/377667172.wem",
+   "size": 33394,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/382065850.wem",
+   "size": 23002,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/389523901.wem",
+   "size": 27178,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/418823666.wem",
+   "size": 7737,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/432924143.wem",
+   "size": 28770,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/457309766.wem",
+   "size": 28003,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/462578824.wem",
+   "size": 17614,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/464596161.wem",
+   "size": 58809,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/475544532.wem",
+   "size": 60502,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/484184042.wem",
+   "size": 114184,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/49218207.wem",
+   "size": 154683,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/498162120.wem",
+   "size": 46272,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/511527903.wem",
+   "size": 36448,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/553438177.wem",
+   "size": 35092,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/568560625.wem",
+   "size": 36463,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/589316510.wem",
+   "size": 21562,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/634186502.wem",
+   "size": 25807,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/653379273.wem",
+   "size": 14077,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/660033881.wem",
+   "size": 31027,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/699637457.wem",
+   "size": 12138,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/700738338.wem",
+   "size": 31083,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/705019278.wem",
+   "size": 107695,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/717701553.wem",
+   "size": 45996,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/724366349.wem",
+   "size": 28415,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/725628224.wem",
+   "size": 36026,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/74165819.wem",
+   "size": 8458,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/744957630.wem",
+   "size": 184122,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/74993582.wem",
+   "size": 8329,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/757479057.wem",
+   "size": 24717,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/774563052.wem",
+   "size": 27857,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/790689320.wem",
+   "size": 22460,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408862.wem",
+   "size": 64778,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408864.wem",
+   "size": 35252,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408865.wem",
+   "size": 37392,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408870.wem",
+   "size": 44307,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408871.wem",
+   "size": 43496,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408873.wem",
+   "size": 54009,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408875.wem",
+   "size": 34112,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408876.wem",
+   "size": 47238,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408877.wem",
+   "size": 46003,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408879.wem",
+   "size": 40027,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408880.wem",
+   "size": 49521,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408884.wem",
+   "size": 25784,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408887.wem",
+   "size": 44057,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408888.wem",
+   "size": 35709,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408893.wem",
+   "size": 47728,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408897.wem",
+   "size": 54446,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408903.wem",
+   "size": 32941,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408904.wem",
+   "size": 31396,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408908.wem",
+   "size": 31145,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408927.wem",
+   "size": 27522,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408928.wem",
+   "size": 25700,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408940.wem",
+   "size": 22056,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408941.wem",
+   "size": 37832,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408942.wem",
+   "size": 34987,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408948.wem",
+   "size": 35057,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408953.wem",
+   "size": 25585,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408956.wem",
+   "size": 41588,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408962.wem",
+   "size": 51710,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408963.wem",
+   "size": 52868,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408964.wem",
+   "size": 30529,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793408970.wem",
+   "size": 37640,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417218.wem",
+   "size": 97791,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417221.wem",
+   "size": 99614,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417222.wem",
+   "size": 91701,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417224.wem",
+   "size": 107291,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417225.wem",
+   "size": 90273,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417228.wem",
+   "size": 185402,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417229.wem",
+   "size": 157414,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417230.wem",
+   "size": 190424,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417231.wem",
+   "size": 164238,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417232.wem",
+   "size": 26320,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417238.wem",
+   "size": 228004,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417241.wem",
+   "size": 152914,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417242.wem",
+   "size": 212724,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417258.wem",
+   "size": 19953,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417262.wem",
+   "size": 19162,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417271.wem",
+   "size": 198172,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417272.wem",
+   "size": 226488,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417283.wem",
+   "size": 17354,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417289.wem",
+   "size": 36049,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417306.wem",
+   "size": 267968,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417307.wem",
+   "size": 174886,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417308.wem",
+   "size": 194690,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417309.wem",
+   "size": 204924,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793417310.wem",
+   "size": 182938,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423300.wem",
+   "size": 29255,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423302.wem",
+   "size": 55642,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423303.wem",
+   "size": 38875,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423306.wem",
+   "size": 40903,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423307.wem",
+   "size": 32531,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423309.wem",
+   "size": 27365,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423311.wem",
+   "size": 26035,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423314.wem",
+   "size": 38252,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423315.wem",
+   "size": 38587,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423317.wem",
+   "size": 34096,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423318.wem",
+   "size": 47434,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423319.wem",
+   "size": 23380,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423320.wem",
+   "size": 21260,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423322.wem",
+   "size": 29421,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423335.wem",
+   "size": 29517,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423341.wem",
+   "size": 37056,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423342.wem",
+   "size": 49314,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423343.wem",
+   "size": 40203,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423345.wem",
+   "size": 25718,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423347.wem",
+   "size": 42331,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423371.wem",
+   "size": 20964,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423374.wem",
+   "size": 16682,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423375.wem",
+   "size": 20064,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423380.wem",
+   "size": 22927,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423393.wem",
+   "size": 34308,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423395.wem",
+   "size": 31404,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423397.wem",
+   "size": 24702,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423398.wem",
+   "size": 42573,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423400.wem",
+   "size": 28851,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423402.wem",
+   "size": 24462,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423403.wem",
+   "size": 16593,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423404.wem",
+   "size": 27104,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423408.wem",
+   "size": 47078,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423411.wem",
+   "size": 24813,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423417.wem",
+   "size": 28262,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423418.wem",
+   "size": 25789,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423422.wem",
+   "size": 27605,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423426.wem",
+   "size": 35193,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793423429.wem",
+   "size": 38199,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432923.wem",
+   "size": 14711,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432924.wem",
+   "size": 26897,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432925.wem",
+   "size": 18607,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432926.wem",
+   "size": 19822,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432927.wem",
+   "size": 31250,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432928.wem",
+   "size": 13047,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432930.wem",
+   "size": 19280,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432931.wem",
+   "size": 15936,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432944.wem",
+   "size": 16397,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432945.wem",
+   "size": 39097,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432946.wem",
+   "size": 29296,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432947.wem",
+   "size": 273026,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432953.wem",
+   "size": 23154,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432954.wem",
+   "size": 19695,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432967.wem",
+   "size": 19846,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432968.wem",
+   "size": 26809,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432973.wem",
+   "size": 20584,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432980.wem",
+   "size": 34526,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432988.wem",
+   "size": 23984,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432989.wem",
+   "size": 18821,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432992.wem",
+   "size": 18678,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793432993.wem",
+   "size": 32526,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433009.wem",
+   "size": 21435,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433010.wem",
+   "size": 242888,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433011.wem",
+   "size": 30606,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433013.wem",
+   "size": 18604,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433017.wem",
+   "size": 303288,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433020.wem",
+   "size": 175822,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433021.wem",
+   "size": 26060,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433022.wem",
+   "size": 25042,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433023.wem",
+   "size": 24037,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433031.wem",
+   "size": 20928,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433033.wem",
+   "size": 22574,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433048.wem",
+   "size": 29981,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433051.wem",
+   "size": 299132,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433055.wem",
+   "size": 26805,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/793433057.wem",
+   "size": 28221,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/815317497.wem",
+   "size": 16922,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/822858963.wem",
+   "size": 40934,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/843037998.wem",
+   "size": 30950,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/847787698.wem",
+   "size": 27488,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/856982585.wem",
+   "size": 98526,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/893678941.wem",
+   "size": 24978,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/906306578.wem",
+   "size": 32461,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/973516524.wem",
+   "size": 31665,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/991988320.wem",
+   "size": 28003,
+   "pack": "Corrupted_Miao_Moans.pack"
+  },
+  {
+   "path": "text/db/corrupted_miao_audio_overhaul_diplomacy_strings__.loc",
+   "size": 8308,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  },
+  {
+   "path": "text/db/corrupted_miao_audio_overhaul_scripted_subtitles__.loc",
+   "size": 2383,
+   "pack": "Corrupted_Miao_Audio_Overhaul.pack"
+  }
+ ]
+}

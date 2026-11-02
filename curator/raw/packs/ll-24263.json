@@ -1,0 +1,54 @@
+{
+ "mod": "ll-24263",
+ "packs": [
+  "corrupted_landmarks_cn.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "corrupted_landmarks_cn.pack": {
+   "files": 5,
+   "dependencies": []
+  }
+ },
+ "fileCount": 5,
+ "byTopFolder": {
+  "text": 5
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/cl_effects__.loc",
+   "size": 137,
+   "pack": "corrupted_landmarks_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_building_chains__.loc",
+   "size": 4369,
+   "pack": "corrupted_landmarks_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_building_culture_variants__.loc",
+   "size": 4741,
+   "pack": "corrupted_landmarks_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_building_short_description_texts__.loc",
+   "size": 11803,
+   "pack": "corrupted_landmarks_cn.pack"
+  },
+  {
+   "path": "text/db/landmark_building_chains__.loc",
+   "size": 3354,
+   "pack": "corrupted_landmarks_cn.pack"
+  }
+ ]
+}

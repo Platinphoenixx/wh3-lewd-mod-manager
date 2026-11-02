@@ -1,0 +1,3304 @@
+{
+ "mod": "ll-26391",
+ "packs": [
+  "@Lynn's_Horny_Nords.pack",
+  "@Lynn's_Horny_Nords_Xtra_Big.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack": {
+   "files": 313,
+   "dependencies": []
+  },
+  "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack": {
+   "files": 338,
+   "dependencies": []
+  }
+ },
+ "fileCount": 410,
+ "byTopFolder": {
+  "variantmeshes": 268,
+  "assets": 78,
+  "warmachines": 42,
+  "reference_bodies": 22
+ },
+ "tables": [],
+ "references": {
+  "total": 361,
+  "inMod": 225,
+  "inBaseGame": 125,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/ce1/bst/bst_centigor/materials/bst_centigar_victim_body_01_weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/ce1/bst/bst_centigor/materials/bst_centigar_victim_body_01_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/witch_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu1b/def/def_witch_elves/tex/witch_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu4/bst/bst_giant/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu4/bst/bst_giant/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "variantmeshes/wh_variantmodels/hu4/bst/bst_giant/materials/wef_glade_captain_legs_01_subme_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/materials/nor_ice_troll_body_01_weighted2_alpha_off.xml.material"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "assets/body/bigtiddybody01.rigid_model_v2",
+   "size": 1072570,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody01.rigid_model_v2",
+   "size": 1072570,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody02.rigid_model_v2",
+   "size": 1506558,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody02.rigid_model_v2",
+   "size": 3227304,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody03.rigid_model_v2",
+   "size": 1767952,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody03.rigid_model_v2",
+   "size": 1767952,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody04.rigid_model_v2",
+   "size": 1510816,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody04.rigid_model_v2",
+   "size": 1510816,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody05.rigid_model_v2",
+   "size": 1506558,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody05.rigid_model_v2",
+   "size": 1554600,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody06.rigid_model_v2",
+   "size": 1554600,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody06.rigid_model_v2",
+   "size": 3227304,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/bigtiddybody07.rigid_model_v2",
+   "size": 1743004,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/gold_collar_01.rigid_model_v2",
+   "size": 830202,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/gold_collar_01.rigid_model_v2",
+   "size": 830202,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody01.rigid_model_v2",
+   "size": 1072570,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody01.rigid_model_v2",
+   "size": 1072570,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody02.rigid_model_v2",
+   "size": 1506558,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody02.rigid_model_v2",
+   "size": 3227304,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody03.rigid_model_v2",
+   "size": 1767952,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody03.rigid_model_v2",
+   "size": 1767952,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody04.rigid_model_v2",
+   "size": 1510816,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody04.rigid_model_v2",
+   "size": 1510816,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody05.rigid_model_v2",
+   "size": 1506558,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody05.rigid_model_v2",
+   "size": 1554600,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody06.rigid_model_v2",
+   "size": 1554600,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/hugetiddybody06.rigid_model_v2",
+   "size": 3227304,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/body/rope01.rigid_model_v2",
+   "size": 105752,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/body/rope01.rigid_model_v2",
+   "size": 105752,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/cowgirl_01.rigid_model_v2",
+   "size": 1887916,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/cowgirl_01.wsmodel",
+   "size": 5038,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/cowgirl_02.rigid_model_v2",
+   "size": 1881504,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/cowgirl_02.wsmodel",
+   "size": 5034,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/cowgirl_static_01.rigid_model_v2",
+   "size": 1835848,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/cowgirl_static_02.rigid_model_v2",
+   "size": 1829636,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/blindfold01.rigid_model_v2",
+   "size": 1279714,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/blindfold01.rigid_model_v2",
+   "size": 1279714,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/headcage01.rigid_model_v2",
+   "size": 1275156,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/headcage01.rigid_model_v2",
+   "size": 1275156,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_01.rigid_model_v2",
+   "size": 496884,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_01.rigid_model_v2",
+   "size": 496884,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_01_ded.rigid_model_v2",
+   "size": 449056,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_01x.rigid_model_v2",
+   "size": 449056,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_02.rigid_model_v2",
+   "size": 494432,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_02.rigid_model_v2",
+   "size": 494432,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_02_ded.rigid_model_v2",
+   "size": 459416,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_02x.rigid_model_v2",
+   "size": 459416,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_03.rigid_model_v2",
+   "size": 588618,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_03.rigid_model_v2",
+   "size": 588618,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_03_ded.rigid_model_v2",
+   "size": 553602,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_03x.rigid_model_v2",
+   "size": 553602,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_04.rigid_model_v2",
+   "size": 645976,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_04.rigid_model_v2",
+   "size": 645976,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_04_ded.rigid_model_v2",
+   "size": 610960,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_04x.rigid_model_v2",
+   "size": 610960,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_05.rigid_model_v2",
+   "size": 674102,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_05.rigid_model_v2",
+   "size": 674102,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_05_ded.rigid_model_v2",
+   "size": 641262,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_05x.rigid_model_v2",
+   "size": 641262,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_06.rigid_model_v2",
+   "size": 518576,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_06.rigid_model_v2",
+   "size": 518576,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_06_ded.rigid_model_v2",
+   "size": 483560,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_06x.rigid_model_v2",
+   "size": 483560,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_07.rigid_model_v2",
+   "size": 498388,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/head/pretty_head_07x.rigid_model_v2",
+   "size": 463372,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_armor_01_weighted2_alpha_off.xml.material",
+   "size": 2373,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_armor_01_weighted2_alpha_off.xml.material",
+   "size": 2373,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_armor_01_weighted4_alpha_on.xml.material",
+   "size": 2378,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_armor_01_weighted4_alpha_on.xml.material",
+   "size": 2378,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_body_01_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_body_01_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_body_01_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_body_01_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_hair_02_weighted2_alpha_off.xml.material",
+   "size": 2596,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_hair_02_weighted2_alpha_off.xml.material",
+   "size": 2596,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_hair_02_weighted4_alpha_off.xml.material",
+   "size": 2596,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_hair_02_weighted4_alpha_off.xml.material",
+   "size": 2596,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_01_weighted2_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_01_weighted2_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_01_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_01_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_02_weighted2_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_02_weighted2_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_02_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/materials/cowgirl_head_02_weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/morghur1x.rigid_model_v2",
+   "size": 3747226,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/2dress_albm.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/2dress_nrmr.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/asm_body_1_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/asm_body_3_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/asm_body_5_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/asm_body_6_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/asm_body_7_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_body_albm.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_body_albmblack.dds",
+   "size": 89478612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_body_nrmr.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_body_nrmrblack.dds",
+   "size": 89478612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_dress_albm.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_dress_albmblack.dds",
+   "size": 89478612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_dress_nrmr.dds",
+   "size": 22369776,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/pl2000_dress_nrmrblack.dds",
+   "size": 89478612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/plain_body_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/tex/plain_body_mask.dds",
+   "size": 262272,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/tex/plain_body_material.dds",
+   "size": 699192,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/tex/plain_body_normal.dds",
+   "size": 349680,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "assets/tex/shadowdancer_bladesinger_01_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/shadowdancer_bladesinger_02_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/shadowdancer_bladesinger_03_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/shadowdancer_bladesinger_04_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "assets/tex/shadowdancer_bladesinger_07_diffuse_grime.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_01.rigid_model_v2",
+   "size": 1277750,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_01.rigid_model_v2",
+   "size": 1277750,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_01_ded.rigid_model_v2",
+   "size": 1229712,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_01x.rigid_model_v2",
+   "size": 1229712,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_02.rigid_model_v2",
+   "size": 1200878,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_02.rigid_model_v2",
+   "size": 1200878,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_02_ded.rigid_model_v2",
+   "size": 1186406,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_02x.rigid_model_v2",
+   "size": 1186406,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_03.rigid_model_v2",
+   "size": 1981614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_03.rigid_model_v2",
+   "size": 3453016,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_03_ded.rigid_model_v2",
+   "size": 1933088,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_03x.rigid_model_v2",
+   "size": 3421140,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_04.rigid_model_v2",
+   "size": 1753994,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_04.rigid_model_v2",
+   "size": 1753994,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_04_ded.rigid_model_v2",
+   "size": 1704034,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_04x.rigid_model_v2",
+   "size": 1704034,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_05.rigid_model_v2",
+   "size": 1738886,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_05.rigid_model_v2",
+   "size": 1738886,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_05_ded.rigid_model_v2",
+   "size": 1708846,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_05x.rigid_model_v2",
+   "size": 1708846,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_06.rigid_model_v2",
+   "size": 1981614,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_06.rigid_model_v2",
+   "size": 3453016,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_06_ded.rigid_model_v2",
+   "size": 3421140,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_06x.rigid_model_v2",
+   "size": 1933088,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_07.rigid_model_v2",
+   "size": 1749486,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_07x.rigid_model_v2",
+   "size": 1701192,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_08.rigid_model_v2",
+   "size": 1277750,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "reference_bodies/reference_body_08x.rigid_model_v2",
+   "size": 1229712,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted2_alpha_off.xml.material",
+   "size": 2642,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted2_alpha_off.xml.material",
+   "size": 2642,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted2_alpha_on.xml.material",
+   "size": 2647,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted2_alpha_on.xml.material",
+   "size": 2647,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted4_alpha_on.xml.material",
+   "size": 2647,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0.00_weighted4_alpha_on.xml.material",
+   "size": 2647,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted2_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted2_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/body_group_02_lod1_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_binds_01_weighted2_alpha_on.xml.material",
+   "size": 2652,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_binds_01_weighted4_alpha_on.xml.material",
+   "size": 2652,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted2_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted2_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted2_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/cowgirl_body_01_weighted4_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_on.xml.material",
+   "size": 2619,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted4_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted4_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__1_weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__2_weighted2_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__2_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__2_weighted4_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__2_weighted4_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__2_weighted4_alpha_on.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__3_weighted2_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__3_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__3_weighted4_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__3_weighted4_alpha_off.xml.material",
+   "size": 2614,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted2_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "size": 2612,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/def_crone_hellebron_head_01_02__weighted4_alpha_on.xml.material",
+   "size": 2617,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/eyelashes_weighted2_alpha_on.xml.material",
+   "size": 2669,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/eyelashes_weighted2_alpha_on.xml.material",
+   "size": 2669,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/hair_weighted2_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/hair_weighted2_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/hair_weighted4_alpha_on.xml.material",
+   "size": 2656,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/leaves_weighted2_alpha_on.xml.material",
+   "size": 2658,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/leaves_weighted2_alpha_on.xml.material",
+   "size": 2658,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/leaves_weighted4_alpha_on.xml.material",
+   "size": 2658,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/leaves_weighted4_alpha_on.xml.material",
+   "size": 2658,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2526,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2617,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 2531,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 2531,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2531,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2531,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_weighted2_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_body_01_submesh_weighted2_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_1_weighted2_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_1_weighted2_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted2_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted2_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_01_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_1_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_1_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_1_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_1_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_2_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_2_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_2_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_2_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_3_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_3_weighted2_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_3_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_4_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_4_weighted4_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_02_05_lod1_weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_03_1_weighted2_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_03_1_weighted2_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_03_weighted2_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_bladesinger_head_03_weighted2_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_03_weighted2_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_03_weighted2_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_1_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_1_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_1_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_1_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_2_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_2_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_2_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_2_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_2_weighted4_alpha_on.xml.material",
+   "size": 2699,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_3_weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_3_weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_3_weighted4_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_3_weighted4_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_weighted2_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_weighted2_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_weighted4_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_head_05_06_lo_weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_legs_01_subme_weighted2_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_legs_01_subme_weighted2_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_legs_01_subme_weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_glade_captain_legs_01_subme_weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2596,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_on.xml.material",
+   "size": 2601,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_on.xml.material",
+   "size": 2601,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2601,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/materials/wef_wardancers_legs_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_01.rigid_model_v2",
+   "size": 12685402,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_01.rigid_model_v2",
+   "size": 12817192,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_01.wsmodel",
+   "size": 25275,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_01.wsmodel",
+   "size": 26707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_lord_01.rigid_model_v2",
+   "size": 13035150,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_lord_01.rigid_model_v2",
+   "size": 13173290,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_lord_01.wsmodel",
+   "size": 25280,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_howdah_lord_01.wsmodel",
+   "size": 27972,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_warshrine_01.rigid_model_v2",
+   "size": 12674982,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_warshrine_01.rigid_model_v2",
+   "size": 12826244,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_warshrine_01.wsmodel",
+   "size": 24916,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hq3/nor/nor_war_mammoth/nor_war_mammoth_warshrine_01.wsmodel",
+   "size": 27566,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/chs_marauder_shaman_staff_1h_01.rigid_model_v2",
+   "size": 1268018,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/chs_marauder_shaman_staff_1h_01.rigid_model_v2",
+   "size": 1335242,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/chs_marauder_shaman_staff_1h_01.wsmodel",
+   "size": 6509,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/chs_marauder_shaman_staff_1h_01.wsmodel",
+   "size": 8139,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_off.xml.material",
+   "size": 2634,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_off.xml.material",
+   "size": 2634,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_on.xml.material",
+   "size": 2639,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_on.xml.material",
+   "size": 2639,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_binds_01_rigid_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_binds_01_rigid_alpha_off.xml.material",
+   "size": 2639,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_body_01_rigid_alpha_off.xml.material",
+   "size": 2619,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_body_01_rigid_alpha_off.xml.material",
+   "size": 2619,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_body_01_rigid_alpha_on.xml.material",
+   "size": 2624,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_body_01_rigid_alpha_on.xml.material",
+   "size": 2624,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_boots_01_rigid_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_boots_01_rigid_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_boots_01_rigid_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_boots_01_rigid_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_leggings_01_rigid_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_leggings_01_rigid_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_leggings_01_rigid_alpha_on.xml.material",
+   "size": 2671,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/cowgirl_leggings_01_rigid_alpha_on.xml.material",
+   "size": 2671,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2690,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_on.xml.material",
+   "size": 2701,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/emp_flagellants_head_04_1_rigid_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/emp_flagellants_head_04_1_rigid_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/emp_flagellants_head_04_rigid_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/emp_flagellants_head_04_rigid_alpha_off.xml.material",
+   "size": 2666,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/emp_flagellants_head_04_rigid_alpha_on.xml.material",
+   "size": 2671,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_on.xml.material",
+   "size": 2675,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_on.xml.material",
+   "size": 2675,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_03_rigid_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_03_rigid_alpha_off.xml.material",
+   "size": 2688,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_on.xml.material",
+   "size": 2689,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_on.xml.material",
+   "size": 2689,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_10_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_10_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_gloss_map.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_gloss_map.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_mask.dds",
+   "size": 262272,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_mask.dds",
+   "size": 262272,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_material.dds",
+   "size": 699192,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_material.dds",
+   "size": 699192,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_normal.dds",
+   "size": 349680,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_normal.dds",
+   "size": 349680,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_specular.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_specular.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_2_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_2_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3bs_diffuse.dds",
+   "size": 524436,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3bs_diffuse.dds",
+   "size": 524436,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_gloss_map.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_gloss_map.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_5_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_5_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_diffuse.dds",
+   "size": 4194432,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_diffuse.dds",
+   "size": 4194432,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_gloss_map.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_gloss_map.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_normal.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_normal.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/body2_lod1 - clone_weighted4_alpha_on.xml.material",
+   "size": 2596,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/body2_lod1 - clone_weighted4_alpha_on.xml.material",
+   "size": 2596,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/body2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/body2_lod1_weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/def_sorceress_head_01 - clone_weighted4_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/def_sorceress_head_01 - clone_weighted4_alpha_off.xml.material",
+   "size": 2668,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/def_sorceress_head_01_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/def_sorceress_head_01_weighted4_alpha_off.xml.material",
+   "size": 2660,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathiarmor_lod1_weighted2_alpha_on.xml.material",
+   "size": 2630,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathiarmor_lod1_weighted2_alpha_on.xml.material",
+   "size": 2630,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1 - clone_weighted4_alpha_on.xml.material",
+   "size": 2592,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1 - clone_weighted4_alpha_on.xml.material",
+   "size": 2592,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1_weighted2_alpha_on.xml.material",
+   "size": 2584,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1_weighted2_alpha_on.xml.material",
+   "size": 2584,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2584,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2584,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathihead_lod1_weighted2_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/materials/morathihead_lod1_weighted2_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_body_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_body_01_gloss_map.dds",
+   "size": 699184,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_body_01_specular.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_head_01_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_head_01_gloss_map.dds",
+   "size": 699184,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/asv_morathi_head_01_specular.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_color2.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_mask.dds",
+   "size": 1048752,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_material.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/body_normal.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/brt_diffuse.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_body_01_diffuse.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_body_01_diffuse2.dds",
+   "size": 5592532,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_body_01_mask.dds",
+   "size": 144,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_body_01_normal.dds",
+   "size": 4194432,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_head_01_mask.dds",
+   "size": 144,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/def_morathi_head_01_normal.dds",
+   "size": 1048704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/dwf_diffuse1.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/hef_diffuse1.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/hef_diffuse2.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_diffuse.dds",
+   "size": 6291584,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_diffuse2.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_diffuse3.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_gloss.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_normal.dds",
+   "size": 16777392,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathi_specular.dds",
+   "size": 349680,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_morathi/tex/morathiorc_diffuse.dds",
+   "size": 8388760,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/def_sisters_of_slaughter_hair_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/def_sisters_of_slaughter/tex/def_sisters_of_slaughter_hair_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_archmage/tex/hef_archmage_head_01_diffuse.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/hef_princess/tex/hef_hair_01_diffuse.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_01_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_01_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_02_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_02_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_03_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_03_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_03_diffuse_copy.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_03_diffuse_copy.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_04_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_04_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_05_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_05_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_01_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_01_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_02_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_02_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_03_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_03_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_04_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_04_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_05_diffuse.dds",
+   "size": 699212,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_body_05_diffuse.dds",
+   "size": 699212,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_04_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_04_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_glade_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_03_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_03_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_04_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_04_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_blue_specular.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_blue_specular.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_green_specular.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_hellebron_green_specular.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/wef_shadowdancer_head_01_specular.dds",
+   "size": 1398276,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/wef_shadowdancer_head_01_specular.dds",
+   "size": 1398276,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wef_spellsingers_head_01_normal.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wef_spellsingers_head_01_normal.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wmp_spellsinger_hair_01_basecolor.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wmp_spellsinger_hair_01_basecolor.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wmp_spellsinger_hair_01_mask.dds",
+   "size": 1398256,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/tex/wmp_spellsinger_hair_01_mask.dds",
+   "size": 1398256,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_01.rigid_model_v2",
+   "size": 1057834,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_01.rigid_model_v2",
+   "size": 1057834,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_01.wsmodel",
+   "size": 5971,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_01.wsmodel",
+   "size": 5971,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_02.rigid_model_v2",
+   "size": 1012004,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_02.rigid_model_v2",
+   "size": 1014944,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_02.wsmodel",
+   "size": 6463,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_02.wsmodel",
+   "size": 6583,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_03.rigid_model_v2",
+   "size": 1010732,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_03.rigid_model_v2",
+   "size": 1037406,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_03.wsmodel",
+   "size": 5573,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/chs_marauder_chieftain_shield_03.wsmodel",
+   "size": 5573,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2604,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2692,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/def_crone_hellebron_head_01_02__rigid_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/hair_rigid_alpha_off.xml.material",
+   "size": 2643,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/hair_rigid_alpha_off.xml.material",
+   "size": 2643,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/hair_rigid_alpha_on.xml.material",
+   "size": 2648,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/hair_rigid_alpha_on.xml.material",
+   "size": 2648,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/leaves_rigid_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/leaves_rigid_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/leaves_rigid_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/leaves_rigid_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_body_01_submesh_rigid_alpha_off.xml.material",
+   "size": 2516,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_body_01_submesh_rigid_alpha_off.xml.material",
+   "size": 2665,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_body_01_submesh_rigid_alpha_on.xml.material",
+   "size": 2521,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_body_01_submesh_rigid_alpha_on.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_on.xml.material",
+   "size": 2675,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_01_rigid_alpha_on.xml.material",
+   "size": 2675,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/chs/chs_props/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_1_rigid_alpha_off.xml.material",
+   "size": 2629,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_1_rigid_alpha_off.xml.material",
+   "size": 2629,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2627,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_rigid_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/materials/nor_wulfrik_shield_01_lod1_rigid_alpha_on.xml.material",
+   "size": 2632,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/nor_wulfrik_shield_01.rigid_model_v2",
+   "size": 1205314,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/nor_wulfrik_shield_01.rigid_model_v2",
+   "size": 1791300,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/nor_wulfrik_shield_01.wsmodel",
+   "size": 6952,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/nor/nor_props/nor_wulfrik_shield_01.wsmodel",
+   "size": 7906,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_off.xml.material",
+   "size": 2689,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__1_weighted4_alpha_on.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__2_weighted2_alpha_off.xml.material",
+   "size": 2702,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/def_crone_hellebron_head_01_02__weighted4_alpha_on.xml.material",
+   "size": 2709,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_1_weighted2_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_1_weighted2_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_1_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_1_weighted4_alpha_off.xml.material",
+   "size": 2645,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_2_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/nor_giant_01_2_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_body_01_submesh_1_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_body_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_body_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_body_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2700,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_head_02_05_lod1_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_bladesinger_head_02_05_lod1_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_glade_captain_head_05_06_lo_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/materials/wef_glade_captain_head_05_06_lo_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/nor_giant_01.rigid_model_v2",
+   "size": 12957146,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/nor_giant_01.rigid_model_v2",
+   "size": 13045656,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/nor_giant_01.wsmodel",
+   "size": 23930,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4/nor/nor_giant/nor_giant_01.wsmodel",
+   "size": 25744,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/materials/body_group_02_lod1_submesh_0.00_weighted4_alpha_on.xml.material",
+   "size": 2594,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/materials/body_group_02_lod1_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/nor_ice_troll_legs_02.rigid_model_v2",
+   "size": 1665228,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/nor_ice_troll_legs_02.wsmodel",
+   "size": 6615,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/nor_ice_troll_legs_03.rigid_model_v2",
+   "size": 1886844,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_ice_troll/legs/nor_ice_troll_legs_03.wsmodel",
+   "size": 7627,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_1_weighted4_alpha_on.xml.material",
+   "size": 2635,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_1_weighted4_alpha_on.xml.material",
+   "size": 2635,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_2_weighted4_alpha_off.xml.material",
+   "size": 2630,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_2_weighted4_alpha_off.xml.material",
+   "size": 2630,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_3_weighted4_alpha_on.xml.material",
+   "size": 2635,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_3_weighted4_alpha_on.xml.material",
+   "size": 2635,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_weighted4_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/materials/nor_throgg_01_weighted4_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/nor_throgg_01.rigid_model_v2",
+   "size": 5957526,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/nor_throgg_01.rigid_model_v2",
+   "size": 6439174,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/nor_throgg_01.wsmodel",
+   "size": 12411,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu4c/nor/nor_throgg/nor_throgg_01.wsmodel",
+   "size": 18835,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/body/materials/nor_fimir_warriors_body_02_weighted4_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/body/nor_fimir_warriors_body_02.rigid_model_v2",
+   "size": 2122068,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/body/nor_fimir_warriors_body_02.wsmodel",
+   "size": 7899,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/body/nor_fimir_warriors_body_04.rigid_model_v2",
+   "size": 2242086,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/body/nor_fimir_warriors_body_04.wsmodel",
+   "size": 7707,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_01.rigid_model_v2",
+   "size": 1885866,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_01.wsmodel",
+   "size": 5779,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_03.rigid_model_v2",
+   "size": 2003888,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_03.wsmodel",
+   "size": 8121,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_05.rigid_model_v2",
+   "size": 1779898,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_fimir_warriors/legs/nor_fimir_warriors_legs_05.wsmodel",
+   "size": 6311,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/materials/nor_fimir_balefiend_staff_2h_01_rigid_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/materials/nor_fimir_balefiend_staff_2h_01_rigid_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/materials/wef_glade_captain_head_03_rigid_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/materials/wef_glade_captain_head_03_rigid_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/nor_fimir_balefiend_staff_2h_01.rigid_model_v2",
+   "size": 1312884,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/nor_fimir_balefiend_staff_2h_01.rigid_model_v2",
+   "size": 1312884,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/nor_fimir_balefiend_staff_2h_01.wsmodel",
+   "size": 6640,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu7d/nor/nor_props/nor_fimir_balefiend_staff_2h_01.wsmodel",
+   "size": 6640,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/body/nor_skin_wolves_body_01.rigid_model_v2",
+   "size": 692180,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_01.rigid_model_v2",
+   "size": 1665514,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_01.wsmodel",
+   "size": 7840,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_03.rigid_model_v2",
+   "size": 1570218,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_03.wsmodel",
+   "size": 7360,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_05.rigid_model_v2",
+   "size": 1550728,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves/legs/nor_skin_wolves_legs_05.wsmodel",
+   "size": 6252,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_01.rigid_model_v2",
+   "size": 1926814,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_01.wsmodel",
+   "size": 10200,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_03.rigid_model_v2",
+   "size": 1895128,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_03.wsmodel",
+   "size": 8640,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_05.rigid_model_v2",
+   "size": 1730638,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_armored/legs/nor_skin_wolves_armored_legs_05.wsmodel",
+   "size": 8300,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/materials/wef_bladesinger_body_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/materials/wef_bladesinger_body_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2678,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_01.rigid_model_v2",
+   "size": 2438214,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_01.rigid_model_v2",
+   "size": 2439408,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_01.wsmodel",
+   "size": 8802,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_01.wsmodel",
+   "size": 8802,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_02.rigid_model_v2",
+   "size": 2258450,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_02.rigid_model_v2",
+   "size": 2259044,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_02.wsmodel",
+   "size": 7584,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_02.wsmodel",
+   "size": 7592,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_03.rigid_model_v2",
+   "size": 2170144,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_03.rigid_model_v2",
+   "size": 2229908,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_03.wsmodel",
+   "size": 8738,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu8/nor/nor_skin_wolves_werekin/body/nor_skin_wolves_werekin_body_03.wsmodel",
+   "size": 9410,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01.rigid_model_v2",
+   "size": 4236384,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01.rigid_model_v2",
+   "size": 4504322,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01.wsmodel",
+   "size": 14689,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01.wsmodel",
+   "size": 15117,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01_destroyed.rigid_model_v2",
+   "size": 4090690,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01_destroyed.rigid_model_v2",
+   "size": 4147686,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01_destroyed.wsmodel",
+   "size": 14403,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_01_destroyed.wsmodel",
+   "size": 15869,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_02.rigid_model_v2",
+   "size": 4437934,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_02.wsmodel",
+   "size": 17997,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_02_destroyed.rigid_model_v2",
+   "size": 4001760,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/chs_chariot_02_destroyed.wsmodel",
+   "size": 15351,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_off.xml.material",
+   "size": 2581,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0.00_rigid_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0.00_weighted2_alpha_on.xml.material",
+   "size": 2594,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_rigid_alpha_off.xml.material",
+   "size": 2578,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_rigid_alpha_off.xml.material",
+   "size": 2631,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_rigid_alpha_on.xml.material",
+   "size": 2583,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_rigid_alpha_on.xml.material",
+   "size": 2636,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2586,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/body_group_02_lod1_submesh_0_weighted2_alpha_on.xml.material",
+   "size": 2591,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/bst_victim_body_01_rigid_alpha_on.xml.material",
+   "size": 2573,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/bst_victim_body_01_weighted2_alpha_off.xml.material",
+   "size": 2576,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/bst_victim_body_01_weighted2_alpha_on.xml.material",
+   "size": 2581,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/cowgirl_binds_01_rigid_alpha_on.xml.material",
+   "size": 2644,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_rigid_alpha_off.xml.material",
+   "size": 2606,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_rigid_alpha_off.xml.material",
+   "size": 2698,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_on.xml.material",
+   "size": 2711,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__1_weighted2_alpha_on.xml.material",
+   "size": 2711,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2604,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__rigid_alpha_off.xml.material",
+   "size": 2604,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2704,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/def_crone_hellebron_head_01_02__weighted2_alpha_on.xml.material",
+   "size": 2709,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_body_01_submesh_rigid_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_body_01_submesh_rigid_alpha_on.xml.material",
+   "size": 2692,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_body_01_submesh_weighted2_alpha_on.xml.material",
+   "size": 2700,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_1_rigid_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_1_rigid_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_2_rigid_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_2_rigid_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_rigid_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_weighted2_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_bladesinger_head_02_05_lod1_weighted2_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_1_rigid_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_1_rigid_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_1_weighted2_alpha_on.xml.material",
+   "size": 2699,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_1_weighted2_alpha_on.xml.material",
+   "size": 2709,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_rigid_alpha_on.xml.material",
+   "size": 2689,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_glade_captain_head_05_06_lo_weighted2_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__rigid_alpha_off.xml.material",
+   "size": 2588,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__rigid_alpha_off.xml.material",
+   "size": 2588,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__rigid_alpha_on.xml.material",
+   "size": 2593,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__rigid_alpha_on.xml.material",
+   "size": 2593,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "376244368_@Lynns_Horny_Nords_Xtra_Big/@Lynn's_Horny_Nords_Xtra_Big.pack"
+  },
+  {
+   "path": "warmachines/chariot/chs_chariot/materials/wef_wardancers_legs_01_submesh__weighted2_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "@Lynn's_Horny_Nords/@Lynn's_Horny_Nords.pack"
+  }
+ ]
+}

@@ -1,0 +1,251 @@
+{
+ "mod": "ll-23876",
+ "packs": [
+  "Miao_flag_new.pack",
+  "acorns_ensign_loi_touchup_patched.pack"
+ ],
+ "dependencies": [
+  "MiaoYingCorrupted_Compendium.pack"
+ ],
+ "perPack": {
+  "acorns_ensign_loi_touchup_patched.pack": {
+   "files": 6,
+   "dependencies": [
+    "MiaoYingCorrupted_Compendium.pack"
+   ]
+  },
+  "Miao_flag_new.pack": {
+   "files": 6,
+   "dependencies": []
+  }
+ },
+ "fileCount": 12,
+ "byTopFolder": {
+  "ui": 6,
+  "db": 5,
+  "text": 1
+ },
+ "tables": [
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "faction_agent_permitted_subtypes_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "character_skill_node_links_tables": [
+   "wh3_main_skill_node_ensign_loi_unique_2",
+   "wh3_main_skill_node_ensign_loi_unique_1",
+   "SUBSET_REQUIRED",
+   "wh3_main_skill_node_ensign_loi_row1_5",
+   "wh3_main_skill_node_ensign_loi_row1_1",
+   "REQUIRED",
+   "wh3_main_skill_node_ensign_loi_row1_4",
+   "wh3_main_skill_node_ensign_loi_row1_3",
+   "wh3_main_skill_node_ensign_loi_row1_2",
+   "wh3_main_skill_node_ensign_loi_row1_6",
+   "wh3_main_skill_node_ensign_loi_row3_1",
+   "wh3_main_skill_node_ensign_loi_row3_0",
+   "wh3_main_skill_node_ensign_loi_row3_2",
+   "wh3_main_skill_node_ensign_loi_row3_3",
+   "wh3_main_skill_node_ensign_loi_row3_4",
+   "wh3_main_skill_node_ensign_loi_row3_5",
+   "wh3_main_skill_node_ensign_loi_row3_6",
+   "wh3_main_skill_node_ensign_loi_row3_8",
+   "wh3_main_skill_node_ensign_loi_row3_9",
+   "wh3_main_skill_node_ensign_loi_row3_10",
+   "wh3_main_skill_node_ensign_loi_row3_7",
+   "wh3_main_skill_node_ensign_loi_row3_11"
+  ],
+  "character_skill_node_set_items_tables": [
+   "wh3_main_skill_node_set_cth_ensign_loi",
+   "wh3_main_skill_node_ensign_loi_unique_3",
+   "wh3_main_skill_node_ensign_loi_immortality",
+   "wh3_main_skill_node_ensign_loi_unique_4",
+   "wh3_main_skill_node_ensign_loi_unique_6",
+   "wh3_main_skill_node_ensign_loi_unique_5",
+   "wh3_main_skill_node_ensign_loi_unique_7",
+   "wh3_main_skill_node_ensign_loi_unique_1",
+   "wh3_main_skill_node_ensign_loi_unique_2",
+   "wh3_main_skill_node_ensign_loi_row1_6",
+   "wh3_main_skill_node_ensign_loi_row1_5",
+   "wh3_main_skill_node_ensign_loi_row1_4",
+   "wh3_main_skill_node_ensign_loi_row1_3",
+   "wh3_main_skill_node_ensign_loi_row1_2",
+   "wh3_main_skill_node_ensign_loi_row1_1",
+   "wh3_main_skill_node_ensign_loi_row2_2",
+   "wh3_main_skill_node_ensign_loi_row2_3",
+   "wh3_main_skill_node_ensign_loi_row2_4",
+   "wh3_main_skill_node_ensign_loi_row2_0",
+   "wh3_main_skill_node_ensign_loi_row2_1",
+   "wh3_main_skill_node_ensign_loi_row3_0",
+   "wh3_main_skill_node_ensign_loi_row3_1",
+   "wh3_main_skill_node_ensign_loi_row3_2",
+   "wh3_main_skill_node_ensign_loi_row3_3",
+   "wh3_main_skill_node_ensign_loi_row3_4",
+   "wh3_main_skill_node_ensign_loi_row3_5",
+   "wh3_main_skill_node_ensign_loi_row3_6",
+   "wh3_main_skill_node_ensign_loi_row3_11",
+   "wh3_main_skill_node_ensign_loi_row3_8",
+   "wh3_main_skill_node_ensign_loi_row3_9",
+   "wh3_main_skill_node_ensign_loi_row3_10",
+   "wh3_main_skill_node_ensign_loi_row3_7",
+   "wh3_main_skill_node_ensign_loi_row5_0",
+   "wh3_main_skill_node_ensign_loi_row5_1",
+   "wh3_main_skill_node_ensign_loi_unbreakable"
+  ],
+  "character_skill_nodes_skill_locks_tables": [
+   "wh3_main_skill_sla_locus_of_beguilement",
+   "wh3_main_skill_node_ensign_loi_row2_2",
+   "wh3_main_skill_sla_locus_of_swiftness",
+   "wh3_main_skill_node_ensign_loi_row2_3",
+   "wh3_main_skill_sla_locus_of_grace",
+   "wh3_main_skill_node_ensign_loi_row2_4"
+  ],
+  "character_skill_nodes_tables": [
+   "wh3_main_skill_sla_contact_soporific_musk",
+   "wh3_main_skill_node_ensign_loi_unique_3",
+   "wh2_main_skill_all_immortality_lord",
+   "wh3_main_skill_node_ensign_loi_immortality",
+   "wh3_main_skill_sla_exalted_keeper_of_secrets_unique_feasting_on_fear",
+   "wh3_main_skill_node_ensign_loi_unique_4",
+   "wh3_main_skill_sla_exalted_keeper_of_secrets_self_ballet_of_blows",
+   "wh3_main_skill_node_ensign_loi_unique_6",
+   "wh3_main_skill_sla_exalted_keeper_of_secrets_self_seductive_glory",
+   "wh3_main_skill_node_ensign_loi_unique_5",
+   "wh3_main_skill_sla_all_unique_missile_resist",
+   "wh3_main_skill_node_ensign_loi_unique_7",
+   "wh3_main_skill_sla_cultist_unique_gate_of_slaanesh",
+   "wh3_main_skill_node_ensign_loi_unique_1",
+   "wh3_main_skill_sla_cultist_unique_greater_gate_of_slaanesh",
+   "wh3_main_skill_node_ensign_loi_unique_2",
+   "wh2_dlc11_skill_cst_gunnery_wight_support_2",
+   "wh3_main_skill_node_ensign_loi_row1_6",
+   "wh_main_skill_dwf_engineer_self_requisition",
+   "wh3_main_skill_node_ensign_loi_row1_5",
+   "wh_main_skill_dwf_engineer_self_triangulation",
+   "wh3_main_skill_node_ensign_loi_row1_4",
+   "wh_main_skill_dwf_engineer_self_overseer",
+   "wh3_main_skill_node_ensign_loi_row1_3",
+   "wh_main_skill_dwf_engineer_self_sapper",
+   "wh3_main_skill_node_ensign_loi_row1_2",
+   "wh_main_skill_dwf_engineer_self_extra_powder",
+   "wh3_main_skill_node_ensign_loi_row1_1",
+   "wh3_main_skill_sla_locus_of_grace",
+   "wh3_main_skill_node_ensign_loi_row2_2",
+   "wh3_main_skill_sla_locus_of_swiftness",
+   "wh3_main_skill_node_ensign_loi_row2_3",
+   "wh3_main_skill_sla_locus_of_beguilement",
+   "wh3_main_skill_node_ensign_loi_row2_4",
+   "wh3_main_skill_sla_nkari_unique_harvester_of_souls",
+   "wh3_main_skill_node_ensign_loi_row2_0",
+   "wh3_main_skill_sla_nkari_self_whisper_of_glory",
+   "wh3_main_skill_node_ensign_loi_row2_1",
+   "wh3_main_skill_sla_all_combat_speed",
+   "wh3_main_skill_node_ensign_loi_row3_0",
+   "wh2_dlc11_skill_all_lord_self_devastating_charge",
+   "wh3_main_skill_node_ensign_loi_row3_1",
+   "wh2_dlc11_skill_all_lord_self_thick-skinned",
+   "wh3_main_skill_node_ensign_loi_row3_2",
+   "wh2_dlc11_skill_all_lord_self_hard_to_hit",
+   "wh3_main_skill_node_ensign_loi_row3_3",
+   "wh2_dlc11_skill_all_lord_self_deadly_blade",
+   "wh3_main_skill_node_ensign_loi_row3_4",
+   "wh3_main_skill_kho_lord_self_3_1",
+   "wh3_main_skill_node_ensign_loi_row3_5",
+   "wh3_main_skill_kho_lord_self_3_2",
+   "wh3_main_skill_node_ensign_loi_row3_6",
+   "wh_main_skill_all_all_self_foe-seeker",
+   "wh3_main_skill_node_ensign_loi_row3_11",
+   "wh2_dlc11_skill_all_lord_self_wound-maker",
+   "wh3_main_skill_node_ensign_loi_row3_8",
+   "wh2_dlc11_skill_all_lord_self_scarred_veteran",
+   "wh3_main_skill_node_ensign_loi_row3_9",
+   "wh2_dlc11_skill_all_lord_self_self_indomitable",
+   "wh3_main_skill_node_ensign_loi_row3_10",
+   "wh2_dlc11_skill_all_lord_self_blade_shield",
+   "wh3_main_skill_node_ensign_loi_row3_7",
+   "wh2_main_skill_all_hero_assist_army_increase_mobility",
+   "wh3_main_skill_node_ensign_loi_row5_0",
+   "wh2_main_skill_all_hero_assist_army_replenish_troops",
+   "wh3_main_skill_node_ensign_loi_row5_1",
+   "wh2_dlc09_skill_all_dummy_agent_actions_tmb_tomb_prince",
+   "wh3_main_skill_node_ensign_loi_unbreakable"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "champion",
+   "wh3_main_cth_the_northern_provinces",
+   "wh3_main_cth_cha_ensign_loi_1"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/character_skill_node_links_tables/miaoscorruptedcompendium",
+   "size": 3344,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/damn_you_ca",
+   "size": 2829,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/acorns_ensign_loi_touchup",
+   "size": 571,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/miaoscorruptedcompendium",
+   "size": 3719,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/miaoscorruptedcompendium",
+   "size": 170,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "text/db/miaocorruptedcompendium_agent_subtypes__.loc",
+   "size": 926,
+   "pack": "acorns_ensign_loi_touchup_patched.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_24.png",
+   "size": 1810,
+   "pack": "Miao_flag_new.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_256.png",
+   "size": 104726,
+   "pack": "Miao_flag_new.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_64.png",
+   "size": 8082,
+   "pack": "Miao_flag_new.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_banner.dds",
+   "size": 65664,
+   "pack": "Miao_flag_new.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_icon.png",
+   "size": 30069,
+   "pack": "Miao_flag_new.pack"
+  },
+  {
+   "path": "ui/flags/wh3_main_cth_the_northern_provinces/mon_rotated.png",
+   "size": 8431,
+   "pack": "Miao_flag_new.pack"
+  }
+ ]
+}

@@ -1,0 +1,1537 @@
+{
+ "mod": "ll-24568",
+ "packs": [
+  "1568747233_WarriorofSlaanesh.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "1568747233_WarriorofSlaanesh.pack": {
+   "files": 286,
+   "dependencies": []
+  }
+ },
+ "fileCount": 286,
+ "byTopFolder": {
+  "variantmeshes": 285,
+  "db": 1
+ },
+ "tables": [
+  "main_units_tables"
+ ],
+ "references": {
+  "total": 372,
+  "inMod": 188,
+  "inBaseGame": 155,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/_variantmodels/man/armour/troy_ach_ambushers/tex/test_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/body_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/dae_daemonette_favoured_accessories_ror_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/dae_daemonette_favoured_accessories_ror_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/dae_daemonette_favoured_accessories_ror_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/dae_steed_of_slaanesh_01_pink_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/tex/default_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/tex/stage_s6___living_armor_lucy_arm.dds",
+   "variantmeshes/wh_variantmodels/hu16c/dae/dae_valkia/tex/stage_s6__chitin_arm_right.dds",
+   "variantmeshes/wh_variantmodels/hu1c/chs/chs_sla_tex/tex/chs_marauder_chieftain_head_01_base_colour_sla_1.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_body_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_body_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_body_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_head_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_head_01_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_head_01_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_head_01_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/body_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessoires_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessories_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessories_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_material_map.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_normal.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "main_units_tables": [
+   "chariot",
+   "wh3_dlc20_chs_cav_chaos_chariot_msla",
+   "wh_main_shp_transport",
+   "heavy",
+   "wh3_main_vo_culture_Slaanesh",
+   "chaos_chariot",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Slaanesh_Cultist_Of_Slaanesh",
+   "melee_cavalry",
+   "wh3_dlc20_chs_cav_chaos_knights_msla",
+   "cavalry",
+   "chs_cavalry",
+   "wh3_dlc20_chs_cav_chaos_knights_msla_lances",
+   "shock_cavalry",
+   "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins",
+   "medium",
+   "missile_cavalry_javelin",
+   "melee_infantry",
+   "wh3_dlc20_chs_inf_chaos_marauders_msla",
+   "infantry_axe",
+   "chaos_warrior_15_degrees",
+   "wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges",
+   "wh2_dlc10_def_whip_infantry",
+   "sla_soldier_15_degrees",
+   "wh3_dlc20_chs_inf_chaos_warriors_msla",
+   "infantry_sword",
+   "kho_warriors",
+   "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges",
+   "wh3_dlc20_chs_inf_chosen_msla",
+   "chaos_warrior_30_degrees",
+   "wh3_dlc20_chs_inf_chosen_msla_hellscourges",
+   "chaos_warrior_hellscourges",
+   "wh3_main_sla_cav_hellstriders_0",
+   "wh3_main_sla_steed_spear",
+   "sla_cav",
+   "wh3_main_sla_cav_hellstriders_1",
+   "wh3_main_sla_steed_whip",
+   "wh3_main_sla_inf_marauders_0",
+   "sla_soldier_default",
+   "wh3_main_sla_inf_marauders_1",
+   "infantry_spear",
+   "wh3_main_sla_inf_marauders_2"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/main_units_tables/data",
+   "size": 5423,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_hellstrider_spear.variantmeshdefinition",
+   "size": 1308,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_hellstrider_sword.variantmeshdefinition",
+   "size": 1662,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_hellstrider_whip.variantmeshdefinition",
+   "size": 1295,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chaos_knight_base.variantmeshdefinition",
+   "size": 1828,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chaos_knight_lance.variantmeshdefinition",
+   "size": 1184,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chaos_knight_sword.variantmeshdefinition",
+   "size": 1184,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chosen_base.variantmeshdefinition",
+   "size": 2072,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chosen_hellscourges.variantmeshdefinition",
+   "size": 1337,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_chosen_sword.variantmeshdefinition",
+   "size": 1856,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder.variantmeshdefinition",
+   "size": 3184,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder_base.variantmeshdefinition",
+   "size": 2326,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder_hellscourges.variantmeshdefinition",
+   "size": 2509,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder_horsemen_javelin.variantmeshdefinition",
+   "size": 2333,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder_spear.variantmeshdefinition",
+   "size": 2717,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_marauder_whip.variantmeshdefinition",
+   "size": 2656,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_warrior_base.variantmeshdefinition",
+   "size": 2378,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_warriors_hellscourges.variantmeshdefinition",
+   "size": 1491,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_sla_warriors_sword.variantmeshdefinition",
+   "size": 2174,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_body1.rigid_model_v2",
+   "size": 2357698,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_body1.wsmodel",
+   "size": 5851,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_body2.rigid_model_v2",
+   "size": 2571534,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_body2.wsmodel",
+   "size": 5639,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head1.rigid_model_v2",
+   "size": 593046,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head1.wsmodel",
+   "size": 1587,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head2.rigid_model_v2",
+   "size": 854062,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head2.wsmodel",
+   "size": 3723,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head3.rigid_model_v2",
+   "size": 485044,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head3.wsmodel",
+   "size": 1619,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head4.rigid_model_v2",
+   "size": 374366,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_head4.wsmodel",
+   "size": 1579,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_spear_body1.rigid_model_v2",
+   "size": 2597302,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_spear_body1.wsmodel",
+   "size": 7309,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_spear_body2.rigid_model_v2",
+   "size": 2733692,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_spear_body2.wsmodel",
+   "size": 7833,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_sword_body1.rigid_model_v2",
+   "size": 2746076,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_sword_body1.wsmodel",
+   "size": 8553,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_sword_body2.rigid_model_v2",
+   "size": 2687828,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/dae_hellstrider_sword_body2.wsmodel",
+   "size": 7833,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_cultist_of_slaanesh_body_03__weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_cultist_of_slaanesh_head_02_weighted4_alpha_off.xml.material",
+   "size": 2714,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_daemonette_alluress_accesso__1_weighted4_alpha_on.xml.material",
+   "size": 2742,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_daemonette_alluress_accesso__weighted4_alpha_off.xml.material",
+   "size": 2735,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_daemonette_alluress_accesso__weighted4_alpha_on.xml.material",
+   "size": 2740,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_daemonette_head_favoured_03__weighted4_alpha_on.xml.material",
+   "size": 2720,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_daemonette_head_favoured_03_weighted2_alpha_off.xml.material",
+   "size": 2714,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_body_01_weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_body_01_weighted4_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_body_01_weighted4_alpha_on.xml.material",
+   "size": 2681,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_head_01_weighted2_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_head_01_weighted2_alpha_on.xml.material",
+   "size": 2677,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_head_01_weighted4_alpha_off.xml.material",
+   "size": 2676,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_spear_body_01_1_weighted4_alpha_on.xml.material",
+   "size": 2687,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_weapons_01_weighted2_alpha_off.xml.material",
+   "size": 2691,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_hellstrider_weapons_01_weighted4_alpha_off.xml.material",
+   "size": 2691,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/dae_steed_of_slaanesh_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2581,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/def_death_hag_head_01_weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/def_doomfire_warlock_head_03_weighted4_alpha_on.xml.material",
+   "size": 2736,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/piercings_face_weighted4_alpha_on.xml.material",
+   "size": 2393,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/materials/wef_arahan_head_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2712,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_cultist_of_slaanesh_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_daemonette_herald_accessories_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_daemonette_herald_accessories_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_daemonette_herald_accessories_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_hellstrider/tex/dae_daemonette_herald_accessories_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_head1.rigid_model_v2",
+   "size": 1422868,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_head1.wsmodel",
+   "size": 5743,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_head2.rigid_model_v2",
+   "size": 1471938,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_head2.wsmodel",
+   "size": 6427,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_legs1.rigid_model_v2",
+   "size": 1823728,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_legs1.wsmodel",
+   "size": 2811,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_torso1.rigid_model_v2",
+   "size": 3048214,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/dae_chosen_slaanesh_torso1.wsmodel",
+   "size": 8276,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/bondage_arm_left_weighted4_alpha_on.xml.material",
+   "size": 2504,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/bondage_arm_right_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/bondage_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/bondage_legs_weighted4_alpha_on.xml.material",
+   "size": 2496,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/bondage_torso_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/chains_demonic_hq_lod1_weighted4_alpha_on.xml.material",
+   "size": 2640,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/chosen_skirt_weighted4_alpha_on.xml.material",
+   "size": 2613,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/chs_marauder_chieftain_head_02_weighted4_alpha_off.xml.material",
+   "size": 2736,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/chs_mirror_guard_head_01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/chs_mirror_guard_head_01_submesh_weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chains_weighted4_alpha_on.xml.material",
+   "size": 2592,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_head_01_weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_head_01_weighted4_alpha_off.xml.material",
+   "size": 2730,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_head_03_weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_legs_01_weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_torso_01_weighted2_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_chosen_slaanesh_torso_01_weighted4_alpha_off.xml.material",
+   "size": 2683,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_cultist_of_slaanesh_body_03__weighted4_alpha_off.xml.material",
+   "size": 2747,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_cultist_of_slaanesh_body_03__weighted4_alpha_on.xml.material",
+   "size": 2741,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_cultist_of_slaanesh_head_02_weighted4_alpha_off.xml.material",
+   "size": 2746,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dae_daemonette_alluress_accesso__weighted4_alpha_off.xml.material",
+   "size": 2763,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/def_sorceress_head_03_1_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/def_sorceress_head_03_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dragon_head_preg_lod1_weighted4_alpha_on.xml.material",
+   "size": 2652,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/dragon_head_preg_weighted4_alpha_on.xml.material",
+   "size": 2611,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/nipple_piercings_01_weighted4_alpha_on.xml.material",
+   "size": 2599,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/nipple_piercings_02_weighted4_alpha_on.xml.material",
+   "size": 2599,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/s9_____chitin_arm_left_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/s9_____chitin_arm_right_weighted4_alpha_on.xml.material",
+   "size": 2506,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/tentacle_prison_weighted4_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/tentacles fucked_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/vag_piercings_lod1_weighted4_alpha_on.xml.material",
+   "size": 2580,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/materials/vag_piercings_weighted4_alpha_on.xml.material",
+   "size": 2539,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/accessoires_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/accessories_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/accessories_normal.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/ballet_cloth_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/ballet_cloth_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/ballet_cloth_normal.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/chains_base_colour.dds",
+   "size": 527444,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/chains_material_map.dds",
+   "size": 527444,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/chains_normal.dds",
+   "size": 1054720,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_accessories_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_accessories_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_accessories_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_daemonette_herald_accessories_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_shrinemaster_slaanesh_head_01_base_colour.dds",
+   "size": 2796364,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_shrinemaster_slaanesh_head_01_mask.dds",
+   "size": 5592544,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_shrinemaster_slaanesh_head_01_material_map.dds",
+   "size": 2796364,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_shrinemaster_slaanesh_head_01_normal.dds",
+   "size": 5592544,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_legs_01_base_colour.dds",
+   "size": 174924,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_legs_01_mask.dds",
+   "size": 349664,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_legs_01_material_map.dds",
+   "size": 174924,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_legs_01_normal.dds",
+   "size": 349664,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_torso_01_base_colour.dds",
+   "size": 349692,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_torso_01_mask.dds",
+   "size": 699200,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_torso_01_material_map.dds",
+   "size": 349692,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_knight_slaanesh_torso_01_normal.dds",
+   "size": 699200,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_prince_head_adorned_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_prince_head_adorned_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_prince_head_adorned_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/dae_prince_head_adorned_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/plug_armor_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/plug_armor_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/plug_armor_normal.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/stage_s6___living_armor_lucy_arm.dds",
+   "size": 11184972,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/stage_s6___living_armor_main.dds",
+   "size": 11184972,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_chosen/tex/stage_s6__chitin_arm_right.dds",
+   "size": 11184972,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_cape1.rigid_model_v2",
+   "size": 698414,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_cape1.wsmodel",
+   "size": 1587,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_head1.rigid_model_v2",
+   "size": 1409752,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_head1.wsmodel",
+   "size": 5743,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_head2.rigid_model_v2",
+   "size": 1458660,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_head2.wsmodel",
+   "size": 6427,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_legs1.rigid_model_v2",
+   "size": 1709188,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_legs1.wsmodel",
+   "size": 2175,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_torso1.rigid_model_v2",
+   "size": 2975992,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/dae_knight_slaanesh_torso1.wsmodel",
+   "size": 7640,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/materials/dae_chosen_slaanesh_head_03_weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/materials/dae_knight_slaanesh_cape_01_1_weighted4_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/materials/dae_knight_slaanesh_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/tex/dae_knight_slaanesh_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/tex/dae_knight_slaanesh_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/tex/dae_knight_slaanesh_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_knight/tex/dae_knight_slaanesh_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_head1.rigid_model_v2",
+   "size": 1203530,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_head1.wsmodel",
+   "size": 2283,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_head2.rigid_model_v2",
+   "size": 997376,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_head2.wsmodel",
+   "size": 2215,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_legs1.rigid_model_v2",
+   "size": 1480350,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_legs1.wsmodel",
+   "size": 2227,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_torso1.rigid_model_v2",
+   "size": 1872748,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_torso1.wsmodel",
+   "size": 2948,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_torso2.rigid_model_v2",
+   "size": 2010970,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/dae_marauder_slaanesh_torso2.wsmodel",
+   "size": 2948,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/brt_fay_enchantress_head_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2723,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/chains_demonic_hq_lod1_weighted4_alpha_on.xml.material",
+   "size": 2486,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_cultist_of_slaanesh_head_04_weighted4_alpha_off.xml.material",
+   "size": 2712,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_daemonette_alluress_accesso__weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_head_01_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_head_01_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_legs_01_weighted2_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_legs_01_weighted4_alpha_off.xml.material",
+   "size": 2694,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_legs_01_weighted4_alpha_on.xml.material",
+   "size": 2699,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_torso_01_weighted2_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_torso_01_weighted4_alpha_off.xml.material",
+   "size": 2699,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/dae_marauder_slaanesh_torso_01_weighted4_alpha_on.xml.material",
+   "size": 2704,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/leather_harness_plug_01_weighted4_alpha_on.xml.material",
+   "size": 2623,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/leather_harness_plug_02_weighted4_alpha_on.xml.material",
+   "size": 2623,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/leather_harness_plug_lod1_1_weighted4_alpha_on.xml.material",
+   "size": 2556,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/leather_harness_plug_lod1_weighted4_alpha_on.xml.material",
+   "size": 2554,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/marauder_hair_01_weighted4_alpha_on.xml.material",
+   "size": 2707,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/piercings_face_weighted4_alpha_on.xml.material",
+   "size": 2611,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/materials/vag_piercings_lod1_weighted4_alpha_on.xml.material",
+   "size": 2411,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/tex/def_supreme_sorceress_head_01__redhairs_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/tex/def_supreme_sorceress_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_marauder/tex/def_supreme_sorceress_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/chs_sigvald_shield_01_lod1_rigid_alpha_off.xml.material",
+   "size": 2641,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/dae_hellstrider_shield_01_lod1_s_rigid_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/dae_hellstrider_shield_02_lod1_s_rigid_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/dae_hellstrider_shield_03_lod1_s_rigid_alpha_off.xml.material",
+   "size": 2659,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/dae_keeper_of_secrets_shields_0__rigid_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/materials/dae_keeper_of_secrets_shields_e__rigid_alpha_off.xml.material",
+   "size": 2731,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_1.rigid_model_v2",
+   "size": 105928,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_1.wsmodel",
+   "size": 865,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_2.rigid_model_v2",
+   "size": 172000,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_2.wsmodel",
+   "size": 1541,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_3.rigid_model_v2",
+   "size": 92550,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_3.wsmodel",
+   "size": 865,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_4.rigid_model_v2",
+   "size": 92710,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_4.wsmodel",
+   "size": 865,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_5.rigid_model_v2",
+   "size": 115612,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_5.wsmodel",
+   "size": 1541,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_6.rigid_model_v2",
+   "size": 115318,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_props/sla_shield_6.wsmodel",
+   "size": 1541,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_body1.rigid_model_v2",
+   "size": 3352780,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_body1.wsmodel",
+   "size": 7301,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_body2.rigid_model_v2",
+   "size": 3142536,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_body2.wsmodel",
+   "size": 5853,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head1.rigid_model_v2",
+   "size": 1189700,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head1.wsmodel",
+   "size": 5069,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head2.rigid_model_v2",
+   "size": 1267002,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head2.wsmodel",
+   "size": 5741,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head3.rigid_model_v2",
+   "size": 1196310,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head3.wsmodel",
+   "size": 5729,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head4.rigid_model_v2",
+   "size": 1333168,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/dae_warrior_slaanesh_head4.wsmodel",
+   "size": 7125,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/chs_marauder_chieftain_head_02_weighted4_alpha_off.xml.material",
+   "size": 2736,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/chs_mirror_guard_head_01_submesh_1_weighted2_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/chs_mirror_guard_head_01_submesh_weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_cultist_of_slaanesh_body_03__1_weighted4_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_cultist_of_slaanesh_body_03__weighted4_alpha_off.xml.material",
+   "size": 2703,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_cultist_of_slaanesh_head_02_weighted4_alpha_off.xml.material",
+   "size": 2711,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_cultist_of_slaanesh_head_04_weighted4_alpha_off.xml.material",
+   "size": 2712,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_daemonette_accessories_01_3_weighted4_alpha_on.xml.material",
+   "size": 2653,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_daemonette_accessories_02_weighted4_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_daemonette_alluress_accesso__1_weighted4_alpha_off.xml.material",
+   "size": 2696,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_daemonette_alluress_accesso__2_weighted4_alpha_off.xml.material",
+   "size": 2765,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_daemonette_alluress_accesso__weighted4_alpha_off.xml.material",
+   "size": 2719,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_prince_arm_r_scythe_05_subme_1_weighted4_alpha_off.xml.material",
+   "size": 2681,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_prince_arm_r_scythe_05_subme_weighted4_alpha_off.xml.material",
+   "size": 2679,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/dae_prince_torso_adorned_05_subm_weighted4_alpha_off.xml.material",
+   "size": 2687,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/def_sorceress_head_03_1_weighted4_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/def_sorceress_head_03_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/hef_mage_head_02_submesh_3_weighted4_alpha_off.xml.material",
+   "size": 2625,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2583,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/piercings_face_weighted4_alpha_on.xml.material",
+   "size": 2611,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/materials/troy_ach_ambushers_armour_03_sub_weighted4_alpha_on.xml.material",
+   "size": 2580,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_body_01_base_colour.dds",
+   "size": 699192,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_body_01_pink1_base_colour.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_head_01_red_girl_base_colour.dds",
+   "size": 699192,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_cultist_of_slaanesh_head_04_goth_girl_base_colour.dds",
+   "size": 699192,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_daemonette_favoured_accessories_ror_01_base_colour.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_daemonette_favoured_accessories_ror_01_mask.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_daemonette_favoured_accessories_ror_01_material_map.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_daemonette_favoured_accessories_ror_01_normal.dds",
+   "size": 1398240,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/dae_steed_of_slaanesh_01_pink_base_colour.dds",
+   "size": 2796368,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hair_d_01.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hair_d_dand.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hair_d_mohawk.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hair_n_mohawk.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hotdog-2-bump.dds",
+   "size": 11184952,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hotdog_light.dds",
+   "size": 11184952,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hotdog_mask_2.dds",
+   "size": 699192,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hotdog_normal_veins_v2.dds",
+   "size": 11184952,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/hotdog_specular.dds",
+   "size": 11184952,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/troy_ach_ambushers_armour_diffuse.dds",
+   "size": 699212,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/troy_ach_ambushers_armour_normal.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/troy_ach_ambushers_armour_specular.dds",
+   "size": 1398276,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/wef_bladesinger_head_01_wine_base_colour.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/witch_diffuse.dds",
+   "size": 8388760,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/witch_material_map.dds",
+   "size": 8388760,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/witch_normal.dds",
+   "size": 16777392,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/youth.dds",
+   "size": 1398256,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1c/dae/dae_warrior/tex/youth_n.dds",
+   "size": 349680,
+   "pack": "1568747233_WarriorofSlaanesh.pack"
+  }
+ ]
+}

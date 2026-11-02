@@ -1,0 +1,4508 @@
+{
+ "mod": "ll-23901",
+ "packs": [
+  "Corrupted_Woodelves_v1.3.2.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack": {
+   "files": 796,
+   "dependencies": []
+  }
+ },
+ "fileCount": 796,
+ "byTopFolder": {
+  "variantmeshes": 613,
+  "ui": 171,
+  "body": 8,
+  "db": 4
+ },
+ "tables": [
+  "campaign_character_arts_tables",
+  "culture_to_battle_animation_tables_tables",
+  "land_units_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 601,
+  "inMod": 439,
+  "inBaseGame": 151,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "body/tex/elf_dude_arms_material.dds",
+   "body/tex/elf_dude_arms_normal.dds",
+   "body/tex/elf_dude_body_material.dds",
+   "body/tex/elf_dude_body_normal.dds",
+   "body/tex/elf_dude_legs_material.dds",
+   "body/tex/elf_dude_legs_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/cor_eternal_guard_head_01_base_colour.dds",
+   "variantmeshes/wh_variantmodels/hu20/wef/wef_drycha/tex/wef_drycha_head_01_diffuse.dds",
+   "variantmeshes/wh_variantmodels/hu20/wef/wef_drycha/tex/wef_drycha_head_01_gloss_map.dds",
+   "variantmeshes/wh_variantmodels/hu20/wef/wef_drycha/tex/wef_drycha_head_01_specular.dds",
+   "variantmeshes/wh_variantmodels/hu21/wef/wef_treeman/tex/wef_treeman_head_01_specular.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "campaign_character_arts_tables": [
+   "wh2_dlc16_art_set_malicious_branchwraith_shadows",
+   "none",
+   "wh2_dlc16_uniform_wef_malicious_branchwraith",
+   "wh_dlc05_campaign_wef_ship_agent",
+   "cam_sla_cha_herald_of_slaanesh_slaanesh_0",
+   "cam_transport_ship_03",
+   "wh2_dlc16_art_set_malicious_branchwraith_beasts",
+   "wh_dlc05_wef_branchwraith",
+   "wh_dlc05_uniform_wef_branchwraith_01",
+   "wh2_dlc16_art_set_malicious_branchwraith_life"
+  ],
+  "culture_to_battle_animation_tables_tables": [
+   "hu16_wh3_daemonette",
+   "wh_dlc05_wef_wood_elves"
+  ],
+  "land_units_tables": [
+   "wh2_main_body_60",
+   "inf_melee",
+   "inf_mel",
+   "wh_dlc05_unit_long_text_wef_dryads",
+   "wh_dlc05_wef_inf_dryads_0",
+   "hu16_wh3_daemonette",
+   "wh_dlc05_wef_inf_dryad_dismembers",
+   "wh_dlc05_wef_dryads_claw",
+   "none",
+   "wh_dlc05_unit_short_text_wef_dryads",
+   "wh_dlc05_wef_infantry_dryad",
+   "trained",
+   "wh_dlc05_wef_inf_dryads_0_attributes",
+   "vo_sel_wood_elves_dryads",
+   "vo_sel_melee",
+   "vo_sel_culture",
+   "elves_wef",
+   "melee",
+   "medium",
+   "domination_infantry",
+   "wh2_dlc16_wef_inf_dryads_ror_0",
+   "wh2_dlc16_wef_inf_dryad_ror_dismembers",
+   "wh_dlc05_wef_dryads_claw_frostbite",
+   "wh2_dlc16_unit_short_text_wef_inf_dryads_ror",
+   "wh2_dlc16_wef_inf_dryads_ror_0_attributes",
+   "high",
+   "wh2_dlc16_wef_inf_malicious_dryads_0",
+   "wh2_dlc16_wef_inf_malicious_dryad_dismembers",
+   "wh2_dlc16_unit_short_text_wef_inf_malicious_dryads",
+   "wh2_dlc16_wef_inf_malicious_dryads_0_attributes",
+   "wh2_dlc16_wef_inf_dryads_0_summoned",
+   "wh2_dlc16_wef_inf_dryads_0_summoned_attributes",
+   "cant_capture",
+   "com",
+   "wh_dlc05_unit_long_text_wef_branchwraith",
+   "wh_dlc05_wef_cha_branchwraith_0",
+   "wh_dlc05_wef_branchwraith_dismembers",
+   "wh_dlc05_wef_branchwraith_claws",
+   "wh_dlc05_unit_short_text_wef_branchwraith",
+   "wh_main_infantry_large",
+   "wh_dlc05_wef_cha_branchwraith_0_attributes",
+   "vo_sel_default",
+   "vo_sel_generic",
+   "vo_sel_generic_short",
+   "melee_highvalue",
+   "domination_characters",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_shadows_0",
+   "hu16_wh3_herald_of_slaanesh",
+   "wh2_dlc16_wef_malicious_branchwraith_dismembers",
+   "wh2_dlc16_unit_short_text_wef_cha_malicious_branchwraith_shadows",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_shadows_0_attributes",
+   "mage_highvalue",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_life_0",
+   "wh2_dlc16_unit_short_text_wef_cha_malicious_branchwraith_life",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_life_0_attributes",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_beasts_0",
+   "wh2_dlc16_unit_short_text_wef_cha_malicious_branchwraith_beasts",
+   "wh2_dlc16_wef_cha_malicious_branchwraith_beasts_0_attributes"
+  ],
+  "variants_tables": [
+   "animal_boar",
+   "campaign_brt_ship_heavy",
+   "campaign_brt_ship_light",
+   "campaign_bst_ship_agent",
+   "campaign_bst_ship_heavy",
+   "campaign_bst_ship_light",
+   "campaign_bst_ship_transport",
+   "campaign_chs_ship_heavy",
+   "campaign_chs_ship_light",
+   "campaign_cth_ship_agent",
+   "campaign_cth_ship_lord",
+   "campaign_dwf_ship_heavy",
+   "campaign_dwf_ship_light",
+   "campaign_emp_ship_heavy",
+   "campaign_emp_ship_light",
+   "campaign_grn_ship_heavy",
+   "campaign_grn_ship_light",
+   "campaign_kho_ship_agent",
+   "campaign_kho_ship_lord",
+   "campaign_ksl_ship_agent",
+   "campaign_ksl_agent_ship",
+   "campaign_ksl_ship_lord",
+   "campaign_ksl_lord_ship",
+   "campaign_nor_ship_agent",
+   "campaign_nor_ship_seafang",
+   "campaign_nor_ship_transport",
+   "campaign_nur_ship_agent",
+   "campaign_nur_ship_transport",
+   "campaign_ogr_ship_agent",
+   "campaign_ogr_ship_lord",
+   "campaign_sla_ship_agent",
+   "campaign_sla_ship_lord",
+   "campaign_tze_ship_agent",
+   "campaign_tze_ship_lord",
+   "campaign_vmp_ship_heavy",
+   "campaign_vmp_ship_light",
+   "campaign_wef_ship_agent",
+   "campaign_wef_ship_transport",
+   "dummy_variant",
+   "dwf_anvil_of_doom_campaign_01",
+   "dwf_anvil_of_doom_campaign_02",
+   "dwf_anvil_of_doom_campaign_03",
+   "dwf_anvil_of_doom_campaign_04",
+   "grn_goblin_artillery_crew_sword",
+   "hu5/grn/grn_goblin/low_poly/goblin_super_imposter",
+   "wh2_dlc09_campaign_tmb_ship_agent",
+   "campaign_tmb_ship_agent",
+   "wh2_dlc09_campaign_tmb_ship_transport",
+   "campaign_tmb_ship_transport",
+   "wh2_dlc09_skv_tretch_craventail",
+   "skv_tretch_craventail",
+   "wh2_dlc09_tmb_arkhan_chariot_campaign",
+   "campaign_tmb_arkhan_chariot",
+   "wh2_dlc09_tmb_basic_chariot_campaign",
+   "campaign_tmb_basic_chariot",
+   "wh2_dlc09_tmb_carrion",
+   "tmb_carrion",
+   "wh2_dlc09_tmb_carrion_ror",
+   "tmb_carrion_ror",
+   "wh2_dlc09_tmb_casket_of_souls",
+   "tmb_casket_of_souls",
+   "wh2_dlc09_tmb_ch_arkhan",
+   "tmb_ch_arkhan",
+   "wh2_dlc09_tmb_ch_khalida",
+   "tmb_ch_khalida",
+   "wh2_dlc09_tmb_ch_khalida_campaign",
+   "tmb_ch_khalida_campaign",
+   "wh2_dlc09_tmb_ch_khatep",
+   "tmb_ch_khatep",
+   "wh2_dlc09_tmb_ch_settra",
+   "tmb_ch_settra",
+   "wh2_dlc09_tmb_ch_tomb_king",
+   "tmb_ch_tomb_king",
+   "wh2_dlc09_tmb_ch_tomb_king_campaign_01",
+   "tmb_ch_tomb_king_campaign_01",
+   "wh2_dlc09_tmb_ch_tomb_king_campaign_02",
+   "tmb_ch_tomb_king_campaign_02",
+   "wh2_dlc09_tmb_ch_tomb_king_campaign_03",
+   "tmb_ch_tomb_king_campaign_03",
+   "wh2_dlc09_tmb_ch_tomb_king_campaign_04",
+   "tmb_ch_tomb_king_campaign_04",
+   "wh2_dlc09_tmb_ch_tomb_king_campaign_05",
+   "tmb_ch_tomb_king_campaign_05",
+   "wh2_dlc09_tmb_ch_tomb_prince",
+   "tmb_ch_tomb_prince",
+   "wh2_dlc09_tmb_ch_tomb_prince_campaign_01",
+   "tmb_ch_tomb_prince_campaign_01",
+   "wh2_dlc09_tmb_ch_tomb_prince_campaign_02",
+   "tmb_ch_tomb_prince_campaign_02",
+   "wh2_dlc09_tmb_ch_tomb_prince_campaign_03",
+   "tmb_ch_tomb_prince_campaign_03",
+   "wh2_dlc09_tmb_ch_tomb_prince_campaign_04",
+   "tmb_ch_tomb_prince_campaign_04",
+   "wh2_dlc09_tmb_ch_tomb_prince_campaign_05",
+   "tmb_ch_tomb_prince_campaign_05",
+   "wh2_dlc09_tmb_ch_tomb_prince_chariot",
+   "tmb_ch_tomb_prince_chariot",
+   "wh2_dlc09_tmb_general_chariot_campaign",
+   "campaign_tmb_general_chariot",
+   "wh2_dlc09_tmb_hierotitan",
+   "tmb_hierotitan",
+   "wh2_dlc09_tmb_khemrian_warsphinx",
+   "tmb_khemrian_warsphinx",
+   "wh2_dlc09_tmb_liche_priest",
+   "tmb_liche_priest",
+   "wh2_dlc09_tmb_liche_priest_campaign_01",
+   "tmb_liche_priest_campaign_01",
+   "wh2_dlc09_tmb_liche_priest_campaign_02",
+   "tmb_liche_priest_campaign_02",
+   "wh2_dlc09_tmb_liche_priest_campaign_03",
+   "tmb_liche_priest_campaign_03",
+   "wh2_dlc09_tmb_liche_priest_campaign_04",
+   "tmb_liche_priest_campaign_04",
+   "wh2_dlc09_tmb_liche_priest_campaign_05",
+   "tmb_liche_priest_campaign_05",
+   "wh2_dlc09_tmb_liche_priest_casket",
+   "wh2_dlc09_tmb_necro_serpent",
+   "VariantMeshes/wh_variantmodels/sn1/tmb/tmb_necroserpents/body/tech",
+   "tmb_necro_serpent",
+   "wh2_dlc09_tmb_necro_serpent_khalida",
+   "wh2_dlc09_tmb_necro_serpent_ror",
+   "tmb_necro_serpent_ror",
+   "wh2_dlc09_tmb_necrosphinx",
+   "tmb_necrosphinx",
+   "wh2_dlc09_tmb_necrosphinx_ror",
+   "tmb_necrosphinx_ror",
+   "wh2_dlc09_tmb_necrotect",
+   "tmb_necrotect",
+   "wh2_dlc09_tmb_necrotect_campaign_01",
+   "tmb_necrotect_campaign_01",
+   "wh2_dlc09_tmb_necrotect_campaign_02",
+   "tmb_necrotect_campaign_02",
+   "wh2_dlc09_tmb_necrotect_campaign_03",
+   "tmb_necrotect_campaign_03",
+   "wh2_dlc09_tmb_necrotect_campaign_04",
+   "tmb_necrotect_campaign_04",
+   "wh2_dlc09_tmb_scorpion",
+   "tmb_scorpion",
+   "wh2_dlc09_tmb_sepulchral_stalkers_halberd",
+   "tmb_sepulchral_stalkers_halberd",
+   "wh2_dlc09_tmb_sepulchral_stalkers_halberd_ror",
+   "tmb_sepulchral_stalkers_halberd_ror",
+   "wh2_dlc09_tmb_settra_chariot_campaign",
+   "campaign_tmb_settra_chariot",
+   "wh2_dlc09_tmb_skeletal_steed",
+   "tmb_skeletal_steed",
+   "hr1/tmb/tmb_skeleton_steed/tmb_skeleton_steed_imposter",
+   "wh2_dlc09_tmb_skeletal_steed_campaign",
+   "wh2_dlc09_tmb_skeletal_steed_chariot",
+   "tmb_skeletal_steed_chariot",
+   "wh2_dlc09_tmb_skeletal_steed_hero",
+   "tmb_skeletal_steed_hero",
+   "wh2_dlc09_tmb_skeletal_steed_phakth_ror",
+   "tmb_skeletal_steed_phakth_ror",
+   "wh2_dlc09_tmb_skeleton_armoured_spear_scorpion_shield_ror",
+   "tmb_skeleton_armoured_spear_scorpion_shield_ror",
+   "wh2_dlc09_tmb_skeleton_armoured_sword_bow_ror",
+   "tmb_skeleton_armoured_sword_bow_ror",
+   "wh2_dlc09_tmb_skeleton_armoured_sword_dual",
+   "tmb_skeleton_armoured_sword_dual",
+   "wh2_dlc09_tmb_skeleton_armoured_sword_dual_ror",
+   "tmb_skeleton_armoured_sword_dual_ror",
+   "wh2_dlc09_tmb_skeleton_armoured_sword_shield",
+   "tmb_skeleton_armoured_sword_shield",
+   "wh2_dlc09_tmb_skeleton_armoured_sword_shield_ror",
+   "tmb_skeleton_armoured_sword_shield_ror",
+   "wh2_dlc09_tmb_skeleton_charioteer_whip",
+   "tmb_skeleton_charioteer_whip",
+   "wh2_dlc09_tmb_skeleton_halberd",
+   "tmb_skeleton_halberd",
+   "wh2_dlc09_tmb_skeleton_spear_shield",
+   "tmb_skeleton_spear_shield",
+   "wh2_dlc09_tmb_skeleton_sword",
+   "tmb_skeleton_sword",
+   "wh2_dlc09_tmb_skeleton_sword_bow",
+   "tmb_skeleton_sword_bow",
+   "wh2_dlc09_tmb_skeleton_sword_shield",
+   "tmb_skeleton_sword_shield",
+   "wh2_dlc09_tmb_tomb_guard_bow",
+   "tmb_tomb_guard_bow",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_bow_imposter",
+   "wh2_dlc09_tmb_tomb_guard_dual_swords_ror",
+   "tmb_tomb_guard_dual_swords_ror",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_dual_swords_imposter",
+   "wh2_dlc09_tmb_tomb_guard_halberd",
+   "tmb_tomb_guard_halberd",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_halberd_imposter",
+   "wh2_dlc09_tmb_tomb_guard_halberd_shield",
+   "tmb_tomb_guard_halberd_shield",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_halberd_shield_imposter",
+   "wh2_dlc09_tmb_tomb_guard_spear_shield",
+   "tmb_tomb_guard_spear_shield",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_spear_shield_imposter",
+   "wh2_dlc09_tmb_tomb_guard_spear_shield_ror",
+   "tmb_tomb_guard_spear_shield_ror",
+   "wh2_dlc09_tmb_tomb_guard_sword_shield",
+   "tmb_tomb_guard",
+   "hu1/tmb/tmb_tomb_guard/imposter/tmb_tomb_guard_imposter",
+   "wh2_dlc09_tmb_ushabti",
+   "tmb_ushabti",
+   "hu6e/tmb/tmb_ushabti/imposter/tmb_ushabti_imposter",
+   "wh2_dlc09_tmb_ushabti_great_bow",
+   "tmb_ushabti_great_bow",
+   "hu6e/tmb/tmb_ushabti/imposter/tmb_ushabti_great_bow_imposter",
+   "wh2_dlc09_tmb_ushabti_great_bow_ror",
+   "tmb_ushabti_great_bow_ror",
+   "wh2_dlc10_def_cold_one_armoured_ror",
+   "def_armoured_cold_one_ror",
+   "wh2_dlc10_def_cold_one_knights_rider_1_ror",
+   "def_knights_ror",
+   "wh2_dlc10_def_core_troop_spear_ror",
+   "def_core_troop_spear_ror",
+   "wh2_dlc10_def_crone_hellebron",
+   "def_crone",
+   "wh2_dlc10_def_dark_rider_crossbow_ror",
+   "def_dark_rider_crossbow_ror",
+   "wh2_dlc10_def_darkshards_shields_ror",
+   "def_darkshards_shields_ror",
+   "wh2_dlc10_def_doomfire_warlock",
+   "def_doomfire_warlock",
+   "wh2_dlc10_def_doomfire_warlock_ror",
+   "def_doomfire_warlock_ror",
+   "wh2_dlc10_def_har_ganeth_executioners_ror",
+   "def_har_ganeth_executioners_ror",
+   "wh2_dlc10_def_manticore",
+   "def_manticore",
+   "wh2_dlc10_def_manticore_feral",
+   "def_manticore_feral",
+   "wh2_dlc10_def_mon_kharibdyss",
+   "def_kharibdyss",
+   "wh2_dlc10_def_mon_war_hydra_boss",
+   "def_war_hydra",
+   "wh2_dlc10_def_mon_war_hydra_ror",
+   "def_war_hydra_ror",
+   "wh2_dlc10_def_sisters_of_slaughter",
+   "def_sisters_of_slaughter",
+   "hu1b/def/def_sisters_of_slaughter/imposter/def_sisters_of_slaughter_imposter",
+   "wh2_dlc10_def_supreme_sorceress",
+   "def_supreme_sorceress",
+   "wh2_dlc10_def_supreme_sorceress_campaign_01",
+   "def_supreme_sorceress_campaign_01",
+   "wh2_dlc10_def_supreme_sorceress_campaign_02",
+   "def_supreme_sorceress_campaign_02",
+   "wh2_dlc10_def_supreme_sorceress_campaign_03",
+   "def_supreme_sorceress_campaign_03",
+   "wh2_dlc10_def_supreme_sorceress_campaign_04",
+   "def_supreme_sorceress_campaign_04",
+   "wh2_dlc10_def_supreme_sorceress_campaign_05",
+   "def_supreme_sorceress_campaign_05",
+   "wh2_dlc10_def_witch_elf_ror",
+   "def_witch_elf_ror",
+   "wh2_dlc10_dwf_giant_slayers",
+   "dwf_giant_slayers",
+   "hu3/dwf/dwf_slayers/low_poly/dwf_slayers_lowlod",
+   "hu3/dwf/dwf_warriors/low_poly/super_imposter",
+   "wh2_dlc10_hef_alarielle",
+   "hef_alarielle",
+   "wh2_dlc10_hef_alarielle_campaign",
+   "hef_alarielle_campaign",
+   "wh2_dlc10_hef_alith_anar",
+   "hef_alith_anar",
+   "wh2_dlc10_hef_dragon_princes_ror",
+   "hef_dragon_prince_ror",
+   "wh2_dlc10_hef_dragon_steed_ror",
+   "hef_dragon_steed_ror",
+   "wh2_dlc10_hef_dryad",
+   "hef_dryad",
+   "wh2_dlc10_hef_hand_of_the_shadow_crown",
+   "hef_hand_of_the_shadow_crown",
+   "wh2_dlc10_hef_handmaiden",
+   "hef_handmaiden",
+   "wh2_dlc10_hef_handmaiden_campaign_01",
+   "hef_handmaiden_campaign_01",
+   "wh2_dlc10_hef_handmaiden_campaign_02",
+   "hef_handmaiden_campaign_02",
+   "wh2_dlc10_hef_handmaiden_campaign_03",
+   "hef_handmaiden_campaign_03",
+   "wh2_dlc10_hef_handmaiden_campaign_04",
+   "hef_handmaiden_campaign_04",
+   "wh2_dlc10_hef_handmaiden_campaign_05",
+   "hef_handmaiden_campaign_05",
+   "wh2_dlc10_hef_mon_phoenix_flamespyre_boss",
+   "hef_phoenix_flamespyre",
+   "wh2_dlc10_hef_phoenix_guard_ror",
+   "hef_phoenix_guard_ror",
+   "wh2_dlc10_hef_reaver_bow_ror",
+   "hef_reaver_bow_ror",
+   "wh2_dlc10_hef_sea_guard_shields_ror",
+   "hef_sea_guard_shields_ror",
+   "hu1d/hef/hef_lothern_sea_guard/imposter/hef_sea_guard_shields_imposter",
+   "wh2_dlc10_hef_shadow_walker",
+   "hef_shadow_walker",
+   "wh2_dlc10_hef_shadow_warrior",
+   "hef_shadow_warrior",
+   "wh2_dlc10_hef_shadow_warrior_ror",
+   "hef_shadow_warrior_ror",
+   "wh2_dlc10_hef_sisters_of_avelorn",
+   "hef_sisters_of_avelorn",
+   "wh2_dlc10_hef_sisters_of_avelorn_ror",
+   "hef_sisters_of_avelorn_ror",
+   "wh2_dlc10_hef_spearmen_ror",
+   "hef_spearmen_ror",
+   "wh2_dlc10_hef_steed_ror",
+   "hef_steed_ror",
+   "wh2_dlc10_hef_treekin",
+   "hef_treekin",
+   "wh2_dlc10_hef_treeman",
+   "hef_treeman",
+   "wh2_dlc10_hef_white_lions_of_chrace_ror",
+   "hef_white_lions_of_chrace_ror",
+   "wh2_dlc10_lzd_mon_carnosaur_boss",
+   "lzd_carnosaur_feral",
+   "wh2_dlc10_skv_mon_hell_pit_abomination_boss",
+   "skv_hell_pit_abomination",
+   "hu17/skv/skv_clan_rats/imposter/hu17_imposter",
+   "wh2_dlc11_campaign_cst_ship_agent",
+   "campaign_cst_ship_agent",
+   "wh2_dlc11_campaign_cst_ship_aranessa_01",
+   "campaign_cst_ship_aranessa_saltspite_01",
+   "wh2_dlc11_campaign_cst_ship_aranessa_02",
+   "campaign_cst_ship_aranessa_saltspite_02",
+   "wh2_dlc11_campaign_cst_ship_aranessa_03",
+   "campaign_cst_ship_aranessa_saltspite_03",
+   "wh2_dlc11_campaign_cst_ship_aranessa_04",
+   "campaign_cst_ship_aranessa_saltspite_04",
+   "wh2_dlc11_campaign_cst_ship_cylostra_01",
+   "campaign_cst_ship_cylostra_01",
+   "wh2_dlc11_campaign_cst_ship_cylostra_02",
+   "campaign_cst_ship_cylostra_02",
+   "wh2_dlc11_campaign_cst_ship_cylostra_03",
+   "campaign_cst_ship_cylostra_03",
+   "wh2_dlc11_campaign_cst_ship_cylostra_04",
+   "campaign_cst_ship_cylostra_04",
+   "wh2_dlc11_campaign_cst_ship_ghost",
+   "campaign_cst_ship_ghost",
+   "wh2_dlc11_campaign_cst_ship_harkon_01",
+   "campaign_cst_ship_luthor_harkon_01",
+   "wh2_dlc11_campaign_cst_ship_harkon_02",
+   "campaign_cst_ship_luthor_harkon_02",
+   "wh2_dlc11_campaign_cst_ship_harkon_03",
+   "campaign_cst_ship_luthor_harkon_03",
+   "wh2_dlc11_campaign_cst_ship_harkon_04",
+   "campaign_cst_ship_luthor_harkon_04",
+   "wh2_dlc11_campaign_cst_ship_noctilus_01",
+   "campaign_cst_ship_noctilus_01",
+   "wh2_dlc11_campaign_cst_ship_noctilus_02",
+   "campaign_cst_ship_noctilus_02",
+   "wh2_dlc11_campaign_cst_ship_noctilus_03",
+   "campaign_cst_ship_noctilus_03",
+   "wh2_dlc11_campaign_cst_ship_noctilus_04",
+   "campaign_cst_ship_noctilus_04",
+   "wh2_dlc11_campaign_cst_ship_transport",
+   "campaign_cst_ship_transport",
+   "wh2_dlc11_campaign_def_ship_lokhir_01",
+   "campaign_def_ship_fellheart_01",
+   "wh2_dlc11_campaign_def_ship_lokhir_02",
+   "campaign_def_ship_fellheart_02",
+   "wh2_dlc11_campaign_def_ship_lokhir_03",
+   "campaign_def_ship_fellheart_03",
+   "wh2_dlc11_cst_animated_hulk",
+   "cst_animated_hulk",
+   "hc02/cst/cst_animated_hulk/cst_animated_hulk_imposter",
+   "wh2_dlc11_cst_ch_aranessa_saltspite",
+   "cst_cha_aranessa_saltspite",
+   "wh2_dlc11_cst_ch_gunnery_wight_campaign_01",
+   "cst_gunnery_wight_campaign_01",
+   "wh2_dlc11_cst_ch_gunnery_wight_campaign_02",
+   "cst_gunnery_wight_campaign_02",
+   "wh2_dlc11_cst_ch_mourngul",
+   "cst_mourngul",
+   "gh4/cst/cst_mourngul_haunter/cst_mourngul_imposter",
+   "wh2_dlc11_cst_ch_mourngul_haunter",
+   "cst_mourngul_haunter",
+   "gh4/cst/cst_mourngul_haunter/cst_mourngul_haunter_imposter",
+   "wh2_dlc11_cst_ch_mourngul_haunter_campaign_01",
+   "cst_mourngul_haunter_campaign_01",
+   "wh2_dlc11_cst_ch_mourngul_haunter_campaign_02",
+   "cst_mourngul_haunter_campaign_02",
+   "wh2_dlc11_cst_ch_mourngul_haunter_campaign_03",
+   "cst_mourngul_haunter_campaign_03",
+   "wh2_dlc11_cst_ch_mourngul_ror",
+   "cst_mourngul_ror",
+   "gh4/cst/cst_mourngul_haunter/cst_mourngul_haunter_night_terror_imposter",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral",
+   "cst_fleet_admiral_male",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_female",
+   "cst_fleet_admiral",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_female_campaign_01",
+   "cst_cha_vampire_fleet_admiral_female_campaign_01",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_female_campaign_02",
+   "cst_cha_vampire_fleet_admiral_female_campaign_02",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_female_campaign_03",
+   "cst_cha_vampire_fleet_admiral_female_campaign_03",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_female_campaign_04",
+   "cst_cha_vampire_fleet_admiral_female_campaign_04",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_male_campaign_01",
+   "cst_vampire_fleet_admiral_male_campaign_01",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_male_campaign_02",
+   "cst_vampire_fleet_admiral_male_campaign_02",
+   "wh2_dlc11_cst_ch_vampire_fleet_admiral_male_campaign_03"
+  ]
+ },
+ "files": [
+  {
+   "path": "body/male_elf.rigid_model_v2",
+   "size": 2139372,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/male_elf.wsmodel",
+   "size": 1495,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/materials/male_arms_weighted4_alpha_on.xml.material",
+   "size": 2394,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/materials/male_legs_weighted4_alpha_on.xml.material",
+   "size": 2394,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/materials/male_torso_weighted4_alpha_on.xml.material",
+   "size": 2395,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/tex/elf_dude_arms_colour.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/tex/elf_dude_body_colour.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "body/tex/elf_dude_legs_colour.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/cats_branch_data__",
+   "size": 1232,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "db/culture_to_battle_animation_tables_tables/cats_dryad_data__",
+   "size": 129,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "db/land_units_tables/cats_dryad_data__",
+   "size": 4717,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "db/variants_tables/low_poli_data__",
+   "size": 294044,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_branchwraith_0.png",
+   "size": 60695,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_branchwraith_malicious_0.png",
+   "size": 59077,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0.png",
+   "size": 64643,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0_mask1.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0_mask2.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0.png",
+   "size": 61459,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0_mask1.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0_mask2.png",
+   "size": 7083,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0.png",
+   "size": 56319,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0_mask1.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0_mask2.png",
+   "size": 7082,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0.png",
+   "size": 56590,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0_mask1.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0_mask2.png",
+   "size": 7083,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0.png",
+   "size": 64405,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0_mask1.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0_mask2.png",
+   "size": 3138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0.png",
+   "size": 51534,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0_mask1.png",
+   "size": 7083,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0_mask2.png",
+   "size": 4908,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02.png",
+   "size": 52777,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02_0.png",
+   "size": 56455,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02_0_mask1.png",
+   "size": 146,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03.png",
+   "size": 54008,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03_0.png",
+   "size": 57605,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03_0_mask1.png",
+   "size": 146,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04.png",
+   "size": 60182,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0.png",
+   "size": 62480,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0_mask1.png",
+   "size": 7083,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0_mask2.png",
+   "size": 158,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05.png",
+   "size": 63065,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0.png",
+   "size": 59405,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0_mask1.png",
+   "size": 7082,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0_mask2.png",
+   "size": 148,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_branchwraith_0.png",
+   "size": 30212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_branchwraith_malicious_0.png",
+   "size": 30568,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0.png",
+   "size": 29089,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0_mask1.png",
+   "size": 5999,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_01_0_mask2.png",
+   "size": 168,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0.png",
+   "size": 27188,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0_mask1.png",
+   "size": 229,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_02_0_mask2.png",
+   "size": 5227,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0.png",
+   "size": 30667,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0_mask1.png",
+   "size": 6195,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_03_0_mask2.png",
+   "size": 5403,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0.png",
+   "size": 27598,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0_mask1.png",
+   "size": 334,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_04_0_mask2.png",
+   "size": 5181,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0.png",
+   "size": 28953,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0_mask1.png",
+   "size": 6446,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellsinger_campaign_05_0_mask2.png",
+   "size": 154,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0.png",
+   "size": 31222,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0_mask1.png",
+   "size": 7001,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_01_0_mask2.png",
+   "size": 7001,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02.png",
+   "size": 29248,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02_0.png",
+   "size": 28569,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02_0_mask1.png",
+   "size": 2848,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_02_mask1.png",
+   "size": 2883,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03.png",
+   "size": 28753,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03_0.png",
+   "size": 29716,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03_0_mask1.png",
+   "size": 7002,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_03_mask1.png",
+   "size": 2874,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04.png",
+   "size": 29406,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0.png",
+   "size": 29958,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0_mask1.png",
+   "size": 2848,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_0_mask2.png",
+   "size": 7002,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_mask1.png",
+   "size": 2904,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_04_mask2.png",
+   "size": 7002,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05.png",
+   "size": 29102,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0.png",
+   "size": 30981,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0_mask1.png",
+   "size": 2884,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_0_mask2.png",
+   "size": 7000,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_mask1.png",
+   "size": 2922,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh_dlc05_wef_wood_elves/wef_spellweaver_campaign_05_mask2.png",
+   "size": 7002,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc16_wef_bladesingers.png",
+   "size": 30367,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc16_wef_malicious_dryads.png",
+   "size": 25621,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh2_dlc16_wef_ror_dryads.png",
+   "size": 25521,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_dryads.png",
+   "size": 26111,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard.png",
+   "size": 31320,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_eternal_guard_shield.png",
+   "size": 36244,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_sisters_thorn.png",
+   "size": 30970,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wardancers.png",
+   "size": 32763,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wardancers_spear.png",
+   "size": 28772,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_dlc05_wef_wildwood_ranger.png",
+   "size": 31776,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_eternal_guard_shield.png",
+   "size": 34051,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_wardancers_spear.png",
+   "size": 26605,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/icons/wh_pro04_wef_ror_wildwood_ranger.png",
+   "size": 30234,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_0.png",
+   "size": 64618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_0_mask1.png",
+   "size": 706,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_0_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_1.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_1_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_1_mask2.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_2.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_2_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_2_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_3.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_3_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_beasts_3_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_0.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_0_mask1.png",
+   "size": 706,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_0_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_1.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_1_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_1_mask2.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_2.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_2_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_2_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_3.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_3_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_dark_3_mask2.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_0.png",
+   "size": 64620,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_0_mask1.png",
+   "size": 706,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_0_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_1.png",
+   "size": 64620,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_1_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_1_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_2.png",
+   "size": 64620,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_2_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_2_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_3.png",
+   "size": 64620,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_3_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_high_3_mask2.png",
+   "size": 4868,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_0.png",
+   "size": 64618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_0_mask1.png",
+   "size": 706,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_0_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_1.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_1_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_1_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_2.png",
+   "size": 64617,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_2_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_2_mask2.png",
+   "size": 4868,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_3.png",
+   "size": 64619,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_3_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_life_3_mask2.png",
+   "size": 4868,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_0.png",
+   "size": 64618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_0_mask1.png",
+   "size": 706,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_0_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_1.png",
+   "size": 64618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_1_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_1_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_2.png",
+   "size": 64618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_2_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_2_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_3.png",
+   "size": 64620,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_3_mask1.png",
+   "size": 722,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_cha_spellweaver_shadows_3_mask2.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_inf_bladesingers_0.png",
+   "size": 63439,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_inf_dryads_0_summoned.png",
+   "size": 44373,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_inf_dryads_ror_0.png",
+   "size": 60870,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh2_dlc16_wef_inf_malicious_dryads_0.png",
+   "size": 44373,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_cav_sisters_thorn_0.png",
+   "size": 55900,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_dryads_0.png",
+   "size": 49947,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_dryads_0_mask1.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_eternal_guard_0.png",
+   "size": 49955,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_eternal_guard_1.png",
+   "size": 49955,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_eternal_guard_1_qb.png",
+   "size": 49955,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_0.png",
+   "size": 44132,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_0_mask1.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_0_mask2.png",
+   "size": 570,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_1.png",
+   "size": 40159,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_1_mask1.png",
+   "size": 4868,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wardancers_1_mask2.png",
+   "size": 561,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wildwood_rangers_0.png",
+   "size": 53683,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wildwood_rangers_0_mask1.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_dlc05_wef_inf_wildwood_rangers_0_mask2.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_pro04_wef_inf_eternal_guard_ror_0.png",
+   "size": 51319,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_pro04_wef_inf_wardancers_ror_0.png",
+   "size": 62211,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_pro04_wef_inf_wildwood_rangers_ror_0.png",
+   "size": 53899,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_pro04_wef_inf_wildwood_rangers_ror_0_mask1.png",
+   "size": 4867,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "ui/units/minspec_portholes/wh_pro04_wef_inf_wildwood_rangers_ror_0_mask2.png",
+   "size": 4866,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_bladesinger.variantmeshdefinition",
+   "size": 2697,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_branchwraith.variantmeshdefinition",
+   "size": 311,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_branchwraith_malicious.variantmeshdefinition",
+   "size": 316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_dryad.variantmeshdefinition",
+   "size": 2173,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_dryad_malicious.variantmeshdefinition",
+   "size": 2233,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_dryad_ror.variantmeshdefinition",
+   "size": 2293,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard.variantmeshdefinition",
+   "size": 4166,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_shield.variantmeshdefinition",
+   "size": 1273,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_eternal_guard_spears_set2.variantmeshdefinition",
+   "size": 651,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_sister_thorn.variantmeshdefinition",
+   "size": 3697,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_sister_thorn_javelin_set.variantmeshdefinition",
+   "size": 1035,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger.variantmeshdefinition",
+   "size": 2360,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_campaign_01.variantmeshdefinition",
+   "size": 2455,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_campaign_02.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_campaign_03.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_campaign_04.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_campaign_05.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_mounted.variantmeshdefinition",
+   "size": 2360,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_mp_mounted_01.variantmeshdefinition",
+   "size": 2455,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_mp_mounted_02.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellsinger_mp_mounted_03.variantmeshdefinition",
+   "size": 2422,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_battle_01.variantmeshdefinition",
+   "size": 779,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_battle_02.variantmeshdefinition",
+   "size": 779,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_battle_03.variantmeshdefinition",
+   "size": 779,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_battle_04.variantmeshdefinition",
+   "size": 779,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_battle_05.variantmeshdefinition",
+   "size": 779,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_campaign_01.variantmeshdefinition",
+   "size": 936,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_campaign_02.variantmeshdefinition",
+   "size": 936,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_campaign_03.variantmeshdefinition",
+   "size": 936,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_campaign_04.variantmeshdefinition",
+   "size": 936,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_spellweaver_campaign_05.variantmeshdefinition",
+   "size": 936,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wardancer.variantmeshdefinition",
+   "size": 776,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wardancer_base.variantmeshdefinition",
+   "size": 3669,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wardancer_spear.variantmeshdefinition",
+   "size": 1183,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wardancer_spear_ror.variantmeshdefinition",
+   "size": 4727,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wildwood_rangers.variantmeshdefinition",
+   "size": 5057,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/wef_wildwood_rangers_ror.variantmeshdefinition",
+   "size": 5625,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_diffuse.dds",
+   "size": 16777392,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_green_diffuse.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_head_green_02_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_head_green_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_legs_green_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_mask.dds",
+   "size": 11184976,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_material_map.dds",
+   "size": 5592572,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_normal.dds",
+   "size": 16777392,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_dryad_tail_base_colour.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_evil_dryad_diffuse.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_evil_dryad_flower_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_evil_dryad_head_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_evil_dryad_legs_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_evil_dryad_tail_base_colour.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_frost_dryad_diffuse.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_frost_dryad_flower_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_frost_dryad_head_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_frost_dryad_legs_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_dryad_tex/cor_frost_dryad_tail_base_colour.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_hair_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_hair_01_material.dds",
+   "size": 349680,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_hair_01_normal.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_hair_02_base_colour.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_hair_03_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_arms_01_base_colour.dds",
+   "size": 5592572,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_arms_01_mask.dds",
+   "size": 699216,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_arms_01_material_map.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_arms_01_normal.dds",
+   "size": 11184976,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_body_base_colour.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_body_material_map.dds",
+   "size": 5592572,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_body_normal.dds",
+   "size": 16777392,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_head_01_mask.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellsinger_head_01_normal.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_spell_tex/cor_spellweaver_body_basic_colour.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_thorn_tex/cor_sisters_of_the_thorn_legs_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_thorn_tex/cor_sisters_of_the_thorn_torso_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_thorn_tex/cor_thorn_spear_1h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_thorn_tex/cor_wef_sisters_of_the_thorn_staff_1h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/b_thorn_tex/cor_wildriders_light_lance_1h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_def_crone_hellebron_head_01_mask.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_def_crone_hellebron_head_01_normal.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_wef_bladesinger_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_wef_bladesinger_head_01_mask.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_wef_bladesinger_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/cust_wef_bladesinger_head_01_normal.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_arms_1_mask.dds",
+   "size": 262272,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_arms_1_material.dds",
+   "size": 699192,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_arms_1_normal.dds",
+   "size": 349680,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_arms_3_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_nude_body_mat.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_nude_body_norm.dds",
+   "size": 16777392,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_nude_body_tat_belly_basecolour.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/fem_nude_body_tat_belly_basecolour_2.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/flower_nae_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/flower_nae_mask.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/flower_nae_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/flower_nae_normal.dds",
+   "size": 1398256,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_01_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_02_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_03_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_04_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_05_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_body_01_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_body_02_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_body_03_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_body_04_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_bladesinger_body_05_diffuse.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_glade_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_glade_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_glade_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_01_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_02_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_03_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_04_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_05_diffuse.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_blue_specular.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/shadowdancer_hellebron_green_specular.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladedancer_tex/wef_shadowdancer_head_01_specular.dds",
+   "size": 1398276,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/bladesinger_tex/cor_wef_bladesinger_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_elf_dude_arms_colour.dds",
+   "size": 2796364,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_elf_dude_body_colour.dds",
+   "size": 2796364,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_elf_dude_legs_colour.dds",
+   "size": 2796364,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_arms_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_cape_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_head_01_copy.rigid_model_v2",
+   "size": 622602,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_headguard_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/cor_eternal_guard_legs_01_base_colour.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_arms_material.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_arms_normal.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_body_material.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_body_normal.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_legs_material.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/eternal_tex/elf_dude_legs_normal.dds",
+   "size": 2796344,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/fairy/cust_witch_diffuse.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/dae/dae_cultist_of_slaanesh/tex/body_material_map.dds",
+   "size": 11184996,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_01.rigid_model_v2",
+   "size": 2674236,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_01.wsmodel",
+   "size": 8918,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_02.rigid_model_v2",
+   "size": 1847258,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_02.wsmodel",
+   "size": 8902,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_03.rigid_model_v2",
+   "size": 1685240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_body_03.wsmodel",
+   "size": 6026,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_01.rigid_model_v2",
+   "size": 882390,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_01.wsmodel",
+   "size": 1618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_02.rigid_model_v2",
+   "size": 802056,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_02.wsmodel",
+   "size": 1618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_03.rigid_model_v2",
+   "size": 814122,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/cor_bladesinger_head_03.wsmodel",
+   "size": 1618,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/body_group_02_lod1_submesh_0_sub_weighted2_alpha_off.xml.material",
+   "size": 2574,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/body_group_02_lod1_submesh_0_sub_weighted4_alpha_off.xml.material",
+   "size": 2574,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/dae_daemonette_herald_body_01_weighted4_alpha_on.xml.material",
+   "size": 2737,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/dae_prince_arm_r_scythe_05_subme_weighted4_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/dae_steed_of_slaanesh_01_submesh_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/dae_steed_of_slaanesh_01_submesh_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2519,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_submesh_0_weighted4_alpha_off.xml.material",
+   "size": 2602,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2607,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_weighted2_alpha_off.xml.material",
+   "size": 2511,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_weighted4_alpha_off.xml.material",
+   "size": 2511,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/jadebody_weighted4_alpha_on.xml.material",
+   "size": 2500,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/leather_harness_corset_lod1_subm_weighted2_alpha_off.xml.material",
+   "size": 2550,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/leather_harness_corset_lod1_subm_weighted2_alpha_on.xml.material",
+   "size": 2555,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/leather_harness_corset_lod1_subm_weighted4_alpha_off.xml.material",
+   "size": 2489,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/leather_harness_corset_lod1_subm_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_body_02_submesh__weighted2_alpha_off.xml.material",
+   "size": 2583,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_body_02_submesh__weighted4_alpha_off.xml.material",
+   "size": 2583,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_body_02_submesh__weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_head_01_submesh__weighted2_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_head_01_submesh__weighted4_alpha_off.xml.material",
+   "size": 2678,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_bladesinger_head_02_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/materials/wef_wardancers_legs_01_submesh_3_weighted4_alpha_on.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/wef_bladesinger_imposter.rigid_model_v2",
+   "size": 19572,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_javelin_1h_01.rigid_model_v2",
+   "size": 49426,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_javelin_1h_02.rigid_model_v2",
+   "size": 56396,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_javelin_1h_03.rigid_model_v2",
+   "size": 61948,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_01.rigid_model_v2",
+   "size": 157612,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_01.wsmodel",
+   "size": 893,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_02.rigid_model_v2",
+   "size": 153694,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_02.wsmodel",
+   "size": 893,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_03.rigid_model_v2",
+   "size": 158694,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_sisters_of_the_thorn_staff_1h_03.wsmodel",
+   "size": 1219,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_thorn_spear_2h_01.rigid_model_v2",
+   "size": 86268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_thorn_spear_2h_02.rigid_model_v2",
+   "size": 98124,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_props/cor_thorn_spear_2h_03.rigid_model_v2",
+   "size": 109612,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_01.rigid_model_v2",
+   "size": 999138,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_01.wsmodel",
+   "size": 6345,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_02.rigid_model_v2",
+   "size": 899140,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_02.wsmodel",
+   "size": 7173,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_03.rigid_model_v2",
+   "size": 971080,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_03.wsmodel",
+   "size": 6941,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_04.rigid_model_v2",
+   "size": 838978,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/cor_sisters_of_the_thorn_head_04.wsmodel",
+   "size": 6393,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/def_crone_hellebron_head_01_02___weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/def_crone_hellebron_head_01_02__weighted2_alpha_off.xml.material",
+   "size": 2599,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/def_crone_hellebron_head_01_02__weighted4_alpha_off.xml.material",
+   "size": 2599,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/def_crone_hellebron_head_01_02__weighted4_alpha_on.xml.material",
+   "size": 2604,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/def_dreadlord_female_head_03_sub_weighted4_alpha_on.xml.material",
+   "size": 2712,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_01_submesh__weighted2_alpha_on.xml.material",
+   "size": 2692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_01_weighted2_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_01_weighted4_alpha_on.xml.material",
+   "size": 2683,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_02_05_lod1__weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_02_05_lod1__weighted4_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_bladesinger_head_02_05_lod1__weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_eternal_guard_head_01_submes_weighted4_alpha_on.xml.material",
+   "size": 2625,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_eternal_guard_head_02_submes_1_weighted4_alpha_on.xml.material",
+   "size": 2710,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_glade_captain_head_05_06_lo__weighted2_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_glade_captain_head_05_06_lo__weighted4_alpha_off.xml.material",
+   "size": 2680,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/head/materials/wef_glade_captain_head_05_06_lo__weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/imposter/tex/wef_sisters_of_the_thorn_imposter_base_colour.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/imposter/tex/wef_sisters_of_the_thorn_imposter_mask.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/imposter/tex/wef_sisters_of_the_thorn_imposter_material_map.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/imposter/tex/wef_sisters_of_the_thorn_imposter_normal.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/imposter/wef_sisters_of_the_thorn_spear_spear_imposter.rigid_model_v2",
+   "size": 20264,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_l_01.rigid_model_v2",
+   "size": 76480,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_l_02.rigid_model_v2",
+   "size": 82370,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_l_03.rigid_model_v2",
+   "size": 87394,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_r_01.rigid_model_v2",
+   "size": 76374,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_r_02.rigid_model_v2",
+   "size": 82622,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/javelin/cor_sisters_of_the_thorn_javelin_r_03.rigid_model_v2",
+   "size": 87596,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_01.rigid_model_v2",
+   "size": 822490,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_01.wsmodel",
+   "size": 5449,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_02.rigid_model_v2",
+   "size": 702568,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_02.wsmodel",
+   "size": 4657,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_03.rigid_model_v2",
+   "size": 715338,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/cor_sisters_of_the_thorn_legs_03.wsmodel",
+   "size": 4657,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/materials/def_crone_hellebron_body_01_subm_weighted4_alpha_on.xml.material",
+   "size": 2724,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/materials/jadebody_weighted4_alpha_on.xml.material",
+   "size": 2514,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/materials/wef_sisters_of_the_thorn_legs_0__weighted4_alpha_off.xml.material",
+   "size": 2733,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/legs/materials/wef_sisters_of_the_thorn_legs_0__weighted4_alpha_on.xml.material",
+   "size": 2738,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_helm_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_helm_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_helm_01_normal.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_legs_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_legs_01_mask.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_legs_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_legs_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_torso_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_torso_01_mask.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_torso_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/tex/wef_sisters_of_the_thorn_torso_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_01.rigid_model_v2",
+   "size": 1087834,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_01.wsmodel",
+   "size": 6991,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_02.rigid_model_v2",
+   "size": 1000460,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_02.wsmodel",
+   "size": 6267,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_03.rigid_model_v2",
+   "size": 841120,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_03.wsmodel",
+   "size": 6275,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_04.rigid_model_v2",
+   "size": 840314,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/cor_sisters_of_the_thorn_torso_04.wsmodel",
+   "size": 5463,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/body_group_02_lod1_submesh_0_sub_weighted4_alpha_on.xml.material",
+   "size": 2579,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/wef_sisters_of_the_thorn_torso___1_weighted2_alpha_off.xml.material",
+   "size": 2637,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/wef_sisters_of_the_thorn_torso___1_weighted4_alpha_on.xml.material",
+   "size": 2642,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/wef_sisters_of_the_thorn_torso___weighted2_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/wef_sisters_of_the_thorn_torso___weighted4_alpha_off.xml.material",
+   "size": 2737,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_sisters_of_the_thorn/torso/materials/wef_sisters_of_the_thorn_torso___weighted4_alpha_on.xml.material",
+   "size": 2742,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/cape/cor_spellsingers_cape_01.rigid_model_v2",
+   "size": 252,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/cape/cor_spellsingers_cape_01.wsmodel",
+   "size": 904,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_01.rigid_model_v2",
+   "size": 882802,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_01.wsmodel",
+   "size": 3205,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_02.rigid_model_v2",
+   "size": 492252,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_02.wsmodel",
+   "size": 2437,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_03.rigid_model_v2",
+   "size": 1224280,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/cor_spellsingers_head_03.wsmodel",
+   "size": 3869,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/materials/dae_daemonette_head_favoured_03__weighted4_alpha_on.xml.material",
+   "size": 2720,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/materials/dae_daemonette_herald_head_05_su_weighted4_alpha_on.xml.material",
+   "size": 2740,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/materials/def_supreme_sorceress_head_05_su_weighted4_alpha_on.xml.material",
+   "size": 2624,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/materials/new_hair_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/head/materials/wef_bladesinger_head_01_weighted4_alpha_off.xml.material",
+   "size": 2649,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_01.rigid_model_v2",
+   "size": 1607514,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_01.wsmodel",
+   "size": 4589,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_02.rigid_model_v2",
+   "size": 1457298,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_02.wsmodel",
+   "size": 4589,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_03.rigid_model_v2",
+   "size": 1361146,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/legs/cor_spellsingers_legs_03.wsmodel",
+   "size": 3193,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_01.rigid_model_v2",
+   "size": 1412538,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_01.wsmodel",
+   "size": 4591,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_02.rigid_model_v2",
+   "size": 1301198,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_02.wsmodel",
+   "size": 3815,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_03.rigid_model_v2",
+   "size": 1158218,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_03.wsmodel",
+   "size": 3815,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_04.rigid_model_v2",
+   "size": 936634,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/cor_spellsingers_torso_04.wsmodel",
+   "size": 3195,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/materials/def_witch_elves_body_02_submesh__weighted4_alpha_on.xml.material",
+   "size": 2629,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/materials/merged_dae_keeper_of_secrets_bo__weighted4_alpha_on.xml.material",
+   "size": 2744,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellsingers/torso/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2533,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_body_01.rigid_model_v2",
+   "size": 3251148,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_body_01.wsmodel",
+   "size": 4554,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_hair_01_campaign.rigid_model_v2",
+   "size": 1012612,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_hair_01_campaign.wsmodel",
+   "size": 2351,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_head_01.rigid_model_v2",
+   "size": 1260614,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/cor_spellweaver_head_01.wsmodel",
+   "size": 3102,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/hair/wef_spellweaver_hair_01_rigid.rigid_model_v2",
+   "size": 252,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/hair/wef_spellweaver_hair_01_rigid.wsmodel",
+   "size": 193,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2534,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_spellweaver/materials/new_hair_weighted4_alpha_on.xml.material",
+   "size": 2577,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_01.rigid_model_v2",
+   "size": 683366,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_01.wsmodel",
+   "size": 4625,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_02.rigid_model_v2",
+   "size": 595882,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_02.wsmodel",
+   "size": 4801,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_03.rigid_model_v2",
+   "size": 614412,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_03.wsmodel",
+   "size": 4765,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_04.rigid_model_v2",
+   "size": 553410,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_04.wsmodel",
+   "size": 3949,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_05.rigid_model_v2",
+   "size": 747578,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/cor_wardancers_head_05.wsmodel",
+   "size": 5381,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/materials/dae_daemonette_head_favoured_03__weighted4_alpha_on.xml.material",
+   "size": 2720,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/materials/def_crone_hellebron_head_01_02___weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/materials/def_crone_hellebron_head_01_02__weighted4_alpha_on.xml.material",
+   "size": 2604,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/materials/wef_bladesinger_head_02_05_lod1__weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/head/materials/wef_glade_captain_head_05_06_lo__weighted4_alpha_on.xml.material",
+   "size": 2685,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/tex/wef_wardancers_imposter_base_colour.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/tex/wef_wardancers_imposter_mask.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/tex/wef_wardancers_imposter_material_map.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/tex/wef_wardancers_imposter_normal.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/wef_wardancers_spear_imposter.rigid_model_v2",
+   "size": 19956,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/imposter/wef_wardancers_sword_sword_imposter.rigid_model_v2",
+   "size": 19728,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_01.rigid_model_v2",
+   "size": 883126,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_01.wsmodel",
+   "size": 5213,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_02.rigid_model_v2",
+   "size": 840712,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_02.wsmodel",
+   "size": 5213,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_03.rigid_model_v2",
+   "size": 823150,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/legs/cor_wardancers_legs_03.wsmodel",
+   "size": 5213,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_head_01_alphaoff_optimized_weighted2.xml.material",
+   "size": 2759,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_head_01_alphaoff_weighted2.xml.material",
+   "size": 2666,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_head_01_alphaoff_weighted4.xml.material",
+   "size": 2666,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_head_01_weighted4.xml.material",
+   "size": 2663,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_legs_01_alphaoff_weighted2.xml.material",
+   "size": 2666,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_legs_01_weighted2.xml.material",
+   "size": 2663,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_legs_01_weighted2_alpha_off.xml.material",
+   "size": 2809,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_legs_01_weighted4.xml.material",
+   "size": 2663,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_legs_01_weighted4_alpha_off.xml.material",
+   "size": 2673,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_torso_01_alphaoff_weighted2.xml.material",
+   "size": 2671,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_torso_01_alphaoff_weighted4.xml.material",
+   "size": 2671,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/materials/wef_wardancers_torso_01_weighted4.xml.material",
+   "size": 2668,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_legs_01_base_colour.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_legs_01_mask.dds",
+   "size": 699200,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_legs_01_material_map.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_legs_01_normal.dds",
+   "size": 699200,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_torso_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_torso_01_mask.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_torso_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/tex/wef_wardancers_torso_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_01.rigid_model_v2",
+   "size": 908058,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_01.wsmodel",
+   "size": 5287,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_02.rigid_model_v2",
+   "size": 889904,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_02.wsmodel",
+   "size": 5275,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_03.rigid_model_v2",
+   "size": 933020,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_03.wsmodel",
+   "size": 6031,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_04.rigid_model_v2",
+   "size": 780480,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_04.wsmodel",
+   "size": 4511,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_05.rigid_model_v2",
+   "size": 980216,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/cor_wardancers_torso_05.wsmodel",
+   "size": 5267,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/materials/jadebody_weighted4_alpha_on.xml.material",
+   "size": 2516,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_wardancers/torso/materials/wef_bladesinger_body_02_submesh__1_weighted4_alpha_on.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_01.rigid_model_v2",
+   "size": 467132,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_01.wsmodel",
+   "size": 2539,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_02.rigid_model_v2",
+   "size": 477194,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_02.wsmodel",
+   "size": 3339,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_03.rigid_model_v2",
+   "size": 396214,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_03.wsmodel",
+   "size": 1747,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_04.rigid_model_v2",
+   "size": 501738,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_04.wsmodel",
+   "size": 2539,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_05.rigid_model_v2",
+   "size": 429122,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/cor_eternal_guard_head_05.wsmodel",
+   "size": 3339,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/def_dreadlord_female_head_03_sub_weighted2_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/def_dreadlord_female_head_03_sub_weighted4_alpha_off.xml.material",
+   "size": 2707,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_1_weighted2_alpha_off.xml.material",
+   "size": 2622,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_1_weighted4_alpha_off.xml.material",
+   "size": 2622,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_01_submes_weighted4_alpha_on.xml.material",
+   "size": 2689,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/head/materials/wef_eternal_guard_head_02_submes_1_weighted2_alpha_off.xml.material",
+   "size": 2705,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/tex/wef_eternal_guard_imposter_base_colour.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/tex/wef_eternal_guard_imposter_mask.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/tex/wef_eternal_guard_imposter_material_map.dds",
+   "size": 11084,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/tex/wef_eternal_guard_imposter_normal.dds",
+   "size": 21984,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/wef_eternal_guard_shield_imposter.rigid_model_v2",
+   "size": 24056,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/imposter/wef_eternal_guard_spear_imposter.rigid_model_v2",
+   "size": 24400,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_01.rigid_model_v2",
+   "size": 704298,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_01.wsmodel",
+   "size": 3819,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_02.rigid_model_v2",
+   "size": 620728,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_02.wsmodel",
+   "size": 3819,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_03.rigid_model_v2",
+   "size": 712142,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/cor_eternal_guard_legs_03.wsmodel",
+   "size": 3819,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/male_legs_weighted2_alpha_off.xml.material",
+   "size": 2389,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/male_legs_weighted4_alpha_on.xml.material",
+   "size": 2500,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_1_weighted2_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_1_weighted4_alpha_off.xml.material",
+   "size": 2686,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_1_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_weighted2_alpha_off.xml.material",
+   "size": 2597,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_weighted4_alpha_off.xml.material",
+   "size": 2597,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_01_submes_weighted4_alpha_on.xml.material",
+   "size": 2602,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_03_submes_weighted2_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/legs/materials/wef_eternal_guard_legs_03_submes_weighted4_alpha_off.xml.material",
+   "size": 2684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_cape_01_alphaoff_weighted2.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_cape_01_alphaoff_weighted4.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_head_01_alphaoff_weighted2.xml.material",
+   "size": 2629,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_head_01_alphaoff_weighted4.xml.material",
+   "size": 2629,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_head_01_weighted4.xml.material",
+   "size": 2690,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_legs_01_alphaoff_weighted2.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_legs_01_alphaoff_weighted4.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_torso_01_alphaoff_weighted2.xml.material",
+   "size": 2633,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/materials/wef_eternal_guard_torso_01_alphaoff_weighted4.xml.material",
+   "size": 2633,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_mask.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_cape_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_legs_01_base_colour.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_legs_01_mask.dds",
+   "size": 699200,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_legs_01_material_map.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_legs_01_normal.dds",
+   "size": 699200,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_torso_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_torso_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/tex/wef_eternal_guard_torso_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_01.rigid_model_v2",
+   "size": 1379952,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_01.wsmodel",
+   "size": 6829,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_02.rigid_model_v2",
+   "size": 1154934,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_02.wsmodel",
+   "size": 4593,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_03.rigid_model_v2",
+   "size": 1096736,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_03.wsmodel",
+   "size": 4517,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_04.rigid_model_v2",
+   "size": 1302310,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_04.wsmodel",
+   "size": 6829,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_05.rigid_model_v2",
+   "size": 1308520,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/cor_eternal_guard_torso_05.wsmodel",
+   "size": 6829,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/male_arms_weighted2_alpha_off.xml.material",
+   "size": 2476,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/male_arms_weighted4_alpha_off.xml.material",
+   "size": 2476,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/male_arms_weighted4_alpha_on.xml.material",
+   "size": 2500,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/male_torso_submesh_0_weighted2_alpha_off.xml.material",
+   "size": 2400,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/male_torso_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2590,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2590,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_cape_01_weighted4_alpha_on.xml.material",
+   "size": 2595,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_subme_weighted2_alpha_off.xml.material",
+   "size": 2622,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_subme_weighted4_alpha_off.xml.material",
+   "size": 2622,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_03_subme_weighted4_alpha_on.xml.material",
+   "size": 2627,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_eternal_guard_torso_04_subme_weighted4_alpha_on.xml.material",
+   "size": 2627,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_eternal_guard/torso/materials/wef_wildwood_rangers_torso_05_su_weighted4_alpha_on.xml.material",
+   "size": 2665,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_shield_tower_01.rigid_model_v2",
+   "size": 90916,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_shield_tower_03.rigid_model_v2",
+   "size": 119278,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_shield_tower_04.rigid_model_v2",
+   "size": 90480,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_spear_1h_01.rigid_model_v2",
+   "size": 54788,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_spear_1h_02.rigid_model_v2",
+   "size": 65304,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/cor_wildwood_spear_1h_03.rigid_model_v2",
+   "size": 89308,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/wef_wildwood_rangers_sword_2h_01.rigid_model_v2",
+   "size": 53336,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/wef_wildwood_rangers_sword_2h_02.rigid_model_v2",
+   "size": 50848,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/wef_wildwood_rangers_sword_2h_03.rigid_model_v2",
+   "size": 49396,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_props/wef_wildwood_rangers_sword_2h_04.rigid_model_v2",
+   "size": 49236,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_01.rigid_model_v2",
+   "size": 247206,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_01.wsmodel",
+   "size": 1724,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_02.rigid_model_v2",
+   "size": 281364,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_02.wsmodel",
+   "size": 1711,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_03.rigid_model_v2",
+   "size": 271008,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_03.wsmodel",
+   "size": 1711,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_04.rigid_model_v2",
+   "size": 278306,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_04.wsmodel",
+   "size": 1711,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_05.rigid_model_v2",
+   "size": 263180,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/cor_wildwood_rangers_head_05.wsmodel",
+   "size": 1711,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_01_sub_weighted2_alpha_off.xml.material",
+   "size": 2697,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_01_weighted2_alpha_off.xml.material",
+   "size": 2691,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_01_weighted2_alpha_on.xml.material",
+   "size": 2696,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_01_weighted4_alpha_on.xml.material",
+   "size": 2696,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/head/materials/wef_wildwood_rangers_head_02_weighted4_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_01.rigid_model_v2",
+   "size": 857924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_01.wsmodel",
+   "size": 2403,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_02.rigid_model_v2",
+   "size": 960254,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_02.wsmodel",
+   "size": 5336,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_03.rigid_model_v2",
+   "size": 824206,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/legs/cor_wildwood_rangers_legs_03.wsmodel",
+   "size": 2403,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_cape_01.rigid_model_v2",
+   "size": 109870,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_cape_01.wsmodel",
+   "size": 966,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_01.rigid_model_v2",
+   "size": 1487684,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_01.wsmodel",
+   "size": 5891,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_02.rigid_model_v2",
+   "size": 1494832,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_02.wsmodel",
+   "size": 5891,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_03.rigid_model_v2",
+   "size": 1433188,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_03.wsmodel",
+   "size": 5891,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_04.rigid_model_v2",
+   "size": 1370592,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_04.wsmodel",
+   "size": 5143,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_05.rigid_model_v2",
+   "size": 1342738,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/cor_wildwood_rangers_torso_05.wsmodel",
+   "size": 5891,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/wef_wildwood_rangers_cape_01_weighted2_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/wef_wildwood_rangers_cape_01_weighted4_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/wef_zoat_body_01_submesh_3_subme_weighted2_alpha_off.xml.material",
+   "size": 2610,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1d/wef/wef_wildwood_rangers/torso/materials/wef_zoat_body_01_submesh_3_subme_weighted4_alpha_on.xml.material",
+   "size": 2615,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/tex/wef_ariel_01_base_colour.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/tex/wef_ariel_01_mask.dds",
+   "size": 2796352,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/tex/wef_ariel_01_material_map.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/tex/wef_ariel_01_normal.dds",
+   "size": 2796352,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/wef_ariel_01.rigid_model_v2",
+   "size": 1687406,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_ariel/wef_ariel_01.wsmodel",
+   "size": 1126,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/materials/wef_ariel_01_weighted2_alpha_off.xml.material",
+   "size": 4849,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/materials/wef_ariel_01_weighted4_alpha_off.xml.material",
+   "size": 4849,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/materials/wef_ariel_01_weighted4_alpha_on.xml.material",
+   "size": 4860,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/materials/wef_ariel_spear_1h_01_alpha_off.xml.material",
+   "size": 4814,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/materials/wef_ariel_spear_1h_01_alpha_on.xml.material",
+   "size": 4835,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/tex/wef_ariel_spear_1h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/tex/wef_ariel_spear_1h_01_mask.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/tex/wef_ariel_spear_1h_01_material_map.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/tex/wef_ariel_spear_1h_01_normal.dds",
+   "size": 349664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/wef_ariel_spear_1h_01.rigid_model_v2",
+   "size": 119288,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1f/wef/wef_props/wef_ariel_spear_1h_01.wsmodel",
+   "size": 1129,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_01.rigid_model_v2",
+   "size": 3095144,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_01.wsmodel",
+   "size": 3668,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_02.rigid_model_v2",
+   "size": 2883008,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_02.wsmodel",
+   "size": 3668,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_03.rigid_model_v2",
+   "size": 2708430,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_03.wsmodel",
+   "size": 2992,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_04.rigid_model_v2",
+   "size": 3095144,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_dryads_body_04.wsmodel",
+   "size": 3668,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_01.rigid_model_v2",
+   "size": 3095144,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_01.wsmodel",
+   "size": 3717,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_02.rigid_model_v2",
+   "size": 2883008,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_02.wsmodel",
+   "size": 3717,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_03.rigid_model_v2",
+   "size": 2708430,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_03.wsmodel",
+   "size": 3041,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_evil_dryads_body_04.wsmodel",
+   "size": 3712,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_01.rigid_model_v2",
+   "size": 3095144,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_01.wsmodel",
+   "size": 3650,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_02.rigid_model_v2",
+   "size": 2883008,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_02.wsmodel",
+   "size": 3650,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_03.rigid_model_v2",
+   "size": 2708430,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_03.wsmodel",
+   "size": 2974,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/cor_frostbite_dryads_body_04.wsmodel",
+   "size": 3640,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_evil_dryad_body_weighted4_alpha_on.xml.material",
+   "size": 2556,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_evil_dryad_tail_1_weighted4_alpha_on.xml.material",
+   "size": 2691,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_evil_dryad_tail_weighted4_alpha_on.xml.material",
+   "size": 2694,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_frosty_dryad_body_weighted4_alpha_on.xml.material",
+   "size": 2559,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_frosty_dryad_tail_1_weighted4_alpha_on.xml.material",
+   "size": 2694,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/cor_frosty_dryad_tail_weighted4_alpha_on.xml.material",
+   "size": 2697,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/frost_flower_weighted4_alpha_on.xml.material",
+   "size": 2654,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/morathibody_lod1_weighted4_alpha_on.xml.material",
+   "size": 2554,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/wef_bladesinger_body_03_submesh__weighted4_alpha_on.xml.material",
+   "size": 2673,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/wef_drycha_head_01_submesh_0_sub_weighted4_alpha_on.xml.material",
+   "size": 2652,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/wef_treeman_ancient_accessories__1_weighted4_alpha_on.xml.material",
+   "size": 2699,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/wef_treeman_ancient_accessories__weighted4_alpha_on.xml.material",
+   "size": 2702,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/body/materials/wef_treeman_body_01_submesh_1_su_weighted4_alpha_on.xml.material",
+   "size": 2680,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/branchwraith/cor_branchwraith_01.rigid_model_v2",
+   "size": 4865986,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/branchwraith/cor_branchwraith_01.wsmodel",
+   "size": 11781,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/branchwraith/cor_evil_branchwraith_01.rigid_model_v2",
+   "size": 4733674,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/branchwraith/cor_evil_branchwraith_01.wsmodel",
+   "size": 9382,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/branchwraith/materials/dae_daemonette_herald_body_01_su_weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_01.rigid_model_v2",
+   "size": 788248,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_01.wsmodel",
+   "size": 3072,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_02.rigid_model_v2",
+   "size": 1291400,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_02.wsmodel",
+   "size": 3064,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_03.rigid_model_v2",
+   "size": 857496,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_03.wsmodel",
+   "size": 3092,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_04.rigid_model_v2",
+   "size": 685990,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_dryads_head_04.wsmodel",
+   "size": 2372,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_evil_dryads_head_01.wsmodel",
+   "size": 3052,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_evil_dryads_head_02.wsmodel",
+   "size": 3012,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_evil_dryads_head_03.wsmodel",
+   "size": 3012,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_evil_dryads_head_04.wsmodel",
+   "size": 2320,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_frostbite_dryads_head_01.wsmodel",
+   "size": 2980,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_frostbite_dryads_head_02.wsmodel",
+   "size": 3020,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_frostbite_dryads_head_03.wsmodel",
+   "size": 3048,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/cor_frostbite_dryads_head_04.wsmodel",
+   "size": 2328,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/cor_evil_dryad_body_weighted4_alpha_on.xml.material",
+   "size": 2658,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/cor_frosty_dryad_head_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_bladesinger_head_01_submesh__weighted4_alpha_on.xml.material",
+   "size": 2672,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_bladesinger_head_03_submesh__weighted4_alpha_off.xml.material",
+   "size": 2670,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_bladesinger_head_03_submesh__weighted4_alpha_on.xml.material",
+   "size": 2675,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_drycha_head_01_submesh_0_sub_1_weighted4_alpha_on.xml.material",
+   "size": 2664,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_drycha_head_01_submesh_0_sub_weighted4_alpha_on.xml.material",
+   "size": 1798,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_drycha_head_01_submesh_0_weighted4_alpha_on.xml.material",
+   "size": 1794,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_treekin_head_01_submesh_0_su_weighted4_alpha_on.xml.material",
+   "size": 2650,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_treeman_head_01_submesh_1_weighted4_alpha_off.xml.material",
+   "size": 1656,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/head/materials/wef_treeman_head_01_submesh_1_weighted4_alpha_on.xml.material",
+   "size": 2677,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_01.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_01.wsmodel",
+   "size": 2360,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_02.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_02.wsmodel",
+   "size": 2304,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_03.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_03.wsmodel",
+   "size": 2360,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_04.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_dryads_legs_04.wsmodel",
+   "size": 2360,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_evil_dryads_legs_01.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_evil_dryads_legs_01.wsmodel",
+   "size": 2313,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_evil_dryads_legs_02.wsmodel",
+   "size": 2252,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_evil_dryads_legs_03.wsmodel",
+   "size": 2308,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_evil_dryads_legs_04.wsmodel",
+   "size": 2308,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_01.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_01.wsmodel",
+   "size": 2370,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_02.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_02.wsmodel",
+   "size": 2370,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_03.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_03.wsmodel",
+   "size": 2370,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_04.rigid_model_v2",
+   "size": 447316,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/cor_frostbite_dryads_legs_04.wsmodel",
+   "size": 2370,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/materials/cor_evil_dryad_body_weighted4_alpha_on.xml.material",
+   "size": 2694,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/materials/dae_daemonette_herald_body_01_su_weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu20/wef/wef_dryad/legs/materials/wef_drycha_body_01_submesh_21_weighted4_alpha_on.xml.material",
+   "size": 2649,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/props/p_hr1_hu1b/wef_spellweaver_hair_01.rigid_model_v2",
+   "size": 252,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/props/p_hr1_hu1b/wef_spellweaver_hair_01.wsmodel",
+   "size": 174,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_wildwood_rangers_cape_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_wildwood_rangers_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_wildwood_rangers_sword_2h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_wildwood_shield_01_base_colour.dds",
+   "size": 349692,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_wildwood_spear_1h_01_base_colour.dds",
+   "size": 174924,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/cor_zoat_body_01_base_colour.dds",
+   "size": 1398268,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/dae_steed_of_slaanesh_01_pink_base_colour.dds",
+   "size": 2796368,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/fem_nude_body_no_tat_basecolour_copy.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/tex/fem_nude_body_tat_leg_basecolour.dds",
+   "size": 8388780,
+   "pack": "Corrupted_Woodelves_v1.3.2/Corrupted_Woodelves_v1.3.2.pack"
+  }
+ ]
+}

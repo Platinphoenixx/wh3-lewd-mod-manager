@@ -559,7 +559,7 @@
       "id": "ll-27230",
       "packs+": [
         {
-          "file": "All_Loi_Variant_selector_steam.pack",
+          "file": "@@All_Loi_Variant_selector_steam.pack",
           "from": "steam",
           "steamId": "3503458514",
           "exclusiveGroup": "loi",
@@ -570,7 +570,7 @@
         "staleDataPacks": [
           "@@All_Loi_Variant_selector.pack"
         ],
-        "note": "The Steam version (3503458514) uses the pack name All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
+        "note": "The Steam version (3503458514) uses the pack name @@All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
       },
       "installNotes+": [
         "The Steam version adds new unit cards and 2D portraits for all 7 variants and fixes the stretched face portrait of the original Loi."
@@ -808,15 +808,16 @@
           "file": "Lin_Corrupted_Ascension.pack",
           "from": "steam",
           "steamId": "3376917062",
-          "note": "Replaces the older Lin_Corrupted_Ascend.pack since the 2024-12 framework update."
+          "note": "Replaces the older Lin_Corruption_Ascend.pack (the name in the pack header of its SFO submod) since the 2024-12 framework update."
         }
       ],
       "cleanup": {
         "staleDataPacks": [
           "Lin_Corrupted_Ascension_EnUpdated.pack",
+          "Lin_Corruption_Ascend.pack",
           "Lin_Corrupted_Ascend.pack"
         ],
-        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838). Lin_Corrupted_Ascend.pack is the pack name from before the 2024-12 framework update."
+        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838). Lin_Corruption_Ascend.pack is the pack from before the 2024-12 framework update (players also write Lin_Corrupted_Ascend); with it still active the new models do not work and a new campaign is needed."
       },
       "knownIssues-": [
         "WH3 patch 9.0 (2026-10-09) broke it",

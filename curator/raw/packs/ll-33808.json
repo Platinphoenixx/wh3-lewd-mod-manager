@@ -1,0 +1,734 @@
+{
+ "mod": "ll-33808",
+ "packs": [
+  "tdw_cth_seduce.pack",
+  "tdw_kat_seduce.pack",
+  "tdw_mor_seduce.pack"
+ ],
+ "dependencies": [
+  "MiaoYingCorrupted_Compendium.pack"
+ ],
+ "perPack": {
+  "tdw_cth_seduce.pack": {
+   "files": 24,
+   "dependencies": [
+    "MiaoYingCorrupted_Compendium.pack"
+   ]
+  },
+  "tdw_kat_seduce.pack": {
+   "files": 22,
+   "dependencies": []
+  },
+  "tdw_mor_seduce.pack": {
+   "files": 22,
+   "dependencies": []
+  }
+ },
+ "fileCount": 64,
+ "byTopFolder": {
+  "db": 38,
+  "script": 21,
+  "text": 3,
+  "ui": 2
+ },
+ "tables": [
+  "ancillaries_required_skills_tables",
+  "ancillary_to_effects_tables",
+  "campaign_features_tables",
+  "campaign_group_member_criteria_factions_tables",
+  "campaign_group_members_tables",
+  "campaign_groups_tables",
+  "character_trait_levels_tables",
+  "character_traits_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "trait_categories_tables",
+  "trait_info_tables",
+  "trait_level_effects_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "ancillaries_required_skills_tables": [
+   "wh3_main_anc_follower_personal_tutor",
+   "wh3_main_skill_innate_cth_miao_ying",
+   "wh3_main_anc_follower_personal_mistress",
+   "wh3_main_anc_follower_personal_queen",
+   "wh3_main_anc_follower_personal_goddess"
+  ],
+  "ancillary_to_effects_tables": [
+   "wh3_main_anc_follower_personal_mistress",
+   "wh3_main_effect_pre_battle_bribery_cost_mod",
+   "general_to_force_own_unseen",
+   "wh3_main_anc_follower_personal_queen",
+   "wh3_main_anc_follower_personal_goddess",
+   "wh3_main_anc_follower_personal_tutor",
+   "wh3_main_effect_force_all_seduce_units_budget",
+   "character_to_force_own_unseen"
+  ],
+  "campaign_features_tables": [
+   "bribery",
+   "tdw_wh2_main_feature_cathay_miaoying",
+   "tdw_wh3_main_feature_kislev",
+   "tdw_wh2_main_feature_def"
+  ],
+  "campaign_group_member_criteria_factions_tables": [
+   "wh3_main_cth_the_northern_provinces",
+   "tdw_wh2_main_feature_cathay_miaoying",
+   "ACTOR",
+   "wh3_main_ksl_the_ice_court",
+   "tdw_wh3_main_feature_kislev",
+   "wh2_main_def_cult_of_pleasure",
+   "tdw_wh2_main_feature_def"
+  ],
+  "campaign_group_members_tables": [
+   "tdw_wh2_main_feature_cathay_miaoying",
+   "tdw_wh3_main_feature_kislev",
+   "tdw_wh2_main_feature_def"
+  ],
+  "campaign_groups_tables": [
+   "tdw_wh2_main_feature_cathay_miaoying",
+   "tdw_wh3_main_feature_kislev",
+   "tdw_wh2_main_feature_def"
+  ],
+  "character_trait_levels_tables": [
+   "tdw_miao_seduce_0",
+   "tdw_miao_seduce",
+   "tdw_miao_seduce_1",
+   "tdw_miao_seduce_2",
+   "tdw_miao_seduce_3",
+   "tdw_cth_seduce_allow_others_nkari",
+   "tdw_cth_seduce_allow_others_sigi",
+   "tdw_cth_seduce_allow_others_azazel",
+   "tdw_cth_seduce_allow_others_morathi",
+   "tdw_cth_seduce_allow_others_lakelady",
+   "tdw_cth_seduce_allow_others_kath",
+   "tdw_kat_seduce_0",
+   "tdw_kat_seduce",
+   "tdw_kat_seduce_1",
+   "tdw_kat_seduce_allow_others_nkari",
+   "tdw_kat_seduce_allow_others_sigi",
+   "tdw_kat_seduce_allow_others_azazel",
+   "tdw_kat_seduce_allow_others_morathi",
+   "tdw_kat_seduce_allow_others_lakelady",
+   "tdw_kat_seduce_allow_others_miao",
+   "tdw_mor_seduce_0",
+   "tdw_mor_seduce",
+   "tdw_mor_seduce_1",
+   "tdw_mor_seduce_2",
+   "tdw_mor_seduce_allow_others_nkari",
+   "tdw_mor_seduce_allow_others_sigi",
+   "tdw_mor_seduce_allow_others_azazel",
+   "tdw_mor_seduce_allow_others_kat",
+   "tdw_mor_seduce_allow_others_lakelady",
+   "tdw_mor_seduce_allow_others_miao"
+  ],
+  "character_traits_tables": [
+   "tdw_miao_seduce",
+   "tdw_seduce",
+   "tdw_cth_seduce_allow_others_nkari",
+   "tdw_cth_seduce_allow_others_sigi",
+   "tdw_cth_seduce_allow_others_azazel",
+   "tdw_cth_seduce_allow_others_morathi",
+   "tdw_cth_seduce_allow_others_lakelady",
+   "tdw_cth_seduce_allow_others_kath",
+   "tdw_kat_seduce",
+   "tdw_kat_seduce_allow_others_nkari",
+   "tdw_kat_seduce_allow_others_sigi",
+   "tdw_kat_seduce_allow_others_azazel",
+   "tdw_kat_seduce_allow_others_morathi",
+   "tdw_kat_seduce_allow_others_lakelady",
+   "tdw_kat_seduce_allow_others_miao",
+   "tdw_mor_seduce",
+   "tdw_mor_seduce_allow_others_nkari",
+   "tdw_mor_seduce_allow_others_sigi",
+   "tdw_mor_seduce_allow_others_azazel",
+   "tdw_mor_seduce_allow_others_kat",
+   "tdw_mor_seduce_allow_others_lakelady",
+   "tdw_mor_seduce_allow_others_miao"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "bribery_cost_percentage_mod",
+   "tdw_cth_seduce_cth_boni",
+   "cth_all",
+   "tdw_cth_seduce_non_cth_boni_miao",
+   "emp_all",
+   "ksl_all",
+   "brt_all",
+   "wef_dlc05_wood_elf_elf_units",
+   "hef_all",
+   "tdw_cth_seduce_def_sla_boni",
+   "def_witchelves_and_sisters_of_slaughter",
+   "wh2_main_def_death_hag_0",
+   "tdw_cth_seduce_chs_boni",
+   "sla_mortal_infantry",
+   "chs_marauders",
+   "dlc08_nor_marauders_inf",
+   "chs_warriors",
+   "tdw_cth_seduce_elf_only_nkari",
+   "tdw_cth_seduce_chs_boni_sigi",
+   "tdw_cth_seduce_ksl_emp_nor_boni_aza",
+   "tdw_cth_seduce_hef_wef_boni_mor",
+   "tdw_cth_seduce_def_boni_mor",
+   "def_executioners",
+   "tdw_cth_seduce_ksl_emp_boni_lake",
+   "tdw_cth_seduce_brt_boni_lake",
+   "tdw_cth_seduce_ksl_boni_kath",
+   "tdw_cth_seduce_emp_brt_boni_kath",
+   "tdw_cth_seduce_nor_marauders_boni_kath",
+   "tdw_kat_seduce_cth_boni",
+   "tdw_kat_seduce_non_cth_boni_miao",
+   "tdw_kat_seduce_def_sla_boni",
+   "tdw_kat_seduce_chs_boni",
+   "tdw_kat_seduce_elf_only_nkari",
+   "tdw_kat_seduce_chs_boni_sigi",
+   "tdw_kat_seduce_ksl_emp_nor_boni_aza",
+   "tdw_kat_seduce_hef_wef_boni_mor",
+   "tdw_kat_seduce_def_boni_mor",
+   "tdw_kat_seduce_ksl_emp_boni_lake",
+   "tdw_kat_seduce_brt_boni_lake",
+   "tdw_kat_seduce_ksl_boni_kath",
+   "tdw_kat_seduce_emp_brt_boni_kath",
+   "tdw_kat_seduce_nor_marauders_boni_kath",
+   "tdw_mor_seduce_cth_boni",
+   "tdw_mor_seduce_non_cth_boni_miao",
+   "tdw_mor_seduce_def_sla_boni",
+   "tdw_mor_seduce_chs_boni",
+   "tdw_mor_seduce_elf_only_nkari",
+   "tdw_mor_seduce_chs_boni_sigi",
+   "tdw_mor_seduce_ksl_emp_nor_boni_aza",
+   "tdw_mor_seduce_hef_wef_boni_mor",
+   "tdw_mor_seduce_def_boni_mor",
+   "tdw_mor_seduce_ksl_emp_boni_lake",
+   "tdw_mor_seduce_brt_boni_lake",
+   "tdw_mor_seduce_ksl_boni_kath",
+   "tdw_mor_seduce_emp_brt_boni_kath",
+   "tdw_mor_seduce_nor_marauders_boni_kath"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "wh3_main_lord_trait_cth_miao_ying",
+   "wh3_main_effect_force_all_seduce_units_budget",
+   "faction_to_force_own_unseen",
+   "start_turn_completed",
+   "wh3_main_lord_trait_ksl_katarin",
+   "wh2_main_lord_trait_def_morathi"
+  ],
+  "effects_tables": [
+   "tdw_cth_seduce_cth_boni",
+   "daemon/tdw_military_spending.png",
+   "campaign",
+   "tdw_cth_seduce_non_cth_boni_miao",
+   "tdw_cth_seduce_def_sla_boni",
+   "tdw_cth_seduce_chs_boni",
+   "tdw_cth_seduce_elf_only_nkari",
+   "tdw_cth_seduce_chs_boni_sigi",
+   "tdw_cth_seduce_ksl_emp_nor_boni_aza",
+   "tdw_cth_seduce_hef_wef_boni_mor",
+   "tdw_cth_seduce_def_boni_mor",
+   "tdw_cth_seduce_ksl_emp_boni_lake",
+   "tdw_cth_seduce_brt_boni_lake",
+   "tdw_cth_seduce_ksl_boni_kath",
+   "tdw_cth_seduce_emp_brt_boni_kath",
+   "tdw_cth_seduce_nor_marauders_boni_kath",
+   "tdw_kat_seduce_cth_boni",
+   "tdw_kat_seduce_non_cth_boni_miao",
+   "tdw_kat_seduce_def_sla_boni",
+   "tdw_kat_seduce_chs_boni",
+   "tdw_kat_seduce_elf_only_nkari",
+   "tdw_kat_seduce_chs_boni_sigi",
+   "tdw_kat_seduce_ksl_emp_nor_boni_aza",
+   "tdw_kat_seduce_hef_wef_boni_mor",
+   "tdw_kat_seduce_def_boni_mor",
+   "tdw_kat_seduce_ksl_emp_boni_lake",
+   "tdw_kat_seduce_brt_boni_lake",
+   "tdw_kat_seduce_ksl_boni_kath",
+   "tdw_kat_seduce_emp_brt_boni_kath",
+   "tdw_kat_seduce_nor_marauders_boni_kath",
+   "tdw_mor_seduce_cth_boni",
+   "tdw_mor_seduce_non_cth_boni_miao",
+   "tdw_mor_seduce_def_sla_boni",
+   "tdw_mor_seduce_chs_boni",
+   "tdw_mor_seduce_elf_only_nkari",
+   "tdw_mor_seduce_chs_boni_sigi",
+   "tdw_mor_seduce_ksl_emp_nor_boni_aza",
+   "tdw_mor_seduce_hef_wef_boni_mor",
+   "tdw_mor_seduce_def_boni_mor",
+   "tdw_mor_seduce_ksl_emp_boni_lake",
+   "tdw_mor_seduce_brt_boni_lake",
+   "tdw_mor_seduce_ksl_boni_kath",
+   "tdw_mor_seduce_emp_brt_boni_kath",
+   "tdw_mor_seduce_nor_marauders_boni_kath"
+  ],
+  "trait_categories_tables": [
+   "tdw_seduce",
+   "ui/campaign ui/effect_bundles/tdw_slaanesh_points.png",
+   "tdw_cth_seduce_allow_others_nkari",
+   "tdw_cth_seduce_allow_others_sigi",
+   "tdw_cth_seduce_allow_others_azazel",
+   "tdw_cth_seduce_allow_others_morathi",
+   "tdw_cth_seduce_allow_others_lakelady",
+   "tdw_cth_seduce_allow_others_kath",
+   "tdw_kat_seduce",
+   "tdw_kat_seduce_allow_others_nkari",
+   "tdw_kat_seduce_allow_others_sigi",
+   "tdw_kat_seduce_allow_others_azazel",
+   "tdw_kat_seduce_allow_others_morathi",
+   "tdw_kat_seduce_allow_others_lakelady",
+   "tdw_kat_seduce_allow_others_miao",
+   "tdw_mor_seduce",
+   "tdw_mor_seduce_allow_others_nkari",
+   "tdw_mor_seduce_allow_others_sigi",
+   "tdw_mor_seduce_allow_others_azazel",
+   "tdw_mor_seduce_allow_others_kat",
+   "tdw_mor_seduce_allow_others_lakelady",
+   "tdw_mor_seduce_allow_others_miao"
+  ],
+  "trait_info_tables": [
+   "tdw_miao_seduce",
+   "tdw_cth_seduce_allow_others_nkari",
+   "tdw_cth_seduce_allow_others_sigi",
+   "tdw_cth_seduce_allow_others_azazel",
+   "tdw_cth_seduce_allow_others_morathi",
+   "tdw_cth_seduce_allow_others_lakelady",
+   "tdw_cth_seduce_allow_others_kath",
+   "tdw_kat_seduce",
+   "tdw_kat_seduce_allow_others_nkari",
+   "tdw_kat_seduce_allow_others_sigi",
+   "tdw_kat_seduce_allow_others_azazel",
+   "tdw_kat_seduce_allow_others_morathi",
+   "tdw_kat_seduce_allow_others_lakelady",
+   "tdw_kat_seduce_allow_others_miao",
+   "tdw_mor_seduce",
+   "tdw_mor_seduce_allow_others_nkari",
+   "tdw_mor_seduce_allow_others_sigi",
+   "tdw_mor_seduce_allow_others_azazel",
+   "tdw_mor_seduce_allow_others_kat",
+   "tdw_mor_seduce_allow_others_lakelady",
+   "tdw_mor_seduce_allow_others_miao"
+  ],
+  "trait_level_effects_tables": [
+   "tdw_miao_seduce_0",
+   "wh3_main_effect_force_all_seduce_units_budget",
+   "general_to_force_own_unseen",
+   "tdw_miao_seduce_1",
+   "wh3_main_effect_pre_battle_bribery_cost_mod",
+   "character_to_force_own_unseen",
+   "tdw_cth_seduce_cth_boni",
+   "tdw_miao_seduce_2",
+   "tdw_cth_seduce_non_cth_boni_miao",
+   "tdw_cth_seduce_def_sla_boni",
+   "tdw_cth_seduce_chs_boni",
+   "tdw_miao_seduce_3",
+   "tdw_cth_seduce_allow_others_nkari",
+   "tdw_cth_seduce_elf_only_nkari",
+   "tdw_cth_seduce_allow_others_sigi",
+   "tdw_cth_seduce_chs_boni_sigi",
+   "tdw_cth_seduce_allow_others_azazel",
+   "tdw_cth_seduce_ksl_emp_nor_boni_aza",
+   "tdw_cth_seduce_allow_others_morathi",
+   "tdw_cth_seduce_hef_wef_boni_mor",
+   "tdw_cth_seduce_def_boni_mor",
+   "tdw_cth_seduce_allow_others_lakelady",
+   "tdw_cth_seduce_ksl_emp_boni_lake",
+   "tdw_cth_seduce_brt_boni_lake",
+   "tdw_cth_seduce_allow_others_kath",
+   "tdw_cth_seduce_ksl_boni_kath",
+   "tdw_cth_seduce_emp_brt_boni_kath",
+   "tdw_cth_seduce_nor_marauders_boni_kath",
+   "tdw_kat_seduce_0",
+   "tdw_kat_seduce_ksl_boni_kath",
+   "tdw_kat_seduce_nor_marauders_boni_kath",
+   "tdw_kat_seduce_1",
+   "tdw_kat_seduce_emp_brt_boni_kath",
+   "tdw_kat_seduce_def_sla_boni",
+   "tdw_kat_seduce_chs_boni",
+   "tdw_kat_seduce_cth_boni",
+   "tdw_kat_seduce_allow_others_nkari",
+   "tdw_kat_seduce_elf_only_nkari",
+   "tdw_kat_seduce_allow_others_sigi",
+   "tdw_kat_seduce_chs_boni_sigi",
+   "tdw_kat_seduce_allow_others_azazel",
+   "tdw_kat_seduce_ksl_emp_nor_boni_aza",
+   "tdw_kat_seduce_allow_others_morathi",
+   "tdw_kat_seduce_hef_wef_boni_mor",
+   "tdw_kat_seduce_def_boni_mor",
+   "tdw_kat_seduce_allow_others_lakelady",
+   "tdw_kat_seduce_ksl_emp_boni_lake",
+   "tdw_kat_seduce_brt_boni_lake",
+   "tdw_kat_seduce_allow_others_miao",
+   "tdw_kat_seduce_non_cth_boni_miao",
+   "tdw_mor_seduce_0",
+   "tdw_mor_seduce_def_boni_mor",
+   "tdw_mor_seduce_hef_wef_boni_mor",
+   "tdw_mor_seduce_1",
+   "tdw_mor_seduce_ksl_boni_kath",
+   "tdw_mor_seduce_emp_brt_boni_kath",
+   "tdw_mor_seduce_nor_marauders_boni_kath",
+   "tdw_mor_seduce_def_sla_boni",
+   "tdw_mor_seduce_cth_boni",
+   "tdw_mor_seduce_2",
+   "tdw_mor_seduce_allow_others_nkari",
+   "tdw_mor_seduce_elf_only_nkari",
+   "tdw_mor_seduce_allow_others_sigi",
+   "tdw_mor_seduce_chs_boni_sigi",
+   "tdw_mor_seduce_allow_others_azazel",
+   "tdw_mor_seduce_chs_boni",
+   "tdw_mor_seduce_ksl_emp_nor_boni_aza",
+   "tdw_mor_seduce_allow_others_lakelady",
+   "tdw_mor_seduce_ksl_emp_boni_lake",
+   "tdw_mor_seduce_brt_boni_lake",
+   "tdw_mor_seduce_allow_others_miao",
+   "tdw_mor_seduce_non_cth_boni_miao",
+   "tdw_mor_seduce_allow_others_kat"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/ancillaries_required_skills_tables/tdw_cth_seduce",
+   "size": 404,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/ancillary_to_effects_tables/tdw_cth_seduce",
+   "size": 921,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/campaign_features_tables/tdw_cth_seduce",
+   "size": 131,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/campaign_features_tables/tdw_kat_seduce",
+   "size": 122,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/campaign_features_tables/tdw_mor_seduce",
+   "size": 119,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_member_criteria_factions_tables/tdw_cth_seduce",
+   "size": 173,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_member_criteria_factions_tables/tdw_kat_seduce",
+   "size": 155,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_member_criteria_factions_tables/tdw_mor_seduce",
+   "size": 155,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_members_tables/tdw_cth_seduce",
+   "size": 171,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_members_tables/tdw_kat_seduce",
+   "size": 153,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/campaign_group_members_tables/tdw_mor_seduce",
+   "size": 147,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/campaign_groups_tables/tdw_cth_seduce",
+   "size": 121,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/campaign_groups_tables/tdw_kat_seduce",
+   "size": 112,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/campaign_groups_tables/tdw_mor_seduce",
+   "size": 109,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/tdw_cth_seduce",
+   "size": 735,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/tdw_kat_seduce",
+   "size": 643,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/tdw_mor_seduce",
+   "size": 677,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/character_traits_tables/tdw_cth_seduce",
+   "size": 653,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/character_traits_tables/tdw_kat_seduce",
+   "size": 656,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/character_traits_tables/tdw_mor_seduce",
+   "size": 648,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/tdw_cth_seduce",
+   "size": 2769,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/tdw_kat_seduce",
+   "size": 2769,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/tdw_mor_seduce",
+   "size": 2769,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/tdw_cth_seduce",
+   "size": 228,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/tdw_kat_seduce",
+   "size": 226,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/tdw_mor_seduce",
+   "size": 226,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/effects_tables/tdw_cth_seduce",
+   "size": 1714,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/effects_tables/tdw_kat_seduce",
+   "size": 1714,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/effects_tables/tdw_mor_seduce",
+   "size": 1714,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/trait_categories_tables/tdw_cth_seduce",
+   "size": 701,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/trait_categories_tables/tdw_kat_seduce",
+   "size": 705,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/trait_categories_tables/tdw_mor_seduce",
+   "size": 701,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/trait_info_tables/tdw_cth_seduce",
+   "size": 322,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/trait_info_tables/tdw_kat_seduce",
+   "size": 321,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/trait_info_tables/tdw_mor_seduce",
+   "size": 317,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/tdw_cth_seduce",
+   "size": 3533,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/tdw_kat_seduce",
+   "size": 2862,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/tdw_mor_seduce",
+   "size": 3634,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_cth_seduce.lua",
+   "size": 2259,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce.lua",
+   "size": 2236,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_azazel.lua",
+   "size": 1756,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_ladylake.lua",
+   "size": 1819,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_miao.lua",
+   "size": 1726,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_morathi.lua",
+   "size": 1758,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_nkari.lua",
+   "size": 1739,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_kat_seduce_fix_confed_sigi.lua",
+   "size": 1734,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce.lua",
+   "size": 2242,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_azazel.lua",
+   "size": 1762,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_kat.lua",
+   "size": 1714,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_ladylake.lua",
+   "size": 1825,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_miao.lua",
+   "size": 1732,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_nkari.lua",
+   "size": 1745,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_mor_seduce_fix_confed_sigi.lua",
+   "size": 1740,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_azazel.lua",
+   "size": 1786,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_kath.lua",
+   "size": 1727,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_ladylake.lua",
+   "size": 1839,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_morathi.lua",
+   "size": 1778,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_nkari.lua",
+   "size": 1760,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_seduce_fix_confed_sigi.lua",
+   "size": 1754,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "text/db/tdw_cth_seduce.loc",
+   "size": 14202,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "text/db/tdw_kat_seduce.loc",
+   "size": 12580,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "text/db/tdw_mor_seduce.loc",
+   "size": 16710,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/daemon/tdw_military_spending.png",
+   "size": 4314,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/daemon/tdw_military_spending.png",
+   "size": 4314,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/daemon/tdw_military_spending.png",
+   "size": 4314,
+   "pack": "tdw_mor_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/tdw_slaanesh_points.png",
+   "size": 1790,
+   "pack": "tdw_cth_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/tdw_slaanesh_points.png",
+   "size": 1790,
+   "pack": "tdw_kat_seduce.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/tdw_slaanesh_points.png",
+   "size": 1790,
+   "pack": "tdw_mor_seduce.pack"
+  }
+ ]
+}

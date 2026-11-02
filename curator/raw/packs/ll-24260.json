@@ -1,0 +1,399 @@
+{
+ "mod": "ll-24260",
+ "packs": [
+  "miao_and_katarin_cn0923.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "miao_and_katarin_cn0923.pack": {
+   "files": 74,
+   "dependencies": []
+  }
+ },
+ "fileCount": 74,
+ "byTopFolder": {
+  "text": 74
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/!li_katarin_daemonize_abilities.loc",
+   "size": 1214,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_daemonize_cdir_events_dilemma_choice_details.loc",
+   "size": 1136,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_daemonize_dilemmas.loc",
+   "size": 14780,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_daemonize_effect_bundles.loc",
+   "size": 940,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_daemonize_effects.loc",
+   "size": 725,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_daemonize_unit_abilities_additional_ui_effects.loc",
+   "size": 1124,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth.loc",
+   "size": 920,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth_abilities.loc",
+   "size": 420,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth_cdir_events_dilemma_choice_details.loc",
+   "size": 2688,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth_dilemmas.loc",
+   "size": 17212,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth_effects.loc",
+   "size": 149,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!li_katarin_progression_fourth_names.loc",
+   "size": 83,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/!seu_ancillaries_temp.loc",
+   "size": 2242,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_cdir_events_dilemma_choice_details.loc",
+   "size": 9722,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_dilemmas.loc",
+   "size": 18904,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_effect_bundles.loc",
+   "size": 1326,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first.loc",
+   "size": 968,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_cdir_events_dilemma_choice_details.loc",
+   "size": 1254,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_dilemmas.loc",
+   "size": 802,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_effects.loc",
+   "size": 135,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_first_names.loc",
+   "size": 83,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second.loc",
+   "size": 920,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_abilities.loc",
+   "size": 454,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_cdir_events_dilemma_choice_details.loc",
+   "size": 2290,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_dilemmas.loc",
+   "size": 7394,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_effects.loc",
+   "size": 147,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_second_names.loc",
+   "size": 83,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third.loc",
+   "size": 966,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_abilities.loc",
+   "size": 526,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_cdir_events_dilemma_choice_details.loc",
+   "size": 2880,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_dilemmas.loc",
+   "size": 13086,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_effects.loc",
+   "size": 143,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_katarin_progression_third_names.loc",
+   "size": 83,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_ballet.loc",
+   "size": 552,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_bare.loc",
+   "size": 404,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_breed.loc",
+   "size": 1794,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_corset.loc",
+   "size": 448,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_fishnet.loc",
+   "size": 436,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_plug.loc",
+   "size": 360,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_additional_ui_effects_breed_todo.loc",
+   "size": 235,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_ballet.loc",
+   "size": 1094,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_bare.loc",
+   "size": 976,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_breed.loc",
+   "size": 2176,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_campaign_payload_ui_details_scale.loc",
+   "size": 740,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 1204,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_bare.loc",
+   "size": 1274,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_breed.loc",
+   "size": 4046,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_corset.loc",
+   "size": 1042,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_fishnet.loc",
+   "size": 1002,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_plug.loc",
+   "size": 842,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_scale.loc",
+   "size": 1166,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_corset.loc",
+   "size": 1284,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_ballet.loc",
+   "size": 812,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_bare.loc",
+   "size": 846,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_breed.loc",
+   "size": 13798,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_corset.loc",
+   "size": 1124,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_fishnet.loc",
+   "size": 656,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_plug.loc",
+   "size": 1680,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_scale.loc",
+   "size": 492,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_ballet.loc",
+   "size": 163,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_bare.loc",
+   "size": 161,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_breed.loc",
+   "size": 840,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_corset.loc",
+   "size": 169,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_fishnet.loc",
+   "size": 159,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_plug.loc",
+   "size": 167,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_fishnet.loc",
+   "size": 794,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_ballet.loc",
+   "size": 75,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_bare.loc",
+   "size": 75,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_corset.loc",
+   "size": 75,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_fishnet.loc",
+   "size": 75,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_plug.loc",
+   "size": 258,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_scale.loc",
+   "size": 75,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_plug.loc",
+   "size": 856,
+   "pack": "miao_and_katarin_cn0923.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_scale.loc",
+   "size": 684,
+   "pack": "miao_and_katarin_cn0923.pack"
+  }
+ ]
+}

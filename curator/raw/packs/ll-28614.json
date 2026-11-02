@@ -1,0 +1,2804 @@
+{
+ "mod": "ll-28614",
+ "packs": [
+  "goblin_hordes_addonV2.5.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "goblin_hordes_addonV2.5.pack": {
+   "files": 198,
+   "dependencies": []
+  }
+ },
+ "fileCount": 198,
+ "byTopFolder": {
+  "ui": 95,
+  "db": 87,
+  "text": 13,
+  "script": 2,
+  "variantmeshes": 1
+ },
+ "tables": [
+  "agent_recruitment_categories_tables",
+  "agent_subtypes_tables",
+  "agent_uniforms_tables",
+  "ancillaries_included_agent_subtypes_tables",
+  "ancillaries_required_skills_tables",
+  "ancillaries_tables",
+  "ancillary_info_tables",
+  "ancillary_to_effects_tables",
+  "ancillary_to_included_agents_tables",
+  "ancillary_types_tables",
+  "armed_citizenry_unit_groups_tables",
+  "armed_citizenry_units_to_unit_groups_junctions_tables",
+  "battle_entities_tables",
+  "building_chain_availability_sets_tables",
+  "building_effects_junction_tables",
+  "building_level_armed_citizenry_junctions_tables",
+  "building_units_allowed_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "campaign_features_tables",
+  "campaign_group_crafting_infos_tables",
+  "campaign_group_member_criteria_cultures_tables",
+  "campaign_group_members_tables",
+  "campaign_group_pooled_resources_tables",
+  "campaign_group_post_battle_casualty_resources_tables",
+  "campaign_groups_tables",
+  "campaign_mount_animation_set_overrides_tables",
+  "campaign_mounts_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "character_skill_level_details_tables",
+  "character_skill_level_to_ancillaries_junctions_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_skill_node_links_tables",
+  "character_skill_node_set_items_tables",
+  "character_skill_node_sets_tables",
+  "character_skill_nodes_skill_locks_tables",
+  "character_skill_nodes_tables",
+  "character_skills_tables",
+  "character_skills_to_level_reached_criterias_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_basic_junction_tables",
+  "effect_bonus_value_ids_unit_sets_tables",
+  "effect_bonus_value_pooled_resource_factor_junctions_tables",
+  "effect_bonus_value_pooled_resource_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "faction_agent_permitted_subtypes_tables",
+  "land_units_tables",
+  "land_units_to_unit_abilites_junctions_tables",
+  "main_units_tables",
+  "mounts_tables",
+  "pooled_resource_factor_junctions_tables",
+  "pooled_resources_tables",
+  "projectiles_tables",
+  "resource_cost_pooled_resource_junctions_tables",
+  "resource_costs_tables",
+  "ui_features_to_cultures_tables",
+  "ui_unit_bullet_point_unit_overrides_tables",
+  "unit_attributes_groups_tables",
+  "unit_attributes_to_groups_junctions_tables",
+  "unit_description_short_texts_tables",
+  "unit_purchasable_effect_sets_tables",
+  "unit_purchasable_effects_tables",
+  "unit_set_to_unit_junctions_tables",
+  "unit_sets_tables",
+  "unit_to_unit_group_junctions_tables",
+  "unit_upgrade_group_ui_categories_tables",
+  "unit_upgrade_group_ui_infos_tables",
+  "unit_upgrade_group_ui_links_tables",
+  "unit_upgrade_groups_tables",
+  "unit_upgrade_to_unit_groups_tables",
+  "unit_variants_tables",
+  "units_to_exclusive_faction_permissions_tables",
+  "units_to_groupings_military_permissions_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 14,
+  "inMod": 0,
+  "inBaseGame": 14,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_recruitment_categories_tables": [
+   "goblin_ky_addon_lord"
+  ],
+  "agent_subtypes_tables": [
+   "gob_leader_lord",
+   "wh_main_vo_actor_Goblin_BigBoss",
+   "goblin_ky_addon_lord",
+   "cannot_be_loaded_in_campaign"
+  ],
+  "agent_uniforms_tables": [
+   "wh_main_uniform_gob_lord_01",
+   "wh_main_uniform_grn_goblin_big_boss_01",
+   "wh_main_uniform_gob_lord_02",
+   "wh_main_uniform_grn_goblin_big_boss_02",
+   "wh_main_uniform_gob_lord_03",
+   "wh_main_uniform_grn_goblin_big_boss_03"
+  ],
+  "ancillaries_included_agent_subtypes_tables": [
+   "gob_leader_lord",
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde"
+  ],
+  "ancillaries_required_skills_tables": [
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "goblin_ky_addon_mount_2",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "goblin_ky_addon_mount_1",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "goblin_ky_addon_mount_3",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "goblin_ky_addon_mount_4",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde",
+   "goblin_ky_addon_mount_5"
+  ],
+  "ancillaries_tables": [
+   "wh_main_anc_follower_goblin_ky_addon_enslaved_ogre_female",
+   "anc_follower_goblin_ky_addon_enslaved_ogre_female",
+   "general",
+   "anc_set_exclusive_greenskins",
+   "wh_main_anc_follower_goblin_ky_addon_caged_ogre",
+   "anc_follower_goblin_ky_addon_caged_ogre",
+   "wh_main_anc_follower_goblin_ky_addon_defected_gnoblar",
+   "anc_follower_goblin_ky_addon_defected_gnoblar",
+   "wh_main_anc_follower_goblin_ky_addon_chs_berzerkeress",
+   "anc_follower_goblin_ky_addon_chs_berzerkeress",
+   "wh_main_anc_follower_goblin_ky_addon_chs_crafter",
+   "anc_follower_goblin_ky_addon_chs_crafter",
+   "wh_main_anc_follower_goblin_ky_addon_chs_enslaved_cultist",
+   "anc_follower_goblin_ky_addon_chs_enslaved_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_kis_frost_maiden",
+   "anc_follower_goblin_ky_addon_kis_frost_maiden",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_guard",
+   "anc_follower_goblin_ky_addon_kis_ice_guard",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_witch",
+   "anc_follower_goblin_ky_addon_kis_ice_witch",
+   "wh_main_anc_follower_goblin_ky_addon_krn_cockthirster",
+   "anc_follower_goblin_ky_addon_krn_cockthirster",
+   "wh_main_anc_follower_goblin_ky_addon_krn_khorn_cultist",
+   "anc_follower_goblin_ky_addon_krn_khorn_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_krn_pincess_khorn",
+   "anc_follower_goblin_ky_addon_krn_pincess_khorn",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_plagueslut",
+   "anc_follower_goblin_ky_addon_ngl_plagueslut",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_herald_slave",
+   "anc_follower_goblin_ky_addon_ngl_herald_slave",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_cultist",
+   "anc_follower_goblin_ky_addon_ngl_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_tze_cultist",
+   "anc_follower_goblin_ky_addon_tze_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_tze_herald_slave",
+   "anc_follower_goblin_ky_addon_tze_herald_slave",
+   "wh_main_anc_follower_goblin_ky_addon_tze_girl",
+   "anc_follower_goblin_ky_addon_tze_girl",
+   "wh_main_anc_follower_goblin_ky_addon_sla_daemonette",
+   "anc_follower_goblin_ky_addon_sla_daemonette",
+   "wh_main_anc_follower_goblin_ky_addon_sla_herald",
+   "anc_follower_goblin_ky_addon_sla_herald",
+   "wh_main_anc_follower_goblin_ky_addon_sla_alluress",
+   "anc_follower_goblin_ky_addon_sla_alluress",
+   "wh_main_anc_follower_goblin_ky_addon_cat_shugengan",
+   "anc_follower_goblin_ky_addon_cat_shugengan",
+   "wh_main_anc_follower_goblin_ky_addon_cat_cultist",
+   "anc_follower_goblin_ky_addon_cat_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_cat_alchemist",
+   "anc_follower_goblin_ky_addon_cat_alchemist",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_maiden",
+   "anc_follower_goblin_ky_addon_dwf_maiden",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runeslave",
+   "anc_follower_goblin_ky_addon_dwf_runeslave",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runecollar",
+   "anc_follower_goblin_ky_addon_dwf_runecollar",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_thaness",
+   "anc_follower_goblin_ky_addon_dwf_thaness",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_harem",
+   "anc_follower_goblin_ky_addon_dwf_harem",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_slutcrafter",
+   "anc_follower_goblin_ky_addon_dwf_slutcrafter",
+   "faction_set_culture_greenskins",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_caged_stunty",
+   "anc_follower_goblin_ky_addon_dwf_caged_stunty",
+   "wh_main_anc_follower_goblin_ky_addon_emp_noble",
+   "anc_follower_goblin_ky_addon_emp_noble",
+   "wh_main_anc_follower_goblin_ky_addon_emp_knightess",
+   "anc_follower_goblin_ky_addon_emp_knightess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_priestess",
+   "anc_follower_goblin_ky_addon_emp_priestess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_farmgirl",
+   "anc_follower_goblin_ky_addon_emp_farmgirl",
+   "wh_main_anc_follower_goblin_ky_addon_emp_squire",
+   "anc_follower_goblin_ky_addon_emp_squire",
+   "wh_main_anc_follower_goblin_ky_addon_vam_vampiress",
+   "anc_follower_goblin_ky_addon_vam_vampiress",
+   "wh_main_anc_follower_goblin_ky_addon_vam_slut",
+   "anc_follower_goblin_ky_addon_vam_slut",
+   "wh_main_anc_follower_goblin_ky_addon_vam_necromancer",
+   "anc_follower_goblin_ky_addon_vam_necromancer",
+   "wh_main_anc_follower_goblin_ky_addon_brt_damsel",
+   "anc_follower_goblin_ky_addon_brt_damsel",
+   "wh_main_anc_follower_goblin_ky_addon_brt_prophetess",
+   "anc_follower_goblin_ky_addon_brt_prophetess",
+   "wh_main_anc_follower_goblin_ky_addon_brt_life_prophetess",
+   "anc_follower_goblin_ky_addon_brt_life_prophetess",
+   "wh_main_anc_follower_goblin_ky_addon_wef_captain",
+   "anc_follower_goblin_ky_addon_wef_captain",
+   "wh_main_anc_follower_goblin_ky_addon_wef_sister",
+   "anc_follower_goblin_ky_addon_wef_sister",
+   "wh_main_anc_follower_goblin_ky_addon_wef_slutdancer",
+   "anc_follower_goblin_ky_addon_wef_slutdancer",
+   "wh_main_anc_follower_goblin_ky_addon_hef_mage",
+   "anc_follower_goblin_ky_addon_hef_mage",
+   "wh_main_anc_follower_goblin_ky_addon_hef_princess",
+   "anc_follower_goblin_ky_addon_hef_princess",
+   "wh_main_anc_follower_goblin_ky_addon_hef_sisters",
+   "anc_follower_goblin_ky_addon_hef_sisters",
+   "wh_main_anc_follower_goblin_ky_addon_def_witch",
+   "anc_follower_goblin_ky_addon_def_witch",
+   "wh_main_anc_follower_goblin_ky_addon_def_sorceress",
+   "anc_follower_goblin_ky_addon_def_sorceress",
+   "wh_main_anc_follower_goblin_ky_addon_def_daughter",
+   "anc_follower_goblin_ky_addon_def_daughter",
+   "wh_main_anc_follower_goblin_ky_addon_liz_chieftess",
+   "anc_follower_goblin_ky_addon_liz_chieftess",
+   "wh_main_anc_follower_goblin_ky_addon_liz_priestess",
+   "anc_follower_goblin_ky_addon_liz_priestess",
+   "wh_main_anc_follower_goblin_ky_addon_liz_hunter",
+   "anc_follower_goblin_ky_addon_liz_hunter",
+   "wh_main_anc_follower_goblin_ky_addon_pir_vamp",
+   "anc_follower_goblin_ky_addon_pir_vamp",
+   "wh_main_anc_follower_goblin_ky_addon_pir_captain",
+   "anc_follower_goblin_ky_addon_pir_captain",
+   "wh_main_anc_follower_goblin_ky_addon_pir_syreen",
+   "anc_follower_goblin_ky_addon_pir_syreen",
+   "wh_main_anc_follower_goblin_ky_addon_chf_laborers",
+   "anc_follower_goblin_ky_addon_chf_laborers",
+   "wh_main_anc_follower_goblin_ky_addon_chf_overseer",
+   "anc_follower_goblin_ky_addon_chf_overseer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_sorcerer",
+   "anc_follower_goblin_ky_addon_chf_sorcerer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_daemonsmith",
+   "anc_follower_goblin_ky_addon_chf_daemonsmith",
+   "wh_main_anc_follower_goblin_ky_addon_chf_caged_centaur",
+   "anc_follower_goblin_ky_addon_chf_caged_centaur",
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "wh_main_anc_mount_giant_wolf",
+   "mount",
+   "gob_leader_lord_knight",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "gob_leader_lord_fighter",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "gob_leader_lord_horde",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "gob_leader_lord_knight_horde",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "gob_leader_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "wh_main_anc_weapon",
+   "gob_leader_lord_spear_horde",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde",
+   "gob_leader_lord_wolf_horde"
+  ],
+  "ancillary_info_tables": [
+   "wh_main_anc_follower_goblin_ky_addon_enslaved_ogre_female",
+   "wh_main_anc_follower_goblin_ky_addon_caged_ogre",
+   "wh_main_anc_follower_goblin_ky_addon_defected_gnoblar",
+   "wh_main_anc_follower_goblin_ky_addon_chs_berzerkeress",
+   "wh_main_anc_follower_goblin_ky_addon_chs_crafter",
+   "wh_main_anc_follower_goblin_ky_addon_chs_enslaved_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_kis_frost_maiden",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_guard",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_witch",
+   "wh_main_anc_follower_goblin_ky_addon_krn_cockthirster",
+   "wh_main_anc_follower_goblin_ky_addon_krn_khorn_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_krn_pincess_khorn",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_plagueslut",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_herald_slave",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_tze_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_tze_herald_slave",
+   "wh_main_anc_follower_goblin_ky_addon_tze_girl",
+   "wh_main_anc_follower_goblin_ky_addon_sla_daemonette",
+   "wh_main_anc_follower_goblin_ky_addon_sla_herald",
+   "wh_main_anc_follower_goblin_ky_addon_sla_alluress",
+   "wh_main_anc_follower_goblin_ky_addon_cat_shugengan",
+   "wh_main_anc_follower_goblin_ky_addon_cat_cultist",
+   "wh_main_anc_follower_goblin_ky_addon_cat_alchemist",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_maiden",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runeslave",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runecollar",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_thaness",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_harem",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_slutcrafter",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_caged_stunty",
+   "wh_main_anc_follower_goblin_ky_addon_emp_noble",
+   "wh_main_anc_follower_goblin_ky_addon_emp_knightess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_priestess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_farmgirl",
+   "wh_main_anc_follower_goblin_ky_addon_emp_squire",
+   "wh_main_anc_follower_goblin_ky_addon_vam_vampiress",
+   "wh_main_anc_follower_goblin_ky_addon_vam_slut",
+   "wh_main_anc_follower_goblin_ky_addon_vam_necromancer",
+   "wh_main_anc_follower_goblin_ky_addon_brt_damsel",
+   "wh_main_anc_follower_goblin_ky_addon_brt_prophetess",
+   "wh_main_anc_follower_goblin_ky_addon_brt_life_prophetess",
+   "wh_main_anc_follower_goblin_ky_addon_wef_captain",
+   "wh_main_anc_follower_goblin_ky_addon_wef_sister",
+   "wh_main_anc_follower_goblin_ky_addon_wef_slutdancer",
+   "wh_main_anc_follower_goblin_ky_addon_hef_mage",
+   "wh_main_anc_follower_goblin_ky_addon_hef_princess",
+   "wh_main_anc_follower_goblin_ky_addon_hef_sisters",
+   "wh_main_anc_follower_goblin_ky_addon_def_witch",
+   "wh_main_anc_follower_goblin_ky_addon_def_sorceress",
+   "wh_main_anc_follower_goblin_ky_addon_def_daughter",
+   "wh_main_anc_follower_goblin_ky_addon_liz_chieftess",
+   "wh_main_anc_follower_goblin_ky_addon_liz_priestess",
+   "wh_main_anc_follower_goblin_ky_addon_liz_hunter",
+   "wh_main_anc_follower_goblin_ky_addon_pir_vamp",
+   "wh_main_anc_follower_goblin_ky_addon_pir_captain",
+   "wh_main_anc_follower_goblin_ky_addon_pir_syreen",
+   "wh_main_anc_follower_goblin_ky_addon_chf_laborers",
+   "wh_main_anc_follower_goblin_ky_addon_chf_overseer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_sorcerer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_daemonsmith",
+   "wh_main_anc_follower_goblin_ky_addon_chf_caged_centaur",
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde"
+  ],
+  "ancillary_to_effects_tables": [
+   "wh_main_anc_follower_goblin_ky_addon_enslaved_ogre_female",
+   "wh_main_effect_public_order_characters",
+   "character_to_province_own",
+   "wh_main_effect_force_all_campaign_raid_income",
+   "character_to_force_own",
+   "wh_main_effect_force_stat_leadership_vs_greenskins",
+   "character_to_force_enemy_regionwide",
+   "wh_main_anc_follower_goblin_ky_addon_caged_ogre",
+   "wh3_main_effect_force_stat_leadership_vs_ogre_kingdoms",
+   "wh_main_anc_follower_goblin_ky_addon_defected_gnoblar",
+   "wh_main_effect_force_army_campaign_ambush_defence_success_chance",
+   "wh_main_anc_follower_goblin_ky_addon_chs_berzerkeress",
+   "wh_main_effect_character_stat_physical_resistance",
+   "wh_main_effect_force_stat_melee_attack_vs_chaos_norsca",
+   "wh_main_anc_follower_goblin_ky_addon_chs_crafter",
+   "wh_main_effect_force_stat_weapon_strength_base_mult",
+   "wh_main_anc_follower_goblin_ky_addon_chs_enslaved_cultist",
+   "wh2_dlc17_effect_enemy_leadership_forces_of_chaos",
+   "wh_main_anc_follower_goblin_ky_addon_kis_frost_maiden",
+   "wh3_main_effect_force_stat_leadership_vs_kislev",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_guard",
+   "wh_main_effect_force_stat_missile_damage",
+   "wh_main_anc_follower_goblin_ky_addon_kis_ice_witch",
+   "wh_main_effect_force_army_campaign_attrition_all_resistance",
+   "wh_main_anc_follower_goblin_ky_addon_krn_cockthirster",
+   "wh2_main_effect_force_stat_weapon_strength_vs_chaos_norsca",
+   "wh_main_effect_force_stat_weapon_strength",
+   "wh_main_anc_follower_goblin_ky_addon_krn_khorn_cultist",
+   "wh3_main_effect_force_stat_melee_attack_vs_khorne",
+   "wh3_main_effect_force_stat_melee_defence_vs_khorne",
+   "wh_main_anc_follower_goblin_ky_addon_krn_pincess_khorn",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_plagueslut",
+   "wh2_dlc17_effect_ability_enable_horrible_regeneration",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_herald_slave",
+   "wh_main_effect_force_stat_ward_save",
+   "wh3_main_effect_force_stat_ward_save_vs_chaos_daemons",
+   "wh_main_anc_follower_goblin_ky_addon_ngl_cultist",
+   "wh3_main_effect_force_stat_melee_defence_vs_chaos_daemons",
+   "wh_main_anc_follower_goblin_ky_addon_tze_cultist",
+   "wh_main_effect_force_stat_magic_resistance",
+   "wh_main_anc_follower_goblin_ky_addon_tze_herald_slave",
+   "wh3_main_effect_battle_barrier_health_mod",
+   "wh3_main_effect_battle_barrier_health_add",
+   "wh3_main_effect_battle_barrier_replenish_rate_mod",
+   "wh3_main_effect_battle_barrier_replenish_delay_mod",
+   "wh_main_anc_follower_goblin_ky_addon_tze_girl",
+   "wh3_main_effect_force_stat_leadership_vs_daemons",
+   "wh_main_anc_follower_goblin_ky_addon_sla_daemonette",
+   "wh3_main_effect_force_all_seduce_units_budget_enemy",
+   "wh3_main_effect_force_stat_leadership_vs_slaanesh",
+   "wh_main_anc_follower_goblin_ky_addon_sla_herald",
+   "wh_main_effect_force_stat_leadership",
+   "wh_main_anc_follower_goblin_ky_addon_sla_alluress",
+   "wh_main_anc_follower_goblin_ky_addon_cat_shugengan",
+   "wh_main_anc_follower_goblin_ky_addon_cat_cultist",
+   "wh3_main_effect_force_stat_leadership_vs_cathay",
+   "wh_main_anc_follower_goblin_ky_addon_cat_alchemist",
+   "wh_main_effect_character_stat_unit_health",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_maiden",
+   "wh_main_effect_force_stat_leadership_vs_dwarfs",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runeslave",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_runecollar",
+   "character_to_character_own_banner_goblins",
+   "wh_main_effect_force_stat_speed",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_thaness",
+   "wh2_dlc17_effect_siege_tower_missile_damage_enemy",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_harem",
+   "wh_main_effect_force_stat_melee_defence",
+   "wh_main_effect_force_stat_melee_attack",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_slutcrafter",
+   "wh_main_effect_force_stat_missile_resistance",
+   "wh_main_effect_force_stat_ap_damage",
+   "wh_main_effect_force_stat_ap_missile_damage_mult",
+   "wh_main_anc_follower_goblin_ky_addon_dwf_caged_stunty",
+   "wh_main_anc_follower_goblin_ky_addon_emp_noble",
+   "wh_main_effect_tech_upkeep_cost_reduction_goblins",
+   "wh_main_anc_follower_goblin_ky_addon_emp_knightess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_priestess",
+   "wh_main_anc_follower_goblin_ky_addon_emp_farmgirl",
+   "wh_main_anc_follower_goblin_ky_addon_emp_squire",
+   "wh_main_effect_force_all_campaign_upkeep",
+   "wh_main_anc_follower_goblin_ky_addon_vam_vampiress",
+   "wh_main_anc_follower_goblin_ky_addon_vam_slut",
+   "wh_main_anc_follower_goblin_ky_addon_vam_necromancer",
+   "wh3_main_effect_force_stat_unit_mass_percentage_mod",
+   "wh_main_anc_follower_goblin_ky_addon_brt_damsel",
+   "wh_main_anc_follower_goblin_ky_addon_brt_prophetess",
+   "wh_main_effect_force_army_campaign_ambush_attack_success_chance_dummy",
+   "wh_main_anc_follower_goblin_ky_addon_brt_life_prophetess",
+   "wh2_main_effect_ability_enable_regeneration",
+   "wh_main_anc_follower_goblin_ky_addon_wef_captain",
+   "wh_main_anc_follower_goblin_ky_addon_wef_sister",
+   "wh_main_anc_follower_goblin_ky_addon_wef_slutdancer",
+   "wh_main_effect_force_stat_missile_resistance_vs_wood_elves",
+   "wh_main_effect_character_stat_missile_resistance",
+   "wh_main_anc_follower_goblin_ky_addon_hef_mage",
+   "wh_main_effect_character_stat_magic_resistance",
+   "wh_main_anc_follower_goblin_ky_addon_hef_princess",
+   "wh_main_effect_force_stat_leadership_enemy_unit",
+   "wh_main_effect_character_stat_leadership_aura_size",
+   "character_to_character_own",
+   "wh_main_anc_follower_goblin_ky_addon_hef_sisters",
+   "wh_main_anc_follower_goblin_ky_addon_def_witch",
+   "wh_main_effect_character_stat_enable_poison_attacks",
+   "wh_main_anc_follower_goblin_ky_addon_def_sorceress",
+   "wh_main_anc_follower_goblin_ky_addon_def_daughter",
+   "wh_main_effect_character_stat_weapon_strength",
+   "wh_main_anc_follower_goblin_ky_addon_liz_chieftess",
+   "wh_main_effect_force_stat_melee_attack_grn_tier_1",
+   "wh_main_anc_follower_goblin_ky_addon_liz_priestess",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "wh_main_anc_follower_goblin_ky_addon_liz_hunter",
+   "wh_main_anc_follower_goblin_ky_addon_pir_vamp",
+   "wh_main_anc_follower_goblin_ky_addon_pir_captain",
+   "wh_main_anc_follower_goblin_ky_addon_pir_syreen",
+   "wh_main_anc_follower_goblin_ky_addon_chf_laborers",
+   "wh_main_effect_building_construction_cost_mod_all",
+   "wh_main_effect_economy_gdp_mod_all",
+   "wh_main_anc_follower_goblin_ky_addon_chf_overseer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_sorcerer",
+   "wh_main_anc_follower_goblin_ky_addon_chf_daemonsmith",
+   "wh_main_anc_follower_goblin_ky_addon_chf_caged_centaur"
+  ],
+  "ancillary_to_included_agents_tables": [
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "general",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde"
+  ],
+  "ancillary_types_tables": [
+   "anc_follower_goblin_ky_addon_enslaved_ogre_female",
+   "ui/campaign ui/ancillaries/ogre_1.png",
+   "anc_follower_goblin_ky_addon_caged_ogre",
+   "ui/campaign ui/ancillaries/wh3_main_anc_ogre_halfling.png",
+   "anc_follower_goblin_ky_addon_defected_gnoblar",
+   "ui/campaign ui/ancillaries/gnoblar.png",
+   "anc_follower_goblin_ky_addon_chs_berzerkeress",
+   "ui/campaign ui/ancillaries/chsberzerkeress.png",
+   "anc_follower_goblin_ky_addon_chs_crafter",
+   "ui/campaign ui/ancillaries/chscrafter.png",
+   "anc_follower_goblin_ky_addon_chs_enslaved_cultist",
+   "ui/campaign ui/ancillaries/chscultist.png",
+   "anc_follower_goblin_ky_addon_kis_frost_maiden",
+   "ui/campaign ui/ancillaries/kis_maiden.png",
+   "anc_follower_goblin_ky_addon_kis_ice_guard",
+   "ui/campaign ui/ancillaries/kis_guard.png",
+   "anc_follower_goblin_ky_addon_kis_ice_witch",
+   "ui/campaign ui/ancillaries/kis_witch.png",
+   "anc_follower_goblin_ky_addon_krn_cockthirster",
+   "ui/campaign ui/ancillaries/khn_cockthirster.png",
+   "anc_follower_goblin_ky_addon_krn_khorn_cultist",
+   "ui/campaign ui/ancillaries/khn_cultist.png",
+   "anc_follower_goblin_ky_addon_krn_pincess_khorn",
+   "ui/campaign ui/ancillaries/khn_princess.png",
+   "anc_follower_goblin_ky_addon_ngl_plagueslut",
+   "ui/campaign ui/ancillaries/ngl_plagueslut.png",
+   "anc_follower_goblin_ky_addon_ngl_herald_slave",
+   "ui/campaign ui/ancillaries/ngl_herald_slave.png",
+   "anc_follower_goblin_ky_addon_ngl_cultist",
+   "ui/campaign ui/ancillaries/ngl_cultist.png",
+   "anc_follower_goblin_ky_addon_tze_cultist",
+   "ui/campaign ui/ancillaries/tzh_cultist.png",
+   "anc_follower_goblin_ky_addon_tze_herald_slave",
+   "ui/campaign ui/ancillaries/tzh_herald.png",
+   "anc_follower_goblin_ky_addon_tze_girl",
+   "ui/campaign ui/ancillaries/tzh_girl.png",
+   "anc_follower_goblin_ky_addon_sla_daemonette",
+   "ui/campaign ui/ancillaries/sla_daemonette.png",
+   "anc_follower_goblin_ky_addon_sla_herald",
+   "ui/campaign ui/ancillaries/sla_herald.png",
+   "anc_follower_goblin_ky_addon_sla_alluress",
+   "ui/campaign ui/ancillaries/sla_aluress.png",
+   "anc_follower_goblin_ky_addon_cat_shugengan",
+   "ui/campaign ui/ancillaries/catshu.png",
+   "anc_follower_goblin_ky_addon_cat_cultist",
+   "ui/campaign ui/ancillaries/catblushing_moon.png",
+   "anc_follower_goblin_ky_addon_cat_alchemist",
+   "ui/campaign ui/ancillaries/catalchemist.png",
+   "anc_follower_goblin_ky_addon_dwf_maiden",
+   "ui/campaign ui/ancillaries/dwf_maiden.png",
+   "anc_follower_goblin_ky_addon_dwf_runeslave",
+   "ui/campaign ui/ancillaries/dwf_runeslut.png",
+   "anc_follower_goblin_ky_addon_dwf_runecollar",
+   "ui/campaign ui/ancillaries/dwf_runecollar.png",
+   "anc_follower_goblin_ky_addon_dwf_thaness",
+   "ui/campaign ui/ancillaries/dwf_thaness.png",
+   "anc_follower_goblin_ky_addon_dwf_harem",
+   "ui/campaign ui/ancillaries/dwf_harem.png",
+   "anc_follower_goblin_ky_addon_dwf_slutcrafter",
+   "ui/campaign ui/ancillaries/dwf_slutcrafter.png",
+   "anc_follower_goblin_ky_addon_dwf_caged_stunty",
+   "ui/campaign ui/ancillaries/wh_main_anc_dwarfs_engineer.png",
+   "anc_follower_goblin_ky_addon_emp_noble",
+   "ui/campaign ui/ancillaries/emp_noble.png",
+   "anc_follower_goblin_ky_addon_emp_knightess",
+   "ui/campaign ui/ancillaries/emp_knightess.png",
+   "anc_follower_goblin_ky_addon_emp_priestess",
+   "ui/campaign ui/ancillaries/emp_priestess.png",
+   "anc_follower_goblin_ky_addon_emp_farmgirl",
+   "ui/campaign ui/ancillaries/emp_farmgirl.png",
+   "anc_follower_goblin_ky_addon_emp_squire",
+   "ui/campaign ui/ancillaries/emp_squire.png",
+   "anc_follower_goblin_ky_addon_vam_vampiress",
+   "ui/campaign ui/ancillaries/vmp_vampiress.png",
+   "anc_follower_goblin_ky_addon_vam_slut",
+   "ui/campaign ui/ancillaries/vmp_sluts.png",
+   "anc_follower_goblin_ky_addon_vam_necromancer",
+   "ui/campaign ui/ancillaries/vmp_necromancer.png",
+   "anc_follower_goblin_ky_addon_brt_damsel",
+   "ui/campaign ui/ancillaries/brt_damsal.png",
+   "anc_follower_goblin_ky_addon_brt_prophetess",
+   "ui/campaign ui/ancillaries/brt_prophetess.png",
+   "anc_follower_goblin_ky_addon_brt_life_prophetess",
+   "ui/campaign ui/ancillaries/brt_life_prohpetess.png",
+   "anc_follower_goblin_ky_addon_wef_captain",
+   "ui/campaign ui/ancillaries/wef_captain.png",
+   "anc_follower_goblin_ky_addon_wef_sister",
+   "ui/campaign ui/ancillaries/wef_sister.png",
+   "anc_follower_goblin_ky_addon_wef_slutdancer",
+   "ui/campaign ui/ancillaries/wef_dancer.png",
+   "anc_follower_goblin_ky_addon_hef_mage",
+   "ui/campaign ui/ancillaries/hef_mage.png",
+   "anc_follower_goblin_ky_addon_hef_princess",
+   "ui/campaign ui/ancillaries/hef_princess.png",
+   "anc_follower_goblin_ky_addon_hef_sisters",
+   "ui/campaign ui/ancillaries/hef_sisters.png",
+   "anc_follower_goblin_ky_addon_def_witch",
+   "ui/campaign ui/ancillaries/def_witch.png",
+   "anc_follower_goblin_ky_addon_def_sorceress",
+   "ui/campaign ui/ancillaries/def_sorceress.png",
+   "anc_follower_goblin_ky_addon_def_daughter",
+   "ui/campaign ui/ancillaries/def_daughter.png",
+   "anc_follower_goblin_ky_addon_liz_chieftess",
+   "ui/campaign ui/ancillaries/amazon_berserker.png",
+   "anc_follower_goblin_ky_addon_liz_priestess",
+   "ui/campaign ui/ancillaries/amazon_priestess.png",
+   "anc_follower_goblin_ky_addon_liz_hunter",
+   "ui/campaign ui/ancillaries/amazon_huntress.png",
+   "anc_follower_goblin_ky_addon_pir_vamp",
+   "ui/campaign ui/ancillaries/pir_vamp.png",
+   "anc_follower_goblin_ky_addon_pir_captain",
+   "ui/campaign ui/ancillaries/pir_captain.png",
+   "anc_follower_goblin_ky_addon_pir_syreen",
+   "ui/campaign ui/ancillaries/pir_syreen.png",
+   "anc_follower_goblin_ky_addon_chf_laborers",
+   "ui/campaign ui/ancillaries/chf_laborers.png",
+   "anc_follower_goblin_ky_addon_chf_overseer",
+   "ui/campaign ui/ancillaries/chf_overseer.png",
+   "anc_follower_goblin_ky_addon_chf_sorcerer",
+   "ui/campaign ui/ancillaries/chf_sorcerer.png",
+   "anc_follower_goblin_ky_addon_chf_daemonsmith",
+   "ui/campaign ui/ancillaries/chf_daemonsmith.png",
+   "anc_follower_goblin_ky_addon_chf_caged_centaur",
+   "ui/campaign ui/ancillaries/noblewoman.png"
+  ],
+  "armed_citizenry_unit_groups_tables": [
+   "gobbo_pens_garrison_1",
+   "gobbo_pens_garrison_2",
+   "gobbo_pens_garrison_3"
+  ],
+  "armed_citizenry_units_to_unit_groups_junctions_tables": [
+   "gob_horde",
+   "gobbo_pens_garrison_1",
+   "gob_trainers_emp_crossbow",
+   "gob_trainers_emp",
+   "gobbo_pens_garrison_2",
+   "gob_trainers_def_crossbow",
+   "gobbo_pens_garrison_3",
+   "gob_trainers_brt",
+   "gob_trainers_emp_rifle"
+  ],
+  "battle_entities_tables": [
+   "gob_trainers_cth",
+   "man",
+   "circle",
+   "large",
+   "ignore",
+   "wh_goblin",
+   "infantry_light_effects",
+   "wh_main_unit_combat",
+   "small_entity",
+   "gob_trainers_emp"
+  ],
+  "building_chain_availability_sets_tables": [
+   "gob_cave_pens",
+   "gob_buildings"
+  ],
+  "building_effects_junction_tables": [
+   "gob_cave_pens_1",
+   "wh2_dlc15_per_turn_salvage_gain",
+   "building_to_faction_own",
+   "wh_main_effect_public_order_base",
+   "province_to_province_own_unseen",
+   "gob_cave_pens_2",
+   "gob_cave_pens_3",
+   "wh_main_effect_economy_gdp_mod_all",
+   "province_to_region_own",
+   "wh_main_effect_unit_recruitment_points",
+   "wh3_main_effect_corruption_slaanesh_buildings",
+   "region_to_region_own",
+   "wh_main_effect_force_all_campaign_upkeep",
+   "faction_to_force_own",
+   "wh_main_effect_economy_gdp_subsistance",
+   "building_to_building_own",
+   "wh_main_grn_settlement_major_1",
+   "grn_ky_prisoner_battles",
+   "wh_main_grn_settlement_major_2"
+  ],
+  "building_level_armed_citizenry_junctions_tables": [
+   "gob_cave_pens_2",
+   "gobbo_pens_garrison_2",
+   "gob_cave_pens_1",
+   "gobbo_pens_garrison_1",
+   "gob_cave_pens_3",
+   "gobbo_pens_garrison_3"
+  ],
+  "building_units_allowed_tables": [
+   "gob_cave_barracks_1",
+   "gob_trainers",
+   "gob_cave_barracks_2",
+   "gob_cave_barracks_3",
+   "gob_cave_barracks_4",
+   "gob_wolves"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "wh_main_uniform_gob_lord_01",
+   "gob_leader_lord",
+   "wh_main_uniform_gob_lord_02",
+   "wh_main_uniform_gob_lord_03"
+  ],
+  "campaign_character_arts_tables": [
+   "wh_main_uniform_gob_lord_01",
+   "none",
+   "wh_main_uniform_grn_goblin_big_boss_01",
+   "wh_main_campaign_grn_ship_heavy",
+   "cam_hu5_goblin_spear_and_shield",
+   "cam_heavy_ship_02",
+   "wh_main_uniform_gob_lord_02",
+   "wh_main_uniform_grn_goblin_big_boss_02",
+   "wh_main_uniform_gob_lord_03",
+   "wh_main_uniform_grn_goblin_big_boss_03"
+  ],
+  "campaign_features_tables": [
+   "unit_upgrades",
+   "wh_main_feature_greenskins"
+  ],
+  "campaign_group_crafting_infos_tables": [
+   "wh_main_feature_greenskins",
+   "grn_ky_prisoners"
+  ],
+  "campaign_group_member_criteria_cultures_tables": [
+   "wh_main_grn_greenskins",
+   "grn_ky_prisoners",
+   "ACTOR"
+  ],
+  "campaign_group_members_tables": [
+   "grn_ky_prisoners"
+  ],
+  "campaign_group_pooled_resources_tables": [
+   "grn_ky_prisoners"
+  ],
+  "campaign_group_post_battle_casualty_resources_tables": [
+   "wh_main_feature_greenskins",
+   "grn_ky_prisoner_battles",
+   "FACTION"
+  ],
+  "campaign_groups_tables": [
+   "grn_ky_prisoners"
+  ],
+  "campaign_mount_animation_set_overrides_tables": [
+   "cam_hero_hu5_dlc23_gorduz_axe_shield",
+   "wh3_dlc23_chd_cha_gorduz_backstabber_giant_wolf",
+   "cam_hu5_goblin_wf1_wolf_spear_and_shield",
+   "cam_hu5_goblin_spear_and_shield",
+   "wh_main_grn_cha_goblin_big_boss_1",
+   "cam_hu5_goblin_staff_and_sword",
+   "wh_main_grn_cha_goblin_great_shaman_1",
+   "cam_hu5_goblin_wf1_wolf_staff_and_sword"
+  ],
+  "campaign_mounts_tables": [
+   "cam_wf1_giant_wolf",
+   "wh_main_grn_mnt_giant_wolf",
+   "wh_main_uniform_gob_lord_01",
+   "wh_main_vo_culture_Wolf"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "goblin_ky_addon_gobbo_alchemy",
+   "SECOND",
+   "THIRD",
+   "goblin_ky_addon_shaman_vision",
+   "FOURTH",
+   "goblin_ky_addon_races",
+   "goblin_ky_addon_lazy_gobbos",
+   "goblin_ky_addon_def_raid"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "goblin_ky_addon_gobbo_alchemy",
+   "GEN_TARGET_FACTION",
+   "default",
+   "VAR_CHANCE",
+   "CND_CULTURE",
+   "wh_main_grn_greenskins",
+   "CND_ROUNDS_UNTIL_NEXT",
+   "goblin_ky_addon_shaman_vision",
+   "goblin_ky_addon_races",
+   "goblin_ky_addon_lazy_gobbos",
+   "goblin_ky_addon_def_raid",
+   "CND_ARMY_IN_ENEMY_REGION",
+   "CND_WAR_WITH",
+   "wh2_main_def_dark_elves"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "goblin_ky_addon_gobbo_alchemy",
+   "EFFECT_BUNDLE",
+   "default",
+   "SECOND",
+   "THIRD",
+   "goblin_ky_addon_shaman_vision",
+   "ADD_ANCILLARY",
+   "FOURTH",
+   "goblin_ky_addon_races",
+   "goblin_ky_addon_lazy_gobbos",
+   "goblin_ky_addon_def_raid"
+  ],
+  "character_skill_level_details_tables": [
+   "goblin_ky_addon_indent_3_1",
+   "goblin_ky_addon_indent_3_2",
+   "goblin_ky_addon_indent_3_3",
+   "goblin_ky_addon_indent_3_4",
+   "goblin_ky_addon_indent_3_5",
+   "goblin_ky_addon_indent_3_6",
+   "goblin_ky_addon_indent_3_7",
+   "goblin_ky_addon_indent_3_8",
+   "goblin_ky_addon_indent_3_9",
+   "goblin_ky_addon_indent_3_10",
+   "goblin_ky_addon_indent_3_11",
+   "goblin_ky_addon_indent_3_12",
+   "goblin_ky_addon_mount_1",
+   "goblin_ky_addon_mount_2",
+   "goblin_ky_addon_mount_3",
+   "goblin_ky_addon_mount_4",
+   "goblin_ky_addon_mount_5"
+  ],
+  "character_skill_level_to_ancillaries_junctions_tables": [
+   "wh_goblin_ky_addon_goblin_lord_knightess",
+   "goblin_ky_addon_mount_2",
+   "wh_goblin_ky_addon_goblin_lord_fighter",
+   "goblin_ky_addon_mount_1",
+   "wh_goblin_ky_addon_goblin_lord_horde",
+   "goblin_ky_addon_mount_3",
+   "wh_goblin_ky_addon_goblin_lord_knightess_horde",
+   "wh_goblin_ky_addon_goblin_lord_fighter_horde",
+   "wh_goblin_ky_addon_goblin_lord_spear_horde",
+   "goblin_ky_addon_mount_4",
+   "wh_goblin_ky_addon_goblin_lord_wolf_horde",
+   "goblin_ky_addon_mount_5"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "goblin_ky_addon_indent_3_1",
+   "wh_main_effect_force_army_campaign_movement_range",
+   "general_to_force_own",
+   "wh_main_effect_character_stat_unit_health",
+   "character_to_character_own",
+   "goblin_ky_addon_indent_3_2",
+   "wh_main_effect_force_stat_leadership_goblin_slaves",
+   "wh_main_effect_character_stat_leadership",
+   "wh_main_effect_force_stat_armour_goblin_slaves",
+   "wh_main_effect_character_stat_armour",
+   "goblin_ky_addon_indent_3_3",
+   "endo_slaves_stat_speed",
+   "wh_main_effect_character_stat_speed",
+   "goblin_ky_addon_indent_3_4",
+   "wh3_main_effect_force_stat_accuracy",
+   "wh_main_effect_character_stat_melee_defence",
+   "wh_main_effect_force_stat_reload_goblin_slaves",
+   "wh_main_effect_character_stat_melee_attack",
+   "goblin_ky_addon_indent_3_5",
+   "wh_main_effect_attribute_enable_causes_fear",
+   "wh2_main_effect_character_stat_enable_discourage_attacks",
+   "goblin_ky_addon_indent_3_6",
+   "wh_main_effect_force_stat_leadership_goblins",
+   "wh_main_effect_force_stat_melee_goblin_slaves",
+   "wh_main_effect_force_stat_defense_goblin_slaves",
+   "goblin_ky_addon_indent_3_7",
+   "wh_main_effect_force_all_campaign_raid_income",
+   "grn_ky_prisoner_raiding_bonus",
+   "force_to_force_own",
+   "wh_main_effect_force_all_campaign_post_battle_loot_mod",
+   "goblin_ky_addon_indent_3_8",
+   "wh_main_effect_force_all_campaign_captives",
+   "grn_ky_prisoner_battles_bonus",
+   "wh_main_effect_force_all_campaign_captives_adjacent_province",
+   "goblin_ky_addon_indent_3_9",
+   "wh_main_effect_force_stat_recruit_rank_goblin_slaves",
+   "goblin_ky_addon_indent_3_10",
+   "wh_main_effect_force_stat_range_goblin_slaves",
+   "wh_main_effect_force_stat_missile_damage_goblin_slaves",
+   "wh_main_effect_force_stat_ap_missile_damage_goblin_slaves",
+   "goblin_ky_addon_indent_3_11",
+   "wh_main_effect_force_stat_weapon_strength_goblin_slaves",
+   "wh_main_effect_character_stat_weapon_strength_ap_damage_goblin_slaves",
+   "wh_main_effect_force_stat_charge_bonus_pct",
+   "wh_main_effect_character_stat_weapon_strength",
+   "wh_main_effect_character_stat_weapon_strength_ap_damage_mult",
+   "goblin_ky_addon_indent_3_12",
+   "wh_main_effect_force_stat_leadership_enemy_unit",
+   "character_to_force_enemy_provincewide",
+   "wh_main_effect_character_stat_magic_resistance",
+   "goblin_ky_addon_mount_1",
+   "wh_main_effect_enable_mount_fighter",
+   "goblin_ky_addon_mount_2",
+   "wh_main_effect_enable_mount_knightess",
+   "goblin_ky_addon_mount_3",
+   "wh_main_effect_enable_mount_horde",
+   "wh_main_effect_enable_mount_knightess_horde",
+   "wh_main_effect_enable_mount_fighter_horde",
+   "goblin_ky_addon_mount_4",
+   "wh_main_effect_enable_mount_spear_horde",
+   "goblin_ky_addon_mount_5",
+   "wh_main_effect_enable_mount_wolf_horde"
+  ],
+  "character_skill_node_links_tables": [
+   "goblin_ky_addon_indent_3_2_node",
+   "goblin_ky_addon_indent_3_1_node",
+   "REQUIRED",
+   "goblin_ky_addon_indent_3_3_node",
+   "goblin_ky_addon_indent_3_4_node",
+   "goblin_ky_addon_indent_3_5_node",
+   "SUBSET_REQUIRED",
+   "goblin_ky_addon_indent_3_6_node",
+   "goblin_ky_addon_indent_3_7_node",
+   "goblin_ky_addon_indent_3_8_node",
+   "goblin_ky_addon_indent_3_9_node",
+   "goblin_ky_addon_indent_3_10_node",
+   "goblin_ky_addon_indent_3_11_node",
+   "goblin_ky_addon_indent_3_12_node"
+  ],
+  "character_skill_node_set_items_tables": [
+   "gob_leader_lord",
+   "wh3_main_agent_action_scaling_wh_dlc06_skill_node_set_grn_night_goblin_warboss",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_01",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_02",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_03",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_04",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_05",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_06",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_07",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_08",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_09",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_10",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_11",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_12",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_battle_13",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_01",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_02",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_03",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_04",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_05",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_06",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_07",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_08",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_09",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_10",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_campaign_11",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_immortality",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_01",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_02",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_03",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_04",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_05",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_06",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_07",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_08",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_09",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_10",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_12",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_13",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_14",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_15",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_16",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_17",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_innate_18",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_01",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_02",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_03",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_04",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_05",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_06",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_07",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_08",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_09",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_10",
+   "wh_dlc06_skill_node_grn_night_goblin_warboss_self_11",
+   "goblin_ky_addon_mount_1_node",
+   "goblin_ky_addon_mount_2_node",
+   "goblin_ky_addon_mount_3_node",
+   "goblin_ky_addon_mount_4_node",
+   "goblin_ky_addon_mount_5_node",
+   "goblin_ky_addon_indent_3_1_node",
+   "goblin_ky_addon_indent_3_2_node",
+   "goblin_ky_addon_indent_3_3_node",
+   "goblin_ky_addon_indent_3_4_node",
+   "goblin_ky_addon_indent_3_5_node",
+   "goblin_ky_addon_indent_3_6_node",
+   "goblin_ky_addon_indent_3_7_node",
+   "goblin_ky_addon_indent_3_8_node",
+   "goblin_ky_addon_indent_3_9_node",
+   "goblin_ky_addon_indent_3_10_node",
+   "goblin_ky_addon_indent_3_11_node",
+   "goblin_ky_addon_indent_3_12_node"
+  ],
+  "character_skill_node_sets_tables": [
+   "general",
+   "gob_leader_lord"
+  ],
+  "character_skill_nodes_skill_locks_tables": [
+   "goblin_ky_addon_indent_3_7",
+   "goblin_ky_addon_indent_3_8_node",
+   "goblin_ky_addon_indent_3_9_node",
+   "goblin_ky_addon_indent_3_8",
+   "goblin_ky_addon_indent_3_7_node",
+   "goblin_ky_addon_indent_3_9",
+   "goblin_ky_addon_indent_3_10",
+   "goblin_ky_addon_indent_3_11_node",
+   "goblin_ky_addon_indent_3_12_node",
+   "goblin_ky_addon_indent_3_11",
+   "goblin_ky_addon_indent_3_10_node",
+   "goblin_ky_addon_indent_3_12"
+  ],
+  "character_skill_nodes_tables": [
+   "goblin_ky_addon_mount_1",
+   "goblin_ky_addon_mount_1_node",
+   "goblin_ky_addon_mount_2",
+   "goblin_ky_addon_mount_2_node",
+   "goblin_ky_addon_mount_3",
+   "goblin_ky_addon_mount_3_node",
+   "goblin_ky_addon_mount_4",
+   "goblin_ky_addon_mount_4_node",
+   "goblin_ky_addon_mount_5",
+   "goblin_ky_addon_mount_5_node",
+   "goblin_ky_addon_indent_3_1",
+   "goblin_ky_addon_indent_3_1_node",
+   "goblin_ky_addon_indent_3_2",
+   "goblin_ky_addon_indent_3_2_node",
+   "goblin_ky_addon_indent_3_3",
+   "goblin_ky_addon_indent_3_3_node",
+   "goblin_ky_addon_indent_3_4",
+   "goblin_ky_addon_indent_3_4_node",
+   "goblin_ky_addon_indent_3_5",
+   "goblin_ky_addon_indent_3_5_node",
+   "goblin_ky_addon_indent_3_6",
+   "goblin_ky_addon_indent_3_6_node",
+   "goblin_ky_addon_indent_3_7",
+   "goblin_ky_addon_indent_3_7_node",
+   "goblin_ky_addon_indent_3_8",
+   "goblin_ky_addon_indent_3_8_node",
+   "goblin_ky_addon_indent_3_9",
+   "goblin_ky_addon_indent_3_9_node",
+   "goblin_ky_addon_indent_3_10",
+   "goblin_ky_addon_indent_3_10_node",
+   "goblin_ky_addon_indent_3_11",
+   "goblin_ky_addon_indent_3_11_node",
+   "goblin_ky_addon_indent_3_12",
+   "goblin_ky_addon_indent_3_12_node"
+  ],
+  "character_skills_tables": [
+   "mount_giant_wolf.png",
+   "goblin_ky_addon_mount_1",
+   "PLACEHOLDER",
+   "goblin_ky_addon_mount_2",
+   "goblin_ky_addon_mount_3",
+   "goblin_ky_addon_mount_4",
+   "goblin_ky_addon_mount_5",
+   "goblin_ky_addon_indent_3_1",
+   "goblin_ky_addon_indent_3_2",
+   "goblin_ky_addon_indent_3_3",
+   "goblin_ky_addon_indent_3_4",
+   "goblin_ky_addon_indent_3_5",
+   "goblin_ky_addon_indent_3_6",
+   "goblin_ky_addon_indent_3_7",
+   "goblin_ky_addon_indent_3_8",
+   "goblin_ky_addon_indent_3_9",
+   "goblin_ky_addon_indent_3_10",
+   "goblin_ky_addon_indent_3_11",
+   "goblin_ky_addon_indent_3_12"
+  ],
+  "character_skills_to_level_reached_criterias_tables": [
+   "goblin_ky_addon_mount_1",
+   "goblin_ky_addon_mount_2",
+   "goblin_ky_addon_mount_3",
+   "goblin_ky_addon_mount_4",
+   "goblin_ky_addon_mount_5"
+  ],
+  "dilemmas_tables": [
+   "goblin_ky_addon_gobbo_alchemy",
+   "Goblin Alchemy",
+   "faction",
+   "Event",
+   "goblin_ky_addon_shaman_vision",
+   "Shaman Vision",
+   "goblin_ky_addon_races",
+   "goblin_races",
+   "goblin_ky_addon_lazy_gobbos",
+   "Lazy Gobbos",
+   "lazy_gobbos",
+   "goblin_ky_addon_def_raid",
+   "Raided Dark Elves",
+   "dark_elf_raided"
+  ],
+  "effect_bonus_value_basic_junction_tables": [
+   "grn_ky_prisoner_battles_bonus",
+   "post_battle_pooled_resource_loot_percentage_mod"
+  ],
+  "effect_bonus_value_ids_unit_sets_tables": [
+   "armour_mod",
+   "wh_main_effect_force_stat_armour_goblin_slaves",
+   "endo_slaves",
+   "morale",
+   "wh_main_effect_force_stat_leadership_goblin_slaves",
+   "reload",
+   "wh_main_effect_force_stat_reload_goblin_slaves",
+   "melee_attack_mod",
+   "wh_main_effect_force_stat_melee_goblin_slaves",
+   "melee_defence_mod",
+   "wh_main_effect_force_stat_defense_goblin_slaves",
+   "unit_xp_mod",
+   "wh_main_effect_force_stat_recruit_rank_goblin_slaves",
+   "range_mod",
+   "wh_main_effect_force_stat_range_goblin_slaves",
+   "missile_damage_mod_mult",
+   "wh_main_effect_force_stat_missile_damage_goblin_slaves",
+   "missile_damage_ap_mod_mult",
+   "wh_main_effect_force_stat_ap_missile_damage_goblin_slaves",
+   "melee_damage_ap_mod_mult",
+   "wh_main_effect_force_stat_weapon_strength_goblin_slaves",
+   "melee_damage_mod_mult",
+   "wh_main_effect_character_stat_weapon_strength_ap_damage_goblin_slaves"
+  ],
+  "effect_bonus_value_pooled_resource_factor_junctions_tables": [
+   "base_amount",
+   "grn_ky_prisoner_raiding"
+  ],
+  "effect_bonus_value_pooled_resource_junctions_tables": [
+   "percentage_multiplier_mod",
+   "grn_ky_prisoner_battles_bonus",
+   "grn_ky_prisoners",
+   "grn_ky_prisoner_raiding_bonus"
+  ],
+  "effect_bundles_tables": [
+   "effect_gobbo_mount_plugs",
+   "For when da slave gets used to da whippins",
+   "Shocky Plugs",
+   "none",
+   "effect_gobbo_mount_harness",
+   "Dem stuntys make some good armah. Turnz out dey make some good mount straps too",
+   "Stunty Harness",
+   "effect_gobbo_mount_red_rifle",
+   "Red Rifle",
+   "effect_gobbo_mount_purple_harness",
+   "Purple Harness",
+   "effect_gobbo_mount_scoped_crossbows",
+   "We put a scopey ting onnit",
+   "Scoped Crossbowz",
+   "effect_gobbo_mount_anti_fleshy_swords",
+   "Anti-Pansy Sword",
+   "effect_gobbo_mount_anti_biggun_lances",
+   "Anti-Big-un lances",
+   "effect_gobbo_mount_shocky_collar",
+   "Shocky Collar",
+   "effect_gobbo_giant_fed",
+   "Well Fed",
+   "effect_gobbo_giant_fucked",
+   "effect_gobbo_giant_boltz",
+   "Explozive Boltz",
+   "effect_gobbo_bombz",
+   "Explozive Bombz",
+   "effect_gobbo_diver_gear",
+   "Diver Wingsuit",
+   "effect_gobbo_spyglazz",
+   "Spyglazz",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_1",
+   "Red potion",
+   "faction",
+   "battle_movement.png",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_2",
+   "Smerts potion",
+   "experience.png",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_3",
+   "Bimbo potion",
+   "public_order.png",
+   "goblin_ky_addon_payload_gobbo_races_payload_1",
+   "goblin_ky_addon_payload_gobbo_races_payload_2",
+   "Someone said we gib some food to da slave dat wins. ",
+   "goblin_ky_addon_payload_gobbo_races_payload_3",
+   "goblin_ky_addon_payload_goblin_ky_addon_lazy_gobbos_1",
+   "goblin_ky_addon_payload_goblin_ky_addon_lazy_gobbos_2",
+   "goblin_ky_addon_payload_goblin_ky_addon_def_raid_4",
+   "I am not diplomacy.",
+   "Killed the man"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "effect_gobbo_mount_plugs",
+   "wh_main_effect_character_stat_speed",
+   "character_to_character_own",
+   "start_turn_completed",
+   "wh_main_effect_attribute_enable_strider",
+   "effect_gobbo_mount_harness",
+   "wh_main_effect_character_stat_ward_save",
+   "wh_main_effect_character_stat_physical_resistance",
+   "wh_main_effect_character_stat_missile_resistance",
+   "effect_gobbo_mount_red_rifle",
+   "wh2_dlc16_effect_stat_mod_ap_damage_missile_additive",
+   "wh_main_effect_character_stat_missile_damage",
+   "wh_main_effect_character_stat_reload_time_reduction",
+   "effect_gobbo_mount_purple_harness",
+   "wh2_dlc10_effect_attribute_enable_snipe",
+   "wh_main_effect_attribute_enable_stalk",
+   "effect_gobbo_mount_scoped_crossbows",
+   "wh_main_effect_character_stat_range",
+   "effect_gobbo_mount_anti_fleshy_swords",
+   "wh_main_effect_character_stat_ap_damage",
+   "effect_gobbo_mount_anti_biggun_lances",
+   "wh_main_effect_character_stat_bonus_vs_large",
+   "effect_gobbo_mount_shocky_collar",
+   "wh_main_effect_character_stat_charge_bonus_add",
+   "effect_gobbo_giant_fed",
+   "wh_main_effect_character_stat_armour",
+   "effect_gobbo_giant_fucked",
+   "effect_gobbo_giant_boltz",
+   "wh3_dlc23_effect_character_stat_explosive_damage",
+   "effect_gobbo_bombz",
+   "effect_gobbo_diver_gear",
+   "wh3_main_effect_force_stat_accuracy",
+   "effect_gobbo_spyglazz",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_1",
+   "wh_main_effect_tech_movement_speed_increase_goblins",
+   "faction_to_force_own",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_2",
+   "wh_main_effect_tech_unit_xp_levels_goblins",
+   "goblin_ky_addon_payload_gobbo_alchemy_payload_3",
+   "wh_main_effect_public_order_faction",
+   "goblin_ky_addon_payload_gobbo_races_payload_1",
+   "goblin_ky_addon_payload_gobbo_races_payload_2",
+   "wh_main_effect_tech_upkeep_cost_reduction_goblins",
+   "goblin_ky_addon_payload_gobbo_races_payload_3",
+   "wh_main_effect_unit_recruitment_points",
+   "goblin_ky_addon_payload_goblin_ky_addon_lazy_gobbos_1",
+   "wh_main_effect_public_order_characters",
+   "goblin_ky_addon_payload_goblin_ky_addon_lazy_gobbos_2",
+   "wh_main_effect_tech_recruitment_cost_reduction_goblins",
+   "goblin_ky_addon_payload_goblin_ky_addon_def_raid_4",
+   "wh_main_effect_force_all_campaign_raid_income",
+   "wh_main_bundle_stance_army_raiding_camp",
+   "grn_ky_prisoner_raiding",
+   "faction_to_faction_own_unseen"
+  ],
+  "effects_tables": [
+   "wh_main_effect_force_stat_armour_goblin_slaves",
+   "armour.png",
+   "battle",
+   "wh_main_effect_force_stat_leadership_goblin_slaves",
+   "morale.png",
+   "wh_main_effect_force_stat_reload_goblin_slaves",
+   "icon_stat_reload_time_force.png",
+   "wh_main_effect_force_stat_melee_goblin_slaves",
+   "melee.png",
+   "wh_main_effect_force_stat_defense_goblin_slaves",
+   "defence.png",
+   "wh_main_effect_force_stat_recruit_rank_goblin_slaves",
+   "experience.png",
+   "campaign",
+   "wh_main_effect_force_stat_range_goblin_slaves",
+   "accuracy.png",
+   "wh_main_effect_force_stat_missile_damage_goblin_slaves",
+   "ranged_damage.png",
+   "wh_main_effect_force_stat_ap_missile_damage_goblin_slaves",
+   "wh_main_effect_force_stat_weapon_strength_goblin_slaves",
+   "weapon_damage.png",
+   "wh_main_effect_character_stat_weapon_strength_ap_damage_goblin_slaves",
+   "armour_piercing_character.png",
+   "wh_main_effect_enable_mount_knightess",
+   "mount.png",
+   "both",
+   "wh_main_effect_enable_mount_fighter",
+   "wh_main_effect_enable_mount_horde",
+   "wh_main_effect_enable_mount_knightess_horde",
+   "wh_main_effect_enable_mount_fighter_horde",
+   "wh_main_effect_enable_mount_spear_horde",
+   "wh_main_effect_enable_mount_wolf_horde",
+   "grn_ky_prisoner_battles",
+   "icon_prisoners.png",
+   "grn_ky_prisoner_raiding",
+   "grn_ky_prisoner_raiding_bonus",
+   "grn_ky_prisoner_battles_bonus"
+  ],
+  "faction_agent_permitted_subtypes_tables": [
+   "general",
+   "wh_main_grn_greenskins",
+   "gob_leader_lord",
+   "wh_main_grn_crooked_moon",
+   "wh2_dlc15_grn_bonerattlaz",
+   "wh_main_grn_orcs_of_the_bloody_hand",
+   "wh2_dlc15_grn_broken_axe"
+  ],
+  "land_units_tables": [
+   "wh2_main_chainmail_40",
+   "artillery",
+   "art_fld",
+   "gob_bolt_thrower",
+   "hu5_goblin_sword",
+   "wh2_dlc16_grn_inf_goblin_crew_blood_dismembers",
+   "wh2_main_hef_shortsword",
+   "none",
+   "wh_main_artillery",
+   "trained",
+   "wh_main_grn_art_goblin_rock_lobber",
+   "vo_sel_goblin_doom_diver",
+   "vo_sel_artillery",
+   "vo_sel_generic",
+   "small",
+   "ranged_direct_arty",
+   "medium",
+   "domination_artillery",
+   "wh_dlc06_dwf_art_bolt_thrower",
+   "wh2_main_leather_25",
+   "war_beast",
+   "cav_mis",
+   "gob_trainers",
+   "gob_catchers",
+   "mixu_hu5_pigback_rider_javelin",
+   "wh_main_grn_inf_goblin_cav_blood",
+   "gob_catchers_javelin",
+   "wh_main_cavalry_chaotic",
+   "well_trained",
+   "gob_catchers_attributes",
+   "vo_sel_default",
+   "vo_sel_cavalry",
+   "vo_sel_culture",
+   "large",
+   "ranged_cav_harasser",
+   "domination_cav",
+   "wh2_main_leather_15",
+   "gob_diver_catapult",
+   "wh_main_sword_short",
+   "wh_main_grn_art_doom_diver_catapult",
+   "ranged_indirect_arty",
+   "grn_doom_diver",
+   "wh2_main_body_40",
+   "inf_melee",
+   "inf_mel",
+   "gob_giants",
+   "gob_giants_2h",
+   "hu13_wh3_ogre_2handed_sword",
+   "wh3_main_ogr_monster_ogre_ironguts_blood",
+   "wh3_main_ogr_ogre_ironguts_great_weapon",
+   "wh3_main_ogr_ironguts",
+   "gob_giants_attributes",
+   "vo_sel_ogr_ironguts",
+   "vo_sel_melee",
+   "melee_gatecrusher_shock",
+   "domination_infantry",
+   "wh2_main_body_100",
+   "gob_giants_2h_armor",
+   "inf_ranged",
+   "inf_mis",
+   "gob_giants_bolt_thrower",
+   "gob_hu13_bolt_thrower",
+   "wh3_main_ogr_monster_ogre_leadbelcher_blood",
+   "wh3_main_ogr_ogre_sword",
+   "gob_bolt_thrower_gun",
+   "wh_main_monstrous_trolls",
+   "vo_sel_ogr_leadbelchers",
+   "ranged_direct_gatecrusher",
+   "gob_giants_fist",
+   "hu13_wh3_ogre_sword_and_ironfist",
+   "wh3_main_ogr_monster_ogre_blood",
+   "wh_missile_block_35_metal",
+   "vo_sel_ogr_ironfists",
+   "wh_main_body_0",
+   "gob_horde",
+   "wh_main_grn_inf_goblin_blood_dismembers",
+   "wh2_main_inf_chaotic_formation_tight",
+   "gob_horde_attributes",
+   "vo_sel_goblin_goblins",
+   "melee",
+   "domination_infantry_expendable",
+   "wh2_main_plate_90",
+   "war_machine",
+   "chariot",
+   "gob_prisoner_wagon",
+   "hu1_empire_hr1_warhorse_lance_sword_shield",
+   "wh_main_cavalry_rider_standard_blood",
+   "wh_main_grn_mnt_warboar_no_saddle",
+   "wh2_dlc13_emp_war_wagon",
+   "wh2_dlc13_emp_rifle_war_wagons",
+   "wh2_dlc09_tmb_chariot",
+   "gob_trainers_attributes",
+   "vo_sel_ranged",
+   "vo_sel_generic_short",
+   "ranged_harasser",
+   "wh2_main_heavy_metal_55",
+   "cav_mel",
+   "gob_ror_elf_trainers",
+   "mixu_hu5_pigback_rider",
+   "gob_elf_trainers",
+   "wh_missile_block_30_metal",
+   "gob_elite_gobbos_attributes",
+   "melee_cav_shock",
+   "gob_taskmaster",
+   "gob_throne",
+   "wh_missile_block_30_wood",
+   "melee_cav",
+   "wh2_main_plate_75",
+   "cav_shk",
+   "gob_trainers_brt",
+   "gob_hu5_trainer_lance",
+   "gob_trainers_cav_brt",
+   "wh_main_brt_lance",
+   "wh_main_cavalry_ordered",
+   "gob_trainers_brt_attributes",
+   "melee_flanker_shock",
+   "wh2_main_leather_35",
+   "gob_trainers_cth",
+   "gob_trainers_cth_attributes",
+   "gob_trainers_def_crossbow",
+   "gob_hu5_trainer_crossbow",
+   "gob_trainers_def_witch_elf",
+   "wh2_main_def_dual_swords_witch_elves",
+   "wh2_main_def_repeater_crossbow",
+   "gob_trainers_crossbows_attributes",
+   "gob_trainers_emp",
+   "gob_trainers_emp_attributes",
+   "gob_trainers_emp_crossbow",
+   "gob_trainers_yoke",
+   "wh_main_emp_sword",
+   "wh_main_emp_crossbow",
+   "gob_trainers_emp_rifle",
+   "gob_hu5_trainer_rifle",
+   "gob_rifle",
+   "gob_trainers_rifles_attributes",
+   "wh2_dlc16_unit_long_text_wef_mon_wolves",
+   "gob_wolves",
+   "wf1_giant_wolf",
+   "wh_main_monster_wolf_hound_blood",
+   "wh2_dlc16_wef_wolf_fangs",
+   "wh2_dlc16_unit_short_text_wef_mon_wolves",
+   "wh_main_cavalry_very_chaotic",
+   "gob_wolves_attributes",
+   "vo_sel_marauders",
+   "elves_wef",
+   "melee_flanker",
+   "high",
+   "gob_leader_lord_knight",
+   "wh_missile_block_35_wood",
+   "gob_lord_brt_attributes",
+   "gob_leader_lord",
+   "gob_lord_cth_attributes",
+   "gob_leader_lord_fighter",
+   "gob_lord_emp_attributes",
+   "gob_leader_lord_horde",
+   "gob_lord_cth_horde_attributes",
+   "gob_leader_lord_knight_horde",
+   "gob_lord_brt_horde_attributes",
+   "gob_leader_lord_fighter_horde",
+   "gob_lord_emp_horde_attributes",
+   "inf_spr",
+   "gob_leader_lord_spear_horde",
+   "hu5_goblin_spear_and_shield",
+   "wh_main_grn_goblin_spear_poison",
+   "wh_missile_block_60_wood",
+   "wh_main_grn_goblin_infantry_standard",
+   "gob_lord_spear_horde_attributes",
+   "melee_anti_large",
+   "gob_leader_lord_wolf_horde",
+   "wh_main_grn_mnt_giant_wolf",
+   "wh_main_grn_goblin_spear_wolf",
+   "gob_lord_wolf_horde_attributes"
+  ],
+  "land_units_to_unit_abilites_junctions_tables": [
+   "wh3_main_unit_passive_single_entity",
+   "gob_leader_lord",
+   "gob_leader_lord_fighter",
+   "gob_leader_lord_knight"
+  ],
+  "main_units_tables": [
+   "melee_cavalry",
+   "gob_trainers_cth",
+   "wh_main_shp_transport",
+   "gob_trainers",
+   "light",
+   "wh_main_vo_culture_Goblin",
+   "gnob_pigback_rider",
+   "vo_culture_None",
+   "wh3_main_vo_actor_Ogres_Gnoblarunit",
+   "missile_cavalry",
+   "gob_catchers",
+   "gob_trainers_emp",
+   "medium",
+   "gob_trainers_brt",
+   "gob_trainers_emp_crossbow",
+   "gob_trainers_bow",
+   "gob_trainers_emp_rifle",
+   "gob_trainers_rifle",
+   "gob_trainers_def_crossbow",
+   "war_beast",
+   "gob_wolves",
+   "wh_main_vo_culture_Dire_Wolves_WarHound",
+   "vamp_dire_wolf",
+   "wh_main_vo_culture_Vampire_Creature_Order_Giver",
+   "wh_main_vo_actor_default",
+   "lord",
+   "gob_leader_lord",
+   "gob_leader_lord_fighter",
+   "gob_leader_lord_knight",
+   "gob_leader_lord_horde",
+   "gob_leader_lord_knight_horde",
+   "gob_leader_lord_fighter_horde",
+   "gob_leader_lord_spear_horde",
+   "gob_leader_lord_wolf_horde",
+   "wh_main_grn_mnt_giant_wolf"
+  ],
+  "mounts_tables": [
+   "gob_trainers_cth",
+   "gob_hu1_trainer_mount",
+   "body",
+   "gob_trainer_mount_cth",
+   "vo_culture_None",
+   "gob_trainers_cav_brt",
+   "gob_trainers_brt",
+   "gob_trainer_mount_cav_brt",
+   "gob_trainers_emp",
+   "gob_trainer_mount_emp"
+  ],
+  "pooled_resource_factor_junctions_tables": [
+   "grn_ky_prisoner_battles",
+   "captured_in_battle",
+   "grn_ky_prisoners",
+   "grn_ky_prisoner_raiding",
+   "raiding",
+   "grn_ky_prisoner_income",
+   "buildings",
+   "grn_ky_prisoner_spending",
+   "wh2_dlc15_resource_factor_unit_upgrade"
+  ],
+  "pooled_resources_tables": [
+   "grn_ky_prisoners",
+   "other",
+   "icon_prisoners.png",
+   "END_OF_ROUND",
+   "FACTION"
+  ],
+  "projectiles_tables": [
+   "gob_catchers_javelin",
+   "javelin",
+   "small_arm_default",
+   "none",
+   "low",
+   "wh_javelin",
+   "placeholder",
+   "gob_catchers_javelin_boomstick",
+   "gnob_pigback_riders_javelin_boomstick",
+   "wh2_bolas",
+   "gob_rifle_bullet",
+   "musket",
+   "wh_emp_rifle_bullet",
+   "wh_bullet",
+   "wh2_dlc09_unit_contact_shieldbreaker",
+   "very_low",
+   "gob_doomdiver_victim",
+   "artillery",
+   "artillery_default",
+   "wh_main_grn_doomdiver_goblin_explosion",
+   "fixed",
+   "wh_bolt_thrower",
+   "wh_grn_doomdiver_goblin",
+   "doom_diver",
+   "medium"
+  ],
+  "resource_cost_pooled_resource_junctions_tables": [
+   "grn_ky_prisoner_spending",
+   "goblin_ky_costs_t1",
+   "absolute",
+   "default",
+   "goblin_ky_costs_t2",
+   "goblin_ky_costs_t3"
+  ],
+  "resource_costs_tables": [
+   "goblin_ky_costs_t1",
+   "ACTIONS",
+   "OTHER",
+   "ARMY_UPKEEP",
+   "BACKGROUND_INCOME",
+   "goblin_ky_costs_t2",
+   "goblin_ky_costs_t3"
+  ],
+  "ui_features_to_cultures_tables": [
+   "wh_main_grn_greenskins",
+   "WARBANDS"
+  ],
+  "ui_unit_bullet_point_unit_overrides_tables": [
+   "gob_fast_hu_mount",
+   "gob_leader_lord",
+   "shielded",
+   "gob_leader_lord_fighter",
+   "att_good",
+   "gob_leader_lord_knight",
+   "att_charge_strong",
+   "gob_leader_lord_horde",
+   "gob_leader_lord_fighter_horde",
+   "gob_leader_lord_knight_horde",
+   "gob_leader_lord_spear_horde",
+   "anti_large",
+   "defender",
+   "vanguard_deployment",
+   "gob_leader_lord_wolf_horde"
+  ],
+  "unit_attributes_groups_tables": [
+   "gob_trainers_emp_attributes",
+   "gob_trainers_cth_attributes",
+   "gob_lord_cth_attributes",
+   "gob_lord_cth_horde_attributes",
+   "gob_lord_brt_attributes",
+   "gob_lord_brt_horde_attributes",
+   "gob_lord_emp_attributes",
+   "gob_lord_emp_horde_attributes",
+   "gob_lord_spear_horde_attributes",
+   "gob_lord_wolf_horde_attributes"
+  ],
+  "unit_attributes_to_groups_junctions_tables": [
+   "hide_forest",
+   "gob_trainers_emp_attributes",
+   "causes_fear",
+   "devastating_flanker",
+   "fatigue_res",
+   "gob_trainers_brt_attributes",
+   "charge_defense_vs_large",
+   "gob_trainers_cth_attributes",
+   "stalk",
+   "guerrilla_deploy",
+   "gob_lord_cth_attributes",
+   "encourages",
+   "hide_scrub_and_forest",
+   "gob_lord_cth_horde_attributes",
+   "gob_lord_brt_attributes",
+   "gob_lord_brt_horde_attributes",
+   "gob_lord_emp_attributes",
+   "gob_lord_emp_horde_attributes",
+   "charge_defense",
+   "gob_lord_spear_horde_attributes",
+   "charge_reflection",
+   "gob_lord_wolf_horde_attributes"
+  ],
+  "unit_description_short_texts_tables": [
+   "gob_leader_lord"
+  ],
+  "unit_purchasable_effect_sets_tables": [
+   "gob_trainers_emp_rifle",
+   "gobbo_mount_plugs",
+   "gobbo_mount_harness",
+   "gobbo_mount_red_rifle",
+   "gob_trainers_brt",
+   "gobbo_mount_anti_biggun_lances",
+   "gob_trainers_def_crossbow",
+   "gobbo_mount_purple_harness",
+   "gob_trainers_emp",
+   "gobbo_mount_anti_fleshy_swords",
+   "gob_trainers_emp_crossbow",
+   "gobbo_mount_scoped_crossbows",
+   "gob_trainers",
+   "gobbo_mount_shocky_collar",
+   "gob_catchers",
+   "gob_giants_2h",
+   "gobbo_giant_fed",
+   "gobbo_giant_fucked",
+   "gob_giants_2h_armor",
+   "gob_giants_bolt_thrower",
+   "gobbo_giant_boltz",
+   "gob_diver_catapult",
+   "gobbo_bombz",
+   "gobbo_diver_gear",
+   "gobbo_spyglazz"
+  ],
+  "unit_purchasable_effects_tables": [
+   "goblin_ky_costs_t1",
+   "effect_gobbo_mount_plugs",
+   "gobbo_mount_plugs",
+   "armour",
+   "effect_gobbo_mount_harness",
+   "gobbo_mount_harness",
+   "goblin_ky_costs_t2",
+   "effect_gobbo_mount_red_rifle",
+   "gobbo_mount_red_rifle",
+   "weapon",
+   "goblin_ky_costs_t3",
+   "effect_gobbo_mount_purple_harness",
+   "gobbo_mount_purple_harness",
+   "effect_gobbo_mount_scoped_crossbows",
+   "gobbo_mount_scoped_crossbows",
+   "effect_gobbo_mount_anti_fleshy_swords",
+   "gobbo_mount_anti_fleshy_swords",
+   "effect_gobbo_mount_anti_biggun_lances",
+   "gobbo_mount_anti_biggun_lances",
+   "effect_gobbo_mount_shocky_collar",
+   "gobbo_mount_shocky_collar",
+   "mount",
+   "effect_gobbo_giant_fed",
+   "gobbo_giant_fed",
+   "effect_gobbo_giant_fucked",
+   "gobbo_giant_fucked",
+   "effect_gobbo_giant_boltz",
+   "gobbo_giant_boltz",
+   "arrow",
+   "effect_gobbo_bombz",
+   "gobbo_bombz",
+   "effect_gobbo_diver_gear",
+   "gobbo_diver_gear",
+   "effect_gobbo_spyglazz",
+   "gobbo_spyglazz",
+   "augment"
+  ],
+  "unit_set_to_unit_junctions_tables": [
+   "gob_leader_lord",
+   "grn_characters",
+   "all_units_excluding_guerrilla_deployment",
+   "gob_leader_lord_fighter",
+   "gob_leader_lord_knight",
+   "gob_leader_lord_knight_horde",
+   "gob_leader_lord_fighter_horde",
+   "gob_leader_lord_horde",
+   "gob_leader_lord_spear_horde",
+   "grn_spear_infantry",
+   "grn_spears",
+   "gob_leader_lord_wolf_horde",
+   "grn_wolf_riders"
+  ],
+  "unit_sets_tables": [
+   "gob_leader_lord"
+  ],
+  "unit_to_unit_group_junctions_tables": [
+   "gob_horde",
+   "gob_ky_basic",
+   "gob_trainers",
+   "gob_ky_mount_scout",
+   "gob_trainers_emp",
+   "gob_ky_mount_emp",
+   "gob_trainers_brt",
+   "gob_ky_mount_brt",
+   "gob_giants_2h",
+   "gob_ky_giants_2h",
+   "gob_giants_fist",
+   "gob_ky_giants_fist",
+   "gob_giants_bolt_thrower",
+   "gob_ky_giants_bolt_thrower",
+   "gob_giants_2h_armor",
+   "gob_ky_giants_2h_armor",
+   "gob_catchers",
+   "gob_ky_mount_catchers"
+  ],
+  "unit_upgrade_group_ui_categories_tables": [
+   "GRN"
+  ],
+  "unit_upgrade_group_ui_infos_tables": [
+   "gob_ky_basic",
+   "GRN",
+   "gob_ky_mount_scout",
+   "gob_ky_mount_emp",
+   "gob_ky_mount_brt",
+   "gob_ky_giants_fist",
+   "gob_ky_giants_2h",
+   "gob_ky_giants_2h_armor",
+   "gob_ky_giants_bolt_thrower",
+   "gob_ky_mount_catchers"
+  ],
+  "unit_upgrade_group_ui_links_tables": [
+   "gob_ky_mount_catchers",
+   "gob_ky_mount_scout",
+   "gob_ky_giants_fist",
+   "gob_ky_mount_emp",
+   "gob_ky_mount_brt",
+   "gob_ky_giants_2h",
+   "gob_ky_giants_2h_armor",
+   "gob_ky_giants_bolt_thrower",
+   "gob_ky_basic"
+  ],
+  "unit_upgrade_groups_tables": [
+   "gob_ky_basic",
+   "gob_ky_mount_scout",
+   "gob_ky_mount_emp",
+   "gob_ky_mount_brt",
+   "gob_ky_giants_fist",
+   "gob_ky_giants_bolt_thrower",
+   "gob_ky_giants_2h",
+   "gob_ky_giants_2h_armor",
+   "gob_ky_mount_catchers"
+  ],
+  "unit_upgrade_to_unit_groups_tables": [
+   "gob_ky_basic",
+   "gob_ky_mount_catchers",
+   "wh3_dlc20_chs_upgrade_cost_t3",
+   "gob_ky_mount_scout",
+   "gob_ky_mount_emp",
+   "wh3_dlc20_chs_upgrade_cost_t2",
+   "gob_ky_mount_brt",
+   "gob_ky_giants_fist",
+   "gob_ky_giants_2h",
+   "gob_ky_giants_2h_armor",
+   "gob_ky_giants_2h_to_armored",
+   "gob_ky_giants_bolt_thrower"
+  ],
+  "unit_variants_tables": [
+   "gob_leader_lord",
+   "wh_main_uniform_gob_lord_01",
+   "wh_main_grn_goblin_boss",
+   "gob_leader_lord_knight",
+   "gob_leader_lord_fighter",
+   "gob_leader_lord_fighter_horde",
+   "gob_leader_lord_horde",
+   "gob_leader_lord_knight_horde",
+   "gob_leader_lord_spear_horde",
+   "gob_leader_lord_wolf_horde"
+  ],
+  "units_to_exclusive_faction_permissions_tables": [
+   "gob_ror_elf_trainers",
+   "wh_main_grn_greenskins"
+  ],
+  "units_to_groupings_military_permissions_tables": [
+   "gob_leader_lord",
+   "wh_main_group_greenskins"
+  ],
+  "variants_tables": [
+   "wh_main_uniform_gob_lord_03",
+   "gob_lord",
+   "wh_main_uniform_gob_lord_02",
+   "wh_main_uniform_gob_lord_01"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_recruitment_categories_tables/goblin_ky_addon_leaders",
+   "size": 176,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/agent_subtypes_tables/goblin_ky_addon_leaders",
+   "size": 235,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/goblin_ky_addon_leaders",
+   "size": 484,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/goblin_ky_addon_leaders",
+   "size": 503,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillaries_required_skills_tables/goblin_ky_addon_leaders",
+   "size": 587,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/goblin_ky_addon",
+   "size": 11713,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillaries_tables/goblin_ky_addon_leaders",
+   "size": 1411,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/goblin_ky_addon",
+   "size": 3292,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillary_info_tables/goblin_ky_addon_leaders",
+   "size": 384,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillary_to_effects_tables/goblin_ky_addon",
+   "size": 15051,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillary_to_included_agents_tables/goblin_ky_addon_leaders",
+   "size": 447,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ancillary_types_tables/goblin_ky_addon",
+   "size": 5590,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/armed_citizenry_unit_groups_tables/goblin_ky_addon",
+   "size": 152,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/armed_citizenry_units_to_unit_groups_junctions_tables/goblin_ky_addon",
+   "size": 772,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/battle_entities_tables/!goblin_ky_addon",
+   "size": 637,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/building_chain_availability_sets_tables/goblin_ky_addon",
+   "size": 113,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/building_effects_junction_tables/goblin_ky_addon",
+   "size": 2001,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/building_effects_junction_tables/goblin_ky_resource",
+   "size": 269,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/building_level_armed_citizenry_junctions_tables/goblin_ky_addon",
+   "size": 235,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/building_units_allowed_tables/!!!gob",
+   "size": 381,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/goblin_ky_addon_leaders",
+   "size": 289,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/goblin_ky_addon_leaders",
+   "size": 830,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_features_tables/goblin_ky_upgrade",
+   "size": 127,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_group_crafting_infos_tables/goblin_ky_resource",
+   "size": 129,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_group_member_criteria_cultures_tables/goblin_ky_resource",
+   "size": 140,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_group_members_tables/goblin_ky_resource",
+   "size": 131,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_group_pooled_resources_tables/goblin_ky_resource",
+   "size": 131,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_group_post_battle_casualty_resources_tables/goblin_ky_resource",
+   "size": 169,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_groups_tables/goblin_ky_resource",
+   "size": 101,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_mount_animation_set_overrides_tables/goblin_ky_addon_leaders",
+   "size": 454,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/campaign_mounts_tables/goblin_ky_addon_leaders",
+   "size": 203,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/goblin_ky_addon",
+   "size": 674,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/goblin_ky_addon",
+   "size": 1539,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/goblin_ky_addon",
+   "size": 2186,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_level_details_tables/goblin_ky_addon_leaders",
+   "size": 871,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_ancillaries_junctions_tables/goblin_ky_addon_leaders",
+   "size": 595,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/goblin_ky_addon_leaders",
+   "size": 12817,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_node_links_tables/goblin_ky_addon_leaders",
+   "size": 2008,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_node_set_items_tables/goblin_ky_addon_leaders",
+   "size": 4960,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_node_sets_tables/goblin_ky_addon_leaders",
+   "size": 133,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_skill_locks_tables/goblin_ky_addon_leaders",
+   "size": 875,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skill_nodes_tables/goblin_ky_addon_leaders",
+   "size": 1444,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skills_tables/goblin_ky_addon_leaders",
+   "size": 1122,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/character_skills_to_level_reached_criterias_tables/goblin_ky_addon_leaders",
+   "size": 248,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/goblin_ky_addon",
+   "size": 444,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_basic_junction_tables/goblin_ky_resource",
+   "size": 163,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_ids_unit_sets_tables/goblin_ky_addon_effects",
+   "size": 1005,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_pooled_resource_factor_junctions_tables/goblin_ky_resource",
+   "size": 146,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_pooled_resource_junctions_tables/goblin_ky_resource",
+   "size": 235,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/goblin_horde_armory",
+   "size": 3080,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/goblin_horde_armory",
+   "size": 4235,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/goblin_ky_resource",
+   "size": 214,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effects_tables/goblin_ky_addon_effects",
+   "size": 1761,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/effects_tables/goblin_ky_resource",
+   "size": 423,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/faction_agent_permitted_subtypes_tables/goblin_ky_addon_leaders",
+   "size": 353,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/land_units_tables/!goblin_ky_addon",
+   "size": 9195,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/land_units_tables/goblin_ky_addon_leaders",
+   "size": 4064,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/land_units_to_unit_abilites_junctions_tables/goblin_ky_addon_leaders",
+   "size": 260,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/main_units_tables/!goblin_ky_addon",
+   "size": 2527,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/main_units_tables/goblin_ky_addon_leaders",
+   "size": 2562,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/mounts_tables/!goblin_ky_addon",
+   "size": 417,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/pooled_resource_factor_junctions_tables/goblin_ky_resource",
+   "size": 379,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/pooled_resources_tables/goblin_ky_resource",
+   "size": 178,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/projectiles_tables/!goblin_ky_addon",
+   "size": 1258,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/resource_cost_pooled_resource_junctions_tables/goblin_ky_resource",
+   "size": 298,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/resource_costs_tables/goblin_ky_resource",
+   "size": 299,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ui_features_to_cultures_tables/goblin_ky_upgrade",
+   "size": 117,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/ui_unit_bullet_point_unit_overrides_tables/goblin_ky_addon_leaders",
+   "size": 931,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_attributes_groups_tables/!goblin_ky_addon",
+   "size": 141,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_attributes_groups_tables/goblin_ky_addon_leaders",
+   "size": 316,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/!goblin_ky_addon",
+   "size": 642,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_attributes_to_groups_junctions_tables/goblin_ky_addon_leaders",
+   "size": 1353,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_description_short_texts_tables/goblin_ky_addon_leaders",
+   "size": 100,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_purchasable_effect_sets_tables/goblin_horde_armory",
+   "size": 1505,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_purchasable_effects_tables/goblin_horde_armory",
+   "size": 1222,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_set_to_unit_junctions_tables/goblin_ky_addon_leaders",
+   "size": 1582,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_sets_tables/goblin_ky_addon_leaders",
+   "size": 118,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_to_unit_group_junctions_tables/goblin_ky_upgrade",
+   "size": 419,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_upgrade_group_ui_categories_tables/goblin_ky_upgrade",
+   "size": 88,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_upgrade_group_ui_infos_tables/goblin_ky_upgrade",
+   "size": 463,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_upgrade_group_ui_links_tables/goblin_ky_upgrade",
+   "size": 576,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_upgrade_groups_tables/goblin_ky_upgrade",
+   "size": 266,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_upgrade_to_unit_groups_tables/goblin_ky_upgrade",
+   "size": 901,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/goblin_ky_addon_leaders",
+   "size": 874,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/units_to_exclusive_faction_permissions_tables/goblin_ky_addon",
+   "size": 130,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/units_to_groupings_military_permissions_tables/goblin_ky_addon_leaders",
+   "size": 126,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "db/variants_tables/goblin_ky_addon_leaders",
+   "size": 256,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "script/campaign/mod/gob_ky_prisoners_ui.lua",
+   "size": 2792,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "script/campaign/mod/goblin_hordes_addon_followers.lua",
+   "size": 23768,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/!!!goblin_buildings.loc",
+   "size": 1607,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_horde_armory.loc",
+   "size": 5340,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_hordes_addon_character_skills.loc",
+   "size": 6680,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_hordes_addon_effects__.loc",
+   "size": 3738,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_addon_agent_recruitment_categories__.loc",
+   "size": 350,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_addon_agent_subtypes__.loc",
+   "size": 538,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_addon_ancillaries__.loc",
+   "size": 6435,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_addon_leaders.loc",
+   "size": 129,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_addon_unit_description_short_texts__.loc",
+   "size": 383,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_captive_followers.loc",
+   "size": 34156,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_random_dilemma_text.loc",
+   "size": 11098,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_resource.loc",
+   "size": 775,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "text/db/goblin_ky_resource_effects__.loc",
+   "size": 479,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_berserker.png",
+   "size": 10197,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_huntress.png",
+   "size": 10529,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/amazon_priestess.png",
+   "size": 10414,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/brt_damsal.png",
+   "size": 125575,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/brt_life_prohpetess.png",
+   "size": 85408,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/brt_prophetess.png",
+   "size": 113226,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/catalchemist.png",
+   "size": 9585,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/catblushing_moon.png",
+   "size": 110916,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/catshu.png",
+   "size": 90861,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chf_daemonsmith.png",
+   "size": 125551,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chf_laborers.png",
+   "size": 123185,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chf_overseer.png",
+   "size": 9944,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chf_sorcerer.png",
+   "size": 112131,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chsberzerkeress.png",
+   "size": 101120,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chscrafter.png",
+   "size": 95799,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/chscultist.png",
+   "size": 114751,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/def_daughter.png",
+   "size": 104017,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/def_sorceress.png",
+   "size": 98692,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/def_witch.png",
+   "size": 100504,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_harem.png",
+   "size": 130731,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_maiden.png",
+   "size": 94753,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_runecollar.png",
+   "size": 53883,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_runeslut.png",
+   "size": 109484,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_slutcrafter.png",
+   "size": 94005,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/dwf_thaness.png",
+   "size": 106506,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/emp_farmgirl.png",
+   "size": 116420,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/emp_knightess.png",
+   "size": 120122,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/emp_noble.png",
+   "size": 96870,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/emp_priestess.png",
+   "size": 105065,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/emp_squire.png",
+   "size": 106192,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/gnoblar.png",
+   "size": 111722,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/hef_mage.png",
+   "size": 101734,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/hef_princess.png",
+   "size": 112660,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/hef_sisters.png",
+   "size": 114874,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/human_1.png",
+   "size": 102194,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/human_2.png",
+   "size": 106524,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/human_4.png",
+   "size": 105924,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/human_5.png",
+   "size": 109523,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/human_9.png",
+   "size": 89141,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/khn_cockthirster.png",
+   "size": 115830,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/khn_cultist.png",
+   "size": 88381,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/khn_princess.png",
+   "size": 115439,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/kis_guard.png",
+   "size": 111626,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/kis_maiden.png",
+   "size": 113812,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/kis_witch.png",
+   "size": 62063,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/ngl_cultist.png",
+   "size": 99791,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/ngl_herald_slave.png",
+   "size": 98046,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/ngl_plagueslut.png",
+   "size": 71801,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/ogre_1.png",
+   "size": 104689,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/pir_captain.png",
+   "size": 9406,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/pir_syreen.png",
+   "size": 103756,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/pir_vamp.png",
+   "size": 9208,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/sla_aluress.png",
+   "size": 106727,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/sla_daemonette.png",
+   "size": 85426,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/sla_herald.png",
+   "size": 115489,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/tzh_cultist.png",
+   "size": 108263,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/tzh_girl.png",
+   "size": 103783,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/tzh_herald.png",
+   "size": 87674,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/vmp_necromancer.png",
+   "size": 101345,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/vmp_sluts.png",
+   "size": 119032,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/vmp_vampiress.png",
+   "size": 104284,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/wef_captain.png",
+   "size": 114641,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/wef_dancer.png",
+   "size": 103999,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/ancillaries/wef_sister.png",
+   "size": 102153,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/custom_gob_ky_prisoners_holder.twui.xml",
+   "size": 6239,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/effect_bundles/icon_prisoners.png",
+   "size": 40012,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/campaign ui/warband_upgrades.twui.xml",
+   "size": 576124,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/3d21882c1d5455cce4d5ab56f211d54b.jpeg",
+   "size": 205797,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/488d3e5efdb703d073d3865c534d926e.jpg",
+   "size": 281186,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/518037bbfa78f502a428195349719948.jpeg",
+   "size": 1559670,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/80127506_p0.jpg",
+   "size": 739126,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/81857141_p0.jpg",
+   "size": 285637,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/84391145_p9.png",
+   "size": 1641666,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/88dba09e0a306350eee3d63b3f403654.jpeg",
+   "size": 196855,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/ab58f34459d9dbbd8fa9af0f28901d5ce8a663e8.jpg",
+   "size": 219412,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/dark_elf_raided.png",
+   "size": 1908008,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/goblin_races.png",
+   "size": 1372341,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/joixxx-859929-sabrith_and_tayelle_-_goblin_gangbang.jpg",
+   "size": 763809,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/lazy_gobbos.png",
+   "size": 1714120,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/eventpics/wyldspace-889241-goblin_prison.jpg",
+   "size": 787746,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__goblin_ky_addon.bin",
+   "size": 1127,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/portraits/units/gob_leader_lord.png",
+   "size": 21806,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/portraits/units/icons/gob_leader_lord.png",
+   "size": 20265,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__goblin_ky_addon.bin",
+   "size": 599,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/icon_unit_upgrade.png",
+   "size": 1547,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/upgrade_subtitle.png",
+   "size": 2530,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/upgrade_subtitle_target.png",
+   "size": 4055,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/upgrade_subtitle_target_decor.png",
+   "size": 3739,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/@tab_upgrade_frame_general.png",
+   "size": 4184,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/ability_frame_battle.png",
+   "size": 147,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/background_images_grn.png",
+   "size": 483074,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/button_upgrade_general.png",
+   "size": 5748,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/button_upgrade_grn.png",
+   "size": 10196,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/default/warband_upgrades/tab_upgrade_frame_general.png",
+   "size": 201,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "ui/skins/wh_main_grn_greenskins/icon_prisoners.png",
+   "size": 53883,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/gob_lord.variantmeshdefinition",
+   "size": 3386,
+   "pack": "goblin_hordes_addonV2.5.pack"
+  }
+ ]
+}

@@ -1,0 +1,2263 @@
+{
+ "mod": "ll-28994",
+ "packs": [
+  "Soboro_Miao.pack",
+  "li_miaoying_ballet_soboro_st3.pack",
+  "li_miaoying_bare_soboro_st4.pack",
+  "li_miaoying_corset_soboro_st5.pack",
+  "li_miaoying_fishnet_soboro_st2.pack",
+  "li_miaoying_plug_soboro_st6.pack",
+  "li_miaoying_scale_soboro_st1.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "li_miaoying_ballet_soboro_st3.pack": {
+   "files": 61,
+   "dependencies": []
+  },
+  "li_miaoying_bare_soboro_st4.pack": {
+   "files": 60,
+   "dependencies": []
+  },
+  "li_miaoying_corset_soboro_st5.pack": {
+   "files": 51,
+   "dependencies": []
+  },
+  "li_miaoying_fishnet_soboro_st2.pack": {
+   "files": 60,
+   "dependencies": []
+  },
+  "li_miaoying_plug_soboro_st6.pack": {
+   "files": 82,
+   "dependencies": []
+  },
+  "li_miaoying_scale_soboro_st1.pack": {
+   "files": 66,
+   "dependencies": []
+  },
+  "Soboro_Miao.pack": {
+   "files": 43,
+   "dependencies": []
+  }
+ },
+ "fileCount": 249,
+ "byTopFolder": {
+  "variantmeshes": 180,
+  "ui": 33,
+  "db": 30,
+  "script": 6
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 159,
+  "inMod": 138,
+  "inBaseGame": 17,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessoires_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/demonic_body_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_3.dds",
+   "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_lip_red.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "wh3_main_cth_cha_storm_dragon_ballet",
+   "wh3_main_uniform_cth_miao_ying_ballet",
+   "wh3_main_cth_cha_storm_dragon_bare",
+   "wh3_main_uniform_cth_miao_ying_bare",
+   "wh3_main_cth_cha_storm_dragon_corset",
+   "wh3_main_uniform_cth_miao_ying_corset",
+   "wh3_main_cth_cha_storm_dragon_fishnet",
+   "wh3_main_uniform_cth_miao_ying_fishnet",
+   "wh3_main_cth_cha_storm_dragon_plug",
+   "wh3_main_uniform_cth_miao_ying_plug",
+   "wh3_main_cth_cha_storm_dragon_plug_preg",
+   "wh3_main_uniform_cth_miao_ying_plug_preg",
+   "wh3_main_cth_cha_storm_dragon_scale",
+   "wh3_main_uniform_cth_miao_ying_scale"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "wh3_main_art_set_cth_miao_ying_ballet",
+   "wh3_main_cth_cathay",
+   "wh3_main_cth_miao_ying",
+   "wh3_main_art_set_cth_miao_ying_bare",
+   "wh3_main_art_set_cth_miao_ying_corset",
+   "wh3_main_art_set_cth_miao_ying_fishnet",
+   "wh3_main_art_set_cth_miao_ying_plug",
+   "wh3_main_art_set_cth_miao_ying_plug_preg",
+   "wh3_main_art_set_cth_miao_ying_scale"
+  ],
+  "campaign_character_arts_tables": [
+   "wh3_main_art_set_cth_miao_ying_ballet",
+   "none",
+   "wh3_main_uniform_cth_miao_ying_ballet",
+   "wh3_uniform_cth_ship_lord",
+   "cam_hu1e_mage_storm_dragon",
+   "cam_cathayship_01",
+   "wh3_main_art_set_cth_miao_ying_bare",
+   "wh3_main_uniform_cth_miao_ying_bare",
+   "wh3_main_art_set_cth_miao_ying_corset",
+   "wh3_main_uniform_cth_miao_ying_corset",
+   "wh3_main_art_set_cth_miao_ying_fishnet",
+   "wh3_main_uniform_cth_miao_ying_fishnet",
+   "wh3_main_art_set_cth_miao_ying_plug",
+   "wh3_main_uniform_cth_miao_ying_plug",
+   "wh3_main_art_set_cth_miao_ying_plug_preg",
+   "wh3_main_uniform_cth_miao_ying_plug_preg",
+   "wh3_main_art_set_cth_miao_ying_scale",
+   "wh3_main_uniform_cth_miao_ying_scale"
+  ],
+  "unit_variants_tables": [
+   "wh3_main_cth_cha_storm_dragon_ballet",
+   "wh3_main_cth_cha_storm_dragon_0",
+   "placeholder",
+   "wh3_main_cth_cha_storm_dragon_bare",
+   "wh3_main_cth_cha_storm_dragon_corset",
+   "wh3_main_cth_cha_storm_dragon_fishnet",
+   "wh3_main_cth_cha_storm_dragon_plug",
+   "wh3_main_cth_cha_storm_dragon_scale"
+  ],
+  "variants_tables": [
+   "wh3_main_cth_cha_storm_dragon_ballet",
+   "cth_storm_dragon_human_ballet",
+   "wh3_main_cth_cha_storm_dragon_bare",
+   "cth_storm_dragon_human_bare",
+   "wh3_main_cth_cha_storm_dragon_corset",
+   "cth_storm_dragon_human_corset",
+   "wh3_main_cth_cha_storm_dragon_fishnet",
+   "cth_storm_dragon_human_fishnet",
+   "wh3_main_cth_cha_storm_dragon_plug",
+   "cth_storm_dragon_human_plug",
+   "wh3_main_cth_cha_storm_dragon_plug_preg",
+   "cth_storm_dragon_human_plug_preg",
+   "wh3_main_cth_cha_storm_dragon_scale",
+   "cth_storm_dragon_human_scale"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_ballet",
+   "size": 248,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_bare",
+   "size": 240,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_corset",
+   "size": 248,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_fishnet",
+   "size": 252,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_plug",
+   "size": 409,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "db/agent_uniforms_tables/li_miaoying_scale",
+   "size": 244,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_ballet",
+   "size": 195,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_bare",
+   "size": 193,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_corset",
+   "size": 195,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_fishnet",
+   "size": 196,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_plug",
+   "size": 300,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/li_miaoying_scale",
+   "size": 194,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_ballet",
+   "size": 324,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_bare",
+   "size": 320,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_corset",
+   "size": 324,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_fishnet",
+   "size": 326,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_plug",
+   "size": 567,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/li_miaoying_scale",
+   "size": 322,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_ballet",
+   "size": 214,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_bare",
+   "size": 210,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_corset",
+   "size": 214,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_fishnet",
+   "size": 216,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_plug",
+   "size": 210,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/!li_miaoying_scale",
+   "size": 212,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_ballet",
+   "size": 176,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_bare",
+   "size": 172,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_corset",
+   "size": 176,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_fishnet",
+   "size": 178,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_plug",
+   "size": 263,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "db/variants_tables/!li_miaoying_scale",
+   "size": 174,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_ballet.lua",
+   "size": 1652,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_bare.lua",
+   "size": 1650,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_corset.lua",
+   "size": 1652,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_fishnet.lua",
+   "size": 1598,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_plug.lua",
+   "size": 1650,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "script/campaign/mod/li_miaoying_scale.lua",
+   "size": 1596,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/cth_storm_dragon_human_0.png",
+   "size": 26292,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 27343,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28343,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28343,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28401,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28500,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/wh3_main_cth_dragon_storm_human.png",
+   "size": 28650,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_0.png",
+   "size": 57617,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_ballet.png",
+   "size": 50451,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_bare.png",
+   "size": 55287,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_corset.png",
+   "size": 54107,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_fishnet.png",
+   "size": 71110,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_plug.png",
+   "size": 53062,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_plug_preg.png",
+   "size": 40092,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/cth_storm_dragon_human_scale.png",
+   "size": 46954,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_ballet.bin",
+   "size": 180,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_bare.bin",
+   "size": 174,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_corset.bin",
+   "size": 180,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_plug.bin",
+   "size": 174,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings__li_miaoying_plug_preg.bin",
+   "size": 189,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_li_miaoying_fishnet_soboro_st2.bin",
+   "size": 183,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_li_miaoying_scale_soboro_st1.bin",
+   "size": 199,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh3_main_cth_cathay/cth_storm_dragon_human_0.png",
+   "size": 57617,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_0.png",
+   "size": 21335,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_ballet.png",
+   "size": 19505,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_bare.png",
+   "size": 18673,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_corset.png",
+   "size": 18400,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_fishnet.png",
+   "size": 19243,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_plug.png",
+   "size": 16458,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_plug_preg.png",
+   "size": 16181,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/cth_storm_dragon_human_scale.png",
+   "size": 22002,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_ballet.bin",
+   "size": 176,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_bare.bin",
+   "size": 170,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_corset.bin",
+   "size": 176,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_fishnet.bin",
+   "size": 179,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_plug.bin",
+   "size": 170,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings__li_miaoying_plug_preg.bin",
+   "size": 185,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh3_main_cth_cathay/cth_storm_dragon_human_0.png",
+   "size": 21335,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human.variantmeshdefinition",
+   "size": 931,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_ballet.variantmeshdefinition",
+   "size": 919,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_bare.variantmeshdefinition",
+   "size": 920,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_cloth_sim.variantmeshdefinition",
+   "size": 1116,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_corset.variantmeshdefinition",
+   "size": 921,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_fishnet.variantmeshdefinition",
+   "size": 925,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_plug.variantmeshdefinition",
+   "size": 784,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_plug_preg.variantmeshdefinition",
+   "size": 775,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/cth_storm_dragon_human_scale.variantmeshdefinition",
+   "size": 760,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_body_01.rigid_model_v2",
+   "size": 1126154,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_body_01.wsmodel",
+   "size": 1343,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_body_nocloak_01.rigid_model_v2",
+   "size": 1062726,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_body_nocloak_01.wsmodel",
+   "size": 1351,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_cloth_cloak_01.rigid_model_v2",
+   "size": 253048,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/cth_dragon_storm_human_head_01.wsmodel",
+   "size": 1331,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted2_alpha_off.xml.material",
+   "size": 4862,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted2_alpha_off.xml.material",
+   "size": 4862,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/armor_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted2_alpha_off.xml.material",
+   "size": 4883,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted2_alpha_off.xml.material",
+   "size": 4883,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted2_alpha_off.xml.material",
+   "size": 4883,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted4_alpha_on.xml.material",
+   "size": 4894,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted4_alpha_on.xml.material",
+   "size": 4894,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/ballet_armor_weighted4_alpha_on.xml.material",
+   "size": 4894,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/bare_body_weighted2_alpha_off.xml.material",
+   "size": 4868,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/bare_body_weighted2_alpha_off.xml.material",
+   "size": 4868,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/bare_body_weighted4_alpha_on.xml.material",
+   "size": 4879,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/bare_body_weighted4_alpha_on.xml.material",
+   "size": 4879,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/body_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/chains_weighted2_alpha_off.xml.material",
+   "size": 2623,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/chains_weighted4_alpha_on.xml.material",
+   "size": 4686,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted2_alpha_off.xml.material",
+   "size": 4857,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted2_alpha_off.xml.material",
+   "size": 4857,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cloth_weighted4_alpha_on.xml.material",
+   "size": 4873,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/corset_body_weighted2_alpha_off.xml.material",
+   "size": 4874,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/corset_body_weighted4_alpha_on.xml.material",
+   "size": 4885,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cth_dragon_storm_human_body_01_weighted2_alpha_off.xml.material",
+   "size": 4962,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cth_dragon_storm_human_body_01_weighted4_alpha_off.xml.material",
+   "size": 4962,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/cth_dragon_storm_human_body_01_weighted4_alpha_on.xml.material",
+   "size": 4973,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted2_alpha_off.xml.material",
+   "size": 4859,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted2_alpha_off.xml.material",
+   "size": 4859,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted2_alpha_off.xml.material",
+   "size": 4859,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted4_alpha_on.xml.material",
+   "size": 4870,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted4_alpha_on.xml.material",
+   "size": 4870,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/fishnet_weighted4_alpha_on.xml.material",
+   "size": 4870,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/hair_lola_lod1_weighted4_alpha_on.xml.material",
+   "size": 2559,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/hair_ornament_back_lod1_weighted4_alpha_on.xml.material",
+   "size": 2585,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_bigger_eyes_weighted2_alpha_off.xml.material",
+   "size": 4865,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_bigger_eyes_weighted2_alpha_off.xml.material",
+   "size": 4865,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_bigger_eyes_weighted4_alpha_on.xml.material",
+   "size": 4876,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_bigger_eyes_weighted4_alpha_on.xml.material",
+   "size": 4876,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_bun_lod1_weighted4_alpha_on.xml.material",
+   "size": 2933,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_3_weighted4_alpha_on.xml.material",
+   "size": 2576,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_purple_weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_purple_weighted4_alpha_on.xml.material",
+   "size": 2588,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_red_weighted4_alpha_on.xml.material",
+   "size": 2578,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_red_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_red_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2574,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2574,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2574,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2576,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2580,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_weighted4_alpha_on.xml.material",
+   "size": 2582,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_whore_weighted4_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_whore_weighted4_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_face_soboro_whore_weighted4_alpha_on.xml.material",
+   "size": 2586,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_1_weighted4_alpha_on.xml.material",
+   "size": 2727,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 2725,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_lod1_weighted4_alpha_on.xml.material",
+   "size": 3016,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_piercings_lod1_weighted4_alpha_on.xml.material",
+   "size": 2910,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_plug_weighted2_alpha_off.xml.material",
+   "size": 4858,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_plug_weighted4_alpha_on.xml.material",
+   "size": 4869,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted2_alpha_off.xml.material",
+   "size": 4853,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/head_weighted4_alpha_on.xml.material",
+   "size": 4864,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted2_alpha_off.xml.material",
+   "size": 4740,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted2_alpha_off.xml.material",
+   "size": 4744,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted2_alpha_off.xml.material",
+   "size": 4744,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted2_alpha_off.xml.material",
+   "size": 4744,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted4_alpha_on.xml.material",
+   "size": 4698,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted4_alpha_on.xml.material",
+   "size": 4896,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted4_alpha_on.xml.material",
+   "size": 4896,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/leather_harness_weighted4_alpha_on.xml.material",
+   "size": 4896,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_armor_weighted2_alpha_off.xml.material",
+   "size": 4880,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_armor_weighted4_alpha_on.xml.material",
+   "size": 4891,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_body_weighted2_alpha_off.xml.material",
+   "size": 2568,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_body_weighted4_alpha_on.xml.material",
+   "size": 2619,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_steed_weighted2_alpha_off.xml.material",
+   "size": 4711,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/plug_steed_weighted4_alpha_on.xml.material",
+   "size": 2605,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/tattoo_preg_weighted2_alpha_off.xml.material",
+   "size": 4387,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/tattoo_preg_weighted4_alpha_on.xml.material",
+   "size": 4391,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/tattoo_weighted2_alpha_off.xml.material",
+   "size": 4384,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/materials/tattoo_weighted4_alpha_on.xml.material",
+   "size": 4388,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_ballet.wsmodel",
+   "size": 4859,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_bare.wsmodel",
+   "size": 5608,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_corset.wsmodel",
+   "size": 5038,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_fishnet.wsmodel",
+   "size": 4764,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_body.rigid_model_v2",
+   "size": 5416140,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_body.wsmodel",
+   "size": 6511,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_body_preg.rigid_model_v2",
+   "size": 5416396,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_body_preg.wsmodel",
+   "size": 6527,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_head_lola.rigid_model_v2",
+   "size": 4776196,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_plug_head_lola.wsmodel",
+   "size": 5086,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_scale.wsmodel",
+   "size": 5410,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_soboro_red.rigid_model_v2",
+   "size": 2639988,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/miao_ying_soboro_red.wsmodel",
+   "size": 1574,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head.rigid_model_v2",
+   "size": 2641028,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head.rigid_model_v2",
+   "size": 2641028,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head.wsmodel",
+   "size": 1549,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head.wsmodel",
+   "size": 1549,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_purple.rigid_model_v2",
+   "size": 2639988,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_purple.rigid_model_v2",
+   "size": 2639988,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_purple.wsmodel",
+   "size": 1584,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_purple.wsmodel",
+   "size": 1584,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_red.rigid_model_v2",
+   "size": 2639988,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_red.rigid_model_v2",
+   "size": 2639988,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_red.wsmodel",
+   "size": 1569,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_red.wsmodel",
+   "size": 1569,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.rigid_model_v2",
+   "size": 2639988,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.rigid_model_v2",
+   "size": 2639988,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.rigid_model_v2",
+   "size": 2639988,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.wsmodel",
+   "size": 1579,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.wsmodel",
+   "size": 1579,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/soboro_head_whore.wsmodel",
+   "size": 1579,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessoires_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessories_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/accessories_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_base_colour.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_base_colour.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/armor_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_material_map.tga",
+   "size": 2482156,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_armor_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/ballet_cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_normal.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/bare_body_normal.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_base_colour.dds",
+   "size": 11184996,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_base_colour.dds",
+   "size": 11184996,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_mask.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_material_map.dds",
+   "size": 11184996,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_material_map.dds",
+   "size": 11184996,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_normal.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/body_normal.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_base_colour.dds",
+   "size": 527444,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_material_map.dds",
+   "size": 527444,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/chains_normal.dds",
+   "size": 1054720,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_base_colour.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_base_colour.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_mask.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_mask.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cloth_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/corset_body_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/corset_body_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/corset_body_normal.dds",
+   "size": 11184976,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_base_colour.dds",
+   "size": 349692,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_base_colour.dds",
+   "size": 349692,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_mask.dds",
+   "size": 349692,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_mask.dds",
+   "size": 699200,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_material_map.dds",
+   "size": 349692,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_normal.dds",
+   "size": 699200,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/cth_dragon_storm_human_head_01_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/demonic_body_base_colour_fix.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/demonic_body_lod1_mat_orange.dds",
+   "size": 22369776,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/demonic_body_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color.dds",
+   "size": 699212,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color.dds",
+   "size": 699212,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_purple.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_purple.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_red.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_red.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_whore.dds",
+   "size": 699212,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_whore.dds",
+   "size": 699212,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face texture_base_color_whore.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_detail_material_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "Soboro_Miao.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/face_nomal_map.dds",
+   "size": 1398276,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_base_colour.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/fishnet_material_map.dds",
+   "size": 5592572,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/hair_long_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/hair_long_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_base_colour.dds",
+   "size": 699236,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_base_colour.dds",
+   "size": 699236,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_base_colour.dds",
+   "size": 699236,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_bigger_eyes_base_colour.dds",
+   "size": 349692,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_bigger_eyes_base_colour.dds",
+   "size": 349692,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_mask.dds",
+   "size": 699200,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_material_map.dds",
+   "size": 349692,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_normal.dds",
+   "size": 699216,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_plug_base_colour.dds",
+   "size": 349692,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/head_plug_long_base_colour.dds",
+   "size": 349692,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/lola_ombre.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_armor_normal.dds",
+   "size": 1398256,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_steed_of_slaanesh_01_base_colour.dds",
+   "size": 1398268,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_steed_of_slaanesh_01_material_map.dds",
+   "size": 1398268,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/plug_steed_of_slaanesh_01_normal.dds",
+   "size": 2796368,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/womb_tattoo.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_dragon_storm_human/tex/womb_tattoo_preg.dds",
+   "size": 699212,
+   "pack": "li_miaoying_plug_soboro_st6.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/armor_lod1_weighted4_alpha_on.xml.material",
+   "size": 2403,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted2_alpha_off.xml.material",
+   "size": 4640,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted2_alpha_off.xml.material",
+   "size": 4640,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted2_alpha_off.xml.material",
+   "size": 4640,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted4_alpha_on.xml.material",
+   "size": 4644,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted4_alpha_on.xml.material",
+   "size": 4644,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/ballet_weighted4_alpha_on.xml.material",
+   "size": 4644,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/body_lod1_weighted4_alpha_on.xml.material",
+   "size": 2402,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/boots_short_lod1_weighted4_alpha_on.xml.material",
+   "size": 2409,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/cloth_scale_lod1_weighted4_alpha_on.xml.material",
+   "size": 2409,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_lod1_weighted4_alpha_on.xml.material",
+   "size": 2402,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_scale_lod1_weighted4_alpha_on.xml.material",
+   "size": 2408,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_weighted2_alpha_off.xml.material",
+   "size": 4703,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_weighted2_alpha_off.xml.material",
+   "size": 4703,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_weighted4_alpha_on.xml.material",
+   "size": 4707,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/legs_weighted4_alpha_on.xml.material",
+   "size": 4707,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_lod1_weighted4_alpha_on.xml.material",
+   "size": 2403,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted2_alpha_off.xml.material",
+   "size": 4763,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted2_alpha_off.xml.material",
+   "size": 4763,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted2_alpha_off.xml.material",
+   "size": 4763,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted2_alpha_off.xml.material",
+   "size": 4763,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted4_alpha_on.xml.material",
+   "size": 4769,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted4_alpha_on.xml.material",
+   "size": 4769,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted4_alpha_on.xml.material",
+   "size": 4769,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/materials/skirt_weighted4_alpha_on.xml.material",
+   "size": 4769,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/miao_ying_ballet.rigid_model_v2",
+   "size": 4579404,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/miao_ying_bare.rigid_model_v2",
+   "size": 4487292,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/miao_ying_corset.rigid_model_v2",
+   "size": 5846484,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/miao_ying_fishnet.rigid_model_v2",
+   "size": 4261108,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/miao_ying_scale.rigid_model_v2",
+   "size": 4699436,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_base_colour.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_base_colour.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_base_colour.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_material_map.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_material_map.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_material_map.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_normal.dds",
+   "size": 5592560,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_normal.dds",
+   "size": 5592560,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/ballet_boots_normal.dds",
+   "size": 5592560,
+   "pack": "li_miaoying_corset_soboro_st5.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_ballet_soboro_st3.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_bare_soboro_st4.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_base_colour.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_base_colour.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_material_map.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_material_map.dds",
+   "size": 2796364,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_normal.dds",
+   "size": 5592560,
+   "pack": "li_miaoying_fishnet_soboro_st2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_storm_miaoying/tex/cth_dragon_storm_human_body_armor_normal.dds",
+   "size": 5592560,
+   "pack": "li_miaoying_scale_soboro_st1.pack"
+  }
+ ]
+}

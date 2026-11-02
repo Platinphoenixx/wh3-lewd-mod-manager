@@ -1,0 +1,39 @@
+{
+ "mod": "ll-24266",
+ "packs": [
+  "palace_archers_cn0827.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "palace_archers_cn0827.pack": {
+   "files": 2,
+   "dependencies": []
+  }
+ },
+ "fileCount": 2,
+ "byTopFolder": {
+  "text": 2
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/1pa_land_units__.loc",
+   "size": 105,
+   "pack": "palace_archers_cn0827.pack"
+  },
+  {
+   "path": "text/db/1pa_unit_description_short_texts__.loc",
+   "size": 257,
+   "pack": "palace_archers_cn0827.pack"
+  }
+ ]
+}

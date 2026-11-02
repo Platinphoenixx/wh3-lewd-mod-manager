@@ -1,0 +1,90 @@
+{
+ "mod": "ll-42028",
+ "packs": [
+  "kerb_alar_PLAY_AS_DECHALA_patch.pack",
+  "kerb_alar_colorblind_patch.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "kerb_alar_colorblind_patch.pack": {
+   "files": 3,
+   "dependencies": []
+  },
+  "kerb_alar_PLAY_AS_DECHALA_patch.pack": {
+   "files": 8,
+   "dependencies": []
+  }
+ },
+ "fileCount": 11,
+ "byTopFolder": {
+  "audio": 8,
+  "text": 3
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "audio/wwise/english(uk)/206217133.wem",
+   "size": 17166,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/25138963.wem",
+   "size": 15984,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/360556826.wem",
+   "size": 21674,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/371200250.wem",
+   "size": 31694,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/406240596.wem",
+   "size": 24280,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/706649556.wem",
+   "size": 47670,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/802098471.wem",
+   "size": 20026,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "audio/wwise/english(uk)/990205941.wem",
+   "size": 28959,
+   "pack": "kerb_alar_PLAY_AS_DECHALA_patch.pack"
+  },
+  {
+   "path": "text/db/@alivia_morathi_hero_dilemmas.loc",
+   "size": 155932,
+   "pack": "kerb_alar_colorblind_patch.pack"
+  },
+  {
+   "path": "text/db/alar_dilemmas.loc",
+   "size": 1695834,
+   "pack": "kerb_alar_colorblind_patch.pack"
+  },
+  {
+   "path": "text/db/alar_incidents.loc",
+   "size": 101436,
+   "pack": "kerb_alar_colorblind_patch.pack"
+  }
+ ]
+}

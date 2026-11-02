@@ -1,0 +1,1630 @@
+{
+ "mod": "ll-36630",
+ "packs": [
+  "@n_SlaaneshVictories.pack",
+  "@n_SlaaneshVictories_Confederations.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@n_SlaaneshVictories.pack": {
+   "files": 186,
+   "dependencies": []
+  },
+  "@n_SlaaneshVictories_Confederations.pack": {
+   "files": 20,
+   "dependencies": []
+  }
+ },
+ "fileCount": 206,
+ "byTopFolder": {
+  "db": 79,
+  "ui": 66,
+  "movies": 30,
+  "text": 28,
+  "script": 3
+ },
+ "tables": [
+  "campaign_payload_ui_details_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_incidents_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "cdir_events_incident_option_junctions_tables",
+  "cdir_events_incident_payloads_tables",
+  "character_skill_level_to_effects_junctions_tables",
+  "character_trait_levels_tables",
+  "character_traits_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_faction_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "incidents_tables",
+  "trait_info_tables",
+  "trait_level_effects_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "campaign_payload_ui_details_tables": [
+   "n_alar_pos",
+   "ui/campaign ui/effect_bundles/dlc10_power_of_nature.png",
+   "default",
+   "n_conf",
+   "UI/skins/default/icon_alert_message.png",
+   "n_alar_cap",
+   "ui/campaign ui/effect_bundles/corruption_slaanesh.png",
+   "n_conf_1",
+   "ui/campaign ui/effect_bundles/confederation.png",
+   "n_conf_2",
+   "ui/campaign ui/effect_bundles/slaves.png",
+   "n_conf_3",
+   "ui/campaign ui/effect_bundles/turns.png",
+   "n_conf_4",
+   "n_conf_5"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "alar_defeat_1",
+   "alar_defeat_2",
+   "alar_defeat_3",
+   "SECOND",
+   "alar_sub_1",
+   "alar_sub_2",
+   "alar_sub_3",
+   "elsp_defeat_1",
+   "elsp_defeat_2",
+   "elsp_defeat_3",
+   "elsp_sub_1",
+   "elsp_sub_2",
+   "elsp_sub_3",
+   "fay_defeat_1",
+   "fay_defeat_2",
+   "fay_defeat_3",
+   "fay_sub_1",
+   "fay_sub_2",
+   "fay_sub_3",
+   "hel_defeat_1",
+   "hel_defeat_2",
+   "hel_defeat_3",
+   "hel_sub_1",
+   "hel_sub_2",
+   "hel_sub_3",
+   "kat_defeat_1",
+   "kat_defeat_2",
+   "kat_defeat_3",
+   "kat_sub_1",
+   "kat_sub_2",
+   "kat_sub_3",
+   "kha_defeat_1",
+   "kha_defeat_2",
+   "kha_defeat_3",
+   "kha_sub_1",
+   "kha_sub_2",
+   "kha_sub_3",
+   "miao_defeat_1",
+   "miao_defeat_2",
+   "miao_defeat_3",
+   "miao_sub_1",
+   "miao_sub_2",
+   "miao_sub_3",
+   "mor_defeat_1",
+   "mor_defeat_2",
+   "mor_defeat_3",
+   "mor_sub_1",
+   "mor_sub_2",
+   "mor_sub_3",
+   "rep_defeat_1",
+   "rep_defeat_2",
+   "rep_defeat_3",
+   "rep_sub_1",
+   "rep_sub_2",
+   "rep_sub_3",
+   "sis_defeat_1",
+   "sis_defeat_2",
+   "sis_defeat_3",
+   "sis_sub_1",
+   "sis_sub_2",
+   "sis_sub_3",
+   "n_se_alar_conf",
+   "n_se_elsp_conf",
+   "n_se_fay_conf",
+   "n_se_hel_conf",
+   "n_se_kat_conf",
+   "n_se_miao_conf",
+   "n_se_mor_conf",
+   "n_se_rep_conf",
+   "n_se_sis_conf",
+   "n_se_kha_conf",
+   "THIRD"
+  ],
+  "cdir_events_dilemma_incidents_tables": [
+   "FIRST",
+   "alar_defeat_3",
+   "n_alar_capital",
+   "alar_sub_3"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "alar_defeat_1",
+   "GEN_TARGET_CHARACTER",
+   "default",
+   "GEN_CND_CHARACTER_ID",
+   "alar_defeat_2",
+   "alar_defeat_3",
+   "alar_sub_1",
+   "alar_sub_2",
+   "alar_sub_3",
+   "VAR_FOLLOWUP_CHANCE",
+   "elsp_defeat_1",
+   "elsp_defeat_2",
+   "elsp_defeat_3",
+   "elsp_sub_1",
+   "elsp_sub_2",
+   "elsp_sub_3",
+   "fay_defeat_1",
+   "fay_defeat_2",
+   "fay_defeat_3",
+   "fay_sub_1",
+   "fay_sub_2",
+   "fay_sub_3",
+   "hel_defeat_1",
+   "hel_defeat_2",
+   "hel_defeat_3",
+   "hel_sub_1",
+   "hel_sub_2",
+   "hel_sub_3",
+   "kat_defeat_1",
+   "kat_defeat_2",
+   "kat_defeat_3",
+   "kat_sub_1",
+   "kat_sub_2",
+   "kat_sub_3",
+   "kha_defeat_1",
+   "kha_defeat_2",
+   "kha_defeat_3",
+   "kha_sub_1",
+   "kha_sub_2",
+   "kha_sub_3",
+   "miao_defeat_1",
+   "miao_defeat_2",
+   "miao_defeat_3",
+   "miao_sub_1",
+   "miao_sub_2",
+   "miao_sub_3",
+   "mor_defeat_1",
+   "mor_defeat_2",
+   "mor_defeat_3",
+   "mor_sub_1",
+   "mor_sub_2",
+   "mor_sub_3",
+   "rep_defeat_1",
+   "rep_defeat_2",
+   "rep_defeat_3",
+   "rep_sub_1",
+   "rep_sub_2",
+   "rep_sub_3",
+   "sis_defeat_1",
+   "sis_defeat_2",
+   "sis_defeat_3",
+   "sis_sub_1",
+   "sis_sub_2",
+   "sis_sub_3",
+   "n_se_alar_conf",
+   "VAR_CHANCE",
+   "n_se_elsp_conf",
+   "n_se_fay_conf",
+   "n_se_hel_conf",
+   "n_se_kat_conf",
+   "n_se_miao_conf",
+   "n_se_mor_conf",
+   "n_se_rep_conf",
+   "n_se_sis_conf",
+   "n_se_kha_conf"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "alar_defeat_1",
+   "GIVE_TRAIT",
+   "default",
+   "alar_defeat_2",
+   "alar_defeat_3",
+   "SECOND",
+   "TEXT_DISPLAY",
+   "alar_sub_1",
+   "alar_sub_2",
+   "alar_sub_3",
+   "elsp_defeat_1",
+   "elsp_defeat_2",
+   "elsp_defeat_3",
+   "elsp_sub_1",
+   "elsp_sub_2",
+   "elsp_sub_3",
+   "fay_defeat_1",
+   "fay_defeat_2",
+   "fay_defeat_3",
+   "fay_sub_1",
+   "fay_sub_2",
+   "fay_sub_3",
+   "hel_defeat_1",
+   "hel_defeat_2",
+   "hel_defeat_3",
+   "hel_sub_1",
+   "hel_sub_2",
+   "hel_sub_3",
+   "kat_defeat_1",
+   "kat_defeat_2",
+   "kat_defeat_3",
+   "kat_sub_1",
+   "kat_sub_2",
+   "kat_sub_3",
+   "kha_defeat_1",
+   "kha_defeat_2",
+   "kha_defeat_3",
+   "kha_sub_1",
+   "kha_sub_2",
+   "kha_sub_3",
+   "miao_defeat_1",
+   "miao_defeat_2",
+   "miao_defeat_3",
+   "miao_sub_1",
+   "miao_sub_2",
+   "miao_sub_3",
+   "mor_defeat_1",
+   "mor_defeat_2",
+   "mor_defeat_3",
+   "mor_sub_1",
+   "mor_sub_2",
+   "mor_sub_3",
+   "rep_defeat_1",
+   "rep_defeat_2",
+   "rep_defeat_3",
+   "rep_sub_1",
+   "rep_sub_2",
+   "rep_sub_3",
+   "sis_defeat_1",
+   "sis_defeat_2",
+   "sis_defeat_3",
+   "sis_sub_1",
+   "sis_sub_2",
+   "sis_sub_3",
+   "n_se_alar_conf",
+   "n_se_elsp_conf",
+   "n_se_fay_conf",
+   "n_se_hel_conf",
+   "n_se_kat_conf",
+   "n_se_miao_conf",
+   "n_se_mor_conf",
+   "n_se_rep_conf",
+   "n_se_sis_conf",
+   "THIRD",
+   "n_se_kha_conf"
+  ],
+  "cdir_events_incident_option_junctions_tables": [
+   "n_alar_capital",
+   "GEN_TARGET_REGION",
+   "default",
+   "GEN_CND_REGION",
+   "wh3_main_combi_region_gaean_vale",
+   "VAR_CHANCE"
+  ],
+  "cdir_events_incident_payloads_tables": [
+   "n_alar_capital",
+   "EFFECT_BUNDLE",
+   "default"
+  ],
+  "character_skill_level_to_effects_junctions_tables": [
+   "wh2_dlc10_skill_innate_hef_alarielle",
+   "n_alar_power_of_seduction",
+   "faction_to_faction_own_unseen"
+  ],
+  "character_trait_levels_tables": [
+   "n_harem",
+   "n_harem_miao",
+   "n_alar_defeat_lvl1",
+   "n_alar_defeat",
+   "n_alar_defeat_lvl2",
+   "n_alar_defeat_lvl3",
+   "n_elsp_defeat_lvl1",
+   "n_elsp_defeat",
+   "n_elsp_defeat_lvl2",
+   "n_elsp_defeat_lvl3",
+   "n_fay_defeat_lvl1",
+   "n_fay_defeat",
+   "n_fay_defeat_lvl2",
+   "n_fay_defeat_lvl3",
+   "n_hel_defeat_lvl1",
+   "n_hel_defeat",
+   "n_hel_defeat_lvl2",
+   "n_hel_defeat_lvl3",
+   "n_kat_defeat_lvl1",
+   "n_kat_defeat",
+   "n_kat_defeat_lvl2",
+   "n_kat_defeat_lvl3",
+   "n_kha_defeat_lvl1",
+   "n_kha_defeat",
+   "n_kha_defeat_lvl2",
+   "n_kha_defeat_lvl3",
+   "n_miao_defeat_lvl1",
+   "n_miao_defeat",
+   "n_miao_defeat_lvl2",
+   "n_miao_defeat_lvl3",
+   "n_mor_defeat_lvl1",
+   "n_mor_defeat",
+   "n_mor_defeat_lvl2",
+   "n_mor_defeat_lvl3",
+   "n_rep_defeat_lvl1",
+   "n_rep_defeat",
+   "n_rep_defeat_lvl2",
+   "n_rep_defeat_lvl3",
+   "n_sis_defeat_lvl1",
+   "n_sis_defeat",
+   "n_sis_defeat_lvl2",
+   "n_sis_defeat_lvl3"
+  ],
+  "character_traits_tables": [
+   "n_alar_defeat",
+   "slaanesh",
+   "n_harem",
+   "n_elsp_defeat",
+   "n_fay_defeat",
+   "n_hel_defeat",
+   "n_kat_defeat",
+   "n_miao_defeat",
+   "n_mor_defeat",
+   "n_rep_defeat",
+   "n_sis_defeat",
+   "n_harem_miao",
+   "n_kha_defeat"
+  ],
+  "dilemmas_tables": [
+   "alar_defeat_1",
+   "se_alar_defeat_1",
+   "Event",
+   "alar_defeat_2",
+   "se_alar_defeat_2",
+   "alar_defeat_3",
+   "se_alar_defeat_3",
+   "alar_sub_1",
+   "alar_sub_2",
+   "alar_sub_3",
+   "elsp_defeat_1",
+   "se_elsp_defeat_1",
+   "elsp_defeat_2",
+   "se_elsp_defeat_2",
+   "elsp_defeat_3",
+   "se_elsp_defeat_3",
+   "elsp_sub_1",
+   "elsp_sub_2",
+   "elsp_sub_3",
+   "fay_defeat_1",
+   "se_fay_defeat_1",
+   "fay_defeat_2",
+   "se_fay_defeat_2",
+   "fay_defeat_3",
+   "se_fay_defeat_3",
+   "fay_sub_1",
+   "fay_sub_2",
+   "fay_sub_3",
+   "hel_defeat_1",
+   "se_hel_defeat_1",
+   "hel_defeat_2",
+   "se_hel_defeat_2",
+   "hel_defeat_3",
+   "se_hel_defeat_3",
+   "hel_sub_1",
+   "hel_sub_2",
+   "hel_sub_3",
+   "kat_defeat_1",
+   "se_kat_defeat_1",
+   "kat_defeat_2",
+   "se_kat_defeat_2",
+   "kat_defeat_3",
+   "se_kat_defeat_3",
+   "kat_sub_1",
+   "kat_sub_2",
+   "kat_sub_3",
+   "kha_defeat_1",
+   "se_kha_defeat_1",
+   "kha_defeat_2",
+   "se_kha_defeat_2",
+   "kha_defeat_3",
+   "se_kha_defeat_3",
+   "kha_sub_1",
+   "kha_sub_2",
+   "kha_sub_3",
+   "miao_defeat_1",
+   "se_miao_defeat_1",
+   "miao_defeat_2",
+   "se_miao_defeat_2",
+   "miao_defeat_3",
+   "se_miao_defeat_3",
+   "miao_sub_1",
+   "miao_sub_2",
+   "miao_sub_3",
+   "mor_defeat_1",
+   "se_mor_defeat_1",
+   "mor_defeat_2",
+   "se_mor_defeat_2",
+   "mor_defeat_3",
+   "se_mor_defeat_3",
+   "mor_sub_1",
+   "mor_sub_2",
+   "mor_sub_3",
+   "rep_defeat_1",
+   "se_rep_defeat_1",
+   "rep_defeat_2",
+   "se_rep_defeat_2",
+   "rep_defeat_3",
+   "se_rep_defeat_3",
+   "rep_sub_1",
+   "rep_sub_2",
+   "rep_sub_3",
+   "sis_defeat_1",
+   "se_sis_defeat_1",
+   "sis_defeat_2",
+   "se_sis_defeat_2",
+   "sis_defeat_3",
+   "se_sis_defeat_3",
+   "sis_sub_1",
+   "sis_sub_2",
+   "sis_sub_3",
+   "n_se_alar_conf",
+   "se_conf_alar",
+   "n_se_elsp_conf",
+   "se_conf_elsp",
+   "n_se_fay_conf",
+   "se_conf_fay",
+   "n_se_hel_conf",
+   "se_conf_hel",
+   "n_se_kat_conf",
+   "se_conf_kat",
+   "n_se_miao_conf",
+   "se_conf_miao",
+   "n_se_mor_conf",
+   "se_conf_mor",
+   "n_se_rep_conf",
+   "se_conf_rep",
+   "n_se_sis_conf",
+   "se_conf_sis",
+   "n_se_kha_conf",
+   "se_conf_kha"
+  ],
+  "effect_bonus_value_faction_junctions_tables": [
+   "diplomatic_mod",
+   "n_harem_diplo",
+   "wh3_main_cth_the_northern_provinces",
+   "wh3_main_ksl_the_ice_court",
+   "wh2_main_hef_avelorn",
+   "wh2_main_def_har_ganeth",
+   "wh2_main_def_cult_of_pleasure",
+   "wh_main_brt_carcassonne",
+   "wh_main_emp_wissenland",
+   "wh2_dlc16_wef_sisters_of_twilight",
+   "wh2_dlc14_brt_chevaliers_de_lyonesse",
+   "wh2_dlc09_tmb_lybaras"
+  ],
+  "effect_bundles_tables": [
+   "n_alar_power_of_seduction",
+   "Power of Seduction",
+   "region",
+   "dlc10_power_of_nature.png",
+   "n_alar_cap",
+   "Fall of the Everqueen",
+   "corruption_slaanesh.png"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "n_alar_power_of_seduction",
+   "wh3_main_effect_corruption_slaanesh_events",
+   "region_to_province_own_unseen",
+   "start_turn_completed",
+   "wh_main_effect_province_growth_events",
+   "wh_main_effect_public_order_base",
+   "n_alar_cap"
+  ],
+  "effects_tables": [
+   "n_alar_power_of_seduction",
+   "dlc10_power_of_nature.png",
+   "campaign",
+   "n_alar_cap",
+   "corruption_slaanesh.png",
+   "n_harem_diplo",
+   "diplomacy.png"
+  ],
+  "incidents_tables": [
+   "n_alar_capital",
+   "sla/faction",
+   "Event"
+  ],
+  "trait_info_tables": [
+   "n_alar_defeat",
+   "n_harem",
+   "n_elsp_defeat",
+   "n_fay_defeat",
+   "n_hel_defeat",
+   "n_kat_defeat",
+   "n_miao_defeat",
+   "n_mor_defeat",
+   "n_rep_defeat",
+   "n_sis_defeat",
+   "n_harem_miao",
+   "n_kha_defeat"
+  ],
+  "trait_level_effects_tables": [
+   "n_alar_defeat_lvl1",
+   "wh3_main_effect_corruption_slaanesh_characters",
+   "character_to_province_any",
+   "n_alar_defeat_lvl2",
+   "n_alar_defeat_lvl3",
+   "n_elsp_defeat_lvl1",
+   "n_elsp_defeat_lvl2",
+   "n_elsp_defeat_lvl3",
+   "n_fay_defeat_lvl1",
+   "n_fay_defeat_lvl2",
+   "n_fay_defeat_lvl3",
+   "n_harem",
+   "faction_to_province_own",
+   "n_harem_miao",
+   "n_harem_diplo",
+   "faction_to_faction_own_unseen",
+   "n_hel_defeat_lvl1",
+   "n_hel_defeat_lvl2",
+   "n_hel_defeat_lvl3",
+   "n_kat_defeat_lvl1",
+   "n_kat_defeat_lvl2",
+   "n_kat_defeat_lvl3",
+   "n_kha_defeat_lvl1",
+   "n_kha_defeat_lvl2",
+   "n_kha_defeat_lvl3",
+   "n_miao_defeat_lvl1",
+   "n_miao_defeat_lvl2",
+   "n_miao_defeat_lvl3",
+   "n_mor_defeat_lvl1",
+   "n_mor_defeat_lvl2",
+   "n_mor_defeat_lvl3",
+   "n_rep_defeat_lvl1",
+   "n_rep_defeat_lvl2",
+   "n_rep_defeat_lvl3",
+   "n_sis_defeat_lvl1",
+   "n_sis_defeat_lvl2",
+   "n_sis_defeat_lvl3"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/campaign_payload_ui_details_tables/@n_slaaneshvictories_confederations",
+   "size": 434,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "db/campaign_payload_ui_details_tables/@n_sv_data",
+   "size": 318,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_alar_defeat",
+   "size": 265,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_elsp_defeat",
+   "size": 265,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_fay_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_hel_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_kat_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_kha_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_miao_defeat",
+   "size": 265,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_mor_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_rep_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_sis_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_slaaneshvictories_confederations",
+   "size": 800,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_incidents_tables/@n_alar_defeat",
+   "size": 156,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_alar_defeat",
+   "size": 920,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_elsp_defeat",
+   "size": 805,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_fay_defeat",
+   "size": 793,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_hel_defeat",
+   "size": 793,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_kat_defeat",
+   "size": 787,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_kha_defeat",
+   "size": 793,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_miao_defeat",
+   "size": 799,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_mor_defeat",
+   "size": 787,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_rep_defeat",
+   "size": 793,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_sis_defeat",
+   "size": 793,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_slaaneshvictories_confederations",
+   "size": 594,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_alar_defeat",
+   "size": 1369,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_elsp_defeat",
+   "size": 1077,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_fay_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_hel_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_kat_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_kha_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_miao_defeat",
+   "size": 1087,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_mor_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_rep_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_sis_defeat",
+   "size": 1057,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_slaaneshvictories_confederations",
+   "size": 2262,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "db/cdir_events_incident_option_junctions_tables/@n_sv_data",
+   "size": 279,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/cdir_events_incident_payloads_tables/@n_alar_defeat",
+   "size": 168,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_skill_level_to_effects_junctions_tables/@n_sv_power_of_nature",
+   "size": 195,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_!_general_defeat",
+   "size": 145,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_alar_defeat",
+   "size": 212,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_elsp_defeat",
+   "size": 212,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_fay_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_hel_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_kat_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_kha_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_miao_defeat",
+   "size": 212,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_mor_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_rep_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_trait_levels_tables/@n_sis_defeat",
+   "size": 206,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/character_traits_tables/@n_character_traits_tables",
+   "size": 557,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_alar_defeat",
+   "size": 388,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_elsp_defeat",
+   "size": 388,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_fay_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_hel_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_kat_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_kha_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_miao_defeat",
+   "size": 388,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_mor_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_rep_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_sis_defeat",
+   "size": 376,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_slaaneshvictories_confederations",
+   "size": 557,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_faction_junctions_tables/@n_sv_data",
+   "size": 681,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/@n_sv_data",
+   "size": 620,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/@n_sv_data",
+   "size": 573,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/effects_tables/@n_sv_data",
+   "size": 322,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/incidents_tables/@n_sv_data",
+   "size": 138,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_info_tables/@n_alar_defeat",
+   "size": 257,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_alar_defeat",
+   "size": 380,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_elsp_defeat",
+   "size": 380,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_fay_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_harem",
+   "size": 383,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_hel_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_kat_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_kha_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_miao_defeat",
+   "size": 380,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_mor_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_rep_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "db/trait_level_effects_tables/@n_sis_defeat",
+   "size": 377,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_defeat_1.ca_vp8",
+   "size": 376137,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_defeat_2.ca_vp8",
+   "size": 331727,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_defeat_3.ca_vp8",
+   "size": 306507,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_defeat_1.ca_vp8",
+   "size": 580023,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_defeat_2.ca_vp8",
+   "size": 488133,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_defeat_3.ca_vp8",
+   "size": 329420,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fay_defeat_1.ca_vp8",
+   "size": 391675,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fay_defeat_2.ca_vp8",
+   "size": 391675,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fay_defeat_3.ca_vp8",
+   "size": 318600,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_hel_defeat_1.ca_vp8",
+   "size": 413317,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_hel_defeat_2.ca_vp8",
+   "size": 421535,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_hel_defeat_3.ca_vp8",
+   "size": 416870,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_defeat_1.ca_vp8",
+   "size": 397474,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_defeat_2.ca_vp8",
+   "size": 516495,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_defeat_3.ca_vp8",
+   "size": 503525,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kha_defeat_1.ca_vp8",
+   "size": 750570,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kha_defeat_2.ca_vp8",
+   "size": 716488,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kha_defeat_3.ca_vp8",
+   "size": 649711,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_defeat_1.ca_vp8",
+   "size": 504476,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_defeat_2.ca_vp8",
+   "size": 534484,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_defeat_3.ca_vp8",
+   "size": 367333,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_defeat_1.ca_vp8",
+   "size": 538650,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_defeat_2.ca_vp8",
+   "size": 516209,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_defeat_3.ca_vp8",
+   "size": 531732,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_defeat_1.ca_vp8",
+   "size": 480731,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_defeat_2.ca_vp8",
+   "size": 404190,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_defeat_3.ca_vp8",
+   "size": 335681,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_defeat_1.ca_vp8",
+   "size": 581654,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_defeat_2.ca_vp8",
+   "size": 549296,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_defeat_3.ca_vp8",
+   "size": 485431,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "script/campaign/mod/@n_slaaneshvictories_conf_script.lua",
+   "size": 8759,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "script/campaign/mod/@n_slaaneshvictories_script.lua",
+   "size": 17233,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "script/campaign/mod/alar_power_of_seduction.lua",
+   "size": 3098,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_alar_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_alar_defeat_dilemmas.loc",
+   "size": 8038,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_elsp_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_elsp_defeat_dilemmas.loc",
+   "size": 7834,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_fay_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_fay_defeat_dilemmas.loc",
+   "size": 7954,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_hel_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_hel_defeat_dilemmas.loc",
+   "size": 8352,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_kat_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_kat_defeat_dilemmas.loc",
+   "size": 7976,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_kha_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_kha_defeat_dilemmas.loc",
+   "size": 7674,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_miao_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_miao_defeat_dilemmas.loc",
+   "size": 8152,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_mor_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_mor_defeat_dilemmas.loc",
+   "size": 8256,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_rep_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_rep_defeat_dilemmas.loc",
+   "size": 7920,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_se_conf_cdir_events_dilemma_choice_details.loc",
+   "size": 11814,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "text/db/@n_se_conf_dilemmas.loc",
+   "size": 9300,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "text/db/@n_sis_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3326,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sis_defeat_dilemmas.loc",
+   "size": 8638,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sv_campaign_ui_payloads.loc",
+   "size": 869,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sv_character_trait_levels_.loc",
+   "size": 17074,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sv_conf_campaign_ui_payloads.loc",
+   "size": 869,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "text/db/@n_sv_effect_bundles_.loc",
+   "size": 1246,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sv_effects.loc",
+   "size": 318,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "text/db/@n_sv_incidents.loc",
+   "size": 757,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_alar_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_alar_defeat_dilemmas.loc",
+   "size": 5732,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_elsp_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_elsp_defeat_dilemmas.loc",
+   "size": 5640,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_fay_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_fay_defeat_dilemmas.loc",
+   "size": 5764,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_hel_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_hel_defeat_dilemmas.loc",
+   "size": 5760,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_kat_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_kat_defeat_dilemmas.loc",
+   "size": 5474,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_kha_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3326,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_kha_defeat_dilemmas.loc",
+   "size": 5380,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_miao_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3298,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_miao_defeat_dilemmas.loc",
+   "size": 5888,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_mor_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_mor_defeat_dilemmas.loc",
+   "size": 5724,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_rep_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3266,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_rep_defeat_dilemmas.loc",
+   "size": 5784,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sis_defeat_cdir_events_dilemma_choice_details.loc",
+   "size": 3326,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sis_defeat_dilemmas.loc",
+   "size": 6116,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sv_campaign_ui_payloads.loc",
+   "size": 907,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sv_character_trait_levels_.loc",
+   "size": 17086,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sv_effect_bundles_.loc",
+   "size": 1246,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sv_effects.loc",
+   "size": 487,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/db/@n_sv_incidents.loc",
+   "size": 757,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_defeat_1.png",
+   "size": 702638,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_defeat_2.png",
+   "size": 651207,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_defeat_3.png",
+   "size": 703196,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_alar.png",
+   "size": 169427,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_elsp.png",
+   "size": 168034,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_fay.png",
+   "size": 168332,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_hel.png",
+   "size": 169395,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_kat.png",
+   "size": 169165,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_kha.png",
+   "size": 168927,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_miao.png",
+   "size": 170325,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_mor.png",
+   "size": 169716,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_rep.png",
+   "size": 168195,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_conf_sis.png",
+   "size": 170058,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_defeat_1.png",
+   "size": 815360,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_defeat_2.png",
+   "size": 723512,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_defeat_3.png",
+   "size": 657591,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fay_defeat_1.png",
+   "size": 689432,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fay_defeat_2.png",
+   "size": 711823,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fay_defeat_3.png",
+   "size": 623419,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_hel_defeat_1.png",
+   "size": 695624,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_hel_defeat_2.png",
+   "size": 709045,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_hel_defeat_3.png",
+   "size": 698393,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_defeat_1.png",
+   "size": 663788,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_defeat_2.png",
+   "size": 673822,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_defeat_3.png",
+   "size": 655330,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kha_defeat_1.png",
+   "size": 530068,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kha_defeat_2.png",
+   "size": 526610,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kha_defeat_3.png",
+   "size": 498286,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_defeat_1.png",
+   "size": 823509,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_defeat_2.png",
+   "size": 788016,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_defeat_3.png",
+   "size": 1147962,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_defeat_1.png",
+   "size": 770524,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_defeat_2.png",
+   "size": 749420,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_defeat_3.png",
+   "size": 753896,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_defeat_1.png",
+   "size": 693507,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_defeat_2.png",
+   "size": 677728,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_defeat_3.png",
+   "size": 609992,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_defeat_1.png",
+   "size": 1005422,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_defeat_2.png",
+   "size": 992375,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_defeat_3.png",
+   "size": 916300,
+   "pack": "@n_SlaaneshVictories.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sla_victory.png",
+   "size": 156447,
+   "pack": "@n_SlaaneshVictories_Confederations.pack"
+  }
+ ]
+}

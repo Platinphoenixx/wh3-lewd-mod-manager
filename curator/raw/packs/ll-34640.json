@@ -1,0 +1,340 @@
+{
+ "mod": "ll-34640",
+ "packs": [
+  "mortal_daughter_seu_soil_reskin.pack",
+  "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "mortal_daughter_seu_soil_reskin.pack": {
+   "files": 28,
+   "dependencies": []
+  },
+  "mortal_daughter_seu_soil_reskin_moretattoo.pack": {
+   "files": 33,
+   "dependencies": []
+  }
+ },
+ "fileCount": 33,
+ "byTopFolder": {
+  "variantmeshes": 31,
+  "ui": 2
+ },
+ "tables": [],
+ "references": {
+  "total": 39,
+  "inMod": 20,
+  "inBaseGame": 19,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "ui/portraits/units/seu_miaoying_first_son_hero_0.png",
+   "size": 17804,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "ui/portraits/units/seu_miaoying_first_son_hero_0.png",
+   "size": 17804,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "ui/portraits/units/seu_miaoying_first_son_lord_0.png",
+   "size": 17804,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "ui/portraits/units/seu_miaoying_first_son_lord_0.png",
+   "size": 17804,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_0.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_0.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_flyer.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_flyer.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_flyer_2.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/seu_miaoying_first_son_lord_flyer_2.variantmeshdefinition",
+   "size": 891,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/dae_warshrine_ornament_slaanesh__weighted2_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted2_alpha_off.xml.material",
+   "size": 2706,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted4_alpha_off.xml.material",
+   "size": 2703,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted4_alpha_off.xml.material",
+   "size": 2703,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_armor_weighted4_alpha_on.xml.material",
+   "size": 2708,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_body_weighted2_alpha_off.xml.material",
+   "size": 2561,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_body_weighted4_alpha_off.xml.material",
+   "size": 2557,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_body_weighted4_alpha_off.xml.material",
+   "size": 2561,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_body_weighted4_alpha_on.xml.material",
+   "size": 2562,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_body_weighted4_alpha_on.xml.material",
+   "size": 2566,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_hair_05.002_weighted2_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_hair_05.002_weighted2_alpha_off.xml.material",
+   "size": 2726,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_hair_05.002_weighted4_alpha_on.xml.material",
+   "size": 2731,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_hair_05.002_weighted4_alpha_on.xml.material",
+   "size": 2731,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_head_05_weighted2_alpha_off.xml.material",
+   "size": 2560,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_head_05_weighted2_alpha_off.xml.material",
+   "size": 2564,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_head_05_weighted4_alpha_off.xml.material",
+   "size": 2564,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_head_05_weighted4_alpha_on.xml.material",
+   "size": 2569,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_mask_01_weighted2_alpha_off.xml.material",
+   "size": 2656,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_mask_01_weighted2_alpha_off.xml.material",
+   "size": 2656,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_mask_01_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/materials/shugengan_mask_01_weighted4_alpha_on.xml.material",
+   "size": 2661,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_body.rigid_model_v2",
+   "size": 1099694,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_body.rigid_model_v2",
+   "size": 1099694,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_body.wsmodel",
+   "size": 1494,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_body.wsmodel",
+   "size": 1500,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_head.rigid_model_v2",
+   "size": 1470920,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_head.rigid_model_v2",
+   "size": 1470920,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_head.wsmodel",
+   "size": 2934,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/soil_min_fan_head.wsmodel",
+   "size": 2940,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_basecolor.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_basecolor.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_basecolor_minfan.dds",
+   "size": 5592532,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_basecolor_minfan.dds",
+   "size": 5592532,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_basecolor_minfan2.dds",
+   "size": 5592532,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_materialmap.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_materialmap.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_normalorange.dds",
+   "size": 1398256,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/body_texture_normalorange.dds",
+   "size": 1398256,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/cth_celestial_guard_body_01_sla_re_base_colour.dds",
+   "size": 1398276,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/cth_celestial_guard_body_01_sla_re_base_colour.dds",
+   "size": 1398276,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01__redhairs_base_colour.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01__redhairs_base_colour.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "mortal_daughter_seu_soil_reskin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1e/cth/cth_shugengan/tex/def_supreme_sorceress_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "mortal_daughter_seu_soil_reskin_moretattoo.pack"
+  }
+ ]
+}

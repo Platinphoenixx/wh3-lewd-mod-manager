@@ -1,0 +1,84 @@
+{
+ "mod": "ll-24257",
+ "packs": [
+  "_savage_beastmen_cn1019.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "_savage_beastmen_cn1019.pack": {
+   "files": 11,
+   "dependencies": []
+  }
+ },
+ "fileCount": 11,
+ "byTopFolder": {
+  "text": 11
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/@savage_beastmen_culture_settlement_occupation_options.loc",
+   "size": 328,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/@savage_beastmen_effects.loc",
+   "size": 4268,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_campaign_payload_ui_details.loc",
+   "size": 314,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_campaign_post_battle_captive_options.loc",
+   "size": 334,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_dilemmas.loc",
+   "size": 3790,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_effect_bundles.loc",
+   "size": 1231,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_incidents.loc",
+   "size": 332,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_land_units.loc",
+   "size": 210,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_rituals.loc",
+   "size": 137,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_unit_description_historical_texts.loc",
+   "size": 456,
+   "pack": "_savage_beastmen_cn1019.pack"
+  },
+  {
+   "path": "text/db/savage_beastmen_unit_descrption_short_texts.loc",
+   "size": 402,
+   "pack": "_savage_beastmen_cn1019.pack"
+  }
+ ]
+}

@@ -1,0 +1,1380 @@
+{
+ "mod": "ll-27676",
+ "packs": [
+  "alivia_alarielle_stage1.pack",
+  "alivia_alarielle_stage2.pack",
+  "alivia_alarielle_stage3_isha.pack",
+  "alivia_alarielle_stage3_sla.pack",
+  "alivia_alarielle_stage4_isha.pack",
+  "alivia_alarielle_stage4_sla.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "alivia_alarielle_stage1.pack": {
+   "files": 43,
+   "dependencies": []
+  },
+  "alivia_alarielle_stage2.pack": {
+   "files": 43,
+   "dependencies": []
+  },
+  "alivia_alarielle_stage3_isha.pack": {
+   "files": 43,
+   "dependencies": []
+  },
+  "alivia_alarielle_stage3_sla.pack": {
+   "files": 46,
+   "dependencies": []
+  },
+  "alivia_alarielle_stage4_isha.pack": {
+   "files": 43,
+   "dependencies": []
+  },
+  "alivia_alarielle_stage4_sla.pack": {
+   "files": 46,
+   "dependencies": []
+  }
+ },
+ "fileCount": 85,
+ "byTopFolder": {
+  "variantmeshes": 85
+ },
+ "tables": [],
+ "references": {
+  "total": 113,
+  "inMod": 67,
+  "inBaseGame": 41,
+  "onlyInOtherMods": {},
+  "unresolved": [
+   "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_shoulder_weighted4_alpha_on.xml.material",
+   "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_neck.dds",
+   "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/balivia_blueish_normal.dds",
+   "variantmeshes/wh_variantmodels/hu1b/hef/hef_sisters_of_avelorn/tex/balivia_green_darkerish.dds",
+   "variantmeshes/wh_variantmodels/hu1d/alivia_alarielle/tex/alivia_whitelion_greeen.dds"
+  ]
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 861,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 861,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 868,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 868,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 868,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle.variantmeshdefinition",
+   "size": 871,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1036,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1036,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1043,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1043,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1043,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/hef_alarielle_campaign.variantmeshdefinition",
+   "size": 1046,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alarielle_stage3_isha.rigid_model_v2",
+   "size": 6321700,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alarielle_stage3_isha.wsmodel",
+   "size": 10578,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alarielle_stage4_isha.rigid_model_v2",
+   "size": 5587428,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alarielle_stage4_isha.wsmodel",
+   "size": 7718,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alivia_alarielle_body.rigid_model_v2",
+   "size": 2919564,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alivia_alarielle_body.wsmodel",
+   "size": 3610,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alivia_alarielle_body_s2.rigid_model_v2",
+   "size": 3088700,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/alivia_alarielle_body_s2.wsmodel",
+   "size": 4321,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/aawef_treeman_ancient_body_01.0_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/aawef_treeman_ancient_body_01.0_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/aawef_treeman_ancient_body_01.0_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/aawef_treeman_ancient_body_01.0_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/acawef_treeman_ancient_body_02._weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/acawef_treeman_ancient_body_02._weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/acawef_treeman_ancient_body_02._weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/acawef_treeman_ancient_body_02._weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_belt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_belt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_belt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_belt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s2_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s2_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s2_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s2_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinket_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinket_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinket_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinket_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_top_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_top_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_top_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_top_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s2_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s2_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s2_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s2_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3v1_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3v1_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3v1_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_s3v1_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_skirt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_skirt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_skirt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dress_skirt_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dresspart_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dresspart_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dresspart_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_dresspart_s3_weighted4_alpha_on.xml.material",
+   "size": 2498,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2494,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_s2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_s2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_s2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_head_s2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_neck_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_neck_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_neck_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/alivia_alarielle_neck_weighted4_alpha_on.xml.material",
+   "size": 2571,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_accessorie_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_accessorie_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_accessorie_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_accessorie_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_01.00_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_01.00_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_01.00_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_01.00_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 5250,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/awef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_bra2_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_bra2_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_bra2_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_bra2_weighted4_alpha_on.xml.material",
+   "size": 4693,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_02_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_02_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_02_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_02_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_gaun_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_gaun_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_gaun_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_gaun_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_body_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_head_01_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_head_01_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_head_01_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_head_01_weighted4_alpha_on.xml.material",
+   "size": 4694,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/materials/cawef_treeman_ancient_leaf_weighted4_alpha_on.xml.material",
+   "size": 2853,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_base_color_2kv2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4.dds",
+   "size": 2097300,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alarielle_head_color_2kv4_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_base_color.dds",
+   "size": 44739404,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_alarielle_body_normalv2.dds",
+   "size": 89478640,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1.dds",
+   "size": 8388756,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v1_normal.dds",
+   "size": 22369776,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage1.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage2.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage3_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage4_isha.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alarielle/tex/alivia_texture_alarielle_v2.dds",
+   "size": 16777344,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla3.rigid_model_v2",
+   "size": 5623036,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla3.rigid_model_v2",
+   "size": 5623036,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla3.wsmodel",
+   "size": 8391,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla3.wsmodel",
+   "size": 8391,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla4.rigid_model_v2",
+   "size": 5266540,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla4.rigid_model_v2",
+   "size": 5266540,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla4.wsmodel",
+   "size": 7483,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/alariellesla4.wsmodel",
+   "size": 7483,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_left_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_left_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4383,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_left_weighted4_alpha_on.xml.material",
+   "size": 4383,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_right_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_right_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4404,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_arm_right_weighted4_alpha_on.xml.material",
+   "size": 4404,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_nude_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_nude_s3_weighted4_alpha_on.xml.material",
+   "size": 4316,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4385,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_nude_weighted4_alpha_on.xml.material",
+   "size": 4385,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_body_trinkets__weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_isha_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_s3_sla_t_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_s3_sla_t_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_s3sla_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_dress_s3sla_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs2_weighted4_alpha_on.xml.material",
+   "size": 2511,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs3_weighted4_alpha_on.xml.material",
+   "size": 2583,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs3_weighted4_alpha_on.xml.material",
+   "size": 2583,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2493,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_acs_weighted4_alpha_on.xml.material",
+   "size": 2493,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_s3sla_weighted4_alpha_on.xml.material",
+   "size": 4322,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_s3sla_weighted4_alpha_on.xml.material",
+   "size": 4322,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_s4sla_weighted4_alpha_on.xml.material",
+   "size": 4322,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_alarielle_head_s4sla_weighted4_alpha_on.xml.material",
+   "size": 4322,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_belt3_weighted4_alpha_on.xml.material",
+   "size": 2499,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_collar_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/alivia_collar_weighted4_alpha_on.xml.material",
+   "size": 2538,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_corruption_weighted4_alpha_on.xml.material",
+   "size": 4729,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_corruption_weighted4_alpha_on.xml.material",
+   "size": 4729,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_spikes_weighted4_alpha_on.xml.material",
+   "size": 4729,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_spikes_weighted4_alpha_on.xml.material",
+   "size": 4729,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_straps_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_straps_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_stuff_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/materials/dae_stuff_weighted4_alpha_on.xml.material",
+   "size": 2587,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alarielle_head_sla4v2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alarielle_head_sla4v2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alarielle_head_sla4v2_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alarielle_head_sla4v2_normal.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_hairv2.dds",
+   "size": 699212,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_hairv2.dds",
+   "size": 699212,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_sla_accsv3.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_sla_accsv3.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture2k.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture2k.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture2k_mask.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture2k_mask.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand2.dds",
+   "size": 2796364,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand_mask.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_ala_texture_right_hand_mask.dds",
+   "size": 5592560,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_black_base_color.dds",
+   "size": 524416,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/alivia_black_base_color.dds",
+   "size": 524416,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/pet_chain_normal.dds",
+   "size": 1398256,
+   "pack": "alivia_alarielle_stage3_sla.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/hef/alivia_sla/tex/pet_chain_normal.dds",
+   "size": 1398256,
+   "pack": "alivia_alarielle_stage4_sla.pack"
+  }
+ ]
+}

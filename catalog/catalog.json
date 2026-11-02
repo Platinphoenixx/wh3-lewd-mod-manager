@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T16:43:28+00:00",
+  "generatedAt": "2026-11-02T17:23:14+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -2046,7 +2046,8 @@
         {
           "file": "EFT.pack",
           "from": "download",
-          "note": "Standalone English version"
+          "note": "Standalone English version",
+          "archive": "EFT"
         }
       ],
       "relations": [
@@ -2117,7 +2118,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "high",
         "openQuestions": [
-          "Pack name not given.",
           "The steam_ids on the page are the dependencies, not this mod."
         ]
       },
@@ -3024,69 +3024,80 @@
           "file": "tdw_corrupted_Buildings.pack",
           "from": "download",
           "exclusiveGroup": "tdw-base",
-          "note": "Base pack; requires @Soil_Miaoying_Corrupted_Units.pack"
+          "note": "Base pack; requires @Soil_Miaoying_Corrupted_Units.pack",
+          "archive": "tdw_corrupted_Buildings"
         },
         {
           "file": "tdw_corrupted_Buildings_alt.pack",
           "from": "download",
           "exclusiveGroup": "tdw-base",
-          "note": "Same as the base, but with vanilla units instead of Soil's (no Soil mod needed)"
+          "note": "Same as the base, but with vanilla units instead of Soil's (no Soil mod needed)",
+          "archive": "tdw_corrupted_Buildings_alt"
         },
         {
           "file": "tdw_corrupted_buildings_add_endos_kislev.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds Endo's Kislev reskinned units for corrupted Miao and Katarin"
+          "note": "Adds Endo's Kislev reskinned units for corrupted Miao and Katarin",
+          "archive": "tdw_corrupted_buildings_add_endos_kislev"
         },
         {
           "file": "tdw_corrupted_buildings_add_wef.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds Forest of Debauchery units for corrupted Miao"
+          "note": "Adds Forest of Debauchery units for corrupted Miao",
+          "archive": "tdw_corrupted_buildings_add_wef"
         },
         {
           "file": "!tdw_corrupted_buildings_add_fem_berserker.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds Taraanis' female Kislev berserkers for Miao; needs Nexus mod 179"
+          "note": "Adds Taraanis' female Kislev berserkers for Miao; needs Nexus mod 179",
+          "archive": "!tdw_corrupted_buildings_add_fem_berserker"
         },
         {
           "file": "!tdw_corrupted_buildings_add_Amazon_Warrior.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds Taraanis' Amazon Warrior for Miao; needs Nexus mod 185"
+          "note": "Adds Taraanis' Amazon Warrior for Miao; needs Nexus mod 185",
+          "archive": "!tdw_corrupted_buildings_add_Amazon_Warrior"
         },
         {
           "file": "tdw_corrupted_buildings_add_slaangor.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds a custom hero and units based on Slaanesh Beast Expand (Steam 3321253105)"
+          "note": "Adds a custom hero and units based on Slaanesh Beast Expand (Steam 3321253105)",
+          "archive": "tdw_corrupted_buildings_add_slaangor"
         },
         {
           "file": "tdw_corrupted_buildings_add_slaanesh_zealots.pack",
           "from": "download",
           "optional": true,
-          "note": "Adds JFred's Zealots of Slaanesh (Steam 2858576975) for Miao"
+          "note": "Adds JFred's Zealots of Slaanesh (Steam 2858576975) for Miao",
+          "archive": "tdw_corrupted_buildings_add_slaanesh_zealots"
         },
         {
           "file": "tdw_corrupted_buildings_add_wos.pack",
           "from": "download",
           "optional": true,
           "exclusiveGroup": "tdw-wos",
-          "note": "Adds DOVAKIN's Warrior of Slaanesh reskin units for Miao and Katarin"
+          "note": "Adds DOVAKIN's Warrior of Slaanesh reskin units for Miao and Katarin",
+          "archive": "tdw_corrupted_buildings_add_wos"
         },
         {
           "file": "tdw_corrupted_buildings_add_wos_vanilla.pack",
           "from": "download",
           "optional": true,
           "exclusiveGroup": "tdw-wos",
-          "note": "Adds vanilla Warriors of Slaanesh for Miao"
+          "note": "Adds vanilla Warriors of Slaanesh for Miao",
+          "archive": "tdw_corrupted_buildings_add_wos_vanilla"
         },
         {
           "file": "tdw_corrupted_Buildings_slaver.pack",
           "from": "download",
           "optional": true,
-          "note": "Building-based slave mechanic for Miao and Katarin"
+          "note": "Building-based slave mechanic for Miao and Katarin",
+          "archive": "tdw_corrupted_Buildings_slaver"
         }
       ],
       "relations": [
@@ -3177,6 +3188,28 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/36002-additional-corrupted-buildings-units/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-185"
+          },
+          "note": "Named as a dependency in the mod's pack (Amazon Warrior.pack)",
+          "condition": "only with !tdw_corrupted_buildings_add_Amazon_Warrior.pack",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "nx-179"
+          },
+          "note": "Named as a dependency in the mod's pack (fem_berserker.pack)",
+          "condition": "only with !tdw_corrupted_buildings_add_fem_berserker.pack",
+          "source": {
+            "type": "inferred"
           }
         }
       ],
@@ -3652,37 +3685,43 @@
           "file": "alivia_alarielle_stage1.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 1 look (by the file name)"
+          "note": "Stage 1 look (by the file name)",
+          "archive": "alivia_alarielle_stage1"
         },
         {
           "file": "alivia_alarielle_stage2.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 2 look (by the file name)"
+          "note": "Stage 2 look (by the file name)",
+          "archive": "alivia_alarielle_stage2"
         },
         {
           "file": "alivia_alarielle_stage3_isha.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 3 look, Isha version (by the file name)"
+          "note": "Stage 3 look, Isha version (by the file name)",
+          "archive": "alivia_alarielle_stage3_isha"
         },
         {
           "file": "alivia_alarielle_stage3_sla.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 3 look, Slaanesh version (by the file name)"
+          "note": "Stage 3 look, Slaanesh version (by the file name)",
+          "archive": "alivia_alarielle_stage3_sla"
         },
         {
           "file": "alivia_alarielle_stage4_isha.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 4 look, Isha version (by the file name)"
+          "note": "Stage 4 look, Isha version (by the file name)",
+          "archive": "alivia_alarielle_stage4_isha"
         },
         {
           "file": "alivia_alarielle_stage4_sla.pack",
           "from": "download",
           "exclusiveGroup": "alivia-skin",
-          "note": "Stage 4 look, Slaanesh version (by the file name)"
+          "note": "Stage 4 look, Slaanesh version (by the file name)",
+          "archive": "alivia_alarielle_stage4_sla"
         }
       ],
       "relations": [],
@@ -3971,7 +4010,8 @@
       "packs": [
         {
           "file": "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "@kerb_Alarielle_Temptations_Bloom_steam_spanishTranslate_byTheDog"
         }
       ],
       "relations": [
@@ -4249,13 +4289,15 @@
           "file": "kerb_alar_colorblind_patch.pack",
           "from": "download",
           "optional": true,
-          "note": "LoversLab patch: colour-blind friendly corruption visuals."
+          "note": "LoversLab patch: colour-blind friendly corruption visuals.",
+          "archive": "kerb_alar_colorblind_patch"
         },
         {
           "file": "kerb_alar_PLAY_AS_DECHALA_patch.pack",
           "from": "download",
           "optional": true,
-          "note": "LoversLab patch for playing as Dechala (not recommended since 3.0)."
+          "note": "LoversLab patch for playing as Dechala (not recommended since 3.0).",
+          "archive": "kerb_alar_PLAY_AS_DECHALA_patch"
         }
       ],
       "relations": [
@@ -5008,7 +5050,6 @@
         "confidence": "medium",
         "openQuestions": [
           "It is not clear which Steam items belong to 'Lazy's Mods + MCT + Corrupted Landmarks' (3472332568) and whether Corrupted Landmarks (ll-30462, Steam 3474483873?) is needed separately.",
-          "Pack file names for Alarielle_Temptation_Bloom(.pack), _Assets and MiaoYing_Azazel_content come only from the Korean list, without extension.",
           "How 'Alarielle_Temptation_Bloom_Assets' relates to 'kerberos_mod_assets.pack' (Steam 3566908399) is unclear.",
           "Contradiction on Habu's tdw_corrupted_buildings* (KR: recommended, EN: not recommended).",
           "Assignment of the Narok packs to ll-36630/ll-34542 not verified.",
@@ -6663,7 +6704,8 @@
           "file": "@@Compendium_Play_as_Azazel_Overwrite.pack",
           "from": "download",
           "optional": true,
-          "note": "Still distributed on LoversLab (zip); needed to play as anyone but Miao. Expects the LoversLab Compendium file name."
+          "note": "Still distributed on LoversLab (zip); needed to play as anyone but Miao. Expects the LoversLab Compendium file name.",
+          "archive": "@@Compendium_Play_as_Azazel_Overwrite"
         }
       ],
       "playAs": [
@@ -7409,7 +7451,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "balthasar_geltina_cn_0409.pack",
+          "from": "download",
+          "archive": "balthasar_geltina_cn_0409"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -7427,9 +7475,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
-        "openQuestions": [
-          "Pack name not given (single file, presumably one .pack)."
-        ]
+        "openQuestions": []
       },
       "loadOrder": {
         "above": [
@@ -9733,19 +9779,22 @@
           "file": "@heroes_cathay_pack_ru.pack",
           "from": "download",
           "exclusiveGroup": "cathay-ru",
-          "note": "Standalone hero bundle with Russian text"
+          "note": "Standalone hero bundle with Russian text",
+          "archive": "@heroes_cathay_pack_ru"
         },
         {
           "file": "@heroes_cathay_pack_ru_translation only.pack",
           "from": "download",
           "exclusiveGroup": "cathay-ru",
-          "note": "Russian text only, for use with the original Steam hero mods"
+          "note": "Russian text only, for use with the original Steam hero mods",
+          "archive": "@heroes_cathay_pack_ru_translation only"
         },
         {
           "file": "(X)_Cathay_ALL_XXX ru.pack",
           "from": "download",
           "optional": true,
-          "note": "Presumably the Russian text for ll-49648's all-in-one; not described on the page"
+          "note": "Presumably the Russian text for ll-49648's all-in-one; not described on the page",
+          "archive": "(X)_Cathay_ALL_XXX ru"
         }
       ],
       "relations": [
@@ -10046,7 +10095,8 @@
       "packs": [
         {
           "file": "CelestialDragonConcubines_cn0918.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "CelestialDragonConcubines_cn0918"
         }
       ],
       "relations": [
@@ -10499,7 +10549,13 @@
           "singleFile": "7z"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@community_beastmen_lynn's_edit.pack",
+          "from": "download",
+          "archive": "191825622_@community_beastmen_lynns_edit"
+        }
+      ],
       "relations": [
         {
           "kind": "extends",
@@ -10522,8 +10578,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Whether it needs the base Community Beastmen is not stated; inferred from ll-36361 that it ran on its own",
-          "Pack name not given (single 7z)"
+          "Whether it needs the base Community Beastmen is not stated; inferred from ll-36361 that it ran on its own"
         ]
       },
       "authorPages": [
@@ -10726,7 +10781,8 @@
       "packs": [
         {
           "file": "new_community_beastmen_ru.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "new_community_beastmen_ru"
         }
       ],
       "relations": [
@@ -10765,8 +10821,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Steam 3476784883 is unlisted; title unknown - unclear which of the LL Community Beastmen pages (24466/36361/46165) it corresponds to",
-          "Patch pack name not given"
+          "Steam 3476784883 is unlisted; title unknown - unclear which of the LL Community Beastmen pages (24466/36361/46165) it corresponds to"
         ]
       },
       "authorPages": [
@@ -11325,9 +11380,9 @@
       },
       "packs": [
         {
-          "file": "new_community_beastmen.pack",
+          "file": "community_beastmen_5.2.3_jabberslythefix.pack",
           "from": "steam",
-          "steamId": "3476784883"
+          "archive": "community_beastmen_5.2.3_jabberslythefix"
         }
       ],
       "relations": [
@@ -11395,7 +11450,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given.",
           "Was probably superseded by ll-46165 (DeHess, Steam 3476784883) - the first line of the page with the original author is missing.",
           "Dependency on the original Community Beastmen (ll-24466) is not explicit."
         ]
@@ -11566,19 +11620,22 @@
           "file": "tdw_cth_seduce.pack",
           "from": "download",
           "optional": true,
-          "note": "Miao Ying version; file extension added from the package name."
+          "note": "Miao Ying version; file extension added from the package name.",
+          "archive": "tdw_cth_seduce"
         },
         {
           "file": "tdw_kat_seduce.pack",
           "from": "download",
           "optional": true,
-          "note": "Katarin version; file extension added from the package name."
+          "note": "Katarin version; file extension added from the package name.",
+          "archive": "tdw_kat_seduce"
         },
         {
           "file": "tdw_mor_seduce.pack",
           "from": "download",
           "optional": true,
-          "note": "Morathi version; file extension added from the package name."
+          "note": "Morathi version; file extension added from the package name.",
+          "archive": "tdw_mor_seduce"
         }
       ],
       "relations": [
@@ -11674,7 +11731,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack names are given without '.pack'; extension added.",
+          "Extension added.",
           "Steam ID 3175283222 in the page links is 'Keep Seduced Units', not this mod itself."
         ]
       },
@@ -11812,13 +11869,15 @@
           "file": "Miao_flag_new.pack",
           "from": "download",
           "optional": true,
-          "note": "Optional flag pack from the LL page"
+          "note": "Optional flag pack from the LL page",
+          "archive": "Miao_flag_new"
         },
         {
           "file": "acorns_ensign_loi_touchup_patched.pack",
           "from": "download",
           "optional": true,
-          "note": "Optional old Ensign Loi touch-up patch from the LL page; not needed for Azazel's Realm (Kerberos on Discord, 2026-10-31)"
+          "note": "Optional old Ensign Loi touch-up patch from the LL page; not needed for Azazel's Realm (Kerberos on Discord, 2026-10-31)",
+          "archive": "acorns_ensign_loi_touchup_patched"
         },
         {
           "file": "MiaoYingCorrupted_Compendium_workshop.pack",
@@ -11891,7 +11950,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "The page gives no .pack file names.",
           "The description accidentally mentions Valkia ('Valkia will still look like her base ingame self') - probably copy-pasted from a Valkia mod, ignored.",
           "Campaign support (IE/IEE/RoC) not stated."
         ]
@@ -12337,13 +12395,15 @@
           "file": "Corrupted_Miao_Audio_Overhaul.pack",
           "from": "download",
           "optional": true,
-          "note": "Voice line overhaul; from Miao stage 4 on"
+          "note": "Voice line overhaul; from Miao stage 4 on",
+          "archive": "Corrupted_Miao_Audio_Overhaul"
         },
         {
           "file": "Corrupted_Miao_Moans.pack",
           "from": "download",
           "optional": true,
-          "note": "Battle sounds; from Miao stage 4 on"
+          "note": "Battle sounds; from Miao stage 4 on",
+          "archive": "Corrupted_Miao_Moans"
         }
       ],
       "playAs": [
@@ -12390,7 +12450,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack names not given.",
           "'At the very bottom' is ambiguous relative to the convention 'top = wins'."
         ]
       },
@@ -12506,7 +12565,8 @@
       "packs": [
         {
           "file": "corrupted_landmarks_cn.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "corrupted_landmarks_cn"
         }
       ],
       "relations": [
@@ -12582,7 +12642,8 @@
         {
           "file": "corrupted_landmarks_kislev_cn0929.pack",
           "from": "download",
-          "note": "File name taken from the page title"
+          "note": "File name taken from the page title",
+          "archive": "corrupted_landmarks_kislev_cn0929"
         }
       ],
       "relations": [
@@ -15727,12 +15788,6 @@
             "title": "Dusts Corrupted Heroes",
             "updated": "2026-11-01",
             "subscribers": 2753
-          },
-          {
-            "id": "2897366143",
-            "title": "Legendary High Elven Characters [LHEC]",
-            "updated": "2026-10-12",
-            "subscribers": 35224
           }
         ]
       },
@@ -15819,11 +15874,6 @@
         {
           "url": "https://images.steamusercontent.com/ugc/15817605857248498131/6FE634A4EA00A6DE59A7277928AA86649F5617A8/",
           "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/2039616629974808713/CEBB0F9EF0B50FED062F142F5069EF2618756630/",
-          "kind": "screenshot",
           "source": "steam"
         }
       ]
@@ -16030,85 +16080,99 @@
           "file": "tdw_confeds_gen_confed_all_12.pack",
           "from": "download",
           "optional": true,
-          "note": "Merged version of all 12 confederation packs; do NOT combine with the individual packs (crash)"
+          "note": "Merged version of all 12 confederation packs; do NOT combine with the individual packs (crash)",
+          "archive": "tdw_confeds_gen_confed_all_12"
         },
         {
           "file": "tdw_confeds_gen_confed_morathi.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Morathi); not with the all-in-one"
+          "note": "Individual confederation pack (Morathi); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_morathi"
         },
         {
           "file": "tdw_confeds_gen_confed_valkia.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Valkia); not with the all-in-one"
+          "note": "Individual confederation pack (Valkia); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_valkia"
         },
         {
           "file": "tdw_confeds_gen_confed_yinyin.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Yin-Yin); not with the all-in-one"
+          "note": "Individual confederation pack (Yin-Yin); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_yinyin"
         },
         {
           "file": "tdw_confeds_gen_confed_fay.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (the Fay Enchantress); not with the all-in-one"
+          "note": "Individual confederation pack (the Fay Enchantress); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_fay"
         },
         {
           "file": "tdw_confeds_gen_confed_kat.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Katarin); not with the all-in-one"
+          "note": "Individual confederation pack (Katarin); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_kat"
         },
         {
           "file": "tdw_confeds_gen_confed_sigi.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Sigvald); not with the all-in-one"
+          "note": "Individual confederation pack (Sigvald); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_sigi"
         },
         {
           "file": "tdw_confeds_gen_confed_twins.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (the Sisters of Twilight); not with the all-in-one"
+          "note": "Individual confederation pack (the Sisters of Twilight); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_twins"
         },
         {
           "file": "tdw_confeds_gen_confed_azazel.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Azazel); not with the all-in-one"
+          "note": "Individual confederation pack (Azazel); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_azazel"
         },
         {
           "file": "tdw_confeds_gen_confed_nkari.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (N'Kari); not with the all-in-one"
+          "note": "Individual confederation pack (N'Kari); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_nkari"
         },
         {
           "file": "tdw_confeds_gen_confed_miao.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Miao Ying); not with the all-in-one"
+          "note": "Individual confederation pack (Miao Ying); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_miao"
         },
         {
           "file": "tdw_confeds_gen_confed_alarielle.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Alarielle); not with the all-in-one"
+          "note": "Individual confederation pack (Alarielle); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_alarielle"
         },
         {
           "file": "tdw_confeds_gen_confed_els.pack",
           "from": "download",
           "optional": true,
-          "note": "Individual confederation pack (Elspeth); not with the all-in-one"
+          "note": "Individual confederation pack (Elspeth); not with the all-in-one",
+          "archive": "tdw_confeds_gen_confed_els"
         },
         {
           "file": "tdw_khalida_switch_skin.pack",
           "from": "download",
           "optional": true,
-          "note": "Bonus: Khalida gets her vanilla skin after 5 turns without a battle"
+          "note": "Bonus: Khalida gets her vanilla skin after 5 turns without a battle",
+          "archive": "tdw_khalida_switch_skin"
         }
       ],
       "relations": [
@@ -17148,7 +17212,18 @@
           "singleFile": "rar"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@endo_empire_reskin_tdw_50patch.pack",
+          "from": "download",
+          "archive": "2024.05.17.endos_reskins for 5.0.0"
+        },
+        {
+          "file": "@endo_kislev_reskin_tdw_50patch.pack",
+          "from": "download",
+          "archive": "2024.05.17.endos_reskins for 5.0.0"
+        }
+      ],
       "relations": [],
       "status": "superseded",
       "installNotes": [
@@ -17429,52 +17504,60 @@
           "file": "@@All_Loi_Variant_selector.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "All-in-one for Variant Selector; replaces the individual packs"
+          "note": "All-in-one for Variant Selector; replaces the individual packs",
+          "archive": "@@All_Loi_Variant_selector"
         },
         {
           "file": "@@ A Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant A (assets from Slaanesh Corrupted Cathay Roster)"
+          "note": "Variant A (assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ A Loi variant"
         },
         {
           "file": "@@ B Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant B (assets from Slaanesh Corrupted Cathay Roster)"
+          "note": "Variant B (assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ B Loi variant"
         },
         {
           "file": "@@ C Loi variant_Stage4.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant C (stage 4 look; assets from Slaanesh Corrupted Cathay Roster)"
+          "note": "Variant C (stage 4 look; assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ C Loi variant_Stage4"
         },
         {
           "file": "@@ D Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant D (assets from Blushing Moon Unit Replacer)"
+          "note": "Variant D (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ D Loi variant"
         },
         {
           "file": "@@ E Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant E (assets from Blushing Moon Unit Replacer)"
+          "note": "Variant E (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ E Loi variant"
         },
         {
           "file": "@@ F Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant F (assets from Blushing Moon Unit Replacer)"
+          "note": "Variant F (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ F Loi variant"
         },
         {
           "file": "@@ DD Loi variant.pack",
           "from": "download",
           "exclusiveGroup": "loi",
-          "note": "Variant DD (assets from Blushing Moon Unit Replacer)"
+          "note": "Variant DD (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ DD Loi variant"
         },
         {
-          "file": "All_Loi_Variant_selector_steam.pack",
+          "file": "@@All_Loi_Variant_selector_steam.pack",
           "from": "steam",
           "steamId": "3503458514",
           "exclusiveGroup": "loi",
@@ -17549,7 +17632,7 @@
         "staleDataPacks": [
           "@@All_Loi_Variant_selector.pack"
         ],
-        "note": "The Steam version (3503458514) uses the pack name All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
+        "note": "The Steam version (3503458514) uses the pack name @@All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
       },
       "authorPages": [
         {
@@ -19210,7 +19293,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Corrupted_Woodelves_v1.3.2.pack",
+          "from": "download",
+          "archive": "Corrupted_Woodelves_v1.3.2"
+        }
+      ],
       "relations": [],
       "status": "abandoned",
       "knownIssues": [
@@ -19220,7 +19309,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "No pack file names given on the page.",
           "There is another file 'Forest of Debauchery UPDATED' (ll-40998, Raykho) - its relationship to this file (successor/fork?) is not mentioned on this page; page last updated in 2022.",
           "No information on campaigns/DLC."
         ]
@@ -20186,7 +20274,8 @@
           "file": "Goblin_horde_redux.pack",
           "from": "steam",
           "steamId": "3629196257",
-          "note": "Name taken from the Workshop title"
+          "note": "Name taken from the Workshop title",
+          "archive": "Goblin_horde_redux1.2.3"
         }
       ],
       "playAs": [
@@ -20222,7 +20311,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name taken from the Workshop title (Goblin_horde_redux.pack); not verified in a Workshop folder.",
+          "Not verified in a Workshop folder.",
           "Dependency on the original Endo Goblin Horde mod not clarified (not in the index)."
         ]
       },
@@ -23772,7 +23861,8 @@
         {
           "file": "!li_kat_remove_skin_effects.pack",
           "from": "download",
-          "optional": true
+          "optional": true,
+          "archive": "!li_kat_remove_skin_effects"
         }
       ],
       "relations": [
@@ -26232,7 +26322,8 @@
       "packs": [
         {
           "file": "li_morathi_progression_cn0915.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_morathi_progression_cn0915"
         }
       ],
       "relations": [
@@ -27776,7 +27867,18 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "@Lynn's_Horny_Nords.pack",
+          "from": "download",
+          "archive": "@Lynn's_Horny_Nords"
+        },
+        {
+          "file": "@Lynn's_Horny_Nords_Xtra_Big.pack",
+          "from": "download",
+          "archive": "376244368_@Lynns_Horny_Nords_Xtra_Big"
+        }
+      ],
       "relations": [],
       "status": "abandoned",
       "knownIssues": [
@@ -27786,9 +27888,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "high",
-        "openQuestions": [
-          "No pack names on the page."
-        ]
+        "openQuestions": []
       },
       "authorPages": [
         {
@@ -29104,7 +29204,8 @@
       "packs": [
         {
           "file": "miao_and_katarin_cn0923.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "miao_and_katarin_cn0923"
         }
       ],
       "relations": [
@@ -29255,13 +29356,15 @@
           "file": "Miaoying(tit).pack",
           "from": "download",
           "optional": true,
-          "note": "Miao Ying part; use only if you want this look"
+          "note": "Miao Ying part; use only if you want this look",
+          "archive": "Miaoying(tit)"
         },
         {
           "file": "katarin(tit).pack",
           "from": "download",
           "optional": true,
-          "note": "Katarin part; use only if you want this look"
+          "note": "Katarin part; use only if you want this look",
+          "archive": "katarin(tit)"
         }
       ],
       "relations": [],
@@ -29341,7 +29444,8 @@
         {
           "file": "MiaoYingCorrupted_Compendium_cn0829.pack",
           "from": "download",
-          "note": "File name taken from the page title"
+          "note": "File name taken from the page title",
+          "archive": "MiaoYingCorrupted_Compendium_cn0829"
         }
       ],
       "relations": [
@@ -30246,7 +30350,13 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alivia_morathi_hero.pack",
+          "from": "download",
+          "archive": "alivia_morathi_hero"
+        }
+      ],
       "relations": [
         {
           "kind": "optional",
@@ -30298,7 +30408,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack file name not given",
           "Compatibility with Lazy's Morathi described only as an intention, not confirmed",
           "Campaigns (IE/IEE/RoC) not specified"
         ]
@@ -32311,7 +32420,8 @@
         {
           "file": "palace_archers_cn0827.pack",
           "from": "download",
-          "note": "Name taken from the page title"
+          "note": "Name taken from the page title",
+          "archive": "palace_archers_cn0827"
         }
       ],
       "relations": [
@@ -35737,7 +35847,8 @@
         {
           "file": "!Readman_Alarielle_YYY.pack",
           "from": "download",
-          "note": "Name from Readman's tested mod lists (#many-modlist-methods), loaded from the data folder"
+          "note": "Name from Readman's tested mod lists (#many-modlist-methods), loaded from the data folder",
+          "archive": "!Readman_Alarielle_YYY"
         }
       ],
       "relations": [
@@ -36859,19 +36970,22 @@
         {
           "file": "!@li_miaoying_progression_stages_RU1.pack",
           "from": "download",
-          "note": "Miao progression translation"
+          "note": "Miao progression translation",
+          "archive": "!@li_miaoying_progression_stages_RU1"
         },
         {
           "file": "!@@MiaoYingCorrupted_Compendium_RU1.pack",
           "from": "download",
           "optional": true,
-          "note": "Compendium translation"
+          "note": "Compendium translation",
+          "archive": "!@@MiaoYingCorrupted_Compendium_RU1"
         },
         {
           "file": "!@MiaoYing_Azazel_content_RU1.pack",
           "from": "download",
           "optional": true,
-          "note": "Azazel's Realm translation"
+          "note": "Azazel's Realm translation",
+          "archive": "!@MiaoYing_Azazel_content_RU1"
         }
       ],
       "relations": [
@@ -36934,7 +37048,6 @@
         "confidence": "medium",
         "openQuestions": [
           "'Before the main mod' presumably means 'above' by convention (higher priority); not unambiguous.",
-          "Pack names not given.",
           "Further translations announced / on Boosty."
         ]
       },
@@ -37663,9 +37776,10 @@
       },
       "packs": [
         {
-          "file": "savage_beastmen_cn1019.pack",
+          "file": "_savage_beastmen_cn1019.pack",
           "from": "download",
-          "note": "File name taken from the page title"
+          "note": "File name of the LoversLab download",
+          "archive": "_savage_beastmen_cn1019"
         }
       ],
       "relations": [
@@ -38437,7 +38551,8 @@
       "packs": [
         {
           "file": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "seu_miaoying_submod_extension_v0.7.0_cn0930"
         }
       ],
       "relations": [
@@ -38626,13 +38741,15 @@
           "file": "mortal_daughter_seu_soil_reskin.pack",
           "from": "download",
           "exclusiveGroup": "seu-daughter",
-          "note": "Base version"
+          "note": "Base version",
+          "archive": "mortal_daughter_seu_soil_reskin"
         },
         {
           "file": "mortal_daughter_seu_soil_reskin_moretattoo.pack",
           "from": "download",
           "exclusiveGroup": "seu-daughter",
-          "note": "More tattoos"
+          "note": "More tattoos",
+          "archive": "mortal_daughter_seu_soil_reskin_moretattoo"
         }
       ],
       "relations": [
@@ -38671,7 +38788,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack name not given.",
           "Which SEU packs (generic content / submod extension) exactly are required is open."
         ]
       },
@@ -41270,13 +41386,15 @@
         {
           "file": "@n_SlaaneshVictories.pack",
           "from": "download",
-          "note": "Core mod"
+          "note": "Core mod",
+          "archive": "@n_SlaaneshVictories"
         },
         {
           "file": "@n_SlaaneshVictories_Confederations.pack",
           "from": "download",
           "optional": true,
-          "note": "Optional confederation submod (Alarielle, Temptation's Bloom advises against it)"
+          "note": "Optional confederation submod (Alarielle, Temptation's Bloom advises against it)",
+          "archive": "@n_SlaaneshVictories_Confederations"
         }
       ],
       "relations": [],
@@ -41298,7 +41416,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack names are not given; main mod and submod could be separate downloads",
+          "Main mod and submod could be separate downloads",
           "The same author's LL pages 'Vassal Dilemmas' (34542) and 'Visuals' (37162) are not linked here"
         ]
       },
@@ -41438,13 +41556,15 @@
           "file": "@n_SlaaneshVassals.pack",
           "from": "download",
           "optional": true,
-          "note": "Slaanesh factions version"
+          "note": "Slaanesh factions version",
+          "archive": "@n_SlaaneshVassals"
         },
         {
           "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
           "from": "download",
           "optional": true,
-          "note": "Non-Slaanesh factions version (used in Readman's Alarielle/Morathi lists)"
+          "note": "Non-Slaanesh factions version (used in Readman's Alarielle/Morathi lists)",
+          "archive": "@n_SlaaneshVassals_Non_Slaanesh_Factions"
         }
       ],
       "playAs": [
@@ -41687,7 +41807,8 @@
       "packs": [
         {
           "file": "@n_SlaaneshVisuals_LL_Only.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "@n_SlaaneshVisuals_LL_Only"
         }
       ],
       "relations": [
@@ -41738,7 +41859,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Relationship to ll-36630/ll-34542 interpreted as 'optional' (the page only says 'my other mods'); pack names not given."
+          "Relationship to ll-36630/ll-34542 interpreted as 'optional' (the page only says 'my other mods')"
         ]
       },
       "authorPages": [
@@ -42710,31 +42831,38 @@
       "packs": [
         {
           "file": "Soboro_Miao.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "Soboro_Miao"
         },
         {
           "file": "li_miaoying_scale_soboro_st1.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_scale_soboro_st1"
         },
         {
           "file": "li_miaoying_fishnet_soboro_st2.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_fishnet_soboro_st2"
         },
         {
           "file": "li_miaoying_ballet_soboro_st3.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_ballet_soboro_st3"
         },
         {
           "file": "li_miaoying_bare_soboro_st4.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_bare_soboro_st4"
         },
         {
           "file": "li_miaoying_corset_soboro_st5.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_corset_soboro_st5"
         },
         {
           "file": "li_miaoying_plug_soboro_st6.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "li_miaoying_plug_soboro_st6"
         }
       ],
       "relations": [
@@ -42779,7 +42907,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Author writes you need 'lazylcarus' default mod pack'; exact Lazy pack names other than the Soboro packs are not given.",
+          "Author writes you need 'lazylcarus' default mod pack'",
           "Whether the order of the listing above (top = higher priority) is meant is not explicitly stated ('same as lazylcarus' mod arrangement order')."
         ]
       },
@@ -42929,7 +43057,8 @@
         {
           "file": "soil_corrupted_units_0904_cn.pack",
           "from": "download",
-          "note": "Name taken from the page title"
+          "note": "Name taken from the page title",
+          "archive": "soil_corrupted_units_0904_cn"
         }
       ],
       "relations": [
@@ -43396,25 +43525,28 @@
           "file": "soil_corrupted_units_asset.pack",
           "from": "download",
           "optional": true,
-          "note": "Old asset pack; use the fixed re-upload 'Soil Corrupted assets (fixed vanilla overwrites)' instead – same file name, it replaces this one."
+          "note": "Old asset pack; use the fixed re-upload 'Soil Corrupted assets (fixed vanilla overwrites)' instead – same file name, it replaces this one.",
+          "archive": "soil_corrupted_units_asset"
         },
         {
           "file": "@Soil_Miaoying_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Miao Ying"
+          "note": "Only when playing Miao Ying",
+          "archive": "@Soil_Miaoying_Corrupted_Units"
         },
         {
           "file": "@Soil_Azazel_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Azazel; above Azazel's Realm"
+          "note": "Only when playing Azazel; above Azazel's Realm",
+          "archive": "@Soil_Azazel_Corrupted_Units"
         },
         {
           "file": "@Soil_Kislev_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Katarin (Kislev)"
+          "note": "Only when playing Katarin (Kislev). Not in the LoversLab download: Kerberos' fixed pack (2025-11-11) is posted on Discord (#soiled-projects)."
         }
       ],
       "relations": [
@@ -43483,7 +43615,6 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Pack file names and the list of supported factions ('various factions') are not given.",
           "Relationship to ll-48415 (fix of the asset pack) per its title/changelog there; not mentioned on this page."
         ]
       },
@@ -43600,13 +43731,15 @@
           "file": "jhc_north_pro_demons_v1.5.pack",
           "from": "download",
           "exclusiveGroup": "jhc-version",
-          "note": "Current version"
+          "note": "Current version",
+          "archive": "jhc_north_pro_demons_v1.5"
         },
         {
           "file": "jhc_north_pro_demons_v1.4.1.pack",
           "from": "download",
           "exclusiveGroup": "jhc-version",
-          "note": "Older version; do not use both"
+          "note": "Older version; do not use both",
+          "archive": "jhc_north_pro_demons_v1.4.1"
         }
       ],
       "playAs": [
@@ -43650,7 +43783,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "No pack names; dependency on the Miao progression only implicit."
+          "Dependency on the Miao progression only implicit."
         ]
       },
       "authorPages": [
@@ -45341,7 +45474,13 @@
           "singleFile": "pack?"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "goblin_hordes_addonV2.5.pack",
+          "from": "download",
+          "archive": "goblin_hordes_addonV2.5"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -45376,8 +45515,7 @@
         "lastChecked": "2026-10-31",
         "confidence": "medium",
         "openQuestions": [
-          "Endo's Goblin Hordes (the base mod) has no link; ll-46561 calls the horde mod Endo's pet project and reworks it",
-          "Pack name not given"
+          "Endo's Goblin Hordes (the base mod) has no link; ll-46561 calls the horde mod Endo's pet project and reworks it"
         ]
       },
       "authorPages": [
@@ -46690,31 +46828,36 @@
           "file": "soil_corrupted_units_0903_hotfixSFO.pack",
           "from": "download",
           "optional": true,
-          "note": "Soil's Corrupted Units for SFO; standalone"
+          "note": "Soil's Corrupted Units for SFO; standalone",
+          "archive": "soil_corrupted_units_0903_hotfixSFO"
         },
         {
           "file": "ensignLoiSFO.pack",
           "from": "download",
           "optional": true,
-          "note": "Ensign Loi SFO stats; needs Corrupted Compendium"
+          "note": "Ensign Loi SFO stats; needs Corrupted Compendium",
+          "archive": "ensignLoiSFO"
         },
         {
           "file": "@z_double_skill_points_ensign_loi.pack",
           "from": "download",
           "optional": true,
-          "note": "Only with [SFO] Double Skill Points"
+          "note": "Only with [SFO] Double Skill Points",
+          "archive": "@z_double_skill_points_ensign_loi"
         },
         {
           "file": "seu_miaoying_submod_extensionSFO.pack",
           "from": "download",
           "optional": true,
-          "note": "Only with SEU's Miao Ying extension"
+          "note": "Only with SEU's Miao Ying extension",
+          "archive": "seu_miaoying_submod_extensionSFO"
         },
         {
           "file": "Lin_Corruption_AscendSFO.pack",
           "from": "download",
           "optional": true,
-          "note": "Only with Corrupted Ascension"
+          "note": "Only with Corrupted Ascension",
+          "archive": "Lin_Corruption_AscendSFO"
         }
       ],
       "relations": [
@@ -47936,7 +48079,8 @@
       "packs": [
         {
           "file": "1568747233_WarriorofSlaanesh.pack",
-          "from": "download"
+          "from": "download",
+          "archive": "1568747233_WarriorofSlaanesh"
         }
       ],
       "relations": [],
@@ -47947,9 +48091,7 @@
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "high",
-        "openQuestions": [
-          "No pack names on the page."
-        ]
+        "openQuestions": []
       },
       "authorPages": [
         {
@@ -50102,7 +50244,7 @@
           "file": "Lin_Corrupted_Ascension.pack",
           "from": "steam",
           "steamId": "3376917062",
-          "note": "Replaces the older Lin_Corrupted_Ascend.pack since the 2024-12 framework update."
+          "note": "Replaces the older Lin_Corruption_Ascend.pack (the name in the pack header of its SFO submod) since the 2024-12 framework update."
         }
       ],
       "relations": [
@@ -50203,9 +50345,11 @@
       },
       "cleanup": {
         "staleDataPacks": [
-          "Lin_Corrupted_Ascension_EnUpdated.pack"
+          "Lin_Corrupted_Ascension_EnUpdated.pack",
+          "Lin_Corruption_Ascend.pack",
+          "Lin_Corrupted_Ascend.pack"
         ],
-        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838)."
+        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838). Lin_Corruption_Ascend.pack is the pack from before the 2024-12 framework update (players also write Lin_Corrupted_Ascend); with it still active the new models do not work and a new campaign is needed."
       },
       "loadOrder": {
         "below": [

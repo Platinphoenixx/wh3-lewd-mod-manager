@@ -1,0 +1,2195 @@
+{
+ "mod": "ll-34242",
+ "packs": [
+  "tdw_confeds_gen_confed_alarielle.pack",
+  "tdw_confeds_gen_confed_all_12.pack",
+  "tdw_confeds_gen_confed_azazel.pack",
+  "tdw_confeds_gen_confed_els.pack",
+  "tdw_confeds_gen_confed_fay.pack",
+  "tdw_confeds_gen_confed_kat.pack",
+  "tdw_confeds_gen_confed_miao.pack",
+  "tdw_confeds_gen_confed_morathi.pack",
+  "tdw_confeds_gen_confed_nkari.pack",
+  "tdw_confeds_gen_confed_sigi.pack",
+  "tdw_confeds_gen_confed_twins.pack",
+  "tdw_confeds_gen_confed_valkia.pack",
+  "tdw_confeds_gen_confed_yinyin.pack",
+  "tdw_khalida_switch_skin.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "tdw_confeds_gen_confed_alarielle.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_all_12.pack": {
+   "files": 143,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_azazel.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_els.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_fay.pack": {
+   "files": 31,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_kat.pack": {
+   "files": 19,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_miao.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_morathi.pack": {
+   "files": 24,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_nkari.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_sigi.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_twins.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_valkia.pack": {
+   "files": 6,
+   "dependencies": []
+  },
+  "tdw_confeds_gen_confed_yinyin.pack": {
+   "files": 21,
+   "dependencies": []
+  },
+  "tdw_khalida_switch_skin.pack": {
+   "files": 36,
+   "dependencies": []
+  }
+ },
+ "fileCount": 179,
+ "byTopFolder": {
+  "ui": 78,
+  "db": 55,
+  "variantmeshes": 20,
+  "script": 13,
+  "text": 13
+ },
+ "tables": [
+  "agent_uniforms_tables",
+  "campaign_character_art_sets_tables",
+  "campaign_character_arts_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "dilemmas_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "unit_variants_tables",
+  "variants_tables"
+ ],
+ "references": {
+  "total": 20,
+  "inMod": 14,
+  "inBaseGame": 6,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "agent_uniforms_tables": [
+   "tdw_vanilla_wh2_dlc09_tmb_ch_khalida_campaign",
+   "tdw_vanilla_wh2_dlc09_uniform_tmb_khalida",
+   "tdw_vanilla_wh2_dlc09_tmb_ch_khalida"
+  ],
+  "campaign_character_art_sets_tables": [
+   "general",
+   "tdw_vanilla_wh2_dlc09_art_set_tmb_khalida",
+   "wh2_dlc09_tmb_khalida"
+  ],
+  "campaign_character_arts_tables": [
+   "tdw_vanilla_wh2_dlc09_art_set_tmb_khalida",
+   "none",
+   "tdw_vanilla_wh2_dlc09_uniform_tmb_khalida",
+   "wh2_dlc09_campaign_tmb_ship_transport",
+   "cam_lord_hu1b_khalida_staff_and_sword",
+   "cam_transport_ship_06"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "tdw_confeds_miao_confed_alarielle",
+   "SECOND",
+   "THIRD",
+   "tdw_confeds_miao_confed_azazel",
+   "tdw_confeds_miao_confed_els",
+   "tdw_confeds_miao_confed_fay1",
+   "tdw_confeds_miao_confed_fay2",
+   "tdw_confeds_miao_confed_fay3",
+   "tdw_confeds_miao_confed_fay4",
+   "tdw_confeds_miao_confed_fay5",
+   "tdw_confeds_miao_confed_fay6",
+   "tdw_confeds_miao_confed_fay7",
+   "tdw_confeds_miao_confed_fay8",
+   "tdw_confeds_miao_confed_fay9",
+   "tdw_confeds_miao_confed_fay10",
+   "tdw_confeds_miao_confed_fay11",
+   "tdw_confeds_miao_confed_fay12",
+   "tdw_confeds_miao_confed_fay13",
+   "tdw_confeds_miao_confed_fay14",
+   "tdw_confeds_miao_confed_fay15",
+   "tdw_confeds_miao_confed_fay16",
+   "tdw_confeds_miao_confed_fay17",
+   "tdw_confeds_miao_confed_fay18",
+   "tdw_confeds_miao_confed_fay19",
+   "tdw_confeds_miao_confed_fay20",
+   "tdw_confeds_miao_confed_fay21",
+   "tdw_confeds_miao_confed_fay22",
+   "tdw_confeds_miao_confed_fay23",
+   "tdw_confeds_miao_confed_fay24",
+   "tdw_confeds_miao_confed_fay25",
+   "tdw_confeds_miao_confed_kat1",
+   "tdw_confeds_miao_confed_kat2",
+   "tdw_confeds_miao_confed_kat3",
+   "tdw_confeds_miao_confed_kat4",
+   "tdw_confeds_miao_confed_kat5",
+   "tdw_confeds_miao_confed_kat6",
+   "tdw_confeds_miao_confed_kat7",
+   "tdw_confeds_miao_confed_kat8",
+   "tdw_confeds_miao_confed_kat9",
+   "tdw_confeds_miao_confed_kat10",
+   "tdw_confeds_miao_confed_kat11",
+   "tdw_confeds_miao_confed_kat12",
+   "tdw_confeds_miao_confed_kat13",
+   "tdw_confeds_miao_confed_miao",
+   "tdw_confeds_miao_confed_morathi1",
+   "tdw_confeds_miao_confed_morathi2",
+   "tdw_confeds_miao_confed_morathi3",
+   "tdw_confeds_miao_confed_morathi4",
+   "tdw_confeds_miao_confed_morathi5",
+   "tdw_confeds_miao_confed_morathi6",
+   "tdw_confeds_miao_confed_morathi7",
+   "tdw_confeds_miao_confed_morathi8",
+   "tdw_confeds_miao_confed_morathi9",
+   "tdw_confeds_miao_confed_morathi10",
+   "tdw_confeds_miao_confed_morathi11",
+   "tdw_confeds_miao_confed_morathi12",
+   "tdw_confeds_miao_confed_morathi13",
+   "tdw_confeds_miao_confed_morathi14",
+   "tdw_confeds_miao_confed_morathi15",
+   "tdw_confeds_miao_confed_morathi16",
+   "tdw_confeds_miao_confed_morathi17",
+   "tdw_confeds_miao_confed_morathi18",
+   "tdw_confeds_miao_confed_nkari",
+   "tdw_confeds_miao_confed_sigi",
+   "tdw_confeds_miao_confed_twins",
+   "tdw_confeds_miao_confed_valkia",
+   "tdw_confeds_miao_confed_yinyin1",
+   "tdw_confeds_miao_confed_yinyin2",
+   "tdw_confeds_miao_confed_yinyin3",
+   "tdw_confeds_miao_confed_yinyin4",
+   "tdw_confeds_miao_confed_yinyin5",
+   "tdw_confeds_miao_confed_yinyin6",
+   "tdw_confeds_miao_confed_yinyin7",
+   "tdw_confeds_miao_confed_yinyin8",
+   "tdw_confeds_miao_confed_yinyin9",
+   "tdw_confeds_miao_confed_yinyin10",
+   "tdw_confeds_miao_confed_yinyin11",
+   "tdw_confeds_miao_confed_yinyin12",
+   "tdw_confeds_miao_confed_yinyin13",
+   "tdw_confeds_miao_confed_yinyin14",
+   "tdw_confeds_miao_confed_yinyin15"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "tdw_confeds_miao_confed_alarielle",
+   "VAR_CHANCE",
+   "default",
+   "tdw_confeds_miao_confed_azazel",
+   "tdw_confeds_miao_confed_els",
+   "tdw_confeds_miao_confed_fay1",
+   "tdw_confeds_miao_confed_fay2",
+   "tdw_confeds_miao_confed_fay3",
+   "tdw_confeds_miao_confed_fay4",
+   "tdw_confeds_miao_confed_fay5",
+   "tdw_confeds_miao_confed_fay6",
+   "tdw_confeds_miao_confed_fay7",
+   "tdw_confeds_miao_confed_fay8",
+   "tdw_confeds_miao_confed_fay9",
+   "tdw_confeds_miao_confed_fay10",
+   "tdw_confeds_miao_confed_fay11",
+   "tdw_confeds_miao_confed_fay12",
+   "tdw_confeds_miao_confed_fay13",
+   "tdw_confeds_miao_confed_fay14",
+   "tdw_confeds_miao_confed_fay15",
+   "tdw_confeds_miao_confed_fay16",
+   "tdw_confeds_miao_confed_fay17",
+   "tdw_confeds_miao_confed_fay18",
+   "tdw_confeds_miao_confed_fay19",
+   "tdw_confeds_miao_confed_fay20",
+   "tdw_confeds_miao_confed_fay21",
+   "tdw_confeds_miao_confed_fay22",
+   "tdw_confeds_miao_confed_fay23",
+   "tdw_confeds_miao_confed_fay24",
+   "tdw_confeds_miao_confed_fay25",
+   "tdw_confeds_miao_confed_kat1",
+   "tdw_confeds_miao_confed_kat2",
+   "tdw_confeds_miao_confed_kat3",
+   "tdw_confeds_miao_confed_kat4",
+   "tdw_confeds_miao_confed_kat5",
+   "tdw_confeds_miao_confed_kat6",
+   "tdw_confeds_miao_confed_kat7",
+   "tdw_confeds_miao_confed_kat8",
+   "tdw_confeds_miao_confed_kat9",
+   "tdw_confeds_miao_confed_kat10",
+   "tdw_confeds_miao_confed_kat11",
+   "tdw_confeds_miao_confed_kat12",
+   "tdw_confeds_miao_confed_kat13",
+   "tdw_confeds_miao_confed_miao",
+   "tdw_confeds_miao_confed_morathi1",
+   "tdw_confeds_miao_confed_morathi2",
+   "tdw_confeds_miao_confed_morathi3",
+   "tdw_confeds_miao_confed_morathi4",
+   "tdw_confeds_miao_confed_morathi5",
+   "tdw_confeds_miao_confed_morathi6",
+   "tdw_confeds_miao_confed_morathi7",
+   "tdw_confeds_miao_confed_morathi8",
+   "tdw_confeds_miao_confed_morathi9",
+   "tdw_confeds_miao_confed_morathi10",
+   "tdw_confeds_miao_confed_morathi11",
+   "tdw_confeds_miao_confed_morathi12",
+   "tdw_confeds_miao_confed_morathi13",
+   "tdw_confeds_miao_confed_morathi14",
+   "tdw_confeds_miao_confed_morathi15",
+   "tdw_confeds_miao_confed_morathi16",
+   "tdw_confeds_miao_confed_morathi17",
+   "tdw_confeds_miao_confed_morathi18",
+   "tdw_confeds_miao_confed_nkari",
+   "tdw_confeds_miao_confed_sigi",
+   "tdw_confeds_miao_confed_twins",
+   "tdw_confeds_miao_confed_valkia",
+   "tdw_confeds_miao_confed_yinyin1",
+   "tdw_confeds_miao_confed_yinyin2",
+   "tdw_confeds_miao_confed_yinyin3",
+   "tdw_confeds_miao_confed_yinyin4",
+   "tdw_confeds_miao_confed_yinyin5",
+   "tdw_confeds_miao_confed_yinyin6",
+   "tdw_confeds_miao_confed_yinyin7",
+   "tdw_confeds_miao_confed_yinyin8",
+   "tdw_confeds_miao_confed_yinyin9",
+   "tdw_confeds_miao_confed_yinyin10",
+   "tdw_confeds_miao_confed_yinyin11",
+   "tdw_confeds_miao_confed_yinyin12",
+   "tdw_confeds_miao_confed_yinyin13",
+   "tdw_confeds_miao_confed_yinyin14",
+   "tdw_confeds_miao_confed_yinyin15"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "tdw_confeds_miao_confed_alarielle",
+   "TEXT_DISPLAY",
+   "default",
+   "SECOND",
+   "FOURTH",
+   "tdw_confeds_miao_confed_azazel",
+   "tdw_confeds_miao_confed_els",
+   "tdw_confeds_miao_confed_fay1",
+   "THIRD",
+   "tdw_confeds_miao_confed_fay2",
+   "tdw_confeds_miao_confed_fay3",
+   "tdw_confeds_miao_confed_fay4",
+   "tdw_confeds_miao_confed_fay5",
+   "tdw_confeds_miao_confed_fay6",
+   "tdw_confeds_miao_confed_fay7",
+   "tdw_confeds_miao_confed_fay8",
+   "tdw_confeds_miao_confed_fay9",
+   "tdw_confeds_miao_confed_fay10",
+   "tdw_confeds_miao_confed_fay11",
+   "tdw_confeds_miao_confed_fay12",
+   "tdw_confeds_miao_confed_fay13",
+   "tdw_confeds_miao_confed_fay14",
+   "tdw_confeds_miao_confed_fay15",
+   "tdw_confeds_miao_confed_fay16",
+   "tdw_confeds_miao_confed_fay17",
+   "tdw_confeds_miao_confed_fay18",
+   "tdw_confeds_miao_confed_fay19",
+   "tdw_confeds_miao_confed_fay20",
+   "tdw_confeds_miao_confed_fay21",
+   "tdw_confeds_miao_confed_fay22",
+   "tdw_confeds_miao_confed_fay23",
+   "tdw_confeds_miao_confed_fay24",
+   "tdw_confeds_miao_confed_fay25",
+   "tdw_confeds_miao_confed_kat1",
+   "tdw_confeds_miao_confed_kat2",
+   "tdw_confeds_miao_confed_kat3",
+   "tdw_confeds_miao_confed_kat4",
+   "tdw_confeds_miao_confed_kat5",
+   "tdw_confeds_miao_confed_kat6",
+   "tdw_confeds_miao_confed_kat7",
+   "tdw_confeds_miao_confed_kat8",
+   "tdw_confeds_miao_confed_kat9",
+   "tdw_confeds_miao_confed_kat10",
+   "tdw_confeds_miao_confed_kat11",
+   "tdw_confeds_miao_confed_kat12",
+   "tdw_confeds_miao_confed_kat13",
+   "tdw_confeds_miao_confed_miao",
+   "tdw_confeds_miao_confed_morathi1",
+   "tdw_confeds_miao_confed_morathi2",
+   "tdw_confeds_miao_confed_morathi3",
+   "tdw_confeds_miao_confed_morathi4",
+   "tdw_confeds_miao_confed_morathi5",
+   "tdw_confeds_miao_confed_morathi6",
+   "tdw_confeds_miao_confed_morathi7",
+   "tdw_confeds_miao_confed_morathi8",
+   "tdw_confeds_miao_confed_morathi9",
+   "tdw_confeds_miao_confed_morathi10",
+   "tdw_confeds_miao_confed_morathi11",
+   "tdw_confeds_miao_confed_morathi12",
+   "tdw_confeds_miao_confed_morathi13",
+   "tdw_confeds_miao_confed_morathi14",
+   "tdw_confeds_miao_confed_morathi15",
+   "tdw_confeds_miao_confed_morathi16",
+   "tdw_confeds_miao_confed_morathi17",
+   "tdw_confeds_miao_confed_morathi18",
+   "tdw_confeds_miao_confed_nkari",
+   "tdw_confeds_miao_confed_sigi",
+   "tdw_confeds_miao_confed_twins",
+   "tdw_confeds_miao_confed_valkia",
+   "tdw_confeds_miao_confed_yinyin1",
+   "tdw_confeds_miao_confed_yinyin2",
+   "tdw_confeds_miao_confed_yinyin3",
+   "tdw_confeds_miao_confed_yinyin4",
+   "tdw_confeds_miao_confed_yinyin5",
+   "tdw_confeds_miao_confed_yinyin6",
+   "tdw_confeds_miao_confed_yinyin7",
+   "tdw_confeds_miao_confed_yinyin8",
+   "tdw_confeds_miao_confed_yinyin9",
+   "tdw_confeds_miao_confed_yinyin10",
+   "tdw_confeds_miao_confed_yinyin11",
+   "tdw_confeds_miao_confed_yinyin12",
+   "tdw_confeds_miao_confed_yinyin13",
+   "tdw_confeds_miao_confed_yinyin14",
+   "tdw_confeds_miao_confed_yinyin15"
+  ],
+  "dilemmas_tables": [
+   "tdw_confeds_miao_confed_alarielle",
+   "Alarielle subdues to You",
+   "Alarielle subdues",
+   "faction",
+   "Event",
+   "tdw_confeds_miao_confed_azazel",
+   "Azazel subdues to Miao Ying",
+   "Azazel subdues",
+   "tdw_confeds_miao_confed_els",
+   "Elspeth von Draken subdues to Miao Ying",
+   "Elspeth subdues",
+   "tdw_confeds_miao_confed_fay1",
+   "Fay subdues to Miao Ying",
+   "Fay subdues",
+   "tdw_confed_fay_pic1",
+   "tdw_confeds_miao_confed_fay2",
+   "tdw_confed_fay_pic2",
+   "tdw_confeds_miao_confed_fay3",
+   "tdw_confed_fay_pic3",
+   "tdw_confeds_miao_confed_fay4",
+   "tdw_confed_fay_pic4",
+   "tdw_confeds_miao_confed_fay5",
+   "tdw_confed_fay_pic5",
+   "tdw_confeds_miao_confed_fay6",
+   "tdw_confed_fay_pic6",
+   "tdw_confeds_miao_confed_fay7",
+   "tdw_confed_fay_pic7",
+   "tdw_confeds_miao_confed_fay8",
+   "tdw_confed_fay_pic8",
+   "tdw_confeds_miao_confed_fay9",
+   "tdw_confed_fay_pic9",
+   "tdw_confeds_miao_confed_fay10",
+   "tdw_confed_fay_pic10",
+   "tdw_confeds_miao_confed_fay11",
+   "tdw_confed_fay_pic11",
+   "tdw_confeds_miao_confed_fay12",
+   "tdw_confed_fay_pic12",
+   "tdw_confeds_miao_confed_fay13",
+   "tdw_confed_fay_pic13",
+   "tdw_confeds_miao_confed_fay14",
+   "tdw_confed_fay_pic14",
+   "tdw_confeds_miao_confed_fay15",
+   "tdw_confed_fay_pic15",
+   "tdw_confeds_miao_confed_fay16",
+   "tdw_confed_fay_pic16",
+   "tdw_confeds_miao_confed_fay17",
+   "tdw_confed_fay_pic17",
+   "tdw_confeds_miao_confed_fay18",
+   "tdw_confed_fay_pic18",
+   "tdw_confeds_miao_confed_fay19",
+   "tdw_confed_fay_pic19",
+   "tdw_confeds_miao_confed_fay20",
+   "tdw_confed_fay_pic20",
+   "tdw_confeds_miao_confed_fay21",
+   "tdw_confed_fay_pic21",
+   "tdw_confeds_miao_confed_fay22",
+   "tdw_confed_fay_pic22",
+   "tdw_confeds_miao_confed_fay23",
+   "tdw_confed_fay_pic23",
+   "tdw_confeds_miao_confed_fay24",
+   "tdw_confed_fay_pic24",
+   "tdw_confeds_miao_confed_fay25",
+   "tdw_confed_fay_pic25",
+   "tdw_confeds_miao_confed_kat1",
+   "Katrin subdues to Miao Ying",
+   "Katrin subdues",
+   "tdw_confed_kat_pic1",
+   "tdw_confeds_miao_confed_kat2",
+   "tdw_confed_kat_pic2",
+   "tdw_confeds_miao_confed_kat3",
+   "tdw_confed_kat_pic3",
+   "tdw_confeds_miao_confed_kat4",
+   "tdw_confed_kat_pic4",
+   "tdw_confeds_miao_confed_kat5",
+   "tdw_confed_kat_pic5",
+   "tdw_confeds_miao_confed_kat6",
+   "tdw_confed_kat_pic6",
+   "tdw_confeds_miao_confed_kat7",
+   "tdw_confed_kat_pic7",
+   "tdw_confeds_miao_confed_kat8",
+   "tdw_confed_kat_pic8",
+   "tdw_confeds_miao_confed_kat9",
+   "tdw_confed_kat_pic9",
+   "tdw_confeds_miao_confed_kat10",
+   "tdw_confed_kat_pic10",
+   "tdw_confeds_miao_confed_kat11",
+   "tdw_confed_kat_pic11",
+   "tdw_confeds_miao_confed_kat12",
+   "tdw_confed_kat_pic12",
+   "tdw_confeds_miao_confed_kat13",
+   "tdw_confed_kat_pic13",
+   "tdw_confeds_miao_confed_miao",
+   "Miao Ying subdues to you",
+   "Miao Ying subdues",
+   "tdw_confeds_miao_confed_morathi1",
+   "Morathi subdues to Miao Ying",
+   "Morathi subdues",
+   "tdw_confed_morathi_pic1",
+   "tdw_confeds_miao_confed_morathi2",
+   "tdw_confed_morathi_pic2",
+   "tdw_confeds_miao_confed_morathi3",
+   "tdw_confed_morathi_pic3",
+   "tdw_confeds_miao_confed_morathi4",
+   "tdw_confed_morathi_pic4",
+   "tdw_confeds_miao_confed_morathi5",
+   "tdw_confed_morathi_pic5",
+   "tdw_confeds_miao_confed_morathi6",
+   "tdw_confed_morathi_pic6",
+   "tdw_confeds_miao_confed_morathi7",
+   "tdw_confed_morathi_pic7",
+   "tdw_confeds_miao_confed_morathi8",
+   "tdw_confed_morathi_pic8",
+   "tdw_confeds_miao_confed_morathi9",
+   "tdw_confed_morathi_pic9",
+   "tdw_confeds_miao_confed_morathi10",
+   "tdw_confed_morathi_pic10",
+   "tdw_confeds_miao_confed_morathi11",
+   "tdw_confed_morathi_pic11",
+   "tdw_confeds_miao_confed_morathi12",
+   "tdw_confed_morathi_pic12",
+   "tdw_confeds_miao_confed_morathi13",
+   "tdw_confed_morathi_pic13",
+   "tdw_confeds_miao_confed_morathi14",
+   "tdw_confed_morathi_pic14",
+   "tdw_confeds_miao_confed_morathi15",
+   "tdw_confed_morathi_pic15",
+   "tdw_confeds_miao_confed_morathi16",
+   "tdw_confed_morathi_pic16",
+   "tdw_confeds_miao_confed_morathi17",
+   "tdw_confed_morathi_pic17",
+   "tdw_confeds_miao_confed_morathi18",
+   "tdw_confed_morathi_pic18",
+   "tdw_confeds_miao_confed_nkari",
+   "tdw_confeds_miao_confed_sigi",
+   "Valkia subdues to Miao Ying",
+   "Valkia subdues",
+   "tdw_confeds_miao_confed_twins",
+   "The Sisters of Twilight subdue",
+   "tdw_confeds_miao_confed_valkia",
+   "tdw_confeds_miao_confed_yinyin1",
+   "Yin-Yin subdues to Miao Ying",
+   "Yin-Yin subdues",
+   "tdw_confed_yin_pic1",
+   "tdw_confeds_miao_confed_yinyin2",
+   "tdw_confed_yin_pic2",
+   "tdw_confeds_miao_confed_yinyin3",
+   "tdw_confed_yin_pic3",
+   "tdw_confeds_miao_confed_yinyin4",
+   "tdw_confed_yin_pic4",
+   "tdw_confeds_miao_confed_yinyin5",
+   "tdw_confed_yin_pic5",
+   "tdw_confeds_miao_confed_yinyin6",
+   "tdw_confed_yin_pic6",
+   "tdw_confeds_miao_confed_yinyin7",
+   "tdw_confed_yin_pic7",
+   "tdw_confeds_miao_confed_yinyin8",
+   "tdw_confed_yin_pic8",
+   "tdw_confeds_miao_confed_yinyin9",
+   "tdw_confed_yin_pic9",
+   "tdw_confeds_miao_confed_yinyin10",
+   "tdw_confed_yin_pic10",
+   "tdw_confeds_miao_confed_yinyin11",
+   "tdw_confed_yin_pic11",
+   "tdw_confeds_miao_confed_yinyin12",
+   "tdw_confed_yin_pic12",
+   "tdw_confeds_miao_confed_yinyin13",
+   "tdw_confed_yin_pic13",
+   "tdw_confeds_miao_confed_yinyin14",
+   "tdw_confed_yin_pic14",
+   "tdw_confeds_miao_confed_yinyin15",
+   "tdw_confed_yin_pic15"
+  ],
+  "effect_bundles_tables": [
+   "tdw_khalida_skin_switch_buff",
+   "tdw_effect_bundle_desc",
+   "tdw_effect_bundle",
+   "character",
+   "resistance_ward_save.png"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "tdw_khalida_skin_switch_buff",
+   "wh_main_effect_force_all_campaign_replenishment_rate",
+   "character_to_force_own",
+   "start_turn_completed",
+   "wh3_main_effect_winds_of_magic_character",
+   "character_to_force_own_unseen",
+   "wh_main_effect_force_stat_ward_save"
+  ],
+  "unit_variants_tables": [
+   "wh2_dlc09_tmb_cha_khalida_0",
+   "tdw_vanilla_wh2_dlc09_tmb_ch_khalida",
+   "wh2_dlc09_tmb_cha_khalida",
+   "wh2_dlc09_tmb_cha_khalida_1",
+   "wh2_dlc09_tmb_cha_khalida_2"
+  ],
+  "variants_tables": [
+   "tdw_vanilla_wh2_dlc09_tmb_ch_khalida",
+   "tdw_vanilla_tmb_ch_khalida",
+   "tdw_vanilla_wh2_dlc09_tmb_ch_khalida_campaign",
+   "tdw_vanilla_tmb_ch_khalida_campaign"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/agent_uniforms_tables/tdw_khalida_switch_skins",
+   "size": 261,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/campaign_character_art_sets_tables/tdw_khalida_switch_skins",
+   "size": 177,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/campaign_character_arts_tables/tdw_khalida_switch_skins",
+   "size": 375,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_alarielle",
+   "size": 221,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_alarielle",
+   "size": 221,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_azazel",
+   "size": 212,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_azazel",
+   "size": 212,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_els",
+   "size": 203,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_els",
+   "size": 203,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_fay",
+   "size": 3014,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_fay",
+   "size": 3014,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_kat",
+   "size": 1598,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_kat",
+   "size": 1598,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_miao",
+   "size": 206,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_miao",
+   "size": 206,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_morathi",
+   "size": 2404,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_morathi",
+   "size": 2404,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_nkari",
+   "size": 209,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_nkari",
+   "size": 209,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_sigi",
+   "size": 206,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_sigi",
+   "size": 206,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_twins",
+   "size": 209,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_twins",
+   "size": 209,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_valkia",
+   "size": 212,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_valkia",
+   "size": 212,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_yinyin",
+   "size": 1969,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/tdw_confeds_miao_yinyin",
+   "size": 1969,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_alarielle",
+   "size": 161,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_alarielle",
+   "size": 161,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_azazel",
+   "size": 158,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_azazel",
+   "size": 158,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_els",
+   "size": 155,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_els",
+   "size": 155,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_fay",
+   "size": 1732,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_fay",
+   "size": 1732,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_kat",
+   "size": 940,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_kat",
+   "size": 940,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_miao",
+   "size": 156,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_miao",
+   "size": 156,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_morathi",
+   "size": 1342,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_morathi",
+   "size": 1342,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_nkari",
+   "size": 157,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_nkari",
+   "size": 157,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_sigi",
+   "size": 156,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_sigi",
+   "size": 156,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_twins",
+   "size": 157,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_twins",
+   "size": 157,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_valkia",
+   "size": 158,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_valkia",
+   "size": 158,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_yinyin",
+   "size": 1117,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/tdw_confeds_miao_yinyin",
+   "size": 1117,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_alarielle",
+   "size": 373,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_alarielle",
+   "size": 373,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_azazel",
+   "size": 364,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_azazel",
+   "size": 364,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_els",
+   "size": 355,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_els",
+   "size": 355,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_fay",
+   "size": 6981,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_fay",
+   "size": 6981,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_kat",
+   "size": 3657,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_kat",
+   "size": 3657,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_miao",
+   "size": 358,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_miao",
+   "size": 358,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_morathi",
+   "size": 5258,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_morathi",
+   "size": 5258,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_nkari",
+   "size": 361,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_nkari",
+   "size": 361,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_sigi",
+   "size": 358,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_sigi",
+   "size": 358,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_twins",
+   "size": 361,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_twins",
+   "size": 361,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_valkia",
+   "size": 364,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_valkia",
+   "size": 364,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_yinyin",
+   "size": 4346,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/tdw_confeds_miao_yinyin",
+   "size": 4346,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_alarielle",
+   "size": 194,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_alarielle",
+   "size": 194,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_azazel",
+   "size": 191,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_azazel",
+   "size": 191,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_els",
+   "size": 201,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_els",
+   "size": 201,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_fay",
+   "size": 2723,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_fay",
+   "size": 2723,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_kat",
+   "size": 1529,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_kat",
+   "size": 1529,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_miao",
+   "size": 189,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_miao",
+   "size": 189,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_morathi",
+   "size": 2269,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_morathi",
+   "size": 2269,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_nkari",
+   "size": 190,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_nkari",
+   "size": 190,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_sigi",
+   "size": 189,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_sigi",
+   "size": 189,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_twins",
+   "size": 243,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_twins",
+   "size": 243,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_valkia",
+   "size": 191,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_valkia",
+   "size": 191,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_yinyin",
+   "size": 1828,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/tdw_confeds_miao_yinyin",
+   "size": 1828,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/tdw_khalida_switch_skin",
+   "size": 208,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/tdw_khalida_switch_skin",
+   "size": 478,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/unit_variants_tables/tdw_khalida_switch_skins",
+   "size": 463,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "db/variants_tables/tdw_khalida_switch_skins",
+   "size": 273,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_alarielle.lua",
+   "size": 3538,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_alarielle.lua",
+   "size": 3538,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_azazel.lua",
+   "size": 3450,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_azazel.lua",
+   "size": 3450,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_els.lua",
+   "size": 3364,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_els.lua",
+   "size": 3364,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_fay.lua",
+   "size": 3647,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_fay.lua",
+   "size": 3652,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_kat.lua",
+   "size": 3659,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_kat.lua",
+   "size": 3664,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_miao.lua",
+   "size": 3420,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_miao.lua",
+   "size": 3420,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_morathi.lua",
+   "size": 3827,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_morathi.lua",
+   "size": 3832,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_nkari.lua",
+   "size": 3446,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_nkari.lua",
+   "size": 3446,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_sigi.lua",
+   "size": 3392,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_sigi.lua",
+   "size": 3392,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_twins.lua",
+   "size": 3446,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_twins.lua",
+   "size": 3446,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_valkia.lua",
+   "size": 3448,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_valkia.lua",
+   "size": 3456,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_yinyin.lua",
+   "size": 3676,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_confeds_miao_yinyin.lua",
+   "size": 3681,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "script/campaign/mod/tdw_khalida_skin_switcher.lua",
+   "size": 3005,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_alarielle.loc",
+   "size": 1836,
+   "pack": "tdw_confeds_gen_confed_alarielle.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_alarielle.loc",
+   "size": 1836,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_azazel.loc",
+   "size": 1762,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_azazel.loc",
+   "size": 1762,
+   "pack": "tdw_confeds_gen_confed_azazel.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_els.loc",
+   "size": 1766,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_els.loc",
+   "size": 1766,
+   "pack": "tdw_confeds_gen_confed_els.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_fay.loc",
+   "size": 45770,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_fay.loc",
+   "size": 45770,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_kat.loc",
+   "size": 22490,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_kat.loc",
+   "size": 22490,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_miao.loc",
+   "size": 1818,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_miao.loc",
+   "size": 1818,
+   "pack": "tdw_confeds_gen_confed_miao.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_morathi.loc",
+   "size": 32342,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_morathi.loc",
+   "size": 32342,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_nkari.loc",
+   "size": 1746,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_nkari.loc",
+   "size": 1746,
+   "pack": "tdw_confeds_gen_confed_nkari.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_sigi.loc",
+   "size": 1738,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_sigi.loc",
+   "size": 1738,
+   "pack": "tdw_confeds_gen_confed_sigi.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_twins.loc",
+   "size": 1912,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_twins.loc",
+   "size": 1912,
+   "pack": "tdw_confeds_gen_confed_twins.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_valkia.loc",
+   "size": 1764,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_valkia.loc",
+   "size": 1764,
+   "pack": "tdw_confeds_gen_confed_valkia.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_yinyin.loc",
+   "size": 26690,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "text/db/tdw_confeds_miao_yinyin.loc",
+   "size": 26690,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "text/db/tdw_khalida_switch_skin.loc",
+   "size": 500,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic1.png",
+   "size": 144017,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic1.png",
+   "size": 144017,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic10.png",
+   "size": 121892,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic10.png",
+   "size": 121892,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic11.png",
+   "size": 148312,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic11.png",
+   "size": 148312,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic12.png",
+   "size": 146327,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic12.png",
+   "size": 146327,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic13.png",
+   "size": 162642,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic13.png",
+   "size": 162642,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic14.png",
+   "size": 160977,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic14.png",
+   "size": 160977,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic15.png",
+   "size": 154120,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic15.png",
+   "size": 154120,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic16.png",
+   "size": 139964,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic16.png",
+   "size": 139964,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic17.png",
+   "size": 159634,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic17.png",
+   "size": 159634,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic18.png",
+   "size": 151257,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic18.png",
+   "size": 151257,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic19.png",
+   "size": 164007,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic19.png",
+   "size": 164007,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic2.png",
+   "size": 133886,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic2.png",
+   "size": 133886,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic20.png",
+   "size": 132995,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic20.png",
+   "size": 132995,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic21.png",
+   "size": 126010,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic21.png",
+   "size": 126010,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic22.png",
+   "size": 141421,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic22.png",
+   "size": 141421,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic23.png",
+   "size": 145467,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic23.png",
+   "size": 145467,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic24.png",
+   "size": 135407,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic24.png",
+   "size": 135407,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic25.png",
+   "size": 131988,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic25.png",
+   "size": 131988,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic3.png",
+   "size": 135314,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic3.png",
+   "size": 135314,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic4.png",
+   "size": 142789,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic4.png",
+   "size": 142789,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic5.png",
+   "size": 131865,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic5.png",
+   "size": 131865,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic6.png",
+   "size": 136456,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic6.png",
+   "size": 136456,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic7.png",
+   "size": 152354,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic7.png",
+   "size": 152354,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic8.png",
+   "size": 125559,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic8.png",
+   "size": 125559,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic9.png",
+   "size": 150516,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_fay_pic9.png",
+   "size": 150516,
+   "pack": "tdw_confeds_gen_confed_fay.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic1.png",
+   "size": 152393,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic1.png",
+   "size": 152393,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic10.png",
+   "size": 142896,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic10.png",
+   "size": 142896,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic11.png",
+   "size": 156590,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic11.png",
+   "size": 156590,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic12.png",
+   "size": 161154,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic12.png",
+   "size": 161154,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic13.png",
+   "size": 161438,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic13.png",
+   "size": 161438,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic2.png",
+   "size": 165570,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic2.png",
+   "size": 165570,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic3.png",
+   "size": 139981,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic3.png",
+   "size": 139981,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic4.png",
+   "size": 146203,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic4.png",
+   "size": 146203,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic5.png",
+   "size": 156407,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic5.png",
+   "size": 156407,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic6.png",
+   "size": 142273,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic6.png",
+   "size": 142273,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic7.png",
+   "size": 135244,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic7.png",
+   "size": 135244,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic8.png",
+   "size": 140794,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic8.png",
+   "size": 140794,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic9.png",
+   "size": 141180,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_kat_pic9.png",
+   "size": 141180,
+   "pack": "tdw_confeds_gen_confed_kat.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic1.png",
+   "size": 142781,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic1.png",
+   "size": 142781,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic10.png",
+   "size": 146165,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic10.png",
+   "size": 146165,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic11.png",
+   "size": 144316,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic11.png",
+   "size": 144316,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic12.png",
+   "size": 148076,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic12.png",
+   "size": 148076,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic13.png",
+   "size": 150728,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic13.png",
+   "size": 150728,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic14.png",
+   "size": 148781,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic14.png",
+   "size": 148781,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic15.png",
+   "size": 125153,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic15.png",
+   "size": 125153,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic16.png",
+   "size": 126570,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic16.png",
+   "size": 126570,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic17.png",
+   "size": 130029,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic17.png",
+   "size": 130029,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic18.png",
+   "size": 149301,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic18.png",
+   "size": 149301,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic2.png",
+   "size": 125476,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic2.png",
+   "size": 125476,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic3.png",
+   "size": 131534,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic3.png",
+   "size": 131534,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic4.png",
+   "size": 142919,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic4.png",
+   "size": 142919,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic5.png",
+   "size": 131964,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic5.png",
+   "size": 131964,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic6.png",
+   "size": 141316,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic6.png",
+   "size": 141316,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic7.png",
+   "size": 122959,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic7.png",
+   "size": 122959,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic8.png",
+   "size": 129052,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic8.png",
+   "size": 129052,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic9.png",
+   "size": 135490,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_morathi_pic9.png",
+   "size": 135490,
+   "pack": "tdw_confeds_gen_confed_morathi.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic1.png",
+   "size": 146672,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic1.png",
+   "size": 146672,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic10.png",
+   "size": 141248,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic10.png",
+   "size": 141248,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic11.png",
+   "size": 141224,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic11.png",
+   "size": 141224,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic12.png",
+   "size": 153852,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic12.png",
+   "size": 153852,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic13.png",
+   "size": 149835,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic13.png",
+   "size": 149835,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic14.png",
+   "size": 146723,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic14.png",
+   "size": 146723,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic15.png",
+   "size": 146827,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic15.png",
+   "size": 146827,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic2.png",
+   "size": 150941,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic2.png",
+   "size": 150941,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic3.png",
+   "size": 144678,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic3.png",
+   "size": 144678,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic4.png",
+   "size": 161335,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic4.png",
+   "size": 161335,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic5.png",
+   "size": 146920,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic5.png",
+   "size": 146920,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic6.png",
+   "size": 144197,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic6.png",
+   "size": 144197,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic7.png",
+   "size": 147917,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic7.png",
+   "size": 147917,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic8.png",
+   "size": 141516,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic8.png",
+   "size": 141516,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic9.png",
+   "size": 158643,
+   "pack": "tdw_confeds_gen_confed_all_12.pack"
+  },
+  {
+   "path": "ui/eventpics/all/tdw_confed_yin_pic9.png",
+   "size": 158643,
+   "pack": "tdw_confeds_gen_confed_yinyin.pack"
+  },
+  {
+   "path": "ui/portraits/faction_leaders/tdw_vanilla_tmb_ch_khalida_campaign_0.png",
+   "size": 25413,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/no_culture/tdw_vanilla_tmb_ch_khalida_campaign_0.png",
+   "size": 59070,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/portrait_settings_tdw_khalida_switch_skin.bin",
+   "size": 211,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/portholes/wh2_dlc09_tmb_tomb_kings/tdw_vanilla_tmb_ch_khalida_0.png",
+   "size": 63268,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/no_culture/tdw_vanilla_tmb_ch_khalida_campaign_0.png",
+   "size": 24165,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/portrait_settings_tdw_khalida_switch_skin.bin",
+   "size": 211,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "ui/portraits/units/wh2_dlc09_tmb_tomb_kings/tdw_vanilla_tmb_ch_khalida_0.png",
+   "size": 24165,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/tdw_vanilla_tmb_ch_khalida.variantmeshdefinition",
+   "size": 1032,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/tdw_vanilla_tmb_ch_khalida_campaign.variantmeshdefinition",
+   "size": 585,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_body_01_1_weighted4_alpha_on.xml.material",
+   "size": 2700,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_body_01_weighted2_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_body_01_weighted4_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_head_01_1_weighted4_alpha_off.xml.material",
+   "size": 2695,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_head_01_1_weighted4_alpha_on.xml.material",
+   "size": 2700,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_head_01_weighted2_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_head_01_weighted4_alpha_off.xml.material",
+   "size": 2693,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/materials/tmb_khalida_head_01_weighted4_alpha_on.xml.material",
+   "size": 2698,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_body_01_base_colour.dds",
+   "size": 699212,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_body_01_mask.dds",
+   "size": 1398240,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_body_01_material_map.dds",
+   "size": 699212,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_body_01_normal.dds",
+   "size": 1398240,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_head_01_base_colour.dds",
+   "size": 699212,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_head_01_mask.dds",
+   "size": 1398240,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_head_01_material_map.dds",
+   "size": 699212,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tex/tmb_khalida_head_01_normal.dds",
+   "size": 1398240,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tmb_khalida_01.rigid_model_v2",
+   "size": 1916204,
+   "pack": "tdw_khalida_switch_skin.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/tmb/tdw_vanilla_tmb_khalida/tmb_khalida_01.wsmodel",
+   "size": 3069,
+   "pack": "tdw_khalida_switch_skin.pack"
+  }
+ ]
+}

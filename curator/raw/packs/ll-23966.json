@@ -1,0 +1,39 @@
+{
+ "mod": "ll-23966",
+ "packs": [
+  "!li_kat_remove_skin_effects.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!li_kat_remove_skin_effects.pack": {
+   "files": 2,
+   "dependencies": []
+  }
+ },
+ "fileCount": 2,
+ "byTopFolder": {
+  "variantmeshes": 2
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/body_fourth_mask.dds",
+   "size": 11184976,
+   "pack": "!li_kat_remove_skin_effects.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1/ksl/ksl_katarin/tex/body_third_mask.dds",
+   "size": 11184976,
+   "pack": "!li_kat_remove_skin_effects.pack"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "mod": "ll-27930",
+ "packs": [
+  "@@Compendium_Play_as_Azazel_Overwrite.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack": {
+   "files": 10,
+   "dependencies": []
+  }
+ },
+ "fileCount": 10,
+ "byTopFolder": {
+  "text": 5,
+  "db": 4,
+  "script": 1
+ },
+ "tables": [
+  "ancillaries_included_agent_subtypes_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "diplomatic_action_faction_restrictions_tables",
+  "missions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "ancillaries_included_agent_subtypes_tables": [
+   "wh3_main_cth_miao_ying",
+   "wh3_main_anc_follower_personal_tutor",
+   "wh3_main_anc_follower_personal_mistress",
+   "wh3_main_anc_follower_personal_queen",
+   "wh3_main_anc_follower_personal_goddess"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "Personal_Tutor_Start",
+   "ADD_ANCILLARY",
+   "default"
+  ],
+  "diplomatic_action_faction_restrictions_tables": [
+   "wh3_main_cth_the_western_provinces",
+   "wh3_dlc24_cth_the_celestial_court",
+   "wh3_main_cth_the_northern_provinces"
+  ],
+  "missions_tables": [
+   "PP_final_battle_quest_final_battle_1",
+   "FIGHT_SET_PIECE_BATTLE",
+   "Go it Alone",
+   "prologue/pro_mission_complete_non_ursun",
+   "rom_event_mission.png",
+   "Quest",
+   "PP_final_battle_quest_final_battle_2",
+   "Team With Zhao",
+   "PP_final_battle_quest_final_battle_3",
+   "Team With Emm"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/ancillaries_included_agent_subtypes_tables/@@compendium_play_as_azazel_overwrite",
+   "size": 336,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@azazel_compendium_patch",
+   "size": 201,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "db/diplomatic_action_faction_restrictions_tables/aazzy_diplomatic_options",
+   "size": 205,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "db/missions_tables/@azazel_compendium_patch_missions",
+   "size": 886,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "script/campaign/mod/miaoscorruptedcompendium.lua",
+   "size": 38316,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "text/db/@azazel_compendium_patch_dilemma.loc",
+   "size": 12079,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "text/db/@azazel_compendium_patch_dilemma_choice_details_.loc",
+   "size": 4088,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "text/db/@azazel_compendium_patch_effects.loc",
+   "size": 231,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "text/db/@azazel_compendium_patch_incidents.loc",
+   "size": 10705,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  },
+  {
+   "path": "text/db/@azazel_compendium_patch_mission.loc",
+   "size": 2084,
+   "pack": "@@Compendium_Play_as_Azazel_Overwrite/@@Compendium_Play_as_Azazel_Overwrite.pack"
+  }
+ ]
+}

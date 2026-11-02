@@ -1,0 +1,294 @@
+{
+ "mod": "ll-43977",
+ "packs": [
+  "!Readman_Alarielle_YYY.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack": {
+   "files": 53,
+   "dependencies": []
+  }
+ },
+ "fileCount": 53,
+ "byTopFolder": {
+  "variantmeshes": 53
+ },
+ "tables": [],
+ "references": {
+  "total": 51,
+  "inMod": 33,
+  "inBaseGame": 18,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "variantmeshes/variantmeshdefinitions/1dae_chaos_spawn_slaanesh.variantmeshdefinition",
+   "size": 926,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/variantmeshdefinitions/dae_chaos_spawn_slaanesh.variantmeshdefinition",
+   "size": 1812,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_01.rigid_model_v2",
+   "size": 1717288,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_01.wsmodel",
+   "size": 1839,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_02.rigid_model_v2",
+   "size": 1043328,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_02.wsmodel",
+   "size": 837,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_03.rigid_model_v2",
+   "size": 1363400,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_03.wsmodel",
+   "size": 1839,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_04.rigid_model_v2",
+   "size": 2743628,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_body_l_04.wsmodel",
+   "size": 3821,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_01.rigid_model_v2",
+   "size": 1049484,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_01.wsmodel",
+   "size": 2488,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_02.rigid_model_v2",
+   "size": 296548,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_02.wsmodel",
+   "size": 1160,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_03.rigid_model_v2",
+   "size": 2390720,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/bst_sv_chaos_spawn_limbs_l_03.wsmodel",
+   "size": 3822,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_legs_04_weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_legs_04_weighted2_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_legs_04_weighted4_alpha_on.xml.material",
+   "size": 2679,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_spike_body_weighted2_alpha_on.xml.material",
+   "size": 2631,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_spike_head_weighted2_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_spike_head_weighted4_alpha_off.xml.material",
+   "size": 2675,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_body_weighted4_alpha_on.xml.material",
+   "size": 2631,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_head_02_weighted2_alpha_on.xml.material",
+   "size": 2677,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_head_02_weighted4_alpha_on.xml.material",
+   "size": 2677,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_head_2_weighted2_alpha_off.xml.material",
+   "size": 2671,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_head_weighted2_alpha_on.xml.material",
+   "size": 2667,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/bst/bst_chaos_spawn/materials/vic_stuck_head_weighted4_alpha_on.xml.material",
+   "size": 2674,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/dae_spawn_slaanesh_02.rigid_model_v2",
+   "size": 1463976,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/dae_spawn_slaanesh_02.wsmodel",
+   "size": 1508,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/materials/dae_spawn_slaanesh_01_weighted2_alpha_off.xml.material",
+   "size": 2642,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/materials/dae_spawn_slaanesh_01_weighted4_alpha_off.xml.material",
+   "size": 2642,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/materials/dae_spawn_slaanesh_01_weighted4_alpha_on.xml.material",
+   "size": 2647,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/materials/vic_stuck_body_2_weighted2_alpha_off.xml.material",
+   "size": 2628,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hc02/dae/dae_spawn/materials/vic_stuck_head_02_2_weighted2_alpha_off.xml.material",
+   "size": 2674,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_10_diffuse.dds",
+   "size": 1398276,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_gloss_map.dds",
+   "size": 1398256,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_mask.dds",
+   "size": 262272,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_material.dds",
+   "size": 699192,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_normal.dds",
+   "size": 349680,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_1_specular.dds",
+   "size": 1398256,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_2_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_3bs_diffuse.dds",
+   "size": 524436,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_4_gloss_map.dds",
+   "size": 1398256,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/asm_body_5_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_diffuse.dds",
+   "size": 4194432,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_gloss_map.dds",
+   "size": 1398256,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/def/asm_maiden/asm_body/tex/underwear_normal.dds",
+   "size": 1398256,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_01_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  },
+  {
+   "path": "variantmeshes/wh_variantmodels/hu1b/wef/wef_bladesinger/tex/shadowdancer_bladesinger_04_diffuse.dds",
+   "size": 699212,
+   "pack": "!Readman_Alarielle_YYY/!Readman_Alarielle_YYY.pack"
+  }
+ ]
+}

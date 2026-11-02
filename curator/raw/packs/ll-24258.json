@@ -1,0 +1,234 @@
+{
+ "mod": "ll-24258",
+ "packs": [
+  "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "seu_miaoying_submod_extension_v0.7.0_cn0930.pack": {
+   "files": 41,
+   "dependencies": []
+  }
+ },
+ "fileCount": 41,
+ "byTopFolder": {
+  "text": 41
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/c_seu_generic_content_ancillaries.loc",
+   "size": 744,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_bundles.loc",
+   "size": 9376,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_choices.loc",
+   "size": 15078,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_dilemmas.loc",
+   "size": 5620,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_effects.loc",
+   "size": 260,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_incidents.loc",
+   "size": 4368,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_generic_content_traits.loc",
+   "size": 668,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_abilities.loc",
+   "size": 2228,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_abilities_ui_effects.loc",
+   "size": 1559,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_agent_subtypes.loc",
+   "size": 1332,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_ancillaries.loc",
+   "size": 1366,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_choices.loc",
+   "size": 2776,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_dilemmas.loc",
+   "size": 2702,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_effects.loc",
+   "size": 1666,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_names.loc",
+   "size": 232,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_short_text.loc",
+   "size": 1717,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_skills.loc",
+   "size": 9220,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_daughters_units.loc",
+   "size": 1131,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_abilities.loc",
+   "size": 690,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_additional_ui_effects.loc",
+   "size": 384,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_ancillaries.loc",
+   "size": 3542,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_bundles.loc",
+   "size": 714,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_choices.loc",
+   "size": 9718,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_dilemmas.loc",
+   "size": 12382,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_diplomacy.loc",
+   "size": 738,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_effects.loc",
+   "size": 2427,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_incidents.loc",
+   "size": 322,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_traits_summon.loc",
+   "size": 8550,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_extension_units.loc",
+   "size": 139,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_generic_bundles.loc",
+   "size": 2786,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_generic_choices.loc",
+   "size": 4014,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_generic_dilemmas.loc",
+   "size": 2468,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_generic_effects.loc",
+   "size": 387,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_yuanshan_fu_choices.loc",
+   "size": 8098,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_yuanshan_fu_dilemmas.loc",
+   "size": 15534,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/c_seu_miaoying_submod_yuanshan_fu_traits.loc",
+   "size": 5944,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/seu_miaoying_submod_campaign_payload_ui_details.loc",
+   "size": 703,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/seu_miaoying_submod_extension_missions.loc",
+   "size": 1178,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/seu_miaoying_submod_zhao_choices.loc",
+   "size": 4050,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/seu_miaoying_submod_zhao_dilemmas.loc",
+   "size": 11198,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  },
+  {
+   "path": "text/db/seu_miaoying_submod_zhao_traits.loc",
+   "size": 852,
+   "pack": "seu_miaoying_submod_extension_v0.7.0_cn0930.pack"
+  }
+ ]
+}

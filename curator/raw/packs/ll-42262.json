@@ -1,0 +1,459 @@
+{
+ "mod": "ll-42262",
+ "packs": [
+  "!@@MiaoYingCorrupted_Compendium_RU1.pack",
+  "!@MiaoYing_Azazel_content_RU1.pack",
+  "!@li_miaoying_progression_stages_RU1.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "!@@MiaoYingCorrupted_Compendium_RU1.pack": {
+   "files": 21,
+   "dependencies": []
+  },
+  "!@li_miaoying_progression_stages_RU1.pack": {
+   "files": 47,
+   "dependencies": []
+  },
+  "!@MiaoYing_Azazel_content_RU1.pack": {
+   "files": 16,
+   "dependencies": []
+  }
+ },
+ "fileCount": 84,
+ "byTopFolder": {
+  "text": 84
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/@azzy_ancillaries__.loc",
+   "size": 4180,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_battle_set_piece_armies__.loc",
+   "size": 6475,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_battle_set_pieces__.loc",
+   "size": 3488,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_campaign_payload_ui_details__.loc",
+   "size": 1918,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_character_trait_levels__.loc",
+   "size": 17962,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_dilemma.loc",
+   "size": 824382,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_dilemma_choice_details.loc",
+   "size": 78139,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_effect_bundles__.loc",
+   "size": 4818,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_effects__.loc",
+   "size": 1848,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_incidents.loc",
+   "size": 98386,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_mission.loc",
+   "size": 46799,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_names__.loc",
+   "size": 211,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_scripted_subtitles__.loc",
+   "size": 2846,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_seu_miaoying_submod_extension_effects.loc",
+   "size": 3067,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_slaanesh_portals.loc",
+   "size": 586,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/azzy_technologies__.loc",
+   "size": 2324,
+   "pack": "!@MiaoYing_Azazel_content_RU1.pack"
+  },
+  {
+   "path": "text/db/hero__emissary_abilities__.loc",
+   "size": 1637,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/hero__emissary_charcter_skills__.loc",
+   "size": 4009,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/hero__emissary_names__.loc",
+   "size": 339,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_cdir_events_dilemma_choice_details.loc",
+   "size": 13160,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_dilemmas.loc",
+   "size": 53454,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_foreign_diplomacy_effect_bundles.loc",
+   "size": 1952,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_ancillary_ancillaries__.loc",
+   "size": 1223,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_piece_armies.loc",
+   "size": 213,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_battle_set_pieces.loc",
+   "size": 913,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_introduction_missions.loc",
+   "size": 1335,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_ballet.loc",
+   "size": 1014,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_bare.loc",
+   "size": 700,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_breed.loc",
+   "size": 3438,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_corset.loc",
+   "size": 948,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_fishnet.loc",
+   "size": 626,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_abilities_plug.loc",
+   "size": 594,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_ballet.loc",
+   "size": 2176,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_bare.loc",
+   "size": 1720,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_breed.loc",
+   "size": 3940,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_campaign_payload_ui_details_scale.loc",
+   "size": 1584,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 2244,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_bare.loc",
+   "size": 2484,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_breed.loc",
+   "size": 5756,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_corset.loc",
+   "size": 1642,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_fishnet.loc",
+   "size": 1664,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_plug.loc",
+   "size": 1218,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_cdir_events_dilemma_choice_details_scale.loc",
+   "size": 2024,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_corset.loc",
+   "size": 2576,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_ballet.loc",
+   "size": 2082,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_bare.loc",
+   "size": 2282,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_breed.loc",
+   "size": 41646,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_corset.loc",
+   "size": 2920,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_fishnet.loc",
+   "size": 1488,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_plug.loc",
+   "size": 4236,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_dilemmas_scale.loc",
+   "size": 1018,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_ballet.loc",
+   "size": 191,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_bare.loc",
+   "size": 201,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_breed.loc",
+   "size": 1419,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_corset.loc",
+   "size": 219,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_fishnet.loc",
+   "size": 193,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_effects_plug.loc",
+   "size": 203,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_fishnet.loc",
+   "size": 1278,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_ballet.loc",
+   "size": 109,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_bare.loc",
+   "size": 115,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_corset.loc",
+   "size": 117,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_fishnet.loc",
+   "size": 111,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_plug.loc",
+   "size": 418,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_names_scale.loc",
+   "size": 119,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_plug.loc",
+   "size": 2012,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/li_miaoying_progression_scale.loc",
+   "size": 1028,
+   "pack": "!@li_miaoying_progression_stages_RU1.pack"
+  },
+  {
+   "path": "text/db/miaocorruptedcompendium_agent_subtypes__.loc",
+   "size": 778,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaocorruptedcompendium_effects.loc",
+   "size": 245,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaocorruptedcompendium_land_units__.loc",
+   "size": 169,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_ancillaries.loc",
+   "size": 17612,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_character_trait_levels__.loc",
+   "size": 13864,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_dliemna.loc",
+   "size": 1024800,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_incidents.loc",
+   "size": 107194,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_mission.loc",
+   "size": 15750,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendium_mission_text.loc",
+   "size": 27846,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendiumr_cdir_events_dilemma_choice_details_ballet.loc",
+   "size": 143656,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendiumr_unit_description_historical_texts__.loc",
+   "size": 229,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/miaoscorruptedcompendiumr_unit_description_short_texts__.loc",
+   "size": 505,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_battle_set_piece_armies__.loc",
+   "size": 6616,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_battle_set_pieces__.loc",
+   "size": 3053,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_cdir_events_dilemma_choice_details__.loc",
+   "size": 16260,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_dilemmas__.loc",
+   "size": 156162,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_missions__.loc",
+   "size": 3304,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  },
+  {
+   "path": "text/db/pp_name_changing.loc",
+   "size": 99,
+   "pack": "!@@MiaoYingCorrupted_Compendium_RU1.pack"
+  }
+ ]
+}

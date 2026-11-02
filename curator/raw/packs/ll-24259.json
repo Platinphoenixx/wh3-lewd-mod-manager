@@ -1,0 +1,54 @@
+{
+ "mod": "ll-24259",
+ "packs": [
+  "corrupted_landmarks_kislev_cn0929.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "corrupted_landmarks_kislev_cn0929.pack": {
+   "files": 5,
+   "dependencies": []
+  }
+ },
+ "fileCount": 5,
+ "byTopFolder": {
+  "text": 5
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/cl_corruption_adaption_ksl__.loc",
+   "size": 1456,
+   "pack": "corrupted_landmarks_kislev_cn0929.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_kislev_building_chains__.loc",
+   "size": 3690,
+   "pack": "corrupted_landmarks_kislev_cn0929.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_kislev_building_culture_variants__.loc",
+   "size": 5924,
+   "pack": "corrupted_landmarks_kislev_cn0929.pack"
+  },
+  {
+   "path": "text/db/corrupted_landmark_kislev_building_short_description_texts__.loc",
+   "size": 9034,
+   "pack": "corrupted_landmarks_kislev_cn0929.pack"
+  },
+  {
+   "path": "text/db/landmark_kislev_building_chains__.loc",
+   "size": 1356,
+   "pack": "corrupted_landmarks_kislev_cn0929.pack"
+  }
+ ]
+}

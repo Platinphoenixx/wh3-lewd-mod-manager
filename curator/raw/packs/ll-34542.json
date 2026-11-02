@@ -1,0 +1,1961 @@
+{
+ "mod": "ll-34542",
+ "packs": [
+  "@n_SlaaneshVassals.pack",
+  "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "@n_SlaaneshVassals.pack": {
+   "files": 133,
+   "dependencies": []
+  },
+  "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack": {
+   "files": 133,
+   "dependencies": []
+  }
+ },
+ "fileCount": 200,
+ "byTopFolder": {
+  "db": 88,
+  "text": 44,
+  "ui": 33,
+  "movies": 33,
+  "script": 2
+ },
+ "tables": [
+  "campaign_payload_ui_details_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_incidents_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_dilemma_payloads_tables",
+  "cdir_events_incident_payloads_tables",
+  "dilemmas_tables",
+  "incidents_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {
+  "campaign_payload_ui_details_tables": [
+   "n_a_small_gift",
+   "ui/campaign ui/effect_bundles/vow_questing_positive.png",
+   "default",
+   "n_a_great_gift",
+   "n_gen_a_small_gift",
+   "n_gen_a_great_gift"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "n_nkari_alar_1",
+   "SECOND",
+   "n_nkari_alar_2",
+   "THIRD",
+   "n_nkari_alar_3",
+   "n_nkari_alar_4",
+   "FOURTH",
+   "n_woc_alar_1",
+   "n_woc_alar_2",
+   "n_woc_alar_3",
+   "n_woc_alar_4",
+   "n_nkari_elsp_1",
+   "n_nkari_elsp_2",
+   "n_woc_elsp_1",
+   "n_woc_elsp_2",
+   "n_nkari_fey_1",
+   "n_nkari_fey_2",
+   "n_nkari_fey_3",
+   "n_woc_fey_1",
+   "n_woc_fey_2",
+   "n_woc_fey_3",
+   "n_nkari_fey_4",
+   "n_woc_fey_4",
+   "n_nkari_kat_miao_1",
+   "n_nkari_alar_mor_1",
+   "n_woc_kat_miao_1",
+   "n_woc_alar_mor_1",
+   "n_nkari_hel_1",
+   "n_woc_hel_1",
+   "n_nkari_kat_1",
+   "n_nkari_kat_2",
+   "n_woc_kat_1",
+   "n_woc_kat_2",
+   "n_nkari_kat_3",
+   "n_woc_kat_3",
+   "n_nkari_kat_4",
+   "n_woc_kat_4",
+   "n_nkari_miao_1",
+   "n_nkari_miao_2",
+   "n_woc_miao_1",
+   "n_woc_miao_2",
+   "n_woc_miao_3",
+   "n_woc_miao_4",
+   "n_nkari_miao_3",
+   "n_nkari_miao_4",
+   "n_nkari_mor_1",
+   "n_nkari_mor_2",
+   "n_woc_mor_1",
+   "n_woc_mor_2",
+   "n_woc_mor_3",
+   "n_nkari_mor_3",
+   "n_woc_mor_4",
+   "n_nkari_mor_4",
+   "n_nkari_rep_1",
+   "n_nkari_rep_2",
+   "n_nkari_rep_3",
+   "n_woc_rep_1",
+   "n_woc_rep_2",
+   "n_woc_rep_4",
+   "n_nkari_rep_4",
+   "n_nkari_sis_1",
+   "n_nkari_sis_2",
+   "n_woc_sis_1",
+   "n_woc_sis_2",
+   "n_nkari_sis_3",
+   "n_nkari_sis_4",
+   "n_woc_sis_3",
+   "n_woc_sis_4",
+   "n_gen_alar_1",
+   "n_gen_alar_2",
+   "n_gen_alar_3",
+   "n_gen_alar_4",
+   "n_gen_elsp_1",
+   "n_gen_elsp_2",
+   "n_gen_fey_1",
+   "n_gen_fey_2",
+   "n_gen_fey_3",
+   "n_gen_kat_miao_1",
+   "n_gen_alar_mor_1",
+   "n_gen_hel_1",
+   "n_gen_kat_1",
+   "n_gen_kat_2",
+   "n_gen_kat_3",
+   "n_gen_kat_4",
+   "n_gen_miao_1",
+   "n_gen_miao_2",
+   "n_gen_miao_3",
+   "n_gen_miao_4",
+   "n_gen_mor_1",
+   "n_gen_mor_2",
+   "n_gen_mor_3",
+   "n_gen_mor_4",
+   "n_gen_rep_1",
+   "n_gen_rep_2",
+   "n_gen_rep_3",
+   "n_gen_rep_4",
+   "n_gen_sis_1",
+   "n_gen_sis_2",
+   "n_gen_sis_3",
+   "n_gen_sis_4"
+  ],
+  "cdir_events_dilemma_incidents_tables": [
+   "THIRD",
+   "n_nkari_alar_1",
+   "n_random_ancillary",
+   "n_nkari_alar_4",
+   "n_nkari_alar_3",
+   "n_nkari_alar_2",
+   "FOURTH",
+   "n_great_ancillary",
+   "n_nkari_elsp_1",
+   "n_nkari_elsp_2",
+   "n_nkari_fey_1",
+   "n_nkari_fey_2",
+   "n_nkari_fey_3",
+   "n_nkari_hel_1",
+   "n_nkari_kat_1",
+   "n_nkari_kat_2",
+   "n_nkari_miao_1",
+   "n_nkari_miao_2",
+   "n_nkari_mor_1",
+   "n_nkari_mor_2",
+   "n_nkari_rep_1",
+   "n_nkari_rep_2",
+   "n_nkari_rep_3",
+   "n_nkari_sis_2",
+   "n_nkari_sis_1",
+   "n_nkari_kat_miao_1",
+   "n_nkari_alar_mor_1",
+   "n_woc_alar_1",
+   "n_woc_alar_4",
+   "n_woc_alar_3",
+   "n_woc_alar_2",
+   "n_woc_elsp_1",
+   "n_woc_elsp_2",
+   "n_woc_fey_1",
+   "n_woc_fey_2",
+   "n_woc_fey_3",
+   "n_woc_hel_1",
+   "n_woc_kat_1",
+   "n_woc_kat_2",
+   "n_woc_miao_1",
+   "n_woc_miao_2",
+   "n_woc_mor_1",
+   "n_woc_mor_2",
+   "n_woc_mor_3",
+   "n_woc_rep_1",
+   "n_woc_rep_2",
+   "n_woc_rep_3",
+   "n_woc_sis_2",
+   "n_woc_sis_1",
+   "n_woc_kat_miao_1",
+   "n_woc_alar_mor_1",
+   "n_nkari_kat_3",
+   "n_woc_kat_3",
+   "n_woc_kat_4",
+   "n_nkari_kat_4",
+   "n_nkari_fey_4",
+   "n_woc_fey_4",
+   "n_woc_miao_3",
+   "n_woc_miao_4",
+   "n_nkari_miao_3",
+   "n_nkari_miao_4",
+   "n_nkari_mor_3",
+   "n_woc_rep_4",
+   "n_nkari_rep_4",
+   "n_nkari_sis_3",
+   "n_nkari_sis_4",
+   "n_woc_sis_3",
+   "n_woc_sis_4",
+   "n_nkari_mor_4",
+   "n_woc_mor_4",
+   "n_gen_alar_1",
+   "n_gen_random_ancillary",
+   "n_gen_alar_4",
+   "n_gen_alar_3",
+   "n_gen_alar_2",
+   "n_gen_great_ancillary",
+   "n_gen_elsp_1",
+   "n_gen_elsp_2",
+   "n_gen_fey_1",
+   "n_gen_fey_2",
+   "n_gen_fey_3",
+   "n_gen_hel_1",
+   "n_gen_kat_1",
+   "n_gen_kat_2",
+   "n_gen_miao_1",
+   "n_gen_miao_2",
+   "n_gen_mor_1",
+   "n_gen_mor_2",
+   "n_gen_rep_1",
+   "n_gen_rep_2",
+   "n_gen_rep_3",
+   "n_gen_sis_2",
+   "n_gen_sis_1",
+   "n_gen_kat_miao_1",
+   "n_gen_alar_mor_1",
+   "n_gen_kat_3",
+   "n_gen_kat_4",
+   "n_gen_fey_4",
+   "n_gen_miao_3",
+   "n_gen_miao_4",
+   "n_gen_mor_3",
+   "n_gen_rep_4",
+   "n_gen_sis_3",
+   "n_gen_sis_4",
+   "n_gen_mor_4"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "n_nkari_alar_1",
+   "VAR_CHANCE",
+   "default",
+   "n_nkari_alar_2",
+   "n_nkari_alar_3",
+   "n_nkari_alar_4",
+   "VAR_FOLLOWUP_CHANCE",
+   "n_woc_alar_1",
+   "n_woc_alar_2",
+   "n_woc_alar_3",
+   "n_woc_alar_4",
+   "n_nkari_elsp_1",
+   "n_nkari_elsp_2",
+   "n_woc_elsp_1",
+   "n_woc_elsp_2",
+   "n_nkari_fey_1",
+   "n_nkari_fey_2",
+   "n_nkari_fey_3",
+   "n_woc_fey_1",
+   "n_woc_fey_2",
+   "n_woc_fey_3",
+   "n_woc_fey_4",
+   "n_nkari_fey_4",
+   "n_nkari_kat_miao_1",
+   "n_nkari_alar_mor_1",
+   "n_woc_kat_miao_1",
+   "n_woc_alar_mor_1",
+   "n_nkari_hel_1",
+   "n_woc_hel_1",
+   "n_nkari_kat_1",
+   "n_nkari_kat_2",
+   "n_woc_kat_1",
+   "n_woc_kat_2",
+   "n_nkari_kat_3",
+   "n_woc_kat_3",
+   "n_nkari_kat_4",
+   "n_woc_kat_4",
+   "n_nkari_miao_1",
+   "n_nkari_miao_2",
+   "n_woc_miao_1",
+   "n_woc_miao_2",
+   "n_woc_miao_3",
+   "n_woc_miao_4",
+   "n_nkari_miao_3",
+   "n_nkari_miao_4",
+   "n_nkari_mor_1",
+   "n_nkari_mor_2",
+   "n_woc_mor_1",
+   "n_woc_mor_2",
+   "n_woc_mor_3",
+   "n_nkari_mor_3",
+   "n_woc_mor_4",
+   "n_nkari_mor_4",
+   "n_nkari_rep_1",
+   "n_nkari_rep_2",
+   "n_nkari_rep_3",
+   "n_woc_rep_1",
+   "n_woc_rep_2",
+   "n_woc_rep_3",
+   "n_woc_rep_4",
+   "n_nkari_rep_4",
+   "n_nkari_sis_1",
+   "n_nkari_sis_2",
+   "n_woc_sis_1",
+   "n_woc_sis_2",
+   "n_woc_sis_3",
+   "n_woc_sis_4",
+   "n_nkari_sis_3",
+   "n_nkari_sis_4",
+   "n_gen_alar_1",
+   "n_gen_alar_2",
+   "n_gen_alar_3",
+   "n_gen_alar_4",
+   "n_gen_elsp_1",
+   "n_gen_elsp_2",
+   "n_gen_fey_1",
+   "n_gen_fey_2",
+   "n_gen_fey_3",
+   "n_gen_fey_4",
+   "n_gen_kat_miao_1",
+   "n_gen_alar_mor_1",
+   "n_gen_hel_1",
+   "n_gen_kat_1",
+   "n_gen_kat_2",
+   "n_gen_kat_3",
+   "n_gen_kat_4",
+   "n_gen_miao_1",
+   "n_gen_miao_2",
+   "n_gen_miao_3",
+   "n_gen_miao_4",
+   "n_gen_mor_1",
+   "n_gen_mor_2",
+   "n_gen_mor_3",
+   "n_gen_mor_4",
+   "n_gen_rep_1",
+   "n_gen_rep_2",
+   "n_gen_rep_3",
+   "n_gen_rep_4",
+   "n_gen_sis_1",
+   "n_gen_sis_2",
+   "n_gen_sis_3",
+   "n_gen_sis_4"
+  ],
+  "cdir_events_dilemma_payloads_tables": [
+   "FIRST",
+   "n_nkari_alar_1",
+   "FACTION_POOLED_RESOURCE_TRANSACTION",
+   "default",
+   "SECOND",
+   "TREASURY",
+   "n_nkari_alar_2",
+   "THIRD",
+   "n_nkari_alar_3",
+   "n_nkari_alar_4",
+   "FOURTH",
+   "TEXT_DISPLAY",
+   "n_woc_alar_1",
+   "n_woc_alar_2",
+   "n_woc_alar_3",
+   "n_woc_alar_4",
+   "n_nkari_elsp_1",
+   "n_nkari_elsp_2",
+   "n_woc_elsp_1",
+   "n_woc_elsp_2",
+   "n_nkari_fey_1",
+   "n_nkari_fey_2",
+   "n_nkari_fey_3",
+   "n_woc_fey_1",
+   "n_woc_fey_2",
+   "n_woc_fey_3",
+   "n_woc_fey_4",
+   "n_nkari_fey_4",
+   "n_nkari_kat_miao_1",
+   "n_nkari_alar_mor_1",
+   "n_woc_kat_miao_1",
+   "n_woc_alar_mor_1",
+   "n_nkari_hel_1",
+   "n_woc_hel_1",
+   "n_nkari_kat_1",
+   "n_nkari_kat_2",
+   "n_woc_kat_1",
+   "n_woc_kat_2",
+   "n_nkari_kat_3",
+   "n_woc_kat_3",
+   "n_nkari_kat_4",
+   "n_woc_kat_4",
+   "n_nkari_miao_1",
+   "n_nkari_miao_2",
+   "n_woc_miao_1",
+   "n_woc_miao_2",
+   "n_woc_miao_3",
+   "n_woc_miao_4",
+   "n_nkari_miao_3",
+   "n_nkari_miao_4",
+   "n_nkari_mor_1",
+   "n_nkari_mor_2",
+   "n_woc_mor_1",
+   "n_woc_mor_2",
+   "n_woc_mor_3",
+   "n_nkari_mor_3",
+   "n_woc_mor_4",
+   "n_nkari_mor_4",
+   "n_nkari_rep_1",
+   "n_nkari_rep_2",
+   "n_nkari_rep_3",
+   "n_woc_rep_1",
+   "n_woc_rep_2",
+   "n_woc_rep_3",
+   "n_woc_rep_4",
+   "n_nkari_rep_4",
+   "n_nkari_sis_1",
+   "n_nkari_sis_2",
+   "n_woc_sis_1",
+   "n_woc_sis_2",
+   "n_nkari_sis_3",
+   "n_nkari_sis_4",
+   "n_woc_sis_3",
+   "n_woc_sis_4",
+   "n_gen_alar_1",
+   "EFFECT_BUNDLE",
+   "n_gen_alar_2",
+   "n_gen_alar_3",
+   "n_gen_alar_4",
+   "n_gen_elsp_1",
+   "n_gen_elsp_2",
+   "n_gen_fey_1",
+   "n_gen_fey_2",
+   "n_gen_fey_3",
+   "n_gen_fey_4",
+   "n_gen_kat_miao_1",
+   "n_gen_alar_mor_1",
+   "n_gen_hel_1",
+   "n_gen_kat_1",
+   "n_gen_kat_2",
+   "n_gen_kat_3",
+   "n_gen_kat_4",
+   "n_gen_miao_1",
+   "n_gen_miao_2",
+   "n_gen_miao_3",
+   "n_gen_miao_4",
+   "n_gen_mor_1",
+   "n_gen_mor_2",
+   "n_gen_mor_3",
+   "n_gen_mor_4",
+   "n_gen_rep_1",
+   "n_gen_rep_2",
+   "n_gen_rep_3",
+   "n_gen_rep_4",
+   "n_gen_sis_1",
+   "n_gen_sis_2",
+   "n_gen_sis_3",
+   "n_gen_sis_4"
+  ],
+  "cdir_events_incident_payloads_tables": [
+   "n_random_ancillary",
+   "ADD_ANCILLARY",
+   "default",
+   "n_great_ancillary",
+   "n_gen_random_ancillary",
+   "n_gen_great_ancillary"
+  ],
+  "dilemmas_tables": [
+   "n_nkari_alar_1",
+   "se_alar_1",
+   "Event",
+   "n_nkari_alar_2",
+   "se_alar_2",
+   "n_nkari_alar_3",
+   "se_alar_3",
+   "n_nkari_alar_4",
+   "se_alar_4",
+   "n_woc_alar_1",
+   "n_woc_alar_2",
+   "n_woc_alar_3",
+   "n_woc_alar_4",
+   "n_nkari_elsp_1",
+   "se_elsp_1",
+   "n_nkari_elsp_2",
+   "se_elsp_2",
+   "n_woc_elsp_1",
+   "n_woc_elsp_2",
+   "n_nkari_fey_1",
+   "se_fey_1",
+   "n_nkari_fey_2",
+   "se_fey_2",
+   "n_nkari_fey_3",
+   "se_fey_3",
+   "n_woc_fey_1",
+   "n_woc_fey_2",
+   "n_woc_fey_3",
+   "n_nkari_fey_4",
+   "se_fey_4",
+   "n_woc_fey_4",
+   "n_nkari_kat_miao_1",
+   "se_kat_miao_1",
+   "n_nkari_alar_mor_1",
+   "se_alar_mor_1",
+   "n_woc_kat_miao_1",
+   "n_woc_alar_mor_1",
+   "n_nkari_hel_1",
+   "se_hel_1",
+   "n_woc_hel_1",
+   "n_nkari_kat_1",
+   "se_kat_1",
+   "n_nkari_kat_2",
+   "se_kat_2",
+   "n_woc_kat_1",
+   "n_woc_kat_2",
+   "n_nkari_kat_3",
+   "se_kat_3",
+   "n_woc_kat_3",
+   "n_nkari_kat_4",
+   "se_kat_4",
+   "n_woc_kat_4",
+   "n_nkari_miao_1",
+   "se_miao_1",
+   "n_nkari_miao_2",
+   "se_miao_2",
+   "n_woc_miao_1",
+   "n_woc_miao_2",
+   "n_nkari_miao_3",
+   "se_miao_3",
+   "n_nkari_miao_4",
+   "se_miao_4",
+   "n_woc_miao_3",
+   "n_woc_miao_4",
+   "n_nkari_mor_1",
+   "se_mor_1",
+   "n_nkari_mor_2",
+   "se_mor_2",
+   "n_woc_mor_1",
+   "n_woc_mor_2",
+   "n_nkari_mor_3",
+   "se_mor_3",
+   "n_woc_mor_3",
+   "n_nkari_mor_4",
+   "se_mor_4",
+   "n_woc_mor_4",
+   "n_nkari_rep_1",
+   "se_rep_1",
+   "n_nkari_rep_2",
+   "se_rep_2",
+   "n_nkari_rep_3",
+   "se_rep_3",
+   "n_woc_rep_1",
+   "n_woc_rep_2",
+   "n_woc_rep_3",
+   "n_nkari_rep_4",
+   "se_rep_4",
+   "n_woc_rep_4",
+   "n_nkari_sis_1",
+   "se_sis_1",
+   "n_nkari_sis_2",
+   "se_sis_2",
+   "n_woc_sis_1",
+   "n_woc_sis_2",
+   "n_nkari_sis_3",
+   "se_sis_3",
+   "n_nkari_sis_4",
+   "se_sis_4",
+   "n_woc_sis_3",
+   "n_woc_sis_4",
+   "n_gen_alar_1",
+   "n_gen_alar_2",
+   "n_gen_alar_3",
+   "n_gen_alar_4",
+   "n_gen_elsp_1",
+   "n_gen_elsp_2",
+   "n_gen_fey_1",
+   "n_gen_fey_2",
+   "n_gen_fey_3",
+   "n_gen_fey_4",
+   "n_gen_kat_miao_1",
+   "n_gen_alar_mor_1",
+   "n_gen_hel_1",
+   "n_gen_kat_1",
+   "n_gen_kat_2",
+   "n_gen_kat_3",
+   "n_gen_kat_4",
+   "n_gen_miao_1",
+   "n_gen_miao_2",
+   "n_gen_miao_3",
+   "n_gen_miao_4",
+   "n_gen_mor_1",
+   "n_gen_mor_2",
+   "n_gen_mor_3",
+   "n_gen_mor_4",
+   "n_gen_rep_1",
+   "n_gen_rep_2",
+   "n_gen_rep_3",
+   "n_gen_rep_4",
+   "n_gen_sis_1",
+   "n_gen_sis_2",
+   "n_gen_sis_3",
+   "n_gen_sis_4"
+  ],
+  "incidents_tables": [
+   "n_random_ancillary",
+   "sla/faction",
+   "Event",
+   "n_great_ancillary",
+   "n_gen_random_ancillary",
+   "n_gen_great_ancillary"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/campaign_payload_ui_details_tables/@n_campaign_payload_ui_details_tables",
+   "size": 265,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/campaign_payload_ui_details_tables/@n_gen_campaign_payload_ui_details_tables",
+   "size": 273,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_alar",
+   "size": 843,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_elsp",
+   "size": 467,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_fey",
+   "size": 811,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_alar",
+   "size": 451,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_elsp",
+   "size": 271,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_fey",
+   "size": 349,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_group",
+   "size": 303,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_hel",
+   "size": 177,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_kat",
+   "size": 435,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_miao",
+   "size": 451,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_mor",
+   "size": 435,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_rep",
+   "size": 435,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_gen_sis",
+   "size": 435,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_group",
+   "size": 531,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_hel",
+   "size": 271,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_kat",
+   "size": 811,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_miao",
+   "size": 843,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_mor",
+   "size": 811,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_rep",
+   "size": 725,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/@n_nv_sis",
+   "size": 811,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_incidents_tables/@n_nv_gen_incidents_tables",
+   "size": 3027,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_incidents_tables/@n_nv_incidents_tables",
+   "size": 5575,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_alar",
+   "size": 963,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_elsp",
+   "size": 527,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_fey",
+   "size": 947,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_alar",
+   "size": 519,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_elsp",
+   "size": 305,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_fey",
+   "size": 511,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_group",
+   "size": 321,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_hel",
+   "size": 196,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_kat",
+   "size": 511,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_miao",
+   "size": 519,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_mor",
+   "size": 511,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_rep",
+   "size": 511,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_gen_sis",
+   "size": 511,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_group",
+   "size": 559,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_hel",
+   "size": 305,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_kat",
+   "size": 947,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_miao",
+   "size": 963,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_mor",
+   "size": 947,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_rep",
+   "size": 947,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/@n_nv_sis",
+   "size": 947,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_alar",
+   "size": 6483,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_elsp",
+   "size": 3283,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_fey",
+   "size": 6435,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_alar",
+   "size": 2207,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_elsp",
+   "size": 1145,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_fey",
+   "size": 2183,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_group",
+   "size": 1193,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_hel",
+   "size": 608,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_kat",
+   "size": 2183,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_miao",
+   "size": 2207,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_mor",
+   "size": 2183,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_rep",
+   "size": 2183,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_gen_sis",
+   "size": 2183,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_group",
+   "size": 3379,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_hel",
+   "size": 1671,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_kat",
+   "size": 6435,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_miao",
+   "size": 6483,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_mor",
+   "size": 6435,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_rep",
+   "size": 6435,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_payloads_tables/@n_nv_sis",
+   "size": 6435,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/cdir_events_incident_payloads_tables/@n_nv_gen_incident_payloads",
+   "size": 406,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/cdir_events_incident_payloads_tables/@n_nv_incident_payloads",
+   "size": 394,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_alar",
+   "size": 443,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_elsp",
+   "size": 267,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_fey",
+   "size": 427,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_alar",
+   "size": 263,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_elsp",
+   "size": 177,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_fey",
+   "size": 255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_group",
+   "size": 193,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_hel",
+   "size": 132,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_kat",
+   "size": 255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_miao",
+   "size": 263,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_mor",
+   "size": 255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_rep",
+   "size": 255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_gen_sis",
+   "size": 255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_group",
+   "size": 299,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_hel",
+   "size": 175,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_kat",
+   "size": 427,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_miao",
+   "size": 443,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_mor",
+   "size": 427,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_rep",
+   "size": 427,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/@n_nv_sis",
+   "size": 427,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "db/incidents_tables/@n_nv_gen_incidents_tables",
+   "size": 200,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "db/incidents_tables/@n_nv_incidents_tables",
+   "size": 192,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_1.ca_vp8",
+   "size": 801759,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_1.ca_vp8",
+   "size": 801759,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_2.ca_vp8",
+   "size": 873548,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_2.ca_vp8",
+   "size": 873548,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_3.ca_vp8",
+   "size": 820378,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_3.ca_vp8",
+   "size": 820378,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_4.ca_vp8",
+   "size": 804998,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_4.ca_vp8",
+   "size": 804998,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_mor_1.ca_vp8",
+   "size": 856555,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_alar_mor_1.ca_vp8",
+   "size": 856555,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_1.ca_vp8",
+   "size": 525580,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_1.ca_vp8",
+   "size": 525580,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_2.ca_vp8",
+   "size": 545013,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_elsp_2.ca_vp8",
+   "size": 545013,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_1.ca_vp8",
+   "size": 910028,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_1.ca_vp8",
+   "size": 910028,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_2.ca_vp8",
+   "size": 729903,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_2.ca_vp8",
+   "size": 729903,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_3.ca_vp8",
+   "size": 773530,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_3.ca_vp8",
+   "size": 773530,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_4.ca_vp8",
+   "size": 771540,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_fey_4.ca_vp8",
+   "size": 771540,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_hel_1.ca_vp8",
+   "size": 797574,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_hel_1.ca_vp8",
+   "size": 797574,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_1.ca_vp8",
+   "size": 604341,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_1.ca_vp8",
+   "size": 604341,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_2.ca_vp8",
+   "size": 579681,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_2.ca_vp8",
+   "size": 579681,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_3.ca_vp8",
+   "size": 531104,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_3.ca_vp8",
+   "size": 531104,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_4.ca_vp8",
+   "size": 752418,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_4.ca_vp8",
+   "size": 752418,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_miao_1.ca_vp8",
+   "size": 885750,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_kat_miao_1.ca_vp8",
+   "size": 885750,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_1.ca_vp8",
+   "size": 661913,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_1.ca_vp8",
+   "size": 661913,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_2.ca_vp8",
+   "size": 707736,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_2.ca_vp8",
+   "size": 707736,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_3.ca_vp8",
+   "size": 801255,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_3.ca_vp8",
+   "size": 801255,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_4.ca_vp8",
+   "size": 765214,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_miao_4.ca_vp8",
+   "size": 765214,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_1.ca_vp8",
+   "size": 724493,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_1.ca_vp8",
+   "size": 724493,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_2.ca_vp8",
+   "size": 1137777,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_2.ca_vp8",
+   "size": 1137777,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_3.ca_vp8",
+   "size": 664335,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_3.ca_vp8",
+   "size": 664335,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_4.ca_vp8",
+   "size": 782280,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_mor_4.ca_vp8",
+   "size": 782280,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_1.ca_vp8",
+   "size": 706734,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_1.ca_vp8",
+   "size": 706734,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_2.ca_vp8",
+   "size": 671860,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_2.ca_vp8",
+   "size": 671860,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_3.ca_vp8",
+   "size": 616151,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_3.ca_vp8",
+   "size": 616151,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_4.ca_vp8",
+   "size": 722441,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_rep_4.ca_vp8",
+   "size": 722441,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_1.ca_vp8",
+   "size": 733091,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_1.ca_vp8",
+   "size": 733091,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_2.ca_vp8",
+   "size": 961397,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_2.ca_vp8",
+   "size": 961397,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_3.ca_vp8",
+   "size": 913127,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_3.ca_vp8",
+   "size": 913127,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_4.ca_vp8",
+   "size": 1188798,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "movies/eventpics/se_sis_4.ca_vp8",
+   "size": 1188798,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "script/campaign/mod/@n_slaaneshvassals_main_script.lua",
+   "size": 11293,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "script/campaign/mod/@n_slaaneshvassals_non_slaanesh_script.lua",
+   "size": 9733,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_aa_campaign_ui_payloads.loc",
+   "size": 360,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_aa_incidents.loc",
+   "size": 668,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_alar_cdir_events_dilemma_choice_details.loc",
+   "size": 14974,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_alar_dilemmas.loc",
+   "size": 10630,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_elsp_cdir_events_dilemma_choice_details.loc",
+   "size": 7494,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_elsp_dilemmas.loc",
+   "size": 5522,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_fey_cdir_events_dilemma_choice_details.loc",
+   "size": 14846,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_fey_dilemmas.loc",
+   "size": 10598,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_gen_aa_campaign_ui_payloads.loc",
+   "size": 376,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_aa_incidents.loc",
+   "size": 700,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_alar_cdir_events_dilemma_choice_details.loc",
+   "size": 7430,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_alar_dilemmas.loc",
+   "size": 5306,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_elsp_cdir_events_dilemma_choice_details.loc",
+   "size": 3722,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_elsp_dilemmas.loc",
+   "size": 2760,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_fey_cdir_events_dilemma_choice_details.loc",
+   "size": 7366,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_fey_dilemmas.loc",
+   "size": 5290,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_group_cdir_events_dilemma_choice_details.loc",
+   "size": 3878,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_group_dilemmas.loc",
+   "size": 2852,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_hel_cdir_events_dilemma_choice_details.loc",
+   "size": 1852,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_hel_dilemmas.loc",
+   "size": 1350,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_kat_cdir_events_dilemma_choice_details.loc",
+   "size": 7366,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_kat_dilemmas.loc",
+   "size": 4962,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_miao_cdir_events_dilemma_choice_details.loc",
+   "size": 7430,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_miao_dilemmas.loc",
+   "size": 5204,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_mor_cdir_events_dilemma_choice_details.loc",
+   "size": 7115,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_mor_dilemmas.loc",
+   "size": 5458,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_rep_cdir_events_dilemma_choice_details.loc",
+   "size": 7366,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_rep_dilemmas.loc",
+   "size": 5244,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_sis_cdir_events_dilemma_choice_details.loc",
+   "size": 7406,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_gen_sis_dilemmas.loc",
+   "size": 5520,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "text/db/@n_group_cdir_events_dilemma_choice_details.loc",
+   "size": 7806,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_group_dilemmas.loc",
+   "size": 5706,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_hel_cdir_events_dilemma_choice_details.loc",
+   "size": 3722,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_hel_dilemmas.loc",
+   "size": 2694,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_kat_cdir_events_dilemma_choice_details.loc",
+   "size": 14846,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_kat_dilemmas.loc",
+   "size": 9942,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_miao_cdir_events_dilemma_choice_details.loc",
+   "size": 14974,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_miao_dilemmas.loc",
+   "size": 10426,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_mor_cdir_events_dilemma_choice_details.loc",
+   "size": 14846,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_mor_dilemmas.loc",
+   "size": 10934,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_rep_cdir_events_dilemma_choice_details.loc",
+   "size": 14846,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_rep_dilemmas.loc",
+   "size": 10506,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_sis_cdir_events_dilemma_choice_details.loc",
+   "size": 14926,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "text/db/@n_sis_dilemmas.loc",
+   "size": 11058,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_1.png",
+   "size": 767301,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_1.png",
+   "size": 767301,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_2.png",
+   "size": 809589,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_2.png",
+   "size": 809589,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_3.png",
+   "size": 756099,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_3.png",
+   "size": 756099,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_4.png",
+   "size": 754507,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_4.png",
+   "size": 754507,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_mor_1.png",
+   "size": 862570,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_alar_mor_1.png",
+   "size": 862570,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_1.png",
+   "size": 574662,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_1.png",
+   "size": 574662,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_2.png",
+   "size": 570823,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_elsp_2.png",
+   "size": 570823,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_1.png",
+   "size": 812710,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_1.png",
+   "size": 812710,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_2.png",
+   "size": 686041,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_2.png",
+   "size": 686041,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_3.png",
+   "size": 788213,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_3.png",
+   "size": 788213,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_4.png",
+   "size": 713338,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_fey_4.png",
+   "size": 713338,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_hel_1.png",
+   "size": 692150,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_hel_1.png",
+   "size": 692150,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_1.png",
+   "size": 556058,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_1.png",
+   "size": 556058,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_2.png",
+   "size": 589799,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_2.png",
+   "size": 589799,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_3.png",
+   "size": 535908,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_3.png",
+   "size": 535908,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_4.png",
+   "size": 682404,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_4.png",
+   "size": 682404,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_miao_1.png",
+   "size": 791374,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_kat_miao_1.png",
+   "size": 791374,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_1.png",
+   "size": 720214,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_1.png",
+   "size": 720214,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_2.png",
+   "size": 712706,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_2.png",
+   "size": 712706,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_3.png",
+   "size": 713430,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_3.png",
+   "size": 713430,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_4.png",
+   "size": 743697,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_miao_4.png",
+   "size": 743697,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_1.png",
+   "size": 651818,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_1.png",
+   "size": 651818,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_2.png",
+   "size": 874009,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_2.png",
+   "size": 874009,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_3.png",
+   "size": 611928,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_3.png",
+   "size": 611928,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_4.png",
+   "size": 682489,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_mor_4.png",
+   "size": 682489,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_1.png",
+   "size": 689138,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_1.png",
+   "size": 689138,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_2.png",
+   "size": 638782,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_2.png",
+   "size": 638782,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_3.png",
+   "size": 547898,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_3.png",
+   "size": 547898,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_4.png",
+   "size": 816882,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_rep_4.png",
+   "size": 816882,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_1.png",
+   "size": 708683,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_1.png",
+   "size": 708683,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_2.png",
+   "size": 791476,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_2.png",
+   "size": 791476,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_3.png",
+   "size": 817416,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_3.png",
+   "size": 817416,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_4.png",
+   "size": 879868,
+   "pack": "@n_SlaaneshVassals.pack"
+  },
+  {
+   "path": "ui/eventpics/se_sis_4.png",
+   "size": 879868,
+   "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "mod": "ll-24264",
+ "packs": [
+  "soil_corrupted_units_0904_cn.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "soil_corrupted_units_0904_cn.pack": {
+   "files": 8,
+   "dependencies": []
+  }
+ },
+ "fileCount": 8,
+ "byTopFolder": {
+  "text": 8
+ },
+ "tables": [],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [],
+ "dbStrings": {},
+ "files": [
+  {
+   "path": "text/db/corrupted_barracks_building_chains__.loc",
+   "size": 1019,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_barracks_building_culture_variants__.loc",
+   "size": 2046,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_barracks_building_short_description_texts__.loc",
+   "size": 2591,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_barracks_chains__.loc",
+   "size": 228,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_units_long.loc",
+   "size": 11514,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_units_name.loc",
+   "size": 4241,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/corrupted_units_short.loc",
+   "size": 7575,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  },
+  {
+   "path": "text/db/cu_effects__.loc",
+   "size": 1993,
+   "pack": "soil_corrupted_units_0904_cn.pack"
+  }
+ ]
+}
