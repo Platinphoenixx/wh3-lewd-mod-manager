@@ -1,4 +1,4 @@
-import type { Catalog, Mod } from '@catalog/schema'
+import type { Catalog, Mod, PackRef } from '@catalog/schema'
 import { parseTargetKey, type CatalogIndex } from './match'
 
 export type InstallSource =
@@ -36,6 +36,27 @@ export function installSourceFor(
   const dc = mod.sources.discord?.find((d) => d.messageUrl)?.messageUrl ?? mod.sources.downloads?.find((d) => d.url.includes('discord.com'))?.url
   if (dc) return { kind: 'discord', url: dc }
   return { kind: 'manual', url: ll?.url ?? mod.sources.downloads?.[0]?.url }
+}
+
+/**
+ * Packs of a mod that the profile needs and that are not installed: the pack its template names, the mod's
+ * packs that are neither optional nor a variant, and of a required pick-one group at least one. A mod with
+ * only some of them (e.g. Kerberos' shared assets without the main ATB pack) is not installed.
+ */
+export function missingPacks(mod: Mod | undefined, templatePack: string | undefined, installed: { file: string }[]): PackRef[] {
+  const have = new Set(installed.map((p) => p.file.toLowerCase()))
+  const out: PackRef[] = []
+  const named = templatePack && /\.pack$/i.test(templatePack) ? mod?.packs.find((p) => p.file.toLowerCase() === templatePack.toLowerCase()) : undefined
+  if (templatePack && /\.pack$/i.test(templatePack) && !have.has(templatePack.toLowerCase()))
+    out.push(named ?? { file: templatePack, from: 'download' })
+  const groups = new Map<string, PackRef[]>()
+  for (const p of mod?.packs ?? []) {
+    if (p.optional) continue
+    if (p.exclusiveGroup) groups.set(p.exclusiveGroup, [...(groups.get(p.exclusiveGroup) ?? []), p])
+    else if (!have.has(p.file.toLowerCase()) && !out.some((o) => o.file.toLowerCase() === p.file.toLowerCase())) out.push(p)
+  }
+  for (const list of groups.values()) if (!list.some((p) => have.has(p.file.toLowerCase())) && !named) out.push(list[0])
+  return out
 }
 
 /** One file of a LoversLab download page. */

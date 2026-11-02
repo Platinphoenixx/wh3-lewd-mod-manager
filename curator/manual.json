@@ -200,10 +200,10 @@
       "target": {
         "mod": "ll-24004"
       },
-      "pack": "Corrupted_Valkia_Compiled.pack",
+      "pack": "Valkia_Workshop.pack",
       "steamId": "3813939023",
       "from": "steam",
-      "note": "Corrupted Valkia is on Steam since 2026-09-26; re-created as 3813939023 on 2026-10-05. The old .pack in data and the old Workshop item 3808407319 use the same name and must be removed. May only show in the launcher with the Early Access / new mod manager option.",
+      "note": "Corrupted Valkia is on Steam since 2026-09-26; re-created as 3813939023 on 2026-10-05. The Steam pack is Valkia_Workshop.pack; remove the old Corrupted_Valkia_Compiled.pack from data and unsubscribe the old Workshop item 3808407319. May only show in the launcher with the Early Access / new mod manager option.",
       "source": "https://discord.com/channels/965342581745668136/1002985823282675722/1556594589698367550"
     },
     "@Soil_Azazel_Corrupted_Units.pack": {
@@ -326,7 +326,7 @@
       "target": {
         "mod": "steam-3820276885"
       },
-      "pack": "alivia_dryad.pack",
+      "pack": "Nymeria (9.0.3).pack",
       "steamId": "3820276885",
       "from": "steam",
       "note": "Nymeria (Workshop 3404717872, January 2025) crashes the game at start since the 9.0 update. Mister HP's temporary update 'Nymeria (9.0.3)' replaces it; unsubscribe the old item.",
@@ -417,7 +417,21 @@
           "3808407319"
         ],
         "note": "Current version is Steam 3813939023 (unlisted, October 2026). Unsubscribe the earlier Workshop item 3808407319 and remove the old .pack from data: both use the same pack name, which causes a startup crash or an invisible mod."
-      }
+      },
+      "packs": [
+        {
+          "file": "Valkia_Workshop.pack",
+          "from": "steam",
+          "steamId": "3813939023",
+          "note": "Steam version (seen in a download, 2026-11-02)."
+        },
+        {
+          "file": "Corrupted_Valkia_Compiled.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Old LoversLab/MEGA version; replaced by the Steam pack."
+        }
+      ]
     },
     {
       "id": "ll-27171",
@@ -446,6 +460,7 @@
         {
           "file": "@@Compendium_Play_as_Azazel_Overwrite.pack",
           "from": "download",
+          "optional": true,
           "note": "Still distributed on LoversLab (zip); needed to play as anyone but Miao. Expects the LoversLab Compendium file name."
         }
       ],
@@ -515,10 +530,10 @@
       },
       "packs": [
         {
-          "file": "alivia_dryad.pack",
+          "file": "Nymeria (9.0.3).pack",
           "from": "steam",
           "steamId": "3820276885",
-          "note": "Pack name of the original (3404717872); not yet confirmed for this upload."
+          "note": "Seen in a download of this item (2026-11-02)."
         }
       ],
       "relations": [
@@ -538,14 +553,11 @@
         "unsubscribeSteamIds": [
           "3404717872"
         ],
-        "note": "The old Nymeria upload uses the same pack name and crashes the game since 9.0."
+        "note": "The old Nymeria upload (alivia_dryad.pack) crashes the game since 9.0; unsubscribe it."
       },
       "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": [
-          "Pack name not yet seen in a download of 3820276885."
-        ]
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
       }
     },
     {
@@ -627,6 +639,12 @@
           "from": "download",
           "exclusiveGroup": "soil-faction",
           "note": "Only when playing Azazel; above Azazel's Realm"
+        },
+        {
+          "file": "@Soil_Kislev_Corrupted_Units.pack",
+          "from": "download",
+          "exclusiveGroup": "soil-faction",
+          "note": "Only when playing Katarin (Kislev)"
         }
       ],
       "relations": [
@@ -659,6 +677,29 @@
           "source": {
             "type": "loverslab"
           }
+        }
+      ]
+    },
+    {
+      "id": "ll-33808",
+      "packs": [
+        {
+          "file": "tdw_cth_seduce.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Miao Ying version; file extension added from the package name."
+        },
+        {
+          "file": "tdw_kat_seduce.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Katarin version; file extension added from the package name."
+        },
+        {
+          "file": "tdw_mor_seduce.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Morathi version; file extension added from the package name."
         }
       ]
     }

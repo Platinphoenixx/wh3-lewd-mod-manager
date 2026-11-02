@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, downloadHints, installSourceFor, packHints, pickDownloads, wantedPacks } from './install'
+import { archivesFor, downloadHints, installSourceFor, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -125,5 +125,25 @@ describe('LoversLab file choice', () => {
     }
     expect(packHints(parts).filter((h) => h.wanted).map((h) => h.name)).toEqual(['base.pack', 'skin_a.pack'])
     expect(packHints(parts, ['Skin_B.pack']).filter((h) => h.wanted).map((h) => h.name)).toEqual(['skin_b.pack'])
+  })
+})
+
+describe('missingPacks', () => {
+  const atb = {
+    ...mod('atb', {}),
+    packs: [
+      { file: 'kerb_Alarielle_Temptations_Bloom_steam.pack', from: 'steam' as const, steamId: '3644437727' },
+      { file: 'kerberos_mod_assets.pack', from: 'steam' as const, steamId: '3566908399' },
+      { file: 'kerb_alar_colorblind_patch.pack', from: 'download' as const, optional: true },
+      { file: 'stage_a.pack', from: 'download' as const, exclusiveGroup: 'stage' },
+      { file: 'stage_b.pack', from: 'download' as const, exclusiveGroup: 'stage' }
+    ]
+  }
+
+  it('finds the required packs that are not installed', () => {
+    const lack = missingPacks(atb, 'kerb_Alarielle_Temptations_Bloom_steam.pack', [{ file: 'kerberos_mod_assets.pack' }, { file: 'stage_b.pack' }])
+    expect(lack.map((p) => [p.file, p.steamId])).toEqual([['kerb_Alarielle_Temptations_Bloom_steam.pack', '3644437727']])
+    expect(missingPacks(atb, undefined, [{ file: 'kerb_alarielle_temptations_bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }]).map((p) => p.file)).toEqual(['stage_a.pack'])
+    expect(missingPacks(atb, undefined, [{ file: 'kerb_Alarielle_Temptations_Bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }, { file: 'stage_a.pack' }])).toEqual([])
   })
 })

@@ -10,6 +10,7 @@ import { ConflictList } from './ConflictList'
 import { InstallPanel } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { pickVariants, planLaunch, variantGroups } from '@shared/launch'
+import { missingPacks } from '@shared/install'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
@@ -96,7 +97,15 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return m
   }, [matched])
   const installed = useMemo(() => new Map([...matched.known, ...ownGroups]), [matched, ownGroups])
-  const missingEntries = resolved.entries.filter((e) => !installed.has(e.key))
+  // Not installed, or installed only in part: the first missing pack decides what to fetch (its Workshop item).
+  const missingEntries = resolved.entries.flatMap((e) => {
+    if (!installed.has(e.key)) return [e]
+    const t = parseTargetKey(e.key)
+    const lack = missingPacks('mod' in t ? data.index.mods.get(t.mod) : undefined, e.pack, installed.get(e.key) ?? [])
+    if (!lack.length) return []
+    return [{ ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }]
+  })
+  const incomplete = new Set(missingEntries.map((e) => e.key))
   const view: View = chosenView ?? (missingEntries.length ? 'install' : 'order')
   const goTo = (v: View) => {
     setView(v)
@@ -245,6 +254,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [order, installed, profile.variants]
   )
+  // What ▶ Play warns about: mods without any installed pack and mods that miss a required one.
+  const notReady = [...new Set([...missingEntries.map((e) => e.name), ...launch.missing])]
   // Installed pick-one variants of one entry (two or more of a group), for the version choice in the load order.
   const variantChoices = (key: string) => {
     const all = installed.get(key) ?? []
@@ -261,10 +272,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     onChange({ ...profile, variants: { ...profile.variants, [key]: { ...profile.variants?.[key], [group]: file } } })
 
   const play = async () => {
-    if (launch.missing.length) {
-      const list = launch.missing.slice(0, 15).join('\n')
-      const more = launch.missing.length > 15 ? `\n…and ${launch.missing.length - 15} more` : ''
-      if (!confirm(`${launch.missing.length} mods of this profile are not installed:\n\n${list}${more}\n\nStart the game with the ${launch.packs.length} installed packs anyway?`)) return
+    if (notReady.length) {
+      const list = notReady.slice(0, 15).join('\n')
+      const more = notReady.length > 15 ? `\n…and ${notReady.length - 15} more` : ''
+      if (!confirm(`${notReady.length} mods of this profile are not (completely) installed:\n\n${list}${more}\n\nStart the game with the ${launch.packs.length} installed packs anyway?`)) return
     }
     const started = new Set(launch.packs.map((p) => p.path))
     const baseIndex = new Map(resolved.entries.filter((e) => e.origin === 'base').map((e, i) => [e.key, i]))
@@ -302,7 +313,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   }
 
   // Missing mods of the open profile as a counter on the Profiles tab.
-  const missing = launch.missing.length
+  const missing = notReady.length
   useEffect(() => {
     data.setTabCount('profiles', missing ? { n: missing, title: `${missing} mod${missing === 1 ? '' : 's'} of this profile not installed` } : null)
     return () => data.setTabCount('profiles', null)
@@ -317,7 +328,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <span className="badge ok">{profile.extras.length} switched on</span>
         <span className="badge">{order.length} mods total</span>
         <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
-          ▶ Play{launch.missing.length ? ` (${launch.missing.length} missing)` : ''}
+          ▶ Play{notReady.length ? ` (${notReady.length} missing)` : ''}
         </button>
         <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
       </div>
@@ -462,7 +473,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
             <tbody>
               {order.map((o, i) => {
                 const e = byKey.get(o.key)
-                const isInstalled = installed.has(o.key)
+                const isInstalled = installed.has(o.key) && !incomplete.has(o.key)
                 return (
                   <tr key={o.key} className={isInstalled ? 'state-installed' : 'state-missing'}>
                     <td className="num">{i + 1}</td>
