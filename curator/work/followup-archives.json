@@ -324,6 +324,46 @@
       "knownIssues+": [
         "Launch test 2026-11-02 (game 9.0.4): the LoversLab @Soil_Miaoying_Corrupted_Units.pack stops the game with a database error (land_units_to_unit_abilites_junctions_tables, record soil_cth_corrupted_fiends_of_slaanesh_0wh3_main_unit_passive_daemonic_instability_slaanesh); the version pinned in #soiled-projects on 2026-10-01 and the merged Soil pack reach the main menu."
       ]
+    },
+    {
+      "id": "steam-2805809756",
+      "relations-": [
+        "steam-3472332568"
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3471883808"
+          },
+          "note": "Lazy's Corrupted Reskins Katarin already contain this reskin (41 of its 44 files); use only one of them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2805809756"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-27230",
+      "status": "stable"
+    },
+    {
+      "id": "dc-katarin-optional-crown-removal",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2805809756"
+          },
+          "condition": "Only without Lazy's Corrupted Reskins Katarin: they already contain the Ice Queen reskin, and this patch changes their files (crown animation, Katarin's variants).",
+          "note": "Listed as a required item on the Workshop page",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2806964197"
+          }
+        }
+      ]
     }
   ]
 }

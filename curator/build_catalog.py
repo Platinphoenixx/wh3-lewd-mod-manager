@@ -159,32 +159,17 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
         """A guide that names a pack of the mod (e.g. Soil's Kislev units) means that pack, not the mod's default."""
         mod = mods.get((e["target"] or {}).get("mod")) or {}
         tok = norm(re.sub(r"\.pack$", "", e.get("pack") or "", flags=re.I))
-        hits = [p for p in mod.get("packs") or [] if tok and norm(p["file"]).startswith(tok)] if len(tok) >= 5 else []
+        packs = (mod.get("packs") or []) if len(tok) >= 5 else []
+        stem = lambda p: norm(re.sub(r"\.pack$", "", p["file"], flags=re.I))
+        # The exact pack, else the only one it starts, else the only one that contains it ("Non slaanesh").
+        hits = [p for p in packs if stem(p) == tok] or [p for p in packs if stem(p).startswith(tok)]
+        if len(hits) != 1:
+            hits = [p for p in packs if tok in stem(p)]
         if len(hits) == 1:
             p = hits[0]
             return [{"pack": p["file"], "from": p.get("from", "download"), **({"steamId": p["steamId"]} if p.get("steamId") else {}),
                      "target": e["target"]}]
         return preset_entries(mods, external, steam, e["target"])
-
-    for g in guides:
-        entries = [e for e in g["entries"] if e.get("target") and not e.get("optional")]
-        built = [x for e in entries for x in guide_entries(e) if x]
-        if not built:
-            continue
-        character = re.sub(r"[“”’‘]", "'", g["character"])  # Google Docs smart quotes
-        slug = re.sub(r"[^a-z0-9]+", "-", character.lower()).strip("-")[:40]
-        out.append({"id": f"kpw-{slug}", "name": f"{character} – KPW's quick list", "origin": "guide",
-                    "playAs": [c.strip() for c in re.split(r"[/,]", character) if c.strip()], "phase": "any",
-                    "phaseNote": "Order as listed in KPW's guide; check the load order before playing.",
-                    "source": {"type": "discord", "url": g["source"]["url"], "author": "KPW"},
-                    "description": "KPW's per-character download list from the Discord: the mods the guide names as needed. "
-                                   "Use it as a starting point and add options in the profile.",
-                    "entries": built})
-
-    covered = {c.lower().split()[0] for p in presets for c in p.get("playAs", [])}
-    # The main mod of each tested list (first cover); other campaigns get their own derived preset.
-    tested_mains = {p["coverMods"][0] for p in presets if p.get("origin") == "tested" and p.get("coverMods")}
-    tested_mains |= {"ll-42028", "ll-27930", "ll-23878", "ll-23966", "ll-23925"}  # main mods of Readman's lists
 
     def requires_closure(mid: str) -> list:
         seen, order, queue = {f"mod:{mid}"}, [{"mod": mid}], [mid]
@@ -202,6 +187,37 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
                 if k == "mod":
                     queue.append(v)
         return order
+
+    for g in guides:
+        entries = [e for e in g["entries"] if e.get("target") and not e.get("optional")]
+        built = [x for e in entries for x in guide_entries(e) if x]
+        if not built:
+            continue
+        # A guide lists what its author downloads; what those mods strictly need (e.g. MCT for Lazy's framework)
+        # comes in too, since the app loads exactly the template's packs.
+        have = {json.dumps(x["target"], sort_keys=True) for x in built}
+        for e in entries:
+            if "mod" not in e["target"]:
+                continue
+            for dep in requires_closure(e["target"]["mod"])[1:]:
+                if json.dumps(dep, sort_keys=True) not in have:
+                    have.add(json.dumps(dep, sort_keys=True))
+                    built += preset_entries(mods, external, steam, dep) if "mod" in dep else [x for x in [preset_entry(mods, external, steam, dep)] if x]
+        character = re.sub(r"[“”’‘]", "'", g["character"])  # Google Docs smart quotes
+        slug = re.sub(r"[^a-z0-9]+", "-", character.lower()).strip("-")[:40]
+        out.append({"id": f"kpw-{slug}", "name": f"{character} – KPW's quick list", "origin": "guide",
+                    "playAs": [c.strip() for c in re.split(r"[/,]", character) if c.strip()], "phase": "any",
+                    "phaseNote": "Order as listed in KPW's guide; check the load order before playing.",
+                    "source": {"type": "discord", "url": g["source"]["url"], "author": "KPW"},
+                    "description": "KPW's per-character download list from the Discord: the mods the guide names as needed. "
+                                   "Use it as a starting point and add options in the profile.",
+                    "entries": built})
+
+    covered = {c.lower().split()[0] for p in presets for c in p.get("playAs", [])}
+    # The main mod of each tested list (first cover); other campaigns get their own derived preset.
+    tested_mains = {p["coverMods"][0] for p in presets if p.get("origin") == "tested" and p.get("coverMods")}
+    tested_mains |= {"ll-42028", "ll-27930", "ll-23878", "ll-23966", "ll-23925"}  # main mods of Readman's lists
+
 
     for m in sorted(mods.values(), key=lambda m: m["name"].lower()):
         if m.get("kind") not in ("campaign", "progression") or m.get("status") in INACTIVE or not m.get("playAs"):
@@ -681,6 +697,9 @@ def main():
         return None
 
     for mid, kind, raw in dc_pending:
+        # {"ref": "...", "condition": "..."}: a requirement that only holds in a case (e.g. one campaign).
+        cond = raw.get("condition") if isinstance(raw, dict) else None
+        raw = raw["ref"] if isinstance(raw, dict) else raw
         t = parse_ref(raw)
         if t == {"mod": mid}:  # "Do not combine ATB and X" names the mod itself: it is a rule, not a link
             t = None
@@ -692,7 +711,7 @@ def main():
                 notes_.append(f"{label}: {raw}")
             unresolved.append(f"{mid} {kind}: Freitext '{raw}' (als installNote übernommen)")
             continue
-        mods[mid]["relations"].append({"kind": kind, "target": t, "note": raw,
+        mods[mid]["relations"].append({"kind": kind, "target": t, "note": raw, **({"condition": cond} if cond else {}),
                                        "source": {"type": "discord"}})
 
     kpw_path = CURATOR / "work" / "kpw.json"
@@ -797,6 +816,22 @@ def main():
             finish_relations(m)
             finished.add(m["id"])
 
+    # A requirement of a mod that another mod supersedes (a fixed re-upload, e.g. Nymeria 9.0.3) means the
+    # successor: the old one is what breaks. Unless the successor is the requiring mod itself.
+    successor = {r["target"]["mod"]: m["id"] for m in mods.values() for r in m.get("relations", [])
+                 if r["kind"] == "supersedes" and "mod" in r["target"]}
+    for m in mods.values():
+        # A Steam collection only bundles items; pages that link one name its members one by one as well.
+        def collection(mid):
+            t = mods.get(mid) or {}
+            return t.get("kind") == "collection" or any(s["id"] in steam_collections() for s in t.get("sources", {}).get("steam") or [])
+        m["relations"] = [r for r in m.get("relations", []) if not collection(r["target"].get("mod"))]
+        for r in m["relations"]:
+            old = r["target"].get("mod")
+            if r["kind"] == "requires" and old in successor and successor[old] != m["id"]:
+                r["target"] = {"mod": successor[old]}
+                r["note"] = (r.get("note") or "") + f" – now its update {mods[successor[old]]['name']}"
+
     # manual.json presetReplacements: packs of the tested lists that have a newer version since the list was
     # made (moved to Steam, merged packs, fixes) or must not be used any more ({"remove": true}). Matched by
     # pack name; every change is recorded in the preset's "modernized" list so the app can show it.
@@ -858,9 +893,12 @@ def main():
                 t = {"mod": ll_by_url[e["loversLabId"]]}
             elif e.get("pack") and len(e["pack"]) > 3:
                 # Guides name packs by prefix ("Seu_Miaoying" for seu_miaoying_submod_extension.pack).
+                # The shortest pack with that prefix is the mod itself, not a translation or patch of it
+                # ("seu_miaoying_submod_extension_v0.7.0_cn0930.pack" is a Chinese text pack for it).
                 prefix = e["pack"].lower().removesuffix(".pack")
                 t = pack_owner.get(prefix + ".pack") or next(
-                    (o for p, o in pack_owner.items() if p.lstrip("!@") .startswith(prefix.lstrip("!@"))), None)
+                    (o for p, o in sorted(pack_owner.items(), key=lambda x: len(x[0]))
+                     if p.lstrip("!@").startswith(prefix.lstrip("!@"))), None)
             entry = {"name": e["name"], "optional": bool(e.get("optional"))}
             if t:
                 entry["target"] = t
@@ -1132,6 +1170,17 @@ def main():
         for s in m.get("support", []):
             if owner.get(s["url"].lower(), a) != a:
                 s["owner"] = owner[s["url"].lower()]
+
+    # The same pack of the same Workshop item from two layers is one pack (the later one adds its note).
+    for m in mods.values():
+        seen = {}
+        for p in m.get("packs", []):
+            k = (p["file"].lower(), p.get("steamId"))
+            if k in seen:
+                seen[k] |= {f: v for f, v in p.items() if f not in seen[k]}
+            else:
+                seen[k] = p
+        m["packs"] = list(seen.values())
 
     preset_desc = load(CURATOR / "work" / "preset-desc.json") if (CURATOR / "work" / "preset-desc.json").exists() else {}
     for p in presets:

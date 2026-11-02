@@ -690,6 +690,7 @@
             "mod": "ll-27930"
           },
           "note": "Azazel mod is based on Kerberos' Azazel's Realm (mandatory).",
+          "condition": "only with @Soil_Azazel_Corrupted_Units.pack",
           "source": {
             "type": "loverslab"
           }
@@ -759,7 +760,8 @@
   "mergeMods": {
     "dc-corrupted-ascension-lin-chaos-dragon-slayer": "ll-27171",
     "dc-sigvalda-model-mod-corv0modder": "ll-24875",
-    "dc-summon-servant-jeanne-d-arc-and-alter-mct": "ll-43852"
+    "dc-summon-servant-jeanne-d-arc-and-alter-mct": "ll-43852",
+    "dc-lazy-s-corruption-framework-progression-steam-collection": "steam-3472332568"
   },
   "externalToMod": {
     "ext-seu-miaoying-mods": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension",

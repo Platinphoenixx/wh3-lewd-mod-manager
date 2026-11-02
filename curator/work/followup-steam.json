@@ -932,6 +932,7 @@
             "mod": "steam-3471883632"
           },
           "note": "Lazy's Corrupted Reskins Miaoying: required item on the Miao Ying progression's Workshop page",
+          "condition": "only with li_miaoying_progression_workshop.pack",
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237645"

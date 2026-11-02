@@ -54,7 +54,7 @@
    ],
    "loversLab": [],
    "requires": [
-    "Lazy's Corrupted Katarin reskins"
+    "Lazy's Corrupted Katarin reskins (Steam 3471883808)"
    ],
    "recommends": [],
    "incompatible": [],
@@ -733,7 +733,10 @@
    ],
    "loversLab": [],
    "requires": [
-    "The original Lin mods (Corrupted Ascension, Drycha, Fay, Summon Servant) - the pack only translates"
+    {
+     "ref": "The original Lin mods (Corrupted Ascension, Drycha, Fay, Summon Servant) - the pack only translates",
+     "condition": "It translates whichever of Lin's mods are loaded; at least one of them is needed."
+    }
    ],
    "recommends": [],
    "incompatible": [],
@@ -1032,8 +1035,14 @@
     "Lazy's Miao progression (Steam 3471237645)",
     "Corrupted Compendium (latest, at least May 2025 file)",
     "Corrupted Landmarks (with WoC landmarks)",
-    "Corrupted Valkia (latest, for endgame crisis)",
-    "SEU's Miao mod",
+    {
+     "ref": "Corrupted Valkia (latest, for endgame crisis)",
+     "condition": "For the endgame crisis: Readman's late-game lists add it, his early-game lists run without it."
+    },
+    {
+     "ref": "SEU's Miao mod",
+     "condition": "For Miao Ying campaigns: Readman's lists for Alarielle, Morathi, Sigvald, the daemons and Warriors of Chaos run without it."
+    },
     "Kerberos Mod Assets pack",
     "Compendium_Play_as_Azazel_Overwrite.pack when playing anyone but Miao"
    ],
