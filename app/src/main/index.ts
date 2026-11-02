@@ -105,6 +105,7 @@ ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapsh
 })
 ipcMain.handle('game:lastLaunch', () => readJson<LaunchSnapshot | null>('last-launch.json', null))
 ipcMain.handle('app:version', () => app.getVersion())
+ipcMain.handle('app:build', () => __BUILD_INFO__)
 ipcMain.handle('app:home', () => homedir())
 ipcMain.handle('app:update', async () => checkAppUpdate((await getSettings()).contribRepo || DEFAULTS.contribRepo))
 

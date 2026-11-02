@@ -24,6 +24,7 @@ const api: Api = {
     return () => ipcRenderer.removeListener('game:exited', listener)
   },
   appVersion: () => ipcRenderer.invoke('app:version'),
+  appBuild: () => ipcRenderer.invoke('app:build'),
   saveTextFile: (name, text) => ipcRenderer.invoke('dialog:saveText', name, text),
   homeDir: () => ipcRenderer.invoke('app:home'),
   sendReport: (r) => ipcRenderer.invoke('relay:report', r),

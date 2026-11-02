@@ -155,6 +155,8 @@ export interface Api {
   /** Called when a game the app started has closed; returns a function that stops listening. */
   onGameExited(cb: (e: { startedAt: number; ranMs: number }) => void): () => void
   appVersion(): Promise<string>
+  /** When this build was made (local time) and from which commit; set by electron.vite.config.ts. */
+  appBuild(): Promise<{ date: string; commit: string }>
   /** Save dialog for a text file; returns the chosen path or null. */
   saveTextFile(defaultName: string, text: string): Promise<string | null>
   /** The player's home folder (to keep it out of reports). */
