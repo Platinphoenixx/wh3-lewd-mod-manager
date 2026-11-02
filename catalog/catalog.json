@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T20:23:27+00:00",
+  "generatedAt": "2026-11-02T21:44:07+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -4367,6 +4367,7 @@
         ]
       },
       "knownIssues": [
+        "The wood elf add-on (tdw_corrupted_buildings_add_wef.pack, LoversLab 2025-12-06) stops the game at launch since patch 9.0: database error in land_units_to_unit_abilites_junctions_tables (record tdw_wh2_dlc16_wef_inf_bladesingers_0wh2_dlc16_unit_abilities_whirling_death); launch test 2026-11-02, game 9.0.4.",
         "The main pack needs @Soil_Miaoying_Corrupted_Units.pack; Soil's Azazel pack does not satisfy it and gives a crash at boot. The _alt pack uses vanilla units only and needs neither Soil's Miao units nor the Soil assets; the unit add-on packs work with either.",
         "Since patch 9.0 the Fem Berserker add-on (its base mod was last updated in 2024 and crashes at startup) and the Slaangor add-on do not work; there is no 9.0 update for the Slaangor pack because its base mod has errors.",
         "MrDustV advised on 2026-10-02 against the original tdw packs because they heavily conflict with Corrupted Landmarks, and Kerberos removed them from his recommended lists (players kept installing them without their extra requirements). See the merged TDW pack.",
@@ -20027,6 +20028,9 @@
           "Campaigns (IE/IEE/RoC) not stated."
         ]
       },
+      "knownIssues": [
+        "Stops the game at launch since patch 9.0: the game reports a database error in land_units_to_unit_abilites_junctions_tables (record ec_princess_Triss_3wh2_main_character_passive_loose) in Eltharion_corruption.pack (launch test 2026-11-02, game 9.0.4, the mod alone)."
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -28410,6 +28414,12 @@
           "file": "li_miaoying_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237645"
+        },
+        {
+          "file": "!!li_progression_framework_workshop.pack",
+          "from": "steam",
+          "steamId": "3464018577",
+          "note": "Lazy's Corruption Framework: its own Workshop item, which every Lazy progression needs (the Workshop folder holds this pack)"
         }
       ],
       "relations": [
@@ -28484,7 +28494,7 @@
         "note": "The progression framework must be above the stage/reskin mods in the mod list, otherwise a crash at startup. Which campaign image appears depends on which reskin is higher. The included 'Corruption Adaptation' has no load order requirement, but should sit below the progression framework.; Discord: No requirement, but below the progression framework"
       },
       "tier": "framework",
-      "status": "superseded",
+      "status": "stable",
       "knownIssues": [
         "After Miao is confederated, her name disappears from the next turn on (names only apply within the culture group); no fix planned",
         "Diplomacy mechanic (defeats against N'Kari) only works with manually fought battles; autoresolve does not trigger the events"
@@ -33852,6 +33862,7 @@
         "Placeholder portraits for some lords in the flesh lab.",
         "Pleasure Host High Command Facility still in development.",
         "Replaces Eltharion's prison mechanic and reskins Grom's cauldron UI when playing Cathay.",
+        "Launch test 2026-11-02 (game 9.0.4): the Workshop versions of miao.pack and miao-assets.pack, with Lazy's framework and Miao progression, the merged Soil pack, Corrupted Landmarks and ATB's assets, crash the game about 20 seconds after start, before the main menu.",
         "The author has not updated the mod since 2026-08-02. Since patch 9.0 it crashes without community fixes (battle asset replacement, a fix kit, and fixed copies of both Workshop mods posted on Discord 2026-10-05 to 2026-10-16); these need Soil's updated Discord packs and Corrupted Landmarks, and are overwritten when Steam verifies the files.",
         "After patch 9.0 the Blessed units (recruitment tab, unit list and costs) were missing even with the first community fix; miao_blessed_fix.pack (2026-10-16) restored them. The Soil Discord versions are needed instead of the outdated LoversLab ones.",
         "After completing Cathay's Grand Scheme the Great Bastion panel disappears from the UI (the threat is forced to 0%).",
@@ -49840,6 +49851,7 @@
       "status": "stable",
       "knownIssues": [
         "Incompatible with all mods that change the warband upgrades of the faction being played (per the author mostly only visual/minor).",
+        "Launch test 2026-11-02 (game 9.0.4): the LoversLab @Soil_Miaoying_Corrupted_Units.pack stops the game with a database error (land_units_to_unit_abilites_junctions_tables, record soil_cth_corrupted_fiends_of_slaanesh_0wh3_main_unit_passive_daemonic_instability_slaanesh); the version pinned in #soiled-projects on 2026-10-01 and the merged Soil pack reach the main menu.",
         "Since patch 9.0 (2026-09-24) the LoversLab Azazel and Miao packs (last updated 2026-08-04) crash the game at launch, and the author is inactive. Working 9.0 versions are pinned in #soiled-projects on Discord (Azazel 2026-09-27 with CA's new Archaon key, Miao 2026-09-30 with the tech tree at the far right of the Provinces tab) or use the merged pack; older pinned versions from before 9.0 also crash.",
         "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack."
       ],
@@ -61502,13 +61514,6 @@
           }
         },
         {
-          "pack": "tdw_corrupted_buildings_add_wef.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-36002"
-          }
-        },
-        {
           "pack": "tdw_cth_seduce.pack",
           "from": "download",
           "target": {
@@ -61562,6 +61567,11 @@
           "from": "tdw_corrupted_buildings_add_endos_kislev.pack",
           "to": "tdw_corrupted_buildings_merged.pack",
           "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
+        },
+        {
+          "from": "tdw_corrupted_buildings_add_wef.pack",
+          "to": "removed",
+          "note": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, record tdw_wh2_dlc16_wef_inf_bladesingers_0wh2_dlc16_unit_abilities_whirling_death); not part of MrDustV's merged TDW pack."
         }
       ],
       "description": "A **Miao Ying corruption campaign** built on Lazy's original progression series: Miao's stages, reskins and events, extended by PassingByPosts' **Corrupted Compendium** (emissary, extra events and the Ensign Loi storyline), SEU's Miao Ying expansion, Soil's corrupted Cathay units and Habu's corrupted buildings and seduction mechanics.\n\nIt also loads ATB and Azazel's Realm, so Kerberos' crossover content between Miao, Azazel and Alarielle is available, and *Slaanesh assaults the great bastion* for early Slaanesh pressure.\n\n**How to play:** start a new Immortal Empires campaign as Miao Ying with this list. From corruption stage 4, switch to *Miao Ying – late game*.",
@@ -61971,13 +61981,6 @@
           }
         },
         {
-          "pack": "tdw_corrupted_buildings_add_wef.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-36002"
-          }
-        },
-        {
           "pack": "tdw_cth_seduce.pack",
           "from": "download",
           "target": {
@@ -62041,6 +62044,11 @@
           "from": "tdw_corrupted_buildings_add_endos_kislev.pack",
           "to": "tdw_corrupted_buildings_merged.pack",
           "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
+        },
+        {
+          "from": "tdw_corrupted_buildings_add_wef.pack",
+          "to": "removed",
+          "note": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, record tdw_wh2_dlc16_wef_inf_bladesingers_0wh2_dlc16_unit_abilities_whirling_death); not part of MrDustV's merged TDW pack."
         }
       ],
       "description": "The **late-game list for Miao Ying**, for saves where Miao has reached corruption stage 4. It adds the Slaanesh-corrupted Cathay roster, the Miao Slaanesh UI, lewd flags and loading screens, Readman's Miao pack (MYM) and **Corrupted Valkia** for the Azazel's Realm end-game crisis.\n\nDo not start a campaign with it; switch from the early-game list once stage 4 is reached.",
@@ -63919,9 +63927,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64044,6 +64052,14 @@
           }
         },
         {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645",
+          "target": {
+            "mod": "ll-23878"
+          }
+        },
+        {
           "pack": "Lin_Corrupted_Drycha.pack",
           "from": "steam",
           "steamId": "3376933629",
@@ -64063,6 +64079,14 @@
           "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
           "from": "steam",
           "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
+          "pack": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
           "target": {
             "mod": "ll-42028"
           }
@@ -64126,9 +64150,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64158,10 +64182,10 @@
           }
         },
         {
-          "pack": "Soil's Corrupted Units",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -64188,9 +64212,9 @@
           }
         },
         {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "pack": "kerberos_mod_assets.pack",
           "from": "steam",
-          "steamId": "3644437727",
+          "steamId": "3566908399",
           "target": {
             "mod": "ll-42028"
           }
@@ -64201,6 +64225,14 @@
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
+          }
+        },
+        {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645",
+          "target": {
+            "mod": "ll-23878"
           }
         },
         {
@@ -64227,17 +64259,24 @@
           }
         },
         {
-          "pack": "Corrupted Chars can Seduce",
+          "pack": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-48415"
+          }
+        },
+        {
+          "pack": "tdw_cth_seduce.pack",
           "from": "download",
           "target": {
             "mod": "ll-33808"
           }
         },
         {
-          "pack": "Additional corrupted Buildings + Units",
+          "pack": "tdw_corrupted_buildings_merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-36002"
+            "mod": "dc-tdw-corrupted-buildings-merged"
           }
         },
         {
@@ -64255,6 +64294,23 @@
           "target": {
             "mod": "steam-3471883632"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "@Soil_Miaoying_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
+        },
+        {
+          "from": "Additional corrupted Buildings + Units",
+          "to": "tdw_corrupted_buildings_merged.pack",
+          "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
         }
       ]
     },
@@ -64288,9 +64344,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64344,6 +64400,14 @@
           }
         },
         {
+          "pack": "kerb_Azazel's_Realm_steam.pack",
+          "from": "steam",
+          "steamId": "3643871692",
+          "target": {
+            "mod": "ll-27930"
+          }
+        },
+        {
           "pack": "@beautiful_slaanesh.pack",
           "from": "steam",
           "steamId": "2790949528",
@@ -64366,18 +64430,10 @@
           }
         },
         {
-          "pack": "Soil's Corrupted Units",
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
           "from": "download",
           "target": {
-            "mod": "ll-32374"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
           }
         },
         {
@@ -64404,11 +64460,27 @@
           }
         },
         {
+          "pack": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
           "pack": "li_katarin_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
+          }
+        },
+        {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645",
+          "target": {
+            "mod": "ll-23878"
           }
         },
         {
@@ -64428,6 +64500,13 @@
           }
         },
         {
+          "pack": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-48415"
+          }
+        },
+        {
           "pack": "zli_katarin_reskins.pack",
           "from": "steam",
           "steamId": "3471883808",
@@ -64442,6 +64521,18 @@
           "target": {
             "mod": "steam-3471883632"
           }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "@Soil_Azazel_Corrupted_Units.pack",
+          "to": "@Soil_Corrupted_Units_Merged.pack",
+          "note": "MrDustV merged the Azazel, Miao Ying and Elf corrupted unit packs into one pack pinned in #soiled-projects (2026-10-26, 'partially tested'; fixed for patch 9.0). Needs Corrupted Landmarks and the Soil assets from LL 48415; delete the old individual packs from data."
+        },
+        {
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ]
     },
@@ -64470,9 +64561,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64595,6 +64686,14 @@
           }
         },
         {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645",
+          "target": {
+            "mod": "ll-23878"
+          }
+        },
+        {
           "pack": "li_morathi_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237702",
@@ -64622,6 +64721,14 @@
           "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
           "from": "steam",
           "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
+          "pack": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
           "target": {
             "mod": "ll-42028"
           }
@@ -64695,9 +64802,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64804,6 +64911,14 @@
           }
         },
         {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237645",
+          "target": {
+            "mod": "ll-23878"
+          }
+        },
+        {
           "pack": "Lin_Corrupted_Drycha.pack",
           "from": "steam",
           "steamId": "3376933629",
@@ -64823,6 +64938,14 @@
           "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
           "from": "steam",
           "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
+          "pack": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3566908399",
           "target": {
             "mod": "ll-42028"
           }
@@ -64894,9 +65017,9 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
+          "pack": "!!li_progression_framework_workshop.pack",
           "from": "steam",
-          "steamId": "3471237645",
+          "steamId": "3464018577",
           "target": {
             "mod": "ll-23878"
           }
@@ -64918,7 +65041,7 @@
           }
         },
         {
-          "pack": "Soil's Corrupted Units",
+          "pack": "@Soil_Kislev_Corrupted_Units.pack",
           "from": "download",
           "target": {
             "mod": "ll-32374"
@@ -64948,10 +65071,17 @@
           }
         },
         {
-          "pack": "Corrupted Chars can Seduce",
+          "pack": "tdw_kat_seduce.pack",
           "from": "download",
           "target": {
             "mod": "ll-33808"
+          }
+        },
+        {
+          "pack": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-48415"
           }
         },
         {
@@ -64962,32 +65092,12 @@
             "mod": "steam-3471883808"
           }
         }
-      ]
-    },
-    {
-      "id": "derived-ll-28110",
-      "name": "Eltharion corruption",
-      "origin": "derived",
-      "playAs": [
-        "Eltharion"
       ],
-      "phase": "any",
-      "phaseNote": "Built from the mod's own page: the mod and everything it requires, ordered by type. Not a tested list; check the mod page for extra steps.",
-      "source": {
-        "type": "derived",
-        "url": "https://www.loverslab.com/files/file/28110-eltharion-corruption/"
-      },
-      "description": "Ongoing (WIP) corruption story about Eltharion of Yvresse; so far only stage 0 (mission 'Conquer Gronti Mingol', quest battle at the Dragon Horn Mine) is finished. Later: prisoners for Slaanesh, interactions with further Legendary Lords.",
-      "coverMods": [
-        "ll-28110"
-      ],
-      "entries": [
+      "modernized": [
         {
-          "pack": "Eltharion_corruption.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-28110"
-          }
+          "from": "soil_corrupted_units_asset.pack",
+          "to": "soil_corrupted_units_asset.pack",
+          "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ]
     },
@@ -65018,151 +65128,6 @@
           "from": "download",
           "target": {
             "mod": "ll-52142"
-          }
-        }
-      ]
-    },
-    {
-      "id": "derived-ll-40114",
-      "name": "Miao Ying's Corrupting Alchemy",
-      "origin": "derived",
-      "playAs": [
-        "Miao Ying"
-      ],
-      "phase": "any",
-      "phaseNote": "Built from the mod's own page: the mod and everything it requires, ordered by type. Not a tested list; check the mod page for extra steps.",
-      "source": {
-        "type": "derived",
-        "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
-      },
-      "description": "Ports Grom's cauldron, Eltharion's prison and Throt's flesh lab to Miao Ying's Cathay campaign as alchemy, Jade Dungeon and Chamber of Excess mechanics; adds lord ascension, Blessed Units recruitment, underground cults and two landmark story arcs. Tied to Lazy's Miao Ying corruption stages.",
-      "coverMods": [
-        "ll-40114"
-      ],
-      "entries": [
-        {
-          "pack": "Valkia_Workshop.pack",
-          "from": "steam",
-          "steamId": "3813939023",
-          "target": {
-            "mod": "ll-24004"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
-          "pack": "li_katarin_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237570",
-          "target": {
-            "mod": "steam-3471237570"
-          }
-        },
-        {
-          "pack": "corrupted_landmarks.pack",
-          "from": "steam",
-          "target": {
-            "mod": "ll-30462"
-          }
-        },
-        {
-          "pack": "Lazy's Corruption Framework + Progression (Steam collection)",
-          "from": "steam",
-          "steamId": "3472332568",
-          "target": {
-            "mod": "dc-lazy-s-corruption-framework-progression-steam-collection"
-          }
-        },
-        {
-          "pack": "Seu_Reborn_workshop.pack",
-          "from": "steam",
-          "steamId": "3760606729",
-          "target": {
-            "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
-          }
-        },
-        {
-          "pack": "Soil's Corrupted Units",
-          "from": "download",
-          "target": {
-            "mod": "ll-32374"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
-          "pack": "zli_katarin_reskins.pack",
-          "from": "steam",
-          "steamId": "3471883808",
-          "target": {
-            "mod": "steam-3471883808"
-          }
-        },
-        {
-          "pack": "zli_miaoying_reskins.pack",
-          "from": "steam",
-          "steamId": "3471883632",
-          "target": {
-            "mod": "steam-3471883632"
-          }
-        },
-        {
-          "pack": "groovy_mct.pack",
-          "from": "steam",
-          "steamId": "2927955021",
-          "target": {
-            "external": "ext-mct"
-          }
-        },
-        {
-          "pack": "miao-assets.pack",
-          "from": "steam",
-          "steamId": "3754311622",
-          "target": {
-            "mod": "ll-40114"
-          }
-        },
-        {
-          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
-          "from": "steam",
-          "steamId": "3705392682",
-          "target": {
-            "mod": "ll-23876"
-          }
-        },
-        {
-          "pack": "soil_corrupted_units_asset.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-48415"
-          }
-        },
-        {
-          "pack": "!b_mixer.pack",
-          "from": "steam",
-          "steamId": "2859968660",
-          "target": {
-            "external": "ext-mixu-unlocker"
-          }
-        },
-        {
-          "pack": "pj_console.pack",
-          "from": "steam",
-          "steamId": "2791241084",
-          "target": {
-            "external": "ext-pj-console"
           }
         }
       ]
@@ -65369,49 +65334,56 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Readman BBB",
           "optional": false,
           "target": {
             "mod": "steam-3497485732"
-          }
+          },
+          "pack": "!readman_ , BBB"
         },
         {
           "name": "Readman CCC",
           "optional": false,
           "target": {
             "mod": "steam-3501984780"
-          }
+          },
+          "pack": "!readman_ , CCC"
         },
         {
           "name": "Readman TTT",
           "optional": false,
           "target": {
             "mod": "steam-3508604193"
-          }
+          },
+          "pack": "!readman_ , TTT"
         },
         {
           "name": "Readman UUU",
           "optional": false,
           "target": {
             "mod": "steam-3534460647"
-          }
+          },
+          "pack": "!readman_ , UUU"
         },
         {
           "name": "Readman MMM",
@@ -65419,6 +65391,7 @@
           "target": {
             "mod": "steam-3621087383"
           },
+          "pack": "!readman_ , MMM",
           "note": "Place under UUU"
         },
         {
@@ -65426,14 +65399,16 @@
           "optional": false,
           "target": {
             "external": "ext-variant-selector"
-          }
+          },
+          "pack": "marthvariantselector"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "Compedium_Play_as_Azazel"
         },
         {
           "name": "Slanesh Expanded Non Slaanesh",
@@ -65441,6 +65416,7 @@
           "target": {
             "mod": "ll-34542"
           },
+          "pack": "Non slaanesh",
           "note": "Pack name according to the doc: 'Non slaanesh'; the link points to LL 'Slaanesh Expanded - Vassal Dilemmas' (@n_SlaaneshVassals in the other docs). Discord: 'no but can probably ask'"
         },
         {
@@ -65449,6 +65425,7 @@
           "target": {
             "mod": "ll-36630"
           },
+          "pack": "@n_SlaaneshVictories",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -65456,42 +65433,48 @@
           "optional": false,
           "target": {
             "external": "ext-lhec"
-          }
+          },
+          "pack": "red_hef_lords"
         },
         {
           "name": "Corrupted Landmarks",
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Mod Configuration tool",
           "optional": false,
           "target": {
             "external": "ext-mct"
-          }
+          },
+          "pack": "Groovy_mct"
         },
         {
           "name": "Corrupted Wood Elf units",
           "optional": false,
           "target": {
             "mod": "steam-3566849815"
-          }
+          },
+          "pack": "kerb-Alarielle_corrupted"
         },
         {
           "name": "Alarielle Temptation",
           "optional": false,
           "target": {
             "mod": "ll-42028"
-          }
+          },
+          "pack": "kerb_alarielle"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "kerb_Azazel’s Realm"
         },
         {
           "name": "Kerberos Mod Assets",
@@ -65499,6 +65482,7 @@
           "target": {
             "mod": "ll-42028"
           },
+          "pack": "kerberos_mod_assets",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65506,7 +65490,8 @@
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Lazy’s Corruption Progression Miao",
@@ -65514,11 +65499,13 @@
           "target": {
             "mod": "ll-23878"
           },
+          "pack": "li_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
           "name": "Lin_allinone_en",
           "optional": false,
+          "pack": ".",
           "url": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -65527,35 +65514,40 @@
           "optional": false,
           "target": {
             "mod": "ll-27663"
-          }
+          },
+          "pack": "Lin_corrupted Drycha"
         },
         {
           "name": "Generic framework",
           "optional": false,
           "target": {
             "mod": "steam-3376886102"
-          }
+          },
+          "pack": "Lin_generic_Framework"
         },
         {
           "name": "Corrupted Compedium",
           "optional": false,
           "target": {
             "mod": "ll-23876"
-          }
+          },
+          "pack": "MiaoYingCorrupted_Compedium"
         },
         {
           "name": "OvN Lost World",
           "optional": false,
           "target": {
             "external": "ext-ovn-lost-world"
-          }
+          },
+          "pack": "ovn_lost_world"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471883808"
-          }
+          },
+          "pack": "zli_katarin"
         },
         {
           "name": "Lazy’s Corrupted Resinks Miao Ying",
@@ -65563,6 +65555,7 @@
           "target": {
             "mod": "steam-3471883632"
           },
+          "pack": "zli_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         }
       ],
@@ -65598,28 +65591,32 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Variant Selector",
           "optional": false,
           "target": {
             "external": "ext-variant-selector"
-          }
+          },
+          "pack": "marthvariantselector"
         },
         {
           "name": "Esign Loi",
@@ -65627,6 +65624,7 @@
           "target": {
             "mod": "ll-27230"
           },
+          "pack": "@@all_loi",
           "note": "Steam item contains @@All_Loi_Variant_selector_steam.pack; in the Azazel doc listed as 'Ensign Loi Variant (@@all_loi_V)' with Discord channel 969500846360502302"
         },
         {
@@ -65634,21 +65632,24 @@
           "optional": false,
           "target": {
             "mod": "ll-32374"
-          }
+          },
+          "pack": "Soil_Miaoying"
         },
         {
           "name": "Corrupted Landmarks",
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Mod Configuration tool",
           "optional": false,
           "target": {
             "external": "ext-mct"
-          }
+          },
+          "pack": "Groovy_mct"
         },
         {
           "name": "Azazel's Realm",
@@ -65656,6 +65657,7 @@
           "target": {
             "mod": "ll-27930"
           },
+          "pack": "Compedium_Play_as_Azazel",
           "note": "Steam link here (ID 3643871692 = pack kerb_Azazel's_Realm_steam); the other docs list Compedium_Play_as_Azazel with LL 27930"
         },
         {
@@ -65663,14 +65665,16 @@
           "optional": false,
           "target": {
             "mod": "ll-42028"
-          }
+          },
+          "pack": "kerberos_mod_assets"
         },
         {
           "name": "Lazy’s Corruption Progression Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Lazy’s Corruption Progression Miao",
@@ -65678,6 +65682,7 @@
           "target": {
             "mod": "ll-23878"
           },
+          "pack": "li_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65685,7 +65690,8 @@
           "optional": false,
           "target": {
             "mod": "ll-23876"
-          }
+          },
+          "pack": "MiaoYingCorrupted_Compedium"
         },
         {
           "name": "Seu_Miaoying",
@@ -65693,6 +65699,7 @@
           "target": {
             "mod": "ll-24258"
           },
+          "pack": "Seu_Miaoying",
           "url": "https://discord.com/channels/965342581745668136/967468098464649327/1375961337120690277",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -65701,28 +65708,32 @@
           "optional": false,
           "target": {
             "mod": "steam-2851864965"
-          }
+          },
+          "pack": "Slaanesh_Assults"
         },
         {
           "name": "Soil_Corrupted units asset",
           "optional": false,
           "target": {
             "mod": "ll-32374"
-          }
+          },
+          "pack": "Soil_Corrupted units asset"
         },
         {
           "name": "Corrupted chars can seduce",
           "optional": false,
           "target": {
             "mod": "ll-33808"
-          }
+          },
+          "pack": "tdw_cth_seduce"
         },
         {
           "name": "tdw corrupted buildings",
           "optional": false,
           "target": {
             "mod": "ll-36002"
-          }
+          },
+          "pack": "tdw_corrupted_buildings"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
@@ -65730,6 +65741,7 @@
           "target": {
             "mod": "steam-3471883808"
           },
+          "pack": "zli_katarin",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65738,6 +65750,7 @@
           "target": {
             "mod": "steam-3471883632"
           },
+          "pack": "zli_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65795,70 +65808,80 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Variant Selector",
           "optional": false,
           "target": {
             "external": "ext-variant-selector"
-          }
+          },
+          "pack": "marthvariantselector"
         },
         {
           "name": "Readman BBB",
           "optional": false,
           "target": {
             "mod": "steam-3497485732"
-          }
+          },
+          "pack": "!readman_ , BBB"
         },
         {
           "name": "Readman CCC",
           "optional": false,
           "target": {
             "mod": "steam-3501984780"
-          }
+          },
+          "pack": "!readman_ , CCC"
         },
         {
           "name": "Readman UUU WoC",
           "optional": false,
           "target": {
             "mod": "steam-3559919182"
-          }
+          },
+          "pack": "!readman_ , UUU , WoC"
         },
         {
           "name": "Ensign Loi Variant",
           "optional": false,
           "target": {
             "mod": "ll-27230"
-          }
+          },
+          "pack": "@@all_loi_V"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "Compedium_Play_as_Azazel"
         },
         {
           "name": "Female Daemonettes",
           "optional": false,
           "target": {
             "mod": "steam-2790949528"
-          }
+          },
+          "pack": "@beautiful_slaanesh"
         },
         {
           "name": "Slanesh Expanded",
@@ -65866,6 +65889,7 @@
           "target": {
             "mod": "ll-34542"
           },
+          "pack": "@n_SlaaneshVassals",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -65874,6 +65898,7 @@
           "target": {
             "mod": "ll-36630"
           },
+          "pack": "@n_SlaaneshVictories",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -65881,35 +65906,40 @@
           "optional": false,
           "target": {
             "mod": "ll-32374"
-          }
+          },
+          "pack": "@Soil_Azazel_Corrupted"
         },
         {
           "name": "Corrupted Landmarks",
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Mod Configuration tool",
           "optional": false,
           "target": {
             "external": "ext-mct"
-          }
+          },
+          "pack": "Groovy_mct"
         },
         {
           "name": "Alarielle Temptation",
           "optional": false,
           "target": {
             "mod": "ll-42028"
-          }
+          },
+          "pack": "kerb_alarielle"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "kerb_Azazel’s Realm"
         },
         {
           "name": "Kerberos Mod Assets",
@@ -65917,6 +65947,7 @@
           "target": {
             "mod": "ll-42028"
           },
+          "pack": "kerberos_mod_assets",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65924,7 +65955,8 @@
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Lazy’s Corruption Progression Miao",
@@ -65932,6 +65964,7 @@
           "target": {
             "mod": "ll-23878"
           },
+          "pack": "li_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -65939,28 +65972,32 @@
           "optional": false,
           "target": {
             "mod": "ll-23876"
-          }
+          },
+          "pack": "MiaoYingCorrupted_Compedium"
         },
         {
           "name": "OvN Lost World",
           "optional": false,
           "target": {
             "external": "ext-ovn-lost-world"
-          }
+          },
+          "pack": "ovn_lost_world"
         },
         {
           "name": "Soil's Corrupted Units",
           "optional": false,
           "target": {
             "mod": "ll-32374"
-          }
+          },
+          "pack": "Soil_corrupted_units_asset"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471883808"
-          }
+          },
+          "pack": "zli_katarin"
         },
         {
           "name": "Lazy’s Corrupted Resinks Miao Ying",
@@ -65968,6 +66005,7 @@
           "target": {
             "mod": "steam-3471883632"
           },
+          "pack": "zli_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         }
       ],
@@ -66017,56 +66055,64 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Variant Selector",
           "optional": false,
           "target": {
             "external": "ext-variant-selector"
-          }
+          },
+          "pack": "marthvariantselector"
         },
         {
           "name": "Cult of pleasure mechanics for morathi",
           "optional": false,
           "target": {
             "mod": "dc-cult-of-pleasure-mechanics-morathi-9-0-patch"
-          }
+          },
+          "pack": "!patched_ulrikHD_"
         },
         {
           "name": "Readman BBB",
           "optional": false,
           "target": {
             "mod": "steam-3497485732"
-          }
+          },
+          "pack": "!readman_ , BBB"
         },
         {
           "name": "Readman CCC",
           "optional": false,
           "target": {
             "mod": "steam-3501984780"
-          }
+          },
+          "pack": "!readman_ , CCC"
         },
         {
           "name": "Readman UUU Morathi version",
           "optional": false,
           "target": {
             "mod": "steam-3557775008"
-          }
+          },
+          "pack": "!readman_ , UUU , Morathi version"
         },
         {
           "name": "Azazel's Realm",
@@ -66074,6 +66120,7 @@
           "target": {
             "mod": "ll-27930"
           },
+          "pack": "Compedium_Play_as_Azazel",
           "note": "Steam link here (ID 3643871692 = pack kerb_Azazel's_Realm_steam); the docs for Alarielle/Azazel/N'kari list Compedium_Play_as_Azazel with LL 27930"
         },
         {
@@ -66082,6 +66129,7 @@
           "target": {
             "mod": "ll-34542"
           },
+          "pack": "Non slaanesh",
           "note": "Pack name according to the doc: 'Non slaanesh'; the link points to LL 'Slaanesh Expanded - Vassal Dilemmas'. Discord: 'no but can probably ask'"
         },
         {
@@ -66090,6 +66138,7 @@
           "target": {
             "mod": "ll-36630"
           },
+          "pack": "@n_SlaaneshVictories",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -66097,42 +66146,48 @@
           "optional": false,
           "target": {
             "external": "ext-lhec"
-          }
+          },
+          "pack": "red_hef_lords"
         },
         {
           "name": "Corrupted Landmarks",
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Cult of Slaanesh",
           "optional": false,
           "target": {
             "mod": "steam-3027059730"
-          }
+          },
+          "pack": "Cult_of_slaanesh"
         },
         {
           "name": "Mod Configuration tool",
           "optional": false,
           "target": {
             "external": "ext-mct"
-          }
+          },
+          "pack": "Groovy_mct"
         },
         {
           "name": "Corrupted Wood Elf units",
           "optional": false,
           "target": {
             "mod": "steam-3566849815"
-          }
+          },
+          "pack": "kerb-Alarielle_corrupted"
         },
         {
           "name": "Alarielle Temptation",
           "optional": false,
           "target": {
             "mod": "ll-42028"
-          }
+          },
+          "pack": "kerb_alarielle"
         },
         {
           "name": "Azazel's Realm",
@@ -66140,6 +66195,7 @@
           "target": {
             "mod": "ll-27930"
           },
+          "pack": "kerb_Azazel’s Realm",
           "note": "LoversLab link here (LL 27930); in the Miao doc, Compedium_Play_as_Azazel has the Steam link (3643871692)"
         },
         {
@@ -66148,6 +66204,7 @@
           "target": {
             "mod": "ll-42028"
           },
+          "pack": "kerberos_mod_assets",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -66155,7 +66212,8 @@
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Lazy’s Corruption Progression Miao",
@@ -66163,6 +66221,7 @@
           "target": {
             "mod": "ll-23878"
           },
+          "pack": "li_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -66170,11 +66229,13 @@
           "optional": false,
           "target": {
             "mod": "ll-23925"
-          }
+          },
+          "pack": "li_morathi"
         },
         {
           "name": "Lin_allinone_en",
           "optional": false,
+          "pack": ".",
           "url": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -66183,35 +66244,40 @@
           "optional": false,
           "target": {
             "mod": "ll-27663"
-          }
+          },
+          "pack": "Lin_corrupted Drycha"
         },
         {
           "name": "Generic framework",
           "optional": false,
           "target": {
             "mod": "steam-3376886102"
-          }
+          },
+          "pack": "Lin_generic_Framework"
         },
         {
           "name": "Corrupted Compedium",
           "optional": false,
           "target": {
             "mod": "ll-23876"
-          }
+          },
+          "pack": "MiaoYingCorrupted_Compedium"
         },
         {
           "name": "OvN Lost World",
           "optional": false,
           "target": {
             "external": "ext-ovn-lost-world"
-          }
+          },
+          "pack": "ovn_lost_world"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471883808"
-          }
+          },
+          "pack": "zli_katarin"
         },
         {
           "name": "Lazy’s Corrupted Resinks Miao Ying",
@@ -66219,6 +66285,7 @@
           "target": {
             "mod": "steam-3471883632"
           },
+          "pack": "zli_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -66226,7 +66293,8 @@
           "optional": false,
           "target": {
             "mod": "steam-3471884231"
-          }
+          },
+          "pack": "zli_moratahi"
         }
       ],
       "source": {
@@ -66275,56 +66343,64 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Variant Selector",
           "optional": false,
           "target": {
             "external": "ext-variant-selector"
-          }
+          },
+          "pack": "marthvariantselector"
         },
         {
           "name": "Readman BBB",
           "optional": false,
           "target": {
             "mod": "steam-3497485732"
-          }
+          },
+          "pack": "!readman_ , BBB"
         },
         {
           "name": "Readman CCC",
           "optional": false,
           "target": {
             "mod": "steam-3501984780"
-          }
+          },
+          "pack": "!readman_ , CCC"
         },
         {
           "name": "Readman UUU Nkari",
           "optional": false,
           "target": {
             "mod": "steam-3558872079"
-          }
+          },
+          "pack": "!readman_ , UUU , Nkari"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "Compedium_Play_as_Azazel"
         },
         {
           "name": "Slanesh Expanded",
@@ -66332,6 +66408,7 @@
           "target": {
             "mod": "ll-34542"
           },
+          "pack": "@n_SlaaneshVassals",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -66340,6 +66417,7 @@
           "target": {
             "mod": "ll-36630"
           },
+          "pack": "@n_SlaaneshVictories",
           "note": "Discord: 'no but can probably ask'"
         },
         {
@@ -66347,42 +66425,48 @@
           "optional": false,
           "target": {
             "external": "ext-lhec"
-          }
+          },
+          "pack": "red_hef_lords"
         },
         {
           "name": "Corrupted Landmarks",
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Mod Configuration tool",
           "optional": false,
           "target": {
             "external": "ext-mct"
-          }
+          },
+          "pack": "Groovy_mct"
         },
         {
           "name": "Corrupted Wood Elf units",
           "optional": false,
           "target": {
             "mod": "steam-3566849815"
-          }
+          },
+          "pack": "kerb-Alarielle_corrupted"
         },
         {
           "name": "Alarielle Temptation",
           "optional": false,
           "target": {
             "mod": "ll-42028"
-          }
+          },
+          "pack": "kerb_alarielle"
         },
         {
           "name": "Azazel's Realm",
           "optional": false,
           "target": {
             "mod": "ll-27930"
-          }
+          },
+          "pack": "kerb_Azazel’s Realm"
         },
         {
           "name": "Kerberos Mod Assets",
@@ -66390,6 +66474,7 @@
           "target": {
             "mod": "ll-42028"
           },
+          "pack": "kerberos_mod_assets",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
@@ -66397,7 +66482,8 @@
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Lazy’s Corruption Progression Miao",
@@ -66405,11 +66491,13 @@
           "target": {
             "mod": "ll-23878"
           },
+          "pack": "li_miaoying",
           "note": "Discord link not present in the dump (duplicate in the same paragraph); channel inferred from neighboring entries"
         },
         {
           "name": "Lin_allinone_en",
           "optional": false,
+          "pack": ".",
           "url": "https://discord.com/channels/965342581745668136/1254908017288151040/1421904439387754558",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -66418,49 +66506,56 @@
           "optional": false,
           "target": {
             "mod": "ll-27663"
-          }
+          },
+          "pack": "Lin_corrupted Drycha"
         },
         {
           "name": "Generic framework",
           "optional": false,
           "target": {
             "mod": "steam-3376886102"
-          }
+          },
+          "pack": "Lin_generic_Framework"
         },
         {
           "name": "Corrupted Compedium",
           "optional": false,
           "target": {
             "mod": "ll-23876"
-          }
+          },
+          "pack": "MiaoYingCorrupted_Compedium"
         },
         {
           "name": "Slaanesh Vassal Cults",
           "optional": false,
           "target": {
             "mod": "steam-3465580284"
-          }
+          },
+          "pack": "td_slaanesh_vassal"
         },
         {
           "name": "OvN Lost World",
           "optional": false,
           "target": {
             "external": "ext-ovn-lost-world"
-          }
+          },
+          "pack": "ovn_lost_world"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471883808"
-          }
+          },
+          "pack": "zli_katarin"
         },
         {
           "name": "Lazy’s Corrupted Resinks Miao Ying",
           "optional": false,
           "target": {
             "mod": "steam-3471883632"
-          }
+          },
+          "pack": "zli_miaoying"
         },
         {
           "name": "Play as Dechala",
@@ -66468,6 +66563,7 @@
           "target": {
             "mod": "ll-42028"
           },
+          "pack": "Kerb_alar_play_Dechala_patch",
           "note": "LL link points to 'Alarielle, Temptation's Bloom' (patch included/linked there according to the doc)"
         }
       ],
@@ -66497,28 +66593,32 @@
           "optional": false,
           "target": {
             "external": "ext-pj-console"
-          }
+          },
+          "pack": "pj_console"
         },
         {
           "name": "Lazy Framework",
           "optional": false,
           "target": {
             "mod": "ll-23878"
-          }
+          },
+          "pack": "!!li_progression"
         },
         {
           "name": "MIXER",
           "optional": false,
           "target": {
             "external": "ext-mixu-unlocker"
-          }
+          },
+          "pack": "!b_mixer"
         },
         {
           "name": "Lazy’s Katarin the ice queen remove crown",
           "optional": false,
           "target": {
             "mod": "dc-katarin-optional-crown-removal"
-          }
+          },
+          "pack": "."
         },
         {
           "name": "Soil Kislev Corrupted Units",
@@ -66526,6 +66626,7 @@
           "target": {
             "mod": "ll-32374"
           },
+          "pack": "Soil_kislev",
           "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1437802218748379136",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -66534,14 +66635,16 @@
           "optional": false,
           "target": {
             "mod": "ll-30462"
-          }
+          },
+          "pack": "Corrupted_landmarks"
         },
         {
           "name": "Lazy’s Corruption Progression Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471237570"
-          }
+          },
+          "pack": "li_katarin"
         },
         {
           "name": "Seu Katarin generic",
@@ -66549,6 +66652,7 @@
           "target": {
             "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
           },
+          "pack": "Seu_Katarin_generic",
           "url": "https://discord.com/channels/965342581745668136/967468098464649327/1201893021973749780",
           "note": "Download only via Discord message (otherUrl)"
         },
@@ -66558,6 +66662,7 @@
           "target": {
             "mod": "ll-33808"
           },
+          "pack": "tdw_ kat _seduce",
           "note": "Pack name in the doc: 'tdw_ kat _seduce'; in the Miao doc: 'tdw_cth_seduce' (same LL download 33808)"
         },
         {
@@ -66565,14 +66670,16 @@
           "optional": false,
           "target": {
             "mod": "ll-32374"
-          }
+          },
+          "pack": "Soil_Corrupted_units_asset"
         },
         {
           "name": "Lazy’s Corrupted Resinks Katarin",
           "optional": false,
           "target": {
             "mod": "steam-3471883808"
-          }
+          },
+          "pack": "zli_katarin"
         }
       ],
       "source": {

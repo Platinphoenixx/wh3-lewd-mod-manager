@@ -280,7 +280,10 @@
           }
         ],
         "note": "Mod manager top -> bottom: 1) !!li_progression_framework_workshop (Steam 3464018577) 2) @Soil_Miaoying_Corrupted_Units (LL 32374) 3) groovy_mct (2927955021) 4) li_miaoying_progression_workshop (Steam 3471237645) 5) miao-assets.pack (REQUIRED) 6) miao.pack (this mod) 7) MiaoYingCorrupted_Compendium_workshop (OPTIONAL, Steam 3705392682) 8) soil_corrupted_units_asset (LL 32374; now the fixed pack of LL 48415)."
-      }
+      },
+      "knownIssues+": [
+        "Launch test 2026-11-02 (game 9.0.4): the Workshop versions of miao.pack and miao-assets.pack, with Lazy's framework and Miao progression, the merged Soil pack, Corrupted Landmarks and ATB's assets, crash the game about 20 seconds after start, before the main menu."
+      ]
     },
     {
       "id": "steam-3376886102",
@@ -292,6 +295,35 @@
         ],
         "note": "Above Alarielle, Temptation's Bloom: ATB ships an older copy of this framework's script/campaign/mod/generic_framework常用函数.lua without traverse_iterative (used by Integrated Strategies) and without the missing-faction check in get_subtype_in_faction; ATB only calls functions both copies have."
       }
+    },
+    {
+      "id": "ll-23878",
+      "packs+": [
+        {
+          "file": "!!li_progression_framework_workshop.pack",
+          "from": "steam",
+          "steamId": "3464018577",
+          "note": "Lazy's Corruption Framework: its own Workshop item, which every Lazy progression needs (the Workshop folder holds this pack)"
+        }
+      ]
+    },
+    {
+      "id": "ll-28110",
+      "knownIssues+": [
+        "Stops the game at launch since patch 9.0: the game reports a database error in land_units_to_unit_abilites_junctions_tables (record ec_princess_Triss_3wh2_main_character_passive_loose) in Eltharion_corruption.pack (launch test 2026-11-02, game 9.0.4, the mod alone)."
+      ]
+    },
+    {
+      "id": "ll-36002",
+      "knownIssues+": [
+        "The wood elf add-on (tdw_corrupted_buildings_add_wef.pack, LoversLab 2025-12-06) stops the game at launch since patch 9.0: database error in land_units_to_unit_abilites_junctions_tables (record tdw_wh2_dlc16_wef_inf_bladesingers_0wh2_dlc16_unit_abilities_whirling_death); launch test 2026-11-02, game 9.0.4."
+      ]
+    },
+    {
+      "id": "ll-32374",
+      "knownIssues+": [
+        "Launch test 2026-11-02 (game 9.0.4): the LoversLab @Soil_Miaoying_Corrupted_Units.pack stops the game with a database error (land_units_to_unit_abilites_junctions_tables, record soil_cth_corrupted_fiends_of_slaanesh_0wh3_main_unit_passive_daemonic_instability_slaanesh); the version pinned in #soiled-projects on 2026-10-01 and the merged Soil pack reach the main menu."
+      ]
     }
   ]
 }

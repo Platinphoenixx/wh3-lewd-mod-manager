@@ -345,7 +345,17 @@
       "from": "steam",
       "note": "Nymeria (Workshop 3404717872, January 2025) crashes the game at start since the 9.0 update. Mister HP's temporary update 'Nymeria (9.0.3)' replaces it; unsubscribe the old item.",
       "source": "https://discord.com/channels/965342581745668136/1040374541228191774/1553851316571476119"
+    },
+    "tdw_corrupted_buildings_add_wef.pack": {
+      "remove": true,
+      "note": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, record tdw_wh2_dlc16_wef_inf_bladesingers_0wh2_dlc16_unit_abilities_whirling_death); not part of MrDustV's merged TDW pack.",
+      "source": "Launch test of the templates on 2026-11-02 (game 9.0.4, without other mods of the list involved)"
     }
+  },
+  "noTemplate": {
+    "_comment": "Mods that get no derived template, with the reason.",
+    "ll-28110": "Stops the game at launch since patch 9.0 (database error, launch test 2026-11-02).",
+    "ll-40114": "The Workshop version stops the game at launch since patch 9.0 (launch test 2026-11-02); the community fixes in #miao-alchemy patch the packs with a script, which the app cannot do."
   },
   "mods": [
     {

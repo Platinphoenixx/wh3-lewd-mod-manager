@@ -98,17 +98,52 @@ def preset_entry(mods: dict, external: dict, steam: dict, target: dict) -> dict 
         sid = e.get("steamId")
         pack = (steam.get(sid, {}).get("packs") or [e.get("name", v)])[0] if sid else e.get("name", v)
         return {"pack": pack, "from": "steam" if sid else "download", **({"steamId": sid} if sid else {}), "target": target}
+    entries = preset_entries(mods, external, steam, target)
+    return entries[0] if entries else None
+
+
+def preset_entries(mods: dict, external: dict, steam: dict, target: dict) -> list:
+    """Preset entries for a catalog target: one per pack the mod needs (the app loads exactly the packs a template
+    names, so a mod with a main and an asset pack needs both). Of a pick-one group the first is the default; a mod made
+    only of pick-one packs gets one entry without an exact pack, so the player's choice in the app applies."""
+    (k, v), = target.items()
+    if k == "external":
+        return [preset_entry(mods, external, steam, target)]
     if k != "mod" or v not in mods:
-        return None
+        return []
     m = mods[v]
-    for p in m.get("packs") or []:
-        if not p.get("optional") and not p.get("exclusiveGroup"):
-            return {"pack": p["file"], "from": p.get("from", "download"),
-                    **({"steamId": p["steamId"]} if p.get("steamId") else {}), "target": target}
-    for s in m.get("sources", {}).get("steam") or []:
-        packs = steam.get(s["id"], {}).get("packs") or [m["name"]]
-        return {"pack": packs[0], "from": "steam", "steamId": s["id"], "target": target}
-    return {"pack": m["name"], "from": "download", "target": target}
+    sids = [s["id"] for s in m.get("sources", {}).get("steam") or [] if not s.get("removed")]
+    if m.get("kind") == "collection" or any(s in steam_collections() for s in sids):
+        return []  # a Steam collection is no installable item; its members come in through their own relations
+    def entry(p):
+        return {"pack": p["file"], "from": p.get("from", "download"), **({"steamId": p["steamId"]} if p.get("steamId") else {}), "target": target}
+    needed = [p for p in m.get("packs") or [] if not p.get("optional")]
+    plain = [p for p in needed if not p.get("exclusiveGroup")]
+    if plain:
+        groups, out = set(), [entry(p) for p in plain]
+        for p in needed:
+            if p.get("exclusiveGroup") and p["exclusiveGroup"] not in groups:
+                groups.add(p["exclusiveGroup"])
+                out.append(entry(p))
+        return out
+    if needed and not sids:
+        return [{"pack": m["name"], "from": needed[0].get("from", "download"), "target": target}]
+    for s in sids:
+        packs = steam.get(s, {}).get("packs") or [m["name"]]
+        return [{"pack": p, "from": "steam", "steamId": s, "target": target} for p in packs]
+    return [{"pack": m["name"], "from": "download", "target": target}]
+
+
+_collections = None
+
+
+def steam_collections() -> set:
+    """Workshop items that are Steam collections (raw/steam_required.json)."""
+    global _collections
+    if _collections is None:
+        p = CURATOR / "raw" / "steam_required.json"
+        _collections = set(load(p).get("collections", [])) if p.exists() else set()
+    return _collections
 
 
 def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides: list, steam: dict) -> list:
@@ -118,9 +153,22 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
     automatically, so updating the catalog updates them.
     """
     out = []
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+
+    def guide_entries(e: dict) -> list:
+        """A guide that names a pack of the mod (e.g. Soil's Kislev units) means that pack, not the mod's default."""
+        mod = mods.get((e["target"] or {}).get("mod")) or {}
+        tok = norm(re.sub(r"\.pack$", "", e.get("pack") or "", flags=re.I))
+        hits = [p for p in mod.get("packs") or [] if tok and norm(p["file"]).startswith(tok)] if len(tok) >= 5 else []
+        if len(hits) == 1:
+            p = hits[0]
+            return [{"pack": p["file"], "from": p.get("from", "download"), **({"steamId": p["steamId"]} if p.get("steamId") else {}),
+                     "target": e["target"]}]
+        return preset_entries(mods, external, steam, e["target"])
+
     for g in guides:
         entries = [e for e in g["entries"] if e.get("target") and not e.get("optional")]
-        built = [x for x in (preset_entry(mods, external, steam, e["target"]) for e in entries) if x]
+        built = [x for e in entries for x in guide_entries(e) if x]
         if not built:
             continue
         character = re.sub(r"[“”’‘]", "'", g["character"])  # Google Docs smart quotes
@@ -170,7 +218,7 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
             (k, v), = t.items()
             return KIND_RANK.get(mods.get(v, {}).get("kind"), 1) if k == "mod" else 1
 
-        built = [x for x in (preset_entry(mods, external, steam, t) for t in sorted(targets, key=rank, reverse=True)) if x]
+        built = [x for t in sorted(targets, key=rank, reverse=True) for x in preset_entries(mods, external, steam, t) if x]
         out.append({"id": f"derived-{m['id']}", "name": f"{m['name']}", "origin": "derived",
                     "playAs": chars, "phase": "any",
                     "phaseNote": "Built from the mod's own page: the mod and everything it requires, ordered by type. "
@@ -450,6 +498,9 @@ def main():
     ref_aliases = sorted(man.get("refAliases", {}).items(), key=lambda kv: -len(kv[0]))
 
     dc_pending = []  # (mod id, kind, raw string) resolved after ownership is known
+    # Mods that a Discord post calls active: posts about features merged into them ("deprecated") do not demote them.
+    active_on_discord = {i for d in dc_mods if d.get("status") == "active"
+                         for i in [next((ll_id(u) for u in d.get("loversLab", []) if ll_id(u)), None)] if i}
     for d in dc_mods:
         # Discord posts about mods that already have an LL page enrich that entry instead.
         existing = next((ll_id(u) for u in d.get("loversLab", []) if ll_id(u)), None)
@@ -478,7 +529,10 @@ def main():
                 dc_pending.append((mid, kind, raw))
         if d.get("playAs") and not m.get("playAs"):
             m["playAs"] = [{"character": c} for c in d["playAs"]]
-        if d.get("status") in ("abandoned", "deprecated", "superseded", "beta", "wip", "stable"):
+        # A post about a feature that was merged into a mod links that mod's page; when another post calls the mod
+        # active, the feature's "deprecated" is not about the mod it lives in now.
+        if d.get("status") in ("abandoned", "deprecated", "superseded", "beta", "wip", "stable") and not (
+                mid in active_on_discord and d["status"] in ("abandoned", "deprecated", "superseded")):
             m["status"] = "superseded" if d["status"] == "deprecated" else d["status"]
         if d.get("knownIssues"):
             m["knownIssues"] = list(dict.fromkeys((m.get("knownIssues") or []) + d["knownIssues"]))
@@ -803,6 +857,8 @@ def main():
             entry = {"name": e["name"], "optional": bool(e.get("optional"))}
             if t:
                 entry["target"] = t
+            if e.get("pack"):
+                entry["pack"] = e["pack"]
             if e.get("otherUrl"):
                 entry["url"] = e["otherUrl"]
             if e.get("note"):
@@ -813,6 +869,37 @@ def main():
                        "source": {"type": "discord", "url": doc.get("url", ""), "author": "KPW"}})
 
     presets += guide_and_derived_presets(mods, external, presets, guides, steam)
+
+    # The same replacements for guide and derived templates. An entry that names its mod instead of a pack (a mod made
+    # of pick-one packs) is replaced when the mod's first needed pack has a replacement. manual.json "noTemplate":
+    # mods that get no derived template (e.g. they stop the game at launch).
+    no_template = {k for k in man.get("noTemplate", {}) if not k.startswith("_")}
+    presets[:] = [p for p in presets if not (p.get("origin") == "derived" and set(p.get("coverMods") or []) & no_template)]
+    for p in presets:
+        if p.get("origin") not in ("guide", "derived"):
+            continue
+        out, modernized = [], []
+        for pe in p["entries"]:
+            key = pe["pack"].lower()
+            if key not in replacements:
+                mod = mods.get((pe.get("target") or {}).get("mod")) or {}
+                needed = [x["file"] for x in mod.get("packs") or [] if not x.get("optional")]
+                if not key.endswith(".pack") and needed and needed[0].lower() in replacements:
+                    key = needed[0].lower()
+            rep = replacements.get(key)
+            if rep and rep.get("remove"):
+                modernized.append({"from": pe["pack"], "to": "removed", "note": rep.get("note")})
+                continue
+            if rep:
+                new = replacement_entry(rep)
+                if entry_key(new) != entry_key(pe):
+                    modernized.append({"from": pe["pack"], "to": new["pack"], "note": rep.get("note")})
+                    pe = new
+            if not any(x["pack"].lower() == pe["pack"].lower() for x in out):
+                out.append(pe)
+        p["entries"] = out
+        if modernized:
+            p["modernized"] = (p.get("modernized") or []) + [{k: v for k, v in x.items() if v} for x in modernized]
 
     # A guide lists mods and a derived template orders them by type; neither is a tested load order, so the
     # catalog's load-order rules apply (first = highest priority). Tested lists keep the order they were played with.

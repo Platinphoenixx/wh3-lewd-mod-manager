@@ -137,6 +137,14 @@ over all layers – fix texts there.
   from KPW guides and from campaign/progression mods' requirements, so templates follow the catalog. Guide and
   derived templates are not tested load orders, so the catalog's `loadOrder` rules (above/below) order them
   (stable topological sort, duplicates of a pack dropped); tested lists keep the order they were played with.
+  The app loads exactly the packs a template names, so guide and derived entries name every needed pack of a mod
+  (main + assets; the first of a pick-one group; a mod made only of pick-one packs keeps one entry without an exact
+  pack so the player's choice applies; a pack a KPW guide names is taken as named; Steam collections are no entries).
+  `manual.json` `presetReplacements` apply to all templates; `noTemplate` lists mods that get no derived template
+  (with the reason, e.g. they stop the game at launch).
+- Launch test of the templates (2026-11-02, game 9.0.4): every template was started once with exactly its packs; a
+  template that stops the game gets a known issue with the game's own report (`crash_report/bad_mods_report.txt`)
+  and is fixed through `presetReplacements` or `noTemplate`.
 - `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
   Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
   profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.
