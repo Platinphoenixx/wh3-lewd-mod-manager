@@ -28,8 +28,7 @@
    "recommends": [],
    "incompatible": [
     "Zoat Elder - Generic Lord for Wood Elves (Steam 2855365665)",
-    "Preytons (Steam 2876531798)",
-    "Legendary Lore (does not work with Corrupted Compendium)"
+    "Preytons (Steam 2876531798)"
    ],
    "loadOrder": "MCT first > Corruption Framework > Corruption Progression (per character) > reskins; submods below the progression stages. FAQ: reskins may sit above the progressions; framework must have highest priority. Use a 3rd-party mod manager (Steam launcher does not sort).",
    "playAs": [],
@@ -181,7 +180,6 @@
    "steamIds": [
     "2860509927",
     "2867839569",
-    "3480317584",
     "2868970620",
     "3471237702"
    ],
@@ -313,8 +311,7 @@
    "requires": [],
    "recommends": [],
    "incompatible": [
-    "LoversLab version and Steam version must not both be installed (delete old LL packs from the data folder)",
-    "Clawspeakers recruitment conflicts with Corrupted Compendium (Lilacy 2026-05-24)"
+    "LoversLab version and Steam version must not both be installed (delete old LL packs from the data folder)"
    ],
    "loadOrder": "",
    "playAs": [],
@@ -926,7 +923,12 @@
     "3429217696",
     "3439800142",
     "3440518844",
-    "3440622100"
+    "3440622100",
+    "3379665020",
+    "3381165001",
+    "3412814098",
+    "3648969512",
+    "3684883112"
    ],
    "loversLab": [],
    "requires": [],
@@ -1114,7 +1116,6 @@
    ],
    "incompatible": [
     "Do not combine ATB and kerb_Alarielle_corrupted_wef_units with tdw_corrupted_buildings_add_wef",
-    "Old LoversLab Corrupted Landmarks / Alarielle / Azazel .pack in the data folder (take priority, crash)",
     "Custom load orders",
     "Playing as Dechala not recommended since 3.0 (VO conflict; patch kerb_alar_PLAY_AS_DECHALA_patch)",
     "Readman 'Sigvald Simply Superior' can crash at turn end (disable)",
@@ -1133,7 +1134,7 @@
     "3.0 needs a new save",
     "Crash 'first invalid database record is a high elf unit': force Corrupted Landmarks to update (delete local file, resubscribe)",
     "Great Ritual of Nagash end mission cannot be completed with stage 7 Alarielle (2026-10-31)",
-    "Turn 9 / turn 28 crashes reported Oct 2026 (log analysis needed)",
+    "A crash around turn 9 in campaigns as another lord (the AI Morathi confederating the Masque) was fixed by an update of Lazy's Morathi progression reported 2026-10-28; a turn-28 crash reported in October 2026 has no known cause yet.",
     "Vaeri skill tree rework can break old saves"
    ],
    "notes": "Kerberos recommends checking the update by looking for extra building slots in elf gates. Moved to Steam Jan 2026. Final big content update by Kerberos was 3.0; 3.1 added community content."
@@ -1222,10 +1223,9 @@
    ],
    "recommends": [],
    "incompatible": [
-    "Legendary Lore",
-    "Clawspeakers recruitment (with Corrupted Landmarks)"
+    "Legendary Lore"
    ],
-   "loadOrder": "The Azazel overwrite expects the file name MiaoYingCorrupted_Compendium.pack; with the Steam version rename or load carefully (startup crash otherwise).",
+   "loadOrder": "",
    "playAs": [
     "Miao Ying"
    ],
@@ -1407,7 +1407,6 @@
    "downloads": [],
    "steamIds": [
     "3815990781",
-    "3829276482",
     "2897366143"
    ],
    "loversLab": [],
@@ -1654,9 +1653,7 @@
    "date": "2026-08-18",
    "downloads": [],
    "steamIds": [
-    "3760606729",
-    "3756385010",
-    "3749585405"
+    "3760606729"
    ],
    "loversLab": [],
    "requires": [

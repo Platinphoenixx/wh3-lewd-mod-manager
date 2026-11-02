@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T12:39:20+00:00",
+  "generatedAt": "2026-11-02T14:59:32+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-02T12:39:12+00:00",
+      "fetchedAt": "2026-11-01T16:28:47+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -319,7 +319,7 @@
             "id": "2927397735",
             "title": "-BR- More Beautiful N'kari 诱惑",
             "updated": "2026-05-01",
-            "subscribers": 29829
+            "subscribers": 29828
           }
         ]
       },
@@ -377,7 +377,7 @@
             "id": "3681602385",
             "title": "2 Extra Building Slots for Major Settlements",
             "updated": "2026-09-27",
-            "subscribers": 2646
+            "subscribers": 2647
           }
         ]
       },
@@ -432,7 +432,7 @@
             "id": "3039004186",
             "title": "3D Porthole Lighting Fix",
             "updated": "2025-06-14",
-            "subscribers": 10064
+            "subscribers": 10063
           }
         ]
       },
@@ -553,7 +553,7 @@
             "id": "3575516470",
             "title": "[9.0]Alarielle - wood elves campaign",
             "updated": "2026-09-25",
-            "subscribers": 3430
+            "subscribers": 3428
           }
         ]
       },
@@ -615,7 +615,7 @@
             "id": "3397481450",
             "title": "[9.x.x] Land Encounters And Points Of Interest - Events, Towers, Taverns, Boons & Curses + IEE + TOW",
             "updated": "2026-10-15",
-            "subscribers": 10089
+            "subscribers": 10085
           }
         ]
       },
@@ -784,7 +784,7 @@
             "title": "[Dark Elves/Slaanesh]Primal Instincts for Lords and Heroes on Cold One Mounts",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2137
+            "subscribers": 2138
           }
         ]
       },
@@ -844,7 +844,7 @@
             "title": "[Dark Elves]+20 Range for Crossbows and Handbows",
             "unlisted": false,
             "updated": "2026-01-08",
-            "subscribers": 1770
+            "subscribers": 1771
           }
         ]
       },
@@ -904,7 +904,7 @@
             "title": "[Dark Elves]Black Ark Corsairs(Repeater Crossbows)",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 2044
+            "subscribers": 2045
           }
         ]
       },
@@ -1033,7 +1033,7 @@
             "id": "3816446693",
             "title": "【EN patch】The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-09",
-            "subscribers": 1315
+            "subscribers": 1319
           }
         ]
       },
@@ -1090,7 +1090,7 @@
             "id": "3647419004",
             "title": "[Endo] Bretonnia",
             "updated": "2026-10-27",
-            "subscribers": 8290
+            "subscribers": 8285
           }
         ],
         "nexus": {
@@ -1168,7 +1168,7 @@
             "id": "3679399151",
             "title": "[Endo] Cathay",
             "updated": "2026-03-22",
-            "subscribers": 7462
+            "subscribers": 7459
           }
         ],
         "nexus": {
@@ -1236,12 +1236,23 @@
             "id": "3683061804",
             "title": "[Endo] Combined Faction Reskins",
             "updated": "2026-10-27",
-            "subscribers": 10605
+            "subscribers": 10609
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3149445431"
+          },
+          "note": "The game allows only one merged soundbank, so Endo's combined pack and other audio mods cannot work together (Empire and Bretonnia units go silent).",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-01",
@@ -1251,6 +1262,9 @@
           "Does it include Endo Audio Merged (steam-3622829128)?"
         ]
       },
+      "knownIssues": [
+        "Cannot be combined with other audio mods, because the game allows only one merged soundbank (Audio Mixer is incompatible; Empire and Bretonnia units go silent). The same limit applies to start-position mods (author, 2026-03-12)."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -1296,7 +1310,7 @@
             "id": "3702690266",
             "title": "[Endo] Damsel",
             "updated": "2026-04-13",
-            "subscribers": 15026
+            "subscribers": 15029
           }
         ]
       },
@@ -1352,7 +1366,7 @@
             "id": "3616082403",
             "title": "[Endo] Dark Elves",
             "updated": "2026-04-20",
-            "subscribers": 9896
+            "subscribers": 9893
           }
         ],
         "nexus": {
@@ -1431,7 +1445,7 @@
             "id": "3621449095",
             "title": "[Endo] Empire",
             "updated": "2026-10-27",
-            "subscribers": 8698
+            "subscribers": 8695
           }
         ],
         "nexus": {
@@ -1513,7 +1527,7 @@
             "title": "[Endo] Empire - Mixed",
             "unlisted": false,
             "updated": "2026-03-30",
-            "subscribers": 3276
+            "subscribers": 3274
           }
         ]
       },
@@ -1562,7 +1576,7 @@
             "title": "[Endo] Female Slaanesh Devotees",
             "unlisted": false,
             "updated": "2026-03-28",
-            "subscribers": 8230
+            "subscribers": 8229
           }
         ]
       },
@@ -1625,7 +1639,7 @@
             "id": "3710146959",
             "title": "[Endo] Female Ungors",
             "updated": "2026-04-19",
-            "subscribers": 6227
+            "subscribers": 6225
           }
         ]
       },
@@ -1681,7 +1695,7 @@
             "id": "3616234518",
             "title": "[Endo] High Elves",
             "updated": "2026-10-27",
-            "subscribers": 11646
+            "subscribers": 11642
           }
         ],
         "nexus": {
@@ -1747,7 +1761,7 @@
             "id": "3301596500",
             "title": "[Endo] Kislev",
             "updated": "2026-02-12",
-            "subscribers": 9590
+            "subscribers": 9588
           }
         ],
         "nexus": {
@@ -1815,7 +1829,7 @@
             "id": "3706296778",
             "title": "[Endo] Sisters of Twilight - Alternative",
             "updated": "2026-04-13",
-            "subscribers": 7680
+            "subscribers": 7677
           }
         ]
       },
@@ -1871,7 +1885,7 @@
             "id": "3672266382",
             "title": "[Endo] Wood Elves",
             "updated": "2026-04-13",
-            "subscribers": 10619
+            "subscribers": 10615
           }
         ],
         "nexus": {
@@ -2211,7 +2225,7 @@
             "id": "2958844147",
             "title": "[LIG] Reskin - Handmaiden",
             "updated": "2026-06-25",
-            "subscribers": 17056
+            "subscribers": 17057
           }
         ]
       },
@@ -2268,7 +2282,7 @@
             "id": "3810043473",
             "title": "[LIG] Reskin - Neferata",
             "updated": "2026-09-29",
-            "subscribers": 5583
+            "subscribers": 5586
           }
         ]
       },
@@ -2381,7 +2395,7 @@
             "title": "[SFO] Double Skill Points",
             "unlisted": false,
             "updated": "2026-07-18",
-            "subscribers": 44837
+            "subscribers": 44832
           }
         ]
       },
@@ -2430,7 +2444,7 @@
             "title": "[Slaanesh]The Cult of Slaanesh - Marked Heroes for All Slaaneshi Factions Submod",
             "unlisted": false,
             "updated": "2026-01-11",
-            "subscribers": 2054
+            "subscribers": 2056
           }
         ]
       },
@@ -2627,7 +2641,7 @@
             "id": "3576835384",
             "title": "[Ui] BUILDER: 3 Row City & Cults Building Slots",
             "updated": "2026-10-10",
-            "subscribers": 25748
+            "subscribers": 25750
           }
         ]
       },
@@ -2683,7 +2697,7 @@
             "id": "3663734212",
             "title": "[Ui] More Buttons For Mechanics - 2 ROWS+",
             "updated": "2026-09-24",
-            "subscribers": 4858
+            "subscribers": 4859
           }
         ]
       },
@@ -2738,7 +2752,7 @@
             "title": "[Ui] Shorter Menu For More Tools - 5 Buttons Per Row",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 29902
+            "subscribers": 29901
           }
         ]
       },
@@ -3061,6 +3075,8 @@
         "Modular: tdw_corrupted_buildings.pack is the base (or the _alt variant), all other packs are optional",
         "Packs with '!' prefix appear that way on the page (names/capitalization per the description)",
         "Update for CA patch 7.0 (Kislev capitals bug fixed); Slaangor pack may soon be adjusted, as it is now a vanilla unit",
+        "The buildings stay hidden until the required corruption stage is reached (about stage 3) and the game is relogged or a manual battle is entered; the same applies to the corrupted walls and landmarks. This is expected, not a bug.",
+        "The 2025-12-06 update (v1.5.1) is not compatible with older saves; start a new campaign.",
         "Requires: Fem Berserkers (Nexus) - reported to crash at startup",
         "Requires: extra requirements listed on the LL page"
       ],
@@ -3075,6 +3091,9 @@
         ]
       },
       "knownIssues": [
+        "The main pack needs @Soil_Miaoying_Corrupted_Units.pack; Soil's Azazel pack does not satisfy it and gives a crash at boot. The _alt pack uses vanilla units only and needs neither Soil's Miao units nor the Soil assets; the unit add-on packs work with either.",
+        "Since patch 9.0 the Fem Berserker add-on (its base mod was last updated in 2024 and crashes at startup) and the Slaangor add-on do not work; there is no 9.0 update for the Slaangor pack because its base mod has errors.",
+        "MrDustV advised on 2026-10-02 against the original tdw packs because they heavily conflict with Corrupted Landmarks, and Kerberos removed them from his recommended lists (players kept installing them without their extra requirements). See the merged TDW pack.",
         "Pack requirements missing -> startup error; use MrDustV's merged TDW pack (4 packs -> 1, Oct 2026) with the merged Soiled pack",
         "Dechala needs standalone Steam 3729412021 because of a different building set"
       ],
@@ -3203,7 +3222,7 @@
             "id": "3594429287",
             "title": "AI Camping Settlements Fix 9.x",
             "updated": "2026-10-23",
-            "subscribers": 9151
+            "subscribers": 9154
           }
         ]
       },
@@ -3318,7 +3337,7 @@
             "title": "AI General 3",
             "unlisted": false,
             "updated": "2026-09-01",
-            "subscribers": 97572
+            "subscribers": 97568
           }
         ]
       },
@@ -3743,7 +3762,7 @@
             "title": "艾拉瑞丽堕落（Alarielle Temptation Bloom） & SFO 兵种单位兼容补丁",
             "unlisted": false,
             "updated": "2026-08-01",
-            "subscribers": 2107
+            "subscribers": 2106
           }
         ]
       },
@@ -3894,7 +3913,7 @@
             "id": "3619883986",
             "title": "Alarielle wood elves IEE compatibility patch",
             "updated": "2025-12-08",
-            "subscribers": 440
+            "subscribers": 439
           }
         ]
       },
@@ -3921,6 +3940,16 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3619883986"
           }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Made for ATB, not for the standalone wood elves campaign. ATB's late-game tree and forest mechanic does not work with Immortal Empires Expanded alone; this patch enables IEE's forests and landmarks for it.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "curation": {
@@ -3932,6 +3961,9 @@
         ]
       },
       "status": "stable",
+      "installNotes": [
+        "Needed when ATB is played with Immortal Empires Expanded. ATB's wood elf texts are missing on the forests added by IEE."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -4444,17 +4476,6 @@
         {
           "kind": "incompatible",
           "target": {
-            "mod": "ll-36002"
-          },
-          "note": "Habu's tdw_corrupted_buildings mods are meant for Miao, cause script errors as Alarielle and do nothing. CONTRADICTION: the Korean list includes tdw_corrupted_Buildings_alt.pack / tdw_corrupted_buildings_add_wef.pack under 'Recommended'. The newer English statement is preferred.",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
             "external": "ext-rdll"
           },
           "note": "Breaks many functions in ATB and Azazel's Realm.",
@@ -4577,9 +4598,31 @@
         {
           "kind": "incompatible",
           "target": {
+            "mod": "steam-3801443992"
+          },
+          "note": "Kerberos advises against Foreign Barracks: instantly taking destroyed legendary lords can break the storyline.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-36002"
+          },
+          "condition": "playing as Alarielle",
+          "note": "Habu's tdw corrupted buildings are made for Miao Ying; as Alarielle they cause script errors and do nothing. ATB and its corrupted wood elf units also clash with tdw_corrupted_buildings_add_wef.pack.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
             "mod": "ll-36630"
           },
-          "note": "Do not use the 'Confederations' variant of the Slaanesh Victories mods (breaks ATB and Azazel's Realm). File name added following the pattern of the other n_ packs, not literally on the page.",
+          "condition": "with the Confederations variant",
+          "note": "Do not use the 'Confederations' variant of the Slaanesh Victories mods (breaks ATB and Azazel's Realm); the other variants are fine.",
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
@@ -4688,16 +4731,6 @@
         {
           "kind": "incompatible",
           "target": {
-            "mod": "ll-30462"
-          },
-          "note": "Old LoversLab Corrupted Landmarks / Alarielle / Azazel .pack in the data folder (take priority, crash)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
             "external": "ext-sfo"
           },
           "note": "SFO needs the SFO+ATB compatibility patch",
@@ -4782,10 +4815,18 @@
         "Corrupted characters can fall back to level 0 with too many script-heavy mods (bugfix mod 3509062568).",
         "Landmark upgrade only after all events of the current level have been seen (MCT interval, default 2 turns).",
         "The script log shows an error in script/_lib/mod/!kerb_alar.lua ('mother_ostankya_features' is a nil value) in every session: this one-line script runs before that campaign feature exists. Harmless - it only means Mother Ostankya's teleport-home chance is not changed; the rest of the mod's scripts load.",
+        "Since the 2026-07-24 update the new corrupted high elf units live in Corrupted Landmarks, not in ATB: an older Corrupted Landmarks with the current ATB (or the reverse) crashes at launch with a missing-unit database error ('first invalid database record is a high elf unit'). Update both; if Steam keeps an old copy, delete the local file and resubscribe.",
+        "After patch 9.0 many launch and in-campaign crashes came from Steam keeping outdated copies of ATB, Corrupted Landmarks, Corrupted Compendium or the Azazel overwrite pack (2026-10-22). Delete the local Workshop file and resubscribe, and make sure every required mod is on its 9.0 version.",
+        "Update 3.1 (2026-07-24) can be added to existing saves, but the corruption locks of its new buildings are only set on turn 1, so on an older save they may be buildable too early; a new campaign gives correct locks.",
+        "If only one of kerb_Alarielle_Temptations_Bloom_steam.pack and kerberos_mod_assets.pack is updated, some Alarielle scenes show blank images; both must be current (Steam sometimes does not auto-update: delete the local copy and resubscribe).",
+        "If corruption-locked buildings can be built too early, the locks failed on turn 1; typical cause is an old Lazy's Corruption framework copy kept next to the Steam version, or a generic 'lewd landmarks' mod. Locks are only set on turn 1, so check with a fresh campaign.",
+        "Corruption progression can stall because Lazy's dilemma queue does not count turns in which a manual battle was fought; workaround: set the MCT option so one scene triggers every turn.",
+        "Vaeri's skill tree was reworked for 9.0 and skill points of old saves can be partly refunded or lost (CA changed the parameters of cm:remove_skill_point). readmans_old_vaeri.pack (shared on Discord 2026-09-27, no guarantee) may restore her old skills on a save that has not passed more turns.",
+        "Selecting or fighting the starting Slaanesh army near Gaean Vale (in the Morathi start, the army that spawns next to Gaen Vale) can freeze or crash the game; the author cannot reproduce it reliably and the cause is unknown (still reported 2026-11-01, though one player says it no longer happens).",
         "3.0 needs a new save",
         "Crash 'first invalid database record is a high elf unit': force Corrupted Landmarks to update (delete local file, resubscribe)",
         "Great Ritual of Nagash end mission cannot be completed with stage 7 Alarielle (2026-10-31)",
-        "Turn 9 / turn 28 crashes reported Oct 2026 (log analysis needed)",
+        "A crash around turn 9 in campaigns as another lord (the AI Morathi confederating the Masque) was fixed by an update of Lazy's Morathi progression reported 2026-10-28; a turn-28 crash reported in October 2026 has no known cause yet.",
         "Vaeri skill tree rework can break old saves"
       ],
       "installNotes": [
@@ -4797,6 +4838,16 @@
         "Enable the later mods (Slaanesh UI, Late Lavish Looks, Flags) only from corruption level 5.",
         "Only ONE Readman UUU variant at a time.",
         "Disable all Habu tdw_corrupted_buildings mods when playing as Alarielle.",
+        "With a Morathi start the main quest stays active until N'Kari is brought to Gaean Vale and expects Morathi's own corruption progression to be completed at least up to the 'Pot of Honey' quest.",
+        "Since 2026-04-06 an Alarielle start removes Ellyrion's starting army so it cannot take Evershale before the starting quest is done; Ellyrion gets a free tier-3 capital in return.",
+        "The first Alarielle mission completes when any army, not only Alarielle's, wins against a Slaanesh force (such as a garrison); the author will not change this because it uses a CA mission type.",
+        "A mod manager's file check shows about a dozen file errors for the recommended ATB list; the author says these are mostly dependencies and intended overwrites, so this number is normal.",
+        "To check that the ATB Steam update arrived, look for extra building slots in the elf gates (the earliest corrupted building appears at corruption stage 3); seeing the new units in a custom battle only proves Corrupted Landmarks is current.",
+        "Forest health capped at 99 after the stage 6 scenes: run cm:set_saved_value(\"kerb_alar_c6_fin\", true) only after ALL stage 6 scenes were seen and the Ritual of Rebirth mission is active; running it earlier breaks the save.",
+        "If the Corrupted Alarielle technology does not unlock after the stage 4-to-5 scene, run cm:unlock_technology(cm:get_local_faction_name(), \"azzy_avelorn\"); the likely cause is that the ATB file did not receive the Steam update (delete the local file to force it).",
+        "The confederated lords (Drycha, Dechala, Sisters of Twilight and others) can only be recruited if the matching DLC is owned; otherwise they appear as patrons but cannot be used, and a missing DLC can make a lord vanish after confederation.",
+        "If the stage 4/5/6 scenes did not trigger after patch 9.0 (fixed 2026-10-05), load a save from before the landmark-upgrade mission or the building that triggers the stage was completed.",
+        "The 2026-10-16 update changes the victory conditions (tied to the corrupted World Roots progression, Hexoatl replaces Morathi as long-victory target) and fixes the missing stage 6 corruption-adaptation province effect; both only apply in a NEW campaign.",
         "Avoid: Do not combine ATB and kerb_Alarielle_corrupted_wef_units with tdw_corrupted_buildings_add_wef",
         "Avoid: Custom load orders",
         "Avoid: Playing as Dechala not recommended since 3.0 (VO conflict; patch kerb_alar_PLAY_AS_DECHALA_patch)",
@@ -5181,12 +5232,26 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "alivia_whiteLion.pack",
+          "from": "download",
+          "note": "MrDustV's 9.0 version (Lyra, 198.8 MB, 2026-09-27); same file name as the Workshop original 2996269472, so unsubscribe that item."
+        },
+        {
+          "file": "alivia_dryad.pack",
+          "from": "download",
+          "note": "MrDustV's 9.0 version (Nymeria, 76.9 MB, 2026-09-27); same file name as the Workshop original 3404717872, so unsubscribe that item."
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium"
-      }
+      },
+      "installNotes": [
+        "MrDustV announced on 2026-10-31 that he is adding quality-of-life changes to these units (new head and mounts for Ymira, Nymeria buffing forest units and summoning dryads, a White Lion mount for Lyra, items for all), so newer packs are to be expected."
+      ]
     },
     {
       "id": "ll-27144",
@@ -5278,7 +5343,7 @@
             "title": "All Diplomatic Options - Vassalize, Liberate, Confederate",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 79408
+            "subscribers": 79414
           }
         ]
       },
@@ -5333,7 +5398,7 @@
             "title": "全派系传奇领主：艾雷莎·西格莉卡【All Faction Legendary Lord: Aelesha Sigrika】",
             "unlisted": false,
             "updated": "2026-09-26",
-            "subscribers": 6064
+            "subscribers": 6062
           }
         ]
       },
@@ -5793,13 +5858,13 @@
             "id": "2866037946",
             "title": "Lazy's Archaon-chan",
             "updated": "2025-09-05",
-            "subscribers": 13195
+            "subscribers": 13194
           },
           {
             "id": "2866038031",
             "title": "Lazy's Archaon-chan Slaanesh Cultist Voiceover",
             "updated": "2025-09-05",
-            "subscribers": 8335
+            "subscribers": 8334
           }
         ]
       },
@@ -5861,7 +5926,7 @@
             "id": "3024485234",
             "title": "Army limit mechanics (ALM)",
             "updated": "2023-08-30",
-            "subscribers": 345
+            "subscribers": 344
           }
         ]
       },
@@ -5916,7 +5981,7 @@
             "id": "2789855135",
             "title": "Artists' Guild - Get your faction items",
             "updated": "2026-10-01",
-            "subscribers": 8372
+            "subscribers": 8375
           }
         ]
       },
@@ -5965,7 +6030,7 @@
             "title": "Asrai Unit Pack (Wood Elves)",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 24793
+            "subscribers": 24796
           }
         ]
       },
@@ -6023,7 +6088,7 @@
             "id": "2996698889",
             "title": "ATC 艾克的桌面数据大修 Arksaitace‘s Tabletop Codex Overhaul",
             "updated": "2026-10-24",
-            "subscribers": 12811
+            "subscribers": 12803
           }
         ]
       },
@@ -6073,12 +6138,23 @@
             "id": "3149445431",
             "title": "Audio Mixer",
             "updated": "2026-10-30",
-            "subscribers": 251562
+            "subscribers": 251582
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3683061804"
+          },
+          "note": "The game allows only one merged soundbank, so Endo's combined pack and other audio mods cannot work together.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
@@ -6127,7 +6203,7 @@
             "id": "2859802328",
             "title": "Auto Resolve Quest Battles - Updated to 9.0.X (Lords of the End Times)",
             "updated": "2026-09-25",
-            "subscribers": 308434
+            "subscribers": 308453
           }
         ]
       },
@@ -6148,6 +6224,54 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/1838054323518950716/86F622407068EF61BDA6B60D3C70A4BBDCF099CE/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3383688037",
+      "name": "Autoresolve Quest Battles",
+      "authors": [
+        "SANJ"
+      ],
+      "kind": "utility",
+      "summary": "Lets quest battles be auto-resolved (updated for patch 9.0, multiplayer compatible).",
+      "tags": [
+        "general",
+        "quest battles",
+        "utility"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3383688037",
+            "title": "Autoresolve Quest Battles UPDATED 9.0 | MP Compatible",
+            "updated": "2026-09-25",
+            "subscribers": 3455
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "The Alarielle, Temptation's Bloom author points to it for getting past a broken quest battle so the campaign can go on."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "high"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "SANJ",
+          "url": "https://steamcommunity.com/profiles/76561198865975457/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2911848224007492/FE1F280F772166C3410312F6254639A15CAF22F9/",
           "kind": "cover",
           "source": "steam"
         }
@@ -6175,7 +6299,7 @@
             "id": "3512295439",
             "title": "Azazel skin",
             "updated": "2025-06-29",
-            "subscribers": 3035
+            "subscribers": 3033
           }
         ]
       },
@@ -6579,6 +6703,16 @@
           }
         },
         {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3801443992"
+          },
+          "note": "Kerberos advises against Foreign Barracks: instantly taking destroyed legendary lords can break the storyline.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
           "kind": "requires",
           "target": {
             "mod": "ll-23878"
@@ -6700,7 +6834,7 @@
         }
       ],
       "loadOrder": {
-        "note": "All required mods work in the default order. Recommended complete mod list and load order: image in the Lewdhammer wiki (File:Mod_list_and_load_order.png); the author has never reordered manually. When playing as Azazel, enable @@Compendium_Play_as_Azazel_Overwrite; disable it for Miao.; Discord: Follow the wiki image https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png (regularly updated). No custom load order. Name-fix packs (per culture: Slaanesh, WoC, Dark Elves, Cathay) enabled only AFTER confederating Miao/Katarin and only one at a time."
+        "note": "All required mods work in the default order. Recommended complete mod list and load order: image in the Lewdhammer wiki (File:Mod_list_and_load_order.png); the author has never reordered manually. When playing as Azazel, enable @@Compendium_Play_as_Azazel_Overwrite; disable it for Miao.; Discord: Follow the wiki image https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png (regularly updated). No custom load order. Name-fix packs (per culture: Slaanesh, WoC, Dark Elves, Cathay) enabled only AFTER confederating Miao/Katarin and only one at a time. Leave every mod at its default position and reset manual moves: hand-reordering broke the Miao progression and caused crashes (author, 2026-05).; Discord: Follow the wiki image https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png (regularly updated). No custom load order. Name-fix packs (per culture: Slaanesh, WoC, Dark Elves, Cathay) enabled only AFTER confederating Miao/Katarin and only one at a time."
       },
       "tier": "campaign",
       "campaigns": [
@@ -6715,6 +6849,9 @@
         "Quest battle can show a black screen: reload the savegame from before it.",
         "Stage reset of corrupted characters with too many script mods.",
         "Playing as Katarin: disable the mod (and Valkia) - no Katarin content.",
+        "The Compendium's play-as overwrite pack blocks the other Cathay legendary lords (Western Provinces, Celestial Court) from confederating and skews the Compendium when playing Miao Ying; use it only for Azazel campaigns (or factions that auto-confederate him).",
+        "Overhaul mods that turn Azazel into a hero (for example Mortau Godslayer) stop the Miao quest battle from spawning and leave no eligible lord for the Katarin battle; the affected campaign needs a restart.",
+        "A campaign played between Lazy's automatic Katarin AI corruption (about 2026-10-04) and the 2026-10-05 hotfix may have Katarin at a wrong stage.",
         "CA hotfix (2026-10-10) broke cm:force_confederation: confederation events fail for non-WoC/Dwarf factions; fixed for WoC/Chaos Dwarves 2026-10-11, still broken for Empire",
         "Chaos lords lose blue-line skills when confederated by a non-chaos faction (fixed in AZR 2026-10-11)",
         "Lazy's automatic Katarin AI corruption (2026-10-05) would break AZR; AZR contains a counter script",
@@ -6725,6 +6862,13 @@
         "Immortal Empires and IE Expanded only.",
         "Play with PJ's Console + 'Enable context viewer', otherwise no support.",
         "The mod changes the starting map (Valkia removed, factions confederated/weakened).",
+        "Multiplayer is not supported.",
+        "Updates to the main pack are generally safe in a running campaign, but saves from before a fix may stay stuck on quests that were already aborted.",
+        "Azazel's start position can be switched, but then the confederation option for him must be chosen to advance Katarin's quests.",
+        "When starting as an Alarielle-route faction (Morathi, N'Kari and others), Azazel is held in cryostasis and the Miao/Katarin/Azazel content begins only after Alarielle reaches corruption stage 6; playing Miao or Azazel directly is the tighter experience.",
+        "The latest Alarielle, Temptation's Bloom (ATB) needs the Steam version of Azazel's Realm. Without ATB the Corrupted Avelorn technology never unlocks; Azazel's Realm does not require it.",
+        "The play-as overwrite crashes the game at launch if the Corrupted Compendium itself is not enabled. With it enabled while playing Miao, Ensign Loi appears on turn 1 and the Emissary events do not run; for other lords it starts the Compendium at tier 2 once Miao is allied or vassalised through Azazel's quest.",
+        "Since the 2026-09-01 update, when playing Archaon Arbaal still joins him but starts wounded and Archaon no longer gets his starting province. Since 2026-09-25 any player faction gets the Lord of the Endtimes dilemma when the Valkia endgame crisis spawns.",
         "Recommended: Readman mods per recommended modlist",
         "Avoid: Archaon: confederating Valkia/N'Kari/Changeling is blocked by the mod (breaks the endgame crisis)"
       ],
@@ -6893,7 +7037,7 @@
             "id": "2987723311",
             "title": "Bad Legendary Characters - Legendary Lords / Legendary Heroes",
             "updated": "2026-02-20",
-            "subscribers": 33059
+            "subscribers": 33053
           }
         ]
       },
@@ -7198,7 +7342,7 @@
             "title": "Battle Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 116208
+            "subscribers": 116210
           }
         ]
       },
@@ -7266,7 +7410,7 @@
             "id": "3000867445",
             "title": "Beastmen Tech-Tree",
             "updated": "2026-09-25",
-            "subscribers": 3892
+            "subscribers": 3891
           }
         ]
       },
@@ -7291,6 +7435,71 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/2028358326459102210/F6E56A7C80891B84FCD6D9D400BC7A14E248232E/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3346259963",
+      "name": "Beastmen: Beastpaths Underways",
+      "authors": [
+        "ChopChop"
+      ],
+      "kind": "submod",
+      "summary": "Adds the Beastpaths underway network for Beastmen.",
+      "tags": [
+        "general",
+        "beastmen"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3346259963",
+            "title": "Beastmen: Beastpaths Underways",
+            "updated": "2026-10-18",
+            "subscribers": 2892
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "external": "ext-underways-compilation"
+          },
+          "note": "Also part of 'The Underways: Compilation'; enable only one of the two.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3346259963"
+          }
+        }
+      ],
+      "installNotes": [
+        "Several Community Beastmen players use it and report it as compatible and helpful for reaching and capturing legendary lords."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
+      },
+      "status": "stable",
+      "support": [
+        {
+          "platform": "Patreon",
+          "url": "https://patreon.com/chopchopworkshop"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "ChopChop",
+          "url": "https://steamcommunity.com/profiles/76561198842359315/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/16487909309824442086/083ABA5A40E653C5E4417CF211C91212239B94A5/",
           "kind": "cover",
           "source": "steam"
         }
@@ -7426,7 +7635,7 @@
             "title": "Beautiful Neferata",
             "unlisted": false,
             "updated": "2026-09-29",
-            "subscribers": 16991
+            "subscribers": 17019
           }
         ]
       },
@@ -7542,6 +7751,9 @@
           "platform": "Patreon",
           "url": "https://www.patreon.com/Warmaidens292"
         }
+      ],
+      "knownIssues": [
+        "Not really compatible with the merged Community Beastmen mod: both change the Minotaur skin, and Community Beastmen wins regardless of load order (statement of its author, 2026-08)."
       ]
     },
     {
@@ -7574,7 +7786,7 @@
             "id": "3209123287",
             "title": "Belakor's Shadow - Corrupted Daemon Princes overhaul (MCT Support)",
             "updated": "2026-07-09",
-            "subscribers": 7391
+            "subscribers": 7390
           }
         ]
       },
@@ -7641,7 +7853,7 @@
             "id": "3206075023",
             "title": "Bestial Gunners - Guns for Beastmen!",
             "updated": "2026-09-26",
-            "subscribers": 1673
+            "subscribers": 1674
           }
         ]
       },
@@ -7691,7 +7903,7 @@
             "title": "Better AI Army Builder",
             "unlisted": false,
             "updated": "2026-10-02",
-            "subscribers": 10865
+            "subscribers": 10863
           }
         ]
       },
@@ -7767,7 +7979,7 @@
             "id": "2790029103",
             "title": "Better Alliance",
             "updated": "2026-10-25",
-            "subscribers": 36580
+            "subscribers": 36586
           }
         ]
       },
@@ -7821,7 +8033,7 @@
             "id": "2891886534",
             "title": "Better Alliance - Foreign Agents",
             "updated": "2026-10-25",
-            "subscribers": 10307
+            "subscribers": 10308
           }
         ]
       },
@@ -7871,7 +8083,7 @@
             "title": "Better Camera Mod",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 601383
+            "subscribers": 601386
           }
         ]
       },
@@ -8096,6 +8308,59 @@
       ]
     },
     {
+      "id": "steam-3628731426",
+      "name": "Bucket's Better Victory Messages",
+      "authors": [
+        "Bucket Crust"
+      ],
+      "kind": "utility",
+      "summary": "Rewrites the text shown after a battle for each victory and defeat class.",
+      "tags": [
+        "general",
+        "ui",
+        "text"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3628731426",
+            "title": "Bucket's Better Victory Messages",
+            "updated": "2025-12-22",
+            "subscribers": 50
+          },
+          {
+            "id": "3629045053",
+            "unlisted": true,
+            "role": "Slaanesh version"
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "The unlisted Slaanesh-themed version (3629045053) replaces the messages for all factions, so use it only when playing Slaanesh; use one of the two versions."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Bucket Crust",
+          "url": "https://steamcommunity.com/profiles/76561198089253393/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/9320477402780988801/A9A93311F4ADD4E7E1215BB7FDE3E98724DC0E38/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3509062568",
       "name": "Bugfix “Corrupted Characters Stage Reset” (not public)",
       "authors": [],
@@ -8225,7 +8490,7 @@
             "id": "2870574022",
             "title": "Building Slots Extended (Major Settlements Only)",
             "updated": "2024-06-25",
-            "subscribers": 2893
+            "subscribers": 2892
           }
         ]
       },
@@ -8294,7 +8559,7 @@
             "id": "3602151164",
             "title": "Building Slots Extended - Compilation",
             "updated": "2026-09-25",
-            "subscribers": 19400
+            "subscribers": 19398
           }
         ]
       },
@@ -8483,7 +8748,7 @@
             "id": "3632214035",
             "title": "Calm's N'Kari Reskin",
             "updated": "2026-09-27",
-            "subscribers": 17310
+            "subscribers": 17315
           }
         ]
       },
@@ -8613,7 +8878,7 @@
             "title": "Campaign Weather Overhaul",
             "unlisted": false,
             "updated": "2026-10-25",
-            "subscribers": 118401
+            "subscribers": 118405
           }
         ]
       },
@@ -8700,12 +8965,13 @@
         }
       ],
       "tier": "submod",
-      "status": "wip",
+      "status": "superseded",
       "knownIssues": [
         "Old version of one of the two mods with a new version of the other => immediate crash."
       ],
       "installNotes": [
-        "Update both mods (this one + Community Beastmen) together and delete the old versions."
+        "Update both mods (this one + Community Beastmen) together and delete the old versions.",
+        "A maintained version (candles_beastmen_events_ancillaries.pack, 22.3 MB: updated tables, new followers and occupation events) was reposted on the Community Beastmen Discord on 2025-01-25 with the original author's permission. It is part of the merged Steam mod (ll-46165), which makes the separate pack unnecessary."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -8857,7 +9123,7 @@
             "id": "2927296206",
             "title": "Cataph's Southern Realms (TEB)",
             "updated": "2026-10-12",
-            "subscribers": 90273
+            "subscribers": 90278
           }
         ]
       },
@@ -8962,11 +9228,12 @@
       "campaigns": [
         "IE"
       ],
-      "status": "wip",
+      "status": "superseded",
       "knownIssues": [
         "Very experimental/alpha, expect errors.",
         "WH3 allows only one ESL file per game -> probably incompatible with other mods that add factions.",
-        "Model switching via console dilemma only changes the text (tracking variable)."
+        "Model switching via console dilemma only changes the text (tracking variable).",
+        "Outdated LoversLab file (v0.05x, May 2025): the author says the up-to-date version is the Steam one (Shenzoo: The Long March Home). With the LoversLab pack Mixu's Unlocker breaks the mod and the Shenzoo faction may not appear in the lord selection."
       ],
       "installNotes": [
         "Can be started from the main menu; Shenzoo under Cathay in Immortal Empires.",
@@ -9533,7 +9800,7 @@
             "id": "3357763311",
             "title": "Champions Of Undeath: Blood Knight Heretics - Updated for 9.0",
             "updated": "2026-09-30",
-            "subscribers": 14722
+            "subscribers": 14726
           }
         ]
       },
@@ -9760,7 +10027,7 @@
             "id": "3272229259",
             "title": "CHOPPER: Skill Tree Sorter | UPDATE IN PROGRESS",
             "updated": "2026-08-04",
-            "subscribers": 9652
+            "subscribers": 9651
           }
         ]
       },
@@ -9788,6 +10055,68 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/15634030584808147250/274529024FD4AAD4C223FC38A05052058986577E/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3829276482",
+      "name": "Citadel of Dusk Standalone (Dust)",
+      "authors": [
+        "MrDustV"
+      ],
+      "kind": "units",
+      "summary": "The Citadel of Dusk as a playable High Elf faction with its own lord and hero, taken out of Dust's Corrupted Heroes as a standalone item.",
+      "tags": [
+        "high elves",
+        "faction",
+        "citadel of dusk"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3829276482",
+            "title": "Citadel of Dusk Standalone (Dust)",
+            "updated": "2026-11-01",
+            "subscribers": 315
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "dc-dust-s-corrupted-heroes-dch"
+          },
+          "note": "Dust's Corrupted Heroes contains the same faction since its 2026-10-30 update; use one of the two.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "installNotes": [
+        "The lord and hero spawn on turn 1; adding the mod to a running campaign does not give them (summon them with the console), but it does not break the save."
+      ],
+      "knownIssues": [
+        "The faction's lord Melvina plays her male counterpart's voice lines in diplomacy (author aware, as of 2026-10-30)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "MrDustV",
+          "url": "https://steamcommunity.com/profiles/76561198039344921/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15111376570512367148/ECC0A240FC44D319ED5C2226FEED839C2DB9361E/",
           "kind": "cover",
           "source": "steam"
         }
@@ -10213,6 +10542,46 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/46165-community-beastmen-all-versions-actually-up-to-date-seriously/"
           }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-24493"
+          },
+          "note": "Candles' ancillaries are part of the merged mod; do not load the separate pack with it.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-27439"
+          },
+          "note": "Sewrat's ancillaries and add-on are part of the merged mod; loading them separately fires the dilemmas twice.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Kerberos Mod Assets (unlisted): Variant Selector corrupted variants for the hero versions of Alarielle, Sisters of Twilight and Ariel (Ariel only differs from the base look if Lin's Drycha is loaded too).",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-2798690094"
+          },
+          "note": "Author recommendation: the matched animations trigger more often. It is the only animation mod that may run next to Community Beastmen.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "loadOrder": {
@@ -10222,7 +10591,15 @@
       "status": "stable",
       "knownIssues": [
         "Incompatible (all versions): other animation mods, custom matched animation mods, 'Complete Warmaidens collection' (use the individual faction packs instead).",
-        "Incompatible (main version only): Victory Condition Overhaul, 'Slaanesh Vassals', Recruit Defeated Legendary Lords, complete overhauls such as SFO.",
+        "Incompatible (main version only): Victory Condition Overhaul, 'Slaanesh Vassals', Recruit Defeated Legendary Lords, complete overhauls such as SFO. Testing by the author traced the final capture mission of the corrupted legendary lords failing to fire to Victory Condition Overhaul (the other two are suspects); with them disabled and Community Beastmen high in the load order it fires.",
+        "Main version is for Beastmen campaigns only: with another faction it can cause a script error at start, a missing rites/recruit button or lost skills, and it removes the mounts of female legendary lords and heroes of other factions on purpose (so the matched animations show). Use the Light version for every other faction.",
+        "Since the game update of 2026-10-26: startup crash reported for some players on the Steam copy (one fix that worked: unsubscribe, delete the mod's pack from the Steam workshop/data folder, subscribe again), Ruination tier 1 building missing (db fix: change ruination 1 to 2), ritual of ruination not usable.",
+        "Hellebron capture quest battle (off-map location) still crashed in early November 2026, also reported for the LoversLab copy; the author says it is fixed in the next update. Workarounds: set X=265, Y=578 in the Mission_tables rows of new_community_beastmen.pack with RPFM, or spawn her with the console command from the GitHub guide (this does not complete the quest).",
+        "Elspeth quest battle after patch 9.0: script error in elspeth_battle.lua (army 'enemy_main_com' not found), so the battle does not end and reinforcements never arrive.",
+        "Steam copy can stay on an outdated version (it may even show an old date), then new content is missing or the game crashes; the full pack is roughly 1.6 GB. Unsubscribe, wait a couple of minutes, resubscribe and check that Steam really downloads the update.",
+        "Total Warmaidens reskins clash with units shared with this mod (Centigors of Tzeentch, Minotaurs, Chaos Spawn): both replace the same models, so some conflict cannot be avoided. Zeta's beastmen reskin (Beauty and Beasts) is not really compatible: both change the Minotaur skin and Community Beastmen wins regardless of load order. Zeta's faction-specific packs are fine.",
+        "Mods that add items or ancillaries (for example 'New Legendary Lord and Hero Artefacts', 'Just More Items') conflict with this mod's own auxiliary and item changes.",
+        "Under Tabletop Caps the units added by this mod (mercenaries, corrupted elves) count as basic units without a cap; no compatibility submod existed as of 2026-01-24.",
         "WH3 patch 2026-10-26: startup crash reported, Ruination tier 1 building missing (db fix: change ruination 1 to 2), ritual of ruination not usable",
         "Recruitment building fix for custom units (2026-10-29) only on LL/Google Drive; Steam lags",
         "Hellebron quest battle crashes on the Steam version (off-map location): set X=265, Y=578 in Mission_tables rows of new_community_beastmen.pack via RPFM",
@@ -10230,7 +10607,15 @@
       ],
       "installNotes": [
         "On Steam, the full version can be subscribed to for auto-updates; the Light version is only available as a download.",
-        "LL does not show the update date correctly - update notices on the Discord."
+        "LL does not show the update date correctly - update notices on the Discord.",
+        "Fixes appear first on LoversLab / Google Drive; the Steam copy is uploaded by a second person and lags behind, sometimes by months (in July 2026 the next Steam update was announced for August). Prefer the LoversLab files for the newest fixes.",
+        "The LoversLab download is a text file with links to the hosted files (Google Drive since 2025-12-28, Mega before). LoversLab does not notice when the hosted file changes, so re-download the text file or follow its links for every update.",
+        "Copies older than the 2026-09-26 update crash at startup on game patch 9.0; the Light version worked from day one.",
+        "The merged pack already contains the Sewrat ancillaries and add-on, Candles' ancillaries, Endo's matched combat for beastmen, the corrupted-heroes ancillaries, the corrupted elves and the model-fix packs. Loading the separate packs next to it fires dilemmas twice or brings back wrong unit cards (see the cleanup note).",
+        "Since the 2025-11-03 update the matched animations target all humanoid skeletons; without a reskin of the humanoids the scenes are male-on-male. For non-Beastmen campaigns the author recommends the Light version.",
+        "Variant Selector support is built in (since 2025-11-29): Lazy's progressive reskins (Katarin, Morathi, Miao Ying), the Kerberos variants (Alarielle, Sisters of Twilight, Ariel) and Khalida can be switched in game. The reskin mods themselves are still needed and must win the load order; reskins not built for Variant Selector may not apply to the hero versions.",
+        "Skill-tree reworks (Katarin and Miao Ying 2026-05-30, Fay 2026-06-06) can cost already spent skill points, so a respec may be needed; the author calls most other updates save compatible.",
+        "The author takes modding breaks (from 2026-09-26, again around 2026-10-18 and 2026-11-01), so open bugs can wait."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -10239,6 +10624,26 @@
           "Unclear which mod is meant by 'Slaanesh Vassals' (e.g. ll-34542?).",
           "Pack file names are derived from the description text; .pack extension added."
         ]
+      },
+      "cleanup": {
+        "staleDataPacks": [
+          "!community_beastmen.pack",
+          "sewrat_ancil_true.pack",
+          "sewrat_ancil_test.pack",
+          "sewrat_beastmen_addon_c.pack",
+          "!candles_beastmen_events_ancillaries.pack",
+          "candles_beastmen_events_ancillaries.pack",
+          "endo_matched_updated.pack",
+          "endo_empire_matched.pack",
+          "endo_matched_updated_trytobenotlazy01.pack",
+          "corrupted_heroes_anci.pack",
+          "flos_beast_dwarf_ancillaries.pack",
+          "endo_corrupted_elf.pack",
+          "new_community_beastmen_20260117ModelsFIX.pack",
+          "new_community_beastmen_CentigorDickLodFIX.pack",
+          "new_community_beastmen_modelspatch0428.pack"
+        ],
+        "note": "These packs were merged into the Community Beastmen mod (the author says to remove them). Next to it, the Sewrat and Candles packs fire dilemmas twice and Endo's matched-combat packs bring back swordsmen Elf Breakers, Bestigor Hunters and question-mark unit cards."
       },
       "authorPages": [
         {
@@ -10310,6 +10715,9 @@
         "confidence": "medium",
         "openQuestions": []
       },
+      "installNotes": [
+        "Carries only animations and models; quests, events and mechanics are script based and are absent. Use it when not playing a Beastmen faction."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/18398136827454084737/BC7D60DB22DC97F344A8049AFE21B7CE10D4CBA7/",
@@ -10878,7 +11286,8 @@
       "status": "stable",
       "installNotes": [
         "One pack per character; enable only the version(s) for the corruption mods you use.",
-        "Corruption mods for other lords (Morathi, Fay Enchantress, Katharina) are not required but useful."
+        "Corruption mods for other lords (Morathi, Fay Enchantress, Katharina) are not required but useful.",
+        "tdw_mor_seduce.pack lets every Dark Elf faction seduce units for the player (for example Malekith with the Morathi mods on), so turn it off unless you play Morathi. There is no Alarielle pack because seduce units are built into Alarielle, Temptation's Bloom."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -11029,6 +11438,12 @@
           "from": "download",
           "optional": true,
           "note": "Optional old Ensign Loi touch-up patch from the LL page; not needed for Azazel's Realm (Kerberos on Discord, 2026-10-31)"
+        },
+        {
+          "file": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
+          "note": "Steam build (renamed on purpose so it does not shadow the old LoversLab file)"
         }
       ],
       "playAs": [
@@ -11053,6 +11468,16 @@
         {
           "kind": "requires",
           "target": {
+            "external": "ext-mct"
+          },
+          "note": "Mod Configuration Tool holds the setting for turns between events",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
             "mod": "ll-23878"
           },
           "note": "Lazy's Corruption Framework",
@@ -11069,23 +11494,17 @@
           "source": {
             "type": "discord"
           }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-30462"
-          },
-          "note": "Clawspeakers recruitment (with Corrupted Landmarks)",
-          "source": {
-            "type": "discord"
-          }
         }
       ],
       "tier": "submod",
       "status": "stable",
       "installNotes": [
         "On Steam only reachable via the unlisted direct link (Workshop ID 3705392682).",
-        "The mod only starts once Slaanesh corruption 1 is reached (dilemma)."
+        "The mod only starts once Slaanesh corruption 1 is reached (dilemma).",
+        "Updated for patch 9.0 on 2026-09-27; older copies cause a database crash naming the Compendium.",
+        "Saves started with the old LoversLab pack ask for the missing old mod after switching to the Steam version; load them with a mod manager that allows missing mods.",
+        "The final battle starts from a quest-battle marker south-east of Nan Gau that appears only after all Compendium scenes have been viewed; walk Miao (or the overwrite's character) onto it to open the side-choice dilemma.",
+        "If Ensign Loi appears on turn 1, the Azazel play-as overwrite is enabled by mistake; disable it when playing Miao."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -11099,14 +11518,15 @@
       "cleanup": {
         "note": "The LoversLab file is MiaoYingCorrupted_Compendium.pack, the Steam version (3705392682, since April 2026) is MiaoYingCorrupted_Compendium_workshop.pack. Use only one. Azazel's Realm's play-as overwrite expects the LoversLab name; with the Steam version it crashes at startup (renaming fixes it but breaks the Ensign Loi dependency)."
       },
+      "loadOrder": {
+        "note": "Leave at the default position. The Azazel play-as overwrite no longer needs a particular Compendium file name (the current LoversLab version dropped that check)."
+      },
       "knownIssues": [
+        "Event progression can stall for good when a save is loaded (or a manual battle is fought) right before a Compendium event turn, or when the 'win 6 battles' quest finishes on the turn a save is loaded: the Emissary may not level up and no later tutor ancillary appears (reported 2026-09-01, a community script fix was not merged yet). Roll back to the last turn where an event fired.",
         "Emissary transformation shows a goblin icon",
         "Tutor ancillary may not vanish at Mistress stage so 'Chains of Heartbind' quest chain stalls",
         "Fem Zhao depends on whom you side with in the final battle; confederating Zhao earlier removes it"
       ],
-      "loadOrder": {
-        "note": "Discord: The Azazel overwrite expects the file name MiaoYingCorrupted_Compendium.pack; with the Steam version rename or load carefully (startup crash otherwise)."
-      },
       "authorPages": [
         {
           "site": "loverslab",
@@ -11335,9 +11755,9 @@
         {
           "kind": "incompatible",
           "target": {
-            "mod": "ll-23876"
+            "mod": "ll-27171"
           },
-          "note": "Clawspeakers recruitment conflicts with Corrupted Compendium (Lilacy 2026-05-24)",
+          "note": "Since the 2025-04-04 update: Corrupted Ascension ported most of the landmarks, so using both gives duplicate buildings. Turn this mod off when using Ascension.",
           "source": {
             "type": "discord"
           }
@@ -11358,7 +11778,12 @@
       },
       "status": "stable",
       "knownIssues": [
-        "0 landmarks for Daemons of Chaos (settlement mechanic incompatible)",
+        "Since the December 2025 lock/unlock method, locked landmarks are hidden (not just unbuildable) until the character's corruption stage is reached, so missing landmarks at the start are expected.",
+        "Since the 2026-07-24 update the new corrupted high elf units live here, not in Alarielle, Temptation's Bloom: an older Corrupted Landmarks with the current ATB (or the reverse) crashes at launch with a missing-unit database error. Keep both current.",
+        "Soil's unit packs hard-require this Steam version: without it, or with the old LoversLab corrupted_landmarks.pack still in data, the game crashes at launch with an 'invalid database record' error.",
+        "Translation packs made before December 2025 need the loc entry campaign_localised_strings_string_kerb_corrupted_landmark (in !corrupted_landmark_various.loc); without it locked landmarks stay hidden in the UI.",
+        "Since patch 7.0 a normal landmark or building can only be swapped for its corrupted version from the settlement's building panel, not from the world-map landmark (CA broke the map-side swap for many mods).",
+        "Dechala's thrall camps got their landmarks on 2026-10-05; some camps may still be missing them.",
         "Landmarks look available on turn 1 but are correctly locked afterwards",
         "Dechala: landmarks only buildable in Tormenter holds, not thrall camps",
         "Missing or wrong landmark version causes crash at launch",
@@ -11368,6 +11793,8 @@
         "Mod is on Steam (3474483873); LL page only as a backup. DELETE the old version in the data folder before subscribing, otherwise problems",
         "Restart required (tag 'requires restart')",
         "Subscribe to the role 'Kerberos's Azazel Realm' under 'Channels & Roles' in the Lazy Discord for update pings",
+        "The corrupted wood elf units (malevolent treemen, dryads) only appear if you own at least one of the Wood Elf lord DLCs (Orion or Durthu); the Alarielle or Sisters of Twilight DLC alone is not enough.",
+        "Works for Daemons of Chaos since 2025-09-02 (42 landmarks).",
         "Avoid: LoversLab version and Steam version must not both be installed (delete old LL packs from the data folder)"
       ],
       "curation": {
@@ -11630,7 +12057,7 @@
             "title": "Corrupted Wood Elf Units for Slaanesh",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 20827
+            "subscribers": 20824
           }
         ]
       },
@@ -11841,7 +12268,7 @@
             "title": "Cpecific's Traits Manager (+win64)",
             "unlisted": false,
             "updated": "2026-10-15",
-            "subscribers": 98728
+            "subscribers": 98738
           }
         ]
       },
@@ -11898,11 +12325,17 @@
             "id": "3240401070",
             "title": "Cult of Pleasure Mechanics for Morathi [9.0]",
             "updated": "2026-10-16",
-            "subscribers": 5190
+            "subscribers": 5188
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!patched_UlrikHD_Morathi_cult_of_pleasure.pack",
+          "from": "steam",
+          "steamId": "3240401070"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
@@ -11912,6 +12345,9 @@
         {
           "character": "Morathi"
         }
+      ],
+      "installNotes": [
+        "Repost of the abandoned original mod by UlrikHD, patched for 7.0 in 2025-12 and again for 9.0 around 2026-10-09; the author of the Alarielle campaign recommends it for Morathi."
       ],
       "authorPages": [
         {
@@ -12099,7 +12535,7 @@
             "id": "2881916371",
             "title": "Cultist Expansion: Pleasure Cultist +",
             "updated": "2026-09-24",
-            "subscribers": 14920
+            "subscribers": 14922
           }
         ]
       },
@@ -12169,7 +12605,7 @@
             "id": "2821600897",
             "title": "Cultist of Pleasure Reskin",
             "updated": "2026-09-24",
-            "subscribers": 81457
+            "subscribers": 81460
           }
         ]
       },
@@ -12286,7 +12722,7 @@
             "id": "2895227844",
             "title": "[On Hiatus] Custom Matched Combat Animations",
             "updated": "2024-03-27",
-            "subscribers": 54337
+            "subscribers": 54333
           }
         ]
       },
@@ -12375,7 +12811,7 @@
             "id": "3772766792",
             "title": "[Reskin]可爱吸血鬼——吸血鬼伯爵娘化（Cute Girls of Vampire Counts）",
             "updated": "2026-10-21",
-            "subscribers": 2125
+            "subscribers": 2126
           }
         ]
       },
@@ -13084,7 +13520,7 @@
             "id": "3062374987",
             "title": "Dark Elves Rework",
             "updated": "2026-09-26",
-            "subscribers": 4269
+            "subscribers": 4270
           }
         ]
       },
@@ -13223,7 +13659,7 @@
             "id": "3024679451",
             "title": "Dark Fortress Expansion 2",
             "updated": "2025-12-13",
-            "subscribers": 3662
+            "subscribers": 3660
           }
         ]
       },
@@ -14004,7 +14440,7 @@
             "id": "2978779730",
             "title": "DeepWar AI",
             "updated": "2026-10-30",
-            "subscribers": 24981
+            "subscribers": 24986
           }
         ]
       },
@@ -14219,7 +14655,7 @@
             "id": "3729594553",
             "title": "D's is Death Hag_Alternative",
             "updated": "2026-05-20",
-            "subscribers": 1015
+            "subscribers": 1014
           },
           {
             "id": "3724771813",
@@ -14292,6 +14728,36 @@
             "title": "DOVAKIN Humans Reborn",
             "updated": "2026-10-25",
             "subscribers": 295
+          },
+          {
+            "id": "3379665020",
+            "title": "Warrior of Tzeentch",
+            "updated": "2026-04-11",
+            "subscribers": 930
+          },
+          {
+            "id": "3381165001",
+            "title": "Warrior of Sigmar",
+            "updated": "2026-09-08",
+            "subscribers": 242
+          },
+          {
+            "id": "3412814098",
+            "title": "Knight of Lady",
+            "updated": "2026-10-25",
+            "subscribers": 486
+          },
+          {
+            "id": "3648969512",
+            "title": "Warrior of Wasteland",
+            "updated": "2026-04-12",
+            "subscribers": 375
+          },
+          {
+            "id": "3684883112",
+            "title": "Sons of Gork",
+            "updated": "2026-11-02",
+            "subscribers": 229
           }
         ]
       },
@@ -14379,6 +14845,31 @@
           "url": "https://images.steamusercontent.com/ugc/5171284412421114/BB2AAF529E85CBED6280AF2E53EF57448E333754/",
           "kind": "screenshot",
           "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/5163021529153177/AECC62CD1A13F903807E5BA8416906BDA60674FF/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/5163021533861023/7C17C8C1FD9A48F33825719B6B69CEACE885ED54/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/5167280226508080/1D51BC24F27FE9FB5C0AB87761552AE1B6D79DDB/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/15646856741273834925/54EE546D36C909A32DF95C611651E5F7792F91C7/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/17077187331492924520/BAA7356B419BD5BD1100F87D712CB934BFA56E8F/",
+          "kind": "screenshot",
+          "source": "steam"
         }
       ]
     },
@@ -14411,7 +14902,7 @@
             "id": "2848577238",
             "title": "Dragon Breath Attack for Cathay",
             "updated": "2026-09-26",
-            "subscribers": 6701
+            "subscribers": 6704
           }
         ]
       },
@@ -14472,7 +14963,7 @@
             "id": "2962179819",
             "title": "Drill of Hashut mechanism for Immortal Empires",
             "updated": "2026-06-12",
-            "subscribers": 14655
+            "subscribers": 14653
           }
         ]
       },
@@ -14556,6 +15047,67 @@
       ]
     },
     {
+      "id": "steam-3556592733",
+      "name": "Drycha Reskin (Lin)",
+      "authors": [
+        "混沌破龍斩"
+      ],
+      "kind": "reskin",
+      "summary": "Lin's new model for Drycha on its own, without the Nurgle corruption campaign of Lin's Corrupted Drycha.",
+      "tags": [
+        "reskin",
+        "drycha",
+        "wood elves"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3556592733",
+            "title": "戴查美化 (Drycha Reskin)",
+            "updated": "2025-10-07",
+            "subscribers": 3451
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "Recommended by the Alarielle, Temptation's Bloom author for players who want Drycha's model changed without the Nurgle progression; Lin's Corrupted Drycha already brings the model."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether it can run next to Lin's Corrupted Drycha is not stated."
+        ]
+      },
+      "status": "stable",
+      "support": [
+        {
+          "platform": "Ko-fi",
+          "url": "https://ko-fi.com/likedota2009"
+        },
+        {
+          "platform": "Afdian",
+          "url": "https://afdian.com/a/likedota2009"
+        }
+      ],
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "混沌破龍斩",
+          "url": "https://steamcommunity.com/profiles/76561198418615682/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/18340635155489799974/37D38F2521BB2411646F7F412FB8B412B0B9DCD8/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "dc-dust-s-corrupted-heroes-dch",
       "name": "Dust's Corrupted Heroes (DCH)",
       "authors": [
@@ -14576,19 +15128,13 @@
             "id": "3815990781",
             "title": "Dusts Corrupted Heroes",
             "updated": "2026-11-01",
-            "subscribers": 2735
-          },
-          {
-            "id": "3829276482",
-            "title": "Citadel of Dusk Standalone (Dust)",
-            "updated": "2026-11-01",
-            "subscribers": 313
+            "subscribers": 2753
           },
           {
             "id": "2897366143",
             "title": "Legendary High Elven Characters [LHEC]",
             "updated": "2026-10-12",
-            "subscribers": 35222
+            "subscribers": 35224
           }
         ]
       },
@@ -14601,6 +15147,16 @@
         }
       ],
       "relations": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Since the 2026-10-19 update Corrupted Landmarks contains DCH's buildings: the Black Ark can recruit the corrupted High Elf units from ATB (locked until Alarielle reaches stage 5), and they do not appear at all without an updated Corrupted Landmarks. Not a hard dependency.",
+          "source": {
+            "type": "discord"
+          }
+        },
         {
           "kind": "recommends",
           "target": {
@@ -14634,6 +15190,19 @@
           "character": "Citadel of Dusk"
         }
       ],
+      "installNotes": [
+        "The story and heroes are for Alarielle (Morathi support is only planned). Since the 2026-10-08 Steam release the lord and heroes also carry over if Alarielle is confederated by another ATB/AZR-eligible lord (Azazel, Archaon, Sigvald, N'Kari), and an AI Alarielle can progress the questline herself. To play DCH as Morathi, summon the heroes with the console.",
+        "DCH removes Alarielle's starting handmaiden Joespharilis (a custom version by another author) and Imrik's starting mage Mikaela and replaces them with its own unique hero versions; mods that edit those two characters may no longer apply.",
+        "While DCH or the Citadel of Dusk is active, Court Unity confederation is blocked for Imrik, Teclis, Eltharion and Tyrion; confederating gives Caledor, Saphery, the Citadel of Dusk or Tiranoc instead (a lord each when LHEC is installed). This is on purpose, agreed with the ATB author to stop cheesing ATB stage 4, and the author says the removal is permanent (2026-11-01); a special lord for Saphery is planned.",
+        "Citadel of Dusk (a playable faction with its own lord and hero) is also available as the standalone Steam item 3829276482 since 2026-10-29; the same content is built into DCH from the 2026-10-30 update, so the standalone item is not needed together with DCH.",
+        "The Citadel of Dusk lord and hero are spawned on turn 1: adding it to a running campaign does not give them, but it does not break the save either; summon them with console commands.",
+        "The 2026-10-30 update ('Choices Have Consequences') makes the mod explicit (adults only) and adds support for the ATB finale: Pulvis, Mikaela and Nicola confront Alarielle, and the choice leads to an extra Aliathra lord model (playable Aliathra needs LHEC; the quest chain exists only when played with ATB).",
+        "SFO: DCH only adds units, buildings and heroes, so it should work with SFO in theory, but SFO raises unit health, numbers and damage, so DCH units will be weak without a balance patch (untested, author 2026-10-19)."
+      ],
+      "knownIssues": [
+        "Capturing a barracks in Morathi's territory can give the corrupted High Elf units before ATB stage 5; the author has a lock script and offered it to the ATB author (as of 2026-10-20).",
+        "Melvina (Citadel of Dusk lord) plays her male counterpart's voice lines when diplomacy is started with her; author aware, not yet fixed (as of 2026-10-30)."
+      ],
       "cleanup": {
         "staleDataPacks": [
           "dusts_corrupted_heroes.pack",
@@ -14652,11 +15221,6 @@
         {
           "url": "https://images.steamusercontent.com/ugc/15817605857248498131/6FE634A4EA00A6DE59A7277928AA86649F5617A8/",
           "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/15111376570512367148/ECC0A240FC44D319ED5C2226FEED839C2DB9361E/",
-          "kind": "screenshot",
           "source": "steam"
         },
         {
@@ -14695,7 +15259,7 @@
             "id": "2991431203",
             "title": "Dynasty of the Damned [7.0]",
             "updated": "2026-02-17",
-            "subscribers": 15216
+            "subscribers": 15211
           }
         ]
       },
@@ -15686,7 +16250,7 @@
             "id": "3348616922",
             "title": "Embedded editor for Tabletop Caps",
             "updated": "2024-10-15",
-            "subscribers": 4563
+            "subscribers": 4561
           }
         ]
       },
@@ -15749,7 +16313,7 @@
             "id": "3816938215",
             "title": "Empress Caroline Franz (Amber) – female Karl Franz",
             "updated": "2026-10-16",
-            "subscribers": 1764
+            "subscribers": 1763
           }
         ]
       },
@@ -16274,6 +16838,13 @@
           "from": "download",
           "exclusiveGroup": "loi",
           "note": "Variant DD (assets from Blushing Moon Unit Replacer)"
+        },
+        {
+          "file": "All_Loi_Variant_selector_steam.pack",
+          "from": "steam",
+          "steamId": "3503458514",
+          "exclusiveGroup": "loi",
+          "note": "Steam all-in-one with Variant Selector"
         }
       ],
       "relations": [
@@ -16329,7 +16900,8 @@
         "Author recommends deleting the LL version and using the Steam version (Steam ID 3503458514)",
         "Choose a variant (A, B, C, D, E, F, DD) and put the matching pack in the data folder, OR use the all-in-one pack with Variant Selector - then no individual packs are needed",
         "Can be added, removed or swapped in the middle of a campaign",
-        "Variants A-C use assets from HuaJS258's 'Slaanesh Corrupted Cathay Roster', D-F/DD from Ashkaari's 'Blushing Moon Unit Replacer'"
+        "Variants A-C use assets from HuaJS258's 'Slaanesh Corrupted Cathay Roster', D-F/DD from Ashkaari's 'Blushing Moon Unit Replacer'",
+        "The Steam version adds new unit cards and 2D portraits for all 7 variants and fixes the stretched face portrait of the original Loi."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -16338,6 +16910,12 @@
           "Individual pack file names are not given ('8 separate pack files' vs. 7 variants)",
           "Status 'superseded' = LL version replaced by Steam version (per the author)"
         ]
+      },
+      "cleanup": {
+        "staleDataPacks": [
+          "@@All_Loi_Variant_selector.pack"
+        ],
+        "note": "The Steam version (3503458514) uses the pack name All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
       },
       "authorPages": [
         {
@@ -16653,7 +17231,7 @@
             "id": "3349407231",
             "title": "Expanded Building Overhaul",
             "updated": "2026-10-02",
-            "subscribers": 14614
+            "subscribers": 14616
           }
         ]
       },
@@ -16710,7 +17288,7 @@
             "id": "3265184953",
             "title": "Expanded Building: Instant Building",
             "updated": "2026-09-26",
-            "subscribers": 6306
+            "subscribers": 6304
           }
         ]
       },
@@ -16756,7 +17334,7 @@
             "title": "EXPERIENCE RANKS",
             "unlisted": false,
             "updated": "2023-09-08",
-            "subscribers": 31685
+            "subscribers": 31689
           }
         ]
       },
@@ -17020,7 +17598,7 @@
             "title": "Female Daemonettes",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 42894
+            "subscribers": 42893
           }
         ]
       },
@@ -17137,7 +17715,7 @@
             "id": "3223598729",
             "title": "Female Malus Darkblade",
             "updated": "2026-02-27",
-            "subscribers": 2114
+            "subscribers": 2112
           }
         ],
         "nexus": {
@@ -17888,7 +18466,7 @@
             "id": "3279560220",
             "title": "Force AI Agent Embedding 9.x MOAR' FECTIVE' NOW",
             "updated": "2026-10-17",
-            "subscribers": 12494
+            "subscribers": 12499
           }
         ]
       },
@@ -18305,7 +18883,7 @@
             "title": "Fudging Vassals 9.0.4",
             "unlisted": false,
             "updated": "2026-10-26",
-            "subscribers": 57484
+            "subscribers": 57485
           }
         ]
       },
@@ -18578,7 +19156,7 @@
             "title": "通用框架 (Generic Framework)",
             "unlisted": false,
             "updated": "2026-10-12",
-            "subscribers": 43728
+            "subscribers": 43722
           }
         ]
       },
@@ -18652,7 +19230,7 @@
             "id": "3812278307",
             "title": "Global Pcall Listener Fix 9.0.x",
             "updated": "2026-10-03",
-            "subscribers": 4563
+            "subscribers": 4578
           }
         ]
       },
@@ -18770,7 +19348,7 @@
             "id": "2890499031",
             "title": "Godslayer Overhaul by Mortrau",
             "updated": "2026-10-11",
-            "subscribers": 40179
+            "subscribers": 40180
           }
         ]
       },
@@ -18819,7 +19397,7 @@
             "title": "Grand Campaign Camera",
             "unlisted": false,
             "updated": "2023-11-30",
-            "subscribers": 6872
+            "subscribers": 6871
           }
         ]
       },
@@ -18932,11 +19510,13 @@
       ],
       "status": "wip",
       "knownIssues": [
-        "Some broken animations since 7.0.",
-        "Quest battles and ancillaries still need reworking."
+        "Quest battles and ancillaries still need reworking.",
+        "Since patch 9.0: some of the original events (old script) no longer fire, the Goblin Enslaver lord shows as a T-pose model on the campaign map when dismounted, and Empire/Cathay goblin shields float above the heads. The author confirms the events and the T-pose and plans fixes for the next update."
       ],
       "installNotes": [
-        "On turn 2 take the dilemma (first option each time), then complete an easy quest to unlock the buildings."
+        "On turn 2 take the dilemma (first option each time), then complete an easy quest to unlock the buildings.",
+        "Standalone: needs no other goblin mod. Since 2025-12-22 it replaces the pre-Redux build Goblin_horde_rewrite_wip.pack (also the Chinese goblinallinone build) and the older Goblin Horde Addon pages.",
+        "Patch 9.0 broke the mod at startup (abilities_junction_tables error); the fixes of 2026-09-29 and 2026-10-04 load again, so update older copies."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -18945,6 +19525,13 @@
           "Pack name taken from the Workshop title (Goblin_horde_redux.pack); not verified in a Workshop folder.",
           "Dependency on the original Endo Goblin Horde mod not clarified (not in the index)."
         ]
+      },
+      "cleanup": {
+        "staleDataPacks": [
+          "Goblin_horde_rewrite_wip.pack",
+          "goblinallinone_cn*.pack"
+        ],
+        "note": "Pre-Redux builds of the same mod; Goblin Horde Redux replaced them in December 2025 and must not run together with them."
       },
       "authorPages": [
         {
@@ -19218,23 +19805,12 @@
             "id": "3238848431",
             "title": "Helper UI",
             "updated": "2026-10-10",
-            "subscribers": 79195
+            "subscribers": 79214
           }
         ]
       },
       "packs": [],
       "relations": [
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-27930"
-          },
-          "note": "Reported to break the second Miao Ying quest battle; manual battles may crash after her corruption quest",
-          "condition": "only when playing Miao Ying in Azazel's Realm",
-          "source": {
-            "type": "discord"
-          }
-        },
         {
           "kind": "optional",
           "target": {
@@ -19244,6 +19820,27 @@
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3238848431"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Crashes while loading any manual battle that contains a corrupted Miao Ying; with Azazel's Realm it also breaks the second Miao Ying quest battle.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Crashes while loading a manual battle that contains a corrupted Miao Ying (from corruption level 1), also without Azazel's Realm. Turn the battle UI mod off for such battles; auto-resolve is unaffected.",
+          "condition": "manual battles with a corrupted Miao Ying",
+          "source": {
+            "type": "discord"
           }
         }
       ],
@@ -19256,6 +19853,9 @@
           "Is the Azazel's Realm problem fixed in newer versions of either mod?"
         ]
       },
+      "knownIssues": [
+        "Crashes the game while loading any manual battle that contains a corrupted Miao Ying (from corruption level 1 up); Just Good Battle UI and other Klissan battle UI mods do the same. Turning the battle UI mod off fixes it, auto-resolve is unaffected (2026-09-09)."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -19297,7 +19897,7 @@
             "id": "3239114391",
             "title": "Helper UI 汉化",
             "updated": "2026-10-29",
-            "subscribers": 53315
+            "subscribers": 53327
           }
         ]
       },
@@ -19592,7 +20192,7 @@
             "id": "2931087074",
             "title": "Heroes of Legend: Lords of Time Update",
             "updated": "2026-10-24",
-            "subscribers": 58056
+            "subscribers": 58059
           }
         ]
       },
@@ -19758,7 +20358,7 @@
             "id": "3804202775",
             "title": "High elf ice witch  plus",
             "updated": "2026-09-26",
-            "subscribers": 1076
+            "subscribers": 1078
           }
         ]
       },
@@ -19816,6 +20416,64 @@
       ]
     },
     {
+      "id": "steam-3480317584",
+      "name": "High elf red line buffs for dark elf units",
+      "authors": [
+        "Domekabc"
+      ],
+      "kind": "units",
+      "summary": "Adds Dark Elf units to the High Elves' “Red Line” skills and Shades to Alith Anar's skills.",
+      "tags": [
+        "general",
+        "high elves",
+        "dark elves",
+        "alith anar",
+        "skills"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3480317584",
+            "title": "High elf red line buffs for dark elf units",
+            "updated": "2025-05-21",
+            "subscribers": 15018
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "zzz_domek_def_anar.pack",
+          "from": "steam",
+          "steamId": "3480317584"
+        }
+      ],
+      "relations": [],
+      "installNotes": [
+        "Not part of Lazy's Morathi progression and not needed for it; Readman's Alarielle lists use it for mixed High Elf and Dark Elf armies."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "high"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Domekabc",
+          "url": "https://steamcommunity.com/profiles/76561198060276075/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10222375935479022986/961BEE1EF3FEC9BB57D96E412D8E344605AD11BB/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "description": "Dark Elf units are added to the High Elves' Red Line skills, and Shades to Alith Anar's unique skills. It is the counterpart to “Red line buffs for High Elf units” and appears in Readman's Alarielle lists.",
+      "recommendedFor": "Alarielle players with Dark Elf units in their army."
+    },
+    {
       "id": "steam-3258529495",
       "name": "High Elves Expanded Hero Skill Trees",
       "authors": [
@@ -19844,7 +20502,7 @@
             "id": "3258529495",
             "title": "High Elves Expanded Hero Skill Trees",
             "updated": "2026-10-22",
-            "subscribers": 9515
+            "subscribers": 9512
           }
         ]
       },
@@ -19907,7 +20565,7 @@
             "id": "2887139566",
             "title": "High Elves Tech-Tree",
             "updated": "2026-09-25",
-            "subscribers": 12902
+            "subscribers": 12904
           }
         ]
       },
@@ -19956,7 +20614,7 @@
             "title": "High Resolution UI Improvements, IT WORKS",
             "unlisted": false,
             "updated": "2026-10-06",
-            "subscribers": 120949
+            "subscribers": 120951
           }
         ]
       },
@@ -20094,7 +20752,7 @@
             "id": "3608958073",
             "title": "Ice Witch (high-eared version, 冰雪蜜城甜蜜蜜)",
             "updated": "2026-09-26",
-            "subscribers": 2686
+            "subscribers": 2688
           }
         ]
       },
@@ -20142,7 +20800,7 @@
             "id": "3608958660",
             "title": "Ice Witch faction patch (你爱我，我爱你，冰雪甜蜜蜜)",
             "updated": "2025-11-20",
-            "subscribers": 2053
+            "subscribers": 2055
           }
         ]
       },
@@ -20197,7 +20855,7 @@
             "id": "3007996493",
             "title": "Immortal Empires Expanded",
             "updated": "2026-10-28",
-            "subscribers": 239451
+            "subscribers": 239516
           }
         ]
       },
@@ -20265,7 +20923,7 @@
             "title": "Immortal Landmarks",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 182125
+            "subscribers": 182132
           }
         ]
       },
@@ -20375,12 +21033,26 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "seu_miao_imrik.pack",
+          "from": "steam",
+          "steamId": "3810954587",
+          "note": "Original by another author (abandoned), kept alive by MrDustV"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-02",
         "confidence": "medium"
       },
+      "installNotes": [
+        "Only for Imrik/Caledor campaigns (not Alarielle or Miao Ying). The questline (dominate or romance Miao Ying, no confederation) starts automatically on turn 4.",
+        "Patch 9.0 needs the 2026-09-25 build of seu_miao_imrik.pack (updated tables); the older pack stops the game from starting. The Workshop item is that build."
+      ],
+      "knownIssues": [
+        "The questline breaks if another faction (for example Zhao) confederates Miao Ying before it is finished, because its scripts target the northern provinces. The Corrupted Compendium's 'Play as Azazel' overwrite includes tables that block Miao confederation."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -20509,7 +21181,7 @@
             "id": "3773211997",
             "title": "集成战略 (Integrated Strategies)",
             "updated": "2026-10-08",
-            "subscribers": 2416
+            "subscribers": 2419
           }
         ]
       },
@@ -20529,7 +21201,7 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "dc-summon-servant-jeanne-d-arc-and-alter-mct"
+            "mod": "ll-43852"
           },
           "note": "Summon Servant (Steam 3552538974), listed as prerequisite",
           "source": {
@@ -20563,6 +21235,9 @@
           "Is 'Summon Servant' here the same mod as ll-43852 (英灵召唤)? The catalog has two entries."
         ]
       },
+      "installNotes": [
+        "The exploration mode (event nodes, random battles, collectibles, started through dilemma events) works only on the Immortal Empires map and needs the selected character on the campaign map in a normal stance (not garrisoned, ambushing or force-marching)."
+      ],
       "support": [
         {
           "platform": "Ko-fi",
@@ -20736,7 +21411,7 @@
             "id": "3624226937",
             "title": "JS Slaanesh Artillery 9.0 - Daemonic Firepower",
             "updated": "2026-10-10",
-            "subscribers": 2999
+            "subscribers": 3001
           }
         ]
       },
@@ -20792,7 +21467,7 @@
             "id": "3082390369",
             "title": "Just Good Babysitter",
             "updated": "2026-09-26",
-            "subscribers": 89215
+            "subscribers": 89256
           }
         ]
       },
@@ -20872,7 +21547,7 @@
             "id": "3071058010",
             "title": "Just Good UI Mod",
             "updated": "2026-10-30",
-            "subscribers": 50063
+            "subscribers": 50062
           }
         ]
       },
@@ -21350,7 +22025,7 @@
             "id": "2996322070",
             "title": "Khalida the Queen",
             "updated": "2026-11-01",
-            "subscribers": 37049
+            "subscribers": 37050
           }
         ],
         "nexus": {
@@ -21475,7 +22150,8 @@
       "status": "wip",
       "knownIssues": [
         "BETA; story will be extended as SOBORO's story continues",
-        "Latest fix: destroying/capturing Karak Zorn and Golden Tower for the Dwarf/Lizardmen quest"
+        "Latest fix: destroying/capturing Karak Zorn and Golden Tower for the Dwarf/Lizardmen quest",
+        "In the BETA the last stages still have rough edges; the author recommends choosing the hero option when it is offered."
       ],
       "installNotes": [
         "Standalone, no dependencies; cheat sheet in Markdown included"
@@ -21488,6 +22164,9 @@
           "Khalida is also listed as a supported lord in ll-36630; no interaction described"
         ]
       },
+      "requiresDlc": [
+        "Tomb Kings DLC"
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -21606,7 +22285,7 @@
             "id": "3430763383",
             "title": "Kislev Units",
             "updated": "2026-09-26",
-            "subscribers": 4556
+            "subscribers": 4555
           }
         ]
       },
@@ -21634,6 +22313,53 @@
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/14180182613262274/97BC00855AB8DBB32A6E0E9F11D6A34C84C366E4/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
+      "id": "steam-3632497242",
+      "name": "Korean translation bundle for the corruption mods",
+      "authors": [
+        "드로우달스"
+      ],
+      "kind": "translation",
+      "summary": "Korean translation of many corruption mods in one pack (machine translated, then reviewed); abandoned mods were dropped in the latest update.",
+      "tags": [
+        "translation",
+        "korean"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3632497242",
+            "title": "타락모드 한글 번역 모드 합본팩",
+            "updated": "2026-10-18",
+            "subscribers": 2807
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "The uploader keeps Community Beastmen and Corrupted Ascension in separate translation items. Enable only the translations of mods you actually use; with every translated mod enabled at once script errors are expected."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "드로우달스",
+          "url": "https://steamcommunity.com/profiles/76561198031678263/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/14267199896143205040/4C556B82F4EFD6637257279F0ED064F6838C7477/",
           "kind": "cover",
           "source": "steam"
         }
@@ -21992,7 +22718,7 @@
             "id": "3025510782",
             "title": "Landmarks of Eternity",
             "updated": "2026-09-24",
-            "subscribers": 96624
+            "subscribers": 96623
           }
         ]
       },
@@ -22062,7 +22788,7 @@
             "id": "3079915520",
             "title": "Landmarks of Eternity-Immortal Empire Expanded edition (28 new landmarks)",
             "updated": "2026-09-27",
-            "subscribers": 72007
+            "subscribers": 72005
           }
         ]
       },
@@ -22459,7 +23185,7 @@
             "title": "Lazy's Corruption Framework",
             "role": "framework",
             "updated": "2026-10-05",
-            "subscribers": 44883
+            "subscribers": 44879
           },
           {
             "id": "3471237645",
@@ -22524,6 +23250,27 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237645"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3238848431"
+          },
+          "note": "Helper UI (and other Klissan battle UI mods) crashes while loading a manual battle that contains a corrupted Miao Ying; turn it off for such battles.",
+          "condition": "manual battles with a corrupted Miao Ying",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Corrupted Ascension runs its own corruption system next to Lazy's; reports are mixed (doubled traits, Corrupted Compendium confused by two stages), both authors say real compatibility is possible only later.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "playAs": [
@@ -22551,7 +23298,8 @@
         "Progression was moved to the Steam Workshop (the earlier _stages.pack files are gone); LL download = redirect to the Steam collection",
         "Load the framework above the stage mods (otherwise CTD)",
         "For support: post li_log.txt and script_log_xxx.txt (game folder) in the Lazy Discord (#faq, then #help); script_log requires the Lua Console mod",
-        "Corruption progress via diplomacy from stage 1: 20 points per stage (NAP/trade +1, alliance +2, vassal +3 per turn, max. 1 each)"
+        "Corruption progress via diplomacy from stage 1: 20 points per stage (NAP/trade +1, alliance +2, vassal +3 per turn, max. 1 each)",
+        "Since Lazy's mods moved to Steam, old loose copies of his packs in the data folder must be deleted: two copies loading at once reset corrupted characters to stage 0 and leave invisible models."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -22967,6 +23715,9 @@
           "source": "steam"
         }
       ],
+      "installNotes": [
+        "Covers all four stages. The older standalone items Stage 1 (2860509927) and Stage 2 (2867839569) only cover stages 1 and 2, so they are redundant when this item is used; they were updated for patch 6.3 and keep working as 'less lurid' reskins."
+      ],
       "description": "Model pack for Lazy's Morathi corruption: it holds the 3D model changes for each corruption stage (pack zli_morathi_reskins). It does nothing on its own.\n\nThe Workshop page lists Lazy's Corruption Framework and “Lazy's Corruption Progression Morathi” as required items; the progression in turn requires this pack.\n\nPart of the Steam collection “Lazy's Corruption”; the KPW guide for Morathi lists it.",
       "features": [
         "Stage models for Morathi's corruption",
@@ -23098,7 +23849,7 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "dc-morathi-ascension-lazy-stages-optional-original-hair"
+            "mod": "steam-3480317584"
           },
           "source": {
             "type": "steam",
@@ -23186,16 +23937,6 @@
             "mod": "steam-2876531798"
           },
           "note": "Preytons (Steam 2876531798)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-23876"
-          },
-          "note": "Legendary Lore (does not work with Corrupted Compendium)",
           "source": {
             "type": "discord"
           }
@@ -23330,7 +24071,7 @@
             "id": "2805809756",
             "title": "Lazy's Katarin the Ice Queen (should work with any version, even if it says it's outdated)",
             "updated": "2026-01-10",
-            "subscribers": 97850
+            "subscribers": 97837
           }
         ]
       },
@@ -23450,6 +24191,16 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471237702"
           }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "dc-cult-of-pleasure-mechanics-morathi-9-0-patch"
+          },
+          "note": "Cult of Pleasure mechanics for Morathi (Steam 3240401070), patched for 9.0 around 2026-10-09; the progression works without it.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "playAs": [
@@ -23465,13 +24216,18 @@
       "tier": "progression",
       "status": "wip",
       "knownIssues": [
-        "Story incomplete (as of update 2023/2025)",
-        "Since 6.0: high heels sink into the ground in battle (animation Persistent Meta, unresolved)",
-        "Allied/enemy factions (Alith Anar, Malus, Teclis, N'Kari) can break the progression by being wiped out; mitigated by quest battles and AI bonuses"
+        "Allied/enemy factions (Alith Anar, Malus, Teclis, N'Kari) can break the progression by being wiped out; mitigated by quest battles and AI bonuses",
+        "Maintenance only: since 2026-02-16 Lazy keeps the Lazy mods working with game updates but adds no new content; the story ends at stage 4 and stage 5 is not in the mod.",
+        "Made for playing as Morathi: in a campaign as another lord there is no protection against the AI Morathi's progression, and she can confederate the player (a Dechala campaign was lost this way)."
       ],
       "installNotes": [
         "'Get all on steam now': LL downloads only redirect to the Steam collection",
-        "Progression guide on the Lewdhammer wiki: Morathi / Morathi_Lore#Masque_Side_Progression"
+        "Progression guide on the Lewdhammer wiki: Morathi / Morathi_Lore#Masque_Side_Progression",
+        "The newest state is on the Steam Workshop (version 0.7.2 as of 2026-03-07, newer than the LoversLab file). It needs the matching up-to-date Lazy's Corruption Framework; if Steam does not deliver an update, resubscribe or delete the local workshop file.",
+        "Use a third-party mod manager: CA's launcher has no load ordering, which is the usual reason the Quintex-landmark quest or the later quests do not trigger.",
+        "If high heels still clip through the ground in battle, the reskin files are old: update or redownload them (fixed by Lazy, 2025-07-12).",
+        "Lazy's updates, including the Masque side-progression update of 2025-12-25, are save compatible whatever the current Morathi stage is; nothing extra is needed from the player.",
+        "A crash on the AI Morathi's turn (about turn 8-9, when she confederates Masque), seen in campaigns as another lord with ATB or Azazel's Realm, was fixed in an update reported on 2026-10-28; Lazy stated that day that the main corruption mod should work bug free after game patch 9.0."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -23816,13 +24572,13 @@
             "id": "2854943472",
             "title": "Lazy's Valkia the Gorequeen",
             "updated": "2025-03-26",
-            "subscribers": 5675
+            "subscribers": 5676
           },
           {
             "id": "2854968438",
             "title": "Lazy's Valkia the Gorequeen Blonde",
             "updated": "2023-09-17",
-            "subscribers": 1417
+            "subscribers": 1418
           }
         ]
       },
@@ -24021,7 +24777,7 @@
             "id": "2826930183",
             "title": "Legendary Characters",
             "updated": "2025-03-26",
-            "subscribers": 99790
+            "subscribers": 99788
           }
         ]
       },
@@ -24081,7 +24837,7 @@
             "id": "3305404052",
             "title": "Legendary Characters - 9.0",
             "updated": "2026-10-19",
-            "subscribers": 62571
+            "subscribers": 62582
           }
         ]
       },
@@ -24156,6 +24912,54 @@
       ]
     },
     {
+      "id": "steam-3472458214",
+      "name": "Legendary Heroes: Battle for Warhammer",
+      "authors": [
+        "言无Silence"
+      ],
+      "kind": "units",
+      "summary": "Thirteen new legendary heroes inspired by another fantasy series, unlocked through events for many factions.",
+      "tags": [
+        "general",
+        "heroes",
+        "units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3472458214",
+            "title": "Legendary Heroes: Battle for Warhammer",
+            "updated": "2026-10-14",
+            "subscribers": 10389
+          }
+        ]
+      },
+      "packs": [],
+      "relations": [],
+      "installNotes": [
+        "Made compatible with Corrupted Landmarks on 2025-12-13 (Corrupted Landmarks' maintainer). Its Wood Elf part uses the same mechanic as the Kerberos mods, so a conflict there cannot be fully fixed."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium"
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "言无Silence",
+          "url": "https://steamcommunity.com/profiles/76561198379333190/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/35574817849904741/0D45AFC0ED96713FA086A716075B999681FC8EC0/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
+    },
+    {
       "id": "steam-3559803702",
       "name": "Legendary Lord Defeat Traits for Reinforcing Generals",
       "authors": [
@@ -24175,7 +24979,7 @@
             "title": "Legendary Lord Defeat Traits for Reinforcing Generals",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 40530
+            "subscribers": 40532
           }
         ]
       },
@@ -24962,7 +25766,7 @@
             "id": "2858308116",
             "title": "Lily's Bretonnia Overhaul: Definitive Edition - 9.0",
             "updated": "2026-10-21",
-            "subscribers": 36318
+            "subscribers": 36323
           }
         ]
       },
@@ -25012,7 +25816,7 @@
             "id": "3718883838",
             "title": "Lin_AllInOne_en.pack",
             "updated": "2026-10-10",
-            "subscribers": 1930
+            "subscribers": 1929
           },
           {
             "id": "3676463688",
@@ -25020,7 +25824,14 @@
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lin_AllInOne_en.pack",
+          "from": "steam",
+          "steamId": "3718883838",
+          "note": "The maintained copy (also uploaded on Discord)."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -25038,11 +25849,29 @@
         "confidence": "medium"
       },
       "knownIssues": [
-        "Old Lin_Corrupted_Ascension_EnUpdated.pack (2025-06-20) is outdated, use the Steam version"
+        "Old Lin_Corrupted_Ascension_EnUpdated.pack (2025-06-20) is outdated, use the Steam version",
+        "Steam item 3676463688 is an outdated copy of this translation; use 3718883838 (author, 2026-05-26)."
       ],
       "loadOrder": {
-        "note": "Discord: Above Corrupted Ascension"
+        "above": [
+          {
+            "mod": "ll-27171"
+          },
+          {
+            "mod": "ll-27663"
+          },
+          {
+            "mod": "ll-32476"
+          },
+          {
+            "mod": "ll-43852"
+          }
+        ],
+        "note": "Discord: Above Corrupted Ascension; the translation pack must win over all Lin mods."
       },
+      "installNotes": [
+        "Besides the Lin mods the pack translates Integrated Strategies (since 2026-10-10), Summon Servant (Scathach and new ancillaries, 2026-10-09) and the Generic Framework tooltips."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -25261,7 +26090,7 @@
             "id": "3607399515",
             "title": "Lizardmen Units - Amazons",
             "updated": "2026-10-28",
-            "subscribers": 10156
+            "subscribers": 10159
           }
         ]
       },
@@ -25326,7 +26155,7 @@
             "id": "2998525410",
             "title": "Local Recruitment for Warriors of Chaos",
             "updated": "2026-09-25",
-            "subscribers": 42968
+            "subscribers": 42969
           }
         ]
       },
@@ -25408,7 +26237,7 @@
             "title": "Lord Hero Swap - 9.0 Fix (Unofficial)/领主和英雄切换9.0 修复版（原版失效修复）",
             "unlisted": false,
             "updated": "2026-11-01",
-            "subscribers": 2205
+            "subscribers": 2213
           }
         ]
       },
@@ -25469,7 +26298,7 @@
             "id": "3079850881",
             "title": "Lost Calm: Jurassic Normal (updated for Patch 9)",
             "updated": "2026-10-05",
-            "subscribers": 77661
+            "subscribers": 77663
           }
         ]
       },
@@ -25577,7 +26406,7 @@
             "id": "3086916833",
             "title": "Lost Calm: Jurassic Normal SFO",
             "updated": "2026-06-05",
-            "subscribers": 8120
+            "subscribers": 8118
           }
         ]
       },
@@ -25666,7 +26495,7 @@
             "id": "3085589102",
             "title": "Lost Calm: Nakai Submod",
             "updated": "2026-09-27",
-            "subscribers": 22403
+            "subscribers": 22404
           }
         ]
       },
@@ -25743,7 +26572,7 @@
             "id": "2853058175",
             "title": "Loyalty Removed",
             "updated": "2026-10-01",
-            "subscribers": 17581
+            "subscribers": 17582
           }
         ]
       },
@@ -25813,7 +26642,7 @@
             "id": "3081886544",
             "title": "Lustria Jurassic 中文汉化合集",
             "updated": "2026-06-21",
-            "subscribers": 18480
+            "subscribers": 18483
           }
         ]
       },
@@ -25985,7 +26814,8 @@
       "relations": [],
       "status": "abandoned",
       "knownIssues": [
-        "The author has not played WH3 since Shadows of Change; per the disclaimer the mod is probably not updated for the current game version and likely does not work properly."
+        "The author has not played WH3 for a long time and said in April 2026 that the mod is outdated and no longer really his; anyone may continue it with credit to the first version.",
+        "Together with Zeta's warmaiden reskin the lords look right, but werewolves, fimir warriors and ice trolls show no decorations (Throgg is fine)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -26067,7 +26897,7 @@
             "title": "Lyra the Lioness: Legendary Hero",
             "unlisted": false,
             "updated": "2025-01-03",
-            "subscribers": 9544
+            "subscribers": 9543
           }
         ]
       },
@@ -26223,7 +27053,7 @@
             "title": "Mariko Sama",
             "unlisted": false,
             "updated": "2026-09-29",
-            "subscribers": 2971
+            "subscribers": 2970
           }
         ]
       },
@@ -26403,7 +27233,7 @@
             "id": "2896264280",
             "title": "Matched Combat + Reload Animations Submod",
             "updated": "2024-03-29",
-            "subscribers": 26806
+            "subscribers": 26804
           }
         ]
       },
@@ -26528,7 +27358,8 @@
         "After patch 9.0 hotfix files (MEGA, 2026-10-21) must be copied over the workshop folders 3754310516 and 3754311622",
         "Startup crash even with patch files for some users",
         "Shang-Yang Deep portal spawns inside a mountain",
-        "Some schemes do not complete, some unique locations stay locked"
+        "Some schemes do not complete, some unique locations stay locked",
+        "Crashes at start together with the merged Soil pack (2026-11-01); use the fixes posted in the #miao-alchemy Discord channel, not the ones from #soiled-projects."
       ],
       "images": [
         {
@@ -26572,6 +27403,68 @@
         }
       ],
       "status": "superseded"
+    },
+    {
+      "id": "steam-3756385010",
+      "name": "Miao Ying - Keeper of Secrets form",
+      "authors": [
+        "Falceon"
+      ],
+      "kind": "submod",
+      "summary": "After Miao Ying reaches corruption stage 6 and a few breeding events, her battle transformation becomes a Keeper of Secrets instead of her dragon.",
+      "tags": [
+        "miao ying",
+        "cathay",
+        "slaanesh",
+        "transformation"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3756385010",
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "zzz_miao_kos_transform.pack",
+          "from": "steam",
+          "steamId": "3756385010",
+          "note": "Pack name from the Discord copy."
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Needs Lazy's Miao Ying mods and stage 6.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3756385010"
+          }
+        }
+      ],
+      "installNotes": [
+        "Only replaces the battle transformation (not permanent, not her campaign model). The model comes from Lin's Corrupted Ascension. A Russian translation is built into the SEU Reborn translation (Steam 3749585405)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-02",
+        "confidence": "medium",
+        "openQuestions": [
+          "The author also mentioned a requirement on the Defiled Broodmother mod on Discord; the Workshop text names only Lazy's Miao Ying mods."
+        ]
+      },
+      "status": "stable",
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/15968083069519485237/6EAC37711AC57424FF4C5703D9456EADAA421B08/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ]
     },
     {
       "id": "steam-2797705839",
@@ -26837,7 +27730,7 @@
             "id": "2860381227",
             "title": "Miao Ying vs Slaanesh (Immortal Empires start positions) 被色孽包围的妙影(仅限超凡帝国)",
             "updated": "2025-04-15",
-            "subscribers": 6781
+            "subscribers": 6782
           }
         ]
       },
@@ -27004,6 +27897,36 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
           }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Corrupted Landmarks (Steam, latest): Soil's Miao units reference the celestial_hood building from it, and without it the game crashes at startup or on campaign load, although the mod pages do not list it. Delete any old LoversLab landmarks copy from data.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3716025482"
+          },
+          "note": "The cult mechanic conflicts with the City of Smoke mod: a cult cannot be built in Nan-Gau, and upgrading the building deletes the cult.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3663734212"
+          },
+          "note": "Shows the Alchemy panels (cauldron, lab, prison) in one button row; useful when the prison or lab button is missing.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "loadOrder": {
@@ -27030,12 +27953,18 @@
         "Minor UI inconsistencies in cauldron/prison/lab panels.",
         "Placeholder portraits for some lords in the flesh lab.",
         "Pleasure Host High Command Facility still in development.",
-        "Replaces Eltharion's prison mechanic and reskins Grom's cauldron UI when playing Cathay."
+        "Replaces Eltharion's prison mechanic and reskins Grom's cauldron UI when playing Cathay.",
+        "The author has not updated the mod since 2026-08-02. Since patch 9.0 it crashes without community fixes (battle asset replacement, a fix kit, and fixed copies of both Workshop mods posted on Discord 2026-10-05 to 2026-10-16); these need Soil's updated Discord packs and Corrupted Landmarks, and are overwritten when Steam verifies the files.",
+        "After patch 9.0 the Blessed units (recruitment tab, unit list and costs) were missing even with the first community fix; miao_blessed_fix.pack (2026-10-16) restored them. The Soil Discord versions are needed instead of the outdated LoversLab ones.",
+        "After completing Cathay's Grand Scheme the Great Bastion panel disappears from the UI (the threat is forced to 0%).",
+        "Lord ascension can delete the original lord's equipment instead of returning it to the pool (acknowledged as a bug by the author), and the Karak Vlag landmark does not work because it needs a surviving faction and lacks slot data (2026-09-25)."
       ],
       "installNotes": [
         "DLC 'The Warden and the Paunch' required (Grom's cauldron, prison engine).",
-        "Should work with SFO and Corrupted Landmarks according to the author.",
-        "Send feedback to 'rapypy' (Discord)."
+        "Send feedback to 'rapypy' (Discord).",
+        "Works with Corrupted Landmarks and, since 0.9.2, with Azazel's Realm (jail capture works, some Azazel events can be delayed) and Corrupted Compendium. There is no SFO patch yet for its new charge effects and stats (author, 2026-07-05).",
+        "Mechanics unlock with Miao's corruption stage: 1 Jade Dungeon prison, 2 Cauldron and Sybarite Peddler, 3 Chamber of Excess (flesh lab, growth vat, augmentation), 4 Deeps/cult constructions and forts, 5+ lord ascension, 6 Schemes. Nothing is visible at campaign start.",
+        "The Schemes (added in rc-1.0.0) require the Changeling DLC; the mod also reuses Throt's mutation system and the prison engine of Eltharion's DLC, so those DLC factions should be owned."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -27471,7 +28400,7 @@
             "title": "[Dark Elves][Wood Elves]Missing Lore of Magic(8th Ed.) & Greater Arcane Conduit for Lords",
             "unlisted": false,
             "updated": "2026-09-30",
-            "subscribers": 1758
+            "subscribers": 1759
           }
         ]
       },
@@ -27533,7 +28462,7 @@
             "id": "3006052748",
             "title": "Missing Special Herdstones",
             "updated": "2026-06-29",
-            "subscribers": 3524
+            "subscribers": 3522
           }
         ]
       },
@@ -27586,7 +28515,7 @@
             "id": "2802810577",
             "title": "Mixu's Legendary Lords",
             "updated": "2026-10-29",
-            "subscribers": 251939
+            "subscribers": 251961
           }
         ]
       },
@@ -27638,7 +28567,7 @@
             "id": "2815354316",
             "title": "Mod Configuration Tool [LEGACY]",
             "updated": "2023-02-04",
-            "subscribers": 34273
+            "subscribers": 34272
           }
         ]
       },
@@ -27698,25 +28627,19 @@
             "id": "2860509927",
             "title": "Lazy's Morathi Ascension Stage 1 (6.3)",
             "updated": "2025-09-05",
-            "subscribers": 27998
+            "subscribers": 27994
           },
           {
             "id": "2867839569",
             "title": "Lazy's Morathi Ascension Stage 2 (6.3)",
             "updated": "2025-09-05",
-            "subscribers": 34333
-          },
-          {
-            "id": "3480317584",
-            "title": "High elf red line buffs for dark elf units",
-            "updated": "2025-05-21",
-            "subscribers": 15022
+            "subscribers": 34330
           },
           {
             "id": "2868970620",
             "title": "Lazy's Morathi Ascension Original Hair",
             "updated": "2025-03-26",
-            "subscribers": 4952
+            "subscribers": 4949
           },
           {
             "id": "3471237702",
@@ -27785,6 +28708,9 @@
       "loadOrder": {
         "note": "Discord: Framework above the progression stages; see FAQ"
       },
+      "installNotes": [
+        "Steam 3480317584 listed among this entry's sources is not part of Lazy's Morathi progression: it is Domek's small submod 'High elf red line buffs for dark elf units' (pack zzz_domek_def_anar.pack), which lets a confederated Alith Anar's red line buff Dark Elf units. It is not needed for Morathi."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -27800,11 +28726,6 @@
         },
         {
           "url": "https://images.steamusercontent.com/ugc/1814411210975396997/ADB1D26469567EB05FE55A27FCF8CA4AADDBC136/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/10222375935479022986/961BEE1EF3FEC9BB57D96E412D8E344605AD11BB/",
           "kind": "screenshot",
           "source": "steam"
         },
@@ -27848,7 +28769,7 @@
             "id": "2866300430",
             "title": "Morathi Can Seduce Units (7.0.X)",
             "updated": "2025-12-27",
-            "subscribers": 6821
+            "subscribers": 6818
           }
         ]
       },
@@ -27958,7 +28879,7 @@
             "id": "2855142590",
             "title": "Morathi Simple Slaanesh Expansion - Cult of Pleasure Can Recruit Slaanesh Daemons",
             "updated": "2023-04-16",
-            "subscribers": 5588
+            "subscribers": 5587
           }
         ]
       },
@@ -28055,6 +28976,9 @@
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "Reported as no longer working in 2026-02 (last Workshop update 2022-11); Kerberos pointed to other Morathi Slaanesh-expansion mods from his recommended list instead."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -28282,6 +29206,16 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/24467-morathi-corruption-of-a-handmaiden/"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "The handmaiden content is also part of Kerberos' Alarielle mod (ATB).",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "playAs": [
@@ -28293,7 +29227,8 @@
       ],
       "status": "superseded",
       "installNotes": [
-        "Standalone; pack name not given"
+        "Standalone; pack name not given",
+        "Rat of the Lake updated the mod in early January 2025 so that it works again. The same handmaiden content is also part of Kerberos' Alarielle mod (ATB), which lists this standalone version as incompatible."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -28511,7 +29446,7 @@
             "id": "3053402711",
             "title": "More Ability and Spell Buttons",
             "updated": "2025-09-03",
-            "subscribers": 24587
+            "subscribers": 24576
           }
         ]
       },
@@ -28578,7 +29513,7 @@
             "id": "2798690094",
             "title": "More Animation",
             "updated": "2026-10-02",
-            "subscribers": 26767
+            "subscribers": 26762
           }
         ]
       },
@@ -28646,7 +29581,7 @@
             "id": "2853057944",
             "title": "More Forgiving Loyalty",
             "updated": "2026-10-01",
-            "subscribers": 2732
+            "subscribers": 2733
           }
         ]
       },
@@ -28704,7 +29639,7 @@
             "title": "More High Angle Fire (includes Stop Idling and True Sight features)",
             "unlisted": false,
             "updated": "2026-09-25",
-            "subscribers": 45815
+            "subscribers": 45818
           }
         ]
       },
@@ -28778,7 +29713,7 @@
             "id": "2888171970",
             "title": "Variant Selector",
             "updated": "2026-09-24",
-            "subscribers": 233652
+            "subscribers": 233689
           }
         ],
         "discord": [
@@ -28864,7 +29799,7 @@
             "id": "2856024846",
             "title": "More Warband Upgrades for Warriors of Chaos",
             "updated": "2026-10-23",
-            "subscribers": 19957
+            "subscribers": 19964
           }
         ]
       },
@@ -28920,7 +29855,7 @@
             "id": "3292995911",
             "title": "Morgan's Heroes (aka, Tamurkhan's Chieftain Porting)",
             "updated": "2026-10-28",
-            "subscribers": 4493
+            "subscribers": 4492
           }
         ]
       },
@@ -28982,7 +29917,7 @@
             "id": "3313629415",
             "title": "Murranji's Great Bastion Expansion Mod",
             "updated": "2026-09-25",
-            "subscribers": 6713
+            "subscribers": 6712
           }
         ]
       },
@@ -29039,7 +29974,7 @@
             "id": "3261219491",
             "title": "Musk Deer Princess Knight [For Radious]——麝香鹿姬骑士团(Radious数据)",
             "updated": "2026-10-19",
-            "subscribers": 903
+            "subscribers": 904
           }
         ]
       },
@@ -29118,7 +30053,7 @@
             "id": "2803359123",
             "title": "Musk Deer Princess Knight [For SFO]——麝香鹿姬骑士团(SFO数据)",
             "updated": "2026-10-19",
-            "subscribers": 2760
+            "subscribers": 2758
           }
         ]
       },
@@ -29209,7 +30144,7 @@
             "id": "2811214915",
             "title": "Musk Deer Princess Knight EN-Submod｛国人别用！｝",
             "updated": "2026-09-25",
-            "subscribers": 1933
+            "subscribers": 1934
           }
         ]
       },
@@ -29287,7 +30222,7 @@
             "id": "3830112095",
             "title": "Nagash The Dark Queen",
             "updated": "2026-10-30",
-            "subscribers": 979
+            "subscribers": 1009
           }
         ]
       },
@@ -29522,7 +30457,7 @@
             "title": "Neferata The Vampire Queen",
             "unlisted": false,
             "updated": "2026-10-17",
-            "subscribers": 3958
+            "subscribers": 3968
           }
         ]
       },
@@ -29659,7 +30594,7 @@
             "id": "3810498134",
             "title": "New Lahmian Lords and Neferata's Handmaidens",
             "updated": "2026-10-03",
-            "subscribers": 10558
+            "subscribers": 10565
           }
         ]
       },
@@ -29961,7 +30896,18 @@
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-40114"
+          },
+          "note": "Miao Ying's Corrupting Alchemy: a cult cannot be built in Nan-Gau, and upgrading the building deletes the cult.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-01",
@@ -30136,13 +31082,13 @@
             "id": "3404717872",
             "title": "Nymeria - Legendary Hero/Lord",
             "updated": "2025-01-10",
-            "subscribers": 5778
+            "subscribers": 5776
           },
           {
             "id": "3406065086",
             "title": "Aranessa reskin",
             "updated": "2025-01-12",
-            "subscribers": 1139
+            "subscribers": 1138
           }
         ]
       },
@@ -30380,9 +31326,9 @@
       },
       "status": "wip",
       "knownIssues": [
-        "Alpha 0.8/0.81: very experimental; Khorne progression, Locephax hero, Issath and further content not yet implemented",
         "Model changes only happen via the tracking value; dilemmas triggered via console do not change the model",
         "Points total (start 105, block size 10) can only be viewed through the log file in the data folder",
+        "Alpha, very experimental: the Steam release of 2026-09-26 has the full Khorne endgame playable with three custom battles, but many story sections are still missing; further content is not implemented yet.",
         "Startup crash if old Valkia file is in data (2026-09-30)",
         "Mod may be invisible in launcher; use the Early Access launcher option",
         "Khorne path countdown can run negative (2026-10-02)",
@@ -30391,7 +31337,8 @@
       "installNotes": [
         "Subscribe to the Steam item 3813939023 (unlisted); remove an old Corrupted_Valkia_Compiled.pack from the data folder and unsubscribe from 3808407319.",
         "The mod may only show in the launcher with the Early Access / new mod manager option (2026-10-19).",
-        "Profane Hold is located at Kuark (near the starting position)"
+        "Profane Hold is located at Kuark (near the starting position)",
+        "The LoversLab page is no longer updated (it only holds a text file with a Mega link to the roughly 1.4 GB pack); the Workshop is the main place, and the LoversLab/Mega uploads often crash."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -31029,7 +31976,7 @@
             "title": "Preytons",
             "unlisted": false,
             "updated": "2026-10-10",
-            "subscribers": 7806
+            "subscribers": 7804
           }
         ]
       },
@@ -31349,7 +32296,7 @@
             "title": "Radious Total War Mod - Part 1",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214908
+            "subscribers": 214913
           }
         ]
       },
@@ -31406,7 +32353,7 @@
             "title": "Radious Total War Mod - Part 2",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214631
+            "subscribers": 214637
           }
         ]
       },
@@ -31463,7 +32410,7 @@
             "title": "Radious Total War Mod - Part 3",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 214431
+            "subscribers": 214437
           }
         ]
       },
@@ -31522,7 +32469,7 @@
             "title": "Radious Total War Mod - Part 4 - Assets",
             "unlisted": false,
             "updated": "2026-10-30",
-            "subscribers": 211898
+            "subscribers": 211906
           }
         ]
       },
@@ -31709,7 +32656,7 @@
             "title": "Readman Alarielle GGG",
             "unlisted": false,
             "updated": "2026-10-18",
-            "subscribers": 1349
+            "subscribers": 1348
           }
         ]
       },
@@ -31728,6 +32675,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "knownIssues": [
+        "Not patched for the 9.0 DLC as of 2026-10-14; a new version was started on 2026-10-18. Even the fixed building only applies from turn 2: on turn 1 factions still get CA's default building."
+      ],
       "support": [
         {
           "platform": "PayPal",
@@ -31841,7 +32791,7 @@
             "title": "Readman All Aligned Art",
             "unlisted": false,
             "updated": "2026-07-29",
-            "subscribers": 12633
+            "subscribers": 12629
           }
         ]
       },
@@ -32113,7 +33063,8 @@
       ],
       "status": "beta",
       "installNotes": [
-        "Safe to install or uninstall at any time (author, beta)."
+        "Safe to install or uninstall at any time (author, beta).",
+        "CCC (updated 2026-07-25 and 2026-07-31) and the other Readman ATB submods such as UUU and TTT need the ATB update of 2026-07-24 or newer; with an older ATB they fail at startup because they look for the new units and building."
       ],
       "description": "A model submod for Kerberos' “Alarielle, Temptation's Bloom”, published on Steam by Readman ([GWD]Dean) together with Kerrberos. The Workshop text describes variants for Aliathra the Everchild, a character from the ATB suggested mod list: Avelorn colours and heraldry, Slaanesh colours, or her default colours. Community lists and Discord posts describe more content, such as alternative Sisters of Avelorn models, Slaanesh monster units (models by Soilofgenisis), mounted Handmaidens and a Lust Dragon added with ATB 3.1.\n\nThe page requires Marth's Variant Selector. The author calls it a mild beta that is safe to install or uninstall at any time.\n\n“Readman Upgrades Upon Unity” needs this mod. The KPW guides list it for Alarielle, Morathi, N'Kari and Azazel runs; it is in six Readman mod lists.",
       "features": [
@@ -32144,7 +33095,7 @@
             "title": "Readman Devoted Dressed Differently",
             "unlisted": false,
             "updated": "2025-12-05",
-            "subscribers": 1823
+            "subscribers": 1821
           }
         ]
       },
@@ -32348,6 +33299,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "installNotes": [
+        "The Readman_FFF flag mods (default, Pink 3549231458, Green 3556421071) can be swapped, added or removed mid-campaign without breaking the save."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/15083605515608377485/04FD4774156E32C93392A8136385BEC5DF46FE04/",
@@ -32485,7 +33439,7 @@
             "title": "Readman Manic Minotaur Mayhem",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 1908
+            "subscribers": 1904
           }
         ]
       },
@@ -32504,6 +33458,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "knownIssues": [
+        "The Gorebull recruitment skills can fail to appear with some other mod combinations. Readman Large Minotaur Mayhem (LMM) uses different skills and can be swapped in mid-campaign without breaking the save (2026-09-09)."
+      ],
       "support": [
         {
           "platform": "PayPal",
@@ -32568,6 +33525,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "knownIssues": [
+        "CA renumbered many voice lines; only a few of the 178 lines were fixed in this re-upload (2026-01), so some lines may still not play."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/15282325646376367134/C99FB0B8BBC86528A3F7B340317C026B03EB7181/",
@@ -32626,17 +33586,6 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "steam-3485418515"
-          },
-          "note": "Required item on the Workshop page",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
             "mod": "steam-3534460647"
           },
           "note": "Required item on the Workshop page",
@@ -32655,6 +33604,16 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3525258474"
           }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3485418515"
+          },
+          "note": "Red line buffs for High Elf units: broken by the 7.0 patch; since 2025-12-20 this pack embeds the fixed table and works with or without it.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "curation": {
@@ -32662,6 +33621,9 @@
         "confidence": "medium",
         "openQuestions": []
       },
+      "installNotes": [
+        "The patch only adds the Extended High Elf Hero Skills to Joanna's default skill tree: do not use it if another mod already changed her skills or if the extended skills mod is not installed. It does not touch second-form skill trees, so it is not tied to DCH's replacement of Joespharilis."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/10152944345246468755/78FBB28EF136F392324F8227C413E9D4470D581D/",
@@ -32732,6 +33694,16 @@
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513079088"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3485418515"
+          },
+          "note": "Red line buffs for High Elf units: broken by the 7.0 patch; since 2025-12-20 the Readman OOO packs embed the fixed table and work with or without it.",
+          "source": {
+            "type": "discord"
           }
         }
       ],
@@ -32809,7 +33781,7 @@
             "title": "Readman Safe Sailing Ships",
             "unlisted": false,
             "updated": "2025-12-14",
-            "subscribers": 1029
+            "subscribers": 1026
           }
         ]
       },
@@ -33135,7 +34107,9 @@
       ],
       "installNotes": [
         "Not safe to remove mid-campaign (author).",
-        "Use only one UUU variant at a time."
+        "Use only one UUU variant at a time.",
+        "Needs the ATB update of 2026-07-24 or newer; with an older ATB it fails at startup.",
+        "After CA broke the Handmaiden unit, Readman released fixes on 2026-10-13 for the handmaiden horse, foot and bird variants: UUU and CCC must be the versions from that day or newer. Mounted Sisters of Avelorn shoot again and the Handmaiden hero animates again under Chaos factions since 2026-11-02."
       ],
       "description": "Adds a Chaos initiative screen for the Handmaidens in Kerberos' “Alarielle, Temptation's Bloom”. After reaching level 5 and a certain story event, a Handmaiden can “ascend” through a new panel. Corrupted Handmaidens keep their starting trait and gain an extra one, get an extra mount, five new model variants, a new skill tree with custom art, and can pick two of their three exclusive skill lines. They carry all four parts of the Mark of Slaanesh boon and tie into Readman's TTT technologies. The author notes that earning boons through feats is currently broken.\n\nThe Workshop page requires “Readman Coalesced Character Creations”. It is not safe to remove mid-campaign. Only one UUU variant may be active at a time; there are separate versions for Morathi, N'Kari and Warriors of Chaos.\n\nTwo body parts come from Zeta0080's Total Warmaidens III with permission. It is in the Alarielle guide and two Readman mod lists.",
       "features": [
@@ -33160,7 +34134,7 @@
         "steam": [
           {
             "id": "3557775008",
-            "title": "Readman UUU Morathi Ver (!Readman_Alarielle_UUU_Morathi_Ver.pack, unlisted)",
+            "title": null,
             "unlisted": true
           }
         ]
@@ -33180,6 +34154,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "installNotes": [
+        "Use the version from 2026-11-02 or newer: it fixes the handmaiden mount animation broken by a CA change (the N'Kari and Warriors of Chaos variants got the same fix)."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/17193158559319438227/DBFF0DFB956EDAB34B63FAC73DC25DEDB532817D/",
@@ -33331,7 +34308,7 @@
             "id": "3625969460",
             "title": "Readman Wildly Working Wonders",
             "updated": "2025-12-18",
-            "subscribers": 1307
+            "subscribers": 1306
           }
         ],
         "discord": [
@@ -33362,6 +34339,9 @@
           "Pack name not given."
         ]
       },
+      "installNotes": [
+        "Gives the landmarks both the normal and the corrupted effects; the newer corrupted versions of regular building chains do not get both. Still works after game patch 9.0 without an update (2026-10-01)."
+      ],
       "support": [
         {
           "platform": "PayPal",
@@ -33610,12 +34590,33 @@
             "id": "3801443992",
             "title": "Recruitment of All-Race Units · Foreign Barracks",
             "updated": "2026-10-27",
-            "subscribers": 3909
+            "subscribers": 3910
           }
         ]
       },
       "packs": [],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Kerberos advises against using it with Azazel's Realm: those mods expect factions to be destroyed and revived later, so instantly taking their legendary lords can break the storyline (like Recruit Defeated Legendary Lords).",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Kerberos advises against using it with Alarielle, Temptation's Bloom: the mod expects factions to be destroyed and revived later, so instantly taking their legendary lords can break the storyline. A compatibility mod was only discussed.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-01",
@@ -33659,7 +34660,7 @@
             "title": "Red line buffs for High Elf units",
             "unlisted": false,
             "updated": "2025-12-27",
-            "subscribers": 3322
+            "subscribers": 3320
           }
         ]
       },
@@ -33678,6 +34679,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "knownIssues": [
+        "Broke with the 7.0 update (Tides of Torment, 2025-12). Its effect (Slaanesh lords confederated by the player buff High Elf units) is part of ATB 2.2.4 and newer, so with ATB unsubscribe from it; Readman's OOO variants work with or without it since 2025-12-20."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -33826,7 +34830,7 @@
             "title": "Remove characters traits limit",
             "unlisted": false,
             "updated": "2026-10-03",
-            "subscribers": 182967
+            "subscribers": 182982
           }
         ]
       },
@@ -34007,7 +35011,7 @@
             "id": "2789865816",
             "title": "Resized Lords Heroes 3",
             "updated": "2026-10-21",
-            "subscribers": 17327
+            "subscribers": 17324
           }
         ]
       },
@@ -34111,7 +35115,7 @@
             "id": "2989226363",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon",
             "updated": "2025-09-09",
-            "subscribers": 44853
+            "subscribers": 44852
           }
         ]
       },
@@ -34176,7 +35180,7 @@
             "id": "2868228422",
             "title": "Roar of the Jade Sea : Yin-Yin, the Sea Dragon: Jade Pirate Submod",
             "updated": "2026-09-27",
-            "subscribers": 7850
+            "subscribers": 7849
           }
         ]
       },
@@ -34233,7 +35237,7 @@
             "id": "3753323752",
             "title": "RogueTotalWar: Warhammer Spire",
             "updated": "2026-09-26",
-            "subscribers": 12675
+            "subscribers": 12674
           }
         ]
       },
@@ -34290,7 +35294,7 @@
             "id": "2889689320",
             "title": "精英战帮升级（全派系）/RoR Warband Upgrade（All factions）Ver 9.0",
             "updated": "2026-11-01",
-            "subscribers": 19680
+            "subscribers": 19686
           }
         ]
       },
@@ -34486,7 +35490,7 @@
             "title": "Run 'Em Down - Units Actually Damage Routing Units",
             "unlisted": false,
             "updated": "2025-11-16",
-            "subscribers": 41318
+            "subscribers": 41317
           }
         ]
       },
@@ -34823,7 +35827,7 @@
             "title": "sarvente英雄汉化",
             "unlisted": false,
             "updated": "2026-10-19",
-            "subscribers": 335
+            "subscribers": 336
           }
         ]
       },
@@ -34929,7 +35933,7 @@
             "id": "3107188023",
             "title": "Sarvente's Custom Characters: Xiao",
             "updated": "2023-12-18",
-            "subscribers": 2068
+            "subscribers": 2069
           }
         ]
       },
@@ -34981,7 +35985,7 @@
             "title": "Sarvente's Xiao (Continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5275
+            "subscribers": 5276
           }
         ]
       },
@@ -35029,7 +36033,7 @@
             "title": "Sarvente's Enhi (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 5016
+            "subscribers": 5017
           }
         ]
       },
@@ -35077,7 +36081,7 @@
             "title": "Sarvente's Hakutaku Diviners (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 4833
+            "subscribers": 4832
           }
         ]
       },
@@ -35125,7 +36129,7 @@
             "title": "Sarvente's Hollows (continued)",
             "unlisted": false,
             "updated": "2026-09-28",
-            "subscribers": 3902
+            "subscribers": 3901
           }
         ]
       },
@@ -35173,7 +36177,7 @@
             "title": "Sarvente's Shards of Dai Ji (continued)",
             "unlisted": false,
             "updated": "2026-09-27",
-            "subscribers": 5763
+            "subscribers": 5764
           }
         ]
       },
@@ -35456,7 +36460,7 @@
             "id": "3030996759",
             "title": "SCM Marienburg (9.0)",
             "updated": "2026-10-22",
-            "subscribers": 51087
+            "subscribers": 51088
           }
         ]
       },
@@ -35519,7 +36523,7 @@
             "id": "3318719948",
             "title": "SCM Skaven Clans - 9.0",
             "updated": "2026-10-18",
-            "subscribers": 32218
+            "subscribers": 32217
           }
         ]
       },
@@ -35601,7 +36605,7 @@
             "id": "3318713041",
             "title": "SCM's Skaven Assets - 9.0",
             "updated": "2026-10-11",
-            "subscribers": 32215
+            "subscribers": 32213
           }
         ]
       },
@@ -35660,7 +36664,7 @@
             "id": "3236566964",
             "title": "SCM: Tribes of the North - 9.0",
             "updated": "2026-10-30",
-            "subscribers": 54577
+            "subscribers": 54575
           }
         ]
       },
@@ -36127,18 +37131,17 @@
           {
             "id": "3760606729",
             "title": null
-          },
-          {
-            "id": "3756385010",
-            "title": null
-          },
-          {
-            "id": "3749585405",
-            "title": null
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Seu_Reborn_workshop.pack",
+          "from": "steam",
+          "steamId": "3760606729",
+          "note": "Falceon's repaired and revised 'SEU Reborn' build (July 2026)"
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -36160,6 +37163,17 @@
           "character": "Miao Ying"
         }
       ],
+      "cleanup": {
+        "staleDataPacks": [
+          "seu_miaoying_submod_extension.pack"
+        ],
+        "note": "The old SEU Miao Ying extension pack from Discord or the data folder must be removed when using the updated Steam version (3760606729, 'SEU Reborn', July 2026); using both is not supported."
+      },
+      "installNotes": [
+        "The updated Steam version (3760606729, July 2026) replaces the old SEU Miao Ying extension; remove the old seu_miaoying_submod_extension pack.",
+        "Since the 2026-07-16 update the separate 'SEU Generic' mod (seu_generic_content pack) is no longer needed and should not be used; its events are merged into this mod. The update is not expected to break current saves.",
+        "Since 2026-07-19 it also works when playing Azazel (Azazel's Realm): SEU dilemmas start once Miao Ying is at stage 6 and confederated into his faction, the Zhao confederation dilemma comes 10 turns after that, and a Yuanshan Fu dilemma after the Azazel versus Miao quest battle lets him vassalise or confederate her. All SEU dilemmas share a 3-turn cooldown."
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/17781261060151126791/B90045EBF4D3715D833D44A9752C1BC14811EEC2/",
@@ -36178,16 +37192,6 @@
         },
         {
           "url": "https://images.steamusercontent.com/ugc/16852045579283666987/A5FBD96BD8992CCB4C9A645592DF032057642E07/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/15968083069519485237/6EAC37711AC57424FF4C5703D9456EADAA421B08/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/11715945586431211134/18F9D50FB218A0E39B3758FDBB8073BF22ACC413/",
           "kind": "screenshot",
           "source": "steam"
         }
@@ -36371,12 +37375,13 @@
           }
         }
       ],
-      "status": "stable",
+      "status": "superseded",
       "knownIssues": [
         "Skill trees were broken after a CA table update; the latest version should work again (changelog)."
       ],
       "installNotes": [
-        "The new version can replace older ones (author: 'you can replace older versions with the newer one')."
+        "The new version can replace older ones (author: 'you can replace older versions with the newer one').",
+        "A newer ancillary pack by Sewrat, sewrat_ancil_true.pack (29.3 MB with text updates, 2025-02-28, Discord), needs only the Community Beastmen base mod and loads after it. It is part of the merged Steam mod (ll-46165); do not load it separately with that one."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -36468,7 +37473,10 @@
         "openQuestions": [
           "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "installNotes": [
+        "The Nexus original has been abandoned since 2022-09-18. Kerberos posted an updated, working version of the same pack (SexierGrandCathay_CelestialConcubines_ENG.pack, 76.2 MB) in the Discord submods channel on 2024-12-08."
+      ]
     },
     {
       "id": "nx-49",
@@ -37560,7 +38568,7 @@
             "id": "2902803962",
             "title": "SFO w/ Warband Upgrades Ultimate",
             "updated": "2026-08-13",
-            "subscribers": 17763
+            "subscribers": 17759
           }
         ]
       },
@@ -37773,17 +38781,32 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3546053159"
           }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-30893"
+          },
+          "note": "The author names the Steam version as the up-to-date one; the LoversLab file is outdated.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "status": "wip",
       "knownIssues": [
         "Some models are placeholders.",
-        "Alchemist summon skills do not work.",
         "The final set-piece battle does not spawn yet (not coded).",
-        "According to the author it does not work with other mods that add an ESL file."
+        "According to the author it does not work with other mods that add an ESL file.",
+        "Alchemist summon skills do not work, because CA discontinued the Summon Units functionality in favour of gifted units (author, 2026-10-27).",
+        "While Shenzoo is enabled, a Kislev campaign loses its Orthodoxy and Ice Court mechanics (the mod overrides a base-game table that was not refreshed after CA changed the Kislev mechanic). The author recommends not enabling Shenzoo for Kislev.",
+        "An old LoversLab Shenzoo pack left in the data folder next to the Steam version breaks the Steam version; delete the LoversLab pack."
       ],
       "installNotes": [
-        "A Russian version (Discord, 2026-06-04) must be loaded above the original."
+        "A Russian version (Discord, 2026-06-04) must be loaded above the original.",
+        "The Steam build is the maintained one: playable to the end game, still alpha with placeholder models and an unfinished ending; updated for patch 9.0 on 2026-09-26, and a bug from a later update was fixed on 2026-10-28.",
+        "Since 2026-09-26 the Steam item is unlisted because of adult content: it does not show up in Workshop search and is reached through its direct link only. The author also keeps a Mega copy for countries that block the Workshop.",
+        "The tech tree was changed in the 2026-05-22 release; the hero Hua Feng is part of the main release since 2026-05-11 (a separate Shenzoo_Hero_Hua_Feng.pack existed before)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -37814,7 +38837,7 @@
             "id": "2846183349",
             "title": "Siege AI & Mechanics Overhaul",
             "updated": "2026-10-27",
-            "subscribers": 19963
+            "subscribers": 19964
           }
         ]
       },
@@ -38327,7 +39350,7 @@
             "id": "3810029219",
             "title": "Skeletor Inspired Nagash VO",
             "updated": "2026-10-07",
-            "subscribers": 11306
+            "subscribers": 11314
           }
         ]
       },
@@ -38441,7 +39464,7 @@
             "title": "Slaanesh assaults the great bastion",
             "unlisted": false,
             "updated": "2025-04-22",
-            "subscribers": 12243
+            "subscribers": 12239
           }
         ]
       },
@@ -38496,7 +39519,7 @@
             "title": "Slaanesh Beast Expand",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 6824
+            "subscribers": 6823
           }
         ]
       },
@@ -38838,7 +39861,8 @@
         "Defeat events do not trigger on characters with multiple corruption stages such as Lazy's Miao or Kat; vassal/confederation events still work there"
       ],
       "installNotes": [
-        "Confederation feature needs the main mod AND the confederation submod"
+        "Confederation feature needs the main mod AND the confederation submod",
+        "Made for playing a Slaanesh faction as an outside force corrupting the legendary lords: when you play one of the supported lords, the corruption and confederation events keep running for her and there is no option to disable them. No full support for non-Slaanesh player factions is planned (author)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -39030,11 +40054,13 @@
       "tier": "submod",
       "status": "stable",
       "knownIssues": [
-        "'No Confederation - All Factions' not working as of 29.12.2024, according to the author (crashes)."
+        "'No Confederation - All Factions' not working as of 29.12.2024, according to the author (crashes).",
+        "The LoversLab @n_SlaaneshVassals.pack became out of date with the game patch of 2026-05-21; use the fixed pack from the Dechala fix entry instead."
       ],
       "installNotes": [
         "Both versions can be used together, or choose just one.",
-        "Supports Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse, Sisters of Twilight, among others."
+        "Supports Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse, Sisters of Twilight, among others.",
+        "When playing a non-Slaanesh faction (for example Be'lakor) use the Non_Slaanesh_Factions variants of the Slaanesh Vassals and Victories packs; the wrong variant can crash or show dilemmas with the wrong currency. Swapping the variant mid-campaign is save safe (2026-09-14)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -39191,7 +40217,10 @@
         "openQuestions": [
           "Whether the fix also covers @n_SlaaneshVassals_Non_Slaanesh_Factions.pack is not stated."
         ]
-      }
+      },
+      "installNotes": [
+        "The game patch of 2026-05-21 made the LoversLab @n_SlaaneshVassals.pack out of date. This fixed pack (49.3 MB, also supports playing as Dechala) was pinned on 2026-05-22 and should be used instead of the LoversLab file."
+      ]
     },
     {
       "id": "ll-37162",
@@ -39331,7 +40360,7 @@
             "title": "色孽远征— 派系 Mod | Slaanesh Expedition",
             "unlisted": false,
             "updated": "2026-10-21",
-            "subscribers": 3031
+            "subscribers": 3036
           }
         ]
       },
@@ -39394,7 +40423,7 @@
             "id": "3802335820",
             "title": "Slaanesh Expedition - English Translation | 英文补丁",
             "updated": "2026-10-21",
-            "subscribers": 1753
+            "subscribers": 1756
           }
         ]
       },
@@ -39470,7 +40499,7 @@
             "title": "Slaanesh Steals Faction Leaders",
             "unlisted": false,
             "updated": "2026-01-01",
-            "subscribers": 3176
+            "subscribers": 3177
           }
         ]
       },
@@ -39573,7 +40602,7 @@
             "title": "Slaanesh Vassal Cults",
             "unlisted": false,
             "updated": "2026-10-16",
-            "subscribers": 6170
+            "subscribers": 6171
           }
         ]
       },
@@ -39617,7 +40646,7 @@
             "id": "3729412021",
             "title": "Slaanesh Zealots for Deachala",
             "updated": "2026-05-20",
-            "subscribers": 815
+            "subscribers": 813
           }
         ],
         "discord": [
@@ -40273,7 +41302,12 @@
         }
       ],
       "loadOrder": {
-        "note": "Order as with Lazy: Soboro_Miao.pack, li_miaoying_scale_soboro_st1.pack, li_miaoying_fishnet_soboro_st2.pack, li_miaoying_ballet_soboro_st3.pack, li_miaoying_bare_soboro_st4.pack, li_miaoying_corset_soboro_st5.pack, li_miaoying_plug_soboro_st6.pack. Disable Lazy's own stage pack and enable this one instead."
+        "above": [
+          {
+            "mod": "steam-3471883632"
+          }
+        ],
+        "note": "Order as with Lazy: Soboro_Miao.pack, li_miaoying_scale_soboro_st1.pack, li_miaoying_fishnet_soboro_st2.pack, li_miaoying_ballet_soboro_st3.pack, li_miaoying_bare_soboro_st4.pack, li_miaoying_corset_soboro_st5.pack, li_miaoying_plug_soboro_st6.pack. Disable Lazy's own stage pack and enable this one instead. Soboro's files must load above Lazy's Miao Ying reskin so they overwrite it; the wrong order makes the stage 1 model look broken (2026-08)."
       },
       "tier": "visual-submod",
       "status": "stable",
@@ -40289,6 +41323,9 @@
           "Whether the order of the listing above (top = higher priority) is meant is not explicitly stated ('same as lazylcarus' mod arrangement order')."
         ]
       },
+      "knownIssues": [
+        "Written for the pre-Steam layout: Soboro's pack is reported not to work with the Workshop version of Lazy's Miao progression (in-game error about missing stage files in May 2025; head reskin not applied in February 2026). No fix has been named."
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -40379,6 +41416,9 @@
           "Exact load order not given."
         ]
       },
+      "knownIssues": [
+        "After patch 9.0 the game crashed when loading a battle with Blushing Moon / Soil corrupted units because Soil asset packs were missing or old; use the updated Soil assets pack pinned in #soiled-projects (2026-10-13)."
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -40528,7 +41568,8 @@
       ],
       "status": "superseded",
       "knownIssues": [
-        "Outdated: posted 2022-09-03; called 'pretty old' by its author in 2024 and 'like 3 years outdated, remove it' in 2026. Use the current Soil corrupted units (merged pack and Soil assets) instead."
+        "Outdated: posted 2022-09-03; called 'pretty old' by its author in 2024 and 'like 3 years outdated, remove it' in 2026. Use the current Soil corrupted units (merged pack and Soil assets) instead.",
+        "Crashes the game when active together with the current Soil Miao Ying corrupted units and is not supported: remove it. If it was only kept for the Additional Buildings mod, update that mod's main file from LoversLab instead."
       ]
     },
     {
@@ -40663,9 +41704,9 @@
         "Avoid: The old individual Azazel/Miao/Elf versions - turn them off"
       ],
       "knownIssues": [
-        "Partially tested (MrDustV, 2026-10-26).",
-        "The tdw corrupted buildings crash with the old Soil packs; MrDustV's merged tdw pack matches this one.",
-        "Longma riders T-pose together with Dynasty of the Damned (Steam 2991431203), reported with Soil's units (2026-02-17)."
+        "Longma riders T-pose together with Dynasty of the Damned (Steam 2991431203), reported with Soil's units (2026-02-17).",
+        "Works according to its author (2026-11-01); reported crashes come from using it together with the other Soil packs (Azazel, Miao, Elf), so use only this one.",
+        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -40755,9 +41796,7 @@
           }
         }
       ],
-      "installNotes": [
-        "Use together with one of the two tech-tree mods (Steam 3117083206 or 2867663404)."
-      ],
+      "installNotes": [],
       "curation": {
         "lastChecked": "2026-10-31",
         "confidence": "medium",
@@ -40765,7 +41804,11 @@
           "Whether it works without either tech-tree mod is not stated.",
           "Compatibility with the merged Soil pack is not stated."
         ]
-      }
+      },
+      "status": "superseded",
+      "knownIssues": [
+        "No longer needed or recommended: the current Soil Miao pack places the tech tree itself (in the Provinces tab with the 9.0 pack), and using this patch with it splits the tree between tabs or breaks it. Remove it."
+      ]
     },
     {
       "id": "dc-soil-miaoying-corrupted-units-sfo",
@@ -40966,12 +42009,15 @@
       },
       "status": "stable",
       "knownIssues": [
-        "Incompatible with all mods that change the warband upgrades of the faction being played (per the author mostly only visual/minor)."
+        "Incompatible with all mods that change the warband upgrades of the faction being played (per the author mostly only visual/minor).",
+        "Since patch 9.0 (2026-09-24) the LoversLab Azazel and Miao packs (last updated 2026-08-04) crash the game at launch, and the author is inactive. Working 9.0 versions are pinned in #soiled-projects on Discord (Azazel 2026-09-27 with CA's new Archaon key, Miao 2026-09-30 with the tech tree at the far right of the Provinces tab) or use the merged pack; older pinned versions from before 9.0 also crash.",
+        "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack."
       ],
       "installNotes": [
         "Download the asset pack AND the faction-specific mod.",
         "Enable only the mod for the faction you are currently playing.",
-        "For the new Miao mod, also update the assets file."
+        "For the new Miao mod, also update the assets file.",
+        "Soil's packs are named to sort correctly in the default load order; manual reordering is a frequent cause of launch or battle crashes (the Azazel units must stay above Azazel's Realm), so keep the mod manager's automatic order."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -40980,6 +42026,12 @@
           "Pack file names and the list of supported factions ('various factions') are not given.",
           "Relationship to ll-48415 (fix of the asset pack) per its title/changelog there; not mentioned on this page."
         ]
+      },
+      "cleanup": {
+        "staleDataPacks": [
+          "*soil_corrupted_units_0903*.pack"
+        ],
+        "note": "The old soil_corrupted_units_0903 pack is about three years outdated and crashes the game together with the current Miao Ying units; remove it."
       },
       "authorPages": [
         {
@@ -41238,7 +42290,7 @@
             "title": "Speedy Turn Camera",
             "unlisted": false,
             "updated": "2026-09-24",
-            "subscribers": 130559
+            "subscribers": 130568
           }
         ]
       },
@@ -41368,64 +42420,6 @@
       ]
     },
     {
-      "id": "dc-summon-servant-jeanne-d-arc-and-alter-mct",
-      "name": "Summon Servant (Jeanne d'Arc and Alter, MCT)",
-      "authors": [
-        "Chaos Dragon Slayer (Lin)"
-      ],
-      "kind": "submod",
-      "tags": [],
-      "summary": "Adds hero Jeanne d'Arc (and Alter) plus 58 items; MCT update posted; EN translation updated for Scathach (2026-10-09).",
-      "sources": {
-        "discord": [
-          {
-            "channel": "1254908017288151040",
-            "messageUrl": "https://discord.com/channels/965342581745668136/1254908017288151040"
-          }
-        ],
-        "steam": [
-          {
-            "id": "3552538974",
-            "title": "英灵召唤 (Summon Servant)",
-            "updated": "2026-10-12",
-            "subscribers": 17152
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "curation": {
-        "lastChecked": "2026-11-02",
-        "confidence": "medium"
-      },
-      "support": [
-        {
-          "platform": "Ko-fi",
-          "url": "https://ko-fi.com/likedota2009",
-          "owner": "混沌破龍斩"
-        },
-        {
-          "platform": "Afdian",
-          "url": "https://afdian.com/a/likedota2009",
-          "owner": "混沌破龍斩"
-        }
-      ],
-      "authorPages": [
-        {
-          "site": "steam",
-          "name": "混沌破龍斩",
-          "url": "https://steamcommunity.com/profiles/76561198418615682/myworkshopfiles/?appid=1142710"
-        }
-      ],
-      "images": [
-        {
-          "url": "https://images.steamusercontent.com/ugc/16022260784005294952/7B273B3AB8233729E314EE899CDCCFAF4457073C/",
-          "kind": "cover",
-          "source": "steam"
-        }
-      ]
-    },
-    {
       "id": "dc-summons-and-stuff-submods-miao-summons-devotees",
       "name": "Summons and stuff submods (Miao summons, Devotees)",
       "authors": [
@@ -41491,7 +42485,7 @@
             "id": "2798804755",
             "title": "Tabletop Caps - Unique Lord & Faction Rules - Submod",
             "updated": "2026-09-27",
-            "subscribers": 10806
+            "subscribers": 10807
           }
         ]
       },
@@ -41561,7 +42555,7 @@
             "id": "2812165190",
             "title": "Tabletop Caps Compatibility Patch (Various - Loreful)",
             "updated": "2026-10-03",
-            "subscribers": 6695
+            "subscribers": 6694
           }
         ]
       },
@@ -41618,7 +42612,7 @@
             "id": "3386989556",
             "title": "Tabletop Caps: Reborn",
             "updated": "2026-09-26",
-            "subscribers": 34326
+            "subscribers": 34328
           }
         ]
       },
@@ -41868,17 +42862,6 @@
       ],
       "relations": [
         {
-          "kind": "recommends",
-          "target": {
-            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
-          },
-          "note": "Keys were fixed to match the merged Soil pack",
-          "source": {
-            "type": "discord",
-            "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
-          }
-        },
-        {
           "kind": "supersedes",
           "target": {
             "mod": "dc-tdw-patch-9-0-fixes"
@@ -41888,12 +42871,23 @@
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/1259903817751990303/1566177477158641875"
           }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+          },
+          "note": "Meant to be used with the merged Soil pack; the old TDW packs, or an outdated Soil pack, give the same startup error with it.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "status": "beta",
       "installNotes": [
         "Replaces tdw_corrupted_Buildings.pack, tdw_corrupted_buildings_add_endos_kislev.pack, tdw_corrupted_Buildings_slaver.pack and tdw_corrupted_buildings_add_slaanesh_zealots.pack: remove them.",
-        "Only when playing Miao Ying."
+        "Only when playing Miao Ying.",
+        "Also contains the zealot pack updated for the Dechala buildings."
       ],
       "knownIssues": [
         "Kerberos lists tdw_ mods as banned unless you play Miao Ying (2026-09-04).",
@@ -42087,7 +43081,7 @@
             "id": "3816385668",
             "title": "The Coming of Winter: Katarin Faction Expansion",
             "updated": "2026-10-19",
-            "subscribers": 3828
+            "subscribers": 3832
           }
         ]
       },
@@ -42220,7 +43214,7 @@
             "title": "The Cult of Slaanesh(Storm of Chaos 6th Edition, Slaaneshi Units for Morathi, Marked Dark Elves Units, QoL, Rebalances)",
             "unlisted": false,
             "updated": "2026-10-19",
-            "subscribers": 5246
+            "subscribers": 5244
           }
         ]
       },
@@ -42239,6 +43233,9 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "installNotes": [
+        "The long 'required items' list on its Workshop page is only a list of suggestions; the ATB Morathi load order uses the mod alone without extra dependencies (2026-06-27)."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -42455,7 +43452,7 @@
             "id": "3662333210",
             "title": "The Ubersreik Five",
             "updated": "2026-09-25",
-            "subscribers": 7172
+            "subscribers": 7175
           }
         ]
       },
@@ -42705,7 +43702,7 @@
             "id": "3809644140",
             "title": "可隐藏的UI组件  - Toggleable UI Components",
             "updated": "2026-10-31",
-            "subscribers": 8065
+            "subscribers": 8085
           }
         ]
       },
@@ -43005,7 +44002,10 @@
       "knownIssues": [
         "Conflicts with mods that change the game's unit models (reskins), give heroes new mounts or change unit statistics (for example removing the elite unit limit).",
         "Set Unit Detail to Ultra in the graphics settings; lower settings can stretch limbs or lose textures.",
-        "Most models missing: the resource pack is not active. With a DLC unlocker, turn off the blood packs."
+        "Most models missing: the resource pack is not active. With a DLC unlocker, turn off the blood packs.",
+        "The merged Community Beastmen mod is not compatible with the Warmaidens beastmen faction pack or the complete conversion (elf-based units such as Elf Breakers become invisible, minotaurs and skeletons break). Use only the individual race packs plus the resource pack, with Community Beastmen high in the load order.",
+        "Conflicts with Lazy's Miao Ying reskins (bugged or invisible bodies), because Warmaidens changes an emission toggle that Lazy's Miao uses. Load Lazy's zli_ reskin packs above the Warmaidens packs, whatever the generic top-of-the-list advice says.",
+        "With the resource pack (@reskin1/@reskin2) active, Miao Ying's face can be bugged in Azazel's Realm and Miao corruption. Fix: open zli_miaoying_reskins in the Asset Editor and set the face shader of each model from Emissive to Default."
       ],
       "support": [
         {
@@ -43034,7 +44034,7 @@
             "title": "Trade Any Settlement",
             "unlisted": false,
             "updated": "2026-10-17",
-            "subscribers": 57786
+            "subscribers": 57790
           }
         ]
       },
@@ -43087,7 +44087,7 @@
             "id": "3149586330",
             "title": "Transferable Sword of Khaine with no Penalties except Relations",
             "updated": "2026-07-09",
-            "subscribers": 511
+            "subscribers": 512
           }
         ]
       },
@@ -43347,7 +44347,7 @@
             "id": "3244295546",
             "title": "UI Slider",
             "updated": "2025-09-03",
-            "subscribers": 65565
+            "subscribers": 65560
           }
         ]
       },
@@ -43818,7 +44818,7 @@
             "id": "2853974146",
             "title": "Unnatural Selection Ultimate",
             "updated": "2024-05-19",
-            "subscribers": 6885
+            "subscribers": 6884
           }
         ]
       },
@@ -44332,7 +45332,7 @@
             "id": "3140200173",
             "title": "Victory Conditions Overhaul",
             "updated": "2026-10-31",
-            "subscribers": 241874
+            "subscribers": 241881
           }
         ]
       },
@@ -44516,7 +45516,7 @@
             "id": "3166112259",
             "title": "Warband Mods Compilation",
             "updated": "2026-11-01",
-            "subscribers": 6665
+            "subscribers": 6664
           }
         ]
       },
@@ -44618,7 +45618,7 @@
             "id": "3157105199",
             "title": "Warband UI Framework",
             "updated": "2026-11-01",
-            "subscribers": 43033
+            "subscribers": 43038
           }
         ]
       },
@@ -44719,7 +45719,7 @@
             "id": "2853239091",
             "title": "Warband Upgrade Ultimate",
             "updated": "2026-11-01",
-            "subscribers": 168942
+            "subscribers": 168939
           }
         ]
       },
@@ -44845,7 +45845,7 @@
             "id": "3148915120",
             "title": "Warband Upgrades for Radious",
             "updated": "2026-10-24",
-            "subscribers": 23624
+            "subscribers": 23623
           }
         ]
       },
@@ -45280,6 +46280,9 @@
           "platform": "Patreon",
           "url": "https://www.patreon.com/Warmaidens292"
         }
+      ],
+      "installNotes": [
+        "The Community Beastmen maintainer posted a standalone repack, Ancient_Warmaidens_Repack.pack (about 186 MB), on the Discord on 2025-10-20. It was made with Zeta's permission: all infantry female, monstrous female units removed, missing animations added."
       ]
     },
     {
@@ -45463,7 +46466,7 @@
             "id": "2790617009",
             "title": "Westluo的欢愉公主 美飚龙”妙影”独立美化包",
             "updated": "2023-10-30",
-            "subscribers": 22536
+            "subscribers": 22534
           }
         ]
       },
@@ -45522,7 +46525,7 @@
             "id": "2790320778",
             "title": "Westluo's Slaanesh MiaoYing-BETA",
             "updated": "2022-04-10",
-            "subscribers": 3867
+            "subscribers": 3866
           }
         ]
       },
@@ -45594,7 +46597,7 @@
             "id": "2792289272",
             "title": "Westluo's Slaanesh MiaoYing-BETA English patch",
             "updated": "2022-04-10",
-            "subscribers": 722
+            "subscribers": 721
           }
         ]
       },
@@ -45751,7 +46754,8 @@
       "status": "stable",
       "installNotes": [
         "Works with game versions 8.* and 9.*.",
-        "Affects mods that confederate Chaos factions as a non-Chaos faction."
+        "Affects mods that confederate Chaos factions as a non-Chaos faction.",
+        "Also restores the missing blue-line skills of Alarielle's snake form after game patch 9.0 (a CA change affecting confederated Chaos subcultures)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -46174,7 +47178,7 @@
             "id": "3746989980",
             "title": "Wyccc's English Patch Collection",
             "updated": "2026-10-31",
-            "subscribers": 3399
+            "subscribers": 3407
           }
         ]
       },
@@ -46893,7 +47897,7 @@
             "id": "3746626798",
             "title": "zeta0080's Beautiful Slaanesh heroes",
             "updated": "2026-06-20",
-            "subscribers": 5113
+            "subscribers": 5115
           }
         ]
       },
@@ -46947,7 +47951,7 @@
             "id": "3793414250",
             "title": "zeta0080's Khalida Reborn!",
             "updated": "2026-09-03",
-            "subscribers": 3116
+            "subscribers": 3115
           }
         ]
       },
@@ -47001,7 +48005,7 @@
             "id": "3808748835",
             "title": "Zeta0080's Khalida reskin Stockings Version",
             "updated": "2026-09-26",
-            "subscribers": 3618
+            "subscribers": 3624
           }
         ]
       },
@@ -47120,7 +48124,7 @@
             "title": "Zoat Elder - Generic Lord + Hero for Wood Elves",
             "unlisted": false,
             "updated": "2026-10-01",
-            "subscribers": 8476
+            "subscribers": 8475
           }
         ]
       },
@@ -47184,7 +48188,7 @@
             "id": "3751193703",
             "title": "プルク's The Sect of Akhalee - Temple of Blood [For IEE] temp-patch",
             "updated": "2026-10-06",
-            "subscribers": 993
+            "subscribers": 992
           }
         ]
       },
@@ -47268,7 +48272,7 @@
             "id": "2790155753",
             "title": "中文汉化合集（更新中……）",
             "updated": "2025-02-13",
-            "subscribers": 28981
+            "subscribers": 28969
           }
         ]
       },
@@ -47331,7 +48335,7 @@
             "id": "3467363192",
             "title": "单独招募堕落升魔中的卡捷琳和妙影，还有艾拉瑞丽",
             "updated": "2026-10-04",
-            "subscribers": 3109
+            "subscribers": 3111
           }
         ]
       },
@@ -47401,11 +48405,18 @@
             "id": "3376917062",
             "title": "堕落升魔 (Corrupted Ascension)",
             "updated": "2026-10-23",
-            "subscribers": 18865
+            "subscribers": 18861
           }
         ]
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Lin_Corrupted_Ascension.pack",
+          "from": "steam",
+          "steamId": "3376917062",
+          "note": "Replaces the older Lin_Corrupted_Ascend.pack since the 2024-12 framework update."
+        }
+      ],
       "relations": [
         {
           "kind": "requires",
@@ -47427,6 +48438,26 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Ascension ported most of Corrupted Landmarks' landmarks; using both gives duplicate buildings, so turn the landmark mod off.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Not recommended with Lazy's mods or mods built on them (ATB, Azazel's Realm). Since the 2025-04-04 update it runs on its own corruption system and no longer needs Lazy's Miao progression. Reports are mixed: some players run both as parallel, non-interacting corruption (the only crash seen was confederating Azazel before the first Ascension quest battle), others see doubled traits and corruption adaptation, Corrupted Compendium confused by two stages, or Lin's progression not triggering. Both authors say real compatibility is possible only later (2026-07).",
+          "source": {
+            "type": "discord"
           }
         },
         {
@@ -47469,7 +48500,9 @@
       "status": "stable",
       "installNotes": [
         "Requires the Generic Framework (Steam 3376886102).",
-        "Do not use together with Lazy's Corruption Framework / mods based on it (e.g. Alarielle, Temptation's Bloom)."
+        "Do not use together with Lazy's Corruption Framework / mods based on it (e.g. Alarielle, Temptation's Bloom).",
+        "Steam (3376917062) is the main release channel; since 2025-11-10 LoversLab is only a backup and can be older.",
+        "Since the 2025-12-31 rework the mod covers Miao Ying only (Katarin content was removed). On 2026-10-24 the author announced that Katarin (Tzeentch) and Drycha (Nurgle) will join Corrupted Ascension as a standard corruption framework within about six months."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -47486,7 +48519,18 @@
         ],
         "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838)."
       },
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+          }
+        ],
+        "note": "No load order requirement of its own besides the Generic Framework being present (players list the framework before the Lin submods); the English translation pack must win over the Lin mods."
+      },
       "knownIssues": [
+        "Game patch 9.0 (2026-09-24) broke it and the author was still fixing it on 2026-10-09 (the Workshop item was updated 2026-10-23); if it still crashes, remove the mod, delete its files and resubscribe.",
+        "Startup crash 'invalid database record' in a Lin pack, or blank quests and texts after an update: delete every old copy of the Lin mods and the Generic Framework from the workshop and data folders and subscribe again; plain unsubscribe/resubscribe was not enough (old-version files in data cause these errors, 2026-10-24).",
+        "With Lazy's mods active, buildings or paths can stay locked or the start quest (artifact quest on turn 6) can be missing; remove all of Lazy's mods and mods built on them.",
         "Script error mentioning li_miaoying_progression_stages: Lazy's Miao progression missing or modified by another mod (author no longer answers this)",
         "WH3 patch 9.0 (2026-10-09) broke it; author fixing; workaround remove mod, delete files, resubscribe",
         "If using the Steam version delete old LL pack files from data"
@@ -47579,7 +48623,7 @@
             "title": "堕落戴查 (Corrupted Drycha)",
             "role": "main",
             "updated": "2026-10-28",
-            "subscribers": 19469
+            "subscribers": 19463
           }
         ],
         "discord": [
@@ -47882,7 +48926,7 @@
             "id": "2853817947",
             "title": "瓦尔基娅reskin",
             "updated": "2022-08-25",
-            "subscribers": 2538
+            "subscribers": 2539
           }
         ]
       },
@@ -47944,7 +48988,21 @@
           "version": null,
           "downloads": 2656,
           "externalDownload": true
-        }
+        },
+        "discord": [
+          {
+            "channel": "1254908017288151040",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        ],
+        "steam": [
+          {
+            "id": "3552538974",
+            "title": "英灵召唤 (Summon Servant)",
+            "updated": "2026-10-12",
+            "subscribers": 17152
+          }
+        ]
       },
       "packs": [],
       "relations": [
@@ -47984,6 +49042,11 @@
           "site": "loverslab",
           "name": "混沌破龍斩",
           "url": "https://www.loverslab.com/profile/8681792-%E6%B7%B7%E6%B2%8C%E7%A0%B4%E9%BE%8D%E6%96%A9/"
+        },
+        {
+          "site": "steam",
+          "name": "混沌破龍斩",
+          "url": "https://steamcommunity.com/profiles/76561198418615682/myworkshopfiles/?appid=1142710"
         }
       ],
       "images": [
@@ -48004,6 +49067,11 @@
           "thumb": "https://static.loverslab.com/screenshots/monthly_2025_08/Lin_Summon_Servant.thumb.png.26c9fd1180fbb0ec0171e51b0bdbeb28.png",
           "kind": "screenshot",
           "source": "loverslab"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/16022260784005294952/7B273B3AB8233729E314EE899CDCCFAF4457073C/",
+          "kind": "screenshot",
+          "source": "steam"
         }
       ],
       "description": "Summon Servant (英灵召唤) adds a gacha-style summoning mechanic for all factions: for money you randomly receive equipment or a hero “from the 2D/anime world”. The page is exclusively in Chinese; it does not say how revealing the heroes are. The Generic Framework (Steam) is required.\n\nCurrently there are 9 legendary heroes and 145 pieces of equipment. Each pull on the mechanic yields a hero 5% of the time and equipment 95% of the time. For equipment: common 60%, uncommon 30%, rare 10%.",
@@ -48044,7 +49112,7 @@
             "id": "2793419054",
             "title": "麝香鹿姬骑士团[全派系]——Musk Deer Knight [For All Factions]",
             "updated": "2026-10-19",
-            "subscribers": 21225
+            "subscribers": 21227
           }
         ]
       },
@@ -49594,7 +50662,7 @@
           "from": "steam",
           "steamId": "3480317584",
           "target": {
-            "mod": "dc-morathi-ascension-lazy-stages-optional-original-hair"
+            "mod": "steam-3480317584"
           }
         }
       ],
@@ -50161,7 +51229,7 @@
           "from": "steam",
           "steamId": "3480317584",
           "target": {
-            "mod": "dc-morathi-ascension-lazy-stages-optional-original-hair"
+            "mod": "steam-3480317584"
           }
         }
       ],
@@ -53462,7 +54530,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -53606,7 +54674,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -53845,7 +54913,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -54091,7 +55159,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -54316,7 +55384,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -54436,7 +55504,7 @@
           }
         },
         {
-          "pack": "SEU's Miao Ying expanded mod (seu_miaoying_submod_extension)",
+          "pack": "Seu_Reborn_workshop.pack",
           "from": "steam",
           "steamId": "3760606729",
           "target": {
@@ -54463,33 +55531,6 @@
           "steamId": "3471883808",
           "target": {
             "mod": "steam-3471883808"
-          }
-        }
-      ]
-    },
-    {
-      "id": "derived-ll-30893",
-      "name": "Cathay Corrupted Shenzoo",
-      "origin": "derived",
-      "playAs": [
-        "Shen-zoo"
-      ],
-      "phase": "any",
-      "phaseNote": "Built from the mod's own page: the mod and everything it requires, ordered by type. Not a tested list; check the mod page for extra steps.",
-      "source": {
-        "type": "derived",
-        "url": "https://www.loverslab.com/files/file/30893-corrupted-shenzoo/"
-      },
-      "description": "Alpha campaign mod: playable dragon Shen-zoo (Cathay), lost in the barren north. Own faction mechanic for companions, companion heroes (Leiyue, Dachi Shou, Loi, Zhang), quest battle, lewd traits and corrupted tech tree.",
-      "coverMods": [
-        "ll-30893"
-      ],
-      "entries": [
-        {
-          "pack": "Cathay Corrupted Shenzoo",
-          "from": "download",
-          "target": {
-            "mod": "ll-30893"
           }
         }
       ]
@@ -54603,6 +55644,13 @@
           }
         },
         {
+          "pack": "corrupted_landmarks.pack",
+          "from": "steam",
+          "target": {
+            "mod": "ll-30462"
+          }
+        },
+        {
           "pack": "Lazy's Corruption Framework + Progression (Steam collection)",
           "from": "steam",
           "steamId": "3472332568",
@@ -54611,7 +55659,7 @@
           }
         },
         {
-          "pack": "Corrupted Compendium (Miao Ying)",
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
           "target": {
@@ -54619,14 +55667,7 @@
           }
         },
         {
-          "pack": "corrupted_landmarks.pack",
-          "from": "steam",
-          "target": {
-            "mod": "ll-30462"
-          }
-        },
-        {
-          "pack": "SEU's Miao Ying expanded mod (seu_miaoying_submod_extension)",
+          "pack": "Seu_Reborn_workshop.pack",
           "from": "steam",
           "steamId": "3760606729",
           "target": {
@@ -54656,19 +55697,19 @@
           }
         },
         {
-          "pack": "pj_console.pack",
-          "from": "steam",
-          "steamId": "2791241084",
-          "target": {
-            "external": "ext-pj-console"
-          }
-        },
-        {
           "pack": "!b_mixer.pack",
           "from": "steam",
           "steamId": "2859968660",
           "target": {
             "external": "ext-mixu-unlocker"
+          }
+        },
+        {
+          "pack": "pj_console.pack",
+          "from": "steam",
+          "steamId": "2791241084",
+          "target": {
+            "external": "ext-pj-console"
           }
         }
       ]

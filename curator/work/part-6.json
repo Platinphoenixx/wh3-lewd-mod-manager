@@ -1,0 +1,138 @@
+{
+  "_comment": "Finds from the Discord pass (2026-11-02): mods the community uses with the lewd mods that the catalog did not have. Identity checked against the public Workshop data (raw/steam_items.json) or the hidden-item data (raw/steam_hidden.json).",
+  "mods": [
+    {
+      "id": "steam-3480317584",
+      "name": "High elf red line buffs for dark elf units",
+      "authors": ["Domekabc"],
+      "kind": "submod",
+      "summary": "Adds Dark Elf units to the High Elves' red-line lord skills and Shades to Alith Anar's unique skills, so High Elf lords with confederated Dark Elf armies get their buffs.",
+      "tags": ["general", "high elves", "dark elves", "alith anar", "skills"],
+      "sources": {"steam": [{"id": "3480317584", "title": "High elf red line buffs for dark elf units"}]},
+      "packs": [{"file": "zzz_domek_def_anar.pack", "from": "steam", "steamId": "3480317584"}],
+      "relations": [],
+      "installNotes": ["Not part of Lazy's Morathi progression and not needed for it; Readman's Alarielle lists use it for mixed High Elf and Dark Elf armies."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "high"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3756385010",
+      "name": "Miao Ying - Keeper of Secrets form",
+      "authors": ["Falceon"],
+      "kind": "submod",
+      "summary": "After Miao Ying reaches corruption stage 6 and a few breeding events, her battle transformation becomes a Keeper of Secrets instead of her dragon.",
+      "tags": ["miao ying", "cathay", "slaanesh", "transformation"],
+      "sources": {"steam": [{"id": "3756385010", "unlisted": true}]},
+      "packs": [{"file": "zzz_miao_kos_transform.pack", "from": "steam", "steamId": "3756385010", "note": "Pack name from the Discord copy."}],
+      "relations": [
+        {"kind": "requires", "target": {"mod": "ll-23878"}, "note": "Needs Lazy's Miao Ying mods and stage 6.", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3756385010"}}
+      ],
+      "installNotes": ["Only replaces the battle transformation (not permanent, not her campaign model). The model comes from Lin's Corrupted Ascension. A Russian translation is built into the SEU Reborn translation (Steam 3749585405)."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium", "openQuestions": ["The author also mentioned a requirement on the Defiled Broodmother mod on Discord; the Workshop text names only Lazy's Miao Ying mods."]},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3829276482",
+      "name": "Citadel of Dusk Standalone (Dust)",
+      "authors": ["MrDustV"],
+      "kind": "units",
+      "summary": "The Citadel of Dusk as a playable High Elf faction with its own lord and hero, taken out of Dust's Corrupted Heroes as a standalone item.",
+      "tags": ["high elves", "faction", "citadel of dusk"],
+      "sources": {"steam": [{"id": "3829276482", "title": "Citadel of Dusk Standalone (Dust)"}]},
+      "packs": [],
+      "relations": [
+        {"kind": "incompatible", "target": {"mod": "dc-dust-s-corrupted-heroes-dch"}, "note": "Dust's Corrupted Heroes contains the same faction since its 2026-10-30 update; use one of the two.", "source": {"type": "discord"}}
+      ],
+      "installNotes": ["The lord and hero spawn on turn 1; adding the mod to a running campaign does not give them (summon them with the console), but it does not break the save."],
+      "knownIssues": ["The faction's lord Melvina plays her male counterpart's voice lines in diplomacy (author aware, as of 2026-10-30)."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3628731426",
+      "name": "Bucket's Better Victory Messages",
+      "authors": ["Bucket Crust"],
+      "kind": "utility",
+      "summary": "Rewrites the text shown after a battle for each victory and defeat class.",
+      "tags": ["general", "ui", "text"],
+      "sources": {"steam": [{"id": "3628731426", "title": "Bucket's Better Victory Messages"}, {"id": "3629045053", "unlisted": true, "role": "Slaanesh version"}]},
+      "packs": [],
+      "relations": [],
+      "installNotes": ["The unlisted Slaanesh-themed version (3629045053) replaces the messages for all factions, so use it only when playing Slaanesh; use one of the two versions."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3472458214",
+      "name": "Legendary Heroes: Battle for Warhammer",
+      "authors": ["言无Silence"],
+      "kind": "units",
+      "summary": "Thirteen new legendary heroes inspired by another fantasy series, unlocked through events for many factions.",
+      "tags": ["general", "heroes", "units"],
+      "sources": {"steam": [{"id": "3472458214", "title": "Legendary Heroes: Battle for Warhammer"}]},
+      "packs": [],
+      "relations": [],
+      "installNotes": ["Made compatible with Corrupted Landmarks on 2025-12-13 (Corrupted Landmarks' maintainer). Its Wood Elf part uses the same mechanic as the Kerberos mods, so a conflict there cannot be fully fixed."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3556592733",
+      "name": "Drycha Reskin (Lin)",
+      "authors": ["混沌破龍斩"],
+      "kind": "reskin",
+      "summary": "Lin's new model for Drycha on its own, without the Nurgle corruption campaign of Lin's Corrupted Drycha.",
+      "tags": ["reskin", "drycha", "wood elves"],
+      "sources": {"steam": [{"id": "3556592733", "title": "戴查美化 (Drycha Reskin)"}]},
+      "packs": [],
+      "relations": [],
+      "installNotes": ["Recommended by the Alarielle, Temptation's Bloom author for players who want Drycha's model changed without the Nurgle progression; Lin's Corrupted Drycha already brings the model."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium", "openQuestions": ["Whether it can run next to Lin's Corrupted Drycha is not stated."]},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3383688037",
+      "name": "Autoresolve Quest Battles",
+      "authors": ["SANJ"],
+      "kind": "utility",
+      "summary": "Lets quest battles be auto-resolved (updated for patch 9.0, multiplayer compatible).",
+      "tags": ["general", "quest battles", "utility"],
+      "sources": {"steam": [{"id": "3383688037", "title": "Autoresolve Quest Battles UPDATED 9.0 | MP Compatible"}]},
+      "packs": [],
+      "relations": [],
+      "installNotes": ["The Alarielle, Temptation's Bloom author points to it for getting past a broken quest battle so the campaign can go on."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "high"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3632497242",
+      "name": "Korean translation bundle for the corruption mods",
+      "authors": ["드로우달스"],
+      "kind": "translation",
+      "summary": "Korean translation of many corruption mods in one pack (machine translated, then reviewed); abandoned mods were dropped in the latest update.",
+      "tags": ["translation", "korean"],
+      "sources": {"steam": [{"id": "3632497242", "title": "타락모드 한글 번역 모드 합본팩"}]},
+      "packs": [],
+      "relations": [],
+      "installNotes": ["The uploader keeps Community Beastmen and Corrupted Ascension in separate translation items. Enable only the translations of mods you actually use; with every translated mod enabled at once script errors are expected."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium"},
+      "status": "stable"
+    },
+    {
+      "id": "steam-3346259963",
+      "name": "Beastmen: Beastpaths Underways",
+      "authors": ["ChopChop"],
+      "kind": "submod",
+      "summary": "Adds the Beastpaths underway network for Beastmen.",
+      "tags": ["general", "beastmen"],
+      "sources": {"steam": [{"id": "3346259963", "title": "Beastmen: Beastpaths Underways"}]},
+      "packs": [],
+      "relations": [
+        {"kind": "incompatible", "target": {"steamId": "3352576361"}, "note": "Also part of 'The Underways: Compilation'; enable only one of the two.", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3346259963"}}
+      ],
+      "installNotes": ["Several Community Beastmen players use it and report it as compatible and helpful for reaching and capturing legendary lords."],
+      "curation": {"lastChecked": "2026-11-02", "confidence": "medium"},
+      "status": "stable"
+    }
+  ]
+}

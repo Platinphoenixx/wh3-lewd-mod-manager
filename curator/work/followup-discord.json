@@ -1,0 +1,1182 @@
+{
+  "_comment": "Discord pass (2026-11-02): facts from the community server's mod channels 2024-11 to 2026-11, read channel by channel. Only the mod's author, a Modder-role member, or several players count; single reports are not used. 'field+' appends to a list, 'field-' drops items containing the given text (or relations to the given mod).",
+  "mods": [
+    {
+      "id": "dc-miao-alchemy",
+      "knownIssues+": [
+        "Crashes at start together with the merged Soil pack (2026-11-01); use the fixes posted in the #miao-alchemy Discord channel, not the ones from #soiled-projects."
+      ]
+    },
+    {
+      "id": "dc-soil-corrupted-units-submod-soil-corrupted-units-0903-pack",
+      "knownIssues+": [
+        "Crashes the game when active together with the current Soil Miao Ying corrupted units and is not supported: remove it. If it was only kept for the Additional Buildings mod, update that mod's main file from LoversLab instead."
+      ]
+    },
+    {
+      "id": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units",
+      "knownIssues-": [
+        "Partially tested (MrDustV",
+        "The tdw corrupted buildings crash with the old Soil packs"
+      ],
+      "knownIssues+": [
+        "Works according to its author (2026-11-01); reported crashes come from using it together with the other Soil packs (Azazel, Miao, Elf), so use only this one.",
+        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31)."
+      ]
+    },
+    {
+      "id": "dc-soil-miaoying-corrupted-tech",
+      "status": "superseded",
+      "installNotes-": [
+        "Use together with one of the two tech-tree mods"
+      ],
+      "knownIssues+": [
+        "No longer needed or recommended: the current Soil Miao pack places the tech tree itself (in the Provinces tab with the 9.0 pack), and using this patch with it splits the tree between tabs or breaks it. Remove it."
+      ]
+    },
+    {
+      "id": "dc-tdw-corrupted-buildings-merged",
+      "relations-": [
+        "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+      ],
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+          },
+          "note": "Meant to be used with the merged Soil pack; the old TDW packs, or an outdated Soil pack, give the same startup error with it.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "installNotes+": [
+        "Also contains the zealot pack updated for the Dechala buildings."
+      ]
+    },
+    {
+      "id": "ll-30462",
+      "knownIssues-": [
+        "0 landmarks for Daemons of Chaos",
+        "Landmarks look available on turn 1",
+        "Dechala: landmarks only buildable",
+        "Missing or wrong landmark version causes crash at launch"
+      ],
+      "knownIssues+": [
+        "Since the December 2025 lock/unlock method, locked landmarks are hidden (not just unbuildable) until the character's corruption stage is reached, so missing landmarks at the start are expected.",
+        "Since the 2026-07-24 update the new corrupted high elf units live here, not in Alarielle, Temptation's Bloom: an older Corrupted Landmarks with the current ATB (or the reverse) crashes at launch with a missing-unit database error. Keep both current.",
+        "Soil's unit packs hard-require this Steam version: without it, or with the old LoversLab corrupted_landmarks.pack still in data, the game crashes at launch with an 'invalid database record' error.",
+        "Translation packs made before December 2025 need the loc entry campaign_localised_strings_string_kerb_corrupted_landmark (in !corrupted_landmark_various.loc); without it locked landmarks stay hidden in the UI.",
+        "Since patch 7.0 a normal landmark or building can only be swapped for its corrupted version from the settlement's building panel, not from the world-map landmark (CA broke the map-side swap for many mods).",
+        "Dechala's thrall camps got their landmarks on 2026-10-05; some camps may still be missing them."
+      ],
+      "installNotes+": [
+        "The corrupted wood elf units (malevolent treemen, dryads) only appear if you own at least one of the Wood Elf lord DLCs (Orion or Durthu); the Alarielle or Sisters of Twilight DLC alone is not enough.",
+        "Works for Daemons of Chaos since 2025-09-02 (42 landmarks)."
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Since the 2025-04-04 update: Corrupted Ascension ported most of the landmarks, so using both gives duplicate buildings. Turn this mod off when using Ascension.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-27171",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Ascension ported most of Corrupted Landmarks' landmarks; using both gives duplicate buildings, so turn the landmark mod off.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-32374",
+      "cleanup": {
+        "staleDataPacks": [
+          "*soil_corrupted_units_0903*.pack"
+        ],
+        "note": "The old soil_corrupted_units_0903 pack is about three years outdated and crashes the game together with the current Miao Ying units; remove it."
+      },
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Steam version (3474483873); without it, or with the old LoversLab corrupted_landmarks.pack in data, the game crashes at launch with a database error.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "knownIssues+": [
+        "Since patch 9.0 (2026-09-24) the LoversLab Azazel and Miao packs (last updated 2026-08-04) crash the game at launch, and the author is inactive. Working 9.0 versions are pinned in #soiled-projects on Discord (Azazel 2026-09-27 with CA's new Archaon key, Miao 2026-09-30 with the tech tree at the far right of the Provinces tab) or use the merged pack; older pinned versions from before 9.0 also crash.",
+        "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack."
+      ],
+      "installNotes+": [
+        "Soil's packs are named to sort correctly in the default load order; manual reordering is a frequent cause of launch or battle crashes (the Azazel units must stay above Azazel's Realm), so keep the mod manager's automatic order."
+      ]
+    },
+    {
+      "id": "ll-36002",
+      "installNotes-": [
+        "Requires: Fem Berserkers (Nexus)"
+      ],
+      "knownIssues+": [
+        "The main pack needs @Soil_Miaoying_Corrupted_Units.pack; Soil's Azazel pack does not satisfy it and gives a crash at boot. The _alt pack uses vanilla units only and needs neither Soil's Miao units nor the Soil assets; the unit add-on packs work with either.",
+        "Since patch 9.0 the Fem Berserker add-on (its base mod was last updated in 2024 and crashes at startup) and the Slaangor add-on do not work; there is no 9.0 update for the Slaangor pack because its base mod has errors.",
+        "MrDustV advised on 2026-10-02 against the original tdw packs because they heavily conflict with Corrupted Landmarks, and Kerberos removed them from his recommended lists (players kept installing them without their extra requirements). See the merged TDW pack."
+      ],
+      "installNotes+": [
+        "The buildings stay hidden until the required corruption stage is reached (about stage 3) and the game is relogged or a manual battle is entered; the same applies to the corrupted walls and landmarks. This is expected, not a bug.",
+        "The 2025-12-06 update (v1.5.1) is not compatible with older saves; start a new campaign."
+      ]
+    },
+    {
+      "id": "ll-40114",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Corrupted Landmarks (Steam, latest): Soil's Miao units reference the celestial_hood building from it, and without it the game crashes at startup or on campaign load, although the mod pages do not list it. Delete any old LoversLab landmarks copy from data.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3716025482"
+          },
+          "note": "The cult mechanic conflicts with the City of Smoke mod: a cult cannot be built in Nan-Gau, and upgrading the building deletes the cult.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3663734212"
+          },
+          "note": "Shows the Alchemy panels (cauldron, lab, prison) in one button row; useful when the prison or lab button is missing.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "installNotes-": [
+        "Should work with SFO and Corrupted Landmarks according to the author."
+      ],
+      "installNotes+": [
+        "Works with Corrupted Landmarks and, since 0.9.2, with Azazel's Realm (jail capture works, some Azazel events can be delayed) and Corrupted Compendium. There is no SFO patch yet for its new charge effects and stats (author, 2026-07-05).",
+        "Mechanics unlock with Miao's corruption stage: 1 Jade Dungeon prison, 2 Cauldron and Sybarite Peddler, 3 Chamber of Excess (flesh lab, growth vat, augmentation), 4 Deeps/cult constructions and forts, 5+ lord ascension, 6 Schemes. Nothing is visible at campaign start.",
+        "The Schemes (added in rc-1.0.0) require the Changeling DLC; the mod also reuses Throt's mutation system and the prison engine of Eltharion's DLC, so those DLC factions should be owned."
+      ],
+      "knownIssues+": [
+        "The author has not updated the mod since 2026-08-02. Since patch 9.0 it crashes without community fixes (battle asset replacement, a fix kit, and fixed copies of both Workshop mods posted on Discord 2026-10-05 to 2026-10-16); these need Soil's updated Discord packs and Corrupted Landmarks, and are overwritten when Steam verifies the files.",
+        "After patch 9.0 the Blessed units (recruitment tab, unit list and costs) were missing even with the first community fix; miao_blessed_fix.pack (2026-10-16) restored them. The Soil Discord versions are needed instead of the outdated LoversLab ones.",
+        "After completing Cathay's Grand Scheme the Great Bastion panel disappears from the UI (the threat is forced to 0%).",
+        "Lord ascension can delete the original lord's equipment instead of returning it to the pool (acknowledged as a bug by the author), and the Karak Vlag landmark does not work because it needs a surviving faction and lacks slot data (2026-09-25)."
+      ]
+    },
+    {
+      "id": "steam-3716025482",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-40114"
+          },
+          "note": "Miao Ying's Corrupting Alchemy: a cult cannot be built in Nan-Gau, and upgrading the building deletes the cult.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-42028",
+      "knownIssues-": [
+        "Crash 'first invalid database record is a high elf unit'",
+        "3.0 needs a new save",
+        "Vaeri skill tree rework can break old saves"
+      ],
+      "knownIssues+": [
+        "Since the 2026-07-24 update the new corrupted high elf units live in Corrupted Landmarks, not in ATB: an older Corrupted Landmarks with the current ATB (or the reverse) crashes at launch with a missing-unit database error ('first invalid database record is a high elf unit'). Update both; if Steam keeps an old copy, delete the local file and resubscribe.",
+        "After patch 9.0 many launch and in-campaign crashes came from Steam keeping outdated copies of ATB, Corrupted Landmarks, Corrupted Compendium or the Azazel overwrite pack (2026-10-22). Delete the local Workshop file and resubscribe, and make sure every required mod is on its 9.0 version.",
+        "Update 3.1 (2026-07-24) can be added to existing saves, but the corruption locks of its new buildings are only set on turn 1, so on an older save they may be buildable too early; a new campaign gives correct locks.",
+        "If only one of kerb_Alarielle_Temptations_Bloom_steam.pack and kerberos_mod_assets.pack is updated, some Alarielle scenes show blank images; both must be current (Steam sometimes does not auto-update: delete the local copy and resubscribe).",
+        "If corruption-locked buildings can be built too early, the locks failed on turn 1; typical cause is an old Lazy's Corruption framework copy kept next to the Steam version, or a generic 'lewd landmarks' mod. Locks are only set on turn 1, so check with a fresh campaign.",
+        "Corruption progression can stall because Lazy's dilemma queue does not count turns in which a manual battle was fought; workaround: set the MCT option so one scene triggers every turn.",
+        "Vaeri's skill tree was reworked for 9.0 and skill points of old saves can be partly refunded or lost (CA changed the parameters of cm:remove_skill_point). readmans_old_vaeri.pack (shared on Discord 2026-09-27, no guarantee) may restore her old skills on a save that has not passed more turns.",
+        "Selecting or fighting the starting Slaanesh army near Gaean Vale (in the Morathi start, the army that spawns next to Gaen Vale) can freeze or crash the game; the author cannot reproduce it reliably and the cause is unknown (still reported 2026-11-01, though one player says it no longer happens)."
+      ],
+      "installNotes+": [
+        "With a Morathi start the main quest stays active until N'Kari is brought to Gaean Vale and expects Morathi's own corruption progression to be completed at least up to the 'Pot of Honey' quest.",
+        "Since 2026-04-06 an Alarielle start removes Ellyrion's starting army so it cannot take Evershale before the starting quest is done; Ellyrion gets a free tier-3 capital in return.",
+        "The first Alarielle mission completes when any army, not only Alarielle's, wins against a Slaanesh force (such as a garrison); the author will not change this because it uses a CA mission type.",
+        "A mod manager's file check shows about a dozen file errors for the recommended ATB list; the author says these are mostly dependencies and intended overwrites, so this number is normal.",
+        "To check that the ATB Steam update arrived, look for extra building slots in the elf gates (the earliest corrupted building appears at corruption stage 3); seeing the new units in a custom battle only proves Corrupted Landmarks is current.",
+        "Forest health capped at 99 after the stage 6 scenes: run cm:set_saved_value(\"kerb_alar_c6_fin\", true) only after ALL stage 6 scenes were seen and the Ritual of Rebirth mission is active; running it earlier breaks the save.",
+        "If the Corrupted Alarielle technology does not unlock after the stage 4-to-5 scene, run cm:unlock_technology(cm:get_local_faction_name(), \"azzy_avelorn\"); the likely cause is that the ATB file did not receive the Steam update (delete the local file to force it).",
+        "The confederated lords (Drycha, Dechala, Sisters of Twilight and others) can only be recruited if the matching DLC is owned; otherwise they appear as patrons but cannot be used, and a missing DLC can make a lord vanish after confederation.",
+        "If the stage 4/5/6 scenes did not trigger after patch 9.0 (fixed 2026-10-05), load a save from before the landmark-upgrade mission or the building that triggers the stage was completed.",
+        "The 2026-10-16 update changes the victory conditions (tied to the corrupted World Roots progression, Hexoatl replaces Morathi as long-victory target) and fixes the missing stage 6 corruption-adaptation province effect; both only apply in a NEW campaign."
+      ]
+    },
+    {
+      "id": "ll-48415",
+      "knownIssues+": [
+        "After patch 9.0 the game crashed when loading a battle with Blushing Moon / Soil corrupted units because Soil asset packs were missing or old; use the updated Soil assets pack pinned in #soiled-projects (2026-10-13)."
+      ]
+    },
+    {
+      "id": "ll-46165",
+      "knownIssues-": [
+        "Incompatible (main version only): Victory Condition Overhaul",
+        "WH3 patch 2026-10-26: startup crash reported",
+        "Hellebron quest battle crashes on the Steam version"
+      ],
+      "knownIssues+": [
+        "Incompatible (main version only): Victory Condition Overhaul, 'Slaanesh Vassals', Recruit Defeated Legendary Lords, complete overhauls such as SFO. Testing by the author traced the final capture mission of the corrupted legendary lords failing to fire to Victory Condition Overhaul (the other two are suspects); with them disabled and Community Beastmen high in the load order it fires.",
+        "Main version is for Beastmen campaigns only: with another faction it can cause a script error at start, a missing rites/recruit button or lost skills, and it removes the mounts of female legendary lords and heroes of other factions on purpose (so the matched animations show). Use the Light version for every other faction.",
+        "Since the game update of 2026-10-26: startup crash reported for some players on the Steam copy (one fix that worked: unsubscribe, delete the mod's pack from the Steam workshop/data folder, subscribe again), Ruination tier 1 building missing (db fix: change ruination 1 to 2), ritual of ruination not usable.",
+        "Hellebron capture quest battle (off-map location) still crashed in early November 2026, also reported for the LoversLab copy; the author says it is fixed in the next update. Workarounds: set X=265, Y=578 in the Mission_tables rows of new_community_beastmen.pack with RPFM, or spawn her with the console command from the GitHub guide (this does not complete the quest).",
+        "Elspeth quest battle after patch 9.0: script error in elspeth_battle.lua (army 'enemy_main_com' not found), so the battle does not end and reinforcements never arrive.",
+        "Steam copy can stay on an outdated version (it may even show an old date), then new content is missing or the game crashes; the full pack is roughly 1.6 GB. Unsubscribe, wait a couple of minutes, resubscribe and check that Steam really downloads the update.",
+        "Total Warmaidens reskins clash with units shared with this mod (Centigors of Tzeentch, Minotaurs, Chaos Spawn): both replace the same models, so some conflict cannot be avoided. Zeta's beastmen reskin (Beauty and Beasts) is not really compatible: both change the Minotaur skin and Community Beastmen wins regardless of load order. Zeta's faction-specific packs are fine.",
+        "Mods that add items or ancillaries (for example 'New Legendary Lord and Hero Artefacts', 'Just More Items') conflict with this mod's own auxiliary and item changes.",
+        "Under Tabletop Caps the units added by this mod (mercenaries, corrupted elves) count as basic units without a cap; no compatibility submod existed as of 2026-01-24."
+      ],
+      "installNotes+": [
+        "Fixes appear first on LoversLab / Google Drive; the Steam copy is uploaded by a second person and lags behind, sometimes by months (in July 2026 the next Steam update was announced for August). Prefer the LoversLab files for the newest fixes.",
+        "The LoversLab download is a text file with links to the hosted files (Google Drive since 2025-12-28, Mega before). LoversLab does not notice when the hosted file changes, so re-download the text file or follow its links for every update.",
+        "Copies older than the 2026-09-26 update crash at startup on game patch 9.0; the Light version worked from day one.",
+        "The merged pack already contains the Sewrat ancillaries and add-on, Candles' ancillaries, Endo's matched combat for beastmen, the corrupted-heroes ancillaries, the corrupted elves and the model-fix packs. Loading the separate packs next to it fires dilemmas twice or brings back wrong unit cards (see the cleanup note).",
+        "Since the 2025-11-03 update the matched animations target all humanoid skeletons; without a reskin of the humanoids the scenes are male-on-male. For non-Beastmen campaigns the author recommends the Light version.",
+        "Variant Selector support is built in (since 2025-11-29): Lazy's progressive reskins (Katarin, Morathi, Miao Ying), the Kerberos variants (Alarielle, Sisters of Twilight, Ariel) and Khalida can be switched in game. The reskin mods themselves are still needed and must win the load order; reskins not built for Variant Selector may not apply to the hero versions.",
+        "Skill-tree reworks (Katarin and Miao Ying 2026-05-30, Fay 2026-06-06) can cost already spent skill points, so a respec may be needed; the author calls most other updates save compatible.",
+        "The author takes modding breaks (from 2026-09-26, again around 2026-10-18 and 2026-11-01), so open bugs can wait."
+      ],
+      "relations+": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-24493"
+          },
+          "note": "Candles' ancillaries are part of the merged mod; do not load the separate pack with it.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-27439"
+          },
+          "note": "Sewrat's ancillaries and add-on are part of the merged mod; loading them separately fires the dilemmas twice.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3566908399"
+          },
+          "note": "Kerberos Mod Assets (unlisted): Variant Selector corrupted variants for the hero versions of Alarielle, Sisters of Twilight and Ariel (Ariel only differs from the base look if Lin's Drycha is loaded too).",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-2798690094"
+          },
+          "note": "Author recommendation: the matched animations trigger more often. It is the only animation mod that may run next to Community Beastmen.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "!community_beastmen.pack",
+          "sewrat_ancil_true.pack",
+          "sewrat_ancil_test.pack",
+          "sewrat_beastmen_addon_c.pack",
+          "!candles_beastmen_events_ancillaries.pack",
+          "candles_beastmen_events_ancillaries.pack",
+          "endo_matched_updated.pack",
+          "endo_empire_matched.pack",
+          "endo_matched_updated_trytobenotlazy01.pack",
+          "corrupted_heroes_anci.pack",
+          "flos_beast_dwarf_ancillaries.pack",
+          "endo_corrupted_elf.pack",
+          "new_community_beastmen_20260117ModelsFIX.pack",
+          "new_community_beastmen_CentigorDickLodFIX.pack",
+          "new_community_beastmen_modelspatch0428.pack"
+        ],
+        "note": "These packs were merged into the Community Beastmen mod (the author says to remove them). Next to it, the Sewrat and Candles packs fire dilemmas twice and Endo's matched-combat packs bring back swordsmen Elf Breakers, Bestigor Hunters and question-mark unit cards."
+      }
+    },
+    {
+      "id": "ll-24493",
+      "status": "superseded",
+      "installNotes+": [
+        "A maintained version (candles_beastmen_events_ancillaries.pack, 22.3 MB: updated tables, new followers and occupation events) was reposted on the Community Beastmen Discord on 2025-01-25 with the original author's permission. It is part of the merged Steam mod (ll-46165), which makes the separate pack unnecessary."
+      ]
+    },
+    {
+      "id": "ll-27439",
+      "status": "superseded",
+      "installNotes+": [
+        "A newer ancillary pack by Sewrat, sewrat_ancil_true.pack (29.3 MB with text updates, 2025-02-28, Discord), needs only the Community Beastmen base mod and loads after it. It is part of the merged Steam mod (ll-46165); do not load it separately with that one."
+      ]
+    },
+    {
+      "id": "steam-3698534641",
+      "installNotes+": [
+        "Carries only animations and models; quests, events and mechanics are script based and are absent. Use it when not playing a Beastmen faction."
+      ]
+    },
+    {
+      "id": "ll-46561",
+      "knownIssues-": [
+        "Some broken animations since 7.0."
+      ],
+      "knownIssues+": [
+        "Since patch 9.0: some of the original events (old script) no longer fire, the Goblin Enslaver lord shows as a T-pose model on the campaign map when dismounted, and Empire/Cathay goblin shields float above the heads. The author confirms the events and the T-pose and plans fixes for the next update."
+      ],
+      "installNotes+": [
+        "Standalone: needs no other goblin mod. Since 2025-12-22 it replaces the pre-Redux build Goblin_horde_rewrite_wip.pack (also the Chinese goblinallinone build) and the older Goblin Horde Addon pages.",
+        "Patch 9.0 broke the mod at startup (abilities_junction_tables error); the fixes of 2026-09-29 and 2026-10-04 load again, so update older copies."
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "Goblin_horde_rewrite_wip.pack",
+          "goblinallinone_cn*.pack"
+        ],
+        "note": "Pre-Redux builds of the same mod; Goblin Horde Redux replaced them in December 2025 and must not run together with them."
+      }
+    },
+    {
+      "id": "ll-30893",
+      "status": "superseded",
+      "knownIssues+": [
+        "Outdated LoversLab file (v0.05x, May 2025): the author says the up-to-date version is the Steam one (Shenzoo: The Long March Home). With the LoversLab pack Mixu's Unlocker breaks the mod and the Shenzoo faction may not appear in the lord selection."
+      ]
+    },
+    {
+      "id": "dc-shenzoo-faction-mod-passingbyposts",
+      "knownIssues-": [
+        "Alchemist summon skills do not work."
+      ],
+      "knownIssues+": [
+        "Alchemist summon skills do not work, because CA discontinued the Summon Units functionality in favour of gifted units (author, 2026-10-27).",
+        "While Shenzoo is enabled, a Kislev campaign loses its Orthodoxy and Ice Court mechanics (the mod overrides a base-game table that was not refreshed after CA changed the Kislev mechanic). The author recommends not enabling Shenzoo for Kislev.",
+        "An old LoversLab Shenzoo pack left in the data folder next to the Steam version breaks the Steam version; delete the LoversLab pack."
+      ],
+      "installNotes+": [
+        "The Steam build is the maintained one: playable to the end game, still alpha with placeholder models and an unfinished ending; updated for patch 9.0 on 2026-09-26, and a bug from a later update was fixed on 2026-10-28.",
+        "Since 2026-09-26 the Steam item is unlisted because of adult content: it does not show up in Workshop search and is reached through its direct link only. The author also keeps a Mega copy for countries that block the Workshop.",
+        "The tech tree was changed in the 2026-05-22 release; the hero Hua Feng is part of the main release since 2026-05-11 (a separate Shenzoo_Hero_Hua_Feng.pack existed before)."
+      ],
+      "relations+": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-30893"
+          },
+          "note": "The author names the Steam version as the up-to-date one; the LoversLab file is outdated.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-24004",
+      "knownIssues-": [
+        "Alpha 0.8/0.81: very experimental"
+      ],
+      "knownIssues+": [
+        "Alpha, very experimental: the Steam release of 2026-09-26 has the full Khorne endgame playable with three custom battles, but many story sections are still missing; further content is not implemented yet."
+      ],
+      "installNotes+": [
+        "The LoversLab page is no longer updated (it only holds a text file with a Mega link to the roughly 1.4 GB pack); the Workshop is the main place, and the LoversLab/Mega uploads often crash."
+      ]
+    },
+    {
+      "id": "ll-26391",
+      "knownIssues-": [
+        "The author has not played WH3 since Shadows of Change"
+      ],
+      "knownIssues+": [
+        "The author has not played WH3 for a long time and said in April 2026 that the mod is outdated and no longer really his; anyone may continue it with credit to the first version.",
+        "Together with Zeta's warmaiden reskin the lords look right, but werewolves, fimir warriors and ice trolls show no decorations (Throgg is fine)."
+      ]
+    },
+    {
+      "id": "nx-17",
+      "installNotes+": [
+        "The Nexus original has been abandoned since 2022-09-18. Kerberos posted an updated, working version of the same pack (SexierGrandCathay_CelestialConcubines_ENG.pack, 76.2 MB) in the Discord submods channel on 2024-12-08."
+      ]
+    },
+    {
+      "id": "nx-22",
+      "knownIssues+": [
+        "The merged Community Beastmen mod is not compatible with the Warmaidens beastmen faction pack or the complete conversion (elf-based units such as Elf Breakers become invisible, minotaurs and skeletons break). Use only the individual race packs plus the resource pack, with Community Beastmen high in the load order.",
+        "Conflicts with Lazy's Miao Ying reskins (bugged or invisible bodies), because Warmaidens changes an emission toggle that Lazy's Miao uses. Load Lazy's zli_ reskin packs above the Warmaidens packs, whatever the generic top-of-the-list advice says.",
+        "With the resource pack (@reskin1/@reskin2) active, Miao Ying's face can be bugged in Azazel's Realm and Miao corruption. Fix: open zli_miaoying_reskins in the Asset Editor and set the face shader of each model from Emissive to Default."
+      ]
+    },
+    {
+      "id": "nx-53",
+      "knownIssues+": [
+        "Not really compatible with the merged Community Beastmen mod: both change the Minotaur skin, and Community Beastmen wins regardless of load order (statement of its author, 2026-08)."
+      ]
+    },
+    {
+      "id": "nx-28",
+      "installNotes+": [
+        "The Community Beastmen maintainer posted a standalone repack, Ancient_Warmaidens_Repack.pack (about 186 MB), on the Discord on 2025-10-20. It was made with Zeta's permission: all infantry female, monstrous female units removed, missing animations added."
+      ]
+    },
+    {
+      "id": "dc-imrik-dragon-taming-mrdustv",
+      "packs+": [
+        {
+          "file": "seu_miao_imrik.pack",
+          "from": "steam",
+          "steamId": "3810954587",
+          "note": "Original by another author (abandoned), kept alive by MrDustV"
+        }
+      ],
+      "installNotes+": [
+        "Only for Imrik/Caledor campaigns (not Alarielle or Miao Ying). The questline (dominate or romance Miao Ying, no confederation) starts automatically on turn 4.",
+        "Patch 9.0 needs the 2026-09-25 build of seu_miao_imrik.pack (updated tables); the older pack stops the game from starting. The Workshop item is that build."
+      ],
+      "knownIssues+": [
+        "The questline breaks if another faction (for example Zhao) confederates Miao Ying before it is finished, because its scripts target the northern provinces. The Corrupted Compendium's 'Play as Azazel' overwrite includes tables that block Miao confederation."
+      ]
+    },
+    {
+      "id": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension",
+      "packs+": [
+        {
+          "file": "Seu_Reborn_workshop.pack",
+          "from": "steam",
+          "steamId": "3760606729",
+          "note": "Falceon's repaired and revised 'SEU Reborn' build (July 2026)"
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "seu_miaoying_submod_extension.pack"
+        ],
+        "note": "The old SEU Miao Ying extension pack from Discord or the data folder must be removed when using the updated Steam version (3760606729, 'SEU Reborn', July 2026); using both is not supported."
+      },
+      "installNotes+": [
+        "The updated Steam version (3760606729, July 2026) replaces the old SEU Miao Ying extension; remove the old seu_miaoying_submod_extension pack.",
+        "Since the 2026-07-16 update the separate 'SEU Generic' mod (seu_generic_content pack) is no longer needed and should not be used; its events are merged into this mod. The update is not expected to break current saves.",
+        "Since 2026-07-19 it also works when playing Azazel (Azazel's Realm): SEU dilemmas start once Miao Ying is at stage 6 and confederated into his faction, the Zhao confederation dilemma comes 10 turns after that, and a Yuanshan Fu dilemma after the Azazel versus Miao quest battle lets him vassalise or confederate her. All SEU dilemmas share a 3-turn cooldown."
+      ]
+    },
+    {
+      "id": "ll-23876",
+      "knownIssues-": [
+        "Emissary transformation shows a goblin icon"
+      ],
+      "knownIssues+": [
+        "Event progression can stall for good when a save is loaded (or a manual battle is fought) right before a Compendium event turn, or when the 'win 6 battles' quest finishes on the turn a save is loaded: the Emissary may not level up and no later tutor ancillary appears (reported 2026-09-01, a community script fix was not merged yet). Roll back to the last turn where an event fired."
+      ],
+      "relations-": [
+        "ll-30462"
+      ],
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "external": "ext-mct"
+          },
+          "note": "Mod Configuration Tool holds the setting for turns between events",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "packs+": [
+        {
+          "file": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
+          "note": "Steam build (renamed on purpose so it does not shadow the old LoversLab file)"
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "MiaoYingCorrupted_Compendium.pack",
+          "@Compendium_sheaModify.pack",
+          "Compendium_KerbPatch.pack"
+        ],
+        "note": "The LoversLab file MiaoYingCorrupted_Compendium.pack (a Mega link in a text file) and the Steam build MiaoYingCorrupted_Compendium_workshop.pack (3705392682) must not both be present: with the old file still in data the game shows an error or crashes at start even when only the Workshop version is enabled. Delete any local copy and use the Steam version (resubscribe if it does not show). The Shea Modify and KerbPatch add-on packs are merged into the Compendium and must not be enabled."
+      },
+      "loadOrder": {
+        "note": "Leave at the default position. The Azazel play-as overwrite no longer needs a particular Compendium file name (the current LoversLab version dropped that check)."
+      },
+      "installNotes+": [
+        "Updated for patch 9.0 on 2026-09-27; older copies cause a database crash naming the Compendium.",
+        "Saves started with the old LoversLab pack ask for the missing old mod after switching to the Steam version; load them with a mod manager that allows missing mods.",
+        "The final battle starts from a quest-battle marker south-east of Nan Gau that appears only after all Compendium scenes have been viewed; walk Miao (or the overwrite's character) onto it to open the side-choice dilemma.",
+        "If Ensign Loi appears on turn 1, the Azazel play-as overwrite is enabled by mistake; disable it when playing Miao."
+      ]
+    },
+    {
+      "id": "ll-23878",
+      "installNotes+": [
+        "Since Lazy's mods moved to Steam, old loose copies of his packs in the data folder must be deleted: two copies loading at once reset corrupted characters to stage 0 and leave invisible models."
+      ]
+    },
+    {
+      "id": "ll-27230",
+      "packs+": [
+        {
+          "file": "All_Loi_Variant_selector_steam.pack",
+          "from": "steam",
+          "steamId": "3503458514",
+          "exclusiveGroup": "loi",
+          "note": "Steam all-in-one with Variant Selector"
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "@@All_Loi_Variant_selector.pack"
+        ],
+        "note": "The Steam version (3503458514) uses the pack name All_Loi_Variant_selector_steam.pack; delete the LoversLab all-in-one pack when you use it."
+      },
+      "installNotes+": [
+        "The Steam version adds new unit cards and 2D portraits for all 7 variants and fixes the stretched face portrait of the original Loi."
+      ]
+    },
+    {
+      "id": "ll-27930",
+      "packs-": [
+        "@@Compendium_Play_as_Azazel_Overwrite.pack"
+      ],
+      "packs+": [
+        {
+          "file": "@@Compendium_Play_as_Azazel_Overwrite.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Distributed on LoversLab only (zip, not part of the Steam item); needed for every start except Miao Ying. The current version has no hard dependency on the Compendium's file name and needs no update for 9.0; copies from before 9.0 may crash, so download it again."
+        }
+      ],
+      "loadOrder": {
+        "note": "All required mods work in the default order. Recommended complete mod list and load order: image in the Lewdhammer wiki (File:Mod_list_and_load_order.png); the author has never reordered manually. When playing as Azazel, enable @@Compendium_Play_as_Azazel_Overwrite; disable it for Miao.; Discord: Follow the wiki image https://lewdhammer.miraheze.org/wiki/File:Mod_list_and_load_order.png (regularly updated). No custom load order. Name-fix packs (per culture: Slaanesh, WoC, Dark Elves, Cathay) enabled only AFTER confederating Miao/Katarin and only one at a time. Leave every mod at its default position and reset manual moves: hand-reordering broke the Miao progression and caused crashes (author, 2026-05)."
+      },
+      "installNotes+": [
+        "Multiplayer is not supported.",
+        "Updates to the main pack are generally safe in a running campaign, but saves from before a fix may stay stuck on quests that were already aborted.",
+        "Azazel's start position can be switched, but then the confederation option for him must be chosen to advance Katarin's quests.",
+        "When starting as an Alarielle-route faction (Morathi, N'Kari and others), Azazel is held in cryostasis and the Miao/Katarin/Azazel content begins only after Alarielle reaches corruption stage 6; playing Miao or Azazel directly is the tighter experience.",
+        "The latest Alarielle, Temptation's Bloom (ATB) needs the Steam version of Azazel's Realm. Without ATB the Corrupted Avelorn technology never unlocks; Azazel's Realm does not require it.",
+        "The play-as overwrite crashes the game at launch if the Corrupted Compendium itself is not enabled. With it enabled while playing Miao, Ensign Loi appears on turn 1 and the Emissary events do not run; for other lords it starts the Compendium at tier 2 once Miao is allied or vassalised through Azazel's quest.",
+        "Since the 2026-09-01 update, when playing Archaon Arbaal still joins him but starts wounded and Archaon no longer gets his starting province. Since 2026-09-25 any player faction gets the Lord of the Endtimes dilemma when the Valkia endgame crisis spawns."
+      ],
+      "knownIssues+": [
+        "The Compendium's play-as overwrite pack blocks the other Cathay legendary lords (Western Provinces, Celestial Court) from confederating and skews the Compendium when playing Miao Ying; use it only for Azazel campaigns (or factions that auto-confederate him).",
+        "Overhaul mods that turn Azazel into a hero (for example Mortau Godslayer) stop the Miao quest battle from spawning and leave no eligible lord for the Katarin battle; the affected campaign needs a restart.",
+        "A campaign played between Lazy's automatic Katarin AI corruption (about 2026-10-04) and the 2026-10-05 hotfix may have Katarin at a wrong stage."
+      ]
+    },
+    {
+      "id": "ll-28994",
+      "knownIssues+": [
+        "Written for the pre-Steam layout: Soboro's pack is reported not to work with the Workshop version of Lazy's Miao progression (in-game error about missing stage files in May 2025; head reskin not applied in February 2026). No fix has been named."
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3471883632"
+          }
+        ],
+        "note": "Order as with Lazy: Soboro_Miao.pack, li_miaoying_scale_soboro_st1.pack, li_miaoying_fishnet_soboro_st2.pack, li_miaoying_ballet_soboro_st3.pack, li_miaoying_bare_soboro_st4.pack, li_miaoying_corset_soboro_st5.pack, li_miaoying_plug_soboro_st6.pack. Disable Lazy's own stage pack and enable this one instead. Soboro's files must load above Lazy's Miao Ying reskin so they overwrite it; the wrong order makes the stage 1 model look broken (2026-08)."
+      }
+    },
+    {
+      "id": "steam-3640040123",
+      "knownIssues+": [
+        "CA renumbered many voice lines; only a few of the 178 lines were fixed in this re-upload (2026-01), so some lines may still not play."
+      ]
+    },
+    {
+      "id": "steam-3773211997",
+      "installNotes+": [
+        "The exploration mode (event nodes, random battles, collectibles, started through dilemma events) works only on the Immortal Empires map and needs the selected character on the campaign map in a normal stance (not garrisoned, ambushing or force-marching)."
+      ]
+    },
+    {
+      "id": "dc-alivia-white-lion-dryad-heroes-resurrection-working-packs",
+      "packs+": [
+        {
+          "file": "alivia_whiteLion.pack",
+          "from": "download",
+          "note": "MrDustV's 9.0 version (Lyra, 198.8 MB, 2026-09-27); same file name as the Workshop original 2996269472, so unsubscribe that item."
+        },
+        {
+          "file": "alivia_dryad.pack",
+          "from": "download",
+          "note": "MrDustV's 9.0 version (Nymeria, 76.9 MB, 2026-09-27); same file name as the Workshop original 3404717872, so unsubscribe that item."
+        }
+      ],
+      "installNotes+": [
+        "MrDustV announced on 2026-10-31 that he is adding quality-of-life changes to these units (new head and mounts for Ymira, Nymeria buffing forest units and summoning dryads, a White Lion mount for Lyra, items for all), so newer packs are to be expected."
+      ]
+    },
+    {
+      "id": "dc-cult-of-pleasure-mechanics-morathi-9-0-patch",
+      "packs+": [
+        {
+          "file": "!patched_UlrikHD_Morathi_cult_of_pleasure.pack",
+          "from": "steam",
+          "steamId": "3240401070"
+        }
+      ],
+      "installNotes+": [
+        "Repost of the abandoned original mod by UlrikHD, patched for 7.0 in 2025-12 and again for 9.0 around 2026-10-09; the author of the Alarielle campaign recommends it for Morathi."
+      ]
+    },
+    {
+      "id": "dc-dust-s-corrupted-heroes-dch",
+      "installNotes+": [
+        "The story and heroes are for Alarielle (Morathi support is only planned). Since the 2026-10-08 Steam release the lord and heroes also carry over if Alarielle is confederated by another ATB/AZR-eligible lord (Azazel, Archaon, Sigvald, N'Kari), and an AI Alarielle can progress the questline herself. To play DCH as Morathi, summon the heroes with the console.",
+        "DCH removes Alarielle's starting handmaiden Joespharilis (a custom version by another author) and Imrik's starting mage Mikaela and replaces them with its own unique hero versions; mods that edit those two characters may no longer apply.",
+        "While DCH or the Citadel of Dusk is active, Court Unity confederation is blocked for Imrik, Teclis, Eltharion and Tyrion; confederating gives Caledor, Saphery, the Citadel of Dusk or Tiranoc instead (a lord each when LHEC is installed). This is on purpose, agreed with the ATB author to stop cheesing ATB stage 4, and the author says the removal is permanent (2026-11-01); a special lord for Saphery is planned.",
+        "Citadel of Dusk (a playable faction with its own lord and hero) is also available as the standalone Steam item 3829276482 since 2026-10-29; the same content is built into DCH from the 2026-10-30 update, so the standalone item is not needed together with DCH.",
+        "The Citadel of Dusk lord and hero are spawned on turn 1: adding it to a running campaign does not give them, but it does not break the save either; summon them with console commands.",
+        "The 2026-10-30 update ('Choices Have Consequences') makes the mod explicit (adults only) and adds support for the ATB finale: Pulvis, Mikaela and Nicola confront Alarielle, and the choice leads to an extra Aliathra lord model (playable Aliathra needs LHEC; the quest chain exists only when played with ATB).",
+        "SFO: DCH only adds units, buildings and heroes, so it should work with SFO in theory, but SFO raises unit health, numbers and damage, so DCH units will be weak without a balance patch (untested, author 2026-10-19)."
+      ],
+      "knownIssues+": [
+        "Capturing a barracks in Morathi's territory can give the corrupted High Elf units before ATB stage 5; the author has a lock script and offered it to the ATB author (as of 2026-10-20).",
+        "Melvina (Citadel of Dusk lord) plays her male counterpart's voice lines when diplomacy is started with her; author aware, not yet fixed (as of 2026-10-30)."
+      ],
+      "relations+": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "ll-30462"
+          },
+          "note": "Since the 2026-10-19 update Corrupted Landmarks contains DCH's buildings: the Black Ark can recruit the corrupted High Elf units from ATB (locked until Alarielle reaches stage 5), and they do not appear at all without an updated Corrupted Landmarks. Not a hard dependency.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dc-lin-allinone-en-translation-lin-allinone-en-pack",
+      "packs+": [
+        {
+          "file": "Lin_AllInOne_en.pack",
+          "from": "steam",
+          "steamId": "3718883838",
+          "note": "The maintained copy (also uploaded on Discord)."
+        }
+      ],
+      "knownIssues+": [
+        "Steam item 3676463688 is an outdated copy of this translation; use 3718883838 (author, 2026-05-26)."
+      ],
+      "installNotes+": [
+        "Besides the Lin mods the pack translates Integrated Strategies (since 2026-10-10), Summon Servant (Scathach and new ancillaries, 2026-10-09) and the Generic Framework tooltips."
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-27171"
+          },
+          {
+            "mod": "ll-27663"
+          },
+          {
+            "mod": "ll-32476"
+          },
+          {
+            "mod": "ll-43852"
+          }
+        ],
+        "note": "Discord: Above Corrupted Ascension; the translation pack must win over all Lin mods."
+      }
+    },
+    {
+      "id": "dc-morathi-ascension-lazy-stages-optional-original-hair",
+      "installNotes+": [
+        "Steam 3480317584 listed among this entry's sources is not part of Lazy's Morathi progression: it is Domek's small submod 'High elf red line buffs for dark elf units' (pack zzz_domek_def_anar.pack), which lets a confederated Alith Anar's red line buff Dark Elf units. It is not needed for Morathi."
+      ]
+    },
+    {
+      "id": "dc-n-slaaneshvassals-dechala-fix",
+      "installNotes+": [
+        "The game patch of 2026-05-21 made the LoversLab @n_SlaaneshVassals.pack out of date. This fixed pack (49.3 MB, also supports playing as Dechala) was pinned on 2026-05-22 and should be used instead of the LoversLab file."
+      ]
+    },
+    {
+      "id": "ll-23925",
+      "knownIssues-": [
+        "high heels sink into the ground",
+        "Story incomplete (as of update 2023/2025)"
+      ],
+      "knownIssues+": [
+        "Maintenance only: since 2026-02-16 Lazy keeps the Lazy mods working with game updates but adds no new content; the story ends at stage 4 and stage 5 is not in the mod.",
+        "Made for playing as Morathi: in a campaign as another lord there is no protection against the AI Morathi's progression, and she can confederate the player (a Dechala campaign was lost this way)."
+      ],
+      "installNotes+": [
+        "The newest state is on the Steam Workshop (version 0.7.2 as of 2026-03-07, newer than the LoversLab file). It needs the matching up-to-date Lazy's Corruption Framework; if Steam does not deliver an update, resubscribe or delete the local workshop file.",
+        "Use a third-party mod manager: CA's launcher has no load ordering, which is the usual reason the Quintex-landmark quest or the later quests do not trigger.",
+        "If high heels still clip through the ground in battle, the reskin files are old: update or redownload them (fixed by Lazy, 2025-07-12).",
+        "Lazy's updates, including the Masque side-progression update of 2025-12-25, are save compatible whatever the current Morathi stage is; nothing extra is needed from the player.",
+        "A crash on the AI Morathi's turn (about turn 8-9, when she confederates Masque), seen in campaigns as another lord with ATB or Azazel's Realm, was fixed in an update reported on 2026-10-28; Lazy stated that day that the main corruption mod should work bug free after game patch 9.0."
+      ],
+      "relations+": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "dc-cult-of-pleasure-mechanics-morathi-9-0-patch"
+          },
+          "note": "Cult of Pleasure mechanics for Morathi (Steam 3240401070), patched for 9.0 around 2026-10-09; the progression works without it.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-24467",
+      "installNotes+": [
+        "Rat of the Lake updated the mod in early January 2025 so that it works again. The same handmaiden content is also part of Kerberos' Alarielle mod (ATB), which lists this standalone version as incompatible."
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "The handmaiden content is also part of Kerberos' Alarielle mod (ATB).",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-27171",
+      "relations-": [
+        "ll-23878"
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Not recommended with Lazy's mods or mods built on them (ATB, Azazel's Realm). Since the 2025-04-04 update it runs on its own corruption system and no longer needs Lazy's Miao progression. Reports are mixed: some players run both as parallel, non-interacting corruption (the only crash seen was confederating Azazel before the first Ascension quest battle), others see doubled traits and corruption adaptation, Corrupted Compendium confused by two stages, or Lin's progression not triggering. Both authors say real compatibility is possible only later (2026-07).",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "packs+": [
+        {
+          "file": "Lin_Corrupted_Ascension.pack",
+          "from": "steam",
+          "steamId": "3376917062",
+          "note": "Replaces the older Lin_Corrupted_Ascend.pack since the 2024-12 framework update."
+        }
+      ],
+      "cleanup": {
+        "staleDataPacks": [
+          "Lin_Corrupted_Ascension_EnUpdated.pack",
+          "Lin_Corrupted_Ascend.pack"
+        ],
+        "note": "If you use the Steam version, delete old LoversLab packs from data. The old English translation pack is superseded by Lin AllInOne (Steam 3718883838). Lin_Corrupted_Ascend.pack is the pack name from before the 2024-12 framework update."
+      },
+      "knownIssues-": [
+        "WH3 patch 9.0 (2026-10-09) broke it",
+        "Script error mentioning li_miaoying_progression_stages"
+      ],
+      "knownIssues+": [
+        "Game patch 9.0 (2026-09-24) broke it and the author was still fixing it on 2026-10-09 (the Workshop item was updated 2026-10-23); if it still crashes, remove the mod, delete its files and resubscribe.",
+        "Startup crash 'invalid database record' in a Lin pack, or blank quests and texts after an update: delete every old copy of the Lin mods and the Generic Framework from the workshop and data folders and subscribe again; plain unsubscribe/resubscribe was not enough (old-version files in data cause these errors, 2026-10-24).",
+        "With Lazy's mods active, buildings or paths can stay locked or the start quest (artifact quest on turn 6) can be missing; remove all of Lazy's mods and mods built on them."
+      ],
+      "installNotes+": [
+        "Steam (3376917062) is the main release channel; since 2025-11-10 LoversLab is only a backup and can be older.",
+        "Since the 2025-12-31 rework the mod covers Miao Ying only (Katarin content was removed). On 2026-10-24 the author announced that Katarin (Tzeentch) and Drycha (Nurgle) will join Corrupted Ascension as a standard corruption framework within about six months."
+      ],
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+          }
+        ],
+        "note": "No load order requirement of its own besides the Generic Framework being present (players list the framework before the Lin submods); the English translation pack must win over the Lin mods."
+      }
+    },
+    {
+      "id": "ll-33808",
+      "installNotes+": [
+        "tdw_mor_seduce.pack lets every Dark Elf faction seduce units for the player (for example Malekith with the Morathi mods on), so turn it off unless you play Morathi. There is no Alarielle pack because seduce units are built into Alarielle, Temptation's Bloom."
+      ]
+    },
+    {
+      "id": "ll-34542",
+      "installNotes+": [
+        "When playing a non-Slaanesh faction (for example Be'lakor) use the Non_Slaanesh_Factions variants of the Slaanesh Vassals and Victories packs; the wrong variant can crash or show dilemmas with the wrong currency. Swapping the variant mid-campaign is save safe (2026-09-14)."
+      ],
+      "knownIssues+": [
+        "The LoversLab @n_SlaaneshVassals.pack became out of date with the game patch of 2026-05-21; use the fixed pack from the Dechala fix entry instead."
+      ]
+    },
+    {
+      "id": "ll-36630",
+      "installNotes+": [
+        "Made for playing a Slaanesh faction as an outside force corrupting the legendary lords: when you play one of the supported lords, the corruption and confederation events keep running for her and there is no option to disable them. No full support for non-Slaanesh player factions is planned (author)."
+      ]
+    },
+    {
+      "id": "ll-52091",
+      "installNotes+": [
+        "Also restores the missing blue-line skills of Alarielle's snake form after game patch 9.0 (a CA change affecting confederated Chaos subcultures)."
+      ]
+    },
+    {
+      "id": "ll-52142",
+      "requiresDlc": [
+        "Tomb Kings DLC"
+      ],
+      "knownIssues+": [
+        "In the BETA the last stages still have rough edges; the author recommends choosing the hero option when it is offered."
+      ]
+    },
+    {
+      "id": "steam-3238848431",
+      "relations-": [
+        "ll-27930"
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Crashes while loading any manual battle that contains a corrupted Miao Ying; with Azazel's Realm it also breaks the second Miao Ying quest battle.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Crashes while loading a manual battle that contains a corrupted Miao Ying (from corruption level 1), also without Azazel's Realm. Turn the battle UI mod off for such battles; auto-resolve is unaffected.",
+          "condition": "manual battles with a corrupted Miao Ying",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "knownIssues+": [
+        "Crashes the game while loading any manual battle that contains a corrupted Miao Ying (from corruption level 1 up); Just Good Battle UI and other Klissan battle UI mods do the same. Turning the battle UI mod off fixes it, auto-resolve is unaffected (2026-09-09)."
+      ]
+    },
+    {
+      "id": "steam-2890813441",
+      "knownIssues+": [
+        "Reported as no longer working in 2026-02 (last Workshop update 2022-11); Kerberos pointed to other Morathi Slaanesh-expansion mods from his recommended list instead."
+      ]
+    },
+    {
+      "id": "steam-3027059730",
+      "installNotes+": [
+        "The long 'required items' list on its Workshop page is only a list of suggestions; the ATB Morathi load order uses the mod alone without extra dependencies (2026-06-27)."
+      ]
+    },
+    {
+      "id": "steam-3471884231",
+      "installNotes+": [
+        "Covers all four stages. The older standalone items Stage 1 (2860509927) and Stage 2 (2867839569) only cover stages 1 and 2, so they are redundant when this item is used; they were updated for patch 6.3 and keep working as 'less lurid' reskins."
+      ]
+    },
+    {
+      "id": "steam-3485418515",
+      "knownIssues+": [
+        "Broke with the 7.0 update (Tides of Torment, 2025-12). Its effect (Slaanesh lords confederated by the player buff High Elf units) is part of ATB 2.2.4 and newer, so with ATB unsubscribe from it; Readman's OOO variants work with or without it since 2025-12-20."
+      ]
+    },
+    {
+      "id": "steam-3501984780",
+      "installNotes+": [
+        "CCC (updated 2026-07-25 and 2026-07-31) and the other Readman ATB submods such as UUU and TTT need the ATB update of 2026-07-24 or newer; with an older ATB they fail at startup because they look for the new units and building."
+      ]
+    },
+    {
+      "id": "steam-3513079088",
+      "relations-": [
+        "steam-3485418515"
+      ],
+      "relations+": [
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3485418515"
+          },
+          "note": "Red line buffs for High Elf units: broken by the 7.0 patch; since 2025-12-20 the Readman OOO packs embed the fixed table and work with or without it.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3525258474",
+      "relations-": [
+        "steam-3485418515"
+      ],
+      "relations+": [
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3485418515"
+          },
+          "note": "Red line buffs for High Elf units: broken by the 7.0 patch; since 2025-12-20 this pack embeds the fixed table and works with or without it.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "installNotes+": [
+        "The patch only adds the Extended High Elf Hero Skills to Joanna's default skill tree: do not use it if another mod already changed her skills or if the extended skills mod is not installed. It does not touch second-form skill trees, so it is not tied to DCH's replacement of Joespharilis."
+      ]
+    },
+    {
+      "id": "steam-3534460647",
+      "installNotes+": [
+        "Needs the ATB update of 2026-07-24 or newer; with an older ATB it fails at startup.",
+        "After CA broke the Handmaiden unit, Readman released fixes on 2026-10-13 for the handmaiden horse, foot and bird variants: UUU and CCC must be the versions from that day or newer. Mounted Sisters of Avelorn shoot again and the Handmaiden hero animates again under Chaos factions since 2026-11-02."
+      ]
+    },
+    {
+      "id": "steam-3536009143",
+      "installNotes+": [
+        "The Readman_FFF flag mods (default, Pink 3549231458, Green 3556421071) can be swapped, added or removed mid-campaign without breaking the save."
+      ]
+    },
+    {
+      "id": "steam-3557775008",
+      "installNotes+": [
+        "Use the version from 2026-11-02 or newer: it fixes the handmaiden mount animation broken by a CA change (the N'Kari and Warriors of Chaos variants got the same fix)."
+      ]
+    },
+    {
+      "id": "steam-3592882054",
+      "knownIssues+": [
+        "Not patched for the 9.0 DLC as of 2026-10-14; a new version was started on 2026-10-18. Even the fixed building only applies from turn 2: on turn 1 factions still get CA's default building."
+      ]
+    },
+    {
+      "id": "steam-3619883986",
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Made for ATB, not for the standalone wood elves campaign. ATB's late-game tree and forest mechanic does not work with Immortal Empires Expanded alone; this patch enables IEE's forests and landmarks for it.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "installNotes+": [
+        "Needed when ATB is played with Immortal Empires Expanded. ATB's wood elf texts are missing on the forests added by IEE."
+      ]
+    },
+    {
+      "id": "steam-3621087383",
+      "knownIssues+": [
+        "The Gorebull recruitment skills can fail to appear with some other mod combinations. Readman Large Minotaur Mayhem (LMM) uses different skills and can be swapped in mid-campaign without breaking the save (2026-09-09)."
+      ]
+    },
+    {
+      "id": "steam-3625969460",
+      "installNotes+": [
+        "Gives the landmarks both the normal and the corrupted effects; the newer corrupted versions of regular building chains do not get both. Still works after game patch 9.0 without an update (2026-10-01)."
+      ]
+    },
+    {
+      "id": "steam-3683061804",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3149445431"
+          },
+          "note": "The game allows only one merged soundbank, so Endo's combined pack and other audio mods cannot work together (Empire and Bretonnia units go silent).",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ],
+      "knownIssues+": [
+        "Cannot be combined with other audio mods, because the game allows only one merged soundbank (Audio Mixer is incompatible; Empire and Bretonnia units go silent). The same limit applies to start-position mods (author, 2026-03-12)."
+      ]
+    },
+    {
+      "id": "steam-3801443992",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Kerberos advises against using it with Azazel's Realm: those mods expect factions to be destroyed and revived later, so instantly taking their legendary lords can break the storyline (like Recruit Defeated Legendary Lords).",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Kerberos advises against using it with Alarielle, Temptation's Bloom: the mod expects factions to be destroyed and revived later, so instantly taking their legendary lords can break the storyline. A compatibility mod was only discussed.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-23878",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3238848431"
+          },
+          "note": "Helper UI (and other Klissan battle UI mods) crashes while loading a manual battle that contains a corrupted Miao Ying; turn it off for such battles.",
+          "condition": "manual battles with a corrupted Miao Ying",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "Corrupted Ascension runs its own corruption system next to Lazy's; reports are mixed (doubled traits, Corrupted Compendium confused by two stages), both authors say real compatibility is possible only later.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-27930",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3801443992"
+          },
+          "note": "Kerberos advises against Foreign Barracks: instantly taking destroyed legendary lords can break the storyline.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-42028",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3801443992"
+          },
+          "note": "Kerberos advises against Foreign Barracks: instantly taking destroyed legendary lords can break the storyline.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3149445431",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3683061804"
+          },
+          "note": "The game allows only one merged soundbank, so Endo's combined pack and other audio mods cannot work together.",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-42028",
+      "relations-": [
+        "ll-36002",
+        "n_SlaaneshVictories_Confederations.pack"
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-36002"
+          },
+          "condition": "playing as Alarielle",
+          "note": "Habu's tdw corrupted buildings are made for Miao Ying; as Alarielle they cause script errors and do nothing. ATB and its corrupted wood elf units also clash with tdw_corrupted_buildings_add_wef.pack.",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-36630"
+          },
+          "condition": "with the Confederations variant",
+          "note": "Do not use the 'Confederations' variant of the Slaanesh Victories mods (breaks ATB and Azazel's Realm); the other variants are fine.",
+          "source": {
+            "type": "loverslab",
+            "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        }
+      ]
+    }
+  ]
+}

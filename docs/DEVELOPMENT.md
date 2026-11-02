@@ -103,8 +103,12 @@ The project keeps itself current without anyone's manual work or paid service.
 
 Curated data is layered; later layers override earlier ones field by field (a field is replaced whole):
 `auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json` < `followup-review.json`
-< `followup-archives.json` < `followup-community.json` < `manual.json`; then `community.json` is applied
-on top. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
+< `followup-archives.json` < `followup-discord.json` < `followup-community.json` < `manual.json`; then `community.json` is applied
+on top. In a layer, `"field+": [...]` appends to a list field and `"field-": [...]` drops the items that contain one of
+the texts (relations/packs: by target mod, pack, Steam id or file), so a later pass can retire a fixed warning without
+repeating the whole list. `followup-discord.json` holds the facts of the Discord pass (2026-11-02: the mod's author, a
+Modder-role member or several players; never a single report). Relations and known issues from `discord-mods.json` are
+added after the layers, so fix those in that file. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
 over all layers – fix texts there.
 - `curator/analyze_pack.py` – reads a mod's .pack files (index + reference files only): file list,
   declared dependencies, tables, and which packs provide the models/materials/textures it refers to
@@ -128,6 +132,7 @@ over all layers – fix texts there.
   Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
   profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.
   `work/research-steam-skipped.txt` lists what is deliberately not in the catalog, with the reason.
+- `curator/work/part-6.json`: mods found in the Discord pass of 2026-11-02, each checked against its Workshop data.
 - Never guess facts; mark uncertainty in `curation.confidence` / `openQuestions`. Texts neutral, non-graphic.
 - Reading the Discord server is manual and must look like a person reading (no API, no automation).
   Discord's search only matches exact spellings: try several variants (apostrophes, spaces, underscores)
