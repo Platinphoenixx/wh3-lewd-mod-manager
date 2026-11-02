@@ -33,12 +33,14 @@ const catalog: Catalog = {
     mod('nothing-to-do-with-it', {}),
     mod('camera', { kind: 'utility', tags: ['general'], sources: { steam: [{ id: '9', subscribers: 600000 }] } }),
     mod('modern-warfare', { kind: 'units', tags: ['general'], sources: { steam: [{ id: '8', subscribers: 900000 }] } }),
-    mod('clash', { tags: ['cathay'], relations: [{ kind: 'incompatible', target: { mod: 'miao' }, source: src }] })
+    mod('clash', { tags: ['cathay'], relations: [{ kind: 'incompatible', target: { mod: 'miao' }, source: src }] }),
+    mod('lazy-skin', { kind: 'reskin', tags: ['miao ying'] })
   ],
   presets: [
     list('miao-template', ['Miao Ying'], ['miao']),
     list('other-miao-list', ['Miao Ying'], ['miao', 'popular-in-miao-lists', 'camera', 'alarielle-submod']),
-    list('alarielle-list', ['Alarielle'], ['alarielle-campaign', 'alarielle-submod', 'camera', 'nothing-to-do-with-it'])
+    list('alarielle-list', ['Alarielle'], ['alarielle-campaign', 'alarielle-submod', 'camera', 'nothing-to-do-with-it']),
+    list('miao-skinned', ['Miao Ying'], ['miao', 'lazy-skin'], 'derived')
   ]
 }
 const index = buildIndex(catalog)
@@ -70,11 +72,28 @@ describe('profile suggestions', () => {
   it('offers mods that exclude each other as one "pick one" choice', () => {
     const groups = s.lewd.filter(isPickOne)
     const skins = groups.find((g) => g.pick.some((p) => p.key === 'mod:miao-skin'))
-    expect(skins?.pick.map((p) => p.key).sort()).toEqual(['mod:miao-skin', 'mod:miao-skin-2'])
+    expect(skins?.pick.map((p) => p.key).sort()).toEqual(['mod:lazy-skin', 'mod:miao-skin', 'mod:miao-skin-2'])
     expect(skins?.note).toBe('They all change how Miao Ying looks')
     const clash = groups.find((g) => g.pick.some((p) => p.key === 'mod:cathay-a'))
     expect(clash?.pick.map((p) => p.key).sort()).toEqual(['mod:cathay-a', 'mod:cathay-b'])
     expect(clash?.note).toBe('These do not work together')
+  })
+
+  it('selects an option at first only where players of the list really use it', () => {
+    const groups = s.lewd.filter(isPickOne)
+    // Both Miao Ying reskins are "For Miao Ying" (the template's character): the first is selected.
+    expect(groups.find((g) => g.pick.some((p) => p.key === 'mod:miao-skin'))?.preselect).toBe(groups.find((g) => g.pick.some((p) => p.key === 'mod:miao-skin'))?.pick[0].key)
+    // Two Cathay unit mods only share the faction: nothing is selected.
+    expect(groups.find((g) => g.pick.some((p) => p.key === 'mod:cathay-a'))?.preselect).toBeUndefined()
+  })
+
+  it('says which reskin in the profile another reskin would replace, and selects none of them', () => {
+    const skinned = catalog.presets.find((p) => p.id === 'miao-skinned')!
+    const r = suggestForProfile(catalog, index, skinned, profile, candidates(catalog, index, skinned, profile))
+    const g = r.lewd.filter(isPickOne).find((x) => x.pick.some((p) => p.key === 'mod:miao-skin'))!
+    expect(g.preselect).toBeUndefined()
+    expect(g.pick.every((p) => p.replaces?.[0] === 'lazy-skin')).toBe(true)
+    expect(g.pick[0].reasons[0]).toBe('Replaces lazy-skin in this list')
   })
 
   it('explains each suggestion in at most two reasons', () => {

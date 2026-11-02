@@ -120,6 +120,9 @@ export const DEFAULTS: Required<Pick<Settings, 'catalogUrl' | 'contribRepo' | 'r
   relayUrl: 'https://wh3lmm-relay.noita.workers.dev'
 }
 
+/** The app's own support page, linked quietly in the title bar. */
+export const SUPPORT_URL = 'https://ko-fi.com/platinphoenix31043'
+
 /** What the renderer may call in the main process (exposed by the preload script). */
 export interface Api {
   getCatalog(): Promise<Catalog>

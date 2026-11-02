@@ -23,6 +23,8 @@ export function steamRoots(): string[] {
 }
 
 async function libraries(): Promise<string[]> {
+  // WH3LMM_STEAM_LIBRARY: use only this Steam library (tests as a player with a fresh game and no Workshop items).
+  if (process.env.WH3LMM_STEAM_LIBRARY) return [process.env.WH3LMM_STEAM_LIBRARY]
   const libs = new Set<string>()
   for (const root of steamRoots()) {
     libs.add(root)

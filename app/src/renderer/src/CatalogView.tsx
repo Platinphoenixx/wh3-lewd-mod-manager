@@ -23,9 +23,36 @@ function haystack(m: Mod): string {
   ].filter(Boolean).join(' \n ').toLowerCase()
 }
 
-function characters(m: Mod): string[] {
-  // "Archaon / Belakor / Sigvald" style entries list several characters.
-  return [...new Set((m.playAs ?? []).flatMap((p) => p.character.split(/\s*[/,]\s*/)).map((c) => c.replace(/\s*\(.*\)$/, '').trim()).filter(Boolean))]
+// "Archaon / Belakor / Sigvald" style entries list several characters; "Any faction" is none.
+const playAsNames = (m: Mod) =>
+  (m.playAs ?? []).flatMap((p) => p.character.split(/\s*[/,]\s*/)).map((c) => c.replace(/\s*\(.*\)$/, '').trim()).filter((c) => c && !/^(any|all)\b/i.test(c))
+// One key per character however it is spelled ("Bel'akor" / "Belakor", "Shen-zoo" / "Shenzoo").
+const charKey = (c: string) => c.toLowerCase().replace(/[^a-z]/g, '')
+
+/**
+ * Characters for the filter: the ones a mod lets you play and the ones its tags name (reskins, add-ons), so
+ * "Alarielle" finds everything for her. Each is shown in its most common spelling.
+ */
+function characterNames(mods: Mod[]): Map<string, string> {
+  const spellings = new Map<string, Map<string, number>>()
+  for (const c of mods.flatMap(playAsNames)) {
+    const s = spellings.get(charKey(c)) ?? new Map<string, number>()
+    spellings.set(charKey(c), s.set(c, (s.get(c) ?? 0) + 1))
+  }
+  // A longer name that starts with a shorter one is the same character ("Valkia the Bloody").
+  const keys = [...spellings.keys()]
+  const merged = new Map(keys.map((k) => [k, keys.find((o) => o !== k && k.startsWith(o) && o.length >= 5) ?? k]))
+  const names = new Map<string, string>()
+  for (const [k, into] of merged) {
+    const all = [...spellings.get(into)!.entries()]
+    names.set(k, all.sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0][0])
+  }
+  return names
+}
+
+function characters(m: Mod, names: Map<string, string>): string[] {
+  const fromTags = m.tags.map(charKey).filter((k) => names.has(k))
+  return [...new Set([...playAsNames(m).map(charKey), ...fromTags].map((k) => names.get(k) ?? k))]
 }
 
 function Facet<T extends string>({ title, values, selected, onToggle, label }: {
@@ -75,20 +102,19 @@ export function CatalogView() {
   const [sort, setSort] = useState<Sort>('updated')
 
   const installed = useMemo(() => (data.scan ? matchInstalled(data.index, data.scan.packs).known : new Map()), [data.scan, data.index])
-  const prepared = useMemo(
-    () =>
-      data.catalog.mods
+  const prepared = useMemo(() => {
+    const names = characterNames(data.catalog.mods)
+    return data.catalog.mods
         .filter((m) => m.kind !== 'collection')
         .map((m) => ({
           m,
           text: haystack(m),
-          chars: characters(m),
+          chars: characters(m, names),
           srcs: (['loverslab', 'steam', 'nexus', 'discord'] as Source[]).filter((s) => (s === 'steam' ? m.sources.steam?.length : m.sources[s])),
           outdated: ['superseded', 'abandoned'].includes(m.status ?? ''),
           content: contentOf(m)
-        })),
-    [data.catalog]
-  )
+        }))
+  }, [data.catalog])
 
   const q = query.trim().toLowerCase()
   const base = prepared.filter(
@@ -125,7 +151,7 @@ export function CatalogView() {
         </div>
         <Facet title="Content" values={contentCounts} selected={contents} onToggle={toggler(contents, setContents)} label={(c) => CONTENT_LABEL[c]} />
         <Facet title="Kind" values={kindCounts} selected={kinds} onToggle={toggler(kinds, setKinds)} label={(k) => KIND_LABEL[k]} />
-        <Facet title="Play as / character" values={charCounts} selected={chars} onToggle={toggler(chars, setChars)} label={(c) => c} />
+        <Facet title="Character" values={charCounts} selected={chars} onToggle={toggler(chars, setChars)} label={(c) => c} />
         <Facet title="Source" values={sourceCounts} selected={sources} onToggle={toggler(sources, setSources)} label={(s) => SOURCE_LABEL[s]} />
         {active > 0 && <button onClick={() => { setKinds(new Set()); setChars(new Set()); setSources(new Set()); setContents(new Set()) }}>Clear filters ({active})</button>}
       </aside>

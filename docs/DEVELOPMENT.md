@@ -18,7 +18,11 @@ community contributions. App UI and catalog texts are English.
     character/faction, recommended by or extending profile mods) and that community lists for the same
     character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
     removed template mods or other characters' campaigns. Suggestions that exclude each other (incompatible,
-    versions of one add-on, reskins of the same character) come as one "pick one" choice. UI: `renderer/src/Suggestions.tsx`.
+    versions of one add-on, reskins of the same character) come as one "pick one" choice; a reskin of a character the
+    profile already reskins says what it replaces ("Replaces …", `Suggestion.replaces`). An option is selected at first
+    only when players of this kind of list really use it (same-character lists, tied to a profile mod, or for the
+    template's character) and it replaces nothing; otherwise "None". A fresh profile opens on these choices.
+    UI: `renderer/src/Suggestions.tsx`.
   - `src/renderer/src/Creators.tsx` credits: every creator whose mod is in a profile (makers of the template's
     campaign/progression/framework mods first), with support links (Patreon, Ko-fi, …) and author pages that
     `build_catalog.py` takes from the mods' own pages; Workshop uploader names come from
@@ -74,8 +78,11 @@ community contributions. App UI and catalog texts are English.
     order, known issues, support) and replace the list-page guesses. No automatic Nexus
     crawl: its numbers stay as read. The app downloads Nexus files in its own window (`persist:nexus`, like
     LoversLab), with the player's browser as fallback.
-  - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `--tab=profiles-order` (or any tab)
+  - Dev/test: `WH3LMM_USER_DATA=<folder>` uses throwaway app data; `WH3LMM_STEAM_LIBRARY=<folder>` scans only that Steam library (a fresh player: `<folder>/steamapps/common/Total War WARHAMMER III` with an empty data folder); `--tab=profiles-order` (or any tab)
     opens a view directly.
+  - `src/main/catalog-data.test.ts` checks the real `catalog/catalog.json`: no relation to a missing mod or a collection,
+    templates name current mods and their own packs once, contain every strict requirement of their mods and no
+    conflict, and no preselected choice replaces or conflicts with a template mod. Run `npm test` after every build.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
     (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md). `src/main/appUpdate.ts` asks
     GitHub's latest release at most daily and the app shows a card when it is newer; it never updates itself.
@@ -109,7 +116,8 @@ on top. In a layer, `"field+": [...]` appends to a list field and `"field-": [..
 the texts (relations/packs: by target mod, pack, Steam id or file), so a later pass can retire a fixed warning without
 repeating the whole list. `followup-discord.json` holds the facts of the Discord pass (2026-11-02: the mod's author, a
 Modder-role member or several players; never a single report). Relations and known issues from `discord-mods.json` are
-added after the layers, so fix those in that file. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
+added after the layers, so fix those in that file; a requirement that only holds in a case is written
+`{"ref": "...", "condition": "..."}` there. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
 over all layers – fix texts there.
 - `curator/analyze_pack.py` – reads a mod's .pack files (index + reference files only): file list,
   declared dependencies, tables, and which packs provide the models/materials/textures it refers to
@@ -127,7 +135,8 @@ over all layers – fix texts there.
   (`IPublishedFileService/GetDetails`, needs a key, so refreshed by hand). The build adds them as `requires` where no
   curated relation names the same mod (curated ones win, e.g. "optional" for a listed item that is no longer
   needed); `collections` (their children are members) are skipped, translations get `extends`, and pages listed in
-  `recommendationsOnly` (they say so themselves) get `recommends`.
+  `recommendationsOnly` (they say so themselves) get `recommends`. Relations to a Steam collection are dropped (pages
+  that link one also name its members), and a requirement of a mod another mod `supersedes` points at the successor.
 - `curator/work/part-*.json` structured entries (ids `ll-<file id>`, `steam-<id>`, `dc-<slug>`),
   `desc-*.json` long texts + image captions, `preset-desc.json` template texts, `kpw.json` per-character
   guides, `discord-mods.json` Discord-only mods, `followup-*.json` later passes.
@@ -140,7 +149,9 @@ over all layers – fix texts there.
   (stable topological sort, duplicates of a pack dropped); tested lists keep the order they were played with.
   The app loads exactly the packs a template names, so guide and derived entries name every needed pack of a mod
   (main + assets; the first of a pick-one group; a mod made only of pick-one packs keeps one entry without an exact
-  pack so the player's choice applies; a pack a KPW guide names is taken as named; Steam collections are no entries).
+  pack so the player's choice applies; a pack a KPW guide names is taken as named – exact name, else the only pack it
+  starts or is part of; Steam collections are no entries). KPW templates also get the strict (unconditional)
+  requirements of the mods the guide names.
   `manual.json` `presetReplacements` apply to all templates; `noTemplate` lists mods that get no derived template
   (with the reason, e.g. they stop the game at launch).
 - `curator/launch_test.py` (Windows, the game installed): starts the game once per template with exactly its packs

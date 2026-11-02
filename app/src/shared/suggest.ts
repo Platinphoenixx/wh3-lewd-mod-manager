@@ -17,6 +17,10 @@ export interface Suggestion {
   /** At most two short reasons, most telling first. */
   reasons: string[]
   score: number
+  /** Players of this kind of list really use it: in a list for the same character, tied to a profile mod, or for the character. */
+  strong: boolean
+  /** Reskins in the profile it would replace (same character, last loaded wins). */
+  replaces?: string[]
 }
 
 /** Suggestions that do not go together (two reskins of the same character, incompatible mods): pick one. */
@@ -25,6 +29,8 @@ export interface PickOne {
   /** Why only one can be used, e.g. "They all change how Miao Ying looks". */
   note: string
   score: number
+  /** The option selected at first, or none: only an option players of this list really use and that replaces nothing. */
+  preselect?: string
 }
 
 export type SuggestionEntry = Suggestion | PickOne
@@ -76,6 +82,10 @@ export function suggestForProfile(
   const lead = preset.playAs[0] ?? preset.name
   const leadName = [...characters.values()].find((c) => norm(c).startsWith(norm(lead))) ?? lead
 
+  // Reskins already in the profile, by the character they change.
+  const profileSkins = new Map<string, string[]>()
+  for (const m of profileMods.filter((x) => x.kind === 'reskin')) for (const c of reskinSubjects(m, characters)) profileSkins.set(c, [...(profileSkins.get(c) ?? []), m.name])
+
   const story = (m?: Mod) => !!m && STORY_KINDS.includes(m.kind)
   const out = { lewd: [] as Suggestion[], general: [] as Suggestion[], character: leadName }
   for (const c of options) {
@@ -113,10 +123,20 @@ export function suggestForProfile(
     if (subs) { score += Math.log10(subs); reasons.push(`${short(subs)} Workshop subscribers`) }
     else if (downloads) { score += Math.log10(downloads) + 0.5; reasons.push(`${short(downloads)} LoversLab downloads`) }
     else if (nexus) { score += Math.log10(nexus) + 0.5; reasons.push(`${short(nexus)} Nexus downloads`) }
-    out[general ? 'general' : 'lewd'].push({ key: c.key, mod: m, reasons: reasons.slice(0, 2), score })
+    // A reskin of a character the profile already reskins replaces that look (an add-on to it does not).
+    const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []) : []
+    if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
+    out[general ? 'general' : 'lewd'].push({
+      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), ...(replaces.length ? { replaces } : {})
+    })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
   return { lewd: pickOneGroups(catalog, out.lewd, characters), general: pickOneGroups(catalog, out.general, characters), character: leadName }
+}
+
+/** The characters a reskin changes: its playAs and the character names among its tags. */
+function reskinSubjects(m: Mod, characters: Map<string, string>): string[] {
+  return [...new Set([...(m.playAs ?? []).map((p) => p.character), ...m.tags.map(norm).filter((t) => characters.has(t)).map((t) => characters.get(t)!)])]
 }
 
 /**
@@ -152,18 +172,21 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   const subjects = new Map<string, number>()
   for (const [i, sug] of list.entries()) {
     if (sug.mod.kind !== 'reskin') continue
-    const chars = new Set([
-      ...(sug.mod.playAs ?? []).map((p) => p.character),
-      ...sug.mod.tags.map(norm).filter((t) => characters.has(t)).map((t) => characters.get(t)!)
-    ])
-    for (const subject of chars) {
+    for (const subject of reskinSubjects(sug.mod, characters)) {
       if (subjects.has(subject)) join(subjects.get(subject)!, i, `They all change how ${subject} looks`)
       else subjects.set(subject, i)
     }
   }
   const byRoot = new Map<number, Suggestion[]>()
   for (const [i, sug] of list.entries()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), sug])
-  const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, members]) =>
-    members.length === 1 ? members[0] : { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score })
+  // Preselected: the first option, if players of this list really use it and it replaces nothing; otherwise none.
+  const preselect = (members: Suggestion[]) => (members[0].strong && !members[0].replaces ? { preselect: members[0].key } : {})
+  const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, members]) => {
+    if (members.length > 1) return { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score, ...preselect(members) }
+    // A single reskin that would replace one in the profile is a choice too ("None" keeps the profile's look).
+    const [one] = members
+    if (one.replaces) return { pick: members, note: `It changes how ${reskinSubjects(one.mod, characters).join(', ')} looks`, score: one.score }
+    return one
+  })
   return entries.sort((a, b) => b.score - a.score)
 }

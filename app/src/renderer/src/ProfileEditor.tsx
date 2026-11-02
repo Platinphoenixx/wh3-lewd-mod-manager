@@ -106,7 +106,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return [{ ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }]
   })
   const incomplete = new Set(missingEntries.map((e) => e.key))
-  const view: View = chosenView ?? (missingEntries.length ? 'install' : 'order')
+  // A fresh profile (nothing installed yet) starts with its choices, since they change what gets installed.
+  const fresh = missingEntries.length === resolved.entries.length
+  const view: View = chosenView ?? (picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
   const goTo = (v: View) => {
     setView(v)
     document.querySelector('.content')?.scrollTo({ top: 0 })

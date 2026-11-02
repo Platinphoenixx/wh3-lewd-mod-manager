@@ -13,8 +13,9 @@ function SuggestionName({ s }: { s: Suggestion }) {
 
 /**
  * Step 1, "Decide": the places where only one of several mods can be used (versions of one add-on, reskins
- * of the same character). The most used one is selected; "Apply" adds the chosen ones and remembers
- * "None of these" so the question does not come back.
+ * of the same character). An option is selected at first only where players of this kind of list really use it
+ * and it replaces nothing in the profile; "Apply" adds the chosen ones and remembers "None of these" so the
+ * question does not come back.
  */
 export function DecideChoices({ picks, onApply }: { picks: PickOne[]; onApply(add: string[], declined: string[]): void }) {
   const [picked, setPicked] = useState<Record<string, string>>({})
@@ -22,10 +23,11 @@ export function DecideChoices({ picks, onApply }: { picks: PickOne[]; onApply(ad
   if (!picks.length) return null
 
   const id = (p: PickOne) => p.pick[0].key
-  const choice = (p: PickOne) => picked[id(p)] ?? p.pick[0].key
+  const choice = (p: PickOne) => picked[id(p)] ?? p.preselect ?? NONE
   const apply = () => {
     const add = picks.map(choice).filter((k) => k !== NONE)
-    const declined = picks.filter((p) => choice(p) === NONE).flatMap((p) => p.pick.map((s) => s.key))
+    // The options not taken are answered too, so the same question does not come back without the chosen one.
+    const declined = picks.flatMap((p) => p.pick.map((s) => s.key).filter((k) => k !== choice(p)))
     onApply(add, declined)
   }
 
@@ -34,7 +36,8 @@ export function DecideChoices({ picks, onApply }: { picks: PickOne[]; onApply(ad
       <div className="fill-head">
         <h2>Decide</h2>
         <span className="muted small">
-          The list works as it is. These are the places where you choose between versions; the first one is what most players use.
+          The list works as it is; everything here is optional. Where players of this list mostly take one option it is selected, otherwise
+          nothing is added until you pick one. “Replaces …” means that mod changes the same character as one already in your list.
         </span>
       </div>
       <div className="fill-col" style={{ marginTop: 12 }}>

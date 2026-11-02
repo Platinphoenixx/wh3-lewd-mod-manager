@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
-import { DEFAULTS, type GameScan, type ScriptReport, type Settings } from '@shared/api'
+import { DEFAULTS, SUPPORT_URL, type GameScan, type ScriptReport, type Settings } from '@shared/api'
 import { withUserRules, type UserRule } from '@shared/community'
 import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
@@ -167,8 +167,9 @@ export function App() {
             Blur images
           </label>
           <span className="meta">
-            {effective.mods.length} mods · catalog {effective.generatedAt.slice(0, 10)}
+            {effective.mods.filter((m) => m.kind !== 'collection').length} mods · catalog {effective.generatedAt.slice(0, 10)}
           </span>
+          <a className="support" title="Support this app on Ko-fi" onClick={() => window.api.openExternal(SUPPORT_URL)}>♥ Support this app</a>
         </header>
         <main>
           {tab === 'profiles' && <ProfilesView />}
