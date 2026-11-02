@@ -84,7 +84,7 @@
     "https://www.loverslab.com/files/file/23966-lazys-corrupted-katarin-stages-reskins/"
    ],
    "requires": [
-    "Lazy's Corrupted Katarin reskins"
+    "Lazy's Corrupted Katarin reskins (Steam 3471883808)"
    ],
    "recommends": [],
    "incompatible": [],
@@ -1043,7 +1043,6 @@
     "Readman mods per recommended modlist"
    ],
    "incompatible": [
-    "Old versions: MiaoYing_Azazel_content.pack older than May 2025 crashes",
     "SFO can crash the Azazel/Miao quest battle",
     "Archaon: confederating Valkia/N'Kari/Changeling is blocked by the mod (breaks the endgame crisis)"
    ],
@@ -1060,7 +1059,8 @@
     "CA hotfix (2026-10-10) broke cm:force_confederation: confederation events fail for non-WoC/Dwarf factions; fixed for WoC/Chaos Dwarves 2026-10-11, still broken for Empire",
     "Chaos lords lose blue-line skills when confederated by a non-chaos faction (fixed in AZR 2026-10-11)",
     "Lazy's automatic Katarin AI corruption (2026-10-05) would break AZR; AZR contains a counter script",
-    "Steam updates arrive late: AZR, ATB and Corrupted Landmarks must all be current"
+    "Steam updates arrive late: AZR, ATB and Corrupted Landmarks must all be current",
+    "Old versions of Azazel's Realm (MiaoYing_Azazel_content.pack from before May 2025) crash the game; remove them from the data folder."
    ],
    "notes": "Moved to Steam in Jan 2026: delete all LL Alarielle and Azazel .pack files from the data folder. AZR does not require ATB; the 'Corrupted Avelorn' tech only unlocks with ATB. Kerberos retired from new content on 2026-02-16 but keeps maintaining his mods."
   },

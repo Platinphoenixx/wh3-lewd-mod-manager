@@ -774,8 +774,15 @@ def main():
             r.pop("_steamreq", None)
             if r["target"] == {"mod": m["id"]} and r.get("source", {}).get("type") != "discord":
                 self_refs.append(m["id"])
-        # A relation to one of the mod's own packs/items (e.g. ATB "requires" its asset pack) is no relation.
-        m["relations"] = [r for r in m.get("relations", []) if r["target"] != {"mod": m["id"]}]
+        # A relation to one of the mod's own packs/items (e.g. ATB "requires" its asset pack) is no relation; the same
+        # relation from two sources is listed once (the first, which keeps its note).
+        same, unique = set(), []
+        for r in m.get("relations", []):
+            k = (r["kind"], json.dumps(r["target"], sort_keys=True), r.get("condition"))
+            if r["target"] != {"mod": m["id"]} and k not in same:
+                same.add(k)
+                unique.append(r)
+        m["relations"] = unique
         lo = m.get("loadOrder") or {}
         for side in ("above", "below"):
             if lo.get(side):

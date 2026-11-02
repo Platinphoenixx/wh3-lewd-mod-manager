@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T21:44:07+00:00",
+  "generatedAt": "2026-11-02T22:38:06+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -6014,59 +6014,9 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "ll-30462"
-          },
-          "note": "Corrupted Landmarks (Steam 3474483873)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "external": "ext-mixu-unlocker"
-          },
-          "note": "Mixu's Unlocker (Steam 2859968660)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
             "mod": "ll-23876"
           },
           "note": "latest Corrupted Compendium",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-27930"
-          },
-          "note": "latest Azazel's Realm",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "recommends",
-          "target": {
-            "mod": "steam-3508604193"
-          },
-          "note": "Readman_TTT as tech",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "recommends",
-          "target": {
-            "mod": "steam-3501984780"
-          },
-          "note": "Readman CCC",
           "source": {
             "type": "discord"
           }
@@ -6077,16 +6027,6 @@
             "external": "ext-pj-console"
           },
           "note": "PJ's Console (Steam 2791241084)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "recommends",
-          "target": {
-            "external": "ext-lhec"
-          },
-          "note": "Legendary High Elven Characters (LHEC)",
           "source": {
             "type": "discord"
           }
@@ -6107,16 +6047,6 @@
             "mod": "dc-dust-s-corrupted-heroes-dch"
           },
           "note": "Dust's Corrupted Heroes (optional)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
-            "external": "ext-sfo"
-          },
-          "note": "SFO needs the SFO+ATB compatibility patch",
           "source": {
             "type": "discord"
           }
@@ -8478,16 +8408,6 @@
           }
         },
         {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-23876"
-          },
-          "note": "Compendium_Play_as_Azazel_Overwrite.pack when playing anyone but Miao",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
           "kind": "recommends",
           "target": {
             "external": "ext-pj-console"
@@ -8503,36 +8423,6 @@
             "mod": "steam-2856019044"
           },
           "note": "LOD mod Steam 2856019044",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
-            "pack": "MiaoYing_Azazel_content.pack"
-          },
-          "note": "Old versions: MiaoYing_Azazel_content.pack older than May 2025 crashes",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "incompatible",
-          "target": {
-            "external": "ext-sfo"
-          },
-          "note": "SFO can crash the Azazel/Miao quest battle",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-23876"
-          },
-          "note": "Corrupted Compendium",
           "source": {
             "type": "discord"
           }
@@ -8600,7 +8490,8 @@
         "CA hotfix (2026-10-10) broke cm:force_confederation: confederation events fail for non-WoC/Dwarf factions; fixed for WoC/Chaos Dwarves 2026-10-11, still broken for Empire",
         "Chaos lords lose blue-line skills when confederated by a non-chaos faction (fixed in AZR 2026-10-11)",
         "Lazy's automatic Katarin AI corruption (2026-10-05) would break AZR; AZR contains a counter script",
-        "Steam updates arrive late: AZR, ATB and Corrupted Landmarks must all be current"
+        "Steam updates arrive late: AZR, ATB and Corrupted Landmarks must all be current",
+        "Old versions of Azazel's Realm (MiaoYing_Azazel_content.pack from before May 2025) crash the game; remove them from the data folder."
       ],
       "installNotes": [
         "The Steam items are unlisted and only linked from the LL page.",
@@ -13843,16 +13734,6 @@
             "external": "ext-mct"
           },
           "note": "Mod Configuration Tool holds the setting for turns between events",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-23878"
-          },
-          "note": "Lazy's Corruption Framework",
           "source": {
             "type": "discord"
           }
@@ -27150,16 +27031,6 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/52142-khalidas-corruption-beta/"
           }
-        },
-        {
-          "kind": "recommends",
-          "target": {
-            "mod": "ll-52134"
-          },
-          "note": "Prince Zanithor",
-          "source": {
-            "type": "discord"
-          }
         }
       ],
       "playAs": [
@@ -28160,8 +28031,7 @@
       "tier": "progression",
       "installNotes": [
         "Everything re-uploaded to Steam; LL downloads only redirect to the Steam collection (Workshop IDs not given on the page)",
-        "Progression guide on the wiki: Katarin",
-        "Requires: Lazy's Corrupted Katarin reskins"
+        "Progression guide on the wiki: Katarin"
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -28965,16 +28835,6 @@
           "kind": "requires",
           "target": {
             "mod": "steam-3471237570"
-          },
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3472332568"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-23878"
           },
           "source": {
             "type": "steam",
@@ -33716,17 +33576,6 @@
             "mod": "ll-23878"
           },
           "note": "Lazy's Corruption Framework (!!li_progression_framework_workshop).",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-23878"
-          },
-          "note": "Lazy's Miao Ying Progression (li_miaoying_progression_workshop, Steam 3471237645 unlisted); without it, corruption stages and mechanics remain locked.",
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/40114-miao-yings-corrupting-alchemy-810-playtest/"
@@ -57947,26 +57796,6 @@
           }
         },
         {
-          "kind": "incompatible",
-          "target": {
-            "mod": "ll-23878"
-          },
-          "note": "Not recommended with Lazy's mods or mods built on them (ATB, Azazel's Realm). Since the 2025-04-04 update it runs on its own corruption system and no longer needs Lazy's Miao progression. Reports are mixed: some players run both as parallel, non-interacting corruption (the only crash seen was confederating Azazel before the first Ascension quest battle), others see doubled traits and corruption adaptation, Corrupted Compendium confused by two stages, or Lin's progression not triggering. Both authors say real compatibility is possible only later (2026-07).",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3376886102"
-          },
-          "note": "Generic Framework (Steam 3376886102)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
           "kind": "requires",
           "target": {
             "mod": "ll-23878"
@@ -58151,16 +57980,6 @@
           }
         },
         {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3376886102"
-          },
-          "note": "Generic Framework (Steam 3376886102)",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
           "kind": "recommends",
           "target": {
             "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
@@ -58305,16 +58124,6 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/32476-%E5%A0%95%E8%90%BD%E6%B9%96%E7%A5%9E%E4%BB%99%E5%A5%B3-corrupted-fay/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3376886102"
-          },
-          "note": "Generic Framework (Steam 3376886102)",
-          "source": {
-            "type": "discord"
           }
         }
       ],
