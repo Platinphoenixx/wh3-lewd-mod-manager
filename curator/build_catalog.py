@@ -671,14 +671,51 @@ def main():
                                            **({"condition": cond} if cond else {}),
                                            "source": {"type": "inferred"}, "_header": True})
 
+    # Required items the Workshop pages list (raw/steam_required.json, Steam Web API): the author's own declaration.
+    # A collection's children are its members; a translation lists the mods it translates (it extends them).
+    req_path = CURATOR / "raw" / "steam_required.json"
+    req_data = load(req_path) if req_path.exists() else {}
+    steam_req, collections = req_data.get("items", {}), set(req_data.get("collections", []))
+    only_recommended = req_data.get("recommendationsOnly", {})
+    for m in list(mods.values()):
+        if m.get("kind") == "collection":
+            continue
+        own = {s["id"] for s in m.get("sources", {}).get("steam") or []}
+        for s in m.get("sources", {}).get("steam") or []:
+            if s.get("removed") or s["id"] in collections:
+                continue
+            for child in (steam_req.get(s["id"]) or {}).get("required", []):
+                if child not in own:
+                    if m.get("kind") == "translation":
+                        kind, note = "extends", "Translated mod (listed as a required item on the Workshop page)"
+                    elif s["id"] in only_recommended:
+                        kind, note = "recommends", "Listed on the Workshop page, which says its required items are only recommendations"
+                    else:
+                        kind, note = "requires", "Listed as a required item on the Workshop page"
+                    m["relations"].append({"kind": kind, "target": {"steamId": child}, "note": note,
+                                           "source": {"type": "steam"}, "_steamreq": True})
+
     for m in list(mods.values()):
         for r in m.get("relations", []):
             r["target"] = resolve(m["id"], r["target"], r["kind"])
-        # A pack-header dependency adds nothing when a curated relation already names the same mod.
-        curated = {json.dumps(r["target"], sort_keys=True) for r in m.get("relations", []) if not r.get("_header")}
-        m["relations"] = [r for r in m.get("relations", []) if not r.get("_header") or json.dumps(r["target"], sort_keys=True) not in curated]
+        # Generated relations add nothing when a curated one already names the same mod (the curated one may
+        # deliberately say otherwise, e.g. "optional" for a listed item the page says is no longer needed);
+        # a pack-header dependency also gives way to a Workshop requirement.
+        key = lambda r: json.dumps(r["target"], sort_keys=True)
+        curated = {key(r) for r in m.get("relations", []) if not r.get("_header") and not r.get("_steamreq")}
+        listed = {key(r) for r in m.get("relations", []) if r.get("_steamreq")}
+        kept, seen_gen = [], set()
+        for r in m.get("relations", []):
+            if r.get("_steamreq") or r.get("_header"):
+                k = key(r)
+                if k in curated or (r.get("_header") and k in listed) or (k, r.get("condition")) in seen_gen:
+                    continue
+                seen_gen.add((k, r.get("condition")))
+            kept.append(r)
+        m["relations"] = kept
         for r in m["relations"]:
             r.pop("_header", None)
+            r.pop("_steamreq", None)
             if r["target"] == {"mod": m["id"]} and r.get("source", {}).get("type") != "discord":
                 self_refs.append(m["id"])
         # A relation to one of the mod's own packs/items (e.g. ATB "requires" its asset pack) is no relation.

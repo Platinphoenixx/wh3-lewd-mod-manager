@@ -122,6 +122,11 @@ over all layers – fix texts there.
   logged in), `ll_files.json` (download lists, read with a login without downloading anything).
   The API gives no pack names, so `steam_items.json` `packs` were read from the downloaded Workshop folders
   (2026-11-02, all catalog items); the build gives Steam mods whose pages name no pack these packs.
+  `steam_required.json`: the required items ("children") of every catalog Workshop item from the Steam Web API
+  (`IPublishedFileService/GetDetails`, needs a key, so refreshed by hand). The build adds them as `requires` where no
+  curated relation names the same mod (curated ones win, e.g. "optional" for a listed item that is no longer
+  needed); `collections` (their children are members) are skipped, translations get `extends`, and pages listed in
+  `recommendationsOnly` (they say so themselves) get `recommends`.
 - `curator/work/part-*.json` structured entries (ids `ll-<file id>`, `steam-<id>`, `dc-<slug>`),
   `desc-*.json` long texts + image captions, `preset-desc.json` template texts, `kpw.json` per-character
   guides, `discord-mods.json` Discord-only mods, `followup-*.json` later passes.

@@ -132,6 +132,21 @@
         "Shares 19 flag images with TardBannerPackBetter (Alarielle's Avelorn flags); the mod loaded higher wins."
       ],
       "_fix": "Pack analysis 2026-11-01 (raw/packs/ll-41124.json): 4 packs, 28 files, all under ui/."
+    },
+    {
+      "id": "ll-30462",
+      "relations+": [
+        {
+          "kind": "recommends",
+          "target": {
+            "steamId": "2856019044"
+          },
+          "note": "Listed as a required item on the Workshop page, but Corrupted Landmarks uses none of its files (it only changes LOD settings) and the tested and guide lists run without it",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
     }
   ]
 }
