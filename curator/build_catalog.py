@@ -521,6 +521,14 @@ def main():
                     kept.append(s[0].upper() + s[1:])
             cur["openQuestions"] = kept
 
+    # Steam mods whose pages name no pack: the packs their Workshop items really contain (raw/steam_items.json
+    # "packs", read from the downloaded Workshop folders).
+    for m in mods.values():
+        if m.get("packs") or m.get("kind") == "collection":
+            continue
+        m["packs"] = [{"file": p, "from": "steam", "steamId": s["id"]}
+                      for s in m.get("sources", {}).get("steam") or [] for p in steam.get(s["id"], {}).get("packs") or []]
+
     # Who owns which Steam id / pack.
     steam_owner, pack_owner = {}, {}
     for e in external.values():

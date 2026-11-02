@@ -120,6 +120,8 @@ over all layers – fix texts there.
   markers, images, Steam ids). LL pages need a full browser user agent; downloads need a login.
 - `curator/raw/steam_items.json` (public Workshop API), `steam_hidden.json` (pages only visible when
   logged in), `ll_files.json` (download lists, read with a login without downloading anything).
+  The API gives no pack names, so `steam_items.json` `packs` were read from the downloaded Workshop folders
+  (2026-11-02, all catalog items); the build gives Steam mods whose pages name no pack these packs.
 - `curator/work/part-*.json` structured entries (ids `ll-<file id>`, `steam-<id>`, `dc-<slug>`),
   `desc-*.json` long texts + image captions, `preset-desc.json` template texts, `kpw.json` per-character
   guides, `discord-mods.json` Discord-only mods, `followup-*.json` later passes.
