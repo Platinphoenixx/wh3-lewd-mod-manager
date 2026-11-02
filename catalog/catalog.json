@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T11:33:48+00:00",
+  "generatedAt": "2026-11-02T11:46:40+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -4781,6 +4781,7 @@
         "Slaanesh authority when confederating as Warriors of Chaos: first load the save/manual battle, then end the turn once.",
         "Corrupted characters can fall back to level 0 with too many script-heavy mods (bugfix mod 3509062568).",
         "Landmark upgrade only after all events of the current level have been seen (MCT interval, default 2 turns).",
+        "The script log shows an error in script/_lib/mod/!kerb_alar.lua ('mother_ostankya_features' is a nil value) in every session: this one-line script runs before that campaign feature exists. Harmless - it only means Mother Ostankya's teleport-home chance is not changed; the rest of the mod's scripts load.",
         "3.0 needs a new save",
         "Crash 'first invalid database record is a high elf unit': force Corrupted Landmarks to update (delete local file, resubscribe)",
         "Great Ritual of Nagash end mission cannot be completed with stage 7 Alarielle (2026-10-31)",

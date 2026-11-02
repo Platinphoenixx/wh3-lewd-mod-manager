@@ -73,6 +73,8 @@ export function parseLuaLog(text: string): ScriptLog {
     const script = /\[([^\]]+\.lua)\]/i.exec(line)?.[1]
     if (/loaded successfully/i.test(line)) {
       if (script) log.loaded.push(normScript(script))
+    } else if (/^Loading mod file \[/i.test(line)) {
+      // A script name like pj_error_wrapping.lua is not a failure.
     } else if (/^Failed to load mod file/i.test(line)) {
       block = { script, first: line }
     } else if (/^Failed to load mod: /i.test(line)) {

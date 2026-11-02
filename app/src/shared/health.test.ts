@@ -58,4 +58,16 @@ describe('health hints', () => {
     expect(log.loaded).toEqual(['script/_lib/mod/qa_console.lua'])
     expect(log.failed).toEqual([{ line: 'script\\_lib\\mod\\wh3lmm_script_test.lua:2: unexpected symbol near \'=\'', script: 'script/_lib/mod/wh3lmm_script_test.lua' }])
   })
+
+  it('reads a runtime failure once and ignores script names that only contain "error"', () => {
+    const log = parseLuaLog([
+      'Loading mod file [script\\_lib\\mod\\!kerb_alar.lua]',
+      'Failed to execute loaded mod file [script\\_lib\\mod\\!kerb_alar.lua], error is: [string "script\\_lib\\mod\\!kerb_alar.lua"]:1: attempt to index global \'mother_ostankya_features\' (a nil value)',
+      'Failed to load mod: [script\\_lib\\mod\\!kerb_alar.lua]',
+      'Loading mod file [script\\_lib\\mod\\pj_error_wrapping.lua]',
+      'Mod [script\\_lib\\mod\\pj_error_wrapping.lua] loaded successfully'
+    ].join('\r\n'))
+    expect(log.loaded).toEqual(['script/_lib/mod/pj_error_wrapping.lua'])
+    expect(log.failed.map((f) => f.script)).toEqual(['script/_lib/mod/!kerb_alar.lua'])
+  })
 })
