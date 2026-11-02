@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T19:22:58+00:00",
+  "generatedAt": "2026-11-02T20:15:32+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -22073,7 +22073,12 @@
           "updated": "2023-12-03"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!shadow warrior WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
@@ -22200,7 +22205,12 @@
           "updated": "2023-12-03"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "!Silver_helm WGX.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
@@ -29824,6 +29834,20 @@
           "from": "download",
           "optional": true,
           "note": "Khorne"
+        },
+        {
+          "file": "@Slaanesh Legion.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx45-sla",
+          "note": "Slaanesh (with futa)"
+        },
+        {
+          "file": "@Slaanesh Legion (no futa).pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx45-sla",
+          "note": "Slaanesh, all female"
         }
       ],
       "relations": [
@@ -32607,6 +32631,12 @@
           "from": "download",
           "optional": true,
           "note": "Shield"
+        },
+        {
+          "file": "2_Morathi_hair_black.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Light armour, type 1 (file named 2_Morathi_hair_black.pack)"
         }
       ],
       "relations": [],
@@ -33337,7 +33367,44 @@
           "updated": "2025-01-04"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "Miao_sulivar_T1.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T1: panties and bra"
+        },
+        {
+          "file": "Miao_sulivar_T2.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T2: plus leg armour, feet and waist"
+        },
+        {
+          "file": "Miao_sulivar_T2nsfw.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T2 without the under-suit"
+        },
+        {
+          "file": "Miao_sulivar_T3.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T3: complete armour"
+        },
+        {
+          "file": "Miao_sulivar_T3_nsfw.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T3 without underwear"
+        },
+        {
+          "file": "Miao_sulivar_naked.pack",
+          "from": "download",
+          "exclusiveGroup": "nx242-ver",
+          "note": "Naked version"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
@@ -36926,6 +36993,18 @@
       },
       "packs": [
         {
+          "file": "Nkariarmored.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Armoured version"
+        },
+        {
+          "file": "karia_hf_ornament.pack",
+          "from": "download",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Version with a small campaign trophy"
+        },
+        {
           "file": "Nkarinaked.pack",
           "from": "download",
           "exclusiveGroup": "nx154-ver",
@@ -37960,6 +38039,12 @@
         }
       },
       "packs": [
+        {
+          "file": "pleasurePikes.pack",
+          "from": "download",
+          "exclusiveGroup": "nx2-ver",
+          "note": "Some warriors are futa (main version)"
+        },
         {
           "file": "pleasurePikesNoGift.pack",
           "from": "download",
@@ -51940,7 +52025,12 @@
           "updated": "2023-06-30"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "ivan_daemonettes.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
@@ -53259,7 +53349,12 @@
           "updated": "2024-09-07"
         }
       },
-      "packs": [],
+      "packs": [
+        {
+          "file": "valkia_sl2.pack",
+          "from": "download"
+        }
+      ],
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-01",
@@ -55494,6 +55589,7 @@
           "file": "Singer_party.pack",
           "from": "download",
           "optional": true,
+          "exclusiveGroup": "nx210-singer",
           "note": "Spellsingers without clothes"
         },
         {
@@ -55501,6 +55597,13 @@
           "from": "download",
           "optional": true,
           "note": "Lords, starting with the Wild domain (Weaver)"
+        },
+        {
+          "file": "Singer_party_cloth.pack",
+          "from": "download",
+          "optional": true,
+          "exclusiveGroup": "nx210-singer",
+          "note": "Spellsingers with clothes (replaces the spellsinger hero class)"
         }
       ],
       "relations": [],

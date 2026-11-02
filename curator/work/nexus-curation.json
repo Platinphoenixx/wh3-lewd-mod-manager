@@ -1374,6 +1374,18 @@
           "file": "@Scarlet Succubus_kho.pack",
           "optional": true,
           "note": "Khorne"
+        },
+        {
+          "file": "@Slaanesh Legion.pack",
+          "optional": true,
+          "exclusiveGroup": "nx45-sla",
+          "note": "Slaanesh (with futa)"
+        },
+        {
+          "file": "@Slaanesh Legion (no futa).pack",
+          "optional": true,
+          "exclusiveGroup": "nx45-sla",
+          "note": "Slaanesh, all female"
         }
       ],
       "requires": [
@@ -2340,6 +2352,11 @@
       "status": "superseded",
       "packs": [
         {
+          "file": "pleasurePikes.pack",
+          "exclusiveGroup": "nx2-ver",
+          "note": "Some warriors are futa (main version)"
+        },
+        {
           "file": "pleasurePikesNoGift.pack",
           "exclusiveGroup": "nx2-ver",
           "note": "All female"
@@ -2812,6 +2829,16 @@
       "updated": "2023-12-12",
       "packs": [
         {
+          "file": "Nkariarmored.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Armoured version"
+        },
+        {
+          "file": "karia_hf_ornament.pack",
+          "exclusiveGroup": "nx154-ver",
+          "note": "Version with a small campaign trophy"
+        },
+        {
           "file": "Nkarinaked.pack",
           "exclusiveGroup": "nx154-ver",
           "note": "Reworked model without armour"
@@ -3179,7 +3206,11 @@
     "111": {
       "version": "1.1",
       "updated": "2023-06-30",
-      "packs": [],
+      "packs": [
+        {
+          "file": "ivan_daemonettes.pack"
+        }
+      ],
       "openQuestions": [
         "Nexus shows no file list for this download; the pack name is unknown."
       ],
@@ -3309,7 +3340,11 @@
           "url": "https://www.patreon.com/warhammer3mods"
         }
       ],
-      "packs": [],
+      "packs": [
+        {
+          "file": "!shadow warrior WGX.pack"
+        }
+      ],
       "openQuestions": [
         "Nexus shows no file list for this download; the pack name is unknown."
       ]
@@ -3323,7 +3358,11 @@
           "url": "https://www.patreon.com/warhammer3mods"
         }
       ],
-      "packs": [],
+      "packs": [
+        {
+          "file": "!Silver_helm WGX.pack"
+        }
+      ],
       "openQuestions": [
         "Nexus shows no file list for this download; the pack name is unknown."
       ]
@@ -3371,6 +3410,11 @@
           "file": "05_Malika_shield.pack",
           "optional": true,
           "note": "Shield"
+        },
+        {
+          "file": "2_Morathi_hair_black.pack",
+          "optional": true,
+          "note": "Light armour, type 1 (file named 2_Morathi_hair_black.pack)"
         }
       ],
       "loadOrder": "Order the parts by the number in front of each file.",
@@ -3401,7 +3445,11 @@
     "219": {
       "version": "2.0",
       "updated": "2024-09-07",
-      "packs": [],
+      "packs": [
+        {
+          "file": "valkia_sl2.pack"
+        }
+      ],
       "openQuestions": [
         "Nexus shows no file list for this download; the pack name is unknown."
       ],
@@ -3412,7 +3460,38 @@
     "242": {
       "version": "2.0",
       "updated": "2025-01-04",
-      "packs": [],
+      "packs": [
+        {
+          "file": "Miao_sulivar_T1.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T1: panties and bra"
+        },
+        {
+          "file": "Miao_sulivar_T2.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T2: plus leg armour, feet and waist"
+        },
+        {
+          "file": "Miao_sulivar_T2nsfw.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T2 without the under-suit"
+        },
+        {
+          "file": "Miao_sulivar_T3.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T3: complete armour"
+        },
+        {
+          "file": "Miao_sulivar_T3_nsfw.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "T3 without underwear"
+        },
+        {
+          "file": "Miao_sulivar_naked.pack",
+          "exclusiveGroup": "nx242-ver",
+          "note": "Naked version"
+        }
+      ],
       "openQuestions": [
         "Six independent versions (naked, T1, T2, T2 without under-suit, T3, T3 without underwear); Nexus shows no file lists, so the pack names are unknown."
       ]
@@ -3499,12 +3578,19 @@
         {
           "file": "Singer_party.pack",
           "optional": true,
-          "note": "Spellsingers without clothes"
+          "note": "Spellsingers without clothes",
+          "exclusiveGroup": "nx210-singer"
         },
         {
           "file": "weaver1.pack",
           "optional": true,
           "note": "Lords, starting with the Wild domain (Weaver)"
+        },
+        {
+          "file": "Singer_party_cloth.pack",
+          "optional": true,
+          "exclusiveGroup": "nx210-singer",
+          "note": "Spellsingers with clothes (replaces the spellsinger hero class)"
         }
       ],
       "openQuestions": [
