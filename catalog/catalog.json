@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T19:18:16+00:00",
+  "generatedAt": "2026-11-02T19:22:58+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -23417,6 +23417,14 @@
           "Dependencies taken from the Steam description only."
         ]
       },
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-42028"
+          }
+        ],
+        "note": "Above Alarielle, Temptation's Bloom: ATB ships an older copy of this framework's script/campaign/mod/generic_framework常用函数.lua without traverse_iterative (used by Integrated Strategies) and without the missing-faction check in get_subtype_in_faction; ATB only calls functions both copies have."
+      },
       "support": [
         {
           "platform": "Ko-fi",
@@ -33649,13 +33657,21 @@
             "mod": "ll-23878"
           },
           {
-            "external": "ext-mct"
+            "mod": "ll-32374"
           },
           {
-            "mod": "ll-23878"
+            "external": "ext-mct"
           }
         ],
-        "note": "Mod manager top -> bottom: 1) !!li_progression_framework_workshop (Steam 3464018577) 2) @Soil_Miaoying_Corrupted_Units (LL 32374) 3) groovy_mct (2927955021) 4) li_miaoying_progression_workshop (Steam 3471237645) 5) miao-assets.pack (REQUIRED) 6) miao.pack (this mod) 7) MiaoYingCorrupted_Compendium_workshop (OPTIONAL, Steam 3705392682) 8) soil_corrupted_units_asset (LL 32374)."
+        "above": [
+          {
+            "mod": "ll-23876"
+          },
+          {
+            "mod": "ll-48415"
+          }
+        ],
+        "note": "Mod manager top -> bottom: 1) !!li_progression_framework_workshop (Steam 3464018577) 2) @Soil_Miaoying_Corrupted_Units (LL 32374) 3) groovy_mct (2927955021) 4) li_miaoying_progression_workshop (Steam 3471237645) 5) miao-assets.pack (REQUIRED) 6) miao.pack (this mod) 7) MiaoYingCorrupted_Compendium_workshop (OPTIONAL, Steam 3705392682) 8) soil_corrupted_units_asset (LL 32374; now the fixed pack of LL 48415)."
       },
       "tier": "campaign",
       "requiresDlc": [
@@ -63696,43 +63712,11 @@
           }
         },
         {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
           "pack": "li_katarin_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
-          }
-        },
-        {
-          "pack": "li_miaoying_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237645",
-          "target": {
-            "mod": "ll-23878"
           }
         },
         {
@@ -63749,6 +63733,14 @@
           "steamId": "3376886102",
           "target": {
             "mod": "steam-3376886102"
+          }
+        },
+        {
+          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
           }
         },
         {
@@ -63888,14 +63880,6 @@
           }
         },
         {
-          "pack": "li_miaoying_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237645",
-          "target": {
-            "mod": "ll-23878"
-          }
-        },
-        {
           "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
           "from": "steam",
           "steamId": "3705392682",
@@ -63916,13 +63900,6 @@
           "steamId": "2851864965",
           "target": {
             "mod": "steam-2851864965"
-          }
-        },
-        {
-          "pack": "Soil's Corrupted Units",
-          "from": "download",
-          "target": {
-            "mod": "ll-32374"
           }
         },
         {
@@ -64043,14 +64020,6 @@
           }
         },
         {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
           "pack": "@beautiful_slaanesh.pack",
           "from": "steam",
           "steamId": "2790949528",
@@ -64080,6 +64049,14 @@
           }
         },
         {
+          "pack": "kerb_Azazel's_Realm_steam.pack",
+          "from": "steam",
+          "steamId": "3643871692",
+          "target": {
+            "mod": "ll-27930"
+          }
+        },
+        {
           "pack": "corrupted_landmarks.pack",
           "from": "steam",
           "target": {
@@ -64103,35 +64080,11 @@
           }
         },
         {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
           "pack": "li_katarin_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
-          }
-        },
-        {
-          "pack": "li_miaoying_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237645",
-          "target": {
-            "mod": "ll-23878"
           }
         },
         {
@@ -64148,13 +64101,6 @@
           "steamId": "3291116635",
           "target": {
             "external": "ext-ovn-lost-world"
-          }
-        },
-        {
-          "pack": "Soil's Corrupted Units",
-          "from": "download",
-          "target": {
-            "mod": "ll-32374"
           }
         },
         {
@@ -64317,43 +64263,11 @@
           }
         },
         {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
           "pack": "li_katarin_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
-          }
-        },
-        {
-          "pack": "li_miaoying_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237645",
-          "target": {
-            "mod": "ll-23878"
           }
         },
         {
@@ -64378,6 +64292,14 @@
           "steamId": "3376886102",
           "target": {
             "mod": "steam-3376886102"
+          }
+        },
+        {
+          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
           }
         },
         {
@@ -64550,43 +64472,11 @@
           }
         },
         {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
-          }
-        },
-        {
           "pack": "li_katarin_progression_workshop.pack",
           "from": "steam",
           "steamId": "3471237570",
           "target": {
             "mod": "steam-3471237570"
-          }
-        },
-        {
-          "pack": "li_miaoying_progression_workshop.pack",
-          "from": "steam",
-          "steamId": "3471237645",
-          "target": {
-            "mod": "ll-23878"
           }
         },
         {
@@ -64603,6 +64493,14 @@
           "steamId": "3376886102",
           "target": {
             "mod": "steam-3376886102"
+          }
+        },
+        {
+          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
           }
         },
         {
@@ -64643,14 +64541,6 @@
           "steamId": "3471883632",
           "target": {
             "mod": "steam-3471883632"
-          }
-        },
-        {
-          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
-          "from": "steam",
-          "steamId": "3644437727",
-          "target": {
-            "mod": "ll-42028"
           }
         }
       ]
@@ -64741,13 +64631,6 @@
           }
         },
         {
-          "pack": "Soil's Corrupted Units",
-          "from": "download",
-          "target": {
-            "mod": "ll-32374"
-          }
-        },
-        {
           "pack": "zli_katarin_reskins.pack",
           "from": "steam",
           "steamId": "3471883808",
@@ -64834,22 +64717,6 @@
       ],
       "entries": [
         {
-          "pack": "miao-assets.pack",
-          "from": "steam",
-          "steamId": "3754311622",
-          "target": {
-            "mod": "ll-40114"
-          }
-        },
-        {
-          "pack": "kerb_Azazel's_Realm_steam.pack",
-          "from": "steam",
-          "steamId": "3643871692",
-          "target": {
-            "mod": "ll-27930"
-          }
-        },
-        {
           "pack": "Valkia_Workshop.pack",
           "from": "steam",
           "steamId": "3813939023",
@@ -64889,14 +64756,6 @@
           }
         },
         {
-          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
-          "from": "steam",
-          "steamId": "3705392682",
-          "target": {
-            "mod": "ll-23876"
-          }
-        },
-        {
           "pack": "Seu_Reborn_workshop.pack",
           "from": "steam",
           "steamId": "3760606729",
@@ -64909,6 +64768,14 @@
           "from": "download",
           "target": {
             "mod": "ll-32374"
+          }
+        },
+        {
+          "pack": "kerb_Azazel's_Realm_steam.pack",
+          "from": "steam",
+          "steamId": "3643871692",
+          "target": {
+            "mod": "ll-27930"
           }
         },
         {
@@ -64928,18 +64795,34 @@
           }
         },
         {
-          "pack": "soil_corrupted_units_asset.pack",
-          "from": "download",
-          "target": {
-            "mod": "ll-48415"
-          }
-        },
-        {
           "pack": "groovy_mct.pack",
           "from": "steam",
           "steamId": "2927955021",
           "target": {
             "external": "ext-mct"
+          }
+        },
+        {
+          "pack": "miao-assets.pack",
+          "from": "steam",
+          "steamId": "3754311622",
+          "target": {
+            "mod": "ll-40114"
+          }
+        },
+        {
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
+          "target": {
+            "mod": "ll-23876"
+          }
+        },
+        {
+          "pack": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-48415"
           }
         },
         {

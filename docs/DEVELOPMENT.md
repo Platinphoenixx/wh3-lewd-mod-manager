@@ -134,7 +134,9 @@ over all layers – fix texts there.
   `externalToMod`, `mods` overrides (incl. `cleanup` rules for stale LoversLab packs).
 - `curator/parse_twmods.py` turns CA launcher mod lists (.twmods) into tested presets.
 - `curator/build_catalog.py` → `catalog/catalog.json` + `curator/work/report.md`. It also derives presets
-  from KPW guides and from campaign/progression mods' requirements, so templates follow the catalog.
+  from KPW guides and from campaign/progression mods' requirements, so templates follow the catalog. Guide and
+  derived templates are not tested load orders, so the catalog's `loadOrder` rules (above/below) order them
+  (stable topological sort, duplicates of a pack dropped); tested lists keep the order they were played with.
 - `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
   Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
   profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.

@@ -258,7 +258,40 @@
             "type": "inferred"
           }
         }
-      ]
+      ],
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "ll-23878"
+          },
+          {
+            "mod": "ll-32374"
+          },
+          {
+            "external": "ext-mct"
+          }
+        ],
+        "above": [
+          {
+            "mod": "ll-23876"
+          },
+          {
+            "mod": "ll-48415"
+          }
+        ],
+        "note": "Mod manager top -> bottom: 1) !!li_progression_framework_workshop (Steam 3464018577) 2) @Soil_Miaoying_Corrupted_Units (LL 32374) 3) groovy_mct (2927955021) 4) li_miaoying_progression_workshop (Steam 3471237645) 5) miao-assets.pack (REQUIRED) 6) miao.pack (this mod) 7) MiaoYingCorrupted_Compendium_workshop (OPTIONAL, Steam 3705392682) 8) soil_corrupted_units_asset (LL 32374; now the fixed pack of LL 48415)."
+      }
+    },
+    {
+      "id": "steam-3376886102",
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-42028"
+          }
+        ],
+        "note": "Above Alarielle, Temptation's Bloom: ATB ships an older copy of this framework's script/campaign/mod/generic_framework常用函数.lua without traverse_iterative (used by Integrated Strategies) and without the missing-faction check in get_subtype_in_faction; ATB only calls functions both copies have."
+      }
     }
   ]
 }

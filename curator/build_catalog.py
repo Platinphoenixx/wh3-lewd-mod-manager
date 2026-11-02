@@ -18,6 +18,7 @@ Usage:
 """
 
 import glob
+import heapq
 import html
 import json
 import re
@@ -812,6 +813,46 @@ def main():
                        "source": {"type": "discord", "url": doc.get("url", ""), "author": "KPW"}})
 
     presets += guide_and_derived_presets(mods, external, presets, guides, steam)
+
+    # A guide lists mods and a derived template orders them by type; neither is a tested load order, so the
+    # catalog's load-order rules apply (first = highest priority). Tested lists keep the order they were played with.
+    def rule_order(entries: list) -> list:
+        """Stable topological order: every "above"/"below" rule between two entries holds, otherwise the old order."""
+        tkey = lambda t: json.dumps(t, sort_keys=True)
+        # A guide may list the same pack in several sections; the app keeps only the first, so does the order.
+        seen_entries = set()
+        entries = [e for e in entries if not ((tkey(e["target"]), e.get("pack")) in seen_entries
+                                              or seen_entries.add((tkey(e["target"]), e.get("pack"))))]
+        keys = [tkey(e["target"]) for e in entries]
+        after = {i: set() for i in range(len(entries))}  # i -> entries that must come after i
+        for i, e in enumerate(entries):
+            lo = (mods.get(e["target"].get("mod")) or {}).get("loadOrder") or {}
+            for t in lo.get("above") or []:
+                after[i] |= {j for j, k in enumerate(keys) if k == tkey(t) and j != i}
+            for t in lo.get("below") or []:
+                for j, k in enumerate(keys):
+                    if k == tkey(t) and j != i:
+                        after[j].add(i)
+        indeg = {i: 0 for i in after}
+        for i in after:
+            for j in after[i]:
+                indeg[j] += 1
+        ready = [i for i in after if indeg[i] == 0]
+        heapq.heapify(ready)
+        out = []
+        while ready:
+            i = heapq.heappop(ready)
+            out.append(i)
+            for j in after[i]:
+                indeg[j] -= 1
+                if indeg[j] == 0:
+                    heapq.heappush(ready, j)
+        out += [i for i in range(len(entries)) if i not in out]  # rules that contradict each other: keep old order
+        return [entries[i] for i in out]
+
+    for p in presets:
+        if p.get("origin") in ("guide", "derived"):
+            p["entries"] = rule_order(p["entries"])
 
     # Mechanical facts always come fresh from the latest crawl, never from curation: LL version/date,
     # Steam update time. This keeps the catalog current without any manual or AI step.
