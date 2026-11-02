@@ -28,9 +28,12 @@ export function installSourceFor(
   if (!('mod' in t)) return { kind: 'manual' }
   const mod = index.mods.get(t.mod)
   if (!mod) return { kind: 'manual' }
+  const ll = mod.sources.loverslab
+  // A file the template loads from data (a download) comes from the mod's LoversLab page even when the
+  // mod's main pack is on Steam (e.g. Azazel's Realm's "Play as Azazel" overwrite).
+  if (entry.from === 'download' && ll && !ll.externalDownload) return { kind: 'loverslab', url: ll.url }
   const steam = mod.sources.steam?.find((s) => !s.removed && !s.title?.toLowerCase().includes('(removed)'))
   if (steam && mod.status !== 'superseded') return { kind: 'steam', id: steam.id }
-  const ll = mod.sources.loverslab
   if (ll && !ll.externalDownload) return { kind: 'loverslab', url: ll.url }
   if (mod.sources.nexus) return { kind: 'nexus', url: `${mod.sources.nexus.url}?tab=files` }
   const dc = mod.sources.discord?.find((d) => d.messageUrl)?.messageUrl ?? mod.sources.downloads?.find((d) => d.url.includes('discord.com'))?.url

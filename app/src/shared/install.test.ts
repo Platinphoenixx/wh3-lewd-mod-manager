@@ -30,6 +30,10 @@ describe('installSourceFor', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:nothing' })).toEqual({ kind: 'manual', url: undefined })
   })
 
+  it('takes a download the template loads from data from LoversLab, even when the mod is on Steam', () => {
+    expect(installSourceFor(catalog, index, { key: 'mod:both', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/1-x/' })
+  })
+
   it('skips Workshop items that were removed from Steam', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:gone' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/3-x/' })
   })
