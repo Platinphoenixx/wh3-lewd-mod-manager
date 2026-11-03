@@ -156,6 +156,7 @@ export function staleDataPacks(index: CatalogIndex, packs: InstalledPack[]): Sta
   const workshopTargets = new Set(
     workshop.map((p) => targetFor(index, p)).filter((t): t is ModTarget => !!t).map(targetKey)
   )
+  const installedTargets = new Set(packs.map((p) => targetFor(index, p)).filter((t): t is ModTarget => !!t).map(targetKey))
   const warnings: StaleWarning[] = []
   // A pack from a community fix stands in for the Workshop copy on purpose, and so does one the app installed for a
   // current mod that lists it as its download (a working re-upload of a Workshop item with the same file name).
@@ -174,7 +175,11 @@ export function staleDataPacks(index: CatalogIndex, packs: InstalledPack[]): Sta
     }
     for (const m of index.mods.values()) {
       const rules = m.cleanup?.staleDataPacks
-      if (!rules?.length || !workshopTargets.has(`mod:${m.id}`)) continue
+      if (!rules?.length) continue
+      // A merged-in pack is stale next to the mod however the mod was installed (Community Beastmen comes from LoversLab);
+      // a pack of the mod's own is stale only next to its Workshop copy (the old LoversLab file of a mod now on Steam).
+      const own = m.packs?.some((x) => x.file.toLowerCase() === name)
+      if (!workshopTargets.has(`mod:${m.id}`) && (own || !installedTargets.has(`mod:${m.id}`))) continue
       if (rules.some((g) => globToRegExp(g).test(name))) {
         warnings.push({ pack: p, modId: m.id, reason: m.cleanup!.note })
         break

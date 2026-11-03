@@ -162,16 +162,27 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   }, [])
   s.lewd = together(s.lewd)
   s.general = together(s.general)
-  const more = together([...s.lewd.slice(0, SUGGESTED), ...s.general.slice(0, SUGGESTED)])
+  // Extended is the template's own world: everything built on or recommended by its mods, then the best of what is
+  // for its character or faction or used in lists for that character. A mod that is only popular in other characters'
+  // lists (a camera mod in every Alarielle list) is no reason to add it to a Beastmen list.
+  const belongs = (x: Suggestion) => x.strong || x.fits
+  const top = (xs: Suggestion[]) => [...xs.filter((x) => x.tied), ...xs.filter((x) => !x.tied && belongs(x)).slice(0, SUGGESTED)]
+  const more = together([...top(s.lewd), ...top(s.general)])
+  const recommended = more.filter((x) => x.reasons.some((r) => r.startsWith('Recommended for this setup'))).length
   const label = tiers[tiers.length - 1]?.name ?? base.name
   if (more.length) {
     const extras = more.map((x) => x.key)
     tiers.push({ id: 'extended', name: 'Extended', preset: base, extras, size: size(base, extras),
-      lines: [`Everything in ${label}`, `${more.length} more mods that fit ${subject.name}, most used first`, s.lewd.slice(0, 3).map((x) => x.mod.name).join(', ')].filter(Boolean),
+      lines: [`Everything in ${label}`,
+        // A setup whose community names what goes with it says so: that is what Extended is made of.
+        recommended ? `${more.length} more mods, ${recommended} of them recommended by its community` : `${more.length} more mods that fit ${subject.name}, most used first`,
+        s.lewd.slice(0, 3).map((x) => x.mod.name).join(', ')].filter(Boolean),
       proof: 'Each add-on checked against the list · not played together yet', tested: false, recommended: false })
   }
-  if (s.lewd.length > SUGGESTED) {
-    const extras = together([...s.lewd, ...s.general.slice(0, SUGGESTED)]).map((x) => x.key)
+  const everything = together([...s.lewd, ...top(s.general)]).map((x) => x.key)
+  // Only when it adds something: a setup whose community names everything it goes with has no bigger size.
+  if (s.lewd.length > SUGGESTED && everything.length > more.length) {
+    const extras = everything
     tiers.push({ id: 'everything', name: 'Everything', preset: base, extras, size: size(base, extras),
       lines: [`Everything in ${label}`, `Every lewd mod that works with it (${s.lewd.length})`, 'You pick one look per character on the way'],
       proof: 'No known conflicts · nobody has played all of it together', tested: false, recommended: false })

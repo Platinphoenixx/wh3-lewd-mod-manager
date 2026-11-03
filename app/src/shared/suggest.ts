@@ -1,6 +1,6 @@
 import type { Catalog, Mod, Preset } from '@catalog/schema'
-import type { CatalogIndex } from './match'
-import { baseKeys, type Candidate, type Profile } from './profile'
+import { targetKey, type CatalogIndex } from './match'
+import { baseKeys, conflictsIn, type Candidate, type Profile } from './profile'
 
 /**
  * "Fill this profile": mods that fit the template's theme and that other players actually combine with
@@ -19,6 +19,10 @@ export interface Suggestion {
   score: number
   /** Players of this kind of list really use it: in a list for the same character, tied to a profile mod, or for the character. */
   strong: boolean
+  /** Built on, recommended by or an option of a mod in the template (what its players get from it). */
+  tied: boolean
+  /** For the template's character or faction. */
+  fits: boolean
   /** Reskins in the profile it would replace (same character, last loaded wins). */
   replaces?: string[]
 }
@@ -60,7 +64,15 @@ export function suggestForProfile(
   // Community lists (tested lists and guides); those for one of the template's characters count most.
   const chars = preset.playAs.map(norm)
   const isChar = (c: string) => chars.some((x) => norm(c).includes(x.split(' ')[0]))
-  const lists = catalog.presets.filter((p) => (p.origin === 'tested' || p.origin === 'guide') && p.id !== preset.id)
+  // A list built on something the template cannot be combined with is another setup, even for the same character
+  // (Readman's Miao lists run on Lazy's progression, which Lin's Corrupted Ascension is incompatible with).
+  const templateKeys = baseKeys(preset).filter((k) => !removed.has(k))
+  const own = new Set(templateKeys)
+  const clashes = (p: Preset) => {
+    const keys = p.entries.flatMap((e) => (e.target ? [targetKey(e.target)] : [])).filter((k) => !own.has(k))
+    return conflictsIn(index, [...templateKeys, ...new Set(keys)]).some((c) => own.has(c.a) !== own.has(c.b))
+  }
+  const lists = catalog.presets.filter((p) => (p.origin === 'tested' || p.origin === 'guide') && p.id !== preset.id && !clashes(p))
   const same = lists.filter((p) => p.playAs.some(isChar))
   const count = (ps: Preset[]) => {
     const c = new Map<string, number>()
@@ -77,7 +89,10 @@ export function suggestForProfile(
     ...m.tags.map(norm).filter((t) => FACTIONS[t] || characters.has(t)).map((t) => FACTIONS[t] ?? characters.get(t)!),
     ...(m.playAs ?? []).map((p) => p.character)
   ]
-  const theme = new Set([...profileMods.flatMap(themeOf), ...preset.playAs])
+  // Only the template's own mods set it: an add-on the player switched on (the Community Beastmen Slaanesh version,
+  // tagged for the Slaanesh lords that use it) must not turn a Beastmen list into a Slaanesh one.
+  const templateMods = baseKeys(preset).filter((k) => !removed.has(k) && k.startsWith('mod:')).flatMap((k) => index.mods.get(k.slice(4)) ?? [])
+  const theme = new Set([...templateMods.flatMap(themeOf), ...preset.playAs])
   // Templates may say "Miao"; the catalog's characters say "Miao Ying".
   const lead = preset.playAs[0] ?? preset.name
   const leadName = [...characters.values()].find((c) => norm(c).startsWith(norm(lead))) ?? lead
@@ -89,6 +104,7 @@ export function suggestForProfile(
   const story = (m?: Mod) => !!m && STORY_KINDS.includes(m.kind)
   const lastMajor = [...(catalog.gameUpdates ?? [])].map((u) => u.date.slice(0, 10)).sort().pop() ?? ''
   const heldBack = (m: Mod) => isHeldBack(m, lastMajor)
+  const avoid = new Set((preset.avoid ?? []).map((x) => targetKey(x.target)))
   const out = { lewd: [] as Suggestion[], general: [] as Suggestion[], character: leadName }
   for (const c of options) {
     const m = c.mod
@@ -99,11 +115,12 @@ export function suggestForProfile(
     // offered once a launch test after that update confirmed it (the catalog's Mod.confirmed).
     if (heldBack(m)) continue
     if (removed.has(c.key)) continue // the player took it out of the template on purpose
+    if (avoid.has(c.key)) continue // runs against the setup's point (its community says so)
     // Nothing that would bring back what the player removed, or pull in a whole other campaign.
     if (c.addsDependencies.some((d) => removed.has(d))) continue
     // Nothing the game does not start with (the catalog's launch test), and nothing that pulls such a mod in.
     if (m.stopsGame || c.addsDependencies.some((d) => d.startsWith('mod:') && index.mods.get(d.slice(4))?.stopsGame)) continue
-    const tie = c.reasons.find((r) => /^(Recommended by|Optional for|Extends) /.test(r))?.split(':')[0].replace(/^Extends /, 'Adds to ')
+    const tie = c.reasons.find((r) => /^(Recommended by |Recommended for this setup|Optional for |Extends )/.test(r))?.split(':')[0].replace(/^Extends /, 'Adds to ')
     const forChar = m.playAs?.find((p) => isChar(p.character))?.character
     // A patch is for lists that have what it patches; one that would pull that in (SFO for an SFO patch) is not offered.
     if (m.kind === 'patch' && c.addsDependencies.length) continue
@@ -131,11 +148,13 @@ export function suggestForProfile(
     const nexus = m.sources.nexus?.downloads ?? 0
     let score = 0
     const reasons: string[] = []
-    if (ks) { score += 6 * ks + k; reasons.push(`In ${ks} of ${same.length} community lists for ${leadName}`) }
-    else if (k) { score += k; reasons.push(`In ${k} of ${lists.length} community lists`) }
-    if (tie) { score += 6; reasons.push(tie) }
-    if (forChar) { score += 5; reasons.push(`For ${forChar}`) }
-    else if (fits.length) { score += Math.min(4, fits.length * 1.5); reasons.push(`For ${fits.slice(0, 2).join(', ')}`) }
+    // What ties a mod to this list (a template mod recommends it, it is for the template's character or faction)
+    // weighs more than being popular in lists for other characters.
+    if (ks) { score += 10 * ks + k; reasons.push(`In ${ks} of ${same.length} community lists for ${leadName}`) }
+    else if (k) { score += same.length ? k : k / 3; reasons.push(`In ${k} of ${lists.length} community lists`) }
+    if (tie) { score += 15; reasons.unshift(tie) }
+    if (forChar) { score += 10; reasons.push(`For ${forChar}`) }
+    else if (fits.length) { score += 6; reasons.push(`For ${fits.slice(0, 2).join(', ')}`) }
     if (subs) { score += Math.log10(subs); reasons.push(`${short(subs)} Workshop subscribers`) }
     else if (downloads) { score += Math.log10(downloads) + 0.5; reasons.push(`${short(downloads)} LoversLab downloads`) }
     else if (nexus) { score += Math.log10(nexus) + 0.5; reasons.push(`${short(nexus)} Nexus downloads`) }
@@ -143,7 +162,7 @@ export function suggestForProfile(
     const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []) : []
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     out[general ? 'general' : 'lewd'].push({
-      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), ...(replaces.length ? { replaces } : {})
+      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), ...(replaces.length ? { replaces } : {})
     })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))

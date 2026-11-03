@@ -80,6 +80,12 @@ export interface Preset {
    * the same packs): "main menu" = the game loaded every mod.
    */
   launchTest?: { result: string; game: string; date: string };
+  /**
+   * A community setup's own understanding of its mod, from the community's channel: what it recommends with it (the
+   * app adds these first) and what runs against the setup's point (never suggested), each with the reason.
+   */
+  recommends?: { target: ModTarget; note?: string }[];
+  avoid?: { target: ModTarget; note: string }[];
   /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily). */
   votes?: { up: number; down: number };
   /** A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name. */

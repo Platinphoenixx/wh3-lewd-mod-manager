@@ -49,7 +49,9 @@ community contributions. App UI and catalog texts are English.
     profile's extras pull in too. A `requires` relation can name the `pack` it needs of a mod with versions (the
     Community Beastmen Slaanesh version needs the full, not the light pack); that entry then loads exactly that pack.
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
-  - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
+  - `src/shared/suggest.ts` "Fill this profile" (tested; ranking: tied to a template mod or the setup's `recommends` first,
+    then for the template's character or faction, then use in lists for other characters; the theme comes from the
+    template's own mods, not from add-ons the player switched on): lewd and general mods that fit the template (same
     character/faction, recommended by or extending profile mods) and that community lists for the same
     character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
     removed template mods or other characters' campaigns, also not through a dependency (conflicts count against what the
@@ -237,6 +239,14 @@ over all layers – fix texts there.
 - `curator/work/community-setups.json`: setups written from a community's own Discord channel (Beastmen, Greenskins, Lin's
   Corrupted Ascension, Imrik): the mods it names (`pack` picks one pack of a mod) become a guide template plus what they
   strictly need, ordered by the catalog's rules; `theme` groups it in Play. Facts behind them are in `work/followup-setups.json`.
+  **Standard for every setup:** it follows what its community says the core feature is. `recommends` (what serves it, with
+  the reason: for Community Beastmen the reskins that make *other* factions female, as targets of its matched animations)
+  become `Preset.recommends` – Play's Extended size takes all of them, the editor ranks them first; `avoid` (what runs
+  against it: mods that make the Beastmen themselves female, the Slaanesh version, packs with known texture conflicts)
+  become `Preset.avoid` – never suggested, never in a size (`catalog-data.test.ts`). A relation that holds only for one
+  version of a mod ("with the full version") names that version's pack in `manual.json` `conditionPacks`, so the build
+  sets `Relation.whenPack` and the app counts the conflict or requirement whenever that pack is loaded. Being popular in
+  lists for other characters (camera or weather mods) is no reason to add a mod to a setup.
   `manual.json` `playCoverage` lists the communities that must stay reachable from Play (one of their mods in a template);
   `catalog-data.test.ts` fails when one is missing.
 - `curator/work/preset-desc.json` `theme`: a template about a group rather than one character ("Daemons of Slaanesh");

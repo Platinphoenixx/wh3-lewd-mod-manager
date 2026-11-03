@@ -214,6 +214,9 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
                         **({"theme": g["theme"]} if g.get("theme") else {}),
                         **({"highlights": g["highlights"]} if g.get("highlights") else {}),
                         **({"coverMods": g["coverMods"]} if g.get("coverMods") else {}),
+                        # What the community recommends with it and what runs against its point, from its channel.
+                        **{k: [{"target": {"mod": x["mod"]}, **({"note": x["note"]} if x.get("note") else {})}
+                               for x in g.get(k) or [] if x["mod"] in mods] for k in ("recommends", "avoid") if g.get(k)},
                         "entries": built})
             continue
         out.append({"id": f"kpw-{slug}", "name": f"{character} – KPW's quick list", "origin": "guide",
@@ -510,6 +513,9 @@ def main():
             m["requiresDlc"] = det["requiresDlc"]
         if det.get("loadOrder"):
             m["loadOrder"] = {"note": det["loadOrder"]}
+        for side in ("above", "below"):  # placement rules the curator derived (work/nexus-curation.json)
+            if det.get(side):
+                m.setdefault("loadOrder", {})[side] = [{"mod": x} for x in det[side]]
         for k in ("knownIssues", "support"):
             if det.get(k):
                 m[k] = det[k]
@@ -1005,6 +1011,7 @@ def main():
         guides.append({"id": s["id"], "name": s["name"], "character": (s.get("playAs") or [s["name"]])[0], "playAs": s.get("playAs"),
                        "theme": s.get("theme"), "description": s.get("description"), "highlights": s.get("highlights"),
                        "coverMods": s.get("coverMods"), "source": {"type": "discord", "url": s["source"]},
+                       "recommends": s.get("recommends"), "avoid": s.get("avoid"),
                        "entries": [{"name": e.get("note") or e["mod"], "target": {"mod": e["mod"]}, **({"pack": e["pack"]} if e.get("pack") else {}),
                                     "optional": False} for e in s["entries"] if e["mod"] in mods]})
     presets += guide_and_derived_presets(mods, external, presets, guides, steam)
@@ -1326,15 +1333,20 @@ def main():
     # A requirement whose condition names one of the mod's own packs ("only with @Soil_Azazel_Corrupted_Units.pack")
     # holds whenever that pack is loaded: the app reads it as whenPack (the most specific name when several fit).
     norm_pack = lambda s: re.sub(r"[^a-z0-9]", "", re.sub(r"\.pack$", "", s, flags=re.I).lower())
+    # manual.json "conditionPacks" names the pack behind a version's wording ("full version" of Community Beastmen).
+    phrases = man.get("conditionPacks", {})
     for m in mods.values():
         stems = [(p["file"], norm_pack(p["file"])) for p in m.get("packs") or []]
         for r in m.get("relations") or []:
-            if r["kind"] != "requires" or not r.get("condition") or r.get("whenPack"):
+            if r["kind"] not in ("requires", "incompatible") or not r.get("condition") or r.get("whenPack"):
                 continue
             cond = re.sub(r"[^a-z0-9]", "", r["condition"].lower())
             hits = sorted((st for st in stems if len(st[1]) >= 5 and st[1] in cond), key=lambda st: -len(st[1]))
+            named = [pk for ph, pk in phrases.get(m["id"], {}).items() if not ph.startswith("_") and ph.lower() in r["condition"].lower()]
             if hits:
                 r["whenPack"] = hits[0][0]
+            elif len(set(named)) == 1:
+                r["whenPack"] = named[0]
 
     # Load order the tested lists imply for mods that change the same files (raw/tested_order.json, curator/derive_order.py);
     # a curated rule for the same pair wins.

@@ -54,7 +54,8 @@ const keys = (l: SuggestionEntry[]) => l.flatMap((x) => (isPickOne(x) ? x.pick.m
 describe('profile suggestions', () => {
   it('suggests what fits the character and what other lists for her use', () => {
     expect(keys(s.lewd)).toEqual(expect.arrayContaining(['mod:flags', 'mod:miao-skin', 'mod:cathay-units', 'mod:popular-in-miao-lists']))
-    expect(keys(s.lewd)[0]).toBe('mod:popular-in-miao-lists') // in a list for the same character + nothing else needed
+    // What the template's own mod recommends comes first, then what another list for the same character uses.
+    expect(keys(s.lewd).slice(0, 2)).toEqual(['mod:flags', 'mod:popular-in-miao-lists'])
   })
 
   it('leaves out what the player removed from the template', () => {

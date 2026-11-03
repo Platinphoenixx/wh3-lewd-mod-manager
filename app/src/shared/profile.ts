@@ -128,14 +128,16 @@ export function missingDependencies(index: CatalogIndex, keys: string[], have: S
 }
 
 /** Incompatibility pairs inside a set of keys (declared on either side). */
-export function conflictsIn(index: CatalogIndex, keys: string[]): ResolvedProfile['conflicts'] {
+export function conflictsIn(index: CatalogIndex, keys: string[], packsOf?: PacksOf): ResolvedProfile['conflicts'] {
   const set = new Set(keys)
   const out: ResolvedProfile['conflicts'] = []
   const seen = new Set<string>()
   for (const k of keys) {
     for (const r of relationsOf(index, k)) {
-      // Rules with a condition ('only when playing as Miao') are not a general conflict.
-      if (r.kind !== 'incompatible' || r.condition) continue
+      // Rules with a condition ('only when playing as Miao') are not a general conflict, unless the condition is one of
+      // the mod's own packs and that pack is loaded (Beauty and Beasts with the full Community Beastmen).
+      if (r.kind !== 'incompatible') continue
+      if (r.condition && !(r.whenPack && packsOf?.(k)?.some((p) => p.toLowerCase() === r.whenPack!.toLowerCase()))) continue
       const other = targetKey(r.target)
       const pair = [k, other].sort().join('|')
       if (set.has(other) && !seen.has(pair)) {
@@ -216,10 +218,20 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
       if (OPTIONAL_KINDS.includes(r.kind)) add(targetKey(r.target), 'recommended', `${r.kind === 'optional' ? 'Optional for' : 'Recommended by'} ${from}${r.note ? `: ${r.note}` : ''}`)
     }
   }
+  // What the community behind a setup recommends with it, and what runs against its point (shown with the reason).
+  for (const x of preset.recommends ?? []) add(targetKey(x.target), 'recommended', `Recommended for this setup${x.note ? `: ${x.note}` : ''}`)
+  for (const x of preset.avoid ?? []) add(targetKey(x.target), 'other', `Not for this setup: ${x.note}`)
   for (const m of catalog.mods) {
     for (const r of m.relations) {
       if (r.kind === 'extends' && inProfile.has(targetKey(r.target))) {
         add(`mod:${m.id}`, 'recommended', `Extends ${nameOf(catalog, index, targetKey(r.target))}`)
+      }
+      // An add-on that needs a profile mod is built on it too (Community Beastmen slaves for Marks of the Wild), unless
+      // what it needs is only a framework or shared assets many unrelated mods use, or it is a campaign of its own.
+      const base = r.kind === 'requires' && 'mod' in r.target ? index.mods.get(r.target.mod) : undefined
+      if (base && inProfile.has(`mod:${base.id}`) && !['framework', 'utility', 'assets'].includes(base.kind) &&
+          !['campaign', 'progression'].includes(m.kind) && !r.condition) {
+        add(`mod:${m.id}`, 'recommended', `Extends ${base.name}`)
       }
     }
   }
@@ -241,7 +253,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
     c.addsDependencies = [...missingDependencies(index, [c.key], inProfile, packsOf).keys()]
     // What it brings along counts too: a submod that pulls in SFO conflicts with what SFO conflicts with.
     const brings = new Set([c.key, ...c.addsDependencies])
-    c.conflicts = [...new Set(conflictsIn(index, [...current, ...brings])
+    c.conflicts = [...new Set(conflictsIn(index, [...current, ...brings], packsOf)
       .filter((p) => brings.has(p.a) !== brings.has(p.b))
       .map((p) => (brings.has(p.a) ? p.b : p.a)))]
   }
@@ -309,7 +321,8 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
       else { dep.pack = r.pack; dep.packs = [r.pack] }
     }
   }
-  const all = conflictsIn(index, entries.map((e) => e.key))
+  const loaded = new Map(entries.map((e) => [e.key, e.packs ?? (e.pack ? [e.pack] : undefined)]))
+  const all = conflictsIn(index, entries.map((e) => e.key), (k) => loaded.get(k) ?? defaultPacksOf(index, preset.playAs)(k))
   const testedTogether = preset.origin === 'tested' ? new Set(entries.filter((e) => e.origin === 'base').map((e) => e.key)) : new Set<string>()
   const together = (c: { a: string; b: string }) => testedTogether.has(c.a) && testedTogether.has(c.b)
   return { entries, conflicts: all.filter((c) => !together(c)), notes: all.filter(together) }

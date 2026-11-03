@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T17:56:46+00:00",
+  "generatedAt": "2026-11-03T20:00:04+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -1843,7 +1843,8 @@
         }
       ],
       "updated": "2026-10-27",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3679399151",
@@ -1963,6 +1964,94 @@
           "source": {
             "type": "discord"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3621449095"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3616234518"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3616082403"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3301596500"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3672266382"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3647419004"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3679399151"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3622829128"
+          },
+          "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"
+          }
         }
       ],
       "status": "stable",
@@ -1992,7 +2081,8 @@
         }
       ],
       "updated": "2026-10-27",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3698854498",
@@ -2289,7 +2379,8 @@
         }
       ],
       "updated": "2026-10-27",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3647816031",
@@ -2485,7 +2576,8 @@
         }
       ],
       "updated": "2026-04-19",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3616234518",
@@ -2622,7 +2714,8 @@
         }
       ],
       "updated": "2026-02-12",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3706296778",
@@ -3105,7 +3198,8 @@
         }
       ],
       "updated": "2026-06-25",
-      "changesData": false
+      "changesData": false,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3810043473",
@@ -7378,7 +7472,8 @@
         }
       ],
       "updated": "2026-09-24",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2934267802",
@@ -9557,7 +9652,8 @@
         }
       ],
       "updated": "2026-09-25",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3346259963",
@@ -9630,7 +9726,8 @@
         }
       ],
       "updated": "2026-10-18",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3709381189",
@@ -10040,7 +10137,8 @@
         }
       ],
       "updated": "2026-09-26",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3617312541",
@@ -12592,7 +12690,8 @@
         }
       ],
       "updated": "2026-09-25",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2855839105",
@@ -13398,7 +13497,8 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/46165-community-beastmen-all-versions-actually-up-to-date-seriously/"
-          }
+          },
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "incompatible",
@@ -13410,7 +13510,8 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/46165-community-beastmen-all-versions-actually-up-to-date-seriously/"
-          }
+          },
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "supersedes",
@@ -13539,7 +13640,21 @@
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/1025523634745385014"
           },
-          "condition": "with the full version"
+          "condition": "with the full version",
+          "whenPack": "new_community_beastmen.pack"
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3140200173"
+          },
+          "condition": "with the full version",
+          "note": "Likely why the third capture mission does not fire (maintainer's list)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          },
+          "whenPack": "new_community_beastmen.pack"
         }
       ],
       "loadOrder": {
@@ -13606,9 +13721,26 @@
           "endo_corrupted_elf.pack",
           "new_community_beastmen_20260117ModelsFIX.pack",
           "new_community_beastmen_CentigorDickLodFIX.pack",
-          "new_community_beastmen_modelspatch0428.pack"
+          "new_community_beastmen_modelspatch0428.pack",
+          "endo_matched_updated_mod01.pack",
+          "!endo_matched_update_mod.pack",
+          "modendo_matched_updated_mod01.pack",
+          "!endo_matched_updated_trytobenotlazy01.pack",
+          "endo_matched_updated_trytobenotlazy02.pack",
+          "endo_empire_matched_trytobenotlazy01.pack",
+          "!endo_empire_matched_trytobenotlazy01.pack",
+          "endo_empire_matched_trytobenotlazy02.pack",
+          "endo_matched_with_warmaidens_only.pack",
+          "!endo_matched_with_warmaidens_only.pack",
+          "matched_hu1c_test1_gratitude_to_endo.pack",
+          "matched_hu1d_test1_gratitude_to_endo.pack",
+          "matched_hu1e_test1_gratitude_to_endo.pack",
+          "matched_hu16_daemonette_test1_gratitude_to_endo.pack",
+          "matched_hu1j_elspeth_test1_gratitude_to_endo.pack",
+          "corrupted_heroes_submod.pack",
+          "sewrat_beastmen_addon_c5.2.3.pack"
         ],
-        "note": "These packs were merged into the Community Beastmen mod (the author says to remove them). Next to it, the Sewrat and Candles packs fire dilemmas twice and Endo's matched-combat packs bring back swordsmen Elf Breakers, Bestigor Hunters and question-mark unit cards."
+        "note": "These packs were merged into the Community Beastmen mod (the author says to remove them). Next to it, the Sewrat and Candles packs fire dilemmas twice and Endo's matched-combat packs bring back swordsmen Elf Breakers, Bestigor Hunters and question-mark unit cards. Endo's loose matched-combat packs, lypt's earlier retargets (except Valkia's) and the Corrupted Heroes submod are in it too; the old separate packs crash at launch or override its animations."
       },
       "playAs": [
         {
@@ -13847,6 +13979,19 @@
           "Read on the Nexus mod page; not checked in game."
         ]
       },
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "ll-46165"
+          },
+          {
+            "mod": "dc-orcmatched-greenskin-animations"
+          }
+        ]
+      },
+      "knownIssues": [
+        "File comparison with Community Beastmen (2026-11-03): the most-skeletons pack holds all of CB's animation files and larger versions of 237 of its animation tables (about 190 more pairings, new DLC units), but misses CB's newer entries (Beastmen lords and heroes, Ungors, wolves, Valkia; about 14% of CB's Beastmen entries in the shared tables). Loaded below CB, CB keeps its tables and this pack only adds the ones CB lacks; above CB it would remove those entries. The Beastmen-only pack is a copy of CB light's animations."
+      ],
       "support": [
         {
           "platform": "Patreon",
@@ -18754,7 +18899,8 @@
         "confidence": "medium"
       },
       "updated": "2025-12-20",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2790444587",
@@ -26450,7 +26596,8 @@
         }
       ],
       "updated": "2026-10-22",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2887139566",
@@ -26668,7 +26815,8 @@
         }
       ],
       "updated": "2026-01-27",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2789978667",
@@ -27473,7 +27621,8 @@
         }
       ],
       "updated": "2026-10-08",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3317929558",
@@ -27597,7 +27746,8 @@
         }
       ],
       "updated": "2025-08-09",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2803817483",
@@ -27718,7 +27868,8 @@
         }
       ],
       "updated": "2026-09-26",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3624226937",
@@ -31369,7 +31520,8 @@
         "The download also holds the Slaanesh Legion packs; they are the same files as Succubus Legion of the Dark Princess (listed there)."
       ],
       "updated": "2026-09-24",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2826930183",
@@ -32305,7 +32457,8 @@
         ]
       },
       "updated": "2026-04-06",
-      "changesData": false
+      "changesData": false,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "nx-339",
@@ -33663,7 +33816,8 @@
         }
       ],
       "updated": "2026-10-01",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3081886544",
@@ -34324,7 +34478,9 @@
       "kind": "units",
       "tags": [
         "mod",
-        "units"
+        "units",
+        "beastmen",
+        "general"
       ],
       "summary": "",
       "sources": {
@@ -34368,7 +34524,8 @@
         }
       ],
       "updated": "2026-09-25",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3596382314",
@@ -36011,7 +36168,8 @@
         }
       ],
       "updated": "2026-06-29",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2802810577",
@@ -36087,7 +36245,8 @@
         }
       ],
       "updated": "2026-10-29",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2802811244",
@@ -36153,7 +36312,8 @@
         }
       ],
       "updated": "2026-09-25",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2815354316",
@@ -38992,7 +39152,8 @@
         }
       ],
       "updated": "2025-12-24",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3716025482",
@@ -49398,7 +49559,8 @@
         }
       ],
       "updated": "2026-10-01",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3810029219",
@@ -51493,7 +51655,8 @@
       ],
       "recommendedFor": "For profiles with Lazy's Miao progression that want SOBORO's card images and portraits without switching the 3D models.",
       "updated": "2024-08-10",
-      "changesData": false
+      "changesData": false,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "ll-28994",
@@ -52433,7 +52596,7 @@
         "Launch test 2026-11-02 (game 9.0.4): the LoversLab @Soil_Miaoying_Corrupted_Units.pack stops the game with a database error (land_units_to_unit_abilites_junctions_tables, record soil_cth_corrupted_fiends_of_slaanesh_0wh3_main_unit_passive_daemonic_instability_slaanesh); the version pinned in #soiled-projects on 2026-10-01 and the merged Soil pack reach the main menu.",
         "Since patch 9.0 (2026-09-24) the LoversLab Azazel and Miao packs (last updated 2026-08-04) crash the game at launch, and the author is inactive. Working 9.0 versions are pinned in #soiled-projects on Discord (Azazel 2026-09-27 with CA's new Archaon key, Miao 2026-09-30 with the tech tree at the far right of the Provinces tab) or use the merged pack; older pinned versions from before 9.0 also crash.",
         "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack.",
-        "The Miao Ying pack of the LoversLab download stops the game at launch since patch 9.0 (database error, launch test 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
+        "The Miao Ying and Azazel packs of the LoversLab download stop the game at launch since patch 9.0 (database error, launch tests 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
       ],
       "installNotes": [
         "Download the asset pack AND the faction-specific mod.",
@@ -56311,6 +56474,67 @@
       "confirmed": "2026-11-03"
     },
     {
+      "id": "dc-valkia-matched-animations-retarget",
+      "name": "Valkia matched animations (Endo's animations retargeted to Valkia)",
+      "authors": [
+        "lypt"
+      ],
+      "kind": "submod",
+      "summary": "Endo's matched battle animations retargeted to Valkia's skeleton, so the corrupted Valkia of Community Beastmen takes part in them; kept out of the main mod on purpose, safe to add.",
+      "tags": [
+        "beastmen",
+        "animations",
+        "matched combat",
+        "valkia",
+        "endo"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "community-beastmen",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "matched_hu16c_valkia_test1_gratitude_to_endo.pack",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760",
+            "description": "Posted by the maintainer on 2025-11-10"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "matched_hu16c_valkia_test1_gratitude_to_endo.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "The other retargets (hu1c, hu1d, hu1e, daemonettes, Elspeth) were merged into Community Beastmen on 2025-11-03/11; this one was not, by the author's choice",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-03",
+        "confidence": "medium",
+        "openQuestions": [
+          "Made before patch 9.0; the channel has no newer build (as of 2026-11-02)."
+        ]
+      },
+      "updated": "2025-11-10",
+      "changesData": true,
+      "confirmed": "2026-11-03"
+    },
+    {
       "id": "nx-219",
       "name": "Valkia_sulivar_style",
       "authors": [
@@ -57752,7 +57976,8 @@
         {
           "file": "@Vampire Girls.pack",
           "from": "download",
-          "note": "Vampire Counts"
+          "optional": true,
+          "note": "Vampire Counts. Version 13.21 stops the game at launch, also alone with the resource packs (launch test 2026-11-03, game 9.0.5)"
         },
         {
           "file": "@Pirate Girls.pack",
@@ -57790,7 +58015,8 @@
         }
       ],
       "updated": "2026-10-30",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "nx-28",
@@ -57870,7 +58096,8 @@
         "The Community Beastmen maintainer posted a standalone repack, Ancient_Warmaidens_Repack.pack (about 186 MB), on the Discord on 2025-10-20. It was made with Zeta's permission: all infantry female, monstrous female units removed, missing animations added."
       ],
       "updated": "2026-10-01",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "ll-24568",
@@ -58550,7 +58777,8 @@
         }
       ],
       "updated": "2025-06-26",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "nx-239",
@@ -61553,7 +61781,8 @@
         "Requires the Generic Framework (Steam)"
       ],
       "updated": "2026-10-12",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-2793419054",
@@ -61727,7 +61956,8 @@
         }
       ],
       "updated": "2026-10-21",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-03"
     },
     {
       "id": "steam-3815238353",
@@ -68132,6 +68362,154 @@
       "coverMods": [
         "ll-46165"
       ],
+      "recommends": [
+        {
+          "target": {
+            "mod": "steam-3000867445"
+          },
+          "note": "the author used it in his own Beastmen playthrough"
+        },
+        {
+          "target": {
+            "mod": "steam-3346259963"
+          },
+          "note": "faster travel to the quest targets (several players)"
+        },
+        {
+          "target": {
+            "mod": "steam-2866545631"
+          },
+          "note": "base mod of dd_bst; players use it with Community Beastmen"
+        },
+        {
+          "target": {
+            "mod": "dc-dd-bst-community-beastmen-slaves-for-marks-of-the-wild"
+          },
+          "note": "Marks of the Wild upgrades paid with Breeding Slaves"
+        },
+        {
+          "target": {
+            "mod": "steam-3714453899"
+          },
+          "note": "brings back the elf captives on shields"
+        },
+        {
+          "target": {
+            "mod": "dc-valkia-matched-animations-retarget"
+          },
+          "note": "Endo's animations retargeted to Valkia, one of the lords the herd captures; the maintainer posted it and calls it safe to add"
+        },
+        {
+          "target": {
+            "mod": "nx-28"
+          },
+          "note": "the maintainer's baseline load order: Tomb Kings are the most important Warmaidens pack (their mounts were removed on purpose)"
+        },
+        {
+          "target": {
+            "mod": "steam-3683061804"
+          },
+          "note": "Endo's faction reskins in one pack (Empire, High, Dark and Wood Elves, Kislev, Bretonnia, Cathay): they add female targets for the matched animations and work with Community Beastmen as long as they do not reskin the Beastmen (maintainer); its Ungor part has no effect against CB's own Ungors, and with its Kislev part CB's Powderjacks mercenaries get female voices"
+        },
+        {
+          "target": {
+            "mod": "nx-31"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-57"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-38"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-106"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-55"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-56"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-77"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-47"
+          },
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "target": {
+            "mod": "nx-41"
+          },
+          "note": "Zeta's faction pack: the maintainer recommends the separate Warmaidens faction packs, all except the beastwoman one; needs only the resource packs, not the all-in-one conversion; its Slaanesh spawn and fiend summons show texture bugs, the community's no-spawn repack on the channel avoids them"
+        },
+        {
+          "target": {
+            "mod": "nx-45"
+          },
+          "note": "Zeta's faction pack: the maintainer recommends the separate Warmaidens faction packs, all except the beastwoman one; needs only the resource packs, not the all-in-one conversion; its Chaos pack and CB both reskin the Tzeentch Centigors (an overlap the maintainer calls unavoidable)"
+        },
+        {
+          "target": {
+            "mod": "nx-365"
+          },
+          "note": "Zeta's continuation of Endo's matched animations (most-skeletons pack, 2026-10-22): it holds all of Community Beastmen's animation files plus about 190 more pairings and new DLC units. The app loads it below Community Beastmen, so Community Beastmen keeps its own animation tables and this pack only adds the ones Community Beastmen lacks; above it, it would drop Community Beastmen's newer entries. Not discussed in the channel yet; the warning against other animation mods is about those shared tables"
+        }
+      ],
+      "avoid": [
+        {
+          "target": {
+            "mod": "nx-53"
+          },
+          "note": "turns the Beastmen themselves into women, while Community Beastmen's matched animations pair Beastmen with female enemies; it also distorts minotaurs and doombulls (maintainer)"
+        },
+        {
+          "target": {
+            "mod": "steam-3710146959"
+          },
+          "note": "no effect: Community Beastmen points the Ungors to its own models (its corrupted elves already use Endo's female Ungor model)"
+        },
+        {
+          "target": {
+            "mod": "steam-3819138832"
+          },
+          "note": "the Slaanesh version is for Slaanesh and Warriors of Chaos campaigns, not for a Beastmen one"
+        },
+        {
+          "target": {
+            "mod": "nx-42"
+          },
+          "note": "its Dark Elf pack has a texture conflict with Community Beastmen; the maintainer uses [Endo] Dark Elves instead"
+        },
+        {
+          "target": {
+            "mod": "nx-293"
+          },
+          "note": "Endo's Unit Idles conflict with the matched animations (the patches shifted its animation slots like the matched entries); no other animation mods next to Community Beastmen (maintainer)"
+        }
+      ],
       "entries": [
         {
           "pack": "new_community_beastmen.pack",
@@ -68180,6 +68558,124 @@
       "coverMods": [
         "ll-46561"
       ],
+      "recommends": [
+        {
+          "target": {
+            "mod": "dc-orcmatched-greenskin-animations"
+          },
+          "note": "the matched animations for orcs, goblins and trolls; the build that also works next to Community Beastmen"
+        },
+        {
+          "target": {
+            "mod": "steam-2798690094"
+          },
+          "note": "makes matched animations play much more often; it adds none of its own (the Community Beastmen maintainer's advice, OrcMatched uses the same matched-combat system)"
+        },
+        {
+          "target": {
+            "mod": "steam-3683061804"
+          },
+          "note": "Endo's faction reskins of other factions in one pack: female human and elf infantry keep the hu1 skeletons OrcMatched animates (it covers hu1 to hu1e since 2025-11-14)"
+        },
+        {
+          "target": {
+            "mod": "nx-28"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-31"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-57"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-38"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-106"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-55"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-56"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-77"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-41"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-45"
+          },
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "target": {
+            "mod": "nx-365"
+          },
+          "note": "Zeta's continuation of Endo's matched animations (most-skeletons pack, 2026-10-22): it holds all of OrcMatched's animation files plus about 190 more pairings and new DLC units. The app loads it below OrcMatched, so OrcMatched keeps its own animation tables and this pack only adds the ones OrcMatched lacks; above it, it would drop OrcMatched's newer entries. Not discussed in the channel yet; the warning against other animation mods is about those shared tables"
+        }
+      ],
+      "avoid": [
+        {
+          "target": {
+            "mod": "nx-47"
+          },
+          "note": "turns the Greenskins themselves female, while OrcMatched animates orcs, goblins and trolls against female enemies"
+        },
+        {
+          "target": {
+            "mod": "nx-303"
+          },
+          "note": "female orcs (an expansion of Zeta's Greenskin pack): the Greenskins themselves turned female, against OrcMatched's point"
+        },
+        {
+          "target": {
+            "mod": "steam-2895227844"
+          },
+          "note": "another matched-combat mod: it rewrites the same animation entries as OrcMatched, and load order does not settle it"
+        },
+        {
+          "target": {
+            "mod": "steam-2896264280"
+          },
+          "note": "another matched-combat mod: it rewrites the same animation entries as OrcMatched, and load order does not settle it"
+        },
+        {
+          "target": {
+            "mod": "nx-293"
+          },
+          "note": "Endo's Unit Idles change the same animation slots the matched animations use and conflict with them"
+        }
+      ],
       "entries": [
         {
           "pack": "Goblin_horde_redux.pack",
@@ -68218,6 +68714,20 @@
       ],
       "coverMods": [
         "ll-27171"
+      ],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-43852"
+          },
+          "note": "same author and framework, independent of Corrupted Ascension; covered by the AllInOne translation"
+        },
+        {
+          "target": {
+            "mod": "steam-3773211997"
+          },
+          "note": "same author: roguelike exploration for all factions; covered by the AllInOne translation since 2026-10-10"
+        }
       ],
       "entries": [
         {
@@ -68278,6 +68788,20 @@
       ],
       "coverMods": [
         "dc-imrik-dragon-taming-mrdustv"
+      ],
+      "recommends": [
+        {
+          "target": {
+            "mod": "nx-61"
+          },
+          "note": "in the list of the modder who keeps the pack alive (2025-02-19), among the mods that change the elves and Miao Ying"
+        },
+        {
+          "target": {
+            "mod": "nx-250"
+          },
+          "note": "in the list of the modder who keeps the pack alive (2025-02-19), among the mods that change the elves and Miao Ying"
+        }
       ],
       "entries": [
         {

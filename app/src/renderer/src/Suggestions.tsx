@@ -76,7 +76,9 @@ export function SuggestedMods({ lewd, general, character, total, browsing, onAdd
   lewd: Suggestion[]; general: Suggestion[]; character: string; total: number; browsing: boolean
   onAdd(keys: string[]): void; onBrowse(): void
 }) {
-  const [skipped, setSkipped] = useState<Set<string>>(new Set())
+  // Ticked at first: what belongs to this list (tied to its mods, for its character or faction, used in lists for it);
+  // a mod only popular in other characters' lists is offered unticked.
+  const [skipped, setSkipped] = useState<Set<string>>(() => new Set([...lewd, ...general].filter((s) => !s.strong && !s.fits).map((s) => s.key)))
   const [expanded, setExpanded] = useState<Set<string>>(new Set())
   const [open, setOpen] = useState(false)
 

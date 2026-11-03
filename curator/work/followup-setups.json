@@ -442,7 +442,34 @@
     {
       "id": "ll-32374",
       "knownIssues+": [
-        "The Miao Ying pack of the LoversLab download stops the game at launch since patch 9.0 (database error, launch test 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
+        "The Miao Ying and Azazel packs of the LoversLab download stop the game at launch since patch 9.0 (database error, launch tests 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
+      ]
+    },
+    {
+      "id": "steam-2866545631",
+      "_note": "Its title says it: unit upgrades for the Beastmen (and dd_bst builds Community Beastmen slaves on it).",
+      "tags+": ["beastmen", "general"]
+    },
+    {
+      "id": "ll-46165",
+      "_note": "The maintainer's incompatibility list for the full version (channel and GitHub guide, 2026-02-21).",
+      "relations+": [
+        {"kind": "incompatible", "target": {"mod": "steam-3140200173"}, "condition": "with the full version",
+         "note": "Likely why the third capture mission does not fire (maintainer's list)", "source": {"type": "discord", "url": "https://github.com/RealDeHess/CommunityBeastmen"}}
+      ]
+    },
+    {
+      "id": "steam-3683061804",
+      "_note": "File comparison of the archived Workshop items: every file of the single Endo faction reskins and of Endo Audio Merged is in the combined pack.",
+      "relations+": [
+        {"kind": "incompatible", "target": {"mod": "steam-3621449095"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3616234518"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3616082403"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3301596500"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3672266382"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3647419004"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3679399151"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}},
+        {"kind": "incompatible", "target": {"mod": "steam-3622829128"}, "note": "Endo Combined Faction Reskins already contains this pack's files (archive comparison 2026-11-03): use the combined pack or the single ones, not both", "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3683061804"}}
       ]
     }
   ]

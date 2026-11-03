@@ -66,6 +66,64 @@
           "A third party uploaded an OrcMatched build to Steam (3625560810); which build it holds is not known."
         ]
       }
+    },
+    {
+      "id": "dc-valkia-matched-animations-retarget",
+      "name": "Valkia matched animations (Endo's animations retargeted to Valkia)",
+      "authors": [
+        "lypt"
+      ],
+      "kind": "submod",
+      "summary": "Endo's matched battle animations retargeted to Valkia's skeleton, so the corrupted Valkia of Community Beastmen takes part in them; kept out of the main mod on purpose, safe to add.",
+      "tags": [
+        "beastmen",
+        "animations",
+        "matched combat",
+        "valkia",
+        "endo"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "community-beastmen",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "matched_hu16c_valkia_test1_gratitude_to_endo.pack",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760",
+            "description": "Posted by the maintainer on 2025-11-10"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "matched_hu16c_valkia_test1_gratitude_to_endo.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "The other retargets (hu1c, hu1d, hu1e, daemonettes, Elspeth) were merged into Community Beastmen on 2025-11-03/11; this one was not, by the author's choice",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-03",
+        "confidence": "medium",
+        "openQuestions": [
+          "Made before patch 9.0; the channel has no newer build (as of 2026-11-02)."
+        ]
+      }
     }
   ]
 }

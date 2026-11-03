@@ -1,4 +1,8 @@
 {
+  "conditionPacks": {
+    "_comment": "The pack behind a version's wording in a relation's condition, so the app can check it (build: Relation.whenPack).",
+    "ll-46165": {"full version": "new_community_beastmen.pack", "main version": "new_community_beastmen.pack", "light version": "community_beastmen_light.pack"}
+  },
   "_comment": "Hand-curated additions. packAliases: pack file (lower-case match) -> catalog target, for packs that LL pages describe without naming. 'confidence' is informational.",
   "packAliases": {
     "Lin_Corruption_Ascend.pack": {

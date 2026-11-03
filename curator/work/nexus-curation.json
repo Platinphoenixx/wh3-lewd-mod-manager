@@ -1429,7 +1429,8 @@
       "packs": [
         {
           "file": "@Vampire Girls.pack",
-          "note": "Vampire Counts"
+          "optional": true,
+          "note": "Vampire Counts. Version 13.21 stops the game at launch, also alone with the resource packs (launch test 2026-11-03, game 9.0.5)"
         },
         {
           "file": "@Pirate Girls.pack",
@@ -1853,6 +1854,8 @@
         }
       ],
       "requiresNote": "The version made for Total Warmaidens; uses the author's beastwomen models.",
+      "below": ["ll-46165", "dc-orcmatched-greenskin-animations"],
+      "knownIssues": ["File comparison with Community Beastmen (2026-11-03): the most-skeletons pack holds all of CB's animation files and larger versions of 237 of its animation tables (about 190 more pairings, new DLC units), but misses CB's newer entries (Beastmen lords and heroes, Ungors, wolves, Valkia; about 14% of CB's Beastmen entries in the shared tables). Loaded below CB, CB keeps its tables and this pack only adds the ones CB lacks; above CB it would remove those entries. The Beastmen-only pack is a copy of CB light's animations."],
       "requires": [
         "nx-22"
       ]

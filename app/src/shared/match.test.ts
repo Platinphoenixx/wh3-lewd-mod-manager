@@ -95,6 +95,18 @@ describe('match', () => {
     expect(warnings.map((w) => w.pack.file)).toEqual(['Alarielle_Temptation_Bloom.pack', 'Alarielle_Temptation_Bloom_Assets.pack'])
   })
 
+  it('warns about a pack merged into a mod installed from a download, not about the mod’s own pack', () => {
+    const cat: Catalog = { ...catalog, presets: [], mods: [
+      mod('ll-46165', { packs: [{ file: 'new_community_beastmen.pack', from: 'download' }], cleanup: { staleDataPacks: ['endo_matched_updated.pack'], note: 'merged' } }),
+      mod('ll-23876', { packs: [{ file: 'MiaoYingCorrupted_Compendium.pack', from: 'download' }], sources: { steam: [{ id: '3705392682' }] },
+        cleanup: { staleDataPacks: ['MiaoYingCorrupted_Compendium.pack'], note: 'old LL file' } })
+    ] }
+    const cb = { ...pack('new_community_beastmen.pack', 'data'), modId: 'll-46165' }
+    const old = pack('endo_matched_updated.pack', 'data')
+    const lazyLL = { ...pack('MiaoYingCorrupted_Compendium.pack', 'data'), modId: 'll-23876' }
+    expect(staleDataPacks(buildIndex(cat), [cb, old, lazyLL]).map((w) => w.pack.file)).toEqual(['endo_matched_updated.pack'])
+  })
+
   it('takes a pack name several mods list as the current main pack, not a superseded or optional copy', () => {
     const cat: Catalog = { ...catalog, presets: [], mods: [
       mod('nx-2', { status: 'superseded', packs: [{ file: 'PleasurePikes.pack', from: 'download' }] }),

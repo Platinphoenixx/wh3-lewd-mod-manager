@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import type { Catalog } from '@catalog/schema'
-import { buildIndex } from '@shared/match'
+import { buildIndex, targetKey } from '@shared/match'
 import { baseKeys, candidates, conflictsIn, missingDependencies, resolveProfile } from '@shared/profile'
 import { isPickOne, suggestForProfile } from '@shared/suggest'
 import { stepsFor, subjectsOf, suggestedFor, tiersFor } from '@shared/setups'
@@ -95,7 +95,11 @@ describe('catalog', () => {
       const tiers = tiersFor(catalog, index, s)
       if (!tiers.some((t) => t.recommended)) bad.push(`${s.name}: no recommended size`)
       for (const t of tiers) {
-        for (const c of resolveProfile(catalog, index, t.preset, { extras: t.extras, removed: [] }).conflicts) bad.push(`${s.name} ${t.id}: ${c.a} x ${c.b}`)
+        const r = resolveProfile(catalog, index, t.preset, { extras: t.extras, removed: [] })
+        for (const c of r.conflicts) bad.push(`${s.name} ${t.id}: ${c.a} x ${c.b}`)
+        // What the setup's community says runs against its point never gets in, not even through a dependency.
+        const avoid = new Set((t.preset.avoid ?? []).map((x) => targetKey(x.target)))
+        for (const e of r.entries) if (avoid.has(e.key)) bad.push(`${s.name} ${t.id}: ${e.key} is not for this setup`)
         const steps = stepsFor(s, suggestedFor(catalog, index, t.preset, { extras: t.extras, removed: [] }).picks, true)
         if (steps[steps.length - 1].kind !== 'review') bad.push(`${s.name} ${t.id}: no review step`)
       }

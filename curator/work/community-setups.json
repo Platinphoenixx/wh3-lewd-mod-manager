@@ -29,6 +29,106 @@
         {
           "mod": "steam-2798690094"
         }
+      ],
+      "recommends": [
+        {
+          "mod": "steam-3000867445",
+          "note": "the author used it in his own Beastmen playthrough"
+        },
+        {
+          "mod": "steam-3346259963",
+          "note": "faster travel to the quest targets (several players)"
+        },
+        {
+          "mod": "steam-2866545631",
+          "note": "base mod of dd_bst; players use it with Community Beastmen"
+        },
+        {
+          "mod": "dc-dd-bst-community-beastmen-slaves-for-marks-of-the-wild",
+          "note": "Marks of the Wild upgrades paid with Breeding Slaves"
+        },
+        {
+          "mod": "steam-3714453899",
+          "note": "brings back the elf captives on shields"
+        },
+        {
+          "mod": "dc-valkia-matched-animations-retarget",
+          "note": "Endo's animations retargeted to Valkia, one of the lords the herd captures; the maintainer posted it and calls it safe to add"
+        },
+        {
+          "mod": "nx-28",
+          "note": "the maintainer's baseline load order: Tomb Kings are the most important Warmaidens pack (their mounts were removed on purpose)"
+        },
+        {
+          "mod": "steam-3683061804",
+          "note": "Endo's faction reskins in one pack (Empire, High, Dark and Wood Elves, Kislev, Bretonnia, Cathay): they add female targets for the matched animations and work with Community Beastmen as long as they do not reskin the Beastmen (maintainer); its Ungor part has no effect against CB's own Ungors, and with its Kislev part CB's Powderjacks mercenaries get female voices"
+        },
+        {
+          "mod": "nx-31",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-57",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-38",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-106",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-55",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-56",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-77",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-47",
+          "note": "Zeta's faction pack for a faction without an Endo reskin (the maintainer's rule); needs only the Warmaidens resource packs, not the all-in-one conversion"
+        },
+        {
+          "mod": "nx-41",
+          "note": "Zeta's faction pack: the maintainer recommends the separate Warmaidens faction packs, all except the beastwoman one; needs only the resource packs, not the all-in-one conversion; its Slaanesh spawn and fiend summons show texture bugs, the community's no-spawn repack on the channel avoids them"
+        },
+        {
+          "mod": "nx-45",
+          "note": "Zeta's faction pack: the maintainer recommends the separate Warmaidens faction packs, all except the beastwoman one; needs only the resource packs, not the all-in-one conversion; its Chaos pack and CB both reskin the Tzeentch Centigors (an overlap the maintainer calls unavoidable)"
+        },
+        {
+          "mod": "nx-365",
+          "note": "Zeta's continuation of Endo's matched animations (most-skeletons pack, 2026-10-22): it holds all of Community Beastmen's animation files plus about 190 more pairings and new DLC units. The app loads it below Community Beastmen, so Community Beastmen keeps its own animation tables and this pack only adds the ones Community Beastmen lacks; above it, it would drop Community Beastmen's newer entries. Not discussed in the channel yet; the warning against other animation mods is about those shared tables"
+        }
+      ],
+      "avoid": [
+        {
+          "mod": "nx-53",
+          "note": "turns the Beastmen themselves into women, while Community Beastmen's matched animations pair Beastmen with female enemies; it also distorts minotaurs and doombulls (maintainer)"
+        },
+        {
+          "mod": "steam-3710146959",
+          "note": "no effect: Community Beastmen points the Ungors to its own models (its corrupted elves already use Endo's female Ungor model)"
+        },
+        {
+          "mod": "steam-3819138832",
+          "note": "the Slaanesh version is for Slaanesh and Warriors of Chaos campaigns, not for a Beastmen one"
+        },
+        {
+          "mod": "nx-42",
+          "note": "its Dark Elf pack has a texture conflict with Community Beastmen; the maintainer uses [Endo] Dark Elves instead"
+        },
+        {
+          "mod": "nx-293",
+          "note": "Endo's Unit Idles conflict with the matched animations (the patches shifted its animation slots like the matched entries); no other animation mods next to Community Beastmen (maintainer)"
+        }
       ]
     },
     {
@@ -52,6 +152,86 @@
       "entries": [
         {
           "mod": "ll-46561"
+        }
+      ],
+      "recommends": [
+        {
+          "mod": "dc-orcmatched-greenskin-animations",
+          "note": "the matched animations for orcs, goblins and trolls; the build that also works next to Community Beastmen"
+        },
+        {
+          "mod": "steam-2798690094",
+          "note": "makes matched animations play much more often; it adds none of its own (the Community Beastmen maintainer's advice, OrcMatched uses the same matched-combat system)"
+        },
+        {
+          "mod": "steam-3683061804",
+          "note": "Endo's faction reskins of other factions in one pack: female human and elf infantry keep the hu1 skeletons OrcMatched animates (it covers hu1 to hu1e since 2025-11-14)"
+        },
+        {
+          "mod": "nx-28",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-31",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-57",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-38",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-106",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-55",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-56",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-77",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-41",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-45",
+          "note": "Zeta's faction pack of another faction: OrcMatched's animations play on the human skeletons (hu1, hu1b) its units use, so they add female targets (OrcMatched's author); needs only the Warmaidens resource packs"
+        },
+        {
+          "mod": "nx-365",
+          "note": "Zeta's continuation of Endo's matched animations (most-skeletons pack, 2026-10-22): it holds all of OrcMatched's animation files plus about 190 more pairings and new DLC units. The app loads it below OrcMatched, so OrcMatched keeps its own animation tables and this pack only adds the ones OrcMatched lacks; above it, it would drop OrcMatched's newer entries. Not discussed in the channel yet; the warning against other animation mods is about those shared tables"
+        }
+      ],
+      "avoid": [
+        {
+          "mod": "nx-47",
+          "note": "turns the Greenskins themselves female, while OrcMatched animates orcs, goblins and trolls against female enemies"
+        },
+        {
+          "mod": "nx-303",
+          "note": "female orcs (an expansion of Zeta's Greenskin pack): the Greenskins themselves turned female, against OrcMatched's point"
+        },
+        {
+          "mod": "steam-2895227844",
+          "note": "another matched-combat mod: it rewrites the same animation entries as OrcMatched, and load order does not settle it"
+        },
+        {
+          "mod": "steam-2896264280",
+          "note": "another matched-combat mod: it rewrites the same animation entries as OrcMatched, and load order does not settle it"
+        },
+        {
+          "mod": "nx-293",
+          "note": "Endo's Unit Idles change the same animation slots the matched animations use and conflict with them"
         }
       ]
     },
@@ -82,6 +262,16 @@
         {
           "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
         }
+      ],
+      "recommends": [
+        {
+          "mod": "ll-43852",
+          "note": "same author and framework, independent of Corrupted Ascension; covered by the AllInOne translation"
+        },
+        {
+          "mod": "steam-3773211997",
+          "note": "same author: roguelike exploration for all factions; covered by the AllInOne translation since 2026-10-10"
+        }
       ]
     },
     {
@@ -102,6 +292,16 @@
       "entries": [
         {
           "mod": "dc-imrik-dragon-taming-mrdustv"
+        }
+      ],
+      "recommends": [
+        {
+          "mod": "nx-61",
+          "note": "in the list of the modder who keeps the pack alive (2025-02-19), among the mods that change the elves and Miao Ying"
+        },
+        {
+          "mod": "nx-250",
+          "note": "in the list of the modder who keeps the pack alive (2025-02-19), among the mods that change the elves and Miao Ying"
         }
       ]
     }
