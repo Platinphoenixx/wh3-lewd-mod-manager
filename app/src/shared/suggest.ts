@@ -136,7 +136,11 @@ export function suggestForProfile(
 
 /** The characters a reskin changes: its playAs and the character names among its tags. */
 function reskinSubjects(m: Mod, characters: Map<string, string>): string[] {
-  return [...new Set([...(m.playAs ?? []).map((p) => p.character), ...m.tags.map(norm).filter((t) => characters.has(t)).map((t) => characters.get(t)!)])]
+  // A character tag alone may only say which campaign the reskin is for (a unit reskin for Alarielle's campaign);
+  // it changes the character only when its name or summary names her too.
+  const text = norm(`${m.name} ${m.summary}`)
+  const tagged = m.tags.map(norm).filter((t) => characters.has(t) && text.includes(t.split(' ')[0])).map((t) => characters.get(t)!)
+  return [...new Set([...(m.playAs ?? []).map((p) => p.character), ...tagged])]
 }
 
 /**

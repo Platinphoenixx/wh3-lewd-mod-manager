@@ -60,7 +60,8 @@ export function subjectsOf(catalog: Catalog, index: CatalogIndex): Subject[] {
   const used = new Set<string>()
   const cover = (m?: Mod) => m?.images?.find((i) => i.kind === 'cover')?.url ?? m?.images?.[0]?.url
   const list = [...subjects.values()].sort((a, b) => score(b) - score(a) || a.name.localeCompare(b.name))
-  for (const s of list) {
+  // Characters pick their picture first: a theme can do with another of its characters' mods.
+  for (const s of [...list].sort((a, b) => Number(a.kind === 'theme') - Number(b.kind === 'theme'))) {
     // For a theme: mods about its characters, those its lists use first.
     const inLists = new Set(s.presets.flatMap((p) => p.entries.flatMap((e) => (e.target && 'mod' in e.target ? [e.target.mod] : []))))
     // A mod about fewer other characters says more (Khalida's campaign lists five lords it can be played with).
@@ -72,8 +73,13 @@ export function subjectsOf(catalog: Catalog, index: CatalogIndex): Subject[] {
         [...charsOf(m)].some((c) => s.characters.includes(c)))
       .sort((a, b) => {
         const listed = Number(inLists.has(b.id)) - Number(inLists.has(a.id))
-        // A character: her lists' story mods first. A theme: the mods about its characters alone first.
-        const order = s.kind === 'character' ? [listed, rank(a) - rank(b), outside(a) - outside(b)] : [outside(a) - outside(b), listed, rank(a) - rank(b)]
+        // The character is the mod's lead (first playable character) – not one of five lords it can also be played with.
+        const lead = (m: Mod) => Number(!!m.playAs?.[0] && canon(m.playAs[0].character.split(/\s*[/,]\s*/)[0]) === s.name)
+        // A character: the mods she leads, then her lists' story mods. A theme: the mods about its characters alone first.
+        const leadStory = (m: Mod) => lead(m) * Number(rank(m) <= 2) // her own campaign, progression or reskin
+        const order = s.kind === 'character'
+          ? [leadStory(b) - leadStory(a), rank(a) - rank(b), listed, outside(a) - outside(b)]
+          : [outside(a) - outside(b), listed, rank(a) - rank(b)]
         return order.find((x) => x !== 0) ?? (b.images?.length ?? 0) - (a.images?.length ?? 0)
       })
     const fromLists = s.presets.flatMap((p) => p.coverMods ?? []).map((id) => index.mods.get(id)).filter((m): m is Mod => !!m && !!cover(m))

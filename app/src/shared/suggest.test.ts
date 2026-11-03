@@ -34,7 +34,9 @@ const catalog: Catalog = {
     mod('camera', { kind: 'utility', tags: ['general'], sources: { steam: [{ id: '9', subscribers: 600000 }] } }),
     mod('modern-warfare', { kind: 'units', tags: ['general'], sources: { steam: [{ id: '8', subscribers: 900000 }] } }),
     mod('clash', { tags: ['cathay'], relations: [{ kind: 'incompatible', target: { mod: 'miao' }, source: src }] }),
-    mod('lazy-skin', { kind: 'reskin', tags: ['miao ying'] })
+    mod('lazy-skin', { kind: 'reskin', tags: ['miao ying'], name: 'Lazy Miao Ying skins' }),
+    // Tagged for Miao Ying's campaign, but a unit reskin: not her look.
+    mod('unit-skin', { kind: 'reskin', tags: ['miao ying'], name: 'Corrupted lancers' })
   ],
   presets: [
     list('miao-template', ['Miao Ying'], ['miao']),
@@ -74,6 +76,7 @@ describe('profile suggestions', () => {
     const skins = groups.find((g) => g.pick.some((p) => p.key === 'mod:miao-skin'))
     expect(skins?.pick.map((p) => p.key).sort()).toEqual(['mod:lazy-skin', 'mod:miao-skin', 'mod:miao-skin-2'])
     expect(skins?.note).toBe('They all change how Miao Ying looks')
+    expect(s.lewd.some((x) => isPickOne(x) && x.pick.some((p) => p.key === 'mod:unit-skin'))).toBe(false)
     const clash = groups.find((g) => g.pick.some((p) => p.key === 'mod:cathay-a'))
     expect(clash?.pick.map((p) => p.key).sort()).toEqual(['mod:cathay-a', 'mod:cathay-b'])
     expect(clash?.note).toBe('These do not work together')
@@ -92,8 +95,8 @@ describe('profile suggestions', () => {
     const r = suggestForProfile(catalog, index, skinned, profile, candidates(catalog, index, skinned, profile))
     const g = r.lewd.filter(isPickOne).find((x) => x.pick.some((p) => p.key === 'mod:miao-skin'))!
     expect(g.preselect).toBeUndefined()
-    expect(g.pick.every((p) => p.replaces?.[0] === 'lazy-skin')).toBe(true)
-    expect(g.pick[0].reasons[0]).toBe('Replaces lazy-skin in this list')
+    expect(g.pick.every((p) => p.replaces?.[0] === 'Lazy Miao Ying skins')).toBe(true)
+    expect(g.pick[0].reasons[0]).toBe('Replaces Lazy Miao Ying skins in this list')
   })
 
   it('explains each suggestion in at most two reasons', () => {
