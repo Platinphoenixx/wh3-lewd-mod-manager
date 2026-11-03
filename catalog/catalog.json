@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T15:31:43+00:00",
+  "generatedAt": "2026-11-03T15:50:26+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -50383,8 +50383,8 @@
         {
           "file": "@Soil_Miaoying_Corrupted_Units.pack",
           "from": "download",
-          "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Miao Ying",
+          "optional": true,
+          "note": "Broken since patch 9.0: the game stops at launch with a database error (launch test 2026-11-03); the Soil Merged Pack replaces it for Miao Ying",
           "archive": "@Soil_Miaoying_Corrupted_Units"
         },
         {

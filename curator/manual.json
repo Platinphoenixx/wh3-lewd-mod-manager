@@ -691,8 +691,8 @@
         {
           "file": "@Soil_Miaoying_Corrupted_Units.pack",
           "from": "download",
-          "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Miao Ying"
+          "optional": true,
+          "note": "Broken since patch 9.0: the game stops at launch with a database error (launch test 2026-11-03); the Soil Merged Pack replaces it for Miao Ying"
         },
         {
           "file": "@Soil_Azazel_Corrupted_Units.pack",

@@ -441,36 +441,6 @@
     },
     {
       "id": "ll-32374",
-      "packs": [
-        {
-          "file": "soil_corrupted_units_asset.pack",
-          "from": "download",
-          "optional": true,
-          "note": "Old asset pack; use the fixed re-upload 'Soil Corrupted assets (fixed vanilla overwrites)' instead – same file name, it replaces this one.",
-          "archive": "soil_corrupted_units_asset"
-        },
-        {
-          "file": "@Soil_Miaoying_Corrupted_Units.pack",
-          "from": "download",
-          "note": "Broken since patch 9.0: the game stops at launch with a database error (launch test 2026-11-03); the Soil Merged Pack replaces it.",
-          "archive": "@Soil_Miaoying_Corrupted_Units",
-          "optional": true
-        },
-        {
-          "file": "@Soil_Azazel_Corrupted_Units.pack",
-          "from": "download",
-          "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Azazel; above Azazel's Realm",
-          "archive": "@Soil_Azazel_Corrupted_Units"
-        },
-        {
-          "file": "@Soil_Kislev_Corrupted_Units.pack",
-          "from": "download",
-          "exclusiveGroup": "soil-faction",
-          "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1437802218748379136",
-          "note": "Only when playing Katarin (Kislev). Not in the LoversLab download: Kerberos' fixed pack (2025-11-11) is posted on Discord (#soiled-projects)."
-        }
-      ],
       "knownIssues+": [
         "The Miao Ying pack of the LoversLab download stops the game at launch since patch 9.0 (database error, launch test 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
       ]
