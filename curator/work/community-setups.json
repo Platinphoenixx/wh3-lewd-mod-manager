@@ -60,8 +60,36 @@
           "note": "the maintainer's baseline load order: Tomb Kings are the most important Warmaidens pack (their mounts were removed on purpose)"
         },
         {
-          "mod": "steam-3683061804",
-          "note": "Endo's faction reskins in one pack (Empire, High, Dark and Wood Elves, Kislev, Bretonnia, Cathay): they add female targets for the matched animations and work with Community Beastmen as long as they do not reskin the Beastmen (maintainer); its Ungor part has no effect against CB's own Ungors, and with its Kislev part CB's Powderjacks mercenaries get female voices"
+          "mod": "steam-3622829128",
+          "note": "the game takes only one merged audio bank, so several of Endo's reskins need this merge to keep their voices (Endo)"
+        },
+        {
+          "mod": "steam-3621449095",
+          "note": "Endo's Empire reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3616234518",
+          "note": "Endo's High Elves reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3616082403",
+          "note": "Endo's Dark Elves reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3672266382",
+          "note": "Endo's Wood Elves reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3647419004",
+          "note": "Endo's Bretonnia reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3679399151",
+          "note": "Endo's Cathay reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen)"
+        },
+        {
+          "mod": "steam-3301596500",
+          "note": "Endo's Kislev reskin: female infantry as targets for the matched animations (the maintainer: Endo's reskins of other factions work as long as they do not reskin the Beastmen); it makes CB's bandit Powderjacks mercenaries use female voices"
         },
         {
           "mod": "nx-31",
@@ -128,6 +156,10 @@
         {
           "mod": "nx-293",
           "note": "Endo's Unit Idles conflict with the matched animations (the patches shifted its animation slots like the matched entries); no other animation mods next to Community Beastmen (maintainer)"
+        },
+        {
+          "mod": "steam-3683061804",
+          "note": "its Female Ungors part replaces the game's standard Ungor model, so every Ungor unit that does not use Community Beastmen's own models turns female – and Ungors play the Beastmen's matched animations; take Endo's single faction reskins instead (file comparison 2026-11-03)"
         }
       ]
     },
