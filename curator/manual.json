@@ -698,8 +698,8 @@
         {
           "file": "@Soil_Azazel_Corrupted_Units.pack",
           "from": "download",
-          "exclusiveGroup": "soil-faction",
-          "note": "Only when playing Azazel; above Azazel's Realm"
+          "optional": true,
+          "note": "Broken since patch 9.0: the game stops at launch with a database error in land_units_to_unit_abilites_junctions (launch test 2026-11-03, also alone); the Soil Merged Pack replaces it for Azazel"
         },
         {
           "file": "@Soil_Kislev_Corrupted_Units.pack",
