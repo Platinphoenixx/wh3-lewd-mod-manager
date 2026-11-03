@@ -457,7 +457,7 @@
       }
     },
     {
-      "id": "ll-24004",
+      "id": "ll-24004", "_replaces": ["packs"],
       "cleanup": {
         "staleDataPacks": [
           "Corrupted_Valkia_Compiled.pack"
@@ -494,9 +494,10 @@
       }
     },
     {
-      "id": "ll-23876",
+      "id": "ll-23876", "_replaces": ["cleanup"],
       "cleanup": {
-        "note": "The LoversLab file is MiaoYingCorrupted_Compendium.pack, the Steam version (3705392682, since April 2026) is MiaoYingCorrupted_Compendium_workshop.pack. Use only one. Azazel's Realm's play-as overwrite expects the LoversLab name; with the Steam version it crashes at startup (renaming fixes it but breaks the Ensign Loi dependency)."
+        "staleDataPacks": ["MiaoYingCorrupted_Compendium.pack", "@Compendium_sheaModify.pack", "Compendium_KerbPatch.pack"],
+        "note": "The LoversLab file is MiaoYingCorrupted_Compendium.pack, the Steam version (3705392682, since April 2026) is MiaoYingCorrupted_Compendium_workshop.pack. Use only one: with the old file still in data the game shows an error or crashes at start even when only the Workshop version is enabled. The Shea Modify and KerbPatch add-on packs are merged into the Compendium. Azazel's Realm's play-as overwrite expects the LoversLab name; with the Steam version it crashes at startup (renaming fixes it but breaks the Ensign Loi dependency)."
       }
     },
     {
@@ -618,7 +619,7 @@
       ]
     },
     {
-      "id": "ll-23966",
+      "id": "ll-23966", "_replaces": ["packs"],
       "packs": [
         {
           "file": "li_katarin_progression_workshop.pack",
@@ -680,7 +681,7 @@
       ]
     },
     {
-      "id": "ll-32374",
+      "id": "ll-32374", "_replaces": ["packs"],
       "packs": [
         {
           "file": "soil_corrupted_units_asset.pack",

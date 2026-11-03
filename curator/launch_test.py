@@ -47,6 +47,7 @@ req_path = ROOT / "raw" / "steam_required.json"
 COLLECTIONS = set(json.loads(req_path.read_text("utf-8")).get("collections", [])) if req_path.exists() else set()
 norm = lambda n: re.sub(r"[^a-z0-9]", "", n.lower())
 RESULTS = ROOT / "raw" / "launch_results.json"
+MOD_RESULTS = ROOT / "raw" / "launch_mods.json"
 
 
 def fingerprint(preset: dict) -> str:
@@ -65,6 +66,18 @@ def record(r: dict, fp: str, game: str):
     data[r["id"]] = {"result": r["result"], "game": game, "date": datetime.date.today().isoformat(), "fingerprint": fp,
                      "scriptErrors": len(r.get("scriptErrors", []))}
     RESULTS.write_text(json.dumps(dict(sorted(data.items())), ensure_ascii=False, indent=1) + "\n", "utf-8", newline="\n")
+
+
+def record_mods(preset: dict, game: str):
+    """Every mod of a list that reached the main menu: confirmed for this game version (the build compares the date with
+    the last big game update, so the confirmation lapses by itself)."""
+    data = json.loads(MOD_RESULTS.read_text("utf-8")) if MOD_RESULTS.exists() else {}
+    today = datetime.date.today().isoformat()
+    for e in preset["entries"]:
+        mid = (e.get("target") or {}).get("mod")
+        if mid:
+            data[mid] = {"game": game, "date": today}
+    MOD_RESULTS.write_text(json.dumps(dict(sorted(data.items())), ensure_ascii=False, indent=1) + "\n", "utf-8", newline="\n")
 
 
 def snowflake_date(name: str) -> str:
@@ -295,6 +308,8 @@ def main():
             results.append(r)
             if p.get("origin") != "profile":  # only the catalog's own templates are marked launch-tested
                 record(r, p["fingerprint"], version)
+            if r["result"] == "main menu":
+                record_mods(next(x for x in catalog["presets"] + extra if x["id"] == p["id"]), version)
             print(f"{p['id']}: {r['result']} ({r['detail']}), script errors {len(r['scriptErrors'])}", flush=True)
             (work / "results.json").write_text(json.dumps(results, ensure_ascii=False, indent=1), "utf-8")
     finally:

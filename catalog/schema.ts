@@ -189,6 +189,12 @@ export interface Mod {
   knownIssues?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
+  /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */
+  updated?: string;
+  /** It changes game data (database tables or scripts), from the pack analyses or its kind. Set by the build. */
+  changesData?: boolean;
+  /** Date of a launch test after the last big game update with this mod in the list (main menu reached). Set by the build. */
+  confirmed?: string;
   /** Script errors of the mod that are known and do no harm (script path + a text of the message); shown, not counted as errors. */
   harmlessScriptErrors?: { script: string; match: string; note: string }[];
   /** Fixes players shared for it (links and what to do), each accepted by a maintainer (community.json, type "fix"). */
@@ -302,6 +308,8 @@ export interface Relation {
   condition?: string;
   /** For "requires": the pack of the target mod that is needed, when the target has versions (Community Beastmen full vs. light). */
   pack?: string;
+  /** For a conditional "requires": it holds whenever this pack of the mod itself is loaded (from the condition text). */
+  whenPack?: string;
   /** Alternatives: of all "recommends"/"optional" relations sharing a group, pick at most one. */
   exclusiveGroup?: string;
   /** "community" = accepted community contribution, "user" = the local user's own rule (never in catalog.json). */

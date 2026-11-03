@@ -435,9 +435,23 @@ def main():
     twmods = load(twmods_path) if twmods_path.exists() else {}
 
     mods, external, notes, dupes, deferred = {}, {}, list(WIKI_NOTES) + DISCORD_NOTES, [], []
+    # Which follow-up layer set a field last: manual.json replacing it (silently, as the last layer) goes into the report,
+    # so a correction made in a follow-up file is not lost unnoticed.
+    field_src, overrides, pending_ops = {}, [], []
     for p in parts:
         d = load(p)
+        name = Path(p).name
         for m in d.get("mods", []):
+            for f in m:
+                if f.startswith("_") or f == "id":
+                    continue
+                base_f = f.rstrip("+-")
+                if name == "manual.json" and not f.endswith(("+", "-")) and (m["id"], base_f) in field_src:
+                    src, old = field_src[(m["id"], base_f)]
+                    if old != m[f] and base_f not in m.get("_replaces", []):  # "_replaces": checked on purpose
+                        overrides.append(f"{m['id']}.{base_f}: manual.json replaces the value from {src}")
+                elif name.startswith("followup-") and not f.endswith(("+", "-")):
+                    field_src[(m["id"], base_f)] = (name, m[f])
             if m["id"] in mods and not (p.endswith("manual.json") or Path(p).name.startswith("followup-")
                                         or Path(p).name == "auto-new.json"):
                 dupes.append(f"{m['id']} in {Path(p).name}")
@@ -446,10 +460,18 @@ def main():
                 # Override for a Steam stub that only comes into existence later in this build.
                 deferred.append(m)
                 continue
-            mods[m["id"]] = merge_entry(mods.get(m["id"], {}), m)
+            # Whole-field replacements now; "+"/"-" changes after every layer's replacements (below), so a later
+            # layer that replaces a field (manual.json) never swallows a correction a follow-up file appended.
+            mods[m["id"]] = merge_entry(mods.get(m["id"], {}), {k: v for k, v in m.items() if not k.endswith(("+", "-"))})
+            ops = {k: v for k, v in m.items() if k.endswith(("+", "-"))}
+            if ops:
+                pending_ops.append((m["id"], ops))
         for e in d.get("external", []):
             external.setdefault(e["id"], e)
         notes += d.get("notes", [])
+    for mid, ops in pending_ops:
+        if mid in mods:
+            mods[mid] = merge_entry(mods[mid], ops)
 
     # Nexus Mods finds (read by hand on nexusmods.com, raw/nexus/list-*.txt; curated in work/nexus-curation.json).
     # Mods that are mirrors of catalog entries only get their Nexus page added.
@@ -1282,6 +1304,70 @@ def main():
         if (r := launch.get(p["id"])) and r.get("fingerprint") == fp:
             p["launchTest"] = {"result": r["result"], "game": r["game"], "date": r["date"]}
 
+    # When each mod last changed (newest date any of its sources gives; a Discord post by its message id) and whether
+    # it changes game data (raw/mod_tables.json from the pack analyses, else by kind). The app holds back old
+    # data-changing mods from its suggestions after a big game update until something confirms them.
+    tables = load(CURATOR / "raw" / "mod_tables.json") if (CURATOR / "raw" / "mod_tables.json").exists() else {}
+
+    def snowflake(url: str) -> str:
+        m = re.search(r"discord\.com/channels/\d+/\d+/(\d{17,20})", url or "")
+        return datetime.fromtimestamp(((int(m.group(1)) >> 22) + 1420070400000) / 1000, timezone.utc).date().isoformat() if m else ""
+
+    for m in mods.values():
+        s = m.get("sources") or {}
+        dates = [x.get("updated") or "" for x in s.get("steam") or []] + [(s.get("loverslab") or {}).get("updated") or "",
+                 (s.get("nexus") or {}).get("updated") or ""] + [snowflake(d.get("messageUrl")) for d in s.get("discord") or []] \
+            + [snowflake(d.get("url")) for d in s.get("downloads") or []]
+        dates = [d[:10] for d in dates if d]
+        if dates:
+            m["updated"] = max(dates)
+        t = tables.get(m["id"])
+        m["changesData"] = bool(t["tables"] or t["scripts"]) if t else m.get("kind") not in ("reskin", "assets", "translation", "collection")
+    # A requirement whose condition names one of the mod's own packs ("only with @Soil_Azazel_Corrupted_Units.pack")
+    # holds whenever that pack is loaded: the app reads it as whenPack (the most specific name when several fit).
+    norm_pack = lambda s: re.sub(r"[^a-z0-9]", "", re.sub(r"\.pack$", "", s, flags=re.I).lower())
+    for m in mods.values():
+        stems = [(p["file"], norm_pack(p["file"])) for p in m.get("packs") or []]
+        for r in m.get("relations") or []:
+            if r["kind"] != "requires" or not r.get("condition") or r.get("whenPack"):
+                continue
+            cond = re.sub(r"[^a-z0-9]", "", r["condition"].lower())
+            hits = sorted((st for st in stems if len(st[1]) >= 5 and st[1] in cond), key=lambda st: -len(st[1]))
+            if hits:
+                r["whenPack"] = hits[0][0]
+
+    # Load order the tested lists imply for mods that change the same files (raw/tested_order.json, curator/derive_order.py);
+    # a curated rule for the same pair wins.
+    for r in load(CURATOR / "raw" / "tested_order.json") if (CURATOR / "raw" / "tested_order.json").exists() else []:
+        a, b = mods.get(r["above"]), mods.get(r["below"])
+        if not a or not b:
+            continue
+        lo_a, lo_b = a.setdefault("loadOrder", {}), b.setdefault("loadOrder", {})
+        names = lambda lo, side: {t.get("mod") for t in lo.get(side) or []}
+        if r["above"] in names(lo_b, "above") or r["below"] in names(lo_a, "below"):
+            continue  # curated the other way round
+        if r["below"] not in names(lo_a, "above"):
+            lo_a.setdefault("above", []).append({"mod": r["below"]})
+        if r["above"] not in names(lo_b, "below"):
+            lo_b.setdefault("below", []).append({"mod": r["above"]})
+        lo_a.setdefault("note", "Order as in the tested lists for mods that change the same files.")
+        lo_b.setdefault("note", "Order as in the tested lists for mods that change the same files.")
+
+    # Confirmed since the last big game update: in a list that reached the main menu in a launch test after it (a
+    # template or any other tested list, raw/launch_mods.json). Lapses by itself with the next big update.
+    updates = load(CURATOR / "raw" / "game_updates.json") if (CURATOR / "raw" / "game_updates.json").exists() else []
+    major = max((u["date"][:10] for u in updates), default="")
+    tested = load(CURATOR / "raw" / "launch_mods.json") if (CURATOR / "raw" / "launch_mods.json").exists() else {}
+    for p in presets:
+        if (p.get("launchTest") or {}).get("result") == "main menu":
+            for e in p["entries"]:
+                mid = (e.get("target") or {}).get("mod")
+                if mid and p["launchTest"]["date"] > (tested.get(mid) or {}).get("date", ""):
+                    tested[mid] = {"date": p["launchTest"]["date"]}
+    for mid, r in tested.items():
+        if mid in mods and r["date"] >= major:
+            mods[mid]["confirmed"] = r["date"]
+
     catalog = {
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -1318,6 +1404,9 @@ def main():
              f"- Unaufgelöste Verweise: {len(set(unresolved))}", f"- Unsichere kuratierte Einträge: {len(low)}", ""]
     if dupes:
         lines += ["## Doppelte Einträge", *[f"- {d}" for d in dupes], ""]
+    if overrides:
+        lines += ["## manual.json überschreibt Felder aus Follow-up-Dateien (prüfen, ob die Follow-up-Änderung in manual.json gehört)",
+                  *[f"- {o}" for o in overrides], ""]
     if self_refs:
         lines += ["## Verweise auf sich selbst", *[f"- {d}" for d in sorted(set(self_refs))], ""]
     lines += ["## Unaufgelöste Verweise", *[f"- {u}" for u in sorted(set(unresolved))], ""]

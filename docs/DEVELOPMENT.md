@@ -39,7 +39,10 @@ community contributions. App UI and catalog texts are English.
     guess by name, the list as played – the relay puts the whole list into the issue's ```json block). Accept adds the
     label `accepted` (apply-contribution.yml does the rest), Reject comments the reason and closes the issue.
     Tests: `WH3LMM_GITHUB_API=<url>` points it at a fake API.
-  - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested)
+  - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested). A pack name several mods
+    list (fixed re-upload, translation, a bundle carrying another mod's pack) means the mod it is a current main pack of;
+    a data pack the app installed for a current mod that lists it as a download is no stale copy of a Workshop item with
+    the same name (Community Beastmen light from the author vs. the older Workshop copy).
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested). A requirement counts as met by a mod in the profile that
     `supersedes` it (Soil's merged pack for Soil's Corrupted Units); conflicts of an option count against what the
@@ -160,10 +163,12 @@ The project keeps itself current without anyone's manual work or paid service.
 
 Curated data is layered; later layers override earlier ones field by field (a field is replaced whole):
 `auto-new.json` < `part-*.json` < `followup-ll.json` < `followup-steam.json` < `followup-research.json` < `followup-review.json`
-< `followup-archives.json` < `followup-discord.json` < `followup-community.json` < `manual.json`; then `community.json` is applied
-on top. In a layer, `"field+": [...]` appends to a list field and `"field-": [...]` drops the items that contain one of
-the texts (relations/packs: by target mod, pack, Steam id or file), so a later pass can retire a fixed warning without
-repeating the whole list. `followup-discord.json` holds the facts of the Discord pass (2026-11-02: the mod's author, a
+< `followup-archives.json` < `followup-discord.json` < `followup-setups.json` < `followup-community.json` < `manual.json`; then
+`community.json` is applied on top. In a layer, `"field+": [...]` appends to a list field and `"field-": [...]` drops the items
+that contain one of the texts (relations/packs: by target mod, pack, Steam id or file), so a later pass can retire a fixed
+warning without repeating the whole list; these changes apply after every layer's whole-field replacements, so manual.json
+replacing a field never swallows them. When manual.json replaces a field a follow-up file set to something else, the
+build lists it in `work/report.md`; an entry marks a replacement it means with `"_replaces": ["packs"]`. `followup-discord.json` holds the facts of the Discord pass (2026-11-02: the mod's author, a
 Modder-role member or several players; never a single report). Relations and known issues from `discord-mods.json` are
 added after the layers, so fix those in that file; a requirement that only holds in a case is written
 `{"ref": "...", "condition": "..."}` there. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
@@ -210,13 +215,25 @@ over all layers – fix texts there.
   `plan --game <folder> --packs <download folders>` lists what is missing; `run` does the starts (Steam running, PC not
   in use, about 1 h for all templates); helper `launch_test_watch.ps1`. Run it after a major game update. A template
   that stops the game gets a known issue with the game's report and is fixed through `presetReplacements` or
-  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu. `--presets <file>` adds lists that
+  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu. Every mod of a list that reached
+  the main menu is recorded in `curator/raw/launch_mods.json` (game version, date). `--presets <file>` adds lists that
   are not templates – the profiles Play makes from every size and random choices (generator and halving helper in the dev
   tools); their results stay in the test folder. Of two packs with the same name the copy in the mod's own archive folder
   (`ll/<id>`, `nexus/<id>`) is used. Every result also goes into
   `curator/raw/launch_results.json` (result, game version, date, a fingerprint of the template's packs); the build
   sets `Preset.launchTest` only while the template still has exactly the tested packs, and the app shows
   "launch-tested" from it.
+- Old mods that change game data are held back: `curator/mod_tables.py <archive analysis>` writes which mods change
+  database tables (`raw/mod_tables.json`, else guessed by kind); the build sets `Mod.updated` (newest file date),
+  `Mod.changesData` and `Mod.confirmed` (date of the last launch test that reached the main menu with it, from
+  `launch_mods.json` and launch-tested templates). Suggestions skip a data-changing mod older than the last major game
+  update unless a launch test since then confirms it (`isHeldBack` in `suggest.ts`); tested and community lists keep it.
+- `curator/derive_order.py <archive analysis>` → `raw/tested_order.json`: two mods that overwrite the same files and stand
+  in the same order in every tested list that has both keep that order (a `loadOrder` rule, unless a curated rule says
+  otherwise) – the case of Readman's TTT below CCC.
+- A requirement that holds only for one of a mod's own packs ("Alarielle version") gets `Relation.whenPack`, derived from
+  the condition text; the profile adds it only when that pack is loaded. `Relation.pack` names the pack a requirement
+  needs of a mod with versions.
 - `curator/work/community-setups.json`: setups written from a community's own Discord channel (Beastmen, Greenskins, Lin's
   Corrupted Ascension, Imrik): the mods it names (`pack` picks one pack of a mod) become a guide template plus what they
   strictly need, ordered by the catalog's rules; `theme` groups it in Play. Facts behind them are in `work/followup-setups.json`.

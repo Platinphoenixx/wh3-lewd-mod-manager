@@ -28,6 +28,11 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
   const bySteamId = new Map<string, ModTarget>()
   const byPack = new Map<string, ModTarget>()
   const packOwners = new Map<string, { mod: string; steamId?: string }[]>()
+  // A pack name several mods list (a fixed re-upload, a translation, a bundle that carries another mod's pack) means,
+  // when nothing else tells, the mod it is a main pack of that is still current – not the superseded original.
+  const rank = (m: Mod, optional?: boolean) =>
+    (optional ? 1 : 0) + (m.status === 'superseded' || m.status === 'abandoned' ? 2 : 0)
+  const packRank = new Map<string, number>()
   for (const e of catalog.external) {
     if (e.steamId) bySteamId.set(e.steamId, { external: e.id })
   }
@@ -36,7 +41,11 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
     if (m.kind === 'collection') continue
     for (const s of m.sources.steam ?? []) if (!bySteamId.has(s.id)) bySteamId.set(s.id, { mod: m.id })
     for (const p of m.packs ?? []) {
-      if (!byPack.has(p.file.toLowerCase())) byPack.set(p.file.toLowerCase(), { mod: m.id })
+      const r = rank(m, p.optional)
+      if (!byPack.has(p.file.toLowerCase()) || r < packRank.get(p.file.toLowerCase())!) {
+        byPack.set(p.file.toLowerCase(), { mod: m.id })
+        packRank.set(p.file.toLowerCase(), r)
+      }
       const owners = packOwners.get(p.file.toLowerCase()) ?? []
       if (p.from === 'steam' && !owners.some((o) => o.mod === m.id)) packOwners.set(p.file.toLowerCase(), [...owners, { mod: m.id, steamId: p.steamId }])
       if (p.steamId && !bySteamId.has(p.steamId)) bySteamId.set(p.steamId, { mod: m.id })
@@ -138,9 +147,17 @@ export function staleDataPacks(index: CatalogIndex, packs: InstalledPack[]): Sta
     workshop.map((p) => targetFor(index, p)).filter((t): t is ModTarget => !!t).map(targetKey)
   )
   const warnings: StaleWarning[] = []
-  // A pack from a community fix stands in for the Workshop copy on purpose.
+  // A pack from a community fix stands in for the Workshop copy on purpose, and so does one the app installed for a
+  // current mod that lists it as its download (a working re-upload of a Workshop item with the same file name).
+  const deliberate = (p: InstalledPack) => {
+    const m = p.modId ? index.mods.get(p.modId) : undefined
+    return !!m && m.status !== 'superseded' && m.status !== 'abandoned' &&
+      !!m.packs?.some((x) => x.from === 'download' && x.file.toLowerCase() === p.file.toLowerCase()) &&
+      !workshop.some((w) => w.file.toLowerCase() === p.file.toLowerCase() && (targetFor(index, w) as { mod?: string } | undefined)?.mod === m.id)
+  }
   for (const p of packs.filter((x) => x.source === 'data' && !x.fix)) {
     const name = p.file.toLowerCase()
+    if (workshopFiles.has(name) && deliberate(p)) continue
     if (workshopFiles.has(name)) {
       warnings.push({ pack: p, reason: 'Same file name as a subscribed Workshop item; the data copy wins and is probably outdated.' })
       continue

@@ -94,4 +94,27 @@ describe('match', () => {
     ])
     expect(warnings.map((w) => w.pack.file)).toEqual(['Alarielle_Temptation_Bloom.pack', 'Alarielle_Temptation_Bloom_Assets.pack'])
   })
+
+  it('takes a pack name several mods list as the current main pack, not a superseded or optional copy', () => {
+    const cat: Catalog = { ...catalog, presets: [], mods: [
+      mod('nx-2', { status: 'superseded', packs: [{ file: 'PleasurePikes.pack', from: 'download' }] }),
+      mod('nx-195', { packs: [{ file: 'PleasurePikes.pack', from: 'download' }] }),
+      mod('ll-32374', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download', optional: true }] }),
+      mod('ll-48415', { packs: [{ file: 'soil_corrupted_units_asset.pack', from: 'download' }] })
+    ] }
+    const ix = buildIndex(cat)
+    expect(ix.byPack.get('pleasurepikes.pack')).toEqual({ mod: 'nx-195' })
+    expect(ix.byPack.get('soil_corrupted_units_asset.pack')).toEqual({ mod: 'll-48415' })
+  })
+
+  it('does not warn about a working re-upload the app installed over a Workshop item with the same file name', () => {
+    const cat: Catalog = { ...catalog, presets: [], mods: [
+      mod('ll-46165', { packs: [{ file: 'community_beastmen_light.pack', from: 'download' }] }),
+      mod('steam-3698534641', { sources: { steam: [{ id: '3698534641' }] }, packs: [{ file: 'community_beastmen_light.pack', from: 'steam', steamId: '3698534641' }] })
+    ] }
+    const ws = pack('community_beastmen_light.pack', 'workshop', '3698534641')
+    const byHand = pack('community_beastmen_light.pack', 'data')
+    expect(staleDataPacks(buildIndex(cat), [ws, { ...byHand, modId: 'll-46165' }])).toEqual([])
+    expect(staleDataPacks(buildIndex(cat), [ws, byHand])).toHaveLength(1)
+  })
 })

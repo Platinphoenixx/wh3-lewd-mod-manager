@@ -112,6 +112,17 @@ describe('resolveProfile', () => {
     expect(r.entries.find((e) => e.key === 'mod:beasts')?.packs).toEqual(['full.pack'])
   })
 
+  it('applies a requirement tied to one of its own packs when that pack is loaded', () => {
+    const c = { ...catalog, mods: [...catalog.mods,
+      mod('seduce', { packs: [{ file: 'cth.pack', from: 'download', optional: true, note: 'Alarielle version' }, { file: 'kat.pack', from: 'download', optional: true, note: 'Katarin version' }],
+        relations: [
+          { kind: 'requires', target: { mod: 'lyra-assets' }, condition: 'Alarielle version (cth)', whenPack: 'cth.pack', source: src },
+          { kind: 'requires', target: { mod: 'unrelated' }, condition: 'Katarin version (kat)', whenPack: 'kat.pack', source: src }] })] }
+    const r = resolveProfile(c, buildIndex(c), preset, { extras: ['mod:seduce'], removed: [] })
+    expect(r.entries.map((e) => e.key)).toContain('mod:lyra-assets')
+    expect(r.entries.map((e) => e.key)).not.toContain('mod:unrelated')
+  })
+
   it('puts a reskin the player picked on top, so it beats the template mods that change the same models', () => {
     const r = resolveProfile(catalog, index, preset, { extras: ['mod:unrelated', 'mod:alarielle-skin'], removed: [] })
     expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])

@@ -87,12 +87,17 @@ export function suggestForProfile(
   for (const m of profileMods.filter((x) => x.kind === 'reskin')) for (const c of reskinSubjects(m, characters)) profileSkins.set(c, [...(profileSkins.get(c) ?? []), m.name])
 
   const story = (m?: Mod) => !!m && STORY_KINDS.includes(m.kind)
+  const lastMajor = [...(catalog.gameUpdates ?? [])].map((u) => u.date.slice(0, 10)).sort().pop() ?? ''
+  const heldBack = (m: Mod) => isHeldBack(m, lastMajor)
   const out = { lewd: [] as Suggestion[], general: [] as Suggestion[], character: leadName }
   for (const c of options) {
     const m = c.mod
     if (!m || c.superseded || c.conflicts.length || c.alternativeTo.length || m.kind === 'translation' || m.kind === 'collection') continue
     if (['abandoned', 'superseded'].includes(m.status ?? '')) continue
     if (m.tags.includes('modder-resource')) continue // source files for modders (Blender models), nothing the game loads
+    // A mod that changes game data and was not updated since the last big game update often stops the game; it is only
+    // offered once a launch test after that update confirmed it (the catalog's Mod.confirmed).
+    if (heldBack(m)) continue
     if (removed.has(c.key)) continue // the player took it out of the template on purpose
     // Nothing that would bring back what the player removed, or pull in a whole other campaign.
     if (c.addsDependencies.some((d) => removed.has(d))) continue
@@ -205,4 +210,9 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
     return one
   })
   return entries.sort((a, b) => b.score - a.score)
+}
+
+/** Changes game data, last updated before the given big game update (YYYY-MM-DD) and not confirmed by a launch test since. */
+export function isHeldBack(m: Mod, lastMajor: string): boolean {
+  return !!lastMajor && m.changesData === true && !!m.updated && m.updated < lastMajor && !(m.confirmed && m.confirmed >= lastMajor)
 }

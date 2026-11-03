@@ -1,6 +1,7 @@
 import type { Catalog, Mod, ModTarget, Preset, Relation } from '@catalog/schema'
 import { parseTargetKey, targetKey, type CatalogIndex } from './match'
 import { isOwnKey } from './own'
+import { missingPacks, wantedPacks } from './install'
 
 /** A user's profile: a community preset as base, plus switched-on extras and switched-off base entries. */
 export interface Profile {
@@ -88,8 +89,24 @@ function relationsOf(index: CatalogIndex, key: string): Relation[] {
   return 'mod' in t ? index.mods.get(t.mod)?.relations ?? [] : []
 }
 
+/**
+ * The packs an entry loads, for requirements tied to one pack (`whenPack`): the template's packs when it names them,
+ * else what the install step fetches (needed packs, the profile's characters' version of a pick-one group).
+ */
+export type PacksOf = (key: string) => string[] | undefined
+export function defaultPacksOf(index: CatalogIndex, characters: string[] = [], known: Map<string, string[]> = new Map()): PacksOf {
+  return (key) => {
+    if (known.has(key)) return known.get(key)
+    const t = parseTargetKey(key)
+    const mod = 'mod' in t ? index.mods.get(t.mod) : undefined
+    if (!mod) return undefined
+    const need = missingPacks(mod, undefined, []).map((p) => p.file)
+    return need.length ? need : wantedPacks(mod, undefined, characters) ?? []
+  }
+}
+
 /** All dependencies (transitively) of the given keys that are not in `have`. */
-export function missingDependencies(index: CatalogIndex, keys: string[], have: Set<string>): Map<string, string> {
+export function missingDependencies(index: CatalogIndex, keys: string[], have: Set<string>, packsOf?: PacksOf): Map<string, string> {
   const added = new Map<string, string>() // dependency key -> required by key
   const queue = [...keys]
   // A mod that replaces the required one does its job (Soil's merged pack for Soil's Corrupted Units).
@@ -98,7 +115,9 @@ export function missingDependencies(index: CatalogIndex, keys: string[], have: S
   while (queue.length) {
     const k = queue.shift()!
     for (const r of relationsOf(index, k)) {
-      if (r.kind !== 'requires' || r.condition) continue
+      if (r.kind !== 'requires') continue
+      // A condition the app can read is a pack of the mod itself; other conditions stay with the player.
+      if (r.condition && !(r.whenPack && packsOf?.(k)?.some((p) => p.toLowerCase() === r.whenPack!.toLowerCase()))) continue
       const dk = targetKey(r.target)
       if (have.has(dk) || added.has(dk) || replaced(dk)) continue
       added.set(dk, k)
@@ -141,7 +160,10 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   const removed = new Set(profile.removed)
   const chosen = [...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras]
   // What the extras pull in is part of the profile too (a conflict with SFO counts when a switched-on patch needs SFO).
-  const current = [...chosen, ...missingDependencies(index, chosen, new Set(chosen)).keys()]
+  const known = new Map<string, string[]>()
+  preset.entries.forEach((e, i) => { const k = baseKeys(preset)[i]; known.set(k, [...(known.get(k) ?? []), e.pack]) })
+  const packsOf = defaultPacksOf(index, preset.playAs, known)
+  const current = [...chosen, ...missingDependencies(index, chosen, new Set(chosen), packsOf).keys()]
   const inProfile = new Set(current)
   const found = new Map<string, Candidate>()
 
@@ -216,7 +238,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   const list = [...found.values()]
   for (const c of list) {
     c.alternativeTo = alternativesOf(c.key)
-    c.addsDependencies = [...missingDependencies(index, [c.key], inProfile).keys()]
+    c.addsDependencies = [...missingDependencies(index, [c.key], inProfile, packsOf).keys()]
     // What it brings along counts too: a submod that pulls in SFO conflicts with what SFO conflicts with.
     const brings = new Set([c.key, ...c.addsDependencies])
     c.conflicts = [...new Set(conflictsIn(index, [...current, ...brings])
@@ -249,7 +271,7 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
   const have = new Set(entries.map((e) => e.key))
   // The player's own mods are placed later from their pack contents (placeOwnMods).
   const extras = profile.extras.filter((k) => !have.has(k) && !isOwnKey(k))
-  const deps = missingDependencies(index, extras, new Set([...have, ...extras]))
+  const deps = missingDependencies(index, extras, new Set([...have, ...extras]), defaultPacksOf(index, preset.playAs, new Map(entries.map((e) => [e.key, e.packs ?? []]))))
   const toPlace: ResolvedEntry[] = [
     ...extras.map((k) => ({ key: k, name: nameOf(catalog, index, k), origin: 'extra' as const })),
     ...[...deps].map(([k, by]) => ({ key: k, name: nameOf(catalog, index, k), origin: 'dependency' as const, requiredBy: nameOf(catalog, index, by) }))

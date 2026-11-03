@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
 import { candidates } from './profile'
-import { isPickOne, suggestForProfile, type SuggestionEntry } from './suggest'
+import { isHeldBack, isPickOne, suggestForProfile, type SuggestionEntry } from './suggest'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
   return {
@@ -106,5 +106,17 @@ describe('profile suggestions', () => {
     expect(byKey.get('mod:flags')).toEqual(['Recommended by miao'])
     expect(byKey.get('mod:cathay-units')).toEqual(['For Cathay', '25k LoversLab downloads'])
     expect(byKey.get('mod:camera')).toEqual(['In 1 of 1 community lists for Miao Ying', '600k Workshop subscribers'])
+  })
+})
+
+describe('isHeldBack', () => {
+  const m = (x: Partial<Mod>) => ({ id: 'x', changesData: true, updated: '2025-01-01', ...x }) as Mod
+  it('holds back an old mod that changes game data until a launch test after the update confirms it', () => {
+    expect(isHeldBack(m({}), '2026-09-24')).toBe(true)
+    expect(isHeldBack(m({ confirmed: '2026-11-03' }), '2026-09-24')).toBe(false)
+    expect(isHeldBack(m({ confirmed: '2026-09-01' }), '2026-09-24')).toBe(true)
+    expect(isHeldBack(m({ updated: '2026-10-01' }), '2026-09-24')).toBe(false)
+    expect(isHeldBack(m({ changesData: false }), '2026-09-24')).toBe(false)
+    expect(isHeldBack(m({ updated: undefined }), '2026-09-24')).toBe(false)
   })
 })
