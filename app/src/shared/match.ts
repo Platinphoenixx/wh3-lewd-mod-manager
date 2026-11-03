@@ -6,6 +6,8 @@ export interface CatalogIndex {
   mods: Map<string, Mod>
   bySteamId: Map<string, ModTarget>
   byPack: Map<string, ModTarget>
+  /** Pack names without leading "@"/"!" (Discord drops or keeps them), only where one mod has that name. */
+  byBarePack: Map<string, ModTarget>
   /**
    * Catalog mods that list a pack as a Workshop file (lower case), with the Workshop item they name: the same
    * file counts for all of them, unless one names another item (a re-upload with the same pack name).
@@ -59,7 +61,13 @@ export function buildIndex(catalog: Catalog): CatalogIndex {
       if (e.steamId && !bySteamId.has(e.steamId)) bySteamId.set(e.steamId, e.target)
     }
   }
-  return { mods, bySteamId, byPack, packOwners }
+  const bare = new Map<string, ModTarget[]>()
+  for (const [file, t] of byPack) {
+    const list = bare.get(bareName(file)) ?? []
+    if (!list.some((x) => targetKey(x) === targetKey(t))) bare.set(bareName(file), [...list, t])
+  }
+  const byBarePack = new Map([...bare].filter(([, l]) => l.length === 1).map(([b, l]) => [b, l[0]]))
+  return { mods, bySteamId, byPack, byBarePack, packOwners }
 }
 
 export function targetFor(index: CatalogIndex, pack: InstalledPack): ModTarget | undefined {
@@ -69,8 +77,10 @@ export function targetFor(index: CatalogIndex, pack: InstalledPack): ModTarget |
   }
   // Packs this app installed itself carry the mod they were downloaded for.
   if (pack.modId && index.mods.has(pack.modId)) return { mod: pack.modId }
-  return index.byPack.get(pack.file.toLowerCase())
+  return index.byPack.get(pack.file.toLowerCase()) ?? index.byBarePack?.get(bareName(pack.file))
 }
+
+const bareName = (file: string) => file.toLowerCase().replace(/^[@!]+/, '')
 
 /** Installed packs grouped by catalog target, plus the ones the catalog does not know. */
 export function matchInstalled(index: CatalogIndex, packs: InstalledPack[]) {

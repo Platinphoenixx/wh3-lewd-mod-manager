@@ -107,6 +107,12 @@ describe('match', () => {
     expect(ix.byPack.get('soil_corrupted_units_asset.pack')).toEqual({ mod: 'll-48415' })
   })
 
+  it('recognises a pack whose leading "!" or "@" differs from the catalog name', () => {
+    const cat: Catalog = { ...catalog, presets: [], mods: [mod('dc-orc', { packs: [{ file: 'OrcMatched_mod02.pack', from: 'download' }] })] }
+    const { known } = matchInstalled(buildIndex(cat), [pack('!!!OrcMatched_mod02.pack', 'data')])
+    expect([...known.keys()]).toEqual(['mod:dc-orc'])
+  })
+
   it('does not warn about a working re-upload the app installed over a Workshop item with the same file name', () => {
     const cat: Catalog = { ...catalog, presets: [], mods: [
       mod('ll-46165', { packs: [{ file: 'community_beastmen_light.pack', from: 'download' }] }),
