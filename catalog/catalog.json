@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T10:16:37+00:00",
+  "generatedAt": "2026-11-03T10:52:10+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -49778,6 +49778,16 @@
             "mod": "ll-32374"
           },
           "note": "The merged pack holds the Miao Ying and Azazel packs of Soil's Corrupted Units with the same scripts (corrupted_barracks.lua, corrupted_startup.lua): load one or the other. Soil's Kislev pack does not work with the Azazel units either.",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Holds the Miao Ying and Azazel packs of Soil's Corrupted Units, so mods that need those units work with it (Soil's Kislev pack is not part of it).",
           "source": {
             "type": "inferred"
           }

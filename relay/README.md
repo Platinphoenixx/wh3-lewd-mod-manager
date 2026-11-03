@@ -1,6 +1,6 @@
 # Relay (Cloudflare Worker)
 
-Lets players send **problem reports** and **contributions** (new mod, feedback, rule, correction) from
+Lets players send **problem reports** and **contributions** (new mod, feedback, rule, correction, fix for a mod that does not start) from
 the app without any account. Free Cloudflare plan; nothing to maintain once it runs.
 
 | Path | What happens |

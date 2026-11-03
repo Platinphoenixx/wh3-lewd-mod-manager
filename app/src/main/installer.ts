@@ -19,6 +19,8 @@ export interface InstalledRecord {
   modId?: string
   source: string // archive or pack the file came from
   installedAt: string
+  /** The community fix (Mod.fixes id) it was installed from. */
+  fix?: string
 }
 
 export interface InstallResult {
@@ -64,7 +66,7 @@ async function extract(archive: string, target: string): Promise<void> {
  * Installs a .pack or an archive with packs into data. moveSource: a file the player picked or dropped is
  * removed after a successful install (it now lives in data), unless it already is in the data folder.
  */
-export async function installFile(file: string, dataPath: string, modId?: string, moveSource = false): Promise<InstallResult> {
+export async function installFile(file: string, dataPath: string, modId?: string, moveSource = false, fix?: string): Promise<InstallResult> {
   const ext = extname(file).toLowerCase()
   if (ext === '.txt') {
     const link = (await readFile(file, 'utf8').catch(() => '')).match(/https?:\/\/\S+/)?.[0]
@@ -95,7 +97,7 @@ export async function installFile(file: string, dataPath: string, modId?: string
       }
       await copyFile(p, join(dataPath, name))
       done.push(name)
-      const rec: InstalledRecord = { pack: name, modId, source: basename(file), installedAt: new Date().toISOString() }
+      const rec: InstalledRecord = { pack: name, modId, source: basename(file), installedAt: new Date().toISOString(), ...(fix ? { fix } : {}) }
       const i = records.findIndex((r) => r.pack.toLowerCase() === rec.pack.toLowerCase())
       if (i >= 0) records[i] = rec
       else records.push(rec)

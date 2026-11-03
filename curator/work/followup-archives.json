@@ -35,6 +35,16 @@
           "source": {
             "type": "inferred"
           }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "Holds the Miao Ying and Azazel packs of Soil's Corrupted Units, so mods that need those units work with it (Soil's Kislev pack is not part of it).",
+          "source": {
+            "type": "inferred"
+          }
         }
       ]
     },

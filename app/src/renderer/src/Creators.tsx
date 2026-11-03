@@ -69,8 +69,21 @@ export function creatorsOf(works: Work[], mainIds = new Set<string>()): Creator[
   return list.sort((a, b) => Number(b.lead) - Number(a.lead) || (a.lead ? leadRank(a) - leadRank(b) : 0) || b.works.length - a.works.length || a.name.localeCompare(b.name))
 }
 
+/**
+ * The creator of a mod with the support links found on any of their mods' pages (a link is often only on the main
+ * mod's page); links that name someone else as their owner stay with that person.
+ */
+export function creatorOfMod(data: AppData, mod: Mod): Creator | undefined {
+  const name = mod.authors[0]
+  if (!name) return creatorsOf([workOfMod(mod)])[0]
+  const theirs = data.catalog.mods.filter((m) => m.authors[0]?.toLowerCase() === name.toLowerCase())
+    .map((m) => workOfMod({ ...m, support: (m.support ?? []).filter((s) => !s.owner || s.owner.toLowerCase() === name.toLowerCase()) }))
+  const c = creatorsOf(theirs).find((x) => x.name.toLowerCase() === name.toLowerCase())
+  return c && { ...c, works: c.works.filter((w) => w.id === mod.id) }
+}
+
 /** ♥ Support: the creator's support pages as a small menu. */
-function SupportButton({ c }: { c: Creator }) {
+export function SupportButton({ c }: { c: Creator }) {
   const [open, setOpen] = useState(false)
   useEffect(() => {
     if (!open) return
@@ -106,7 +119,11 @@ export function MadeBy({ works, preset, title = 'Made by' }: { works: Work[]; pr
   const data = useData()
   const [all, setAll] = useState(false)
   const mainIds = new Set(preset.entries.flatMap((e) => (e.target && 'mod' in e.target ? [e.target.mod] : [])))
-  const creators = creatorsOf(works, mainIds)
+  // A creator's support links may be on a mod of theirs that is not in this list: they count too.
+  const creators = creatorsOf(works, mainIds).map((c) => {
+    const more = creatorOfMod(data, { ...(c.works.find((w) => w.isMod) as Mod | undefined ?? ({ authors: [c.name] } as Mod)), authors: [c.name] })?.support ?? []
+    return { ...c, support: [...c.support, ...more.filter((s) => !c.support.some((x) => x.url.toLowerCase() === s.url.toLowerCase()))] }
+  })
   if (!creators.length) return null
   const shown = all ? creators : creators.slice(0, 12)
   return (
@@ -151,7 +168,7 @@ export function MadeBy({ works, preset, title = 'Made by' }: { works: Work[]; pr
 /** Creator line in a mod's detail view: name, support, and more mods by them. */
 export function CreatorSection({ mod }: { mod: Mod }) {
   const data = useData()
-  const [c] = creatorsOf([workOfMod(mod)])
+  const c = creatorOfMod(data, mod)
   const more = mod.authors.length
     ? data.catalog.mods.filter((m) => m.id !== mod.id && m.authors.some((a) => mod.authors.includes(a)) && !['superseded', 'abandoned'].includes(m.status ?? ''))
     : []

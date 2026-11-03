@@ -74,7 +74,8 @@ export function planLaunch(
   const packs: InstalledPack[] = []
   const missing: string[] = []
   for (const e of entries) {
-    const all = packsFor(e.key)
+    // A community fix's copy comes before the Workshop pack of the same name (the first line of a name wins).
+    const all = [...packsFor(e.key)].sort((a, b) => Number(!!b.fix) - Number(!!a.fix))
     // A template names the exact packs; other installed packs of the same mod (variants) stay out.
     const named = (e.packs ?? (e.pack ? [e.pack] : [])).map((p) => p.toLowerCase())
     const exact = named.length ? all.filter((p) => named.includes(p.file.toLowerCase())) : []

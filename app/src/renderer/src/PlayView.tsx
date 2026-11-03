@@ -3,7 +3,8 @@ import Markdown from 'react-markdown'
 import type { Mod, Preset } from '@catalog/schema'
 import { lastMajorUpdate } from '@shared/health'
 import { installSourceFor } from '@shared/install'
-import { matchInstalled } from '@shared/match'
+import { matchInstalled, parseTargetKey } from '@shared/match'
+import { playWith, subjectFacts } from '@shared/playwith'
 import { resolveProfile, type Profile } from '@shared/profile'
 import {
   communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
@@ -15,6 +16,8 @@ import { ModCover } from './ModCover'
 import { ImportDialog } from './ImportDialog'
 import { guideFor } from './ProfilesView'
 import { ShareDialog } from './ShareDialog'
+import { MadeBy, worksOf } from './Creators'
+import { ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
 function sourceLabel(m: Mod): string {
@@ -35,34 +38,42 @@ export function PlayView() {
   const [subjectKey, setSubjectKey] = useState<string | null>(null)
   const [tier, setTier] = useState<Tier | null>(null)
   const [setup, setSetup] = useState<Preset | null>(null)
+  // "Play with a mod…": the mod's page, and the mod the chosen setup has to include.
+  const [withMod, setWithMod] = useState<string | null>(null)
+  const [pin, setPin] = useState<Pin | null>(null)
+  // What every setup loads and offers, worked out once when the player starts searching.
+  const [factsOn, setFactsOn] = useState(false)
+  const facts = useMemo(() => (factsOn ? subjectFacts(data.catalog, data.index, subjects) : null), [factsOn, data.catalog, data.index, subjects])
   const subject = subjects.find((s) => s.key === subjectKey)
-  const home = () => { setTier(null); setSetup(null); setSubjectKey(null) }
+  const home = () => { setTier(null); setSetup(null); setSubjectKey(null); setPin(null); setWithMod(null) }
+  const start = (key: string, p?: Pin) => { setPin(p ?? null); setSubjectKey(key) }
+  // A mod that belongs to one setup only (her campaign) goes straight to its sizes; otherwise its page asks.
+  const openMod = (id: string) => {
+    setFactsOn(true)
+    setWithMod(id)
+    const all = facts ?? subjectFacts(data.catalog, data.index, subjects)
+    const pw = playWith(data.catalog, data.index, all, data.index.mods.get(id)!)
+    const usable = pw.options.filter((o) => !o.conflicts.length)
+    const own = usable.filter((o) => o.own)
+    const only = !pw.blocked && (own.length === 1 && own[0].how !== 'add' ? own[0] : usable.length === 1 ? usable[0] : undefined)
+    if (only) start(only.subject.key, { mod: id })
+  }
+  const back = () => { setSubjectKey(null); setPin(null) }
 
-  if (subject && tier) return <Guide subject={subject} tier={tier} onBack={() => setTier(null)} onHome={home} />
+  if (subject && tier) return <Guide subject={subject} tier={tier} pin={pin} onBack={() => setTier(null)} onHome={home} />
   if (subject && setup) return <SetupPage subject={subject} setup={setup} onBack={() => setSetup(null)} onHome={home} onContinue={setTier} />
-  if (subject) return <SubjectPage subject={subject} onBack={home} onContinue={setTier} onOpenSetup={setSetup} />
-  return <Home subjects={subjects} onOpen={setSubjectKey} />
+  if (subject) return <SubjectPage subject={subject} pin={pin} onUnpin={() => setPin(null)} onBack={withMod ? back : home} onHome={home} onContinue={setTier} onOpenSetup={setSetup} />
+  if (withMod && facts) return <PlayWithPage modId={withMod} facts={facts} onBack={home} onStart={start} onOpen={openMod} />
+  return <Home subjects={subjects} onOpen={setSubjectKey} search={<ModSearch facts={facts} onFocus={() => !factsOn && setTimeout(() => setFactsOn(true), 50)} onPick={openMod} />} />
 }
 
-function Home({ subjects, onOpen }: { subjects: Subject[]; onOpen(key: string): void }) {
+function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: string): void; search: React.ReactNode }) {
   const data = useData()
   const [profiles, setProfiles] = useState<Profile[]>([])
   const [importing, setImporting] = useState(false)
   useEffect(() => { window.api.listProfiles().then(setProfiles) }, [])
   const recent = [...profiles].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 3)
-  const card = (s: Subject) => (
-    <div key={s.key} className="play-card" onClick={() => onOpen(s.key)}>
-      <div className="ph"><ModCover mods={s.coverMods.map((id) => data.index.mods.get(id))} placeholder={s.name} /></div>
-      <div className="body">
-        <div className="name">{s.name}</div>
-        {s.kind === 'theme' && <div className="small muted">{s.characters.slice(0, 4).join(', ')}{s.characters.length > 4 ? ' …' : ''}</div>}
-        <div className="small muted">
-          {s.presets.length} ready-made list{s.presets.length === 1 ? '' : 's'}
-          {s.presets.some((p) => p.launchTest?.result === 'main menu') ? ' · launch-tested' : ''}
-        </div>
-      </div>
-    </div>
-  )
+  const card = (s: Subject) => <SubjectCard key={s.key} s={s} onClick={() => onOpen(s.key)} />
   const characters = subjects.filter((s) => s.kind === 'character')
   const themes = subjects.filter((s) => s.kind === 'theme')
   return (
@@ -71,7 +82,8 @@ function Home({ subjects, onOpen }: { subjects: Subject[]; onOpen(key: string): 
         <h2>Who do you want to play?</h2>
         <a className="play-advanced" onClick={() => data.goTab('profiles')}>Advanced: all templates and the full editor</a>
       </div>
-      <p className="play-lead">Pick a character or a theme. You choose how much content you want, the app walks you through the choices (looks, add-ons, heroes) and installs everything.</p>
+      <p className="play-lead">Pick a character or a theme – or start from a mod you want in your game. You choose how much content you want, the app walks you through the choices (looks, add-ons, heroes) and installs everything.</p>
+      {search}
       <div className="play-mine">
         {recent.map((p) => (
           <div key={p.id} className="play-small" onClick={() => data.openProfile({ profile: p.id })}>
@@ -111,19 +123,40 @@ function setupTier(p: Preset): Tier {
   return { id: 'full', name: p.name, preset: p, extras: [], size: p.entries.length, lines: [], proof: '', tested: false, recommended: false }
 }
 
-function SubjectPage({ subject, onBack, onContinue, onOpenSetup }: { subject: Subject; onBack(): void; onContinue(t: Tier): void; onOpenSetup(p: Preset): void }) {
+function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpenSetup }: {
+  subject: Subject; pin: Pin | null; onUnpin(): void; onBack(): void; onHome(): void; onContinue(t: Tier): void; onOpenSetup(p: Preset): void
+}) {
   const data = useData()
-  const tiers = useMemo(() => tiersFor(data.catalog, data.index, subject), [data.catalog, data.index, subject])
+  const pinned = pin ? data.index.mods.get(pin.mod) : undefined
+  // With a mod to play with: every size includes it (added where it is not part of the list), unless it conflicts.
+  const sized = useMemo(() => tiersFor(data.catalog, data.index, subject).map((t) => {
+    if (!pin) return { t, has: false, conflicts: [] as string[] }
+    const key = `mod:${pin.mod}`
+    if (resolveProfile(data.catalog, data.index, t.preset, { extras: t.extras, removed: [] }).entries.some((e) => e.key === key)) return { t, has: true, conflicts: [] }
+    const extras = [...t.extras, key]
+    const r = resolveProfile(data.catalog, data.index, t.preset, { extras, removed: [] })
+    const mine = new Set([key, ...r.entries.filter((e) => e.origin === 'dependency').map((e) => e.key)])
+    const conflicts = [...new Set(r.conflicts.filter((c) => mine.has(c.a) !== mine.has(c.b)).map((c) => r.entries.find((e) => e.key === (mine.has(c.a) ? c.b : c.a))?.name ?? ''))]
+    return { t: { ...t, extras, size: r.entries.length }, has: false, conflicts }
+  }), [data.catalog, data.index, subject, pin])
+  const tiers = sized.filter((x) => !x.conflicts.length).map((x) => x.t)
   const shared = communityOf(subject)
-  const favourite = shared.find((p) => isFavourite(p.votes))
+  const favourite = pin ? undefined : shared.find((p) => isFavourite(p.votes))
   const [sharing, setSharing] = useState(false)
-  const [chosen, setChosen] = useState<Tier | undefined>(() => tiers.find((t) => t.recommended) ?? tiers[0])
+  const [chosen, setChosen] = useState<Tier | undefined>(() => (pin ? sized.find((x) => x.has)?.t : undefined) ?? tiers.find((t) => t.recommended) ?? tiers[0])
   const main = tiers.find((t) => t.recommended) ?? tiers[0]
   const guide = main && guideFor(data.catalog.campaignGuides, main.preset)
   const late = lateListOf(subject)
   return (
     <div className="content play">
-      <div className="play-crumbs"><a onClick={onBack}>Play</a> › {subject.name}</div>
+      <div className="play-crumbs"><a onClick={onHome}>Play</a> › {pinned && <><a onClick={onBack}>Play with {pinned.name}</a> › </>}{subject.name}</div>
+      {pinned && (
+        <div className="play-pin">
+          <span className="ph"><ModCover mods={[pinned]} /></span>
+          <span>With <b>{pinned.name}</b>{pin?.fix ? ' and the community fix' : ''} – every size below includes it.</span>
+          <a className="small" onClick={onUnpin}>Remove</a>
+        </div>
+      )}
       <div className="play-hero">
         <div className="ph"><ModCover mods={subject.coverMods.map((id) => data.index.mods.get(id))} placeholder={subject.name} /></div>
         <div>
@@ -138,15 +171,18 @@ function SubjectPage({ subject, onBack, onContinue, onOpenSetup }: { subject: Su
       </div>
       <h3>How much do you want?</h3>
       <div className="play-tiers">
-        {tiers.map((t) => (
-          <div key={t.id} className={`play-tier${chosen?.id === t.id ? ' sel' : ''}`} onClick={() => setChosen(t)}>
+        {sized.map(({ t, has, conflicts }) => (
+          <div key={t.id} className={`play-tier${chosen?.id === t.id ? ' sel' : ''}${conflicts.length ? ' dim' : ''}`} onClick={() => !conflicts.length && setChosen(t)}>
             <div className="rec">{t.recommended ? 'Recommended' : ' '}</div>
             <h3>{t.name}</h3>
             <div><span className="size">{t.size}</span> <span className="muted">mods</span></div>
             <ul>{t.lines.map((l) => <li key={l}>{l}</li>)}</ul>
+            {pinned && (conflicts.length
+              ? <div className="pin-line no">✕ Does not work with {conflicts.slice(0, 2).join(', ')}</div>
+              : <div className={`pin-line${has ? '' : ' add'}`}>{has ? '✓ Includes' : '+'} {pinned.name}</div>)}
             <div className="spacer" />
             {!t.extras.length && voteLine(t.preset.votes) && <div className="small">{voteLine(t.preset.votes)} said it worked</div>}
-            <div className={`proof${t.tested ? '' : ' no'}`}>{t.tested ? '✓ ' : ''}{t.proof}</div>
+            <div className={`proof${t.tested ? '' : ' no'}`}>{t.tested ? '✓ ' : ''}{t.proof}{pinned && !has && t.tested ? ` (without ${pinned.name})` : ''}</div>
           </div>
         ))}
       </div>
@@ -303,10 +339,13 @@ function NoneCard({ label, selected, onClick }: { label: string; selected: boole
 
 const NONE = 'none'
 
-function Guide({ subject, tier, onBack, onHome }: { subject: Subject; tier: Tier; onBack(): void; onHome(): void }) {
+function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier: Tier; pin: Pin | null; onBack(): void; onHome(): void }) {
   const data = useData()
-  // The choices are worked out once for the chosen size; picking an option does not reshuffle the questions.
-  const picks = useMemo(() => suggestedFor(data.catalog, data.index, tier.preset, { extras: tier.extras, removed: [] }).picks, [data.catalog, data.index, tier])
+  const pinned = pin ? data.index.mods.get(pin.mod) : undefined
+  // The choices are worked out once for the chosen size; picking an option does not reshuffle the questions. The mod
+  // the player came for is decided already: no choice offers to replace it.
+  const picks = useMemo(() => suggestedFor(data.catalog, data.index, tier.preset, { extras: tier.extras, removed: [] }).picks
+    .filter((g) => !pinned || !g.pick.some((s) => s.key === `mod:${pinned.id}` || s.replaces?.includes(pinned.name))), [data.catalog, data.index, tier, pinned])
   const base = useMemo(() => resolveProfile(data.catalog, data.index, tier.preset, { extras: tier.extras, removed: [] }), [data.catalog, data.index, tier])
   const qol = useMemo(() => base.entries.flatMap((e) => {
     const m = e.key.startsWith('mod:') ? data.index.mods.get(e.key.slice(4)) : undefined
@@ -383,7 +422,8 @@ function Guide({ subject, tier, onBack, onHome }: { subject: Subject; tier: Tier
   )
 
   function profile(): Profile {
-    return guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}`)
+    const p = guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`)
+    return pin?.fix ? { ...p, fixes: { [pin.mod]: pin.fix } } : p
   }
 
   function save(view: 'choices' | 'install') {
@@ -426,6 +466,7 @@ function Guide({ subject, tier, onBack, onHome }: { subject: Subject; tier: Tier
             })}
             {(() => { const rest = lewd.filter(({ m }) => !used.has(m.id)); return rest.length ? <div className="play-group"><h4>More · {rest.length}</h4><div className="play-chips">{rest.map(chip)}</div></div> : null })()}
             {general.length > 0 && <div className="play-group"><h4>Quality of life · {general.length}</h4><div className="play-chips">{general.map(chip)}</div></div>}
+            <MadeBy preset={tier.preset} works={worksOf(data, r.entries.map((e) => parseTargetKey(e.key)))} />
           </div>
           <div>
             <div className="play-box">

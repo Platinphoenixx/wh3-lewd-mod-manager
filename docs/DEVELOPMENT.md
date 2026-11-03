@@ -23,6 +23,15 @@ community contributions. App UI and catalog texts are English.
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
     `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`).
     After a game session of 20 minutes or more, one card per profile and day asks "Did it work?" (`App.tsx`, relay `/vote`).
+    "Play with a mod…" (`PlayWith.tsx` + `src/shared/playwith.ts`, tested): a search by name or Steam/LoversLab/Nexus link;
+    for the chosen mod, the setups whose sizes have it, whose lists offer it (as a character's look, an add-on) or that can
+    take it without a conflict, the mod's own character first. A mod that belongs to one setup goes straight to its sizes;
+    the mod is pinned there (every size includes it, sizes it conflicts with are greyed out) and no choice offers to
+    replace it. A mod the game does not start with (`Mod.stopsGame`, or something it needs) offers its character's setups
+    without it, the fixes players shared (`Mod.fixes`, links and steps, accepted by a maintainer) with "Play … using this
+    fix" (`Profile.fixes`; the install step asks for the fix's files, `installFromFile(modId, fixId)` records them, the
+    launch list takes them before the Workshop copy, no stale warning) and "Share a fix…" (contribution type `fix`). The
+    review page shows Made by with the creators' support links.
   - Maintainers: Settings → Maintainer takes a fine-grained GitHub token (Issues: read and write on the catalog repository),
     checks it and keeps it encrypted with `safeStorage` (`src/main/maintainer.ts`, userData/maintainer.bin; only sent to
     api.github.com). With it the Review tab (`ReviewView.tsx`) lists open app-made issues not yet accepted (labels setup,
@@ -32,7 +41,9 @@ community contributions. App UI and catalog texts are English.
     Tests: `WH3LMM_GITHUB_API=<url>` points it at a fake API.
   - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested)
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
-    alternatives (exclusiveGroup), load order (tested)
+    alternatives (exclusiveGroup), load order (tested). A requirement counts as met by a mod in the profile that
+    `supersedes` it (Soil's merged pack for Soil's Corrupted Units); conflicts of an option count against what the
+    profile's extras pull in too.
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
   - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
     character/faction, recommended by or extending profile mods) and that community lists for the same
@@ -94,7 +105,8 @@ community contributions. App UI and catalog texts are English.
     timer), tab counters (`setTabCount`), image placeholders while loading (`data-done`, set in `main.tsx`).
   - Made by (`renderer/src/Creators.tsx`): one line per creator of a template/profile with their mods, what
     those do, and one ♥ Support menu; `build_catalog.py` marks support links that belong to someone credited on
-    another author's page (`support[].owner`).
+    another author's page (`support[].owner`). A creator's links count from all their catalog mods (`creatorOfMod`), so a
+    link that is only on their main mod's page also shows next to their other mods.
   - Sending without an account: `relay/` (Cloudflare Worker, setup in `relay/README.md`, tests
     `node relay/worker.test.mjs`) stores problem reports privately and files contributions as GitHub issues;
     the app posts from the main process (`relay:report`, `relay:contribution`, `DEFAULTS.relayUrl`, random
@@ -130,7 +142,8 @@ The project keeps itself current without anyone's manual work or paid service.
 - `.github/workflows/apply-contribution.yml`: a maintainer labels an app-created issue `accepted` →
   `curator/apply_contribution.py` records it in `curator/community.json` → `build_catalog.py` applies it
   (rules → relations/load order, feedback → counters + known issues, corrections → community notes,
-  new mods → unverified entries, shared setups with unknown packs → shown).
+  new mods → unverified entries, shared setups with unknown packs → shown, fixes → `Mod.fixes`, http(s) links only;
+  votes for a fix come with the votes of the setup that used it).
 - Shared setups and votes (`.github/workflows/community-daily.yml`, daily, no crawl): `curator/fetch_community.py`
   reads the setups players shared and the "it worked / it didn't" votes from the relay → `curator/raw/community_setups.json`
   (mod list, template it builds on, name/notes/how far the sharer wrote) + `raw/votes.json` (counts per template id; no

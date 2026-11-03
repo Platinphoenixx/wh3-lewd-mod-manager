@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import type { ReviewItem } from '@shared/api'
 import { useData } from './data'
 
-const KIND: Record<string, string> = { setup: 'Shared setup', 'new-mod': 'New mod', feedback: 'Feedback', rule: 'Rule', correction: 'Correction' }
+const KIND: Record<string, string> = { setup: 'Shared setup', fix: 'Fix for a mod', 'new-mod': 'New mod', feedback: 'Feedback', rule: 'Rule', correction: 'Correction' }
 const REASONS = [
   'Own mods other players cannot get',
   'Duplicate of an existing setup or entry',
@@ -92,7 +92,7 @@ export function ReviewView({ onCount }: { onCount(n: number): void }) {
               <div className="markdown"><Markdown>{item.body.replace(/```json[\s\S]*?```/, '')}</Markdown></div>
             )}
             <div className="review-decide">
-              <button className="primary" disabled={busy} onClick={() => void decide(true)}>Accept – {item.kind === 'setup' ? 'show it in the app' : 'add it to the catalog'}</button>
+              <button className="primary" disabled={busy} onClick={() => void decide(true)}>Accept – {item.kind === 'setup' ? 'show it in the app' : item.kind === 'fix' ? 'offer the fix in the app' : 'add it to the catalog'}</button>
               <select value={reason} onChange={(e) => setReason(e.target.value)}>
                 <option value="">Reject because…</option>
                 {REASONS.map((r) => <option key={r} value={r}>{r}</option>)}

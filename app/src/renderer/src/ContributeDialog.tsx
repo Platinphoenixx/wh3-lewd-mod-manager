@@ -47,7 +47,7 @@ function ModPicker({ value, onChange, exclude }: { value: string; onChange(v: st
 export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onClose(): void }) {
   const data = useData()
   const mod: Mod | undefined = req.modId ? data.index.mods.get(req.modId) : undefined
-  const [f, setF] = useState<Record<string, string>>({ verdict: 'works', ruleKind: 'requires', ...req.prefill })
+  const [f, setF] = useState<Record<string, string>>({ verdict: 'works', ruleKind: 'requires', far: 'Played 20+ turns', gameVersion: data.scan?.gameVersion ?? '', ...req.prefill })
   const [applyLocally, setApplyLocally] = useState(true)
   const [done, setDone] = useState<string | null>(null)
   const set = (k: string) => (e: { target: { value: string } }) => setF({ ...f, [k]: e.target.value })
@@ -56,6 +56,7 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
     req.type === 'new-mod' ? !!f.name && !!f.links :
     req.type === 'feedback' ? !!f.comment :
     req.type === 'rule' ? !!f.other :
+    req.type === 'fix' ? /https?:\/\/\S+/.test(f.links ?? '') && !!f.steps?.trim() :
     !!f.field && !!f.suggestion
 
   let viaGithub = false
@@ -65,11 +66,13 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
       req.type === 'new-mod' ? `New mod: ${f.name}` :
       req.type === 'feedback' ? `Feedback (${f.verdict}): ${mod?.name}` :
       req.type === 'rule' ? `Rule: ${mod?.name} ${RULE_KINDS.find((r) => r.value === f.ruleKind)?.label} ${data.index.mods.get(f.other.replace(/^mod:/, ''))?.name ?? f.other}` :
+      req.type === 'fix' ? `Fix: ${mod?.name}` :
       `Correction: ${mod?.name} – ${f.field}`
     const payload: Record<string, unknown> =
       req.type === 'new-mod' ? { name: f.name, links: f.links.split(/\s+/).filter(Boolean), kind: f.kind, characters: f.characters, description: f.description, requirements: f.requirements } :
       req.type === 'feedback' ? { verdict: f.verdict, gameVersion: f.gameVersion, modVersion: f.modVersion, comment: f.comment } :
       req.type === 'rule' ? { kind: f.ruleKind, other: f.other, note: f.note, evidence: f.evidence } :
+      req.type === 'fix' ? { links: (f.links ?? '').split(/\s+/).filter((u) => /^https?:\/\//.test(u)), steps: f.steps.trim(), far: f.far, gameVersion: f.gameVersion } :
       { field: f.field, suggestion: f.suggestion, evidence: f.evidence }
     const c: Contribution = { id: crypto.randomUUID(), type: req.type, modId: req.modId, title, payload, createdAt: now }
 
@@ -156,6 +159,21 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
                 <label>Why / details<textarea rows={2} value={f.note ?? ''} onChange={set('note')} /></label>
                 <label>Source (link to a post, page, …)<input value={f.evidence ?? ''} onChange={set('evidence')} /></label>
                 <label className="inline-check"><input type="checkbox" checked={applyLocally} onChange={(e) => setApplyLocally(e.target.checked)} /> Apply this rule in my app right away</label>
+              </>
+            )}
+            {req.type === 'fix' && (
+              <>
+                <p className="small muted">Links only – files are not uploaded. Nothing about you is sent besides what you write here. A maintainer checks it; once accepted, every player gets it offered with this mod.</p>
+                <label>Where is the fix? One link per line (Discord post, LoversLab, Steam Workshop, Nexus Mods, Mega, Google Drive)
+                  <textarea rows={3} value={f.links ?? ''} onChange={set('links')} placeholder="https://discord.com/channels/…" />
+                </label>
+                <label>What does a player have to do?<textarea rows={3} value={f.steps ?? ''} onChange={set('steps')} placeholder="e.g. take both packs from the post instead of the Workshop ones" /></label>
+                <label>How far did you get?
+                  <select value={f.far ?? 'Played 20+ turns'} onChange={set('far')}>
+                    {['Reached the main menu', 'Played a few turns', 'Played 20+ turns', 'Finished a campaign'].map((x) => <option key={x} value={x}>{x}</option>)}
+                  </select>
+                </label>
+                <label>Game version<input value={f.gameVersion ?? ''} onChange={set('gameVersion')} placeholder="e.g. 9.0.4" /></label>
               </>
             )}
             {req.type === 'correction' && (

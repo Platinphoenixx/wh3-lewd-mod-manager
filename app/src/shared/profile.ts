@@ -17,6 +17,8 @@ export interface Profile {
   variants?: Record<string, Record<string, string>>
   /** Suggestions the player turned down ("None of these"); they are not offered again. */
   declined?: string[]
+  /** Community fixes the profile uses: mod id → fix id (Mod.fixes). */
+  fixes?: Record<string, string>
   createdAt: string
   updatedAt: string
 }
@@ -88,12 +90,15 @@ function relationsOf(index: CatalogIndex, key: string): Relation[] {
 export function missingDependencies(index: CatalogIndex, keys: string[], have: Set<string>): Map<string, string> {
   const added = new Map<string, string>() // dependency key -> required by key
   const queue = [...keys]
+  // A mod that replaces the required one does its job (Soil's merged pack for Soil's Corrupted Units).
+  const replaced = (dk: string) => [...have, ...keys, ...added.keys()]
+    .some((k) => relationsOf(index, k).some((r) => r.kind === 'supersedes' && targetKey(r.target) === dk))
   while (queue.length) {
     const k = queue.shift()!
     for (const r of relationsOf(index, k)) {
       if (r.kind !== 'requires' || r.condition) continue
       const dk = targetKey(r.target)
-      if (have.has(dk) || added.has(dk)) continue
+      if (have.has(dk) || added.has(dk) || replaced(dk)) continue
       added.set(dk, k)
       queue.push(dk)
     }

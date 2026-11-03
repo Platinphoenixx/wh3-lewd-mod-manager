@@ -13,7 +13,7 @@ export interface UserRule {
   createdAt: string
 }
 
-export type ContributionType = 'new-mod' | 'feedback' | 'rule' | 'correction'
+export type ContributionType = 'new-mod' | 'feedback' | 'rule' | 'correction' | 'fix'
 
 export interface Contribution {
   id: string
@@ -31,7 +31,8 @@ export const CONTRIBUTION_LABEL: Record<ContributionType, string> = {
   'new-mod': 'New mod',
   feedback: 'Feedback',
   rule: 'Rule',
-  correction: 'Correction'
+  correction: 'Correction',
+  fix: 'Fix'
 }
 
 /** Catalog with the user's own rules merged in (copy; the original stays untouched). */

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import type { CommunityFix, Mod } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api'
 import { archivesFor, downloadHints, installSourceFor, packHints, wantedPacks, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
@@ -12,7 +13,14 @@ interface Missing {
 
 /** Everything a profile still needs, grouped by where it comes from, with one action per group/entry. */
 /** characters = the profile's characters: for mods with one version per character, theirs is taken. */
-export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEntry[]; characters?: string[] }) {
+/** A community fix the profile uses, and whether its files are installed. */
+export interface UsedFix {
+  mod: Mod
+  fix: CommunityFix
+  installed: boolean
+}
+
+export function InstallPanel({ missing, characters = [], fixes = [] }: { missing: ResolvedEntry[]; characters?: string[]; fixes?: UsedFix[] }) {
   const data = useData()
   const wanted = (i: Missing) => {
     const mod = i.modId ? data.index.mods.get(i.modId) : undefined
@@ -102,11 +110,39 @@ export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEn
     if (r.ok) data.rescan()
   }
 
-  if (!items.length) return <p className="callout ok small">Everything in this profile is installed.</p>
+  // Files from a community fix stand in for the published ones; they come from the links the player shared.
+  const fixFile = async (u: UsedFix) => {
+    setBusy(`fix:${u.fix.id}`)
+    const r = await window.api.installFromFile(u.mod.id, u.fix.id)
+    note(r.message)
+    setBusy(null)
+    if (r.ok) data.rescan()
+  }
+  const fixGroup = fixes.length > 0 && (
+    <div className="install-group install-fixes">
+      <h4>Community fixes this profile uses</h4>
+      <ul className="small">
+        {fixes.map((u) => (
+          <li key={u.fix.id}>
+            <b>{u.mod.name}</b> – {u.installed ? <span className="ok-text">fix installed</span> : <span>{u.fix.steps}</span>}
+            <div className="row-actions">
+              {u.fix.links.map((l) => <button key={l} onClick={() => window.api.openExternal(l)}>Open {new URL(l).hostname.replace(/^www\./, '')}</button>)}
+              <button disabled={!!busy} onClick={() => void fixFile(u)}>Add the fix's file…</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+
+  if (!items.length) return fixes.length && fixes.some((u) => !u.installed)
+    ? <div className="install-panel callout">{fixGroup}{log.length > 0 && <ul className="small install-log">{log.map((l, n) => <li key={n}>{l}</li>)}</ul>}</div>
+    : <p className="callout ok small">Everything in this profile is installed.</p>
 
   return (
     <div className="install-panel callout">
-      <h3>Install what is missing ({items.length})</h3>
+      {fixGroup}
+      <h3>Install what is missing ({new Set(items.map((i) => i.entry.key)).size} mod{new Set(items.map((i) => i.entry.key)).size === 1 ? '' : 's'})</h3>
       {steam.length > 0 && (
         <div className="install-group">
           <button className="primary" disabled={!!busy} onClick={subscribeAll}>
@@ -118,7 +154,7 @@ export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEn
               const p = progress[(i.source as { id: string }).id]
               return (
                 <li key={`${i.entry.key}:${i.entry.pack ?? ''}:${i.entry.steamId ?? ''}`}>
-                  {i.entry.name}
+                  {i.entry.name}{items.filter((x) => x.entry.key === i.entry.key).length > 1 && i.entry.pack ? <span className="muted"> · {i.entry.pack}</span> : null}
                   {p && (
                     <span className="muted">
                       {' '}– {p.status}

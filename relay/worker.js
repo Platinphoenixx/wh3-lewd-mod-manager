@@ -4,7 +4,7 @@
  *
  *   POST /report        problem report (anonymous text the player saw before sending)
  *                       → stored privately in KV for 180 days; only counts ever become public
- *   POST /contribution  new mod / feedback / rule / correction
+ *   POST /contribution  new mod / feedback / rule / correction / fix (links to a fix for a mod that does not work)
  *                       → becomes a GitHub issue in the project repo, like contributions made on GitHub
  *   GET  /reports       all stored reports, for the weekly catalog update (Authorization: Bearer EXPORT_TOKEN)
  *   POST /setup         a mod list a player shares (load order, the template it builds on, a few words)
@@ -21,7 +21,7 @@
  */
 
 const MAX_TEXT = 30000
-const TYPES = ['new-mod', 'feedback', 'rule', 'correction']
+const TYPES = ['new-mod', 'feedback', 'rule', 'correction', 'fix']
 
 export default {
   async fetch(request, env) {

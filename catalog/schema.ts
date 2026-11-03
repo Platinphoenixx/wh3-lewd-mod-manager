@@ -189,6 +189,8 @@ export interface Mod {
   knownIssues?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
+  /** Fixes players shared for it (links and what to do), each accepted by a maintainer (community.json, type "fix"). */
+  fixes?: CommunityFix[];
   installNotes?: string[];    // things a human must know (MCT settings, start a new campaign...)
 
   /** Accepted community feedback ("how does it work for you"), counted per verdict. */
@@ -241,6 +243,18 @@ export interface DiscordRef {
   channel: string;            // channel name, e.g. "#kerberos-projects"
   messageUrl?: string;
   note?: string;
+}
+
+/** A fix a player shared for a mod that does not work as published; shown after a maintainer accepted it. */
+export interface CommunityFix {
+  id: string;                 // "fix-<issue number>"
+  links: string[];
+  steps: string;              // what a player has to do
+  far?: string;               // how far the sharer got ("Played 20+ turns")
+  game?: string;
+  date: string;
+  /** "It worked / it didn't" of players who used it. */
+  votes?: { up: number; down: number };
 }
 
 export interface PackRef {

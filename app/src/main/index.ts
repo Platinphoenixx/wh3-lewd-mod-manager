@@ -65,7 +65,7 @@ ipcMain.handle('contributions:add', (_e, c: Contribution) => addContribution(c))
 let lastScan: GameScan | null = null
 const currentScan = async () =>
   (lastScan = await scanGame((await getSettings()).gamePath, await readJson<InstalledRecord[]>('installed.json', [])))
-ipcMain.handle('install:file', async (e, modId?: string) => {
+ipcMain.handle('install:file', async (e, modId?: string, fix?: string) => {
   const scan = await currentScan()
   if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
   const pick = await dialog.showOpenDialog(BrowserWindow.fromWebContents(e.sender)!, {
@@ -74,7 +74,7 @@ ipcMain.handle('install:file', async (e, modId?: string) => {
     filters: [{ name: 'Mod files', extensions: ['pack', '7z', 'zip', 'rar'] }]
   })
   // The picked download is moved into the game, not copied: nothing is left behind in Downloads.
-  return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId, true)
+  return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId, true, typeof fix === 'string' ? fix : undefined)
 })
 ipcMain.handle('install:loverslab', async (e, url: string, modId?: string, hints?: FileHint[]) => {
   const scan = await currentScan()

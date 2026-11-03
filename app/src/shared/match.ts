@@ -138,7 +138,8 @@ export function staleDataPacks(index: CatalogIndex, packs: InstalledPack[]): Sta
     workshop.map((p) => targetFor(index, p)).filter((t): t is ModTarget => !!t).map(targetKey)
   )
   const warnings: StaleWarning[] = []
-  for (const p of packs.filter((x) => x.source === 'data')) {
+  // A pack from a community fix stands in for the Workshop copy on purpose.
+  for (const p of packs.filter((x) => x.source === 'data' && !x.fix)) {
     const name = p.file.toLowerCase()
     if (workshopFiles.has(name)) {
       warnings.push({ pack: p, reason: 'Same file name as a subscribed Workshop item; the data copy wins and is probably outdated.' })

@@ -7,7 +7,7 @@ import { checkOwnMod, isOwnKey, ownKeyOf, placeOwnMods, type FactsReport, type O
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
 import { ConflictList } from './ConflictList'
-import { InstallPanel } from './InstallPanel'
+import { InstallPanel, type UsedFix } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { pickVariants, planLaunch, variantGroups } from '@shared/launch'
 import { missingPacks } from '@shared/install'
@@ -112,6 +112,12 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return [first, ...items.map((id) => ({ ...e, pack: lack.find((p) => p.steamId === id)!.file, steamId: id, from: 'steam' as const }))]
   })
   const incomplete = new Set(missingEntries.map((e) => e.key))
+  // Community fixes the profile uses (Play with a mod that does not start as published).
+  const usedFixes: UsedFix[] = Object.entries(profile.fixes ?? {}).flatMap(([modId, fixId]) => {
+    const mod = data.index.mods.get(modId)
+    const fix = mod?.fixes?.find((f) => f.id === fixId)
+    return mod && fix ? [{ mod, fix, installed: (installed.get(`mod:${modId}`) ?? []).some((p) => p.fix === fixId) }] : []
+  })
   // A fresh profile (nothing installed yet) starts with its choices, since they change what gets installed.
   const fresh = incomplete.size === resolved.entries.length
   const view: View = chosenView ?? (picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
@@ -263,7 +269,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     [order, installed, profile.variants]
   )
   // What ▶ Play warns about: mods without any installed pack and mods that miss a required one.
-  const notReady = [...new Set([...missingEntries.map((e) => e.name), ...launch.missing])]
+  const notReady = [...new Set([...missingEntries.map((e) => e.name), ...launch.missing, ...usedFixes.filter((u) => !u.installed).map((u) => `${u.mod.name} (community fix)`)])]
   // Installed pick-one variants of one entry (two or more of a group), for the version choice in the load order.
   const variantChoices = (key: string) => {
     const all = installed.get(key) ?? []
@@ -330,16 +336,18 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   return (
     <div className="profile-editor">
       <div className="profile-head">
-        <input className="profile-name" value={profile.name} onChange={(e) => onChange({ ...profile, name: e.target.value })} />
+        <input className="profile-name" size={Math.min(64, Math.max(24, profile.name.length + 2))} value={profile.name} onChange={(e) => onChange({ ...profile, name: e.target.value })} />
         <span className="muted small">based on “{preset.name}”</span>
         <span className="badge">{baseCount} from template</span>
         <span className="badge ok">{profile.extras.length} switched on</span>
         <span className="badge">{order.length} mods total</span>
-        <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
-          ▶ Play{notReady.length ? ` (${notReady.length} missing)` : ''}
-        </button>
-        <button title="Other players can install it from the Play page" onClick={() => setSharing(true)}>Share…</button>
-        <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
+        <div className="profile-actions">
+          <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
+            ▶ Play{notReady.length ? ` (${notReady.length} missing)` : ''}
+          </button>
+          <button title="Other players can install it from the Play page" onClick={() => setSharing(true)}>Share…</button>
+          <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
+        </div>
       </div>
       {sharing && <ShareDialog profile={profile} onClose={() => setSharing(false)} />}
       <nav className="subtabs steps">
@@ -454,7 +462,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'install' && (
         <section>
-          <InstallPanel missing={missingEntries} characters={preset.playAs} />
+          <InstallPanel missing={missingEntries} characters={preset.playAs} fixes={usedFixes} />
           <p className="step-next"><button onClick={() => goTo('order')}>Next: 3 · Load order &amp; play →</button></p>
         </section>
       )}

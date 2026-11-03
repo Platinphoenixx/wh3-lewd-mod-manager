@@ -16,6 +16,8 @@ export interface InstalledPack {
   steamId?: string
   /** Catalog mod this app installed the pack for (from installed.json; data packs only). */
   modId?: string
+  /** Installed from a community fix (its id): it is meant to stand in for the Workshop copy of the same name. */
+  fix?: string
   path: string
   size: number
   mtime: number
@@ -84,7 +86,7 @@ export interface RelayReport {
 }
 
 export interface RelayContribution {
-  type: 'new-mod' | 'feedback' | 'rule' | 'correction'
+  type: 'new-mod' | 'feedback' | 'rule' | 'correction' | 'fix'
   title: string
   body: string
 }
@@ -159,7 +161,7 @@ export interface Api {
   listContributions(): Promise<Contribution[]>
   addContribution(c: Contribution): Promise<Contribution[]>
   /** Lets the user pick a downloaded .pack/.7z/.zip/.rar and installs its packs into the data folder. */
-  installFromFile(modId?: string): Promise<InstallResult>
+  installFromFile(modId?: string, fix?: string): Promise<InstallResult>
   /** Opens a LoversLab file page; the file the user downloads there is installed. */
   installFromLoversLab(url: string, modId?: string, hints?: FileHint[]): Promise<InstallResult>
   /** The same for a Nexus Mods file page (own window and login). */

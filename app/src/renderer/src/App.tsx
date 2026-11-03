@@ -130,8 +130,12 @@ export function App() {
       if (localStorage.getItem(asked)) return
       localStorage.setItem(asked, '1')
     } catch { /* without storage it may ask twice a day */ }
-    const vote = (worked: boolean, reason?: 'start' | 'campaign' | 'content' | 'other') =>
-      window.api.sendVote({ setup: snap.template.id, worked, reason }).then((r) => notify({ kind: r.ok ? 'done' : 'error', text: r.message }))
+    // Community fixes the profile uses get the same answer (shown with the fix on the mod's Play page).
+    const fixes = Object.values((await window.api.listProfiles().catch(() => [])).find((p) => p.id === snap.profile.id)?.fixes ?? {})
+    const vote = (worked: boolean, reason?: 'start' | 'campaign' | 'content' | 'other') => {
+      for (const f of fixes) void window.api.sendVote({ setup: f, worked, reason })
+      return window.api.sendVote({ setup: snap.template.id, worked, reason }).then((r) => notify({ kind: r.ok ? 'done' : 'error', text: r.message }))
+    }
     const why = () => notify({
       kind: 'info', timeout: 0, text: 'What went wrong?',
       actions: [

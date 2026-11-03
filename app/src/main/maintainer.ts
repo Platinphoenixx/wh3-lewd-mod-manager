@@ -11,7 +11,7 @@ import type { MaintainerStatus, ReviewItem } from '@shared/api'
  * workflow does the rest) or rejects them (closed with a comment).
  */
 const FILE = () => join(app.getPath('userData'), 'maintainer.bin')
-const REVIEW_LABELS = ['setup', 'new-mod', 'feedback', 'rule', 'correction']
+const REVIEW_LABELS = ['setup', 'fix', 'new-mod', 'feedback', 'rule', 'correction']
 // Tests point this at a local fake (WH3LMM_GITHUB_API=http://127.0.0.1:…); never set for players.
 const API = process.env.WH3LMM_GITHUB_API || 'https://api.github.com'
 

@@ -97,6 +97,13 @@ describe('resolveProfile', () => {
     expect(r.entries.find((e) => e.key === 'mod:lyra-assets')?.origin).toBe('dependency')
   })
 
+  it('takes a requirement as met by a mod that replaces it', () => {
+    const c = { ...catalog, mods: [...catalog.mods, mod('merged', { relations: [{ kind: 'supersedes', target: { mod: 'lyra-assets' }, source: src }] })] }
+    const ix = buildIndex(c)
+    const r = resolveProfile(c, ix, preset, { extras: ['mod:merged', 'mod:lyra'], removed: [] })
+    expect(r.entries.map((e) => e.key)).not.toContain('mod:lyra-assets')
+  })
+
   it('puts a reskin the player picked on top, so it beats the template mods that change the same models', () => {
     const r = resolveProfile(catalog, index, preset, { extras: ['mod:unrelated', 'mod:alarielle-skin'], removed: [] })
     expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])

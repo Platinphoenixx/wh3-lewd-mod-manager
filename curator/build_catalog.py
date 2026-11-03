@@ -316,6 +316,13 @@ def apply_community(mods: dict) -> None:
             if c.get("verdict") in ("issues", "broken") and c.get("comment"):
                 version = f" (game {c['gameVersion']})" if c.get("gameVersion") else ""
                 m.setdefault("knownIssues", []).append(f"Community report{version}: {c['comment']}")
+        elif c["type"] == "fix" and m:
+            # A fix a player shared for a mod that does not work as published: links (web pages only) and what to do.
+            links = [u for u in c.get("links") or [] if re.match(r"https?://", u)]
+            if links:
+                m.setdefault("fixes", []).append({k: v for k, v in {
+                    "id": f"fix-{c.get('issue') or len(m.get('fixes', [])) + 1}", "links": links, "steps": c.get("steps") or "",
+                    "far": c.get("far"), "game": c.get("gameVersion"), "date": c.get("accepted")}.items() if v})
         elif c["type"] == "correction" and m:
             m.setdefault("communityNotes", []).append(
                 {"text": f"{c.get('field', 'note')}: {c.get('suggestion', '')}", "url": c.get("url"), "date": c.get("accepted")})
@@ -1246,6 +1253,12 @@ def main():
     for p in presets:
         if (v := votes.get(p["id"])) and v["up"] + v["down"]:
             p["votes"] = {"up": v["up"], "down": v["down"]}
+    # Fixes are voted on like setups (the app sends their id when a profile uses one).
+    for m in mods.values():
+        for f in m.get("fixes") or []:
+            if (v := votes.get(f["id"])) and v["up"] + v["down"]:
+                f["votes"] = {"up": v["up"], "down": v["down"]}
+    for p in presets:
         fp = hashlib.sha1("\n".join(sorted(e["pack"].lower() for e in p["entries"])).encode()).hexdigest()[:12]
         if (r := launch.get(p["id"])) and r.get("fingerprint") == fp:
             p["launchTest"] = {"result": r["result"], "game": r["game"], "date": r["date"]}

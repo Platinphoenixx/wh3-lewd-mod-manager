@@ -1,6 +1,6 @@
 """Record an accepted community contribution (a GitHub issue created by the app) in curator/community.json.
 
-The app puts a ```json block into every issue: {"type": "rule"|"feedback"|"correction"|"new-mod", "modId": ..., ...}.
+The app puts a ```json block into every issue: {"type": "rule"|"feedback"|"correction"|"new-mod"|"fix", "modId": ..., ...}.
 A maintainer reviews the issue and adds the label "accepted"; the GitHub Action then runs:
 
     python curator/apply_contribution.py --issue-file event_issue.json
@@ -18,7 +18,7 @@ from datetime import date
 from pathlib import Path
 
 COMMUNITY = Path(__file__).resolve().parent / "community.json"
-TYPES = {"rule", "feedback", "correction", "new-mod", "setup"}
+TYPES = {"rule", "feedback", "correction", "new-mod", "setup", "fix"}
 
 
 def parse_block(body: str) -> dict:
