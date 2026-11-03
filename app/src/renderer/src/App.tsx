@@ -6,6 +6,7 @@ import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
 import { ProfilesView } from './ProfilesView'
 import { PlayView } from './PlayView'
+import { PageGuard } from './PageGuard'
 import { ReviewView } from './ReviewView'
 import { CatalogView } from './CatalogView'
 import { InstallView } from './InstallView'
@@ -239,6 +240,7 @@ export function App() {
           <a className="support" title="Support this app on Ko-fi" onClick={() => window.api.openExternal(SUPPORT_URL)}>♥ Support this app</a>
         </header>
         <main>
+          <PageGuard key={tab} onReset={() => setTab('play')}>
           {tab === 'play' && <PlayView />}
           {tab === 'profiles' && <ProfilesView />}
           {tab === 'catalog' && <CatalogView />}
@@ -246,6 +248,7 @@ export function App() {
           {tab === 'community' && <CommunityView />}
           {tab === 'settings' && <SettingsView onSaved={(s) => setSettings(s)} />}
           {tab === 'review' && maintainer && <ReviewView onCount={(n) => setTabCount('review', n ? { n, title: `${n} waiting for review` } : null)} />}
+          </PageGuard>
         </main>
         {openModId && <ModDetail id={openModId} onClose={() => setOpenModId(null)} />}
         {contributing && <ContributeDialog req={contributing} onClose={() => setContributing(null)} />}

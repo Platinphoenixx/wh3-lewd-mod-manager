@@ -86,7 +86,7 @@ function PresetDetail({ preset }: { preset: Preset }) {
 
       <MadeBy preset={preset} works={worksOf(data, preset.entries.flatMap((e) => (e.target ? [e.target] : [])))} />
 
-      {guide && guide.dlc.length > 0 && (
+      {guide && guide.dlc?.length > 0 && (
         <section>
           <h3>Required DLC</h3>
           <ul>{guide.dlc.map((d) => <li key={d.name}>{d.name}{d.why ? <span className="muted"> – {d.why}</span> : null}</li>)}</ul>

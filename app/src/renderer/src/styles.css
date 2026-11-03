@@ -466,3 +466,6 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
 .install-fixes .row-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 8px; }
 .ok-text { color: var(--ok); }
 .script-error.harmless { border-color: var(--line); background: var(--panel); }
+
+.page-error { max-width: 640px; margin: 48px auto; padding: 0 16px; }
+.page-error pre { white-space: pre-wrap; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 10px; }

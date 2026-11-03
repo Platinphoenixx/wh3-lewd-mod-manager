@@ -32,6 +32,12 @@ describe('Play coverage', () => {
 })
 
 describe('catalog', () => {
+  it('campaign guides carry the fields the app reads', () => {
+    // Community setups once rode along here without dlc/notes and blanked the Play page of Greenskins.
+    const bad = catalog.campaignGuides.filter((g) => !Array.isArray(g.dlc) || !Array.isArray(g.notes) || !Array.isArray(g.entries))
+    expect(bad.map((g) => g.character)).toEqual([])
+  })
+
   it('relations point at known mods, never at a collection or the mod itself', () => {
     const bad = catalog.mods.flatMap((m) => m.relations.flatMap((r) => {
       if (!('mod' in r.target)) return []

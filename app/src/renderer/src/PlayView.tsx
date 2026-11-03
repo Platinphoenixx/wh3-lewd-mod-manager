@@ -166,7 +166,7 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
           </div>
           {subject.kind === 'theme' && <p className="small muted">{subject.characters.join(', ')}</p>}
           <div className="markdown play-lead"><Markdown>{main?.preset.description ?? ''}</Markdown></div>
-          {guide && guide.dlc.length > 0 && <p className="small muted">Needs the DLC {guide.dlc.map((d) => d.name).join(', ')}.</p>}
+          {guide && guide.dlc?.length > 0 && <p className="small muted">Needs the DLC {guide.dlc.map((d) => d.name).join(', ')}.</p>}
         </div>
       </div>
       <h3>How much do you want?</h3>

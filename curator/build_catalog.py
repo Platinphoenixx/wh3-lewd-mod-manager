@@ -1384,7 +1384,9 @@ def main():
         "tiers": TIERS,
         "notes": notes,
         "presets": presets,
-        "campaignGuides": guides,
+        # Only the KPW guides: community setups ride along in `guides` to become templates, but have no guide fields
+        # (dlc, notes) the app reads.
+        "campaignGuides": [g for g in guides if "id" not in g],
         # Major game updates (update.py reads them from the game's Steam announcements).
         "gameUpdates": load(CURATOR / "raw" / "game_updates.json") if (CURATOR / "raw" / "game_updates.json").exists() else [],
     }
