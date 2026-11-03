@@ -8,7 +8,8 @@
           "file": "community_beastmen_light.pack",
           "from": "download",
           "exclusiveGroup": "cb-version",
-          "note": "Name on the page without extension; for all other factions; not on Steam"
+          "note": "Light version for all other factions; the LoversLab page only holds a text file with this Google Drive link (checked 2026-11-03)",
+          "url": "https://drive.google.com/file/d/19w01kx1Gdd8p6LxtODD3KiTbH3Jix4Gg/view"
         },
         {
           "file": "new_community_beastmen.pack",
@@ -254,6 +255,142 @@
           "source": {
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3698534641",
+      "installNotes+": [
+        "A player's re-upload of the light version; on 2026-11-03 its pack (913 MB, 2026-10-31) was older than the author's file behind the LoversLab page (992 MB). Prefer the author's file."
+      ]
+    },
+    {
+      "id": "ll-49648",
+      "relations-": [
+        "steam-3210832217",
+        "3210832217",
+        "steam-3317294488",
+        "3317294488",
+        "steam-3271568934",
+        "3271568934",
+        "steam-3639948043",
+        "3639948043",
+        "steam-3270368516",
+        "3270368516",
+        "steam-3277998418",
+        "3277998418",
+        "steam-3371888004",
+        "3371888004"
+      ],
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3210832217"
+          },
+          "note": "Sarvente's Mariko Sama: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3317294488"
+          },
+          "note": "Sarvente's Enhi: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3271568934"
+          },
+          "note": "Sarvente's Xiao: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3639948043"
+          },
+          "note": "Sarvente's Liu: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3270368516"
+          },
+          "note": "Sarvente's Hakutaku Diviners: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3277998418"
+          },
+          "note": "Sarvente's Shards of Dai Ji: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "steamId": "3371888004"
+          },
+          "note": "Sarvente's Hollows: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3508604193",
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "steam-3501984780"
+          }
+        ],
+        "note": "Below Readman's CCC, as in Readman's own lists: TTT carries an older copy of a CCC table, and above CCC it stops the game with a database error (launch test 2026-11-03)."
+      }
+    },
+    {
+      "id": "steam-3819138832",
+      "relations-": [
+        "ll-46165",
+        "3476784883"
+      ],
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "pack": "new_community_beastmen.pack",
+          "note": "Builds on the full version of Community Beastmen; with the light version the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
           }
         }
       ]

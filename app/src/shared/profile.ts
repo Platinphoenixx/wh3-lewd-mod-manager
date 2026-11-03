@@ -276,6 +276,14 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     else pos = related.length ? Math.min(...related) : entries.length
     entries.splice(pos, 0, e)
   }
+  // A requirement can name the pack it needs of a mod with versions; an entry that does not fix its pack takes that one.
+  for (const e of entries) {
+    for (const r of relationsOf(index, e.key)) {
+      if (r.kind !== 'requires' || !r.pack || r.condition) continue
+      const dep = entries.find((x) => x.key === targetKey(r.target))
+      if (dep && dep.origin !== 'base') { dep.pack = r.pack; dep.packs = [r.pack] }
+    }
+  }
   const all = conflictsIn(index, entries.map((e) => e.key))
   const testedTogether = preset.origin === 'tested' ? new Set(entries.filter((e) => e.origin === 'base').map((e) => e.key)) : new Set<string>()
   const together = (c: { a: string; b: string }) => testedTogether.has(c.a) && testedTogether.has(c.b)

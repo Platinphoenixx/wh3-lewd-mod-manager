@@ -104,6 +104,14 @@ describe('resolveProfile', () => {
     expect(r.entries.map((e) => e.key)).not.toContain('mod:lyra-assets')
   })
 
+  it('loads the pack a requirement names of a mod with versions', () => {
+    const c = { ...catalog, mods: [...catalog.mods,
+      mod('beasts', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] }),
+      mod('sla', { relations: [{ kind: 'requires', target: { mod: 'beasts' }, pack: 'full.pack', source: src }] })] }
+    const r = resolveProfile(c, buildIndex(c), preset, { extras: ['mod:sla'], removed: [] })
+    expect(r.entries.find((e) => e.key === 'mod:beasts')?.packs).toEqual(['full.pack'])
+  })
+
   it('puts a reskin the player picked on top, so it beats the template mods that change the same models', () => {
     const r = resolveProfile(catalog, index, preset, { extras: ['mod:unrelated', 'mod:alarielle-skin'], removed: [] })
     expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])

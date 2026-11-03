@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T13:25:54+00:00",
+  "generatedAt": "2026-11-03T14:55:43+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -12894,7 +12894,8 @@
           "file": "community_beastmen_light.pack",
           "from": "download",
           "exclusiveGroup": "cb-version",
-          "note": "Name on the page without extension; for all other factions; not on Steam"
+          "note": "Light version for all other factions; the LoversLab page only holds a text file with this Google Drive link (checked 2026-11-03)",
+          "url": "https://drive.google.com/file/d/19w01kx1Gdd8p6LxtODD3KiTbH3Jix4Gg/view"
         },
         {
           "file": "new_community_beastmen.pack",
@@ -13256,7 +13257,8 @@
         "openQuestions": []
       },
       "installNotes": [
-        "Carries only animations and models; quests, events and mechanics are script based and are absent. Use it when not playing a Beastmen faction."
+        "Carries only animations and models; quests, events and mechanics are script based and are absent. Use it when not playing a Beastmen faction.",
+        "A player's re-upload of the light version; on 2026-11-03 its pack (913 MB, 2026-10-31) was older than the author's file behind the LoversLab page (992 MB). Prefer the author's file."
       ],
       "images": [
         {
@@ -13428,17 +13430,6 @@
       ],
       "relations": [
         {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-46165"
-          },
-          "note": "Main Community Beastmen mod ('must be used with the main mod'); which edition is meant is not stated – now its update Community Beastmen ALL versions",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3819138832"
-          }
-        },
-        {
           "kind": "recommends",
           "target": {
             "mod": "steam-3816183901"
@@ -13447,6 +13438,18 @@
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3819138832"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "pack": "new_community_beastmen.pack",
+          "note": "Builds on the full version of Community Beastmen; with the light version the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
           }
         }
       ],
@@ -35415,8 +35418,10 @@
       },
       "status": "stable",
       "knownIssues": [
+        "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last Workshop update 2022-11.",
         "Reported as no longer working in 2026-02 (last Workshop update 2022-11); Kerberos pointed to other Morathi Slaanesh-expansion mods from his recommended list instead."
       ],
+      "stopsGame": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last Workshop update 2022-11.",
       "authorPages": [
         {
           "site": "steam",
@@ -41247,6 +41252,14 @@
         "Should be safe to add mid-campaign; make a backup save first (author).",
         "Built for the ATB required and recommended mods only; other combinations are untested."
       ],
+      "loadOrder": {
+        "below": [
+          {
+            "mod": "steam-3501984780"
+          }
+        ],
+        "note": "Below Readman's CCC, as in Readman's own lists: TTT carries an older copy of a CCC table, and above CCC it stops the game with a database error (launch test 2026-11-03)."
+      },
       "description": "A technology submod for Kerberos' “Alarielle, Temptation's Bloom”. It adds 29 technologies to Alarielle the Radiant's Avelorn faction. The original tech tree moves to its own tab, the new technologies sit in a separate tab until they become relevant, and the tech tree art is changed. The author does not spoil what the technologies do.\n\nThe Workshop page requires Corrupted Landmarks and Lazy's Corruption Framework. Per the author it should be safe to add mid-campaign, but you should make a backup save first. Compatibility was only built for the ATB required and recommended mod list.\n\nKerberos recommends it as the tech mod for ATB; it is in the Alarielle guide and two Readman mod lists.",
       "features": [
         "29 new technologies for the Avelorn faction",
@@ -45470,6 +45483,10 @@
       },
       "installNotes": [
         "The Nexus original has been abandoned since 2022-09-18. Kerberos posted an updated, working version of the same pack (SexierGrandCathay_CelestialConcubines_ENG.pack, 76.2 MB) in the Discord submods channel on 2024-12-08."
+      ],
+      "stopsGame": "Stops the game at launch since patch 9.0 (database error in cdir_military_generator_unit_qualities_tables, launch test 2026-11-03, game 9.0.5); last update 2022-09.",
+      "knownIssues": [
+        "Stops the game at launch since patch 9.0 (database error in cdir_military_generator_unit_qualities_tables, launch test 2026-11-03, game 9.0.5); last update 2022-09."
       ]
     },
     {
@@ -46027,90 +46044,6 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "steam-3210832217"
-          },
-          "note": "Mariko Sama (Sarvente).",
-          "condition": "Only for (X)_Cathay_Mariko_XXX or the ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3317294488"
-          },
-          "note": "Sarvente's Enhi (continued).",
-          "condition": "Only for (X)_Cathay_Enhi_XXX or the ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3271568934"
-          },
-          "note": "Sarvente's Xiao (Continued).",
-          "condition": "Only for (X)_Cathay_Xiao_XXX or the ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3639948043"
-          },
-          "note": "Sarvente's custom characters: Liu.",
-          "condition": "Only for (X)_Cathay_Liu_nao_XXX or the ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3270368516"
-          },
-          "note": "Sarvente's Hakutaku Diviners (continued).",
-          "condition": "Only for (X)_Cathay_Divin_XXX / Alt_Hero / ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3277998418"
-          },
-          "note": "Sarvente's Shards of Dai Ji (continued).",
-          "condition": "Only for (X)_Cathay_Shards_XXX / Alt_Hero / ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3371888004"
-          },
-          "note": "Sarvente's Hollows (continued); page refers to the 9.0 link. There is also 'Hollows temp-patch 8.1' (3768502987) - the page does not mention it.",
-          "condition": "Only for (X)_Cathay_Hollow_XXX / Alt_Hero / ALL-in-One",
-          "source": {
-            "type": "loverslab",
-            "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
             "mod": "steam-3700484893"
           },
           "note": "All Faction Legendary Lord: Aelesha Sigrika.",
@@ -46140,6 +46073,83 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/49648-sexy-cathay-heroes-sub-mod-collection-taoyan/"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3210832217"
+          },
+          "note": "Sarvente's Mariko Sama: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3317294488"
+          },
+          "note": "Sarvente's Enhi: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3271568934"
+          },
+          "note": "Sarvente's Xiao: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3639948043"
+          },
+          "note": "Sarvente's Liu: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3270368516"
+          },
+          "note": "Sarvente's Hakutaku Diviners: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3277998418"
+          },
+          "note": "Sarvente's Shards of Dai Ji: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3371888004"
+          },
+          "note": "Sarvente's Hollows: the all-in-one pack is a submod of it; without it the game crashes at launch (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
           }
         }
       ],

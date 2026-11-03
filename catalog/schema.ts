@@ -300,6 +300,8 @@ export interface Relation {
   note?: string;
   /** Only relevant with some option, e.g. "only when playing as Morathi". */
   condition?: string;
+  /** For "requires": the pack of the target mod that is needed, when the target has versions (Community Beastmen full vs. light). */
+  pack?: string;
   /** Alternatives: of all "recommends"/"optional" relations sharing a group, pick at most one. */
   exclusiveGroup?: string;
   /** "community" = accepted community contribution, "user" = the local user's own rule (never in catalog.json). */

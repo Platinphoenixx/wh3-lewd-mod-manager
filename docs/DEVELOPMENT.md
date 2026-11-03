@@ -43,7 +43,8 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested). A requirement counts as met by a mod in the profile that
     `supersedes` it (Soil's merged pack for Soil's Corrupted Units); conflicts of an option count against what the
-    profile's extras pull in too.
+    profile's extras pull in too. A `requires` relation can name the `pack` it needs of a mod with versions (the
+    Community Beastmen Slaanesh version needs the full, not the light pack); that entry then loads exactly that pack.
   - `src/shared/community.ts` user rules (applied locally) and GitHub issue contributions (tested)
   - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
     character/faction, recommended by or extending profile mods) and that community lists for the same
@@ -209,7 +210,10 @@ over all layers – fix texts there.
   `plan --game <folder> --packs <download folders>` lists what is missing; `run` does the starts (Steam running, PC not
   in use, about 1 h for all templates); helper `launch_test_watch.ps1`. Run it after a major game update. A template
   that stops the game gets a known issue with the game's report and is fixed through `presetReplacements` or
-  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu. Every result also goes into
+  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu. `--presets <file>` adds lists that
+  are not templates – the profiles Play makes from every size and random choices (generator and halving helper in the dev
+  tools); their results stay in the test folder. Of two packs with the same name the copy in the mod's own archive folder
+  (`ll/<id>`, `nexus/<id>`) is used. Every result also goes into
   `curator/raw/launch_results.json` (result, game version, date, a fingerprint of the template's packs); the build
   sets `Preset.launchTest` only while the template still has exactly the tested packs, and the app shows
   "launch-tested" from it.

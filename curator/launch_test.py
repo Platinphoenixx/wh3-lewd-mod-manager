@@ -3,7 +3,8 @@
     python launch_test.py plan --game "<...>/Total War WARHAMMER III" [--packs <folder> ...] [--only id,id]
     python launch_test.py run  --game "<...>/Total War WARHAMMER III" [--packs <folder> ...] [--only id,id]
 
-`plan` only lists, per template, where each pack comes from and what is missing. `run` starts the game once per
+`--presets <file>` adds lists that are not templates (the profiles Play makes from each size, see the dev tools); their
+results stay in <work>/results.json. `plan` only lists, per template, where each pack comes from and what is missing. `run` starts the game once per
 template: the packs are hard-linked (no copies; same drive as the Steam library) into <work>/<template>/packs, the
 game gets that one working directory through its own list file (wh3lmm_test.txt; the player's lists and the data
 folder stay as they are), and the run waits for the main menu (the mod loading block in lua_mod_log.txt), a crash
@@ -79,6 +80,7 @@ class Packs:
 
     def __init__(self, workshop: Path, folders: list):
         self.workshop = workshop
+        self.workshop_names = None
         self.by_name = collections.defaultdict(list)  # lower name -> [(path, date)]
         self.by_norm = collections.defaultdict(list)  # Discord exports drop "!", "@", brackets: also by letters only
         for folder in folders:
@@ -89,7 +91,7 @@ class Packs:
                 self.by_name[name.lower()].append((p, date))
                 self.by_norm[norm(name)].append((p, date))
 
-    def find(self, pack: str, steam_ids: list):
+    def find(self, pack: str, steam_ids: list, mod_id: str = ""):
         for sid in steam_ids:
             p = self.workshop / sid / pack
             if p.exists():
@@ -100,7 +102,22 @@ class Packs:
             if hit:
                 return hit
         hits = self.by_name.get(pack.lower()) or self.by_norm.get(norm(pack)) or []
-        return max(hits, key=lambda h: h[1])[0] if hits else None
+        # Two mods can ship a pack of the same name (an old upload and its successor): the copy from the mod's own
+        # archive folder (ll/<id>, nexus/<id>) wins.
+        own = re.match(r"(ll|nx)-(\d+)$", mod_id or "")
+        if own:
+            folder = ("ll" if own.group(1) == "ll" else "nexus", own.group(2))
+            mine = [h for h in hits if any(a == folder[0] and b == folder[1] for a, b in zip(h[0].parts, h[0].parts[1:]))]
+            hits = mine or hits
+        if hits:
+            return max(hits, key=lambda h: h[1])[0]
+        # A mod whose own page names no Workshop item but whose pack a subscribed item has (a LoversLab page of a
+        # mod that moved to Steam): any Workshop folder with that file.
+        if self.workshop_names is None:
+            self.workshop_names = {}
+            for f in self.workshop.glob("*/*.pack") if self.workshop.exists() else []:
+                self.workshop_names.setdefault(f.name.lower(), f)
+        return self.workshop_names.get(pack.lower())
 
 
 def needed_packs(mod: dict) -> list:
@@ -118,8 +135,8 @@ def needed_packs(mod: dict) -> list:
 def plan(preset: dict, packs: Packs) -> dict:
     files, missing, notes, seen = [], [], [], set()
 
-    def add(pack, steam_ids, label):
-        path = packs.find(pack, steam_ids)
+    def add(pack, steam_ids, label, mod_id=""):
+        path = packs.find(pack, steam_ids, mod_id)
         if not path:
             missing.append(f"{pack} ({label})")
             return
@@ -138,11 +155,11 @@ def plan(preset: dict, packs: Packs) -> dict:
             notes.append(f"{label}: Steam collection, skipped")
             continue
         if (e.get("pack") or "").lower().endswith(".pack"):
-            add(e["pack"], sids, label)
+            add(e["pack"], sids, label, t.get("mod", ""))
             continue
         notes.append(f"{label}: the template names the mod, not a pack; using its default packs")
         for p in needed_packs(mod):
-            add(p["file"], sids + ([p["steamId"]] if p.get("steamId") else []), label)
+            add(p["file"], sids + ([p["steamId"]] if p.get("steamId") else []), label, t.get("mod", ""))
         if not needed_packs(mod):
             for s in sids:
                 for p in sorted((packs.workshop / s).glob("*.pack")) if (packs.workshop / s).exists() else []:
@@ -241,13 +258,15 @@ def main():
     ap.add_argument("--packs", nargs="*", default=[], help="folders with downloaded packs (searched recursively)")
     ap.add_argument("--only", help="template ids, comma-separated")
     ap.add_argument("--work", type=Path, help="test folder (default: next to the Steam library's steamapps)")
+    ap.add_argument("--presets", type=Path, help="extra lists to test (JSON list of {id, name, entries}), e.g. the profiles Play makes; their results stay in the test folder")
     a = ap.parse_args()
     game = a.game
     workshop = game.parent.parent / "workshop" / "content" / "1142710"
     work = a.work or game.parent.parent.parent / "wh3lmm_launch_test"  # same drive as the library: hard links work
     only = set(a.only.split(",")) if a.only else None
     packs = Packs(workshop, a.packs)
-    plans = [plan(p, packs) for p in catalog["presets"] if not only or p["id"] in only]
+    extra = json.loads(a.presets.read_text("utf-8")) if a.presets else []
+    plans = [plan(p, packs) for p in catalog["presets"] + extra if not only or p["id"] in only]
     work.mkdir(parents=True, exist_ok=True)
     (work / "plan.json").write_text(json.dumps(plans, ensure_ascii=False, indent=1), "utf-8")
     if a.mode == "plan":
@@ -274,7 +293,8 @@ def main():
                 continue
             r = run_one(p, game, work)
             results.append(r)
-            record(r, p["fingerprint"], version)
+            if p.get("origin") != "profile":  # only the catalog's own templates are marked launch-tested
+                record(r, p["fingerprint"], version)
             print(f"{p['id']}: {r['result']} ({r['detail']}), script errors {len(r['scriptErrors'])}", flush=True)
             (work / "results.json").write_text(json.dumps(results, ensure_ascii=False, indent=1), "utf-8")
     finally:
