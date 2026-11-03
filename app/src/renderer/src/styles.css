@@ -465,3 +465,4 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
 .install-fixes h4 { margin: 0 0 6px; }
 .install-fixes .row-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 8px; }
 .ok-text { color: var(--ok); }
+.script-error.harmless { border-color: var(--line); background: var(--panel); }

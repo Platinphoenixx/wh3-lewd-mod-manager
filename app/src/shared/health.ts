@@ -1,3 +1,5 @@
+import type { Catalog, Mod } from '@catalog/schema'
+
 /**
  * Hints about the state of a setup after the game changed: mods older than the last game update,
  * and script errors from the game's own log (lua_mod_log.txt, rewritten at every start).
@@ -44,6 +46,20 @@ export interface ScriptLog {
 }
 
 export const normScript = (p: string) => p.replace(/\\/g, '/').toLowerCase()
+
+/**
+ * A script error the catalog knows as harmless (Mod.harmlessScriptErrors, e.g. ATB's one-line script that runs before
+ * the campaign feature it touches exists): the note explaining it, else undefined.
+ */
+export function harmlessNote(catalog: Catalog, f: { line: string; script?: string }): { mod: Mod; note: string } | undefined {
+  if (!f.script) return undefined
+  const script = normScript(f.script)
+  for (const m of catalog.mods) {
+    const h = m.harmlessScriptErrors?.find((x) => normScript(x.script) === script && f.line.toLowerCase().includes(x.match.toLowerCase()))
+    if (h) return { mod: m, note: h.note }
+  }
+  return undefined
+}
 
 /**
  * The game writes a failed mod script as a block (checked in game, 9.0.4):

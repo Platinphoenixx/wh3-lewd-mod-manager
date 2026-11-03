@@ -360,6 +360,13 @@
   "mods": [
     {
       "id": "ll-42028",
+      "harmlessScriptErrors": [
+        {
+          "script": "script/_lib/mod/!kerb_alar.lua",
+          "match": "mother_ostankya_features",
+          "note": "This one-line script runs before Mother Ostankya's campaign feature exists, so it only leaves her teleport-home chance unchanged; ATB's other scripts load normally."
+        }
+      ],
       "packs": [
         {
           "file": "kerb_Alarielle_Temptations_Bloom_steam.pack",

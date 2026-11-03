@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T12:42:34+00:00",
+  "generatedAt": "2026-11-03T12:49:40+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -6332,6 +6332,13 @@
           "Lord Hero Swap: 3406868790 vs. 9.0 fix 3810275955 - the page does not say which is meant."
         ]
       },
+      "harmlessScriptErrors": [
+        {
+          "script": "script/_lib/mod/!kerb_alar.lua",
+          "match": "mother_ostankya_features",
+          "note": "This one-line script runs before Mother Ostankya's campaign feature exists, so it only leaves her teleport-home chance unchanged; ATB's other scripts load normally."
+        }
+      ],
       "cleanup": {
         "staleDataPacks": [
           "Alarielle_Temptation_Bloom*.pack",

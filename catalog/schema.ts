@@ -189,6 +189,8 @@ export interface Mod {
   knownIssues?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
+  /** Script errors of the mod that are known and do no harm (script path + a text of the message); shown, not counted as errors. */
+  harmlessScriptErrors?: { script: string; match: string; note: string }[];
   /** Fixes players shared for it (links and what to do), each accepted by a maintainer (community.json, type "fix"). */
   fixes?: CommunityFix[];
   installNotes?: string[];    // things a human must know (MCT settings, start a new campaign...)

@@ -96,7 +96,8 @@ community contributions. App UI and catalog texts are English.
     and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested).
     `src/shared/health.ts`: mods that change game data and are older than the last major game update
     (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
-    and script errors from `lua_mod_log.txt` mapped to their packs (tested).
+    and script errors from `lua_mod_log.txt` mapped to their packs (tested); errors a mod's `harmlessScriptErrors` names
+    (script + message text, e.g. ATB's `!kerb_alar.lua`) are listed as known and harmless and not counted.
   - Problem reports: `src/shared/report.ts` (tested) builds a Markdown report for modders from a launch
     snapshot (`userData/last-launch.json`, written by ▶ Play: load order, origin base/extra/own, template,
     game version from Warhammer3.exe + Steam build) and the script log: differences from the template, mods

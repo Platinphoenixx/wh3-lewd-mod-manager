@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { lastMajorUpdate } from '@shared/health'
+import { harmlessNote, lastMajorUpdate } from '@shared/health'
 import { matchInstalled, parseTargetKey, staleDataPacks } from '@shared/match'
 import { resolveTarget, useData } from './data'
 import { packOwner } from './ReportDialog'
@@ -13,7 +13,12 @@ export function InstallView() {
   const stale = useMemo(() => (scan ? staleDataPacks(data.index, scan.packs) : []), [scan, data.index])
   const scripts = data.scripts
   // One entry per mod, its lines counted.
-  const errors = useMemo(() => groupFailures(scripts?.failed ?? []), [scripts])
+  const groups = useMemo(() => groupFailures(scripts?.failed ?? []), [scripts])
+  // Messages the catalog knows as harmless are listed apart and not counted as errors.
+  const known = (i: number) => (scripts ? harmlessNote(data.catalog, scripts.failed[i]) : undefined)
+  const errors = groups.filter((g) => !known(g.index))
+  const harmless = groups.filter((g) => known(g.index))
+  const real = (scripts?.failed ?? []).filter((f) => !harmlessNote(data.catalog, f)).length
   const major = lastMajorUpdate(data.catalog.gameUpdates, scan?.gameUpdated)
   if (!scan || !result) return <p className="content">Scanning…</p>
 
@@ -61,8 +66,8 @@ export function InstallView() {
         {scripts?.written && (
           <>
             <p className="small muted">
-              lua_mod_log.txt from {new Date(scripts.written).toLocaleString()}: {scripts.loaded} mod scripts loaded, {scripts.failed.length} problem
-              {scripts.failed.length === 1 ? '' : 's'}.
+              lua_mod_log.txt from {new Date(scripts.written).toLocaleString()}: {scripts.loaded} mod scripts loaded, {real} problem
+              {real === 1 ? '' : 's'}{harmless.length ? `, ${harmless.length} known harmless message${harmless.length === 1 ? '' : 's'}` : ''}.
             </p>
             {errors.map(({ index, lines }) => {
               const f = scripts.failed[index]
@@ -75,6 +80,18 @@ export function InstallView() {
                     {lines.length > 3 && <div className="muted">… and {lines.length - 3} more lines (all in the report)</div>}
                   </div>
                   <button className="primary" style={{ margin: 0 }} onClick={() => data.openReport(index)}>Report to the modder…</button>
+                </div>
+              )
+            })}
+            {harmless.map(({ index, lines }) => {
+              const k = known(index)!
+              return (
+                <div key={index} className="callout small script-error harmless">
+                  <div>
+                    <strong>{k.mod.name}</strong> <span className="muted">– known and harmless, nothing to do</span>
+                    <div className="muted">{lines[0].line}</div>
+                    <div>{k.note}</div>
+                  </div>
                 </div>
               )
             })}

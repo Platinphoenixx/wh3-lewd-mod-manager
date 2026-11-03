@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState, type DragEvent } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
 import { DEFAULTS, SUPPORT_URL, type GameScan, type ScriptReport, type Settings } from '@shared/api'
 import { withUserRules, type UserRule } from '@shared/community'
@@ -17,6 +17,7 @@ import { announceInstalled } from './OwnMods'
 import { NoticeStack, useNotices } from './Notices'
 import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
+import { harmlessNote } from '@shared/health'
 
 const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings', 'review'] as const
 type Tab = (typeof TABS)[number]
@@ -85,10 +86,15 @@ export function App() {
   useEffect(() => {
     window.api.scriptReport().then(setScripts, () => setScripts(null))
   }, [scan])
+  // Errors the catalog knows as harmless are shown on the Installation tab but not counted.
+  const catalogRef = useRef<Catalog | null>(null)
+  catalogRef.current = catalog
+  const realFailures = (failed: ScriptReport['failed']) => failed.filter((f) => !catalogRef.current || !harmlessNote(catalogRef.current, f))
   useEffect(() => {
-    const n = groupFailures(scripts?.failed ?? []).length
+    const n = groupFailures(realFailures(scripts?.failed ?? [])).length
     setTabCount('install', n ? { n, error: true, title: `Script errors in ${n} mod${n === 1 ? '' : 's'} at the last game start` } : null)
-  }, [scripts, setTabCount])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scripts, catalog, setTabCount])
   // A newer app release (asked at most daily): one card with the download page; nothing installs by itself.
   useEffect(() => {
     window.api.appUpdate().then((u) => u && notify({
@@ -102,11 +108,13 @@ export function App() {
     const s = await window.api.scriptReport().catch(() => null)
     setScripts(s)
     if (!s?.written || s.written < startedAt) return // the game did not get far enough to write its log
-    if (!s.failed.length) {
-      notify({ kind: 'done', text: 'Game closed – no script errors.' })
+    const real = realFailures(s.failed)
+    if (!real.length) {
+      const known = s.failed.length - real.length
+      notify({ kind: 'done', text: `Game closed – no script errors${known ? ` (only ${known === 1 ? 'a known, harmless message' : `${known} known, harmless messages`})` : ''}.` })
       return
     }
-    const n = groupFailures(s.failed).length
+    const n = groupFailures(real).length
     // Stays until closed: the player is often still away from the screen when the game closes.
     notify({
       kind: 'error',

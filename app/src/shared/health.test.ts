@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { gameBuildFromManifest, gameUpdatedFromManifest, lastMajorUpdate, olderThanGame, parseLuaLog, updateName } from './health'
+import type { Catalog } from '@catalog/schema'
+import { gameBuildFromManifest, gameUpdatedFromManifest, harmlessNote, lastMajorUpdate, olderThanGame, parseLuaLog, updateName } from './health'
 
 describe('health hints', () => {
   it('reads the last game update from the Steam manifest', () => {
@@ -71,5 +72,16 @@ describe('health hints', () => {
     ].join('\r\n'))
     expect(log.loaded).toEqual(['script/_lib/mod/pj_error_wrapping.lua'])
     expect(log.failed.map((f) => f.script)).toEqual(['script/_lib/mod/!kerb_alar.lua'])
+  })
+})
+
+describe('harmlessNote', () => {
+  const catalog = {
+    mods: [{ id: 'atb', name: 'ATB', harmlessScriptErrors: [{ script: 'script/_lib/mod/!kerb_alar.lua', match: 'mother_ostankya_features', note: 'runs too early' }] }]
+  } as unknown as Catalog
+  it('knows a harmless error by its script and message, not others of the same script', () => {
+    const line = String.raw`Failed to execute loaded mod file [script\_lib\mod\!kerb_alar.lua], error is: attempt to index global 'mother_ostankya_features' (a nil value)`
+    expect(harmlessNote(catalog, { line, script: String.raw`script\_lib\mod\!kerb_alar.lua` })?.note).toBe('runs too early')
+    expect(harmlessNote(catalog, { line: 'attempt to call a nil value', script: 'script/_lib/mod/!kerb_alar.lua' })).toBeUndefined()
   })
 })
