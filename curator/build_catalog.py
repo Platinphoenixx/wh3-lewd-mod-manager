@@ -206,6 +206,16 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
                     built += preset_entries(mods, external, steam, dep) if "mod" in dep else [x for x in [preset_entry(mods, external, steam, dep)] if x]
         character = re.sub(r"[“”’‘]", "'", g["character"])  # Google Docs smart quotes
         slug = re.sub(r"[^a-z0-9]+", "-", character.lower()).strip("-")[:40]
+        if g.get("id"):
+            # A community setup (work/community-setups.json): written from the community's own channel.
+            out.append({"id": g["id"], "name": g["name"], "origin": "guide", "playAs": g.get("playAs") or [character],
+                        "phase": "any", "phaseNote": "Built from the community's channel; the catalog's load-order rules order it.",
+                        "source": g["source"], "description": g.get("description", ""),
+                        **({"theme": g["theme"]} if g.get("theme") else {}),
+                        **({"highlights": g["highlights"]} if g.get("highlights") else {}),
+                        **({"coverMods": g["coverMods"]} if g.get("coverMods") else {}),
+                        "entries": built})
+            continue
         out.append({"id": f"kpw-{slug}", "name": f"{character} – KPW's quick list", "origin": "guide",
                     "playAs": [c.strip() for c in re.split(r"[/,]", character) if c.strip()], "phase": "any",
                     "phaseNote": "Order as listed in KPW's guide; check the load order before playing.",
@@ -415,7 +425,7 @@ def main():
     parts += sorted(glob.glob(str(CURATOR / "work" / "part-*.json")))
     # followup-*.json: field overrides from later curation passes (same shape as a part)
     # Later passes win: LL and Steam follow-ups first, then research, then community contributions.
-    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-review.json": 3, "followup-archives.json": 4, "followup-discord.json": 4.5, "followup-community.json": 5}
+    order = {"followup-ll.json": 0, "followup-steam.json": 1, "followup-research.json": 2, "followup-review.json": 3, "followup-archives.json": 4, "followup-discord.json": 4.5, "followup-setups.json": 4.7, "followup-community.json": 5}
     parts += sorted(glob.glob(str(CURATOR / "work" / "followup-*.json")), key=lambda p: (order.get(Path(p).name, 2), p))
     manual = CURATOR / "manual.json"
     if manual.exists():
@@ -966,6 +976,15 @@ def main():
                        "dlc": doc.get("dlc", []), "notes": doc.get("generalNotes", []), "entries": entries,
                        "source": {"type": "discord", "url": doc.get("url", ""), "author": "KPW"}})
 
+    # Setups the curators wrote from a community's own channel (Beastmen, Greenskins, ...): like a guide, the mods it
+    # names plus what they strictly need, ordered by the catalog's rules; "pack" picks one pack of a mod.
+    cs_path = CURATOR / "work" / "community-setups.json"
+    for s in (load(cs_path).get("setups", []) if cs_path.exists() else []):
+        guides.append({"id": s["id"], "name": s["name"], "character": (s.get("playAs") or [s["name"]])[0], "playAs": s.get("playAs"),
+                       "theme": s.get("theme"), "description": s.get("description"), "highlights": s.get("highlights"),
+                       "coverMods": s.get("coverMods"), "source": {"type": "discord", "url": s["source"]},
+                       "entries": [{"name": e.get("note") or e["mod"], "target": {"mod": e["mod"]}, **({"pack": e["pack"]} if e.get("pack") else {}),
+                                    "optional": False} for e in s["entries"] if e["mod"] in mods]})
     presets += guide_and_derived_presets(mods, external, presets, guides, steam)
 
     # The same replacements for guide and derived templates. An entry that names its mod instead of a pack (a mod made

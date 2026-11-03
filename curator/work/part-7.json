@@ -1,0 +1,71 @@
+{
+  "_comment": "Mods found in the community setup pass (2026-11-03).",
+  "mods": [
+    {
+      "id": "dc-orcmatched-greenskin-animations",
+      "name": "OrcMatched - Greenskin matched animations",
+      "authors": [
+        "Throwawaypoodle"
+      ],
+      "kind": "assets",
+      "summary": "Lewd matched battle animations for orcs, goblins and trolls, moved over from the Community Beastmen animations; the newer build works next to Community Beastmen.",
+      "tags": [
+        "greenskins",
+        "goblins",
+        "animations",
+        "matched combat"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "goblin-whored",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "OrcMatched_mod02_comp_w_beast_test3.pack",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129",
+            "description": "Build of 2026-01-24 that also works next to Community Beastmen"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "OrcMatched_mod02_comp_w_beast_test3.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46561"
+          },
+          "note": "Made for Goblin Horde Redux players",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
+        }
+      ],
+      "loadOrder": {
+        "note": "At the top of the load order, above Goblin Horde Redux; next to Community Beastmen it may have to load below it."
+      },
+      "knownIssues": [
+        "Nobody has confirmed a build for patch 9.0 yet (as of 2026-11-03)."
+      ],
+      "installNotes": [
+        "Works on units with the hu1/hu1b skeletons, such as the Total Warmaidens Greenskin pack (Sexy Horde)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-03",
+        "confidence": "medium",
+        "openQuestions": [
+          "A third party uploaded an OrcMatched build to Steam (3625560810); which build it holds is not known."
+        ]
+      }
+    }
+  ]
+}

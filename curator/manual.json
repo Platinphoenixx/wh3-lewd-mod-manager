@@ -352,6 +352,21 @@
       "source": "Launch test of the templates on 2026-11-02 (game 9.0.4, without other mods of the list involved)"
     }
   },
+  "playCoverage": {
+    "_comment": "Communities (Discord channels with their own setup) that must stay reachable from the Play tab: some template has one of the mods. Checked by app/src/main/catalog-data.test.ts. Add a community here when its setup is added.",
+    "Alarielle (Temptation's Bloom)": ["ll-42028"],
+    "Miao Ying and Azazel (Lazy, Azazel's Realm)": ["ll-23878", "ll-27930"],
+    "Katarin (Lazy)": ["ll-23966", "steam-3471237570"],
+    "Morathi (Lazy)": ["ll-23925"],
+    "Beastmen (Community Beastmen)": ["ll-46165"],
+    "Greenskins (Goblin Horde Redux)": ["ll-46561"],
+    "Corrupted Ascension (Lin)": ["ll-27171"],
+    "Corrupted Valkia": ["ll-24004"],
+    "Shenzoo": ["dc-shenzoo-faction-mod-passingbyposts"],
+    "Corrupted Drycha (Lin)": ["ll-27663"],
+    "Khalida's Corruption": ["ll-52142"],
+    "Imrik Dragon Taming": ["dc-imrik-dragon-taming-mrdustv"]
+  },
   "noTemplate": {
     "_comment": "Mods that get no derived template, with the reason.",
     "ll-28110": "Stops the game at launch since patch 9.0 (database error, launch test 2026-11-02).",

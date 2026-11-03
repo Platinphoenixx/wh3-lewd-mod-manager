@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T12:49:40+00:00",
+  "generatedAt": "2026-11-03T13:11:26+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -12891,17 +12891,17 @@
       },
       "packs": [
         {
+          "file": "community_beastmen_light.pack",
+          "from": "download",
+          "exclusiveGroup": "cb-version",
+          "note": "Name on the page without extension; for all other factions; not on Steam"
+        },
+        {
           "file": "new_community_beastmen.pack",
           "from": "steam",
           "steamId": "3476784883",
           "exclusiveGroup": "cb-version",
           "note": "Name on the page without extension ('new_community_beastmen'); for playing as Beastmen"
-        },
-        {
-          "file": "community_beastmen_light.pack",
-          "from": "download",
-          "exclusiveGroup": "cb-version",
-          "note": "Name on the page without extension; for all other factions; not on Steam"
         }
       ],
       "relations": [
@@ -12998,6 +12998,95 @@
           "source": {
             "type": "discord"
           }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3346259963"
+          },
+          "note": "Faster travel to the quest targets",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3000867445"
+          },
+          "note": "More Beastmen technologies",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-2802810577"
+          },
+          "note": "More Beastmen legendary lords to confederate; do not start as one of them, or the mod's Beastmen content is missing",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Lets the corrupted heroes use corruption-stage reskins",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-pj-console"
+          },
+          "note": "The maintainer's guide gives console commands to spawn the corrupted heroes and lords when a mission breaks",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2895227844"
+          },
+          "note": "No other animation mods: they conflict with the Beastmen animations (maintainer's guide)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2896264280"
+          },
+          "note": "No other animation mods: they conflict with the Beastmen animations (maintainer's guide)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "nx-53"
+          },
+          "note": "A Warmaidens reskin of the Beastmen themselves; use the separate Warmaidens packs of other factions only",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014"
+          },
+          "condition": "with the full version"
         }
       ],
       "loadOrder": {
@@ -13016,6 +13105,8 @@
         "Total Warmaidens reskins clash with units shared with this mod (Centigors of Tzeentch, Minotaurs, Chaos Spawn): both replace the same models, so some conflict cannot be avoided. Zeta's beastmen reskin (Beauty and Beasts) is not really compatible: both change the Minotaur skin and Community Beastmen wins regardless of load order. Zeta's faction-specific packs are fine.",
         "Mods that add items or ancillaries (for example 'New Legendary Lord and Hero Artefacts', 'Just More Items') conflict with this mod's own auxiliary and item changes.",
         "Under Tabletop Caps the units added by this mod (mercenaries, corrupted elves) count as basic units without a cap; no compatibility submod existed as of 2026-01-24.",
+        "The rites screen does not scroll while a lord is selected: deselect the lord and open it again (maintainer's guide).",
+        "Hellebron's quest battle lies off the map and crashes when teleporting there in the Steam build; fixed in the LoversLab files (author, 2026-07-08).",
         "WH3 patch 2026-10-26: startup crash reported, Ruination tier 1 building missing (db fix: change ruination 1 to 2), ritual of ruination not usable",
         "Recruitment building fix for custom units (2026-10-29) only on LL/Google Drive; Steam lags",
         "Hellebron quest battle crashes on the Steam version (off-map location): set X=265, Y=578 in Mission_tables rows of new_community_beastmen.pack via RPFM",
@@ -13031,7 +13122,12 @@
         "Since the 2025-11-03 update the matched animations target all humanoid skeletons; without a reskin of the humanoids the scenes are male-on-male. For non-Beastmen campaigns the author recommends the Light version.",
         "Variant Selector support is built in (since 2025-11-29): Lazy's progressive reskins (Katarin, Morathi, Miao Ying), the Kerberos variants (Alarielle, Sisters of Twilight, Ariel) and Khalida can be switched in game. The reskin mods themselves are still needed and must win the load order; reskins not built for Variant Selector may not apply to the hero versions.",
         "Skill-tree reworks (Katarin and Miao Ying 2026-05-30, Fay 2026-06-06) can cost already spent skill points, so a respec may be needed; the author calls most other updates save compatible.",
-        "The author takes modding breaks (from 2026-09-26, again around 2026-10-18 and 2026-11-01), so open bugs can wait."
+        "The author takes modding breaks (from 2026-09-26, again around 2026-10-18 and 2026-11-01), so open bugs can wait.",
+        "Two versions: new_community_beastmen.pack (Steam 3476784883 and LoversLab) only for Khazrak, Malagor, Taurox and Morghur campaigns; community_beastmen_light.pack (LoversLab only) with just the reskins and animations, for any faction. The full version in another faction's campaign brings missing mounts, overwritten texts and no confederation.",
+        "Endo's matched (sex) animations are part of the mod; they play on infantry on foot only, not on mounted or fleeing models and not for lord abilities. More Animation makes them happen more often.",
+        "Place it at the top of the load order. With the full version, do not use the all-in-one Total Warmaidens pack (separate faction packs are fine), Slaanesh vassalisation mods, overhauls such as SFO or 'Recruit Defeated Legendary Lords' - they break its missions; the light version is fine with them.",
+        "The LoversLab page holds a text file with Google Drive links, and its date does not change when the files are updated; LoversLab is usually ahead of Steam.",
+        "Console commands for broken missions (spawn the corrupted heroes and lords, trigger the final missions) are in the maintainer's guide: https://github.com/RealDeHess/CommunityBeastmen"
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -13061,6 +13157,28 @@
         ],
         "note": "These packs were merged into the Community Beastmen mod (the author says to remove them). Next to it, the Sewrat and Candles packs fire dilemmas twice and Endo's matched-combat packs bring back swordsmen Elf Breakers, Bestigor Hunters and question-mark unit cards."
       },
+      "playAs": [
+        {
+          "character": "Khazrak",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Malagor",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Taurox",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Morghur",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        }
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -24237,6 +24355,28 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/46561-goblin-horde-redux-at-the-right-place-this-time/"
           }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "dc-orcmatched-greenskin-animations"
+          },
+          "note": "Lewd matched battle animations for orcs, goblins and trolls; not yet confirmed for patch 9.0",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "Players use it with Greenskin lords to corrupt and confederate defeated female legendary lords",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
         }
       ],
       "status": "wip",
@@ -24247,7 +24387,8 @@
       "installNotes": [
         "On turn 2 take the dilemma (first option each time), then complete an easy quest to unlock the buildings.",
         "Standalone: needs no other goblin mod. Since 2025-12-22 it replaces the pre-Redux build Goblin_horde_rewrite_wip.pack (also the Chinese goblinallinone build) and the older Goblin Horde Addon pages.",
-        "Patch 9.0 broke the mod at startup (abilities_junction_tables error); the fixes of 2026-09-29 and 2026-10-04 load again, so update older copies."
+        "Patch 9.0 broke the mod at startup (abilities_junction_tables error); the fixes of 2026-09-29 and 2026-10-04 load again, so update older copies.",
+        "Standalone: it contains Endo's goblin mod, Tacomarine's addon and Elvslayer's events, so none of the older goblin packs are needed. Fixed for patch 9.0 on 2026-09-29 and after the hotfix on 2026-10-04 (author)."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -26140,7 +26281,30 @@
           "note": "Original by another author (abandoned), kept alive by MrDustV"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's corruption framework must be off for it (MrDustV)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel's Realm must be off for it (MrDustV)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-03",
         "confidence": "medium"
@@ -26151,6 +26315,12 @@
       ],
       "knownIssues": [
         "The questline breaks if another faction (for example Zhao) confederates Miao Ying before it is finished, because its scripts target the northern provinces. The Corrupted Compendium's 'Play as Azazel' overwrite includes tables that block Miao confederation."
+      ],
+      "playAs": [
+        {
+          "character": "Imrik",
+          "faction": "High Elves"
+        }
       ],
       "authorPages": [
         {
@@ -37786,6 +37956,72 @@
           "source": "steam"
         }
       ]
+    },
+    {
+      "id": "dc-orcmatched-greenskin-animations",
+      "name": "OrcMatched - Greenskin matched animations",
+      "authors": [
+        "Throwawaypoodle"
+      ],
+      "kind": "assets",
+      "summary": "Lewd matched battle animations for orcs, goblins and trolls, moved over from the Community Beastmen animations; the newer build works next to Community Beastmen.",
+      "tags": [
+        "greenskins",
+        "goblins",
+        "animations",
+        "matched combat"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "goblin-whored",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "OrcMatched_mod02_comp_w_beast_test3.pack",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129",
+            "description": "Build of 2026-01-24 that also works next to Community Beastmen"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "OrcMatched_mod02_comp_w_beast_test3.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1438023565575454871/1464734600105558129"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-46561"
+          },
+          "note": "Made for Goblin Horde Redux players",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
+        }
+      ],
+      "loadOrder": {
+        "note": "At the top of the load order, above Goblin Horde Redux; next to Community Beastmen it may have to load below it."
+      },
+      "knownIssues": [
+        "Nobody has confirmed a build for patch 9.0 yet (as of 2026-11-03)."
+      ],
+      "installNotes": [
+        "Works on units with the hu1/hu1b skeletons, such as the Total Warmaidens Greenskin pack (Sexy Horde)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-03",
+        "confidence": "medium",
+        "openQuestions": [
+          "A third party uploaded an OrcMatched build to Steam (3625560810); which build it holds is not known."
+        ]
+      }
     },
     {
       "id": "steam-2989710828",
@@ -58344,13 +58580,25 @@
           }
         },
         {
-          "kind": "requires",
+          "kind": "incompatible",
           "target": {
-            "mod": "ll-23878"
+            "mod": "ll-27930"
           },
-          "note": "Lazy's li_miaoying_progression_stages (Lazy Miao progression)",
+          "note": "Built on Lazy's framework, which Corrupted Ascension does not work with",
           "source": {
-            "type": "discord"
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Built on Lazy's framework, which Corrupted Ascension does not work with",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
           }
         },
         {
@@ -58406,7 +58654,6 @@
         "Game patch 9.0 (2026-09-24) broke it and the author was still fixing it on 2026-10-09 (the Workshop item was updated 2026-10-23); if it still crashes, remove the mod, delete its files and resubscribe.",
         "Startup crash 'invalid database record' in a Lin pack, or blank quests and texts after an update: delete every old copy of the Lin mods and the Generic Framework from the workshop and data folders and subscribe again; plain unsubscribe/resubscribe was not enough (old-version files in data cause these errors, 2026-10-24).",
         "With Lazy's mods active, buildings or paths can stay locked or the start quest (artifact quest on turn 6) can be missing; remove all of Lazy's mods and mods built on them.",
-        "Script error mentioning li_miaoying_progression_stages: Lazy's Miao progression missing or modified by another mod (author no longer answers this)",
         "WH3 patch 9.0 (2026-10-09) broke it; author fixing; workaround remove mod, delete files, resubscribe",
         "If using the Steam version delete old LL pack files from data"
       ],
@@ -65560,6 +65807,175 @@
       }
     },
     {
+      "id": "setup-beastmen",
+      "name": "Beastmen - Community Beastmen",
+      "origin": "guide",
+      "playAs": [
+        "Khazrak",
+        "Malagor",
+        "Taurox",
+        "Morghur"
+      ],
+      "phase": "any",
+      "phaseNote": "Built from the community's channel; the catalog's load-order rules order it.",
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1025523634745385014"
+      },
+      "description": "Play a Beastmen herd with **Community Beastmen**: matched (sex) battle animations, corrupted elves and other custom units, slaves as a resource, mercenaries and mission chains that capture and corrupt female legendary lords, who then join as heroes or lords. Built from the mod's Discord channel and its maintainer's guide.",
+      "theme": "Beastmen",
+      "highlights": [
+        "Mission chains that capture and corrupt female legendary lords",
+        "Endo's matched animations, more often with More Animation",
+        "Only for Khazrak, Malagor, Taurox and Morghur"
+      ],
+      "coverMods": [
+        "ll-46165"
+      ],
+      "entries": [
+        {
+          "pack": "new_community_beastmen.pack",
+          "from": "steam",
+          "steamId": "3476784883",
+          "target": {
+            "mod": "ll-46165"
+          }
+        },
+        {
+          "pack": "more_animation.pack",
+          "from": "steam",
+          "steamId": "2798690094",
+          "target": {
+            "mod": "steam-2798690094"
+          }
+        }
+      ]
+    },
+    {
+      "id": "setup-greenskins",
+      "name": "Greenskins - Goblin Horde Redux",
+      "origin": "guide",
+      "playAs": [
+        "Any Greenskin lord",
+        "Goblin Enslaver"
+      ],
+      "phase": "any",
+      "phaseNote": "Built from the community's channel; the catalog's load-order rules order it.",
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+      },
+      "description": "Play the Greenskins with **Goblin Horde Redux**: slaves, events and ancillaries for any Greenskin lord, plus the Goblin Enslaver lord. Built from the goblin-whored Discord channel.",
+      "theme": "Greenskins",
+      "highlights": [
+        "Slave and event mechanics for any Greenskin lord",
+        "The Goblin Enslaver lord",
+        "Matched animations (OrcMatched) as an option"
+      ],
+      "coverMods": [
+        "ll-46561"
+      ],
+      "entries": [
+        {
+          "pack": "Goblin_horde_redux.pack",
+          "from": "steam",
+          "steamId": "3629196257",
+          "target": {
+            "mod": "ll-46561"
+          }
+        }
+      ]
+    },
+    {
+      "id": "setup-corrupted-ascension",
+      "name": "Corrupted Ascension (Lin) - Miao Ying",
+      "origin": "guide",
+      "playAs": [
+        "Miao Ying"
+      ],
+      "phase": "any",
+      "phaseNote": "Built from the community's channel; the catalog's load-order rules order it.",
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+      },
+      "description": "Lin's standalone corruption campaign for **Miao Ying** on Lin's own Generic Framework - an alternative to Lazy's corruption mods, not combinable with them or with the mods built on them (Azazel's Realm, Temptation's Bloom, Corrupted Landmarks). Built from the mod's Discord channel.",
+      "theme": "Lin's Corrupted Ascension",
+      "highlights": [
+        "Miao Ying's corruption on Lin's own framework",
+        "Not combinable with Lazy's corruption mods",
+        "English texts with Lin's AllInOne translation"
+      ],
+      "coverMods": [
+        "ll-27171"
+      ],
+      "entries": [
+        {
+          "pack": "Lin_Generic_Framework.pack",
+          "from": "steam",
+          "steamId": "3376886102",
+          "target": {
+            "mod": "steam-3376886102"
+          }
+        },
+        {
+          "pack": "Lin_AllInOne_en.pack",
+          "from": "steam",
+          "steamId": "3718883838",
+          "target": {
+            "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+          }
+        },
+        {
+          "pack": "Lin_Corrupted_Ascension.pack",
+          "from": "steam",
+          "steamId": "3376917062",
+          "target": {
+            "mod": "ll-27171"
+          }
+        }
+      ],
+      "modernized": [
+        {
+          "from": "Lin_AllInOne_en.pack",
+          "to": "Lin_AllInOne_en.pack",
+          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
+        }
+      ]
+    },
+    {
+      "id": "setup-imrik",
+      "name": "Imrik - Dragon Taming",
+      "origin": "guide",
+      "playAs": [
+        "Imrik"
+      ],
+      "phase": "any",
+      "phaseNote": "Built from the community's channel; the catalog's load-order rules order it.",
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+      },
+      "description": "A small story for playing **Imrik** of Caledor: taming dragons (MrDustV's maintained version). Lazy's corruption framework and Azazel's Realm must be off. Built from the mod's Discord channel.",
+      "highlights": [
+        "Dragon taming story for Imrik",
+        "Maintained for patch 9.0 by MrDustV"
+      ],
+      "coverMods": [
+        "dc-imrik-dragon-taming-mrdustv"
+      ],
+      "entries": [
+        {
+          "pack": "seu_miao_imrik.pack",
+          "from": "steam",
+          "steamId": "3810954587",
+          "target": {
+            "mod": "dc-imrik-dragon-taming-mrdustv"
+          }
+        }
+      ]
+    },
+    {
       "id": "derived-ll-52142",
       "name": "Khalida's Corruption BETA",
       "origin": "derived",
@@ -67171,6 +67587,155 @@
         "url": "https://docs.google.com/document/d/e/2PACX-1vQ8pHoMiYAXv0ahMV34PhLxsrA_eIO-04wl0oM3yGrNlBNdAcEgIyGlmgcc7mWw6H4wTNT77yLP_aVf/pub",
         "author": "KPW"
       }
+    },
+    {
+      "id": "setup-beastmen",
+      "name": "Beastmen - Community Beastmen",
+      "character": "Khazrak",
+      "playAs": [
+        "Khazrak",
+        "Malagor",
+        "Taurox",
+        "Morghur"
+      ],
+      "theme": "Beastmen",
+      "description": "Play a Beastmen herd with **Community Beastmen**: matched (sex) battle animations, corrupted elves and other custom units, slaves as a resource, mercenaries and mission chains that capture and corrupt female legendary lords, who then join as heroes or lords. Built from the mod's Discord channel and its maintainer's guide.",
+      "highlights": [
+        "Mission chains that capture and corrupt female legendary lords",
+        "Endo's matched animations, more often with More Animation",
+        "Only for Khazrak, Malagor, Taurox and Morghur"
+      ],
+      "coverMods": [
+        "ll-46165"
+      ],
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1025523634745385014"
+      },
+      "entries": [
+        {
+          "name": "ll-46165",
+          "target": {
+            "mod": "ll-46165"
+          },
+          "pack": "new_community_beastmen.pack",
+          "optional": false
+        },
+        {
+          "name": "steam-2798690094",
+          "target": {
+            "mod": "steam-2798690094"
+          },
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "setup-greenskins",
+      "name": "Greenskins - Goblin Horde Redux",
+      "character": "Any Greenskin lord",
+      "playAs": [
+        "Any Greenskin lord",
+        "Goblin Enslaver"
+      ],
+      "theme": "Greenskins",
+      "description": "Play the Greenskins with **Goblin Horde Redux**: slaves, events and ancillaries for any Greenskin lord, plus the Goblin Enslaver lord. Built from the goblin-whored Discord channel.",
+      "highlights": [
+        "Slave and event mechanics for any Greenskin lord",
+        "The Goblin Enslaver lord",
+        "Matched animations (OrcMatched) as an option"
+      ],
+      "coverMods": [
+        "ll-46561"
+      ],
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+      },
+      "entries": [
+        {
+          "name": "ll-46561",
+          "target": {
+            "mod": "ll-46561"
+          },
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "setup-corrupted-ascension",
+      "name": "Corrupted Ascension (Lin) - Miao Ying",
+      "character": "Miao Ying",
+      "playAs": [
+        "Miao Ying"
+      ],
+      "theme": "Lin's Corrupted Ascension",
+      "description": "Lin's standalone corruption campaign for **Miao Ying** on Lin's own Generic Framework - an alternative to Lazy's corruption mods, not combinable with them or with the mods built on them (Azazel's Realm, Temptation's Bloom, Corrupted Landmarks). Built from the mod's Discord channel.",
+      "highlights": [
+        "Miao Ying's corruption on Lin's own framework",
+        "Not combinable with Lazy's corruption mods",
+        "English texts with Lin's AllInOne translation"
+      ],
+      "coverMods": [
+        "ll-27171"
+      ],
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+      },
+      "entries": [
+        {
+          "name": "ll-27171",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "optional": false
+        },
+        {
+          "name": "steam-3376886102",
+          "target": {
+            "mod": "steam-3376886102"
+          },
+          "optional": false
+        },
+        {
+          "name": "dc-lin-allinone-en-translation-lin-allinone-en-pack",
+          "target": {
+            "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+          },
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "setup-imrik",
+      "name": "Imrik - Dragon Taming",
+      "character": "Imrik",
+      "playAs": [
+        "Imrik"
+      ],
+      "theme": null,
+      "description": "A small story for playing **Imrik** of Caledor: taming dragons (MrDustV's maintained version). Lazy's corruption framework and Azazel's Realm must be off. Built from the mod's Discord channel.",
+      "highlights": [
+        "Dragon taming story for Imrik",
+        "Maintained for patch 9.0 by MrDustV"
+      ],
+      "coverMods": [
+        "dc-imrik-dragon-taming-mrdustv"
+      ],
+      "source": {
+        "type": "discord",
+        "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+      },
+      "entries": [
+        {
+          "name": "dc-imrik-dragon-taming-mrdustv",
+          "target": {
+            "mod": "dc-imrik-dragon-taming-mrdustv"
+          },
+          "optional": false
+        }
+      ]
     }
   ],
   "gameUpdates": [

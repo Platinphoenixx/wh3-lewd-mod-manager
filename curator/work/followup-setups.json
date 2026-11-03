@@ -1,0 +1,262 @@
+{
+  "_comment": "Community setup pass (2026-11-03): facts the readers took from the communities' own channels and the Community Beastmen maintainer's guide, for the setups in community-setups.json.",
+  "mods": [
+    {
+      "id": "ll-46165",
+      "packs": [
+        {
+          "file": "community_beastmen_light.pack",
+          "from": "download",
+          "exclusiveGroup": "cb-version",
+          "note": "Name on the page without extension; for all other factions; not on Steam"
+        },
+        {
+          "file": "new_community_beastmen.pack",
+          "from": "steam",
+          "steamId": "3476784883",
+          "exclusiveGroup": "cb-version",
+          "note": "Name on the page without extension ('new_community_beastmen'); for playing as Beastmen"
+        }
+      ],
+      "playAs": [
+        {
+          "character": "Khazrak",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Malagor",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Taurox",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        },
+        {
+          "character": "Morghur",
+          "faction": "Beastmen",
+          "note": "Full version only; the light version works with any faction"
+        }
+      ],
+      "relations+": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-2798690094"
+          },
+          "note": "Makes the matched animations happen more often (maintainer's guide)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3346259963"
+          },
+          "note": "Faster travel to the quest targets",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3000867445"
+          },
+          "note": "More Beastmen technologies",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-2802810577"
+          },
+          "note": "More Beastmen legendary lords to confederate; do not start as one of them, or the mod's Beastmen content is missing",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-variant-selector"
+          },
+          "note": "Lets the corrupted heroes use corruption-stage reskins",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "external": "ext-pj-console"
+          },
+          "note": "The maintainer's guide gives console commands to spawn the corrupted heroes and lords when a mission breaks",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2895227844"
+          },
+          "note": "No other animation mods: they conflict with the Beastmen animations (maintainer's guide)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2896264280"
+          },
+          "note": "No other animation mods: they conflict with the Beastmen animations (maintainer's guide)",
+          "source": {
+            "type": "discord",
+            "url": "https://github.com/RealDeHess/CommunityBeastmen"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "nx-53"
+          },
+          "note": "A Warmaidens reskin of the Beastmen themselves; use the separate Warmaidens packs of other factions only",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014"
+          },
+          "condition": "with the full version"
+        }
+      ],
+      "installNotes+": [
+        "Two versions: new_community_beastmen.pack (Steam 3476784883 and LoversLab) only for Khazrak, Malagor, Taurox and Morghur campaigns; community_beastmen_light.pack (LoversLab only) with just the reskins and animations, for any faction. The full version in another faction's campaign brings missing mounts, overwritten texts and no confederation.",
+        "Endo's matched (sex) animations are part of the mod; they play on infantry on foot only, not on mounted or fleeing models and not for lord abilities. More Animation makes them happen more often.",
+        "Place it at the top of the load order. With the full version, do not use the all-in-one Total Warmaidens pack (separate faction packs are fine), Slaanesh vassalisation mods, overhauls such as SFO or 'Recruit Defeated Legendary Lords' - they break its missions; the light version is fine with them.",
+        "The LoversLab page holds a text file with Google Drive links, and its date does not change when the files are updated; LoversLab is usually ahead of Steam.",
+        "Console commands for broken missions (spawn the corrupted heroes and lords, trigger the final missions) are in the maintainer's guide: https://github.com/RealDeHess/CommunityBeastmen"
+      ],
+      "knownIssues+": [
+        "The rites screen does not scroll while a lord is selected: deselect the lord and open it again (maintainer's guide).",
+        "Hellebron's quest battle lies off the map and crashes when teleporting there in the Steam build; fixed in the LoversLab files (author, 2026-07-08)."
+      ]
+    },
+    {
+      "id": "ll-46561",
+      "relations+": [
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "dc-orcmatched-greenskin-animations"
+          },
+          "note": "Lewd matched battle animations for orcs, goblins and trolls; not yet confirmed for patch 9.0",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "Players use it with Greenskin lords to corrupt and confederate defeated female legendary lords",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1438023565575454871"
+          }
+        }
+      ],
+      "installNotes+": [
+        "Standalone: it contains Endo's goblin mod, Tacomarine's addon and Elvslayer's events, so none of the older goblin packs are needed. Fixed for patch 9.0 on 2026-09-29 and after the hotfix on 2026-10-04 (author)."
+      ]
+    },
+    {
+      "id": "ll-27171",
+      "relations-": [
+        "ll-23878"
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "A standalone corruption campaign: not compatible with Lazy's corruption framework or the mods built on it",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Built on Lazy's framework, which Corrupted Ascension does not work with",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Built on Lazy's framework, which Corrupted Ascension does not work with",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dc-imrik-dragon-taming-mrdustv",
+      "playAs": [
+        {
+          "character": "Imrik",
+          "faction": "High Elves"
+        }
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23878"
+          },
+          "note": "Lazy's corruption framework must be off for it (MrDustV)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-27930"
+          },
+          "note": "Azazel's Realm must be off for it (MrDustV)",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1019052493843480596"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -17,6 +17,20 @@ const mods = new Map(catalog.mods.map((m) => [m.id, m]))
 const outdated = (id: string) => ['superseded', 'abandoned'].includes(mods.get(id)?.status ?? '')
 const fresh = { extras: [], removed: [] }
 
+describe('Play coverage', () => {
+  // Communities with their own setup must stay reachable from Play (curator/manual.json "playCoverage"): a whole
+  // community (Beastmen, Greenskins) once fell through because none of its mods was in a template.
+  const coverage: Record<string, string[] | string> = JSON.parse(readFileSync(resolve(import.meta.dirname, '../../../curator/manual.json'), 'utf8')).playCoverage ?? {}
+  it('every listed community has a template with one of its mods, and a Play subject for it', () => {
+    const subjects = subjectsOf(catalog, index)
+    const missing = Object.entries(coverage).filter(([k]) => !k.startsWith('_')).flatMap(([name, ids]) => {
+      const p = catalog.presets.find((x) => x.origin !== 'community' && x.entries.some((e) => e.target && 'mod' in e.target && (ids as string[]).includes(e.target.mod)))
+      return p && subjects.some((s) => s.presets.includes(p)) ? [] : [name]
+    })
+    expect(missing).toEqual([])
+  })
+})
+
 describe('catalog', () => {
   it('relations point at known mods, never at a collection or the mod itself', () => {
     const bad = catalog.mods.flatMap((m) => m.relations.flatMap((r) => {

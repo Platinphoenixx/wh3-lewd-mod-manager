@@ -1,0 +1,109 @@
+{
+  "_comment": "Setups written from a community's own channel (build_catalog.py turns each into a template: the named mods plus what they strictly need, ordered by the catalog's rules). 'pack' picks one pack of a mod.",
+  "setups": [
+    {
+      "id": "setup-beastmen",
+      "name": "Beastmen - Community Beastmen",
+      "theme": "Beastmen",
+      "playAs": [
+        "Khazrak",
+        "Malagor",
+        "Taurox",
+        "Morghur"
+      ],
+      "source": "https://discord.com/channels/965342581745668136/1025523634745385014",
+      "description": "Play a Beastmen herd with **Community Beastmen**: matched (sex) battle animations, corrupted elves and other custom units, slaves as a resource, mercenaries and mission chains that capture and corrupt female legendary lords, who then join as heroes or lords. Built from the mod's Discord channel and its maintainer's guide.",
+      "highlights": [
+        "Mission chains that capture and corrupt female legendary lords",
+        "Endo's matched animations, more often with More Animation",
+        "Only for Khazrak, Malagor, Taurox and Morghur"
+      ],
+      "coverMods": [
+        "ll-46165"
+      ],
+      "entries": [
+        {
+          "mod": "ll-46165",
+          "pack": "new_community_beastmen.pack"
+        },
+        {
+          "mod": "steam-2798690094"
+        }
+      ]
+    },
+    {
+      "id": "setup-greenskins",
+      "name": "Greenskins - Goblin Horde Redux",
+      "theme": "Greenskins",
+      "playAs": [
+        "Any Greenskin lord",
+        "Goblin Enslaver"
+      ],
+      "source": "https://discord.com/channels/965342581745668136/1438023565575454871",
+      "description": "Play the Greenskins with **Goblin Horde Redux**: slaves, events and ancillaries for any Greenskin lord, plus the Goblin Enslaver lord. Built from the goblin-whored Discord channel.",
+      "highlights": [
+        "Slave and event mechanics for any Greenskin lord",
+        "The Goblin Enslaver lord",
+        "Matched animations (OrcMatched) as an option"
+      ],
+      "coverMods": [
+        "ll-46561"
+      ],
+      "entries": [
+        {
+          "mod": "ll-46561"
+        }
+      ]
+    },
+    {
+      "id": "setup-corrupted-ascension",
+      "name": "Corrupted Ascension (Lin) - Miao Ying",
+      "theme": "Lin's Corrupted Ascension",
+      "playAs": [
+        "Miao Ying"
+      ],
+      "source": "https://discord.com/channels/965342581745668136/1254908017288151040",
+      "description": "Lin's standalone corruption campaign for **Miao Ying** on Lin's own Generic Framework - an alternative to Lazy's corruption mods, not combinable with them or with the mods built on them (Azazel's Realm, Temptation's Bloom, Corrupted Landmarks). Built from the mod's Discord channel.",
+      "highlights": [
+        "Miao Ying's corruption on Lin's own framework",
+        "Not combinable with Lazy's corruption mods",
+        "English texts with Lin's AllInOne translation"
+      ],
+      "coverMods": [
+        "ll-27171"
+      ],
+      "entries": [
+        {
+          "mod": "ll-27171"
+        },
+        {
+          "mod": "steam-3376886102"
+        },
+        {
+          "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+        }
+      ]
+    },
+    {
+      "id": "setup-imrik",
+      "name": "Imrik - Dragon Taming",
+      "playAs": [
+        "Imrik"
+      ],
+      "source": "https://discord.com/channels/965342581745668136/1019052493843480596",
+      "description": "A small story for playing **Imrik** of Caledor: taming dragons (MrDustV's maintained version). Lazy's corruption framework and Azazel's Realm must be off. Built from the mod's Discord channel.",
+      "highlights": [
+        "Dragon taming story for Imrik",
+        "Maintained for patch 9.0 by MrDustV"
+      ],
+      "coverMods": [
+        "dc-imrik-dragon-taming-mrdustv"
+      ],
+      "entries": [
+        {
+          "mod": "dc-imrik-dragon-taming-mrdustv"
+        }
+      ]
+    }
+  ]
+}

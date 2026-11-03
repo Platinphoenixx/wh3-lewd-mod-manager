@@ -643,8 +643,7 @@
    ],
    "loversLab": [],
    "requires": [
-    "Generic Framework (Steam 3376886102)",
-    "Lazy's li_miaoying_progression_stages (Lazy Miao progression)"
+    "Generic Framework (Steam 3376886102)"
    ],
    "recommends": [
     "Lin AllInOne EN translation (Steam 3718883838) loaded above Corrupted Ascension"
@@ -655,7 +654,6 @@
    "phase": "",
    "status": "active",
    "knownIssues": [
-    "Script error mentioning li_miaoying_progression_stages: Lazy's Miao progression missing or modified by another mod (author no longer answers this)",
     "WH3 patch 9.0 (2026-10-09) broke it; author fixing; workaround remove mod, delete files, resubscribe",
     "If using the Steam version delete old LL pack files from data"
    ],

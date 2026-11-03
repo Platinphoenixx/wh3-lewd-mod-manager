@@ -213,6 +213,11 @@ over all layers – fix texts there.
   `curator/raw/launch_results.json` (result, game version, date, a fingerprint of the template's packs); the build
   sets `Preset.launchTest` only while the template still has exactly the tested packs, and the app shows
   "launch-tested" from it.
+- `curator/work/community-setups.json`: setups written from a community's own Discord channel (Beastmen, Greenskins, Lin's
+  Corrupted Ascension, Imrik): the mods it names (`pack` picks one pack of a mod) become a guide template plus what they
+  strictly need, ordered by the catalog's rules; `theme` groups it in Play. Facts behind them are in `work/followup-setups.json`.
+  `manual.json` `playCoverage` lists the communities that must stay reachable from Play (one of their mods in a template);
+  `catalog-data.test.ts` fails when one is missing.
 - `curator/work/preset-desc.json` `theme`: a template about a group rather than one character ("Daemons of Slaanesh");
   the app lists it under Themes.
 - `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
