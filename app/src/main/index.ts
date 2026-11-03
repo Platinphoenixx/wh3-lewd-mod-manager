@@ -13,6 +13,8 @@ import type { Profile } from '@shared/profile'
 import type { LaunchSnapshot } from '@shared/report'
 import type { SharedSetup } from '@shared/setups'
 import { loadCatalog } from './catalog'
+import { scanSourceFolders } from './localfiles'
+import type { LocalMatch, LocalScan } from '@shared/localfiles'
 import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
@@ -75,6 +77,29 @@ ipcMain.handle('install:file', async (e, modId?: string, fix?: string) => {
   })
   // The picked download is moved into the game, not copied: nothing is left behind in Downloads.
   return pick.canceled ? { ok: false, message: '', packs: [] } : installFile(pick.filePaths[0], scan.dataPath, modId, true, typeof fix === 'string' ? fix : undefined)
+})
+// Files the player already has (Settings → Files you already have): looked through once per session or on request.
+let localScan: LocalScan | null = null
+const sourceFolders = async () => (await getSettings()).sourceFolders ?? [app.getPath('downloads')]
+ipcMain.handle('local:files', async (_e, force?: boolean) => {
+  if (!localScan || force) localScan = await scanSourceFolders((await sourceFolders()).filter((f) => existsSync(f)))
+  return localScan
+})
+ipcMain.handle('local:install', async (_e, items: LocalMatch[]) => {
+  const scan = await currentScan()
+  if (!scan.dataPath) return { ok: false, message: 'The game folder was not found.', packs: [] }
+  // Only files the last look through the player's folders found: the renderer cannot point the installer elsewhere.
+  const known = new Set((localScan?.files ?? []).map((f) => `${f.path}|${f.name}`.toLowerCase()))
+  const move = (await getSettings()).sourceMove === true
+  const byFile = new Map<string, LocalMatch[]>()
+  for (const m of items) if (known.has(`${m.file.path}|${m.file.name}`.toLowerCase())) byFile.set(m.file.path, [...(byFile.get(m.file.path) ?? []), m])
+  const results = []
+  for (const [path, ms] of byFile) {
+    const only = Object.fromEntries(ms.map((m) => [m.file.name.toLowerCase(), m.pack]))
+    results.push(await installFile(path, scan.dataPath, ms[0].modId, move, undefined, only))
+  }
+  localScan = null // what was moved is gone, what was copied is in data now
+  return { ok: results.some((r) => r.ok), message: results.map((r) => r.message).join(' · '), packs: results.flatMap((r) => r.packs) }
 })
 ipcMain.handle('install:loverslab', async (e, url: string, modId?: string, hints?: FileHint[]) => {
   const scan = await currentScan()
@@ -220,8 +245,8 @@ ipcMain.handle('profiles:save', (_e, p: Profile) => saveProfile(p))
 ipcMain.handle('profiles:delete', (_e, id: string) => deleteProfile(id))
 ipcMain.handle('settings:get', () => getSettings())
 ipcMain.handle('settings:save', (_e, s: Settings) => saveSettings(s))
-ipcMain.handle('dialog:pickFolder', async () => {
-  const r = await dialog.showOpenDialog({ properties: ['openDirectory'], title: 'Choose the Total War WARHAMMER III folder' })
+ipcMain.handle('dialog:pickFolder', async (_e, title?: string) => {
+  const r = await dialog.showOpenDialog({ properties: ['openDirectory'], title: typeof title === 'string' ? title : 'Choose the Total War WARHAMMER III folder' })
   return r.canceled ? null : r.filePaths[0]
 })
 

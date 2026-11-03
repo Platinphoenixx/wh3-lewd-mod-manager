@@ -4,6 +4,7 @@ import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api
 import { archivesFor, downloadHints, installSourceFor, packHints, packsToFetch, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
 import { useData } from './data'
+import { findLocal, type LocalMatch, type LocalScan } from '@shared/localfiles'
 
 interface Missing {
   entry: ResolvedEntry
@@ -43,6 +44,65 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
   const steam = items.filter((i) => i.source.kind === 'steam')
   const others = items.filter((i) => i.source.kind !== 'steam')
   const note = (m: string) => m && setLog((l) => [m, ...l].slice(0, 12))
+
+  // Files the player already has in their folders (Settings → Files you already have) stand in for downloads.
+  const [local, setLocal] = useState<LocalScan | null>(null)
+  const [skip, setSkip] = useState<Set<string>>(new Set())
+  const [useOlder, setUseOlder] = useState<Set<string>>(new Set())
+  useEffect(() => { if (others.length) void window.api.localFiles().then(setLocal) }, [others.length])
+  const needs = others.map((i) => {
+    const packs = wanted(i) ?? i.entry.need ?? (i.entry.pack ? [i.entry.pack] : [])
+    // A mod made only of versions to pick from: any of its download packs that is on the PC.
+    const mod = i.modId ? data.index.mods.get(i.modId) : undefined
+    return packs.length ? { key: i.entry.key, modId: i.modId, name: i.entry.name, packs }
+      : { key: i.entry.key, modId: i.modId, name: i.entry.name, packs: (mod?.packs ?? []).filter((x) => x.from === 'download').map((x) => x.file), anyOf: true }
+  })
+  const needed = needs.reduce((s, n) => s + (n.anyOf ? 1 : n.packs.length), 0)
+  const found = local ? findLocal(data.index, local.files, needs) : []
+  const id = (m: LocalMatch) => `${m.key}|${m.pack}`
+  const preferNewer = data.settings.preferNewer !== false
+  const chosen = found.filter((m) => !skip.has(id(m)) && (!m.newer || !preferNewer || useOlder.has(id(m))))
+  const useLocal = async () => {
+    setBusy('local')
+    const r = await window.api.installLocal(chosen)
+    note(r.ok ? `${r.message} – from your folders${data.settings.sourceMove ? '' : '; the originals stay where they are'}.` : r.message)
+    setBusy(null)
+    setSkip(new Set())
+    data.rescan()
+    setLocal(await window.api.localFiles())
+  }
+  const toggle = (set: (f: (s: Set<string>) => Set<string>) => void, k: string) =>
+    set((s) => { const n = new Set(s); if (n.has(k)) n.delete(k); else n.add(k); return n })
+  const [allFound, setAllFound] = useState(false)
+  const foundGroup = found.length > 0 && (
+    <div className="install-group local-found">
+      <div className="local-head">
+        <h4>{found.length} of the {needed} missing file{needed === 1 ? '' : 's'} {found.length === 1 ? 'is' : 'are'} already on your PC</h4>
+        <button className="primary" disabled={!!busy || !chosen.length} onClick={() => void useLocal()}>Use {chosen.length === found.length ? 'the' : ''} {chosen.length} file{chosen.length === 1 ? '' : 's'}</button>
+      </div>
+      <p className="small muted">Found in the folders you gave the app (Settings → Files you already have). {data.settings.sourceMove ? 'They are moved into the game’s data folder.' : 'They are copied into the game’s data folder; your files stay where they are.'}</p>
+      <table className="local-files small">
+        <tbody>
+          {(allFound ? found : found.slice(0, 8)).map((m) => {
+            const off = skip.has(id(m)) || (!!m.newer && preferNewer && !useOlder.has(id(m)))
+            return (
+              <tr key={id(m)} className={off ? 'off' : ''}>
+                <td className="name">{m.name}{needs.find((n) => n.key === m.key)!.packs.length > 1 && <span className="muted"> · {m.pack}</span>}</td>
+                <td className="path">{m.file.path}{m.file.inArchive ? ` → ${m.file.name}` : ''}{m.file.name.toLowerCase() !== m.pack.toLowerCase() && <span> (installed as {m.pack})</span>}</td>
+                <td className={m.newer ? 'warn-text' : 'ok-text'}>{m.newer ? `from ${m.file.date} · the mod’s page has a version from ${m.newer}` : `from ${m.file.date}`}</td>
+                <td className="act">
+                  {m.newer && preferNewer
+                    ? <button className="link" onClick={() => toggle(setUseOlder, id(m))}>{useOlder.has(id(m)) ? 'Download the new one instead' : 'Use mine anyway'}</button>
+                    : <button className="link" onClick={() => toggle(setSkip, id(m))}>{skip.has(id(m)) ? 'Use this one' : 'Not this one'}</button>}
+                </td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+      {found.length > 8 && <button className="link small" onClick={() => setAllFound(!allFound)}>{allFound ? 'Show fewer' : `Show ${found.length - 8} more`}</button>}
+    </div>
+  )
 
   const subscribeAll = async () => {
     setBusy('steam')
@@ -142,6 +202,7 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
   return (
     <div className="install-panel callout">
       {fixGroup}
+      {foundGroup}
       <h3>Install what is missing ({new Set(items.map((i) => i.entry.key)).size} mod{new Set(items.map((i) => i.entry.key)).size === 1 ? '' : 's'})</h3>
       {steam.length > 0 && (
         <div className="install-group">

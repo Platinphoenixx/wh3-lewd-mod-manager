@@ -1,3 +1,4 @@
+import type { LocalMatch, LocalScan } from './localfiles'
 import type { Catalog } from '@catalog/schema'
 import type { Contribution, UserRule } from './community'
 import type { ConflictReport } from './conflicts'
@@ -71,6 +72,12 @@ export interface Settings {
   autoLoversLab?: boolean
   /** The project's relay (Cloudflare Worker) for reports and contributions without an account. Empty = default. */
   relayUrl?: string
+  /** Folders with mod files the player already has; the install step looks there first. Unset = this PC's Downloads. */
+  sourceFolders?: string[]
+  /** Move a found file into the game instead of copying it (only loose packs, or archives the profile uses whole). */
+  sourceMove?: boolean
+  /** Download the new version when the found copy is older than the catalog's (on unless false). */
+  preferNewer?: boolean
 }
 
 /** What a problem report sends to the relay (the app adds a random install id). */
@@ -155,7 +162,10 @@ export interface Api {
   getSettings(): Promise<Settings>
   saveSettings(settings: Settings): Promise<void>
   /** Opens a folder picker; returns the chosen path or null. */
-  pickFolder(): Promise<string | null>
+  pickFolder(title?: string): Promise<string | null>
+  /** The files in the player's source folders (cached; force = look again). */
+  localFiles(force?: boolean): Promise<LocalScan>
+  installLocal(items: LocalMatch[]): Promise<InstallResult>
   listRules(): Promise<UserRule[]>
   saveRules(rules: UserRule[]): Promise<void>
   listContributions(): Promise<Contribution[]>

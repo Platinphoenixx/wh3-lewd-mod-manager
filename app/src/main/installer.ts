@@ -66,7 +66,7 @@ async function extract(archive: string, target: string): Promise<void> {
  * Installs a .pack or an archive with packs into data. moveSource: a file the player picked or dropped is
  * removed after a successful install (it now lives in data), unless it already is in the data folder.
  */
-export async function installFile(file: string, dataPath: string, modId?: string, moveSource = false, fix?: string): Promise<InstallResult> {
+export async function installFile(file: string, dataPath: string, modId?: string, moveSource = false, fix?: string, only?: Record<string, string>): Promise<InstallResult> {
   const ext = extname(file).toLowerCase()
   if (ext === '.txt') {
     const link = (await readFile(file, 'utf8').catch(() => '')).match(/https?:\/\/\S+/)?.[0]
@@ -87,8 +87,11 @@ export async function installFile(file: string, dataPath: string, modId?: string
     const known = await packsOfMod(modId).catch(() => [])
     const kept: string[] = []
     const done: string[] = []
-    for (const p of packs) {
-      const name = catalogPackName(basename(p), known)
+    // only: the packs to take (file name in lower case -> the catalog's name), for a file found in the player's folders.
+    const taken = only ? packs.filter((p) => only[basename(p).toLowerCase()]) : packs
+    if (only && !taken.length) return { ok: false, message: `${basename(file)} no longer holds the expected pack.`, packs: [] }
+    for (const p of taken) {
+      const name = only ? only[basename(p).toLowerCase()] : catalogPackName(basename(p), known)
       // A pack the catalog marks optional for this mod (an old copy another mod replaces with a fixed one of the same
       // name, say) never overwrites a file that is already there.
       if (modId && known.find((k) => k.file.toLowerCase() === name.toLowerCase())?.optional && existsSync(join(dataPath, name))) {
@@ -103,7 +106,8 @@ export async function installFile(file: string, dataPath: string, modId?: string
       else records.push(rec)
     }
     await writeJson('installed.json', records)
-    const moved = moveSource && join(file, '..').toLowerCase() !== dataPath.toLowerCase()
+    // An archive is only moved when nothing else in it was left behind.
+    const moved = moveSource && taken.length === packs.length && join(file, '..').toLowerCase() !== dataPath.toLowerCase()
     if (moved) await rm(file, { force: true })
     const keptNote = kept.length ? `; kept the ${kept.join(', ')} already in data (this download's copy is an older one)` : ''
     return {

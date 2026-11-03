@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { DEFAULTS, type MaintainerStatus, type Settings } from '@shared/api'
+import type { LocalScan } from '@shared/localfiles'
 import { useData } from './data'
 
 export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
@@ -8,11 +9,14 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
   const [saved, setSaved] = useState(false)
   const [version, setVersion] = useState('')
   const [build, setBuild] = useState<{ date: string; commit: string } | null>(null)
+  const [local, setLocal] = useState<LocalScan | null>(null)
+  const [looking, setLooking] = useState(false)
 
   useEffect(() => {
     window.api.getSettings().then(setSettings)
     window.api.appVersion().then(setVersion)
     window.api.appBuild().then(setBuild)
+    window.api.localFiles().then(setLocal)
   }, [])
   if (!settings) return null
 
@@ -53,6 +57,51 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
           onChange={(e) => setSettings({ ...settings, catalogUrl: e.target.value })}
           onBlur={() => save(settings)}
         />
+      </section>
+      <section>
+        <h2>Files you already have</h2>
+        <p className="small muted">
+          Folders where you keep mod downloads (packs or .7z/.zip/.rar archives). Before it downloads anything, the install step looks
+          here for the same file – by pack name and the archive’s file list – and uses what it finds. Nothing is uploaded and nothing
+          outside these folders is read.
+        </p>
+        {(() => {
+          const folders = settings.sourceFolders ?? local?.folders.map((f) => f.path) ?? []
+          const look = async (next?: Settings) => {
+            if (next) await save(next)
+            setLooking(true)
+            setLocal(await window.api.localFiles(true))
+            setLooking(false)
+          }
+          return (
+            <>
+              <ul className="source-folders">
+                {folders.map((f) => {
+                  const s = local?.folders.find((x) => x.path === f)
+                  return (
+                    <li key={f}>
+                      <code>{f}</code>
+                      <span className="small muted">{s ? `${s.files} file${s.files === 1 ? '' : 's'} · ${s.packs} pack${s.packs === 1 ? '' : 's'}` : 'not looked at yet'}{!settings.sourceFolders && ' · suggested'}</span>
+                      <button className="link" onClick={() => void look({ ...settings, sourceFolders: folders.filter((x) => x !== f) })}>Remove</button>
+                    </li>
+                  )
+                })}
+                {!folders.length && <li className="small muted">No folders – the install step always downloads.</li>}
+              </ul>
+              <p>
+                <button onClick={async () => {
+                  const dir = await window.api.pickFolder('Choose a folder with mod downloads')
+                  if (dir && !folders.includes(dir)) await look({ ...settings, sourceFolders: [...folders, dir] })
+                }}>Add folder…</button>{' '}
+                <button disabled={looking} onClick={() => void look()}>{looking ? 'Looking…' : 'Look again'}</button>{' '}
+                {local && <span className="small muted">last looked {new Date(local.scannedAt).toLocaleString()}</span>}
+              </p>
+            </>
+          )
+        })()}
+        <label className="toggle"><input type="radio" name="source-mode" checked={!settings.sourceMove} onChange={() => save({ ...settings, sourceMove: false })} /> Copy the file into the game (keeps your folder as it is)</label>
+        <label className="toggle"><input type="radio" name="source-mode" checked={!!settings.sourceMove} onChange={() => save({ ...settings, sourceMove: true })} /> Move it (saves disk space; an archive is only moved when the profile uses all of it)</label>
+        <label className="toggle"><input type="checkbox" checked={settings.preferNewer !== false} onChange={(e) => save({ ...settings, preferNewer: e.target.checked })} /> When my copy is older than the version on the mod’s page, download the new one instead</label>
       </section>
       <section>
         <h2>LoversLab downloads</h2>

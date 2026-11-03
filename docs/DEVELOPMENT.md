@@ -92,6 +92,14 @@ community contributions. App UI and catalog texts are English.
     order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
     `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).
     Packs the app installed are matched to their mod via userData/installed.json.
+  - Files the player already has (Settings → Files you already have, `Settings.sourceFolders`, default this PC's Downloads):
+    `src/main/localfiles.ts` lists the packs below those folders, loose or inside .7z/.zip/.rar archives (7-Zip / unrar
+    listings, nothing extracted; cached in userData/local-files.json); `src/shared/localfiles.ts` (tested) matches a
+    profile's missing download packs by name (also without the "@"/"!" Discord drops, a file from the mod's own download
+    folder first) and reads the date a name carries (Nexus time stamp, Discord message id). The install step shows what it
+    found and installs it under the catalog's name (`local:install`, only files the last look found); copy by default,
+    `sourceMove` moves loose packs and archives the profile uses whole. A one-file mod whose copy is older than the
+    catalog's date is downloaded instead unless the player says otherwise (`preferNewer`).
   - Own mods (installed packs the catalog does not know): `src/shared/own.ts` keys them
     (`steamId:<id>` / `pack:<file>`), collects pack facts (dependencies, shared files, tables) and places
     them in a profile's load order with a reason; user moves are stored as `Profile.pins` (tested).

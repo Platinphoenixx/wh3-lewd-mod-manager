@@ -469,3 +469,17 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
 
 .page-error { max-width: 640px; margin: 48px auto; padding: 0 16px; }
 .page-error pre { white-space: pre-wrap; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 10px; }
+
+.local-found { background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; margin-bottom: 14px; }
+.local-found .local-head { display: flex; align-items: center; gap: 14px; }
+.local-found .local-head h4 { margin: 0; flex: 1; }
+table.local-files { width: 100%; border-collapse: collapse; margin-top: 8px; }
+table.local-files td { padding: 6px 8px; border-top: 1px solid var(--line); vertical-align: top; }
+table.local-files td.name { font-weight: 600; white-space: nowrap; }
+table.local-files td.path { color: var(--muted); word-break: break-all; }
+table.local-files td.act { text-align: right; white-space: nowrap; }
+table.local-files tr.off td.name, table.local-files tr.off td.path { opacity: .55; }
+
+ul.source-folders { list-style: none; padding: 0; margin: 8px 0; }
+ul.source-folders li { display: flex; align-items: center; gap: 12px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 4px; margin-bottom: 6px; background: var(--panel-2); }
+ul.source-folders li code { flex: 1; }

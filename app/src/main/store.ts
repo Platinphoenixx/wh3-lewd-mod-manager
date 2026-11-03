@@ -10,7 +10,8 @@ import type { Contribution, UserRule } from '@shared/community'
 export async function readJson<T>(name: string, fallback: T): Promise<T> {
   const file = join(app.getPath('userData'), name)
   if (!existsSync(file)) return fallback
-  return JSON.parse(await readFile(file, 'utf8')) as T
+  // A file edited by hand in a Windows editor may start with a byte-order mark (trimStart removes it).
+  return JSON.parse((await readFile(file, 'utf8')).trimStart()) as T
 }
 
 export async function writeJson(name: string, value: unknown): Promise<void> {
