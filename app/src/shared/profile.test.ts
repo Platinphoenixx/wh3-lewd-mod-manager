@@ -58,6 +58,17 @@ describe('candidates', () => {
     expect(byKey.get('mod:lyra')?.addsDependencies).toEqual(['mod:lyra-assets'])
     expect(byKey.get('mod:ascension')?.conflicts).toEqual(['mod:framework'])
   })
+
+  it('does not offer a mod whose packs the profile already loads (a page bundling two Workshop items)', () => {
+    const bundle = mod('bundle', { kind: 'progression', packs: [
+      { file: 'ATB.pack', from: 'steam' }, { file: 'fw.pack', from: 'steam' }, { file: 'extra.pack', from: 'download', optional: true }
+    ] })
+    const half = mod('half', { packs: [{ file: 'atb.pack', from: 'steam' }, { file: 'new.pack', from: 'download' }] })
+    const cat = { ...catalog, mods: [...catalog.mods, bundle, half] }
+    const keys = candidates(cat, buildIndex(cat), preset, { extras: [], removed: [] }).map((c) => c.key)
+    expect(keys).not.toContain('mod:bundle')
+    expect(keys).toContain('mod:half')
+  })
 })
 
 describe('alternatives', () => {

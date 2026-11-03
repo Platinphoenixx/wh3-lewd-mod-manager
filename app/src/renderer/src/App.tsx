@@ -5,6 +5,7 @@ import { withUserRules, type UserRule } from '@shared/community'
 import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
 import { ProfilesView } from './ProfilesView'
+import { PlayView } from './PlayView'
 import { CatalogView } from './CatalogView'
 import { InstallView } from './InstallView'
 import { SettingsView } from './SettingsView'
@@ -16,9 +17,9 @@ import { NoticeStack, useNotices } from './Notices'
 import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
 
-const TABS = ['profiles', 'catalog', 'install', 'community', 'settings'] as const
+const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings'] as const
 type Tab = (typeof TABS)[number]
-const TAB_LABEL: Record<Tab, string> = { profiles: 'Profiles', catalog: 'Catalog', install: 'Installation', community: 'Community', settings: 'Settings' }
+const TAB_LABEL: Record<Tab, string> = { play: 'Play', profiles: 'Profiles', catalog: 'Catalog', install: 'Installation', community: 'Community', settings: 'Settings' }
 
 export function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null)
@@ -28,8 +29,15 @@ export function App() {
   const [error, setError] = useState<string | null>(null)
   const [tab, setTab] = useState<Tab>(() => {
     const h = location.hash.slice(1).split('-')[0] // e.g. #profiles-order
-    return (TABS as readonly string[]).includes(h) ? (h as Tab) : 'profiles'
+    return (TABS as readonly string[]).includes(h) ? (h as Tab) : 'play'
   })
+  const [focus, setFocus] = useState<AppData['focus']>(null)
+  const openProfile = useCallback<AppData['openProfile']>((target, view) => {
+    // The editor opens at the step named in the address (#profiles-install).
+    location.hash = view ? `profiles-${view}` : 'profiles'
+    setFocus({ ...target, at: Date.now() })
+    setTab('profiles')
+  }, [])
   const [openModId, setOpenModId] = useState<string | null>(null)
   const [contributing, setContributing] = useState<ContributeRequest | null>(null)
   const [blurImages, setBlurImages] = useState(() => localStorage.getItem('blurImages') === '1')
@@ -136,7 +144,7 @@ export function App() {
   const data: AppData = {
     catalog: effective, index, scan, rescan, openMod: setOpenModId, blurImages,
     rules, saveRules, contribute: setContributing, contribRepo: settings.contribRepo || DEFAULTS.contribRepo, relayUrl: settings.relayUrl || DEFAULTS.relayUrl, settings, workshopDetails,
-    notify, setTabCount, scripts, openReport: setReportFor
+    notify, setTabCount, scripts, openReport: setReportFor, openProfile, focus, goTab: setTab
   }
 
   return (
@@ -172,6 +180,7 @@ export function App() {
           <a className="support" title="Support this app on Ko-fi" onClick={() => window.api.openExternal(SUPPORT_URL)}>♥ Support this app</a>
         </header>
         <main>
+          {tab === 'play' && <PlayView />}
           {tab === 'profiles' && <ProfilesView />}
           {tab === 'catalog' && <CatalogView />}
           {tab === 'install' && <InstallView />}

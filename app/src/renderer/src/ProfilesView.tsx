@@ -10,7 +10,7 @@ import { ImportDialog } from './ImportDialog'
 import { MadeBy, worksOf } from './Creators'
 
 /** KPW's guide for the characters of a preset (guides name characters loosely, e.g. "Miao"). */
-function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
+export function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
   const names = preset.playAs.map((c) => c.toLowerCase().replace(/[^a-z]/g, ''))
   return guides.find((g) => {
     const gn = g.character.toLowerCase().replace(/[^a-z/]/g, '')
@@ -142,9 +142,13 @@ export function ProfilesView() {
   useEffect(() => {
     window.api.listProfiles().then((list) => {
       setProfiles(list)
-      setSelected((s) => s ?? (list[0] ? { kind: 'profile', id: list[0].id } : data.catalog.presets[0] && { kind: 'preset', id: data.catalog.presets[0].id }))
+      // A profile or template opened from Play comes first.
+      const f = data.focus
+      const wanted = f?.profile && list.some((p) => p.id === f.profile) ? { kind: 'profile' as const, id: f.profile }
+        : f?.preset ? { kind: 'preset' as const, id: f.preset } : null
+      setSelected((s) => wanted ?? s ?? (list[0] ? { kind: 'profile', id: list[0].id } : data.catalog.presets[0] && { kind: 'preset', id: data.catalog.presets[0].id }))
     })
-  }, [data.catalog])
+  }, [data.catalog, data.focus])
 
   // Saving on every change keeps profiles safe; the editor calls this per toggle.
   const save = useCallback((p: Profile) => {

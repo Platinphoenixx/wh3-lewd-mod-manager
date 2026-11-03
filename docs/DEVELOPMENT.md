@@ -10,6 +10,14 @@ community contributions. App UI and catalog texts are English.
 - `app/` – Electron 45 + electron-vite + React 19 + TypeScript.
   - `src/main/` game/Workshop detection and pack scan (`game.ts`), catalog loading with daily ETag update
     check (`catalog.ts`), JSON storage of profiles/settings/rules/contributions in the app's userData (`store.ts`)
+  - "Play" (the start tab, `renderer/src/PlayView.tsx` + `src/shared/setups.ts`, tested): the guided way in. Templates
+    are grouped by character ("Play as", the first playAs, spellings joined) or by `theme`; per subject up to four sizes
+    – Essentials (smallest guide/derived list), Full campaign (largest tested early list, recommended), Extended (+ the
+    editor's suggested mods), Everything (+ every lewd suggestion) – with what vouches for each (played by its author,
+    launch-tested). Then the pick-one choices as steps with pictures (the character's look, add-ons, looks the list
+    already changes, other characters, quality-of-life mods to drop) and a review that saves an ordinary profile and
+    opens it in the Profiles tab at the install step (`openProfile`). "Advanced" links lead to the full editor at
+    every stage. Suggestions that would bring a conflict along (through a dependency) are not offered.
   - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested)
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)
@@ -160,7 +168,12 @@ over all layers – fix texts there.
   `plan --game <folder> --packs <download folders>` lists what is missing; `run` does the starts (Steam running, PC not
   in use, about 1 h for all templates); helper `launch_test_watch.ps1`. Run it after a major game update. A template
   that stops the game gets a known issue with the game's report and is fixed through `presetReplacements` or
-  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu.
+  `noTemplate`. First run 2026-11-02 (game 9.0.4): all 20 templates reach the main menu. Every result also goes into
+  `curator/raw/launch_results.json` (result, game version, date, a fingerprint of the template's packs); the build
+  sets `Preset.launchTest` only while the template still has exactly the tested packs, and the app shows
+  "launch-tested" from it.
+- `curator/work/preset-desc.json` `theme`: a template about a group rather than one character ("Daemons of Slaanesh");
+  the app lists it under Themes.
 - `curator/work/part-5.json`: Workshop finds from the Discord research and the Steam items they refer to.
   Tags: `general` = normal gameplay/UI/visual mods players combine with the lewd ones (own group in
   profiles, "Content" filter in the catalog), `beautification` = reskins without nudity.

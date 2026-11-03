@@ -157,7 +157,8 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   }
   for (const [i, sug] of list.entries()) {
     for (const r of sug.mod.relations) {
-      if (r.kind === 'incompatible' && 'mod' in r.target && at.has(r.target.mod)) join(i, at.get(r.target.mod)!, 'These do not work together')
+      // As in conflictsIn: an incompatibility that holds only in a case ("playing as Miao Ying") does not group them.
+      if (r.kind === 'incompatible' && !r.condition && 'mod' in r.target && at.has(r.target.mod)) join(i, at.get(r.target.mod)!, 'These do not work together')
     }
   }
   for (const m of catalog.mods) {

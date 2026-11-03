@@ -5,6 +5,7 @@ import type { Catalog } from '@catalog/schema'
 import { buildIndex } from '@shared/match'
 import { baseKeys, candidates, conflictsIn, missingDependencies, resolveProfile } from '@shared/profile'
 import { isPickOne, suggestForProfile } from '@shared/suggest'
+import { stepsFor, subjectsOf, suggestedFor, tiersFor } from '@shared/setups'
 
 /**
  * Sanity checks on the real catalog/catalog.json: what a player gets from a template must work as it is.
@@ -63,6 +64,19 @@ describe('catalog', () => {
         if (!pre) continue
         if (pre.replaces) bad.push(`${p.id}: ${pre.key} replaces ${pre.replaces.join(', ')}`)
         if (conflictsIn(index, [...baseKeys(p), pre.key]).length) bad.push(`${p.id}: ${pre.key} conflicts`)
+      }
+    }
+    expect(bad).toEqual([])
+  })
+  it('every character and theme has a recommended size, and no size brings a conflict', () => {
+    const bad: string[] = []
+    for (const s of subjectsOf(catalog, index)) {
+      const tiers = tiersFor(catalog, index, s)
+      if (!tiers.some((t) => t.recommended)) bad.push(`${s.name}: no recommended size`)
+      for (const t of tiers) {
+        for (const c of resolveProfile(catalog, index, t.preset, { extras: t.extras, removed: [] }).conflicts) bad.push(`${s.name} ${t.id}: ${c.a} x ${c.b}`)
+        const steps = stepsFor(s, suggestedFor(catalog, index, t.preset, { extras: t.extras, removed: [] }).picks, true)
+        if (steps[steps.length - 1].kind !== 'review') bad.push(`${s.name} ${t.id}: no review step`)
       }
     }
     expect(bad).toEqual([])

@@ -33,6 +33,12 @@ export interface AppData {
   scripts: ScriptReport | null
   /** Opens the problem report for one failing script (index into scripts.failed). */
   openReport(failure: number): void
+  /** Opens a profile (or a template) in the full editor on the Profiles tab, at one of its steps. */
+  openProfile(target: { profile: string } | { preset: string }, view?: 'choices' | 'install' | 'order'): void
+  /** What openProfile asked for last; the Profiles tab selects it. */
+  focus: { profile?: string; preset?: string; at: number } | null
+  /** Switches to another tab. */
+  goTab(tab: 'play' | 'profiles' | 'catalog' | 'install' | 'community' | 'settings'): void
 }
 
 export const DataContext = createContext<AppData | null>(null)

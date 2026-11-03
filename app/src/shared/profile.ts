@@ -148,11 +148,23 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   const alternativesOf = (key: string) =>
     [...groupMembers.values()].filter((ms) => ms.includes(key)).flat().filter((m) => m !== key && inProfile.has(m))
 
+  // Packs the profile already loads: a mod whose own packs are all among them (a LoversLab page bundling two
+  // Workshop items, say) adds nothing.
+  const loaded = new Set([
+    ...preset.entries.filter((e) => !removed.has(baseKeys({ ...preset, entries: [e] })[0])).map((e) => e.pack.toLowerCase()),
+    ...profile.extras.flatMap((k) => (k.startsWith('mod:') ? index.mods.get(k.slice(4))?.packs ?? [] : []).map((p) => p.file.toLowerCase()))
+  ])
+  const alreadyLoaded = (mod?: Mod) => {
+    const needed = (mod?.packs ?? []).filter((p) => !p.optional && !p.exclusiveGroup)
+    return needed.length > 0 && needed.every((p) => loaded.has(p.file.toLowerCase()))
+  }
+
   const add = (key: string, group: CandidateGroup, reason: string) => {
     if (inProfile.has(key) || isSuperseded(index, key)) return
     const t = parseTargetKey(key)
     if ('steamId' in t || 'pack' in t) return // unknown to the catalog, nothing to show
     const mod = 'mod' in t ? index.mods.get(t.mod) : undefined
+    if (alreadyLoaded(mod)) return
     if (mod?.kind === 'translation') group = 'translation'
     const c = found.get(key)
     if (c) {
@@ -194,9 +206,13 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   }
   const list = [...found.values()]
   for (const c of list) {
-    c.conflicts = conflictsIn(index, [...current, c.key]).filter((p) => p.a === c.key || p.b === c.key).map((p) => (p.a === c.key ? p.b : p.a))
     c.alternativeTo = alternativesOf(c.key)
     c.addsDependencies = [...missingDependencies(index, [c.key], inProfile).keys()]
+    // What it brings along counts too: a submod that pulls in SFO conflicts with what SFO conflicts with.
+    const brings = new Set([c.key, ...c.addsDependencies])
+    c.conflicts = [...new Set(conflictsIn(index, [...current, ...brings])
+      .filter((p) => brings.has(p.a) !== brings.has(p.b))
+      .map((p) => (brings.has(p.a) ? p.b : p.a)))]
   }
   return list.sort((a, b) => GROUP_RANK[a.group] - GROUP_RANK[b.group] || a.name.localeCompare(b.name))
 }
