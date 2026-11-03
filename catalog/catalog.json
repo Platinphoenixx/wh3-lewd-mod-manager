@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T14:55:43+00:00",
+  "generatedAt": "2026-11-03T15:31:43+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -5247,7 +5247,19 @@
           "steamId": "3691683876"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-2792731173"
+          },
+          "note": "A compatibility patch for SFO: without SFO the game stops at launch with a database error (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-03",
         "confidence": "medium",
@@ -23668,6 +23680,7 @@
         ]
       },
       "knownIssues": [
+        "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last update 2024-08.",
         "Lots of clipping.",
         "Removes some visual effects from Malus Darkblade's animation, which this unit shares."
       ],
@@ -23676,7 +23689,8 @@
           "platform": "Buy Me a Coffee",
           "url": "https://buymeacoffee.com/taraanis"
         }
-      ]
+      ],
+      "stopsGame": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last update 2024-08."
     },
     {
       "id": "ll-43295",
@@ -40210,6 +40224,18 @@
           "source": {
             "type": "inferred"
           }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "note": "Needs Temptation's Bloom's main pack, not only its assets; without it the game stops at launch with a database error (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
+          }
         }
       ],
       "curation": {
@@ -50432,7 +50458,8 @@
         "Incompatible with all mods that change the warband upgrades of the faction being played (per the author mostly only visual/minor).",
         "Launch test 2026-11-02 (game 9.0.4): the LoversLab @Soil_Miaoying_Corrupted_Units.pack stops the game with a database error (land_units_to_unit_abilites_junctions_tables, record soil_cth_corrupted_fiends_of_slaanesh_0wh3_main_unit_passive_daemonic_instability_slaanesh); the version pinned in #soiled-projects on 2026-10-01 and the merged Soil pack reach the main menu.",
         "Since patch 9.0 (2026-09-24) the LoversLab Azazel and Miao packs (last updated 2026-08-04) crash the game at launch, and the author is inactive. Working 9.0 versions are pinned in #soiled-projects on Discord (Azazel 2026-09-27 with CA's new Archaon key, Miao 2026-09-30 with the tech tree at the far right of the Provinces tab) or use the merged pack; older pinned versions from before 9.0 also crash.",
-        "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack."
+        "@Soil_Kislev_Corrupted_Units.pack is not on LoversLab: the working version is Kerberos' fixed pack (2025-11-11) for Katarin campaigns only, which needs Corrupted Landmarks and Soil's assets (not Azazel's Realm). The older 'Student Patch' version crashes. Not confirmed for patch 9.0 and not part of the merged pack.",
+        "The Miao Ying pack of the LoversLab download stops the game at launch since patch 9.0 (database error, launch test 2026-11-03); use the Soil Merged Pack for Miao Ying and Azazel."
       ],
       "installNotes": [
         "Download the asset pack AND the faction-specific mod.",
@@ -58609,6 +58636,17 @@
           "source": {
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/1254908017288151040"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-33808"
+          },
+          "note": "Its Miao Ying version needs Lazy's Miao progression; with Corrupted Ascension the game stops at launch with a database error (launch test 2026-11-03)",
+          "source": {
+            "type": "inferred",
+            "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/blob/main/curator/launch_test.py"
           }
         },
         {

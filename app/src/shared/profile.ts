@@ -281,7 +281,10 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     for (const r of relationsOf(index, e.key)) {
       if (r.kind !== 'requires' || !r.pack || r.condition) continue
       const dep = entries.find((x) => x.key === targetKey(r.target))
-      if (dep && dep.origin !== 'base') { dep.pack = r.pack; dep.packs = [r.pack] }
+      if (!dep) continue
+      // A template entry keeps its packs and gets the needed one too; an added mod loads just that version.
+      if (dep.origin === 'base') { if (!dep.packs?.some((x) => x.toLowerCase() === r.pack!.toLowerCase())) dep.packs = [...(dep.packs ?? []), r.pack] }
+      else { dep.pack = r.pack; dep.packs = [r.pack] }
     }
   }
   const all = conflictsIn(index, entries.map((e) => e.key))

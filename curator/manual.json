@@ -370,6 +370,7 @@
   "noTemplate": {
     "_comment": "Mods that get no derived template, with the reason.",
     "ll-28110": "Stops the game at launch since patch 9.0 (database error, launch test 2026-11-02).",
+    "nx-212": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last update 2024-08.",
     "nx-17": "Stops the game at launch since patch 9.0 (database error in cdir_military_generator_unit_qualities_tables, launch test 2026-11-03, game 9.0.5); last update 2022-09.",
     "steam-2890813441": "Stops the game at launch since patch 9.0 (database error in land_units_to_unit_abilites_junctions_tables, launch test 2026-11-03, game 9.0.5); last Workshop update 2022-11.",
     "ll-40114": "The Workshop version stops the game at launch since patch 9.0 (launch test 2026-11-02); the community fixes in #miao-alchemy patch the packs with a script, which the app cannot do."
