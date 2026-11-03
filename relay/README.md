@@ -8,6 +8,9 @@ the app without any account. Free Cloudflare plan; nothing to maintain once it r
 | `POST /report` | The report text the player saw in the app is stored privately (Cloudflare KV, 180 days). |
 | `POST /contribution` | Becomes a GitHub issue in the project repository, labelled with its type – the same as a contribution made on GitHub; a maintainer labels it `accepted` as before. |
 | `GET /reports` | All stored reports, for the weekly catalog update (needs the export token). |
+| `POST /setup` | A mod list a player shares from a profile (load order, the template it builds on, name, notes, how far they played). Stored in KV; one with own or unknown packs also becomes a GitHub issue labelled `setup` for review. Links in the texts are removed. |
+| `POST /vote` | "It worked / it didn't" for a template or shared setup, after a game session of 20 minutes or more. One vote per installation and setup (a new one replaces the old), stored as KV metadata under a salted hash of the install id. |
+| `GET /setups`, `GET /votes` | For the daily catalog update (`curator/fetch_community.py`, needs the export token); votes come out as counts only. |
 
 Privacy: no IP addresses or names are stored. The rate limit counts under a salted hash
 of the IP (5 per minute, Cloudflare's rate limiter; nothing of it is stored). Reports carry a random id the app made once per installation,

@@ -18,7 +18,7 @@ from datetime import date
 from pathlib import Path
 
 COMMUNITY = Path(__file__).resolve().parent / "community.json"
-TYPES = {"rule", "feedback", "correction", "new-mod"}
+TYPES = {"rule", "feedback", "correction", "new-mod", "setup"}
 
 
 def parse_block(body: str) -> dict:
@@ -28,7 +28,9 @@ def parse_block(body: str) -> dict:
     data = json.loads(m.group(1))
     if data.get("type") not in TYPES:
         raise ValueError(f"unknown contribution type: {data.get('type')!r}")
-    if data["type"] != "new-mod" and not data.get("modId"):
+    if data["type"] == "setup" and not data.get("setupId"):
+        raise ValueError("setupId is missing")
+    if data["type"] not in ("new-mod", "setup") and not data.get("modId"):
         raise ValueError("modId is missing")
     return data
 

@@ -7,8 +7,13 @@
  *   POST /contribution  new mod / feedback / rule / correction
  *                       → becomes a GitHub issue in the project repo, like contributions made on GitHub
  *   GET  /reports       all stored reports, for the weekly catalog update (Authorization: Bearer EXPORT_TOKEN)
+ *   POST /setup         a mod list a player shares (load order, the template it builds on, a few words)
+ *                       → stored in KV; one with packs the catalog does not know also becomes a GitHub issue for review
+ *   POST /vote          "this setup worked / did not work for me": one vote per install and setup (the last one counts)
+ *   GET  /setups, /votes  for the daily catalog update (Authorization: Bearer EXPORT_TOKEN); votes as counts only
  *
- * Nothing about the sender is stored: no IP address, no name. Cloudflare's rate limiter counts
+ * Nothing about the sender is stored: no IP address, no name; votes and setups keep only a salted hash of the
+ * app's random install id (so one install has one vote per setup). Cloudflare's rate limiter counts
  * requests per minute under a salted hash of the IP (kept in memory only, not in KV).
  *
  * Bindings (wrangler.toml): KV namespace REPORTS, rate limiter LIMITER, variable REPO ("owner/name").
@@ -25,6 +30,10 @@ export default {
       if (request.method === 'POST' && url.pathname === '/report') return await report(request, env)
       if (request.method === 'POST' && url.pathname === '/contribution') return await contribution(request, env)
       if (request.method === 'GET' && url.pathname === '/reports') return await exportReports(request, env, url)
+      if (request.method === 'POST' && url.pathname === '/setup') return await setup(request, env)
+      if (request.method === 'POST' && url.pathname === '/vote') return await vote(request, env)
+      if (request.method === 'GET' && url.pathname === '/setups') return await exportSetups(request, env)
+      if (request.method === 'GET' && url.pathname === '/votes') return await exportVotes(request, env)
       return json({ ok: false, message: 'Not found' }, 404)
     } catch (e) {
       if (!(e instanceof UserError)) console.error(e)
@@ -102,4 +111,108 @@ async function exportReports(request, env, url) {
     if (v) reports.push(JSON.parse(v))
   }
   return json({ ok: true, reports, cursor: page.list_complete ? null : page.cursor })
+}
+
+const allowed = (request, env) => request.headers.get('authorization') === `Bearer ${env.EXPORT_TOKEN}`
+const hash = async (env, s) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(env.SALT + s)))]
+  .slice(0, 8).map((b) => b.toString(16).padStart(2, '0')).join('')
+// Free text other players see: no links (spam) and no control characters.
+const plain = (v, max) => (optStr(v, max) ?? '').replace(/https?:\/\/\S+|www\.\S+/gi, '').replace(/[\u0000-\u0009\u000b-\u001f]/g, '').trim()
+const ID = /^[a-z0-9][a-z0-9-]{1,79}$/
+
+/** Every KV key under a prefix (KV lists 1000 per page), with its metadata. */
+async function listAll(env, prefix) {
+  const keys = []
+  let cursor
+  do {
+    const page = await env.REPORTS.list({ prefix, cursor })
+    keys.push(...page.keys)
+    cursor = page.list_complete ? undefined : page.cursor
+  } while (cursor)
+  return keys
+}
+
+async function setup(request, env) {
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
+  const b = await request.json()
+  const entries = Array.isArray(b.entries) ? b.entries : []
+  if (entries.length < 1 || entries.length > 500) throw new UserError('The mod list is empty or too long.')
+  const clean = entries.map((e) => ({
+    pack: str(e?.pack, 200, 'pack'),
+    ...(typeof e.mod === 'string' && ID.test(e.mod) ? { mod: e.mod } : {}),
+    ...(/^\d{6,12}$/.test(e?.steamId ?? '') ? { steamId: e.steamId } : {})
+  }))
+  const own = (Array.isArray(b.own) ? b.own : []).slice(0, 200).map((p) => str(p, 200, 'own pack'))
+  const name = plain(b.name, 120)
+  if (!name) throw new UserError('name is missing.')
+  const entry = {
+    id: crypto.randomUUID().replace(/-/g, '').slice(0, 12),
+    at: new Date().toISOString(),
+    by: await hash(env, str(b.installId, 64, 'installId')),
+    name,
+    shownAs: plain(b.shownAs, 40) || undefined,
+    far: plain(b.far, 120) || undefined,
+    notes: plain(b.notes, 1000) || undefined,
+    base: typeof b.base === 'string' && ID.test(b.base) ? b.base : undefined,
+    playAs: (Array.isArray(b.playAs) ? b.playAs : []).slice(0, 8).map((c) => plain(c, 60)).filter(Boolean),
+    theme: plain(b.theme, 60) || undefined,
+    game: optStr(b.game, 20), app: optStr(b.app, 20), catalog: optStr(b.catalog, 20),
+    entries: clean, own,
+    // A list of catalog mods only is shown after the next daily update; anything else waits for a maintainer.
+    review: own.length > 0 || clean.some((e) => !e.mod)
+  }
+  await env.REPORTS.put(`setup:${entry.id}`, JSON.stringify(entry))
+  if (!entry.review) return json({ ok: true, id: entry.id, message: 'Thank you – your setup will appear in the app within a day.' })
+  const unknown = [...own, ...clean.filter((e) => !e.mod).map((e) => e.pack)]
+  const body = [
+    `**Shared setup:** ${entry.name}`, '', `Packs the catalog does not know (${unknown.length}):`, ...unknown.slice(0, 50).map((p) => `- \`${p}\``),
+    '', 'Label this issue `accepted` to show the setup in the app.', '',
+    '```json', JSON.stringify({ type: 'setup', setupId: entry.id, name: entry.name }), '```', '', '---', '*Sent from the app without a GitHub account.*'
+  ].join('\n')
+  const res = await fetch(`https://api.github.com/repos/${env.REPO}/issues`, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, accept: 'application/vnd.github+json', 'user-agent': 'wh3lmm-relay', 'content-type': 'application/json' },
+    body: JSON.stringify({ title: `Setup: ${entry.name}`, body, labels: ['setup'] })
+  })
+  return json({
+    ok: true, id: entry.id, url: res.ok ? (await res.json()).html_url : undefined,
+    message: 'Thank you – a maintainer checks the packs the catalog does not know; then your setup appears in the app.'
+  })
+}
+
+async function vote(request, env) {
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
+  const b = await request.json()
+  const setupId = str(b.setup, 80, 'setup')
+  if (!ID.test(setupId)) throw new UserError('Unknown setup.')
+  if (typeof b.worked !== 'boolean') throw new UserError('worked is missing.')
+  const reason = ['start', 'campaign', 'content', 'other'].includes(b.reason) ? b.reason : undefined
+  // One vote per install and setup (a new one replaces the old), kept as metadata so counting needs no reads.
+  const key = `vote:${setupId}:${await hash(env, str(b.installId, 64, 'installId'))}`
+  await env.REPORTS.put(key, '', { metadata: { w: b.worked ? 1 : 0, ...(reason ? { r: reason } : {}), d: new Date().toISOString().slice(0, 10) } })
+  return json({ ok: true, message: 'Thank you – counted.' })
+}
+
+async function exportSetups(request, env) {
+  if (!allowed(request, env)) return json({ ok: false, message: 'Not allowed' }, 401)
+  const setups = []
+  for (const k of await listAll(env, 'setup:')) {
+    const v = await env.REPORTS.get(k.name)
+    if (v) setups.push(JSON.parse(v))
+  }
+  return json({ ok: true, setups })
+}
+
+async function exportVotes(request, env) {
+  if (!allowed(request, env)) return json({ ok: false, message: 'Not allowed' }, 401)
+  const votes = {}
+  for (const k of await listAll(env, 'vote:')) {
+    const v = (votes[k.name.split(':')[1]] ??= { up: 0, down: 0, reasons: {} })
+    if (k.metadata?.w) v.up++
+    else {
+      v.down++
+      if (k.metadata?.r) v.reasons[k.metadata.r] = (v.reasons[k.metadata.r] ?? 0) + 1
+    }
+  }
+  return json({ ok: true, votes })
 }

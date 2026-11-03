@@ -1,0 +1,42 @@
+# Daily: shared setups and "it worked / it didn't" votes from the relay go into the catalog (no LoversLab or Steam
+# crawl – that stays weekly in update-catalog.yml). Commits only when something changed; apps pick the catalog up
+# with their daily check.
+name: Community setups and votes
+
+on:
+  schedule:
+    - cron: '41 5 * * *'   # daily 05:41 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-write
+  cancel-in-progress: false
+
+jobs:
+  community:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r curator/requirements.txt
+      - name: Fetch setups and votes
+        env:
+          RELAY_URL: ${{ secrets.RELAY_URL }}
+          RELAY_EXPORT_TOKEN: ${{ secrets.RELAY_EXPORT_TOKEN }}
+        run: python curator/fetch_community.py
+      - name: Rebuild the catalog if they changed
+        run: |
+          git add curator/raw/community_setups.json curator/raw/votes.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          python curator/build_catalog.py
+          git config user.name "catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add catalog/catalog.json curator/raw/community_setups.json curator/raw/votes.json
+          git commit -m "Community setups and votes $(date -u +%Y-%m-%d)"
+          git push

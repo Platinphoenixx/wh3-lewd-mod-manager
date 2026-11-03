@@ -8,6 +8,7 @@ Steps:
   3. auto entries        – every LL file / Steam item without a curated entry gets an automatic one
                            (name, author, images, files, first paragraph of the page) marked unverified
   4. fetch_reports.py   – counts of script errors players sent from the app (needs the relay secrets)
+     fetch_community.py – shared setups and their votes (also daily, .github/workflows/community-daily.yml)
      build_catalog.py    – rebuild catalog/catalog.json
   5. CHANGES.md          – what changed, for maintainers and release notes
 
@@ -167,6 +168,7 @@ def main() -> int:
     subprocess.run([py, str(CURATOR / "crawl_ll.py")], check=True)
     # Problem reports players sent from the app (counts only; skipped without the relay secrets).
     subprocess.run([py, str(CURATOR / "fetch_reports.py")], check=False)
+    subprocess.run([py, str(CURATOR / "fetch_community.py")], check=False)
     run = load(CURATOR / "raw" / "ll" / "_last_run.json", {"changed": [], "removed": []})
 
     linked = set()

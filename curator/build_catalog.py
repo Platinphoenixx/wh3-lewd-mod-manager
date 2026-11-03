@@ -245,6 +245,50 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
     return out
 
 
+def community_presets(presets: list, mods: dict, external: dict, pack_owner: dict, unresolved: list) -> list:
+    """
+    Setups players shared from the app (curator/raw/community_setups.json, from fetch_community.py) as templates with
+    origin "community". A list made only of catalog mods is shown right away; one with own or unknown packs only after
+    a maintainer accepted its issue (community.json, type "setup"). Entries are matched to the catalog again, so a mod
+    id that changed since still finds its mod; a pack nobody knows keeps no target.
+    """
+    path = CURATOR / "raw" / "community_setups.json"
+    if not path.exists():
+        return []
+    cpath = CURATOR / "community.json"
+    accepted = {c.get("setupId") for c in (load(cpath).get("accepted", []) if cpath.exists() else []) if c.get("type") == "setup"}
+    by_id = {p["id"]: p for p in presets}
+    out = []
+    for s in load(path):
+        ok = not s.get("review") or s["id"] in accepted
+        entries = []
+        for e in s.get("entries", []):
+            t = {"mod": e["mod"]} if e.get("mod") in mods else {"external": e["mod"]} if e.get("mod") in external \
+                else pack_owner.get(e["pack"].lower())
+            if not t and not ok:
+                break
+            entries.append({"pack": e["pack"], "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
+                            **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
+        else:
+            if not ok:
+                continue
+            base = by_id.get(s.get("base") or "")
+            out.append({
+                "id": f"community-{s['id']}", "name": s["name"],
+                "playAs": s.get("playAs") or (base or {}).get("playAs", []),
+                **({"theme": s.get("theme") or base.get("theme")} if s.get("theme") or (base or {}).get("theme") else {}),
+                "phase": "any", "origin": "community",
+                "source": {"type": "community", "author": s.get("shownAs") or "anonymous", "date": s["at"][:10]},
+                **({"description": s["notes"]} if s.get("notes") else {}),
+                "entries": entries,
+                "community": {k: v for k, v in {"base": s.get("base"), "far": s.get("far"), "game": s.get("game"),
+                                                "own": s.get("own")}.items() if v},
+            })
+            continue
+        unresolved.append(f"shared setup {s['id']}: packs the catalog does not know, waits for a maintainer")
+    return out
+
+
 def apply_community(mods: dict) -> None:
     """
     Apply accepted community contributions (curator/community.json, written by apply_contribution.py).
@@ -1185,10 +1229,17 @@ def main():
         m["packs"] = list(seen.values())
 
     preset_desc = load(CURATOR / "work" / "preset-desc.json") if (CURATOR / "work" / "preset-desc.json").exists() else {}
-    # Launch test results (curator/launch_test.py) count while the template still has exactly the tested packs.
-    launch = load(CURATOR / "raw" / "launch_results.json") if (CURATOR / "raw" / "launch_results.json").exists() else {}
     for p in presets:
         p |= {k: v for k, v in preset_desc.get(p["id"], {}).items() if k in ("description", "highlights", "coverMods", "theme")}
+    presets += community_presets(presets, mods, external, pack_owner, unresolved)
+
+    # Launch test results (curator/launch_test.py) count while the template still has exactly the tested packs;
+    # "it worked / it didn't" votes from players (curator/fetch_community.py) belong to every template.
+    launch = load(CURATOR / "raw" / "launch_results.json") if (CURATOR / "raw" / "launch_results.json").exists() else {}
+    votes = load(CURATOR / "raw" / "votes.json") if (CURATOR / "raw" / "votes.json").exists() else {}
+    for p in presets:
+        if (v := votes.get(p["id"])) and v["up"] + v["down"]:
+            p["votes"] = {"up": v["up"], "down": v["down"]}
         fp = hashlib.sha1("\n".join(sorted(e["pack"].lower() for e in p["entries"])).encode()).hexdigest()[:12]
         if (r := launch.get(p["id"])) and r.get("fingerprint") == fp:
             p["launchTest"] = {"result": r["result"], "game": r["game"], "date": r["date"]}

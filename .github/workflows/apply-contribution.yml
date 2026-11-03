@@ -32,11 +32,17 @@ jobs:
           printf '%s' "$ISSUE" > "$RUNNER_TEMP/issue.json"
           python curator/apply_contribution.py --issue-file "$RUNNER_TEMP/issue.json"
       - name: Rebuild and commit
+        env:
+          # An accepted shared setup is read from the relay (curator/fetch_community.py).
+          RELAY_URL: ${{ secrets.RELAY_URL }}
+          RELAY_EXPORT_TOKEN: ${{ secrets.RELAY_EXPORT_TOKEN }}
         run: |
+          python curator/fetch_community.py
           python curator/build_catalog.py
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
           git add curator/community.json catalog/catalog.json
+          git add curator/raw/community_setups.json curator/raw/votes.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "Apply contribution #${{ github.event.issue.number }}"
           git pull --rebase && git push
       - name: Close issue

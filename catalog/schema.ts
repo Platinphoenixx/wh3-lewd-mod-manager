@@ -52,16 +52,17 @@ export interface Preset {
   /**
    * tested  = a complete list someone played with (load order tested),
    * guide   = a community guide's list (e.g. KPW's per-character docs; order as in the guide),
-   * derived = generated from a mod's own page: the mod plus everything it requires, ordered by tier.
+   * derived = generated from a mod's own page: the mod plus everything it requires, ordered by tier,
+   * community = a list a player shared from the app (see `community`).
    */
-  origin: "tested" | "guide" | "derived";
+  origin: "tested" | "guide" | "derived" | "community";
   phaseNote?: string;         // e.g. "switch only from corruption stage 5 on"
   /** English Markdown: what this campaign is about, what the list contains, how to play it. */
   description?: string;
   highlights?: string[];
   /** Mod ids whose images represent this preset (the app shows their covers). */
   coverMods?: string[];
-  source: { type: "discord" | "loverslab" | "wiki" | "steam" | "derived"; url?: string; file?: string; author?: string; date?: string };
+  source: { type: "discord" | "loverslab" | "wiki" | "steam" | "derived" | "community"; url?: string; file?: string; author?: string; date?: string };
   /** In load order as given by the source: first entry = highest priority. */
   entries: PresetEntry[];
   /**
@@ -79,6 +80,10 @@ export interface Preset {
    * the same packs): "main menu" = the game loaded every mod.
    */
   launchTest?: { result: string; game: string; date: string };
+  /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily). */
+  votes?: { up: number; down: number };
+  /** A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name. */
+  community?: { base?: string; far?: string; game?: string; own?: string[] };
 }
 
 export interface PresetEntry {
