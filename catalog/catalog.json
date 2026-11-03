@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T13:11:26+00:00",
+  "generatedAt": "2026-11-03T13:25:54+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -65849,7 +65849,12 @@
             "mod": "steam-2798690094"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.5",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "setup-greenskins",
@@ -65884,7 +65889,12 @@
             "mod": "ll-46561"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.5",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "setup-corrupted-ascension",
@@ -65941,7 +65951,12 @@
           "to": "Lin_AllInOne_en.pack",
           "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.5",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "setup-imrik",
@@ -65973,7 +65988,12 @@
             "mod": "dc-imrik-dragon-taming-mrdustv"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.5",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "derived-ll-52142",
