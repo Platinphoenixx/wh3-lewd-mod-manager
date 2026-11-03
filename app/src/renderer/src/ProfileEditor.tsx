@@ -104,8 +104,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const missingEntries = resolved.entries.flatMap((e) => {
     const t = parseTargetKey(e.key)
     const lack = missingPacks('mod' in t ? data.index.mods.get(t.mod) : undefined, e.packs ?? e.pack, installed.get(e.key) ?? [])
-    const first = !installed.has(e.key) ? e
-      : lack.length ? { ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }
+    const downloads = lack.filter((p) => !(p.from === 'steam' && p.steamId)).map((p) => p.file)
+    const first = !installed.has(e.key) ? { ...e, need: downloads }
+      : lack.length ? { ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from, need: downloads }
       : null
     if (!first) return []
     const items = [...new Set(lack.filter((p) => p.from === 'steam' && p.steamId && p.steamId !== first.steamId).map((p) => p.steamId!))]

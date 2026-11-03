@@ -54,6 +54,8 @@ export interface ResolvedEntry {
   steamId?: string
   from?: 'steam' | 'download'
   requiredBy?: string
+  /** Set by the install step: the download packs of the mod still missing (all are fetched in one go). */
+  need?: string[]
 }
 
 export interface ResolvedProfile {

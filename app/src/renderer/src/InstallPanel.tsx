@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { CommunityFix, Mod } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress, SteamProgress } from '@shared/api'
-import { archivesFor, downloadHints, installSourceFor, packHints, wantedPacks, type InstallSource } from '@shared/install'
+import { archivesFor, downloadHints, installSourceFor, packHints, packsToFetch, type InstallSource } from '@shared/install'
 import type { ResolvedEntry } from '@shared/profile'
 import { useData } from './data'
 
@@ -24,7 +24,7 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
   const data = useData()
   const wanted = (i: Missing) => {
     const mod = i.modId ? data.index.mods.get(i.modId) : undefined
-    return mod ? wantedPacks(mod, i.entry.pack, characters) : undefined
+    return mod ? packsToFetch(mod, i.entry.pack, i.entry.need, characters) : undefined
   }
   const [busy, setBusy] = useState<string | null>(null)
   const [log, setLog] = useState<string[]>([])
@@ -181,7 +181,8 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
             {others.map((i) => (
               <li key={`${i.entry.key}:${i.entry.pack ?? ''}:${i.entry.steamId ?? ''}`}>
                 <strong>{i.entry.name}</strong>{' '}
-                {i.modId && queue[i.modId] && <span className="muted">– {QUEUE_LABEL[queue[i.modId].status]} </span>}
+                {i.modId && queue[i.modId] && <span className="muted">– {queue[i.modId].status === 'installed' ? 'partly installed' : QUEUE_LABEL[queue[i.modId].status]} </span>}
+                {(i.entry.need?.length ?? 0) > 1 && <span className="muted">– {i.entry.need!.length} files </span>}
                 {i.source.kind === 'loverslab' && (
                   <button disabled={!!busy} onClick={() => fromLL(i)}>Download from LoversLab</button>
                 )}

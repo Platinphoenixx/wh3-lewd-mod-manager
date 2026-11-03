@@ -130,6 +130,27 @@ export function wantedPacks(mod: Mod, templatePack: string | undefined, characte
   return forChar.length && forChar.length < mod.packs.length ? forChar.map((p) => p.file) : undefined
 }
 
+/**
+ * The packs to download for a mod the install step lists: every missing download pack (`need`), with the profile's
+ * version of a pick-one group (`wantedPacks`) – so a page with one file per pack (a base pack and six stage packs) is
+ * done in one window instead of one round per file. Without `need`, as `wantedPacks`.
+ */
+export function packsToFetch(mod: Mod, templatePack: string | undefined, need: string[] | undefined, characters: string[] = []): string[] | undefined {
+  const base = wantedPacks(mod, templatePack, characters)
+  const ref = (f: string) => mod.packs.find((p) => p.file.toLowerCase() === f.toLowerCase())
+  const missing = (need ?? []).filter((f) => ref(f))
+  if (!missing.length) return base
+  // Of a pick-one group: the pack the template names, else the version for the profile's characters.
+  const chosen = [...(templatePack && ref(templatePack) ? [templatePack] : []), ...(wantedPacks(mod, undefined, characters) ?? [])]
+  const out: string[] = []
+  for (const f of missing) {
+    const group = ref(f)!.exclusiveGroup
+    const pick = group ? chosen.find((b) => ref(b)?.exclusiveGroup === group) ?? f : f
+    if (!out.includes(pick)) out.push(pick)
+  }
+  return out
+}
+
 /** A note for one file of a mod's download page, shown in the download window. */
 export interface FileHint {
   name: string

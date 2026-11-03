@@ -452,6 +452,231 @@
     {
       "id": "dc-nymeria-legendary-hero-lord-aranessa-reskin-rat-of-the-lake",
       "status": "superseded"
+    },
+    {
+      "id": "ll-24914",
+      "packs": [
+        {
+          "file": "@female_unit_cards.pack",
+          "from": "download",
+          "archive": "@female_unit_cards_1_5"
+        },
+        {
+          "file": "@female_unit_cards_nsfw.pack",
+          "from": "download",
+          "archive": "@female_unit_cards_nsfw_1_5",
+          "optional": true,
+          "note": "NSFW cards; combinable with the main pack, load above it"
+        },
+        {
+          "file": "@female_unit_cards_nsfw_slaanesh.pack",
+          "from": "download",
+          "archive": "@female_unit_cards_nsfw_slaanesh",
+          "optional": true,
+          "note": "NSFW cards for Slaanesh units only; an alternative to the full NSFW pack"
+        }
+      ]
+    },
+    {
+      "id": "ll-24875",
+      "packs": [
+        {
+          "file": "WH3_SigvaldA.pack",
+          "from": "download",
+          "note": "Main mod (silent, cultist voice or less heel clipping, by download)",
+          "exclusiveGroup": "sigvalda-main"
+        },
+        {
+          "file": "WH3_SigvaldA_with_soundpack.pack",
+          "from": "download",
+          "archive": "WH3_SigvaldA_with_soundpack",
+          "exclusiveGroup": "sigvalda-main",
+          "note": "Main mod without voice files; take the voice pack with it"
+        },
+        {
+          "file": "sigvaldavoiceAfix.pack",
+          "from": "download",
+          "archive": "sigvaldavoice_pack_fix",
+          "optional": true,
+          "note": "Voice pack for WH3_SigvaldA_with_soundpack"
+        }
+      ]
+    },
+    {
+      "id": "ll-25304",
+      "packs": [
+        {
+          "file": "WH3_KarlaBsuit.pack",
+          "from": "download",
+          "archive": "WH3_KarlaBsuit_",
+          "exclusiveGroup": "karla-look",
+          "note": "Bunny suit version (main look)"
+        },
+        {
+          "file": "WH3_KarlaBsuitFullPlate.pack",
+          "from": "download",
+          "archive": "WH3_KarlaBsuitFullPlate",
+          "exclusiveGroup": "karla-look",
+          "note": "Fully armoured version"
+        },
+        {
+          "file": "WH3_Karla_textandvoiceFinal.pack",
+          "from": "download",
+          "archive": "WH3_Karla_textandvoiceFinal",
+          "optional": true,
+          "note": "Text and female voice; works with both versions"
+        }
+      ]
+    },
+    {
+      "id": "ll-47842",
+      "packs": [
+        {
+          "file": "!!!!!!(X)_Hero_Swap_Harem_cn.pack",
+          "from": "download",
+          "archive": "(X)_Hero_Swap_Harem_cn",
+          "optional": true,
+          "note": "Chinese translation"
+        },
+        {
+          "file": "(X)_Hero_Swap_Harem.pack",
+          "from": "download",
+          "archive": "(X)_Hero_Swap_Harem"
+        },
+        {
+          "file": "(x)Hero!Swap_HaremXtra.pack",
+          "from": "download",
+          "archive": "(X)_Hero!Swap_HaremXtra",
+          "optional": true,
+          "note": "Optional sub-mod: extra unit card lines and names"
+        }
+      ]
+    },
+    {
+      "id": "ll-47932",
+      "packs": [
+        {
+          "file": "@Lizardwomen_Anthro_v1.2.2 (Lords and heroes).pack",
+          "from": "download",
+          "archive": "@Lizardwomen_Anthro_v1.2.2 (Lords and heroes)",
+          "exclusiveGroup": "scalies-version",
+          "note": "Lords and heroes only"
+        },
+        {
+          "file": "@Lizardwomen_Anthro_v1.2.2.pack",
+          "from": "download",
+          "archive": "@Lizardwomen_Anthro_v1.2.2",
+          "exclusiveGroup": "scalies-version",
+          "note": "Full version (lords and units)"
+        }
+      ]
+    },
+    {
+      "id": "ll-49991",
+      "packs": [
+        {
+          "file": "TitsNotTwitch.pack",
+          "from": "download",
+          "archive": "TitsNotTwitch",
+          "exclusiveGroup": "pause-menu",
+          "note": "Replaces the Twitch logo in the pause menu"
+        },
+        {
+          "file": "TitsPauseMenu.pack",
+          "from": "download",
+          "archive": "TitsPauseMenu",
+          "exclusiveGroup": "pause-menu",
+          "note": "Also replaces all icons of the pause menu"
+        }
+      ]
+    },
+    {
+      "id": "ll-49648",
+      "packs": [
+        {
+          "file": "(X)_@LK_dark_.pack",
+          "from": "download",
+          "archive": "(X)_@LK_dark_",
+          "optional": true,
+          "note": "Bonus: Aelesha Sigrika (not in the all-in-one)"
+        },
+        {
+          "file": "(X)_Cathay_ALL_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_ALL_XXX",
+          "note": "All-in-one of the Cathay submods"
+        },
+        {
+          "file": "(X)_Cathay_Alt_Hero_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Alt_Hero_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Build_Hero.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Build_Hero",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Divin_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Divin_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Enhi_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Enhi_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Hollow_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Hollow_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Liu_nao_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Liu_nao_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Mariko_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Mariko_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Shards_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Shards_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Taoyan_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Taoyan_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        },
+        {
+          "file": "(X)_Cathay_Xiao_XXX.pack",
+          "from": "download",
+          "archive": "(X)_Cathay_Xiao_XXX",
+          "optional": true,
+          "note": "Single submod; not needed with the all-in-one"
+        }
+      ]
     }
   ]
 }

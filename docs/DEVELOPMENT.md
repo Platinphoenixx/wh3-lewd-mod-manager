@@ -66,7 +66,8 @@ community contributions. App UI and catalog texts are English.
     same database table = hint only, tables most packs use are ignored (tested)
   - Install + launch: `src/shared/install.ts` picks the source per missing entry (Steam > LoversLab >
     Discord > manual, tested; a pack posted elsewhere than its mod's page has `PackRef.url`, e.g. Soil's Kislev units on
-    Discord, and is fetched from there); every missing Workshop item of a mod is subscribed in one go. Discord drops a
+    Discord, and is fetched from there); every missing Workshop item of a mod is subscribed in one go, and every missing download pack of a mod is asked for in one
+    LoversLab/Nexus window (`packsToFetch`: a page with one file per pack, e.g. a base pack and six stage packs). Discord drops a
     leading "@"/"!" from attached file names, so the installer gives such a pack its catalog name back
     (`catalogPackName`), and a pack the catalog marks optional for the mod never overwrites a file already in data (the old
     Soil asset pack vs. its fixed re-upload of the same name). A reskin the player adds goes on top of the load order

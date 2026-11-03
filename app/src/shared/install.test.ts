@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, catalogPackName, downloadHints, installSourceFor, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
+import { archivesFor, catalogPackName, downloadHints, installSourceFor, packsToFetch, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -171,5 +171,22 @@ describe('catalogPackName', () => {
     expect(catalogPackName('plain.pack', packs)).toBe('plain.pack')
     expect(catalogPackName('other.pack', packs)).toBe('other.pack')
     expect(catalogPackName('xu_a.pack', packs)).toBe('xu_a.pack')
+  })
+})
+
+describe('packsToFetch', () => {
+  const soboro = {
+    ...mod('soboro', {}),
+    packs: [
+      { file: 'base.pack', from: 'download', archive: 'base' }, { file: 'st1.pack', from: 'download', archive: 'st1' }, { file: 'st2.pack', from: 'download', archive: 'st2' },
+      { file: 'miao.pack', from: 'download', exclusiveGroup: 'who', note: 'Miao Ying version' }, { file: 'kat.pack', from: 'download', exclusiveGroup: 'who', note: 'Katarin version' }
+    ]
+  } as Mod
+  it('asks for every missing file of a page at once, with the profile version of a pick-one group', () => {
+    expect(packsToFetch(soboro, 'st1.pack', ['st1.pack', 'st2.pack', 'miao.pack'], ['Katarin'])).toEqual(['st1.pack', 'st2.pack', 'kat.pack'])
+    expect(archivesFor(soboro, packsToFetch(soboro, 'st1.pack', ['st1.pack', 'st2.pack']))).toEqual(['st1', 'st2'])
+  })
+  it('falls back to the template pack without a list of missing files', () => {
+    expect(packsToFetch(soboro, 'st2.pack', undefined)).toEqual(['st2.pack'])
   })
 })
