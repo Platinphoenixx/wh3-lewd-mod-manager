@@ -7,7 +7,8 @@ import { app, BrowserWindow, session, type DownloadItem } from 'electron'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
-import { pickDownloads, type DownloadRow, type FileHint } from '@shared/install'
+import { catalogPackName, pickDownloads, type DownloadRow, type FileHint } from '@shared/install'
+import type { PackRef } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress } from '@shared/api'
 
 const run = promisify(execFile)
@@ -27,6 +28,12 @@ export interface InstallResult {
 }
 
 const ARCHIVES = new Set(['.7z', '.zip', '.rar'])
+
+// The catalog's packs of a mod, or of every mod without an id (set by the main process from the loaded catalog).
+let packsOfMod: (modId?: string) => Promise<PackRef[]> = async () => []
+export function setCatalogPacks(f: (modId?: string) => Promise<PackRef[]>): void {
+  packsOfMod = f
+}
 
 async function listPacks(dir: string): Promise<string[]> {
   const out: string[] = []
@@ -75,9 +82,20 @@ export async function installFile(file: string, dataPath: string, modId?: string
       if (!packs.length) return { ok: false, message: `${basename(file)} contains no .pack file.`, packs: [] }
     }
     const records = await readJson<InstalledRecord[]>('installed.json', [])
+    const known = await packsOfMod(modId).catch(() => [])
+    const kept: string[] = []
+    const done: string[] = []
     for (const p of packs) {
-      await copyFile(p, join(dataPath, basename(p)))
-      const rec: InstalledRecord = { pack: basename(p), modId, source: basename(file), installedAt: new Date().toISOString() }
+      const name = catalogPackName(basename(p), known)
+      // A pack the catalog marks optional for this mod (an old copy another mod replaces with a fixed one of the same
+      // name, say) never overwrites a file that is already there.
+      if (modId && known.find((k) => k.file.toLowerCase() === name.toLowerCase())?.optional && existsSync(join(dataPath, name))) {
+        kept.push(name)
+        continue
+      }
+      await copyFile(p, join(dataPath, name))
+      done.push(name)
+      const rec: InstalledRecord = { pack: name, modId, source: basename(file), installedAt: new Date().toISOString() }
       const i = records.findIndex((r) => r.pack.toLowerCase() === rec.pack.toLowerCase())
       if (i >= 0) records[i] = rec
       else records.push(rec)
@@ -85,10 +103,11 @@ export async function installFile(file: string, dataPath: string, modId?: string
     await writeJson('installed.json', records)
     const moved = moveSource && join(file, '..').toLowerCase() !== dataPath.toLowerCase()
     if (moved) await rm(file, { force: true })
+    const keptNote = kept.length ? `; kept the ${kept.join(', ')} already in data (this download's copy is an older one)` : ''
     return {
       ok: true,
-      message: `Installed ${packs.map((p) => basename(p)).join(', ')}${moved ? ` (moved from ${basename(join(file, '..'))})` : ''}`,
-      packs: packs.map((p) => basename(p))
+      message: `${done.length ? `Installed ${done.join(', ')}` : 'Nothing new installed'}${moved ? ` (moved from ${basename(join(file, '..'))})` : ''}${keptNote}`,
+      packs: [...done, ...kept]
     }
   } catch (e) {
     return { ok: false, message: `Installing ${basename(file)} failed: ${(e as Error).message}`, packs: [] }
@@ -200,8 +219,11 @@ const markFilesScript = (hints: FileHint[]) => `;(() => {
       note.dataset.wh3lmmNote = '1'
       // Green: the profile's file. Amber: another version, with what it is. Grey: not needed.
       note.style.cssText = 'font:13px/1.4 system-ui,sans-serif;margin-top:2px;' + (hint && hint.wanted ? 'color:#8fcf74;font-weight:700'
-        : hint && hint.note ? 'color:#d9b25e' : 'color:#7d7d7d;font-style:italic')
+        : hint && hint.note && !hints.some((h) => h.wanted) ? 'color:#d9b25e' : 'color:#7d7d7d;font-style:italic')
+      // When the profile's file is known, every other file says so too; otherwise each says what it is.
+      const anyWanted = hints.some((h) => h.wanted)
       note.textContent = hint && hint.wanted ? '✔ Your profile uses this file' + (hint.note ? ' – ' + hint.note : '')
+        : hint && anyWanted ? '✕ Not needed for your profile' + (hint.note ? ' – ' + hint.note : '')
         : hint ? (hint.note || 'Not the file your profile uses')
         : '✕ Preview image for mod managers – not needed'
       el.after(note)

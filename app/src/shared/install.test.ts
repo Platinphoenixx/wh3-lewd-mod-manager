@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, downloadHints, installSourceFor, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
+import { archivesFor, catalogPackName, downloadHints, installSourceFor, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -41,6 +41,15 @@ describe('installSourceFor', () => {
   it('uses the Workshop id a template gives and resolves externals', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:ll', steamId: '999', from: 'steam' })).toEqual({ kind: 'steam', id: '999' })
     expect(installSourceFor(catalog, index, { key: 'external:ext-mct' })).toEqual({ kind: 'steam', id: '2927955021' })
+  })
+
+  it('fetches a pack posted somewhere else from there, not from the mod page', () => {
+    const soil = { ...mod('soil', { loverslab: { fileId: '4', url: 'https://www.loverslab.com/files/file/4-x/', category: 'mods' } }),
+      packs: [{ file: '@Soil_Miao.pack', from: 'download' }, { file: '@Soil_Kislev.pack', from: 'download', url: 'https://discord.com/channels/1/2/5' }] } as Mod
+    const c = { ...catalog, mods: [...catalog.mods, soil] } as Catalog
+    const ix = buildIndex(c)
+    expect(installSourceFor(c, ix, { key: 'mod:soil', pack: '@Soil_Kislev.pack', from: 'download' })).toEqual({ kind: 'discord', url: 'https://discord.com/channels/1/2/5' })
+    expect(installSourceFor(c, ix, { key: 'mod:soil', pack: '@Soil_Miao.pack', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/4-x/' })
   })
 
   it('keeps a template entry that is a download as a download', () => {
@@ -149,5 +158,18 @@ describe('missingPacks', () => {
     expect(lack.map((p) => [p.file, p.steamId])).toEqual([['kerb_Alarielle_Temptations_Bloom_steam.pack', '3644437727']])
     expect(missingPacks(atb, undefined, [{ file: 'kerb_alarielle_temptations_bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }]).map((p) => p.file)).toEqual(['stage_a.pack'])
     expect(missingPacks(atb, undefined, [{ file: 'kerb_Alarielle_Temptations_Bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }, { file: 'stage_a.pack' }])).toEqual([])
+  })
+})
+
+describe('catalogPackName', () => {
+  const packs = [{ file: '@Soil_Kislev_Corrupted_Units.pack' }, { file: '!xu_a.pack' }, { file: '!!!xu_a.pack' }, { file: 'plain.pack' }]
+  it('gives a Discord download back the leading "@" or "!" Discord dropped', () => {
+    expect(catalogPackName('Soil_Kislev_Corrupted_Units.pack', packs)).toBe('@Soil_Kislev_Corrupted_Units.pack')
+    expect(catalogPackName('@soil_kislev_corrupted_units.pack', packs)).toBe('@soil_kislev_corrupted_units.pack')
+  })
+  it('keeps the name when it is the catalog name, unknown, or ambiguous', () => {
+    expect(catalogPackName('plain.pack', packs)).toBe('plain.pack')
+    expect(catalogPackName('other.pack', packs)).toBe('other.pack')
+    expect(catalogPackName('xu_a.pack', packs)).toBe('xu_a.pack')
   })
 })

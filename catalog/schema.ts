@@ -187,6 +187,8 @@ export interface Mod {
   campaigns?: ("IE" | "IEE" | "RoC")[]; // Immortal Empires, IE Expanded, Realm of Chaos
   status?: "stable" | "beta" | "wip" | "abandoned" | "superseded";
   knownIssues?: string[];
+  /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
+  stopsGame?: string;
   installNotes?: string[];    // things a human must know (MCT settings, start a new campaign...)
 
   /** Accepted community feedback ("how does it work for you"), counted per verdict. */
@@ -249,6 +251,8 @@ export interface PackRef {
   exclusiveGroup?: string;
   /** LoversLab download that contains this pack, without extension (e.g. "@female_unit_cards_nsfw_1_5"); from the pack analysis. */
   archive?: string;
+  /** Where this pack is downloaded when the mod's own page does not have it (e.g. a fixed version posted on Discord). */
+  url?: string;
   note?: string;
 }
 

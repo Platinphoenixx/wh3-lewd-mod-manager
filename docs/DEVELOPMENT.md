@@ -37,7 +37,9 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/suggest.ts` "Fill this profile" (tested): lewd and general mods that fit the template (same
     character/faction, recommended by or extending profile mods) and that community lists for the same
     character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
-    removed template mods or other characters' campaigns. Suggestions that exclude each other (incompatible,
+    removed template mods or other characters' campaigns, also not through a dependency (conflicts count against what the
+    profile's extras pull in too); no mod the game does not start with (`Mod.stopsGame`), no patch that would pull in what
+    it patches (an SFO patch bringing SFO), no `modder-resource` (source files). Suggestions that exclude each other (incompatible,
     versions of one add-on, reskins of the same character) come as one "pick one" choice; a reskin of a character the
     profile already reskins says what it replaces ("Replaces …", `Suggestion.replaces`). An option is selected at first
     only when players of this kind of list really use it (same-character lists, tied to a profile mod, or for the
@@ -52,7 +54,12 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/conflicts.ts` overlaps between packs: same file path = real override (higher pack wins);
     same database table = hint only, tables most packs use are ignored (tested)
   - Install + launch: `src/shared/install.ts` picks the source per missing entry (Steam > LoversLab >
-    Discord > manual, tested); `src/main/steamWorker.ts` is a separate utilityProcess that uses
+    Discord > manual, tested; a pack posted elsewhere than its mod's page has `PackRef.url`, e.g. Soil's Kislev units on
+    Discord, and is fetched from there); every missing Workshop item of a mod is subscribed in one go. Discord drops a
+    leading "@"/"!" from attached file names, so the installer gives such a pack its catalog name back
+    (`catalogPackName`), and a pack the catalog marks optional for the mod never overwrites a file already in data (the old
+    Soil asset pack vs. its fixed re-upload of the same name). A reskin the player adds goes on top of the load order
+    (unless a rule places it), so it beats the template's mods that change the same models; `src/main/steamWorker.ts` is a separate utilityProcess that uses
     steamworks.js as app 1142710 to subscribe/download and then exits (`steam.ts` drives it);
     `src/main/installer.ts` installs .pack/.7z/.zip/.rar into data (7zip-bin, node-unrar-js), records
     them in userData/installed.json, moves stale packs to userData/backup, and opens LoversLab in its own
@@ -179,7 +186,8 @@ over all layers – fix texts there.
   starts or is part of; Steam collections are no entries). KPW templates also get the strict (unconditional)
   requirements of the mods the guide names.
   `manual.json` `presetReplacements` apply to all templates; `noTemplate` lists mods that get no derived template
-  (with the reason, e.g. they stop the game at launch).
+  (with the reason, e.g. they stop the game at launch); a reason saying "stops the game" also sets `Mod.stopsGame` and a
+  known issue, and the app never suggests such a mod.
 - `curator/launch_test.py` (Windows, the game installed): starts the game once per template with exactly its packs
   (hard links in a test folder, its own list file; data folder and the player's lists untouched) and records main
   menu / database error (the game's `crash_report/bad_mods_report.txt`) / crash / script errors.

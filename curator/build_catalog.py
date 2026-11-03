@@ -965,6 +965,12 @@ def main():
     # of pick-one packs) is replaced when the mod's first needed pack has a replacement. manual.json "noTemplate":
     # mods that get no derived template (e.g. they stop the game at launch).
     no_template = {k for k in man.get("noTemplate", {}) if not k.startswith("_")}
+    # A mod that stops the game at launch says so, and the app does not suggest it (or what would pull it in).
+    for mid, why in man.get("noTemplate", {}).items():
+        if mid in mods and "stops the game" in why.lower():
+            mods[mid]["stopsGame"] = why
+            if why not in (mods[mid].get("knownIssues") or []):
+                mods[mid]["knownIssues"] = [why] + (mods[mid].get("knownIssues") or [])
     presets[:] = [p for p in presets if not (p.get("origin") == "derived" and set(p.get("coverMods") or []) & no_template)]
     for p in presets:
         if p.get("origin") not in ("guide", "derived"):

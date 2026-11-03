@@ -97,6 +97,11 @@ describe('resolveProfile', () => {
     expect(r.entries.find((e) => e.key === 'mod:lyra-assets')?.origin).toBe('dependency')
   })
 
+  it('puts a reskin the player picked on top, so it beats the template mods that change the same models', () => {
+    const r = resolveProfile(catalog, index, preset, { extras: ['mod:unrelated', 'mod:alarielle-skin'], removed: [] })
+    expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])
+  })
+
   it('treats incompatibilities inside a tested template as notes and ignores conditional ones', () => {
     const cat: Catalog = {
       ...catalog,

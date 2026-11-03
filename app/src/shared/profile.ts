@@ -132,7 +132,9 @@ function isSuperseded(index: CatalogIndex, key: string): boolean {
  */
 export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>): Candidate[] {
   const removed = new Set(profile.removed)
-  const current = [...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras]
+  const chosen = [...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras]
+  // What the extras pull in is part of the profile too (a conflict with SFO counts when a switched-on patch needs SFO).
+  const current = [...chosen, ...missingDependencies(index, chosen, new Set(chosen)).keys()]
   const inProfile = new Set(current)
   const found = new Map<string, Candidate>()
 
@@ -220,7 +222,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
 /**
  * The final mod list of a profile in load order (first = highest priority).
  * Base entries keep the preset's tested order. Extras are placed by their load-order rules, otherwise
- * right above the profile mod they extend or relate to, otherwise at the bottom.
+ * right above the profile mod they extend or relate to, otherwise reskins on top and the rest at the bottom.
  */
 export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>): ResolvedProfile {
   const removed = new Set(profile.removed)
@@ -261,6 +263,9 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     else if (below.length) pos = Math.max(...below) + 1
     else if (related.length && (mod?.kind === 'translation' || mod?.kind === 'patch' || mod?.kind === 'submod')) pos = Math.min(...related)
     else if (e.origin === 'dependency') pos = entries.length // dependencies go low so dependants win
+    // A look the player picked has to beat the template's mods that change the same models (its own reskins, asset
+    // packs): reskins go on top, as players place them.
+    else if (mod?.kind === 'reskin' && !related.length) pos = 0
     else pos = related.length ? Math.min(...related) : entries.length
     entries.splice(pos, 0, e)
   }

@@ -646,6 +646,15 @@
       ]
     },
     {
+      "id": "dc-morathi-ascension-lazy-stages-optional-original-hair",
+      "packs": [
+        { "file": "li_morathi_first.pack", "from": "steam", "steamId": "2860509927" },
+        { "file": "li_morathi_second.pack", "from": "steam", "steamId": "2867839569" },
+        { "file": "!li_morathi_orig_hair.pack", "from": "steam", "steamId": "2868970620", "optional": true, "note": "Optional: Morathi keeps her original hair" },
+        { "file": "li_morathi_progression_workshop.pack", "from": "steam", "steamId": "3471237702" }
+      ]
+    },
+    {
       "id": "ll-32374",
       "packs": [
         {
@@ -670,6 +679,7 @@
           "file": "@Soil_Kislev_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
+          "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1437802218748379136",
           "note": "Only when playing Katarin (Kislev). Not in the LoversLab download: Kerberos' fixed pack (2025-11-11) is posted on Discord (#soiled-projects)."
         }
       ],
@@ -767,7 +777,8 @@
     "ext-seu-miaoying-mods": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension",
     "ext-unique-landmarks": "dc-unique-landmarks-seducers-of-slaanesh-wood-elf-forests",
     "ext-helper-ui": "steam-3238848431",
-    "ext-alarielle-wood-elves": "steam-3575516470"
+    "ext-alarielle-wood-elves": "steam-3575516470",
+    "ext-sfo": "steam-2792731173"
   },
   "refAliases": {
     "lazy's corruption framework": {

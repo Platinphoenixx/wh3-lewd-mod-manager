@@ -16,7 +16,7 @@ export type InstallSource =
 export function installSourceFor(
   catalog: Catalog,
   index: CatalogIndex,
-  entry: { key: string; steamId?: string; from?: 'steam' | 'download' }
+  entry: { key: string; pack?: string; steamId?: string; from?: 'steam' | 'download' }
 ): InstallSource {
   if (entry.steamId && entry.from !== 'download') return { kind: 'steam', id: entry.steamId }
   const t = parseTargetKey(entry.key)
@@ -28,6 +28,9 @@ export function installSourceFor(
   if (!('mod' in t)) return { kind: 'manual' }
   const mod = index.mods.get(t.mod)
   if (!mod) return { kind: 'manual' }
+  // A pack that lives somewhere else than the mod's pages (a fix posted on Discord) comes from there.
+  const elsewhere = entry.pack ? mod.packs.find((p) => p.file.toLowerCase() === entry.pack!.toLowerCase())?.url : undefined
+  if (elsewhere) return /discord\.com/.test(elsewhere) ? { kind: 'discord', url: elsewhere } : { kind: 'manual', url: elsewhere }
   const ll = mod.sources.loverslab
   // A file the template loads from data (a download) comes from the mod's LoversLab page even when the
   // mod's main pack is on Steam (e.g. Azazel's Realm's "Play as Azazel" overwrite).
@@ -64,6 +67,19 @@ export function missingPacks(mod: Mod | undefined, templatePacks: string | strin
   }
   for (const list of groups.values()) if (!list.some((p) => have.has(p.file.toLowerCase())) && !named) out.push(list[0])
   return out
+}
+
+const bare = (name: string) => name.toLowerCase().replace(/^[@!]+/, '')
+
+/**
+ * The name a downloaded pack is installed under. Discord drops leading "@" and "!" from the names of attached files
+ * ("@Soil_Kislev_Corrupted_Units.pack" arrives as "Soil_Kislev_Corrupted_Units.pack"); the catalog and the templates
+ * know the original name, so such a file gets it back. Anything else keeps its name.
+ */
+export function catalogPackName(file: string, packs: { file: string }[]): string {
+  if (packs.some((p) => p.file.toLowerCase() === file.toLowerCase())) return file
+  const hits = [...new Set(packs.filter((p) => bare(p.file) === bare(file)).map((p) => p.file))]
+  return hits.length === 1 ? hits[0] : file
 }
 
 /** One file of a LoversLab download page. */
@@ -134,7 +150,8 @@ export function downloadHints(mod: Mod, wanted?: string[]): FileHint[] {
     const old = hints.get(key)
     hints.set(key, { name: old?.name ?? name, note: old?.note ?? note, wanted: want.has(key) })
   }
-  for (const d of mod.sources.downloads ?? []) if (!/discord\.com/.test(d.url)) add(d.name, d.description)
+  // The page's own size goes with it ("254 MB"), so the player can tell the files apart.
+  for (const d of mod.sources.downloads ?? []) if (!/discord\.com/.test(d.url)) add(d.name, [d.description, d.note].filter(Boolean).join(' · ') || undefined)
   for (const p of mod.packs) if (p.archive) add(p.archive, p.note)
   return [...hints.values()]
 }

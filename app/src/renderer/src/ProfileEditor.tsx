@@ -99,17 +99,21 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return m
   }, [matched])
   const installed = useMemo(() => new Map([...matched.known, ...ownGroups]), [matched, ownGroups])
-  // Not installed, or installed only in part: the first missing pack decides what to fetch (its Workshop item).
+  // Not installed, or installed only in part: the first missing pack decides what to fetch (its Workshop item); every
+  // other Workshop item the mod still lacks is fetched in the same go (a mod made of four items needs no four rounds).
   const missingEntries = resolved.entries.flatMap((e) => {
-    if (!installed.has(e.key)) return [e]
     const t = parseTargetKey(e.key)
     const lack = missingPacks('mod' in t ? data.index.mods.get(t.mod) : undefined, e.packs ?? e.pack, installed.get(e.key) ?? [])
-    if (!lack.length) return []
-    return [{ ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }]
+    const first = !installed.has(e.key) ? e
+      : lack.length ? { ...e, pack: lack[0].file, steamId: lack[0].steamId ?? (lack[0].from === 'steam' ? e.steamId : undefined), from: lack[0].from }
+      : null
+    if (!first) return []
+    const items = [...new Set(lack.filter((p) => p.from === 'steam' && p.steamId && p.steamId !== first.steamId).map((p) => p.steamId!))]
+    return [first, ...items.map((id) => ({ ...e, pack: lack.find((p) => p.steamId === id)!.file, steamId: id, from: 'steam' as const }))]
   })
   const incomplete = new Set(missingEntries.map((e) => e.key))
   // A fresh profile (nothing installed yet) starts with its choices, since they change what gets installed.
-  const fresh = missingEntries.length === resolved.entries.length
+  const fresh = incomplete.size === resolved.entries.length
   const view: View = chosenView ?? (picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
   const goTo = (v: View) => {
     setView(v)
@@ -343,7 +347,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           1 · Choices{picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}
         </button>
         <button className={view === 'install' ? 'active' : ''} onClick={() => goTo('install')}>
-          2 · Install{missingEntries.length > 0 && <span className="muted"> ({missingEntries.length} missing)</span>}
+          2 · Install{incomplete.size > 0 && <span className="muted"> ({incomplete.size} missing)</span>}
         </button>
         <button className={view === 'order' ? 'active' : ''} onClick={() => goTo('order')}>3 · Load order &amp; play</button>
         <span className="spacer" />
@@ -461,8 +465,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <section>
           {missingEntries.length > 0 && (
             <p className="callout warn small">
-              {missingEntries.length} mod{missingEntries.length === 1 ? ' is' : 's are'} not installed yet.{' '}
-              <button className="link" onClick={() => goTo('install')}>Install {missingEntries.length === 1 ? 'it' : 'them'}</button>
+              {incomplete.size} mod{incomplete.size === 1 ? ' is' : 's are'} not installed yet.{' '}
+              <button className="link" onClick={() => goTo('install')}>Install {incomplete.size === 1 ? 'it' : 'them'}</button>
             </p>
           )}
           {stale.size > 0 && (

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T09:40:38+00:00",
+  "generatedAt": "2026-11-03T10:16:37+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -5986,7 +5986,7 @@
         {
           "kind": "incompatible",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Confirmed CTD in the Miao/Azazel quest battle; new heroes/units are then unbalanced.",
           "source": {
@@ -6731,7 +6731,8 @@
       "tags": [
         "valkia",
         "assets",
-        "model"
+        "model",
+        "modder-resource"
       ],
       "sources": {
         "loverslab": {
@@ -8373,7 +8374,7 @@
         {
           "kind": "incompatible",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Confirmed CTD in Miao/Azazel quest battle",
           "source": {
@@ -12942,7 +12943,7 @@
         {
           "kind": "incompatible",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "complete overhauls such as SFO",
           "condition": "main version only",
@@ -20204,8 +20205,10 @@
         ]
       },
       "knownIssues": [
+        "Stops the game at launch since patch 9.0 (database error, launch test 2026-11-02).",
         "Stops the game at launch since patch 9.0: the game reports a database error in land_units_to_unit_abilites_junctions_tables (record ec_princess_Triss_3wh2_main_character_passive_loose) in Eltharion_corruption.pack (launch test 2026-11-02, game 9.0.4, the mod alone)."
       ],
+      "stopsGame": "Stops the game at launch since patch 9.0 (database error, launch test 2026-11-02).",
       "authorPages": [
         {
           "site": "loverslab",
@@ -21294,7 +21297,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "source": {
             "type": "loverslab",
@@ -29174,6 +29177,16 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3471884231"
           }
+        },
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "nx-140"
+          },
+          "note": "Contains the stage 3 and 4 reskins of the 2023 Nexus upload (same files).",
+          "source": {
+            "type": "inferred"
+          }
         }
       ],
       "curation": {
@@ -32099,23 +32112,13 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "SFO submod",
           "condition": "Only in SFO games",
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3086916833"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-2792731173"
-          },
-          "note": "Listed as a required item on the Workshop page",
-          "source": {
-            "type": "steam"
           }
         }
       ],
@@ -33437,6 +33440,16 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3756385010"
           }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+          },
+          "note": "The pack declares seu_miaoying_submod_extension.pack as a dependency (and Soil's Miao Ying units, which Soil's Corrupted Units or the merged pack provide).",
+          "source": {
+            "type": "inferred"
+          }
         }
       ],
       "installNotes": [
@@ -33450,6 +33463,13 @@
         ]
       },
       "status": "stable",
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "faction": "Cathay",
+          "note": "Only her own campaign: her battle transformation at stage 6"
+        }
+      ],
       "images": [
         {
           "url": "https://images.steamusercontent.com/ugc/15968083069519485237/6EAC37711AC57424FF4C5703D9456EADAA421B08/",
@@ -34009,6 +34029,7 @@
       ],
       "status": "beta",
       "knownIssues": [
+        "The Workshop version stops the game at launch since patch 9.0 (launch test 2026-11-02); the community fixes in #miao-alchemy patch the packs with a script, which the app cannot do.",
         "Resource bar can look overcrowded.",
         "Minor UI inconsistencies in cauldron/prison/lab panels.",
         "Placeholder portraits for some lords in the flesh lab.",
@@ -34035,6 +34056,7 @@
           "Page version rc-1.0.0 (playtest) vs. title [8.1.0]."
         ]
       },
+      "stopsGame": "The Workshop version stops the game at launch since patch 9.0 (launch test 2026-11-02); the community fixes in #miao-alchemy patch the packs with a script, which the app cannot do.",
       "authorPages": [
         {
           "site": "loverslab",
@@ -34819,7 +34841,9 @@
         {
           "file": "!li_morathi_orig_hair.pack",
           "from": "steam",
-          "steamId": "2868970620"
+          "steamId": "2868970620",
+          "optional": true,
+          "note": "Optional: Morathi keeps her original hair"
         },
         {
           "file": "li_morathi_progression_workshop.pack",
@@ -35037,14 +35061,26 @@
           "note": "Stage 4"
         }
       ],
-      "relations": [],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3471884231"
+          },
+          "note": "An older upload (2023) of Lazy's Morathi stage 3 and 4 reskins: Lazy's Corrupted Reskins Morathi contains the same files (same table and model paths) and overrides them.",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
           "Read on the Nexus mod page; not checked in game."
         ]
-      }
+      },
+      "status": "superseded"
     },
     {
       "id": "steam-2855142590",
@@ -36635,7 +36671,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Stat support for SFO",
           "condition": "Only in SFO games",
@@ -46198,7 +46234,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Patches an SFO ability (Dragon's Wrath).",
           "source": {
@@ -46279,7 +46315,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "SFO - Steel Faith Overhaul",
           "source": {
@@ -46345,7 +46381,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Made for SFO factions",
           "source": {
@@ -46384,16 +46420,6 @@
           "source": {
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2902803962"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-2792731173"
-          },
-          "note": "Listed as a required item on the Workshop page",
-          "source": {
-            "type": "steam"
           }
         },
         {
@@ -49747,6 +49773,16 @@
           }
         },
         {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "The merged pack holds the Miao Ying and Azazel packs of Soil's Corrupted Units with the same scripts (corrupted_barracks.lua, corrupted_startup.lua): load one or the other. Soil's Kislev pack does not work with the Azazel units either.",
+          "source": {
+            "type": "inferred"
+          }
+        },
+        {
           "kind": "requires",
           "target": {
             "mod": "ll-30462"
@@ -49929,7 +49965,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "Stats are made for SFO",
           "source": {
@@ -49982,7 +50018,7 @@
           {
             "name": "soil_corrupted_units_asset.7z",
             "url": "https://www.loverslab.com/files/file/32374-soils-corrupted-units/?do=download",
-            "description": "Asset pack (soil_corrupted_units_asset.pack); always required",
+            "description": "Old asset pack (soil_corrupted_units_asset.pack) – not needed: take 'Soil Corrupted assets (fixed vanilla overwrites)' instead, same file name",
             "note": "254.14 MB"
           },
           {
@@ -50027,6 +50063,7 @@
           "file": "@Soil_Kislev_Corrupted_Units.pack",
           "from": "download",
           "exclusiveGroup": "soil-faction",
+          "url": "https://discord.com/channels/965342581745668136/1004257551283662848/1437802218748379136",
           "note": "Only when playing Katarin (Kislev). Not in the LoversLab download: Kerberos' fixed pack (2025-11-11) is posted on Discord (#soiled-projects)."
         }
       ],
@@ -52703,7 +52740,7 @@
         {
           "kind": "incompatible",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "The total conversion changes the game's unit models like SFO does; the Original Females edition is meant to work with SFO.",
           "source": {
@@ -54126,7 +54163,7 @@
         {
           "kind": "requires",
           "target": {
-            "external": "ext-sfo"
+            "mod": "steam-2792731173"
           },
           "note": "All parts are SFO adjustments",
           "source": {
@@ -59420,11 +59457,6 @@
           "url": "https://steamcommunity.com/profiles/76561198030955212/myworkshopfiles/?appid=1142710"
         }
       ]
-    },
-    {
-      "id": "ext-sfo",
-      "name": "SFO",
-      "note": "Faction overhaul mod that several pages reference as 'SFO'; Steam ID/title not given on the pages."
     },
     {
       "id": "ext-sons-of-ursun",

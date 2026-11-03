@@ -92,11 +92,22 @@ export function suggestForProfile(
     const m = c.mod
     if (!m || c.superseded || c.conflicts.length || c.alternativeTo.length || m.kind === 'translation' || m.kind === 'collection') continue
     if (['abandoned', 'superseded'].includes(m.status ?? '')) continue
+    if (m.tags.includes('modder-resource')) continue // source files for modders (Blender models), nothing the game loads
     if (removed.has(c.key)) continue // the player took it out of the template on purpose
     // Nothing that would bring back what the player removed, or pull in a whole other campaign.
     if (c.addsDependencies.some((d) => removed.has(d))) continue
+    // Nothing the game does not start with (the catalog's launch test), and nothing that pulls such a mod in.
+    if (m.stopsGame || c.addsDependencies.some((d) => d.startsWith('mod:') && index.mods.get(d.slice(4))?.stopsGame)) continue
     const tie = c.reasons.find((r) => /^(Recommended by|Optional for|Extends) /.test(r))?.split(':')[0].replace(/^Extends /, 'Adds to ')
     const forChar = m.playAs?.find((p) => isChar(p.character))?.character
+    // A patch is for lists that have what it patches; one that would pull that in (SFO for an SFO patch) is not offered.
+    if (m.kind === 'patch' && c.addsDependencies.length) continue
+    // Nor an add-on that brings another character's campaign along (a Katarin option that needs Lazy's Katarin).
+    const otherStory = (d: string) => {
+      const dm = d.startsWith('mod:') ? index.mods.get(d.slice(4)) : undefined
+      return story(dm) && !!dm!.playAs?.length && !dm!.playAs.some((p) => isChar(p.character))
+    }
+    if (c.addsDependencies.some(otherStory)) continue
     const fits = [...new Set(themeOf(m).filter((t) => theme.has(t)))]
     // Another character's story, or something built on one, does not belong in this template.
     if (!tie && !forChar) {

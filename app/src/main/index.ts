@@ -20,7 +20,7 @@ import { checkAppUpdate } from './appUpdate'
 import { accept, clearToken, listReview, reject, setToken, status as maintainerStatus } from './maintainer'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
-  backupPacks, downloadFromLoversLab, downloadFromNexus, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
+  backupPacks, downloadFromLoversLab, downloadFromNexus, downloadQueueFromLoversLab, installFile, installFiles, setCatalogPacks, type InstalledRecord, type QueueJob
 } from './installer'
 import {
   addContribution, deleteProfile, getSettings, listContributions, listProfiles, listRules, readJson, saveProfile, saveRules, saveSettings, writeJson
@@ -48,7 +48,15 @@ function createWindow(): void {
   else void win.loadFile(join(__dirname, '../renderer/index.html'), tab ? { hash: tab } : undefined)
 }
 
-ipcMain.handle('catalog:get', async () => loadCatalog((await getSettings()).catalogUrl || DEFAULTS.catalogUrl))
+// The installer gives downloaded packs their catalog names (Discord drops a leading "@" or "!") and keeps old optional
+// copies from overwriting a fixed one; it asks the catalog the app uses.
+let catalogNow: ReturnType<typeof loadCatalog> | null = null
+const currentCatalog = async () => (catalogNow ??= loadCatalog((await getSettings()).catalogUrl || DEFAULTS.catalogUrl))
+setCatalogPacks(async (id) => {
+  const mods = (await currentCatalog()).mods
+  return id ? mods.find((m) => m.id === id)?.packs ?? [] : mods.flatMap((m) => m.packs)
+})
+ipcMain.handle('catalog:get', async () => (catalogNow = loadCatalog((await getSettings()).catalogUrl || DEFAULTS.catalogUrl)))
 ipcMain.handle('rules:list', () => listRules())
 ipcMain.handle('rules:save', (_e, r: UserRule[]) => saveRules(r))
 ipcMain.handle('contributions:list', () => listContributions())

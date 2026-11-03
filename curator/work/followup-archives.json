@@ -2,6 +2,80 @@
   "_comment": "Findings from analysing the mods' own packs (curator/analyze_pack.py; results in curator/raw/packs/<mod>.json). Field overrides like the other followup files; applied after the research pass because they rest on the files themselves.",
   "mods": [
     {
+      "id": "steam-3756385010",
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "faction": "Cathay",
+          "note": "Only her own campaign: her battle transformation at stage 6"
+        }
+      ],
+      "relations+": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+          },
+          "note": "The pack declares seu_miaoying_submod_extension.pack as a dependency (and Soil's Miao Ying units, which Soil's Corrupted Units or the merged pack provide).",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-32374"
+          },
+          "note": "The merged pack holds the Miao Ying and Azazel packs of Soil's Corrupted Units with the same scripts (corrupted_barracks.lua, corrupted_startup.lua): load one or the other. Soil's Kislev pack does not work with the Azazel units either.",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nx-140",
+      "status": "superseded",
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3471884231"
+          },
+          "note": "An older upload (2023) of Lazy's Morathi stage 3 and 4 reskins: Lazy's Corrupted Reskins Morathi contains the same files (same table and model paths) and overrides them.",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "steam-3471884231",
+      "relations+": [
+        {
+          "kind": "supersedes",
+          "target": {
+            "mod": "nx-140"
+          },
+          "note": "Contains the stage 3 and 4 reskins of the 2023 Nexus upload (same files).",
+          "source": {
+            "type": "inferred"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-27144",
+      "tags+": [
+        "modder-resource"
+      ]
+    },
+    {
       "id": "ll-52195",
       "relations": [
         {

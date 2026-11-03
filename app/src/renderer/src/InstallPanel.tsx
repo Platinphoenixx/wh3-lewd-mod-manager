@@ -117,7 +117,7 @@ export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEn
             {steam.map((i) => {
               const p = progress[(i.source as { id: string }).id]
               return (
-                <li key={i.entry.key}>
+                <li key={`${i.entry.key}:${i.entry.pack ?? ''}:${i.entry.steamId ?? ''}`}>
                   {i.entry.name}
                   {p && (
                     <span className="muted">
@@ -143,7 +143,7 @@ export function InstallPanel({ missing, characters = [] }: { missing: ResolvedEn
           )}
           <ul className="small">
             {others.map((i) => (
-              <li key={i.entry.key}>
+              <li key={`${i.entry.key}:${i.entry.pack ?? ''}:${i.entry.steamId ?? ''}`}>
                 <strong>{i.entry.name}</strong>{' '}
                 {i.modId && queue[i.modId] && <span className="muted">– {QUEUE_LABEL[queue[i.modId].status]} </span>}
                 {i.source.kind === 'loverslab' && (
