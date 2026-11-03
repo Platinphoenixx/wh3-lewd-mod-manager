@@ -84,6 +84,7 @@ assert.match(held.message, /maintainer/)
 assert.deepEqual(issues.at(-1).labels, ['setup'])
 assert.match(issues.at(-1).body, /my_tweaks\.pack/)
 assert.match(issues.at(-1).body, new RegExp(`"setupId":"${held.id}"`))
+assert.match(issues.at(-1).body, /"base":"readman-alarielle-early"/) // the whole list for the review
 assert.equal((await s('POST', '/setup', { ...list, entries: [] })).status, 400)
 
 // One vote per install and setup: voting again replaces it; counts and reasons in the export, never install ids.

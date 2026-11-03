@@ -49,6 +49,7 @@ def main() -> int:
         body, url, number = Path(args.body_file).read_text("utf-8"), args.url, None
 
     entry = parse_block(body) | {"url": url, "issue": number, "accepted": date.today().isoformat()}
+    entry.pop("setup", None)  # a shared setup's list stays with the relay (fetch_community.py); only its id is recorded
     store = json.loads(COMMUNITY.read_text("utf-8")) if COMMUNITY.exists() else {"accepted": []}
     if any(e.get("url") == url and url for e in store["accepted"]):
         print("already recorded")

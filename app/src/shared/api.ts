@@ -96,6 +96,24 @@ export interface RelayResult {
   url?: string
 }
 
+/** Maintainer access (Settings): whether a GitHub token is stored and works. */
+export interface MaintainerStatus {
+  hasToken: boolean
+  ok: boolean
+  message?: string
+}
+
+/** A contribution or shared setup waiting for a maintainer (an open GitHub issue of the catalog repository). */
+export interface ReviewItem {
+  number: number
+  title: string
+  body: string
+  created: string
+  url: string
+  /** Its label: setup, new-mod, feedback, rule or correction. */
+  kind: string
+}
+
 export interface LoversLabJob {
   modId: string
   name: string
@@ -169,6 +187,13 @@ export interface Api {
   sendReport(report: RelayReport): Promise<RelayResult>
   /** Sends a contribution to the project's relay, which files it as a GitHub issue. */
   sendContribution(c: RelayContribution): Promise<RelayResult>
+  /** Maintainer access: store / check / remove the GitHub token, list what waits for review, decide. */
+  maintainerStatus(): Promise<MaintainerStatus>
+  setMaintainerToken(token: string): Promise<MaintainerStatus>
+  clearMaintainerToken(): Promise<MaintainerStatus>
+  reviewList(): Promise<ReviewItem[]>
+  reviewAccept(issue: number): Promise<void>
+  reviewReject(issue: number, reason: string): Promise<void>
   /** Shares a profile as a setup other players can install (relay /setup; shown after the daily catalog update). */
   sendSetup(s: SharedSetup): Promise<RelayResult>
   /** "It worked" / "it didn't" for the template or setup a played profile is based on (one vote per install and setup). */

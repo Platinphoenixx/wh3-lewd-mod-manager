@@ -167,7 +167,11 @@ async function setup(request, env) {
   const body = [
     `**Shared setup:** ${entry.name}`, '', `Packs the catalog does not know (${unknown.length}):`, ...unknown.slice(0, 50).map((p) => `- \`${p}\``),
     '', 'Label this issue `accepted` to show the setup in the app.', '',
-    '```json', JSON.stringify({ type: 'setup', setupId: entry.id, name: entry.name }), '```', '', '---', '*Sent from the app without a GitHub account.*'
+    // The whole list for the maintainer (the app's Review tab shows it against the catalog); public anyway once accepted.
+    '```json', JSON.stringify({
+      type: 'setup', setupId: entry.id, name: entry.name,
+      setup: { base: entry.base, playAs: entry.playAs, theme: entry.theme, shownAs: entry.shownAs, far: entry.far, notes: entry.notes, game: entry.game, own, entries: clean.slice(0, 400) }
+    }), '```', '', '---', '*Sent from the app without a GitHub account.*'
   ].join('\n')
   const res = await fetch(`https://api.github.com/repos/${env.REPO}/issues`, {
     method: 'POST',

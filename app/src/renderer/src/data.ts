@@ -28,7 +28,7 @@ export interface AppData {
   /** Shows a message card; returns its id. */
   notify(n: NoticeInput): string
   /** A counter on a tab (e.g. missing mods of the open profile); null removes it. */
-  setTabCount(tab: 'profiles' | 'install', count: { n: number; error?: boolean; title: string } | null): void
+  setTabCount(tab: 'profiles' | 'install' | 'review', count: { n: number; error?: boolean; title: string } | null): void
   /** Script errors of the last game start (lua_mod_log.txt). */
   scripts: ScriptReport | null
   /** Opens the problem report for one failing script (index into scripts.failed). */
@@ -38,7 +38,7 @@ export interface AppData {
   /** What openProfile asked for last; the Profiles tab selects it. */
   focus: { profile?: string; preset?: string; at: number } | null
   /** Switches to another tab. */
-  goTab(tab: 'play' | 'profiles' | 'catalog' | 'install' | 'community' | 'settings'): void
+  goTab(tab: 'play' | 'profiles' | 'catalog' | 'install' | 'community' | 'settings' | 'review'): void
 }
 
 export const DataContext = createContext<AppData | null>(null)

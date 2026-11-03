@@ -6,6 +6,7 @@ import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
 import { ProfilesView } from './ProfilesView'
 import { PlayView } from './PlayView'
+import { ReviewView } from './ReviewView'
 import { CatalogView } from './CatalogView'
 import { InstallView } from './InstallView'
 import { SettingsView } from './SettingsView'
@@ -17,9 +18,9 @@ import { NoticeStack, useNotices } from './Notices'
 import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
 
-const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings'] as const
+const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings', 'review'] as const
 type Tab = (typeof TABS)[number]
-const TAB_LABEL: Record<Tab, string> = { play: 'Play', profiles: 'Profiles', catalog: 'Catalog', install: 'Installation', community: 'Community', settings: 'Settings' }
+const TAB_LABEL: Record<Tab, string> = { play: 'Play', profiles: 'Profiles', catalog: 'Catalog', install: 'Installation', community: 'Community', settings: 'Settings', review: 'Review' }
 
 export function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null)
@@ -32,6 +33,8 @@ export function App() {
     return (TABS as readonly string[]).includes(h) ? (h as Tab) : 'play'
   })
   const [focus, setFocus] = useState<AppData['focus']>(null)
+  // Maintainers (a working GitHub token in Settings) get the Review tab with what waits for a decision.
+  const [maintainer, setMaintainer] = useState(false)
   const openProfile = useCallback<AppData['openProfile']>((target, view) => {
     // The editor opens at the step named in the address (#profiles-install).
     location.hash = view ? `profiles-${view}` : 'profiles'
@@ -53,6 +56,17 @@ export function App() {
   }), [])
   const [scripts, setScripts] = useState<ScriptReport | null>(null)
   const [reportFor, setReportFor] = useState<number | null>(null)
+
+  useEffect(() => {
+    const check = () => window.api.maintainerStatus().then((s) => {
+      setMaintainer(s.ok)
+      if (s.ok) window.api.reviewList().then((l) => setTabCount('review', l.length ? { n: l.length, title: `${l.length} waiting for review` } : null), () => {})
+      else setTabCount('review', null)
+    }, () => setMaintainer(false))
+    void check()
+    window.addEventListener('maintainer-changed', check)
+    return () => window.removeEventListener('maintainer-changed', check)
+  }, [setTabCount])
 
   const rescan = useCallback(() => {
     window.api.scanGame().then(setScan, (e) => setError(String(e)))
@@ -196,7 +210,7 @@ export function App() {
         <header className="topbar">
           <h1>WH3 Lewd Mod Manager</h1>
           <nav>
-            {TABS.map((t) => (
+            {TABS.filter((t) => t !== 'review' || maintainer).map((t) => (
               <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>
                 {TAB_LABEL[t]}
                 {tabCounts[t] && <span className={`tab-count${tabCounts[t].error ? ' error' : ''}`} title={tabCounts[t].title}>{tabCounts[t].n}</span>}
@@ -219,6 +233,7 @@ export function App() {
           {tab === 'install' && <InstallView />}
           {tab === 'community' && <CommunityView />}
           {tab === 'settings' && <SettingsView onSaved={(s) => setSettings(s)} />}
+          {tab === 'review' && maintainer && <ReviewView onCount={(n) => setTabCount('review', n ? { n, title: `${n} waiting for review` } : null)} />}
         </main>
         {openModId && <ModDetail id={openModId} onClose={() => setOpenModId(null)} />}
         {contributing && <ContributeDialog req={contributing} onClose={() => setContributing(null)} />}

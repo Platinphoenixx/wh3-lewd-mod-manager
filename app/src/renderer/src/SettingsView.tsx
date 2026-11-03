@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { DEFAULTS, type Settings } from '@shared/api'
+import { DEFAULTS, type MaintainerStatus, type Settings } from '@shared/api'
 import { useData } from './data'
 
 export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
@@ -85,6 +85,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
           onBlur={() => save(settings)}
         />
       </section>
+      <Maintainer repo={settings.contribRepo || DEFAULTS.contribRepo} />
       <p className="small muted">
         WH3 Lewd Mod Manager {version}
         {build && ` · build ${build.date}${build.commit ? ` (${build.commit})` : ''}`} ·{' '}
@@ -92,5 +93,52 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
       </p>
       {saved && <p className="small muted">Saved. Catalog changes apply after restarting the app.</p>}
     </div>
+  )
+}
+
+/**
+ * Maintainer access: with a GitHub token that may edit the catalog repository's issues, the app shows the Review tab
+ * (shared setups and contributions waiting for a decision). The token is typed in here by the maintainer, stored
+ * encrypted by the main process and only sent to GitHub.
+ */
+function Maintainer({ repo }: { repo: string }) {
+  const [status, setStatus] = useState<MaintainerStatus | null>(null)
+  const [token, setToken] = useState('')
+  const [busy, setBusy] = useState(false)
+  useEffect(() => { window.api.maintainerStatus().then(setStatus) }, [])
+  const changed = (s: MaintainerStatus) => {
+    setStatus(s)
+    window.dispatchEvent(new Event('maintainer-changed'))
+  }
+  return (
+    <section>
+      <h2>Maintainer</h2>
+      <p className="small muted">
+        Only for people who maintain the catalog. With a GitHub token that may edit the issues of <b>{repo}</b>, the app shows a
+        Review tab with shared setups and contributions waiting for a decision. The token is stored encrypted on this PC and sent only to GitHub.
+      </p>
+      {status?.hasToken ? (
+        <p className="small">
+          <span className={status.ok ? 'ok-text' : 'warn-text'}>{status.ok ? '✓ ' : ''}{status.message}</span>{' '}
+          <a onClick={async () => changed(await window.api.clearMaintainerToken())}>Remove token</a>
+        </p>
+      ) : (
+        <>
+          <input className="wide" type="password" placeholder="github_pat_…" value={token} onChange={(e) => setToken(e.target.value)} />{' '}
+          <button disabled={!token.trim() || busy} onClick={async () => {
+            setBusy(true)
+            const s = await window.api.setMaintainerToken(token)
+            setBusy(false)
+            if (s.hasToken) setToken('')
+            changed(s)
+          }}>{busy ? 'Checking…' : 'Save and check'}</button>
+          {status?.message && <p className="small warn-text">{status.message}</p>}
+          <p className="small muted">
+            How to make one: GitHub → Settings → Developer settings → Fine-grained tokens → Generate new token → Repository access:
+            only {repo} → Permissions: Issues “Read and write”.
+          </p>
+        </>
+      )}
+    </section>
   )
 }

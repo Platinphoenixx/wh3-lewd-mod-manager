@@ -23,6 +23,13 @@ community contributions. App UI and catalog texts are English.
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
     `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`).
     After a game session of 20 minutes or more, one card per profile and day asks "Did it work?" (`App.tsx`, relay `/vote`).
+  - Maintainers: Settings → Maintainer takes a fine-grained GitHub token (Issues: read and write on the catalog repository),
+    checks it and keeps it encrypted with `safeStorage` (`src/main/maintainer.ts`, userData/maintainer.bin; only sent to
+    api.github.com). With it the Review tab (`ReviewView.tsx`) lists open app-made issues not yet accepted (labels setup,
+    new-mod, feedback, rule, correction); a shared setup is shown against the catalog (template, packs nobody knows with a
+    guess by name, the list as played – the relay puts the whole list into the issue's ```json block). Accept adds the
+    label `accepted` (apply-contribution.yml does the rest), Reject comments the reason and closes the issue.
+    Tests: `WH3LMM_GITHUB_API=<url>` points it at a fake API.
   - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested)
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)

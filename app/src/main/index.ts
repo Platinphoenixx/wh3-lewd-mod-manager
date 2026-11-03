@@ -17,6 +17,7 @@ import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
 import { checkAppUpdate } from './appUpdate'
+import { accept, clearToken, listReview, reject, setToken, status as maintainerStatus } from './maintainer'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
   backupPacks, downloadFromLoversLab, downloadFromNexus, downloadQueueFromLoversLab, installFile, installFiles, type InstalledRecord, type QueueJob
@@ -134,6 +135,14 @@ ipcMain.handle('relay:report', async (_e, r: RelayReport) => relay('/report', { 
 ipcMain.handle('relay:contribution', (_e, c: RelayContribution) => relay('/contribution', c))
 ipcMain.handle('relay:setup', async (_e, s: SharedSetup) =>
   relay('/setup', { ...s, app: app.getVersion(), installId: await installId() }))
+// Maintainer access (maintainer.ts): the catalog repository from the settings, as for contributions.
+const repo = async () => (await getSettings()).contribRepo || DEFAULTS.contribRepo
+ipcMain.handle('maint:status', async () => maintainerStatus(await repo()))
+ipcMain.handle('maint:setToken', async (_e, t: string) => setToken(await repo(), t))
+ipcMain.handle('maint:clear', () => clearToken())
+ipcMain.handle('maint:list', async () => listReview(await repo()))
+ipcMain.handle('maint:accept', async (_e, n: number) => accept(await repo(), n))
+ipcMain.handle('maint:reject', async (_e, n: number, reason: string) => reject(await repo(), n, reason))
 ipcMain.handle('relay:vote', async (_e, v: { setup: string; worked: boolean; reason?: string }) => relay('/vote', { ...v, installId: await installId() }))
 ipcMain.handle('dialog:saveText', async (e, name: string, text: string) => {
   const pick = await dialog.showSaveDialog(BrowserWindow.fromWebContents(e.sender)!, {

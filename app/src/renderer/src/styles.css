@@ -406,3 +406,12 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
 .play-warn { color: var(--warn); }
 .play-diff { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 14px 0; }
 .play-diff h4 { margin: 0 0 6px; font-size: 13px; color: var(--text-2); }
+/* Review (maintainers): open issues with a decision each. */
+.review .review-kind { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.review .sidebar-list li { cursor: pointer; }
+.review-unknown { border: 1px solid rgba(217, 165, 76, 0.4); border-radius: 6px; background: var(--panel); padding: 10px 14px; margin: 12px 0; }
+.review-unknown h4 { margin: 0 0 6px; color: var(--warn); font-size: 13px; }
+.review-unknown ul { margin: 0; padding-left: 18px; }
+.review-list { columns: 2; column-gap: 24px; font-size: 13px; color: var(--text-2); padding-left: 22px; }
+.review-decide { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.review-decide button.primary { margin-bottom: 0; }
