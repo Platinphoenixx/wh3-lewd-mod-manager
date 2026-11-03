@@ -6,6 +6,7 @@ import type { FactsReport } from './own'
 import type { ImportSource } from './importlist'
 import type { Profile } from './profile'
 import type { LaunchSnapshot } from './report'
+import type { SharedSetup } from './setups'
 
 /** A .pack file found in the game's data folder or a Workshop download folder. */
 export interface InstalledPack {
@@ -168,6 +169,10 @@ export interface Api {
   sendReport(report: RelayReport): Promise<RelayResult>
   /** Sends a contribution to the project's relay, which files it as a GitHub issue. */
   sendContribution(c: RelayContribution): Promise<RelayResult>
+  /** Shares a profile as a setup other players can install (relay /setup; shown after the daily catalog update). */
+  sendSetup(s: SharedSetup): Promise<RelayResult>
+  /** "It worked" / "it didn't" for the template or setup a played profile is based on (one vote per install and setup). */
+  sendVote(v: { setup: string; worked: boolean; reason?: 'start' | 'campaign' | 'content' | 'other' }): Promise<RelayResult>
   /** A newer release of the app on GitHub (checked at most daily), or null. */
   appUpdate(): Promise<{ version: string; url: string } | null>
   /** File overlaps between installed packs; `paths` in load order, highest priority first. */

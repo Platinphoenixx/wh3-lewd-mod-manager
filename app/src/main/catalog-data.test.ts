@@ -47,7 +47,8 @@ describe('catalog', () => {
 
   it('templates contain everything their mods strictly need and nothing that conflicts', () => {
     const bad: string[] = []
-    for (const p of catalog.presets) {
+    // Setups players shared are as they played them; only our own templates must be complete.
+    for (const p of catalog.presets.filter((x) => x.origin !== 'community')) {
       const keys = baseKeys(p)
       for (const [k, by] of missingDependencies(index, keys, new Set(keys))) bad.push(`${p.id}: ${by} needs ${k}`)
       for (const c of resolveProfile(catalog, index, p, fresh).conflicts) bad.push(`${p.id}: ${c.a} conflicts with ${c.b}`)

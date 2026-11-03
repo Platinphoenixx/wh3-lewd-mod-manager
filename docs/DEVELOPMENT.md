@@ -18,6 +18,11 @@ community contributions. App UI and catalog texts are English.
     already changes, other characters, quality-of-life mods to drop) and a review that saves an ordinary profile and
     opens it in the Profiles tab at the install step (`openProfile`). "Advanced" links lead to the full editor at
     every stage. Suggestions that would bring a conflict along (through a dependency) are not offered.
+    Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
+    bound of the votes); one with 5+ votes and 80 %+ "worked" is shown on top as the community favourite. A setup's page
+    shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
+    `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`).
+    After a game session of 20 minutes or more, one card per profile and day asks "Did it work?" (`App.tsx`, relay `/vote`).
   - `src/shared/match.ts` installed packs ↔ catalog, preset status, stale data packs (tested)
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested)
@@ -111,9 +116,15 @@ The project keeps itself current without anyone's manual work or paid service.
 - `.github/workflows/apply-contribution.yml`: a maintainer labels an app-created issue `accepted` →
   `curator/apply_contribution.py` records it in `curator/community.json` → `build_catalog.py` applies it
   (rules → relations/load order, feedback → counters + known issues, corrections → community notes,
-  new mods → unverified entries).
+  new mods → unverified entries, shared setups with unknown packs → shown).
+- Shared setups and votes (`.github/workflows/community-daily.yml`, daily, no crawl): `curator/fetch_community.py`
+  reads the setups players shared and the "it worked / it didn't" votes from the relay → `curator/raw/community_setups.json`
+  (mod list, template it builds on, name/notes/how far the sharer wrote) + `raw/votes.json` (counts per template id; no
+  install ids) → `build_catalog.py` adds the setups as templates with `origin: "community"` (a list made only of catalog
+  mods right away; one with own or unknown packs once a maintainer labelled its `setup` issue `accepted`) and `votes`
+  to every template. Commits only when something changed.
 - Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord
-  except for showing images.
+  except for showing images. Sending (reports, contributions, setups, votes) goes to the relay only when the player does it.
 
 ## Optional curation (by hand)
 

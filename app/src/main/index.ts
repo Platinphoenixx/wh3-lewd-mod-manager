@@ -11,6 +11,7 @@ import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@sha
 import type { Contribution, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
 import type { LaunchSnapshot } from '@shared/report'
+import type { SharedSetup } from '@shared/setups'
 import { loadCatalog } from './catalog'
 import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts } from './pack'
@@ -131,6 +132,9 @@ async function installId(): Promise<string> {
 }
 ipcMain.handle('relay:report', async (_e, r: RelayReport) => relay('/report', { ...r, installId: await installId() }))
 ipcMain.handle('relay:contribution', (_e, c: RelayContribution) => relay('/contribution', c))
+ipcMain.handle('relay:setup', async (_e, s: SharedSetup) =>
+  relay('/setup', { ...s, app: app.getVersion(), installId: await installId() }))
+ipcMain.handle('relay:vote', async (_e, v: { setup: string; worked: boolean; reason?: string }) => relay('/vote', { ...v, installId: await installId() }))
 ipcMain.handle('dialog:saveText', async (e, name: string, text: string) => {
   const pick = await dialog.showSaveDialog(BrowserWindow.fromWebContents(e.sender)!, {
     defaultPath: name.replace(/[<>:"/\\|?*]/g, '_'), filters: [{ name: 'Markdown', extensions: ['md'] }, { name: 'Text', extensions: ['txt'] }]

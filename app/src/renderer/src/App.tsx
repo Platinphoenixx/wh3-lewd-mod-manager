@@ -105,6 +105,39 @@ export function App() {
     })
   }), [notify])
 
+  // After a real session (20 minutes or more), one question per profile and day: did it work? The answer counts for
+  // the template or shared setup the profile is based on (relay /vote; shown on the Play page after the daily update).
+  useEffect(() => window.api.onGameExited(async ({ ranMs }) => {
+    if (ranMs < 20 * 60 * 1000) return
+    const snap = await window.api.lastLaunch().catch(() => null)
+    if (!snap?.template?.id) return
+    const asked = `asked:${snap.profile.id}:${new Date().toISOString().slice(0, 10)}`
+    try {
+      if (localStorage.getItem(asked)) return
+      localStorage.setItem(asked, '1')
+    } catch { /* without storage it may ask twice a day */ }
+    const vote = (worked: boolean, reason?: 'start' | 'campaign' | 'content' | 'other') =>
+      window.api.sendVote({ setup: snap.template.id, worked, reason }).then((r) => notify({ kind: r.ok ? 'done' : 'error', text: r.message }))
+    const why = () => notify({
+      kind: 'info', timeout: 0, text: 'What went wrong?',
+      actions: [
+        { label: 'Crash at start', run: () => void vote(false, 'start') },
+        { label: 'Crash in the campaign', run: () => void vote(false, 'campaign') },
+        { label: 'Content missing or broken', run: () => void vote(false, 'content') },
+        { label: 'Other', run: () => void vote(false, 'other') }
+      ]
+    })
+    notify({
+      kind: 'info', timeout: 0,
+      text: `Did “${snap.profile.name}” work for you? Your answer counts for “${snap.template.name}” on the Play page.`,
+      actions: [
+        { label: '▲ It worked', run: () => void vote(true) },
+        { label: '▼ It didn’t', run: why },
+        { label: 'Not now', run: () => {} }
+      ]
+    })
+  }), [notify])
+
   const saveRules = useCallback((next: UserRule[]) => {
     setRules(next)
     void window.api.saveRules(next)

@@ -384,3 +384,25 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
   animation: img-wait-small 1.6s ease-in-out infinite;
 }
 @keyframes img-wait-small { from { background-position: 100% 0; } to { background-position: 0 0; } }
+.modal.share { width: min(680px, 94vw); }
+.share-sum { font-size: 13px; color: var(--text-2); }
+.share-sum b { color: var(--text); }
+/* Play: shared setups and votes. */
+.play-fav { display: grid; grid-template-columns: 1fr auto; gap: 10px 24px; align-items: center; margin: 22px 0 6px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--accent); border-radius: 6px; }
+.play-fav h3 { margin: 2px 0; }
+.play-fav .rec { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.play-fav .right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.play-fav .right button.primary { margin-bottom: 0; }
+.play-head.play-section { margin-bottom: 4px; }
+.play-head.play-section h3 { flex: 1; margin: 0; }
+.play-comm { width: 100%; border-collapse: collapse; }
+.play-comm tr { cursor: pointer; }
+.play-comm tr:hover td { background: var(--panel); }
+.play-comm td { padding: 10px; border-top: 1px solid var(--line); vertical-align: top; }
+.play-comm td.votes { text-align: right; white-space: nowrap; }
+.play-votes { color: var(--text-2); font-size: 13px; white-space: nowrap; }
+.play-votes .bar { display: inline-block; width: 120px; height: 6px; margin-left: 8px; vertical-align: middle; background: var(--panel-2); border-radius: 3px; overflow: hidden; }
+.play-votes .bar i { display: block; height: 100%; background: var(--ok); }
+.play-warn { color: var(--warn); }
+.play-diff { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 14px 0; }
+.play-diff h4 { margin: 0 0 6px; font-size: 13px; color: var(--text-2); }

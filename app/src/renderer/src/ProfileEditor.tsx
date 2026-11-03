@@ -16,6 +16,7 @@ import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
 import { isPickOne, suggestForProfile, type Suggestion } from '@shared/suggest'
 import { DecideChoices, SuggestedMods } from './Suggestions'
+import { ShareDialog } from './ShareDialog'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -73,6 +74,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return m ? (m[1] === 'options' ? 'choices' : (m[1] as View)) : null
   })
   const [browsing, setBrowsing] = useState(false)
+  const [sharing, setSharing] = useState(false)
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<Set<CandidateGroup>>(new Set())
   const [hideConflicts, setHideConflicts] = useState(true)
@@ -332,8 +334,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
           ▶ Play{notReady.length ? ` (${notReady.length} missing)` : ''}
         </button>
+        <button title="Other players can install it from the Play page" onClick={() => setSharing(true)}>Share…</button>
         <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
       </div>
+      {sharing && <ShareDialog profile={profile} onClose={() => setSharing(false)} />}
       <nav className="subtabs steps">
         <button className={view === 'choices' ? 'active' : ''} onClick={() => goTo('choices')}>
           1 · Choices{picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}

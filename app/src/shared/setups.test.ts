@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
-import { guidedProfile, lateListOf, stepsFor, subjectsOf, suggestedFor, tiersFor } from './setups'
+import {
+  communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, setupFromProfile, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine
+} from './setups'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
   return {
@@ -75,5 +77,36 @@ describe('guided setups', () => {
     expect(p.extras).toEqual(['mod:miao-skin-b'])
     expect(p.removed).toEqual(['mod:camera'])
     expect(p.declined).toEqual(['mod:miao-skin-a'])
+  })
+})
+
+describe('shared setups', () => {
+  const shared = (id: string, votes?: { up: number; down: number }, mods = ['miao-progression', 'miao-story', 'miao-skin-a']): Preset =>
+    list(id, ['Miao Ying'], mods, { origin: 'community', phase: 'any', source: { type: 'community', author: 'anonymous', date: '2026-11-03' },
+      community: { base: 'miao-early' }, ...(votes ? { votes } : {}) })
+  const cat: Catalog = { ...catalog, presets: [...catalog.presets, shared('few', { up: 2, down: 0 }), shared('many', { up: 40, down: 4 }), shared('bad', { up: 1, down: 6 })] }
+  const subject = subjectsOf(cat, buildIndex(cat)).find((s) => s.name === 'Miao Ying')!
+
+  it('lists them by how sure it is that they work: many good votes before a few', () => {
+    expect(communityOf(subject).map((p) => p.id)).toEqual(['many', 'few', 'bad'])
+    expect(isFavourite({ up: 40, down: 4 })).toBe(true)
+    expect(isFavourite({ up: 2, down: 0 })).toBe(false) // too few players yet
+    expect(voteLine({ up: 40, down: 4 })).toBe('▲ 91% of 44 players')
+  })
+
+  it('keeps shared setups out of the sizes', () => {
+    expect(tiersFor(cat, buildIndex(cat), subject).some((t) => t.preset.origin === 'community')).toBe(false)
+  })
+
+  it('shows what a setup adds to and leaves out of its template', () => {
+    expect(setupDiff(cat.presets.find((p) => p.id === 'many')!, catalog.presets[0])).toEqual({ added: ['mod:miao-skin-a'], dropped: ['mod:camera'] })
+  })
+
+  it('shares a profile as its mod list in load order, own packs by name only', () => {
+    const s = setupFromProfile(catalog, index, catalog.presets[0], { extras: ['mod:miao-skin-b', 'pack:my_tweaks.pack'], removed: ['mod:camera'] },
+      { name: 'Mine', game: '9.0.4' })
+    expect(s.base).toBe('miao-early')
+    expect(s.entries.map((e) => e.mod).sort()).toEqual(['miao-progression', 'miao-skin-b', 'miao-story'])
+    expect(s.own).toEqual(['my_tweaks.pack'])
   })
 })

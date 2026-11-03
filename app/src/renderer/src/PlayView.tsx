@@ -1,15 +1,20 @@
 import { useEffect, useMemo, useState } from 'react'
 import Markdown from 'react-markdown'
-import type { Mod } from '@catalog/schema'
+import type { Mod, Preset } from '@catalog/schema'
+import { lastMajorUpdate } from '@shared/health'
 import { installSourceFor } from '@shared/install'
 import { matchInstalled } from '@shared/match'
 import { resolveProfile, type Profile } from '@shared/profile'
-import { guidedProfile, lateListOf, stepsFor, subjectsOf, suggestedFor, tiersFor, type Step, type Subject, type Tier } from '@shared/setups'
+import {
+  communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
+  type Step, type Subject, type Tier
+} from '@shared/setups'
 import type { PickOne, Suggestion } from '@shared/suggest'
 import { useData } from './data'
 import { ModCover } from './ModCover'
 import { ImportDialog } from './ImportDialog'
 import { guideFor } from './ProfilesView'
+import { ShareDialog } from './ShareDialog'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
 function sourceLabel(m: Mod): string {
@@ -29,10 +34,13 @@ export function PlayView() {
   const subjects = useMemo(() => subjectsOf(data.catalog, data.index), [data.catalog, data.index])
   const [subjectKey, setSubjectKey] = useState<string | null>(null)
   const [tier, setTier] = useState<Tier | null>(null)
+  const [setup, setSetup] = useState<Preset | null>(null)
   const subject = subjects.find((s) => s.key === subjectKey)
+  const home = () => { setTier(null); setSetup(null); setSubjectKey(null) }
 
-  if (subject && tier) return <Guide subject={subject} tier={tier} onBack={() => setTier(null)} onHome={() => { setTier(null); setSubjectKey(null) }} />
-  if (subject) return <SubjectPage subject={subject} onBack={() => setSubjectKey(null)} onContinue={setTier} />
+  if (subject && tier) return <Guide subject={subject} tier={tier} onBack={() => setTier(null)} onHome={home} />
+  if (subject && setup) return <SetupPage subject={subject} setup={setup} onBack={() => setSetup(null)} onHome={home} onContinue={setTier} />
+  if (subject) return <SubjectPage subject={subject} onBack={home} onContinue={setTier} onOpenSetup={setSetup} />
   return <Home subjects={subjects} onOpen={setSubjectKey} />
 }
 
@@ -98,9 +106,17 @@ function Home({ subjects, onOpen }: { subjects: Subject[]; onOpen(key: string): 
   )
 }
 
-function SubjectPage({ subject, onBack, onContinue }: { subject: Subject; onBack(): void; onContinue(t: Tier): void }) {
+/** A shared setup taken as it is: its own list is the template, nothing switched on yet; the choices come after. */
+function setupTier(p: Preset): Tier {
+  return { id: 'full', name: p.name, preset: p, extras: [], size: p.entries.length, lines: [], proof: '', tested: false, recommended: false }
+}
+
+function SubjectPage({ subject, onBack, onContinue, onOpenSetup }: { subject: Subject; onBack(): void; onContinue(t: Tier): void; onOpenSetup(p: Preset): void }) {
   const data = useData()
   const tiers = useMemo(() => tiersFor(data.catalog, data.index, subject), [data.catalog, data.index, subject])
+  const shared = communityOf(subject)
+  const favourite = shared.find((p) => isFavourite(p.votes))
+  const [sharing, setSharing] = useState(false)
   const [chosen, setChosen] = useState<Tier | undefined>(() => tiers.find((t) => t.recommended) ?? tiers[0])
   const main = tiers.find((t) => t.recommended) ?? tiers[0]
   const guide = main && guideFor(data.catalog.campaignGuides, main.preset)
@@ -129,6 +145,7 @@ function SubjectPage({ subject, onBack, onContinue }: { subject: Subject; onBack
             <div><span className="size">{t.size}</span> <span className="muted">mods</span></div>
             <ul>{t.lines.map((l) => <li key={l}>{l}</li>)}</ul>
             <div className="spacer" />
+            {!t.extras.length && voteLine(t.preset.votes) && <div className="small">{voteLine(t.preset.votes)} said it worked</div>}
             <div className={`proof${t.tested ? '' : ' no'}`}>{t.tested ? '✓ ' : ''}{t.proof}</div>
           </div>
         ))}
@@ -142,6 +159,117 @@ function SubjectPage({ subject, onBack, onContinue }: { subject: Subject; onBack
       <div className="play-foot">
         {chosen && <button className="primary" onClick={() => onContinue(chosen)}>Continue with {chosen.name} →</button>}
         <span className="small muted">Next: a few choices with pictures, then the download.</span>
+      </div>
+      {favourite && (
+        <div className="play-fav">
+          <div>
+            <div className="rec">Community favourite</div>
+            <h3>{favourite.name}</h3>
+            <div className="small muted"><SetupFacts p={favourite} /></div>
+          </div>
+          <div className="right">
+            <Votes p={favourite} />
+            <button className="primary" onClick={() => onOpenSetup(favourite)}>Look inside →</button>
+          </div>
+        </div>
+      )}
+      <div className="play-head play-section">
+        <h3>Setups from the community</h3>
+        <button onClick={() => setSharing(true)}>Share your setup</button>
+      </div>
+      {shared.filter((p) => p !== favourite).length ? (
+        <>
+          <p className="small muted">Lists players shared from the app, best rated first. Votes come from players who played a setup; they are counted once a day.</p>
+          <table className="play-comm">
+            <tbody>
+              {shared.filter((p) => p !== favourite).map((p) => (
+                <tr key={p.id} onClick={() => onOpenSetup(p)}>
+                  <td>
+                    <b>{p.name}</b>
+                    <div className="small muted"><SetupFacts p={p} /></div>
+                    <SetupWarnings p={p} />
+                  </td>
+                  <td className="votes"><Votes p={p} /><div><a>Look inside</a></div></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      ) : !favourite ? (
+        <p className="small muted">No shared setups yet. Played a list that works well? Share it – other players can then install it with one click.</p>
+      ) : null}
+      {sharing && <ShareDialog presetIds={subject.presets.map((p) => p.id)} onClose={() => setSharing(false)} />}
+    </div>
+  )
+}
+
+function Votes({ p }: { p: Preset }) {
+  const v = p.votes
+  if (!v) return <span className="small muted">no votes yet</span>
+  const n = v.up + v.down
+  return (
+    <span className="play-votes">▲ {v.up} worked · ▼ {v.down} didn't<span className="bar"><i style={{ width: `${Math.round((100 * v.up) / n)}%` }} /></span></span>
+  )
+}
+
+/** "Full campaign + 14 − 2 · 68 mods · played to turn 160 · game 9.0.4 · shared by Velvet · 2026-10-21" */
+function SetupFacts({ p }: { p: Preset }) {
+  const data = useData()
+  const base = data.catalog.presets.find((x) => x.id === p.community?.base)
+  const d = setupDiff(p, base)
+  return (
+    <>
+      {base ? `${base.name}${d.added.length ? ` + ${d.added.length}` : ''}${d.dropped.length ? ` − ${d.dropped.length}` : ''} · ` : ''}
+      {p.entries.length} mods{p.community?.far ? ` · played to ${p.community.far}` : ''}{p.community?.game ? ` · game ${p.community.game}` : ''}
+      {` · shared by ${p.source.author ?? 'anonymous'}`}{p.source.date ? ` · ${p.source.date}` : ''}
+    </>
+  )
+}
+
+/** Played before the last big game update, or more players saying it did not work. */
+function SetupWarnings({ p }: { p: Preset }) {
+  const data = useData()
+  const major = lastMajorUpdate(data.catalog.gameUpdates)
+  const old = !!major && !!p.source.date && Date.parse(p.source.date) < major.date
+  const bad = !!p.votes && p.votes.down > p.votes.up
+  return (
+    <>
+      {old && <div className="play-warn small">Shared before the last big game update ({major!.title}); it may not start.</div>}
+      {bad && <div className="play-warn small">More players say it did not work than that it did.</div>}
+    </>
+  )
+}
+
+function SetupPage({ subject, setup, onBack, onHome, onContinue }: { subject: Subject; setup: Preset; onBack(): void; onHome(): void; onContinue(t: Tier): void }) {
+  const data = useData()
+  const base = data.catalog.presets.find((x) => x.id === setup.community?.base)
+  const d = setupDiff(setup, base)
+  const chip = (key: string) => {
+    const m = key.startsWith('mod:') ? data.index.mods.get(key.slice(4)) : undefined
+    const name = m?.name ?? data.catalog.external.find((e) => `external:${e.id}` === key)?.name ?? key.slice(key.indexOf(':') + 1)
+    return <div key={key} className="play-chip" onClick={() => m && data.openMod(m.id)}><div className="ph">{m && <ModCover mods={[m]} />}</div><span>{name}</span></div>
+  }
+  return (
+    <div className="content play">
+      <div className="play-crumbs"><a onClick={onHome}>Play</a> › <a onClick={onBack}>{subject.name}</a> › Shared setup</div>
+      <div className="play-head"><h2>{setup.name}</h2><Votes p={setup} /></div>
+      <p className="small muted"><SetupFacts p={setup} /></p>
+      <SetupWarnings p={setup} />
+      {setup.description && <p className="play-lead">“{setup.description}”</p>}
+      <div className="play-diff">
+        <div><h4>Added to {base?.name ?? 'the template'} · {d.added.length}</h4><div className="play-chips">{d.added.map(chip)}</div></div>
+        <div>
+          <h4>Left out · {d.dropped.length}</h4><div className="play-chips">{d.dropped.map(chip)}</div>
+          <h4 style={{ marginTop: 14 }}>Own mods (not in the catalog) · {setup.community?.own?.length ?? 0}</h4>
+          {setup.community?.own?.length
+            ? <p className="small muted">{setup.community.own.join(', ')} – checked by a maintainer; you need these files yourself.</p>
+            : <p className="small muted">None – everything comes from the catalog.</p>}
+        </div>
+      </div>
+      <p className="callout small">Load order: as the player had it. The next step shows the remaining choices with pictures; what the player chose is already in the list.</p>
+      <div className="play-foot">
+        <button className="primary" onClick={() => onContinue(setupTier(setup))}>Use this setup →</button>
+        <a className="play-advanced" onClick={() => data.openProfile({ preset: setup.id })}>Advanced: open it in the full editor</a>
       </div>
     </div>
   )

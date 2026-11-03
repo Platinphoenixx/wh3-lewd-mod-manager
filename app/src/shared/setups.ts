@@ -1,5 +1,6 @@
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import type { CatalogIndex } from './match'
+import { isOwnKey } from './own'
 import { baseKeys, candidates, resolveProfile, type Profile } from './profile'
 import { isPickOne, suggestForProfile, type PickOne, type Suggestion } from './suggest'
 
@@ -238,4 +239,72 @@ export function guidedProfile(tier: Tier, chosen: Record<string, string>, picks:
     removed: [...dropped].filter((k) => base.has(k)),
     declined, createdAt: now, updatedAt: now
   }
+}
+
+/** "▲ 92% of 13 players" – how many of the players who played it said it worked. */
+export function voteLine(v?: { up: number; down: number }): string | undefined {
+  const n = (v?.up ?? 0) + (v?.down ?? 0)
+  return v && n ? `▲ ${Math.round((100 * v.up) / n)}% of ${n} player${n === 1 ? '' : 's'}` : undefined
+}
+
+/** Lower bound of the share of "it worked" (Wilson, 95 %): a few votes rank below many good ones. */
+export function voteScore(v?: { up: number; down: number }): number {
+  const n = (v?.up ?? 0) + (v?.down ?? 0)
+  if (!v || !n) return 0
+  const p = v.up / n
+  const z = 1.96
+  return (p + (z * z) / (2 * n) - z * Math.sqrt((p * (1 - p) + (z * z) / (4 * n)) / n)) / (1 + (z * z) / n)
+}
+
+/** Shown on top of a character's page: at least 5 players and 4 of 5 say it worked. */
+export const isFavourite = (v?: { up: number; down: number }) => !!v && v.up >= 5 && v.up / (v.up + v.down) >= 0.8
+
+/** The setups players shared for a subject, best rated first. */
+export function communityOf(subject: Subject): Preset[] {
+  return subject.presets.filter((p) => p.origin === 'community')
+    .sort((a, b) => voteScore(b.votes) - voteScore(a.votes) || (b.source.date ?? '').localeCompare(a.source.date ?? ''))
+}
+
+/** What a shared setup adds to and leaves out of the template it was built on. */
+export function setupDiff(setup: Preset, base?: Preset): { added: string[]; dropped: string[] } {
+  const mine = new Set(baseKeys(setup))
+  const theirs = new Set(base ? baseKeys(base) : [])
+  return { added: [...mine].filter((k) => !theirs.has(k)), dropped: [...theirs].filter((k) => !mine.has(k)) }
+}
+
+/** What the app sends when a player shares a profile (relay /setup): the mod list in load order and a few words. */
+export interface SharedSetup {
+  name: string
+  shownAs?: string
+  far?: string
+  notes?: string
+  base: string
+  playAs: string[]
+  theme?: string
+  game?: string
+  /** Date of the catalog the list was matched against. */
+  catalog?: string
+  entries: { pack: string; mod?: string; steamId?: string }[]
+  /** Packs the catalog does not know, by name only. */
+  own: string[]
+}
+
+export function setupFromProfile(
+  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>,
+  words: Pick<SharedSetup, 'name' | 'shownAs' | 'far' | 'notes' | 'game' | 'catalog'>
+): SharedSetup {
+  const entries: SharedSetup['entries'] = []
+  const own: string[] = []
+  // Own mods (packs the catalog does not know) are placed by the editor, not by resolveProfile: taken from the extras.
+  const ownName = (key: string) => (key.startsWith('steamId:') ? `Workshop item ${key.slice(8)}` : key.slice(key.indexOf(':') + 1))
+  for (const k of profile.extras.filter(isOwnKey)) own.push(ownName(k))
+  for (const e of resolveProfile(catalog, index, preset, profile).entries) {
+    const [kind, id] = [e.key.slice(0, e.key.indexOf(':')), e.key.slice(e.key.indexOf(':') + 1)]
+    if (kind !== 'mod' && kind !== 'external') {
+      if (!own.includes(ownName(e.key))) own.push(ownName(e.key))
+      continue
+    }
+    for (const pack of e.packs?.length ? e.packs : [e.pack ?? e.name]) entries.push({ pack, mod: id, ...(e.steamId ? { steamId: e.steamId } : {}) })
+  }
+  return { ...words, base: preset.id, playAs: preset.playAs, ...(preset.theme ? { theme: preset.theme } : {}), entries, own }
 }
