@@ -10,7 +10,9 @@ folder stay as they are), and the run waits for the main menu (the mod loading b
 dump, the game's database report (crash_report/bad_mods_report.txt: first invalid record, table and pack), an error
 dialog or a timeout. Then the game is closed and the next template starts. The intro video is switched off for the
 run and back afterwards. Per template <work>/<template>/ keeps result.json, the game's report, the script log and a
-screenshot of the game's monitor; all results are in <work>/results.json.
+screenshot of the game's monitor; all results are in <work>/results.json. Each result also goes into
+curator/raw/launch_results.json (game version, date, a fingerprint of the template's packs), which the catalog build
+uses to mark templates as launch-tested while they still have exactly those packs.
 
 Packs come from the Workshop items the catalog names (Steam must run and the items must be downloaded) and from the
 --packs folders (LoversLab/Nexus/Discord downloads, unpacked; searched recursively). Of several copies of a pack the
@@ -19,6 +21,7 @@ newest wins (for files under a folder named after a Discord message id, the mess
 import argparse
 import collections
 import datetime
+import hashlib
 import json
 import os
 import re
@@ -42,6 +45,25 @@ EXT = {e["id"]: e for e in catalog["external"]}
 req_path = ROOT / "raw" / "steam_required.json"
 COLLECTIONS = set(json.loads(req_path.read_text("utf-8")).get("collections", [])) if req_path.exists() else set()
 norm = lambda n: re.sub(r"[^a-z0-9]", "", n.lower())
+RESULTS = ROOT / "raw" / "launch_results.json"
+
+
+def fingerprint(preset: dict) -> str:
+    """The template's packs, order-free: a result counts only while the template still has exactly these packs."""
+    return hashlib.sha1("\n".join(sorted(e["pack"].lower() for e in preset["entries"])).encode()).hexdigest()[:12]
+
+
+def game_version(game: Path) -> str:
+    out = subprocess.run(["powershell", "-NoProfile", "-Command", f"(Get-Item '{game / 'Warhammer3.exe'}').VersionInfo.ProductVersion"],
+                         capture_output=True, text=True, timeout=60).stdout.strip()
+    return ".".join(out.split(".")[:3]) or "unknown"
+
+
+def record(r: dict, fp: str, game: str):
+    data = json.loads(RESULTS.read_text("utf-8")) if RESULTS.exists() else {}
+    data[r["id"]] = {"result": r["result"], "game": game, "date": datetime.date.today().isoformat(), "fingerprint": fp,
+                     "scriptErrors": len(r.get("scriptErrors", []))}
+    RESULTS.write_text(json.dumps(dict(sorted(data.items())), ensure_ascii=False, indent=1) + "\n", "utf-8", newline="\n")
 
 
 def snowflake_date(name: str) -> str:
@@ -125,7 +147,8 @@ def plan(preset: dict, packs: Packs) -> dict:
             for s in sids:
                 for p in sorted((packs.workshop / s).glob("*.pack")) if (packs.workshop / s).exists() else []:
                     add(p.name, [s], label)
-    return {"id": preset["id"], "name": preset["name"], "origin": preset.get("origin"), "files": files, "missing": missing, "notes": notes}
+    return {"id": preset["id"], "name": preset["name"], "origin": preset.get("origin"), "files": files, "missing": missing, "notes": notes,
+            "fingerprint": fingerprint(preset)}
 
 
 def ps(*args) -> str:
@@ -241,6 +264,7 @@ def main():
     intro = "fe_game_intro_video_enabled true;" in PREFS.read_text("utf-8")
     shutil.copy(PREFS, work / "preferences.backup.txt")
     results = []
+    version = game_version(game)
     try:
         set_intro(False)
         for p in plans:
@@ -250,6 +274,7 @@ def main():
                 continue
             r = run_one(p, game, work)
             results.append(r)
+            record(r, p["fingerprint"], version)
             print(f"{p['id']}: {r['result']} ({r['detail']}), script errors {len(r['scriptErrors'])}", flush=True)
             (work / "results.json").write_text(json.dumps(results, ensure_ascii=False, indent=1), "utf-8")
     finally:

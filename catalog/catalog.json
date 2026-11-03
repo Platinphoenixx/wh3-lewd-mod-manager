@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T23:16:07+00:00",
+  "generatedAt": "2026-11-03T00:04:59+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -4402,9 +4402,9 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "steam-3729412021"
+            "mod": "steam-2858576975"
           },
-          "note": "Zealots of Slaanesh | Unit Mod – now its update Slaanesh Zealots for Dechala",
+          "note": "Zealots of Slaanesh | Unit Mod",
           "condition": "only for tdw_corrupted_buildings_add_slaanesh_zealots.pack",
           "source": {
             "type": "loverslab",
@@ -10989,9 +10989,9 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "ll-46165"
+            "mod": "ll-24466"
           },
-          "note": "Community Beastmen; both mods must be re-downloaded together, otherwise a crash. – now its update Community Beastmen ALL versions",
+          "note": "Community Beastmen; both mods must be re-downloaded together, otherwise a crash.",
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/24493-candles-beastmen-events-ancillaries/"
@@ -37705,6 +37705,7 @@
       "knownIssues": [
         "The Nymeria Workshop item (3404717872, last updated January 2025) stops the game at start since the 9.0 update (database error in alivia_dryad.pack, land_units_to_unit_abilites_junctions). Use Mister HP's 'Nymeria (9.0.3)' (Workshop 3820276885) or MrDustV's working pack from Discord."
       ],
+      "status": "superseded",
       "authorPages": [
         {
           "site": "steam",
@@ -45062,9 +45063,9 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "ll-46165"
+            "mod": "ll-24466"
           },
-          "note": "Page only says 'the main Community Beastmen mod'; ll-24466 (original by PassingByPosts) is the most likely base, but alternatively ll-36361 / ll-46165 / ll-26347 (variants/forks). Not verified. – now its update Community Beastmen ALL versions",
+          "note": "Page only says 'the main Community Beastmen mod'; ll-24466 (original by PassingByPosts) is the most likely base, but alternatively ll-36361 / ll-46165 / ll-26347 (variants/forks). Not verified.",
           "source": {
             "type": "inferred",
             "url": "https://www.loverslab.com/files/file/27439-sewerats-community-beastmen-add-on-pt1/"
@@ -60525,7 +60526,12 @@
       ],
       "coverMods": [
         "ll-42028"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-alarielle-late",
@@ -61097,7 +61103,12 @@
       "coverMods": [
         "ll-42028",
         "ll-24004"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-katarin-early",
@@ -61421,7 +61432,12 @@
       ],
       "coverMods": [
         "ll-23966"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-miao-early",
@@ -61843,7 +61859,12 @@
       "coverMods": [
         "ll-23878",
         "ll-23876"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-miao-late",
@@ -62318,7 +62339,12 @@
       "coverMods": [
         "ll-23878",
         "ll-26591"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-morathi",
@@ -62843,7 +62869,12 @@
       "coverMods": [
         "ll-23925",
         "ll-42028"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-sigvald-early",
@@ -63286,7 +63317,12 @@
       ],
       "coverMods": [
         "ll-27930"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-slaanesh-daemons-early",
@@ -63712,6 +63748,7 @@
           "note": "Corrupted Compendium moved to Steam (unlisted) on 2026-04-12 with a renamed pack; delete the LoversLab MiaoYingCorrupted_Compendium.pack from data. Embed fixes merged 2026-06-29 and 2026-08-02. Lists that also use @@Compendium_Play_as_Azazel_Overwrite.pack need its current version from Azazel's Realm (crash reports with outdated copies, 2026-09/10)."
         }
       ],
+      "theme": "Daemons of Slaanesh",
       "description": "Play **N'Kari, Dechala or Masque** and experience Alarielle's corruption from Slaanesh's side, a mode ATB supports since version 2.0. The list adds Readman's N'Kari version of UUU, Narok's Slaanesh Expanded dilemmas and Lin's Corrupted Drycha with its translation.\n\nPlaying as Dechala is no longer recommended since ATB 3.0 because of a voice-over conflict with Alarielle's stage 7; N'Kari is the intended choice.",
       "highlights": [
         "Slaanesh side of the ATB story",
@@ -63720,7 +63757,12 @@
       ],
       "coverMods": [
         "ll-42028"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "readman-woc-early",
@@ -64150,6 +64192,7 @@
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
+      "theme": "Chaos lords",
       "description": "For **Archaon, Azazel, Be'lakor or a Daemon Prince**: the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
       "highlights": [
         "Chaos route of Azazel's Realm (play as Azazel and others)",
@@ -64158,7 +64201,12 @@
       ],
       "coverMods": [
         "ll-27930"
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "kpw-alarielle",
@@ -64381,7 +64429,12 @@
             "mod": "steam-3471883632"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "kpw-miao",
@@ -64571,7 +64624,12 @@
           "to": "tdw_corrupted_buildings_merged.pack",
           "note": "MrDustV merged the tdw building packs (plus Zealots updated for Dechala) into one pack pinned in #tdw-habus-projects (2026-10-31), keys matched to the merged Soil pack; the 2025 LL packs fail after patch 9.0. Only for Miao Ying campaigns: Kerberos lists tdw_ mods as banned for anyone else (2026-09-04)."
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "kpw-azazel-archaon-belakor-sigvald-daemon-pr",
@@ -64798,7 +64856,13 @@
           "to": "soil_corrupted_units_asset.pack",
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
-      ]
+      ],
+      "theme": "Chaos lords",
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "kpw-morathi",
@@ -65037,7 +65101,12 @@
             "mod": "steam-3471884231"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "kpw-n-kari-dechala-masque",
@@ -65261,7 +65330,13 @@
           "to": "@n_SlaaneshVassals.pack",
           "note": "Fix by iilxaeju (posted by Kerberos in #submods, 2026-05-22) so the mod supports playing as Dechala; it replaces the LoversLab version (same file name)."
         }
-      ]
+      ],
+      "theme": "Daemons of Slaanesh",
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "kpw-katarin",
@@ -65378,7 +65453,12 @@
           "to": "soil_corrupted_units_asset.pack",
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-03"
+      }
     },
     {
       "id": "derived-ll-52142",
@@ -65409,7 +65489,13 @@
             "mod": "ll-52142"
           }
         }
-      ]
+      ],
+      "theme": "Khalida's corruption",
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "derived-ll-24004",
@@ -65446,7 +65532,12 @@
             "external": "ext-mct"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "derived-dc-shenzoo-faction-mod-passingbyposts",
@@ -65498,7 +65589,12 @@
             "external": "ext-variant-selector"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "derived-ll-27663",
@@ -65534,7 +65630,12 @@
             "mod": "steam-3376886102"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     },
     {
       "id": "derived-ll-32476",
@@ -65569,7 +65670,12 @@
             "mod": "steam-3376886102"
           }
         }
-      ]
+      ],
+      "launchTest": {
+        "result": "main menu",
+        "game": "9.0.4",
+        "date": "2026-11-02"
+      }
     }
   ],
   "campaignGuides": [

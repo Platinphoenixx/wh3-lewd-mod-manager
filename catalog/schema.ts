@@ -69,6 +69,16 @@ export interface Preset {
    * (moved to Steam, merged into one pack, fixed re-uploads). to = new pack file, or "removed".
    */
   modernized?: { from: string; to: string; note?: string }[];
+  /**
+   * A list about a group or subject rather than one character (e.g. "Daemons of Slaanesh"): the app shows it
+   * under Themes instead of "Play as". Lists without it belong to their first playAs character.
+   */
+  theme?: string;
+  /**
+   * curator/launch_test.py started the game with exactly this list's packs (only kept while the list still has
+   * the same packs): "main menu" = the game loaded every mod.
+   */
+  launchTest?: { result: string; game: string; date: string };
 }
 
 export interface PresetEntry {

@@ -18,6 +18,7 @@ Usage:
 """
 
 import glob
+import hashlib
 import heapq
 import html
 import json
@@ -816,10 +817,11 @@ def main():
             finish_relations(m)
             finished.add(m["id"])
 
-    # A requirement of a mod that another mod supersedes (a fixed re-upload, e.g. Nymeria 9.0.3) means the
-    # successor: the old one is what breaks. Unless the successor is the requiring mod itself.
+    # A requirement of an outdated mod that another mod supersedes (a fixed re-upload, e.g. Nymeria 9.0.3) means the
+    # successor: the old one is what breaks. Unless the successor is the requiring mod itself. ("Supersedes" alone is
+    # not enough: a mod can include another one's look while that one stays a mod of its own.)
     successor = {r["target"]["mod"]: m["id"] for m in mods.values() for r in m.get("relations", [])
-                 if r["kind"] == "supersedes" and "mod" in r["target"]}
+                 if r["kind"] == "supersedes" and "mod" in r["target"] and mods.get(r["target"]["mod"], {}).get("status") in INACTIVE}
     for m in mods.values():
         # A Steam collection only bundles items; pages that link one name its members one by one as well.
         def collection(mid):
@@ -1183,8 +1185,13 @@ def main():
         m["packs"] = list(seen.values())
 
     preset_desc = load(CURATOR / "work" / "preset-desc.json") if (CURATOR / "work" / "preset-desc.json").exists() else {}
+    # Launch test results (curator/launch_test.py) count while the template still has exactly the tested packs.
+    launch = load(CURATOR / "raw" / "launch_results.json") if (CURATOR / "raw" / "launch_results.json").exists() else {}
     for p in presets:
-        p |= {k: v for k, v in preset_desc.get(p["id"], {}).items() if k in ("description", "highlights", "coverMods")}
+        p |= {k: v for k, v in preset_desc.get(p["id"], {}).items() if k in ("description", "highlights", "coverMods", "theme")}
+        fp = hashlib.sha1("\n".join(sorted(e["pack"].lower() for e in p["entries"])).encode()).hexdigest()[:12]
+        if (r := launch.get(p["id"])) and r.get("fingerprint") == fp:
+            p["launchTest"] = {"result": r["result"], "game": r["game"], "date": r["date"]}
 
     catalog = {
         "schemaVersion": 1,

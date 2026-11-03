@@ -72,6 +72,7 @@
     "coverMods": ["ll-27930"]
   },
   "readman-slaanesh-daemons-early": {
+    "theme": "Daemons of Slaanesh",
     "description": "Play **N'Kari, Dechala or Masque** and experience Alarielle's corruption from Slaanesh's side, a mode ATB supports since version 2.0. The list adds Readman's N'Kari version of UUU, Narok's Slaanesh Expanded dilemmas and Lin's Corrupted Drycha with its translation.\n\nPlaying as Dechala is no longer recommended since ATB 3.0 because of a voice-over conflict with Alarielle's stage 7; N'Kari is the intended choice.",
     "highlights": [
       "Slaanesh side of the ATB story",
@@ -81,6 +82,7 @@
     "coverMods": ["ll-42028"]
   },
   "readman-woc-early": {
+    "theme": "Chaos lords",
     "description": "For **Archaon, Azazel, Be'lakor or a Daemon Prince**: the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
     "highlights": [
       "Chaos route of Azazel's Realm (play as Azazel and others)",
@@ -88,5 +90,8 @@
       "Archaon cannot confederate Valkia, N'Kari or the Changeling"
     ],
     "coverMods": ["ll-27930"]
-  }
+  },
+  "kpw-n-kari-dechala-masque": { "theme": "Daemons of Slaanesh" },
+  "kpw-azazel-archaon-belakor-sigvald-daemon-pr": { "theme": "Chaos lords" },
+  "derived-ll-52142": { "theme": "Khalida's corruption" }
 }
