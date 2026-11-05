@@ -74,7 +74,7 @@
         "lypt"
       ],
       "kind": "submod",
-      "summary": "Endo's matched battle animations retargeted to Valkia's skeleton, so the corrupted Valkia of Community Beastmen takes part in them; kept out of the main mod on purpose, safe to add.",
+      "summary": "Endo's matched battle animations retargeted to Valkia's skeleton. All its files are in Community Beastmen now (file comparison with the Workshop version, 2026-11-06), so the separate pack is not needed.",
       "tags": [
         "beastmen",
         "animations",
@@ -110,7 +110,7 @@
           "target": {
             "mod": "ll-46165"
           },
-          "note": "The other retargets (hu1c, hu1d, hu1e, daemonettes, Elspeth) were merged into Community Beastmen on 2025-11-03/11; this one was not, by the author's choice",
+          "note": "Its files are part of Community Beastmen by now",
           "source": {
             "type": "discord",
             "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1437325022401269760"
@@ -118,11 +118,64 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-03",
-        "confidence": "medium",
-        "openQuestions": [
-          "Made before patch 9.0; the channel has no newer build (as of 2026-11-02)."
+        "lastChecked": "2026-11-06",
+        "confidence": "high"
+      },
+      "status": "superseded"
+    },
+    {
+      "id": "dc-ancient-warmaidens-repack",
+      "name": "Ancient Warmaidens repack (Tomb Kings, standalone)",
+      "authors": [
+        "zeta0080",
+        "DeHess"
+      ],
+      "kind": "reskin",
+      "summary": "Community Beastmen maintainer's standalone repack of Zeta's Tomb Kings reskin: it brings its own models, so it needs no Warmaidens resource packs, and leaves out some units of the original.",
+      "tags": [
+        "tomb kings",
+        "reskin",
+        "female units",
+        "community beastmen"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "community-beastmen",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1025523634745385014/1429919013324193863"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "Ancient_Warmaidens_Repack.pack",
+            "url": "https://drive.google.com/file/d/1quM812zJQMJbXSig2WcGZc2Q0VxTMfhM/view?usp=sharing",
+            "description": "Linked in the Community Beastmen guide"
+          }
         ]
+      },
+      "packs": [
+        {
+          "file": "Ancient_Warmaidens_Repack.pack",
+          "from": "download",
+          "url": "https://drive.google.com/file/d/1quM812zJQMJbXSig2WcGZc2Q0VxTMfhM/view?usp=sharing"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "nx-28"
+          },
+          "note": "A repack of the same reskin: same tables, use one",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1025523634745385014/1429919013324193863"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-06",
+        "confidence": "high"
       }
     }
   ]

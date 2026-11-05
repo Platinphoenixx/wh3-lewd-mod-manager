@@ -52,12 +52,8 @@
           "note": "brings back the elf captives on shields"
         },
         {
-          "mod": "dc-valkia-matched-animations-retarget",
-          "note": "Endo's animations retargeted to Valkia, one of the lords the herd captures; the maintainer posted it and calls it safe to add"
-        },
-        {
-          "mod": "nx-28",
-          "note": "the maintainer's baseline load order: Tomb Kings are the most important Warmaidens pack (their mounts were removed on purpose)"
+          "mod": "dc-ancient-warmaidens-repack",
+          "note": "the maintainer's own Tomb Kings repack, recommended in his guide: Tomb Kings are the reskin he finds most important, and CB removed their mounts so the animations play"
         },
         {
           "mod": "steam-3622829128",
@@ -160,6 +156,14 @@
         {
           "mod": "steam-3683061804",
           "note": "its Female Ungors part replaces the game's standard Ungor model, so every Ungor unit that does not use Community Beastmen's own models turns female – and Ungors play the Beastmen's matched animations; take Endo's single faction reskins instead (file comparison 2026-11-03)"
+        },
+        {
+          "mod": "ll-34542",
+          "note": "the maintainer's list for the full version names the Slaanesh Vassal mod: it can stop the third capture mission from firing (one modder reports no problem with an older version)"
+        },
+        {
+          "mod": "dc-n-slaaneshvassals-dechala-fix",
+          "note": "a fix of Vassal Dilemmas, which the maintainer's list for the full version names"
         }
       ]
     },
