@@ -26,6 +26,20 @@ export interface Catalog {
   campaignGuides: CampaignGuide[];
   /** Major game updates, newest first (from the game's Steam announcements; hotfixes excluded). */
   gameUpdates?: { date: string; title: string }[];
+  /**
+   * Rules players flagged as wrong, by rule id ("conflict|mod:a|mod:b"): only those 3+ players flagged or a maintainer
+   * decided (a retired rule is already out of the catalog's relations; the app no longer shows it).
+   */
+  ruleFlags?: Record<string, RuleFlag>;
+}
+
+export interface RuleFlag {
+  /** Players who flagged it (one per install); set from 3 on. */
+  flags?: number;
+  /** retired = the rule is gone; kept = it stays, `answer` says why; changed = it stays, `answer` is its new reason. */
+  decision?: "retired" | "kept" | "changed";
+  answer?: string;
+  date?: string;
 }
 
 export interface CampaignGuide {

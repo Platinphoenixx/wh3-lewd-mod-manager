@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { keyForImported, profileFromImport, type ImportSource } from '@shared/importlist'
+import { importPlan, keyForImported, profileFromImport, type ImportSource } from '@shared/importlist'
 import type { Profile } from '@shared/profile'
 import { isOwnKey } from '@shared/own'
 import { useData } from './data'
@@ -30,7 +30,7 @@ export function ImportDialog({ onClose, onCreate }: { onClose(): void; onCreate(
   const create = () => {
     if (!chosen || !plan) return
     const now = new Date().toISOString()
-    onCreate({ id: crypto.randomUUID(), name: `Imported: ${chosen.label}`, ...plan, createdAt: now, updatedAt: now })
+    onCreate({ id: crypto.randomUUID(), name: `Imported: ${chosen.label}`, ...importPlan(data.catalog, data.index, chosen, now), createdAt: now, updatedAt: now })
   }
 
   return (
@@ -39,8 +39,8 @@ export function ImportDialog({ onClose, onCreate }: { onClose(): void; onCreate(
         <button className="close" onClick={onClose}>×</button>
         <h2>Import a mod list</h2>
         <p className="small muted">
-          Takes the active mods of another launcher and makes a profile of them. Nothing in the other launcher is changed. The load
-          order is rebuilt from the catalog's rules and the packs' contents, so check it once afterwards.
+          Takes the active mods of another launcher and makes a profile of them, with their load order and packs as they are. Nothing in
+          the other launcher is changed. Afterwards the profile shows what the catalog would warn about and what fits your list; nothing changes unless you pick it.
         </p>
         {sources === null && <p className="small">Looking for mod lists on this PC…</p>}
         {sources?.length === 0 && <p className="small">No CA launcher or WH3 Mod Manager lists found on this PC.</p>}

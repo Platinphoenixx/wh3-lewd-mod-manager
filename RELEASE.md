@@ -30,6 +30,8 @@ release is all it takes for players to hear about it.
   exclude each other; a reskin says which look in your list it would replace, and only what players of the
   list really use is selected for you.
 - Every template is launch-tested: it reaches the main menu with game version 9.0.4.
+- Import a list that works for you from the CA launcher or the WH3 Mod Manager: it stays as you played it, the app says what the
+  catalog would warn about and why, and suggests other looks and add-ons that fit. Flag any rule you know to be wrong.
 - *Made by*: who made what in each list, with their support pages.
 - Installs Workshop items through Steam, LoversLab and Nexus Mods files with your own login; starts the game
   with the profile's load order, loading only the version you chose when a mod comes in several.

@@ -20,6 +20,15 @@ export interface Profile {
   declined?: string[]
   /** Community fixes the profile uses: mod id → fix id (Mod.fixes). */
   fixes?: Record<string, string>
+  /**
+   * A list imported from another launcher, kept as it was played: its load order (entry keys, highest priority first) and
+   * the exact packs per entry. Nothing is added to it on its own; a mod the player adds later is placed by the catalog's rules.
+   */
+  imported?: { source: string; at: string; order: string[]; packs: Record<string, string[]> }
+  /** Rule ids of points the player keeps as they are (Check tab). */
+  keptPoints?: string[]
+  /** Rule ids the player flagged as wrong → the day it was sent. */
+  flagged?: Record<string, string>
   createdAt: string
   updatedAt: string
 }
@@ -158,14 +167,16 @@ function isSuperseded(index: CatalogIndex, key: string): boolean {
  * Everything the user could add to a profile, grouped by how closely it relates to it.
  * Translations are offered only when they translate something in the profile.
  */
-export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>): Candidate[] {
+export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>): Candidate[] {
   const removed = new Set(profile.removed)
   const chosen = [...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras]
   // What the extras pull in is part of the profile too (a conflict with SFO counts when a switched-on patch needs SFO).
   const known = new Map<string, string[]>()
   preset.entries.forEach((e, i) => { const k = baseKeys(preset)[i]; known.set(k, [...(known.get(k) ?? []), e.pack]) })
   const packsOf = defaultPacksOf(index, preset.playAs, known)
-  const current = [...chosen, ...missingDependencies(index, chosen, new Set(chosen), packsOf).keys()]
+  // (An imported list pulls nothing in: what its mods miss is not part of it, so nothing is offered as an add-on of that.)
+  const asPlayed = new Set(profile.imported?.order ?? [])
+  const current = [...chosen, ...missingDependencies(index, chosen.filter((k) => !asPlayed.has(k)), new Set(chosen), packsOf).keys()]
   const inProfile = new Set(current)
   const found = new Map<string, Candidate>()
 
@@ -265,7 +276,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
  * Base entries keep the preset's tested order. Extras are placed by their load-order rules, otherwise
  * right above the profile mod they extend or relate to, otherwise reskins on top and the rest at the bottom.
  */
-export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>): ResolvedProfile {
+export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>): ResolvedProfile {
   const removed = new Set(profile.removed)
   const entries: ResolvedEntry[] = []
   preset.entries.forEach((e, i) => {
@@ -282,8 +293,20 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
 
   const have = new Set(entries.map((e) => e.key))
   // The player's own mods are placed later from their pack contents (placeOwnMods).
-  const extras = profile.extras.filter((k) => !have.has(k) && !isOwnKey(k))
-  const deps = missingDependencies(index, extras, new Set([...have, ...extras]), defaultPacksOf(index, preset.playAs, new Map(entries.map((e) => [e.key, e.packs ?? []]))))
+  const allExtras = profile.extras.filter((k) => !have.has(k) && !isOwnKey(k))
+  // An imported list stays as it was played: its mods in its order with its packs, and nothing pulled in on their account
+  // (the Check tab says what the catalog misses). Only what the player adds later is placed and completed as usual.
+  const listed = new Map((profile.imported?.order ?? []).map((k, i) => [k, i]))
+  for (const k of allExtras) if (listed.has(k)) entries.push({ key: k, name: nameOf(catalog, index, k), origin: 'extra' })
+  if (listed.size) {
+    entries.sort((a, b) => (listed.get(a.key) ?? Infinity) - (listed.get(b.key) ?? Infinity))
+    for (const e of entries) {
+      const packs = profile.imported?.packs[e.key]
+      if (packs?.length) { e.pack = packs[0]; e.packs = packs }
+    }
+  }
+  const extras = allExtras.filter((k) => !listed.has(k))
+  const deps = missingDependencies(index, extras, new Set([...entries.map((e) => e.key), ...extras]), defaultPacksOf(index, preset.playAs, new Map(entries.map((e) => [e.key, e.packs ?? []]))))
   const toPlace: ResolvedEntry[] = [
     ...extras.map((k) => ({ key: k, name: nameOf(catalog, index, k), origin: 'extra' as const })),
     ...[...deps].map(([k, by]) => ({ key: k, name: nameOf(catalog, index, k), origin: 'dependency' as const, requiredBy: nameOf(catalog, index, by) }))
@@ -315,7 +338,7 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     for (const r of relationsOf(index, e.key)) {
       if (r.kind !== 'requires' || !r.pack || r.condition) continue
       const dep = entries.find((x) => x.key === targetKey(r.target))
-      if (!dep) continue
+      if (!dep || listed.has(dep.key)) continue
       // A template entry keeps its packs and gets the needed one too; an added mod loads just that version.
       if (dep.origin === 'base') { if (!dep.packs?.some((x) => x.toLowerCase() === r.pack!.toLowerCase())) dep.packs = [...(dep.packs ?? []), r.pack] }
       else { dep.pack = r.pack; dep.packs = [r.pack] }

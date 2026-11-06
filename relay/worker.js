@@ -10,7 +10,10 @@
  *   POST /setup         a mod list a player shares (load order, the template it builds on, a few words)
  *                       → stored in KV; one with packs the catalog does not know also becomes a GitHub issue for review
  *   POST /vote          "this setup worked / did not work for me": one vote per install and setup (the last one counts)
- *   GET  /setups, /votes  for the daily catalog update (Authorization: Bearer EXPORT_TOKEN); votes as counts only
+ *   POST /flag          "this rule of the catalog is wrong": one flag per install and rule (the last one counts; `withdraw`
+ *                       takes it back). All flags on a rule are one GitHub issue for the maintainers; after a decision a
+ *                       new flag opens a new issue with what came after it
+ *   GET  /setups, /votes, /flags  for the daily catalog update (Authorization: Bearer EXPORT_TOKEN); votes and flags as counts only
  *
  * Nothing about the sender is stored: no IP address, no name; votes and setups keep only a salted hash of the
  * app's random install id (so one install has one vote per setup). Cloudflare's rate limiter counts
@@ -32,8 +35,10 @@ export default {
       if (request.method === 'GET' && url.pathname === '/reports') return await exportReports(request, env, url)
       if (request.method === 'POST' && url.pathname === '/setup') return await setup(request, env)
       if (request.method === 'POST' && url.pathname === '/vote') return await vote(request, env)
+      if (request.method === 'POST' && url.pathname === '/flag') return await flag(request, env)
       if (request.method === 'GET' && url.pathname === '/setups') return await exportSetups(request, env)
       if (request.method === 'GET' && url.pathname === '/votes') return await exportVotes(request, env)
+      if (request.method === 'GET' && url.pathname === '/flags') return await exportFlags(request, env)
       return json({ ok: false, message: 'Not found' }, 404)
     } catch (e) {
       if (!(e instanceof UserError)) console.error(e)
@@ -195,6 +200,98 @@ async function vote(request, env) {
   const key = `vote:${setupId}:${await hash(env, str(b.installId, 64, 'installId'))}`
   await env.REPORTS.put(key, '', { metadata: { w: b.worked ? 1 : 0, ...(reason ? { r: reason } : {}), d: new Date().toISOString().slice(0, 10) } })
   return json({ ok: true, message: 'Thank you – counted.' })
+}
+
+const RULE = /^(conflict|requires|load|outdated|stops|avoid|old)\|[^\r\n]{1,280}$/
+const WHY = { works: 'They work together', outdated: 'It is out of date', reason: 'The reason or source is wrong', other: 'Something else' }
+const FAR = ['Main menu only', 'A few turns', 'A long campaign']
+// Text that becomes part of a public issue: no mentions that would notify someone, nothing that breaks the JSON block.
+const safe = (s) => s.replace(/`/g, "'").replace(/@/g, '@​')
+
+const github = (env, path, init = {}) => fetch(`https://api.github.com/repos/${env.REPO}${path}`, {
+  ...init,
+  headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, accept: 'application/vnd.github+json', 'user-agent': 'wh3lmm-relay', ...(init.body ? { 'content-type': 'application/json' } : {}) }
+})
+
+async function flag(request, env) {
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
+  const b = await request.json()
+  const rule = str(b.rule, 300, 'rule')
+  if (!RULE.test(rule)) throw new UserError('Unknown rule.')
+  const key = `flag:${rule}:${await hash(env, str(b.installId, 64, 'installId'))}`
+  if (b.withdraw) {
+    await env.REPORTS.delete(key)
+    await syncFlagIssue(env, rule).catch((e) => console.error(e))
+    return json({ ok: true, message: 'Your flag was taken back.' })
+  }
+  if (!WHY[b.why]) throw new UserError('What is wrong about it? is missing.')
+  const text = safe(plain(b.text, 1000))
+  if (!text) throw new UserError('What do you know? is missing.')
+  const report = {
+    at: new Date().toISOString(), why: b.why, text,
+    link: /^https?:\/\/\S{1,300}$/.test(b.link ?? '') ? safe(b.link) : undefined,
+    far: FAR.includes(b.far) ? b.far : undefined,
+    order: safe(plain(b.order, 300)) || undefined,
+    game: optStr(b.game, 20)
+  }
+  await env.REPORTS.put(key, JSON.stringify(report), { metadata: { d: report.at.slice(0, 10) } })
+  await env.REPORTS.put(`flaginfo:${rule}`, JSON.stringify({
+    title: safe(plain(b.title, 200)) || rule, says: safe(plain(b.says, 1500)), source: safe(plain(b.source, 200))
+  }))
+  // The flag counts either way; GitHub being away only delays the maintainers' view until the next flag on the rule.
+  const url = await syncFlagIssue(env, rule).catch((e) => { console.error(e); return undefined })
+  return json({ ok: true, url, message: 'Thank you – sent to the catalog maintainers.' })
+}
+
+/** The rule's issue, written anew from all its flags; closed after a decision, then a new one with what came later. */
+async function syncFlagIssue(env, rule) {
+  const prefix = `flag:${rule}:`
+  const all = []
+  for (const k of await listAll(env, prefix)) {
+    const v = await env.REPORTS.get(k.name)
+    if (v) all.push(JSON.parse(v))
+  }
+  all.sort((x, y) => x.at.localeCompare(y.at))
+  const known = JSON.parse((await env.REPORTS.get(`flagissue:${rule}`)) ?? 'null')
+  let open = null
+  let since = known?.since ?? ''
+  if (known) {
+    const res = await github(env, `/issues/${known.number}`)
+    const issue = res.ok ? await res.json() : null
+    if (issue?.state === 'open') open = known.number
+    else if (issue?.closed_at) since = issue.closed_at
+  }
+  const reports = all.filter((r) => r.at > since)
+  if (!reports.length) {
+    if (open) await github(env, `/issues/${open}`, { method: 'PATCH', body: JSON.stringify({ state: 'closed', state_reason: 'not_planned' }) })
+    return undefined
+  }
+  const info = JSON.parse((await env.REPORTS.get(`flaginfo:${rule}`)) ?? '{}')
+  const body = [
+    `**Flagged rule:** ${info.title}`, `**What the catalog says:** ${info.says}`, `**Source:** ${info.source}`, '',
+    `**Players (${reports.length}):**`,
+    ...reports.slice(0, 50).map((r) => `- ${WHY[r.why]}${r.far ? ` · ${r.far}` : ''}${r.game ? ` · game ${r.game}` : ''}${r.order ? ` · ${r.order}` : ''}: ${r.text}${r.link ? ` ${r.link}` : ''}`),
+    '', '```json', JSON.stringify({ type: 'flag', rule, title: info.title, says: info.says, source: info.source, reports: reports.slice(0, 50) }), '```',
+    '', '---', '*Sent from the app without a GitHub account.*'
+  ].join('\n')
+  const title = `Flag: ${info.title}`.slice(0, 200)
+  const res = open
+    ? await github(env, `/issues/${open}`, { method: 'PATCH', body: JSON.stringify({ title, body }) })
+    : await github(env, '/issues', { method: 'POST', body: JSON.stringify({ title, body, labels: ['flag'] }) })
+  if (!res.ok) throw new Error(`GitHub answered ${res.status}`)
+  const issue = await res.json()
+  await env.REPORTS.put(`flagissue:${rule}`, JSON.stringify({ number: issue.number ?? open, since }))
+  return issue.html_url
+}
+
+async function exportFlags(request, env) {
+  if (!allowed(request, env)) return json({ ok: false, message: 'Not allowed' }, 401)
+  const flags = {}
+  for (const k of await listAll(env, 'flag:')) {
+    const rule = k.name.slice(5, k.name.lastIndexOf(':'))
+    flags[rule] = (flags[rule] ?? 0) + 1
+  }
+  return json({ ok: true, flags })
 }
 
 async function exportSetups(request, env) {

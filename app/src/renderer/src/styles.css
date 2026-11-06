@@ -483,3 +483,41 @@ table.local-files tr.off td.name, table.local-files tr.off td.path { opacity: .5
 ul.source-folders { list-style: none; padding: 0; margin: 8px 0; }
 ul.source-folders li { display: flex; align-items: center; gap: 12px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 4px; margin-bottom: 6px; background: var(--panel-2); }
 ul.source-folders li code { flex: 1; }
+
+/* Imported lists: Check and Ideas; flagging a rule */
+.doubt { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; margin-top: 10px; }
+.doubt.kept { opacity: 0.6; }
+.doubt-thumb { width: 64px; height: 42px; border-radius: 3px; overflow: hidden; background: var(--panel-2); display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--muted); text-align: center; }
+.doubt-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.doubt-kind { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 600; color: var(--warn); }
+.doubt-kind.info { color: var(--muted); }
+.doubt-state { text-transform: none; letter-spacing: 0; color: var(--ok); }
+.doubt-state.flagged { color: var(--accent); }
+.doubt-why { font-size: 13px; color: var(--text-2); margin: 2px 0; }
+.doubt-status { font-size: 13px; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--line); }
+.doubt-acts { display: flex; flex-direction: column; gap: 6px; align-items: stretch; width: 210px; }
+.doubt-acts button { font-size: 13px; padding: 5px 10px; margin: 0; white-space: normal; overflow-wrap: anywhere; }
+.flag-link { color: var(--muted); }
+.flag-link:hover { color: var(--text); }
+.doubt-acts .flag-link { text-align: center; padding-top: 2px; }
+@media (max-width: 1000px) { .doubt { grid-template-columns: 64px 1fr; } .doubt-acts { grid-column: 2; width: auto; } }
+.ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin: 8px 0 18px; }
+.idea { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
+.idea.on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.idea-cover { height: 160px; background: var(--panel-2); cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; overflow: hidden; }
+.idea-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.idea-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; align-items: flex-start; }
+.idea-body button { margin: auto 0 0; font-size: 13px; padding: 5px 12px; }
+.idea-body .small { margin-bottom: 6px; }
+.ideas-foot { display: flex; gap: 10px; align-items: center; border-top: 1px solid var(--line); padding-top: 14px; }
+.ideas-foot button { margin: 0; }
+.flag-says { background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 10px 12px; font-size: 13px; color: var(--text-2); margin-bottom: 12px; }
+.flag-says strong { color: var(--text); }
+.flag-why { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.flag-row { display: grid; grid-template-columns: 1fr 2fr; gap: 12px; }
+.flag-sent { margin: 0; padding-top: 10px; border-top: 1px solid var(--line); }
+.flag-report { border-top: 1px solid var(--line); padding: 7px 0; font-size: 13px; color: var(--text-2); }
+.review-flag { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.review-flag > div:not(.form) { display: flex; gap: 10px; align-items: center; }
+.review-flag button { margin: 0; white-space: nowrap; }
+.form .flag-why input[type='radio'] { width: auto; flex: none; margin: 0; }

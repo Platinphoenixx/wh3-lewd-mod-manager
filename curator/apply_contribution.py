@@ -1,6 +1,6 @@
 """Record an accepted community contribution (a GitHub issue created by the app) in curator/community.json.
 
-The app puts a ```json block into every issue: {"type": "rule"|"feedback"|"correction"|"new-mod"|"fix", "modId": ..., ...}.
+The app puts a ```json block into every issue: {"type": "rule"|"feedback"|"correction"|"new-mod"|"fix"|"flag", "modId": ..., ...}.
 A maintainer reviews the issue and adds the label "accepted"; the GitHub Action then runs:
 
     python curator/apply_contribution.py --issue-file event_issue.json
@@ -18,7 +18,8 @@ from datetime import date
 from pathlib import Path
 
 COMMUNITY = Path(__file__).resolve().parent / "community.json"
-TYPES = {"rule", "feedback", "correction", "new-mod", "setup", "fix"}
+TYPES = {"rule", "feedback", "correction", "new-mod", "setup", "fix", "flag"}
+DECISIONS = {"retire", "change", "keep"}
 
 
 def parse_block(body: str) -> dict:
@@ -30,7 +31,13 @@ def parse_block(body: str) -> dict:
         raise ValueError(f"unknown contribution type: {data.get('type')!r}")
     if data["type"] == "setup" and not data.get("setupId"):
         raise ValueError("setupId is missing")
-    if data["type"] not in ("new-mod", "setup") and not data.get("modId"):
+    if data["type"] == "flag":
+        # A flagged rule: the app wrote the maintainer's decision into the block before labelling the issue.
+        if not data.get("rule") or data.get("decision") not in DECISIONS:
+            raise ValueError("a flag needs its rule and the maintainer's decision")
+        if data["decision"] in ("change", "keep") and not data.get("answer"):
+            raise ValueError(f"the decision {data['decision']} needs the maintainer's text")
+    elif data["type"] not in ("new-mod", "setup") and not data.get("modId"):
         raise ValueError("modId is missing")
     return data
 
@@ -50,13 +57,16 @@ def main() -> int:
 
     entry = parse_block(body) | {"url": url, "issue": number, "accepted": date.today().isoformat()}
     entry.pop("setup", None)  # a shared setup's list stays with the relay (fetch_community.py); only its id is recorded
+    entry.pop("reports", None)  # what players wrote stays in the issue; the catalog needs the rule and the decision
     store = json.loads(COMMUNITY.read_text("utf-8")) if COMMUNITY.exists() else {"accepted": []}
     if any(e.get("url") == url and url for e in store["accepted"]):
         print("already recorded")
         return 0
+    if entry["type"] == "flag":  # a later decision on a rule replaces the earlier one
+        store["accepted"] = [e for e in store["accepted"] if not (e.get("type") == "flag" and e.get("rule") == entry["rule"])]
     store["accepted"].append(entry)
     COMMUNITY.write_text(json.dumps(store, ensure_ascii=False, indent=2), "utf-8")
-    print(f"recorded {entry['type']} for {entry.get('modId') or entry.get('name')}")
+    print(f"recorded {entry['type']} for {entry.get('modId') or entry.get('name') or entry.get('rule')}")
     return 0
 
 

@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs'
 import { readFile, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { app, net, safeStorage } from 'electron'
-import type { MaintainerStatus, ReviewItem } from '@shared/api'
+import type { FlagDecision, MaintainerStatus, ReviewItem } from '@shared/api'
 
 /**
  * Maintainer access: a GitHub token the maintainer enters in Settings (fine-grained, issues of the catalog repository).
@@ -11,7 +11,7 @@ import type { MaintainerStatus, ReviewItem } from '@shared/api'
  * workflow does the rest) or rejects them (closed with a comment).
  */
 const FILE = () => join(app.getPath('userData'), 'maintainer.bin')
-const REVIEW_LABELS = ['setup', 'fix', 'new-mod', 'feedback', 'rule', 'correction']
+const REVIEW_LABELS = ['flag', 'setup', 'fix', 'new-mod', 'feedback', 'rule', 'correction']
 // Tests point this at a local fake (WH3LMM_GITHUB_API=http://127.0.0.1:…); never set for players.
 const API = process.env.WH3LMM_GITHUB_API || 'https://api.github.com'
 
@@ -83,6 +83,20 @@ export async function listReview(repo: string): Promise<ReviewItem[]> {
 
 export async function accept(repo: string, n: number): Promise<void> {
   await github(repo, `/issues/${n}/labels`, { method: 'POST', body: { labels: ['accepted'] } })
+}
+
+/**
+ * A flagged rule: writes the decision into the issue's JSON block, then labels it "accepted". The repository's workflow
+ * reads the block (curator/apply_contribution.py), rebuilds the catalog and closes the issue.
+ */
+export async function decideFlag(repo: string, n: number, decision: FlagDecision, answer?: string): Promise<void> {
+  const issue = (await github(repo, `/issues/${n}`)) as { body: string | null }
+  const body = issue.body ?? ''
+  const m = /```json\s*(\{[\s\S]*?\})\s*```/.exec(body)
+  if (!m) throw new Error('This issue has no JSON block to record the decision in.')
+  const block = { ...JSON.parse(m[1]), decision, ...(answer?.trim() ? { answer: answer.trim() } : {}) }
+  await github(repo, `/issues/${n}`, { method: 'PATCH', body: { body: body.replace(m[0], `\`\`\`json\n${JSON.stringify(block)}\n\`\`\``) } })
+  await accept(repo, n)
 }
 
 export async function reject(repo: string, n: number, reason: string): Promise<void> {

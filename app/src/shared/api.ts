@@ -98,6 +98,26 @@ export interface RelayContribution {
   body: string
 }
 
+/** A player flags a rule of the catalog as wrong (the app adds its version and a random install id). One per install and rule. */
+export interface RelayFlag {
+  rule: string
+  /** Takes the player's flag back; everything else is then left out. */
+  withdraw?: boolean
+  title?: string
+  says?: string
+  source?: string
+  why?: 'works' | 'outdated' | 'reason' | 'other'
+  text?: string
+  link?: string
+  far?: string
+  /** "A above B": the order of the mods it is about in the player's list. */
+  order?: string
+  game?: string
+  catalog?: string
+}
+
+export type FlagDecision = 'retire' | 'change' | 'keep'
+
 export interface RelayResult {
   ok: boolean
   message: string
@@ -206,6 +226,10 @@ export interface Api {
   reviewList(): Promise<ReviewItem[]>
   reviewAccept(issue: number): Promise<void>
   reviewReject(issue: number, reason: string): Promise<void>
+  /** A flagged rule: retire it, change its reason (`answer` = the new text) or keep it (`answer` = why). */
+  reviewFlag(issue: number, decision: FlagDecision, answer?: string): Promise<void>
+  /** Flags a rule of the catalog as wrong (relay /flag), or takes the flag back. */
+  sendFlag(f: RelayFlag): Promise<RelayResult>
   /** Shares a profile as a setup other players can install (relay /setup; shown after the daily catalog update). */
   sendSetup(s: SharedSetup): Promise<RelayResult>
   /** "It worked" / "it didn't" for the template or setup a played profile is based on (one vote per install and setup). */

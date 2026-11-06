@@ -1,6 +1,7 @@
 import type { Catalog } from '@catalog/schema'
 import { targetFor, targetKey, type CatalogIndex } from './match'
 import { baseKeys } from './profile'
+import { isOwnKey } from './own'
 
 /**
  * Mod lists from other launchers, turned into a profile: the template that matches best becomes the
@@ -45,10 +46,18 @@ export function parseCaModdata(json: string): ImportedMod[] {
 
 /** Presets of the WH3 Mod Manager (…/wh3mm/config.json): the current list and every named preset. */
 export function parseWh3mm(json: string): ImportSource[] {
-  type Preset = { name?: string; mods?: { name: string; path?: string; workshopId?: string; isEnabled?: boolean }[] }
+  type Mm = { name: string; path?: string; workshopId?: string; isEnabled?: boolean; loadOrder?: number }
+  type Preset = { name?: string; mods?: Mm[] }
   const c = JSON.parse(json) as { gameToCurrentPreset?: { wh3?: Preset }; gameToPresets?: { wh3?: Preset[] } }
+  // Its array is in no particular order: mods load by name, and one with a `loadOrder` goes to that place.
+  const inOrder = (list: Mm[]) => {
+    const key = (m: Mm) => m.name.toLowerCase()
+    const out = list.filter((m) => m.loadOrder === undefined).sort((a, b) => (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0))
+    for (const m of list.filter((x) => x.loadOrder !== undefined).sort((a, b) => a.loadOrder! - b.loadOrder!)) out.splice(m.loadOrder!, 0, m)
+    return out
+  }
   const mods = (p: Preset) =>
-    (p.mods ?? []).filter((m) => m.isEnabled).map((m) => ({ pack: m.name, steamId: m.workshopId || (m.path ? workshopIdOf(m.path) : undefined) }))
+    inOrder((p.mods ?? []).filter((m) => m.isEnabled)).map((m) => ({ pack: m.name, steamId: m.workshopId || (m.path ? workshopIdOf(m.path) : undefined) }))
   const out: ImportSource[] = []
   if (c.gameToCurrentPreset?.wh3) out.push({ id: 'wh3mm:current', label: 'WH3 Mod Manager – current mod list', mods: mods(c.gameToCurrentPreset.wh3) })
   for (const [i, p] of (c.gameToPresets?.wh3 ?? []).entries()) {
@@ -61,6 +70,23 @@ export function parseWh3mm(json: string): ImportSource[] {
 export function keyForImported(index: CatalogIndex, m: ImportedMod): string {
   const t = targetFor(index, { file: m.pack, source: m.steamId ? 'workshop' : 'data', steamId: m.steamId, path: '', size: 0, mtime: 0 })
   return t ? targetKey(t) : m.steamId ? `steamId:${m.steamId}` : `pack:${m.pack}`
+}
+
+/**
+ * Everything of a profile that an imported list decides: the closest template with the list's mods, and the list as it was
+ * played (its load order, its exact packs; own mods are pinned to their place in it).
+ */
+export function importPlan(catalog: Catalog, index: CatalogIndex, source: { label: string; mods: ImportedMod[] }, at = new Date().toISOString()) {
+  const order: string[] = []
+  const packs: Record<string, string[]> = {}
+  for (const m of source.mods) {
+    const k = keyForImported(index, m)
+    if (!order.includes(k)) order.push(k)
+    if (!isOwnKey(k)) packs[k] = [...(packs[k] ?? []), m.pack]
+  }
+  const pins: Record<string, string | null> = {}
+  order.forEach((k, i) => { if (isOwnKey(k)) pins[k] = order[i + 1] ?? null })
+  return { ...profileFromImport(catalog, index, source.mods), pins, imported: { source: source.label, at, order, packs } }
 }
 
 /**

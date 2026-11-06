@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Preset } from '@catalog/schema'
 import type { InstalledPack } from '@shared/api'
 import { matchInstalled, parseTargetKey } from '@shared/match'
-import { candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
+import { baseKeys, candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
+import { checkProfile, conflictPoint, moveAbove, oldPoint, withFlag, type CheckAction, type CheckPoint } from '@shared/check'
 import { checkOwnMod, isOwnKey, ownKeyOf, placeOwnMods, type FactsReport, type OrderedEntry } from '@shared/own'
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
@@ -14,9 +15,11 @@ import { missingPacks } from '@shared/install'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
-import { isPickOne, suggestForProfile, type Suggestion } from '@shared/suggest'
+import { ideaGroups, isPickOne, suggestForProfile, type Suggestion } from '@shared/suggest'
 import { DecideChoices, SuggestedMods } from './Suggestions'
 import { ShareDialog } from './ShareDialog'
+import { ProfileCheck, ProfileIdeas } from './ProfileCheck'
+import { FlagDialog, FlagLink } from './FlagDialog'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -68,13 +71,15 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const data = useData()
   // Steps: 1 choices, 2 install, 3 load order & play; "credits" is the Made by list. Without a choice the
   // profile opens where there is something to do: install while mods are missing, else load order & play.
-  type View = 'choices' | 'install' | 'order' | 'credits'
+  // An imported list also has Check (what the catalog would warn about) and Ideas (what fits it).
+  type View = 'choices' | 'install' | 'order' | 'credits' | 'check' | 'ideas'
   const [chosenView, setView] = useState<View | null>(() => {
-    const m = location.hash.match(/-(choices|options|install|order|credits)$/)
+    const m = location.hash.match(/-(choices|options|install|order|credits|check|ideas)$/)
     return m ? (m[1] === 'options' ? 'choices' : (m[1] as View)) : null
   })
   const [browsing, setBrowsing] = useState(false)
   const [sharing, setSharing] = useState(false)
+  const [flagging, setFlagging] = useState<CheckPoint | null>(null)
   const [query, setQuery] = useState('')
   const [expanded, setExpanded] = useState<Set<CandidateGroup>>(new Set())
   const [hideConflicts, setHideConflicts] = useState(true)
@@ -121,7 +126,6 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   })
   // A fresh profile (nothing installed yet) starts with its choices, since they change what gets installed.
   const fresh = incomplete.size === resolved.entries.length
-  const view: View = chosenView ?? (picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
   const goTo = (v: View) => {
     setView(v)
     document.querySelector('.content')?.scrollTo({ top: 0 })
@@ -155,6 +159,46 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   )
   const order = useMemo(() => placeOwnMods(baseOrder, ownOn, facts ?? NO_FACTS, profile.pins ?? {}), [baseOrder, ownOn, facts, profile.pins])
   const byKey = new Map(resolved.entries.map((e) => [e.key, e]))
+
+  // An imported list: what the catalog would warn about, in the list's own order.
+  const imported = !!profile.imported
+  const orderKeys = order.map((o) => o.key)
+  const kept = profile.keptPoints ?? []
+  const points = useMemo(
+    () => (imported ? checkProfile(data.catalog, data.index, preset, profile, resolved, orderKeys, (k) => byKey.get(k)?.packs) : []),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [imported, data.catalog, data.index, preset, profile.fixes, resolved, orderKeys.join('\n')]
+  )
+  const openPoints = points.filter((p) => !kept.includes(p.rule) && !profile.flagged?.[p.rule])
+  const ideaCount = imported ? ideaGroups(entries, declined).reduce((n, g) => n + g.ideas.length, 0) : 0
+  const view: View = chosenView ?? (imported
+    ? (openPoints.length ? 'check' : missingEntries.length ? 'install' : 'order')
+    : picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
+  const doAction = (a: CheckAction) => {
+    if (a.type === 'fix') return data.contribute({ type: 'fix', modId: a.key.replace(/^mod:/, '') })
+    if (a.type === 'add') return addExtras([a.key])
+    if (a.type === 'move' && a.above && profile.imported) return onChange({ ...profile, imported: { ...profile.imported, order: moveAbove(orderKeys, a.key, a.above) } })
+    if (a.type === 'remove') {
+      onChange({
+        ...profile,
+        extras: profile.extras.filter((k) => k !== a.key),
+        removed: baseKeys(preset).includes(a.key) && !profile.removed.includes(a.key) ? [...profile.removed, a.key] : profile.removed
+      })
+    }
+  }
+  const flagSent = (rule: string) => {
+    setFlagging(null)
+    onChange({ ...profile, flagged: { ...profile.flagged, [rule]: new Date().toISOString().slice(0, 10) } })
+  }
+  const unflag = async (rule: string) => {
+    const r = await window.api.sendFlag({ rule, withdraw: true })
+    data.notify({ kind: r.ok ? 'done' : 'error', text: r.message })
+    if (!r.ok) return
+    const flagged = { ...profile.flagged }
+    delete flagged[rule]
+    onChange({ ...profile, flagged })
+  }
+  const flagLink = (p: CheckPoint) => <FlagLink rule={p.rule} flagged={profile.flagged} onFlag={() => setFlagging(p)} onUnflag={() => void unflag(p.rule)} />
 
   // Last update of a mod. Steam mods: the Workshop date, else (unlisted items have none) the time Steam
   // last wrote the installed pack, which is never earlier than the update. LoversLab dates only count
@@ -351,44 +395,59 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         </div>
       </div>
       {sharing && <ShareDialog profile={profile} onClose={() => setSharing(false)} />}
+      {flagging && <FlagDialog point={flagging} order={orderKeys} onClose={() => setFlagging(null)} onSent={flagSent} />}
+      {profile.imported && <p className="small muted">Imported from {profile.imported.source} on {profile.imported.at.slice(0, 10)}, with its load order and packs. Closest template: {preset.name}.</p>}
       <nav className="subtabs steps">
         <button className={view === 'choices' ? 'active' : ''} onClick={() => goTo('choices')}>
-          1 · Choices{picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}
+          1 · Choices{!imported && picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}
         </button>
         <button className={view === 'install' ? 'active' : ''} onClick={() => goTo('install')}>
           2 · Install{incomplete.size > 0 && <span className="muted"> ({incomplete.size} missing)</span>}
         </button>
         <button className={view === 'order' ? 'active' : ''} onClick={() => goTo('order')}>3 · Load order &amp; play</button>
+        {imported && <button className={view === 'check' ? 'active' : ''} onClick={() => goTo('check')}>Check ({openPoints.length})</button>}
+        {imported && <button className={view === 'ideas' ? 'active' : ''} onClick={() => goTo('ideas')}>Ideas ({ideaCount})</button>}
         <span className="spacer" />
         <button className={view === 'credits' ? 'active' : ''} onClick={() => goTo('credits')}>Made by</button>
       </nav>
       <p className="small muted">
-        Three steps: decide the optional parts, install what is missing, then press Play. Every step can be revisited; the profile is saved as you go.
+        {imported ? 'Your list stays as it is until you change something; every step can be revisited, and the profile is saved as you go.' : 'Three steps: decide the optional parts, install what is missing, then press Play. Every step can be revisited; the profile is saved as you go.'}
       </p>
-      {preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
-      {resolved.notes.length > 0 && (
+      {!imported && preset.phaseNote && <p className="callout">{preset.phaseNote}</p>}
+      {!imported && resolved.notes.length > 0 && (
         <details className="callout small">
           <summary>{resolved.notes.length} special case{resolved.notes.length === 1 ? '' : 's'} to keep in mind (the template uses these mods together)</summary>
           <ul>
-            {resolved.notes.map((c) => (
-              <li key={c.a + c.b}>{nameOf(data.catalog, data.index, c.a)} ↔ {nameOf(data.catalog, data.index, c.b)}{c.note ? ` – ${c.note}` : ''}</li>
-            ))}
+            {resolved.notes.map((c) => {
+              const p = withFlag(conflictPoint(data.catalog, data.index, c, true), data.catalog.ruleFlags)
+              return p && <li key={c.a + c.b}>{nameOf(data.catalog, data.index, c.a)} ↔ {nameOf(data.catalog, data.index, c.b)} – {p.why} {flagLink(p)}{p.status && <div className="doubt-status">{p.status}</div>}</li>
+            })}
           </ul>
         </details>
       )}
-      {resolved.conflicts.length > 0 && (
+      {!imported && resolved.conflicts.length > 0 && (
         <div className="callout warn">
           <strong>Conflicts in this profile</strong>
           <ul>
-            {resolved.conflicts.map((c) => (
-              <li key={c.a + c.b}>{nameOf(data.catalog, data.index, c.a)} ↔ {nameOf(data.catalog, data.index, c.b)}{c.note ? ` – ${c.note}` : ''}</li>
-            ))}
+            {resolved.conflicts.map((c) => {
+              const p = withFlag(conflictPoint(data.catalog, data.index, c), data.catalog.ruleFlags)
+              return p && <li key={c.a + c.b}>{nameOf(data.catalog, data.index, c.a)} ↔ {nameOf(data.catalog, data.index, c.b)} – {p.why} {flagLink(p)}{p.status && <div className="doubt-status">{p.status}</div>}</li>
+            })}
           </ul>
         </div>
       )}
+      {view === 'check' && (
+        <ProfileCheck
+          points={points} kept={kept} flagged={profile.flagged} onAction={doAction} onFlag={setFlagging} onUnflag={(r) => void unflag(r)}
+          onKeep={(r) => onChange({ ...profile, keptPoints: [...kept, r] })}
+          onShowAgain={(r) => onChange({ ...profile, keptPoints: kept.filter((x) => x !== r) })}
+        />
+      )}
+      {view === 'ideas' && <ProfileIdeas entries={entries} declined={declined} onAdd={addExtras} />}
       {view === 'choices' && (
         <>
-          <DecideChoices
+          {imported && <p className="small muted">Ideas for this list are under <a onClick={() => goTo('ideas')}>Ideas</a>; everything else that works with it is here.</p>}
+          {!imported && <DecideChoices
             picks={picks}
             onApply={(add, no) => {
               const keep = add.filter((k) => !extras.has(k))
@@ -399,8 +458,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                 declined: [...new Set([...(profile.declined ?? []), ...no])]
               })
             }}
-          />
-          <SuggestedMods
+          />}
+          {imported ? <p><button onClick={() => setBrowsing(!browsing)}>{browsing ? 'Hide the full list' : `Browse all ${options.length}`}</button></p> : <SuggestedMods
             lewd={singles(suggestions.lewd)}
             general={singles(suggestions.general)}
             character={suggestions.character}
@@ -408,7 +467,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
             browsing={browsing}
             onAdd={addExtras}
             onBrowse={() => setBrowsing(!browsing)}
-          />
+          />}
           {onCards.length > 0 && (
             <section>
               <h3>Switched on ({onCards.length})</h3>
@@ -485,8 +544,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
             </p>
           )}
           <p className="small muted">
-            Top = highest priority (its files win over the mods below). Template mods keep the tested community order; switched-on mods are
-            placed by their load-order rules; your own mods by what their packs contain – move them with ↑ ↓ if you know better.
+            Top = highest priority (its files win over the mods below). {imported
+              ? 'Your list keeps its order; mods you add later are placed by their load-order rules.'
+              : 'Template mods keep the tested community order; switched-on mods are placed by their load-order rules; your own mods by what their packs contain – move them with ↑ ↓ if you know better.'}
           </p>
           <table className="entries">
             <tbody>
@@ -508,7 +568,13 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                         </div>
                       ))}
                       {stale.has(o.key) && (
-                        <div className="small warn-text">Older than the last major game update; changes game data.</div>
+                        <div className="small warn-text">
+                          Older than the last major game update; changes game data.{' '}
+                          {major && o.key.startsWith('mod:') && (() => {
+                            const p = withFlag(oldPoint(data.catalog, data.index, o.key, data.index.mods.get(o.key.slice(4))?.updated, { date: new Date(major.date).toISOString().slice(0, 10), title: major.title }), data.catalog.ruleFlags)
+                            return p && flagLink(p)
+                          })()}
+                        </div>
                       )}
                       {o.own && (
                         <>

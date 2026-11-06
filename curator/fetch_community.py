@@ -1,4 +1,4 @@
-"""Shared setups and "it worked / it didn't" votes from the relay → curator/raw/community_setups.json + votes.json.
+"""Shared setups, "it worked / it didn't" votes and flagged rules from the relay → curator/raw/community_setups.json, votes.json, flags.json.
 
 Players share their mod lists from the app and vote on the setups they played (relay/worker.js). This script reads
 both with the export token. Into the repository go only the setups (mod list, the template they build on, the
@@ -13,6 +13,7 @@ The daily workflow (.github/workflows/community-daily.yml) calls it and rebuilds
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -39,6 +40,11 @@ def main() -> int:
              for k, v in get(base, token, "/votes").get("votes", {}).items()}
     write(RAW / "community_setups.json", sorted(setups, key=lambda s: s["at"]))
     write(RAW / "votes.json", votes)
+    # Rules players flagged as wrong, as counts per rule (the texts are in the rule's GitHub issue).
+    try:
+        write(RAW / "flags.json", get(base, token, "/flags").get("flags", {}))
+    except urllib.error.HTTPError as e:
+        print(f"no flags from the relay ({e.code})")
     print(f"{len(setups)} shared setups, votes for {len(votes)} setups")
     return 0
 

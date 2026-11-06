@@ -11,13 +11,17 @@ const env = {
   REPORTS: {
     get: async (k) => store.get(k) ?? null,
     put: async (k, v, opts) => { store.set(k, v); if (opts?.metadata) meta.set(k, opts.metadata) },
+    delete: async (k) => { store.delete(k); meta.delete(k) },
     list: async ({ prefix }) => ({ keys: [...store.keys()].filter((k) => k.startsWith(prefix)).map((name) => ({ name, metadata: meta.get(name) })), list_complete: true })
   }
 }
 const issues = []
+const github = { state: 'open', closed_at: null, next: 1 }
 globalThis.fetch = async (url, init) => {
-  issues.push({ url, ...JSON.parse(init.body), auth: init.headers.authorization })
-  return new Response(JSON.stringify({ html_url: 'https://github.com/owner/repo/issues/1' }), { status: 201 })
+  if (!init.method || init.method === 'GET') return new Response(JSON.stringify({ state: github.state, closed_at: github.closed_at }))
+  issues.push({ url, method: init.method, ...JSON.parse(init.body), auth: init.headers.authorization })
+  const number = init.method === 'POST' ? github.next++ : undefined
+  return new Response(JSON.stringify({ number, html_url: 'https://github.com/owner/repo/issues/1' }), { status: 201 })
 }
 const call = (method, path, body, headers = {}) =>
   worker.fetch(new Request('https://relay.test' + path, { method, headers: { 'content-type': 'application/json', 'cf-connecting-ip': '1.2.3.4', ...headers }, body: body && JSON.stringify(body) }), env)
@@ -98,5 +102,41 @@ const counted = (await (await call('GET', '/votes', null, { authorization: 'Bear
 assert.deepEqual(counted['readman-alarielle-early'], { up: 1, down: 1, reasons: { campaign: 1 } })
 const shared = (await (await call('GET', '/setups', null, { authorization: 'Bearer export' })).json()).setups
 assert.equal(shared.length, 2)
+assert.ok([...store.keys()].every((k) => !k.includes('install-')))
+
+// One flag per install and rule; all flags on a rule are one issue; a mention cannot notify anyone.
+const rule = 'conflict|mod:a|mod:b'
+const f = from('7.7.7.7')
+const flagged = { rule, title: 'A and B', says: 'They conflict.', source: 'Discord post', why: 'works', far: 'A long campaign', order: 'A above B', game: '9.0.5' }
+const created = issues.length
+r = await f('POST', '/flag', { ...flagged, installId: 'install-a', text: 'Works for me @someone `x`', link: 'https://discord.com/channels/1/2/3' })
+assert.equal(r.status, 200)
+assert.equal(issues.length, created + 1)
+assert.deepEqual(issues.at(-1).labels, ['flag'])
+assert.equal(issues.at(-1).title, 'Flag: A and B')
+assert.match(issues.at(-1).body, /"type":"flag"/)
+assert.ok(issues.at(-1).body.includes('@\u200bsomeone'))
+assert.ok(!issues.at(-1).body.includes('`x`'))
+await f('POST', '/flag', { ...flagged, installId: 'install-a', text: 'Changed my mind on the wording' })
+await f('POST', '/flag', { ...flagged, installId: 'install-b', text: 'Same here' })
+assert.equal(issues.length, created + 3)
+assert.equal(issues.at(-1).method, 'PATCH')
+assert.match(issues.at(-1).body, /Players \(2\)/)
+const g = from('7.7.7.8')
+assert.equal((await g('POST', '/flag', { ...flagged, installId: 'install-b', rule: 'nonsense', text: 'x' })).status, 400)
+assert.equal((await g('POST', '/flag', { ...flagged, installId: 'install-b', text: '' })).status, 400)
+assert.equal((await call('GET', '/flags')).status, 401)
+const flagCount = async () => (await (await call('GET', '/flags', null, { authorization: 'Bearer export' })).json()).flags
+assert.deepEqual(await flagCount(), { [rule]: 2 })
+// Taking a flag back; after a decision (issue closed) a new flag opens a new issue with only what came later.
+await g('POST', '/flag', { rule, installId: 'install-b', withdraw: true })
+assert.deepEqual(await flagCount(), { [rule]: 1 })
+await new Promise((r) => setTimeout(r, 5))
+Object.assign(github, { state: 'closed', closed_at: new Date().toISOString() })
+await new Promise((r) => setTimeout(r, 5))
+await g('POST', '/flag', { ...flagged, installId: 'install-d', text: 'After the decision' })
+assert.equal(issues.at(-1).method, 'POST')
+assert.ok(issues.at(-1).body.includes('After the decision'))
+assert.ok(!issues.at(-1).body.includes('Changed my mind'))
 assert.ok([...store.keys()].every((k) => !k.includes('install-')))
 console.log('relay tests passed')

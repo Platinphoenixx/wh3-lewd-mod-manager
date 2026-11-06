@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { parseCaModdata, parseTwmods, parseWh3mm, profileFromImport } from './importlist'
+import { importPlan, parseCaModdata, parseTwmods, parseWh3mm, profileFromImport } from './importlist'
+import { resolveProfile } from './profile'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources: {}, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' }, ...extra }
@@ -37,6 +38,32 @@ describe('mod list import', () => {
     expect(s.map((x) => x.label)).toEqual(['WH3 Mod Manager – current mod list', 'WH3 Mod Manager – preset “Mine”'])
     expect(s[0].mods).toEqual([{ pack: 'a.pack', steamId: '5' }])
     expect(s[1].mods).toEqual([{ pack: 'c.pack', steamId: '777' }])
+  })
+
+  it('orders the WH3 Mod Manager list by name, a mod with a load order at its place', () => {
+    const cfg = { gameToCurrentPreset: { wh3: { mods: [
+      { name: 'z.pack', isEnabled: true }, { name: '!b.pack', isEnabled: true }, { name: 'C.pack', isEnabled: true }, { name: 'y.pack', isEnabled: true, loadOrder: 0 }
+    ] } } }
+    expect(parseWh3mm(JSON.stringify(cfg))[0].mods.map((m) => m.pack)).toEqual(['y.pack', '!b.pack', 'C.pack', 'z.pack'])
+  })
+
+  it('keeps an imported list as it was played: its order, its packs, nothing pulled in', () => {
+    const cat = { ...catalog, mods: [...catalog.mods, mod('needs', { packs: [{ file: 'needs.pack', from: 'download' }], relations: [{ kind: 'requires', target: { mod: 'other' }, source: { type: 'inferred' } }] }),
+      mod('fresh', { packs: [{ file: 'fresh.pack', from: 'download' }], relations: [{ kind: 'requires', target: { mod: 'other' }, source: { type: 'inferred' } }] })] } as Catalog
+    const idx = buildIndex(cat)
+    const plan = importPlan(cat, idx, { label: 'x', mods: [{ pack: 'needs.pack' }, { pack: 'mine.pack' }, { pack: 'fw.pack' }, { pack: 'x.pack', steamId: '111' }] }, 'now')
+    expect(plan.presetId).toBe('a')
+    expect(plan.imported.order).toEqual(['mod:needs', 'pack:mine.pack', 'mod:fw', 'mod:atb'])
+    expect(plan.imported.packs['mod:atb']).toEqual(['x.pack'])
+    expect(plan.pins).toEqual({ 'pack:mine.pack': 'mod:fw' })
+    const preset = cat.presets.find((p) => p.id === 'a')!
+    const r = resolveProfile(cat, idx, preset, plan)
+    expect(r.entries.map((e) => e.key)).toEqual(['mod:needs', 'mod:fw', 'mod:atb'])
+    expect(r.entries[2].packs).toEqual(['x.pack'])
+    // What the player adds later is completed as usual and leaves the list's order alone.
+    const later = resolveProfile(cat, idx, preset, { ...plan, extras: [...plan.extras, 'mod:fresh'] })
+    expect(later.entries.map((e) => e.key)).toEqual(expect.arrayContaining(['mod:fresh', 'mod:other']))
+    expect(later.entries.filter((e) => plan.imported.order.includes(e.key)).map((e) => e.key)).toEqual(['mod:needs', 'mod:fw', 'mod:atb'])
   })
 
   it('bases the profile on the closest template and keeps unknown packs as own mods', () => {

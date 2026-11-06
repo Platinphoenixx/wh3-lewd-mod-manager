@@ -25,6 +25,8 @@ export interface Suggestion {
   fits: boolean
   /** Reskins in the profile it would replace (same character, last loaded wins). */
   replaces?: string[]
+  /** In how many community lists for the same character that fit this one. */
+  sameLists: number
 }
 
 /** Suggestions that do not go together (two reskins of the same character, incompatible mods): pick one. */
@@ -55,18 +57,24 @@ const norm = (s: string) => s.toLowerCase().replace(/[-_]/g, ' ').trim()
 const short = (n: number) => (n >= 10000 ? `${Math.round(n / 1000)}k` : n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n))
 
 export function suggestForProfile(
-  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>, options: Candidate[]
+  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>, options: Candidate[]
 ): { lewd: SuggestionEntry[]; general: SuggestionEntry[]; character: string } {
   const removed = new Set(profile.removed)
   const inProfile = new Set([...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras])
   const profileMods = [...inProfile].flatMap((k) => (k.startsWith('mod:') && index.mods.get(k.slice(4)) ? [index.mods.get(k.slice(4))!] : []))
+  // An imported list is only as close to its template as it happens to be: its own mods are the template here.
+  const listedKeys = profile.imported ? profile.extras.filter((k) => profile.imported!.order.includes(k)) : []
+  const listedChars = listedKeys.flatMap((k) => {
+    const m = k.startsWith('mod:') ? index.mods.get(k.slice(4)) : undefined
+    return m && STORY_KINDS.includes(m.kind) ? (m.playAs ?? []).map((p) => p.character) : []
+  })
 
   // Community lists (tested lists and guides); those for one of the template's characters count most.
-  const chars = preset.playAs.map(norm)
+  const chars = [...preset.playAs, ...listedChars].map(norm)
   const isChar = (c: string) => chars.some((x) => norm(c).includes(x.split(' ')[0]))
   // A list built on something the template cannot be combined with is another setup, even for the same character
   // (Readman's Miao lists run on Lazy's progression, which Lin's Corrupted Ascension is incompatible with).
-  const templateKeys = baseKeys(preset).filter((k) => !removed.has(k))
+  const templateKeys = [...baseKeys(preset).filter((k) => !removed.has(k)), ...listedKeys]
   const own = new Set(templateKeys)
   const clashes = (p: Preset) => {
     const keys = p.entries.flatMap((e) => (e.target ? [targetKey(e.target)] : [])).filter((k) => !own.has(k))
@@ -91,8 +99,8 @@ export function suggestForProfile(
   ]
   // Only the template's own mods set it: an add-on the player switched on (the Community Beastmen Slaanesh version,
   // tagged for the Slaanesh lords that use it) must not turn a Beastmen list into a Slaanesh one.
-  const templateMods = baseKeys(preset).filter((k) => !removed.has(k) && k.startsWith('mod:')).flatMap((k) => index.mods.get(k.slice(4)) ?? [])
-  const theme = new Set([...templateMods.flatMap(themeOf), ...preset.playAs])
+  const templateMods = templateKeys.filter((k) => k.startsWith('mod:')).flatMap((k) => index.mods.get(k.slice(4)) ?? [])
+  const theme = new Set([...templateMods.flatMap(themeOf), ...preset.playAs, ...listedChars])
   // Templates may say "Miao"; the catalog's characters say "Miao Ying".
   const lead = preset.playAs[0] ?? preset.name
   const leadName = [...characters.values()].find((c) => norm(c).startsWith(norm(lead))) ?? lead
@@ -162,11 +170,35 @@ export function suggestForProfile(
     const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []) : []
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     out[general ? 'general' : 'lewd'].push({
-      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), ...(replaces.length ? { replaces } : {})
+      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), sameLists: ks, ...(replaces.length ? { replaces } : {})
     })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
   return { lewd: pickOneGroups(catalog, out.lewd, characters), general: pickOneGroups(catalog, out.general, characters), character: leadName }
+}
+
+/** One idea for a list; options of one `pickOf` exclude each other. */
+export interface Idea {
+  s: Suggestion
+  pickOf?: string
+  note?: string
+}
+
+/**
+ * Suggestions as ideas for a list the player already has: other looks, add-ons of its mods, what lists for the same
+ * character use, what is for its characters. A mod only popular in other characters' lists is no idea.
+ */
+export function ideaGroups(entries: SuggestionEntry[], declined: Set<string> = new Set()): { id: string; title: string; hint: string; ideas: Idea[] }[] {
+  const picks = entries.filter(isPickOne).filter((p) => !p.pick.some((s) => declined.has(s.key)))
+  const singles = entries.filter((e): e is Suggestion => !isPickOne(e) && !declined.has(e.key) && (e.strong || e.fits))
+  const asIdeas = (p: PickOne): Idea[] => p.pick.map((s) => ({ s, pickOf: p.pick[0].key, note: p.note }))
+  const looks = (p: PickOne) => /\blooks$/.test(p.note)
+  return [
+    { id: 'looks', title: 'Other looks for characters in your list', hint: 'A look replaces the one your list has for that character; it loads above it.', ideas: picks.filter(looks).flatMap(asIdeas) },
+    { id: 'addons', title: 'Add-ons for mods you have', hint: 'Recommended by, or made for, a mod in your list.', ideas: [...picks.filter((p) => !looks(p)).flatMap(asIdeas), ...singles.filter((s) => s.tied).map((s) => ({ s }))] },
+    { id: 'often', title: 'Often played together with your mods', hint: 'In community lists for the same character that do not clash with yours. Mods a setup for it warns against are never offered.', ideas: singles.filter((s) => !s.tied && s.sameLists).map((s) => ({ s })) },
+    { id: 'more', title: 'For your characters and factions', hint: 'Made for what your list is about.', ideas: singles.filter((s) => !s.tied && !s.sameLists).map((s) => ({ s })) }
+  ].filter((g) => g.ideas.length)
 }
 
 /** The characters a reskin changes: its playAs and the character names among its tags. */

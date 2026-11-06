@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
 import { candidates } from './profile'
-import { isHeldBack, isPickOne, suggestForProfile, type SuggestionEntry } from './suggest'
+import { ideaGroups, isHeldBack, isPickOne, suggestForProfile, type Suggestion, type SuggestionEntry } from './suggest'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
   return {
@@ -119,5 +119,24 @@ describe('isHeldBack', () => {
     expect(isHeldBack(m({ updated: '2026-10-01' }), '2026-09-24')).toBe(false)
     expect(isHeldBack(m({ changesData: false }), '2026-09-24')).toBe(false)
     expect(isHeldBack(m({ updated: undefined }), '2026-09-24')).toBe(false)
+  })
+})
+
+describe('ideas for a list', () => {
+  const s = (key: string, extra: Partial<Suggestion> = {}) => ({ key, mod: { id: key } as Mod, reasons: [], score: 1, strong: false, tied: false, fits: false, sameLists: 0, ...extra }) as Suggestion
+  it('sorts suggestions into looks, add-ons, what lists use, what fits; nothing only popular elsewhere', () => {
+    const g = ideaGroups([
+      { pick: [s('look1'), s('look2')], note: 'They all change how Sigvald looks', score: 1 },
+      { pick: [s('v1'), s('v2')], note: 'Versions of the same add-on for X', score: 1 },
+      s('addon', { tied: true, strong: true }),
+      s('list', { strong: true, sameLists: 3 }),
+      s('char', { fits: true }),
+      s('elsewhere'),
+      s('turned-down', { tied: true, strong: true })
+    ], new Set(['turned-down']))
+    expect(Object.fromEntries(g.map((x) => [x.id, x.ideas.map((i) => i.s.key)]))).toEqual({
+      looks: ['look1', 'look2'], addons: ['v1', 'v2', 'addon'], often: ['list'], more: ['char']
+    })
+    expect(g[0].ideas[1]).toMatchObject({ pickOf: 'look1', note: 'They all change how Sigvald looks' })
   })
 })

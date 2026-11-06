@@ -359,6 +359,55 @@ def apply_community(mods: dict) -> None:
             })
 
 
+def apply_rule_flags(mods: dict, presets: list) -> dict:
+    """
+    Rules players flagged as wrong (app: "Flag as wrong"): counts from raw/flags.json (fetch_community.py) and the
+    maintainers' decisions from community.json. One flag changes nothing: from 3 players on the app shows the rule as
+    disputed; only a maintainer's decision changes it. Retiring takes the rule out of the catalog for everyone, as the last
+    step of the build, so no earlier layer brings it back. Rule ids are the app's (shared/check.ts).
+    """
+    path = CURATOR / "raw" / "flags.json"
+    out = {r: {"flags": n} for r, n in (load(path) if path.exists() else {}).items() if n >= 3}
+    cpath = CURATOR / "community.json"
+    decisions = [c for c in (load(cpath).get("accepted", []) if cpath.exists() else []) if c.get("type") == "flag"]
+    mod_of = lambda key: mods.get(key[4:]) if key.startswith("mod:") else None
+    key_of = lambda t: next(f"{k}:{v}" for k, v in t.items())
+
+    def relations(kind: str, a: str, b: str, both: bool) -> list:
+        return [(mod_of(x), r) for x, y in (((a, b), (b, a)) if both else ((a, b),))
+                for r in (mod_of(x) or {}).get("relations") or [] if r["kind"] == kind and key_of(r["target"]) == y]
+
+    for c in decisions:
+        rule, decision = c["rule"], c["decision"]
+        kind, *keys = rule.split("|")
+        out[rule] = {**out.get(rule, {}), "decision": {"retire": "retired", "keep": "kept", "change": "changed"}[decision], "date": c.get("accepted")}
+        if c.get("answer"):
+            out[rule]["answer"] = c["answer"]
+        pair = {"conflict": ("incompatible", True), "requires": ("requires", False), "outdated": ("supersedes", False)}.get(kind)
+        if pair and len(keys) == 2:
+            # outdated|old|new is written on the newer mod.
+            a, b = reversed(keys) if kind == "outdated" else keys
+            for m, r in relations(pair[0], a, b, pair[1]):
+                if decision == "retire":
+                    m["relations"].remove(r)
+                elif decision == "change":
+                    r["note"] = c["answer"]
+        if decision != "retire":
+            continue
+        if kind == "load" and len(keys) == 2:
+            hi, lo = keys
+            for key, side, other in ((hi, "above", lo), (lo, "below", hi)):
+                if order_rule := (mod_of(key) or {}).get("loadOrder"):
+                    order_rule[side] = [t for t in order_rule.get(side) or [] if key_of(t) != other]
+        elif kind == "stops" and (m := mod_of(keys[0])):
+            m.pop("stopsGame", None)
+        elif kind == "avoid" and len(keys) == 2:
+            for p in presets:
+                if p["id"] == keys[0] and p.get("avoid"):
+                    p["avoid"] = [x for x in p["avoid"] if key_of(x["target"]) != keys[1]]
+    return out
+
+
 # Support links (Patreon, Ko-fi, …) as they appear on a mod's own pages. They are kept per mod, not per
 # author: a page may also credit collaborators with their links.
 SUPPORT_RE = re.compile(
@@ -1380,6 +1429,8 @@ def main():
         if mid in mods and r["date"] >= major:
             mods[mid]["confirmed"] = r["date"]
 
+    rule_flags = apply_rule_flags(mods, presets)
+
     catalog = {
         "schemaVersion": 1,
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -1401,6 +1452,7 @@ def main():
         "campaignGuides": [g for g in guides if "id" not in g],
         # Major game updates (update.py reads them from the game's Steam announcements).
         "gameUpdates": load(CURATOR / "raw" / "game_updates.json") if (CURATOR / "raw" / "game_updates.json").exists() else [],
+        **({"ruleFlags": rule_flags} if rule_flags else {}),
     }
     # Only a real content change gets a new timestamp: otherwise every scheduled build would commit a
     # "new" catalog and every app would download it again.

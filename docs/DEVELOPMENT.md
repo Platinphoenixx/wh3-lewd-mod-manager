@@ -107,7 +107,23 @@ community contributions. App UI and catalog texts are English.
     Workshop items come from the player's Steam client once (userData/workshop-details.json);
     previews via the `wh3lmm://workshop/<id>` protocol.
   - `src/shared/importlist.ts`: mod lists of the CA launcher (`Launcher/20190104-moddata.dat`, `.twmods`)
-    and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested).
+    and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested). `importPlan` keeps the list
+    as it was played (`Profile.imported`: its load order and exact packs, own mods pinned to their place): nothing is pulled in on
+    its account; only what the player adds later is placed by the rules and completed. Such a profile has two more tabs
+    (`renderer/src/ProfileCheck.tsx`): **Check** (`src/shared/check.ts`, tested) says what the catalog would warn about (conflict,
+    does not start, outdated, missing requirement, load order, against the setup, older than the last big update), each with its
+    reason and source, as hints, since the list runs for the player: change it, `Profile.keptPoints` ("Keep as it is"), or flag it.
+    **Ideas** (`ideaGroups` in `suggest.ts`, tested) sorts the suggestions into other looks, add-ons, what lists for the same
+    character use and what is for its characters, with the list's own mods as the template.
+  - Flagging a rule ("Flag as wrong…", `renderer/src/FlagDialog.tsx`, on every Check point and on the conflicts and "older than"
+    warnings of every profile): every rule has a stable id (`conflict|mod:a|mod:b`, `requires|a|b`, `load|high|low`,
+    `outdated|old|new`, `outdated|key`, `stops|key`, `avoid|preset|key`, `old|key|<date of the game update>`). The relay's `/flag` keeps
+    one flag per install and rule and writes all of a rule's flags into one GitHub issue (label `flag`). The Review tab shows them;
+    the app writes the decision into the issue's JSON block and labels it `accepted`, `apply_contribution.py` records it in
+    `community.json`, and `apply_rule_flags` in `build_catalog.py` applies it as the last step of the build: retire (the relation,
+    load-order rule, `stopsGame` or `avoid` goes), change (a new reason), keep (players see the answer). A later decision on a rule
+    replaces the earlier one; a flag after a decision opens a new issue. One flag changes nothing: `fetch_community.py` brings the
+    counts to `raw/flags.json`, and `Catalog.ruleFlags` shows a rule as disputed from 3 players on.
     `src/shared/health.ts`: mods that change game data and are older than the last major game update
     (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
     and script errors from `lua_mod_log.txt` mapped to their packs (tested); errors a mod's `harmlessScriptErrors` names
