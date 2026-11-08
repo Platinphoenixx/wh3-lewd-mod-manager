@@ -10,7 +10,7 @@ import { ModCover, withParents } from './ModCover'
 import { ConflictList } from './ConflictList'
 import { InstallPanel, type UsedFix } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
-import { pickVariants, planLaunch, variantGroups } from '@shared/launch'
+import { pickVariants, planLaunch, variantGroups, variantLabels } from '@shared/launch'
 import { missingPacks } from '@shared/install'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
@@ -325,8 +325,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return [...groupsOf(key)].flatMap(([group, files]) => {
       const present = files.filter((f) => all.some((p) => p.file.toLowerCase() === f.toLowerCase()))
       if (present.length < 2) return []
-      const label = (f: string) => mod?.packs.find((p) => p.file === f)?.note ?? f
-      return [{ group, options: present.map((f) => ({ file: f, label: label(f) })), loaded: present.find((f) => loaded.has(f)) ?? present[0] }]
+      const { caption, label } = variantLabels(mod, files)
+      return [{ group, caption, options: present.map((f) => ({ file: f, label: label(f) })), loaded: present.find((f) => loaded.has(f)) ?? present[0] }]
     })
   }
   const chooseVariant = (key: string, group: string, file: string) =>
@@ -566,7 +566,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                       {e?.pack && <div className="small muted">{e.pack}</div>}
                       {!e?.pack && variantChoices(o.key).map((v) => (
                         <div key={v.group} className="small variant-choice">
-                          Version{' '}
+                          {v.caption}{' '}
                           <select value={v.loaded} onChange={(ev) => chooseVariant(o.key, v.group, ev.target.value)} title="Several versions of this mod are installed; only the chosen one is loaded">
                             {v.options.map((x) => <option key={x.file} value={x.file}>{x.label}</option>)}
                           </select>

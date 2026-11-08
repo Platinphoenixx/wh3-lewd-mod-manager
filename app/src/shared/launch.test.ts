@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { InstalledPack } from './api'
-import { buildModList, pickVariants, planLaunch } from './launch'
+import type { Mod } from '@catalog/schema'
+import { buildModList, pickVariants, planLaunch, variantLabels } from './launch'
 
 const ws = (file: string, id: string): InstalledPack => ({ file, source: 'workshop', steamId: id, path: `E:\\Steam\\workshop\\content\\1142710\\${id}\\${file}`, size: 1, mtime: 0 })
 const data = (file: string): InstalledPack => ({ file, source: 'data', path: `E:\\Game\\data\\${file}`, size: 1, mtime: 0 })
@@ -65,5 +66,33 @@ describe('pickVariants', () => {
   it('is used by planLaunch for mods without an exact template pack', () => {
     const plan = planLaunch([{ key: 'mod:x', name: 'X', groups, chosen: { futa: '@Legion (no futa).pack' } }], () => both)
     expect(plan.packs.map((p) => p.file)).toEqual(['@Legion (no futa).pack', '@reskin1.pack'])
+  })
+})
+
+describe('variantLabels', () => {
+  const mod = (packs: { file: string; note?: string }[]) => ({ packs }) as unknown as Mod
+  const hair = ['2_Morathi_hair_white.pack', '2_Morathi_hair_red.pack', '2_Morathi_hair_blood.pack']
+
+  it('tells versions apart by their file names when they share one note, and names the part', () => {
+    const { caption, label } = variantLabels(mod(hair.map((file) => ({ file, note: 'Hair' }))), hair)
+    expect(caption).toBe('Hair')
+    expect(hair.map(label)).toEqual(['White', 'Red', 'Blood'])
+  })
+
+  it('keeps what differs inside a name', () => {
+    const skins = ['1_Morathi_fresh_skin.pack', '1_Morathi_fresh_skin_wet.pack', '1_Morathi_amber_skin.pack']
+    expect(skins.map(variantLabels(mod(skins.map((file) => ({ file, note: 'Skin' }))), skins).label)).toEqual(['Fresh skin', 'Fresh skin wet', 'Amber skin'])
+  })
+
+  it('takes notes that already name each version', () => {
+    const files = ['a.pack', 'b.pack']
+    const v = variantLabels(mod([{ file: 'a.pack', note: 'Katarin version' }, { file: 'b.pack', note: 'Miao version' }]), files)
+    expect(v.caption).toBe('Version')
+    expect(files.map(v.label)).toEqual(['Katarin version', 'Miao version'])
+  })
+
+  it('works without notes and falls back to the file name when nothing tells them apart', () => {
+    expect(['x_one.pack', 'x_two.pack'].map(variantLabels(undefined, ['x_one.pack', 'x_two.pack']).label)).toEqual(['One', 'Two'])
+    expect(variantLabels(undefined, ['a.pack', 'A.pack']).label('a.pack')).toBe('a.pack')
   })
 })

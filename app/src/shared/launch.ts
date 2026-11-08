@@ -46,6 +46,27 @@ export function variantGroups(mod: Mod | undefined): Map<string, string[]> {
 }
 
 /**
+ * What to call the versions of one pick-one group in the version choice. A note that names each version is taken as it is;
+ * a note all of them share ("Hair") names the part instead, and what tells them apart is in their file names
+ * (2_Morathi_hair_white.pack → "White").
+ */
+export function variantLabels(mod: Mod | undefined, files: string[]): { caption: string; label(file: string): string } {
+  const noteOf = (f: string) => mod?.packs.find((p) => p.file === f)?.note
+  const notes = files.map(noteOf)
+  if (new Set(notes).size === files.length && notes.every(Boolean)) return { caption: 'Version', label: (f) => noteOf(f)! }
+  const tokens = new Map(files.map((f) => [f, f.replace(/\.pack$/i, '').split(/[_\s-]+/).filter(Boolean)]))
+  const lists = [...tokens.values()]
+  let head = 0
+  while (lists.every((t) => t.length > head + 1 && t[head].toLowerCase() === lists[0][head].toLowerCase())) head++
+  const names = new Map(files.map((f) => {
+    const rest = tokens.get(f)!.slice(head).join(' ')
+    return [f, rest[0].toUpperCase() + rest.slice(1)]
+  }))
+  const shared = notes[0] && notes.every((n) => n === notes[0]) ? notes[0] : 'Version'
+  return { caption: shared, label: (f) => (new Set(names.values()).size === files.length ? names.get(f)! : f) }
+}
+
+/**
  * Of the installed packs of one mod, keeps one per pick-one group: the player's choice (`chosen`: group → file)
  * when it is installed, else the first installed one in catalog order. Packs outside a group all stay.
  */
