@@ -70,7 +70,7 @@ const sameCharacter = (a: string, b: string) => {
   const [x, y] = [letters(a.replace(/\s*\(.*\)$/, '')), letters(b.replace(/\s*\(.*\)$/, ''))]
   return x === y || (Math.min(x.length, y.length) >= 4 && (x.startsWith(y) || y.startsWith(x)))
 }
-const LOOKS = /^They all change how (.+) looks$/
+const LOOKS = /^(?:They all change|It changes) how (.+) looks$/
 
 export function playWith(catalog: Catalog, index: CatalogIndex, facts: SubjectFacts[], mod: Mod): PlayWith {
   const key = `mod:${mod.id}`

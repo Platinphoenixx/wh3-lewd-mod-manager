@@ -33,6 +33,19 @@ export interface Catalog {
   ruleFlags?: Record<string, RuleFlag>;
 }
 
+export interface StageLook {
+  character: string;
+  stages?: number;
+  /** Its own model from the first turn: a reskin of the character never shows, so none is offered. */
+  fromStart?: boolean;
+  /** Mods that also replace the stage models, or that are no look of hers: they get no "until her first stage". */
+  exempt?: string[];
+  /** Mods that also change some textures the stages use. */
+  partly?: string[];
+  /** A picture of the stages. */
+  image?: string;
+}
+
 export interface RuleFlag {
   /** Players who flagged it (one per install); set from 3 on. */
   flags?: number;
@@ -207,6 +220,11 @@ export interface Mod {
   campaigns?: ("IE" | "IEE" | "RoC")[]; // Immortal Empires, IE Expanded, Realm of Chaos
   status?: "stable" | "beta" | "wip" | "abandoned" | "superseded";
   knownIssues?: string[];
+  /**
+   * The mod changes a character's model by itself as a campaign goes on (read from its packs and scripts). A reskin of that
+   * character usually only changes how she looks before her first stage; the app says so.
+   */
+  stageLooks?: StageLook[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
   /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */

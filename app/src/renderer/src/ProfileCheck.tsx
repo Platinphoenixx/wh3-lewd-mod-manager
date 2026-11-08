@@ -5,6 +5,7 @@ import { ideaGroups, type SuggestionEntry } from '@shared/suggest'
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
 import { FlagLink } from './FlagDialog'
+import { untilLabel } from './Suggestions'
 
 /**
  * Check tab of an imported list: what the catalog would warn about, with its reasons. The list runs for the player, so
@@ -94,6 +95,7 @@ export function ProfileIdeas({ entries, declined, onAdd }: { entries: Suggestion
                 <div className="idea-cover" onClick={() => data.openMod(s.mod.id)}><ModCover mods={withParents(data.index.mods, s.mod)} placeholder={KIND_LABEL[s.mod.kind]} /></div>
                 <div className="idea-body">
                   <strong><a className="plain" onClick={() => data.openMod(s.mod.id)}>{s.mod.name}</a></strong>
+                  {s.until && <div className="small warn-text">{untilLabel(s.until)}</div>}
                   {note && <div className="small warn-text">Pick one: {note}</div>}
                   <div className="small muted">{s.reasons.join(' · ')}</div>
                   <button className={picked.has(s.key) ? 'primary' : ''} onClick={() => toggle(s.key, pickOf)}>{picked.has(s.key) ? '✓ Added' : 'Add'}</button>

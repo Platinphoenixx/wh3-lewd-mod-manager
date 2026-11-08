@@ -1,6 +1,13 @@
 import { useState } from 'react'
-import type { PickOne, Suggestion } from '@shared/suggest'
+import { lookPoint, type CheckPoint } from '@shared/check'
+import type { LookUntil, PickOne, Suggestion } from '@shared/suggest'
 import { useData } from './data'
+import { FlagLink } from './FlagDialog'
+
+/** What keeping a character's looks by stage is called. */
+export const keepStagesLabel = (s: LookUntil) => (s.campaign ? "Keep the campaign's looks" : "Keep your list's looks")
+/** How long a look holds in a list that changes it by stage. */
+export const untilLabel = (s: LookUntil) => (s.partly ? 'Mostly until her first stage' : 'Until her first stage')
 
 const SHOWN = 10
 const PICK_SHOWN = 5
@@ -17,7 +24,10 @@ function SuggestionName({ s }: { s: Suggestion }) {
  * and it replaces nothing in the profile; "Apply" adds the chosen ones and remembers "None of these" so the
  * question does not come back.
  */
-export function DecideChoices({ picks, onApply }: { picks: PickOne[]; onApply(add: string[], declined: string[]): void }) {
+export function DecideChoices({ picks, onApply, flagged, onFlag, onUnflag }: {
+  picks: PickOne[]; onApply(add: string[], declined: string[]): void
+  flagged?: Record<string, string>; onFlag?(p: CheckPoint): void; onUnflag?(rule: string): void
+}) {
   const [picked, setPicked] = useState<Record<string, string>>({})
   const [expanded, setExpanded] = useState<Set<string>>(new Set())
   if (!picks.length) return null
@@ -43,13 +53,19 @@ export function DecideChoices({ picks, onApply }: { picks: PickOne[]; onApply(ad
       <div className="fill-col" style={{ marginTop: 12 }}>
         {picks.map((p) => (
           <div key={id(p)} className="fill-row fill-pick">
-            <div className="pick-head">Pick one <span className="muted">– {p.note}</span></div>
+            <div className="pick-head">Pick one <span className="muted">– {p.stage
+              ? `her look. ${p.stage.by} changes how ${p.stage.character} looks by stage; ${p.pick.every((s) => s.until) ? 'these only apply' : 'those marked “Until her first stage” only apply'} before it.`
+              : p.note}</span></div>
             {[...(expanded.has(id(p)) ? p.pick : p.pick.slice(0, PICK_SHOWN)).map((s) => ({ key: s.key, s })), { key: NONE, s: null }].map(({ key, s }) => (
               <label key={key} className="pick-option">
                 <input type="radio" name={`pick-${id(p)}`} checked={choice(p) === key} onChange={() => setPicked((prev) => ({ ...prev, [id(p)]: key }))} />
-                {s ? <span><SuggestionName s={s} /><span className="why">{s.reasons.join(' · ')}</span></span> : <span className="muted">None of these</span>}
+                {s ? <span><SuggestionName s={s} /><span className="why">{[...(s.until ? [untilLabel(s.until)] : []), ...s.reasons].join(' · ')}</span></span> : p.stage ? <span>{keepStagesLabel(p.stage)}<span className="why">{p.stage.stages ? `${p.stage.stages} stage looks, nothing to install` : 'Nothing to install'}</span></span> : <span className="muted">None of these</span>}
               </label>
             ))}
+            {p.stage && onFlag && (() => {
+              const point = lookPoint(p.stage)
+              return <div className="more"><FlagLink rule={point.rule} flagged={flagged} onFlag={() => onFlag(point)} onUnflag={() => onUnflag?.(point.rule)} /></div>
+            })()}
             {p.pick.length > PICK_SHOWN && (
               <div className="more">
                 <a onClick={() => setExpanded((prev) => new Set(prev.has(id(p)) ? [...prev].filter((x) => x !== id(p)) : [...prev, id(p)]))}>

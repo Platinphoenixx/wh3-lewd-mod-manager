@@ -115,13 +115,21 @@ community contributions. App UI and catalog texts are English.
     reason and source, as hints, since the list runs for the player: change it, `Profile.keptPoints` ("Keep as it is"), or flag it.
     **Ideas** (`ideaGroups` in `suggest.ts`, tested) sorts the suggestions into other looks, add-ons, what lists for the same
     character use and what is for its characters, with the list's own mods as the template.
+  - Looks by stage (`Mod.stageLooks`, from reading a mod's packs and scripts, in `work/followup-archives.json`; `suggest.ts`, tested): a mod
+    can change a character's model by itself as a campaign goes on (Temptation's Bloom has 8 stages for Alarielle). A reskin that
+    only changes her base model then holds until her first stage. Where such a mod is in the list, the look choice has
+    `PickOne.stage`, nothing is selected, keeping the stages is the recommended answer (Play: `KeepStagesCard`; editor: Decide, not
+    counted as "to decide"), each look says "Until her first stage" (`Suggestion.until`, `partly` when it also changes textures the
+    stages use) and does not claim to replace the stage mod. `exempt` names mods that also replace the stage models or are no
+    look of hers; `fromStart` means her model is replaced from turn 1, so no look is offered. Whether a mod belongs here cannot be told
+    from file overlaps alone, so it is read and written down per mod. The claim can be flagged (`looks|mod:x|Character`).
   - Flagging a rule ("Flag as wrong…", `renderer/src/FlagDialog.tsx`, on every Check point and on the conflicts and "older than"
     warnings of every profile): every rule has a stable id (`conflict|mod:a|mod:b`, `requires|a|b`, `load|high|low`,
-    `outdated|old|new`, `outdated|key`, `stops|key`, `avoid|preset|key`, `old|key|<date of the game update>`). The relay's `/flag` keeps
+    `outdated|old|new`, `outdated|key`, `stops|key`, `avoid|preset|key`, `old|key|<date of the game update>`, `looks|key|character`). The relay's `/flag` keeps
     one flag per install and rule and writes all of a rule's flags into one GitHub issue (label `flag`). The Review tab shows them;
     the app writes the decision into the issue's JSON block and labels it `accepted`, `apply_contribution.py` records it in
     `community.json`, and `apply_rule_flags` in `build_catalog.py` applies it as the last step of the build: retire (the relation,
-    load-order rule, `stopsGame` or `avoid` goes), change (a new reason), keep (players see the answer). A later decision on a rule
+    load-order rule, `stopsGame`, `avoid` or the `stageLooks` entry goes), change (a new reason), keep (players see the answer). A later decision on a rule
     replaces the earlier one; a flag after a decision opens a new issue. One flag changes nothing: `fetch_community.py` brings the
     counts to `raw/flags.json`, and `Catalog.ruleFlags` shows a rule as disputed from 3 players on.
     `src/shared/health.ts`: mods that change game data and are older than the last major game update

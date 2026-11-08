@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import type { PickOne } from './suggest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
 import {
@@ -64,6 +65,12 @@ describe('guided setups', () => {
 
   it('asks for the character’s look first and ends with quality of life and the review', () => {
     const picks = suggestedFor(catalog, index, miao.presets[0]).picks
+    const stagePick = (character: string, extra: object) => ({ pick: [{ key: 'mod:x', mod: { name: 'x' }, reasons: [] }], note: `They all change how ${character} looks`, score: 1, ...extra }) as unknown as PickOne
+    const staged = { character: 'Miao Ying', stages: 8, key: 'mod:s', by: 'S', campaign: true }
+    const own = stepsFor(miao, [stagePick('Miao Ying', { stage: staged })], false)[0]
+    expect(own).toMatchObject({ question: 'Miao Ying already changes as she falls', subtitle: 'Her campaign changes it by stage', kind: 'pick' })
+    const single = stepsFor(miao, [{ ...stagePick('Miao Ying', {}), note: 'It changes how Miao Ying looks' }], false)[0]
+    expect(single.question).toBe('How should Miao Ying look?')
     const steps = stepsFor(miao, picks, true)
     expect(steps.map((s) => s.title)).toEqual(["Miao Ying's look", 'Quality of life', 'Review and install'])
     expect(steps[0].groups[0].pick.map((p) => p.key).sort()).toEqual(['mod:miao-skin-a', 'mod:miao-skin-b'])

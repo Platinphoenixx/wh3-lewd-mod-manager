@@ -27,6 +27,21 @@ export interface Suggestion {
   replaces?: string[]
   /** In how many community lists for the same character that fit this one. */
   sameLists: number
+  /** A mod in the list changes this character's model by stage, so this look only holds until then. */
+  until?: LookUntil
+}
+
+/** The mod in the list that changes a character's look by stage. */
+export interface LookUntil {
+  character: string
+  stages?: number
+  /** Key and name of that mod; `campaign` when it is the character's story, not a reskin pack. */
+  key: string
+  by: string
+  campaign: boolean
+  image?: string
+  /** This look also changes some textures the stages use. */
+  partly?: boolean
 }
 
 /** Suggestions that do not go together (two reskins of the same character, incompatible mods): pick one. */
@@ -37,6 +52,8 @@ export interface PickOne {
   score: number
   /** The option selected at first, or none: only an option players of this list really use and that replaces nothing. */
   preselect?: string
+  /** A mod in the list already changes this character's look by stage: keeping that is the first choice. */
+  stage?: LookUntil
 }
 
 export type SuggestionEntry = Suggestion | PickOne
@@ -109,6 +126,9 @@ export function suggestForProfile(
   const profileSkins = new Map<string, string[]>()
   for (const m of profileMods.filter((x) => x.kind === 'reskin')) for (const c of reskinSubjects(m, characters)) profileSkins.set(c, [...(profileSkins.get(c) ?? []), m.name])
 
+  // What the list's own mods do to a character's look as the campaign goes on.
+  const stageMods = profileMods.flatMap((m) => (m.stageLooks ?? []).map((x) => ({ ...x, mod: m })))
+  const stageOf = (m: Mod) => (m.kind === 'reskin' ? stageMods.find((x) => reskinSubjects(m, characters).includes(x.character)) : undefined)
   const story = (m?: Mod) => !!m && STORY_KINDS.includes(m.kind)
   const lastMajor = [...(catalog.gameUpdates ?? [])].map((u) => u.date.slice(0, 10)).sort().pop() ?? ''
   const heldBack = (m: Mod) => isHeldBack(m, lastMajor)
@@ -117,6 +137,10 @@ export function suggestForProfile(
   for (const c of options) {
     const m = c.mod
     if (!m || c.superseded || c.conflicts.length || c.alternativeTo.length || m.kind === 'translation' || m.kind === 'collection') continue
+    // A reskin of a character whose mod replaces her model from the first turn would never show.
+    const stage = stageOf(m)
+    const exempt = !!stage?.exempt?.includes(m.id)
+    if (stage?.fromStart && !exempt) continue
     if (['abandoned', 'superseded'].includes(m.status ?? '')) continue
     if (m.tags.includes('modder-resource')) continue // source files for modders (Blender models), nothing the game loads
     // A mod that changes game data and was not updated since the last big game update often stops the game; it is only
@@ -167,10 +191,15 @@ export function suggestForProfile(
     else if (downloads) { score += Math.log10(downloads) + 0.5; reasons.push(`${short(downloads)} LoversLab downloads`) }
     else if (nexus) { score += Math.log10(nexus) + 0.5; reasons.push(`${short(nexus)} Nexus downloads`) }
     // A reskin of a character the profile already reskins replaces that look (an add-on to it does not).
-    const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []) : []
+    const until: LookUntil | undefined = stage && !exempt ? {
+      character: stage.character, ...(stage.stages ? { stages: stage.stages } : {}), key: `mod:${stage.mod.id}`, by: stage.mod.name,
+      campaign: STORY_KINDS.includes(stage.mod.kind), ...(stage.image ? { image: stage.image } : {}), ...(stage.partly?.includes(m.id) ? { partly: true } : {})
+    } : undefined
+    // A look that only holds until the first stage does not replace the stage models.
+    const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []).filter((n) => !until || n !== stage!.mod.name) : []
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     out[general ? 'general' : 'lewd'].push({
-      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), sameLists: ks, ...(replaces.length ? { replaces } : {})
+      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), sameLists: ks, ...(replaces.length ? { replaces } : {}), ...(until ? { until } : {})
     })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
@@ -252,12 +281,16 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   const byRoot = new Map<number, Suggestion[]>()
   for (const [i, sug] of list.entries()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), sug])
   // Preselected: the first option, if players of this list really use it and it replaces nothing; otherwise none.
-  const preselect = (members: Suggestion[]) => (members[0].strong && !members[0].replaces ? { preselect: members[0].key } : {})
+  // Where a mod in the list already changes the look by stage, keeping that is the first choice.
+  const preselect = (members: Suggestion[]) => {
+    const stage = members.find((x) => x.until)?.until
+    return stage ? { stage } : members[0].strong && !members[0].replaces ? { preselect: members[0].key } : {}
+  }
   const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, members]) => {
     if (members.length > 1) return { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score, ...preselect(members) }
     // A single reskin that would replace one in the profile is a choice too ("None" keeps the profile's look).
     const [one] = members
-    if (one.replaces) return { pick: members, note: `It changes how ${reskinSubjects(one.mod, characters).join(', ')} looks`, score: one.score }
+    if (one.replaces || one.until) return { pick: members, note: `It changes how ${reskinSubjects(one.mod, characters).join(', ')} looks`, score: one.score, ...preselect(members) }
     return one
   })
   return entries.sort((a, b) => b.score - a.score)

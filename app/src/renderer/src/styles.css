@@ -521,3 +521,17 @@ ul.source-folders li code { flex: 1; }
 .review-flag > div:not(.form) { display: flex; gap: 10px; align-items: center; }
 .review-flag button { margin: 0; white-space: nowrap; }
 .form .flag-why input[type='radio'] { width: auto; flex: none; margin: 0; }
+
+/* A list that changes a character's look by stage */
+.play-keep { display: grid; grid-template-columns: 330px 1fr; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; cursor: pointer; margin-top: 12px; max-width: 980px; }
+.play-keep:hover { border-color: var(--muted); }
+.play-keep.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.play-keep .ph { height: 170px; background: var(--panel-2); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.play-keep .ph img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.play-keep .body { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.play-keep .tag { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.play-keep .t { font-size: 17px; font-weight: 600; }
+.play-keep .why { color: var(--text-2); font-size: 13px; }
+.play-keep .src { font-size: 12px; color: var(--muted); margin-top: auto; padding-top: 6px; cursor: default; }
+.play-opt .until { font-size: 11px; color: var(--warn); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+@media (max-width: 900px) { .play-keep { grid-template-columns: 1fr; } }

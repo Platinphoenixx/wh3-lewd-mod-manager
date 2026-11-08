@@ -204,7 +204,7 @@ export interface Step {
   groups: PickOne[]
 }
 
-const LOOKS = /^They all change how (.+) looks$/
+const LOOKS = /^(?:They all change|It changes) how (.+) looks$/
 
 /**
  * The choices of a profile as steps, in a player's words: the main character's look first, then the add-ons and
@@ -212,13 +212,16 @@ const LOOKS = /^They all change how (.+) looks$/
  * step, then quality-of-life mods to keep or drop, then the review.
  */
 export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean): Step[] {
-  const looks = (g: PickOne) => LOOKS.exec(g.note)?.[1]
+  // Looks of one character can also be joined by an incompatibility; a stage mod still says whose they are.
+  const looks = (g: PickOne) => LOOKS.exec(g.note)?.[1] ?? g.stage?.character
   const own = picks.filter((g) => looks(g) && subject.characters.includes(looks(g)!))
   const replacing = picks.filter((g) => looks(g) && !own.includes(g) && g.pick.some((x) => x.replaces))
   const others = picks.filter((g) => looks(g) && !own.includes(g) && !replacing.includes(g))
   const rest = picks.filter((g) => !looks(g))
   const steps: Step[] = []
-  for (const g of own) steps.push({ id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: 'Optional', question: `How should ${looks(g)} look?`, kind: 'pick', groups: [g] })
+  // A mod in the list that changes her look by stage is the answer already; the looks are only about her start.
+  const staged = (g: PickOne) => ({ id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: g.stage!.campaign ? 'Her campaign changes it by stage' : 'Your list changes it by stage', question: `${looks(g)} already changes as she falls`, kind: 'pick' as const, groups: [g] })
+  for (const g of own) steps.push(g.stage ? staged(g) : { id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: 'Optional', question: `How should ${looks(g)} look?`, kind: 'pick', groups: [g] })
   for (const g of rest) {
     const addOn = /^Versions of the same add-on for (.+)$/.exec(g.note)?.[1]
     const short = (n: string) => n.replace(/\s*\(.*$/, '').slice(0, 40)
@@ -228,6 +231,7 @@ export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean): S
       : { id: g.pick[0].key, title, subtitle: 'They do not work together', question: 'These do not work together – which one do you want, if any?', kind: 'pick', groups: [g] })
   }
   for (const g of replacing) {
+    if (g.stage) { steps.push(staged(g)); continue }
     steps.push({ id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: 'Already in your list', question: `${looks(g)} is in your campaign – keep the list's look or change it?`, kind: 'pick', groups: [g] })
   }
   if (others.length) {

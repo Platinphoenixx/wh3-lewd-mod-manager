@@ -401,6 +401,8 @@ def apply_rule_flags(mods: dict, presets: list) -> dict:
                     order_rule[side] = [t for t in order_rule.get(side) or [] if key_of(t) != other]
         elif kind == "stops" and (m := mod_of(keys[0])):
             m.pop("stopsGame", None)
+        elif kind == "looks" and len(keys) == 2 and (m := mod_of(keys[0])):
+            m["stageLooks"] = [x for x in m.get("stageLooks") or [] if x["character"] != keys[1]]
         elif kind == "avoid" and len(keys) == 2:
             for p in presets:
                 if p["id"] == keys[0] and p.get("avoid"):

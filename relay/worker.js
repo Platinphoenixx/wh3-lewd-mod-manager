@@ -202,7 +202,7 @@ async function vote(request, env) {
   return json({ ok: true, message: 'Thank you – counted.' })
 }
 
-const RULE = /^(conflict|requires|load|outdated|stops|avoid|old)\|[^\r\n]{1,280}$/
+const RULE = /^(conflict|requires|load|outdated|stops|avoid|old|looks)\|[^\r\n]{1,280}$/
 const WHY = { works: 'They work together', outdated: 'It is out of date', reason: 'The reason or source is wrong', other: 'Something else' }
 const FAR = ['Main menu only', 'A few turns', 'A long campaign']
 // Text that becomes part of a public issue: no mentions that would notify someone, nothing that breaks the JSON block.

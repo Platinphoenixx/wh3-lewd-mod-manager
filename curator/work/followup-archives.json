@@ -677,6 +677,102 @@
           "note": "Single submod; not needed with the all-in-one"
         }
       ]
+    },
+    {
+      "id": "ll-42028",
+      "stageLooks": [
+        {
+          "character": "Alarielle",
+          "stages": 8,
+          "image": "https://static.loverslab.com/screenshots/monthly_2025_05/CorruptedAlarielleStages.thumb.png.78efef5ee9c5807a431bddd5d38fbb6e.png"
+        }
+      ]
+    },
+    {
+      "id": "steam-3471884231",
+      "stageLooks": [
+        {
+          "character": "Morathi",
+          "stages": 4,
+          "exempt": [
+            "nx-16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steam-3471883808",
+      "stageLooks": [
+        {
+          "character": "Katarin",
+          "stages": 4,
+          "exempt": [
+            "nx-297",
+            "ll-24571"
+          ],
+          "partly": [
+            "nx-122",
+            "nx-334"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steam-3471883632",
+      "stageLooks": [
+        {
+          "character": "Miao Ying",
+          "stages": 6,
+          "exempt": [
+            "ll-28994",
+            "ll-26591",
+            "ll-34640",
+            "ll-35682"
+          ],
+          "partly": [
+            "steam-2790617009",
+            "steam-2790320778",
+            "nx-59",
+            "nx-235",
+            "nx-338",
+            "nx-234",
+            "nx-247"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ll-27171",
+      "stageLooks": [
+        {
+          "character": "Miao Ying",
+          "stages": 6,
+          "exempt": [
+            "ll-28994",
+            "ll-26591",
+            "ll-34640",
+            "ll-35682"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ll-24004",
+      "stageLooks": [
+        {
+          "character": "Valkia",
+          "stages": 10
+        }
+      ]
+    },
+    {
+      "id": "ll-32476",
+      "stageLooks": [
+        {
+          "character": "Fay Enchantress",
+          "fromStart": true
+        }
+      ]
     }
   ]
 }

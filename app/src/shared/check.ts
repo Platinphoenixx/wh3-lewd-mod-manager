@@ -1,7 +1,7 @@
 import type { Catalog, Mod, Preset, Relation, RuleFlag } from '@catalog/schema'
 import { parseTargetKey, targetKey, type CatalogIndex } from './match'
 import { nameOf, type PacksOf, type Profile, type ResolvedProfile } from './profile'
-import { isHeldBack } from './suggest'
+import { isHeldBack, type LookUntil } from './suggest'
 import { updateName } from './health'
 
 /**
@@ -10,7 +10,7 @@ import { updateName } from './health'
  * a player can flag the rule as wrong (relay /flag) and a maintainer's decision comes back through the catalog
  * (Catalog.ruleFlags).
  */
-export type CheckKind = 'conflict' | 'stops' | 'outdated' | 'requires' | 'order' | 'avoid' | 'old'
+export type CheckKind = 'conflict' | 'stops' | 'outdated' | 'requires' | 'order' | 'avoid' | 'old' | 'looks'
 
 export const CHECK_LABEL: Record<CheckKind, string> = {
   conflict: 'Conflict',
@@ -19,10 +19,11 @@ export const CHECK_LABEL: Record<CheckKind, string> = {
   requires: 'Missing requirement',
   order: 'Load order',
   avoid: 'Against this setup',
-  old: 'Older than the last big update'
+  old: 'Older than the last big update',
+  looks: 'Looks by stage'
 }
 
-const KIND_ORDER: CheckKind[] = ['conflict', 'stops', 'outdated', 'requires', 'order', 'avoid', 'old']
+const KIND_ORDER: CheckKind[] = ['conflict', 'stops', 'outdated', 'requires', 'order', 'avoid', 'old', 'looks']
 
 export interface CheckAction {
   type: 'remove' | 'add' | 'move' | 'fix'
@@ -116,6 +117,19 @@ export function oldPoint(catalog: Catalog, index: CatalogIndex, key: string, upd
     keys: [key],
     actions: [],
     info: true
+  }
+}
+
+/** What the app says about a character's looks by stage, as something a player can flag. */
+export function lookPoint(s: LookUntil): CheckPoint {
+  return {
+    rule: `looks|${s.key}|${s.character}`,
+    kind: 'looks',
+    title: `${s.by} changes how ${s.character} looks by stage`,
+    why: `It has its own model for ${s.stages ? `each of ${s.stages} corruption stages` : 'her corruption stages'} and swaps it as she falls. Other looks for her only hold until her first stage.`,
+    source: 'From the mod’s own files',
+    keys: [s.key],
+    actions: []
   }
 }
 

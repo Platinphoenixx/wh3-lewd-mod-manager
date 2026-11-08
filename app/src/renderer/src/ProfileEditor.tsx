@@ -91,6 +91,8 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const declined = new Set(profile.declined ?? [])
   const entries = [...suggestions.lewd, ...suggestions.general]
   const picks = entries.filter(isPickOne).filter((p) => !p.pick.some((s) => declined.has(s.key)))
+  // A look choice where the list already changes the look by stage has its answer selected: nothing to decide.
+  const toDecide = picks.filter((p) => !p.stage)
   const singles = (list: typeof suggestions.lewd) => list.filter((e): e is Suggestion => !isPickOne(e) && !declined.has(e.key))
 
   // Installed packs by profile key: catalog mods, and the player's own mods (packs the catalog does not know).
@@ -173,7 +175,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const ideaCount = imported ? ideaGroups(entries, declined).reduce((n, g) => n + g.ideas.length, 0) : 0
   const view: View = chosenView ?? (imported
     ? (openPoints.length ? 'check' : missingEntries.length ? 'install' : 'order')
-    : picks.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
+    : toDecide.length && fresh ? 'choices' : missingEntries.length ? 'install' : 'order')
   const doAction = (a: CheckAction) => {
     if (a.type === 'fix') return data.contribute({ type: 'fix', modId: a.key.replace(/^mod:/, '') })
     if (a.type === 'add') return addExtras([a.key])
@@ -399,7 +401,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
       {profile.imported && <p className="small muted">Imported from {profile.imported.source} on {profile.imported.at.slice(0, 10)}, with its load order and packs. Closest template: {preset.name}.</p>}
       <nav className="subtabs steps">
         <button className={view === 'choices' ? 'active' : ''} onClick={() => goTo('choices')}>
-          1 · Choices{!imported && picks.length > 0 && <span className="muted"> ({picks.length} to decide)</span>}
+          1 · Choices{!imported && toDecide.length > 0 && <span className="muted"> ({toDecide.length} to decide)</span>}
         </button>
         <button className={view === 'install' ? 'active' : ''} onClick={() => goTo('install')}>
           2 · Install{incomplete.size > 0 && <span className="muted"> ({incomplete.size} missing)</span>}
@@ -449,6 +451,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           {imported && <p className="small muted">Ideas for this list are under <a onClick={() => goTo('ideas')}>Ideas</a>; everything else that works with it is here.</p>}
           {!imported && <DecideChoices
             picks={picks}
+            flagged={profile.flagged}
+            onFlag={setFlagging}
+            onUnflag={(r) => void unflag(r)}
             onApply={(add, no) => {
               const keep = add.filter((k) => !extras.has(k))
               onChange({

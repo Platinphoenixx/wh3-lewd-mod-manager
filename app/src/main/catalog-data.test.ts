@@ -89,6 +89,19 @@ describe('catalog', () => {
     }
     expect(bad).toEqual([])
   })
+  it('looks by stage name real mods and a character someone plays or meets', () => {
+    const bad: string[] = []
+    for (const m of catalog.mods) {
+      for (const s of m.stageLooks ?? []) {
+        for (const id of [...(s.exempt ?? []), ...(s.partly ?? [])]) if (!catalog.mods.some((x) => x.id === id)) bad.push(`${m.id}: ${id} is no mod`)
+        const c = s.character.toLowerCase()
+        if (!catalog.mods.some((x) => x.kind === 'reskin' && ((x.playAs ?? []).some((p) => p.character.toLowerCase() === c) || x.tags.some((t) => t.toLowerCase() === c)))) bad.push(`${m.id}: no look for ${s.character}`)
+      }
+    }
+    expect(bad).toEqual([])
+    expect(catalog.mods.filter((m) => m.stageLooks?.length).length).toBeGreaterThan(0)
+  })
+
   it('every character and theme has a recommended size, and no size brings a conflict', () => {
     const bad: string[] = []
     for (const s of subjectsOf(catalog, index)) {

@@ -140,3 +140,61 @@ describe('ideas for a list', () => {
     expect(g[0].ideas[1]).toMatchObject({ pickOf: 'look1', note: 'They all change how Sigvald looks' })
   })
 })
+
+describe('a character whose mod changes her look by stage', () => {
+  const look = (id: string, extra: Partial<Mod> = {}) => mod(id, { kind: 'reskin', name: id, playAs: [{ character: 'Alarielle' }], ...extra })
+  const cat = (stage: Partial<NonNullable<Mod['stageLooks']>[number]>, inList: string[] = ['story']): Catalog => ({
+    ...catalog,
+    mods: [
+      mod('story', { kind: 'campaign', playAs: [{ character: 'Alarielle' }], stageLooks: [{ character: 'Alarielle', stages: 8, ...stage }] }),
+      mod('stage-skins', { kind: 'reskin', name: 'Stage skins', playAs: [{ character: 'Alarielle' }] }),
+      look('start-a', { relations: [] }), look('start-b'), look('whole'), look('mostly')
+    ],
+    presets: [list('p', ['Alarielle'], inList)]
+  })
+  const picksOf = (c: Catalog) => {
+    const index = buildIndex(c)
+    const preset = c.presets[0]
+    const s = suggestForProfile(c, index, preset, { extras: [], removed: [] }, candidates(c, index, preset, { extras: [], removed: [] }))
+    return [...s.lewd, ...s.general].filter(isPickOne)
+  }
+
+  it('marks her looks as holding until the first stage and selects none, so keeping the stages is the choice', () => {
+    const [g] = picksOf(cat({}))
+    expect(g.stage).toMatchObject({ character: 'Alarielle', stages: 8, by: 'story', key: 'mod:story', campaign: true })
+    expect(g.preselect).toBeUndefined()
+    expect(g.pick.every((s) => s.until && !s.replaces)).toBe(true)
+  })
+
+  it('tells looks that also replace the stage models or partly touch them from the rest', () => {
+    const [g] = picksOf(cat({ exempt: ['whole'], partly: ['mostly'] }))
+    const by = (id: string) => g.pick.find((s) => s.mod.id === id)!
+    expect(by('whole').until).toBeUndefined()
+    expect(by('mostly').until?.partly).toBe(true)
+    expect(by('start-a').until?.partly).toBeUndefined()
+  })
+
+  it('a look that replaces the stage pack says so, one that only holds until the first stage does not', () => {
+    const c: Catalog = { ...cat({ exempt: ['whole'] }), mods: [...cat({}).mods.filter((m) => m.id !== 'stage-skins' && m.id !== 'story'),
+      mod('stage-skins', { kind: 'reskin', name: 'Stage skins', playAs: [{ character: 'Alarielle' }], stageLooks: [{ character: 'Alarielle', stages: 4, exempt: ['whole'] }] })],
+    presets: [list('p', ['Alarielle'], ['stage-skins'])] }
+    const [g] = picksOf(c)
+    expect(g.stage).toMatchObject({ campaign: false, by: 'Stage skins' })
+    expect(g.pick.find((s) => s.mod.id === 'whole')!.replaces).toEqual(['Stage skins'])
+    expect(g.pick.find((s) => s.mod.id === 'start-a')!.replaces).toBeUndefined()
+  })
+
+  it('offers no look that would never show, and asks nothing special when the mod is not in the list', () => {
+    expect(picksOf(cat({ fromStart: true }))).toEqual([])
+    const c = cat({}, ['stage-skins'])
+    expect(picksOf(c).every((g) => !g.stage)).toBe(true)
+  })
+
+  it('even a single look is a choice then, not a plain suggestion', () => {
+    const c = cat({})
+    const one: Catalog = { ...c, mods: c.mods.filter((m) => !['start-b', 'whole', 'mostly', 'stage-skins'].includes(m.id)) }
+    const [g] = picksOf(one)
+    expect(g.pick.map((s) => s.mod.id)).toEqual(['start-a'])
+    expect(g.stage?.character).toBe('Alarielle')
+  })
+})

@@ -17,6 +17,9 @@ import { ImportDialog } from './ImportDialog'
 import { guideFor } from './ProfilesView'
 import { ShareDialog } from './ShareDialog'
 import { MadeBy, worksOf } from './Creators'
+import { FlagDialog, FlagLink } from './FlagDialog'
+import { keepStagesLabel, untilLabel } from './Suggestions'
+import { lookPoint, withFlag, type CheckPoint } from '@shared/check'
 import { ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
@@ -319,10 +322,33 @@ function OptionCard({ s, selected, onClick, preselected }: { s: Suggestion | nul
       <div className="ph"><ModCover mods={[s.mod]} placeholder={s.mod.name} /></div>
       <div className="body">
         {preselected && <div className="tag">Most players</div>}
+        {s.until && <div className="until">{untilLabel(s.until)}</div>}
         <div className="t">{s.mod.name}</div>
         {s.replaces && <div className="rep">Replaces {s.replaces.join(', ')}</div>}
         <div className="why">{s.reasons.filter((r) => !r.startsWith('Replaces')).join(' · ')}</div>
         <div className="src">{sourceLabel(s.mod)} · <a onClick={(e) => { e.stopPropagation(); data.openMod(s.mod.id) }}>details</a></div>
+      </div>
+    </div>
+  )
+}
+
+/** A mod in the list already changes the character's look by stage: that is the first, recommended choice. */
+function KeepStagesCard({ stage, selected, onClick, flagged, onFlag, onUnflag }: {
+  stage: NonNullable<PickOne['stage']>; selected: boolean; onClick(): void; flagged: Record<string, string>; onFlag(p: CheckPoint): void; onUnflag(rule: string): void
+}) {
+  const data = useData()
+  const plain = lookPoint(stage)
+  const point = withFlag(plain, data.catalog.ruleFlags) ?? plain
+  const owner = data.index.mods.get(stage.key.slice(4))
+  return (
+    <div className={`play-keep${selected ? ' sel' : ''}`} onClick={onClick}>
+      <div className="ph">{stage.image ? <img src={stage.image} referrerPolicy="no-referrer" /> : <ModCover mods={[owner]} placeholder={stage.by} />}</div>
+      <div className="body">
+        <div className="tag">Recommended</div>
+        <div className="t">{keepStagesLabel(stage)}</div>
+        <div className="why">{stage.by} has her own model for {stage.stages ? `each of ${stage.stages} corruption stages` : 'her corruption stages'} and swaps it as she falls. Nothing to install.</div>
+        {point.status && <div className="why">{point.status}</div>}
+        <div className="src" onClick={(e) => e.stopPropagation()}>{point.source} · <FlagLink rule={point.rule} flagged={flagged} onFlag={() => onFlag(point)} onUnflag={() => onUnflag(point.rule)} /></div>
       </div>
     </div>
   )
@@ -358,8 +384,24 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
   const step = steps[Math.min(at, steps.length - 1)]
   const choice = (g: PickOne) => chosen[g.pick[0].key] ?? g.preselect ?? NONE
   const pick = (g: PickOne, key: string) => setChosen((c) => ({ ...c, [g.pick[0].key]: key }))
+  const [flagging, setFlagging] = useState<CheckPoint | null>(null)
+  const [flagged, setFlagged] = useState<Record<string, string>>({})
+  const unflag = async (rule: string) => {
+    const r = await window.api.sendFlag({ rule, withdraw: true })
+    data.notify({ kind: r.ok ? 'done' : 'error', text: r.message })
+    if (r.ok) setFlagged((f) => { const n = { ...f }; delete n[rule]; return n })
+  }
 
-  const group = (g: PickOne, keep: string) => (
+  const group = (g: PickOne, keep: string) => g.stage ? (
+    <>
+      <KeepStagesCard stage={g.stage} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} flagged={flagged} onFlag={setFlagging} onUnflag={(r) => void unflag(r)} />
+      <h3 className="play-section">{g.pick.every((s) => s.until) ? 'Or a different start look' : 'Or a different look'}</h3>
+      <p className="play-lead">{g.pick.every((s) => s.until) ? 'These only replace' : 'Those marked “until her first stage” only replace'} how she looks before her first corruption stage, and her portrait in that time. From stage 1 {g.stage.campaign ? "the campaign's" : "your list's"} models take over; the Variant Selector can switch back to your start look.{g.pick.every((s) => s.until) ? '' : ' The others change more than that; their pages say what.'}</p>
+      <div className="play-opts">
+        {g.pick.slice(0, 11).map((s) => <OptionCard key={s.key} s={s} selected={choice(g) === s.key} onClick={() => pick(g, s.key)} />)}
+      </div>
+    </>
+  ) : (
     <div className="play-opts">
       <NoneCard label={keep} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} />
       {g.pick.slice(0, 11).map((s) => <OptionCard key={s.key} s={s} preselected={s.key === g.preselect} selected={choice(g) === s.key} onClick={() => pick(g, s.key)} />)}
@@ -370,6 +412,7 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
   return (
     <div className="content play">
       <div className="play-crumbs"><a onClick={onHome}>Play</a> › <a onClick={onBack}>{subject.name}</a> › {tier.name}</div>
+      {flagging && <FlagDialog point={flagging} order={[]} onClose={() => setFlagging(null)} onSent={(rule) => { setFlagging(null); setFlagged((f) => ({ ...f, [rule]: new Date().toISOString().slice(0, 10) })) }} />}
       <div className="play-wizard">
         <ul className="play-steps">
           {steps.map((s, i) => (
@@ -383,13 +426,14 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
           {step.kind === 'review' ? <Review /> : (
             <>
               <h2>{step.question}</h2>
+              {step.kind === 'pick' && step.groups[0].stage && <p className="play-lead">{step.groups[0].stage.campaign ? 'Her campaign brings' : 'Your list brings'} its own look for every stage. You don't have to choose anything here.</p>}
               {step.kind === 'pick' && group(step.groups[0], keepLabel(step))}
               {step.kind === 'others' && (
                 <>
                   <p className="play-lead">Optional. Each changes how one character looks; nothing is added unless you pick it.</p>
                   {step.groups.map((g) => (
                     <div key={g.pick[0].key}>
-                      <h3 className="play-section">{/^They all change how (.+) looks$/.exec(g.note)?.[1] ?? g.note}</h3>
+                      <h3 className="play-section">{g.stage?.character ?? /^(?:They all change|It changes) how (.+) looks$/.exec(g.note)?.[1] ?? g.note}</h3>
                       {group(g, "Keep the game's look")}
                     </div>
                   ))}
@@ -423,7 +467,8 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
 
   function profile(): Profile {
     const p = guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`)
-    return pin?.fix ? { ...p, fixes: { [pin.mod]: pin.fix } } : p
+    const withFlags = Object.keys(flagged).length ? { ...p, flagged } : p
+    return pin?.fix ? { ...withFlags, fixes: { [pin.mod]: pin.fix } } : withFlags
   }
 
   function save(view: 'choices' | 'install') {
@@ -457,6 +502,15 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
       <>
         <h2>What you get</h2>
         <p className="play-lead">{r.entries.length} mods for {subject.name} – {tier.name}. Nothing is installed until you start it below.</p>
+        {picks.filter((g) => g.stage && choice(g) !== NONE).map((g) => {
+          const s = g.pick.find((x) => x.key === choice(g))
+          return s && (
+            <p key={g.pick[0].key} className="callout small">
+              <strong>{g.stage!.character}'s look:</strong> {s.mod.name} {s.until?.partly ? 'mostly ' : ''}until her first corruption stage, then {g.stage!.campaign ? "the campaign's" : "your list's"} {g.stage!.stages ?? ''} stage looks.
+              To keep your start look longer, switch back with the Variant Selector in the campaign.
+            </p>
+          )
+        })}
         <div className="play-review">
           <div>
             {GROUPS.map(([title, f]) => {
