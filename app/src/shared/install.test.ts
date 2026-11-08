@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { archivesFor, catalogPackName, downloadHints, installSourceFor, packsToFetch, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
+import { archivesFor, catalogPackName, downloadHints, hintsLeft, installSourceFor, neededParts, packsToFetch, missingPacks, packHints, pickDownloads, wantedPacks } from './install'
 
 function mod(id: string, sources: Mod['sources']): Mod {
   return { id, name: id, authors: [], kind: 'units', summary: '', tags: [], sources, packs: [], relations: [], curation: { lastChecked: '', confidence: 'high' } }
@@ -188,5 +188,28 @@ describe('packsToFetch', () => {
   })
   it('falls back to the template pack without a list of missing files', () => {
     expect(packsToFetch(soboro, 'st2.pack', undefined)).toEqual(['st2.pack'])
+  })
+})
+
+describe('a mod installed in part', () => {
+  const m = { id: 'x', packs: [
+    { file: 'skin_a.pack', from: 'download', exclusiveGroup: 'skin', note: 'Skin' }, { file: 'skin_b.pack', from: 'download', exclusiveGroup: 'skin', note: 'Skin' },
+    { file: 'hair_a.pack', from: 'download', exclusiveGroup: 'hair', note: 'Hair' }, { file: 'hair_b.pack', from: 'download', exclusiveGroup: 'hair', note: 'Hair' },
+    { file: 'base.pack', from: 'download' }, { file: 'weapon.pack', from: 'download', optional: true }
+  ] } as unknown as Mod
+
+  it('says which parts are still needed, also when only one file is missing', () => {
+    expect(neededParts(m, missingPacks(m, undefined, [{ file: 'skin_a.pack' }, { file: 'base.pack' }]).map((p) => p.file))).toEqual(['Hair (one of 2)'])
+    expect(neededParts(m, ['skin_a.pack', 'hair_a.pack', 'base.pack'])).toEqual(['Skin (one of 2)', 'Hair (one of 2)', 'base.pack'])
+    expect(neededParts(undefined, ['free.pack'])).toEqual(['free.pack'])
+    expect(neededParts(m, undefined)).toEqual([])
+  })
+
+  it('a download window counts another version of a part as done, and only that', () => {
+    const hints = packHints(m, ['skin_a.pack', 'hair_a.pack'])
+    expect(hintsLeft(hints, new Set()).map((h) => h.name)).toEqual(['skin_a.pack', 'hair_a.pack'])
+    expect(hintsLeft(hints, new Set(['skin_b.pack'])).map((h) => h.name)).toEqual(['hair_a.pack'])
+    expect(hintsLeft(hints, new Set(['skin_a.pack', 'skin_a.pack'])).map((h) => h.name)).toEqual(['hair_a.pack'])
+    expect(hintsLeft(hints, new Set(['skin_b.pack', 'hair_b.pack']))).toEqual([])
   })
 })

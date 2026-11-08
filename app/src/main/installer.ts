@@ -7,7 +7,7 @@ import { app, BrowserWindow, session, type DownloadItem } from 'electron'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
-import { catalogPackName, pickDownloads, type DownloadRow, type FileHint } from '@shared/install'
+import { catalogPackName, pickDownloads, type DownloadRow, type FileHint, hintsLeft } from '@shared/install'
 import type { PackRef } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress } from '@shared/api'
 
@@ -252,7 +252,7 @@ export function downloadFromNexus(url: string, dataPath: string, modId: string |
     ? ' Each is installed automatically; this window closes when everything is installed.'
     : ' It is installed automatically and this window closes; for another file of this mod, start the download again.'
   const guide = guideScript(NEXUS_LOGIN, file + closes, NEXUS_SIGNED_IN)
-  return downloadInWindow({ url, partition: 'persist:nexus', title: 'Nexus Mods – pick the file to install', banner: guide + markNexusScript(hints) }, dataPath, modId, parent, wanted.length ? { packs: wanted } : { files: 1 })
+  return downloadInWindow({ url, partition: 'persist:nexus', title: 'Nexus Mods – pick the file to install', banner: guide + markNexusScript(hints) }, dataPath, modId, parent, wanted.length ? { hints } : { files: 1 })
 }
 
 /**
@@ -290,10 +290,10 @@ const markNexusScript = (hints: FileHint[]) => `;(async () => {
 })()`
 
 /**
- * What a download window waits for before it closes: these packs (Nexus, names known), or a number of
- * downloaded files (LoversLab). Closing the window earlier keeps what was installed so far.
+ * What a download window waits for before it closes: the wanted files (Nexus, names known; another version of the same
+ * part will do), or a number of downloaded files (LoversLab). Closing the window earlier keeps what was installed so far.
  */
-type WindowNeeds = { packs: string[] } | { files: number }
+type WindowNeeds = { hints: FileHint[] } | { files: number }
 
 function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, needs: WindowNeeds = { files: 1 }): Promise<InstallResult> {
   const { url } = site
@@ -328,8 +328,14 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
         if (r.ok) await rm(target, { force: true })
         results.push(r)
         const got = new Set(results.flatMap((x) => x.packs.map((p) => basename(p).toLowerCase())))
-        const complete = 'packs' in needs ? needs.packs.every((p) => got.has(p.toLowerCase())) : results.length >= needs.files
-        if (complete || !r.ok) finish(combined())
+        const left = 'hints' in needs ? hintsLeft(needs.hints, got) : []
+        const complete = 'hints' in needs ? !left.length : results.length >= needs.files
+        if (complete || !r.ok) return finish(combined())
+        // More to come: say what was done and what is still missing, or the player takes the same file again.
+        if (left.length && !win.isDestroyed()) {
+          const text = `${r.message}. Still needed: ${left.map((h) => (h.note ? `${h.note} (${h.name})` : h.name)).join(', ')}. Click “Manual download” on the file marked for it; this window closes when everything is installed.`
+          void win.webContents.executeJavaScript(`(() => { const b = document.getElementById('wh3lmm-file'); if (b) b.textContent = ${JSON.stringify(text)} })()`).catch(() => {})
+        }
       })
     }
     ses.on('will-download', onDownload)

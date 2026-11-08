@@ -157,6 +157,33 @@ export interface FileHint {
   note?: string
   /** The profile uses this file. */
   wanted: boolean
+  /** Files of one group are versions of the same part: any of them will do. */
+  group?: string
+}
+
+/**
+ * What a mod still lacks, in the player's words: "Hair (one of 4)" for a part that comes in versions, else the file's
+ * name. A mod can be installed in part (a skin, but not the hair it needs), and the row has to say so.
+ */
+export function neededParts(mod: Mod | undefined, need: string[] | undefined): string[] {
+  const out: string[] = []
+  const seen = new Set<string>()
+  for (const f of need ?? []) {
+    const ref = mod?.packs.find((p) => p.file.toLowerCase() === f.toLowerCase())
+    if (ref?.exclusiveGroup) {
+      if (seen.has(ref.exclusiveGroup)) continue
+      seen.add(ref.exclusiveGroup)
+      const n = mod!.packs.filter((p) => p.exclusiveGroup === ref.exclusiveGroup).length
+      out.push(`${ref.note ?? f}${n > 1 ? ` (one of ${n})` : ''}`)
+    } else out.push(ref?.note ?? f)
+  }
+  return out
+}
+
+/** Of the wanted files of a download window, those still missing: another version of the same part counts as done. */
+export function hintsLeft(hints: FileHint[], got: Set<string>): FileHint[] {
+  const has = (h: FileHint) => got.has(h.name.toLowerCase())
+  return hints.filter((h) => h.wanted && !has(h) && !(h.group && hints.some((x) => x.group === h.group && has(x))))
 }
 
 /**
@@ -192,7 +219,7 @@ export function packHints(mod: Mod, wanted?: string[]): FileHint[] {
     else if (p.optional) used = false
     else if (p.exclusiveGroup) used = !groups.has(p.exclusiveGroup) && groups.add(p.exclusiveGroup).size > 0
     else used = true
-    return { name: p.file, note: p.note, wanted: used }
+    return { name: p.file, note: p.note, wanted: used, ...(p.exclusiveGroup ? { group: p.exclusiveGroup } : {}) }
   })
 }
 
