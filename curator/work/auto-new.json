@@ -1,5 +1,146 @@
 {
- "mods": [],
+ "mods": [
+  {
+   "id": "ll-52722",
+   "name": "Hef Unit Upgrades ATB Patch 1.0.0",
+   "authors": [
+    "Kylles"
+   ],
+   "kind": "units",
+   "summary": "This is my first proper (sub)mod, I triple checked everything but let me know if there's an issue !",
+   "description": "This is my first proper (sub)mod, I triple checked everything but let me know if there's an issue !\n\n*Automatic entry from the LoversLab page; not reviewed yet.*",
+   "tags": [],
+   "sources": {
+    "loverslab": {
+     "fileId": "52722",
+     "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/",
+     "version": null,
+     "updated": "2026-11-09T08:48:33Z",
+     "category": "mods"
+    }
+   },
+   "packs": [],
+   "relations": [
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "2870899314"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3644437727"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3815990781"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "2897366143"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3566849815"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3497485732"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3501984780"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3832569070"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3829276482"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3810275955"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/52722-hef-unit-upgrades-atb-patch/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-11-09",
+    "confidence": "low",
+    "openQuestions": [
+     "Automatic entry: requirements, kind and description need review."
+    ]
+   }
+  }
+ ],
  "external": [],
  "notes": []
 }
