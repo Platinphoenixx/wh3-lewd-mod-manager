@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T20:04:04+00:00",
+  "generatedAt": "2026-11-10T20:24:18+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -59606,7 +59606,7 @@
         "Sulivarace"
       ],
       "kind": "reskin",
-      "summary": "Wood Elf characters, Sulivarace style (Ariel first).",
+      "summary": "Sulivarace's Wood Elf characters: Ariel in the main file; Spellsingers (with or without clothes) and a Spellweaver lord as separate files.",
       "tags": [
         "wood elves",
         "ariel"
@@ -59635,7 +59635,7 @@
         {
           "file": "wood_elf_party.pack",
           "from": "download",
-          "note": "Main file, no requirements"
+          "note": "Ariel (main file)"
         },
         {
           "file": "Singer_party.pack",
@@ -59663,12 +59663,12 @@
         "lastChecked": "2026-11-01",
         "confidence": "medium",
         "openQuestions": [
-          "The clothed spellsinger download shows no file list on Nexus; its pack name is unknown.",
           "Read on the Nexus mod page; not checked in game."
         ]
       },
       "installNotes": [
-        "Each file is independent."
+        "Each file is independent.",
+        "The Spellsinger files share 27 files (models and portraits) with Endo's Combined Faction Reskins, which also dresses the Spellsingers: the pack loaded higher wins. None of its files overlap [Endo] Wood Elves (pack comparison 2026-11-10)."
       ],
       "updated": "2024-08-16",
       "changesData": false,
