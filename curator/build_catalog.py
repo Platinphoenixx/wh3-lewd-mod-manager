@@ -329,6 +329,14 @@ def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
     held_back = lambda m: bool(major) and m.get("changesData") and (m.get("updated") or "9") < major and not ((m.get("confirmed") or "") >= major)
     live = lambda m: m.get("status") not in ("superseded", "abandoned") and not m.get("stopsGame") and not held_back(m)
     known = lambda t: ("mod" in t and t["mod"] in mods) or "mod" not in t
+
+    def advice(r: dict, lord: str) -> dict:
+        # A mod that treats a lady the player plays herself differently says so for her ("played" / "playedNote").
+        note = r.get("note") or ""
+        if lord in (r.get("played") or []) and r.get("playedNote"):
+            note = f"{note}; {r['playedNote']}" if note else r["playedNote"]
+        return {"target": r["target"], **({"note": note} if note else {})}
+
     out = []
     for lord in doc["lords"]:
         al = aliases(lord)
@@ -353,7 +361,7 @@ def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
             "coverMods": [m["id"] for m in looks[:3]],
             "source": {"type": "wiki", "url": doc["_source"]},
             "entries": [],
-            "recommends": [r for r in (doc.get("recommends") or []) + ((doc.get("factionRecommends") or {}).get(tag) or []) if known(r["target"])],
+            "recommends": [advice(r, name) for r in (doc.get("recommends") or []) + ((doc.get("factionRecommends") or {}).get(tag) or []) if known(r["target"])],
             "avoid": [r for r in (doc.get("factionAvoid") or {}).get(tag) or [] if known(r["target"])],
         })
     return out
@@ -1446,7 +1454,7 @@ def main():
     for m in mods.values():
         stems = [(p["file"], norm_pack(p["file"])) for p in m.get("packs") or []]
         for r in m.get("relations") or []:
-            if r["kind"] not in ("requires", "incompatible") or not r.get("condition") or r.get("whenPack"):
+            if r["kind"] not in ("requires", "incompatible", "recommends", "optional") or not r.get("condition") or r.get("whenPack"):
                 continue
             cond = re.sub(r"[^a-z0-9]", "", r["condition"].lower())
             hits = sorted((st for st in stems if len(st[1]) >= 5 and st[1] in cond), key=lambda st: -len(st[1]))

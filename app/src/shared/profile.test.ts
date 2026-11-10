@@ -71,6 +71,22 @@ describe('candidates', () => {
   })
 })
 
+describe('options of a mod with versions', () => {
+  it('offers what holds for one version only while the list loads that version', () => {
+    const c: Catalog = { ...catalog, mods: [...catalog.mods,
+      mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }],
+        relations: [
+          { kind: 'recommends', target: { mod: 'unrelated' }, condition: 'with the full version', whenPack: 'full.pack', source: src },
+          { kind: 'recommends', target: { mod: 'ui-mod' }, source: src }] }),
+      mod('cb-addon', { kind: 'submod', relations: [{ kind: 'requires', target: { mod: 'cb' }, pack: 'full.pack', source: src }] })] }
+    const ix = buildIndex(c)
+    const tied = (variants?: Record<string, Record<string, string>>) => candidates(c, ix, preset, { extras: ['mod:cb'], removed: [], variants })
+      .filter((x) => x.group === 'recommended' && x.reasons.some((r) => /cb/.test(r))).map((x) => x.key).sort()
+    expect(tied()).toEqual(['mod:ui-mod']) // the first version (light) is the one an added mod loads
+    expect(tied({ 'mod:cb': { v: 'full.pack' } })).toEqual(['mod:cb-addon', 'mod:ui-mod', 'mod:unrelated'])
+  })
+})
+
 describe('alternatives', () => {
   it('marks other members of an exclusive group as alternatives once one is in the profile', () => {
     const cat: Catalog = {

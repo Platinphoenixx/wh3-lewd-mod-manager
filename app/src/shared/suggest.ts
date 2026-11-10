@@ -23,6 +23,8 @@ export interface Suggestion {
   tied: boolean
   /** For the template's character or faction. */
   fits: boolean
+  /** It fits only because it works with every faction (an all-faction hero, a loading-screen or UI replacer). */
+  anyFaction?: boolean
   /** Reskins in the profile it would replace (same character, last loaded wins). */
   replaces?: string[]
   /** In how many community lists for the same character that fit this one. */
@@ -112,9 +114,12 @@ export function suggestForProfile(
   for (const m of catalog.mods) for (const p of m.playAs ?? []) characters.set(norm(p.character), p.character)
   // Lords played in the game's own campaign have no mod that names them as playable; their template does.
   for (const p of catalog.presets) if (p.origin === 'vanilla') for (const c of p.playAs) characters.set(norm(c), p.playAs[0])
+  // For a lord in the game's own campaign the army's look is one of the two choices: a pack that changes the army
+  // counts for it whatever its tags say (Endo's Combined pack names no faction).
   const themeOf = (m: Mod) => [
     ...m.tags.map(norm).filter((t) => FACTIONS[t] || characters.has(t)).map((t) => FACTIONS[t] ?? characters.get(t)!),
-    ...(m.playAs ?? []).map((p) => p.character)
+    ...(m.playAs ?? []).map((p) => p.character),
+    ...(preset.origin === 'vanilla' ? (m.factionLook ?? []).map((f) => FACTIONS[norm(f)] ?? f) : [])
   ]
   // Only the template's own mods set it: an add-on the player switched on (the Community Beastmen Slaanesh version,
   // tagged for the Slaanesh lords that use it) must not turn a Beastmen list into a Slaanesh one.
@@ -178,7 +183,11 @@ export function suggestForProfile(
     const general = m.tags.includes('general')
     const k = inLists.get(m.id) ?? 0
     const ks = inSame.get(m.id) ?? 0
-    if (general ? !(k || fits.length || tie) : !(ks || tie || forChar || fits.length)) continue
+    // Made for no faction in particular (the catalog's "all factions" / "many factions" tags: an all-faction hero,
+    // unit cards for most races): it goes with any list, as a last reason.
+    const broad = m.tags.map(norm).find((t) => t === 'all factions' || t === 'many factions')
+    const everywhere = !general && !forChar && !fits.length && !tie && !ks && !!broad
+    if (general ? !(k || fits.length || tie) : !(ks || tie || forChar || fits.length || everywhere)) continue
 
     const subs = Math.max(0, ...(m.sources.steam ?? []).map((s) => s.subscribers ?? 0))
     const downloads = m.sources.loverslab?.downloads ?? 0
@@ -192,6 +201,7 @@ export function suggestForProfile(
     if (tie) { score += 15; reasons.unshift(tie) }
     if (forChar) { score += 10; reasons.push(`For ${forChar}`) }
     else if (fits.length) { score += 6; reasons.push(`For ${fits.slice(0, 2).join(', ')}`) }
+    else if (everywhere) { score += 2; reasons.push(broad === 'all factions' ? 'Works with every faction' : 'Works with most factions') }
     if (subs) { score += Math.log10(subs); reasons.push(`${short(subs)} Workshop subscribers`) }
     else if (downloads) { score += Math.log10(downloads) + 0.5; reasons.push(`${short(downloads)} LoversLab downloads`) }
     else if (nexus) { score += Math.log10(nexus) + 0.5; reasons.push(`${short(nexus)} Nexus downloads`) }
@@ -208,7 +218,7 @@ export function suggestForProfile(
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     // An army's look is chosen with the other looks, whatever its tags say (Endo's Combined pack is tagged general).
     out[general && !m.factionLook?.length ? 'general' : 'lewd'].push({
-      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), sameLists: ks, ...(replaces.length ? { replaces } : {}), ...(until ? { until } : {})
+      key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length || everywhere), ...(everywhere ? { anyFaction: true } : {}), sameLists: ks, ...(replaces.length ? { replaces } : {}), ...(until ? { until } : {})
     })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
@@ -259,12 +269,13 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   const parent = list.map((_, i) => i)
   const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])))
   const notes = new Map<number, string>()
-  const join = (a: number, b: number, note: string) => {
+  // `names` is for the reason that says what the choice is about: an army's look stays one, even when two of its
+  // options are also marked incompatible (Endo's Combined pack and Endo's single faction packs).
+  const join = (a: number, b: number, note: string, names = false) => {
     const ra = find(a)
     const rb = find(b)
-    if (ra === rb) return
-    parent[rb] = ra
-    notes.set(ra, notes.get(ra) ?? notes.get(rb) ?? note)
+    if (ra !== rb) parent[rb] = ra
+    notes.set(ra, names ? note : notes.get(ra) ?? notes.get(rb) ?? note)
   }
   for (const [i, sug] of list.entries()) {
     for (const r of sug.mod.relations) {
@@ -294,7 +305,7 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   for (const [i, sug] of list.entries()) {
     for (const f of sug.mod.factionLook ?? []) {
       const name = FACTIONS[norm(f)] ?? f
-      if (armies.has(name)) join(armies.get(name)!, i, `They all change how the ${name} army looks`)
+      if (armies.has(name)) join(armies.get(name)!, i, `They all change how the ${name} army looks`, true)
       else armies.set(name, i)
     }
   }

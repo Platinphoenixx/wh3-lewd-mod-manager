@@ -162,6 +162,28 @@ describe('lords in the game\'s own campaign', () => {
     expect(stepsFor(sisters, s.picks, true).map((x) => x.title)).toContain('Quality of life')
   })
 
+  it('offers what works with every faction in Everything only, an army pack without a faction tag as an army look, and English texts with a mod in another language', () => {
+    const c: Catalog = { ...vcat, mods: [...vcat.mods,
+      mod('angel', { tags: ['all factions'] }),
+      mod('summon', { tags: ['chinese', 'all factions'] }),
+      mod('summon-en', { kind: 'translation', tags: ['english'], relations: [{ kind: 'extends', target: { mod: 'summon' }, source: src }] }),
+      mod('summon-ko', { kind: 'translation', tags: ['korean'], relations: [{ kind: 'extends', target: { mod: 'summon' }, source: src }] }),
+      // Its tags name no faction; it holds the single pack too, so the two are marked incompatible.
+      mod('combined', { kind: 'reskin', tags: ['general'], factionLook: ['empire', 'wood elves'], relations: [{ kind: 'incompatible', target: { mod: 'endo-we' }, source: src }] })
+    ] }
+    const ix = buildIndex(c)
+    const sub = subjectsOf(c, ix)[0]
+    const tiers = tiersFor(c, ix, sub)
+    expect(tiers.map((t) => [t.id, t.extras])).toEqual([
+      ['essentials', []], ['extended', ['mod:events']], ['everything', ['mod:events', 'mod:angel', 'mod:summon', 'mod:summon-en']]
+    ])
+    const s = suggestedFor(c, ix, c.presets[0])
+    expect(s.lewd.find((x) => x.key === 'mod:angel')).toMatchObject({ fits: true, anyFaction: true, reasons: ['Works with every faction'] })
+    const army = s.picks.find((g) => /army looks$/.test(g.note))!
+    expect([army.note, army.pick.map((x) => x.key)]).toEqual(['They all change how the Wood Elves army looks', ['mod:endo-we', 'mod:combined', 'mod:zeta-we']])
+    expect(stepsFor(sub, s.picks, true, true).map((x) => x.title)).toEqual(["Sisters of Twilight's look", "Your army's look", 'Review and install'])
+  })
+
   it('writes down the usual version of an added mod with versions', () => {
     const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
     const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }

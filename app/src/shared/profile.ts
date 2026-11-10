@@ -167,13 +167,17 @@ function isSuperseded(index: CatalogIndex, key: string): boolean {
  * Everything the user could add to a profile, grouped by how closely it relates to it.
  * Translations are offered only when they translate something in the profile.
  */
-export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>): Candidate[] {
+export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported' | 'variants'>): Candidate[] {
   const removed = new Set(profile.removed)
   const chosen = [...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras]
   // What the extras pull in is part of the profile too (a conflict with SFO counts when a switched-on patch needs SFO).
   const known = new Map<string, string[]>()
   preset.entries.forEach((e, i) => { const k = baseKeys(preset)[i]; known.set(k, [...(known.get(k) ?? []), e.pack]) })
+  // The version the player chose for an added mod is the one it loads (resolveProfile does the same).
+  for (const k of profile.extras) if (!known.has(k) && profile.variants?.[k]) known.set(k, Object.values(profile.variants[k]))
   const packsOf = defaultPacksOf(index, preset.playAs, known)
+  // A relation that holds for one version of a mod ("with the full version") counts while the list loads that version.
+  const loads = (key: string, pack?: string) => !pack || !!packsOf(key)?.some((p) => p.toLowerCase() === pack.toLowerCase())
   // (An imported list pulls nothing in: what its mods miss is not part of it, so nothing is offered as an add-on of that.)
   const asPlayed = new Set(profile.imported?.order ?? [])
   const current = [...chosen, ...missingDependencies(index, chosen.filter((k) => !asPlayed.has(k)), new Set(chosen), packsOf).keys()]
@@ -226,7 +230,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   for (const k of current) {
     const from = nameOf(catalog, index, k)
     for (const r of relationsOf(index, k)) {
-      if (OPTIONAL_KINDS.includes(r.kind)) add(targetKey(r.target), 'recommended', `${r.kind === 'optional' ? 'Optional for' : 'Recommended by'} ${from}${r.note ? `: ${r.note}` : ''}`)
+      if (OPTIONAL_KINDS.includes(r.kind) && loads(k, r.whenPack)) add(targetKey(r.target), 'recommended', `${r.kind === 'optional' ? 'Optional for' : 'Recommended by'} ${from}${r.note ? `: ${r.note}` : ''}`)
     }
   }
   // What the community behind a setup recommends with it, and what runs against its point (shown with the reason).
@@ -234,14 +238,14 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
   for (const x of preset.avoid ?? []) add(targetKey(x.target), 'other', `Not for this setup: ${x.note}`)
   for (const m of catalog.mods) {
     for (const r of m.relations) {
-      if (r.kind === 'extends' && inProfile.has(targetKey(r.target))) {
+      if (r.kind === 'extends' && inProfile.has(targetKey(r.target)) && loads(targetKey(r.target), r.pack)) {
         add(`mod:${m.id}`, 'recommended', `Extends ${nameOf(catalog, index, targetKey(r.target))}`)
       }
       // An add-on that needs a profile mod is built on it too (Community Beastmen slaves for Marks of the Wild), unless
       // what it needs is only a framework or shared assets many unrelated mods use, or it is a campaign of its own.
       const base = r.kind === 'requires' && 'mod' in r.target ? index.mods.get(r.target.mod) : undefined
       if (base && inProfile.has(`mod:${base.id}`) && !['framework', 'utility', 'assets'].includes(base.kind) &&
-          !['campaign', 'progression'].includes(m.kind) && !r.condition) {
+          !['campaign', 'progression'].includes(m.kind) && !r.condition && loads(`mod:${base.id}`, r.pack)) {
         add(`mod:${m.id}`, 'recommended', `Extends ${base.name}`)
       }
     }

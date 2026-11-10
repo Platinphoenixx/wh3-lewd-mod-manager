@@ -868,7 +868,8 @@
         "reskin",
         "wood elves",
         "sisters of twilight"
-      ]
+      ],
+      "summary": "Dark Elf styled reskin of the Sisters of Twilight, shared in the submods channel of LazyIcarus's Hub (2026-04-16). It replaces the same model definitions and portraits as the other Sisters of Twilight reskins: use one."
     },
     {
       "id": "ll-34542",
@@ -887,6 +888,178 @@
           "note": "Slaanesh factions version (outdated since the patch of 2026-05-21; use the fixed pack of the Dechala fix entry)",
           "archive": "@n_SlaaneshVassals"
         }
+      ]
+    },
+    {
+      "id": "ll-27663",
+      "_note": "Script Corrupted_Drycha戴查氏族长.lua (Workshop pack of 2026-10-28): the listener ChieftainUnlock calls kill_ariel() when the ariel recruit ritual starts; ChieftainRecruitAI performs that ritual for an AI Drycha from rank 10. kill_ariel() goes through wh_dlc05_wef_wood_elves, wh_dlc05_wef_argwylon, wh2_dlc16_wef_sisters_of_twilight and wh2_dlc16_wef_drycha and sets character_unlocking.character_data.ariel.has_spawned. The game's wh3_main_legendary_characters.lua gives Ariel to the Sisters, Orion or Durthu after their first forest ritual.",
+      "knownIssues+": [
+        "It takes the game's own Ariel away from the Wood Elves: when Drycha recruits Ariel as her first chieftain – an AI Drycha does so as soon as she is rank 10 – Ariel is removed from all four Wood Elf factions and can no longer be unlocked. Playing Orion, Durthu or the Sisters of Twilight you lose her, or never get her (script read 2026-11-10)."
+      ]
+    },
+    {
+      "id": "ll-36630",
+      "_note": "Script @n_slaaneshvictories_script.lua: is_corrupted() is true when a character of the lady's subtype is in the player's faction; the turn-start listener then raises her count and triggers <short>_sub_1..3.",
+      "installNotes+": [
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: her three 'subjugated' events come on your first three turns and give her its corruption traits (script read 2026-11-10)."
+      ]
+    },
+    {
+      "id": "ll-34542",
+      "_note": "Script @n_slaaneshvassals_non_slaanesh_script.lua: is_corrupted() is true for a lady whose subtype is in the player's faction, so her n_gen_<short>_ dilemmas can be drawn from turn 1.",
+      "installNotes+": [
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), her own dilemmas come up from the start: the mod counts a lady in your faction as vassalized or confederated (script read 2026-11-10)."
+      ]
+    },
+    {
+      "id": "steam-3556592733",
+      "_note": "Pack comparison 2026-11-10: 28 of its 32 files are also in Lin_Corrupted_Drycha.pack, 27 of them identical (the corrupted_drycha_0 model and textures, the faction leader portrait); its own are wef_drycha.variantmeshdefinition and three portraits.",
+      "installNotes+": [
+        "Next to Lin's Corrupted Drycha it adds nothing but the timing: 27 of its files are identical copies of that mod's, and it gives Drycha the model from the first turn instead of from her first stage (pack comparison 2026-11-10)."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      }
+    },
+    {
+      "id": "nx-4",
+      "knownIssues+": [
+        "Shares 10 Bladesinger texture files with Community Beastmen (Light and full version), with different content: the mod loaded higher decides how both mods' Bladesingers are painted (pack comparison 2026-11-10)."
+      ]
+    },
+    {
+      "id": "nx-5",
+      "knownIssues+": [
+        "Shares 35 body texture files with Community Beastmen (Light and full version), 14 of them with different content: the mod loaded higher decides how both mods' models that use them are painted (pack comparison 2026-11-10)."
+      ]
+    },
+    {
+      "id": "ll-24914",
+      "_note": "Its page lists 14 factions (Empire, Bretonnia, the three elf races, Norsca, Kislev, Cathay, Chaos and its four gods, Vampire Counts). Its Wood Elf unit icons are also in [Endo] Wood Elves (72 shared files), which loads above it as a reskin the player picked.",
+      "tags+": [
+        "many factions"
+      ]
+    },
+    {
+      "id": "nx-117",
+      "_note": "One loading-screen pack per faction and a complete version (file list).",
+      "tags+": [
+        "all factions"
+      ]
+    },
+    {
+      "id": "ll-49991",
+      "_note": "A pause-menu image: nothing in it depends on the faction played.",
+      "tags+": [
+        "all factions"
+      ]
+    },
+    {
+      "id": "ll-43852",
+      "_note": "Its page: a summoning mechanic for all factions.",
+      "tags+": [
+        "all factions"
+      ]
+    },
+    {
+      "id": "ll-49568",
+      "_note": "About 3,400 flag images under ui/flags, 143 of them Wood Elf ones: flags of most factions.",
+      "tags+": [
+        "many factions"
+      ]
+    },
+    {
+      "id": "dc-lin-allinone-en-translation-lin-allinone-en-pack",
+      "_note": "The pack holds only text files; its names cover Corrupted Ascension, Drycha, Fay and Summon Servant (the mods its load-order rule already names). 'extends' lets the app offer it with each of them. The outdated Workshop copy 3676463688 is no longer a source of this entry (discord-mods.json), so no list fetches it.",
+      "tags+": [
+        "translation",
+        "english"
+      ],
+      "relations+": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "English text for Corrupted Ascension",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27663"
+          },
+          "note": "English text for Corrupted Drycha",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32476"
+          },
+          "note": "English text for Corrupted Fay",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-43852"
+          },
+          "note": "English text for Summon Servant",
+          "source": {
+            "type": "discord"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ll-32476",
+      "_note": "Its page and texts are Chinese like Lin's other mods (English in the Lin AllInOne translation).",
+      "tags+": [
+        "chinese"
+      ]
+    },
+    {
+      "id": "steam-3621449095",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "factionLook": [
+        "empire"
+      ]
+    },
+    {
+      "id": "steam-3616234518",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "factionLook": [
+        "high elves"
+      ]
+    },
+    {
+      "id": "steam-3647419004",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "factionLook": [
+        "bretonnia"
+      ]
+    },
+    {
+      "id": "steam-3301596500",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "factionLook": [
+        "kislev"
+      ]
+    },
+    {
+      "id": "steam-3679399151",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "factionLook": [
+        "cathay"
       ]
     }
   ]

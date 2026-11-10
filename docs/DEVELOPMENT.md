@@ -22,7 +22,13 @@ community contributions. App UI and catalog texts are English.
     every legendary lord with race, faction and DLC from the Total War wiki; the build makes a template for each lord the catalog
     has a look for that the app would offer, and none once a campaign template for the lord exists) have no mods of their own:
     sizes Looks (the lord's look and the army's look), Lewd add-ons (the file's `recommends`/`factionRecommends`, recommended),
-    Everything; `factionAvoid` (ATB and Alarielle's Wood Elf mechanics for Wood Elf lords) are never suggested. A reskin with
+    Everything; `factionAvoid` (ATB and Alarielle's Wood Elf mechanics for Wood Elf lords) are never suggested. A recommendation's
+    `played`/`playedNote` adds a sentence for the lords it names (the Slaanesh Expanded mods count a lady the player plays herself
+    as already won over). What works with any faction (tags `all factions` / `many factions`: an all-faction hero, loading screens,
+    unit cards) is offered for every list ("Works with every faction") but fills only these lords' Everything size; a setup's
+    sizes stay what its community plays. Extended and Everything bring the catalog's English translation (tag `english`,
+    `extends`) of a mod written in another language (tags `chinese`, `korean`, `russian`) along (`withEnglish`). Lin's Corrupted
+    Drycha is no recommendation for Wood Elf lords: its script removes the game's Ariel from every Wood Elf faction. A reskin with
     `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
     one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
@@ -51,7 +57,9 @@ community contributions. App UI and catalog texts are English.
     a data pack the app installed for a current mod that lists it as a download is no stale copy of a Workshop item with
     the same name (Community Beastmen light from the author vs. the older Workshop copy).
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
-    alternatives (exclusiveGroup), load order (tested). A requirement counts as met by a mod in the profile that
+    alternatives (exclusiveGroup), load order (tested). What a mod recommends for one of its versions only (`Relation.whenPack`,
+    Community Beastmen's Beastmen-campaign add-ons) and an add-on that needs one version (`Relation.pack`) are offered while the
+    list loads that version, the chosen one of an added mod (`Profile.variants`). A requirement counts as met by a mod in the profile that
     `supersedes` it (Soil's merged pack for Soil's Corrupted Units); conflicts of an option count against what the
     profile's extras pull in too. A `requires` relation can name the `pack` it needs of a mod with versions (the
     Community Beastmen Slaanesh version needs the full, not the light pack); that entry then loads exactly that pack.

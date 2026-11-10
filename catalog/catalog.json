@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T17:25:53+00:00",
+  "generatedAt": "2026-11-10T17:57:28+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -225,7 +225,8 @@
         ]
       },
       "knownIssues": [
-        "Dismemberment and blood do not work with this unit."
+        "Dismemberment and blood do not work with this unit.",
+        "Shares 10 Bladesinger texture files with Community Beastmen (Light and full version), with different content: the mod loaded higher decides how both mods' Bladesingers are painted (pack comparison 2026-11-10)."
       ],
       "support": [
         {
@@ -286,7 +287,8 @@
         ]
       },
       "knownIssues": [
-        "Dismemberment and blood do not work with this unit."
+        "Dismemberment and blood do not work with this unit.",
+        "Shares 35 body texture files with Community Beastmen (Light and full version), 14 of them with different content: the mod loaded higher decides how both mods' models that use them are painted (pack comparison 2026-11-10)."
       ],
       "support": [
         {
@@ -1828,6 +1830,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "bretonnia"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -1896,6 +1901,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "cathay"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -2373,6 +2381,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "empire"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -2639,6 +2650,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "high elves"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -2708,6 +2722,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "kislev"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -7129,10 +7146,13 @@
       ],
       "kind": "units",
       "tags": [
-        "mod",
-        "units"
+        "hero",
+        "alivia",
+        "nymeria",
+        "lyra",
+        "ymira"
       ],
-      "summary": "",
+      "summary": "MrDustV's revival of three of Alivia's character mods in one: the heroes Ymira, Nymeria and Lyra the Lioness with updated tables, repaired skills, new equipment and recruitment dilemmas (a rejected character can go to another faction).",
       "sources": {
         "steam": [
           {
@@ -7148,9 +7168,10 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "low",
+        "confidence": "medium",
         "openQuestions": [
-          "Known only from references; kind, dependencies and purpose unchecked."
+          "Does it replace the single mods Nymeria (9.0.3) and Lyra the Lioness, or clash with them when both are loaded? The page only calls it a merge of the three.",
+          "Which factions can recruit each character is not read from the pack."
         ]
       },
       "authorPages": [
@@ -7700,7 +7721,9 @@
       ],
       "kind": "assets",
       "summary": "Replaces loading screen images with AI-generated anime artwork.",
-      "tags": [],
+      "tags": [
+        "all factions"
+      ],
       "images": [
         {
           "url": "https://staticdelivery.nexusmods.com/mods/4717/images/117/117-1688397150-1976148861.png",
@@ -13725,7 +13748,9 @@
           "source": {
             "type": "discord",
             "url": "https://github.com/RealDeHess/CommunityBeastmen"
-          }
+          },
+          "condition": "with the full version (a Beastmen campaign)",
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "recommends",
@@ -13736,7 +13761,9 @@
           "source": {
             "type": "discord",
             "url": "https://github.com/RealDeHess/CommunityBeastmen"
-          }
+          },
+          "condition": "with the full version (a Beastmen campaign)",
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "recommends",
@@ -13747,7 +13774,9 @@
           "source": {
             "type": "discord",
             "url": "https://github.com/RealDeHess/CommunityBeastmen"
-          }
+          },
+          "condition": "with the full version (a Beastmen campaign)",
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "recommends",
@@ -13758,7 +13787,9 @@
           "source": {
             "type": "discord",
             "url": "https://github.com/RealDeHess/CommunityBeastmen"
-          }
+          },
+          "condition": "with the full version (a Beastmen campaign)",
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "recommends",
@@ -13769,7 +13800,9 @@
           "source": {
             "type": "discord",
             "url": "https://github.com/RealDeHess/CommunityBeastmen"
-          }
+          },
+          "condition": "with the full version (a Beastmen campaign)",
+          "whenPack": "new_community_beastmen.pack"
         },
         {
           "kind": "incompatible",
@@ -20144,14 +20177,13 @@
       ],
       "relations": [],
       "installNotes": [
-        "Recommended by the Alarielle, Temptation's Bloom author for players who want Drycha's model changed without the Nurgle progression; Lin's Corrupted Drycha already brings the model."
+        "Recommended by the Alarielle, Temptation's Bloom author for players who want Drycha's model changed without the Nurgle progression; Lin's Corrupted Drycha already brings the model.",
+        "Next to Lin's Corrupted Drycha it adds nothing but the timing: 27 of its files are identical copies of that mod's, and it gives Drycha the model from the first turn instead of from her first stage (pack comparison 2026-11-10)."
       ],
       "curation": {
-        "lastChecked": "2026-11-02",
-        "confidence": "medium",
-        "openQuestions": [
-          "Whether it can run next to Lin's Corrupted Drycha is not stated."
-        ]
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
       },
       "status": "stable",
       "support": [
@@ -23917,7 +23949,8 @@
       "tags": [
         "unit cards",
         "ui",
-        "female"
+        "female",
+        "many factions"
       ],
       "sources": {
         "loverslab": {
@@ -33302,7 +33335,10 @@
         "Helion"
       ],
       "kind": "translation",
-      "tags": [],
+      "tags": [
+        "translation",
+        "english"
+      ],
       "summary": "Covers Corrupted Ascension, Drycha, Fay, Summon Servant (Scathach update 2026-10-09) and Integrated Strategies (2026-10-10). Used together with Lazy's framework in a working list posted in #morathi (local:Lin_AllInOne_en.pack next to Lazy's Corruption Framework/Compendium). Could not open the specific message 1421904439387754558 (too far back in history).",
       "sources": {
         "discord": [
@@ -33317,10 +33353,6 @@
             "title": "Lin_AllInOne_en.pack",
             "updated": "2026-11-05",
             "subscribers": 1984
-          },
-          {
-            "id": "3676463688",
-            "title": null
           }
         ]
       },
@@ -33330,14 +33362,49 @@
           "from": "steam",
           "steamId": "3718883838",
           "note": "The maintained copy (also uploaded on Discord)."
-        },
-        {
-          "file": "Lin_AllInOne_en.pack",
-          "from": "steam",
-          "steamId": "3676463688"
         }
       ],
       "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27171"
+          },
+          "note": "English text for Corrupted Ascension",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-27663"
+          },
+          "note": "English text for Corrupted Drycha",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-32476"
+          },
+          "note": "English text for Corrupted Fay",
+          "source": {
+            "type": "discord"
+          }
+        },
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-43852"
+          },
+          "note": "English text for Summon Servant",
+          "source": {
+            "type": "discord"
+          }
+        },
         {
           "kind": "requires",
           "target": {
@@ -33392,11 +33459,6 @@
         {
           "url": "https://images.steamusercontent.com/ugc/16284793419428846740/C5D3AD67FC03D05497D1EA75E96C5A2E310B84B8/",
           "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/14815482153417053818/17EF679E83D74C8764E587D43B0C237BB412DDDB/",
-          "kind": "screenshot",
           "source": "steam"
         }
       ],
@@ -49775,7 +49837,7 @@
         "wood elves",
         "sisters of twilight"
       ],
-      "summary": "Posted in #submods by a Modder-role member (2026-04-16). Changes the same Sisters of Twilight files as other reskins of them (for example the DOVAKIN series): use one.",
+      "summary": "Dark Elf styled reskin of the Sisters of Twilight, shared in the submods channel of LazyIcarus's Hub (2026-04-16). It replaces the same model definitions and portraits as the other Sisters of Twilight reskins: use one.",
       "sources": {
         "discord": [
           {
@@ -50746,6 +50808,7 @@
       ],
       "installNotes": [
         "Confederation feature needs the main mod AND the confederation submod",
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: her three 'subjugated' events come on your first three turns and give her its corruption traits (script read 2026-11-10).",
         "Made for playing a Slaanesh faction as an outside force corrupting the legendary lords: when you play one of the supported lords, the corruption and confederation events keep running for her and there is no option to disable them. No full support for non-Slaanesh player factions is planned (author)."
       ],
       "curation": {
@@ -50948,6 +51011,7 @@
       "installNotes": [
         "Both versions can be used together, or choose just one.",
         "Supports Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse, Sisters of Twilight, among others.",
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), her own dilemmas come up from the start: the mod counts a lady in your faction as vassalized or confederated (script read 2026-11-10).",
         "When playing a non-Slaanesh faction (for example Be'lakor) use the Non_Slaanesh_Factions variants of the Slaanesh Vassals and Victories packs; the wrong variant can crash or show dilemmas with the wrong currency. Swapping the variant mid-campaign is save safe (2026-09-14)."
       ],
       "curation": {
@@ -54091,7 +54155,9 @@
       ],
       "kind": "assets",
       "summary": "Replaces most banners on the campaign map and in the UI with AI-generated images (Stable Diffusion, character LoRAs); missing factions are to be added later.",
-      "tags": [],
+      "tags": [
+        "many factions"
+      ],
       "sources": {
         "loverslab": {
           "fileId": "49568",
@@ -55417,7 +55483,8 @@
       "tags": [
         "ui",
         "pause-menu",
-        "twitch-logo"
+        "twitch-logo",
+        "all factions"
       ],
       "sources": {
         "loverslab": {
@@ -61824,6 +61891,7 @@
         ]
       },
       "knownIssues": [
+        "It takes the game's own Ariel away from the Wood Elves: when Drycha recruits Ariel as her first chieftain – an AI Drycha does so as soon as she is rank 10 – Ariel is removed from all four Wood Elf factions and can no longer be unlocked. Playing Orion, Durthu or the Sisters of Twilight you lose her, or never get her (script read 2026-11-10).",
         "Event does not start: one battle against any Nurgle faction triggers the first quest, that faction becomes neutral and Drycha gets her new model",
         "Conflict with Lazy framework resolved by changing load order (user report 2026-05-17)",
         "Ritual key typos in lua (damsel_damsel_1..3 should be damsel_unit_1..3) reported 2026-10-15",
@@ -61919,7 +61987,9 @@
       ],
       "kind": "progression",
       "summary": "Adds a clothing/equipment variant system and 'corruption training' to the Fay Enchantress: wearing certain equipment for a long time unlocks corruption traits. Still in development, without corruption stages or story. Requires the 'Generic Framework' from the same developer circle.",
-      "tags": [],
+      "tags": [
+        "chinese"
+      ],
       "sources": {
         "loverslab": {
           "fileId": "32476",
@@ -62197,7 +62267,8 @@
         "heroes",
         "equipment",
         "generic-framework",
-        "chinese"
+        "chinese",
+        "all factions"
       ],
       "sources": {
         "loverslab": {
@@ -69345,13 +69416,6 @@
           }
         }
       ],
-      "modernized": [
-        {
-          "from": "Lin_AllInOne_en.pack",
-          "to": "Lin_AllInOne_en.pack",
-          "note": "Helion's Lin AllInOne English translation is on Steam (2026-08-26, updated 2026-10-09/10); it only contains translations, the original Lin mods stay required."
-        }
-      ],
       "launchTest": {
         "result": "main menu",
         "game": "9.0.5",
@@ -69665,13 +69729,13 @@
           "target": {
             "mod": "ll-34542"
           },
-          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords; she is one of the ladies it knows: played by you, her own dilemmas come up from the start"
         },
         {
           "target": {
             "mod": "ll-36630"
           },
-          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         },
         {
           "target": {
@@ -69866,13 +69930,13 @@
           "target": {
             "mod": "ll-34542"
           },
-          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords; she is one of the ladies it knows: played by you, her own dilemmas come up from the start"
         },
         {
           "target": {
             "mod": "ll-36630"
           },
-          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         },
         {
           "target": {
@@ -69973,13 +70037,13 @@
           "target": {
             "mod": "ll-34542"
           },
-          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords; she is one of the ladies it knows: played by you, her own dilemmas come up from the start"
         },
         {
           "target": {
             "mod": "ll-36630"
           },
-          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         },
         {
           "target": {
@@ -70140,7 +70204,7 @@
           "target": {
             "mod": "ll-36630"
           },
-          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         }
       ],
       "avoid": []
@@ -70279,25 +70343,19 @@
           "target": {
             "mod": "ll-34542"
           },
-          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords; she is one of the ladies it knows: played by you, her own dilemmas come up from the start"
         },
         {
           "target": {
             "mod": "ll-36630"
           },
-          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         },
         {
           "target": {
             "mod": "steam-3672266382"
           },
           "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
-        },
-        {
-          "target": {
-            "mod": "ll-27663"
-          },
-          "note": "Drycha falls to Nurgle as an AI story in a Wood Elf neighbour's campaign; at its end you can defeat her and confederate or vassalize her (its English text is in the Lin AllInOne translation)"
         }
       ],
       "avoid": [

@@ -144,6 +144,20 @@ export function suggestedFor(catalog: Catalog, index: CatalogIndex, preset: Pres
   return { lewd: singles(s.lewd), general: singles(s.general), picks: [...s.lewd, ...s.general].filter(isPickOne) }
 }
 
+const FOREIGN = ['chinese', 'korean', 'russian']
+
+/**
+ * The mods of a size plus the catalog's English translations of those written in another language (the app and its
+ * lists are English): Lin's Summon Servant comes with the Lin AllInOne translation, not with Chinese texts.
+ */
+export function withEnglish(catalog: Catalog, index: CatalogIndex, preset: Preset, keys: string[]): string[] {
+  const has = new Set([...baseKeys(preset), ...keys])
+  const foreign = (id: string) => has.has(`mod:${id}`) && !!index.mods.get(id)?.tags.some((t) => FOREIGN.includes(t.toLowerCase()))
+  const texts = catalog.mods.filter((t) => t.kind === 'translation' && !has.has(`mod:${t.id}`) && !['abandoned', 'superseded'].includes(t.status ?? '')
+    && t.tags.some((x) => x.toLowerCase() === 'english') && t.relations.some((r) => r.kind === 'extends' && 'mod' in r.target && foreign(r.target.mod)))
+  return [...keys, ...texts.map((t) => `mod:${t.id}`)]
+}
+
 export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject): Tier[] {
   const by = (o: Preset['origin']) => subject.presets.filter((p) => p.origin === o)
   const size = (p: Preset, extras: string[]) => resolveProfile(catalog, index, p, { extras, removed: [] }).entries.length
@@ -182,7 +196,9 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
     const army = ARMY.exec(g.note)?.[1]
     return army ? army.split(', ').some((f) => subject.factions?.includes(f)) : subject.characters.includes(LOOKS.exec(g.note)?.[1] ?? '')
   }).length
-  s.lewd = together(s.lewd)
+  // What merely works with every faction (an all-faction hero, loading screens) fills the sizes of a lord in the game's
+  // own campaign, which has no list of its own; a setup's sizes stay what its community plays, and the editor offers the rest.
+  s.lewd = together(s.lewd.filter((x) => base === vanilla || !x.anyFaction))
   s.general = together(s.general)
   // Extended is the template's own world: everything built on or recommended by its mods, then the best of what is
   // for its character or faction or used in lists for that character. A mod that is only popular in other characters'
@@ -195,11 +211,11 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   const recommended = more.filter((x) => x.reasons.some((r) => r.startsWith('Recommended for this setup'))).length
   const label = tiers[tiers.length - 1]?.name ?? base.name
   if (more.length) {
-    const extras = more.map((x) => x.key)
+    const extras = withEnglish(catalog, index, base, more.map((x) => x.key))
     tiers.push({ id: 'extended', name: base === vanilla ? 'Lewd add-ons' : 'Extended', preset: base, extras, size: size(base, extras),
       lines: [`Everything in ${label}`,
         // A setup whose community names what goes with it says so: that is what Extended is made of.
-        base === vanilla ? `${more.length} add-ons recommended for the game's own campaign: events, stories, animations`
+        base === vanilla ? `${more.length} add-ons recommended for the game's own campaign: events and animations`
           : recommended ? `${more.length} more mods, ${recommended} of them recommended by its community` : `${more.length} more mods that fit ${subject.name}, most used first`,
         s.lewd.slice(0, 3).map((x) => x.mod.name).join(', ')].filter(Boolean),
       proof: 'Each add-on checked against the list · not played together yet', tested: false, recommended: base === vanilla })
@@ -207,7 +223,7 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   const everything = together([...s.lewd, ...top(s.general)]).map((x) => x.key)
   // Only when it adds something: a setup whose community names everything it goes with has no bigger size.
   if ((s.lewd.length > SUGGESTED || base === vanilla) && everything.length > more.length) {
-    const extras = everything
+    const extras = withEnglish(catalog, index, base, everything)
     tiers.push({ id: 'everything', name: 'Everything', preset: base, extras, size: size(base, extras),
       lines: [`Everything in ${base === vanilla ? tiers[tiers.length - 1].name : label}`, `Every lewd mod that works with it (${s.lewd.length})`, 'You pick one look per character on the way'],
       proof: 'No known conflicts · nobody has played all of it together', tested: false, recommended: false })

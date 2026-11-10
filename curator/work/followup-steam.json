@@ -1861,6 +1861,27 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       }
+    },
+    {
+      "id": "steam-3832569070",
+      "_note": "Workshop page read 2026-11-10 (raw/steam_items.json). Not launch-tested; its pack is not analysed.",
+      "kind": "units",
+      "summary": "MrDustV's revival of three of Alivia's character mods in one: the heroes Ymira, Nymeria and Lyra the Lioness with updated tables, repaired skills, new equipment and recruitment dilemmas (a rejected character can go to another faction).",
+      "tags": [
+        "hero",
+        "alivia",
+        "nymeria",
+        "lyra",
+        "ymira"
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Does it replace the single mods Nymeria (9.0.3) and Lyra the Lioness, or clash with them when both are loaded? The page only calls it a merge of the three.",
+          "Which factions can recruit each character is not read from the pack."
+        ]
+      }
     }
   ],
   "external": [
