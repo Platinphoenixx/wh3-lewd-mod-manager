@@ -28,7 +28,9 @@ community contributions. App UI and catalog texts are English.
     unit cards) is offered for every list ("Works with every faction") but fills only these lords' Everything size; a setup's
     sizes stay what its community plays. Extended and Everything bring the catalog's English translation (tag `english`,
     `extends`) of a mod written in another language (tags `chinese`, `korean`, `russian`) along (`withEnglish`). Lin's Corrupted
-    Drycha is no recommendation for Wood Elf lords: its script removes the game's Ariel from every Wood Elf faction. A reskin with
+    Drycha is no recommendation for Wood Elf lords: its script removes the game's Ariel from every Wood Elf faction. An army pack
+    that also dresses the faction's lords (`Mod.alsoLooks`, read from its pack: Endo's Wood Elves has its own Sisters of Twilight)
+    makes the look step's first card "Keep the look from …" with that pack's picture (`PickOne.kept` in the editor), not "the game's look". A reskin with
     `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
     one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower

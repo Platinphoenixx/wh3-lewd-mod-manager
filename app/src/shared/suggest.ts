@@ -56,6 +56,8 @@ export interface PickOne {
   preselect?: string
   /** A mod in the list already changes this character's look by stage: keeping that is the first choice. */
   stage?: LookUntil
+  /** A mod in the list that is no reskin of this character gives her its own look (an army pack): picking none keeps that. */
+  kept?: string
 }
 
 export type SuggestionEntry = Suggestion | PickOne
@@ -224,7 +226,23 @@ export function suggestForProfile(
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
   // A lord in the game's own campaign: a single look for the lord is a choice too (the look or the game's own).
   const leads = new Set(preset.origin === 'vanilla' ? [preset.playAs[0]] : [])
-  return { lewd: pickOneGroups(catalog, out.lewd, characters, leads), general: pickOneGroups(catalog, out.general, characters, leads), character: leadName }
+  // "None" for a character an army pack in the list also dresses means that pack's look, not the game's.
+  const kept = (entries: SuggestionEntry[]) => entries.map((e) => {
+    const by = isPickOne(e) && !e.stage ? lookGiver(profileMods, lookedAt(e)) : undefined
+    return by ? { ...e, kept: by.name } : e
+  })
+  return { lewd: kept(pickOneGroups(catalog, out.lewd, characters, leads)), general: kept(pickOneGroups(catalog, out.general, characters, leads)), character: leadName }
+}
+
+/** The character a look choice is about ("They all change how Miao Ying looks"); none for an army's look. */
+export function lookedAt(g: PickOne): string | undefined {
+  const who = /^(?:They all change|It changes) how (.+) looks$/.exec(g.note)?.[1]
+  return who && !/ army$/.test(who) ? who : undefined
+}
+
+/** The mod among these that changes the character's look without being her reskin (`Mod.alsoLooks`: an army pack). */
+export function lookGiver(mods: Mod[], character?: string): Mod | undefined {
+  return character ? mods.find((m) => m.alsoLooks?.includes(character)) : undefined
 }
 
 /** One idea for a list; options of one `pickOf` exclude each other. */

@@ -10,7 +10,7 @@ import {
   communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
   type Step, type Subject, type Tier
 } from '@shared/setups'
-import type { PickOne, Suggestion } from '@shared/suggest'
+import { lookGiver, lookedAt, type PickOne, type Suggestion } from '@shared/suggest'
 import { useData } from './data'
 import { ModCover } from './ModCover'
 import { ImportDialog } from './ImportDialog'
@@ -372,11 +372,11 @@ function KeepStagesCard({ stage, selected, onClick, flagged, onFlag, onUnflag }:
   )
 }
 
-function NoneCard({ label, selected, onClick }: { label: string; selected: boolean; onClick(): void }) {
+function NoneCard({ label, why, by, selected, onClick }: { label: string; why?: string; by?: Mod; selected: boolean; onClick(): void }) {
   return (
     <div className={`play-opt none${selected ? ' sel' : ''}`} onClick={onClick}>
-      <div className="ph"><span className="placeholder">{label}</span></div>
-      <div className="body"><div className="t">{label}</div><div className="why">Nothing extra to download</div></div>
+      <div className="ph">{by ? <ModCover mods={[by]} /> : <span className="placeholder">{label}</span>}</div>
+      <div className="body"><div className="t">{label}</div><div className="why">{why ?? 'Nothing extra to download'}</div></div>
     </div>
   )
 }
@@ -410,6 +410,12 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
     if (r.ok) setFlagged((f) => { const n = { ...f }; delete n[rule]; return n })
   }
 
+  // An army pack can dress the lord too (Endo's Wood Elves has its own Sisters of Twilight): with it in the list or
+  // chosen in another step, picking no look keeps that pack's look, not the game's.
+  const giverOf = (g: PickOne) => {
+    const keys = [...base.entries.map((e) => e.key), ...picks.filter((x) => x !== g).map(choice).filter((k) => k !== NONE)]
+    return lookGiver(keys.flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : [])), lookedAt(g))
+  }
   const group = (g: PickOne, keep: string) => g.stage ? (
     <>
       <KeepStagesCard stage={g.stage} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} flagged={flagged} onFlag={setFlagging} onUnflag={(r) => void unflag(r)} />
@@ -421,7 +427,10 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
     </>
   ) : (
     <div className="play-opts">
-      <NoneCard label={keep} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} />
+      {(() => {
+        const by = giverOf(g)
+        return <NoneCard label={by ? `Keep the look from ${by.name}` : keep} why={by ? `${by.name} has its own look for ${lookedAt(g)}` : undefined} by={by} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} />
+      })()}
       {g.pick.slice(0, 11).map((s) => <OptionCard key={s.key} s={s} preselected={s.key === g.preselect} selected={choice(g) === s.key} onClick={() => pick(g, s.key)} />)}
     </div>
   )

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T17:57:28+00:00",
+  "generatedAt": "2026-11-10T19:23:26+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -2080,6 +2080,9 @@
         "cathay",
         "norsca"
       ],
+      "alsoLooks": [
+        "Sisters of Twilight"
+      ],
       "knownIssues": [
         "Cannot be combined with other audio mods, because the game allows only one merged soundbank (Audio Mixer is incompatible; Empire and Bretonnia units go silent). The same limit applies to start-position mods (author, 2026-03-12)."
       ],
@@ -2872,6 +2875,9 @@
       },
       "factionLook": [
         "wood elves"
+      ],
+      "alsoLooks": [
+        "Sisters of Twilight"
       ],
       "authorPages": [
         {
@@ -7150,9 +7156,11 @@
         "alivia",
         "nymeria",
         "lyra",
-        "ymira"
+        "ymira",
+        "wood elves",
+        "high elves"
       ],
-      "summary": "MrDustV's revival of three of Alivia's character mods in one: the heroes Ymira, Nymeria and Lyra the Lioness with updated tables, repaired skills, new equipment and recruitment dilemmas (a rejected character can go to another faction).",
+      "summary": "MrDustV's revival of three of Alivia's character mods in one: the heroes Ymira, Nymeria and Lyra the Lioness with updated tables, repaired skills, new equipment and recruitment dilemmas. It replaces the single Nymeria and Lyra mods (same characters, same keys): use the collection or the single mods.",
       "sources": {
         "steam": [
           {
@@ -7164,16 +7172,58 @@
           }
         ]
       },
-      "packs": [],
-      "relations": [],
+      "packs": [
+        {
+          "file": "dust_alivia_heroes_merged_workshop.pack",
+          "from": "steam",
+          "steamId": "3832569070"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3820276885"
+          },
+          "note": "The collection holds this mod's character under the same keys and replaces its spawn script: loaded together the character is defined twice (pack and scripts compared 2026-11-10). Use one.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832569070"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-2996269472"
+          },
+          "note": "The collection holds this mod's character under the same keys and replaces its spawn script: loaded together the character is defined twice (pack and scripts compared 2026-11-10). Use one.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832569070"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "dc-alivia-white-lion-dryad-heroes-resurrection-working-packs"
+          },
+          "note": "The collection holds this mod's character under the same keys and replaces its spawn script: loaded together the character is defined twice (pack and scripts compared 2026-11-10). Use one.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832569070"
+          }
+        }
+      ],
       "curation": {
         "lastChecked": "2026-11-10",
         "confidence": "medium",
         "openQuestions": [
-          "Does it replace the single mods Nymeria (9.0.3) and Lyra the Lioness, or clash with them when both are loaded? The page only calls it a merge of the three.",
-          "Which factions can recruit each character is not read from the pack."
+          "Not launch-tested, and not tried with Alarielle, Temptation's Bloom, whose lists use the single Nymeria and Lyra mods."
         ]
       },
+      "installNotes": [
+        "Who gets whom (its script, read 2026-11-10): Nymeria is offered to the player on the first turn, as a hero or as a lord; turned down, she joins Avelorn, the Sisters of Twilight or Drycha. Ymira is offered to Kislev, Bretonnia, Wood Elf, Empire, Cathay and High Elf players. Lyra comes to a player who builds the High Elves' second hunters' building."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -17304,6 +17354,13 @@
       ],
       "factionLook": [
         "wood elves"
+      ],
+      "alsoLooks": [
+        "Sisters of Twilight",
+        "Orion",
+        "Durthu",
+        "Drycha",
+        "Ariel"
       ],
       "updated": "2026-05-14",
       "changesData": true,

@@ -184,6 +184,14 @@ describe('lords in the game\'s own campaign', () => {
     expect(stepsFor(sub, s.picks, true, true).map((x) => x.title)).toEqual(["Sisters of Twilight's look", "Your army's look", 'Review and install'])
   })
 
+  it("says whose look stays when no look is picked and the army pack dresses the lord too", () => {
+    const c: Catalog = { ...vcat, mods: vcat.mods.map((m) => (m.id === 'endo-we' ? { ...m, alsoLooks: ['Sisters of Twilight'] } : m)) }
+    const ix = buildIndex(c)
+    const look = (extras: string[]) => suggestedFor(c, ix, c.presets[0], { extras, removed: [] }).picks.find((g) => /Sisters of Twilight looks$/.test(g.note))!
+    expect(look(['mod:endo-we']).kept).toBe('endo-we')
+    expect(look([]).kept).toBeUndefined() // not in the list yet: Play asks the army's look in its own step
+  })
+
   it('writes down the usual version of an added mod with versions', () => {
     const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
     const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }

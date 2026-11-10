@@ -1061,6 +1061,31 @@
       "factionLook": [
         "cathay"
       ]
+    },
+    {
+      "id": "steam-3672266382",
+      "_note": "Read from the pack (2026-11-10): besides the units it replaces the model definitions of these characters, so they wear its look unless a reskin of theirs loads above it. Its Sisters files are wef_arahan, wef_naestra and wef_sisters_of_twilight_campaign; the Workshop page only speaks of non-hero units, the Alternative pack's page calls itself a submod of this reskin's Sisters.",
+      "alsoLooks": [
+        "Sisters of Twilight"
+      ]
+    },
+    {
+      "id": "steam-3683061804",
+      "_note": "It contains [Endo] Wood Elves' files, the Sisters of Twilight among them (archive comparison).",
+      "alsoLooks": [
+        "Sisters of Twilight"
+      ]
+    },
+    {
+      "id": "nx-40",
+      "_note": "Read from the pack (2026-11-10): besides the units it replaces the model definitions of these characters, so they wear its look unless a reskin of theirs loads above it. Definitions wef_arahan, wef_naestra, wef_sisters_of_twilight_campaign, wef_orion, wef_durthu, wef_drycha, wef_ariel.",
+      "alsoLooks": [
+        "Sisters of Twilight",
+        "Orion",
+        "Durthu",
+        "Drycha",
+        "Ariel"
+      ]
     }
   ]
 }

@@ -59,7 +59,7 @@ export function DecideChoices({ picks, onApply, flagged, onFlag, onUnflag }: {
             {[...(expanded.has(id(p)) ? p.pick : p.pick.slice(0, PICK_SHOWN)).map((s) => ({ key: s.key, s })), { key: NONE, s: null }].map(({ key, s }) => (
               <label key={key} className="pick-option">
                 <input type="radio" name={`pick-${id(p)}`} checked={choice(p) === key} onChange={() => setPicked((prev) => ({ ...prev, [id(p)]: key }))} />
-                {s ? <span><SuggestionName s={s} /><span className="why">{[...(s.until ? [untilLabel(s.until)] : []), ...s.reasons].join(' · ')}</span></span> : p.stage ? <span>{keepStagesLabel(p.stage)}<span className="why">{p.stage.stages ? `${p.stage.stages} stage looks, nothing to install` : 'Nothing to install'}</span></span> : <span className="muted">None of these</span>}
+                {s ? <span><SuggestionName s={s} /><span className="why">{[...(s.until ? [untilLabel(s.until)] : []), ...s.reasons].join(' · ')}</span></span> : p.stage ? <span>{keepStagesLabel(p.stage)}<span className="why">{p.stage.stages ? `${p.stage.stages} stage looks, nothing to install` : 'Nothing to install'}</span></span> : <span className="muted">{p.kept ? `None of these – the look from ${p.kept} stays` : 'None of these'}</span>}
               </label>
             ))}
             {p.stage && onFlag && (() => {

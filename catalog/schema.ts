@@ -235,6 +235,11 @@ export interface Mod {
    * same faction overwrite the same files (read from their packs), so a list takes one: the app offers them as the army's look.
    */
   factionLook?: string[];
+  /**
+   * Characters whose look the mod changes without being a reskin of theirs: an army pack that also replaces the faction's
+   * lords (read from its pack). With it in a list, "no look" for such a character means this mod's look, not the game's.
+   */
+  alsoLooks?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
   /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */
