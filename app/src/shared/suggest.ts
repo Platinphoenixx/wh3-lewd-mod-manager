@@ -159,6 +159,9 @@ export function suggestForProfile(
     // offered once a launch test after that update confirmed it (the catalog's Mod.confirmed).
     if (heldBack(m)) continue
     if (removed.has(c.key)) continue // the player took it out of the template on purpose
+    // Next to a mod that holds all its files it adds nothing (Endo's Sisters pack beside [Endo] Wood Elves), and a look made of
+    // the game's own model files does not show once another mod gives her its own models.
+    if (containedIn(profileMods, m) || hiddenBy(profileMods, m)) continue
     if (avoid.has(c.key)) continue // runs against the setup's point (its community says so)
     // Nothing that would bring back what the player removed, or pull in a whole other campaign.
     if (c.addsDependencies.some((d) => removed.has(d))) continue
@@ -243,6 +246,19 @@ export function lookedAt(g: PickOne): string | undefined {
 /** The mod among these that changes the character's look without being her reskin (`Mod.alsoLooks`: an army pack). */
 export function lookGiver(mods: Mod[], character?: string): Mod | undefined {
   return character ? mods.find((m) => m.alsoLooks?.includes(character)) : undefined
+}
+
+/** The mod among these that holds all of this one's files (`Mod.contains`). */
+export function containedIn(mods: Mod[], m: Mod): Mod | undefined {
+  return mods.find((x) => x.id !== m.id && x.contains?.includes(m.id))
+}
+
+/** The mod among these that gives the character of a `baseModels` look other models, so that look does not show. */
+export function hiddenBy(mods: Mod[], m: Mod): Mod | undefined {
+  if (!m.baseModels?.length) return undefined
+  const characters = m.baseModels
+  return mods.find((x) => x.id !== m.id && (x.alsoLooks?.some((c) => characters.includes(c)) ||
+    (x.kind === 'reskin' && !x.baseModels?.length && x.tags.some((t) => characters.some((c) => t.toLowerCase() === c.toLowerCase())))))
 }
 
 /** One idea for a list; options of one `pickOf` exclude each other. */

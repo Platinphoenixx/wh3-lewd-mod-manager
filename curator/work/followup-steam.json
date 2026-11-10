@@ -1928,6 +1928,96 @@
           }
         }
       ]
+    },
+    {
+      "id": "steam-3706296713",
+      "name": "[Endo] Sisters of Twilight",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "_note": "Pack comparison 2026-11-10 (contents unpacked): its 65 files are all in [Endo] Wood Elves with the same content; [Endo] Sisters of Twilight - Alternative has the same files with three model definitions pointing to the second outfit. The Workshop title is spelt 'Twlight'.",
+      "summary": "Endo's look for the Sisters of Twilight on its own: a lighter outfit, no nudity, no stat or gameplay changes. [Endo] Wood Elves already contains it.",
+      "tags": [
+        "reskin",
+        "endo",
+        "wood elves",
+        "sisters of twilight",
+        "beautification"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3706296713",
+            "title": "[Endo] Sisters of Twlight"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_sisters_of_twilight.pack",
+          "from": "steam",
+          "steamId": "3706296713"
+        }
+      ],
+      "relations": [],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3683061804"
+          }
+        ],
+        "note": "Endo's Combined pack dresses the Sisters in the Alternative outfit; loaded above it, this pack's outfit shows."
+      },
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable"
+    },
+    {
+      "id": "steam-3672147464",
+      "name": "Beautiful Sisters of Twilight",
+      "authors": [
+        "Ashen"
+      ],
+      "kind": "reskin",
+      "_note": "Pack comparison 2026-11-10 (contents unpacked): 58 files, all models, materials and textures under the game's own Sisters folders (hu1b/wef/wef_arahan_naestra, et1/wef/wef_arahan_naestra_campaign); no model definitions. Every other Sisters look in the catalog replaces the definitions (wef_arahan, wef_naestra, wef_sisters_of_twilight_campaign) with its own models, so the game no longer uses these files.",
+      "summary": "Beautification of the Sisters of Twilight: reworked models with a new body and head, no nudity. It changes the game's own models, so it only shows while no other Sisters look and no army pack that dresses them is loaded.",
+      "tags": [
+        "wood elves",
+        "sisters of twilight",
+        "beautification"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3672147464",
+            "title": "Beautiful Sisters of Twilight"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Beautiful Sisters of Twilight.pack",
+          "from": "steam",
+          "steamId": "3672147464"
+        }
+      ],
+      "relations": [],
+      "baseModels": [
+        "Sisters of Twilight"
+      ],
+      "knownIssues": [
+        "Not visible next to another Sisters of Twilight look or an army pack that dresses them ([Endo] Wood Elves, Endo's Combined pack, Dancers among the Forest): those point the Sisters to their own models (pack comparison 2026-11-10). Its page says the same: it won't work with other models of them."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable"
     }
   ],
   "external": [

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T19:23:26+00:00",
+  "generatedAt": "2026-11-10T20:04:04+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -2083,6 +2083,9 @@
       "alsoLooks": [
         "Sisters of Twilight"
       ],
+      "contains": [
+        "steam-3706296778"
+      ],
       "knownIssues": [
         "Cannot be combined with other audio mods, because the game allows only one merged soundbank (Audio Mixer is incompatible; Empire and Bretonnia units go silent). The same limit applies to start-position mods (author, 2026-03-12)."
       ],
@@ -2747,6 +2750,70 @@
       "confirmed": "2026-11-06"
     },
     {
+      "id": "steam-3706296713",
+      "name": "[Endo] Sisters of Twilight",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's look for the Sisters of Twilight on its own: a lighter outfit, no nudity, no stat or gameplay changes. [Endo] Wood Elves already contains it.",
+      "tags": [
+        "reskin",
+        "endo",
+        "wood elves",
+        "sisters of twilight",
+        "beautification"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3706296713",
+            "title": "[Endo] Sisters of Twlight",
+            "updated": "2026-04-13",
+            "subscribers": 8183
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_sisters_of_twilight.pack",
+          "from": "steam",
+          "steamId": "3706296713"
+        }
+      ],
+      "relations": [],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3683061804"
+          }
+        ],
+        "note": "Endo's Combined pack dresses the Sisters in the Alternative outfit; loaded above it, this pack's outfit shows."
+      },
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "endotw",
+          "url": "https://steamcommunity.com/profiles/76561199752849398/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10137067715068983252/5F3CA43A8CA0189D1C2188FEEBFBB168BCD7A34F/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2026-04-13",
+      "changesData": false
+    },
+    {
       "id": "steam-3706296778",
       "name": "[Endo] Sisters of Twilight - Alternative",
       "authors": [
@@ -2878,6 +2945,9 @@
       ],
       "alsoLooks": [
         "Sisters of Twilight"
+      ],
+      "contains": [
+        "steam-3706296713"
       ],
       "authorPages": [
         {
@@ -10142,6 +10212,66 @@
       "description": "A full Neferata reskin, deliberately non-canon: she wears a dress with gold and gemstones and wields a large chalice as a staff. The model and both weapons are reworked, and new UI icons and portraits are included.\n\nThe mod is incompatible with other mods that change Neferata's model; the load order might help. Its models are also part of the LoversLab variant pack “Naughty Neferata! 16 Model variants”, which does not need it installed.",
       "recommendedFor": "Anyone wanting a more refined Neferata without the LoversLab variant pack.",
       "updated": "2026-09-29",
+      "changesData": false
+    },
+    {
+      "id": "steam-3672147464",
+      "name": "Beautiful Sisters of Twilight",
+      "authors": [
+        "Ashen"
+      ],
+      "kind": "reskin",
+      "summary": "Beautification of the Sisters of Twilight: reworked models with a new body and head, no nudity. It changes the game's own models, so it only shows while no other Sisters look and no army pack that dresses them is loaded.",
+      "tags": [
+        "wood elves",
+        "sisters of twilight",
+        "beautification"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3672147464",
+            "title": "Beautiful Sisters of Twilight",
+            "updated": "2026-02-24",
+            "subscribers": 2830
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Beautiful Sisters of Twilight.pack",
+          "from": "steam",
+          "steamId": "3672147464"
+        }
+      ],
+      "relations": [],
+      "baseModels": [
+        "Sisters of Twilight"
+      ],
+      "knownIssues": [
+        "Not visible next to another Sisters of Twilight look or an army pack that dresses them ([Endo] Wood Elves, Endo's Combined pack, Dancers among the Forest): those point the Sisters to their own models (pack comparison 2026-11-10). Its page says the same: it won't work with other models of them."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Ashen",
+          "url": "https://steamcommunity.com/profiles/76561198095888045/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/14569178456848845575/0C8BEB21600BF1F688807EBB40C6EE9659263BBC/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2026-02-24",
       "changesData": false
     },
     {
@@ -70377,12 +70507,12 @@
       "description": "Heralds of Ariel (Wood Elves) in the game's own campaign – playable with the DLC The Twisted & The Twilight. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
       "highlights": [
         "The game's own Wood Elves campaign",
-        "3 looks for Sisters of Twilight in the catalog"
+        "5 looks for Sisters of Twilight in the catalog"
       ],
       "coverMods": [
+        "steam-3706296713",
         "steam-3706296778",
-        "nx-346",
-        "dc-sisters-of-druchii-dark-elf-reskin-of-the-sisters-of-twiligh"
+        "steam-3672147464"
       ],
       "source": {
         "type": "wiki",

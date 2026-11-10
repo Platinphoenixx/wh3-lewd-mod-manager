@@ -10,7 +10,7 @@ import {
   communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
   type Step, type Subject, type Tier
 } from '@shared/setups'
-import { lookGiver, lookedAt, type PickOne, type Suggestion } from '@shared/suggest'
+import { containedIn, hiddenBy, lookGiver, lookedAt, type PickOne, type Suggestion } from '@shared/suggest'
 import { useData } from './data'
 import { ModCover } from './ModCover'
 import { ImportDialog } from './ImportDialog'
@@ -332,17 +332,18 @@ function SetupPage({ subject, setup, onBack, onHome, onContinue }: { subject: Su
   )
 }
 
-function OptionCard({ s, selected, onClick, preselected }: { s: Suggestion | null; selected: boolean; onClick(): void; preselected?: boolean }) {
+function OptionCard({ s, selected, onClick, preselected, hidden }: { s: Suggestion | null; selected: boolean; onClick(): void; preselected?: boolean; hidden?: Mod }) {
   const data = useData()
   if (!s) return null
   return (
-    <div className={`play-opt${selected ? ' sel' : ''}`} onClick={onClick}>
+    <div className={`play-opt${selected ? ' sel' : ''}${hidden ? ' off' : ''}`} onClick={hidden ? undefined : onClick} title={hidden ? `Not visible with ${hidden.name}` : undefined}>
       <div className="ph"><ModCover mods={[s.mod]} placeholder={s.mod.name} /></div>
       <div className="body">
         {preselected && <div className="tag">{s.reasons.some((r) => r.startsWith('Recommended for this setup')) ? 'Recommended' : 'Most players'}</div>}
         {s.until && <div className="until">{untilLabel(s.until)}</div>}
         <div className="t">{s.mod.name}</div>
         {s.replaces && <div className="rep">Replaces {s.replaces.join(', ')}</div>}
+        {hidden && <div className="rep">Not visible with {hidden.name}: it gives her its own models</div>}
         <div className="why">{s.reasons.filter((r) => !r.startsWith('Replaces')).join(' · ')}</div>
         <div className="src">{sourceLabel(s.mod)} · <a onClick={(e) => { e.stopPropagation(); data.openMod(s.mod.id) }}>details</a></div>
       </div>
@@ -412,10 +413,9 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
 
   // An army pack can dress the lord too (Endo's Wood Elves has its own Sisters of Twilight): with it in the list or
   // chosen in another step, picking no look keeps that pack's look, not the game's.
-  const giverOf = (g: PickOne) => {
-    const keys = [...base.entries.map((e) => e.key), ...picks.filter((x) => x !== g).map(choice).filter((k) => k !== NONE)]
-    return lookGiver(keys.flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : [])), lookedAt(g))
-  }
+  const othersOf = (g: PickOne) => [...base.entries.map((e) => e.key), ...picks.filter((x) => x !== g).map(choice).filter((k) => k !== NONE)]
+    .flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
+  const giverOf = (g: PickOne) => lookGiver(othersOf(g), lookedAt(g))
   const group = (g: PickOne, keep: string) => g.stage ? (
     <>
       <KeepStagesCard stage={g.stage} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} flagged={flagged} onFlag={setFlagging} onUnflag={(r) => void unflag(r)} />
@@ -431,7 +431,14 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
         const by = giverOf(g)
         return <NoneCard label={by ? `Keep the look from ${by.name}` : keep} why={by ? `${by.name} has its own look for ${lookedAt(g)}` : undefined} by={by} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} />
       })()}
-      {g.pick.slice(0, 11).map((s) => <OptionCard key={s.key} s={s} preselected={s.key === g.preselect} selected={choice(g) === s.key} onClick={() => pick(g, s.key)} />)}
+      {(() => {
+        // An option the army pack already holds is that pack's look (the first card); one made of the game's own models
+        // does not show next to it.
+        const others = othersOf(g)
+        return g.pick.filter((s) => !containedIn(others, s.mod)).slice(0, 11).map((s) => (
+          <OptionCard key={s.key} s={s} preselected={s.key === g.preselect} selected={choice(g) === s.key} hidden={hiddenBy(others, s.mod)} onClick={() => pick(g, s.key)} />
+        ))
+      })()}
     </div>
   )
   const keepLabel = (st: Step) => (st.subtitle === 'Already in your list' ? "Keep the list's look" : st.title.endsWith("'s look") ? "Keep the game's look" : 'None of these')
@@ -493,7 +500,13 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
   )
 
   function profile(): Profile {
-    const p = guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
+    // A look picked before the army's look that then holds it, or hides it, is not added.
+    const effective = Object.fromEntries(Object.entries(chosen).map(([k, v]) => {
+      const g = picks.find((x) => x.pick[0].key === k)
+      const m = v.startsWith('mod:') ? data.index.mods.get(v.slice(4)) : undefined
+      return [k, g && m && (containedIn(othersOf(g), m) || hiddenBy(othersOf(g), m)) ? NONE : v]
+    }))
+    const p = guidedProfile(tier, effective, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
     const withFlags = Object.keys(flagged).length ? { ...p, flagged } : p
     return pin?.fix ? { ...withFlags, fixes: { [pin.mod]: pin.fix } } : withFlags
   }

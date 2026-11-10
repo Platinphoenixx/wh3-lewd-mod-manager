@@ -342,6 +342,7 @@ input[type='radio'] { accent-color: var(--accent); }
 .play-tier { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; cursor: pointer; }
 .play-tier:hover { border-color: var(--muted); }
 .play-tier.sel, .play-opt.sel { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.play-opt.off { cursor: default; opacity: 0.55; }
 .play-tier h3 { margin: 0; }
 .play-tier .size { font-size: 28px; font-weight: 600; line-height: 1; }
 .play-tier ul { margin: 2px 0 0; padding-left: 18px; color: var(--text-2); font-size: 13px; }

@@ -192,6 +192,15 @@ describe('lords in the game\'s own campaign', () => {
     expect(look([]).kept).toBeUndefined() // not in the list yet: Play asks the army's look in its own step
   })
 
+  it("leaves out a look the army pack holds, and one made of the game's own models once something else dresses her", () => {
+    const c: Catalog = { ...vcat, mods: [...vcat.mods.map((m) => (m.id === 'endo-we' ? { ...m, alsoLooks: ['Sisters of Twilight'], contains: ['sis-a'] } : m)),
+      mod('sis-base', { kind: 'reskin', tags: ['wood elves', 'sisters of twilight'], summary: 'Sisters of Twilight models', baseModels: ['Sisters of Twilight'] })] }
+    const ix = buildIndex(c)
+    const look = (extras: string[]) => suggestedFor(c, ix, c.presets[0], { extras, removed: [] }).picks.find((g) => /Sisters of Twilight looks$/.test(g.note))
+    expect(look([])!.pick.map((x) => x.key).sort()).toEqual(['mod:sis-a', 'mod:sis-b', 'mod:sis-base'])
+    expect(look(['mod:endo-we'])!.pick.map((x) => x.key)).toEqual(['mod:sis-b'])
+  })
+
   it('writes down the usual version of an added mod with versions', () => {
     const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
     const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }

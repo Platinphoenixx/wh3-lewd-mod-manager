@@ -30,7 +30,10 @@ community contributions. App UI and catalog texts are English.
     `extends`) of a mod written in another language (tags `chinese`, `korean`, `russian`) along (`withEnglish`). Lin's Corrupted
     Drycha is no recommendation for Wood Elf lords: its script removes the game's Ariel from every Wood Elf faction. An army pack
     that also dresses the faction's lords (`Mod.alsoLooks`, read from its pack: Endo's Wood Elves has its own Sisters of Twilight)
-    makes the look step's first card "Keep the look from …" with that pack's picture (`PickOne.kept` in the editor), not "the game's look". A reskin with
+    makes the look step's first card "Keep the look from …" with that pack's picture (`PickOne.kept` in the editor), not "the game's look".
+    A look whose files a mod in the list holds whole (`Mod.contains`: [Endo] Wood Elves holds Endo's Sisters pack, the Combined pack the
+    Alternative) is not offered next to it, and a look made of the game's own model files (`Mod.baseModels`: Beautiful Sisters of
+    Twilight) is greyed out as "Not visible with …" once another look or an army pack gives her its own models; Play drops such a pick. A reskin with
     `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
     one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower

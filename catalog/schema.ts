@@ -240,6 +240,13 @@ export interface Mod {
    * lords (read from its pack). With it in a list, "no look" for such a character means this mod's look, not the game's.
    */
   alsoLooks?: string[];
+  /** Mods whose files are all in this one with the same content (read from the packs): next to it they add nothing. */
+  contains?: string[];
+  /**
+   * Characters whose look it changes by replacing the game's own model files, not the model definitions. Any other look of
+   * hers (a reskin, an army pack's `alsoLooks`) points her to other models, so this one is then not visible.
+   */
+  baseModels?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
   /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */
