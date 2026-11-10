@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:57:22+00:00",
+  "generatedAt": "2026-11-10T22:19:34+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -8155,9 +8155,9 @@
       ],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
+        "confidence": "high",
         "openQuestions": [
-          "Not launch-tested, and not tried with Alarielle, Temptation's Bloom, whose lists use the single Nymeria and Lyra mods."
+          "Not tried with Alarielle, Temptation's Bloom, whose lists use the single Nymeria and Lyra mods."
         ]
       },
       "installNotes": [
@@ -8178,7 +8178,8 @@
         }
       ],
       "updated": "2026-11-04",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-10"
     },
     {
       "id": "ll-27144",

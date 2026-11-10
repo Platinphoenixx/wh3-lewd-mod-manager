@@ -1864,7 +1864,7 @@
     },
     {
       "id": "steam-3832569070",
-      "_note": "Workshop page read 2026-11-10; pack compared with Nymeria (9.0.3).pack and alivia_whiteLion.pack and its scripts read the same day: it keeps the single mods' keys (agent subtypes alivia_dryad, alivia_dryad_lord, alivia_whiteLion, their units, the dilemma alivia_dryad_spawn, the saved values), replaces their spawn scripts by empty ones of the same name and hands the characters out through its own dust_alivia_recruitment.lua. 96 of Nymeria's 148 and 46 of Lyra's 94 file paths are in it, nearly all with new content. Not launch-tested.",
+      "_note": "Workshop page read 2026-11-10; pack compared with Nymeria (9.0.3).pack and alivia_whiteLion.pack and its scripts read the same day: it keeps the single mods' keys (agent subtypes alivia_dryad, alivia_dryad_lord, alivia_whiteLion, their units, the dilemma alivia_dryad_spawn, the saved values), replaces their spawn scripts by empty ones of the same name and hands the characters out through its own dust_alivia_recruitment.lua. 96 of Nymeria's 148 and 46 of Lyra's 94 file paths are in it, nearly all with new content. A player played a Sisters of Twilight campaign with it on game 9.0.5 (2026-11-10): it works.",
       "kind": "units",
       "summary": "MrDustV's revival of three of Alivia's character mods in one: the heroes Ymira, Nymeria and Lyra the Lioness with updated tables, repaired skills, new equipment and recruitment dilemmas. It replaces the single Nymeria and Lyra mods (same characters, same keys): use the collection or the single mods.",
       "tags": [
@@ -1878,9 +1878,9 @@
       ],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
+        "confidence": "high",
         "openQuestions": [
-          "Not launch-tested, and not tried with Alarielle, Temptation's Bloom, whose lists use the single Nymeria and Lyra mods."
+          "Not tried with Alarielle, Temptation's Bloom, whose lists use the single Nymeria and Lyra mods."
         ]
       },
       "packs": [
