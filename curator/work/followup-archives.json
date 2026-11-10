@@ -680,6 +680,35 @@
     },
     {
       "id": "ll-42028",
+      "_note": "Readman's three Flirty Fallen Flag versions replace the same 8 flag files of Avelorn (pack indexes, 2026-11-10): one pick-one choice with the default version and the Lewd Flags.",
+      "relations+": [
+        {
+          "kind": "optional",
+          "target": {
+            "steamId": "3549231458"
+          },
+          "note": "Pink version of Readman's flag (the late-game list uses it); replaces the same flag files as the default version.",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3549231458"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3556421071"
+          },
+          "note": "Green version of Readman's flag; replaces the same flag files as the default version.",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3556421071"
+          }
+        }
+      ],
       "stageLooks": [
         {
           "character": "Alarielle",

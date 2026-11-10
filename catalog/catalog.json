@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T12:33:35+00:00",
+  "generatedAt": "2026-11-10T12:40:49+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -6380,6 +6380,32 @@
           "source": {
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/42028-alarielle-temptations-bloom/"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3549231458"
+          },
+          "note": "Pink version of Readman's flag (the late-game list uses it); replaces the same flag files as the default version.",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3549231458"
+          }
+        },
+        {
+          "kind": "optional",
+          "target": {
+            "mod": "steam-3556421071"
+          },
+          "note": "Green version of Readman's flag; replaces the same flag files as the default version.",
+          "condition": "After corruption level 5",
+          "exclusiveGroup": "flags",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3556421071"
           }
         },
         {
@@ -41776,83 +41802,6 @@
       "changesData": false
     },
     {
-      "id": "steam-3549231458",
-      "name": "Readman Alarielle FFF pink",
-      "authors": [
-        "Readman"
-      ],
-      "kind": "submod",
-      "tags": [],
-      "summary": "Unlisted Readman pack “Readman_Alarielle_FFF_pink”; purpose unknown.",
-      "sources": {
-        "steam": [
-          {
-            "id": "3549231458",
-            "title": null,
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [
-        {
-          "file": "!Readman_Alarielle_FFF_pink.pack",
-          "from": "steam",
-          "steamId": "3549231458"
-        }
-      ],
-      "relations": [],
-      "curation": {
-        "lastChecked": "2026-11-10",
-        "confidence": "medium",
-        "openQuestions": [
-          "Dependencies taken from the Steam description only."
-        ]
-      },
-      "images": [
-        {
-          "url": "https://images.steamusercontent.com/ugc/16376219103386713606/A63AAB8011F7083D1043696455252D804B7C5657/",
-          "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/12152311129251426262/6BA4F371C791E85602BDCE09445EA65E54C6C241/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/13142997562820309790/F09F8B3607F0781637C8C1828D3FCBA59C7F0BF0/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/13800881634820590875/8ACF33DB14FB3B7CB4FD98A2700B45B1348423DC/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/11929571550369146904/B6DBB2EA2F5F14DF357CCF66B71DC2ECF68B4CA7/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/11120150517845703084/139632C4C21557D73AF7D6C51F617AB7CD6F2C7D/",
-          "kind": "screenshot",
-          "source": "steam"
-        }
-      ],
-      "description": "Only the pack name !Readman_Alarielle_FFF_pink.pack is known. It appears in the Alarielle Late mod list. The Steam item is unlisted: Workshop search does not show it, but it can be subscribed through its link. The rest comes from community lists.",
-      "changesData": false,
-      "loadOrder": {
-        "above": [
-          {
-            "mod": "ll-41124"
-          }
-        ],
-        "note": "Order as in the tested lists for mods that change the same files."
-      },
-      "confirmed": "2026-11-03"
-    },
-    {
       "id": "steam-3592882054",
       "name": "Readman Alarielle GGG",
       "authors": [
@@ -42574,82 +42523,14 @@
       "confirmed": "2026-11-03"
     },
     {
-      "id": "steam-3556421071",
-      "name": "Readman Flirty Fallen Flag (Green)",
-      "authors": [
-        "Readman"
-      ],
-      "kind": "assets",
-      "summary": "ATB submod by Readman: a new faction flag for a late Alarielle, Temptation's Bloom game; safe to add or remove mid-campaign.",
-      "tags": [],
-      "sources": {
-        "steam": [
-          {
-            "id": "3556421071"
-          }
-        ],
-        "discord": [
-          {
-            "channel": "#atb-alarielle-temptations-bloom",
-            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1452597221160652880"
-          }
-        ]
-      },
-      "packs": [
-        {
-          "file": "!Readman_Alarielle_FFF_green.pack",
-          "from": "steam",
-          "steamId": "3556421071"
-        }
-      ],
-      "relations": [
-        {
-          "kind": "extends",
-          "target": {
-            "mod": "ll-42028"
-          },
-          "note": "Submod for ATB",
-          "source": {
-            "type": "steam",
-            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3556421071"
-          }
-        }
-      ],
-      "curation": {
-        "lastChecked": "2026-11-01",
-        "confidence": "medium",
-        "openQuestions": []
-      },
-      "images": [
-        {
-          "url": "https://images.steamusercontent.com/ugc/10524525675177523632/444B79E452C7A2CFD04ECFE0EBDE0F96DCE145F2/",
-          "kind": "cover",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/18295779248693421558/7FA22E946A3C066655FEC846BA6388EC1142FFAF/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/13031366387673783396/6ABC86C9117761F4DB5891489E0F031822438C68/",
-          "kind": "screenshot",
-          "source": "steam"
-        }
-      ],
-      "updated": "2025-12-22",
-      "changesData": false,
-      "confirmed": "2026-11-03"
-    },
-    {
       "id": "steam-3536009143",
-      "name": "Readman HD Banner Alarielle (unlisted)",
+      "name": "Readman Flirty Fallen Flag",
       "authors": [
         "Readman"
       ],
       "kind": "assets",
       "tags": [],
-      "summary": "Readman's HD version of Alarielle's corrupted banner; unlisted.",
+      "summary": "ATB submod by Readman: a new faction flag for Alarielle's Avelorn, meant for a late Alarielle, Temptation's Bloom game.",
       "sources": {
         "steam": [
           {
@@ -42714,9 +42595,157 @@
           "source": "steam"
         }
       ],
-      "description": "All that is known: two LoversLab entries name the HD flag as an alternative to the “Lewd Flags and Loading Screens”. The Steam item is unlisted: Workshop search does not show it, but it can be subscribed through its link. The rest comes from community lists.",
-      "recommendedFor": "Alarielle runs that want a sharper banner.",
+      "description": "Replaces the flag of Alarielle's faction (Avelorn) with a new design in every place the game shows it: 8 image files, nothing else. It is meant for the late part of an **Alarielle, Temptation's Bloom** campaign. The pink and green versions replace the same 8 files, so only one of the three shows; the one loaded highest wins. Safe to add or remove mid-campaign. The Steam item is unlisted: Workshop search does not show it, but it can be subscribed through its link.",
+      "recommendedFor": "Late Alarielle, Temptation's Bloom campaigns (from corruption stage 5).",
       "changesData": false,
+      "confirmed": "2026-11-03"
+    },
+    {
+      "id": "steam-3556421071",
+      "name": "Readman Flirty Fallen Flag (Green)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "assets",
+      "summary": "Green version of Readman's Flirty Fallen Flag: a new faction flag for Alarielle's Avelorn in a late Alarielle, Temptation's Bloom game.",
+      "tags": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "3556421071"
+          }
+        ],
+        "discord": [
+          {
+            "channel": "#atb-alarielle-temptations-bloom",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552/1452597221160652880"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_FFF_green.pack",
+          "from": "steam",
+          "steamId": "3556421071"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Submod for ATB",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3556421071"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-01",
+        "confidence": "medium",
+        "openQuestions": []
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10524525675177523632/444B79E452C7A2CFD04ECFE0EBDE0F96DCE145F2/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/18295779248693421558/7FA22E946A3C066655FEC846BA6388EC1142FFAF/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13031366387673783396/6ABC86C9117761F4DB5891489E0F031822438C68/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "description": "Replaces the flag of Alarielle's faction (Avelorn) with a green design in every place the game shows it: 8 image files, nothing else. The default and pink versions replace the same 8 files, so only one of the three shows; the one loaded highest wins. Safe to add or remove mid-campaign. The Steam item is unlisted: Workshop search does not show it, but it can be subscribed through its link.",
+      "recommendedFor": "Late Alarielle, Temptation's Bloom campaigns (from corruption stage 5).",
+      "updated": "2025-12-22",
+      "changesData": false,
+      "confirmed": "2026-11-03"
+    },
+    {
+      "id": "steam-3549231458",
+      "name": "Readman Flirty Fallen Flag (Pink)",
+      "authors": [
+        "Readman"
+      ],
+      "kind": "assets",
+      "tags": [],
+      "summary": "Pink version of Readman's Flirty Fallen Flag: a new faction flag for Alarielle's Avelorn in a late Alarielle, Temptation's Bloom game.",
+      "sources": {
+        "steam": [
+          {
+            "id": "3549231458",
+            "title": null,
+            "unlisted": true
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!Readman_Alarielle_FFF_pink.pack",
+          "from": "steam",
+          "steamId": "3549231458"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Dependencies taken from the Steam description only."
+        ]
+      },
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/16376219103386713606/A63AAB8011F7083D1043696455252D804B7C5657/",
+          "kind": "cover",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/12152311129251426262/6BA4F371C791E85602BDCE09445EA65E54C6C241/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13142997562820309790/F09F8B3607F0781637C8C1828D3FCBA59C7F0BF0/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/13800881634820590875/8ACF33DB14FB3B7CB4FD98A2700B45B1348423DC/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11929571550369146904/B6DBB2EA2F5F14DF357CCF66B71DC2ECF68B4CA7/",
+          "kind": "screenshot",
+          "source": "steam"
+        },
+        {
+          "url": "https://images.steamusercontent.com/ugc/11120150517845703084/139632C4C21557D73AF7D6C51F617AB7CD6F2C7D/",
+          "kind": "screenshot",
+          "source": "steam"
+        }
+      ],
+      "description": "Replaces the flag of Alarielle's faction (Avelorn) with a pink design in every place the game shows it: 8 image files, nothing else. Readman's late-game list for **Alarielle, Temptation's Bloom** uses this version. The default and green versions replace the same 8 files, so only one of the three shows; the one loaded highest wins. Safe to add or remove mid-campaign. The Steam item is unlisted: Workshop search does not show it, but it can be subscribed through its link.",
+      "recommendedFor": "Late Alarielle, Temptation's Bloom campaigns (from corruption stage 5).",
+      "changesData": false,
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "ll-41124"
+          }
+        ],
+        "note": "Order as in the tested lists for mods that change the same files."
+      },
       "confirmed": "2026-11-03"
     },
     {
