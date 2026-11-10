@@ -2650,7 +2650,7 @@
       "name": "Female Auxiliaries - New Recruitable Units (Endotw)",
       "authors": [],
       "kind": "units",
-      "summary": "Endo's female units as extra recruitable auxiliaries next to the normal troops for many factions (-2% health, +5% speed, same costs); already female units keep one option with Endo's look.",
+      "summary": "Endo's female units as extra recruitable units next to the normal troops, named '(Endo)', for many factions (-2% health, +5% speed, same costs); already female units keep one option with Endo's look. Meant for armies without an Endo reskin: next to one it repeats the same units.",
       "tags": [
         "many factions",
         "female units",
@@ -2682,6 +2682,116 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3672266382"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3621449095"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3650679678"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3616234518"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3616082403"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3647419004"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3301596500"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3679399151"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3720584550"
+          },
+          "note": "With it the faction's units are female already; Female Auxiliaries would add the same units a second time, as separate '(Endo)' units next to them.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3622829128"
+          },
+          "note": "It carries its own version of Endo Audio Merged's 1,458 voice files (10 sound banks differ, with the voices of its units): load only one, Female Auxiliaries' own.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
         }
       ],
       "curation": {
@@ -2692,7 +2802,7 @@
         ]
       },
       "status": "stable",
-      "_note": "Pack read 2026-11-10 (Workshop download): 6,101 files, 574 model definitions for 11 factions (Empire, High Elves, Dark Elves, Bretonnia, Norsca, Kislev, Daemons, Wood Elves, Cathay, Chaos, Beastmen) and their unit tables; standalone.",
+      "_note": "Pack read 2026-11-10 (Workshop download): 6,101 files, 574 model definitions for 11 factions (Empire, High Elves, Dark Elves, Bretonnia, Norsca, Kislev, Daemons, Wood Elves, Cathay, Chaos, Beastmen) and their unit tables; standalone. In game (a player, 2026-11-10): with [Endo] Wood Elves every Wood Elf unit shows up twice, once with '(Endo)'. Pack comparison: all 1,458 audio files of Endo Audio Merged are in it, 10 sound banks with other content.",
       "knownIssues": [
         "Keep it enabled in saves that have its units (its page)."
       ]
