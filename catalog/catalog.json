@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:52:31+00:00",
+  "generatedAt": "2026-11-10T21:57:22+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -5295,10 +5295,8 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
-        "openQuestions": [
-          "Not launch-tested."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "status": "stable",
       "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size.",
@@ -5317,7 +5315,8 @@
         }
       ],
       "updated": "2025-10-11",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-10"
     },
     {
       "id": "steam-2964841140",
@@ -51103,10 +51102,8 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
-        "openQuestions": [
-          "Not launch-tested."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "status": "stable",
       "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size.",
@@ -51124,7 +51121,8 @@
         }
       ],
       "updated": "2025-12-22",
-      "changesData": true
+      "changesData": true,
+      "confirmed": "2026-11-10"
     },
     {
       "id": "nx-156",

@@ -2881,13 +2881,11 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
-        "openQuestions": [
-          "Not launch-tested."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "status": "stable",
-      "_note": "Pack read 2026-11-10: all its database tables have the versions of the current game (9.0.5), the game keys it refers to exist, and it shares no file or record with Endo's packs, Community Beastmen Light or the other Wood Elf mods of the catalog. Not launch-tested. It changes only the Sisters' own unit, bows and arrows; its key-deletes table is one ATB, Corrupted Landmarks and Dust's Corrupted Heroes use too.",
+      "_note": "Pack read 2026-11-10: all its database tables have the versions of the current game (9.0.5), the game keys it refers to exist, and it shares no file or record with Endo's packs, Community Beastmen Light or the other Wood Elf mods of the catalog. Not launch-tested. It changes only the Sisters' own unit, bows and arrows; its key-deletes table is one ATB, Corrupted Landmarks and Dust's Corrupted Heroes use too. A player played a Sisters of Twilight campaign with it on game 9.0.5 (2026-11-10, with Gifts of Athel Loren, Endo's packs and Community Beastmen Light): it works.",
       "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size."
     },
     {
@@ -2921,13 +2919,11 @@
       "relations": [],
       "curation": {
         "lastChecked": "2026-11-10",
-        "confidence": "medium",
-        "openQuestions": [
-          "Not launch-tested."
-        ]
+        "confidence": "high",
+        "openQuestions": []
       },
       "status": "stable",
-      "_note": "Pack read 2026-11-10: all its database tables have the versions of the current game (9.0.5), the game keys it refers to exist, and it shares no file or record with Endo's packs, Community Beastmen Light or the other Wood Elf mods of the catalog. Not launch-tested. It adds four nodes to the game's Sisters of Twilight skill set and changes no existing skill.",
+      "_note": "Pack read 2026-11-10: all its database tables have the versions of the current game (9.0.5), the game keys it refers to exist, and it shares no file or record with Endo's packs, Community Beastmen Light or the other Wood Elf mods of the catalog. Not launch-tested. It adds four nodes to the game's Sisters of Twilight skill set and changes no existing skill. A player played a Sisters of Twilight campaign with it on game 9.0.5 (2026-11-10, with Gifts of Athel Loren, Endo's packs and Community Beastmen Light): it works.",
       "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size."
     }
   ],
