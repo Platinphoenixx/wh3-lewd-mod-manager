@@ -775,9 +775,6 @@
    "phase": "",
    "status": "active",
    "knownIssues": [
-    "WH3 patch 2026-10-26: startup crash reported, Ruination tier 1 building missing (db fix: change ruination 1 to 2), ritual of ruination not usable",
-    "Recruitment building fix for custom units (2026-10-29) only on LL/Google Drive; Steam lags",
-    "Hellebron quest battle crashes on the Steam version (off-map location): set X=265, Y=578 in Mission_tables rows of new_community_beastmen.pack via RPFM",
     "Old World map: start objectives auto-complete and give about 42k gold on turn 2"
    ],
    "notes": "Steam 3476784883 is the main mod for Beastmen playthroughs only (delayed updates); the LoversLab file has Main + Lite and is always current, also for non-Beastmen play. Guide: github.com/RealDeHess/CommunityBeastmen."
