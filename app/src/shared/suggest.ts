@@ -116,6 +116,8 @@ export function suggestForProfile(
   for (const m of catalog.mods) for (const p of m.playAs ?? []) characters.set(norm(p.character), p.character)
   // Lords played in the game's own campaign have no mod that names them as playable; their template does.
   for (const p of catalog.presets) if (p.origin === 'vanilla') for (const c of p.playAs) characters.set(norm(c), p.playAs[0])
+  // And heroes an army pack dresses (Spellsingers): a reskin of them is a look of its own.
+  for (const m of catalog.mods) for (const c of m.alsoLooks ?? []) if (!characters.has(norm(c))) characters.set(norm(c), c)
   // For a lord in the game's own campaign the army's look is one of the two choices: a pack that changes the army
   // counts for it whatever its tags say (Endo's Combined pack names no faction).
   const themeOf = (m: Mod) => [

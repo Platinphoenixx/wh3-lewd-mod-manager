@@ -215,7 +215,7 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
     tiers.push({ id: 'extended', name: base === vanilla ? 'Lewd add-ons' : 'Extended', preset: base, extras, size: size(base, extras),
       lines: [`Everything in ${label}`,
         // A setup whose community names what goes with it says so: that is what Extended is made of.
-        base === vanilla ? `${more.length} add-ons recommended for the game's own campaign: events and animations`
+        base === vanilla ? `${more.length} add-ons recommended for the game's own campaign: events, animations and looks`
           : recommended ? `${more.length} more mods, ${recommended} of them recommended by its community` : `${more.length} more mods that fit ${subject.name}, most used first`,
         s.lewd.slice(0, 3).map((x) => x.mod.name).join(', ')].filter(Boolean),
       proof: 'Each add-on checked against the list · not played together yet', tested: false, recommended: base === vanilla })

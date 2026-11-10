@@ -2018,6 +2018,684 @@
         "openQuestions": []
       },
       "status": "stable"
+    },
+    {
+      "id": "steam-3707419547",
+      "name": "[Endo] Spellsinger",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's look for the Wood Elf Spellsinger heroes: younger and less dour, with alternative hairstyles, new portraits and unit cards; no stat or gameplay changes. It goes with [Endo] Wood Elves, which leaves the Spellsingers as they are.",
+      "tags": [
+        "reskin",
+        "endo",
+        "wood elves",
+        "spellsinger",
+        "beautification"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3707419547",
+            "title": "[Endo] Spellsinger"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_spellsinger.pack",
+          "from": "steam",
+          "steamId": "3707419547"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 20 model definitions (wef_spellsinger, its five campaign variants and the mounted ones); none of its files are in [Endo] Wood Elves.",
+      "installNotes": [
+        "Variant Selector support (its page). Endo's Combined Faction Reskins holds all its files with the same content (pack comparison 2026-11-10)."
+      ]
+    },
+    {
+      "id": "steam-3625212977",
+      "name": "[Endo] State troops silly idles",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "units",
+      "summary": "New idle animations for Empire State Troops, Greatswords and Free Company (they twerk and blow kisses).",
+      "tags": [
+        "endo",
+        "empire",
+        "animations"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3625212977",
+            "title": "[Endo] State troops silly idles"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_idles.pack",
+          "from": "steam",
+          "steamId": "3625212977"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 21 animation files only; nothing of it is in the Combined pack."
+    },
+    {
+      "id": "steam-3650679678",
+      "name": "[Endo] Empire - Alternative",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's second Empire reskin: all Empire units female in skimpier outfits than [Endo] Empire; no full nudity, no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "empire"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3650679678",
+            "title": "[Endo] Empire - Alternative"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_empire_skimpy.pack",
+          "from": "steam",
+          "steamId": "3650679678"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 81 model definitions; it shares 48 with [Endo] Empire. Endo's Combined Faction Reskins holds all its files with the same content (pack comparison 2026-11-10).",
+      "factionLook": [
+        "empire"
+      ],
+      "installNotes": [
+        "Its page links an add-on that mixes Endo's loreful units back in (Workshop 3650710567, not public)."
+      ]
+    },
+    {
+      "id": "steam-3687970389",
+      "name": "[Endo] Female Slaanesh Devotees - More Slaaneshy",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "submod",
+      "summary": "Add-on to Endo's female Slaanesh Devotees: two more revealing variants. Needs the Devotees reskin or Endo's Combined pack.",
+      "tags": [
+        "endo",
+        "slaanesh",
+        "dark elves",
+        "female units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3687970389",
+            "title": "[Endo] Female Slaanesh Devotees - More Slaaneshy"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_slaanesh_devotee_slaaneshy.pack",
+          "from": "steam",
+          "steamId": "3687970389"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "steam-3687970360"
+          },
+          "note": "Needs the base Devotees reskin or Endo's Combined pack (its page)",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3687970389"
+          }
+        },
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "steam-3687970360"
+          },
+          "condition": "without Endo's Combined pack",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3687970389"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 2 model definitions (the Devotees with and without crossbows). Endo's Combined Faction Reskins holds all its files with the same content (pack comparison 2026-11-10)."
+    },
+    {
+      "id": "steam-3688586949",
+      "name": "[Endo] Female Hellstriders",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Female variants for the Slaanesh Hellstriders (the units become mixed male and female); no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "slaanesh",
+        "daemons of chaos",
+        "female units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3688586949",
+            "title": "[Endo] Female Hellstriders"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_hellstrider.pack",
+          "from": "steam",
+          "steamId": "3688586949"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 18 model definitions (Hellstriders and Slaanesh Marauder spears and whips). Endo's Combined Faction Reskins holds all its files with the same content (pack comparison 2026-11-10)."
+    },
+    {
+      "id": "steam-3691478907",
+      "name": "[Endo] Female Slaanesh Marauders",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Female variants for the Slaanesh Marauders and charioteers (the units become mixed male and female); no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "slaanesh",
+        "warriors of chaos",
+        "female units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3691478907",
+            "title": "[Endo] Female Slaanesh Marauders"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_slaanesh_marauders.pack",
+          "from": "steam",
+          "steamId": "3691478907"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3693788049"
+          },
+          "note": "Two versions of the same reskin: both replace the same 6 model definitions. Use one.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3691478907"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 6 model definitions; the More Slaaneshy version has the same 6 and one more. The Combined pack holds a mix of the two (41 of its 46 files the same)."
+    },
+    {
+      "id": "steam-3693788049",
+      "name": "[Endo] Female Slaanesh Marauders - More Slaaneshy",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "The more Slaanesh-themed version of Endo's female Slaanesh Marauders and charioteers; no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "slaanesh",
+        "warriors of chaos",
+        "female units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3693788049",
+            "title": "[Endo] Female Slaanesh Marauders - More Slaaneshy"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_slaanesh_marauders_slaaneshy.pack",
+          "from": "steam",
+          "steamId": "3693788049"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3691478907"
+          },
+          "note": "Two versions of the same reskin: both replace the same model definitions. Use one.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3693788049"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 7 model definitions (the base version's 6 and an alternative female marauder)."
+    },
+    {
+      "id": "steam-3696036773",
+      "name": "[Endo] High Elves - Loreful",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's more vanilla-looking High Elf reskin: mixed male and female units with heads closer to the game's look and slightly slimmer bodies; no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "high elves"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3696036773",
+            "title": "[Endo] High Elves - Loreful"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_high_elf_loreful.pack",
+          "from": "steam",
+          "steamId": "3696036773"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 93 model definitions; it shares 464 files with [Endo] High Elves.",
+      "factionLook": [
+        "high elves"
+      ]
+    },
+    {
+      "id": "steam-3697128442",
+      "name": "[Endo] Druchii Anointed",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's more Slaanesh-themed look for the Druchii Anointed heroes, with heads like his Devotees, new portraits and unit cards; no nudity, no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "slaanesh",
+        "dark elves",
+        "hero"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3697128442",
+            "title": "[Endo] Druchii Anointed"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_druchii_anointed.pack",
+          "from": "steam",
+          "steamId": "3697128442"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 4 model definitions (sla_druchii_anointed and its three campaign variants). Endo's Combined Faction Reskins holds all its files with the same content (pack comparison 2026-11-10)."
+    },
+    {
+      "id": "steam-3711058410",
+      "name": "[Endo] Dark Elves - Loreful",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's more vanilla-looking Dark Elf reskin: mixed male and female units; Shades, Witch Elves, Sisters of Slaughter and Doomfire Warlocks keep most of the original look in slightly more covered outfits.",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "dark elves"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3711058410",
+            "title": "[Endo] Dark Elves - Loreful"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_dark_elf_loreful.pack",
+          "from": "steam",
+          "steamId": "3711058410"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 59 model definitions; it shares 764 files with [Endo] Dark Elves.",
+      "factionLook": [
+        "dark elves"
+      ]
+    },
+    {
+      "id": "steam-3720584550",
+      "name": "[Endo] Norsca",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's Norsca reskin: Norscan humanoid units female, with new unit cards and female audio; no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "norsca"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3720584550",
+            "title": "[Endo] Norsca"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_norsca.pack",
+          "from": "steam",
+          "steamId": "3720584550"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 37 model definitions and audio tables; it shares 566 files with the Loreful version.",
+      "factionLook": [
+        "norsca"
+      ]
+    },
+    {
+      "id": "steam-3720584516",
+      "name": "[Endo] Norsca - Loreful",
+      "authors": [
+        "Endo"
+      ],
+      "kind": "reskin",
+      "summary": "Endo's mixed Norsca reskin: Norscan humanoid units mixed male and female, with female audio; no stat or gameplay changes.",
+      "tags": [
+        "reskin",
+        "endo",
+        "female units",
+        "norsca"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3720584516",
+            "title": "[Endo] Norsca - Loreful"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_norsca_loreful.pack",
+          "from": "steam",
+          "steamId": "3720584516"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "high",
+        "openQuestions": []
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 53 model definitions and audio tables.",
+      "factionLook": [
+        "norsca"
+      ]
+    },
+    {
+      "id": "steam-3822675029",
+      "name": "[Morathi] Marked Unit Cards for Endo's Dark Elves",
+      "authors": [
+        "Murray222"
+      ],
+      "kind": "assets",
+      "summary": "Unit cards for Endo's Dark Elf units with the Slaanesh mark, for The Cult of Slaanesh.",
+      "tags": [
+        "dark elves",
+        "slaanesh",
+        "unit cards"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3822675029",
+            "title": "[Morathi] Marked Unit Cards for Endo's Dark Elves"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Cult_of_Slaanesh_Endo_UnitCard.pack",
+          "from": "steam",
+          "steamId": "3822675029"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "extends",
+          "target": {
+            "mod": "steam-3616082403"
+          },
+          "note": "Cards for Endo's Dark Elf units",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3822675029"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Whether 'load this before the CoS mod' means above or below in the load order is not said."
+        ]
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 16 unit card images only.",
+      "installNotes": [
+        "Made for The Cult of Slaanesh; its page says to load it before that mod."
+      ]
+    },
+    {
+      "id": "steam-3830879673",
+      "name": "Vampire Counts Reskin (with Endo's models)",
+      "authors": [],
+      "kind": "units",
+      "summary": "A Vampire Counts and Vampire Coast reskin built from Endo's models, with bloodline colours, two new units and stat changes. It also gives every settlement on the map walls, for all factions, and its texts are in Spanish.",
+      "tags": [
+        "vampire counts",
+        "vampire coast",
+        "female units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3830879673",
+            "title": "Vampire Counts Reskin (with Endo's models)"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "@endo_submod_vampire_counts.pack",
+          "from": "steam",
+          "steamId": "3830879673"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested."
+        ]
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 48 model definitions and many database tables (units, agents, buildings); not an Endo release (its page).",
+      "factionLook": [
+        "vampire counts"
+      ],
+      "knownIssues": [
+        "Gives every settlement walls for all factions (its page), so settlement battles and AI behaviour differ from the base game.",
+        "All its new and changed texts are in Spanish, whatever the game's language (its page)."
+      ]
+    },
+    {
+      "id": "steam-3835068153",
+      "name": "Female Auxiliaries - New Recruitable Units (Endotw)",
+      "authors": [],
+      "kind": "units",
+      "summary": "Endo's female units as extra recruitable auxiliaries next to the normal troops for many factions (-2% health, +5% speed, same costs); already female units keep one option with Endo's look.",
+      "tags": [
+        "many factions",
+        "female units",
+        "endo models"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3835068153",
+            "title": "Female Auxiliaries - New Recruitable Units (Endotw)"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "endo_female_auxiliaries.pack",
+          "from": "steam",
+          "steamId": "3835068153"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "steam-3683061804"
+          },
+          "note": "Its page: disable [Endo] Combined Faction Reskins while using it.",
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3835068153"
+          }
+        }
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested."
+        ]
+      },
+      "status": "stable",
+      "_note": "Pack read 2026-11-10 (Workshop download): 6,101 files, 574 model definitions for 11 factions (Empire, High Elves, Dark Elves, Bretonnia, Norsca, Kislev, Daemons, Wood Elves, Cathay, Chaos, Beastmen) and their unit tables; standalone.",
+      "knownIssues": [
+        "Keep it enabled in saves that have its units (its page)."
+      ]
     }
   ],
   "external": [

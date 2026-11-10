@@ -1096,9 +1096,45 @@
     },
     {
       "id": "steam-3683061804",
-      "_note": "Pack comparison 2026-11-10 (contents unpacked): all 65 files of [Endo] Sisters of Twilight - Alternative are in it with the same content: its Sisters wear the Alternative outfit.",
+      "_note": "Pack comparison 2026-11-10 (contents unpacked): all 65 files of [Endo] Sisters of Twilight - Alternative are in it with the same content: its Sisters wear the Alternative outfit. Also with the same content: [Endo] Spellsinger, Empire - Alternative, Devotees - More Slaaneshy, Female Hellstriders, Druchii Anointed and Female Ungors.",
       "contains": [
-        "steam-3706296778"
+        "steam-3706296778",
+        "steam-3707419547",
+        "steam-3650679678",
+        "steam-3687970389",
+        "steam-3688586949",
+        "steam-3697128442",
+        "steam-3710146959"
+      ],
+      "alsoLooks": [
+        "Sisters of Twilight",
+        "Spellsinger"
+      ]
+    },
+    {
+      "id": "steam-3616082403",
+      "_note": "Endo's Combined pack and the Loreful version replace the same Dark Elf units: one army look.",
+      "factionLook": [
+        "dark elves"
+      ]
+    },
+    {
+      "id": "nx-40",
+      "_note": "It also replaces the Spellsinger definitions (wef_spellsinger and its campaign variants).",
+      "alsoLooks": [
+        "Sisters of Twilight",
+        "Orion",
+        "Durthu",
+        "Drycha",
+        "Ariel",
+        "Spellsinger"
+      ]
+    },
+    {
+      "id": "ll-40998",
+      "_note": "It replaces the Spellsinger definitions (wef_spellsinger and its campaign variants).",
+      "alsoLooks": [
+        "Spellsinger"
       ]
     }
   ]

@@ -33,7 +33,9 @@ community contributions. App UI and catalog texts are English.
     makes the look step's first card "Keep the look from …" with that pack's picture (`PickOne.kept` in the editor), not "the game's look".
     A look whose files a mod in the list holds whole (`Mod.contains`: [Endo] Wood Elves holds Endo's Sisters pack, the Combined pack the
     Alternative) is not offered next to it, and a look made of the game's own model files (`Mod.baseModels`: Beautiful Sisters of
-    Twilight) is greyed out as "Not visible with …" once another look or an army pack gives her its own models; Play drops such a pick. A reskin with
+    Twilight) is greyed out as "Not visible with …" once another look or an army pack gives her its own models; Play drops such a pick.
+    Heroes an army pack dresses (`alsoLooks`: "Spellsinger") count as characters for looks, so [Endo] Spellsinger is a look of its own; an
+    add-on of a size that a picked pack holds whole (Endo's Spellsingers in the Combined pack) is dropped from the profile. A reskin with
     `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
     one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower

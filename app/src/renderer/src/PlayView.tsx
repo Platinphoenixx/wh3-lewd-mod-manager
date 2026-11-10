@@ -506,7 +506,10 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
       const m = v.startsWith('mod:') ? data.index.mods.get(v.slice(4)) : undefined
       return [k, g && m && (containedIn(othersOf(g), m) || hiddenBy(othersOf(g), m)) ? NONE : v]
     }))
-    const p = guidedProfile(tier, effective, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
+    // An add-on of the size that a picked pack holds whole (Endo's Spellsingers in the Combined pack) adds nothing.
+    const picked = Object.values(effective).flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
+    const kept = tier.extras.filter((k) => { const m = k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) : undefined; return !m || !containedIn(picked, m) })
+    const p = guidedProfile({ ...tier, extras: kept }, effective, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
     const withFlags = Object.keys(flagged).length ? { ...p, flagged } : p
     return pin?.fix ? { ...withFlags, fixes: { [pin.mod]: pin.fix } } : withFlags
   }
