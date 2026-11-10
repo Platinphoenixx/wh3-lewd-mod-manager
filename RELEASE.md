@@ -22,6 +22,8 @@ release is all it takes for players to hear about it.
   requirements, conflicts, load-order rules and images.
 - *Play*: pick a character or a theme, choose how much content (from the essentials to everything that fits), then
   the app walks you through the choices with pictures – looks, add-ons, heroes – and installs the result.
+- Lords no mod makes playable (the Sisters of Twilight, Repanse, Neferata, Hellebron …) in their own campaign: their
+  look, the army's look and the add-ons that work in any campaign, as the same guided choices.
 - Share a setup that works for you with one click; after playing, say whether it worked. The best rated setups
   show up on the character's page.
 - Profiles from tested community lists and guides in three steps (choices, install, play), with every optional add-on; your own mods are placed

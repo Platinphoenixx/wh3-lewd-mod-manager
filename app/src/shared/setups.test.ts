@@ -161,4 +161,11 @@ describe('lords in the game\'s own campaign', () => {
     expect(steps.map((x) => x.title)).toEqual(["Sisters of Twilight's look", "Your army's look", 'Review and install'])
     expect(stepsFor(sisters, s.picks, true).map((x) => x.title)).toContain('Quality of life')
   })
+
+  it('writes down the usual version of an added mod with versions', () => {
+    const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
+    const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }
+    const tier = { ...tiersFor(vcat, vindex, sisters)[1], extras: ['mod:events', 'mod:cb'] }
+    expect(guidedProfile(tier, {}, [], new Set(), 'x', buildIndex(c)).variants).toEqual({ 'mod:cb': { v: 'light.pack' } })
+  })
 })

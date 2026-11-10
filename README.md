@@ -8,8 +8,8 @@ Steam Workshop, Nexus Mods and Discord.
 
 - **Catalog** of the mods with descriptions, images, files, requirements, incompatibilities and load-order
   rules, collected from LoversLab, Nexus Mods, the Lewdhammer wiki, the community Discord and the Steam Workshop.
-- **Profiles**: start from a community template (tested mod lists, KPW's per-character guides, or a template
-  built from a mod's own requirements) and go through three steps: choices, install, load order & play.
+- **Profiles**: start from a community template (tested mod lists, KPW's per-character guides, a template
+  built from a mod's own requirements, or a lord in the game's own campaign with the looks and add-ons that fit) and go through three steps: choices, install, load order & play.
   Switch on every optional add-on that fits. Dependencies are
   added automatically, conflicts and "pick one" alternatives are shown, the load order is computed.
   Your own mods (packs the catalog does not know) are read and placed in the load order with a reason.

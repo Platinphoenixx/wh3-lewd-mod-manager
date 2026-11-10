@@ -484,7 +484,7 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
   )
 
   function profile(): Profile {
-    const p = guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`)
+    const p = guidedProfile(tier, chosen, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
     const withFlags = Object.keys(flagged).length ? { ...p, flagged } : p
     return pin?.fix ? { ...withFlags, fixes: { [pin.mod]: pin.fix } } : withFlags
   }

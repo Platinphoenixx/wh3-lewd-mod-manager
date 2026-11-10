@@ -276,7 +276,7 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
  * Base entries keep the preset's tested order. Extras are placed by their load-order rules, otherwise
  * right above the profile mod they extend or relate to, otherwise reskins on top and the rest at the bottom.
  */
-export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>): ResolvedProfile {
+export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported' | 'variants'>): ResolvedProfile {
   const removed = new Set(profile.removed)
   const entries: ResolvedEntry[] = []
   preset.entries.forEach((e, i) => {
@@ -350,6 +350,22 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
       if (dep.origin === 'base') { if (!dep.packs?.some((x) => x.toLowerCase() === r.pack!.toLowerCase())) dep.packs = [...(dep.packs ?? []), r.pack] }
       else { dep.pack = r.pack; dep.packs = [r.pack] }
     }
+  }
+  // A version the player chose for an added mod (Community Beastmen's Light version) is the one it needs and loads, even
+  // when another version is installed (its Steam full version): the install step fetches it, the launch takes exactly it.
+  for (const e of entries) {
+    const chosen = profile.variants?.[e.key]
+    const mod = e.origin !== 'base' && !listed.has(e.key) && chosen && e.key.startsWith('mod:') ? index.mods.get(e.key.slice(4)) : undefined
+    if (!mod || !chosen || e.pack) continue
+    const groups = new Set<string>()
+    const packs = mod.packs.filter((p) => !p.optional).flatMap((p) => {
+      if (!p.exclusiveGroup) return [p.file]
+      if (groups.has(p.exclusiveGroup)) return []
+      groups.add(p.exclusiveGroup)
+      const want = chosen[p.exclusiveGroup]
+      return [mod.packs.some((x) => x.exclusiveGroup === p.exclusiveGroup && x.file === want) ? want : p.file]
+    })
+    if (packs.length) { e.pack = packs[0]; e.packs = packs }
   }
   const loaded = new Map(entries.map((e) => [e.key, e.packs ?? (e.pack ? [e.pack] : undefined)]))
   const all = conflictsIn(index, entries.map((e) => e.key), (k) => loaded.get(k) ?? defaultPacksOf(index, preset.playAs)(k))

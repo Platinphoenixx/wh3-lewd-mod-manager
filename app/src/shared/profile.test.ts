@@ -128,6 +128,16 @@ describe('resolveProfile', () => {
     expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])
   })
 
+  it('makes the version the player chose for an added mod the pack it needs, whatever else is installed', () => {
+    const c: Catalog = { ...catalog, mods: [...catalog.mods, mod('cb', { packs: [
+      { file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', steamId: '9', exclusiveGroup: 'v' }, { file: 'extra.pack', from: 'download', optional: true }] })] }
+    const ix = buildIndex(c)
+    const cb = (variants?: Record<string, Record<string, string>>) => resolveProfile(c, ix, preset, { extras: ['mod:cb'], removed: [], variants }).entries.find((e) => e.key === 'mod:cb')!
+    expect([cb({ 'mod:cb': { v: 'light.pack' } }).pack, cb({ 'mod:cb': { v: 'light.pack' } }).packs]).toEqual(['light.pack', ['light.pack']])
+    expect(cb({ 'mod:cb': { v: 'full.pack' } }).packs).toEqual(['full.pack'])
+    expect(cb().pack).toBeUndefined() // no choice: the first installed version loads, as before
+  })
+
   it("puts an army's look below the character looks the player picked, in either order of adding", () => {
     const c: Catalog = { ...catalog, mods: [...catalog.mods, mod('army', { kind: 'reskin', factionLook: ['high elves'] })] }
     for (const extras of [['mod:army', 'mod:alarielle-skin'], ['mod:alarielle-skin', 'mod:army']]) {

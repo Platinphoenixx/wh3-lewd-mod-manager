@@ -283,16 +283,26 @@ export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean, lo
 }
 
 /** The profile a guided setup makes: the tier's template and extras, the chosen options, the dropped extras and template mods. */
-export function guidedProfile(tier: Tier, chosen: Record<string, string>, picks: PickOne[], dropped: Set<string>, name: string): Profile {
+export function guidedProfile(tier: Tier, chosen: Record<string, string>, picks: PickOne[], dropped: Set<string>, name: string, index?: CatalogIndex): Profile {
   const now = new Date().toISOString()
   const picked = picks.map((g) => chosen[g.pick[0].key] ?? g.preselect ?? 'none').filter((k) => k !== 'none')
   const declined = picks.flatMap((g) => g.pick.map((x) => x.key)).filter((k) => !picked.includes(k))
   const base = new Set(baseKeys(tier.preset))
+  const extras = [...new Set([...tier.extras, ...picked])].filter((k) => !dropped.has(k))
+  // An added mod with versions gets its usual one (the first of each pick-one group) written down, so another installed
+  // version (Community Beastmen's Steam full version next to the Light one this list means) is not loaded instead.
+  const variants: Record<string, Record<string, string>> = {}
+  for (const k of extras) {
+    const mod = k.startsWith('mod:') ? index?.mods.get(k.slice(4)) : undefined
+    for (const p of mod?.packs ?? []) {
+      if (!p.exclusiveGroup || p.optional || variants[k]?.[p.exclusiveGroup]) continue
+      variants[k] = { ...variants[k], [p.exclusiveGroup]: p.file }
+    }
+  }
   return {
-    id: crypto.randomUUID(), name, presetId: tier.preset.id,
-    extras: [...new Set([...tier.extras, ...picked])].filter((k) => !dropped.has(k)),
+    id: crypto.randomUUID(), name, presetId: tier.preset.id, extras,
     removed: [...dropped].filter((k) => base.has(k)),
-    declined, createdAt: now, updatedAt: now
+    declined, ...(Object.keys(variants).length ? { variants } : {}), createdAt: now, updatedAt: now
   }
 }
 
