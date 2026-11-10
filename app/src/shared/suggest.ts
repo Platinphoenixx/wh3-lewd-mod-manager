@@ -60,13 +60,13 @@ export type SuggestionEntry = Suggestion | PickOne
 export const isPickOne = (e: SuggestionEntry): e is PickOne => 'pick' in e
 
 /** Factions and races as they appear in catalog tags, with the name to show. */
-const FACTIONS: Record<string, string> = {
+export const FACTIONS: Record<string, string> = {
   cathay: 'Cathay', kislev: 'Kislev', slaanesh: 'Slaanesh', khorne: 'Khorne', nurgle: 'Nurgle', tzeentch: 'Tzeentch',
   'high elves': 'High Elves', 'dark elves': 'Dark Elves', 'wood elves': 'Wood Elves', empire: 'Empire', bretonnia: 'Bretonnia',
   'vampire counts': 'Vampire Counts', 'vampire coast': 'Vampire Coast', lizardmen: 'Lizardmen', skaven: 'Skaven',
   greenskins: 'Greenskins', beastmen: 'Beastmen', norsca: 'Norsca', 'warriors of chaos': 'Warriors of Chaos',
   'daemons of chaos': 'Daemons of Chaos', 'tomb kings': 'Tomb Kings', dwarfs: 'Dwarfs', 'ogre kingdoms': 'Ogre Kingdoms',
-  'chaos dwarfs': 'Chaos Dwarfs'
+  'chaos dwarfs': 'Chaos Dwarfs', 'undead legions': 'Undead Legions'
 }
 const STORY_KINDS: Mod['kind'][] = ['campaign', 'progression']
 
@@ -110,6 +110,8 @@ export function suggestForProfile(
   // The profile's theme: its characters and the factions its mods are about.
   const characters = new Map<string, string>()
   for (const m of catalog.mods) for (const p of m.playAs ?? []) characters.set(norm(p.character), p.character)
+  // Lords played in the game's own campaign have no mod that names them as playable; their template does.
+  for (const p of catalog.presets) if (p.origin === 'vanilla') for (const c of p.playAs) characters.set(norm(c), p.playAs[0])
   const themeOf = (m: Mod) => [
     ...m.tags.map(norm).filter((t) => FACTIONS[t] || characters.has(t)).map((t) => FACTIONS[t] ?? characters.get(t)!),
     ...(m.playAs ?? []).map((p) => p.character)
@@ -117,7 +119,7 @@ export function suggestForProfile(
   // Only the template's own mods set it: an add-on the player switched on (the Community Beastmen Slaanesh version,
   // tagged for the Slaanesh lords that use it) must not turn a Beastmen list into a Slaanesh one.
   const templateMods = templateKeys.filter((k) => k.startsWith('mod:')).flatMap((k) => index.mods.get(k.slice(4)) ?? [])
-  const theme = new Set([...templateMods.flatMap(themeOf), ...preset.playAs, ...listedChars])
+  const theme = new Set([...templateMods.flatMap(themeOf), ...preset.playAs, ...listedChars, ...(preset.factions ?? []).map((f) => FACTIONS[norm(f)] ?? f)])
   // Templates may say "Miao"; the catalog's characters say "Miao Ying".
   const lead = preset.playAs[0] ?? preset.name
   const leadName = [...characters.values()].find((c) => norm(c).startsWith(norm(lead))) ?? lead
@@ -125,6 +127,9 @@ export function suggestForProfile(
   // Reskins already in the profile, by the character they change.
   const profileSkins = new Map<string, string[]>()
   for (const m of profileMods.filter((x) => x.kind === 'reskin')) for (const c of reskinSubjects(m, characters)) profileSkins.set(c, [...(profileSkins.get(c) ?? []), m.name])
+  // And the armies they change wholesale.
+  const profileArmies = new Map<string, string[]>()
+  for (const m of profileMods) for (const f of m.factionLook ?? []) profileArmies.set(norm(f), [...(profileArmies.get(norm(f)) ?? []), m.name])
 
   // What the list's own mods do to a character's look as the campaign goes on.
   const stageMods = profileMods.flatMap((m) => (m.stageLooks ?? []).map((x) => ({ ...x, mod: m })))
@@ -196,14 +201,20 @@ export function suggestForProfile(
       campaign: STORY_KINDS.includes(stage.mod.kind), ...(stage.image ? { image: stage.image } : {}), ...(stage.partly?.includes(m.id) ? { partly: true } : {})
     } : undefined
     // A look that only holds until the first stage does not replace the stage models.
-    const replaces = m.kind === 'reskin' && !tie ? reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []).filter((n) => !until || n !== stage!.mod.name) : []
+    const replaces = m.kind === 'reskin' && !tie ? [...new Set([
+      ...reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []).filter((n) => !until || n !== stage!.mod.name),
+      ...(m.factionLook ?? []).flatMap((f) => profileArmies.get(norm(f)) ?? [])
+    ])].filter((n) => n !== m.name) : []
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
-    out[general ? 'general' : 'lewd'].push({
+    // An army's look is chosen with the other looks, whatever its tags say (Endo's Combined pack is tagged general).
+    out[general && !m.factionLook?.length ? 'general' : 'lewd'].push({
       key: c.key, mod: m, reasons: reasons.slice(0, 2), score, strong: !!(ks || tie || forChar), tied: !!tie, fits: !!(forChar || fits.length), sameLists: ks, ...(replaces.length ? { replaces } : {}), ...(until ? { until } : {})
     })
   }
   for (const list of [out.lewd, out.general]) list.sort((a, b) => b.score - a.score || a.mod.name.localeCompare(b.mod.name))
-  return { lewd: pickOneGroups(catalog, out.lewd, characters), general: pickOneGroups(catalog, out.general, characters), character: leadName }
+  // A lord in the game's own campaign: a single look for the lord is a choice too (the look or the game's own).
+  const leads = new Set(preset.origin === 'vanilla' ? [preset.playAs[0]] : [])
+  return { lewd: pickOneGroups(catalog, out.lewd, characters, leads), general: pickOneGroups(catalog, out.general, characters, leads), character: leadName }
 }
 
 /** One idea for a list; options of one `pickOf` exclude each other. */
@@ -243,7 +254,7 @@ function reskinSubjects(m: Mod, characters: Map<string, string>): string[] {
  * Joins suggestions that exclude each other into "pick one" groups: mods marked incompatible, versions of
  * the same add-on (a shared exclusiveGroup), and reskins of the same subject (they replace the same models).
  */
-function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<string, string>): SuggestionEntry[] {
+function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<string, string>, leads: Set<string> = new Set()): SuggestionEntry[] {
   const at = new Map(list.map((s, i) => [s.mod.id, i]))
   const parent = list.map((_, i) => i)
   const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])))
@@ -278,6 +289,15 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
       else subjects.set(subject, i)
     }
   }
+  // Reskins that replace a faction's units wholesale overwrite the same files (the catalog's factionLook): one army look.
+  const armies = new Map<string, number>()
+  for (const [i, sug] of list.entries()) {
+    for (const f of sug.mod.factionLook ?? []) {
+      const name = FACTIONS[norm(f)] ?? f
+      if (armies.has(name)) join(armies.get(name)!, i, `They all change how the ${name} army looks`)
+      else armies.set(name, i)
+    }
+  }
   const byRoot = new Map<number, Suggestion[]>()
   for (const [i, sug] of list.entries()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), sug])
   // Preselected: the first option, if players of this list really use it and it replaces nothing; otherwise none.
@@ -290,7 +310,11 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
     if (members.length > 1) return { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score, ...preselect(members) }
     // A single reskin that would replace one in the profile is a choice too ("None" keeps the profile's look).
     const [one] = members
-    if (one.replaces || one.until) return { pick: members, note: `It changes how ${reskinSubjects(one.mod, characters).join(', ')} looks`, score: one.score, ...preselect(members) }
+    const army = one.mod.factionLook?.length && !reskinSubjects(one.mod, characters).length
+      ? `the ${one.mod.factionLook.map((f) => FACTIONS[norm(f)] ?? f).join(', ')} army` : undefined
+    const subjects = reskinSubjects(one.mod, characters)
+    const lead = one.mod.kind === 'reskin' && subjects.some((c) => leads.has(c))
+    if (one.replaces || one.until || lead) return { pick: members, note: `It changes how ${army ?? (lead ? subjects.filter((c) => leads.has(c)) : subjects).join(', ')} looks`, score: one.score, ...preselect(members) }
     return one
   })
   return entries.sort((a, b) => b.score - a.score)

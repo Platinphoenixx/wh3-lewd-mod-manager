@@ -102,6 +102,19 @@ describe('catalog', () => {
     expect(catalog.mods.filter((m) => m.stageLooks?.length).length).toBeGreaterThan(0)
   })
 
+  it("every lord in the game's own campaign needs no mod and gets a choice of looks", () => {
+    const bad: string[] = []
+    for (const s of subjectsOf(catalog, index).filter((x) => x.vanilla)) {
+      const p = s.presets.find((x) => x.origin === 'vanilla')!
+      if (p.entries.length) bad.push(`${s.name}: the template has mods`)
+      if (!p.factions?.length || !p.dlc) bad.push(`${s.name}: no faction or DLC`)
+      const steps = stepsFor(s, suggestedFor(catalog, index, p).picks, false, true)
+      if (!steps.some((x) => x.kind === 'pick')) bad.push(`${s.name}: no look to choose`)
+    }
+    expect(bad).toEqual([])
+    expect(subjectsOf(catalog, index).some((x) => x.vanilla && x.name === 'Sisters of Twilight')).toBe(true)
+  })
+
   it('every character and theme has a recommended size, and no size brings a conflict', () => {
     const bad: string[] = []
     for (const s of subjectsOf(catalog, index)) {

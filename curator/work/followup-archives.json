@@ -802,6 +802,92 @@
           "fromStart": true
         }
       ]
+    },
+    {
+      "id": "steam-3672266382",
+      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them. Its pack also holds Endo's models of the Sisters of Twilight (endo_arahan_naestra_campaign, wef_arahan definitions), so it changes the twins too.",
+      "factionLook": [
+        "wood elves"
+      ],
+      "summary": "Reskin that turns all non-hero Wood Elf units female and gives the Sisters of Twilight Endo's look. No stat or gameplay changes and no dependencies."
+    },
+    {
+      "id": "nx-40",
+      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them. It also changes the Sisters of Twilight's definitions and portraits.",
+      "factionLook": [
+        "wood elves"
+      ]
+    },
+    {
+      "id": "ll-40998",
+      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them.",
+      "factionLook": [
+        "wood elves"
+      ]
+    },
+    {
+      "id": "steam-3683061804",
+      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them. Its page lists the factions it covers.",
+      "factionLook": [
+        "empire",
+        "high elves",
+        "wood elves",
+        "bretonnia",
+        "kislev",
+        "cathay",
+        "norsca"
+      ]
+    },
+    {
+      "id": "steam-3706296778",
+      "_note": "Pack comparison (2026-11-10): it replaces 62 files of [Endo] Wood Elves' Sisters of Twilight models with its alternative outfit, so it is a look of the twins that has to load above [Endo] Wood Elves (and Endo's Combined Faction Reskins, which hold the same files).",
+      "kind": "reskin",
+      "tags": [
+        "reskin",
+        "endo",
+        "wood elves",
+        "sisters of twilight",
+        "beautification"
+      ],
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3672266382"
+          },
+          {
+            "mod": "steam-3683061804"
+          }
+        ],
+        "note": "Its files replace the Sisters of Twilight models in [Endo] Wood Elves and the Combined pack, so it must load above them."
+      }
+    },
+    {
+      "id": "dc-sisters-of-druchii-dark-elf-reskin-of-the-sisters-of-twiligh",
+      "_note": "Pack comparison (2026-11-10): it replaces the Sisters of Twilight's definitions and portraits (wef_arahan, wef_sisters_of_twilight), like D's is Sister of Twilight.",
+      "tags": [
+        "reskin",
+        "wood elves",
+        "sisters of twilight"
+      ]
+    },
+    {
+      "id": "ll-34542",
+      "_note": "Outside Slaanesh factions the mod is its non-Slaanesh version; Slaanesh lists use the fixed Slaanesh pack (dc-n-slaaneshvassals-dechala-fix). So an added Vassal Dilemmas means the non-Slaanesh pack.",
+      "packs": [
+        {
+          "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+          "from": "download",
+          "note": "Version for all non-Slaanesh factions (used in Readman's Alarielle/Morathi lists)",
+          "archive": "@n_SlaaneshVassals_Non_Slaanesh_Factions"
+        },
+        {
+          "file": "@n_SlaaneshVassals.pack",
+          "from": "download",
+          "optional": true,
+          "note": "Slaanesh factions version (outdated since the patch of 2026-05-21; use the fixed pack of the Dechala fix entry)",
+          "archive": "@n_SlaaneshVassals"
+        }
+      ]
     }
   ]
 }

@@ -119,14 +119,16 @@ const ORIGIN_TITLE: Record<Preset['origin'], string> = {
   tested: 'Tested community lists',
   guide: 'Community guides',
   derived: 'From mod pages',
-  community: 'Shared by players'
+  community: 'Shared by players',
+  vanilla: "Lords in the game's own campaign"
 }
 
 const ORIGIN_NOTE: Record<Preset['origin'], string> = {
   tested: 'A complete list someone played with; the load order is tested.',
   guide: "A community guide's list; the order follows the guide and is not tested as a whole.",
   derived: 'Built automatically from the mod page: the mod plus everything it requires. Add options in your profile.',
-  community: 'A list a player shared from the app; the load order is the one they played with.'
+  community: 'A list a player shared from the app; the load order is the one they played with.',
+  vanilla: 'No mod is needed to play this lord: the template is empty, and the editor suggests looks, the army look and add-ons that fit.'
 }
 
 function presetCover(data: ReturnType<typeof useData>, p: Preset) {
@@ -207,7 +209,7 @@ export function ProfilesView() {
             )
           })}
         </ul>
-        {(['tested', 'guide', 'derived', 'community'] as const).map((origin) => {
+        {(['tested', 'guide', 'derived', 'community', 'vanilla'] as const).map((origin) => {
           const list = data.catalog.presets.filter((p) => (p.origin ?? 'tested') === origin)
           if (!list.length) return null
           return (

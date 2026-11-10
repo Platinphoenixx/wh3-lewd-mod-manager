@@ -26,8 +26,16 @@ export function installSourceFor(
     return ext?.steamId ? { kind: 'steam', id: ext.steamId } : { kind: 'manual', url: ext?.url }
   }
   if (!('mod' in t)) return { kind: 'manual' }
-  const mod = index.mods.get(t.mod)
-  if (!mod) return { kind: 'manual' }
+  const found = index.mods.get(t.mod)
+  if (!found) return { kind: 'manual' }
+  const mod = found
+  // An added mod names no pack: it loads what the mod needs, of a pick-one group the first (Community Beastmen's Light
+  // version, a download, not its Steam full version). When all of that is a download, it comes from where that is.
+  if (!entry.pack && !entry.from) {
+    const groups = new Set<string>()
+    const needed = mod.packs.filter((p) => !p.optional && (!p.exclusiveGroup || (!groups.has(p.exclusiveGroup) && !!groups.add(p.exclusiveGroup))))
+    if (needed.length && needed.every((p) => p.from === 'download')) entry = { ...entry, pack: needed[0].file, from: 'download' }
+  }
   // A pack that lives somewhere else than the mod's pages (a fix posted on Discord) comes from there.
   const elsewhere = entry.pack ? mod.packs.find((p) => p.file.toLowerCase() === entry.pack!.toLowerCase())?.url : undefined
   if (elsewhere) return /discord\.com/.test(elsewhere) ? { kind: 'discord', url: elsewhere } : { kind: 'manual', url: elsewhere }

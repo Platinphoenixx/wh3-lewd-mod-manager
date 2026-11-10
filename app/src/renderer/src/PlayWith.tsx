@@ -22,14 +22,29 @@ export function SubjectCard({ s, extra, dim, rec, onClick }: { s: Subject; extra
         {rec && <div className="rec">{rec}</div>}
         <div className="name">{s.name}</div>
         {s.kind === 'theme' && <div className="small muted">{s.characters.slice(0, 4).join(', ')}{s.characters.length > 4 ? ' …' : ''}</div>}
-        <div className="small muted">
-          {s.presets.length} ready-made list{s.presets.length === 1 ? '' : 's'}
-          {s.presets.some((p) => p.launchTest?.result === 'main menu') ? ' · launch-tested' : ''}
-        </div>
+        {s.vanilla ? (
+          <>
+            <div className="small muted">{s.factions?.join(', ')} · the game's own campaign</div>
+            <div className="small muted">{dlcLine(s.presets.find((p) => p.origin === 'vanilla')?.dlc)}</div>
+          </>
+        ) : (
+          <div className="small muted">
+            {s.presets.length} ready-made list{s.presets.length === 1 ? '' : 's'}
+            {s.presets.some((p) => p.launchTest?.result === 'main menu') ? ' · launch-tested' : ''}
+          </div>
+        )}
         {extra}
       </div>
     </div>
   )
+}
+
+/** What a lord in the game's own campaign needs: "DLC: The Twisted & The Twilight", "Base game", "Free lord". */
+export function dlcLine(dlc?: string): string {
+  if (!dlc) return ''
+  if (/^base game/i.test(dlc)) return 'Base game'
+  if (/^free/i.test(dlc)) return 'Free lord'
+  return `DLC: ${dlc}`
 }
 
 /** "Play with a mod…": a search over the catalog by name or link; each result says what the player gets with it. */

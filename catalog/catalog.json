@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T12:40:49+00:00",
+  "generatedAt": "2026-11-10T17:25:53+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -2063,6 +2063,15 @@
           "Does it include Endo Audio Merged (steam-3622829128)?"
         ]
       },
+      "factionLook": [
+        "empire",
+        "high elves",
+        "wood elves",
+        "bretonnia",
+        "kislev",
+        "cathay",
+        "norsca"
+      ],
       "knownIssues": [
         "Cannot be combined with other audio mods, because the game allows only one merged soundbank (Audio Mixer is incompatible; Empire and Bretonnia units go silent). The same limit applies to start-position mods (author, 2026-03-12)."
       ],
@@ -2723,7 +2732,7 @@
       "authors": [
         "Endo"
       ],
-      "kind": "submod",
+      "kind": "reskin",
       "summary": "Alternative, more revealing outfit for the Sisters of Twilight by Endo; no nudity and no gameplay changes.",
       "description": "Gives the Sisters of Twilight a wardrobe change in line with typical Wood Elf outfits, i.e. less clothing. There is no nudity, no stat or gameplay change and no dependency. The author calls it a small submod of the main reskin offering an alternative outfit.\n\nPart of Endo's reskin series; it was linked on the Discord without comment. Pick it if you want this look for the twins.",
       "features": [
@@ -2737,7 +2746,6 @@
         "endo",
         "wood elves",
         "sisters of twilight",
-        "general",
         "beautification"
       ],
       "sources": {
@@ -2767,6 +2775,17 @@
         ]
       },
       "status": "stable",
+      "loadOrder": {
+        "above": [
+          {
+            "mod": "steam-3672266382"
+          },
+          {
+            "mod": "steam-3683061804"
+          }
+        ],
+        "note": "Its files replace the Sisters of Twilight models in [Endo] Wood Elves and the Combined pack, so it must load above them."
+      },
       "authorPages": [
         {
           "site": "steam",
@@ -2797,7 +2816,7 @@
         "female units",
         "wood elves"
       ],
-      "summary": "Reskin that turns all non-hero Wood Elf units female. No stat or gameplay changes and no dependencies.",
+      "summary": "Reskin that turns all non-hero Wood Elf units female and gives the Sisters of Twilight Endo's look. No stat or gameplay changes and no dependencies.",
       "description": "Endo's Wood Elf reskin depicts all non-hero Wood Elf units as women in stylised, impractical outfits; the author states there is no full nudity and finds the result fairly lore-friendly. It brings new unit cards and robust variants.\n\nThere are no changes to stats or gameplay and no dependencies; per the author the models should not add noticeable latency.",
       "features": [
         "All non-hero Wood Elf units reskinned",
@@ -2834,6 +2853,9 @@
         "lastChecked": "2026-10-31",
         "confidence": "high"
       },
+      "factionLook": [
+        "wood elves"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -17247,6 +17269,9 @@
           "url": "https://www.patreon.com/Warmaidens292"
         }
       ],
+      "factionLook": [
+        "wood elves"
+      ],
       "updated": "2026-05-14",
       "changesData": true,
       "confirmed": "2026-11-03"
@@ -24437,6 +24462,9 @@
         "confidence": "medium",
         "openQuestions": []
       },
+      "factionLook": [
+        "wood elves"
+      ],
       "authorPages": [
         {
           "site": "loverslab",
@@ -49742,7 +49770,11 @@
       "name": "Sisters of Druchii (dark elf reskin of the Sisters of Twilight)",
       "authors": [],
       "kind": "reskin",
-      "tags": [],
+      "tags": [
+        "reskin",
+        "wood elves",
+        "sisters of twilight"
+      ],
       "summary": "Posted in #submods by a Modder-role member (2026-04-16). Changes the same Sisters of Twilight files as other reskins of them (for example the DOVAKIN series): use one.",
       "sources": {
         "discord": [
@@ -50860,18 +50892,17 @@
       },
       "packs": [
         {
+          "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+          "from": "download",
+          "note": "Version for all non-Slaanesh factions (used in Readman's Alarielle/Morathi lists)",
+          "archive": "@n_SlaaneshVassals_Non_Slaanesh_Factions"
+        },
+        {
           "file": "@n_SlaaneshVassals.pack",
           "from": "download",
           "optional": true,
-          "note": "Slaanesh factions version",
+          "note": "Slaanesh factions version (outdated since the patch of 2026-05-21; use the fixed pack of the Dechala fix entry)",
           "archive": "@n_SlaaneshVassals"
-        },
-        {
-          "file": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
-          "from": "download",
-          "optional": true,
-          "note": "Non-Slaanesh factions version (used in Readman's Alarielle/Morathi lists)",
-          "archive": "@n_SlaaneshVassals_Non_Slaanesh_Factions"
         }
       ],
       "playAs": [
@@ -69594,6 +69625,701 @@
         "game": "9.0.4",
         "date": "2026-11-02"
       }
+    },
+    {
+      "id": "vanilla-elspeth-von-draken",
+      "name": "Elspeth von Draken",
+      "origin": "vanilla",
+      "playAs": [
+        "Elspeth von Draken",
+        "Elspeth"
+      ],
+      "phase": "any",
+      "factions": [
+        "empire"
+      ],
+      "dlc": "Thrones of Decay",
+      "description": "Wissenland & Nuln (The Empire) in the game's own campaign – playable with the DLC Thrones of Decay. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own The Empire campaign",
+        "3 looks for Elspeth von Draken in the catalog"
+      ],
+      "coverMods": [
+        "steam-3709381189",
+        "nx-203",
+        "nx-344"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3621449095"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-nagash",
+      "name": "Nagash",
+      "origin": "vanilla",
+      "playAs": [
+        "Nagash"
+      ],
+      "phase": "any",
+      "factions": [
+        "undead legions"
+      ],
+      "dlc": "Lords of the End Times",
+      "description": "Host of Nagash (Undead Legions) in the game's own campaign – playable with the DLC Lords of the End Times. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Undead Legions campaign",
+        "2 looks for Nagash in the catalog"
+      ],
+      "coverMods": [
+        "steam-3830112095",
+        "steam-3810029219"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-neferata",
+      "name": "Neferata",
+      "origin": "vanilla",
+      "playAs": [
+        "Neferata"
+      ],
+      "phase": "any",
+      "factions": [
+        "vampire counts"
+      ],
+      "dlc": "Free (update 9.0)",
+      "description": "The Lahmian Sisterhood (Vampire Counts) in the game's own campaign – a free lord. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Vampire Counts campaign",
+        "7 looks for Neferata in the catalog"
+      ],
+      "coverMods": [
+        "nx-407",
+        "steam-3810043473",
+        "nx-402"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-vilitch-the-curseling",
+      "name": "Vilitch the Curseling",
+      "origin": "vanilla",
+      "playAs": [
+        "Vilitch the Curseling",
+        "Vilitch"
+      ],
+      "phase": "any",
+      "factions": [
+        "warriors of chaos"
+      ],
+      "dlc": "Champions of Chaos",
+      "description": "Puppets of Misrule (Warriors of Chaos) in the game's own campaign – playable with the DLC Champions of Chaos. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Warriors of Chaos campaign",
+        "1 look for Vilitch the Curseling in the catalog"
+      ],
+      "coverMods": [
+        "nx-107"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-repanse-de-lyonesse",
+      "name": "Repanse de Lyonesse",
+      "origin": "vanilla",
+      "playAs": [
+        "Repanse de Lyonesse",
+        "Repanse"
+      ],
+      "phase": "any",
+      "factions": [
+        "bretonnia"
+      ],
+      "dlc": "Free",
+      "description": "Chevaliers de Lyonesse (Bretonnia) in the game's own campaign – a free lord. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Bretonnia campaign",
+        "6 looks for Repanse de Lyonesse in the catalog"
+      ],
+      "coverMods": [
+        "nx-347",
+        "nx-97",
+        "nx-99"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3647419004"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-malekith",
+      "name": "Malekith",
+      "origin": "vanilla",
+      "playAs": [
+        "Malekith"
+      ],
+      "phase": "any",
+      "factions": [
+        "dark elves"
+      ],
+      "dlc": "Base game (Warhammer II)",
+      "description": "Naggarond (Dark Elves) in the game's own campaign – in the base game. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Dark Elves campaign",
+        "1 look for Malekith in the catalog"
+      ],
+      "coverMods": [
+        "nx-196"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3616082403"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-hellebron",
+      "name": "Hellebron",
+      "origin": "vanilla",
+      "playAs": [
+        "Hellebron"
+      ],
+      "phase": "any",
+      "factions": [
+        "dark elves"
+      ],
+      "dlc": "The Queen & The Crone",
+      "description": "Har Ganeth (Dark Elves) in the game's own campaign – playable with the DLC The Queen & The Crone. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Dark Elves campaign",
+        "2 looks for Hellebron in the catalog"
+      ],
+      "coverMods": [
+        "nx-197",
+        "nx-339"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3616082403"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-teclis",
+      "name": "Teclis",
+      "origin": "vanilla",
+      "playAs": [
+        "Teclis"
+      ],
+      "phase": "any",
+      "factions": [
+        "high elves"
+      ],
+      "dlc": "Base game (Warhammer II)",
+      "description": "Order of Loremasters (High Elves) in the game's own campaign – in the base game. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own High Elves campaign",
+        "1 look for Teclis in the catalog"
+      ],
+      "coverMods": [
+        "ll-44088"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3616234518"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-karl-franz",
+      "name": "Karl Franz",
+      "origin": "vanilla",
+      "playAs": [
+        "Karl Franz"
+      ],
+      "phase": "any",
+      "factions": [
+        "empire"
+      ],
+      "dlc": "Base game (Warhammer)",
+      "description": "Reikland (The Empire) in the game's own campaign – in the base game. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own The Empire campaign",
+        "1 look for Karl Franz in the catalog"
+      ],
+      "coverMods": [
+        "steam-3816938215"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3621449095"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-khalida",
+      "name": "Khalida",
+      "origin": "vanilla",
+      "playAs": [
+        "Khalida"
+      ],
+      "phase": "any",
+      "factions": [
+        "tomb kings"
+      ],
+      "dlc": "Rise of the Tomb Kings",
+      "description": "Court of Lybaras (Tomb Kings) in the game's own campaign – playable with the DLC Rise of the Tomb Kings. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Tomb Kings campaign",
+        "6 looks for Khalida in the catalog"
+      ],
+      "coverMods": [
+        "nx-35",
+        "nx-19",
+        "steam-2996322070"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-aranessa-saltspite",
+      "name": "Aranessa Saltspite",
+      "origin": "vanilla",
+      "playAs": [
+        "Aranessa Saltspite",
+        "Aranessa"
+      ],
+      "phase": "any",
+      "factions": [
+        "vampire coast"
+      ],
+      "dlc": "Curse of the Vampire Coast",
+      "description": "Pirates of Sartosa (Vampire Coast) in the game's own campaign – playable with the DLC Curse of the Vampire Coast. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Vampire Coast campaign",
+        "1 look for Aranessa Saltspite in the catalog"
+      ],
+      "coverMods": [
+        "nx-342"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-isabella-von-carstein",
+      "name": "Isabella von Carstein",
+      "origin": "vanilla",
+      "playAs": [
+        "Isabella von Carstein",
+        "Isabella"
+      ],
+      "phase": "any",
+      "factions": [
+        "vampire counts"
+      ],
+      "dlc": "Free",
+      "description": "Sylvania (Vampire Counts) in the game's own campaign – a free lord. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Vampire Counts campaign",
+        "1 look for Isabella von Carstein in the catalog"
+      ],
+      "coverMods": [
+        "nx-349"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        }
+      ],
+      "avoid": []
+    },
+    {
+      "id": "vanilla-sisters-of-twilight",
+      "name": "Sisters of Twilight",
+      "origin": "vanilla",
+      "playAs": [
+        "Sisters of Twilight"
+      ],
+      "phase": "any",
+      "factions": [
+        "wood elves"
+      ],
+      "dlc": "The Twisted & The Twilight",
+      "description": "Heralds of Ariel (Wood Elves) in the game's own campaign – playable with the DLC The Twisted & The Twilight. No mod tells a story here, so nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or subjugate female legendary lords, and Community Beastmen's matched animations.",
+      "highlights": [
+        "The game's own Wood Elves campaign",
+        "3 looks for Sisters of Twilight in the catalog"
+      ],
+      "coverMods": [
+        "steam-3706296778",
+        "nx-346",
+        "dc-sisters-of-druchii-dark-elf-reskin-of-the-sisters-of-twiligh"
+      ],
+      "source": {
+        "type": "wiki",
+        "url": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords"
+      },
+      "entries": [],
+      "recommends": [
+        {
+          "target": {
+            "mod": "ll-46165"
+          },
+          "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+        },
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+        },
+        {
+          "target": {
+            "mod": "steam-3672266382"
+          },
+          "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+        },
+        {
+          "target": {
+            "mod": "ll-27663"
+          },
+          "note": "Drycha falls to Nurgle as an AI story in a Wood Elf neighbour's campaign; at its end you can defeat her and confederate or vassalize her (its English text is in the Lin AllInOne translation)"
+        }
+      ],
+      "avoid": [
+        {
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "it changes the Wood Elf mechanics for Alarielle; its page says not to play Wood Elves with it active (crashes, script errors)"
+        },
+        {
+          "target": {
+            "mod": "steam-3575516470"
+          },
+          "note": "it gives Alarielle the Wood Elf forest mechanics; its page says the Wood Elves' own mechanics break with it"
+        },
+        {
+          "target": {
+            "mod": "steam-3619883986"
+          },
+          "note": "a patch of Alarielle's Wood Elf mechanics for Immortal Empires Expanded; its page says not to play Wood Elves with it"
+        }
+      ]
     }
   ],
   "campaignGuides": [

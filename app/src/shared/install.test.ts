@@ -52,6 +52,17 @@ describe('installSourceFor', () => {
     expect(installSourceFor(c, ix, { key: 'mod:soil', pack: '@Soil_Miao.pack', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/4-x/' })
   })
 
+  it('gets an added mod from where the version it loads is: the first of a pick-one group, not the Steam one', () => {
+    const cb = { ...mod('cb', { steam: [{ id: '347' }], loverslab: { fileId: '5', url: 'https://www.loverslab.com/files/file/5-x/', category: 'mods' } }),
+      packs: [{ file: 'cb_light.pack', from: 'download', exclusiveGroup: 'v', url: 'https://drive.google.com/file/d/x/view' },
+        { file: 'cb_full.pack', from: 'steam', steamId: '347', exclusiveGroup: 'v' }] } as Mod
+    const both = { ...mod('both2', { steam: [{ id: '348' }] }), packs: [{ file: 'a.pack', from: 'steam', steamId: '348' }] } as Mod
+    const c = { ...catalog, mods: [...catalog.mods, cb, both] } as Catalog
+    const ix = buildIndex(c)
+    expect(installSourceFor(c, ix, { key: 'mod:cb' })).toEqual({ kind: 'manual', url: 'https://drive.google.com/file/d/x/view' })
+    expect(installSourceFor(c, ix, { key: 'mod:both2' })).toEqual({ kind: 'steam', id: '348' })
+  })
+
   it('keeps a template entry that is a download as a download', () => {
     expect(installSourceFor(catalog, index, { key: 'mod:ll', steamId: '999', from: 'download' })).toEqual({ kind: 'loverslab', url: 'https://www.loverslab.com/files/file/2-x/' })
   })

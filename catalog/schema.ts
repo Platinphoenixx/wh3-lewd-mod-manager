@@ -80,9 +80,14 @@ export interface Preset {
    * tested  = a complete list someone played with (load order tested),
    * guide   = a community guide's list (e.g. KPW's per-character docs; order as in the guide),
    * derived = generated from a mod's own page: the mod plus everything it requires, ordered by tier,
-   * community = a list a player shared from the app (see `community`).
+   * community = a list a player shared from the app (see `community`),
+   * vanilla = a legendary lord played in the game's own campaign: no mod is needed, the list is what fits the lord.
    */
-  origin: "tested" | "guide" | "derived" | "community";
+  origin: "tested" | "guide" | "derived" | "community" | "vanilla";
+  /** The factions (catalog tags, e.g. "wood elves") the lord leads; mods for them fit the list. */
+  factions?: string[];
+  /** The DLC the lord comes with, if any. */
+  dlc?: string;
   phaseNote?: string;         // e.g. "switch only from corruption stage 5 on"
   /** English Markdown: what this campaign is about, what the list contains, how to play it. */
   description?: string;
@@ -225,6 +230,11 @@ export interface Mod {
    * character usually only changes how she looks before her first stage; the app says so.
    */
   stageLooks?: StageLook[];
+  /**
+   * A reskin that replaces the units of these factions (catalog tags, e.g. "wood elves") wholesale. Two such reskins of the
+   * same faction overwrite the same files (read from their packs), so a list takes one: the app offers them as the army's look.
+   */
+  factionLook?: string[];
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
   /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */

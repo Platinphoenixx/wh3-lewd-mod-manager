@@ -2,7 +2,7 @@ import type { Catalog, Mod, Preset } from '@catalog/schema'
 import type { CatalogIndex } from './match'
 import { isOwnKey } from './own'
 import { baseKeys, candidates, resolveProfile, type Profile } from './profile'
-import { isPickOne, suggestForProfile, type PickOne, type Suggestion } from './suggest'
+import { FACTIONS, isPickOne, suggestForProfile, type PickOne, type Suggestion } from './suggest'
 
 /**
  * The guided way in ("Play"): templates grouped by who you play – a character – or by a theme for lists about a group
@@ -17,9 +17,15 @@ export interface Subject {
   presets: Preset[]
   /** Mods whose pictures stand for the subject, best first. */
   coverMods: string[]
+  /** A lord played in the game's own campaign: no mod makes the character playable, the lists are what fits them. */
+  vanilla?: boolean
+  /** The factions the subject's lords lead, as the app names them ("Wood Elves"). */
+  factions?: string[]
 }
 
 const letters = (s: string) => s.toLowerCase().replace(/[^a-z]/g, '')
+const LOOKS = /^(?:They all change|It changes) how (.+) looks$/
+const ARMY = /^(?:They all change|It changes) how the (.+) army looks$/
 const STORY: Mod['kind'][] = ['progression', 'campaign', 'reskin', 'units', 'submod']
 
 /** Canonical character names: the catalog's spellings, most common first ("Miao" → "Miao Ying", "N'kari" → "N'Kari"). */
@@ -54,8 +60,11 @@ export function subjectsOf(catalog: Catalog, index: CatalogIndex): Subject[] {
     const s = subjects.get(key) ?? { kind, key, name, characters: [], presets: [], coverMods: [] }
     s.presets.push(p)
     s.characters = [...new Set([...s.characters, ...(kind === 'character' ? [name] : chars)])]
+    s.factions = [...new Set([...(s.factions ?? []), ...(p.factions ?? []).map((f) => FACTIONS[f.toLowerCase()] ?? f)])]
     subjects.set(key, s)
   }
+  // Only lists that need no campaign mod: a lord a mod also makes playable is no vanilla subject.
+  for (const s of subjects.values()) s.vanilla = s.presets.some((p) => p.origin === 'vanilla') && s.presets.every((p) => p.origin === 'vanilla' || p.origin === 'community')
   // A picture per subject: a mod about the character (progression and campaign first), else the lists' covers;
   // a picture another subject already shows is used only when nothing else is left.
   const used = new Set<string>()
@@ -124,7 +133,7 @@ function firstSentence(text?: string): string | undefined {
 
 function proofOf(p: Preset): string {
   const launch = p.launchTest?.result === 'main menu' ? `launch-tested with game ${p.launchTest.game}` : ''
-  const origin = p.origin === 'tested' ? 'Played as it is by its author' : p.origin === 'guide' ? 'From a community guide' : 'Built from the mod page'
+  const origin = p.origin === 'tested' ? 'Played as it is by its author' : p.origin === 'guide' ? 'From a community guide' : p.origin === 'vanilla' ? "The game's own campaign" : 'Built from the mod page'
   return [origin, launch].filter(Boolean).join(' · ')
 }
 
@@ -142,8 +151,15 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   const smallest = (ps: Preset[]) => [...ps].sort((a, b) => a.entries.length - b.entries.length)[0]
   const full = largest(by('tested').filter((p) => p.phase !== 'late'))
   const essentials = smallest([...by('guide'), ...by('derived')].filter((p) => !full || p.entries.length < full.entries.length))
-  const base = full ?? essentials ?? subject.presets[0]
+  const vanilla = by('vanilla')[0]
+  const base = full ?? essentials ?? vanilla ?? subject.presets[0]
   const tiers: Tier[] = []
+  // A lord in the game's own campaign: the smallest size is just the looks (chosen on the way), nothing else.
+  if (vanilla && base === vanilla) {
+    tiers.push({ id: 'essentials', name: 'Looks', preset: vanilla, extras: [], size: 0,
+      lines: ["The game's own campaign", `${subject.name}'s look and the army's look, one choice each`],
+      proof: 'Nothing else changes', tested: false, recommended: false })
+  }
   const lines = (p: Preset) => (p.highlights?.length ? p.highlights.slice(0, 3) : [firstSentence(p.description) ?? p.name])
   if (essentials) {
     tiers.push({ id: 'essentials', name: 'Essentials', preset: essentials, extras: [], size: size(essentials, []), lines: lines(essentials),
@@ -160,6 +176,12 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
     const keys = [...kept.map((k) => k.key), x.key]
     return resolveProfile(catalog, index, base, { extras: keys, removed: [] }).conflicts.length ? kept : [...kept, x]
   }, [])
+  // The Looks size has one choice for the lord and one for the army: at most that many mods.
+  const looksTier = tiers.find((t) => t.id === 'essentials' && t.preset === vanilla)
+  if (looksTier) looksTier.size = s.picks.filter((g) => {
+    const army = ARMY.exec(g.note)?.[1]
+    return army ? army.split(', ').some((f) => subject.factions?.includes(f)) : subject.characters.includes(LOOKS.exec(g.note)?.[1] ?? '')
+  }).length
   s.lewd = together(s.lewd)
   s.general = together(s.general)
   // Extended is the template's own world: everything built on or recommended by its mods, then the best of what is
@@ -167,24 +189,27 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   // lists (a camera mod in every Alarielle list) is no reason to add it to a Beastmen list.
   const belongs = (x: Suggestion) => x.strong || x.fits
   const top = (xs: Suggestion[]) => [...xs.filter((x) => x.tied), ...xs.filter((x) => !x.tied && belongs(x)).slice(0, SUGGESTED)]
-  const more = together([...top(s.lewd), ...top(s.general)])
+  // A lord in the game's own campaign has no list of its own: Lewd add-ons are what the setup names (its recommends),
+  // everything else that fits is for Everything.
+  const more = base === vanilla ? together([...s.lewd, ...s.general].filter((x) => x.tied)) : together([...top(s.lewd), ...top(s.general)])
   const recommended = more.filter((x) => x.reasons.some((r) => r.startsWith('Recommended for this setup'))).length
   const label = tiers[tiers.length - 1]?.name ?? base.name
   if (more.length) {
     const extras = more.map((x) => x.key)
-    tiers.push({ id: 'extended', name: 'Extended', preset: base, extras, size: size(base, extras),
+    tiers.push({ id: 'extended', name: base === vanilla ? 'Lewd add-ons' : 'Extended', preset: base, extras, size: size(base, extras),
       lines: [`Everything in ${label}`,
         // A setup whose community names what goes with it says so: that is what Extended is made of.
-        recommended ? `${more.length} more mods, ${recommended} of them recommended by its community` : `${more.length} more mods that fit ${subject.name}, most used first`,
+        base === vanilla ? `${more.length} add-ons recommended for the game's own campaign: events, stories, animations`
+          : recommended ? `${more.length} more mods, ${recommended} of them recommended by its community` : `${more.length} more mods that fit ${subject.name}, most used first`,
         s.lewd.slice(0, 3).map((x) => x.mod.name).join(', ')].filter(Boolean),
-      proof: 'Each add-on checked against the list · not played together yet', tested: false, recommended: false })
+      proof: 'Each add-on checked against the list · not played together yet', tested: false, recommended: base === vanilla })
   }
   const everything = together([...s.lewd, ...top(s.general)]).map((x) => x.key)
   // Only when it adds something: a setup whose community names everything it goes with has no bigger size.
-  if (s.lewd.length > SUGGESTED && everything.length > more.length) {
+  if ((s.lewd.length > SUGGESTED || base === vanilla) && everything.length > more.length) {
     const extras = everything
     tiers.push({ id: 'everything', name: 'Everything', preset: base, extras, size: size(base, extras),
-      lines: [`Everything in ${label}`, `Every lewd mod that works with it (${s.lewd.length})`, 'You pick one look per character on the way'],
+      lines: [`Everything in ${base === vanilla ? tiers[tiers.length - 1].name : label}`, `Every lewd mod that works with it (${s.lewd.length})`, 'You pick one look per character on the way'],
       proof: 'No known conflicts · nobody has played all of it together', tested: false, recommended: false })
   }
   return tiers
@@ -204,25 +229,40 @@ export interface Step {
   groups: PickOne[]
 }
 
-const LOOKS = /^(?:They all change|It changes) how (.+) looks$/
 
 /**
  * The choices of a profile as steps, in a player's words: the main character's look first, then the add-ons and
  * heroes to choose between, the looks of characters the list already changes, the other characters' looks in one
  * step, then quality-of-life mods to keep or drop, then the review.
  */
-export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean): Step[] {
+export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean, looksOnly = false): Step[] {
+  // An army's look: the subject's own army right after the character's look, other armies with the other looks.
+  const army = (g: PickOne) => ARMY.exec(g.note)?.[1]
+  const ownArmy = picks.filter((g) => army(g) && army(g)!.split(', ').some((f) => subject.factions?.includes(f)))
   // Looks of one character can also be joined by an incompatibility; a stage mod still says whose they are.
-  const looks = (g: PickOne) => LOOKS.exec(g.note)?.[1] ?? g.stage?.character
+  const looks = (g: PickOne) => (army(g) ? undefined : LOOKS.exec(g.note)?.[1] ?? g.stage?.character)
   const own = picks.filter((g) => looks(g) && subject.characters.includes(looks(g)!))
   const replacing = picks.filter((g) => looks(g) && !own.includes(g) && g.pick.some((x) => x.replaces))
   const others = picks.filter((g) => looks(g) && !own.includes(g) && !replacing.includes(g))
-  const rest = picks.filter((g) => !looks(g))
+  const rest = picks.filter((g) => !looks(g) && !ownArmy.includes(g))
   const steps: Step[] = []
   // A mod in the list that changes her look by stage is the answer already; the looks are only about her start.
   const staged = (g: PickOne) => ({ id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: g.stage!.campaign ? 'Her campaign changes it by stage' : 'Your list changes it by stage', question: `${looks(g)} already changes as she falls`, kind: 'pick' as const, groups: [g] })
   for (const g of own) steps.push(g.stage ? staged(g) : { id: g.pick[0].key, title: `${looks(g)}'s look`, subtitle: 'Optional', question: `How should ${looks(g)} look?`, kind: 'pick', groups: [g] })
+  for (const g of ownArmy) {
+    const replacing = g.pick.some((x) => x.replaces)
+    steps.push({ id: g.pick[0].key, title: "Your army's look", subtitle: replacing ? 'Already in your list' : army(g), question: `How should your ${army(g)} army look?`, kind: 'pick', groups: [g] })
+  }
+  if (looksOnly) {
+    steps.push({ id: 'review', title: 'Review and install', question: 'What you get', kind: 'review', groups: [] })
+    return steps
+  }
   for (const g of rest) {
+    const otherArmy = army(g)
+    if (otherArmy) {
+      steps.push({ id: g.pick[0].key, title: `${otherArmy} army`, subtitle: 'They overwrite the same units', question: `How should the ${otherArmy} army look?`, kind: 'pick', groups: [g] })
+      continue
+    }
     const addOn = /^Versions of the same add-on for (.+)$/.exec(g.note)?.[1]
     const short = (n: string) => n.replace(/\s*\(.*$/, '').slice(0, 40)
     const title = g.pick.slice(0, 2).map((x) => short(x.mod.name)).join(' or ') + (g.pick.length > 2 ? ' …' : '')

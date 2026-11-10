@@ -329,6 +329,13 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     else if (e.origin === 'dependency') pos = entries.length // dependencies go low so dependants win
     // A look the player picked has to beat the template's mods that change the same models (its own reskins, asset
     // packs): reskins go on top, as players place them.
+    // An army's look goes below the character looks the player picked: a look of the lord (the Sisters of Twilight) must
+    // beat the army reskin that changes the lord too.
+    else if (mod?.kind === 'reskin' && !related.length && mod.factionLook?.length) {
+      const look = (x: ResolvedEntry) => { const m = x.origin !== 'base' && x.key.startsWith('mod:') ? index.mods.get(x.key.slice(4)) : undefined; return m?.kind === 'reskin' && !m.factionLook?.length }
+      pos = entries.findIndex((x) => !look(x))
+      if (pos < 0) pos = entries.length
+    }
     else if (mod?.kind === 'reskin' && !related.length) pos = 0
     else pos = related.length ? Math.min(...related) : entries.length
     entries.splice(pos, 0, e)

@@ -117,3 +117,48 @@ describe('shared setups', () => {
     expect(s.own).toEqual(['my_tweaks.pack'])
   })
 })
+
+describe('lords in the game\'s own campaign', () => {
+  const look = (id: string, extra: Partial<Mod> = {}) => mod(id, { kind: 'reskin', tags: ['wood elves', 'sisters of twilight'], summary: 'Sisters of Twilight reskin', ...extra })
+  const vcat: Catalog = {
+    ...catalog,
+    mods: [
+      look('sis-a'), look('sis-b'),
+      mod('endo-we', { kind: 'reskin', tags: ['wood elves'], factionLook: ['wood elves'] }),
+      mod('zeta-we', { kind: 'reskin', tags: ['wood elves'], factionLook: ['wood elves'] }),
+      mod('events', { kind: 'utility' }),
+      mod('alarielle-campaign', { kind: 'campaign', playAs: [{ character: 'Alarielle' }] })
+    ],
+    presets: [{
+      id: 'vanilla-sisters', name: 'Sisters of Twilight', playAs: ['Sisters of Twilight'], phase: 'any', origin: 'vanilla', factions: ['wood elves'],
+      dlc: 'The Twisted & The Twilight', source: { type: 'wiki' }, entries: [],
+      recommends: [{ target: { mod: 'events' }, note: 'works in any campaign' }, { target: { mod: 'endo-we' }, note: 'its army look' }],
+      avoid: [{ target: { mod: 'alarielle-campaign' }, note: 'breaks Wood Elf campaigns' }]
+    }]
+  }
+  const vindex = buildIndex(vcat)
+  const sisters = subjectsOf(vcat, vindex)[0]
+
+  it('is a subject of its own with the faction it leads', () => {
+    expect([sisters.name, sisters.vanilla, sisters.factions]).toEqual(['Sisters of Twilight', true, ['Wood Elves']])
+  })
+
+  it('offers Looks, the recommended Lewd add-ons (what the setup names) and nothing it avoids', () => {
+    const tiers = tiersFor(vcat, vindex, sisters)
+    expect(tiers.map((t) => [t.id, t.name, t.recommended, t.extras])).toEqual([
+      ['essentials', 'Looks', false, []], ['extended', 'Lewd add-ons', true, ['mod:events']]
+    ])
+    expect(tiers[0].size).toBe(2) // one look for the twins, one for the army
+    const all = suggestedFor(vcat, vindex, vcat.presets[0])
+    expect([...all.lewd, ...all.general].map((s) => s.key)).not.toContain('mod:alarielle-campaign')
+  })
+
+  it("asks for the lord's look and the army's look; the Looks size asks nothing else", () => {
+    const s = suggestedFor(vcat, vindex, vcat.presets[0])
+    const army = s.picks.find((g) => /army looks$/.test(g.note))!
+    expect([army.note, army.preselect, army.pick.map((x) => x.key)]).toEqual(['They all change how the Wood Elves army looks', 'mod:endo-we', ['mod:endo-we', 'mod:zeta-we']])
+    const steps = stepsFor(sisters, s.picks, true, true)
+    expect(steps.map((x) => x.title)).toEqual(["Sisters of Twilight's look", "Your army's look", 'Review and install'])
+    expect(stepsFor(sisters, s.picks, true).map((x) => x.title)).toContain('Quality of life')
+  })
+})

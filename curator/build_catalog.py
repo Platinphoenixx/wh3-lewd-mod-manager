@@ -302,6 +302,63 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
     return out
 
 
+def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
+    """Templates for legendary lords played in the game's own campaign (work/vanilla-lords.json): one for every lord the
+    catalog has a look for and no campaign mod already makes playable. No mod is needed; the app suggests what fits the
+    lord and the lord's faction. They follow the catalog by themselves: a new look makes a lord appear, a new campaign
+    template for the lord makes the vanilla one go."""
+    path = CURATOR / "work" / "vanilla-lords.json"
+    if not path.exists():
+        return []
+    doc = load(path)
+    letters = lambda s: re.sub(r"[^a-z]", "", s.lower())
+    generic = {"count", "mother", "queen", "grand", "high", "lord", "sea"}
+    firsts = Counter(re.sub(r"^The ", "", l["name"]).split(" ")[0].lower() for l in doc["lords"])
+
+    def aliases(lord: dict) -> set:
+        base = re.split(r",| the ", re.sub(r"^The ", "", lord["name"]))[0].strip()
+        names = {lord["name"], lord["title"], base}
+        first = base.split(" ")[0]
+        if len(first) >= 5 and first.lower() not in generic and firsts[first.lower()] == 1:
+            names.add(first)
+        return {letters(n) for n in names}
+
+    # Characters that already have a template (a campaign, guide or community list): spellings joined as in the app.
+    taken = {letters(c) for p in presets for raw in p.get("playAs") or [] for c in re.split(r"\s*[/,]\s*", re.sub(r"\s*\(.*\)$", "", raw)) if c}
+    has_template = lambda al: any(a == t or (min(len(a), len(t)) >= 4 and (a.startswith(t) or t.startswith(a))) for a in al for t in taken)
+    held_back = lambda m: bool(major) and m.get("changesData") and (m.get("updated") or "9") < major and not ((m.get("confirmed") or "") >= major)
+    live = lambda m: m.get("status") not in ("superseded", "abandoned") and not m.get("stopsGame") and not held_back(m)
+    known = lambda t: ("mod" in t and t["mod"] in mods) or "mod" not in t
+    out = []
+    for lord in doc["lords"]:
+        al = aliases(lord)
+        if has_template(al):
+            continue
+        looks = [m for m in mods.values() if m.get("kind") == "reskin" and live(m) and any(letters(t) in al for t in m.get("tags") or [])]
+        if not looks:
+            continue
+        looks.sort(key=lambda m: (not m.get("images"), m["name"].lower()))
+        name, tag = lord["name"], lord["factionTag"]
+        # The spellings the catalog's tags use for the lord ("repanse", "elspeth") come along, so the app knows its looks.
+        spellings = sorted({t.title() for m in looks for t in m.get("tags") or [] if letters(t) in al and letters(t) != letters(name)})
+        dlc = lord["dlc"]
+        needs = "in the base game" if dlc.startswith("Base game") else "a free lord" if dlc.startswith("Free") else f"playable with the DLC {dlc}"
+        out.append({
+            "id": "vanilla-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
+            "name": name, "origin": "vanilla", "playAs": [name] + spellings, "phase": "any", "factions": [tag], "dlc": dlc,
+            "description": f"{lord['faction']} ({lord['race']}) in the game's own campaign – {needs}. No mod tells a story here, so "
+                           f"nothing has to be installed: the app adds what fits – a new look, the army's look, events when you defeat or "
+                           f"subjugate female legendary lords, and Community Beastmen's matched animations.",
+            "highlights": [f"The game's own {lord['race']} campaign", f"{len(looks)} look{'s' if len(looks) != 1 else ''} for {name} in the catalog"],
+            "coverMods": [m["id"] for m in looks[:3]],
+            "source": {"type": "wiki", "url": doc["_source"]},
+            "entries": [],
+            "recommends": [r for r in (doc.get("recommends") or []) + ((doc.get("factionRecommends") or {}).get(tag) or []) if known(r["target"])],
+            "avoid": [r for r in (doc.get("factionAvoid") or {}).get(tag) or [] if known(r["target"])],
+        })
+    return out
+
+
 def apply_community(mods: dict) -> None:
     """
     Apply accepted community contributions (curator/community.json, written by apply_contribution.py).
@@ -1430,6 +1487,13 @@ def main():
     for mid, r in tested.items():
         if mid in mods and r["date"] >= major:
             mods[mid]["confirmed"] = r["date"]
+
+    # Lords in the game's own campaign, once every mod's dates and launch-test confirmations are known: a look the app
+    # holds back (old and data-changing, not confirmed since the last big update) makes no lord appear.
+    for p in (vanilla := vanilla_presets(presets, mods, major)):
+        if (v := votes.get(p["id"])) and v["up"] + v["down"]:
+            p["votes"] = {"up": v["up"], "down": v["down"]}
+    presets += vanilla
 
     rule_flags = apply_rule_flags(mods, presets)
 

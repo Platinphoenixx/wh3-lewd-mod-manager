@@ -128,6 +128,14 @@ describe('resolveProfile', () => {
     expect(r.entries.map((e) => e.key)).toEqual(['mod:alarielle-skin', 'mod:atb', 'mod:framework', 'mod:unrelated'])
   })
 
+  it("puts an army's look below the character looks the player picked, in either order of adding", () => {
+    const c: Catalog = { ...catalog, mods: [...catalog.mods, mod('army', { kind: 'reskin', factionLook: ['high elves'] })] }
+    for (const extras of [['mod:army', 'mod:alarielle-skin'], ['mod:alarielle-skin', 'mod:army']]) {
+      const r = resolveProfile(c, buildIndex(c), preset, { extras, removed: [] })
+      expect(r.entries.map((e) => e.key).slice(0, 3)).toEqual(['mod:alarielle-skin', 'mod:army', 'mod:atb'])
+    }
+  })
+
   it('treats incompatibilities inside a tested template as notes and ignores conditional ones', () => {
     const cat: Catalog = {
       ...catalog,

@@ -18,6 +18,13 @@ community contributions. App UI and catalog texts are English.
     already changes, other characters, quality-of-life mods to drop) and a review that saves an ordinary profile and
     opens it in the Profiles tab at the install step (`openProfile`). "Advanced" links lead to the full editor at
     every stage. Suggestions that would bring a conflict along (through a dependency) are not offered.
+    Lords no campaign mod makes playable ("In the game's own campaign", `origin: "vanilla"`, from `curator/work/vanilla-lords.json`:
+    every legendary lord with race, faction and DLC from the Total War wiki; the build makes a template for each lord the catalog
+    has a look for that the app would offer, and none once a campaign template for the lord exists) have no mods of their own:
+    sizes Looks (the lord's look and the army's look), Lewd add-ons (the file's `recommends`/`factionRecommends`, recommended),
+    Everything; `factionAvoid` (ATB and Alarielle's Wood Elf mechanics for Wood Elf lords) are never suggested. A reskin with
+    `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
+    one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
     bound of the votes); one with 5+ votes and 80 %+ "worked" is shown on top as the community favourite. A setup's page
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
@@ -71,7 +78,8 @@ community contributions. App UI and catalog texts are English.
   - `src/shared/conflicts.ts` overlaps between packs: same file path = real override (higher pack wins);
     same database table = hint only, tables most packs use are ignored (tested)
   - Install + launch: `src/shared/install.ts` picks the source per missing entry (Steam > LoversLab >
-    Discord > manual, tested; a pack posted elsewhere than its mod's page has `PackRef.url`, e.g. Soil's Kislev units on
+    Discord > manual, tested; an added mod that names no pack comes from where the pack it loads is – Community Beastmen's Light
+    version, the first of its pick-one group, from its download, not the Steam full version; a pack posted elsewhere than its mod's page has `PackRef.url`, e.g. Soil's Kislev units on
     Discord, and is fetched from there); every missing Workshop item of a mod is subscribed in one go, and every missing download pack of a mod is asked for in one
     LoversLab/Nexus window (`packsToFetch`: a page with one file per pack, e.g. a base pack and six stage packs). The row names what a mod still lacks (`neededParts`: "Hair (one of 4)"), and a Nexus window says after each file what is still needed; another version of a part counts as done (`hintsLeft`). Discord drops a
     leading "@"/"!" from attached file names, so the installer gives such a pack its catalog name back

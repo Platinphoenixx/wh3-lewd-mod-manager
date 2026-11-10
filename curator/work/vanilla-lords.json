@@ -1,0 +1,992 @@
+{
+  "_comment": "Legendary lords of Total War: Warhammer III with their race, starting faction and the DLC that makes them playable. Source: the Total War Warhammer wiki's tables of legendary lords (read 2026-11-10). build_catalog.py makes a 'vanilla' template for every lord the catalog has a look for and no campaign mod already makes playable. 'recommends' go to every such template, 'factionRecommends' and 'factionAvoid' to the templates of that faction (catalog tags).",
+  "_source": "https://totalwarwarhammer.fandom.com/wiki/Total_War:_Warhammer_III_legendary_lords",
+  "recommends": [
+    {
+      "target": {
+        "mod": "ll-46165"
+      },
+      "note": "its Light version (the one for every faction other than Beastmen) plays matched animations when Beastmen fight female units; female reskins of the army are its targets"
+    },
+    {
+      "target": {
+        "mod": "ll-34542"
+      },
+      "note": "its version for non-Slaanesh factions: dilemmas when you vassalize or confederate female legendary lords"
+    },
+    {
+      "target": {
+        "mod": "ll-36630"
+      },
+      "note": "event chains when you defeat female legendary lords; works with any faction, says its author"
+    }
+  ],
+  "factionAvoid": {
+    "wood elves": [
+      {
+        "target": {
+          "mod": "ll-42028"
+        },
+        "note": "it changes the Wood Elf mechanics for Alarielle; its page says not to play Wood Elves with it active (crashes, script errors)"
+      },
+      {
+        "target": {
+          "mod": "steam-3575516470"
+        },
+        "note": "it gives Alarielle the Wood Elf forest mechanics; its page says the Wood Elves' own mechanics break with it"
+      },
+      {
+        "target": {
+          "mod": "steam-3619883986"
+        },
+        "note": "a patch of Alarielle's Wood Elf mechanics for Immortal Empires Expanded; its page says not to play Wood Elves with it"
+      }
+    ]
+  },
+  "lords": [
+    {
+      "name": "Astragoth Ironhand",
+      "title": "Astragoth Ironhand",
+      "race": "Chaos Dwarfs",
+      "faction": "Disciples of Hashut",
+      "factionTag": "chaos dwarfs",
+      "dlc": "Forge of the Chaos Dwarfs"
+    },
+    {
+      "name": "Drazhoath the Ashen",
+      "title": "Drazhoath the Ashen",
+      "race": "Chaos Dwarfs",
+      "faction": "The Legion of Azgorh",
+      "factionTag": "chaos dwarfs",
+      "dlc": "Forge of the Chaos Dwarfs"
+    },
+    {
+      "name": "Zhatan the Black",
+      "title": "Zhatan the Black",
+      "race": "Chaos Dwarfs",
+      "faction": "The Warhost of Zharr",
+      "factionTag": "chaos dwarfs",
+      "dlc": "Forge of the Chaos Dwarfs"
+    },
+    {
+      "name": "The Daemon Prince",
+      "title": "The Daemon Prince",
+      "race": "Daemons of Chaos",
+      "faction": "Legion of Chaos",
+      "factionTag": "daemons of chaos",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Malakai Makaisson",
+      "title": "Malakai Makaisson",
+      "race": "Dwarfs",
+      "faction": "Masters of Innovation",
+      "factionTag": "dwarfs",
+      "dlc": "Thrones of Decay"
+    },
+    {
+      "name": "Miao Ying",
+      "title": "Miao Ying, the Storm Dragon",
+      "race": "Grand Cathay",
+      "faction": "The Northern Provinces",
+      "factionTag": "cathay",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Zhao Ming",
+      "title": "Zhao Ming, the Iron Dragon",
+      "race": "Grand Cathay",
+      "faction": "The Western Provinces",
+      "factionTag": "cathay",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Yuan Bo",
+      "title": "Yuan Bo, the Jade Dragon",
+      "race": "Grand Cathay",
+      "faction": "The Jade Court",
+      "factionTag": "cathay",
+      "dlc": "Shadows of Change"
+    },
+    {
+      "name": "Bhashiva",
+      "title": "Bhashiva, the White Tiger",
+      "race": "Grand Cathay",
+      "faction": "Claws of the White Tiger",
+      "factionTag": "cathay",
+      "dlc": "Bhashiva – Character Pack"
+    },
+    {
+      "name": "Gorbad Ironclaw",
+      "title": "Gorbad Ironclaw",
+      "race": "Greenskins",
+      "faction": "Ironclaw Orcs",
+      "factionTag": "greenskins",
+      "dlc": "Omens of Destruction"
+    },
+    {
+      "name": "Aislinn",
+      "title": "Sea Lord Aislinn",
+      "race": "High Elves",
+      "faction": "High Elf Sea Patrol",
+      "factionTag": "high elves",
+      "dlc": "Tides of Torment"
+    },
+    {
+      "name": "Skarbrand the Exiled",
+      "title": "Skarbrand the Exiled",
+      "race": "Khorne",
+      "faction": "Exiles of Khorne",
+      "factionTag": "khorne",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Skulltaker",
+      "title": "Skulltaker",
+      "race": "Khorne",
+      "faction": "Blooded Wanderers",
+      "factionTag": "khorne",
+      "dlc": "Omens of Destruction"
+    },
+    {
+      "name": "Arbaal the Undefeated",
+      "title": "Arbaal the Undefeated",
+      "race": "Khorne",
+      "faction": "Challengers of Khorne",
+      "factionTag": "khorne",
+      "dlc": "Free (update 6.0)"
+    },
+    {
+      "name": "Katarin",
+      "title": "Tzarina Katarin",
+      "race": "Kislev",
+      "faction": "The Ice Court",
+      "factionTag": "kislev",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Kostaltyn",
+      "title": "Kostaltyn",
+      "race": "Kislev",
+      "faction": "The Great Orthodoxy",
+      "factionTag": "kislev",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Boris Ursus",
+      "title": "Boris Ursus",
+      "race": "Kislev",
+      "faction": "Ursun Revivalists",
+      "factionTag": "kislev",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Mother Ostankya",
+      "title": "Mother Ostankya",
+      "race": "Kislev",
+      "faction": "Daughters of the Forest",
+      "factionTag": "kislev",
+      "dlc": "Shadows of Change"
+    },
+    {
+      "name": "Sayl the Faithless",
+      "title": "Sayl the Faithless",
+      "race": "Norsca",
+      "faction": "Dolgan",
+      "factionTag": "norsca",
+      "dlc": "Tides of Torment"
+    },
+    {
+      "name": "Ku'gath Plaguefather",
+      "title": "Ku'gath Plaguefather",
+      "race": "Nurgle",
+      "faction": "Poxmakers of Nurgle",
+      "factionTag": "nurgle",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Tamurkhan the Maggot Lord",
+      "title": "Tamurkhan the Maggot Lord",
+      "race": "Nurgle",
+      "faction": "The Maggot Host",
+      "factionTag": "nurgle",
+      "dlc": "Thrones of Decay"
+    },
+    {
+      "name": "Epidemius",
+      "title": "Epidemius",
+      "race": "Nurgle",
+      "faction": "Tallymen of Pestilence",
+      "factionTag": "nurgle",
+      "dlc": "Free (update 5.0)"
+    },
+    {
+      "name": "Greasus Goldtooth",
+      "title": "Greasus Goldtooth",
+      "race": "Ogre Kingdoms",
+      "faction": "Goldtooth",
+      "factionTag": "ogre kingdoms",
+      "dlc": "Ogre Kingdoms"
+    },
+    {
+      "name": "Skrag the Slaughterer",
+      "title": "Skrag the Slaughterer",
+      "race": "Ogre Kingdoms",
+      "faction": "Disciples of the Maw",
+      "factionTag": "ogre kingdoms",
+      "dlc": "Ogre Kingdoms"
+    },
+    {
+      "name": "Golgfag Maneater",
+      "title": "Golgfag Maneater",
+      "race": "Ogre Kingdoms",
+      "faction": "The Maneaters",
+      "factionTag": "ogre kingdoms",
+      "dlc": "Omens of Destruction"
+    },
+    {
+      "name": "Thanquol",
+      "title": "Thanquol",
+      "race": "Skaven",
+      "faction": "Clan Scruten",
+      "factionTag": "skaven",
+      "dlc": "Lords of the End Times"
+    },
+    {
+      "name": "N'Kari",
+      "title": "N'Kari",
+      "race": "Slaanesh",
+      "faction": "Seducers of Slaanesh",
+      "factionTag": "slaanesh",
+      "dlc": "Base game"
+    },
+    {
+      "name": "Dechala",
+      "title": "Dechala, the Denied One",
+      "race": "Slaanesh",
+      "faction": "The Tormentors",
+      "factionTag": "slaanesh",
+      "dlc": "Tides of Torment"
+    },
+    {
+      "name": "The Masque of Slaanesh",
+      "title": "The Masque of Slaanesh",
+      "race": "Slaanesh",
+      "faction": "The Accursed Troupe",
+      "factionTag": "slaanesh",
+      "dlc": "Free (update 7.0)"
+    },
+    {
+      "name": "Elspeth von Draken",
+      "title": "Elspeth von Draken",
+      "race": "The Empire",
+      "faction": "Wissenland & Nuln",
+      "factionTag": "empire",
+      "dlc": "Thrones of Decay"
+    },
+    {
+      "name": "Boris Todbringer",
+      "title": "Boris Todbringer",
+      "race": "The Empire",
+      "faction": "Middenland",
+      "factionTag": "empire",
+      "dlc": "Lords of the End Times"
+    },
+    {
+      "name": "Kairos Fateweaver",
+      "title": "Kairos Fateweaver",
+      "race": "Tzeentch",
+      "faction": "Oracles of Tzeentch",
+      "factionTag": "tzeentch",
+      "dlc": "Base game"
+    },
+    {
+      "name": "The Changeling",
+      "title": "The Changeling",
+      "race": "Tzeentch",
+      "faction": "The Deceivers",
+      "factionTag": "tzeentch",
+      "dlc": "Shadows of Change"
+    },
+    {
+      "name": "Nagash",
+      "title": "Nagash",
+      "race": "Undead Legions",
+      "faction": "Host of Nagash",
+      "factionTag": "undead legions",
+      "dlc": "Lords of the End Times"
+    },
+    {
+      "name": "Neferata",
+      "title": "Neferata",
+      "race": "Vampire Counts",
+      "faction": "The Lahmian Sisterhood",
+      "factionTag": "vampire counts",
+      "dlc": "Free (update 9.0)"
+    },
+    {
+      "name": "Valkia the Bloody",
+      "title": "Valkia the Bloody",
+      "race": "Warriors of Chaos",
+      "faction": "Legion of the Gorequeen",
+      "factionTag": "warriors of chaos",
+      "dlc": "Champions of Chaos"
+    },
+    {
+      "name": "Vilitch the Curseling",
+      "title": "Vilitch the Curseling",
+      "race": "Warriors of Chaos",
+      "faction": "Puppets of Misrule",
+      "factionTag": "warriors of chaos",
+      "dlc": "Champions of Chaos"
+    },
+    {
+      "name": "Be'lakor",
+      "title": "Be'lakor",
+      "race": "Warriors of Chaos",
+      "faction": "Shadow Legion",
+      "factionTag": "warriors of chaos",
+      "dlc": "Base game (Immortal Empires only)"
+    },
+    {
+      "name": "Azazel",
+      "title": "Azazel",
+      "race": "Warriors of Chaos",
+      "faction": "The Ecstatic Legions",
+      "factionTag": "warriors of chaos",
+      "dlc": "Champions of Chaos"
+    },
+    {
+      "name": "Festus the Leechlord",
+      "title": "Festus the Leechlord",
+      "race": "Warriors of Chaos",
+      "faction": "The Fecundites",
+      "factionTag": "warriors of chaos",
+      "dlc": "Champions of Chaos"
+    },
+    {
+      "name": "The Glottkin",
+      "title": "The Glottkin",
+      "race": "Warriors of Chaos",
+      "faction": "Host of the Triplets",
+      "factionTag": "warriors of chaos",
+      "dlc": "Lords of the End Times"
+    },
+    {
+      "name": "Khazrak the One-Eye",
+      "title": "Khazrak the One-Eye",
+      "race": "Beastmen",
+      "faction": "Warherd of the One-Eye",
+      "factionTag": "beastmen",
+      "dlc": "Call of the Beastmen"
+    },
+    {
+      "name": "Malagor the Dark Omen",
+      "title": "Malagor the Dark Omen",
+      "race": "Beastmen",
+      "faction": "Harbinger of Disaster",
+      "factionTag": "beastmen",
+      "dlc": "Call of the Beastmen"
+    },
+    {
+      "name": "Morghur the Shadowgave",
+      "title": "Morghur the Shadowgave",
+      "race": "Beastmen",
+      "faction": "Warherd of the Shadowgave",
+      "factionTag": "beastmen",
+      "dlc": "Call of the Beastmen"
+    },
+    {
+      "name": "Taurox the Brass Bull",
+      "title": "Taurox the Brass Bull",
+      "race": "Beastmen",
+      "faction": "Slaughterhorn Tribe",
+      "factionTag": "beastmen",
+      "dlc": "The Silence & The Fury"
+    },
+    {
+      "name": "Louen Leoncoeur",
+      "title": "King Louen Leoncoeur",
+      "race": "Bretonnia",
+      "faction": "Couronne",
+      "factionTag": "bretonnia",
+      "dlc": "Free (Bretonnia)"
+    },
+    {
+      "name": "Alberic de Bordeleaux",
+      "title": "Alberic de Bordeleaux",
+      "race": "Bretonnia",
+      "faction": "Bordeleaux Errant",
+      "factionTag": "bretonnia",
+      "dlc": "Free (Bretonnia)"
+    },
+    {
+      "name": "Fay Enchantress",
+      "title": "Fay Enchantress",
+      "race": "Bretonnia",
+      "faction": "Carcassonne",
+      "factionTag": "bretonnia",
+      "dlc": "Free (Bretonnia)"
+    },
+    {
+      "name": "Repanse de Lyonesse",
+      "title": "Repanse de Lyonesse",
+      "race": "Bretonnia",
+      "faction": "Chevaliers de Lyonesse",
+      "factionTag": "bretonnia",
+      "dlc": "Free"
+    },
+    {
+      "name": "Malekith",
+      "title": "Malekith",
+      "race": "Dark Elves",
+      "faction": "Naggarond",
+      "factionTag": "dark elves",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Morathi",
+      "title": "Morathi",
+      "race": "Dark Elves",
+      "faction": "Cult of Pleasure",
+      "factionTag": "dark elves",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Malus Darkblade",
+      "title": "Malus Darkblade",
+      "race": "Dark Elves",
+      "faction": "Hag Graef",
+      "factionTag": "dark elves",
+      "dlc": "The Shadow & The Blade"
+    },
+    {
+      "name": "Hellebron",
+      "title": "Crone Hellebron",
+      "race": "Dark Elves",
+      "faction": "Har Ganeth",
+      "factionTag": "dark elves",
+      "dlc": "The Queen & The Crone"
+    },
+    {
+      "name": "Lokhir Fellheart",
+      "title": "Lokhir Fellheart",
+      "race": "Dark Elves",
+      "faction": "The Blessed Dread",
+      "factionTag": "dark elves",
+      "dlc": "Free"
+    },
+    {
+      "name": "Rakarth",
+      "title": "Rakarth",
+      "race": "Dark Elves",
+      "faction": "The Thousand Maws",
+      "factionTag": "dark elves",
+      "dlc": "Free"
+    },
+    {
+      "name": "Thorgrim Grudgebearer",
+      "title": "Thorgrim Grudgebearer",
+      "race": "Dwarfs",
+      "faction": "Karaz-a-Karak",
+      "factionTag": "dwarfs",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Grombrindal - The White Dwarf",
+      "title": "Grombrindal - The White Dwarf",
+      "race": "Dwarfs",
+      "faction": "The Ancestral Throng",
+      "factionTag": "dwarfs",
+      "dlc": "Free"
+    },
+    {
+      "name": "Ungrim Ironfist",
+      "title": "Ungrim Ironfist",
+      "race": "Dwarfs",
+      "faction": "Karak Kadrin",
+      "factionTag": "dwarfs",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Belegar Ironhammer",
+      "title": "Belegar Ironhammer",
+      "race": "Dwarfs",
+      "faction": "Clan Angrund",
+      "factionTag": "dwarfs",
+      "dlc": "The King & The Warlord"
+    },
+    {
+      "name": "Thorek Ironbrow",
+      "title": "Thorek Ironbrow",
+      "race": "Dwarfs",
+      "faction": "Ironbrow's Expedition",
+      "factionTag": "dwarfs",
+      "dlc": "Free"
+    },
+    {
+      "name": "Grimgor Ironhide",
+      "title": "Grimgor Ironhide",
+      "race": "Greenskins",
+      "faction": "Grimgor's 'Ardboyz",
+      "factionTag": "greenskins",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Azhag the Slaughterer",
+      "title": "Azhag the Slaughterer",
+      "race": "Greenskins",
+      "faction": "Bonerattlaz",
+      "factionTag": "greenskins",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Wurrzag da Great Green Prophet",
+      "title": "Wurrzag da Great Green Prophet",
+      "race": "Greenskins",
+      "faction": "The Bloody Handz",
+      "factionTag": "greenskins",
+      "dlc": "Free"
+    },
+    {
+      "name": "Skarsnik",
+      "title": "Skarsnik",
+      "race": "Greenskins",
+      "faction": "Crooked Moon",
+      "factionTag": "greenskins",
+      "dlc": "The King & The Warlord"
+    },
+    {
+      "name": "Grom the Paunch",
+      "title": "Grom the Paunch",
+      "race": "Greenskins",
+      "faction": "Broken Axe",
+      "factionTag": "greenskins",
+      "dlc": "The Warden & The Paunch"
+    },
+    {
+      "name": "Tyrion",
+      "title": "Tyrion",
+      "race": "High Elves",
+      "faction": "Eataine",
+      "factionTag": "high elves",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Teclis",
+      "title": "Teclis",
+      "race": "High Elves",
+      "faction": "Order of Loremasters",
+      "factionTag": "high elves",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Alith Anar",
+      "title": "Alith Anar",
+      "race": "High Elves",
+      "faction": "Nagarythe",
+      "factionTag": "high elves",
+      "dlc": "Free"
+    },
+    {
+      "name": "Alarielle the Radiant",
+      "title": "Alarielle the Radiant",
+      "race": "High Elves",
+      "faction": "Avelorn",
+      "factionTag": "high elves",
+      "dlc": "The Queen & The Crone"
+    },
+    {
+      "name": "Eltharion the Grim",
+      "title": "Eltharion the Grim",
+      "race": "High Elves",
+      "faction": "Yvresse",
+      "factionTag": "high elves",
+      "dlc": "The Warden & The Paunch"
+    },
+    {
+      "name": "Imrik",
+      "title": "Imrik",
+      "race": "High Elves",
+      "faction": "Knights of Caledor",
+      "factionTag": "high elves",
+      "dlc": "Free"
+    },
+    {
+      "name": "Mazdamundi",
+      "title": "Lord Mazdamundi",
+      "race": "Lizardmen",
+      "faction": "Hexoatl",
+      "factionTag": "lizardmen",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Kroq-Gar",
+      "title": "Kroq-Gar",
+      "race": "Lizardmen",
+      "faction": "Last Defenders",
+      "factionTag": "lizardmen",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Tiktaq'to",
+      "title": "Tiktaq'to",
+      "race": "Lizardmen",
+      "faction": "Tlaqua",
+      "factionTag": "lizardmen",
+      "dlc": "Free"
+    },
+    {
+      "name": "Tehenhauin",
+      "title": "Tehenhauin",
+      "race": "Lizardmen",
+      "faction": "Cult of Sotek",
+      "factionTag": "lizardmen",
+      "dlc": "The Prophet & The Warlock"
+    },
+    {
+      "name": "Gor-Rok",
+      "title": "Gor-Rok",
+      "race": "Lizardmen",
+      "faction": "Itza",
+      "factionTag": "lizardmen",
+      "dlc": "Free"
+    },
+    {
+      "name": "Nakai the Wanderer",
+      "title": "Nakai the Wanderer",
+      "race": "Lizardmen",
+      "faction": "Spirit of the Jungle",
+      "factionTag": "lizardmen",
+      "dlc": "The Hunter & The Beast"
+    },
+    {
+      "name": "Oxyotl",
+      "title": "Oxyotl",
+      "race": "Lizardmen",
+      "faction": "Ghosts of Pahuax",
+      "factionTag": "lizardmen",
+      "dlc": "The Silence & The Fury"
+    },
+    {
+      "name": "Wulfrik the Wanderer",
+      "title": "Wulfrik the Wanderer",
+      "race": "Norsca",
+      "faction": "World Walkers",
+      "factionTag": "norsca",
+      "dlc": "Norsca"
+    },
+    {
+      "name": "Throgg",
+      "title": "Throgg",
+      "race": "Norsca",
+      "faction": "Wintertooth",
+      "factionTag": "norsca",
+      "dlc": "Norsca"
+    },
+    {
+      "name": "Queek Headtaker",
+      "title": "Queek Headtaker",
+      "race": "Skaven",
+      "faction": "Clan Mors",
+      "factionTag": "skaven",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Skrolk",
+      "title": "Lord Skrolk",
+      "race": "Skaven",
+      "faction": "Clan Pestilens",
+      "factionTag": "skaven",
+      "dlc": "Base game (Warhammer II)"
+    },
+    {
+      "name": "Tretch Craventail",
+      "title": "Tretch Craventail",
+      "race": "Skaven",
+      "faction": "Clan Rictus",
+      "factionTag": "skaven",
+      "dlc": "Free"
+    },
+    {
+      "name": "Snikch",
+      "title": "Deathmaster Snikch",
+      "race": "Skaven",
+      "faction": "Clan Eshin",
+      "factionTag": "skaven",
+      "dlc": "The Shadow & The Blade"
+    },
+    {
+      "name": "Ikit Claw",
+      "title": "Ikit Claw",
+      "race": "Skaven",
+      "faction": "Clan Skryre",
+      "factionTag": "skaven",
+      "dlc": "The Prophet & The Warlock"
+    },
+    {
+      "name": "Throt the Unclean",
+      "title": "Throt the Unclean",
+      "race": "Skaven",
+      "faction": "Clan Moulder",
+      "factionTag": "skaven",
+      "dlc": "The Twisted & The Twilight"
+    },
+    {
+      "name": "Karl Franz",
+      "title": "Emperor Karl Franz",
+      "race": "The Empire",
+      "faction": "Reikland",
+      "factionTag": "empire",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Volkmar the Grim",
+      "title": "Volkmar the Grim",
+      "race": "The Empire",
+      "faction": "Cult of Sigmar",
+      "factionTag": "empire",
+      "dlc": "The Grim & The Grave"
+    },
+    {
+      "name": "Balthasar Gelt",
+      "title": "Balthasar Gelt",
+      "race": "The Empire",
+      "faction": "The Golden Order",
+      "factionTag": "empire",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Markus Wulfhart",
+      "title": "Markus Wulfhart",
+      "race": "The Empire",
+      "faction": "The Huntsmarshal's Expedition",
+      "factionTag": "empire",
+      "dlc": "The Hunter & The Beast"
+    },
+    {
+      "name": "Settra the Imperishable",
+      "title": "Settra the Imperishable",
+      "race": "Tomb Kings",
+      "faction": "Khemri",
+      "factionTag": "tomb kings",
+      "dlc": "Rise of the Tomb Kings"
+    },
+    {
+      "name": "Khalida",
+      "title": "High Queen Khalida",
+      "race": "Tomb Kings",
+      "faction": "Court of Lybaras",
+      "factionTag": "tomb kings",
+      "dlc": "Rise of the Tomb Kings"
+    },
+    {
+      "name": "Khatep",
+      "title": "Grand Hierophant Khatep",
+      "race": "Tomb Kings",
+      "faction": "Exiles of Nehek",
+      "factionTag": "tomb kings",
+      "dlc": "Rise of the Tomb Kings"
+    },
+    {
+      "name": "Arkhan the Black",
+      "title": "Arkhan the Black",
+      "race": "Tomb Kings",
+      "faction": "Followers of Nagash",
+      "factionTag": "tomb kings",
+      "dlc": "Rise of the Tomb Kings"
+    },
+    {
+      "name": "Luthor Harkon",
+      "title": "Luthor Harkon",
+      "race": "Vampire Coast",
+      "faction": "The Awakened",
+      "factionTag": "vampire coast",
+      "dlc": "Curse of the Vampire Coast"
+    },
+    {
+      "name": "Aranessa Saltspite",
+      "title": "Aranessa Saltspite",
+      "race": "Vampire Coast",
+      "faction": "Pirates of Sartosa",
+      "factionTag": "vampire coast",
+      "dlc": "Curse of the Vampire Coast"
+    },
+    {
+      "name": "Count Noctilus",
+      "title": "Count Noctilus",
+      "race": "Vampire Coast",
+      "faction": "The Dreadfleet",
+      "factionTag": "vampire coast",
+      "dlc": "Curse of the Vampire Coast"
+    },
+    {
+      "name": "Cylostra Direfin",
+      "title": "Cylostra Direfin",
+      "race": "Vampire Coast",
+      "faction": "The Drowned",
+      "factionTag": "vampire coast",
+      "dlc": "Curse of the Vampire Coast"
+    },
+    {
+      "name": "Mannfred von Carstein",
+      "title": "Mannfred von Carstein",
+      "race": "Vampire Counts",
+      "faction": "The Drakenhof Conclave",
+      "factionTag": "vampire counts",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Helman Ghorst",
+      "title": "Helman Ghorst",
+      "race": "Vampire Counts",
+      "faction": "Caravan of Blue Roses",
+      "factionTag": "vampire counts",
+      "dlc": "The Grim & The Grave"
+    },
+    {
+      "name": "Heinrich Kemmler",
+      "title": "Heinrich Kemmler",
+      "race": "Vampire Counts",
+      "faction": "The Barrow Legion",
+      "factionTag": "vampire counts",
+      "dlc": "Base game (Warhammer)"
+    },
+    {
+      "name": "Vlad von Carstein",
+      "title": "Vlad von Carstein",
+      "race": "Vampire Counts",
+      "faction": "Sylvania",
+      "factionTag": "vampire counts",
+      "dlc": "Free"
+    },
+    {
+      "name": "Isabella von Carstein",
+      "title": "Isabella von Carstein",
+      "race": "Vampire Counts",
+      "faction": "Sylvania",
+      "factionTag": "vampire counts",
+      "dlc": "Free"
+    },
+    {
+      "name": "Archaon the Everchosen",
+      "title": "Archaon the Everchosen",
+      "race": "Warriors of Chaos",
+      "faction": "Warhost of the Apocalypse",
+      "factionTag": "warriors of chaos",
+      "dlc": "Chaos Warriors Race Pack"
+    },
+    {
+      "name": "Sigvald the Magnificent",
+      "title": "Prince Sigvald the Magnificent",
+      "race": "Warriors of Chaos",
+      "faction": "The Decadent Host",
+      "factionTag": "warriors of chaos",
+      "dlc": "Chaos Warriors Race Pack"
+    },
+    {
+      "name": "Kholek Suneater",
+      "title": "Kholek Suneater",
+      "race": "Warriors of Chaos",
+      "faction": "Heralds of the Tempest",
+      "factionTag": "warriors of chaos",
+      "dlc": "Chaos Warriors Race Pack"
+    },
+    {
+      "name": "Orion",
+      "title": "Orion",
+      "race": "Wood Elves",
+      "faction": "Talsyn",
+      "factionTag": "wood elves",
+      "dlc": "Realm of the Wood Elves"
+    },
+    {
+      "name": "Durthu",
+      "title": "Durthu",
+      "race": "Wood Elves",
+      "faction": "Argwylon",
+      "factionTag": "wood elves",
+      "dlc": "Realm of the Wood Elves"
+    },
+    {
+      "name": "Sisters of Twilight",
+      "title": "Sisters of Twilight",
+      "race": "Wood Elves",
+      "faction": "Heralds of Ariel",
+      "factionTag": "wood elves",
+      "dlc": "The Twisted & The Twilight"
+    },
+    {
+      "name": "Drycha",
+      "title": "Drycha",
+      "race": "Wood Elves",
+      "faction": "Wargrove of Woe",
+      "factionTag": "wood elves",
+      "dlc": "Realm of the Wood Elves"
+    }
+  ],
+  "factionRecommends": {
+    "wood elves": [
+      {
+        "target": {
+          "mod": "steam-3672266382"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      },
+      {
+        "target": {
+          "mod": "ll-27663"
+        },
+        "note": "Drycha falls to Nurgle as an AI story in a Wood Elf neighbour's campaign; at its end you can defeat her and confederate or vassalize her (its English text is in the Lin AllInOne translation)"
+      }
+    ],
+    "empire": [
+      {
+        "target": {
+          "mod": "steam-3621449095"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ],
+    "high elves": [
+      {
+        "target": {
+          "mod": "steam-3616234518"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ],
+    "dark elves": [
+      {
+        "target": {
+          "mod": "steam-3616082403"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ],
+    "bretonnia": [
+      {
+        "target": {
+          "mod": "steam-3647419004"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ],
+    "cathay": [
+      {
+        "target": {
+          "mod": "steam-3679399151"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ],
+    "kislev": [
+      {
+        "target": {
+          "mod": "steam-3301596500"
+        },
+        "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
+      }
+    ]
+  }
+}

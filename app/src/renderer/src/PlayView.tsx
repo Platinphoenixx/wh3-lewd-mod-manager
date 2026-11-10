@@ -20,7 +20,7 @@ import { MadeBy, worksOf } from './Creators'
 import { FlagDialog, FlagLink } from './FlagDialog'
 import { keepStagesLabel, untilLabel } from './Suggestions'
 import { lookPoint, withFlag, type CheckPoint } from '@shared/check'
-import { ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
+import { dlcLine, ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
 function sourceLabel(m: Mod): string {
@@ -77,7 +77,8 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
   useEffect(() => { window.api.listProfiles().then(setProfiles) }, [])
   const recent = [...profiles].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 3)
   const card = (s: Subject) => <SubjectCard key={s.key} s={s} onClick={() => onOpen(s.key)} />
-  const characters = subjects.filter((s) => s.kind === 'character')
+  const characters = subjects.filter((s) => s.kind === 'character' && !s.vanilla)
+  const vanilla = subjects.filter((s) => s.vanilla).sort((a, b) => a.name.localeCompare(b.name))
   const themes = subjects.filter((s) => s.kind === 'theme')
   return (
     <div className="content play">
@@ -110,6 +111,13 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
       )}
       <h3 className="play-section">Play as</h3>
       <div className="play-grid">{characters.map(card)}</div>
+      {vanilla.length > 0 && (
+        <>
+          <h3 className="play-section">In the game's own campaign</h3>
+          <p className="small muted">No mod tells a story for these lords. You play their normal campaign; the app adds what fits them: their look, their army's look, events and animations.</p>
+          <div className="play-grid">{vanilla.map(card)}</div>
+        </>
+      )}
       {themes.length > 0 && (
         <>
           <h3 className="play-section">Themes</h3>
@@ -170,6 +178,16 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
           {subject.kind === 'theme' && <p className="small muted">{subject.characters.join(', ')}</p>}
           <div className="markdown play-lead"><Markdown>{main?.preset.description ?? ''}</Markdown></div>
           {guide && guide.dlc?.length > 0 && <p className="small muted">Needs the DLC {guide.dlc.map((d) => d.name).join(', ')}.</p>}
+          {main?.preset.origin === 'vanilla' && <p className="small muted">{[dlcLine(main.preset.dlc), ...(subject.factions ?? [])].filter(Boolean).join(' · ')}</p>}
+          {main?.preset.avoid?.length ? (
+            <p className="callout">
+              <b>Not with these:</b>{' '}
+              {main.preset.avoid.map((a, i) => {
+                const m = 'mod' in a.target ? data.index.mods.get(a.target.mod) : undefined
+                return <span key={i}>{i > 0 ? '; ' : ''}{m?.name ?? JSON.stringify(a.target)} – {a.note}</span>
+              })}. The app never suggests them for this list.
+            </p>
+          ) : null}
         </div>
       </div>
       <h3>How much do you want?</h3>
@@ -321,7 +339,7 @@ function OptionCard({ s, selected, onClick, preselected }: { s: Suggestion | nul
     <div className={`play-opt${selected ? ' sel' : ''}`} onClick={onClick}>
       <div className="ph"><ModCover mods={[s.mod]} placeholder={s.mod.name} /></div>
       <div className="body">
-        {preselected && <div className="tag">Most players</div>}
+        {preselected && <div className="tag">{s.reasons.some((r) => r.startsWith('Recommended for this setup')) ? 'Recommended' : 'Most players'}</div>}
         {s.until && <div className="until">{untilLabel(s.until)}</div>}
         <div className="t">{s.mod.name}</div>
         {s.replaces && <div className="rep">Replaces {s.replaces.join(', ')}</div>}
@@ -377,7 +395,7 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
     const m = e.key.startsWith('mod:') ? data.index.mods.get(e.key.slice(4)) : undefined
     return m?.tags.includes('general') ? [{ key: e.key, mod: m }] : []
   }), [base, data.index])
-  const steps = useMemo(() => stepsFor(subject, picks, qol.length > 0), [subject, picks, qol])
+  const steps = useMemo(() => stepsFor(subject, picks, qol.length > 0, !!subject.vanilla && tier.id === 'essentials'), [subject, picks, qol, tier])
   const [at, setAt] = useState(0)
   const [chosen, setChosen] = useState<Record<string, string>>({})
   const [dropped, setDropped] = useState<Set<string>>(new Set())
