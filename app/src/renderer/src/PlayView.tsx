@@ -3,7 +3,7 @@ import Markdown from 'react-markdown'
 import type { Mod, Preset } from '@catalog/schema'
 import { lastMajorUpdate } from '@shared/health'
 import { installSourceFor } from '@shared/install'
-import { matchInstalled, parseTargetKey } from '@shared/match'
+import { matchInstalled, parseTargetKey, targetKey } from '@shared/match'
 import { playWith, subjectFacts } from '@shared/playwith'
 import { conflictsIn, resolveProfile, type Profile } from '@shared/profile'
 import {
@@ -188,6 +188,7 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
               })}. The app never suggests them for this list.
             </p>
           ) : null}
+          {main?.preset.tips?.length ? <Tips tips={main.preset.tips} /> : null}
         </div>
       </div>
       <h3>How much do you want?</h3>
@@ -355,6 +356,20 @@ function OptionCard({ s, selected, onClick, preselected, hidden, off, multi }: {
         <div className="why">{s.reasons.filter((r) => !r.startsWith('Replaces')).join(' · ')}</div>
         <div className="src">{sourceLabel(s.mod)} · <a onClick={(e) => { e.stopPropagation(); data.openMod(s.mod.id) }}>details</a></div>
       </div>
+    </div>
+  )
+}
+
+/** "Good to know": what a mod the setup recommends does in it (a lady you play yourself counting as won over). */
+function Tips({ tips }: { tips: NonNullable<Preset['tips']> }) {
+  const data = useData()
+  return (
+    <div className="callout small">
+      <b>Good to know</b>
+      {tips.map((t, i) => {
+        const m = 'mod' in t.target ? data.index.mods.get(t.target.mod) : undefined
+        return <p key={i} style={{ margin: '6px 0 0' }}>{t.text}{m ? <> <a onClick={() => data.openMod(m.id)}>details</a></> : null}</p>
+      })}
     </div>
   )
 }
@@ -574,6 +589,12 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
       <>
         <h2>What you get</h2>
         <p className="play-lead">{r.entries.length} mods for {subject.name} – {tier.name}. Nothing is installed until you start it below.</p>
+        {(() => {
+          // The hints about mods this profile has.
+          const keys = new Set(r.entries.map((e) => e.key))
+          const tips = (tier.preset.tips ?? []).filter((t) => keys.has(targetKey(t.target)))
+          return tips.length ? <Tips tips={tips} /> : null
+        })()}
         {picks.filter((g) => g.stage && choice(g) !== NONE).map((g) => {
           const s = g.pick.find((x) => x.key === choice(g))
           return s && (

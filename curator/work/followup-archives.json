@@ -901,14 +901,14 @@
       "id": "ll-36630",
       "_note": "Script @n_slaaneshvictories_script.lua: is_corrupted() is true when a character of the lady's subtype is in the player's faction; the turn-start listener then raises her count and triggers <short>_sub_1..3.",
       "installNotes+": [
-        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: her three 'subjugated' events come on your first three turns and give her its corruption traits (script read 2026-11-10)."
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: on your first three turns her events give her +2, +4, then +6 Slaanesh corruption in the province she is in; on turn 3 \"Corrupt their kingdom\" adds Slaanesh's Harem (+8 Slaanesh corruption in all your provinces, +150 relations with the other ladies' factions), \"Corrupt their soul\" nothing more (script and tables read 2026-11-10)."
       ]
     },
     {
       "id": "ll-34542",
       "_note": "Script @n_slaaneshvassals_non_slaanesh_script.lua: is_corrupted() is true for a lady whose subtype is in the player's faction, so her n_gen_<short>_ dilemmas can be drawn from turn 1.",
       "installNotes+": [
-        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), her own dilemmas come up from the start: the mod counts a lady in your faction as vassalized or confederated (script read 2026-11-10)."
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), the mod counts her as vassalized or confederated: from turn 1, about every second or third turn (30 % chance, +5 % per turn without one), a dilemma about her offers +10 % replenishment for a turn, 1,000 gold, a random ancillary for 3,000 gold or Slaanesh's Blade and a Personal Sycophant for 25,000 gold; no downside (script and tables read 2026-11-10)."
       ]
     },
     {

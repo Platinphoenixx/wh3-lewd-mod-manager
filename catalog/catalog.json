@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T20:33:23+00:00",
+  "generatedAt": "2026-11-10T21:15:32+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -51880,7 +51880,7 @@
       ],
       "installNotes": [
         "Confederation feature needs the main mod AND the confederation submod",
-        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: her three 'subjugated' events come on your first three turns and give her its corruption traits (script read 2026-11-10).",
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying, Khalida), the mod counts her as already won over: on your first three turns her events give her +2, +4, then +6 Slaanesh corruption in the province she is in; on turn 3 \"Corrupt their kingdom\" adds Slaanesh's Harem (+8 Slaanesh corruption in all your provinces, +150 relations with the other ladies' factions), \"Corrupt their soul\" nothing more (script and tables read 2026-11-10).",
         "Made for playing a Slaanesh faction as an outside force corrupting the legendary lords: when you play one of the supported lords, the corruption and confederation events keep running for her and there is no option to disable them. No full support for non-Slaanesh player factions is planned (author)."
       ],
       "curation": {
@@ -52083,7 +52083,7 @@
       "installNotes": [
         "Both versions can be used together, or choose just one.",
         "Supports Alarielle, Elspeth, Fay Enchantress, Hellebron, Katarin, Miao Ying, Morathi, Repanse, Sisters of Twilight, among others.",
-        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), her own dilemmas come up from the start: the mod counts a lady in your faction as vassalized or confederated (script read 2026-11-10).",
+        "Played as one of the ladies it knows yourself (Alarielle, Morathi, the Fay Enchantress, Elspeth, the Sisters of Twilight, Hellebron, Katarin, Repanse, Miao Ying), the mod counts her as vassalized or confederated: from turn 1, about every second or third turn (30 % chance, +5 % per turn without one), a dilemma about her offers +10 % replenishment for a turn, 1,000 gold, a random ancillary for 3,000 gold or Slaanesh's Blade and a Personal Sycophant for 25,000 gold; no downside (script and tables read 2026-11-10).",
         "When playing a non-Slaanesh faction (for example Be'lakor) use the Non_Slaanesh_Factions variants of the Slaanesh Vassals and Victories packs; the wrong variant can crash or show dilemmas with the wrong currency. Swapping the variant mid-campaign is save safe (2026-09-14)."
       ],
       "curation": {
@@ -70876,7 +70876,21 @@
           "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
         }
       ],
-      "avoid": []
+      "avoid": [],
+      "tips": [
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "text": "Slaanesh Expanded - Vassal Dilemmas counts Elspeth von Draken as vassalized or confederated from the start. On about every second or third turn (30 % chance, 5 % more for each turn without one, at most one a turn) a dilemma about Elspeth von Draken offers: +10 % replenishment for all your armies for a turn, 1,000 gold, a random ancillary for 3,000 gold, or Slaanesh's Blade and a Personal Sycophant for 25,000 gold. It has no downside; its texts are explicit."
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "text": "Slaanesh Expanded - Corruption & Confederation counts Elspeth von Draken as won over from the start. On your first three turns an event each gives Elspeth von Draken a trait: +2, then +4, then +6 Slaanesh corruption in Elspeth von Draken's province (the levels replace each other). On turn 3, \"Corrupt their kingdom\" also gives Slaanesh's Harem: +8 Slaanesh corruption in all your provinces and +150 relations with the factions of the other ladies it knows; \"Corrupt their soul\" adds nothing more. Corruption costs public order, so take \"Corrupt their soul\" if you do not want it."
+        }
+      ]
     },
     {
       "id": "vanilla-nagash",
@@ -71077,7 +71091,21 @@
           "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
         }
       ],
-      "avoid": []
+      "avoid": [],
+      "tips": [
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "text": "Slaanesh Expanded - Vassal Dilemmas counts Repanse de Lyonesse as vassalized or confederated from the start. On about every second or third turn (30 % chance, 5 % more for each turn without one, at most one a turn) a dilemma about Repanse de Lyonesse offers: +10 % replenishment for all your armies for a turn, 1,000 gold, a random ancillary for 3,000 gold, or Slaanesh's Blade and a Personal Sycophant for 25,000 gold. It has no downside; its texts are explicit."
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "text": "Slaanesh Expanded - Corruption & Confederation counts Repanse de Lyonesse as won over from the start. On your first three turns an event each gives Repanse de Lyonesse a trait: +2, then +4, then +6 Slaanesh corruption in Repanse de Lyonesse's province (the levels replace each other). On turn 3, \"Corrupt their kingdom\" also gives Slaanesh's Harem: +8 Slaanesh corruption in all your provinces and +150 relations with the factions of the other ladies it knows; \"Corrupt their soul\" adds nothing more. Corruption costs public order, so take \"Corrupt their soul\" if you do not want it."
+        }
+      ]
     },
     {
       "id": "vanilla-malekith",
@@ -71184,7 +71212,21 @@
           "note": "Endo's reskin of this faction: Community Beastmen's maintainer names Endo's faction reskins as targets for its matched animations"
         }
       ],
-      "avoid": []
+      "avoid": [],
+      "tips": [
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "text": "Slaanesh Expanded - Vassal Dilemmas counts Hellebron as vassalized or confederated from the start. On about every second or third turn (30 % chance, 5 % more for each turn without one, at most one a turn) a dilemma about Hellebron offers: +10 % replenishment for all your armies for a turn, 1,000 gold, a random ancillary for 3,000 gold, or Slaanesh's Blade and a Personal Sycophant for 25,000 gold. It has no downside; its texts are explicit."
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "text": "Slaanesh Expanded - Corruption & Confederation counts Hellebron as won over from the start. On your first three turns an event each gives Hellebron a trait: +2, then +4, then +6 Slaanesh corruption in Hellebron's province (the levels replace each other). On turn 3, \"Corrupt their kingdom\" also gives Slaanesh's Harem: +8 Slaanesh corruption in all your provinces and +150 relations with the factions of the other ladies it knows; \"Corrupt their soul\" adds nothing more. Corruption costs public order, so take \"Corrupt their soul\" if you do not want it."
+        }
+      ]
     },
     {
       "id": "vanilla-teclis",
@@ -71339,7 +71381,15 @@
           "note": "event chains when you defeat female legendary lords; works with any faction, says its author; she is one of the ladies it knows: played by you she counts as won over, so her own three events come on your first turns"
         }
       ],
-      "avoid": []
+      "avoid": [],
+      "tips": [
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "text": "Slaanesh Expanded - Corruption & Confederation counts Khalida as won over from the start. On your first three turns an event each gives Khalida a trait: +2, then +4, then +6 Slaanesh corruption in Khalida's province (the levels replace each other). On turn 3, \"Corrupt their kingdom\" also gives Slaanesh's Harem: +8 Slaanesh corruption in all your provinces and +150 relations with the factions of the other ladies it knows; \"Corrupt their soul\" adds nothing more. Corruption costs public order, so take \"Corrupt their soul\" if you do not want it."
+        }
+      ]
     },
     {
       "id": "vanilla-aranessa-saltspite",
@@ -71514,6 +71564,20 @@
             "mod": "steam-3619883986"
           },
           "note": "a patch of Alarielle's Wood Elf mechanics for Immortal Empires Expanded; its page says not to play Wood Elves with it"
+        }
+      ],
+      "tips": [
+        {
+          "target": {
+            "mod": "ll-34542"
+          },
+          "text": "Slaanesh Expanded - Vassal Dilemmas counts Sisters of Twilight as vassalized or confederated from the start. On about every second or third turn (30 % chance, 5 % more for each turn without one, at most one a turn) a dilemma about Sisters of Twilight offers: +10 % replenishment for all your armies for a turn, 1,000 gold, a random ancillary for 3,000 gold, or Slaanesh's Blade and a Personal Sycophant for 25,000 gold. It has no downside; its texts are explicit."
+        },
+        {
+          "target": {
+            "mod": "ll-36630"
+          },
+          "text": "Slaanesh Expanded - Corruption & Confederation counts Sisters of Twilight as won over from the start. On your first three turns an event each gives Sisters of Twilight a trait: +2, then +4, then +6 Slaanesh corruption in Sisters of Twilight's province (the levels replace each other). On turn 3, \"Corrupt their kingdom\" also gives Slaanesh's Harem: +8 Slaanesh corruption in all your provinces and +150 relations with the factions of the other ladies it knows; \"Corrupt their soul\" adds nothing more. Corruption costs public order, so take \"Corrupt their soul\" if you do not want it."
         }
       ]
     }

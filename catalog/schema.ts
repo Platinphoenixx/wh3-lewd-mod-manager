@@ -118,6 +118,8 @@ export interface Preset {
    */
   recommends?: { target: ModTarget; note?: string }[];
   avoid?: { target: ModTarget; note: string }[];
+  /** What a mod does in this setup that a player should know before choosing it ("Good to know"): a lady you play yourself counting as won over. */
+  tips?: { target: ModTarget; text: string }[];
   /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily). */
   votes?: { up: number; down: number };
   /** A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name. */

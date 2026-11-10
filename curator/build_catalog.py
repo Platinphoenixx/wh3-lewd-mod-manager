@@ -351,6 +351,8 @@ def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
         spellings = sorted({t.title() for m in looks for t in m.get("tags") or [] if letters(t) in al and letters(t) != letters(name)})
         dlc = lord["dlc"]
         needs = "in the base game" if dlc.startswith("Base game") else "a free lord" if dlc.startswith("Free") else f"playable with the DLC {dlc}"
+        tips = [{"target": r["target"], "text": r["playedTip"].replace("{lord}", name)} for r in doc.get("recommends") or []
+                if name in (r.get("played") or []) and r.get("playedTip") and known(r["target"])]
         out.append({
             "id": "vanilla-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-"),
             "name": name, "origin": "vanilla", "playAs": [name] + spellings, "phase": "any", "factions": [tag], "dlc": dlc,
@@ -363,6 +365,8 @@ def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
             "entries": [],
             "recommends": [advice(r, name) for r in (doc.get("recommends") or []) + ((doc.get("factionRecommends") or {}).get(tag) or []) if known(r["target"])],
             "avoid": [r for r in (doc.get("factionAvoid") or {}).get(tag) or [] if known(r["target"])],
+            # What a recommended mod does to this lord when you play her yourself ("Good to know" in the app).
+            **({"tips": tips} if tips else {}),
         })
     return out
 

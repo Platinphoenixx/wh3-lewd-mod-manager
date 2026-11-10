@@ -24,7 +24,7 @@ community contributions. App UI and catalog texts are English.
     sizes Looks (the lord's look and the army's look), Lewd add-ons (the file's `recommends`/`factionRecommends`, recommended),
     Everything; `factionAvoid` (ATB and Alarielle's Wood Elf mechanics for Wood Elf lords) are never suggested. A recommendation's
     `played`/`playedNote` adds a sentence for the lords it names (the Slaanesh Expanded mods count a lady the player plays herself
-    as already won over). What works with any faction (tags `all factions` / `many factions`: an all-faction hero, loading screens,
+    as already won over); its `playedTip` becomes `Preset.tips`, shown as "Good to know" on the lord's page and, for the mods a profile has, in Play's review. What works with any faction (tags `all factions` / `many factions`: an all-faction hero, loading screens,
     unit cards) is offered for every list ("Works with every faction") but fills only these lords' Everything size; a setup's
     sizes stay what its community plays. Extended and Everything bring the catalog's English translation (tag `english`,
     `extends`) of a mod written in another language (tags `chinese`, `korean`, `russian`) along (`withEnglish`). Lin's Corrupted
