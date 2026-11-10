@@ -316,7 +316,10 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   for (const [i, sug] of list.entries()) {
     for (const r of sug.mod.relations) {
       // As in conflictsIn: an incompatibility that holds only in a case ("playing as Miao Ying") does not group them.
-      if (r.kind === 'incompatible' && !r.condition && 'mod' in r.target && at.has(r.target.mod)) join(i, at.get(r.target.mod)!, 'These do not work together')
+      // An army's look is a choice of its own: a mod that only clashes with one of its options (Female Auxiliaries with Endo's
+      // Combined pack) is no alternative to the others; the profile keeps the two apart instead.
+      if (r.kind === 'incompatible' && !r.condition && 'mod' in r.target && at.has(r.target.mod) &&
+          !!sug.mod.factionLook?.length === !!list[at.get(r.target.mod)!].mod.factionLook?.length) join(i, at.get(r.target.mod)!, 'These do not work together')
     }
   }
   for (const m of catalog.mods) {

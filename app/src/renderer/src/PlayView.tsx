@@ -5,7 +5,7 @@ import { lastMajorUpdate } from '@shared/health'
 import { installSourceFor } from '@shared/install'
 import { matchInstalled, parseTargetKey } from '@shared/match'
 import { playWith, subjectFacts } from '@shared/playwith'
-import { resolveProfile, type Profile } from '@shared/profile'
+import { conflictsIn, resolveProfile, type Profile } from '@shared/profile'
 import {
   communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
   type Step, type Subject, type Tier
@@ -508,7 +508,10 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
     }))
     // An add-on of the size that a picked pack holds whole (Endo's Spellsingers in the Combined pack) adds nothing.
     const picked = Object.values(effective).flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
-    const kept = tier.extras.filter((k) => { const m = k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) : undefined; return !m || !containedIn(picked, m) })
+    // So does one that does not work with a pick (Female Auxiliaries next to the Combined pack): the pick wins.
+    const clash = new Set(conflictsIn(data.index, [...picked.map((m) => `mod:${m.id}`), ...tier.extras])
+      .flatMap((c) => [c.a, c.b]).filter((k) => tier.extras.includes(k) && !picked.some((m) => `mod:${m.id}` === k)))
+    const kept = tier.extras.filter((k) => { const m = k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) : undefined; return !clash.has(k) && (!m || !containedIn(picked, m)) })
     const p = guidedProfile({ ...tier, extras: kept }, effective, picks, dropped, `${subject.name} – ${tier.name}${pinned ? ` + ${pinned.name}` : ''}`, data.index)
     const withFlags = Object.keys(flagged).length ? { ...p, flagged } : p
     return pin?.fix ? { ...withFlags, fixes: { [pin.mod]: pin.fix } } : withFlags

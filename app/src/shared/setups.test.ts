@@ -201,6 +201,14 @@ describe('lords in the game\'s own campaign', () => {
     expect(look(['mod:endo-we'])!.pick.map((x) => x.key)).toEqual(['mod:sis-b'])
   })
 
+  it('keeps a mod that only clashes with one army look out of the army choice', () => {
+    const c: Catalog = { ...vcat, mods: [...vcat.mods,
+      mod('aux', { tags: ['wood elves'], relations: [{ kind: 'incompatible', target: { mod: 'zeta-we' }, source: src }] })] }
+    const ix = buildIndex(c)
+    const army = suggestedFor(c, ix, c.presets[0]).picks.find((g) => /army looks$/.test(g.note))!
+    expect(army.pick.map((x) => x.key)).toEqual(['mod:endo-we', 'mod:zeta-we'])
+  })
+
   it('writes down the usual version of an added mod with versions', () => {
     const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
     const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }

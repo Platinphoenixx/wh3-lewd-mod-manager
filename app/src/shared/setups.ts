@@ -1,7 +1,7 @@
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import type { CatalogIndex } from './match'
 import { isOwnKey } from './own'
-import { baseKeys, candidates, resolveProfile, type Profile } from './profile'
+import { baseKeys, candidates, conflictsIn, resolveProfile, type Profile } from './profile'
 import { FACTIONS, isPickOne, suggestForProfile, type PickOne, type Suggestion } from './suggest'
 
 /**
@@ -198,7 +198,11 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   }).length
   // What merely works with every faction (an all-faction hero, loading screens) fills the sizes of a lord in the game's
   // own campaign, which has no list of its own; a setup's sizes stay what its community plays, and the editor offers the rest.
-  s.lewd = together(s.lewd.filter((x) => base === vanilla || !x.anyFaction))
+  // Nor one that does not work with an option of a choice (Female Auxiliaries with Endo's Combined pack): it would take
+  // that option away instead of leaving the choice to the player.
+  const optionKeys = s.picks.flatMap((g) => g.pick.map((x) => x.key))
+  const clashesWithOption = (x: Suggestion) => conflictsIn(index, [x.key, ...optionKeys]).some((c) => c.a === x.key || c.b === x.key)
+  s.lewd = together(s.lewd.filter((x) => (base === vanilla || !x.anyFaction) && !(x.anyFaction && clashesWithOption(x))))
   s.general = together(s.general)
   // Extended is the template's own world: everything built on or recommended by its mods, then the best of what is
   // for its character or faction or used in lists for that character. A mod that is only popular in other characters'
