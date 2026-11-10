@@ -249,6 +249,8 @@ export interface Mod {
    * hers (a reskin, an army pack's `alsoLooks`) points her to other models, so this one is then not visible.
    */
   baseModels?: string[];
+  /** Offered among the editor's suggestions only, never part of a Play size (gameplay changes a player adds by choice); the reason. */
+  suggestOnly?: string;
   /** The game does not start with it (the catalog's own launch test, manual.json "noTemplate"); it is never suggested. */
   stopsGame?: string;
   /** Newest date any of its sources gives (YYYY-MM-DD; a Discord post by its message id). Set by the build. */

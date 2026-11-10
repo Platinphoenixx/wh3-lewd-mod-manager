@@ -202,8 +202,10 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   // that option away instead of leaving the choice to the player.
   const optionKeys = s.picks.flatMap((g) => g.pick.map((x) => x.key))
   const clashesWithOption = (x: Suggestion) => conflictsIn(index, [x.key, ...optionKeys]).some((c) => c.a === x.key || c.b === x.key)
-  s.lewd = together(s.lewd.filter((x) => (base === vanilla || !x.anyFaction) && !(x.anyFaction && clashesWithOption(x))))
-  s.general = together(s.general)
+  // A mod the catalog keeps for the editor's suggestions (`Mod.suggestOnly`: gameplay changes a player adds by choice) is in no size.
+  const sized = (x: Suggestion) => !x.mod.suggestOnly
+  s.lewd = together(s.lewd.filter((x) => sized(x) && (base === vanilla || !x.anyFaction) && !(x.anyFaction && clashesWithOption(x))))
+  s.general = together(s.general.filter(sized))
   // Extended is the template's own world: everything built on or recommended by its mods, then the best of what is
   // for its character or faction or used in lists for that character. A mod that is only popular in other characters'
   // lists (a camera mod in every Alarielle list) is no reason to add it to a Beastmen list.

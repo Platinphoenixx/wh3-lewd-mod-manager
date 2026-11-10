@@ -8433,5 +8433,53 @@
   "packs": [
    "endo_female_auxiliaries.pack"
   ]
+ },
+ "2862579213": {
+  "public": true,
+  "title": "Gifts of Athel Loren - Unit Upgrades for the Wood Elves",
+  "updated": 1790933773,
+  "preview_url": "https://images.steamusercontent.com/ugc/1834676420399981204/38ED7EDF9A97D083ADF96038C9F28A4E56A67368/",
+  "creator": "76561198002317131",
+  "subscriptions": 15368,
+  "tags": [
+   "mod",
+   "units"
+  ],
+  "description": "[h1]✅ Updated for 9.0[/h1]\r\n\r\nAdds a unit upgrade mechanic comparable to the greenskin scrap system to the playable Wood Elf factions.\r\n\r\nThe upgrades cost a new resource that is called Favour which is gained by healing woods on the map or upgrading the oak of ages to tier 3 and higher. Therefore there is a hardcap for favour gained per turn. The upgrades are themed around several elven gods of the asrai comparable to their tech tree.\r\nThe upgrades are non-exclusive and increase the unit's upkeep.\r\n\r\n[h1]Mods for other factions[/h1]\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2858037598] Empire [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2860643235] Bretonnia [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2861146358] Dwarfs [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2863634361] Vampire Counts and Vampire Coast[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866545631] Beastmen [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2869080193] Norsca [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2870899314] High Elves [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2872374503] Lizardmen [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2964040779] Kislev [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3193130332] Grand Cathay [/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3618166843] Dark Elves [/url]\r\n\r\n\r\n[h1]Submods[/h1]\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2968554980] Submod Compilation (by Apex)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3734156612] Submod Compilation (by ScarGard12)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2974577721] Submod for GLF Units (by FullAutoAttack)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2976099801] Submod for Radious (by FullAutoAttack)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2976080822] Submod for SFO Grimhammer (by FullAutoAttack)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2971623137] Submod for Animals for Wood Elves (by Immane)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3192223871] Submod for Asrai Unit Pack (by Cipher)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3407101807] Submod for Mixu's Legendary Lords (by Qudit)[/url]\r\n\r\n\r\n[h1]Translations[/h1]\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3663985265] German Translation[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2857387944] Polish Translation Pack (by wojtekb)[/url]\r\n\r\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2913444053] Simplified Chinese Translation (by 冰之玄月)[/url]\r\n\r\n\r\n[h1]FAQ [/h1]\r\n[b]Q: Why won't the scrap upgrade window open when clicking on the unit cards? [/b]\r\nA: Since 6.0 the old scrap upgrade UI got removed by CA. The new one can be opened by clicking on the button at the bottom of the army panel.\r\n\r\n[b]Q: Why doesn't the upgrade button in the army panel always show? [/b]\r\nA: The script tries to add it every time you left-click select one of your armies. If it doesn't show right away try deselecting and reselecting the army until it does. This issue is rather rare in single player but quite common in multiplayer campaigns.\r\n\r\n[b]Q: Can you add suport for [insert unit mod] or [insert faction mod]? [/b]\r\nA: The base mod will always exclusively support official CA units and factions and I won't create submods for faction or unit mods that I don't personally play with. But feel free to suggest it in the comments as other users of those mods might read it and decide to do so. \r\n\r\n[b]Q: Will you create more mods for different factions? [/b]\r\nA: I am considering a mod for chaos daemon and monogod factions.\r\n\r\n[b]Q: Is it safe to add/remove the mod mid campaign? [/b]\r\nA: Generally speaking adding it mid campaign should be possible but certain features like unlocking upgrades through research could cause issues. I wouldn't recommend removing it from an existing campaign though, especially when units equipped with upgrades are present on the campaign map or if the mod adds a new pooled resource to factions.\r\n\r\n[b]Q: Update? [/b]\r\nA: Tell me what stopped working in the current version of the game or which units are missing upgrades and I will try to fix it as soon as I find the time. Update requests without any information will be deleted.\r\n\r\n\r\nSpecial thanks to Rhox for providing the modding community with a script based solution for the 6.0 Scrap UI issue",
+  "packs": [
+   "DD_gifts_athel_loren.pack"
+  ]
+ },
+ "3570980178": {
+  "public": true,
+  "title": "[Wood Elves]Loreful(ish) Shooting for the Sisters of Twilight",
+  "updated": 1760170938,
+  "preview_url": "https://images.steamusercontent.com/ugc/10611236217860627813/D734047AAF37409C52A5CE5BAC337F86516A5FAA/",
+  "creator": "76561197965725186",
+  "subscriptions": 420,
+  "tags": [
+   "mod",
+   "units"
+  ],
+  "description": "This mod makes the sisters shoot their own arrows respectively, i.e. Talon of Dawn for Naestra and Talon of Dusk for Arahan.\r\n\r\nTo retain(and also strengthen) the anti-large/infantry capability of the Vanilla arrow types, both arrows are given strong tracking capabilty as in other sister mods.\r\n\r\nTalon of Dusk arrow starts tracking faster than generic Trueflight Arrows, also added flaming attack like in 8th edition\r\n\r\nBoth arrow types are now magical and have no minimum range like other arrow types, so you can blast the enemies with arrows in melee.\r\n\r\nBoth arrow types deal the same damage in total --- Ying and Yang!\r\n\r\nRemoved bonus vs large/infantry for both arrow types to balance out the strong tracking capability a bit\r\n\r\nTotal damage should be similar to vanilla(total anti-large): 390(vanilla) VS 400, i.e. (30+90+30+90+75+75) VS (40+160+4x10+16x10)\r\n\r\nAnti-infantry damage is lower than Vanilla, but should be actually stronger due to missile tracking\r\nIn my tests in custom battles it is similar to Vanilla Waywatchers\r\n\r\n------------------------------------------------------------\r\nSister mods:\r\nWood Elves Enchanted Arrows for Lords and Heroes(Campaign Equipment and Custom Battles)\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3579648402\r\n\r\nWood Elves Enchanted Arrows for Lords and Heroes:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3569303401\r\n\r\nEnchanted Arrows for all Wood Elves Missile Units:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3276520846\r\n\r\nMagical Arrows for High Elves Princess and Alith Anar:\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3569511591\r\n\r\n------------------------------------------------------------\r\nSome of my other mods:\r\n\r\nThe Cult of Slaanesh (Slaanesh Units for Morathi, Marked Dark Elves Units)\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3027059730\r\n\r\nEmpire Reiksguard Foot Knight Pack and Garrison For Vanilla\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2946462682\r\n\r\nBretonnia - Foot Knights Pack\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2943967280",
+  "packs": [
+   "WoodElves_Arrows_SoT.pack"
+  ]
+ },
+ "2896556707": {
+  "public": true,
+  "title": "Singe's Skills for Naestra and Arahan, the Sisters of Twilight",
+  "updated": 1766440830,
+  "preview_url": "https://images.steamusercontent.com/ugc/2023834784565091152/B0561E4D20958ED700F3641DCE9D0CDB2E15A61B/",
+  "creator": "76561198073466700",
+  "subscriptions": 1259,
+  "tags": [
+   "mod",
+   "campaign"
+  ],
+  "description": "Well, Warhammer was lacking a pair of Divine Twins, and here they are. Naestra and Arahan have some of the best voice acting and script in the game, up there with others such as Vilitch's paranoid fourth-wall breaking, Grom's boisterously chilled out geezer, and Cylostra Direfin's ridiculously over-the-top singing. The constant bickering between the Sisters is just brilliant, especially in Daith's screen when you continuously give stuff to Naestra because of course you would, it's permanent.\r\n\r\nThere's also an extremely fun mod expanding the item merging system that allows you to pretty consistently get the top-tier gold items from these two. Putting all the Eagle gear on to anybody is hilarious - especially Dwarfs or Tzeentch\r\n\r\nFour skills for the flying artillery piece, ha ha Gwindalor and Ceithin-Har go brrrrt\r\nDaith's Nieces is a general buff to army and armour-piercing\r\nFavoured of Loec boosts Wardancers in a way totally dissimilar to the way Wychwethyl does it, I swear\r\nFear the Clear Sky makes Hawk Riders into excellent morale breakers, so they can be actually useful if you're not playing as the Sisters\r\nUmbral Aura turns your entire Airforce into Stealth aircraft.\r\n\r\nSinge's Skills for the Wood Elves\r\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=2896556497\r\n",
+  "packs": [
+   "singe_skills_wh_wef_twilight.pack"
+  ]
  }
 }

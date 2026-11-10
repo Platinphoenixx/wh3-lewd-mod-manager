@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:18:30+00:00",
+  "generatedAt": "2026-11-10T21:52:31+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -5261,6 +5261,63 @@
       "recommendedFor": "Profiles with many mods that put buttons in the resource bar, e.g. recommended for “Miao Ying's Corrupting Alchemy”.",
       "updated": "2026-09-24",
       "changesData": false
+    },
+    {
+      "id": "steam-3570980178",
+      "name": "[Wood Elves] Loreful(ish) Shooting for the Sisters of Twilight",
+      "authors": [
+        "Murray222"
+      ],
+      "kind": "units",
+      "summary": "Naestra and Arahan shoot their own arrows (Talon of Dawn and Talon of Dusk): magical, strongly tracking, no minimum range, Dusk also flaming; total damage close to the game's.",
+      "tags": [
+        "general",
+        "wood elves",
+        "sisters of twilight"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3570980178",
+            "title": "[Wood Elves]Loreful(ish) Shooting for the Sisters of Twilight",
+            "updated": "2025-10-11",
+            "subscribers": 420
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "WoodElves_Arrows_SoT.pack",
+          "from": "steam",
+          "steamId": "3570980178"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested."
+        ]
+      },
+      "status": "stable",
+      "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size.",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Murray222",
+          "url": "https://steamcommunity.com/profiles/76561197965725186/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/10611236217860627813/D734047AAF37409C52A5CE5BAC337F86516A5FAA/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2025-10-11",
+      "changesData": true
     },
     {
       "id": "steam-2964841140",
@@ -26355,6 +26412,66 @@
         }
       ],
       "updated": "2026-05-30",
+      "changesData": true
+    },
+    {
+      "id": "steam-2862579213",
+      "name": "Gifts of Athel Loren - Unit Upgrades for the Wood Elves",
+      "authors": [
+        "Dirty Dan"
+      ],
+      "kind": "units",
+      "summary": "Unit upgrades for the playable Wood Elf factions, like the Greenskins' scrap upgrades: they cost Favour, a new resource from healing forests and from the Oak of Ages at tier 3 and up, and raise the unit's upkeep. Updated for 9.0.",
+      "tags": [
+        "general",
+        "wood elves",
+        "units"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2862579213",
+            "title": "Gifts of Athel Loren - Unit Upgrades for the Wood Elves",
+            "updated": "2026-10-02",
+            "subscribers": 15368
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "DD_gifts_athel_loren.pack",
+          "from": "steam",
+          "steamId": "2862579213"
+        }
+      ],
+      "relations": [],
+      "installNotes": [
+        "Its page lists submods for other unit mods (Asrai Unit Pack, Animals for Wood Elves, Mixu's Legendary Lords, Radious, SFO): with those mods, their units only get upgrades through the submod."
+      ],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested."
+        ]
+      },
+      "status": "stable",
+      "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size.",
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Dirty Dan",
+          "url": "https://steamcommunity.com/profiles/76561198002317131/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1834676420399981204/38ED7EDF9A97D083ADF96038C9F28A4E56A67368/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2026-10-02",
       "changesData": true
     },
     {
@@ -50952,6 +51069,62 @@
       "updated": "2026-03-24",
       "changesData": true,
       "confirmed": "2026-11-03"
+    },
+    {
+      "id": "steam-2896556707",
+      "name": "Singe's Skills for Naestra and Arahan, the Sisters of Twilight",
+      "authors": [
+        "Singemeister"
+      ],
+      "kind": "units",
+      "summary": "Four more skills in the Sisters of Twilight's skill tree: army armour and armour piercing, Wardancers, Hawk Riders that break morale, and stealth for flying units.",
+      "tags": [
+        "general",
+        "wood elves",
+        "sisters of twilight"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2896556707",
+            "title": "Singe's Skills for Naestra and Arahan, the Sisters of Twilight",
+            "updated": "2025-12-22",
+            "subscribers": 1259
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "singe_skills_wh_wef_twilight.pack",
+          "from": "steam",
+          "steamId": "2896556707"
+        }
+      ],
+      "relations": [],
+      "curation": {
+        "lastChecked": "2026-11-10",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested."
+        ]
+      },
+      "status": "stable",
+      "suggestOnly": "Gameplay changes the player adds by choice (the player who asked for it, 2026-11-10): offered among the suggestions, never part of a Play size.",
+      "authorPages": [
+        {
+          "site": "steam",
+          "url": "https://steamcommunity.com/profiles/76561198073466700/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/2023834784565091152/B0561E4D20958ED700F3641DCE9D0CDB2E15A61B/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2025-12-22",
+      "changesData": true
     },
     {
       "id": "nx-156",

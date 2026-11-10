@@ -216,6 +216,13 @@ describe('lords in the game\'s own campaign', () => {
     expect(looks.multi).toBeUndefined() // two looks of one character never go together
   })
 
+  it('keeps a mod the catalog marks for suggestions only out of every size', () => {
+    const c: Catalog = { ...vcat, mods: [...vcat.mods, mod('skills', { tags: ['wood elves', 'sisters of twilight'], suggestOnly: 'by choice' })] }
+    const ix = buildIndex(c)
+    expect(tiersFor(c, ix, subjectsOf(c, ix)[0]).flatMap((t) => t.extras)).not.toContain('mod:skills')
+    expect(suggestedFor(c, ix, c.presets[0]).lewd.map((x) => x.key)).toContain('mod:skills') // the editor still offers it
+  })
+
   it('writes down the usual version of an added mod with versions', () => {
     const cb = mod('cb', { packs: [{ file: 'light.pack', from: 'download', exclusiveGroup: 'v' }, { file: 'full.pack', from: 'steam', exclusiveGroup: 'v' }] })
     const c: Catalog = { ...vcat, mods: [...vcat.mods, cb] }

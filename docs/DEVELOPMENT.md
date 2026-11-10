@@ -78,7 +78,8 @@ community contributions. App UI and catalog texts are English.
     character use; Workshop subscribers / LoversLab downloads (refreshed weekly) break ties. Never conflicts,
     removed template mods or other characters' campaigns, also not through a dependency (conflicts count against what the
     profile's extras pull in too); no mod the game does not start with (`Mod.stopsGame`), no patch that would pull in what
-    it patches (an SFO patch bringing SFO), no `modder-resource` (source files). Suggestions that exclude each other (incompatible,
+    it patches (an SFO patch bringing SFO), no `modder-resource` (source files). `Mod.suggestOnly` (gameplay changes a player adds by choice, like Gifts of Athel Loren) keeps a
+    mod among the editor's suggestions and out of every Play size. Suggestions that exclude each other (incompatible,
     versions of one add-on, reskins of the same character, packs that dress the same army) come as one choice; `PickOne.clash`
     says which options cannot go together and why ("Not with [Endo] Wood Elves: both dress the same units"), and where some do go
     together (`PickOne.multi`: Endo's Wood Elves with Female Auxiliaries and his Spellsingers) Play's cards and the editor's Decide
