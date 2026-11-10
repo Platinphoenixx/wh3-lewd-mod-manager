@@ -288,7 +288,9 @@ export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean, lo
     const title = g.pick.slice(0, 2).map((x) => short(x.mod.name)).join(' or ') + (g.pick.length > 2 ? ' …' : '')
     steps.push(addOn
       ? { id: g.pick[0].key, title, subtitle: `Versions of an add-on for ${addOn}`, question: 'Which version do you want, if any?', kind: 'pick', groups: [g] }
-      : { id: g.pick[0].key, title, subtitle: 'They do not work together', question: 'These do not work together – which one do you want, if any?', kind: 'pick', groups: [g] })
+      : g.multi
+        ? { id: g.pick[0].key, title, subtitle: 'Some do not work together', question: 'Which of these do you want?', kind: 'pick', groups: [g] }
+        : { id: g.pick[0].key, title, subtitle: 'They do not work together', question: 'These do not work together – which one do you want, if any?', kind: 'pick', groups: [g] })
   }
   for (const g of replacing) {
     if (g.stage) { steps.push(staged(g)); continue }
@@ -303,9 +305,13 @@ export function stepsFor(subject: Subject, picks: PickOne[], hasQol: boolean, lo
 }
 
 /** The profile a guided setup makes: the tier's template and extras, the chosen options, the dropped extras and template mods. */
-export function guidedProfile(tier: Tier, chosen: Record<string, string>, picks: PickOne[], dropped: Set<string>, name: string, index?: CatalogIndex): Profile {
+export function guidedProfile(tier: Tier, chosen: Record<string, string | string[]>, picks: PickOne[], dropped: Set<string>, name: string, index?: CatalogIndex): Profile {
   const now = new Date().toISOString()
-  const picked = picks.map((g) => chosen[g.pick[0].key] ?? g.preselect ?? 'none').filter((k) => k !== 'none')
+  // A choice holds one key ("none" for nothing) or, where options go together, the list of picked ones.
+  const picked = picks.flatMap((g) => {
+    const c = chosen[g.pick[0].key] ?? g.preselects ?? g.preselect ?? 'none'
+    return Array.isArray(c) ? c : [c]
+  }).filter((k) => k !== 'none')
   const declined = picks.flatMap((g) => g.pick.map((x) => x.key)).filter((k) => !picked.includes(k))
   const base = new Set(baseKeys(tier.preset))
   const extras = [...new Set([...tier.extras, ...picked])].filter((k) => !dropped.has(k))

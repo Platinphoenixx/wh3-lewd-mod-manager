@@ -332,11 +332,18 @@ function SetupPage({ subject, setup, onBack, onHome, onContinue }: { subject: Su
   )
 }
 
-function OptionCard({ s, selected, onClick, preselected, hidden }: { s: Suggestion | null; selected: boolean; onClick(): void; preselected?: boolean; hidden?: Mod }) {
+function OptionCard({ s, selected, onClick, preselected, hidden, off, multi }: {
+  s: Suggestion | null; selected: boolean; onClick(): void; preselected?: boolean; hidden?: Mod
+  /** Why it cannot be picked with what is picked; clicking it swaps. */
+  off?: string
+  /** One of several options that can be picked together: a tick box shows it. */
+  multi?: boolean
+}) {
   const data = useData()
   if (!s) return null
   return (
-    <div className={`play-opt${selected ? ' sel' : ''}${hidden ? ' off' : ''}`} onClick={hidden ? undefined : onClick} title={hidden ? `Not visible with ${hidden.name}` : undefined}>
+    <div className={`play-opt${selected ? ' sel' : ''}${hidden ? ' off' : ''}${off && !selected ? ' clash' : ''}`} onClick={hidden ? undefined : onClick} title={hidden ? `Not visible with ${hidden.name}` : undefined}>
+      {multi && !hidden && <div className="tick">{selected ? '✓' : ''}</div>}
       <div className="ph"><ModCover mods={[s.mod]} placeholder={s.mod.name} /></div>
       <div className="body">
         {preselected && <div className="tag">{s.reasons.some((r) => r.startsWith('Recommended for this setup')) ? 'Recommended' : 'Most players'}</div>}
@@ -344,6 +351,7 @@ function OptionCard({ s, selected, onClick, preselected, hidden }: { s: Suggesti
         <div className="t">{s.mod.name}</div>
         {s.replaces && <div className="rep">Replaces {s.replaces.join(', ')}</div>}
         {hidden && <div className="rep">Not visible with {hidden.name}: it gives her its own models</div>}
+        {off && !selected && !hidden && <div className="rep">{off}</div>}
         <div className="why">{s.reasons.filter((r) => !r.startsWith('Replaces')).join(' · ')}</div>
         <div className="src">{sourceLabel(s.mod)} · <a onClick={(e) => { e.stopPropagation(); data.openMod(s.mod.id) }}>details</a></div>
       </div>
@@ -398,11 +406,26 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
   }), [base, data.index])
   const steps = useMemo(() => stepsFor(subject, picks, qol.length > 0, !!subject.vanilla && tier.id === 'essentials'), [subject, picks, qol, tier])
   const [at, setAt] = useState(0)
-  const [chosen, setChosen] = useState<Record<string, string>>({})
+  // What is picked per choice: one key, or several where options go together (`PickOne.multi`).
+  const [chosen, setChosen] = useState<Record<string, string[]>>({})
   const [dropped, setDropped] = useState<Set<string>>(new Set())
   const step = steps[Math.min(at, steps.length - 1)]
-  const choice = (g: PickOne) => chosen[g.pick[0].key] ?? g.preselect ?? NONE
-  const pick = (g: PickOne, key: string) => setChosen((c) => ({ ...c, [g.pick[0].key]: key }))
+  const sel = (g: PickOne) => chosen[g.pick[0].key] ?? g.preselects ?? (g.preselect ? [g.preselect] : [])
+  const choice = (g: PickOne) => sel(g)[0] ?? NONE
+  // Picking an option drops the picked ones it does not work with; picking a picked one again (several allowed) drops it.
+  const pick = (g: PickOne, key: string) => setChosen((c) => {
+    const id = g.pick[0].key
+    if (key === NONE) return { ...c, [id]: [] }
+    if (!g.multi) return { ...c, [id]: [key] }
+    const now = c[id] ?? sel(g)
+    if (now.includes(key)) return { ...c, [id]: now.filter((k) => k !== key) }
+    return { ...c, [id]: [...now.filter((k) => !g.clash?.[key]?.[k] && !g.clash?.[k]?.[key]), key] }
+  })
+  // The reason shown on an option that cannot go with the picks: one about the same units or look before "holds it already".
+  const offOf = (g: PickOne, key: string) => {
+    const why = sel(g).map((k) => g.clash?.[key]?.[k]).filter((x): x is string => !!x)
+    return why.find((w) => !w.startsWith('Holds ')) ?? why[0]
+  }
   const [flagging, setFlagging] = useState<CheckPoint | null>(null)
   const [flagged, setFlagged] = useState<Record<string, string>>({})
   const unflag = async (rule: string) => {
@@ -413,7 +436,7 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
 
   // An army pack can dress the lord too (Endo's Wood Elves has its own Sisters of Twilight): with it in the list or
   // chosen in another step, picking no look keeps that pack's look, not the game's.
-  const othersOf = (g: PickOne) => [...base.entries.map((e) => e.key), ...picks.filter((x) => x !== g).map(choice).filter((k) => k !== NONE)]
+  const othersOf = (g: PickOne) => [...base.entries.map((e) => e.key), ...picks.filter((x) => x !== g).flatMap(sel)]
     .flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
   const giverOf = (g: PickOne) => lookGiver(othersOf(g), lookedAt(g))
   const group = (g: PickOne, keep: string) => g.stage ? (
@@ -426,8 +449,10 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
       </div>
     </>
   ) : (
+    <>
+    {g.multi && <p className="play-lead">Pick as many as you like. What does not work with your picks is greyed out and says why; click it to swap.{lookedAt(g) || /army looks$/.test(g.note) ? " With none picked, the game's look stays." : ''}</p>}
     <div className="play-opts">
-      {(() => {
+      {!g.multi && (() => {
         const by = giverOf(g)
         return <NoneCard label={by ? `Keep the look from ${by.name}` : keep} why={by ? `${by.name} has its own look for ${lookedAt(g)}` : undefined} by={by} selected={choice(g) === NONE} onClick={() => pick(g, NONE)} />
       })()}
@@ -436,10 +461,12 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
         // does not show next to it.
         const others = othersOf(g)
         return g.pick.filter((s) => !containedIn(others, s.mod)).slice(0, 11).map((s) => (
-          <OptionCard key={s.key} s={s} preselected={s.key === g.preselect} selected={choice(g) === s.key} hidden={hiddenBy(others, s.mod)} onClick={() => pick(g, s.key)} />
+          <OptionCard key={s.key} s={s} preselected={(g.preselects ?? [g.preselect]).includes(s.key)} selected={sel(g).includes(s.key)} hidden={hiddenBy(others, s.mod)}
+            off={g.multi ? offOf(g, s.key) : undefined} multi={g.multi} onClick={() => pick(g, s.key)} />
         ))
       })()}
     </div>
+    </>
   )
   const keepLabel = (st: Step) => (st.subtitle === 'Already in your list' ? "Keep the list's look" : st.title.endsWith("'s look") ? "Keep the game's look" : 'None of these')
 
@@ -501,13 +528,12 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
 
   function profile(): Profile {
     // A look picked before the army's look that then holds it, or hides it, is not added.
-    const effective = Object.fromEntries(Object.entries(chosen).map(([k, v]) => {
-      const g = picks.find((x) => x.pick[0].key === k)
+    const effective = Object.fromEntries(picks.map((g) => [g.pick[0].key, sel(g).filter((v) => {
       const m = v.startsWith('mod:') ? data.index.mods.get(v.slice(4)) : undefined
-      return [k, g && m && (containedIn(othersOf(g), m) || hiddenBy(othersOf(g), m)) ? NONE : v]
-    }))
+      return !m || !(containedIn(othersOf(g), m) || hiddenBy(othersOf(g), m))
+    })]))
     // An add-on of the size that a picked pack holds whole (Endo's Spellsingers in the Combined pack) adds nothing.
-    const picked = Object.values(effective).flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
+    const picked = Object.values(effective).flat().flatMap((k) => (k.startsWith('mod:') ? data.index.mods.get(k.slice(4)) ?? [] : []))
     // So does one that does not work with a pick (Female Auxiliaries next to the Combined pack): the pick wins.
     const clash = new Set(conflictsIn(data.index, [...picked.map((m) => `mod:${m.id}`), ...tier.extras])
       .flatMap((c) => [c.a, c.b]).filter((k) => tier.extras.includes(k) && !picked.some((m) => `mod:${m.id}` === k)))

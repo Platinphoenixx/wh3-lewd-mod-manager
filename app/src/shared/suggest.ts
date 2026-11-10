@@ -56,6 +56,15 @@ export interface PickOne {
   preselect?: string
   /** A mod in the list already changes this character's look by stage: keeping that is the first choice. */
   stage?: LookUntil
+  /**
+   * Which options cannot be picked together, and why (shown on the option that would go): clash[a][b] while b is picked.
+   * Options not listed for each other can be combined.
+   */
+  clash?: Record<string, Record<string, string>>
+  /** Some options go together (Endo's Wood Elves and Female Auxiliaries): the player may pick several. */
+  multi?: boolean
+  /** In a choice of several: every option selected at first (`preselect` is the first of them). */
+  preselects?: string[]
   /** A mod in the list that is no reskin of this character gives her its own look (an army pack): picking none keeps that. */
   kept?: string
 }
@@ -305,6 +314,13 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   const parent = list.map((_, i) => i)
   const find = (i: number): number => (parent[i] === i ? i : (parent[i] = find(parent[i])))
   const notes = new Map<number, string>()
+  // Why two options cannot be picked together, as said on the option that would go: clash[a][b] is shown on a while b is picked.
+  const clash = new Map<number, Map<number, string>>()
+  // The reason that says most wins: the same units or look (`over`) before a bare "they do not work together".
+  const mark = (a: number, b: number, why: string, over = false) => {
+    if (!clash.has(a)) clash.set(a, new Map())
+    if (over || !clash.get(a)!.has(b)) clash.get(a)!.set(b, why)
+  }
   // `names` is for the reason that says what the choice is about: an army's look stays one, even when two of its
   // options are also marked incompatible (Endo's Combined pack and Endo's single faction packs).
   const join = (a: number, b: number, note: string, names = false) => {
@@ -313,13 +329,18 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
     if (ra !== rb) parent[rb] = ra
     notes.set(ra, names ? note : notes.get(ra) ?? notes.get(rb) ?? note)
   }
+  const both = (a: number, b: number, why: string, over = false) => {
+    mark(a, b, `Not with ${list[b].mod.name}: ${why}`, over)
+    mark(b, a, `Not with ${list[a].mod.name}: ${why}`, over)
+  }
   for (const [i, sug] of list.entries()) {
     for (const r of sug.mod.relations) {
       // As in conflictsIn: an incompatibility that holds only in a case ("playing as Miao Ying") does not group them.
-      // An army's look is a choice of its own: a mod that only clashes with one of its options (Female Auxiliaries with Endo's
-      // Combined pack) is no alternative to the others; the profile keeps the two apart instead.
-      if (r.kind === 'incompatible' && !r.condition && 'mod' in r.target && at.has(r.target.mod) &&
-          !!sug.mod.factionLook?.length === !!list[at.get(r.target.mod)!].mod.factionLook?.length) join(i, at.get(r.target.mod)!, 'These do not work together')
+      if (r.kind === 'incompatible' && !r.condition && 'mod' in r.target && at.has(r.target.mod)) {
+        const j = at.get(r.target.mod)!
+        join(i, j, 'These do not work together')
+        both(i, j, 'they do not work together')
+      }
     }
   }
   for (const m of catalog.mods) {
@@ -327,44 +348,81 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
     for (const r of m.relations) {
       if (r.exclusiveGroup && 'mod' in r.target && at.has(r.target.mod)) groups.set(r.exclusiveGroup, [...(groups.get(r.exclusiveGroup) ?? []), at.get(r.target.mod)!])
     }
-    for (const members of groups.values()) for (const j of members.slice(1)) join(members[0], j, `Versions of the same add-on for ${m.name}`)
+    for (const members of groups.values()) {
+      for (const j of members.slice(1)) join(members[0], j, `Versions of the same add-on for ${m.name}`)
+      for (const a of members) for (const b of members) if (a !== b) mark(a, b, `Not with ${list[b].mod.name}: versions of the same add-on`)
+    }
   }
   // Reskins replace models: two reskins of the same character collide. (Faction-wide reskins often touch
   // different units, so they are not grouped without a known incompatibility.)
-  const subjects = new Map<string, number>()
+  const subjects = new Map<string, number[]>()
   for (const [i, sug] of list.entries()) {
     if (sug.mod.kind !== 'reskin') continue
     for (const subject of reskinSubjects(sug.mod, characters)) {
-      if (subjects.has(subject)) join(subjects.get(subject)!, i, `They all change how ${subject} looks`)
-      else subjects.set(subject, i)
+      for (const j of subjects.get(subject) ?? []) both(i, j, `both change how ${subject} looks`, true)
+      if (subjects.has(subject)) join(subjects.get(subject)![0], i, `They all change how ${subject} looks`)
+      subjects.set(subject, [...(subjects.get(subject) ?? []), i])
     }
   }
   // Reskins that replace a faction's units wholesale overwrite the same files (the catalog's factionLook): one army look.
-  const armies = new Map<string, number>()
+  const armies = new Map<string, number[]>()
   for (const [i, sug] of list.entries()) {
     for (const f of sug.mod.factionLook ?? []) {
       const name = FACTIONS[norm(f)] ?? f
-      if (armies.has(name)) join(armies.get(name)!, i, `They all change how the ${name} army looks`, true)
-      else armies.set(name, i)
+      for (const j of armies.get(name) ?? []) both(i, j, 'both dress the same units', true)
+      if (armies.has(name)) join(armies.get(name)![0], i, `They all change how the ${name} army looks`, true)
+      armies.set(name, [...(armies.get(name) ?? []), i])
     }
   }
-  const byRoot = new Map<number, Suggestion[]>()
-  for (const [i, sug] of list.entries()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), sug])
-  // Preselected: the first option, if players of this list really use it and it replaces nothing; otherwise none.
-  // Where a mod in the list already changes the look by stage, keeping that is the first choice.
-  const preselect = (members: Suggestion[]) => {
-    const stage = members.find((x) => x.until)?.until
-    return stage ? { stage } : members[0].strong && !members[0].replaces ? { preselect: members[0].key } : {}
+  // A mod an army pack holds whole (Endo's Spellsingers in his Combined pack) is offered with that army's look, where
+  // picking both would add nothing; only one that has no choice of its own.
+  const size = (i: number) => list.filter((_, k) => find(k) === find(i)).length
+  for (const [j, sug] of list.entries()) {
+    for (const id of sug.mod.contains ?? []) {
+      const i = at.get(id)
+      if (i === undefined || find(i) === find(j)) continue
+      if (!list.some((x, k) => find(k) === find(j) && x.mod.factionLook?.length) || size(i) > 1) continue
+      join(j, i, notes.get(find(j)) ?? 'Pick one')
+      mark(i, j, `Already in ${sug.mod.name}`)
+      mark(j, i, `Holds ${list[i].mod.name} already`)
+    }
   }
-  const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, members]) => {
-    if (members.length > 1) return { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score, ...preselect(members) }
+  const byRoot = new Map<number, number[]>()
+  for (const i of list.keys()) byRoot.set(find(i), [...(byRoot.get(find(i)) ?? []), i])
+  const clashOf = (members: number[]) => {
+    const out: Record<string, Record<string, string>> = {}
+    for (const a of members) for (const [b, why] of clash.get(a) ?? []) if (members.includes(b)) (out[list[a].key] ??= {})[list[b].key] = why
+    return out
+  }
+  // Options that do not all exclude each other can be picked together: the step asks for several.
+  const multiOf = (members: number[]) => members.some((a) => members.some((b) => a !== b && !clash.get(a)?.has(b)))
+  // Preselected: an option players of this list really use that replaces nothing; in a choice of several, every such
+  // option that goes with the ones before it. Where a mod in the list already changes the look by stage, keeping that
+  // is the first choice.
+  const preselect = (members: number[], multi: boolean) => {
+    const stage = members.map((i) => list[i]).find((x) => x.until)?.until
+    if (stage) return { stage }
+    const take = (x: Suggestion) => x.strong && !x.replaces
+    if (!multi) return take(list[members[0]]) ? { preselect: list[members[0]].key } : {}
+    const chosen: number[] = []
+    for (const i of members) if (take(list[i]) && !chosen.some((c) => clash.get(i)?.has(c))) chosen.push(i)
+    return chosen.length ? { preselect: list[chosen[0]].key, preselects: chosen.map((i) => list[i].key) } : {}
+  }
+  const entries: SuggestionEntry[] = [...byRoot.entries()].map(([root, ix]) => {
+    // In an army's look the army packs come first, what goes with them after.
+    const idx = /army looks$/.test(notes.get(root) ?? '') ? [...ix.filter((i) => list[i].mod.factionLook?.length), ...ix.filter((i) => !list[i].mod.factionLook?.length)] : ix
+    const members = idx.map((i) => list[i])
+    if (members.length > 1) {
+      const multi = multiOf(idx)
+      return { pick: members, note: notes.get(root) ?? 'Pick one', score: members[0].score, clash: clashOf(idx), ...(multi ? { multi } : {}), ...preselect(idx, multi) }
+    }
     // A single reskin that would replace one in the profile is a choice too ("None" keeps the profile's look).
     const [one] = members
     const army = one.mod.factionLook?.length && !reskinSubjects(one.mod, characters).length
       ? `the ${one.mod.factionLook.map((f) => FACTIONS[norm(f)] ?? f).join(', ')} army` : undefined
     const subjects = reskinSubjects(one.mod, characters)
     const lead = one.mod.kind === 'reskin' && subjects.some((c) => leads.has(c))
-    if (one.replaces || one.until || lead) return { pick: members, note: `It changes how ${army ?? (lead ? subjects.filter((c) => leads.has(c)) : subjects).join(', ')} looks`, score: one.score, ...preselect(members) }
+    if (one.replaces || one.until || lead) return { pick: members, note: `It changes how ${army ?? (lead ? subjects.filter((c) => leads.has(c)) : subjects).join(', ')} looks`, score: one.score, ...preselect(idx, false) }
     return one
   })
   return entries.sort((a, b) => b.score - a.score)

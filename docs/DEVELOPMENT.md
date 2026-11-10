@@ -79,7 +79,11 @@ community contributions. App UI and catalog texts are English.
     removed template mods or other characters' campaigns, also not through a dependency (conflicts count against what the
     profile's extras pull in too); no mod the game does not start with (`Mod.stopsGame`), no patch that would pull in what
     it patches (an SFO patch bringing SFO), no `modder-resource` (source files). Suggestions that exclude each other (incompatible,
-    versions of one add-on, reskins of the same character) come as one "pick one" choice; a reskin of a character the
+    versions of one add-on, reskins of the same character, packs that dress the same army) come as one choice; `PickOne.clash`
+    says which options cannot go together and why ("Not with [Endo] Wood Elves: both dress the same units"), and where some do go
+    together (`PickOne.multi`: Endo's Wood Elves with Female Auxiliaries and his Spellsingers) Play's cards and the editor's Decide
+    tick boxes take several, picking one drops the picked ones it clashes with, and every preselectable option that goes with the
+    others is selected at first (`preselects`); a mod an army pack holds whole joins that army's choice; a reskin of a character the
     profile already reskins says what it replaces ("Replaces …", `Suggestion.replaces`). An option is selected at first
     only when players of this kind of list really use it (same-character lists, tied to a profile mod, or for the
     template's character) and it replaces nothing; otherwise "None". A fresh profile opens on these choices.

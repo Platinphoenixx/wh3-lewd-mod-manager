@@ -28,16 +28,24 @@ export function DecideChoices({ picks, onApply, flagged, onFlag, onUnflag }: {
   picks: PickOne[]; onApply(add: string[], declined: string[]): void
   flagged?: Record<string, string>; onFlag?(p: CheckPoint): void; onUnflag?(rule: string): void
 }) {
-  const [picked, setPicked] = useState<Record<string, string>>({})
+  // What is picked per choice: one key, or several where options go together (`PickOne.multi`).
+  const [picked, setPicked] = useState<Record<string, string[]>>({})
   const [expanded, setExpanded] = useState<Set<string>>(new Set())
   if (!picks.length) return null
 
   const id = (p: PickOne) => p.pick[0].key
-  const choice = (p: PickOne) => picked[id(p)] ?? p.preselect ?? NONE
+  const sel = (p: PickOne) => picked[id(p)] ?? p.preselects ?? (p.preselect ? [p.preselect] : [])
+  const choice = (p: PickOne) => sel(p)[0] ?? NONE
+  const set = (p: PickOne, keys: string[]) => setPicked((prev) => ({ ...prev, [id(p)]: keys }))
+  // Ticking one drops the ticked ones it does not work with.
+  const toggle = (p: PickOne, key: string) => {
+    const now = sel(p)
+    set(p, now.includes(key) ? now.filter((k) => k !== key) : [...now.filter((k) => !p.clash?.[key]?.[k] && !p.clash?.[k]?.[key]), key])
+  }
   const apply = () => {
-    const add = picks.map(choice).filter((k) => k !== NONE)
+    const add = picks.flatMap(sel)
     // The options not taken are answered too, so the same question does not come back without the chosen one.
-    const declined = picks.flatMap((p) => p.pick.map((s) => s.key).filter((k) => k !== choice(p)))
+    const declined = picks.flatMap((p) => p.pick.map((s) => s.key).filter((k) => !sel(p).includes(k)))
     onApply(add, declined)
   }
 
@@ -53,12 +61,17 @@ export function DecideChoices({ picks, onApply, flagged, onFlag, onUnflag }: {
       <div className="fill-col" style={{ marginTop: 12 }}>
         {picks.map((p) => (
           <div key={id(p)} className="fill-row fill-pick">
-            <div className="pick-head">Pick one <span className="muted">– {p.stage
+            <div className="pick-head">{p.multi ? 'Pick any' : 'Pick one'} <span className="muted">– {p.stage
               ? `her look. ${p.stage.by} changes how ${p.stage.character} looks by stage; ${p.pick.every((s) => s.until) ? 'these only apply' : 'those marked “Until her first stage” only apply'} before it.`
-              : p.note}</span></div>
-            {[...(expanded.has(id(p)) ? p.pick : p.pick.slice(0, PICK_SHOWN)).map((s) => ({ key: s.key, s })), { key: NONE, s: null }].map(({ key, s }) => (
+              : p.multi ? `${p.note}; some go together, what does not is said` : p.note}</span></div>
+            {[...(expanded.has(id(p)) ? p.pick : p.pick.slice(0, PICK_SHOWN)).map((s) => ({ key: s.key, s })), ...(p.multi ? [] : [{ key: NONE, s: null }])].map(({ key, s }) => p.multi && s ? (
               <label key={key} className="pick-option">
-                <input type="radio" name={`pick-${id(p)}`} checked={choice(p) === key} onChange={() => setPicked((prev) => ({ ...prev, [id(p)]: key }))} />
+                <input type="checkbox" checked={sel(p).includes(key)} onChange={() => toggle(p, key)} />
+                <span><SuggestionName s={s} /><span className="why">{[...(sel(p).includes(key) ? [] : sel(p).map((k) => p.clash?.[key]?.[k]).filter((x): x is string => !!x).slice(0, 1)), ...(s.until ? [untilLabel(s.until)] : []), ...s.reasons].join(' · ')}</span></span>
+              </label>
+            ) : (
+              <label key={key} className="pick-option">
+                <input type="radio" name={`pick-${id(p)}`} checked={choice(p) === key} onChange={() => set(p, key === NONE ? [] : [key])} />
                 {s ? <span><SuggestionName s={s} /><span className="why">{[...(s.until ? [untilLabel(s.until)] : []), ...s.reasons].join(' · ')}</span></span> : p.stage ? <span>{keepStagesLabel(p.stage)}<span className="why">{p.stage.stages ? `${p.stage.stages} stage looks, nothing to install` : 'Nothing to install'}</span></span> : <span className="muted">{p.kept ? `None of these – the look from ${p.kept} stays` : 'None of these'}</span>}
               </label>
             ))}

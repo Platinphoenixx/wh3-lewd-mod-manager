@@ -201,12 +201,19 @@ describe('lords in the game\'s own campaign', () => {
     expect(look(['mod:endo-we'])!.pick.map((x) => x.key)).toEqual(['mod:sis-b'])
   })
 
-  it('keeps a mod that only clashes with one army look out of the army choice', () => {
+  it('lets the player pick several options of a choice, except those that clash, and says why', () => {
     const c: Catalog = { ...vcat, mods: [...vcat.mods,
       mod('aux', { tags: ['wood elves'], relations: [{ kind: 'incompatible', target: { mod: 'zeta-we' }, source: src }] })] }
     const ix = buildIndex(c)
     const army = suggestedFor(c, ix, c.presets[0]).picks.find((g) => /army looks$/.test(g.note))!
-    expect(army.pick.map((x) => x.key)).toEqual(['mod:endo-we', 'mod:zeta-we'])
+    expect([army.multi, army.pick.map((x) => x.key), army.preselects]).toEqual([true, ['mod:endo-we', 'mod:zeta-we', 'mod:aux'], ['mod:endo-we']])
+    expect(army.clash!['mod:zeta-we']).toEqual({ 'mod:endo-we': 'Not with endo-we: both dress the same units', 'mod:aux': 'Not with aux: they do not work together' })
+    expect(army.clash!['mod:aux']).toEqual({ 'mod:zeta-we': 'Not with zeta-we: they do not work together' })
+    const tier = tiersFor(c, ix, subjectsOf(c, ix)[0])[1]
+    const p = guidedProfile(tier, { [army.pick[0].key]: ['mod:endo-we', 'mod:aux'] }, [army], new Set(), 'x')
+    expect([p.extras.filter((k) => k !== 'mod:events'), p.declined]).toEqual([['mod:endo-we', 'mod:aux'], ['mod:zeta-we']])
+    const looks = suggestedFor(c, ix, c.presets[0]).picks.find((g) => /Sisters of Twilight looks$/.test(g.note))!
+    expect(looks.multi).toBeUndefined() // two looks of one character never go together
   })
 
   it('writes down the usual version of an added mod with versions', () => {
