@@ -1136,6 +1136,13 @@
       "alsoLooks": [
         "Spellsinger"
       ]
+    },
+    {
+      "id": "ll-26591",
+      "factionLook": [
+        "cathay"
+      ],
+      "_note": "Pack read 2026-11-11: no scripts, no tech/building/text tables; it overwrites the variant mesh definitions of the base game's Cathay units (Jade Warriors, Dragon Guards, Longma Riders, peasants, gunners, Terracotta Sentinels, artillery, Sky Junks/Lanterns, war drum), 17 of them the same files as [Endo] Cathay."
     }
   ]
 }

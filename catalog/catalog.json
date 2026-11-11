@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T20:45:00+00:00",
+  "generatedAt": "2026-11-11T21:01:17+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -51898,34 +51898,11 @@
             "type": "loverslab",
             "url": "https://www.loverslab.com/files/file/26591-slaanesh-corrupted-cathay-roster/"
           }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-30462"
-          },
-          "note": "Corrupted Landmarks",
-          "source": {
-            "type": "discord"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "ll-48415"
-          },
-          "note": "Soil Corrupted Assets",
-          "source": {
-            "type": "discord"
-          }
         }
       ],
       "tier": "visual-submod",
       "knownIssues": [
-        "Crane Gunners were modified; other mods that also change them can cause conflicts.",
-        "After the Cathay patch (2026-05) some research for the unit-upgrade tab is missing",
-        "Blank texts without translation (Lin AllInOne EN, Steam 3718883838, plus Corrupted Ascension EN)",
-        "Corrupted tech/buildings buildable on turn 1"
+        "Crane Gunners were modified; other mods that also change them can cause conflicts."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
@@ -51934,10 +51911,8 @@
           "Link to LL 23878 inferred only from the description 'Miao Ying Corruption Stages'."
         ]
       },
-      "playAs": [
-        {
-          "character": "Miao Ying"
-        }
+      "factionLook": [
+        "cathay"
       ],
       "support": [
         {
@@ -52074,14 +52049,14 @@
           "source": "loverslab"
         }
       ],
-      "description": "A reskin for Cathay units in the Slaanesh-corrupted style, intended as a visual complement to the Miao Ying corruption stages (“to show what became of Miao Ying and her army”). It was inspired by Ashkaari's Blushing_Moon_Unit_Replacer, which does not cover all Cathay units.\n\nNew looks for: Sky Junks, Sky Lanterns, peasants, Iron Hail Gunners, Crane Gunners, Terracotta Sentinels, artillery crews, Jade Warriors (sword, halberd, crossbow, lancer cavalry), Dragon Guards (halberd, crossbow), Longma Riders and the war drum; Iron Hail Gunners, Jade Warriors and Dragon Guards additionally get officers. The author modified the Crane Gunners – if you see glitches, check for conflicts with other mods (or remove them via RPFM). Purely cosmetic, no game stats.",
+      "description": "A reskin for Cathay units in the Slaanesh-corrupted style, intended as a visual complement to the Miao Ying corruption stages (“to show what became of Miao Ying and her army”). It was inspired by Ashkaari's Blushing_Moon_Unit_Replacer, which does not cover all Cathay units.\n\nNew looks for: Sky Junks, Sky Lanterns, peasants, Iron Hail Gunners, Crane Gunners, Terracotta Sentinels, artillery crews, Jade Warriors (sword, halberd, crossbow, lancer cavalry), Dragon Guards (halberd, crossbow), Longma Riders and the war drum; Iron Hail Gunners, Jade Warriors and Dragon Guards additionally get officers. The author modified the Crane Gunners – if you see glitches, check for conflicts with other mods (or remove them via RPFM). Purely cosmetic, no game stats: it adds officers to three units and nothing else.\n\nIt has no scripts: it replaces the models of the base game's Cathay units from the first turn, for every Cathay faction (the AI's too), and does not change with Miao Ying's corruption stages. It sets the look of the army, so it goes with the corruption mods in spirit; the corrupted units those mods unlock are other mods (Soil's Corrupted Units).",
       "features": [
         "Slaanesh look for almost all Cathay units (ships, infantry, artillery, cavalry)",
         "Additional officers for Iron Hail Gunners, Jade Warriors, Dragon Guards",
         "Matches Lazy's Miao Ying corruption stages",
         "Possible conflict with other mods that change Crane Gunners"
       ],
-      "recommendedFor": "For Miao Ying campaigns with Lazy's Progression (or any Cathay campaign with a lewd theme), if the whole army should follow the corruption visually.",
+      "recommendedFor": "For Miao Ying campaigns with a corruption mod (Lazy's Progression or Corrupted Ascension) or any lewd Cathay campaign, if the whole Cathay army should look corrupted from the start.",
       "updated": "2023-11-29",
       "changesData": true,
       "loadOrder": {

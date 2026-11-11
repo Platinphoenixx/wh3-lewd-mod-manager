@@ -544,24 +544,15 @@
    "loversLab": [
     "https://www.loverslab.com/files/file/26591-slaanesh-corrupted-cathay-roster/"
    ],
-   "requires": [
-    "Corrupted Landmarks",
-    "Soil Corrupted Assets"
-   ],
+   "requires": [],
    "recommends": [],
    "incompatible": [],
    "loadOrder": "",
-   "playAs": [
-    "Miao Ying"
-   ],
+   "playAs": [],
    "phase": "",
    "status": "active",
-   "knownIssues": [
-    "After the Cathay patch (2026-05) some research for the unit-upgrade tab is missing",
-    "Blank texts without translation (Lin AllInOne EN, Steam 3718883838, plus Corrupted Ascension EN)",
-    "Corrupted tech/buildings buildable on turn 1"
-   ],
-   "notes": "Replacers for Dragon Guard, crossbowmen, Longma riders, Nan-Gau warriors. Works with the Soiled projects."
+   "knownIssues": [],
+   "notes": "Replacers for Dragon Guard, crossbowmen, Longma riders, Nan-Gau warriors. Works with the Soiled projects. The tech, unit-upgrade and text reports in this channel are about the corrupted units that come with the corruption mods: the Roster pack has no tech, building or text files. Its pack needs no file from Corrupted Landmarks or Soil's assets (pack index and references, 2026-11-11)."
   },
   {
    "name": "Corrupted Drycha (Corruption Drycha)",
