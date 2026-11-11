@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T12:56:27+00:00",
+  "generatedAt": "2026-11-11T20:45:00+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-11T12:56:24+00:00",
+      "fetchedAt": "2026-11-10T12:33:33+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -50819,6 +50819,16 @@
           "source": {
             "type": "discord"
           }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-23876"
+          },
+          "note": "The author advises turning Corrupted Compendium off: with it Lei Yue can get the wrong look.",
+          "source": {
+            "type": "discord"
+          }
         }
       ],
       "status": "wip",
@@ -50828,13 +50838,16 @@
         "According to the author it does not work with other mods that add an ESL file.",
         "Alchemist summon skills do not work, because CA discontinued the Summon Units functionality in favour of gifted units (author, 2026-10-27).",
         "While Shenzoo is enabled, a Kislev campaign loses its Orthodoxy and Ice Court mechanics (the mod overrides a base-game table that was not refreshed after CA changed the Kislev mechanic). The author recommends not enabling Shenzoo for Kislev.",
-        "An old LoversLab Shenzoo pack left in the data folder next to the Steam version breaks the Steam version; delete the LoversLab pack."
+        "An old LoversLab Shenzoo pack left in the data folder next to the Steam version breaks the Steam version; delete the LoversLab pack.",
+        "Made only for a Shenzoo campaign: players in the hub advise turning it off when playing anyone else, because it changes other factions' campaigns (the Kislev mechanics above, for example).",
+        "With Passing's Corrupted Compendium (Miao Ying) enabled, Lei Yue can get the wrong look; the author advises turning the Compendium off (2025-05-31), and named the Compendium or Corrupted Valkia as the likely cause of a broken interactable item (2025-09-07)."
       ],
       "installNotes": [
         "A Russian version (Discord, 2026-06-04) must be loaded above the original.",
         "The Steam build is the maintained one: playable to the end game, still alpha with placeholder models and an unfinished ending; updated for patch 9.0 on 2026-09-26, and a bug from a later update was fixed on 2026-10-28.",
         "Since 2026-09-26 the Steam item is unlisted because of adult content: it does not show up in Workshop search and is reached through its direct link only. The author also keeps a Mega copy for countries that block the Workshop.",
-        "The tech tree was changed in the 2026-05-22 release; the hero Hua Feng is part of the main release since 2026-05-11 (a separate Shenzoo_Hero_Hua_Feng.pack existed before)."
+        "The tech tree was changed in the 2026-05-22 release; the hero Hua Feng is part of the main release since 2026-05-11 (a separate Shenzoo_Hero_Hua_Feng.pack existed before).",
+        "The current build is a story campaign without adult content (author, 2026-09-09); the adult story scenes are planned for the final release, which is why the Workshop item went unlisted."
       ],
       "curation": {
         "lastChecked": "2026-10-31",
