@@ -229,7 +229,9 @@ export function suggestForProfile(
     // A look that only holds until the first stage does not replace the stage models.
     const replaces = m.kind === 'reskin' && !tie ? [...new Set([
       ...reskinSubjects(m, characters).flatMap((c) => profileSkins.get(c) ?? []).filter((n) => !until || n !== stage!.mod.name),
-      ...(m.factionLook ?? []).flatMap((f) => profileArmies.get(norm(f)) ?? [])
+      ...(m.factionLook ?? []).flatMap((f) => profileArmies.get(norm(f)) ?? []),
+      // And the reskins in the list that replace some of the same unit models.
+      ...profileMods.filter((p) => p.id !== m.id && sharedUnits(p, m)?.length).map((p) => p.name)
     ])].filter((n) => n !== m.name) : []
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     // An army's look is chosen with the other looks, whatever its tags say (Endo's Combined pack is tagged general).
@@ -297,6 +299,21 @@ export function ideaGroups(entries: SuggestionEntry[], declined: Set<string> = n
 }
 
 /** The characters a reskin changes: its playAs and the character names among its tags. */
+/** The unit models two reskins both replace; undefined while one of them has no known list. */
+function sharedUnits(a: Mod, b: Mod): string[] | undefined {
+  if (!a.units?.length || !b.units?.length) return undefined
+  return a.units.filter((u) => b.units!.includes(u))
+}
+
+/** "Dragon Guard Halberd and Jade Warrior units" from model names (cth_dragon_guard_halberd, cth_jade_warrior_ror). */
+export function unitNames(models: string[]): string {
+  const names = [...new Set(models.map((u) => u
+    .replace(/^[a-z]{3}_/, '').replace(/(_ror|_campaign_\d+|_\d+|_mount)$/g, '').replace(/_/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())))]
+  const shown = names.slice(0, 2).join(' and ')
+  return `${shown}${names.length > 2 ? ` (and ${names.length - 2} more)` : ''} ${names.length > 1 ? 'models' : 'model'}`
+}
+
 function reskinSubjects(m: Mod, characters: Map<string, string>): string[] {
   // A character tag alone may only say which campaign the reskin is for (a unit reskin for Alarielle's campaign);
   // it changes the character only when its name or summary names her too.
@@ -369,9 +386,23 @@ function pickOneGroups(catalog: Catalog, list: Suggestion[], characters: Map<str
   for (const [i, sug] of list.entries()) {
     for (const f of sug.mod.factionLook ?? []) {
       const name = FACTIONS[norm(f)] ?? f
-      for (const j of armies.get(name) ?? []) both(i, j, 'both dress the same units', true)
+      // Where both packs' unit models are known, only shared ones make them exclude each other.
+      for (const j of armies.get(name) ?? []) if (!sharedUnits(sug.mod, list[j].mod) || sharedUnits(sug.mod, list[j].mod)!.length) both(i, j, 'both dress the same units', true)
       if (armies.has(name)) join(armies.get(name)![0], i, `They all change how the ${name} army looks`, true)
       armies.set(name, [...(armies.get(name) ?? []), i])
+    }
+  }
+  // Reskins that replace some of the same unit models (Mod.units, read from their packs) dress the same units: one choice
+  // that names them. A reskin of a few units (one Sexiest Grand Cathay pack) joins the army's look and goes with the
+  // packs of other units.
+  for (const [i, a] of list.entries()) {
+    for (let j = i + 1; j < list.length; j++) {
+      const shared = sharedUnits(a.mod, list[j].mod)
+      if (!shared?.length) continue
+      both(i, j, `both replace the ${unitNames(shared)}`, true)
+      // The army it is about: that of a pack for one faction (Endo's Combined pack dresses seven).
+      const army = [a.mod, list[j].mod].find((m) => m.factionLook?.length === 1)?.factionLook![0]
+      join(i, j, army ? `They all change how the ${FACTIONS[norm(army)] ?? army} army looks` : 'These dress the same units', !!army)
     }
   }
   // A mod an army pack holds whole (Endo's Spellsingers in his Combined pack) is offered with that army's look, where

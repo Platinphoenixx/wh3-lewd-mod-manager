@@ -238,6 +238,12 @@ export interface Mod {
    */
   factionLook?: string[];
   /**
+   * The base game's unit models (variant mesh definitions, e.g. "cth_dragon_guard_halberd") a reskin replaces, read from its
+   * packs. Two reskins that share one dress the same units and go into one choice; reskins of other units of the same army
+   * (one Sexiest Grand Cathay pack per unit) can be picked together.
+   */
+  units?: string[];
+  /**
    * Characters whose look the mod changes without being a reskin of theirs: an army pack that also replaces the faction's
    * lords (read from its pack). With it in a list, "no look" for such a character means this mod's look, not the game's.
    */

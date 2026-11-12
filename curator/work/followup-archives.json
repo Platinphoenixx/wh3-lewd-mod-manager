@@ -827,7 +827,7 @@
     },
     {
       "id": "steam-3683061804",
-      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them. Its page lists the factions it covers.",
+      "_note": "Pack comparison (2026-11-10): [Endo] Wood Elves, Dancers among the Forest, Forest of Debauchery and Endo's Combined Faction Reskins overwrite the same Wood Elf unit files (16 to 453 shared files per pair), so a list takes one of them. Its page lists the factions it covers. Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units.",
       "factionLook": [
         "empire",
         "high elves",
@@ -836,6 +836,30 @@
         "kislev",
         "cathay",
         "norsca"
+      ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_nangau_grenadier",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk_gunner"
       ]
     },
     {
@@ -1057,9 +1081,33 @@
     },
     {
       "id": "steam-3679399151",
-      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice.",
+      "_note": "Endo's Combined Faction Reskins contains this pack's files (archive comparison 2026-11-03) and replaces the faction's units wholesale; so does this pack for its one faction: the two are one army-look choice. Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units.",
       "factionLook": [
         "cathay"
+      ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_nangau_grenadier",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk_gunner"
       ]
     },
     {
@@ -1142,7 +1190,204 @@
       "factionLook": [
         "cathay"
       ],
-      "_note": "Pack read 2026-11-11: no scripts, no tech/building/text tables; it overwrites the variant mesh definitions of the base game's Cathay units (Jade Warriors, Dragon Guards, Longma Riders, peasants, gunners, Terracotta Sentinels, artillery, Sky Junks/Lanterns, war drum), 17 of them the same files as [Endo] Cathay."
+      "_note": "Pack read 2026-11-11: no scripts, no tech/building/text tables; it overwrites the variant mesh definitions of the base game's Cathay units (Jade Warriors, Dragon Guards, Longma Riders, peasants, gunners, Terracotta Sentinels, artillery, Sky Junks/Lanterns, war drum), 17 of them the same files as [Endo] Cathay. Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units.",
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_halberd",
+        "cth_horse_heavy",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_heavy",
+        "cth_jade_longma_rider",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nangau_crew",
+        "cth_oxen",
+        "cth_peasant_archer",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk",
+        "cth_sky_junk_gunner",
+        "cth_terracotta_sentinel",
+        "cth_wardrum_driver",
+        "cth_wardrum_dummer"
+      ]
+    },
+    {
+      "id": "nx-30",
+      "units": [
+        "cth_alchemist",
+        "cth_alchemist_campaign_01",
+        "cth_alchemist_campaign_02",
+        "cth_alchemist_campaign_03",
+        "cth_alchemist_campaign_04",
+        "cth_alchemist_campaign_05",
+        "cth_astromancer",
+        "cth_astromancer_campaign_01",
+        "cth_astromancer_campaign_02",
+        "cth_astromancer_campaign_03",
+        "cth_astromancer_campaign_04",
+        "cth_astromancer_campaign_05",
+        "cth_bhashiva",
+        "cth_celestial_general",
+        "cth_celestial_general_campaign_03",
+        "cth_celestial_general_campaign_04",
+        "cth_celestial_general_campaign_05",
+        "cth_clawspeaker",
+        "cth_clawspeaker_campaign_01",
+        "cth_clawspeaker_campaign_02",
+        "cth_clawspeaker_campaign_03",
+        "cth_crowman",
+        "cth_crowman_ror",
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_gate_master",
+        "cth_gate_master_campaign_01",
+        "cth_gate_master_campaign_02",
+        "cth_gate_master_campaign_03",
+        "cth_iron_claw_warrior_guandao",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_dragon_human",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_lord_magistrate",
+        "cth_lord_magistrate_campaign_01",
+        "cth_lord_magistrate_campaign_02",
+        "cth_lord_magistrate_campaign_03",
+        "cth_lord_magistrate_campaign_04",
+        "cth_lord_magistrate_campaign_05",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sawai",
+        "cth_sawai_campaign_01",
+        "cth_sawai_campaign_02",
+        "cth_sawai_campaign_03",
+        "cth_sawai_campaign_04",
+        "cth_sawai_campaign_05",
+        "cth_saytang_the_watcher",
+        "cth_shugengan_lord",
+        "cth_shugengan_lord_campaign_01",
+        "cth_shugengan_lord_campaign_02",
+        "cth_shugengan_lord_campaign_03",
+        "cth_shugengan_lord_campaign_04",
+        "cth_shugengan_lord_campaign_05",
+        "cth_sky_junk_gunner",
+        "cth_taoyan",
+        "cth_terracotta_sentinel",
+        "cth_terracotta_sentinel_ror",
+        "cth_tiger_stalker_throwing_disc",
+        "cth_tiger_warrior_dual_axe"
+      ],
+      "factionLook": [
+        "cathay"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "steam-3243402413",
+      "units": [
+        "cth_celestial_lion",
+        "cth_celestial_lion_mount",
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_ror",
+        "cth_iron_dragon_human",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_lord_magistrate_campaign_01",
+        "cth_lord_magistrate_campaign_02",
+        "cth_lord_magistrate_campaign_03",
+        "cth_lord_magistrate_campaign_04",
+        "cth_lord_magistrate_campaign_05"
+      ],
+      "factionLook": [
+        "cathay"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-49",
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-14",
+      "units": [
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-50",
+      "units": [
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_nangau_crew",
+        "cth_sky_junk_gunner"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-18",
+      "units": [
+        "cth_peasant_archer",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-62",
+      "units": [
+        "cth_shugengan_lord",
+        "cth_shugengan_lord_campaign_01",
+        "cth_shugengan_lord_campaign_02",
+        "cth_shugengan_lord_campaign_03",
+        "cth_shugengan_lord_campaign_04",
+        "cth_shugengan_lord_campaign_05"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-51",
+      "units": [
+        "cth_terracotta_sentinel",
+        "cth_terracotta_sentinel_ror"
+      ],
+      "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
     }
   ]
 }

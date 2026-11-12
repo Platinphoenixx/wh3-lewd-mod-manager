@@ -748,6 +748,9 @@ def main():
                 if x["name"].lower().endswith(".pack") and not any(p["file"] == x["name"] for p in m["packs"]):
                     m["packs"].append({"file": x["name"], "from": "download"})
         for sid in d.get("steamIds", []):
+            # A post that links a tool the mod works with (Variant Selector) does not make that tool part of the mod.
+            if any(e.get("steamId") == sid for e in external.values()):
+                continue
             if not any(s["id"] == sid for s in src.get("steam", [])) and (not existing or mid in merge_mods.values()):
                 src.setdefault("steam", []).append({"id": sid, "title": steam.get(sid, {}).get("title")})
         for kind, key in (("requires", "requires"), ("recommends", "recommends"), ("incompatible", "incompatible")):

@@ -38,6 +38,10 @@ community contributions. App UI and catalog texts are English.
     add-on of a size that a picked pack holds whole (Endo's Spellsingers in the Combined pack) is dropped from the profile. A reskin with
     `Mod.factionLook` replaces a faction's units wholesale (read from the packs: such reskins overwrite the same files), so they are
     one "army's look" choice (`They all change how the Wood Elves army looks`), loaded below the character looks the player picked.
+    `Mod.units` (the base game's unit models a reskin replaces, read from its packs; so far the Cathay reskins) makes that exact:
+    reskins that share a unit model clash with the units named ("both replace the Jade Warrior … models"), a pack for a few units
+    (one Sexiest Grand Cathay pack per unit) joins the army's choice and goes with the packs of other units, and two army packs
+    whose models differ do not exclude each other.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
     bound of the votes); one with 5+ votes and 80 %+ "worked" is shown on top as the community favourite. A setup's page
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
@@ -233,7 +237,8 @@ replacing a field never swallows them. When manual.json replaces a field a follo
 build lists it in `work/report.md`; an entry marks a replacement it means with `"_replaces": ["packs"]`. `followup-discord.json` holds the facts of the Discord pass (2026-11-02: the mod's author, a
 Modder-role member or several players; never a single report). Relations and known issues from `discord-mods.json` are
 added after the layers, so fix those in that file; a requirement that only holds in a case is written
-`{"ref": "...", "condition": "..."}` there. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
+`{"ref": "...", "condition": "..."}` there. A Workshop id a post links that belongs to a tool the catalog knows (Variant
+Selector, MCT) never becomes one of the mod's own items. Texts (`description`, `summary`, `recommendedFor`, `features`) come from `desc-*.json`, which win
 over all layers – fix texts there.
 - `curator/analyze_pack.py` – reads a mod's .pack files (index + reference files only): file list,
   declared dependencies, tables, and which packs provide the models/materials/textures it refers to

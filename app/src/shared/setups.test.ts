@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { PickOne } from './suggest'
+import { unitNames, type PickOne } from './suggest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
 import {
@@ -182,6 +182,26 @@ describe('lords in the game\'s own campaign', () => {
     const army = s.picks.find((g) => /army looks$/.test(g.note))!
     expect([army.note, army.pick.map((x) => x.key)]).toEqual(['They all change how the Wood Elves army looks', ['mod:endo-we', 'mod:combined', 'mod:zeta-we']])
     expect(stepsFor(sub, s.picks, true, true).map((x) => x.title)).toEqual(["Sisters of Twilight's look", "Your army's look", 'Review and install'])
+  })
+
+  it('puts reskins of single units into the army choice: together where their units differ, apart where they share one', () => {
+    const c: Catalog = { ...vcat, mods: [
+      ...vcat.mods.map((m) => (m.id === 'endo-we' ? { ...m, units: ['wef_glade_guard', 'wef_wardancer'] } : m.id === 'zeta-we' ? { ...m, units: ['wef_dryad'] } : m)),
+      mod('guards', { kind: 'reskin', tags: ['wood elves'], units: ['wef_glade_guard', 'wef_glade_guard_ror'] }),
+      mod('dancers', { kind: 'reskin', tags: ['wood elves'], units: ['wef_wardancer'] }),
+      mod('lords', { kind: 'reskin', tags: ['wood elves'], units: ['wef_glade_lord'] })
+    ] }
+    const ix = buildIndex(c)
+    const army = suggestedFor(c, ix, c.presets[0]).picks.find((g) => /army looks$/.test(g.note))!
+    expect(army.pick.map((x) => x.key).sort()).toEqual(['mod:dancers', 'mod:endo-we', 'mod:guards', 'mod:zeta-we'])
+    expect(army.multi).toBe(true)
+    expect(army.clash?.['mod:guards']?.['mod:endo-we']).toBe('Not with endo-we: both replace the Glade Guard model')
+    expect(army.clash?.['mod:guards']?.['mod:dancers']).toBeUndefined() // other units: they go together
+    // Two army packs whose unit models are known and differ do not exclude each other either.
+    expect(army.clash?.['mod:zeta-we']?.['mod:endo-we']).toBeUndefined()
+    // A reskin of units nobody else dresses stays a suggestion of its own.
+    expect(suggestedFor(c, ix, c.presets[0]).lewd.map((x) => x.key)).toContain('mod:lords')
+    expect(unitNames(['cth_dragon_guard_halberd', 'cth_jade_warrior_ror', 'cth_peasant_archer'])).toBe('Dragon Guard Halberd and Jade Warrior (and 1 more) models')
   })
 
   it("says whose look stays when no look is picked and the army pack dresses the lord too", () => {

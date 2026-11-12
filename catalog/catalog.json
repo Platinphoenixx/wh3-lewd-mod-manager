@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T21:01:17+00:00",
+  "generatedAt": "2026-11-12T12:18:20+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -781,7 +781,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -940,7 +940,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -996,7 +996,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1059,7 +1059,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1122,7 +1122,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -1184,7 +1184,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1240,7 +1240,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1296,7 +1296,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1352,7 +1352,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1408,7 +1408,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1464,7 +1464,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1539,6 +1539,30 @@
         ]
       },
       "status": "stable",
+      "units": [
+        "cth_celestial_lion",
+        "cth_celestial_lion_mount",
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_ror",
+        "cth_iron_dragon_human",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_lord_magistrate_campaign_01",
+        "cth_lord_magistrate_campaign_02",
+        "cth_lord_magistrate_campaign_03",
+        "cth_lord_magistrate_campaign_04",
+        "cth_lord_magistrate_campaign_05"
+      ],
+      "factionLook": [
+        "cathay"
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -1599,7 +1623,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1743,7 +1767,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -1903,6 +1927,30 @@
       },
       "factionLook": [
         "cathay"
+      ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_nangau_grenadier",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk_gunner"
       ],
       "authorPages": [
         {
@@ -2080,6 +2128,30 @@
         "cathay",
         "norsca"
       ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_nangau_grenadier",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk_gunner"
+      ],
       "alsoLooks": [
         "Sisters of Twilight",
         "Spellsinger"
@@ -2146,7 +2218,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -2636,7 +2708,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -2749,7 +2821,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4297,7 +4369,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -4375,7 +4447,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4442,7 +4514,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4529,7 +4601,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4606,7 +4678,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4673,7 +4745,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4729,7 +4801,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4785,7 +4857,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4841,7 +4913,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -4908,7 +4980,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -5237,7 +5309,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -5350,7 +5422,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -5864,7 +5936,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -6057,7 +6129,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -6516,7 +6588,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -8074,7 +8146,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "installNotes": [
@@ -8287,7 +8359,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -8361,7 +8433,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -8429,7 +8501,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -8680,7 +8752,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -9033,7 +9105,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -9224,7 +9296,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -9298,7 +9370,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "updated": "2026-01-04",
@@ -9588,7 +9660,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -10725,7 +10797,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11059,7 +11131,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11408,7 +11480,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11607,7 +11679,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11670,7 +11742,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -11726,7 +11798,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -11917,7 +11989,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -11972,7 +12044,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -12093,7 +12165,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -12662,7 +12734,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -13552,7 +13624,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -13684,7 +13756,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -13960,7 +14032,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -14033,7 +14105,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "images": [
@@ -14086,7 +14158,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -14289,7 +14361,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -16598,7 +16670,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16818,7 +16890,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -16878,7 +16950,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -17261,7 +17333,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -17328,7 +17400,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -17435,7 +17507,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -17491,7 +17563,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -18399,7 +18471,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -18517,7 +18589,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -18572,7 +18644,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -18627,7 +18699,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -18693,7 +18765,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -19016,7 +19088,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -19071,7 +19143,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -19137,7 +19209,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -19277,7 +19349,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -20050,6 +20122,85 @@
           "url": "https://www.patreon.com/Warmaidens292"
         }
       ],
+      "units": [
+        "cth_alchemist",
+        "cth_alchemist_campaign_01",
+        "cth_alchemist_campaign_02",
+        "cth_alchemist_campaign_03",
+        "cth_alchemist_campaign_04",
+        "cth_alchemist_campaign_05",
+        "cth_astromancer",
+        "cth_astromancer_campaign_01",
+        "cth_astromancer_campaign_02",
+        "cth_astromancer_campaign_03",
+        "cth_astromancer_campaign_04",
+        "cth_astromancer_campaign_05",
+        "cth_bhashiva",
+        "cth_celestial_general",
+        "cth_celestial_general_campaign_03",
+        "cth_celestial_general_campaign_04",
+        "cth_celestial_general_campaign_05",
+        "cth_clawspeaker",
+        "cth_clawspeaker_campaign_01",
+        "cth_clawspeaker_campaign_02",
+        "cth_clawspeaker_campaign_03",
+        "cth_crowman",
+        "cth_crowman_ror",
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_crossbow_ror",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_gate_master",
+        "cth_gate_master_campaign_01",
+        "cth_gate_master_campaign_02",
+        "cth_gate_master_campaign_03",
+        "cth_iron_claw_warrior_guandao",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_dragon_human",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_lord_magistrate",
+        "cth_lord_magistrate_campaign_01",
+        "cth_lord_magistrate_campaign_02",
+        "cth_lord_magistrate_campaign_03",
+        "cth_lord_magistrate_campaign_04",
+        "cth_lord_magistrate_campaign_05",
+        "cth_nan_gau_grenadiers",
+        "cth_nangau_crew",
+        "cth_peasant_archer",
+        "cth_peasant_archer_ror",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sawai",
+        "cth_sawai_campaign_01",
+        "cth_sawai_campaign_02",
+        "cth_sawai_campaign_03",
+        "cth_sawai_campaign_04",
+        "cth_sawai_campaign_05",
+        "cth_saytang_the_watcher",
+        "cth_shugengan_lord",
+        "cth_shugengan_lord_campaign_01",
+        "cth_shugengan_lord_campaign_02",
+        "cth_shugengan_lord_campaign_03",
+        "cth_shugengan_lord_campaign_04",
+        "cth_shugengan_lord_campaign_05",
+        "cth_sky_junk_gunner",
+        "cth_taoyan",
+        "cth_terracotta_sentinel",
+        "cth_terracotta_sentinel_ror",
+        "cth_tiger_stalker_throwing_disc",
+        "cth_tiger_warrior_dual_axe"
+      ],
+      "factionLook": [
+        "cathay"
+      ],
       "updated": "2026-05-28",
       "changesData": true,
       "confirmed": "2026-11-03"
@@ -20173,7 +20324,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "updated": "2025-12-20",
@@ -20212,7 +20363,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -20406,7 +20557,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -20527,7 +20678,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -20588,7 +20739,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -20833,7 +20984,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "support": [
@@ -21118,7 +21269,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -21179,7 +21330,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -21348,7 +21499,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -21440,7 +21591,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -21495,7 +21646,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -22223,7 +22374,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -22285,7 +22436,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -22700,7 +22851,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -23820,7 +23971,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -23935,7 +24086,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -24004,7 +24155,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -24074,7 +24225,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -24131,7 +24282,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -24596,7 +24747,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -25971,7 +26122,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -26027,7 +26178,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -26311,7 +26462,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -26391,7 +26542,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -26718,7 +26869,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -26775,7 +26926,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -27011,7 +27162,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -27066,7 +27217,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -28456,7 +28607,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -28609,7 +28760,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -28670,7 +28821,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -28725,7 +28876,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -28995,7 +29146,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -29053,7 +29204,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -29142,7 +29293,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "installNotes": [
@@ -29415,7 +29566,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -29539,7 +29690,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -29727,7 +29878,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -30133,7 +30284,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -30215,7 +30366,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -30334,7 +30485,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -30741,7 +30892,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -31194,7 +31345,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -32434,7 +32585,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -33116,7 +33267,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -33585,7 +33736,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -33651,7 +33802,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -33774,7 +33925,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -34034,7 +34185,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "images": [
@@ -34717,7 +34868,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "knownIssues": [
@@ -35115,7 +35266,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -35163,7 +35314,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -35223,7 +35374,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -35820,7 +35971,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -36079,7 +36230,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -36255,7 +36406,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -36315,7 +36466,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -36372,7 +36523,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -36500,7 +36651,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -36652,7 +36803,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -36756,7 +36907,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -36806,7 +36957,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -37171,7 +37322,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -37240,7 +37391,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -37945,7 +38096,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -38152,7 +38303,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -38363,7 +38514,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -39399,7 +39550,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -39452,18 +39603,6 @@
             "id": "2798840666",
             "title": "More Lustful Daemonettes Varieties",
             "unlisted": true
-          },
-          {
-            "id": "2835144549",
-            "title": "Eternal Entourage of Slaanesh Reskin",
-            "updated": "2026-06-01",
-            "subscribers": 98
-          },
-          {
-            "id": "2888171970",
-            "title": "Variant Selector",
-            "updated": "2026-09-24",
-            "subscribers": 234702
           }
         ],
         "discord": [
@@ -39478,16 +39617,6 @@
           "file": "myl_lustful_daemonettes_varieties.pack",
           "from": "steam",
           "steamId": "2798840666"
-        },
-        {
-          "file": "!myl_dae_sla_heartseekers_reskin.pack",
-          "from": "steam",
-          "steamId": "2835144549"
-        },
-        {
-          "file": "!marthvariantselector.pack",
-          "from": "steam",
-          "steamId": "2888171970"
         }
       ],
       "relations": [
@@ -39524,19 +39653,8 @@
           "url": "https://images.steamusercontent.com/ugc/1807641959565177816/4694CDE6E007567B799DD7B97B63C0DC2293B041/",
           "kind": "screenshot",
           "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/1744602729178375507/D95499B2B2250683E7271C5714F4CA72247531F0/",
-          "kind": "screenshot",
-          "source": "steam"
-        },
-        {
-          "url": "https://images.steamusercontent.com/ugc/1869584695648277737/91E2827660ABEEC47BB555017748A006D8E43661/",
-          "kind": "screenshot",
-          "source": "steam"
         }
       ],
-      "updated": "2026-09-24",
       "changesData": true,
       "confirmed": "2026-11-03"
     },
@@ -39716,7 +39834,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -39771,7 +39889,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -39899,7 +40017,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -39960,7 +40078,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -40590,7 +40708,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -41292,7 +41410,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "knownIssues": [
@@ -41443,7 +41561,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -42190,7 +42308,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -42428,7 +42546,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -42796,7 +42914,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -42892,7 +43010,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -42988,7 +43106,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -43086,7 +43204,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -43151,7 +43269,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43222,7 +43340,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43292,7 +43410,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43362,7 +43480,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43792,7 +43910,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43871,7 +43989,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -43938,7 +44056,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -44086,7 +44204,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -44277,7 +44395,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -44355,7 +44473,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -44661,7 +44779,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -44733,7 +44851,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -45092,7 +45210,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -45189,7 +45307,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -45293,7 +45411,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -45783,7 +45901,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -45913,7 +46031,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -45982,7 +46100,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -46104,7 +46222,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -46874,7 +46992,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47334,7 +47452,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47391,7 +47509,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47517,7 +47635,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47574,7 +47692,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47631,7 +47749,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -47686,7 +47804,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47743,7 +47861,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -47800,7 +47918,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -47855,7 +47973,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -47910,7 +48028,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -48979,7 +49097,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -49363,6 +49481,14 @@
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
       ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_halberd",
+        "cth_dragon_guard_halberd_ancestral",
+        "cth_dragon_guard_ror",
+        "cth_jade_longma_rider",
+        "cth_jade_longma_rider_ror"
+      ],
       "updated": "2022-12-29",
       "changesData": true,
       "confirmed": "2026-11-03"
@@ -49414,6 +49540,13 @@
       },
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
+      ],
+      "units": [
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer"
       ],
       "updated": "2022-12-11",
       "changesData": true,
@@ -49467,6 +49600,12 @@
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
       ],
+      "units": [
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_nangau_crew",
+        "cth_sky_junk_gunner"
+      ],
       "updated": "2022-12-12",
       "changesData": false,
       "confirmed": "2026-11-03"
@@ -49518,6 +49657,11 @@
       },
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
+      ],
+      "units": [
+        "cth_peasant_archer",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman"
       ],
       "updated": "2022-12-11",
       "changesData": true,
@@ -49582,6 +49726,14 @@
       },
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
+      ],
+      "units": [
+        "cth_shugengan_lord",
+        "cth_shugengan_lord_campaign_01",
+        "cth_shugengan_lord_campaign_02",
+        "cth_shugengan_lord_campaign_03",
+        "cth_shugengan_lord_campaign_04",
+        "cth_shugengan_lord_campaign_05"
       ],
       "updated": "2023-02-05",
       "changesData": false,
@@ -49686,6 +49838,10 @@
       },
       "knownIssues": [
         "Only a reskin; may conflict with other mods that change the same unit."
+      ],
+      "units": [
+        "cth_terracotta_sentinel",
+        "cth_terracotta_sentinel_ror"
       ],
       "updated": "2022-12-13",
       "changesData": false,
@@ -50478,7 +50634,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "updated": "2026-04-09",
@@ -50649,7 +50805,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -51227,7 +51383,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "updated": "2026-04-16",
@@ -51391,7 +51547,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "images": [
@@ -51607,7 +51763,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -51758,7 +51914,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -51816,7 +51972,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -51913,6 +52069,30 @@
       },
       "factionLook": [
         "cathay"
+      ],
+      "units": [
+        "cth_dragon_guard_crossbow",
+        "cth_dragon_guard_halberd",
+        "cth_horse_heavy",
+        "cth_iron_crane_gunners",
+        "cth_iron_hail_gunners",
+        "cth_jade_longma_heavy",
+        "cth_jade_longma_rider",
+        "cth_jade_warrior",
+        "cth_jade_warrior_crossbow",
+        "cth_jade_warrior_crossbow_shield",
+        "cth_jade_warrior_halberd",
+        "cth_jade_warrior_lancer",
+        "cth_nangau_crew",
+        "cth_oxen",
+        "cth_peasant_archer",
+        "cth_peasant_long_spearman",
+        "cth_peasant_spearman",
+        "cth_sky_junk",
+        "cth_sky_junk_gunner",
+        "cth_terracotta_sentinel",
+        "cth_wardrum_driver",
+        "cth_wardrum_dummer"
       ],
       "support": [
         {
@@ -52697,7 +52877,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -52852,7 +53032,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -52919,7 +53099,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -52985,7 +53165,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -54002,7 +54182,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -54813,7 +54993,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -54871,7 +55051,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -54925,7 +55105,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -54952,7 +55132,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -54979,7 +55159,7 @@
       "packs": [],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -55115,7 +55295,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "status": "superseded",
@@ -55464,7 +55644,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -55585,7 +55765,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -55836,7 +56016,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -56335,7 +56515,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -56546,7 +56726,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -57310,7 +57490,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -57425,7 +57605,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "updated": "2026-09-26",
@@ -58113,7 +58293,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -58179,7 +58359,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "playAs": [
@@ -58242,7 +58422,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -58697,7 +58877,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -59402,7 +59582,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium"
       },
       "status": "abandoned",
@@ -61101,7 +61281,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -61313,7 +61493,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -62109,7 +62289,7 @@
       ],
       "relations": [],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "medium",
         "openQuestions": [
           "Dependencies taken from the Steam description only."
@@ -62188,7 +62368,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
@@ -63633,7 +63813,7 @@
         }
       ],
       "curation": {
-        "lastChecked": "2026-11-11",
+        "lastChecked": "2026-11-12",
         "confidence": "low",
         "openQuestions": [
           "Known only from references; kind, dependencies and purpose unchecked."
