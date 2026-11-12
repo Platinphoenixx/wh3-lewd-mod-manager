@@ -47,9 +47,14 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
 
   // Files the player already has in their folders (Settings → Files you already have) stand in for downloads.
   const [local, setLocal] = useState<LocalScan | null>(null)
+  const [looking, setLooking] = useState<'idle' | 'looking' | 'failed'>('idle')
   const [skip, setSkip] = useState<Set<string>>(new Set())
   const [useOlder, setUseOlder] = useState<Set<string>>(new Set())
-  useEffect(() => { if (others.length) void window.api.localFiles().then(setLocal) }, [others.length])
+  const lookLocal = async (force?: boolean) => {
+    setLooking('looking')
+    try { setLocal(await window.api.localFiles(force)); setLooking('idle') } catch { setLooking('failed') }
+  }
+  useEffect(() => { if (others.length) void lookLocal() }, [others.length])
   const needs = others.map((i) => {
     const packs = wanted(i) ?? i.entry.need ?? (i.entry.pack ? [i.entry.pack] : [])
     // A mod made only of versions to pick from: any of its download packs that is on the PC.
@@ -69,11 +74,23 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
     setBusy(null)
     setSkip(new Set())
     data.rescan()
-    setLocal(await window.api.localFiles())
+    await lookLocal()
   }
   const toggle = (set: (f: (s: Set<string>) => Set<string>) => void, k: string) =>
     set((s) => { const n = new Set(s); if (n.has(k)) n.delete(k); else n.add(k); return n })
   const [allFound, setAllFound] = useState(false)
+  // Said when the look found nothing or could not read a folder, so a file the player has is never passed over silently.
+  const unread = (local?.folders ?? []).filter((f) => f.error)
+  const lookLine = needed > 0 && found.length < needed && (looking !== 'idle' || !local || unread.length > 0 || found.length === 0) && (
+    <p className="small muted local-look">
+      {looking === 'looking' ? 'Looking in your folders for these files…'
+        : looking === 'failed' || !local ? 'Could not look in your folders (Settings → Files you already have).'
+        : !local.folders.length ? 'No folders to look in (Settings → Files you already have).'
+        : unread.length ? <>Not every folder could be read: {unread.map((f) => `${f.path} (${f.error})`).join(', ')}.</>
+        : <>Not found in {local.folders.map((f) => f.path).join(', ')}.</>}{' '}
+      {looking !== 'looking' && <button className="link" onClick={() => void lookLocal(true)}>Look again</button>}
+    </p>
+  )
   const foundGroup = found.length > 0 && (
     <div className="install-group local-found">
       <div className="local-head">
@@ -203,6 +220,7 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
     <div className="install-panel callout">
       {fixGroup}
       {foundGroup}
+      {lookLine}
       <h3>Install what is missing ({new Set(items.map((i) => i.entry.key)).size} mod{new Set(items.map((i) => i.entry.key)).size === 1 ? '' : 's'})</h3>
       {steam.length > 0 && (
         <div className="install-group">
@@ -268,7 +286,12 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
           {others.some((i) => i.source.kind === 'nexus') && (
             <p className="small muted">Nexus Mods opens in its own window: sign in once, then click “Manual download” (Premium starts at once). If the sign-in check does not let you through there, open the page in your browser and drop the downloaded file onto this window.</p>
           )}
-          <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it). The window shows which file to take; each window installs what it downloads and then closes.</p>
+          {others.some((i) => i.source.kind === 'loverslab') && (
+            <p className="small muted">LoversLab opens in its own window. Downloads need a LoversLab account: sign in there once (the window remembers it). The window shows which file to take; each window installs what it downloads and then closes.</p>
+          )}
+          {others.some((i) => i.source.kind === 'discord' || i.source.kind === 'manual') && (
+            <p className="small muted">Discord posts and other pages open in your browser (Discord needs an account and the server joined). Download the file there, then choose it with “Add downloaded file…” or drop it onto this window.</p>
+          )}
         </div>
       )}
       {log.length > 0 && <ul className="small install-log">{log.map((l, n) => <li key={n}>{l}</li>)}</ul>}

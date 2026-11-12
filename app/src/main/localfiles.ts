@@ -1,9 +1,10 @@
 import { execFile } from 'node:child_process'
-import { readdir, stat } from 'node:fs/promises'
+import { appendFile, readdir, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, join } from 'node:path'
 import { promisify } from 'node:util'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
+import { app } from 'electron'
 import { readJson, writeJson } from './store'
 import { dateOfFile, type LocalFile, type LocalScan } from '@shared/localfiles'
 
@@ -50,16 +51,24 @@ function looseDate(path: string, mtime: Date): string {
  * extracting anything; listings are cached in userData/local-files.json.
  */
 export async function scanSourceFolders(folders: string[]): Promise<LocalScan> {
-  const cache = await readJson<Record<string, ArchiveListing>>('local-files.json', {})
+  const started = Date.now()
+  const cache = await readJson<Record<string, ArchiveListing>>('local-files.json', {}).catch(() => ({}) as Record<string, ArchiveListing>)
   const next: Record<string, ArchiveListing> = {}
   const files: LocalFile[] = []
   const summary: LocalScan['folders'] = []
   for (const root of folders) {
     let count = 0
     let packs = 0
+    let error: string | undefined
+    let unreadable = 0
     const walk = async (dir: string, depth: number): Promise<void> => {
       if (depth > 8) return
-      const entries = await readdir(dir, { withFileTypes: true }).catch(() => [])
+      // A folder that cannot be read is said, not passed over: the root as the folder's error, sub-folders counted.
+      const entries = await readdir(dir, { withFileTypes: true }).catch((e: NodeJS.ErrnoException) => {
+        if (depth === 0) error = e.code === 'ENOENT' ? 'not found' : `could not be read (${e.code ?? e.message})`
+        else unreadable++
+        return []
+      })
       for (const e of entries) {
         const p = join(dir, e.name)
         if (e.isDirectory()) { await walk(p, depth + 1); continue }
@@ -84,8 +93,21 @@ export async function scanSourceFolders(folders: string[]): Promise<LocalScan> {
       }
     }
     await walk(root, 0)
-    summary.push({ path: root, files: count, packs })
+    // The listings of a folder that could not be read stay cached for the next look.
+    if (error) for (const [p, l] of Object.entries(cache)) if (p.toLowerCase().startsWith(root.toLowerCase())) next[p] = l
+    summary.push({ path: root, files: count, packs, ...(error ? { error } : unreadable ? { error: `${unreadable} sub-folder${unreadable === 1 ? '' : 's'} could not be read` } : {}) })
   }
-  await writeJson('local-files.json', next)
+  // The cache only saves time; a look that cannot write it still returns what it found.
+  await writeJson('local-files.json', next).catch(() => {})
+  await logScan(summary, files.length, Date.now() - started)
   return { folders: summary, files, scannedAt: new Date().toISOString() }
+}
+
+/** One line per look (userData/local-files.log, restarted at 64 KB): what each folder gave, so a look that found nothing can be explained. */
+async function logScan(folders: LocalScan['folders'], packs: number, ms: number): Promise<void> {
+  const file = join(app.getPath('userData'), 'local-files.log')
+  const line = `${new Date().toISOString()} ${ms} ms, ${packs} packs: ${folders.map((f) => `${f.path} = ${f.error ?? `${f.files} files, ${f.packs} packs`}`).join('; ') || 'no folders'}\n`
+  const size = await stat(file).then((s) => s.size, () => 0)
+  if (size > 64 * 1024) await writeFile(file, line).catch(() => {})
+  else await appendFile(file, line).catch(() => {})
 }

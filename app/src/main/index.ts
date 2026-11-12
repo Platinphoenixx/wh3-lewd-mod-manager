@@ -80,10 +80,19 @@ ipcMain.handle('install:file', async (e, modId?: string, fix?: string) => {
 })
 // Files the player already has (Settings → Files you already have): looked through once per session or on request.
 let localScan: LocalScan | null = null
+let localLook: Promise<LocalScan> | null = null
 const sourceFolders = async () => (await getSettings()).sourceFolders ?? [app.getPath('downloads')]
 ipcMain.handle('local:files', async (_e, force?: boolean) => {
-  if (!localScan || force) localScan = await scanSourceFolders((await sourceFolders()).filter((f) => existsSync(f)))
-  return localScan
+  if (localScan && !force) return localScan
+  // One look at a time: the settings page and the install step asking together share it (two looks writing the
+  // cache at once could fail and leave the install step without anything found).
+  if (!localLook) {
+    localLook = sourceFolders()
+      .then((folders) => scanSourceFolders(folders))
+      .then((s) => (localScan = s))
+      .finally(() => { localLook = null })
+  }
+  return localLook
 })
 ipcMain.handle('local:install', async (_e, items: LocalMatch[]) => {
   const scan = await currentScan()

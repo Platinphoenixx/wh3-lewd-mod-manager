@@ -81,7 +81,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
                   return (
                     <li key={f}>
                       <code>{f}</code>
-                      <span className="small muted">{s ? `${s.files} file${s.files === 1 ? '' : 's'} · ${s.packs} pack${s.packs === 1 ? '' : 's'}` : 'not looked at yet'}{!settings.sourceFolders && ' · suggested'}</span>
+                      <span className={`small ${s?.error && !s.files ? 'warn-text' : 'muted'}`}>{s ? `${s.files} file${s.files === 1 ? '' : 's'} · ${s.packs} pack${s.packs === 1 ? '' : 's'}${s.error ? ` · ${s.error}` : ''}` : 'not looked at yet'}{!settings.sourceFolders && ' · suggested'}</span>
                       <button className="link" onClick={() => void look({ ...settings, sourceFolders: folders.filter((x) => x !== f) })}>Remove</button>
                     </li>
                   )

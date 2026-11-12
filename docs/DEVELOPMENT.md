@@ -126,7 +126,8 @@ community contributions. App UI and catalog texts are English.
     Packs the app installed are matched to their mod via userData/installed.json.
   - Files the player already has (Settings → Files you already have, `Settings.sourceFolders`, default this PC's Downloads):
     `src/main/localfiles.ts` lists the packs below those folders, loose or inside .7z/.zip/.rar archives (7-Zip / unrar
-    listings, nothing extracted; cached in userData/local-files.json); `src/shared/localfiles.ts` (tested) matches a
+    listings, nothing extracted; cached in userData/local-files.json; one look at a time, each logged to userData/local-files.log; a folder
+    that cannot be read is named in Settings and in the install step, which offers "Look again"); `src/shared/localfiles.ts` (tested) matches a
     profile's missing download packs by name (also without the "@"/"!" Discord drops, a file from the mod's own download
     folder first) and reads the date a name carries (Nexus time stamp, Discord message id). The install step shows what it
     found and installs it under the catalog's name (`local:install`, only files the last look found); copy by default,

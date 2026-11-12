@@ -17,7 +17,8 @@ export interface LocalFile {
 }
 
 export interface LocalScan {
-  folders: { path: string; files: number; packs: number }[]
+  /** error: the folder could not be read at all (not found, no access); its files are missing from this look. */
+  folders: { path: string; files: number; packs: number; error?: string }[]
   files: LocalFile[]
   scannedAt: string
 }
