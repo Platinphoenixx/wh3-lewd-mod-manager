@@ -183,10 +183,14 @@ export function App() {
   }, [scan, index])
 
   // Files dropped anywhere are installed; an open profile switches them on (see OwnMods).
+  // The overlay goes away on its own: dragover keeps firing while files are over the window, so once it stops (the drag
+  // left the window, was cancelled with Esc or dropped elsewhere) the overlay hides. dragleave alone misses those cases.
   const [dragging, setDragging] = useState(false)
+  const dragTimer = useRef<number | undefined>(undefined)
+  const endDrag = () => { window.clearTimeout(dragTimer.current); setDragging(false) }
   const onDrop = async (e: DragEvent) => {
     e.preventDefault()
-    setDragging(false)
+    endDrag()
     const paths = [...e.dataTransfer.files].map((f) => window.api.pathForFile(f)).filter(Boolean)
     if (!paths.length) return
     notify({ id: 'drop', kind: 'info', text: 'Installing…', timeout: 0 })
@@ -215,11 +219,13 @@ export function App() {
           if (![...e.dataTransfer.types].includes('Files')) return
           e.preventDefault()
           setDragging(true)
+          window.clearTimeout(dragTimer.current)
+          dragTimer.current = window.setTimeout(() => setDragging(false), 400)
         }}
-        onDragLeave={(e) => e.currentTarget === e.target && setDragging(false)}
+        onDragLeave={(e) => { if (!e.relatedTarget) endDrag() }}
         onDrop={onDrop}
       >
-        {dragging && <div className="drop-overlay" onDragLeave={() => setDragging(false)}>Drop .pack, .7z, .zip or .rar files to install them</div>}
+        {dragging && <div className="drop-overlay">Drop .pack, .7z, .zip or .rar files to install them</div>}
         <header className="topbar">
           <h1>WH3 Lewd Mod Manager</h1>
           <nav>
