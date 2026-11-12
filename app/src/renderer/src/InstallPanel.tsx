@@ -87,7 +87,8 @@ export function InstallPanel({ missing, characters = [], fixes = [] }: { missing
         : looking === 'failed' || !local ? 'Could not look in your folders (Settings → Files you already have).'
         : !local.folders.length ? 'No folders to look in (Settings → Files you already have).'
         : unread.length ? <>Not every folder could be read: {unread.map((f) => `${f.path} (${f.error})`).join(', ')}.</>
-        : <>Not found in {local.folders.map((f) => f.path).join(', ')}.</>}{' '}
+        : <>Not found in {local.folders.map((f) => f.path).join(', ')}.</>}
+      {local && looking === 'idle' && <> Looked {new Date(local.scannedAt).toLocaleTimeString()}.</>}{' '}
       {looking !== 'looking' && <button className="link" onClick={() => void lookLocal(true)}>Look again</button>}
     </p>
   )
