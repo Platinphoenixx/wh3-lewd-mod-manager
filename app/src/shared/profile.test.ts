@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import type { Catalog, Mod } from '@catalog/schema'
 import { buildIndex } from './match'
-import { candidates, resolveProfile } from './profile'
+import { activeProfile, candidates, dependentsOf, everythingOn, resolveProfile } from './profile'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
   return {
@@ -183,5 +183,25 @@ describe('resolveProfile', () => {
     const r = resolveProfile(catalog, index, preset, { extras: ['mod:ascension'], removed: ['mod:atb'] })
     expect(r.entries.map((e) => e.key)).not.toContain('mod:atb')
     expect(r.conflicts).toHaveLength(1)
+  })
+})
+
+describe('switching mods off in the load order', () => {
+  it('leaves switched-off added mods out of what is loaded, and with them what only they needed', () => {
+    const p = { extras: ['mod:lyra', 'mod:atb-es'], removed: [], off: ['mod:lyra'] }
+    const loaded = resolveProfile(catalog, index, preset, activeProfile(p)).entries.map((e) => e.key)
+    expect(loaded).toEqual(['mod:atb-es', 'mod:atb', 'mod:framework'])
+    // the view lists everything, the switched-off ones in their places
+    const all = resolveProfile(catalog, index, preset, everythingOn({ ...p, removed: ['mod:framework'] })).entries.map((e) => e.key)
+    expect(all).toEqual(['mod:atb-es', 'mod:atb', 'mod:framework', 'mod:lyra', 'mod:lyra-assets'])
+  })
+
+  it('names what needs a mod before it is switched off, also through a chain', () => {
+    const c = { ...catalog, mods: [...catalog.mods, mod('lyra-patch', { relations: [{ kind: 'requires', target: { mod: 'lyra' }, source: src }] })] }
+    const ix = buildIndex(c)
+    const loaded = resolveProfile(c, ix, preset, { extras: ['mod:lyra', 'mod:lyra-patch'], removed: [] }).entries.map((e) => e.key)
+    expect(dependentsOf(ix, loaded, 'mod:lyra-assets').sort()).toEqual(['mod:lyra', 'mod:lyra-patch'])
+    expect(dependentsOf(ix, loaded, 'mod:lyra')).toEqual(['mod:lyra-patch'])
+    expect(dependentsOf(ix, loaded, 'mod:framework')).toEqual([])
   })
 })

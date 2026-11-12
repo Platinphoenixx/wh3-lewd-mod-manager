@@ -67,6 +67,10 @@ community contributions. App UI and catalog texts are English.
     list (fixed re-upload, translation, a bundle carrying another mod's pack) means the mod it is a current main pack of;
     a data pack the app installed for a current mod that lists it as a download is no stale copy of a Workshop item with
     the same name (Community Beastmen light from the author vs. the older Workshop copy).
+  - Load order switches (`ProfileEditor.tsx`, step 3): every mod of a profile has an on/off switch and stays in its place when
+    off (dimmed, not loaded, not installed). A template mod switched off goes to `Profile.removed`, an added or own mod to
+    `Profile.off` (`activeProfile`/`everythingOn` in `profile.ts`); a requirement goes off and on with the mods that need it.
+    Switching off what loaded mods need asks first and names them (`dependentsOf`, tested): "Switch both off" / "Keep it on".
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
     alternatives (exclusiveGroup), load order (tested). What a mod recommends for one of its versions only (`Relation.whenPack`,
     Community Beastmen's Beastmen-campaign add-ons) and an add-on that needs one version (`Relation.pack`) are offered while the

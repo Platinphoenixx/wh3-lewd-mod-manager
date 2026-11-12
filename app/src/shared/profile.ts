@@ -10,8 +10,10 @@ export interface Profile {
   presetId: string
   /** targetKeys of optional mods the user switched on. */
   extras: string[]
-  /** targetKeys of base entries the user switched off. */
+  /** targetKeys of base entries the user switched off (they stay in the load order view, switched off). */
   removed: string[]
+  /** Added mods (extras, own mods) the player switched off in the load order: kept in the profile, not loaded or installed. */
+  off?: string[]
   /** Positions the user chose for own mods: own key → key of the entry it sits above (null = bottom). */
   pins?: Record<string, string | null>
   /** Pick-one pack variants the player chose: entry key → exclusiveGroup → pack file (default: first installed). */
@@ -134,6 +136,38 @@ export function missingDependencies(index: CatalogIndex, keys: string[], have: S
     }
   }
   return added
+}
+
+/**
+ * The profile as it is loaded: added mods switched off in the load order (`off`) left out. Template mods switched off
+ * are in `removed` already.
+ */
+export function activeProfile<P extends Pick<Profile, 'extras' | 'removed' | 'off'>>(profile: P): P {
+  const off = new Set(profile.off ?? [])
+  return off.size ? { ...profile, extras: profile.extras.filter((k) => !off.has(k)) } : profile
+}
+
+/** The profile with everything switched on: what the load order view lists, the switched-off mods in their places. */
+export function everythingOn<P extends Pick<Profile, 'extras' | 'removed' | 'off'>>(profile: P): P {
+  return { ...profile, removed: [], off: [] }
+}
+
+/**
+ * What else has to go when `key` is switched off: the loaded mods that need it, and the mods that need those (strict
+ * requirements, the same the profile builder follows). `loaded` is the load order as it is now.
+ */
+export function dependentsOf(index: CatalogIndex, loaded: string[], key: string, packsOf?: PacksOf): string[] {
+  const gone = new Set([key])
+  for (let grew = true; grew;) {
+    grew = false
+    const have = new Set(loaded.filter((k) => !gone.has(k)))
+    for (const k of have) {
+      const needs = missingDependencies(index, [k], have, packsOf)
+      if ([...needs.keys()].some((d) => gone.has(d))) { gone.add(k); grew = true }
+    }
+  }
+  gone.delete(key)
+  return loaded.filter((k) => gone.has(k))
 }
 
 /** Incompatibility pairs inside a set of keys (declared on either side). */

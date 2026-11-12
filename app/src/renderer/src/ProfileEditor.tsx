@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Preset } from '@catalog/schema'
 import type { InstalledPack } from '@shared/api'
 import { matchInstalled, parseTargetKey } from '@shared/match'
-import { baseKeys, candidates, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
+import { activeProfile, baseKeys, candidates, dependentsOf, everythingOn, nameOf, resolveProfile, type Candidate, type CandidateGroup, type Profile } from '@shared/profile'
 import { checkProfile, conflictPoint, moveAbove, oldPoint, withFlag, type CheckAction, type CheckPoint } from '@shared/check'
 import { checkOwnMod, isOwnKey, ownKeyOf, placeOwnMods, type FactsReport, type OrderedEntry } from '@shared/own'
 import { KIND_LABEL, useData } from './data'
@@ -85,7 +85,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const [hideConflicts, setHideConflicts] = useState(true)
 
   const options = useMemo(() => candidates(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
-  const resolved = useMemo(() => resolveProfile(data.catalog, data.index, preset, profile), [data.catalog, data.index, preset, profile])
+  // What is loaded (mods switched off in the load order left out), and the whole list the load order view shows.
+  const active = useMemo(() => activeProfile(profile), [profile])
+  const resolved = useMemo(() => resolveProfile(data.catalog, data.index, preset, active), [data.catalog, data.index, preset, active])
+  const resolvedAll = useMemo(() => resolveProfile(data.catalog, data.index, preset, everythingOn(profile)), [data.catalog, data.index, preset, profile])
   const suggestions = useMemo(() => suggestForProfile(data.catalog, data.index, preset, profile, options), [data.catalog, data.index, preset, profile, options])
   // Choices the player turned down stay away; pick-one choices go to "Decide", single suggestions to "Add more".
   const declined = new Set(profile.declined ?? [])
@@ -150,26 +153,29 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     return () => { live = false }
   }, [factKey])
 
-  const ownOn = useMemo(
+  const ownAll = useMemo(
     () => profile.extras.filter(isOwnKey).map((k) => ({ key: k, name: ownName(data, k, installed.get(k) ?? []), paths: (installed.get(k) ?? []).map((p) => p.path) })),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [profile.extras, installed, data.workshopDetails]
   )
-  const baseOrder: OrderedEntry[] = useMemo(
-    () => resolved.entries.map((e) => ({ key: e.key, name: e.name, paths: (installed.get(e.key) ?? []).map((p) => p.path) })),
-    [resolved, installed]
-  )
-  const order = useMemo(() => placeOwnMods(baseOrder, ownOn, facts ?? NO_FACTS, profile.pins ?? {}), [baseOrder, ownOn, facts, profile.pins])
+  const ownOn = useMemo(() => ownAll.filter((o) => !profile.off?.includes(o.key)), [ownAll, profile.off])
+  const orderOf = (r: typeof resolved, own: typeof ownAll): OrderedEntry[] => placeOwnMods(
+    r.entries.map((e) => ({ key: e.key, name: e.name, paths: (installed.get(e.key) ?? []).map((p) => p.path) })), own, facts ?? NO_FACTS, profile.pins ?? {})
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const order = useMemo(() => orderOf(resolved, ownOn), [resolved, ownOn, installed, facts, profile.pins])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const orderAll = useMemo(() => orderOf(resolvedAll, ownAll), [resolvedAll, ownAll, installed, facts, profile.pins])
   const byKey = new Map(resolved.entries.map((e) => [e.key, e]))
+  const byKeyAll = new Map(resolvedAll.entries.map((e) => [e.key, e]))
 
   // An imported list: what the catalog would warn about, in the list's own order.
   const imported = !!profile.imported
   const orderKeys = order.map((o) => o.key)
   const kept = profile.keptPoints ?? []
   const points = useMemo(
-    () => (imported ? checkProfile(data.catalog, data.index, preset, profile, resolved, orderKeys, (k) => byKey.get(k)?.packs) : []),
+    () => (imported ? checkProfile(data.catalog, data.index, preset, active, resolved, orderKeys, (k) => byKey.get(k)?.packs) : []),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [imported, data.catalog, data.index, preset, profile.fixes, resolved, orderKeys.join('\n')]
+    [imported, data.catalog, data.index, preset, active, profile.fixes, resolved, orderKeys.join('\n')]
   )
   const openPoints = points.filter((p) => !kept.includes(p.rule) && !profile.flagged?.[p.rule])
   const ideaCount = imported ? ideaGroups(entries, declined).reduce((n, g) => n + g.ideas.length, 0) : 0
@@ -222,7 +228,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const changesData = (o: OrderedEntry) => o.paths.some((p) => (facts?.packs[p]?.tables.length ?? 0) > 0)
   // Compared with the last major game update (not hotfixes) the player has installed.
   const major = lastMajorUpdate(data.catalog.gameUpdates, data.scan?.gameUpdated)
-  const stale = new Set(order.filter((o) => olderThanGame(updatedOf(o), major?.date, changesData(o))).map((o) => o.key))
+  const stale = new Set(orderAll.filter((o) => olderThanGame(updatedOf(o), major?.date, changesData(o))).map((o) => o.key))
   const gameDate = major ? `${new Date(major.date).toISOString().slice(0, 10)} (“${major.title}”)` : ''
 
   // Switch on what was just installed (dropped files, file picker, Workshop link).
@@ -240,7 +246,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
   const extras = new Set(profile.extras)
   const toggleExtra = (key: string) =>
-    onChange({ ...profile, extras: extras.has(key) ? profile.extras.filter((k) => k !== key) : [...profile.extras, key] })
+    onChange({ ...profile, extras: extras.has(key) ? profile.extras.filter((k) => k !== key) : [...profile.extras, key], off: profile.off?.filter((k) => k !== key) })
   const addExtra = (key: string) => !extras.has(key) && onChange({ ...profile, extras: [...profile.extras, key] })
   const addExtras = (keys: string[]) => {
     const add = keys.filter((k) => !extras.has(k))
@@ -248,6 +254,38 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   }
   const toggleBase = (key: string) =>
     onChange({ ...profile, removed: profile.removed.includes(key) ? profile.removed.filter((k) => k !== key) : [...profile.removed, key] })
+
+  // Switches in the load order: a template mod switched off goes to `removed`, an added or own mod to `off`; a mod that
+  // only comes along as a requirement is switched with the mods that need it. Switching off what others need asks first.
+  const loadedKeys = order.map((o) => o.key)
+  const isOn = (key: string) => loadedKeys.includes(key)
+  const [asking, setAsking] = useState<{ key: string; dependents: string[] } | null>(null)
+  const switchKeys = (keys: string[], on: boolean) => {
+    const base = new Set(baseKeys(preset))
+    let removed = profile.removed
+    let off = profile.off ?? []
+    for (const k of keys) {
+      if (base.has(k)) removed = on ? removed.filter((x) => x !== k) : removed.includes(k) ? removed : [...removed, k]
+      else if (profile.extras.includes(k)) off = on ? off.filter((x) => x !== k) : off.includes(k) ? off : [...off, k]
+    }
+    setAsking(null)
+    onChange({ ...profile, removed, off })
+  }
+  const switchOne = (key: string) => {
+    if (isOn(key)) {
+      const dependents = dependentsOf(data.index, loadedKeys, key)
+      if (dependents.length) return setAsking({ key, dependents })
+      return switchKeys([key], false)
+    }
+    // A requirement switched off together with what needs it comes back with that mod.
+    if (byKeyAll.get(key)?.origin === 'dependency') {
+      const all = orderAll.map((o) => o.key)
+      const needers = dependentsOf(data.index, all, key).filter((k) => !isOn(k))
+      return switchKeys(needers.length ? needers : [key], true)
+    }
+    switchKeys([key], true)
+  }
+  const offCount = orderAll.filter((o) => !isOn(o.key)).length
 
   // Moving an own mod pins it directly above its new lower neighbour; "auto" drops the pin again.
   const move = (key: string, dir: -1 | 1) => {
@@ -386,8 +424,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <input className="profile-name" size={Math.min(64, Math.max(24, profile.name.length + 2))} value={profile.name} onChange={(e) => onChange({ ...profile, name: e.target.value })} />
         <span className="muted small">based on “{preset.name}”</span>
         <span className="badge">{baseCount} from template</span>
-        <span className="badge ok">{profile.extras.length} switched on</span>
+        <span className="badge ok">{active.extras.length} switched on</span>
         <span className="badge">{order.length} mods total</span>
+        {offCount > 0 && <span className="badge">{offCount} switched off</span>}
         <div className="profile-actions">
           <button className="primary play" onClick={play} disabled={!data.scan?.gamePath}>
             ▶ Play{notReady.length ? ` (${notReady.length} missing)` : ''}
@@ -396,7 +435,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           <button className="danger-btn" onClick={() => confirm(`Delete profile “${profile.name}”?`) && onDelete()}>Delete</button>
         </div>
       </div>
-      {sharing && <ShareDialog profile={profile} onClose={() => setSharing(false)} />}
+      {sharing && <ShareDialog profile={active} onClose={() => setSharing(false)} />}
       {flagging && <FlagDialog point={flagging} order={orderKeys} onClose={() => setFlagging(null)} onSent={flagSent} />}
       {profile.imported && <p className="small muted">Imported from {profile.imported.source} on {profile.imported.at.slice(0, 10)}, with its load order and packs. Closest template: {preset.name}.</p>}
       <nav className="subtabs steps">
@@ -553,14 +592,28 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               ? 'Your list keeps its order; mods you add later are placed by their load-order rules.'
               : 'Template mods keep the tested community order; switched-on mods are placed by their load-order rules; your own mods by what their packs contain – move them with ↑ ↓ if you know better.'}
           </p>
+          <p className="small order-summary">
+            <span><b>{order.length}</b> of {orderAll.length} mods on</span>
+            {offCount > 0 && <>
+              <span className="muted">{offCount} switched off – they stay in the list and are not loaded or installed</span>
+              <button className="link" onClick={() => onChange({ ...profile, removed: [], off: [] })}>Switch all on</button>
+            </>}
+          </p>
           <table className="entries">
             <tbody>
-              {order.map((o, i) => {
-                const e = byKey.get(o.key)
+              {orderAll.map((o) => {
+                const on = isOn(o.key)
+                const e = byKeyAll.get(o.key)
                 const isInstalled = installed.has(o.key) && !incomplete.has(o.key)
+                const ask = asking?.key === o.key ? asking : null
                 return (
-                  <tr key={o.key} className={isInstalled ? 'state-installed' : 'state-missing'}>
-                    <td className="num">{i + 1}</td>
+                  <tr key={o.key} className={`${!on ? 'off' : isInstalled ? 'state-installed' : 'state-missing'}${ask ? ' ask' : ''}`}>
+                    <td className="sw">
+                      <button className={`switch${on ? ' on' : ''}`} role="switch" aria-checked={on}
+                        title={on ? 'Loaded – switch off to leave it out of the game' : e?.origin === 'dependency' ? `Comes with ${e.requiredBy} – switch on with it` : 'Switched off – not loaded'}
+                        onClick={() => switchOne(o.key)} />
+                    </td>
+                    <td className="num">{on ? loadedKeys.indexOf(o.key) + 1 : ''}</td>
                     <td>
                       {'mod' in parseTargetKey(o.key) ? <a onClick={() => data.openMod((parseTargetKey(o.key) as { mod: string }).mod)}>{o.name}</a> : o.name}
                       {e?.pack && <div className="small muted">{e.pack}</div>}
@@ -585,8 +638,16 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                         <>
                           <div className="small muted">{(installed.get(o.key) ?? []).map((p) => p.file).join(', ')}</div>
                           <div className="small">{o.own.reason}</div>
-                          {facts && <CheckLines check={checkOwnMod(order, o.key, facts, installedKeys)} onAdd={addExtra} />}
+                          {on && facts && <CheckLines check={checkOwnMod(order, o.key, facts, installedKeys)} onAdd={addExtra} />}
                         </>
+                      )}
+                      {ask && (
+                        <div className="small ask-line">
+                          {ask.dependents.map((k) => nameOf(data.catalog, data.index, k)).join(', ')} {ask.dependents.length === 1 ? 'needs' : 'need'} this mod
+                          and would not work without it.
+                          <button className="primary" onClick={() => switchKeys([ask.key, ...ask.dependents], false)}>Switch {ask.dependents.length === 1 ? 'both' : 'all'} off</button>
+                          <button onClick={() => setAsking(null)}>Keep it on</button>
+                        </div>
                       )}
                     </td>
                     <td>
@@ -596,7 +657,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                         <span className={`badge origin-${e?.origin}`}>{e?.origin === 'base' ? 'template' : e?.origin === 'extra' ? 'switched on' : `needed by ${e?.requiredBy}`}</span>
                       )}
                     </td>
-                    <td className="state">{isInstalled ? 'installed' : 'not installed'}</td>
+                    <td className="state">{!on ? 'off – not loaded' : isInstalled ? 'installed' : 'not installed'}</td>
                     <td className="row-actions">
                       {o.own && (
                         <>
@@ -606,8 +667,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                           <button className="link" title="Suggest this mod and its place for the catalog" onClick={() => share(o)}>share</button>
                         </>
                       )}
-                      {e?.origin === 'base' && <button className="link" onClick={() => toggleBase(o.key)}>remove</button>}
-                      {(e?.origin === 'extra' || o.own) && <button className="link" onClick={() => toggleExtra(o.key)}>remove</button>}
+                      {(e?.origin === 'extra' || o.own) && <button className="link" title="Take it out of this profile" onClick={() => toggleExtra(o.key)}>remove</button>}
                     </td>
                   </tr>
                 )
@@ -619,12 +679,6 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
             paths={[...new Set(order.flatMap((o) => o.paths))]}
             orderNote="Installed mods of this profile, compared in the order above: the higher mod's files are the ones the game uses."
           />
-          {profile.removed.length > 0 && (
-            <>
-              <h3>Removed from the template</h3>
-              <ul>{profile.removed.map((k) => <li key={k}>{nameOf(data.catalog, data.index, k)} <button className="link" onClick={() => toggleBase(k)}>restore</button></li>)}</ul>
-            </>
-          )}
           <p className="step-next">
             <button className="primary" onClick={play} disabled={!data.scan?.gamePath}>▶ Play with this load order</button>
           </p>
