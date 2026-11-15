@@ -1,0 +1,442 @@
+{
+ "mod": "dc-alarielle-morathi-expansion",
+ "packs": [
+  "Alarielle_Morathi_expansion.pack"
+ ],
+ "dependencies": [],
+ "perPack": {
+  "Alarielle_Morathi_expansion.pack": {
+   "files": 41,
+   "dependencies": []
+  }
+ },
+ "fileCount": 41,
+ "byTopFolder": {
+  "ui": 24,
+  "db": 14,
+  "text": 2,
+  "script": 1
+ },
+ "tables": [
+  "campaign_payload_ui_details_tables",
+  "cdir_events_dilemma_choice_details_tables",
+  "cdir_events_dilemma_followup_dilemmas_tables",
+  "cdir_events_dilemma_incidents_tables",
+  "cdir_events_dilemma_option_junctions_tables",
+  "cdir_events_mission_issuer_junctions_tables",
+  "cdir_events_mission_option_junctions_tables",
+  "dilemmas_tables",
+  "effect_bonus_value_faction_junctions_tables",
+  "effect_bundles_tables",
+  "effect_bundles_to_effects_junctions_tables",
+  "effects_tables",
+  "incidents_tables",
+  "missions_tables"
+ ],
+ "references": {
+  "total": 0,
+  "inMod": 0,
+  "inBaseGame": 0,
+  "onlyInOtherMods": {},
+  "unresolved": []
+ },
+ "comparedWith": [
+  "kerb_Alarielle_Temptations_Bloom_steam.pack",
+  "kerberos_mod_assets.pack",
+  "kerb_Azazel's_Realm_steam.pack",
+  "corrupted_landmarks.pack"
+ ],
+ "dbStrings": {
+  "campaign_payload_ui_details_tables": [
+   "unsc96_alar_capture_payload",
+   "ui/campaign ui/effect_bundles/diplomacy.png",
+   "default",
+   "unsc96_alar_capture_payload2",
+   "ui/campaign ui/effect_bundles/gift_of_slaanesh.png"
+  ],
+  "cdir_events_dilemma_choice_details_tables": [
+   "FIRST",
+   "unsc96_alar_capture_d_01",
+   "SECOND",
+   "unsc96_alar_capture_d_02",
+   "unsc96_alar_capture_d_03",
+   "unsc96_alar_capture_d_04",
+   "unsc96_alar_capture_d_05",
+   "unsc96_alar_capture_d_06",
+   "unsc96_alar_capture_d_07",
+   "unsc96_alar_capture_d_08",
+   "unsc96_alar_capture_d_09",
+   "unsc96_alar_capture_d_10",
+   "unsc96_alar_capture_d_11",
+   "unsc96_alar_capture_d_12",
+   "unsc96_alar_capture_d_13",
+   "unsc96_alar_capture_d_14",
+   "unsc96_alar_capture_d_15",
+   "unsc96_alar_capture_d_16",
+   "unsc96_alar_capture_d_17",
+   "unsc96_alar_capture_d_18",
+   "unsc96_alar_capture_d_19",
+   "unsc96_alar_capture_d_20",
+   "unsc96_alar_capture_d_21",
+   "alar_capture_b"
+  ],
+  "cdir_events_dilemma_followup_dilemmas_tables": [
+   "FIRST",
+   "unsc96_alar_capture_d_01",
+   "unsc96_alar_capture_d_02",
+   "unsc96_alar_capture_d_03",
+   "unsc96_alar_capture_d_04",
+   "unsc96_alar_capture_d_05",
+   "unsc96_alar_capture_d_06",
+   "unsc96_alar_capture_d_07",
+   "unsc96_alar_capture_d_08",
+   "unsc96_alar_capture_d_09",
+   "unsc96_alar_capture_d_10",
+   "unsc96_alar_capture_d_11",
+   "unsc96_alar_capture_d_12",
+   "unsc96_alar_capture_d_13",
+   "unsc96_alar_capture_d_14",
+   "unsc96_alar_capture_d_15",
+   "unsc96_alar_capture_d_16",
+   "unsc96_alar_capture_d_17",
+   "unsc96_alar_capture_d_18",
+   "unsc96_alar_capture_d_19",
+   "unsc96_alar_capture_d_20",
+   "unsc96_alar_capture_d_21"
+  ],
+  "cdir_events_dilemma_incidents_tables": [
+   "FIRST",
+   "unsc96_alar_capture_d_21",
+   "unsc96_alar_capture_i_22",
+   "alar_capture_b",
+   "alar_capture_b_i"
+  ],
+  "cdir_events_dilemma_option_junctions_tables": [
+   "unsc96_alar_capture_d_01",
+   "VAR_FOLLOWUP_CHANCE",
+   "default",
+   "unsc96_alar_capture_d_02",
+   "unsc96_alar_capture_d_03",
+   "unsc96_alar_capture_d_04",
+   "unsc96_alar_capture_d_05",
+   "unsc96_alar_capture_d_06",
+   "unsc96_alar_capture_d_07",
+   "unsc96_alar_capture_d_08",
+   "unsc96_alar_capture_d_09",
+   "unsc96_alar_capture_d_10",
+   "unsc96_alar_capture_d_11",
+   "unsc96_alar_capture_d_12",
+   "unsc96_alar_capture_d_13",
+   "unsc96_alar_capture_d_14",
+   "unsc96_alar_capture_d_15",
+   "unsc96_alar_capture_d_16",
+   "unsc96_alar_capture_d_17",
+   "unsc96_alar_capture_d_18",
+   "unsc96_alar_capture_d_19",
+   "unsc96_alar_capture_d_20",
+   "unsc96_alar_capture_d_21",
+   "alar_capture_b"
+  ],
+  "cdir_events_mission_issuer_junctions_tables": [
+   "CLAN_ELDERS",
+   "unsc96_alar_capture"
+  ],
+  "cdir_events_mission_option_junctions_tables": [
+   "unsc96_alar_capture",
+   "VAR_MISSION_LENGTH_INFINITE",
+   "default"
+  ],
+  "dilemmas_tables": [
+   "unsc96_alar_capture_d_01",
+   "capture_1",
+   "Event",
+   "UI_CAM_EVENT_Dilemma",
+   "unsc96_alar_capture_d_02",
+   "capture_2",
+   "unsc96_alar_capture_d_03",
+   "capture_3",
+   "unsc96_alar_capture_d_04",
+   "capture_4",
+   "unsc96_alar_capture_d_05",
+   "capture_5",
+   "unsc96_alar_capture_d_06",
+   "capture_6",
+   "unsc96_alar_capture_d_07",
+   "capture_7",
+   "unsc96_alar_capture_d_08",
+   "capture_8",
+   "unsc96_alar_capture_d_09",
+   "capture_9",
+   "unsc96_alar_capture_d_10",
+   "capture_10",
+   "unsc96_alar_capture_d_11",
+   "capture_11",
+   "unsc96_alar_capture_d_12",
+   "capture_12",
+   "unsc96_alar_capture_d_13",
+   "capture_13",
+   "unsc96_alar_capture_d_14",
+   "capture_14",
+   "unsc96_alar_capture_d_15",
+   "capture_15",
+   "unsc96_alar_capture_d_16",
+   "capture_16",
+   "unsc96_alar_capture_d_17",
+   "capture_17",
+   "unsc96_alar_capture_d_18",
+   "capture_18",
+   "unsc96_alar_capture_d_19",
+   "capture_19",
+   "unsc96_alar_capture_d_20",
+   "capture_20",
+   "unsc96_alar_capture_d_21",
+   "capture_21",
+   "alar_capture_b",
+   "capture_b"
+  ],
+  "effect_bonus_value_faction_junctions_tables": [
+   "diplomatic_mod",
+   "unsc96_alar_relations_with_avelorn",
+   "wh2_main_hef_avelorn"
+  ],
+  "effect_bundles_tables": [
+   "unsc96_alar_ensorcel_alar",
+   "faction",
+   "diplomacy.png",
+   "unsc96_alar_ensorcel_cop"
+  ],
+  "effect_bundles_to_effects_junctions_tables": [
+   "unsc96_alar_ensorcel_alar",
+   "wh2_main_faction_political_diplomacy_mod_cult_of_pleasure",
+   "faction_to_faction_own_unseen",
+   "start_turn_completed",
+   "unsc96_alar_ensorcel_cop",
+   "unsc96_alar_relations_with_avelorn"
+  ],
+  "effects_tables": [
+   "unsc96_alar_relations_with_avelorn",
+   "diplomacy.png",
+   "campaign"
+  ],
+  "incidents_tables": [
+   "unsc96_alar_capture_i_22",
+   "capture_22",
+   "Event",
+   "alar_capture_b_i",
+   "capture_b_i"
+  ],
+  "missions_tables": [
+   "unsc96_alar_capture",
+   "SCRIPTED",
+   "rom_event_mission.png",
+   "Quest"
+  ]
+ },
+ "files": [
+  {
+   "path": "db/campaign_payload_ui_details_tables/unsc96_alar_capture",
+   "size": 275,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_choice_details_tables/unsc96_alar_capture",
+   "size": 887,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_followup_dilemmas_tables/unsc96_alar_capture",
+   "size": 1263,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_incidents_tables/unsc96_alar_capture",
+   "size": 183,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_dilemma_option_junctions_tables/unsc96_alar_capture",
+   "size": 1621,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_issuer_junctions_tables/unsc96_alar_capture",
+   "size": 125,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/cdir_events_mission_option_junctions_tables/unsc96_alar_capture",
+   "size": 159,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/dilemmas_tables/unsc96_alar_capture",
+   "size": 1787,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/effect_bonus_value_faction_junctions_tables/unsc96_alar_ensorcel",
+   "size": 157,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/effect_bundles_tables/unsc96_alar_ensorcel",
+   "size": 214,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/effect_bundles_to_effects_junctions_tables/unsc96_alar_ensorcel",
+   "size": 353,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/effects_tables/unsc96_alar_ensorcel",
+   "size": 166,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/incidents_tables/unsc96_alar_capture",
+   "size": 196,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "db/missions_tables/unsc96_alar_capture",
+   "size": 218,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "script/campaign/mod/unsc96_alar_capture_mission.lua",
+   "size": 28794,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "text/db/unsc96_alar_capture.loc",
+   "size": 4613,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "text/db/unsc96_alar_capture_events.loc",
+   "size": 68268,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_1.png",
+   "size": 675928,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_10.png",
+   "size": 662595,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_11.png",
+   "size": 754561,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_12.png",
+   "size": 863411,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_13.png",
+   "size": 819267,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_14.png",
+   "size": 623971,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_15.png",
+   "size": 733581,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_16.png",
+   "size": 665273,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_17.png",
+   "size": 718000,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_18.png",
+   "size": 693718,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_19.png",
+   "size": 578550,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_2.png",
+   "size": 772185,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_20.png",
+   "size": 598012,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_21.png",
+   "size": 754013,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_22.png",
+   "size": 764876,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_3.png",
+   "size": 819146,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_4.png",
+   "size": 723712,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_5.png",
+   "size": 614215,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_6.png",
+   "size": 789244,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_7.png",
+   "size": 612820,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_8.png",
+   "size": 693881,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_9.png",
+   "size": 782291,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_b.png",
+   "size": 3819630,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  },
+  {
+   "path": "ui/eventpics/capture_b_i.png",
+   "size": 4021555,
+   "pack": "Alarielle_Morathi_expansion.pack"
+  }
+ ]
+}

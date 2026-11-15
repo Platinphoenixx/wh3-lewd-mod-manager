@@ -111,18 +111,18 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
       )}
       <h3 className="play-section">Play as</h3>
       <div className="play-grid">{characters.map(card)}</div>
-      {vanilla.length > 0 && (
-        <>
-          <h3 className="play-section">In the game's own campaign</h3>
-          <p className="small muted">No mod tells a story for these lords. You play their normal campaign; the app adds what fits them: their look, their army's look, events and animations.</p>
-          <div className="play-grid">{vanilla.map(card)}</div>
-        </>
-      )}
       {themes.length > 0 && (
         <>
           <h3 className="play-section">Themes</h3>
           <p className="small muted">Lists about a group or a story rather than one character.</p>
           <div className="play-grid">{themes.map(card)}</div>
+        </>
+      )}
+      {vanilla.length > 0 && (
+        <>
+          <h3 className="play-section">In the game's own campaign</h3>
+          <p className="small muted">No mod tells a story for these lords. You play their normal campaign; the app adds what fits them: their look, their army's look, events and animations.</p>
+          <div className="play-grid">{vanilla.map(card)}</div>
         </>
       )}
     </div>
