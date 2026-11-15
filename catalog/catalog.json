@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T15:32:20+00:00",
+  "generatedAt": "2026-11-15T16:26:41+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -54334,19 +54334,31 @@
           "target": {
             "mod": "ll-32374"
           },
-          "note": "The merged pack holds the Miao Ying and Azazel packs of Soil's Corrupted Units with the same scripts (corrupted_barracks.lua, corrupted_startup.lua): load one or the other. Soil's Kislev pack does not work with the Azazel units either.",
+          "note": "The merged pack holds the Miao Ying and Azazel packs of Soil's Corrupted Units with the same scripts (corrupted_barracks.lua, corrupted_startup.lua) but gives their units new keys: load one or the other. Soil's Kislev pack does not work with the Azazel units either.",
           "source": {
             "type": "inferred"
           }
         },
         {
-          "kind": "supersedes",
+          "kind": "incompatible",
           "target": {
-            "mod": "ll-32374"
+            "mod": "ll-40114"
           },
-          "note": "Holds the Miao Ying and Azazel packs of Soil's Corrupted Units, so mods that need those units work with it (Soil's Kislev pack is not part of it).",
+          "note": "Its author: the merged pack gives the Soil units new keys, Miao Alchemy targets the keys of the standalone Miao Ying pack; use the standalone pack with it (2026-11-03).",
           "source": {
-            "type": "inferred"
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "dc-miao-alchemy"
+          },
+          "note": "Its author: the merged pack gives the Soil units new keys, Miao Alchemy targets the keys of the standalone Miao Ying pack; use the standalone pack with it (2026-11-03).",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848"
           }
         },
         {
@@ -54379,7 +54391,8 @@
       "knownIssues": [
         "Longma riders T-pose together with Dynasty of the Damned (Steam 2991431203), reported with Soil's units (2026-02-17).",
         "Works according to its author (2026-11-01); reported crashes come from using it together with the other Soil packs (Azazel, Miao, Elf), so use only this one.",
-        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31)."
+        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31).",
+        "Meant for the ATB / Azazel's Realm mod lists, according to its author (2026-11-09): mods that target the unit keys of the standalone Soil packs (Miao Alchemy and other submods) do not work with it and need the standalone packs pinned in #soiled-projects."
       ],
       "curation": {
         "lastChecked": "2026-10-31",

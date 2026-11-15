@@ -21,7 +21,32 @@
       ],
       "knownIssues+": [
         "Works according to its author (2026-11-01); reported crashes come from using it together with the other Soil packs (Azazel, Miao, Elf), so use only this one.",
-        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31)."
+        "The merged pack lacks the Cathay-prefixed unit keys that the older tdw building packs call, so those can crash at launch ('invalid database record'). Use MrDustV's merged TDW pack, which is meant for this pack (2026-10-31).",
+        "Meant for the ATB / Azazel's Realm mod lists, according to its author (2026-11-09): mods that target the unit keys of the standalone Soil packs (Miao Alchemy and other submods) do not work with it and need the standalone packs pinned in #soiled-projects."
+      ],
+      "relations+": [
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "ll-40114"
+          },
+          "note": "Its author: the merged pack gives the Soil units new keys, Miao Alchemy targets the keys of the standalone Miao Ying pack; use the standalone pack with it (2026-11-03).",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848"
+          }
+        },
+        {
+          "kind": "incompatible",
+          "target": {
+            "mod": "dc-miao-alchemy"
+          },
+          "note": "Its author: the merged pack gives the Soil units new keys, Miao Alchemy targets the keys of the standalone Miao Ying pack; use the standalone pack with it (2026-11-03).",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1004257551283662848"
+          }
+        }
       ]
     },
     {
