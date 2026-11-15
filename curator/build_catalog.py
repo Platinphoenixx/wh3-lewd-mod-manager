@@ -973,6 +973,13 @@ def main():
             if s.get("removed") or s["id"] in collections:
                 continue
             for child in (steam_req.get(s["id"]) or {}).get("required", []):
+                # A listed item the Steam Web API cannot show (15: private, 9: deleted) cannot be subscribed by anyone:
+                # as a requirement it would keep every list waiting; the page's listing becomes a known issue instead.
+                if (steam_req.get(child) or {}).get("result") in (9, 15):
+                    issue = (f"The Workshop page lists a required item ({child}) that is not public; nobody can subscribe to it, so the app does not wait for it.")
+                    if issue not in (m.get("knownIssues") or []):
+                        m["knownIssues"] = [*(m.get("knownIssues") or []), issue]
+                    continue
                 if child not in own:
                     if m.get("kind") == "translation":
                         kind, note = "extends", "Translated mod (listed as a required item on the Workshop page)"

@@ -72,7 +72,9 @@ community contributions. App UI and catalog texts are English.
     `Profile.off` (`activeProfile`/`everythingOn` in `profile.ts`); a requirement goes off and on with the mods that need it.
     Switching off what loaded mods need asks first and names them (`dependentsOf`, tested): "Switch both off" / "Keep it on".
   - `src/shared/profile.ts` profile builder: options per template, dependencies, conflicts,
-    alternatives (exclusiveGroup), load order (tested). What a mod recommends for one of its versions only (`Relation.whenPack`,
+    alternatives (exclusiveGroup), load order (tested; added mods are placed one by one and then moved until every
+    load-order rule between two entries holds, whoever declares it, and an added submod/patch/translation beats what it
+    builds on unless a rule says otherwise; template entries keep their order). What a mod recommends for one of its versions only (`Relation.whenPack`,
     Community Beastmen's Beastmen-campaign add-ons) and an add-on that needs one version (`Relation.pack`) are offered while the
     list loads that version, the chosen one of an added mod (`Profile.variants`). A requirement counts as met by a mod in the profile that
     `supersedes` it (Soil's merged pack for Soil's Corrupted Units); conflicts of an option count against what the
@@ -258,7 +260,8 @@ over all layers – fix texts there.
   The API gives no pack names, so `steam_items.json` `packs` were read from the downloaded Workshop folders
   (2026-11-02, all catalog items); the build gives Steam mods whose pages name no pack these packs.
   `steam_required.json`: the required items ("children") of every catalog Workshop item from the Steam Web API
-  (`IPublishedFileService/GetDetails`, needs a key, so refreshed by hand). The build adds them as `requires` where no
+  (`IPublishedFileService/GetDetails`, needs a key, so refreshed by hand). A listed item the API cannot show (private or deleted) becomes a known issue of the
+  mod, not a requirement: nobody could subscribe to it. The build adds them as `requires` where no
   curated relation names the same mod (curated ones win, e.g. "optional" for a listed item that is no longer
   needed); `collections` (their children are members) are skipped, translations get `extends`, and pages listed in
   `recommendationsOnly` (they say so themselves) get `recommends`. Relations to a Steam collection are dropped (pages

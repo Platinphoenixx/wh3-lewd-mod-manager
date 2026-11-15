@@ -310,6 +310,62 @@ export function candidates(catalog: Catalog, index: CatalogIndex, preset: Preset
 }
 
 /**
+ * Added mods are placed one after another, each by its own rules, so a rule of one can still be broken by where another
+ * went (Generic Framework must beat ATB and lose to the Lin translation, both added). Moves added mods until every
+ * load-order rule between two entries holds, whichever of the two declares it, and every add-on beats what it builds on;
+ * template entries keep their tested order.
+ * Each step takes the move that breaks the fewest rules; it stops when nothing improves (rules that contradict each other).
+ */
+function keepOrderRules(index: CatalogIndex, entries: ResolvedEntry[]): void {
+  const pairs: [string, string][] = [] // [must come first (wins), must come later]
+  const present = new Set(entries.map((e) => e.key))
+  for (const e of entries) {
+    const m = e.key.startsWith('mod:') ? index.mods.get(e.key.slice(4)) : undefined
+    for (const t of m?.loadOrder?.above ?? []) if (present.has(targetKey(t))) pairs.push([e.key, targetKey(t)])
+    for (const t of m?.loadOrder?.below ?? []) if (present.has(targetKey(t))) pairs.push([targetKey(t), e.key])
+  }
+  // A submod, patch or translation beats what it builds on (the Slaanesh UI theme over Unique Faction UI), unless a
+  // load-order rule between the two says otherwise (Readman's UUU versions below CCC, as he plays them) or the add-on
+  // has to lose to something by its own rule (the Selector Submod below the reskin packs it switches).
+  const ruled = new Set(pairs.flatMap(([a, b]) => [`${a}|${b}`, `${b}|${a}`]))
+  for (const e of entries) {
+    const m = e.key.startsWith('mod:') ? index.mods.get(e.key.slice(4)) : undefined
+    if (!m || !['submod', 'patch', 'translation'].includes(m.kind) || m.loadOrder?.below?.length) continue
+    for (const r of m.relations) {
+      const t = targetKey(r.target)
+      if (['extends', 'requires'].includes(r.kind) && !r.condition && present.has(t) && !ruled.has(`${e.key}|${t}`)) pairs.push([e.key, t])
+    }
+  }
+  const movable = new Set(entries.filter((e) => e.origin !== 'base').map((e) => e.key))
+  const rules = pairs.filter(([a, b]) => a !== b && (movable.has(a) || movable.has(b)))
+  if (!rules.length) return
+  const broken = (list: ResolvedEntry[]) => {
+    const at = new Map(list.map((e, i) => [e.key, i]))
+    return rules.filter(([a, b]) => at.get(a)! > at.get(b)!)
+  }
+  const moved = (list: ResolvedEntry[], key: string, beside: string, before: boolean) => {
+    const e = list.find((x) => x.key === key)!
+    const rest = list.filter((x) => x.key !== key)
+    const i = rest.findIndex((x) => x.key === beside)
+    rest.splice(before ? i : i + 1, 0, e)
+    return rest
+  }
+  let now = [...entries]
+  for (let step = 0, bad = broken(now); bad.length && step < entries.length * 4; step++) {
+    const tries: ResolvedEntry[][] = []
+    for (const [a, b] of bad) {
+      if (movable.has(a)) tries.push(moved(now, a, b, true))
+      if (movable.has(b)) tries.push(moved(now, b, a, false))
+    }
+    const best = tries.map((t) => ({ t, n: broken(t).length })).sort((x, y) => x.n - y.n)[0]
+    if (!best || best.n >= bad.length) break
+    now = best.t
+    bad = broken(now)
+  }
+  entries.splice(0, entries.length, ...now)
+}
+
+/**
  * The final mod list of a profile in load order (first = highest priority).
  * Base entries keep the preset's tested order. Extras are placed by their load-order rules, otherwise
  * right above the profile mod they extend or relate to, otherwise reskins on top and the rest at the bottom.
@@ -378,6 +434,7 @@ export function resolveProfile(catalog: Catalog, index: CatalogIndex, preset: Pr
     else pos = related.length ? Math.min(...related) : entries.length
     entries.splice(pos, 0, e)
   }
+  if (!listed.size) keepOrderRules(index, entries)
   // A requirement can name the pack it needs of a mod with versions; an entry that does not fix its pack takes that one.
   for (const e of entries) {
     for (const r of relationsOf(index, e.key)) {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T15:22:12+00:00",
+  "generatedAt": "2026-11-15T15:32:20+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -19801,16 +19801,6 @@
             "type": "steam",
             "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414519539"
           }
-        },
-        {
-          "kind": "requires",
-          "target": {
-            "mod": "steam-3120241924"
-          },
-          "note": "Listed as a required item on the Workshop page",
-          "source": {
-            "type": "steam"
-          }
         }
       ],
       "loadOrder": {
@@ -19829,6 +19819,9 @@
           "Which Workshop item is Dead's Kislev Overhaul? It is not in the catalog and the page gives no link in the readable text."
         ]
       },
+      "knownIssues": [
+        "The Workshop page lists a required item (3120241924) that is not public; nobody can subscribe to it, so the app does not wait for it."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -51877,16 +51870,6 @@
         {
           "kind": "requires",
           "target": {
-            "mod": "steam-3166223310"
-          },
-          "note": "Listed as a required item on the Workshop page",
-          "source": {
-            "type": "steam"
-          }
-        },
-        {
-          "kind": "requires",
-          "target": {
             "mod": "steam-3149445431"
           },
           "note": "Listed as a required item on the Workshop page",
@@ -51903,6 +51886,9 @@
         ]
       },
       "status": "stable",
+      "knownIssues": [
+        "The Workshop page lists a required item (3166223310) that is not public; nobody can subscribe to it, so the app does not wait for it."
+      ],
       "authorPages": [
         {
           "site": "steam",
@@ -55152,61 +55138,6 @@
         ]
       },
       "changesData": true
-    },
-    {
-      "id": "steam-3120241924",
-      "name": "Steam mod 3120241924 (unlisted)",
-      "authors": [],
-      "kind": "units",
-      "tags": [],
-      "summary": "",
-      "sources": {
-        "steam": [
-          {
-            "id": "3120241924",
-            "title": null,
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "curation": {
-        "lastChecked": "2026-11-15",
-        "confidence": "low",
-        "openQuestions": [
-          "Known only from references; kind, dependencies and purpose unchecked."
-        ]
-      },
-      "changesData": true
-    },
-    {
-      "id": "steam-3166223310",
-      "name": "Steam mod 3166223310 (unlisted)",
-      "authors": [],
-      "kind": "units",
-      "tags": [],
-      "summary": "",
-      "sources": {
-        "steam": [
-          {
-            "id": "3166223310",
-            "title": null,
-            "unlisted": true
-          }
-        ]
-      },
-      "packs": [],
-      "relations": [],
-      "curation": {
-        "lastChecked": "2026-11-15",
-        "confidence": "low",
-        "openQuestions": [
-          "Known only from references; kind, dependencies and purpose unchecked."
-        ]
-      },
-      "changesData": true,
-      "confirmed": "2026-11-14"
     },
     {
       "id": "nx-41",
@@ -62572,16 +62503,6 @@
         {
           "kind": "extends",
           "target": {
-            "mod": "steam-2789944159"
-          },
-          "note": "Translated mod (listed as a required item on the Workshop page)",
-          "source": {
-            "type": "steam"
-          }
-        },
-        {
-          "kind": "extends",
-          "target": {
             "mod": "steam-2790029103"
           },
           "note": "Translated mod (listed as a required item on the Workshop page)",
@@ -63072,7 +62993,8 @@
       ],
       "status": "stable",
       "knownIssues": [
-        "Renames one Unique Steam Tanks unit; the page explains how to remove that entry with RPFM."
+        "Renames one Unique Steam Tanks unit; the page explains how to remove that entry with RPFM.",
+        "The Workshop page lists a required item (2789944159) that is not public; nobody can subscribe to it, so the app does not wait for it."
       ],
       "curation": {
         "lastChecked": "2026-11-01",

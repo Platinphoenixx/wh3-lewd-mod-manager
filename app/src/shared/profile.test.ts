@@ -162,6 +162,30 @@ describe('resolveProfile', () => {
     }
   })
 
+  it('keeps the load-order rules between added mods, whichever of them declares the rule', () => {
+    // The Lin case: the translation must beat the framework, the framework must beat ATB; the framework comes in as a
+    // dependency of the campaign the translation is added above, after the translation was placed.
+    const c: Catalog = { ...catalog, mods: [...catalog.mods,
+      mod('gf', { kind: 'framework', loadOrder: { above: [{ mod: 'atb' }], below: [{ mod: 'lin-en' }] } }),
+      mod('drycha', { kind: 'campaign', relations: [{ kind: 'requires', target: { mod: 'gf' }, source: src }] }),
+      mod('lin-en', { kind: 'translation', loadOrder: { above: [{ mod: 'drycha' }, { mod: 'gf' }] },
+        relations: [{ kind: 'extends', target: { mod: 'drycha' }, source: src }] })] }
+    const r = resolveProfile(c, buildIndex(c), preset, { extras: ['mod:drycha', 'mod:lin-en'], removed: [] })
+    const keys = r.entries.map((e) => e.key)
+    const at = (k: string) => keys.indexOf(`mod:${k}`)
+    expect(at('lin-en')).toBeLessThan(at('gf'))
+    expect(at('gf')).toBeLessThan(at('atb'))
+    expect(at('lin-en')).toBeLessThan(at('drycha'))
+    expect(keys.filter((k) => ['mod:atb', 'mod:framework'].includes(k))).toEqual(['mod:atb', 'mod:framework'])
+  })
+
+  it('puts an added submod above what it builds on even when its own rule would place it lower', () => {
+    const c: Catalog = { ...catalog, mods: [...catalog.mods,
+      mod('ui-theme', { kind: 'submod', loadOrder: { above: [{ mod: 'framework' }] }, relations: [{ kind: 'requires', target: { mod: 'atb' }, source: src }] })] }
+    const keys = resolveProfile(c, buildIndex(c), preset, { extras: ['mod:ui-theme'], removed: [] }).entries.map((e) => e.key)
+    expect(keys).toEqual(['mod:ui-theme', 'mod:atb', 'mod:framework'])
+  })
+
   it('treats incompatibilities inside a tested template as notes and ignores conditional ones', () => {
     const cat: Catalog = {
       ...catalog,
