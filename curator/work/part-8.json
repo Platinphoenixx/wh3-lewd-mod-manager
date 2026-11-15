@@ -1,0 +1,87 @@
+{
+  "mods": [
+    {
+      "id": "dc-alarielle-morathi-expansion",
+      "name": "Alarielle-Morathi expansion (ATB)",
+      "authors": [
+        "Kerberos",
+        "UNSC96"
+      ],
+      "kind": "submod",
+      "status": "wip",
+      "suggestOnly": true,
+      "summary": "Work-in-progress add-on for Alarielle, Temptation's Bloom: a turn 1 mission to capture Alarielle for players starting as Morathi, Warriors of Chaos or Daemons of Chaos, with a 22-part capture scene, a later visit scene and three handmaidens for Morathi's faction.",
+      "tags": [
+        "alarielle",
+        "morathi",
+        "atb",
+        "story",
+        "missions"
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "kerberos-updates",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1168900872940568657"
+          }
+        ],
+        "downloads": [
+          {
+            "name": "Alarielle_Morathi_expansion.pack",
+            "url": "https://discord.com/channels/965342581745668136/1168900872940568657",
+            "description": "Early test build posted in #kerberos-updates on 2026-11-15 (22.6 MB)"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "Alarielle_Morathi_expansion.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1168900872940568657"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "Its script uses ATB's Alarielle (character, corruption stage, dilemma queue); load it alongside the normal Alarielle mod list.",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1168900872940568657"
+          }
+        },
+        {
+          "kind": "recommends",
+          "target": {
+            "mod": "steam-3534460647"
+          },
+          "note": "With any version of Readman's UUU the three handmaidens spawned at the end of the scene get the corrupted models.",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1168900872940568657"
+          }
+        }
+      ],
+      "knownIssues": [
+        "Early test build (2026-11-15): the text of the follow-up scene, in which Morathi visits Alarielle in Avelorn, is still blank.",
+        "The mission does not spawn when playing Alarielle or the Daemons of Slaanesh: as Slaanesh you own N'Kari and the story has you hiding from Alarielle, so war declarations on her faction are blocked.",
+        "The mission aborts if another faction kills Alarielle and is issued again when she recovers."
+      ],
+      "installNotes": [
+        "For players starting as Morathi, Warriors of Chaos (Archaon, Be'lakor, Azazel, Sigvald) or a Daemon Prince the mission comes on turn 1. As Miao Ying it needs MrDustV's play-as-Miao compatibility pack for ATB (posted in the ATB channel) and comes after her corruption stage 3.",
+        "Completing the mission gives a permanent +200 relation between Alarielle and Morathi, whoever plays; about five turns later a scene in Avelorn follows, and its end spawns three level 20 handmaidens for Morathi's faction."
+      ],
+      "updated": "2026-11-15",
+      "curation": {
+        "lastChecked": "2026-11-15",
+        "confidence": "medium",
+        "openQuestions": [
+          "Not launch-tested by the app yet.",
+          "No image: the previews in the post are explicit scene art."
+        ]
+      }
+    }
+  ]
+}
