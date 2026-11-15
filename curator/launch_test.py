@@ -148,8 +148,9 @@ def needed_packs(mod: dict) -> list:
 def plan(preset: dict, packs: Packs) -> dict:
     files, missing, notes, seen = [], [], [], set()
 
-    def add(pack, steam_ids, label, mod_id=""):
-        path = packs.find(pack, steam_ids, mod_id)
+    def add(pack, steam_ids, label, mod_id="", exact=None):
+        # A list may name the exact file to test (a fix posted on Discord next to the mod's own older copy).
+        path = Path(exact) if exact and Path(exact).exists() else packs.find(pack, steam_ids, mod_id)
         if not path:
             missing.append(f"{pack} ({label})")
             return
@@ -168,7 +169,7 @@ def plan(preset: dict, packs: Packs) -> dict:
             notes.append(f"{label}: Steam collection, skipped")
             continue
         if (e.get("pack") or "").lower().endswith(".pack"):
-            add(e["pack"], sids, label, t.get("mod", ""))
+            add(e["pack"], sids, label, t.get("mod", ""), e.get("path"))
             continue
         notes.append(f"{label}: the template names the mod, not a pack; using its default packs")
         for p in needed_packs(mod):

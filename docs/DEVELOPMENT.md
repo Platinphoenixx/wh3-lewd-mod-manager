@@ -294,7 +294,8 @@ over all layers – fix texts there.
   the main menu is recorded in `curator/raw/launch_mods.json` (game version, date). `--presets <file>` adds lists that
   are not templates – the profiles Play makes from every size and random choices (generator and halving helper in the dev
   tools); their results stay in the test folder. Of two packs with the same name the copy in the mod's own archive folder
-  (`ll/<id>`, `nexus/<id>`) is used. Every result also goes into
+  (`ll/<id>`, `nexus/<id>`) is used. A list entry can name the exact file to test (`path`, e.g. a fix posted on Discord next to
+  the mod's own older copy). Every result also goes into
   `curator/raw/launch_results.json` (result, game version, date, a fingerprint of the template's packs); the build
   sets `Preset.launchTest` only while the template still has exactly the tested packs, and the app shows
   "launch-tested" from it.

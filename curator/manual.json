@@ -718,13 +718,13 @@
           "file": "@Soil_Miaoying_Corrupted_Units.pack",
           "from": "download",
           "optional": true,
-          "note": "Broken since patch 9.0: the game stops at launch with a database error (launch test 2026-11-03); the Soil Merged Pack replaces it for Miao Ying"
+          "note": "Broken since patch 9.0: the game stops at launch with a database error (launch test 2026-11-03); MrDustV's fixed copy pinned in #soiled-projects (2026-10-19) also stops it with game 9.0.5, alone and with its requirements (launch test 2026-11-15). The Soil Merged Pack works for the ATB / Azazel's Realm lists"
         },
         {
           "file": "@Soil_Azazel_Corrupted_Units.pack",
           "from": "download",
           "optional": true,
-          "note": "Broken since patch 9.0: the game stops at launch with a database error in land_units_to_unit_abilites_junctions (launch test 2026-11-03, also alone); the Soil Merged Pack replaces it for Azazel"
+          "note": "Broken since patch 9.0: the game stops at launch with a database error in land_units_to_unit_abilites_junctions (launch test 2026-11-03, also alone); MrDustV's fixed copy pinned in #soiled-projects (2026-09-29) also stops it with game 9.0.5, alone and with Azazel's Realm (launch test 2026-11-15). The Soil Merged Pack works for the ATB / Azazel's Realm lists"
         },
         {
           "file": "@Soil_Kislev_Corrupted_Units.pack",
