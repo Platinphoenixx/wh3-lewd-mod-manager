@@ -623,6 +623,27 @@
       ]
     },
     {
+      "id": "ll-24571", "_replaces": ["packs"],
+      "tags": ["katarin", "reskin"],
+      "packs": [
+        {
+          "file": "Miaoying(tit).pack",
+          "from": "download",
+          "optional": true,
+          "note": "Broken: the game stops at launch with a database error in land_units_to_unit_abilites_junctions (launch test 2026-11-14, game 9.0.5, also alone); do not use"
+        },
+        {
+          "file": "katarin(tit).pack",
+          "from": "download",
+          "optional": true,
+          "note": "Katarin part; use only if you want this look"
+        }
+      ],
+      "knownIssues": [
+        "The Miao Ying part (Miaoying(tit).pack, 2023) stops the game at launch with a database error since the 9.0 update, also when it is the only mod (launch test 2026-11-14). The Katarin part still reaches the main menu."
+      ]
+    },
+    {
       "id": "ll-23966", "_replaces": ["packs"],
       "packs": [
         {

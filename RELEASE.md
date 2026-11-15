@@ -43,8 +43,10 @@ and Discord: what each mod does, what it needs, what it does not go with, and a 
   instead of downloaded again.
 - Old copies that would shadow a newer version are moved to a backup folder. The game starts with exactly the
   profile's load order, loading only the version you chose when a mod comes in several.
-- Every template and every size Play offers was launch-tested: it reaches the main menu with game version 9.0.5.
-  *(Fill in the result of the launch test before publishing.)*
+- Every template and every size Play offers was launch-tested with game version 9.0.5 (2026-11-14/15): all 37 templates
+  and 143 of 144 Play profiles (every size plus random choices) reach the main menu. The one that did not carried a mod
+  part that no longer starts with the current game (the Miao Ying part of Miaoying(tit) & Katarin(tit)); it is now marked
+  and never offered.
 
 **Your own lists**
 - Import a list that works for you from the CA launcher or the WH3 Mod Manager: it stays as you played it, the

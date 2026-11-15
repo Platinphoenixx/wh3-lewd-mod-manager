@@ -200,7 +200,33 @@ def set_intro(enabled: bool):
     PREFS.write_text(re.sub(r"fe_game_intro_video_enabled (true|false);", f"fe_game_intro_video_enabled {'true' if enabled else 'false'};", t), "utf-8")
 
 
+def game_running() -> bool:
+    return "Warhammer3.exe" in subprocess.run(["tasklist", "/FI", "IMAGENAME eq Warhammer3.exe"], capture_output=True, text=True,
+                                              encoding="mbcs", errors="replace").stdout
+
+
+def wait_game_gone(limit: int = 120):
+    """A killed game can take a while to let go of its single-instance mutex; a start before that only shows "Mutex error"."""
+    t0 = time.time()
+    while game_running() and time.time() - t0 < limit:
+        time.sleep(3)
+    if game_running():
+        subprocess.run(["taskkill", "/IM", "Warhammer3.exe", "/T", "/F"], capture_output=True)
+        time.sleep(10)
+    time.sleep(5)
+
+
 def run_one(p: dict, game: Path, work: Path) -> dict:
+    for attempt in range(3):
+        wait_game_gone()
+        r = run_once(p, game, work)
+        if "Mutex error" not in r["detail"]:
+            return r
+        time.sleep(30)  # the game's own mutex, not the list: try again
+    return r
+
+
+def run_once(p: dict, game: Path, work: Path) -> dict:
     out = work / p["id"]
     if out.exists():
         shutil.rmtree(out)
@@ -290,8 +316,7 @@ def main():
             for n in p["notes"]:
                 print("      note", n)
         return
-    if "Warhammer3.exe" in subprocess.run(["tasklist", "/FI", "IMAGENAME eq Warhammer3.exe"], capture_output=True, text=True,
-                                          encoding="mbcs", errors="replace").stdout:
+    if game_running():
         sys.exit("The game is running; close it first.")
     intro = "fe_game_intro_video_enabled true;" in PREFS.read_text("utf-8")
     shutil.copy(PREFS, work / "preferences.backup.txt")
