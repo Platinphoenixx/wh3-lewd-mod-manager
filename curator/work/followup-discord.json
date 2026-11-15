@@ -286,7 +286,9 @@
         "Steam copy can stay on an outdated version (it may even show an old date), then new content is missing or the game crashes; the full pack is roughly 1.6 GB. Unsubscribe, wait a couple of minutes, resubscribe and check that Steam really downloads the update.",
         "Total Warmaidens reskins clash with units shared with this mod (Centigors of Tzeentch, Minotaurs, Chaos Spawn): both replace the same models, so some conflict cannot be avoided. Zeta's beastmen reskin (Beauty and Beasts) is not really compatible: both change the Minotaur skin and Community Beastmen wins regardless of load order. Zeta's faction-specific packs are fine.",
         "Mods that add items or ancillaries (for example 'New Legendary Lord and Hero Artefacts', 'Just More Items') conflict with this mod's own auxiliary and item changes.",
-        "Under Tabletop Caps the units added by this mod (mercenaries, corrupted elves) count as basic units without a cap; no compatibility submod existed as of 2026-01-24."
+        "Under Tabletop Caps the units added by this mod (mercenaries, corrupted elves) count as basic units without a cap; no compatibility submod existed as of 2026-01-24.",
+        "Since the 9.0.x game updates several capture quest battles fail, according to its author (2026-11-07 and 11-11): Elspeth's quest battle was removed (she now joins when Nuln is captured), and Bhashiva's quest battle may skip its cutscene and never complete. Spawn such a lord with the console commands from the pinned guide.",
+        "The game's own Beastmen tree building is broken since 9.0.x (also without mods), so since the update of 2026-11-07 the mod's special units are recruited from the Gor building until the game is fixed (its author)."
       ],
       "installNotes+": [
         "Update of 2026-11-08 (full version): the Elspeth quest battle, broken since patch 9.0, is gone for now and she spawns when you capture Nuln; special units can be recruited from the gor building for the time being; new coordinates for Hellebron's quest battle.",
