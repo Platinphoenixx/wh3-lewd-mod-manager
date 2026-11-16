@@ -45,7 +45,8 @@ community contributions. App UI and catalog texts are English.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
     bound of the votes); one with 5+ votes and 80 %+ "worked" is shown on top as the community favourite. A setup's page
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
-    `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`).
+    `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`:
+    an entry that names no pack is shared with the mod's own packs; the build repairs setups app 0.1.0 shared with the mod's name).
     After a game session of 20 minutes or more, one card per profile and day asks "Did it work?" (`App.tsx`, relay `/vote`).
     "Play with a mod…" (`PlayWith.tsx` + `src/shared/playwith.ts`, tested): a search by name or Steam/LoversLab/Nexus link;
     for the chosen mod, the setups whose sizes have it, whose lists offer it (as a character's look, an add-on) or that can
@@ -283,7 +284,8 @@ over all layers – fix texts there.
   requirements of the mods the guide names.
   `manual.json` `presetReplacements` apply to all templates; `noTemplate` lists mods that get no derived template
   (with the reason, e.g. they stop the game at launch); a reason saying "stops the game" also sets `Mod.stopsGame` and a
-  known issue, and the app never suggests such a mod.
+  known issue, and the app never suggests such a mod. `notMods` lists LoversLab pages that are no mods (this app's own
+  page): no automatic entry, not in the catalog.
 - `curator/launch_test.py` (Windows, the game installed): starts the game once per template with exactly its packs
   (hard links in a test folder, its own list file; data folder and the player's lists untouched) and records main
   menu / database error (the game's `crash_report/bad_mods_report.txt`) / crash / script errors.

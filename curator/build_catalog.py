@@ -280,8 +280,17 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
                 else pack_owner.get(e["pack"].lower())
             if not t and not ok:
                 break
-            entries.append({"pack": e["pack"], "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
-                            **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
+            packs = [e["pack"]]
+            m = mods.get(t["mod"]) if t and "mod" in t else None
+            if m and not any(x["file"].lower() == e["pack"].lower() for x in m.get("packs", [])):
+                # App 0.1.0 sent a mod's name for an entry that named no pack: it loads the mod's own packs, and a
+                # pick-one choice stays the player's (the mod's name, as in guide templates).
+                packs = [x["file"] for x in m.get("packs", []) if not x.get("optional") and not x.get("exclusiveGroup")] or [m["name"]]
+            for pack in packs:
+                if any(x["pack"].lower() == pack.lower() for x in entries):
+                    continue
+                entries.append({"pack": pack, "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
+                                **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
         else:
             if not ok:
                 continue

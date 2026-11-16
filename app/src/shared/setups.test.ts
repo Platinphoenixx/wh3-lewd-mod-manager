@@ -115,6 +115,8 @@ describe('shared setups', () => {
     expect(s.base).toBe('miao-early')
     expect(s.entries.map((e) => e.mod).sort()).toEqual(['miao-progression', 'miao-skin-b', 'miao-story'])
     expect(s.own).toEqual(['my_tweaks.pack'])
+    // An added mod names no pack in the profile: its own pack file is shared, never its name.
+    expect(s.entries.find((e) => e.mod === 'miao-skin-b')?.pack).toBe('miao-skin-b.pack')
   })
 })
 

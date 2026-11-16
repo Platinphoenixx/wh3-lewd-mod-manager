@@ -397,7 +397,11 @@ export function setupFromProfile(
       if (!own.includes(ownName(e.key))) own.push(ownName(e.key))
       continue
     }
-    for (const pack of e.packs?.length ? e.packs : [e.pack ?? e.name]) entries.push({ pack, mod: id, ...(e.steamId ? { steamId: e.steamId } : {}) })
+    // An entry that names no pack loads the mod's own packs (a pick-one choice stays the player's: then the mod's name).
+    const fixed = kind === 'mod' ? (index.mods.get(id)?.packs ?? []).filter((p) => !p.optional && !p.exclusiveGroup).map((p) => p.file) : []
+    for (const pack of e.packs?.length ? e.packs : e.pack ? [e.pack] : fixed.length ? fixed : [e.name]) {
+      if (!entries.some((x) => x.pack.toLowerCase() === pack.toLowerCase())) entries.push({ pack, mod: id, ...(e.steamId ? { steamId: e.steamId } : {}) })
+    }
   }
   return { ...words, base: preset.id, playAs: preset.playAs, ...(preset.theme ? { theme: preset.theme } : {}), entries, own }
 }
