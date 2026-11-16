@@ -561,10 +561,13 @@ def main():
     # Which follow-up layer set a field last: manual.json replacing it (silently, as the last layer) goes into the report,
     # so a correction made in a follow-up file is not lost unnoticed.
     field_src, overrides, pending_ops = {}, [], []
+    not_mods = set(load(manual).get("notMods", {})) if manual.exists() else set()  # pages that are no mods
     for p in parts:
         d = load(p)
         name = Path(p).name
         for m in d.get("mods", []):
+            if m["id"] in not_mods:
+                continue
             for f in m:
                 if f.startswith("_") or f == "id":
                     continue

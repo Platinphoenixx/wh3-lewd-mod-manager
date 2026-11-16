@@ -133,6 +133,7 @@ def first_paragraph(text: str, limit: int = 420) -> str:
 def auto_entries() -> list:
     """Entries for every LL file without a curated entry. Facts only, clearly marked as unverified."""
     curated = curated_ids()
+    curated |= set(load(CURATOR / "manual.json", {}).get("notMods", {}))  # pages that are no mods (this app's own page)
     out = []
     for f in sorted(glob.glob(str(CURATOR / "raw" / "ll" / "[0-9]*.json"))):
         d = load(f)
