@@ -1,53 +1,45 @@
-# Catalog update 2026-11-09
+# Catalog update 2026-11-16
 
 ## New mods (automatic entries, please review)
-- Alivia's Lake Tales (Heroes: Ymira, Nymeria and Lyra) (`steam-3832569070`)
-- Hef Unit Upgrades ATB Patch 1.0.0 (`ll-52722`)
-- Masterworks of Vaul's Anvil - Unit Upgrades for High Elves (`steam-2870899314`)
-
-## New versions on LoversLab
-- Battle Angel XXX - An all faction Legendary Hero: None → 2.0.1
+- WH3 Lewd Mod Manager 0.10 (`ll-52883`)
 
 ## Updated on Steam
+- Double Skill Points & Skill Dump
 - Artists' Guild - Get your faction items
-- Cpecific's Traits Manager (+win64)
-- 2789999718
-- Better Alliance
+- 2791241084
 - Radious Total War Mod - Part 3
 - Radious Total War Mod - Part 1
 - Radious Total War Mod - Part 2
-- 麝香鹿姬骑士团 [全派系] - Musk Deer Knight [For All Factions]
-- Radious Total War Mod - Part 4 - Assets
-- Siege AI & Mechanics Overhaul
-- RoR Warband Upgrade (All factions) (精英战帮升级)
-- Better Alliance - Foreign Agents
+- SFO: Grimhammer III - REALM OF RENOWN
+- Mixu's Legendary Lords
+- Tabletop Caps Compatibility Patch (Various - Loreful)
+- [SFO] Double Skill Points
+- Collabs Team: Hertz Province Patrols - Endtimes update 1.4
+- Lily's Bretonnia Overhaul: Definitive Edition - 9.0
+- 2859968660
+- Cataph's Southern Realms (TEB)
 - Lustria Rises - Lizardmen Overhaul
-- Alshua's Ellyrion (High Elf Cavalry)
-- Dynasty of the Damned [7.0]
+- 2953846693
+- Better Sound Levels Mod v8.1
 - Immortal Empires Expanded
-- Dark Fortress Expansion 2
-- SCM Marienburg (9.0)
-- Just Good Babysitter
+- Slaanesh Steals Faction Leaders
+- Just Good UI Mod
+- Lost Calm: Jurassic Normal SFO
+- 3117083206
 - Victory Conditions Overhaul
-- Warband UI Framework
-- Hashut's Zharrhammer Overhaul (Complete Standalone BETA)
-- Helper UI
-- [Endo] Kislev
-- SCM Skaven Clans - 9.0
-- Battle Weather Overhaul
-- Unique Grail Reliquae - Faction Mechanics for Bretonnia
+- Warband Upgrades for Radious
+- The Phoenix Court (High Elf Politics)
+- 3381165001
+- [9.x.x] Land Encounters And Points Of Interest - Events, Towers, Taverns, Boons & Curses + IEE + TOW
+- 3412814098
+- 3429217696
+- 3439800142
+- 3440622100
+- 3474483873
 - Campaign AI Tweaks
-- ChopChop's WH3: Assets
-- AI Camping Settlements Fix
-- Alarielle wood elves IEE compatibility patch
-- [Endo] Combined Faction Reskins
-- 3718883838
 - Wyccc's English Patch Collection
-- Cute Girls of Vampire Counts ([Reskin]可爱吸血鬼——吸血鬼伯爵娘化)
-- Slaanesh Expedition (色孽远征)
-- Slaanesh Expedition - English Translation
-- High elf ice witch plus
-- Lord Hero Swap – 9.0 Fix (Unofficial) (领主和英雄切换9.0 修复版)
-- 3810954587
-- 3815990781
+- [EN patch] The Coming of Winter: Katarin Faction Expansion
+- Citadel of Dusk Standalone (Dust)
+- Alivia's Lake Tales (Heroes: Ymira, Nymeria and Lyra)
+- Female Auxiliaries - New Recruitable Units (Endotw)
 

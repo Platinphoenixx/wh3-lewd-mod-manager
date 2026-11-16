@@ -1,0 +1,49 @@
+{
+  "url": "https://www.loverslab.com/files/file/52883-wh3-lewd-mod-manager/",
+  "title": "WH3 Lewd Mod Manager 0.10",
+  "images": {
+    "thumbnail": "https://static.loverslab.com/screenshots/monthly_2026_11/0-play.thumb.jpeg.46dcd40a8c8e32a79de5e6fff0b38d37.jpeg",
+    "screenshots": [
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/0-play.jpeg.d061cd72fdf8d311a502fc1cf75bc819.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/0-play.thumb.jpeg.46dcd40a8c8e32a79de5e6fff0b38d37.jpeg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/1-sizes.jpeg.aa891bc9ff90b156459ef6270d2e5d46.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/1-sizes.thumb.jpeg.de1e461dd3694a5f2b6e3b641b8b20c4.jpeg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/2-choices.jpeg.3778a70083c955c4732561fdc166b456.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/2-choices.thumb.jpeg.9b8671744082a3dc9508bb47de457640.jpeg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/3-review.jpeg.aaaa73f4257218b1947fb4cc3402ca30.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/3-review.thumb.jpeg.0bf3e9e941577d6438ea14d1c78f614e.jpeg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/4-load-order.jpeg.d6fd19ef62d315ac400f2a86f8ba4170.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/4-load-order.thumb.jpeg.30f20e196cd4ee83d40fb57a7636db25.jpeg"
+      },
+      {
+        "full": "https://static.loverslab.com/screenshots/monthly_2026_11/5-made-by.jpeg.f8ed3da14a7b1a5014b9a5b90b64585c.jpeg",
+        "thumb": "https://static.loverslab.com/screenshots/monthly_2026_11/5-made-by.thumb.jpeg.a5e412cdd243c11cc422c7cab1638d14.jpeg"
+      }
+    ],
+    "inline": []
+  },
+  "version": null,
+  "author": "Platinphoenixx",
+  "author_url": "https://www.loverslab.com/profile/438159-platinphoenixx/",
+  "tags": [],
+  "submitted": "2026-11-16T00:19:18Z",
+  "updated": "2026-11-16T00:19:18Z",
+  "downloads": "86",
+  "steam_ids": [],
+  "ll_file_links": [],
+  "description": "18+, Windows only. Free, source on GitHub.\n\nI got tired of piecing lists together from LoversLab pages, Workshop descriptions and pinned Discord messages, so I wrote a small app for it.\n\nIt has a catalog of the lewd mods (about 550 right now): what each one does, what it needs, what it conflicts with and where it goes in the load order. I took that from the mod pages, the Lewdhammer wiki and the Discord, and checked it against the actual pack files where I could.\n\nYou can add mods, get suggestions and even import existing lists to check game version compatibility.\n\nHow it works\n\nOn the Play tab you pick a character (Alarielle, Morathi, Miao Ying, Katarin, Valkia, Beastmen, Greenskins and so on) and how big you want the list to be, from just the basics to everything that fits. Then it asks a few questions, like which look you want for her or which army reskin, and saves the result as a profile. You can still change everything by hand afterwards.\n\nLords that have no campaign mod of their own (Sisters of Twilight, Repanse, Neferata, Hellebron …) get their reskins and the add-ons that work in any campaign.\n\nIf you already have a working list in the CA launcher or the WH3 Mod Manager, you can import it. It stays as it is. The app only points out what it thinks might be a problem and suggests other mods that would fit.\n\nInstalling\n\n-\nWorkshop mods get subscribed through Steam.\n\n-\nLoversLab and Nexus files are downloaded in a window inside the app, with your own login. You still click the download yourself, and LoversLab’s normal limits apply.\n\n-\nIf the files are already in your Downloads folder, it uses those.\n\n-\nOld copies in the data folder that would override a newer Workshop version are moved to a backup folder.\n\n-\nThe Play button starts the game with exactly that list.\n\nI started every template and every list size once with game version 9.0.5, and they all reach the main menu. The one mod part that didn’t (the Miao Ying half of Miaoying(tit) & Katarin(tit)) is marked as broken and won’t be offered.\n\nOther stuff\n\n-\nAfter you close the game it shows script errors per mod and can make a report you can send to the modder. Your user name and folders are removed from it.\n\n-\nYou can share a list that works for you and mark afterwards whether it worked. No account needed.\n\n-\nEach list shows who made the mods in it, with their Patreon / Ko-fi links if they have one.\n\nDownload\n\n<https://github.com/Platinphoenixx/wh3-lewd-mod-manager/releases>\n\n-\nSetup installs it, portable runs without installing.\n\n-\nIt isn’t code-signed, so Windows may warn the first time: More info → Run anyway.\n\n-\nThe mod catalog updates itself once a day. New app versions are announced in the app but never installed automatically.\n\n-\n\nAll mods belong to their authors. The app only links to their pages, and all downloads come from there.\n\nIf something in the catalog is wrong, use “Flag as wrong” in the app or write here.",
+  "changelog_latest": null,
+  "download_url": "https://www.loverslab.com/files/file/52883-wh3-lewd-mod-manager/?do=download",
+  "id": "52883",
+  "category": "mods",
+  "fetched": "2026-11-16T12:53:30+00:00"
+}

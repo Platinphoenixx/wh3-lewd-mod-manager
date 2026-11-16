@@ -1,15 +1,37 @@
 {
  "readman-alarielle-early": {
   "down": 0,
-  "up": 1
+  "up": 4
  },
  "readman-miao-early": {
-  "down": 0,
-  "up": 1
+  "down": 1,
+  "reasons": {
+   "start": 1
+  },
+  "up": 2
+ },
+ "readman-sigvald-early": {
+  "down": 1,
+  "reasons": {
+   "campaign": 1
+  },
+  "up": 0
  },
  "setup-beastmen": {
   "down": 0,
+  "up": 2
+ },
+ "setup-corrupted-ascension": {
+  "down": 0,
   "up": 1
+ },
+ "setup-greenskins": {
+  "down": 0,
+  "up": 1
+ },
+ "setup-imrik": {
+  "down": 0,
+  "up": 2
  },
  "vanilla-sisters-of-twilight": {
   "down": 0,
