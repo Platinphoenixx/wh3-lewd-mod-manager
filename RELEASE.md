@@ -14,7 +14,19 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
-## Notes for the first release (draft, 0.1.0)
+## Notes for 0.1.1
+
+**WH3 Lewd Mod Manager 0.1.1 – small fixes. 18+ only.**
+
+- *Share your setup*: mods you added to a list by hand are now shared with their pack files. 0.1.0 sent their names
+  instead; the catalog repairs setups shared that way, so nothing you already shared is lost.
+- *Play*: *Themes* now come before *In the game's own campaign*.
+
+The catalog keeps updating itself as before (new since 0.1.0, among others: Kerberos' Alarielle-Morathi expansion for ATB,
+launch-tested with the Alarielle early game list). Windows only. Not code-signed: SmartScreen or your browser may warn
+once because the app is new (*More info → Run anyway* / *Keep*); no antivirus engine on VirusTotal flagged 0.1.0.
+
+## Notes for the first release (0.1.0)
 
 **WH3 Lewd Mod Manager 0.1.0 – first public version. 18+ only.**
 
