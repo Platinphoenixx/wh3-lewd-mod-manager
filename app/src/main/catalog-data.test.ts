@@ -85,7 +85,8 @@ describe('catalog', () => {
         const pre = g.pick.find((x) => x.key === g.preselect)
         if (!pre) continue
         if (pre.replaces) bad.push(`${p.id}: ${pre.key} replaces ${pre.replaces.join(', ')}`)
-        if (conflictsIn(index, [...baseKeys(p), pre.key]).length) bad.push(`${p.id}: ${pre.key} conflicts`)
+        // Only the choice's own conflicts: a list players shared may hold conflicting mods already (it runs for them).
+        if (conflictsIn(index, [...baseKeys(p), pre.key]).some((c) => c.a === pre.key || c.b === pre.key)) bad.push(`${p.id}: ${pre.key} conflicts`)
       }
     }
     expect(bad).toEqual([])
