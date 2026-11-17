@@ -86,7 +86,8 @@ export function ModSearch({ facts, onFocus, onPick }: { facts: SubjectFacts[] | 
 }
 
 const FROM: Record<TierId, string> = {
-  essentials: 'every size from Essentials', full: 'Full campaign and larger', extended: 'Extended and Everything', everything: 'Everything'
+  essentials: 'every size from Essentials', full: 'Full campaign and larger', extended: 'Extended and Everything', everything: 'Everything',
+  community: 'the community favourite'
 }
 
 /** Where a mod stands: the setups it is in or fits, or why it is not offered (with fixes players shared). */

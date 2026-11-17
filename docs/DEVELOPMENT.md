@@ -43,11 +43,18 @@ community contributions. App UI and catalog texts are English.
     (one Sexiest Grand Cathay pack per unit) joins the army's choice and goes with the packs of other units, and two army packs
     whose models differ do not exclude each other.
     Shared setups (`origin: "community"`) are listed under "Setups from the community", best rated first (Wilson lower
-    bound of the votes); one with 5+ votes and 80 %+ "worked" is shown on top as the community favourite. A setup's page
+    bound of the votes); the community favourite (`favouriteOf`: the most "worked" votes, at least 10 and more than "didn't") stands as a fifth card next to the sizes and is chosen like one. A setup's page
     shows what it adds to and leaves out of its template; "Use this setup" leads through the same choices.
     `ShareDialog.tsx` shares a profile (Share… in the editor, "Share your setup" on a character's page; `setupFromProfile`:
     an entry that names no pack is shared with the mod's own packs; the build repairs setups app 0.1.0 shared with the mod's name).
     After a game session of 20 minutes or more, one card per profile and day asks "Did it work?" (`App.tsx`, relay `/vote`).
+    A profile Play makes from a shared setup counts once per install (relay `/use` → `raw/uses.json` → `Preset.uses`, "N players
+    use it"). Community → "Your shared setups" lists what this install shared (`userData/shared-setups.json`) with its votes, the
+    reasons it did not work (`votes.reasons`), its users and whether a maintainer corrected it (`community.corrected`); "Edit your
+    notes…" changes its name and words (relay `/setup/edit`, only from the install that shared it). "Sent contributions" shows
+    what became of each (its GitHub issue, read without a token at most daily, `main/contribStatus.ts`) and of flagged rules.
+    At start `newsFor` (`shared/community.ts`, tested) turns what changed since last time (`userData/news-seen.json`) into a few
+    "News" cards: a setup now in Play, more players saying it worked or using it, a contribution added or not, a flag decided.
     "Play with a mod…" (`PlayWith.tsx` + `src/shared/playwith.ts`, tested): a search by name or Steam/LoversLab/Nexus link;
     for the chosen mod, the setups whose sizes have it, whose lists offer it (as a character's look, an add-on) or that can
     take it without a conflict, the mod's own character first. A mod that belongs to one setup goes straight to its sizes;

@@ -7,7 +7,7 @@ import { matchInstalled, parseTargetKey, targetKey } from '@shared/match'
 import { playWith, subjectFacts } from '@shared/playwith'
 import { conflictsIn, resolveProfile, type Profile } from '@shared/profile'
 import {
-  communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
+  communityOf, favouriteOf, guidedProfile, lateListOf, setupDiff, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine,
   type Step, type Subject, type Tier
 } from '@shared/setups'
 import { containedIn, hiddenBy, lookGiver, lookedAt, type PickOne, type Suggestion } from '@shared/suggest'
@@ -152,7 +152,9 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
   }), [data.catalog, data.index, subject, pin])
   const tiers = sized.filter((x) => !x.conflicts.length).map((x) => x.t)
   const shared = communityOf(subject)
-  const favourite = pin ? undefined : shared.find((p) => isFavourite(p.votes))
+  const favourite = pin ? undefined : favouriteOf(shared)
+  // The community favourite stands next to the sizes and is chosen like one; Continue takes it as it was shared.
+  const favTier = useMemo<Tier | undefined>(() => (favourite ? { ...setupTier(favourite), id: 'community' } : undefined), [favourite])
   const [sharing, setSharing] = useState(false)
   const [chosen, setChosen] = useState<Tier | undefined>(() => (pin ? sized.find((x) => x.has)?.t : undefined) ?? tiers.find((t) => t.recommended) ?? tiers[0])
   const main = tiers.find((t) => t.recommended) ?? tiers[0]
@@ -207,6 +209,17 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
             <div className={`proof${t.tested ? '' : ' no'}`}>{t.tested ? '✓ ' : ''}{t.proof}{pinned && !has && t.tested ? ` (without ${pinned.name})` : ''}</div>
           </div>
         ))}
+        {favourite && favTier && (
+          <div className={`play-tier${chosen?.id === 'community' ? ' sel' : ''}`} onClick={() => setChosen(favTier)}>
+            <div className="rec">Community favourite</div>
+            <h3>{favourite.name}</h3>
+            <div><span className="size">{favourite.entries.length}</span> <span className="muted">mods</span></div>
+            <ul><FavouriteLines p={favourite} /></ul>
+            <div className="spacer" />
+            <div className="small">▲ {favourite.votes!.up} worked · ▼ {favourite.votes!.down} didn't</div>
+            <div className="proof">Most popular shared setup · <a onClick={(e) => { e.stopPropagation(); onOpenSetup(favourite) }}>look inside</a></div>
+          </div>
+        )}
       </div>
       {late && (
         <p className="callout">
@@ -218,19 +231,6 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
         {chosen && <button className="primary" onClick={() => onContinue(chosen)}>Continue with {chosen.name} →</button>}
         <span className="small muted">Next: a few choices with pictures, then the download.</span>
       </div>
-      {favourite && (
-        <div className="play-fav">
-          <div>
-            <div className="rec">Community favourite</div>
-            <h3>{favourite.name}</h3>
-            <div className="small muted"><SetupFacts p={favourite} /></div>
-          </div>
-          <div className="right">
-            <Votes p={favourite} />
-            <button className="primary" onClick={() => onOpenSetup(favourite)}>Look inside →</button>
-          </div>
-        </div>
-      )}
       <div className="play-head play-section">
         <h3>Setups from the community</h3>
         <button onClick={() => setSharing(true)}>Share your setup</button>
@@ -281,6 +281,21 @@ function SetupFacts({ p }: { p: Preset }) {
       {p.entries.length} mods{p.community?.far ? ` · played to ${p.community.far}` : ''}{p.community?.game ? ` · game ${p.community.game}` : ''}
       {` · shared by ${p.source.author ?? 'anonymous'}`}{p.source.date ? ` · ${p.source.date}` : ''}
       {p.community?.reviewed === false ? ' · not reviewed' : ''}
+    </>
+  )
+}
+
+/** The community favourite's card: who shared it and how far they played, what it changes in its template, the game. */
+function FavouriteLines({ p }: { p: Preset }) {
+  const data = useData()
+  const base = data.catalog.presets.find((x) => x.id === p.community?.base)
+  const d = setupDiff(p, base)
+  return (
+    <>
+      <li>Shared by {p.source.author ?? 'anonymous'}{p.community?.far ? ` · played to ${p.community.far}` : ''}</li>
+      {base && <li>{base.name}{d.added.length ? ` + ${d.added.length}` : ''}{d.dropped.length ? ` − ${d.dropped.length}` : ''}</li>}
+      {p.community?.game && <li>Game {p.community.game}</li>}
+      {p.community?.reviewed === false && <li>Not reviewed yet</li>}
     </>
   )
 }
@@ -562,6 +577,8 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
 
   function save(view: 'choices' | 'install') {
     const p = profile()
+    // A profile made from a shared setup counts for "N players use it" (once per install; nothing else is sent).
+    if (tier.preset.origin === 'community' && data.relayUrl) void window.api.sendUse(tier.preset.id).catch(() => {})
     void window.api.saveProfile(p).then(() => data.openProfile({ profile: p.id }, view))
   }
 

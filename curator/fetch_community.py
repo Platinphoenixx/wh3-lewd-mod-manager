@@ -36,10 +36,13 @@ def main() -> int:
         print("RELAY_URL / RELAY_EXPORT_TOKEN not set; nothing fetched")
         return 0
     setups = [{k: s[k] for k in KEEP if s.get(k) not in (None, "", [])} for s in get(base, token, "/setups").get("setups", [])]
+    exported = get(base, token, "/votes")
     votes = {k: {"up": v["up"], "down": v["down"], **({"reasons": v["reasons"]} if v.get("reasons") else {})}
-             for k, v in get(base, token, "/votes").get("votes", {}).items()}
+             for k, v in exported.get("votes", {}).items()}
     write(RAW / "community_setups.json", sorted(setups, key=lambda s: s["at"]))
     write(RAW / "votes.json", votes)
+    # Installs that made a profile from a setup (counts only).
+    write(RAW / "uses.json", exported.get("uses", {}))
     # Rules players flagged as wrong, as counts per rule (the texts are in the rule's GitHub issue).
     try:
         write(RAW / "flags.json", get(base, token, "/flags").get("flags", {}))

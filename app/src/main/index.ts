@@ -8,7 +8,7 @@ import type { FileHint } from '@shared/install'
 import { DEFAULTS, type FlagDecision, type GameScan, type RelayContribution, type RelayFlag, type RelayReport, type RelayResult, type ScriptReport, type Settings } from '@shared/api'
 import { parseLuaLog } from '@shared/health'
 import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@shared/importlist'
-import type { Contribution, UserRule } from '@shared/community'
+import type { Contribution, NewsSeen, SharedRecord, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
 import type { LaunchSnapshot } from '@shared/report'
 import type { SharedSetup } from '@shared/setups'
@@ -20,6 +20,7 @@ import { cachedPackIndex, packConflicts, packFacts } from './pack'
 import { launchGame } from './launch'
 import { checkAppUpdate } from './appUpdate'
 import { accept, clearToken, decideFlag, listReview, reject, setToken, status as maintainerStatus } from './maintainer'
+import { contributionStatus } from './contribStatus'
 import { subscribeWorkshop, workshopDetails } from './steam'
 import {
   backupPacks, downloadFromLoversLab, downloadFromNexus, downloadQueueFromLoversLab, installFile, installFiles, setCatalogPacks, type InstalledRecord, type QueueJob
@@ -187,6 +188,15 @@ ipcMain.handle('maint:accept', async (_e, n: number) => accept(await repo(), n))
 ipcMain.handle('maint:reject', async (_e, n: number, reason: string) => reject(await repo(), n, reason))
 ipcMain.handle('maint:flag', async (_e, n: number, decision: FlagDecision, answer?: string) => decideFlag(await repo(), n, decision, answer))
 ipcMain.handle('relay:vote', async (_e, v: { setup: string; worked: boolean; reason?: string }) => relay('/vote', { ...v, installId: await installId() }))
+// The player's own shared setups (edit their words, count a profile made from one) and what became of their contributions.
+ipcMain.handle('relay:setupEdit', async (_e, s: { id: string; name: string; shownAs?: string; far?: string; notes?: string }) =>
+  relay('/setup/edit', { ...s, installId: await installId() }))
+ipcMain.handle('relay:use', async (_e, setup: string) => relay('/use', { setup, installId: await installId() }))
+ipcMain.handle('shared:list', () => readJson<SharedRecord[]>('shared-setups.json', []))
+ipcMain.handle('shared:save', (_e, list: SharedRecord[]) => writeJson('shared-setups.json', list))
+ipcMain.handle('contrib:status', (_e, urls: string[]) => contributionStatus(urls))
+ipcMain.handle('news:seen', () => readJson<NewsSeen>('news-seen.json', { setups: {}, contributions: {}, flags: {} }))
+ipcMain.handle('news:save', (_e, seen: NewsSeen) => writeJson('news-seen.json', seen))
 ipcMain.handle('relay:flag', async (_e, f: RelayFlag) => relay('/flag', { ...f, app: app.getVersion(), installId: await installId() }))
 ipcMain.handle('dialog:saveText', async (e, name: string, text: string) => {
   const pick = await dialog.showSaveDialog(BrowserWindow.fromWebContents(e.sender)!, {

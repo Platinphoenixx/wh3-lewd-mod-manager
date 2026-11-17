@@ -25,6 +25,89 @@ export interface Contribution {
   payload: Record<string, unknown>
   createdAt: string
   sentAs?: 'issue' | 'clipboard' | 'relay'
+  /** The GitHub issue the relay filed for it (its status is looked up there). */
+  url?: string
+}
+
+/** A setup this install shared (relay /setup): what the app needs to show it under "Your shared setups" and edit it. */
+export interface SharedRecord {
+  /** The relay's id; the catalog shows it as template `community-<id>`. */
+  id: string
+  name: string
+  shownAs?: string
+  far?: string
+  notes?: string
+  at: string
+}
+
+/** What became of a contribution the relay filed as a GitHub issue, from the issue itself (looked up at most daily). */
+export interface ContributionStatus {
+  state: 'waiting' | 'added' | 'not-added'
+  /** A maintainer's reason when it was not added. */
+  reason?: string
+  checkedAt: string
+}
+
+/** What the player was last told about: per own setup the counts, per contribution or flagged rule its state. */
+export interface NewsSeen {
+  setups: Record<string, { up: number; down: number; uses: number }>
+  contributions: Record<string, ContributionStatus['state']>
+  flags: Record<string, string>
+}
+
+export interface News {
+  text: string
+  /** Where the card's button leads. */
+  to: 'setups' | 'contributions'
+}
+
+/**
+ * What changed for the player's own setups, contributions and flags since they were last told (one card each), and the
+ * new state to remember. A setup that is not in the catalog yet says nothing; the first time it is, it says so.
+ */
+export function newsFor(
+  catalog: Catalog, shared: SharedRecord[], contributions: Contribution[], statuses: Record<string, ContributionStatus>,
+  flagged: Record<string, string>, seen: NewsSeen
+): { news: News[]; seen: NewsSeen } {
+  const news: News[] = []
+  const next: NewsSeen = { setups: { ...seen.setups }, contributions: { ...seen.contributions }, flags: { ...seen.flags } }
+  const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`
+  for (const s of shared) {
+    const p = catalog.presets.find((x) => x.id === `community-${s.id}`)
+    if (!p) continue
+    const now = { up: p.votes?.up ?? 0, down: p.votes?.down ?? 0, uses: p.uses ?? 0 }
+    const was = seen.setups[s.id]
+    next.setups[s.id] = now
+    if (!was) news.push({ text: `Your setup “${p.name}” is in Play now – other players can find it there.`, to: 'setups' })
+    else if (now.up > was.up || now.uses > was.uses) {
+      const parts = [
+        now.up > was.up ? `${plural(now.up - was.up, 'more player', 'more players')} said your setup “${p.name}” worked` : `More players use your setup “${p.name}”`,
+        now.uses ? `${plural(now.uses, 'player uses', 'players use')} it now` : ''
+      ].filter(Boolean)
+      news.push({ text: `${parts.join(' – ')}.`, to: 'setups' })
+    }
+  }
+  for (const c of contributions) {
+    const st = c.url ? statuses[c.url] : undefined
+    if (!c.url || !st || st.state === 'waiting' || seen.contributions[c.url] === st.state) continue
+    next.contributions[c.url] = st.state
+    news.push({
+      text: st.state === 'added' ? `Your contribution “${c.title}” is in the catalog now. Thank you!` : `Your contribution “${c.title}” was not added${st.reason ? `: ${st.reason}` : '.'}`,
+      to: 'contributions'
+    })
+  }
+  for (const rule of Object.keys(flagged)) {
+    const f = catalog.ruleFlags?.[rule]
+    if (!f?.decision || seen.flags[rule] === f.decision) continue
+    next.flags[rule] = f.decision
+    news.push({
+      text: f.decision === 'retired' ? 'A rule you flagged as wrong is out of the catalog now. Thank you!'
+        : f.decision === 'changed' ? `A rule you flagged has a new reason: ${f.answer ?? ''}`.trim()
+        : `A rule you flagged was checked and stays${f.answer ? `: ${f.answer}` : '.'}`,
+      to: 'contributions'
+    })
+  }
+  return { news, seen: next }
 }
 
 export const CONTRIBUTION_LABEL: Record<ContributionType, string> = {

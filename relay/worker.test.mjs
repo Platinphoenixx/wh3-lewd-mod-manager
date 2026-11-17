@@ -104,6 +104,30 @@ const shared = (await (await call('GET', '/setups', null, { authorization: 'Bear
 assert.equal(shared.length, 2)
 assert.ok([...store.keys()].every((k) => !k.includes('install-')))
 
+// Only the install that shared a setup can change its words; links go as everywhere.
+const e = from('8.8.8.8')
+r = await e('POST', '/setup/edit', { id: auto.id, installId: 'install-b', name: 'Taken over' })
+assert.equal(r.status, 400)
+assert.match((await r.json()).message, /Only the app that shared/)
+r = await e('POST', '/setup/edit', { id: auto.id, installId: 'install-a', name: 'Alarielle + heroes, v2', notes: 'Now with Lyra. https://x.example', far: 'turn 200' })
+assert.equal(r.status, 200)
+const edited = JSON.parse(store.get(`setup:${auto.id}`))
+assert.equal(edited.name, 'Alarielle + heroes, v2')
+assert.equal(edited.notes, 'Now with Lyra.')
+assert.equal(edited.far, 'turn 200')
+assert.ok(edited.edited)
+assert.equal((await e('POST', '/setup/edit', { id: 'ffffffffffff', installId: 'install-a', name: 'x' })).status, 400)
+
+// A profile made from a setup counts once per install; the export has the counts, no install ids.
+const u = from('6.6.6.6')
+await u('POST', '/use', { installId: 'install-a', setup: `community-${auto.id}` })
+await u('POST', '/use', { installId: 'install-a', setup: `community-${auto.id}` })
+await u('POST', '/use', { installId: 'install-b', setup: `community-${auto.id}` })
+assert.equal((await u('POST', '/use', { installId: 'install-c', setup: 'Bad Id!' })).status, 400)
+const uses = (await (await call('GET', '/votes', null, { authorization: 'Bearer export' })).json()).uses
+assert.deepEqual(uses, { [`community-${auto.id}`]: 2 })
+assert.ok([...store.keys()].every((k) => !k.includes('install-')))
+
 // One flag per install and rule; all flags on a rule are one issue; a mention cannot notify anyone.
 const rule = 'conflict|mod:a|mod:b'
 const f = from('7.7.7.7')

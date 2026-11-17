@@ -13,6 +13,8 @@
  *   POST /flag          "this rule of the catalog is wrong": one flag per install and rule (the last one counts; `withdraw`
  *                       takes it back). All flags on a rule are one GitHub issue for the maintainers; after a decision a
  *                       new flag opens a new issue with what came after it
+ *   POST /setup/edit    the install that shared a setup changes its name, notes or how far it was played
+ *   POST /use           a player made a profile from a setup: counted once per install and setup ("N players use it")
  *   GET  /setups, /votes, /flags  for the daily catalog update (Authorization: Bearer EXPORT_TOKEN); votes and flags as counts only
  *
  * Nothing about the sender is stored: no IP address, no name; votes and setups keep only a salted hash of the
@@ -34,6 +36,8 @@ export default {
       if (request.method === 'POST' && url.pathname === '/contribution') return await contribution(request, env)
       if (request.method === 'GET' && url.pathname === '/reports') return await exportReports(request, env, url)
       if (request.method === 'POST' && url.pathname === '/setup') return await setup(request, env)
+      if (request.method === 'POST' && url.pathname === '/setup/edit') return await editSetup(request, env)
+      if (request.method === 'POST' && url.pathname === '/use') return await use(request, env)
       if (request.method === 'POST' && url.pathname === '/vote') return await vote(request, env)
       if (request.method === 'POST' && url.pathname === '/flag') return await flag(request, env)
       if (request.method === 'GET' && url.pathname === '/setups') return await exportSetups(request, env)
@@ -189,6 +193,33 @@ async function setup(request, env) {
   })
 }
 
+/** The install that shared a setup changes its words; nobody else can (the setup keeps a hash of that install). */
+async function editSetup(request, env) {
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
+  const b = await request.json()
+  const id = str(b.id, 40, 'id')
+  if (!/^[a-f0-9]{12}$/.test(id)) throw new UserError('Unknown setup.')
+  const raw = await env.REPORTS.get(`setup:${id}`)
+  if (!raw) throw new UserError('This setup is not known (any more).')
+  const entry = JSON.parse(raw)
+  if (entry.by !== (await hash(env, str(b.installId, 64, 'installId')))) throw new UserError('Only the app that shared this setup can change it.')
+  const name = plain(b.name, 120)
+  if (!name) throw new UserError('name is missing.')
+  Object.assign(entry, { name, shownAs: plain(b.shownAs, 40) || undefined, far: plain(b.far, 120) || undefined, notes: plain(b.notes, 1000) || undefined, edited: new Date().toISOString() })
+  await env.REPORTS.put(`setup:${id}`, JSON.stringify(entry))
+  return json({ ok: true, message: 'Saved – the app shows the change within a day.' })
+}
+
+/** A player made a profile from a setup (Play): one count per install and setup, no matter how often. */
+async function use(request, env) {
+  if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
+  const b = await request.json()
+  const setupId = str(b.setup, 80, 'setup')
+  if (!ID.test(setupId)) throw new UserError('Unknown setup.')
+  await env.REPORTS.put(`use:${setupId}:${await hash(env, str(b.installId, 64, 'installId'))}`, '', { metadata: { d: new Date().toISOString().slice(0, 10) } })
+  return json({ ok: true })
+}
+
 async function vote(request, env) {
   if (await limited(request, env)) return json({ ok: false, message: 'Too many sends from here; please wait a minute.' }, 429)
   const b = await request.json()
@@ -315,5 +346,11 @@ async function exportVotes(request, env) {
       if (k.metadata?.r) v.reasons[k.metadata.r] = (v.reasons[k.metadata.r] ?? 0) + 1
     }
   }
-  return json({ ok: true, votes })
+  // Installs that made a profile from a setup, per setup (counts only, like the votes).
+  const uses = {}
+  for (const k of await listAll(env, 'use:')) {
+    const id = k.name.split(':')[1]
+    uses[id] = (uses[id] ?? 0) + 1
+  }
+  return json({ ok: true, votes, uses })
 }

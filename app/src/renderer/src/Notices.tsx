@@ -4,7 +4,7 @@ import { useCallback, useState, type ReactNode } from 'react'
  * Messages as cards in the bottom right corner: what happened, the next step as a button, and a bar
  * that runs down until the card goes away (hovering pauses it). Errors stay longer than the rest.
  */
-export type NoticeKind = 'error' | 'info' | 'done'
+export type NoticeKind = 'error' | 'info' | 'done' | 'news'
 
 export interface NoticeInput {
   kind: NoticeKind
@@ -22,7 +22,7 @@ interface Notice extends NoticeInput {
   version: number
 }
 
-const LABEL: Record<NoticeKind, [string, string]> = { error: ['✕', 'Error'], info: ['•', 'Info'], done: ['✓', 'Done'] }
+const LABEL: Record<NoticeKind, [string, string]> = { error: ['✕', 'Error'], info: ['•', 'Info'], done: ['✓', 'Done'], news: ['★', 'News'] }
 let counter = 0
 
 export function useNotices() {

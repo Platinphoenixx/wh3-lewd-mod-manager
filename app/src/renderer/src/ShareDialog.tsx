@@ -49,8 +49,13 @@ export function ShareDialog({ profile: given, presetIds, onClose }: { profile?: 
     if (!setup) return
     setBusy(true)
     const r = await window.api.sendSetup(setup)
+    // Remembered for "Your shared setups" (Community): votes, players who use it, changing its words later.
+    if (r.ok && r.id) {
+      const mine = await window.api.listShared()
+      await window.api.saveShared([...mine, { id: r.id, name: setup.name, shownAs: setup.shownAs, far: setup.far, notes: setup.notes, at: new Date().toISOString() }])
+    }
     setBusy(false)
-    setDone(r.message)
+    setDone(r.ok ? `${r.message} You find it under Community → Your shared setups.` : r.message)
   }
 
   return (

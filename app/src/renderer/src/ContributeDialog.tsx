@@ -87,6 +87,7 @@ export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onC
       const r = await window.api.sendContribution({ type: req.type, title, body })
       if (r.ok) {
         c.sentAs = 'relay'
+        if (r.url) c.url = r.url
         setDone(`${r.message}${r.url ? ` It is public at ${r.url}` : ''}`)
         await window.api.addContribution(c)
         return

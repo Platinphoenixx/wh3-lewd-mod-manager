@@ -282,6 +282,7 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
     for s in load(path):
         if s["id"] in rejected:
             continue
+        corrected = s["id"] in edits
         s = s | {k: v for k, v in edits.get(s["id"], {}).items() if k in ("name", "playAs") and v}
         reviewed = not s.get("review") or s["id"] in accepted
         entries = []
@@ -324,7 +325,8 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
             **({"description": notes} if notes else {}),
             "entries": entries,
             "community": {k: v for k, v in {"base": s.get("base"), "far": s.get("far"), "game": s.get("game"),
-                                            "own": own, "reviewed": None if reviewed or not own else False}.items()
+                                            "own": own, "reviewed": None if reviewed or not own else False,
+                                            "corrected": True if corrected else None}.items()
                           if v is not None and v != [] and v != ""},
         })
         if not reviewed and own:
@@ -1511,9 +1513,13 @@ def main():
     # "it worked / it didn't" votes from players (curator/fetch_community.py) belong to every template.
     launch = load(CURATOR / "raw" / "launch_results.json") if (CURATOR / "raw" / "launch_results.json").exists() else {}
     votes = load(CURATOR / "raw" / "votes.json") if (CURATOR / "raw" / "votes.json").exists() else {}
+    # Players who made a profile from a shared setup (one per install), for "N players use it".
+    uses = load(CURATOR / "raw" / "uses.json") if (CURATOR / "raw" / "uses.json").exists() else {}
     for p in presets:
         if (v := votes.get(p["id"])) and v["up"] + v["down"]:
-            p["votes"] = {"up": v["up"], "down": v["down"]}
+            p["votes"] = {"up": v["up"], "down": v["down"], **({"reasons": v["reasons"]} if v.get("reasons") else {})}
+        if uses.get(p["id"]):
+            p["uses"] = uses[p["id"]]
     # Fixes are voted on like setups (the app sends their id when a profile uses one).
     for m in mods.values():
         for f in m.get("fixes") or []:
@@ -1597,7 +1603,9 @@ def main():
     # holds back (old and data-changing, not confirmed since the last big update) makes no lord appear.
     for p in (vanilla := vanilla_presets(presets, mods, major)):
         if (v := votes.get(p["id"])) and v["up"] + v["down"]:
-            p["votes"] = {"up": v["up"], "down": v["down"]}
+            p["votes"] = {"up": v["up"], "down": v["down"], **({"reasons": v["reasons"]} if v.get("reasons") else {})}
+        if uses.get(p["id"]):
+            p["uses"] = uses[p["id"]]
     presets += vanilla
 
     rule_flags = apply_rule_flags(mods, presets)

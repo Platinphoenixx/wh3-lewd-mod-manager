@@ -79,7 +79,7 @@ jobs:
             python curator/fetch_community.py
             python curator/build_catalog.py
             git add curator/community.json catalog/catalog.json curator/raw/steam_items.json curator/raw/steam_creators.json
-            git add curator/raw/community_setups.json curator/raw/votes.json curator/raw/flags.json 2>/dev/null || true
+            git add curator/raw/community_setups.json curator/raw/votes.json curator/raw/uses.json curator/raw/flags.json 2>/dev/null || true
             git diff --cached --quiet || git commit -m "Apply contributions:$(echo "$applied" | sed 's/ / #/g')"
             if git push origin HEAD:main; then echo "$applied" > "$RUNNER_TEMP/applied.txt"; exit 0; fi
             echo "push lost a race; rebuilding on the newer main"

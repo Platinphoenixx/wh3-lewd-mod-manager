@@ -105,7 +105,7 @@ const rank = (m: Mod) => { const i = STORY.indexOf(m.kind); return i < 0 ? STORY
 /** Subjects with tested lists first, then guides, then lists built from a mod page. */
 const score = (s: Subject) => s.presets.reduce((n, p) => n + (p.origin === 'tested' ? 100 : p.origin === 'guide' ? 10 : 1), 0)
 
-export type TierId = 'essentials' | 'full' | 'extended' | 'everything'
+export type TierId = 'essentials' | 'full' | 'extended' | 'everything' | 'community'
 
 export interface Tier {
   id: TierId
@@ -349,8 +349,14 @@ export function voteScore(v?: { up: number; down: number }): number {
   return (p + (z * z) / (2 * n) - z * Math.sqrt((p * (1 - p) + (z * z) / (4 * n)) / n)) / (1 + (z * z) / n)
 }
 
-/** Shown on top of a character's page: at least 5 players and 4 of 5 say it worked. */
-export const isFavourite = (v?: { up: number; down: number }) => !!v && v.up >= 5 && v.up / (v.up + v.down) >= 0.8
+/**
+ * The community favourite, shown next to the sizes: the shared setup most players said worked, once at least 10 did and
+ * more said it worked than that it did not (ties: the surer share of "it worked").
+ */
+export function favouriteOf(shared: Preset[]): Preset | undefined {
+  return shared.filter((p) => !!p.votes && p.votes.up >= 10 && p.votes.up > p.votes.down)
+    .sort((a, b) => b.votes!.up - a.votes!.up || voteScore(b.votes) - voteScore(a.votes))[0]
+}
 
 /** The setups players shared for a subject, best rated first. */
 export function communityOf(subject: Subject): Preset[] {

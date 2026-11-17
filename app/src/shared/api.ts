@@ -1,6 +1,6 @@
 import type { LocalMatch, LocalScan } from './localfiles'
 import type { Catalog } from '@catalog/schema'
-import type { Contribution, UserRule } from './community'
+import type { Contribution, ContributionStatus, NewsSeen, SharedRecord, UserRule } from './community'
 import type { ConflictReport } from './conflicts'
 import type { FileHint } from './install'
 import type { FactsReport } from './own'
@@ -123,6 +123,8 @@ export interface RelayResult {
   message: string
   /** GitHub issue of a sent contribution. */
   url?: string
+  /** A shared setup's id (relay /setup). */
+  id?: string
 }
 
 /** Maintainer access (Settings): whether a GitHub token is stored and works. */
@@ -232,6 +234,18 @@ export interface Api {
   sendFlag(f: RelayFlag): Promise<RelayResult>
   /** Shares a profile as a setup other players can install (relay /setup; shown after the daily catalog update). */
   sendSetup(s: SharedSetup): Promise<RelayResult>
+  /** Changes the name and words of a setup this install shared (relay /setup/edit; only that install may). */
+  editSetup(s: { id: string; name: string; shownAs?: string; far?: string; notes?: string }): Promise<RelayResult>
+  /** A profile was made from a shared setup (relay /use; counted once per install and setup). */
+  sendUse(setup: string): Promise<RelayResult>
+  /** Setups this install shared, and saving that list. */
+  listShared(): Promise<SharedRecord[]>
+  saveShared(list: SharedRecord[]): Promise<void>
+  /** What became of contributions the relay filed (their GitHub issues; looked up at most daily per issue). */
+  contributionStatus(urls: string[]): Promise<Record<string, ContributionStatus>>
+  /** What the player was last told about their setups, contributions and flags. */
+  newsSeen(): Promise<NewsSeen>
+  saveNewsSeen(seen: NewsSeen): Promise<void>
   /** "It worked" / "it didn't" for the template or setup a played profile is based on (one vote per install and setup). */
   sendVote(v: { setup: string; worked: boolean; reason?: 'start' | 'campaign' | 'content' | 'other' }): Promise<RelayResult>
   /** A newer release of the app on GitHub (checked at most daily), or null. */

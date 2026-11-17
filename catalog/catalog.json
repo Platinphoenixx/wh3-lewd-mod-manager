@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T13:15:00+00:00",
+  "generatedAt": "2026-11-17T13:25:06+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -67617,7 +67617,10 @@
       ],
       "votes": {
         "up": 5,
-        "down": 1
+        "down": 1,
+        "reasons": {
+          "start": 1
+        }
       },
       "launchTest": {
         "result": "main menu",
@@ -69087,7 +69090,10 @@
       ],
       "votes": {
         "up": 0,
-        "down": 1
+        "down": 1,
+        "reasons": {
+          "campaign": 1
+        }
       },
       "launchTest": {
         "result": "main menu",

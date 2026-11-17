@@ -124,13 +124,16 @@ export interface Preset {
   avoid?: { target: ModTarget; note: string }[];
   /** What a mod does in this setup that a player should know before choosing it ("Good to know"): a lady you play yourself counting as won over. */
   tips?: { target: ModTarget; text: string }[];
-  /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily). */
-  votes?: { up: number; down: number };
+  /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily) and why it did not. */
+  votes?: { up: number; down: number; reasons?: Record<string, number> };
+  /** Players who made a profile from it in Play (one per install; counted daily). */
+  uses?: number;
   /**
    * A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name.
    * `reviewed: false`: it has packs the catalog does not know and no maintainer has looked at it yet (shown anyway).
+   * `corrected`: a maintainer changed its shown name or character (community.json setupEdits).
    */
-  community?: { base?: string; far?: string; game?: string; own?: string[]; reviewed?: false };
+  community?: { base?: string; far?: string; game?: string; own?: string[]; reviewed?: false; corrected?: true };
 }
 
 export interface PresetEntry {

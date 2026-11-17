@@ -235,6 +235,7 @@ button.support-link:hover { text-decoration: underline; }
 .notice.error { border-color: rgba(208, 100, 79, 0.45); } .notice.error .notice-kind { color: var(--danger); } .notice.error .notice-bar i { background: var(--danger); }
 .notice.done { border-color: rgba(134, 176, 124, 0.4); } .notice.done .notice-kind { color: var(--ok); } .notice.done .notice-bar i { background: var(--ok); }
 .notice.info .notice-kind { color: var(--accent); } .notice.info .notice-bar i { background: var(--accent); }
+.notice.news { border-color: var(--accent); } .notice.news .notice-kind { color: var(--accent); }
 
 /* Counters on the tabs: where something waits (red = errors). */
 .tab-count { margin-left: 5px; font-size: 12px; font-weight: 700; color: var(--accent); }
@@ -399,11 +400,6 @@ main .play-chip img:not([data-done]), main .play-toggle img:not([data-done]) {
 .share-sum { font-size: 13px; color: var(--text-2); }
 .share-sum b { color: var(--text); }
 /* Play: shared setups and votes. */
-.play-fav { display: grid; grid-template-columns: 1fr auto; gap: 10px 24px; align-items: center; margin: 22px 0 6px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--accent); border-radius: 6px; }
-.play-fav h3 { margin: 2px 0; }
-.play-fav .rec { font-size: 11px; color: var(--accent); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
-.play-fav .right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
-.play-fav .right button.primary { margin-bottom: 0; }
 .play-head.play-section { margin-bottom: 4px; }
 .play-head.play-section h3 { flex: 1; margin: 0; }
 .play-comm { width: 100%; border-collapse: collapse; }

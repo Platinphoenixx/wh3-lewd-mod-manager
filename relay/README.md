@@ -11,7 +11,9 @@ the app without any account. Free Cloudflare plan; nothing to maintain once it r
 | `POST /setup` | A mod list a player shares from a profile (load order, the template it builds on, name, notes, how far they played). Stored in KV; one with own or unknown packs also becomes a GitHub issue labelled `setup` for review. Links in the texts are removed. |
 | `POST /vote` | "It worked / it didn't" for a template or shared setup, after a game session of 20 minutes or more. One vote per installation and setup (a new one replaces the old), stored as KV metadata under a salted hash of the install id. |
 | `POST /flag` | "This rule of the catalog is wrong": one flag per installation and rule (a new one replaces the old, `withdraw` takes it back), kept in KV under a salted hash of the install id. All flags on a rule are one GitHub issue, labelled `flag`; after a decision a new flag opens a new issue with what came later. What the player writes is public there. |
-| `GET /setups`, `GET /votes`, `GET /flags` | For the daily catalog update (`curator/fetch_community.py`, needs the export token); votes and flags come out as counts only. |
+| `POST /setup/edit` | The installation that shared a setup changes its name, notes, shown name or how far it was played (checked against the setup's hashed install id; links are removed). |
+| `POST /use` | A player made a profile from a shared setup in Play: counted once per installation and setup ("N players use it"), as KV metadata under a salted hash. |
+| `GET /setups`, `GET /votes`, `GET /flags` | For the daily catalog update (`curator/fetch_community.py`, needs the export token); votes, uses (in `/votes`) and flags come out as counts only. |
 
 Privacy: no IP addresses or names are stored. The rate limit counts under a salted hash
 of the IP (5 per minute, Cloudflare's rate limiter; nothing of it is stored). Reports carry a random id the app made once per installation,

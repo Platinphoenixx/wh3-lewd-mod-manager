@@ -14,6 +14,24 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.3
+
+**WH3 Lewd Mod Manager 0.1.3 – see what your shared lists do. 18+ only.**
+
+- *Play*: once players vote for a shared setup, the most popular one (at least 10 "it worked", more than "it didn't")
+  stands as a fifth card next to the four sizes – *Community favourite* – and is chosen like one.
+- *Community → Your shared setups*: every list you shared, with how many players said it worked or didn't (and why),
+  how many use it, and whether a maintainer looked at it. *Edit your notes…* changes its name and words later.
+- *Sent contributions* now say what became of them: in the catalog, waiting, or not added (with the reason); flagged
+  rules say whether they were retired or kept.
+- A *News* card at start tells you when something changed: your setup is in Play, more players said it worked, your
+  suggestion was added.
+- Importing a list from another launcher: when it plays another character than its closest template (Miao Ying through
+  ATB), that character is kept and used when you share it.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.2
 
 **WH3 Lewd Mod Manager 0.1.2 – shared setups show up faster. 18+ only.**

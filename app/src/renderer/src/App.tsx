@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
 import { DEFAULTS, SUPPORT_URL, type GameScan, type ScriptReport, type Settings } from '@shared/api'
-import { withUserRules, type UserRule } from '@shared/community'
+import { newsFor, withUserRules, type UserRule } from '@shared/community'
 import { buildIndex } from '@shared/match'
 import { DataContext, type AppData } from './data'
 import { ProfilesView } from './ProfilesView'
@@ -96,6 +96,36 @@ export function App() {
     setTabCount('install', n ? { n, error: true, title: `Script errors in ${n} mod${n === 1 ? '' : 's'} at the last game start` } : null)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scripts, catalog, setTabCount])
+  // News about the player's own setups, contributions and flags (votes, players who use a setup, accepted or retired):
+  // one card each, once per change, a few at most; the catalog brings the numbers, so it runs when a catalog is loaded.
+  useEffect(() => {
+    if (!catalog) return
+    let stop = false
+    void (async () => {
+      const [shared, contributions, profiles, seen] = await Promise.all([
+        window.api.listShared(), window.api.listContributions(), window.api.listProfiles(), window.api.newsSeen()
+      ])
+      const urls = contributions.flatMap((c) => (c.url ? [c.url] : []))
+      const statuses = urls.length ? await window.api.contributionStatus(urls).catch(() => ({})) : {}
+      const flagged = Object.fromEntries(profiles.flatMap((p) => Object.entries(p.flagged ?? {})))
+      const r = newsFor(catalog, shared, contributions, statuses, flagged, seen)
+      if (stop) return
+      await window.api.saveNewsSeen(r.seen)
+      for (const n of r.news.slice(0, 3)) {
+        notify({
+          kind: 'news', timeout: 0, text: n.text,
+          actions: [{
+            label: n.to === 'setups' ? 'See your setups' : 'See your contributions',
+            run: () => {
+              setTab('community')
+              setTimeout(() => document.getElementById(n.to === 'setups' ? 'your-setups' : 'your-contributions')?.scrollIntoView({ block: 'start' }), 300)
+            }
+          }]
+        })
+      }
+    })().catch(() => {})
+    return () => { stop = true }
+  }, [catalog, notify])
   // A newer app release (asked at most daily): one card with the download page; nothing installs by itself.
   useEffect(() => {
     window.api.appUpdate().then((u) => u && notify({

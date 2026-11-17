@@ -3,7 +3,7 @@ import { unitNames, type PickOne } from './suggest'
 import type { Catalog, Mod, Preset } from '@catalog/schema'
 import { buildIndex } from './match'
 import {
-  communityOf, guidedProfile, isFavourite, lateListOf, setupDiff, setupFromProfile, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine
+  communityOf, favouriteOf, guidedProfile, lateListOf, setupDiff, setupFromProfile, stepsFor, subjectsOf, suggestedFor, tiersFor, voteLine
 } from './setups'
 
 function mod(id: string, extra: Partial<Mod> = {}): Mod {
@@ -96,8 +96,11 @@ describe('shared setups', () => {
 
   it('lists them by how sure it is that they work: many good votes before a few', () => {
     expect(communityOf(subject).map((p) => p.id)).toEqual(['many', 'few', 'bad'])
-    expect(isFavourite({ up: 40, down: 4 })).toBe(true)
-    expect(isFavourite({ up: 2, down: 0 })).toBe(false) // too few players yet
+    expect(favouriteOf(communityOf(subject))?.id).toBe('many')
+    const p = (id: string, up: number, down: number) => ({ ...cat.presets.find((x) => x.id === 'many')!, id, votes: { up, down } })
+    expect(favouriteOf([p('nine', 9, 0)])).toBeUndefined() // too few players yet
+    expect(favouriteOf([p('disputed', 12, 15)])).toBeUndefined() // more said it did not work
+    expect(favouriteOf([p('sure', 11, 0), p('popular', 30, 6)])?.id).toBe('popular') // the most players who said it worked
     expect(voteLine({ up: 40, down: 4 })).toBe('▲ 91% of 44 players')
   })
 
