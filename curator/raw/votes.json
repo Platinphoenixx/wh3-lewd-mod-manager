@@ -1,16 +1,32 @@
 {
+ "derived-ll-27663": {
+  "down": 0,
+  "up": 1
+ },
+ "kpw-miao": {
+  "down": 0,
+  "up": 1
+ },
  "readman-alarielle-early": {
   "down": 0,
-  "up": 6
+  "up": 10
+ },
+ "readman-alarielle-late": {
+  "down": 0,
+  "up": 1
  },
  "readman-miao-early": {
   "down": 1,
   "reasons": {
    "start": 1
   },
-  "up": 2
+  "up": 5
  },
  "readman-miao-late": {
+  "down": 0,
+  "up": 1
+ },
+ "readman-morathi": {
   "down": 0,
   "up": 1
  },
@@ -23,7 +39,7 @@
  },
  "setup-beastmen": {
   "down": 0,
-  "up": 2
+  "up": 4
  },
  "setup-corrupted-ascension": {
   "down": 0,
