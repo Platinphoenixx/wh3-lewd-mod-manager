@@ -1,10 +1,16 @@
 # A maintainer reviews a contribution issue (created from the app) and adds the label "accepted".
 # This records it in curator/community.json, rebuilds the catalog, commits, and closes the issue.
+#
+# Every run applies ALL open issues labelled "accepted", not only the one that started it: GitHub keeps just one
+# waiting run per concurrency group and cancels the others, so several issues accepted at once would otherwise be
+# lost. Each run starts from the newest main (an issues event checks out the commit of the moment the label was set)
+# and, should the push still lose a race, rebuilds on the newer main instead of merging generated files.
 name: Apply accepted contribution
 
 on:
   issues:
     types: [labeled]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,36 +22,49 @@ concurrency:
 
 jobs:
   apply:
-    if: github.event.label.name == 'accepted'
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'accepted'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r curator/requirements.txt
-      - name: Record contribution
+      - name: Record, rebuild and commit
         env:
-          ISSUE: ${{ toJson(github.event.issue) }}
-        run: |
-          printf '%s' "$ISSUE" > "$RUNNER_TEMP/issue.json"
-          python curator/apply_contribution.py --issue-file "$RUNNER_TEMP/issue.json"
-      - name: Rebuild and commit
-        env:
+          GH_TOKEN: ${{ github.token }}
           # An accepted shared setup is read from the relay (curator/fetch_community.py).
           RELAY_URL: ${{ secrets.RELAY_URL }}
           RELAY_EXPORT_TOKEN: ${{ secrets.RELAY_EXPORT_TOKEN }}
         run: |
-          python curator/fetch_community.py
-          python curator/build_catalog.py
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
-          git add curator/community.json catalog/catalog.json
-          git add curator/raw/community_setups.json curator/raw/votes.json curator/raw/flags.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "Apply contribution #${{ github.event.issue.number }}"
-          git pull --rebase && git push
-      - name: Close issue
+          gh issue list --repo "$GITHUB_REPOSITORY" --label accepted --state open --limit 100 --json number --jq '.[].number' > "$RUNNER_TEMP/issues.txt"
+          echo "accepted and open: $(tr '\n' ' ' < "$RUNNER_TEMP/issues.txt")"
+          [ -s "$RUNNER_TEMP/issues.txt" ] || exit 0
+          for attempt in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            applied=""
+            while read -r n; do
+              gh api "repos/$GITHUB_REPOSITORY/issues/$n" > "$RUNNER_TEMP/issue.json"
+              if python curator/apply_contribution.py --issue-file "$RUNNER_TEMP/issue.json"; then applied="$applied $n"; else echo "::warning::issue #$n could not be applied"; fi
+            done < "$RUNNER_TEMP/issues.txt"
+            python curator/fetch_community.py
+            python curator/build_catalog.py
+            git add curator/community.json catalog/catalog.json
+            git add curator/raw/community_setups.json curator/raw/votes.json curator/raw/flags.json 2>/dev/null || true
+            git diff --cached --quiet || git commit -m "Apply contributions:$(echo "$applied" | sed 's/ / #/g')"
+            if git push origin HEAD:main; then echo "$applied" > "$RUNNER_TEMP/applied.txt"; exit 0; fi
+            echo "push lost a race; rebuilding on the newer main"
+          done
+          exit 1
+      - name: Close issues
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh issue close ${{ github.event.issue.number }} --comment "Applied to the catalog. Apps get it with the next catalog update. Thank you!"
+        run: |
+          for n in $(cat "$RUNNER_TEMP/applied.txt" 2>/dev/null); do
+            gh issue close "$n" --repo "$GITHUB_REPOSITORY" --comment "Applied to the catalog. Apps get it with the next catalog update. Thank you!"
+          done

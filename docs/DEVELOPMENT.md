@@ -223,7 +223,9 @@ The project keeps itself current without anyone's manual work or paid service.
   `curator/apply_contribution.py` records it in `curator/community.json` → `build_catalog.py` applies it
   (rules → relations/load order, feedback → counters + known issues, corrections → community notes,
   new mods → unverified entries, shared setups with unknown packs → shown, fixes → `Mod.fixes`, http(s) links only;
-  votes for a fix come with the votes of the setup that used it).
+  votes for a fix come with the votes of the setup that used it). Every run applies all open issues labelled `accepted`
+  (GitHub keeps only one waiting run per concurrency group and cancels the others), starts from the newest main and,
+  when its push loses a race, rebuilds on the newer main instead of merging generated files; it can also be started by hand.
 - Shared setups and votes (`.github/workflows/community-daily.yml`, daily, no crawl): `curator/fetch_community.py`
   reads the setups players shared and the "it worked / it didn't" votes from the relay → `curator/raw/community_setups.json`
   (mod list, template it builds on, name/notes/how far the sharer wrote) + `raw/votes.json` (counts per template id; no

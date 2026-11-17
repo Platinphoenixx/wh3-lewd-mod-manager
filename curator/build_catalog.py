@@ -424,6 +424,9 @@ def apply_community(mods: dict) -> None:
             if ll and f"ll-{ll.group(1)}" in mods:
                 continue  # already in the catalog (the next crawl fills it in)
             steam_ids = [s for u in links for s in re.findall(r"filedetails/\?(?:[^ ]*&)?id=(\d+)", u)]
+            known_steam = {str(x.get("id")) for m in mods.values() for x in (m.get("sources") or {}).get("steam") or [] if isinstance(x, dict)}
+            if any(f"steam-{s}" in mods or s in known_steam for s in steam_ids):
+                continue  # a curated entry for the same Workshop item exists
             mods.setdefault(f"community-{slug}", {
                 "id": f"community-{slug}", "name": c.get("name") or slug, "authors": [], "kind": c.get("kind") or "units",
                 "summary": c.get("description") or "Suggested by the community.", "description": c.get("description") or "",
