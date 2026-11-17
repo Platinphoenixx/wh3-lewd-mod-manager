@@ -14,6 +14,18 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.4
+
+**WH3 Lewd Mod Manager 0.1.4 – Azazel in Play. 18+ only.**
+
+- *Play as* now has **Azazel**: the Chaos route of Azazel's Realm (Readman's list and KPW's quick list) is her own
+  character page instead of hiding in the *Chaos lords* theme. Her card also names the lords these lists play
+  (Archaon, Be'lakor, a Daemon Prince) – the same goes for every character whose lists also play other lords.
+- Lords' names follow the game's spelling everywhere (Be'lakor, N'Kari).
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.3
 
 **WH3 Lewd Mod Manager 0.1.3 – see what your shared lists do. 18+ only.**
