@@ -6,7 +6,7 @@ import { useData } from './data'
 /**
  * Shares a profile as a setup other players can install from Play (relay /setup). Only the mod list with its load
  * order, the template it builds on, the game version and what the player writes here are sent. A list of catalog
- * mods appears after the next daily catalog update; one with own mods waits for a maintainer.
+ * mods appears after the next daily catalog update; one with own mods too, marked as not reviewed until a maintainer looked at them.
  */
 export function ShareDialog({ profile: given, presetIds, onClose }: { profile?: Profile; presetIds?: string[]; onClose(): void }) {
   const data = useData()
@@ -90,7 +90,7 @@ export function ShareDialog({ profile: given, presetIds, onClose }: { profile?: 
             <label>Notes for players<textarea rows={3} value={notes} maxLength={1000} placeholder="What it is good for, what you changed and why (no links)" onChange={(e) => setNotes(e.target.value)} /></label>
             <p className="small muted">
               Sent: the mod list in its load order, the template it is based on, the game version and what you wrote. Not sent: your name,
-              file paths, your other profiles. {setup?.own.length ? 'Your own mods go by pack name only, and a maintainer checks them before the setup is shown.' : 'It appears in the app within a day.'}
+              file paths, your other profiles. {setup?.own.length ? 'Your own mods go by pack name only. The setup appears in the app within a day, marked as not reviewed until a maintainer has looked at them.' : 'It appears in the app within a day.'}
             </p>
             <div className="form-actions">
               <button className="primary" disabled={!setup || !name.trim() || busy} onClick={() => void send()}>{busy ? 'Sending…' : 'Share'}</button>

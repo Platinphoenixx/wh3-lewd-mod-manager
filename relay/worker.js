@@ -185,7 +185,7 @@ async function setup(request, env) {
   })
   return json({
     ok: true, id: entry.id, url: res.ok ? (await res.json()).html_url : undefined,
-    message: 'Thank you – a maintainer checks the packs the catalog does not know; then your setup appears in the app.'
+    message: 'Thank you – your setup appears in the app within a day, marked as not reviewed until a maintainer has looked at the packs the catalog does not know.'
   })
 }
 

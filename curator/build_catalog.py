@@ -258,28 +258,32 @@ def guide_and_derived_presets(mods: dict, external: dict, presets: list, guides:
     return out
 
 
-def community_presets(presets: list, mods: dict, external: dict, pack_owner: dict, unresolved: list) -> list:
+def community_presets(presets: list, mods: dict, external: dict, pack_owner: dict, unresolved: list, steam_owner: dict | None = None) -> list:
     """
     Setups players shared from the app (curator/raw/community_setups.json, from fetch_community.py) as templates with
-    origin "community". A list made only of catalog mods is shown right away; one with own or unknown packs only after
-    a maintainer accepted its issue (community.json, type "setup"). Entries are matched to the catalog again, so a mod
-    id that changed since still finds its mod; a pack nobody knows keeps no target.
+    origin "community", all of them right away: a list with own or unknown packs (the player's own mods, Workshop items
+    the catalog does not know) is marked as not reviewed (`community.reviewed: false`) until a maintainer accepts its
+    issue (community.json, type "setup"); one a maintainer rejected (closed as not planned) is left out. Entries are
+    matched to the catalog again, so a mod id that changed since still finds its mod; a pack nobody knows keeps no target.
+    Free text (name, notes, shown name) loses links and markup and is cut short, since nobody reads it before it is shown.
     """
     path = CURATOR / "raw" / "community_setups.json"
     if not path.exists():
         return []
     cpath = CURATOR / "community.json"
-    accepted = {c.get("setupId") for c in (load(cpath).get("accepted", []) if cpath.exists() else []) if c.get("type") == "setup"}
+    store = load(cpath) if cpath.exists() else {}
+    accepted = {c.get("setupId") for c in store.get("accepted", []) if c.get("type") == "setup"}
+    rejected = {c.get("setupId") for c in store.get("rejected", []) if c.get("type") == "setup"}
     by_id = {p["id"]: p for p in presets}
     out = []
     for s in load(path):
-        ok = not s.get("review") or s["id"] in accepted
+        if s["id"] in rejected:
+            continue
+        reviewed = not s.get("review") or s["id"] in accepted
         entries = []
         for e in s.get("entries", []):
             t = {"mod": e["mod"]} if e.get("mod") in mods else {"external": e["mod"]} if e.get("mod") in external \
                 else pack_owner.get(e["pack"].lower())
-            if not t and not ok:
-                break
             packs = [e["pack"]]
             m = mods.get(t["mod"]) if t and "mod" in t else None
             if m and not any(x["file"].lower() == e["pack"].lower() for x in m.get("packs", [])):
@@ -291,24 +295,45 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
                     continue
                 entries.append({"pack": pack, "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
                                 **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
-        else:
-            if not ok:
+        # Workshop items the app did not know when the list was shared, which the catalog knows now, become entries
+        # (on top, where the app puts what a player adds); the others stay own mods.
+        own, top = [], 0
+        for o in s.get("own") or []:
+            sid = (re.fullmatch(r"Workshop item (\d+)", o) or [None, None])[1]
+            t = (steam_owner or {}).get(sid) if sid else None
+            m = mods.get(t["mod"]) if t and "mod" in t else None
+            if not m:
+                own.append(o)
                 continue
-            base = by_id.get(s.get("base") or "")
-            out.append({
-                "id": f"community-{s['id']}", "name": s["name"],
-                "playAs": s.get("playAs") or (base or {}).get("playAs", []),
-                **({"theme": s.get("theme") or base.get("theme")} if s.get("theme") or (base or {}).get("theme") else {}),
-                "phase": "any", "origin": "community",
-                "source": {"type": "community", "author": s.get("shownAs") or "anonymous", "date": s["at"][:10]},
-                **({"description": s["notes"]} if s.get("notes") else {}),
-                "entries": entries,
-                "community": {k: v for k, v in {"base": s.get("base"), "far": s.get("far"), "game": s.get("game"),
-                                                "own": s.get("own")}.items() if v},
-            })
-            continue
-        unresolved.append(f"shared setup {s['id']}: packs the catalog does not know, waits for a maintainer")
+            for pack in [x["file"] for x in m.get("packs", []) if not x.get("optional") and not x.get("exclusiveGroup")] or [m["name"]]:
+                if not any(x["pack"].lower() == pack.lower() for x in entries):
+                    entries.insert(top, {"pack": pack, "from": "steam", "steamId": sid, "target": t})
+                    top += 1
+        base = by_id.get(s.get("base") or "")
+        notes = shown_text(s.get("notes") or "", 1500)
+        out.append({
+            "id": f"community-{s['id']}", "name": shown_text(s["name"], 80) or "Shared setup",
+            "playAs": s.get("playAs") or (base or {}).get("playAs", []),
+            **({"theme": s.get("theme") or base.get("theme")} if s.get("theme") or (base or {}).get("theme") else {}),
+            "phase": "any", "origin": "community",
+            "source": {"type": "community", "author": shown_text(s.get("shownAs") or "", 40) or "anonymous", "date": s["at"][:10]},
+            **({"description": notes} if notes else {}),
+            "entries": entries,
+            "community": {k: v for k, v in {"base": s.get("base"), "far": s.get("far"), "game": s.get("game"),
+                                            "own": own, "reviewed": None if reviewed or not own else False}.items()
+                          if v is not None and v != [] and v != ""},
+        })
+        if not reviewed and own:
+            unresolved.append(f"shared setup {s['id']}: shown, not reviewed yet (packs the catalog does not know)")
     return out
+
+
+def shown_text(text: str, limit: int) -> str:
+    """Player text shown without review: no links, no markup, single spaces, cut at a word."""
+    text = re.sub(r"(?:https?://|www\.)\S+", "", text or "")
+    text = re.sub(r"[<>\[\]`*_#|]", "", text)
+    text = "\n".join(" ".join(line.split()) for line in text.splitlines()).strip()
+    return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + " …"
 
 
 def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
@@ -380,7 +405,11 @@ def vanilla_presets(presets: list, mods: dict, major: str = "") -> list:
     return out
 
 
-def apply_community(mods: dict) -> None:
+# Mod kinds (catalog/schema.ts ModKind): a suggestion with any other kind becomes "units".
+KINDS = {"assets", "campaign", "collection", "framework", "patch", "progression", "reskin", "submod", "translation", "units", "utility"}
+
+
+def apply_community(mods: dict, steam: dict | None = None) -> None:
     """
     Apply accepted community contributions (curator/community.json, written by apply_contribution.py).
     Rules append relations/load-order constraints, feedback is counted, corrections become visible notes,
@@ -427,25 +456,39 @@ def apply_community(mods: dict) -> None:
             known_steam = {str(x.get("id")) for m in mods.values() for x in (m.get("sources") or {}).get("steam") or [] if isinstance(x, dict)}
             if any(f"steam-{s}" in mods or s in known_steam for s in steam_ids):
                 continue  # a curated entry for the same Workshop item exists
-            mods.setdefault(f"community-{slug}", {
-                "id": f"community-{slug}", "name": c.get("name") or slug, "authors": [], "kind": c.get("kind") or "units",
-                "summary": c.get("description") or "Suggested by the community.", "description": c.get("description") or "",
+            # A Workshop item gets its usual id, so its title, picture and creator come from the public Workshop data
+            # (apply_contribution.py --refresh-steam) and a later curated entry replaces it field by field.
+            info = (steam or {}).get(steam_ids[0], {}) if steam_ids else {}
+            mid = f"steam-{steam_ids[0]}" if steam_ids else f"community-{slug}"
+            said = shown_text(c.get("description") or "", 1500)
+            mods.setdefault(mid, {
+                "id": mid, "name": info.get("title") or shown_text(c.get("name") or "", 120) or slug, "authors": [],
+                "kind": c.get("kind") if c.get("kind") in KINDS else "units",
+                "summary": said or "Suggested by the community.",
+                "description": (said + "\n\n" if said else "") + "*Suggested by a player; not reviewed yet.*",
                 "tags": [], "packs": [], "relations": [],
-                "sources": {"steam": [{"id": s} for s in steam_ids],
+                "sources": {"steam": [{"id": s, **({"title": info["title"]} if info.get("title") else {})} for s in steam_ids],
                             "downloads": [{"name": u, "url": u} for u in links if "steamcommunity.com" not in u]},
-                "playAs": [{"character": x.strip()} for x in (c.get("characters") or "").split(",") if x.strip()],
-                "installNotes": [c["requirements"]] if c.get("requirements") else [],
+                "playAs": [{"character": x.strip()} for x in shown_text(c.get("characters") or "", 200).split(",") if x.strip()],
+                "installNotes": [shown_text(c["requirements"], 500)] if shown_text(c.get("requirements") or "", 500) else [],
                 "curation": {"lastChecked": c.get("accepted"), "confidence": "low",
                              "openQuestions": [f"Community suggestion, not reviewed in detail: {c.get('url')}"]},
             })
+
+
+# A rule players flagged falls by itself when this many players flagged it and the lists that go against it played well:
+# at least AUTO_VOTES "Did it work?" votes on them, AUTO_SHARE of them "it worked". Only rules where it is clear which
+# lists go against them (two mods in one list, a mod without what it "needs", a mod that "does not start").
+AUTO_FLAGS, AUTO_VOTES, AUTO_SHARE = 5, 5, 0.8
 
 
 def apply_rule_flags(mods: dict, presets: list) -> dict:
     """
     Rules players flagged as wrong (app: "Flag as wrong"): counts from raw/flags.json (fetch_community.py) and the
     maintainers' decisions from community.json. One flag changes nothing: from 3 players on the app shows the rule as
-    disputed; only a maintainer's decision changes it. Retiring takes the rule out of the catalog for everyone, as the last
-    step of the build, so no earlier layer brings it back. Rule ids are the app's (shared/check.ts).
+    disputed. A maintainer's decision changes it; without one, a rule falls by itself once AUTO_FLAGS players flagged it
+    and the voted lists that go against it mostly worked (`by: "players"`). Retiring takes the rule out of the catalog for
+    everyone, as the last step of the build, so no earlier layer brings it back. Rule ids are the app's (shared/check.ts).
     """
     path = CURATOR / "raw" / "flags.json"
     out = {r: {"flags": n} for r, n in (load(path) if path.exists() else {}).items() if n >= 3}
@@ -458,12 +501,8 @@ def apply_rule_flags(mods: dict, presets: list) -> dict:
         return [(mod_of(x), r) for x, y in (((a, b), (b, a)) if both else ((a, b),))
                 for r in (mod_of(x) or {}).get("relations") or [] if r["kind"] == kind and key_of(r["target"]) == y]
 
-    for c in decisions:
-        rule, decision = c["rule"], c["decision"]
+    def apply(rule: str, decision: str, answer: str | None) -> None:
         kind, *keys = rule.split("|")
-        out[rule] = {**out.get(rule, {}), "decision": {"retire": "retired", "keep": "kept", "change": "changed"}[decision], "date": c.get("accepted")}
-        if c.get("answer"):
-            out[rule]["answer"] = c["answer"]
         pair = {"conflict": ("incompatible", True), "requires": ("requires", False), "outdated": ("supersedes", False)}.get(kind)
         if pair and len(keys) == 2:
             # outdated|old|new is written on the newer mod.
@@ -472,9 +511,9 @@ def apply_rule_flags(mods: dict, presets: list) -> dict:
                 if decision == "retire":
                     m["relations"].remove(r)
                 elif decision == "change":
-                    r["note"] = c["answer"]
+                    r["note"] = answer
         if decision != "retire":
-            continue
+            return
         if kind == "load" and len(keys) == 2:
             hi, lo = keys
             for key, side, other in ((hi, "above", lo), (lo, "below", hi)):
@@ -488,6 +527,31 @@ def apply_rule_flags(mods: dict, presets: list) -> dict:
             for p in presets:
                 if p["id"] == keys[0] and p.get("avoid"):
                     p["avoid"] = [x for x in p["avoid"] if key_of(x["target"]) != keys[1]]
+
+    for c in decisions:
+        out[c["rule"]] = {**out.get(c["rule"], {}), "decision": {"retire": "retired", "keep": "kept", "change": "changed"}[c["decision"]],
+                          "date": c.get("accepted")}
+        if c.get("answer"):
+            out[c["rule"]]["answer"] = c["answer"]
+        apply(c["rule"], c["decision"], c.get("answer"))
+
+    decided = {c["rule"] for c in decisions}
+    for rule, info in out.items():
+        if rule in decided or info.get("flags", 0) < AUTO_FLAGS:
+            continue
+        kind, *keys = rule.split("|")
+        against = {
+            "conflict": lambda ks: len(keys) == 2 and keys[0] in ks and keys[1] in ks,
+            "requires": lambda ks: len(keys) == 2 and keys[0] in ks and keys[1] not in ks,
+            "stops": lambda ks: len(keys) == 1 and keys[0] in ks,
+        }.get(kind)
+        if not against:
+            continue
+        lists = [p for p in presets if p.get("votes") and against({key_of(e["target"]) for e in p["entries"] if e.get("target")})]
+        up, down = sum(p["votes"]["up"] for p in lists), sum(p["votes"]["down"] for p in lists)
+        if up + down >= AUTO_VOTES and up >= AUTO_SHARE * (up + down):
+            info.update({"decision": "retired", "by": "players", "date": TODAY, "lists": [p["id"] for p in lists]})
+            apply(rule, "retire", None)
     return out
 
 
@@ -891,7 +955,7 @@ def main():
         return steam_owner[sid]
 
     unresolved, self_refs = [], []
-    apply_community(mods)
+    apply_community(mods, steam)
 
     for m in deferred:
         if m["id"] in mods:
@@ -1437,7 +1501,7 @@ def main():
     preset_desc = load(CURATOR / "work" / "preset-desc.json") if (CURATOR / "work" / "preset-desc.json").exists() else {}
     for p in presets:
         p |= {k: v for k, v in preset_desc.get(p["id"], {}).items() if k in ("description", "highlights", "coverMods", "theme")}
-    presets += community_presets(presets, mods, external, pack_owner, unresolved)
+    presets += community_presets(presets, mods, external, pack_owner, unresolved, steam_owner)
 
     # Launch test results (curator/launch_test.py) count while the template still has exactly the tested packs;
     # "it worked / it didn't" votes from players (curator/fetch_community.py) belong to every template.

@@ -57,8 +57,9 @@ describe('catalog', () => {
         const m = mods.get(e.target.mod)
         if (!m) { bad.push(`${p.id}: unknown mod ${e.target.mod}`); continue }
         if (outdated(m.id)) bad.push(`${p.id}: ${m.id} is ${m.status}`)
-        // A mod made only of pick-one packs keeps one entry without an exact pack (the player's choice applies).
-        const onlyChoices = m.packs.length > 0 && m.packs.every((x) => x.optional || x.exclusiveGroup)
+        // A mod made only of pick-one packs keeps one entry without an exact pack (the player's choice applies); so does
+        // a Workshop mod whose packs the catalog does not know yet (the launch takes what its Workshop folder has).
+        const onlyChoices = m.packs.length === 0 || m.packs.every((x) => x.optional || x.exclusiveGroup)
         if (!m.packs.some((x) => x.file.toLowerCase() === packs[i]) && !(onlyChoices && e.pack === m.name)) bad.push(`${p.id}: ${e.pack} is no pack of ${m.id}`)
       }
     }

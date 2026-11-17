@@ -171,7 +171,10 @@ community contributions. App UI and catalog texts are English.
     `community.json`, and `apply_rule_flags` in `build_catalog.py` applies it as the last step of the build: retire (the relation,
     load-order rule, `stopsGame`, `avoid` or the `stageLooks` entry goes), change (a new reason), keep (players see the answer). A later decision on a rule
     replaces the earlier one; a flag after a decision opens a new issue. One flag changes nothing: `fetch_community.py` brings the
-    counts to `raw/flags.json`, and `Catalog.ruleFlags` shows a rule as disputed from 3 players on.
+    counts to `raw/flags.json`, and `Catalog.ruleFlags` shows a rule as disputed from 3 players on. Without a decision a
+    rule falls by itself (`by: "players"`) once 5 players flagged it and the voted lists that go against it (both mods of a
+    conflict in one list, a mod without what it "needs", a mod that "does not start") have 5+ "Did it work?" votes, 80 %+ of
+    them "it worked" (`AUTO_FLAGS`/`AUTO_VOTES`/`AUTO_SHARE` in `build_catalog.py`); other rule types wait for a maintainer.
     `src/shared/health.ts`: mods that change game data and are older than the last major game update
     (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
     and script errors from `lua_mod_log.txt` mapped to their packs (tested); errors a mod's `harmlessScriptErrors` names
@@ -222,7 +225,8 @@ The project keeps itself current without anyone's manual work or paid service.
 - `.github/workflows/apply-contribution.yml`: a maintainer labels an app-created issue `accepted` →
   `curator/apply_contribution.py` records it in `curator/community.json` → `build_catalog.py` applies it
   (rules → relations/load order, feedback → counters + known issues, corrections → community notes,
-  new mods → unverified entries, shared setups with unknown packs → shown, fixes → `Mod.fixes`, http(s) links only;
+  new mods → unverified entries (a suggestion that only links to Steam, LoversLab or Nexus Mods is accepted without a
+  maintainer and gets its Workshop item's id, title, picture and creator), shared setups → reviewed, fixes → `Mod.fixes`, http(s) links only;
   votes for a fix come with the votes of the setup that used it). Every run applies all open issues labelled `accepted`
   (GitHub keeps only one waiting run per concurrency group and cancels the others), starts from the newest main and,
   when its push loses a race, rebuilds on the newer main instead of merging generated files; it can also be started by hand.
@@ -230,7 +234,9 @@ The project keeps itself current without anyone's manual work or paid service.
   reads the setups players shared and the "it worked / it didn't" votes from the relay → `curator/raw/community_setups.json`
   (mod list, template it builds on, name/notes/how far the sharer wrote) + `raw/votes.json` (counts per template id; no
   install ids) → `build_catalog.py` adds the setups as templates with `origin: "community"` (a list made only of catalog
-  mods right away; one with own or unknown packs once a maintainer labelled its `setup` issue `accepted`) and `votes`
+  mods right away; one with own or unknown packs right away too, as `community.reviewed: false` until a maintainer labels
+  its `setup` issue `accepted`, and gone once a maintainer closes it as not planned; Workshop items it named that the catalog
+  has learned since become entries; its free text loses links and markup) and `votes`
   to every template. Commits only when something changed.
 - Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord
   except for showing images. Sending (reports, contributions, setups, votes) goes to the relay only when the player does it.

@@ -53,6 +53,10 @@ export interface RuleFlag {
   decision?: "retired" | "kept" | "changed";
   answer?: string;
   date?: string;
+  /** "players": retired without a maintainer – enough flags, and the voted lists that go against the rule mostly worked. */
+  by?: "players";
+  /** The templates whose votes counted for `by: "players"`. */
+  lists?: string[];
 }
 
 export interface CampaignGuide {
@@ -122,8 +126,11 @@ export interface Preset {
   tips?: { target: ModTarget; text: string }[];
   /** Players who played it with the app: "it worked" / "it didn't" (one vote per install; counted daily). */
   votes?: { up: number; down: number };
-  /** A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name. */
-  community?: { base?: string; far?: string; game?: string; own?: string[] };
+  /**
+   * A shared setup: the template it was built on, how far the sharer played, the game version, own packs by name.
+   * `reviewed: false`: it has packs the catalog does not know and no maintainer has looked at it yet (shown anyway).
+   */
+  community?: { base?: string; far?: string; game?: string; own?: string[]; reviewed?: false };
 }
 
 export interface PresetEntry {

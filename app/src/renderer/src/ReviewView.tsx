@@ -128,7 +128,7 @@ export function ReviewView({ onCount }: { onCount(n: number): void }) {
               </div>
             )}
             {item.kind !== 'flag' && <div className="review-decide">
-              <button className="primary" disabled={busy} onClick={() => void decide(true)}>Accept – {item.kind === 'setup' ? 'show it in the app' : item.kind === 'fix' ? 'offer the fix in the app' : 'add it to the catalog'}</button>
+              <button className="primary" disabled={busy} onClick={() => void decide(true)}>Accept – {item.kind === 'setup' ? 'mark it as reviewed' : item.kind === 'fix' ? 'offer the fix in the app' : 'add it to the catalog'}</button>
               <select value={reason} onChange={(e) => setReason(e.target.value)}>
                 <option value="">Reject because…</option>
                 {REASONS.map((r) => <option key={r} value={r}>{r}</option>)}
@@ -136,7 +136,7 @@ export function ReviewView({ onCount }: { onCount(n: number): void }) {
               </select>
               {reason === 'other' && <input value={other} placeholder="Reason, shown on GitHub" onChange={(e) => setOther(e.target.value)} />}
               <button disabled={busy || !reason || (reason === 'other' && !other.trim())} onClick={() => void decide(false)}>Reject</button>
-              <span className="small muted">Accept adds the label “accepted”: the repository's workflow puts it into the catalog. Reject closes the issue with the reason as a comment.</span>
+              <span className="small muted">{item.kind === 'setup' ? 'It is shown already. Reject hides it from the app.' : "Accept adds the label “accepted”: the repository's workflow puts it into the catalog. Reject closes the issue with the reason as a comment."}</span>
             </div>}
           </>
         )}

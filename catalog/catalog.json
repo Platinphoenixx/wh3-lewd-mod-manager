@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T11:50:57+00:00",
+  "generatedAt": "2026-11-17T11:58:53+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-17T11:50:51+00:00",
+      "fetchedAt": "2026-11-16T20:32:11+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -73814,6 +73814,70 @@
       },
       "entries": [
         {
+          "pack": "[LIG] Reskin - Alarielle",
+          "from": "steam",
+          "steamId": "2880984692",
+          "target": {
+            "mod": "steam-2880984692"
+          }
+        },
+        {
+          "pack": "[LIG] Reskin - Damsel",
+          "from": "steam",
+          "steamId": "2871612719",
+          "target": {
+            "mod": "steam-2871612719"
+          }
+        },
+        {
+          "pack": "[LIG] Reskin - Prophetess",
+          "from": "steam",
+          "steamId": "2875947979",
+          "target": {
+            "mod": "steam-2875947979"
+          }
+        },
+        {
+          "pack": "Alt appearance for the Dragon Queen",
+          "from": "steam",
+          "steamId": "3700204099",
+          "target": {
+            "mod": "steam-3700204099"
+          }
+        },
+        {
+          "pack": "Climate Adaptation",
+          "from": "steam",
+          "steamId": "2793731221",
+          "target": {
+            "mod": "steam-2793731221"
+          }
+        },
+        {
+          "pack": "Dragon Mounts for High Elves Legendary Lords",
+          "from": "steam",
+          "steamId": "2854699238",
+          "target": {
+            "mod": "steam-2854699238"
+          }
+        },
+        {
+          "pack": "Beautiful Isabella",
+          "from": "steam",
+          "steamId": "2980444723",
+          "target": {
+            "mod": "steam-2980444723"
+          }
+        },
+        {
+          "pack": "Legendary hero: Dragon Priestess (传奇英雄-龙之巫女)",
+          "from": "steam",
+          "steamId": "2899849873",
+          "target": {
+            "mod": "steam-2899849873"
+          }
+        },
+        {
           "pack": "Sigvald_female.pack",
           "from": "download",
           "target": {
@@ -74710,17 +74774,7 @@
       ],
       "community": {
         "base": "readman-alarielle-early",
-        "game": "9.0.5",
-        "own": [
-          "Workshop item 2880984692",
-          "Workshop item 2871612719",
-          "Workshop item 2875947979",
-          "Workshop item 3700204099",
-          "Workshop item 2793731221",
-          "Workshop item 2854699238",
-          "Workshop item 2980444723",
-          "Workshop item 2899849873"
-        ]
+        "game": "9.0.5"
       }
     },
     {

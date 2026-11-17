@@ -1,5 +1,8 @@
 # A maintainer reviews a contribution issue (created from the app) and adds the label "accepted".
 # This records it in curator/community.json, rebuilds the catalog, commits, and closes the issue.
+# Without a maintainer: a suggested mod that only links to Steam, LoversLab or Nexus Mods is accepted right away
+# (its facts come from there, marked as not reviewed); a shared setup is shown anyway (as not reviewed), and only a
+# maintainer closing its issue as "not planned" takes it out again.
 #
 # Every run applies ALL open issues labelled "accepted", not only the one that started it: GitHub keeps just one
 # waiting run per concurrency group and cancels the others, so several issues accepted at once would otherwise be
@@ -9,7 +12,7 @@ name: Apply accepted contribution
 
 on:
   issues:
-    types: [labeled]
+    types: [labeled, closed]
   workflow_dispatch:
 
 permissions:
@@ -22,7 +25,10 @@ concurrency:
 
 jobs:
   apply:
-    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'accepted'
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.action == 'labeled' && (github.event.label.name == 'accepted' || github.event.label.name == 'new-mod')) ||
+      (github.event.action == 'closed' && github.event.issue.state_reason == 'not_planned' && contains(github.event.issue.labels.*.name, 'setup'))
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -42,19 +48,37 @@ jobs:
         run: |
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
+          # Suggested mods that only link to Steam, LoversLab or Nexus Mods need no maintainer.
+          gh issue list --repo "$GITHUB_REPOSITORY" --label new-mod --state open --limit 100 --json number,labels \
+            --jq '.[] | select([.labels[].name] | index("accepted") | not) | .number' > "$RUNNER_TEMP/suggested.txt"
+          while read -r n; do
+            gh api "repos/$GITHUB_REPOSITORY/issues/$n" > "$RUNNER_TEMP/issue.json"
+            if python curator/apply_contribution.py --auto-ok --issue-file "$RUNNER_TEMP/issue.json"; then
+              gh issue edit "$n" --repo "$GITHUB_REPOSITORY" --add-label accepted
+            fi
+          done < "$RUNNER_TEMP/suggested.txt"
+          # Shared setups a maintainer closed as not planned are no longer shown.
+          gh issue list --repo "$GITHUB_REPOSITORY" --label setup --state closed --limit 200 --json number,stateReason \
+            --jq '.[] | select(.stateReason == "NOT_PLANNED") | .number' > "$RUNNER_TEMP/rejected.txt"
           gh issue list --repo "$GITHUB_REPOSITORY" --label accepted --state open --limit 100 --json number --jq '.[].number' > "$RUNNER_TEMP/issues.txt"
           echo "accepted and open: $(tr '\n' ' ' < "$RUNNER_TEMP/issues.txt")"
-          [ -s "$RUNNER_TEMP/issues.txt" ] || exit 0
+          echo "rejected setups: $(tr '\n' ' ' < "$RUNNER_TEMP/rejected.txt")"
+          if [ ! -s "$RUNNER_TEMP/issues.txt" ] && [ ! -s "$RUNNER_TEMP/rejected.txt" ]; then exit 0; fi
           for attempt in 1 2 3; do
             git fetch origin main && git reset --hard origin/main
+            while read -r n; do
+              gh api "repos/$GITHUB_REPOSITORY/issues/$n" > "$RUNNER_TEMP/issue.json"
+              python curator/apply_contribution.py --rejected --issue-file "$RUNNER_TEMP/issue.json" || echo "::warning::setup #$n could not be hidden"
+            done < "$RUNNER_TEMP/rejected.txt"
             applied=""
             while read -r n; do
               gh api "repos/$GITHUB_REPOSITORY/issues/$n" > "$RUNNER_TEMP/issue.json"
               if python curator/apply_contribution.py --issue-file "$RUNNER_TEMP/issue.json"; then applied="$applied $n"; else echo "::warning::issue #$n could not be applied"; fi
             done < "$RUNNER_TEMP/issues.txt"
+            python curator/apply_contribution.py --refresh-steam
             python curator/fetch_community.py
             python curator/build_catalog.py
-            git add curator/community.json catalog/catalog.json
+            git add curator/community.json catalog/catalog.json curator/raw/steam_items.json curator/raw/steam_creators.json
             git add curator/raw/community_setups.json curator/raw/votes.json curator/raw/flags.json 2>/dev/null || true
             git diff --cached --quiet || git commit -m "Apply contributions:$(echo "$applied" | sed 's/ / #/g')"
             if git push origin HEAD:main; then echo "$applied" > "$RUNNER_TEMP/applied.txt"; exit 0; fi

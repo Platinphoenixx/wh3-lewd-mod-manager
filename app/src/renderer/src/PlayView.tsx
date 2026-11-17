@@ -280,6 +280,7 @@ function SetupFacts({ p }: { p: Preset }) {
       {base ? `${base.name}${d.added.length ? ` + ${d.added.length}` : ''}${d.dropped.length ? ` − ${d.dropped.length}` : ''} · ` : ''}
       {p.entries.length} mods{p.community?.far ? ` · played to ${p.community.far}` : ''}{p.community?.game ? ` · game ${p.community.game}` : ''}
       {` · shared by ${p.source.author ?? 'anonymous'}`}{p.source.date ? ` · ${p.source.date}` : ''}
+      {p.community?.reviewed === false ? ' · not reviewed' : ''}
     </>
   )
 }
@@ -312,6 +313,7 @@ function SetupPage({ subject, setup, onBack, onHome, onContinue }: { subject: Su
       <div className="play-crumbs"><a onClick={onHome}>Play</a> › <a onClick={onBack}>{subject.name}</a> › Shared setup</div>
       <div className="play-head"><h2>{setup.name}</h2><Votes p={setup} /></div>
       <p className="small muted"><SetupFacts p={setup} /></p>
+      {setup.community?.reviewed === false && <p className="small muted">Not reviewed yet: it has mods the catalog does not know. The votes show how it played for others.</p>}
       <SetupWarnings p={setup} />
       {setup.description && <p className="play-lead">“{setup.description}”</p>}
       <div className="play-diff">
@@ -320,7 +322,7 @@ function SetupPage({ subject, setup, onBack, onHome, onContinue }: { subject: Su
           <h4>Left out · {d.dropped.length}</h4><div className="play-chips">{d.dropped.map(chip)}</div>
           <h4 style={{ marginTop: 14 }}>Own mods (not in the catalog) · {setup.community?.own?.length ?? 0}</h4>
           {setup.community?.own?.length
-            ? <p className="small muted">{setup.community.own.join(', ')} – checked by a maintainer; you need these files yourself.</p>
+            ? <p className="small muted">{setup.community.own.join(', ')} – {setup.community.reviewed === false ? 'not checked yet' : 'checked by a maintainer'}; you need these files yourself.</p>
             : <p className="small muted">None – everything comes from the catalog.</p>}
         </div>
       </div>
