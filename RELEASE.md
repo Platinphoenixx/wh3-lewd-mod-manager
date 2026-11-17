@@ -14,6 +14,20 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.2
+
+**WH3 Lewd Mod Manager 0.1.2 – shared setups show up faster. 18+ only.**
+
+- *Share your setup*: a setup with mods the catalog does not know appears within a day too, marked as *not reviewed*
+  until a maintainer has looked at it, instead of waiting for that check. Its page says so; the votes show how it
+  played for others.
+- The catalog side changed as well (no app update needed for it): suggested mods that link to Steam, LoversLab or
+  Nexus Mods are added on their own, and a rule enough players flagged as wrong falls by itself once the lists that go
+  against it played well.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.1
 
 **WH3 Lewd Mod Manager 0.1.1 – small fixes. 18+ only.**
