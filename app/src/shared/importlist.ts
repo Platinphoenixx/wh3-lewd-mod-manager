@@ -2,6 +2,7 @@ import type { Catalog } from '@catalog/schema'
 import { targetFor, targetKey, type CatalogIndex } from './match'
 import { baseKeys } from './profile'
 import { isOwnKey } from './own'
+import { characterNames } from './setups'
 
 /**
  * Mod lists from other launchers, turned into a profile: the template that matches best becomes the
@@ -92,8 +93,11 @@ export function importPlan(catalog: Catalog, index: CatalogIndex, source: { labe
 /**
  * The profile for an imported list: based on the template that shares the most mods with it
  * (Jaccard similarity), with the template's other mods removed and the rest added as extras.
+ * The template shows which mods the list builds on; the character it plays can be another one: a campaign or submod the
+ * list adds that makes the player someone the template does not play (a "play as" pack on top of another character's
+ * campaign) sets `playAs`, when it names exactly one such character.
  */
-export function profileFromImport(catalog: Catalog, index: CatalogIndex, mods: ImportedMod[]): { presetId: string; extras: string[]; removed: string[] } {
+export function profileFromImport(catalog: Catalog, index: CatalogIndex, mods: ImportedMod[]): { presetId: string; extras: string[]; removed: string[]; playAs?: string[] } {
   const keys = [...new Set(mods.map((m) => keyForImported(index, m)))]
   const wanted = new Set(keys)
   let best = catalog.presets[0]
@@ -105,5 +109,16 @@ export function profileFromImport(catalog: Catalog, index: CatalogIndex, mods: I
     if (score > bestScore) [best, bestScore] = [p, score]
   }
   const base = baseKeys(best)
-  return { presetId: best.id, extras: keys.filter((k) => !base.includes(k)), removed: [...new Set(base.filter((k) => !wanted.has(k)))] }
+  const extras = keys.filter((k) => !base.includes(k))
+  const canon = characterNames(catalog)
+  const own = new Set(best.playAs.flatMap((c) => c.split(/\s*[/,]\s*/)).map(canon))
+  const others = new Set(extras.flatMap((k) => {
+    const m = k.startsWith('mod:') ? index.mods.get(k.slice(4)) : undefined
+    if (!m || (m.kind !== 'campaign' && m.kind !== 'submod')) return []
+    return (m.playAs ?? []).flatMap((p) => p.character.split(/\s*[/,]\s*/)).map(canon).filter((c) => !/^(any|all)\b/i.test(c) && !own.has(c))
+  }))
+  return {
+    presetId: best.id, extras, removed: [...new Set(base.filter((k) => !wanted.has(k)))],
+    ...(others.size === 1 ? { playAs: [...others] } : {})
+  }
 }

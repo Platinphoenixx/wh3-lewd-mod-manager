@@ -27,6 +27,11 @@ export interface Profile {
    * the exact packs per entry. Nothing is added to it on its own; a mod the player adds later is placed by the catalog's rules.
    */
   imported?: { source: string; at: string; order: string[]; packs: Record<string, string[]> }
+  /**
+   * The character an imported list plays when it is not its template's: the list has a "play as" mod for another character
+   * that the template does not (MrDustV's pack that plays Miao Ying in Alarielle's ATB). Sharing the list uses it.
+   */
+  playAs?: string[]
   /** Rule ids of points the player keeps as they are (Check tab). */
   keptPoints?: string[]
   /** Rule ids the player flagged as wrong → the day it was sent. */

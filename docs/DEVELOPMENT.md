@@ -147,7 +147,9 @@ community contributions. App UI and catalog texts are English.
     Workshop items come from the player's Steam client once (userData/workshop-details.json);
     previews via the `wh3lmm://workshop/<id>` protocol.
   - `src/shared/importlist.ts`: mod lists of the CA launcher (`Launcher/20190104-moddata.dat`, `.twmods`)
-    and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested). `importPlan` keeps the list
+    and the WH3 Mod Manager (`wh3mm/config.json`) become a profile on the closest template (tested); a campaign or submod the
+    list adds that makes the player another character than the template's (MrDustV's pack that plays Miao Ying in ATB) sets
+    `Profile.playAs`, which sharing the list uses. `importPlan` keeps the list
     as it was played (`Profile.imported`: its load order and exact packs, own mods pinned to their place): nothing is pulled in on
     its account; only what the player adds later is placed by the rules and completed. Such a profile has two more tabs
     (`renderer/src/ProfileCheck.tsx`): **Check** (`src/shared/check.ts`, tested) says what the catalog would warn about (conflict,
@@ -236,7 +238,7 @@ The project keeps itself current without anyone's manual work or paid service.
   install ids) → `build_catalog.py` adds the setups as templates with `origin: "community"` (a list made only of catalog
   mods right away; one with own or unknown packs right away too, as `community.reviewed: false` until a maintainer labels
   its `setup` issue `accepted`, and gone once a maintainer closes it as not planned; Workshop items it named that the catalog
-  has learned since become entries; its free text loses links and markup; `community.json` `setupEdits` lets a maintainer
+  (or loose packs it named) has learned since become entries; its free text loses links and markup; `community.json` `setupEdits` lets a maintainer
   correct a setup's shown name and character, e.g. an imported list matched to the wrong character's template) and `votes`
   to every template. Commits only when something changed.
 - Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord

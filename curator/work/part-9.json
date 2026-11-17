@@ -8,17 +8,36 @@
       "kind": "reskin",
       "summary": "Reskin of Alarielle that makes her look younger while keeping a similar face; unit card and 2D portrait stay as they are.",
       "description": "A simple reskin of Alarielle that makes her look younger while keeping a similar impression and face sculpt. The unit card and the 2D portrait are not changed. Unlike the author's Warhammer II version it has no nudity, only some transparency.\n\nIt works with everything that does not change Alarielle's appearance; next to an overhaul that does, load it above that mod. By the same author as the Handmaiden, Damsel and Prophetess reskins.",
-      "features": ["Younger look for Alarielle", "No nudity (some transparency)", "Unit card and portrait unchanged"],
+      "features": [
+        "Younger look for Alarielle",
+        "No nudity (some transparency)",
+        "Unit card and portrait unchanged"
+      ],
       "recommendedFor": "Alarielle players who want a fresher look without nudity.",
-      "tags": ["beautification", "reskin", "high elves", "alarielle"],
-      "sources": {"steam": [{"id": "2880984692", "title": "[LIG] Reskin - Alarielle", "updated": "2025-03-26"}]},
+      "tags": [
+        "beautification",
+        "reskin",
+        "high elves",
+        "alarielle"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2880984692",
+            "title": "[LIG] Reskin - Alarielle",
+            "updated": "2025-03-26"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name and files not read yet (not subscribed); which of the other Alarielle looks it replaces whole is not checked."]
+        "openQuestions": [
+          "Pack name and files not read yet (not subscribed); which of the other Alarielle looks it replaces whole is not checked."
+        ]
       }
     },
     {
@@ -28,18 +47,40 @@
       "kind": "reskin",
       "summary": "Reskin and variant expansion of the Bretonnian Damsel that makes her young, as in the lore; replaces the original design and art.",
       "description": "Warhammer III port of the author's Damsel reskin. It follows the lore, where Damsels stay young and beautiful through their magic, at the cost of faction identification, and replaces the original design and art completely.\n\nIt is also a variant expansion, so switching it off in the middle of a campaign breaks the save. Not compatible with unit resize mods or other mods that change the Damsel's appearance; next to an overhaul that does, load it above that mod. Some head sculpts come from open-source community assets.",
-      "features": ["Younger Damsels, as in the lore", "Variant expansion", "Replaces the original design and art"],
+      "features": [
+        "Younger Damsels, as in the lore",
+        "Variant expansion",
+        "Replaces the original design and art"
+      ],
       "recommendedFor": "Bretonnia players who want a different look for their Damsels.",
-      "tags": ["beautification", "reskin", "bretonnia", "damsel"],
-      "sources": {"steam": [{"id": "2871612719", "title": "[LIG] Reskin - Damsel", "updated": "2025-03-26"}]},
+      "tags": [
+        "beautification",
+        "reskin",
+        "bretonnia",
+        "damsel"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2871612719",
+            "title": "[LIG] Reskin - Damsel",
+            "updated": "2025-03-26"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "knownIssues": ["Switching it off in the middle of a campaign breaks the save (it adds variants).", "Not compatible with unit resize mods."],
+      "knownIssues": [
+        "Switching it off in the middle of a campaign breaks the save (it adds variants).",
+        "Not compatible with unit resize mods."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."]
+        "openQuestions": [
+          "Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."
+        ]
       }
     },
     {
@@ -49,45 +90,93 @@
       "kind": "reskin",
       "summary": "Reskin and variant expansion of the Bretonnian Prophetess with two face variants each.",
       "description": "A reskin of the Bretonnian Prophetess that follows the lore at the cost of faction identification, with two face variants each. Some assets are modified community and open-source models.\n\nIt is also a variant expansion, so switching it off in the middle of a campaign breaks the save. Not compatible with lord and hero resize mods or other mods that change the Prophetess's appearance; next to an overhaul that does, load it above that mod. Portraits can spawn unmatched; the Variant Selector or loading the save fixes that.",
-      "features": ["New look for the Prophetess", "Two face variants each", "Variant expansion"],
+      "features": [
+        "New look for the Prophetess",
+        "Two face variants each",
+        "Variant expansion"
+      ],
       "recommendedFor": "Bretonnia players who want a different look for their Prophetesses.",
-      "tags": ["beautification", "reskin", "bretonnia", "prophetess"],
-      "sources": {"steam": [{"id": "2875947979", "title": "[LIG] Reskin - Prophetess", "updated": "2025-03-26"}]},
+      "tags": [
+        "beautification",
+        "reskin",
+        "bretonnia",
+        "prophetess"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2875947979",
+            "title": "[LIG] Reskin - Prophetess",
+            "updated": "2025-03-26"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "knownIssues": ["Switching it off in the middle of a campaign breaks the save (it adds variants).", "Portraits can spawn unmatched; the Variant Selector or loading the save fixes it.", "Not compatible with lord and hero resize mods."],
+      "knownIssues": [
+        "Switching it off in the middle of a campaign breaks the save (it adds variants).",
+        "Portraits can spawn unmatched; the Variant Selector or loading the save fixes it.",
+        "Not compatible with lord and hero resize mods."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."]
+        "openQuestions": [
+          "Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."
+        ]
       }
     },
     {
       "id": "steam-3700204099",
       "name": "Alt appearance for the Dragon Queen",
-      "authors": ["Typher"],
+      "authors": [
+        "Typher"
+      ],
       "kind": "reskin",
       "summary": "Makes the Dragon Queen of Typher's TDQ - The Dragon Queen III a little more curvy; only the model changes.",
       "description": "An alternative appearance by Typher for the Dragon Queen, the character his mod TDQ - The Dragon Queen III adds: it makes her a little more curvy and changes only the model, nothing else.",
-      "features": ["Curvier model for the Dragon Queen", "Changes nothing but the model"],
+      "features": [
+        "Curvier model for the Dragon Queen",
+        "Changes nothing but the model"
+      ],
       "recommendedFor": "Players of TDQ - The Dragon Queen III.",
-      "tags": ["beautification", "reskin", "high elves", "dragon queen"],
-      "sources": {"steam": [{"id": "3700204099", "title": "Alt appearance for the Dragon Queen", "updated": "2026-04-05"}]},
+      "tags": [
+        "beautification",
+        "reskin",
+        "high elves",
+        "dragon queen"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3700204099",
+            "title": "Alt appearance for the Dragon Queen",
+            "updated": "2026-04-05"
+          }
+        ]
+      },
       "packs": [],
       "relations": [
         {
           "kind": "requires",
-          "target": {"mod": "steam-2865263701"},
+          "target": {
+            "mod": "steam-2865263701"
+          },
           "note": "The Dragon Queen is the character TDQ - The Dragon Queen III adds (same author); without it there is nobody to change.",
-          "source": {"type": "steam", "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3700204099"}
+          "source": {
+            "type": "steam",
+            "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3700204099"
+          }
         }
       ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Its page lists no required item; the requirement is read from what it changes. Pack name not read yet."]
+        "openQuestions": [
+          "Its page lists no required item; the requirement is read from what it changes. Pack name not read yet."
+        ]
       }
     },
     {
@@ -97,18 +186,38 @@
       "kind": "reskin",
       "summary": "Reskin of Isabella von Carstein with a new outfit, body and hair, plus a new unit card and portrait.",
       "description": "A reskin of Isabella von Carstein with a new outfit, body and hair, a new unit card and a new lord portrait. It is not compatible with any other mod that changes Isabella's look. Known issue: a short flash of light can sometimes be seen on the hair.",
-      "features": ["New outfit, body and hair for Isabella", "New unit card and portrait"],
+      "features": [
+        "New outfit, body and hair for Isabella",
+        "New unit card and portrait"
+      ],
       "recommendedFor": "Vampire Counts players who want a different look for Isabella.",
-      "tags": ["beautification", "reskin", "vampire counts", "isabella"],
-      "sources": {"steam": [{"id": "2980444723", "title": "Beautiful Isabella", "updated": "2025-03-25"}]},
+      "tags": [
+        "beautification",
+        "reskin",
+        "vampire counts",
+        "isabella"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2980444723",
+            "title": "Beautiful Isabella",
+            "updated": "2025-03-25"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "knownIssues": ["A short flash of light can sometimes be seen on the hair."],
+      "knownIssues": [
+        "A short flash of light can sometimes be seen on the hair."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."]
+        "openQuestions": [
+          "Pack name and files not read yet (not subscribed); whether it shows nudity is not stated on its page."
+        ]
       }
     },
     {
@@ -118,17 +227,37 @@
       "kind": "units",
       "summary": "Adds a Cathayan legendary heroine, the Dragon Priestess, who joins any player faction at the start of a campaign; her own skill tree, spells and abilities.",
       "description": "Adds a legendary heroine for Cathay, the Dragon Priestess, with her own dragon-blooded look and a glaive. She joins any player faction at the start (next to the faction leader), has a fixed name and is immortal. She has her own nine-tier skill tree, a spell lore drawing on several lores, eight battle abilities (two of them swap places with an enemy unit or jump next to one), ten army and six campaign skills, and can be picked in custom battles as Cathay.\n\nThe page is in Chinese. It only adds data and changes no base game tables, so it works with other mods, including other random legendary hero mods; no other mod is needed.",
-      "features": ["Legendary heroine for any player faction", "Own skill tree, spells and abilities", "Only adds data"],
+      "features": [
+        "Legendary heroine for any player faction",
+        "Own skill tree, spells and abilities",
+        "Only adds data"
+      ],
       "recommendedFor": "Players who want an extra heroine in any campaign.",
-      "tags": ["general", "hero", "cathay", "all factions", "chinese"],
-      "sources": {"steam": [{"id": "2899849873", "title": "传奇英雄-龙之巫女", "updated": "2026-10-08"}]},
+      "tags": [
+        "general",
+        "hero",
+        "cathay",
+        "all factions",
+        "chinese"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2899849873",
+            "title": "传奇英雄-龙之巫女",
+            "updated": "2026-10-08"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name not read yet (not subscribed). Texts in the game are probably Chinese; not checked."]
+        "openQuestions": [
+          "Pack name not read yet (not subscribed). Texts in the game are probably Chinese; not checked."
+        ]
       }
     },
     {
@@ -138,18 +267,39 @@
       "kind": "units",
       "summary": "Adds fitting dragon mounts at level 20 for Tyrion, Alarielle, Eltharion, Teclis and Alith Anar, plus a few other mounts; works with vanilla, SFO and Radious.",
       "description": "Adds a dragon mount that fits each High Elf legendary lord, unlocked at level 20: Tyrion a Star Dragon, Alarielle a Forest Dragon, Eltharion a Moon Dragon, Teclis a Sun Dragon and Alith Anar a Black Dragon; Tyrion also gets a Phoenix at level 14 and Alith Anar an Elven Steed and a Great Eagle.\n\nIt works with vanilla, SFO and Radious and with any mod that does not change the legendary lords' skill trees much. It can be added to a running campaign but not removed from it.",
-      "features": ["Dragon mounts for five High Elf legendary lords", "Works with vanilla, SFO and Radious", "Can be added mid-campaign"],
+      "features": [
+        "Dragon mounts for five High Elf legendary lords",
+        "Works with vanilla, SFO and Radious",
+        "Can be added mid-campaign"
+      ],
       "recommendedFor": "High Elf players, Alarielle among them, who want their lords on dragons.",
-      "tags": ["general", "high elves", "alarielle", "mounts"],
-      "sources": {"steam": [{"id": "2854699238", "title": "Dragon Mounts for High Elves Legendary Lords", "updated": "2026-09-24"}]},
+      "tags": [
+        "general",
+        "high elves",
+        "alarielle",
+        "mounts"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2854699238",
+            "title": "Dragon Mounts for High Elves Legendary Lords",
+            "updated": "2026-09-24"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "knownIssues": ["Can be added to a running campaign but not removed from it."],
+      "knownIssues": [
+        "Can be added to a running campaign but not removed from it."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name not read yet (not subscribed). Whether ATB's skill changes for Alarielle leave room for the mount is not checked."]
+        "openQuestions": [
+          "Pack name not read yet (not subscribed). Whether ATB's skill changes for Alarielle leave room for the mount is not checked."
+        ]
       }
     },
     {
@@ -159,18 +309,39 @@
       "kind": "utility",
       "summary": "A faction slowly adapts to a region's unsuitable climate: the penalty shrinks every turn until it is gone (25 turns for unpleasant, 50 for uninhabitable).",
       "description": "A faction gradually adapts to a region's unsuitable climate, and the penalty shrinks every turn until it is gone: 25 turns for an unpleasant and 50 for an uninhabitable climate. If another faction captures or destroys the region, the adaptation starts over. Devastation effects such as the Land of the Dead are no climate and stay.\n\nIt works with saved games and has built-in SFO support; it is not compatible with mods that add new climate effect bundles. Some texts need the author's English sub-mod, and a faster version exists (do not use both).",
-      "features": ["Climate penalties fade over time", "Works with saved games", "Built-in SFO support"],
+      "features": [
+        "Climate penalties fade over time",
+        "Works with saved games",
+        "Built-in SFO support"
+      ],
       "recommendedFor": "Any campaign that expands into regions with a bad climate.",
-      "tags": ["general", "all factions", "campaign"],
-      "sources": {"steam": [{"id": "2793731221", "title": "Climate Adaptation", "updated": "2026-09-29"}]},
+      "tags": [
+        "general",
+        "all factions",
+        "campaign"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "2793731221",
+            "title": "Climate Adaptation",
+            "updated": "2026-09-29"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "knownIssues": ["Not compatible with mods that add new climate effect bundles.", "Some texts show correctly only with the author's English sub-mod."],
+      "knownIssues": [
+        "Not compatible with mods that add new climate effect bundles.",
+        "Some texts show correctly only with the author's English sub-mod."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Pack name not read yet (not subscribed); the English sub-mod is not in the catalog."]
+        "openQuestions": [
+          "Pack name not read yet (not subscribed); the English sub-mod is not in the catalog."
+        ]
       }
     },
     {
@@ -180,18 +351,103 @@
       "kind": "utility",
       "summary": "Write to any faction leader in your own words in the diplomacy screen and get an answer in character; needs the separate Player2 app.",
       "description": "Lets you write to any faction leader in your own words, right in the diplomacy screen, and they answer in character: greet them, bargain, flatter, threaten or just talk. The legendary lords have their own lore and personality, leaders weigh the balance of power and their culture, treacherous factions can sign and then break a treaty, and deals you accept are really signed in your campaign. Leaders also write to you on their own and remember what you promised.\n\nThe answers come from the separate Player2 app (an AI service the player installs and runs next to the game); without it the mod does nothing. It works in all 13 languages of the game.",
-      "features": ["Free-text diplomacy with every faction leader", "Answers in character, deals are really signed", "All game languages"],
+      "features": [
+        "Free-text diplomacy with every faction leader",
+        "Answers in character, deals are really signed",
+        "All game languages"
+      ],
       "recommendedFor": "Players who want to talk to the other leaders instead of clicking through offers.",
-      "tags": ["general", "all factions", "diplomacy"],
-      "sources": {"steam": [{"id": "3802515040", "title": "Living Diplomacy – AI Diplomacy for Total War: WARHAMMER III", "updated": "2026-10-14"}]},
+      "tags": [
+        "general",
+        "all factions",
+        "diplomacy"
+      ],
+      "sources": {
+        "steam": [
+          {
+            "id": "3802515040",
+            "title": "Living Diplomacy – AI Diplomacy for Total War: WARHAMMER III",
+            "updated": "2026-10-14"
+          }
+        ]
+      },
       "packs": [],
       "relations": [],
-      "installNotes": ["Needs the separate Player2 app running next to the game; this app cannot install it for you."],
+      "installNotes": [
+        "Needs the separate Player2 app running next to the game; this app cannot install it for you."
+      ],
       "status": "stable",
       "curation": {
         "lastChecked": "2026-11-17",
         "confidence": "medium",
-        "openQuestions": ["Suggested by a player (issue #5). Pack name not read yet (not subscribed)."]
+        "openQuestions": [
+          "Suggested by a player (issue #5). Pack name not read yet (not subscribed)."
+        ]
+      }
+    },
+    {
+      "id": "dc-dust-atb-play-as-miao-override",
+      "name": "Play as Miao Ying in ATB (MrDustV)",
+      "authors": [
+        "MrDustV"
+      ],
+      "kind": "submod",
+      "status": "wip",
+      "suggestOnly": true,
+      "summary": "Lets a player who starts as Miao Ying go through Alarielle, Temptation's Bloom's corruption as Miao; it only acts when the player plays Miao Ying.",
+      "description": "A small override pack by MrDustV for Alarielle, Temptation's Bloom (ATB): with it, a player who starts as Miao Ying gets ATB's corruption as Miao Ying. It does nothing unless the player plays Miao Ying. It was posted and pinned in the ATB channel on 2026-11-14; ATB's author said it is not official yet.\n\nKerberos' Alarielle-Morathi expansion names it for players who start as Miao Ying.",
+      "features": [
+        "ATB's corruption as Miao Ying",
+        "Only active when playing Miao Ying"
+      ],
+      "recommendedFor": "Players who want to play Miao Ying with the ATB list.",
+      "tags": [
+        "miao ying",
+        "atb",
+        "cathay"
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "note": "With Alarielle, Temptation's Bloom."
+        }
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "1239642838778511552",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!dust_atb_play_as_miao_override.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1239642838778511552"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "An override for ATB; on its own it does nothing.",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1239642838778511552"
+          }
+        }
+      ],
+      "updated": "2026-11-14",
+      "curation": {
+        "lastChecked": "2026-11-17",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack not in the archive and not read; message link of the pinned post not noted.",
+          "Not official yet (ATB's author, 2026-11-14)."
+        ]
       }
     }
   ]

@@ -299,19 +299,19 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
                     continue
                 entries.append({"pack": pack, "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
                                 **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
-        # Workshop items the app did not know when the list was shared, which the catalog knows now, become entries
-        # (on top, where the app puts what a player adds); the others stay own mods.
+        # Workshop items and packs the app did not know when the list was shared, which the catalog knows now, become
+        # entries (on top, where the app puts what a player adds); the others stay own mods.
         own, top = [], 0
         for o in s.get("own") or []:
             sid = (re.fullmatch(r"Workshop item (\d+)", o) or [None, None])[1]
-            t = (steam_owner or {}).get(sid) if sid else None
+            t = (steam_owner or {}).get(sid) if sid else pack_owner.get(o.lower()) if o.lower().endswith(".pack") else None
             m = mods.get(t["mod"]) if t and "mod" in t else None
             if not m:
                 own.append(o)
                 continue
-            for pack in [x["file"] for x in m.get("packs", []) if not x.get("optional") and not x.get("exclusiveGroup")] or [m["name"]]:
+            for pack in [o] if not sid else [x["file"] for x in m.get("packs", []) if not x.get("optional") and not x.get("exclusiveGroup")] or [m["name"]]:
                 if not any(x["pack"].lower() == pack.lower() for x in entries):
-                    entries.insert(top, {"pack": pack, "from": "steam", "steamId": sid, "target": t})
+                    entries.insert(top, {"pack": pack, "target": t, **({"from": "steam", "steamId": sid} if sid else {"from": "download"})})
                     top += 1
         base = by_id.get(s.get("base") or "")
         notes = shown_text(s.get("notes") or "", 1500)

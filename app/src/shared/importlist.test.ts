@@ -72,4 +72,27 @@ describe('mod list import', () => {
     // Template mods that are not in the list are switched off.
     expect(profileFromImport(catalog, index, [{ pack: 'atb.pack', steamId: '111' }])).toEqual({ presetId: 'a', removed: ['mod:fw'], extras: [] })
   })
+
+  it("takes the character a 'play as' mod in the list makes the player, not the template's", () => {
+    const cat = {
+      ...catalog,
+      mods: [
+        mod('atb', { kind: 'campaign', playAs: [{ character: 'Alarielle' }], packs: [{ file: 'atb.pack', from: 'download' }] }),
+        mod('fw', { packs: [{ file: 'fw.pack', from: 'download' }] }),
+        mod('miao-prog', { kind: 'progression', playAs: [{ character: 'Miao Ying' }], packs: [{ file: 'prog.pack', from: 'download' }] }),
+        mod('as-miao', { kind: 'submod', playAs: [{ character: 'Miao Ying' }], packs: [{ file: 'as_miao.pack', from: 'download' }] }),
+        mod('nkari-look', { kind: 'reskin', playAs: [{ character: "N'Kari" }], packs: [{ file: 'nk.pack', from: 'download' }] })
+      ],
+      presets: [{ id: 'alarielle', name: 'Alarielle', playAs: ['Alarielle'], phase: 'early', origin: 'tested', source: { type: 'discord' }, entries: [
+        { pack: 'atb.pack', from: 'download', target: { mod: 'atb' } }, { pack: 'fw.pack', from: 'download', target: { mod: 'fw' } },
+        { pack: 'prog.pack', from: 'download', target: { mod: 'miao-prog' } }] }]
+    } as unknown as Catalog
+    const idx = buildIndex(cat)
+    const list = [{ pack: 'atb.pack' }, { pack: 'fw.pack' }, { pack: 'prog.pack' }, { pack: 'nk.pack' }]
+    // The template's own Miao progression and a look for someone else do not make the list a Miao Ying list ...
+    expect(profileFromImport(cat, idx, list).playAs).toBeUndefined()
+    // ... a pack that makes the player Miao Ying in ATB does.
+    const r = profileFromImport(cat, idx, [...list, { pack: 'as_miao.pack' }])
+    expect(r).toMatchObject({ presetId: 'alarielle', playAs: ['Miao Ying'] })
+  })
 })

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T11:58:53+00:00",
+  "generatedAt": "2026-11-17T13:15:00+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -42935,6 +42935,72 @@
       "confirmed": "2026-11-14"
     },
     {
+      "id": "dc-dust-atb-play-as-miao-override",
+      "name": "Play as Miao Ying in ATB (MrDustV)",
+      "authors": [
+        "MrDustV"
+      ],
+      "kind": "submod",
+      "status": "wip",
+      "suggestOnly": true,
+      "summary": "Lets a player who starts as Miao Ying go through Alarielle, Temptation's Bloom's corruption as Miao; it only acts when the player plays Miao Ying.",
+      "description": "A small override pack by MrDustV for Alarielle, Temptation's Bloom (ATB): with it, a player who starts as Miao Ying gets ATB's corruption as Miao Ying. It does nothing unless the player plays Miao Ying. It was posted and pinned in the ATB channel on 2026-11-14; ATB's author said it is not official yet.\n\nKerberos' Alarielle-Morathi expansion names it for players who start as Miao Ying.",
+      "features": [
+        "ATB's corruption as Miao Ying",
+        "Only active when playing Miao Ying"
+      ],
+      "recommendedFor": "Players who want to play Miao Ying with the ATB list.",
+      "tags": [
+        "miao ying",
+        "atb",
+        "cathay"
+      ],
+      "playAs": [
+        {
+          "character": "Miao Ying",
+          "note": "With Alarielle, Temptation's Bloom."
+        }
+      ],
+      "sources": {
+        "discord": [
+          {
+            "channel": "1239642838778511552",
+            "messageUrl": "https://discord.com/channels/965342581745668136/1239642838778511552"
+          }
+        ]
+      },
+      "packs": [
+        {
+          "file": "!dust_atb_play_as_miao_override.pack",
+          "from": "download",
+          "url": "https://discord.com/channels/965342581745668136/1239642838778511552"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "requires",
+          "target": {
+            "mod": "ll-42028"
+          },
+          "note": "An override for ATB; on its own it does nothing.",
+          "source": {
+            "type": "discord",
+            "url": "https://discord.com/channels/965342581745668136/1239642838778511552"
+          }
+        }
+      ],
+      "updated": "2026-11-14",
+      "curation": {
+        "lastChecked": "2026-11-17",
+        "confidence": "medium",
+        "openQuestions": [
+          "Pack not in the archive and not read; message link of the pinned post not noted.",
+          "Not official yet (ATB's author, 2026-11-14)."
+        ]
+      },
+      "changesData": true
+    },
+    {
       "id": "steam-2795725577",
       "name": "Pleasureseekers of Slaanesh and Tzeentch Great Winged Terrors",
       "authors": [
@@ -73815,67 +73881,67 @@
       "entries": [
         {
           "pack": "[LIG] Reskin - Alarielle",
-          "from": "steam",
-          "steamId": "2880984692",
           "target": {
             "mod": "steam-2880984692"
-          }
+          },
+          "from": "steam",
+          "steamId": "2880984692"
         },
         {
           "pack": "[LIG] Reskin - Damsel",
-          "from": "steam",
-          "steamId": "2871612719",
           "target": {
             "mod": "steam-2871612719"
-          }
+          },
+          "from": "steam",
+          "steamId": "2871612719"
         },
         {
           "pack": "[LIG] Reskin - Prophetess",
-          "from": "steam",
-          "steamId": "2875947979",
           "target": {
             "mod": "steam-2875947979"
-          }
+          },
+          "from": "steam",
+          "steamId": "2875947979"
         },
         {
           "pack": "Alt appearance for the Dragon Queen",
-          "from": "steam",
-          "steamId": "3700204099",
           "target": {
             "mod": "steam-3700204099"
-          }
+          },
+          "from": "steam",
+          "steamId": "3700204099"
         },
         {
           "pack": "Climate Adaptation",
-          "from": "steam",
-          "steamId": "2793731221",
           "target": {
             "mod": "steam-2793731221"
-          }
+          },
+          "from": "steam",
+          "steamId": "2793731221"
         },
         {
           "pack": "Dragon Mounts for High Elves Legendary Lords",
-          "from": "steam",
-          "steamId": "2854699238",
           "target": {
             "mod": "steam-2854699238"
-          }
+          },
+          "from": "steam",
+          "steamId": "2854699238"
         },
         {
           "pack": "Beautiful Isabella",
-          "from": "steam",
-          "steamId": "2980444723",
           "target": {
             "mod": "steam-2980444723"
-          }
+          },
+          "from": "steam",
+          "steamId": "2980444723"
         },
         {
           "pack": "Legendary hero: Dragon Priestess (传奇英雄-龙之巫女)",
-          "from": "steam",
-          "steamId": "2899849873",
           "target": {
             "mod": "steam-2899849873"
-          }
+          },
+          "from": "steam",
+          "steamId": "2899849873"
         },
         {
           "pack": "Sigvald_female.pack",

@@ -29,7 +29,7 @@ const ARMY = /^(?:They all change|It changes) how the (.+) army looks$/
 const STORY: Mod['kind'][] = ['progression', 'campaign', 'reskin', 'units', 'submod']
 
 /** Canonical character names: the catalog's spellings, most common first ("Miao" → "Miao Ying", "N'kari" → "N'Kari"). */
-function characterNames(catalog: Catalog): (raw: string) => string {
+export function characterNames(catalog: Catalog): (raw: string) => string {
   const counts = new Map<string, Map<string, number>>()
   const all = [...catalog.mods.flatMap((m) => (m.playAs ?? []).map((p) => p.character)), ...catalog.presets.flatMap((p) => p.playAs)]
   for (const raw of all) for (const c of raw.split(/\s*[/,]\s*/).map((x) => x.replace(/\s*\(.*\)$/, '').trim())) {
@@ -383,7 +383,7 @@ export interface SharedSetup {
 }
 
 export function setupFromProfile(
-  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed'>,
+  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'playAs'>,
   words: Pick<SharedSetup, 'name' | 'shownAs' | 'far' | 'notes' | 'game' | 'catalog'>
 ): SharedSetup {
   const entries: SharedSetup['entries'] = []
@@ -403,5 +403,5 @@ export function setupFromProfile(
       if (!entries.some((x) => x.pack.toLowerCase() === pack.toLowerCase())) entries.push({ pack, mod: id, ...(e.steamId ? { steamId: e.steamId } : {}) })
     }
   }
-  return { ...words, base: preset.id, playAs: preset.playAs, ...(preset.theme ? { theme: preset.theme } : {}), entries, own }
+  return { ...words, base: preset.id, playAs: profile.playAs ?? preset.playAs, ...(preset.theme ? { theme: preset.theme } : {}), entries, own }
 }
