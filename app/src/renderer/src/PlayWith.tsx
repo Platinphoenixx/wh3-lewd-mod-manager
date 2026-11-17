@@ -22,6 +22,7 @@ export function SubjectCard({ s, extra, dim, rec, onClick }: { s: Subject; extra
         {rec && <div className="rec">{rec}</div>}
         <div className="name">{s.name}</div>
         {s.kind === 'theme' && <div className="small muted">{s.characters.slice(0, 4).join(', ')}{s.characters.length > 4 ? ' …' : ''}</div>}
+        {s.alsoAs && <div className="small muted">Also as {s.alsoAs.join(', ')}</div>}
         {s.vanilla ? (
           <>
             <div className="small muted">{s.factions?.join(', ')} · the game's own campaign</div>

@@ -48,6 +48,14 @@ describe('guided setups', () => {
     expect(subjects[1].characters).toEqual(["N'Kari", 'Dechala'])
   })
 
+  it('names the lords a character list also plays that have no lists of their own', () => {
+    const c: Catalog = { ...catalog, presets: [list('azazel', ['Azazel', 'Archaon', 'Miao Ying', 'Any other lord'], ['camera']), ...catalog.presets] }
+    const azazel = subjectsOf(c, buildIndex(c)).find((s) => s.name === 'Azazel')!
+    expect(azazel.kind).toBe('character')
+    expect(azazel.alsoAs).toEqual(['Archaon'])
+    expect(miao.alsoAs).toBeUndefined()
+  })
+
   it('pictures a character with a mod about her, story mods first', () => {
     expect(miao.coverMods[0]).toBe('miao-progression')
   })

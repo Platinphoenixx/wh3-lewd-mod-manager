@@ -79,8 +79,8 @@ PRESETS = {
     "Readman_ATB_Sigv_Earlygame_2026Jan2": ("readman-sigvald-early", "Sigvald – early game", ["Sigvald"], "early", None),
     "Readman_ATB_SlaaneshDe_Earlygame2026Jan3": ("readman-slaanesh-daemons-early", "N'Kari / Dechala / Masque – early game",
                                                  ["N'Kari", "Dechala", "Masque"], "early", None),
-    "Readman_ATB_WoC_Earlygame_2026Jan2": ("readman-woc-early", "Archaon / Azazel / Be'lakor / Daemon Prince – early game",
-                                           ["Archaon", "Azazel", "Be'lakor", "Daemon Prince"], "early", None),
+    "Readman_ATB_WoC_Earlygame_2026Jan2": ("readman-woc-early", "Azazel / Archaon / Be'lakor / Daemon Prince – early game",
+                                           ["Azazel", "Archaon", "Be'lakor", "Daemon Prince"], "early", None),
 }
 
 
@@ -486,6 +486,33 @@ def apply_community(mods: dict, steam: dict | None = None) -> None:
 # at least AUTO_VOTES "Did it work?" votes on them, AUTO_SHARE of them "it worked". Only rules where it is clear which
 # lists go against them (two mods in one list, a mod without what it "needs", a mod that "does not start").
 AUTO_FLAGS, AUTO_VOTES, AUTO_SHARE = 5, 5, 0.8
+
+
+def wiki_spellings(mods: dict, presets: list) -> None:
+    """Lords' names as the game writes them (work/vanilla-lords.json, from the Total War wiki): the sources spell them
+    "Bel'akor", "Belakor" or "N'kari"; a name in a playable character or a template's name that differs from a lord's only
+    in spelling (same letters) takes the game's spelling, so the app shows one name per lord."""
+    path = CURATOR / "work" / "vanilla-lords.json"
+    if not path.exists():
+        return
+    letters = lambda s: re.sub(r"[^a-z]", "", s.lower())
+    wiki = {}
+    for lord in load(path)["lords"]:
+        for n in (lord["name"], lord["title"]):
+            wiki.setdefault(letters(n), n)
+    def fix(text: str) -> str:
+        for tok in re.split(r"\s*[/,;]\s*|\s+[–-]\s+", re.sub(r"\s*\([^)]*\)", "", text)):
+            tok = tok.strip()
+            right = wiki.get(letters(tok)) if tok else None
+            if right and right != tok:
+                text = re.sub(r"(?<![\w'])" + re.escape(tok) + r"(?![\w'])", right, text)
+        return text
+    for m in mods.values():
+        for pa in m.get("playAs") or []:
+            pa["character"] = fix(pa["character"])
+    for p in presets:
+        p["playAs"] = [fix(c) for c in p["playAs"]]
+        p["name"] = fix(p["name"])
 
 
 def apply_rule_flags(mods: dict, presets: list) -> dict:
@@ -1608,6 +1635,7 @@ def main():
             p["uses"] = uses[p["id"]]
     presets += vanilla
 
+    wiki_spellings(mods, presets)
     rule_flags = apply_rule_flags(mods, presets)
 
     catalog = {

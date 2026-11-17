@@ -11,7 +11,10 @@ community contributions. App UI and catalog texts are English.
   - `src/main/` game/Workshop detection and pack scan (`game.ts`), catalog loading with daily ETag update
     check (`catalog.ts`), JSON storage of profiles/settings/rules/contributions in the app's userData (`store.ts`)
   - "Play" (the start tab, `renderer/src/PlayView.tsx` + `src/shared/setups.ts`, tested): the guided way in. Templates
-    are grouped by character ("Play as", the first playAs, spellings joined) or by `theme`; per subject up to four sizes
+    are grouped by character ("Play as", the first playAs, spellings joined; lords' names take the game's spelling from
+    `curator/work/vanilla-lords.json`, `wiki_spellings` in the build) or by `theme`; a character's card names the other lords its
+    lists also play that have no lists of their own (`Subject.alsoAs`: Azazel's lists also play Archaon, Be'lakor, a Daemon Prince).
+    A list for one character's campaign that other lords can also play is no theme (Readman's WoC list is Azazel's); per subject up to four sizes
     – Essentials (smallest guide/derived list), Full campaign (largest tested early list, recommended), Extended (+ the
     editor's suggested mods), Everything (+ every lewd suggestion) – with what vouches for each (played by its author,
     launch-tested). Then the pick-one choices as steps with pictures (the character's look, add-ons, looks the list

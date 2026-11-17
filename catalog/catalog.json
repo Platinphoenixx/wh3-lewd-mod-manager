@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T14:52:41+00:00",
+  "generatedAt": "2026-11-17T17:39:21+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-17T14:52:36+00:00",
+      "fetchedAt": "2026-11-16T20:32:11+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -10214,7 +10214,7 @@
           "note": "Content starts one turn after corruption level 2 of Lazy's Miao progression"
         },
         {
-          "character": "Archaon / Belakor / Sigvald / Daemon Prince (Daemons of Chaos)",
+          "character": "Archaon / Be'lakor / Sigvald / Daemon Prince (Daemons of Chaos)",
           "campaigns": [
             "IE",
             "IEE"
@@ -31169,7 +31169,7 @@
           "faction": "Slaanesh"
         },
         {
-          "character": "Bel'akor",
+          "character": "Be'lakor",
           "faction": "Chaos"
         },
         {
@@ -43349,7 +43349,7 @@
           "note": "compatible according to the page"
         },
         {
-          "character": "Bel'akor / Archaon / Sigvald",
+          "character": "Be'lakor / Archaon / Sigvald",
           "note": "according to the page, 'should' be compatible"
         }
       ],
@@ -69543,11 +69543,11 @@
     },
     {
       "id": "readman-woc-early",
-      "name": "Archaon / Azazel / Be'lakor / Daemon Prince – early game",
+      "name": "Azazel / Archaon / Be'lakor / Daemon Prince – early game",
       "origin": "tested",
       "playAs": [
-        "Archaon",
         "Azazel",
+        "Archaon",
         "Be'lakor",
         "Daemon Prince"
       ],
@@ -69969,8 +69969,7 @@
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
-      "theme": "Chaos lords",
-      "description": "For **Archaon, Azazel, Be'lakor or a Daemon Prince**: the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
+      "description": "Play **Azazel** – or Archaon, Be'lakor or a Daemon Prince – on the Chaos route of Azazel's Realm, where Azazel's own storyline and the Miao Ying / Katarin quests take centre stage. The list mirrors the Sigvald list without *Sigvald Simply Superior*: Readman's WoC version of UUU, Female Daemonettes, Soil's corrupted units, Slaanesh Expanded and the ATB / AZR base.\n\nAs Archaon, Azazel's Realm blocks confederating Valkia, N'Kari and the Changeling because it would break the end-game crisis.",
       "highlights": [
         "Chaos route of Azazel's Realm (play as Azazel and others)",
         "Readman UUU (WoC version), Female Daemonettes, Soil's units",
@@ -70414,12 +70413,12 @@
     },
     {
       "id": "kpw-azazel-archaon-belakor-sigvald-daemon-pr",
-      "name": "Azazel / Archaon / Belakor / Sigvald / Daemon Prince / Mazdamundi – KPW's quick list",
+      "name": "Azazel / Archaon / Be'lakor / Sigvald / Daemon Prince / Mazdamundi – KPW's quick list",
       "origin": "guide",
       "playAs": [
         "Azazel",
         "Archaon",
-        "Belakor",
+        "Be'lakor",
         "Sigvald",
         "Daemon Prince",
         "Mazdamundi"
@@ -70638,7 +70637,6 @@
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
-      "theme": "Chaos lords",
       "launchTest": {
         "result": "main menu",
         "game": "9.0.5",
@@ -70891,10 +70889,10 @@
     },
     {
       "id": "kpw-n-kari-dechala-masque",
-      "name": "N'kari / Dechala / Masque – KPW's quick list",
+      "name": "N'Kari / Dechala / Masque – KPW's quick list",
       "origin": "guide",
       "playAs": [
-        "N'kari",
+        "N'Kari",
         "Dechala",
         "Masque"
       ],
@@ -71794,7 +71792,7 @@
       "playAs": [
         "Azazel",
         "N'Kari",
-        "Bel'akor",
+        "Be'lakor",
         "Archaon",
         "Sigvald"
       ],

@@ -178,6 +178,7 @@ function SubjectPage({ subject, pin, onUnpin, onBack, onHome, onContinue, onOpen
             {main && <a className="play-advanced" onClick={() => data.openProfile({ preset: main.preset.id })}>Advanced: open the template in the full editor</a>}
           </div>
           {subject.kind === 'theme' && <p className="small muted">{subject.characters.join(', ')}</p>}
+          {subject.alsoAs && <p className="small muted">These lists also play {subject.alsoAs.join(', ')}.</p>}
           <div className="markdown play-lead"><Markdown>{main?.preset.description ?? ''}</Markdown></div>
           {guide && guide.dlc?.length > 0 && <p className="small muted">Needs the DLC {guide.dlc.map((d) => d.name).join(', ')}.</p>}
           {main?.preset.origin === 'vanilla' && <p className="small muted">{[dlcLine(main.preset.dlc), ...(subject.factions ?? [])].filter(Boolean).join(' · ')}</p>}

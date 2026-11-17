@@ -14,6 +14,9 @@ export interface Subject {
   name: string
   /** The characters the subject's lists are for. */
   characters: string[]
+  /** For a character: other lords its lists can be played with that have no lists of their own (Azazel's lists are
+   * also for Archaon, Be'lakor and a Daemon Prince), so the card names them. */
+  alsoAs?: string[]
   presets: Preset[]
   /** Mods whose pictures stand for the subject, best first. */
   coverMods: string[]
@@ -62,6 +65,14 @@ export function subjectsOf(catalog: Catalog, index: CatalogIndex): Subject[] {
     s.characters = [...new Set([...s.characters, ...(kind === 'character' ? [name] : chars)])]
     s.factions = [...new Set([...(s.factions ?? []), ...(p.factions ?? []).map((f) => FACTIONS[f.toLowerCase()] ?? f)])]
     subjects.set(key, s)
+  }
+  // Lords a character's lists also play who have no subject of their own: named on the character's card.
+  const own = new Set([...subjects.values()].filter((s) => s.kind === 'character').map((s) => s.name))
+  for (const s of subjects.values()) {
+    if (s.kind !== 'character') continue
+    const also = [...new Set(s.presets.filter((p) => p.origin !== 'community').flatMap((p) => p.playAs.map(canon)))]
+      .filter((c) => !own.has(c) && !/^(any|all)\b/i.test(c))
+    if (also.length) s.alsoAs = also
   }
   // Only lists that need no campaign mod: a lord a mod also makes playable is no vanilla subject.
   for (const s of subjects.values()) s.vanilla = s.presets.some((p) => p.origin === 'vanilla') && s.presets.every((p) => p.origin === 'vanilla' || p.origin === 'community')
