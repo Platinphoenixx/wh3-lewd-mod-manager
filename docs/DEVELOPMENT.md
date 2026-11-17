@@ -236,7 +236,8 @@ The project keeps itself current without anyone's manual work or paid service.
   install ids) → `build_catalog.py` adds the setups as templates with `origin: "community"` (a list made only of catalog
   mods right away; one with own or unknown packs right away too, as `community.reviewed: false` until a maintainer labels
   its `setup` issue `accepted`, and gone once a maintainer closes it as not planned; Workshop items it named that the catalog
-  has learned since become entries; its free text loses links and markup) and `votes`
+  has learned since become entries; its free text loses links and markup; `community.json` `setupEdits` lets a maintainer
+  correct a setup's shown name and character, e.g. an imported list matched to the wrong character's template) and `votes`
   to every template. Commits only when something changed.
 - Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord
   except for showing images. Sending (reports, contributions, setups, votes) goes to the relay only when the player does it.

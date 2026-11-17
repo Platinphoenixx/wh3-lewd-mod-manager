@@ -274,11 +274,15 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
     store = load(cpath) if cpath.exists() else {}
     accepted = {c.get("setupId") for c in store.get("accepted", []) if c.get("type") == "setup"}
     rejected = {c.get("setupId") for c in store.get("rejected", []) if c.get("type") == "setup"}
+    # A maintainer's correction of a shared setup (community.json "setupEdits"): its shown name and its character,
+    # e.g. a list the app's import matched to the wrong character's template.
+    edits = {e["setupId"]: e for e in store.get("setupEdits", [])}
     by_id = {p["id"]: p for p in presets}
     out = []
     for s in load(path):
         if s["id"] in rejected:
             continue
+        s = s | {k: v for k, v in edits.get(s["id"], {}).items() if k in ("name", "playAs") and v}
         reviewed = not s.get("review") or s["id"] in accepted
         entries = []
         for e in s.get("entries", []):
