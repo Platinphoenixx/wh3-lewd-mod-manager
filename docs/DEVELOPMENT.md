@@ -67,6 +67,9 @@ community contributions. App UI and catalog texts are English.
     fix" (`Profile.fixes`; the install step asks for the fix's files, `installFromFile(modId, fixId)` records them, the
     launch list takes them before the Workshop copy, no stale warning) and "Share a fix…" (contribution type `fix`). The
     review page shows Made by with the creators' support links.
+  - "Also by the same maker" (`renderer/src/OtherApps.tsx`, list `OTHER_APPS` in `src/shared/api.ts`, icon in
+    `renderer/src/assets/`): a small card on Play below the Continue cards for the maintainer's other apps (the Stellaris Lewd
+    Playset Builder, its LoversLab page); × hides it for good (localStorage `otherAppsHidden`), a new app in the list shows again.
   - Maintainers: Settings → Maintainer takes a fine-grained GitHub token (Issues: read and write on the catalog repository),
     checks it and keeps it encrypted with `safeStorage` (`src/main/maintainer.ts`, userData/maintainer.bin; only sent to
     api.github.com). With it the Review tab (`ReviewView.tsx`) lists open app-made issues not yet accepted (labels setup,

@@ -14,6 +14,16 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.6
+
+**WH3 Lewd Mod Manager 0.1.6 – a new app by the same maker. 18+ only.**
+
+- *Play* shows a small card for the **Stellaris Lewd Playset Builder** (alpha), the same kind of app for Stellaris,
+  with a link to its LoversLab page. Click × and it stays away.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.5
 
 **WH3 Lewd Mod Manager 0.1.5 – find a mod by its name. 18+ only.**

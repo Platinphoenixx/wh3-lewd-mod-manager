@@ -18,6 +18,7 @@ import { guideFor } from './ProfilesView'
 import { ShareDialog } from './ShareDialog'
 import { MadeBy, worksOf } from './Creators'
 import { FlagDialog, FlagLink } from './FlagDialog'
+import { OtherApps } from './OtherApps'
 import { keepStagesLabel, untilLabel } from './Suggestions'
 import { lookPoint, withFlag, type CheckPoint } from '@shared/check'
 import { dlcLine, ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
@@ -100,6 +101,7 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
           <div className="small muted">CA launcher, WH3 Mod Manager or a .twmods file</div>
         </div>
       </div>
+      <OtherApps />
       {importing && (
         <ImportDialog
           onClose={() => setImporting(false)}

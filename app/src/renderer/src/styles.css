@@ -561,3 +561,11 @@ table.entries tr.ask td { background: var(--panel-2); }
 .ask-line button { margin: 0 0 0 8px; font-size: 12px; padding: 2px 8px; }
 .order-summary { display: flex; gap: 14px; align-items: baseline; margin: 6px 0 2px; }
 .order-summary b { font-weight: 600; }
+/* the maintainer's other apps: a small banner on Play, can be hidden */
+.other-apps { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.other-app { position: relative; display: flex; gap: 12px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 9px 34px 9px 12px; max-width: 600px; }
+.other-app img { flex: none; border-radius: 9px; }
+.other-app-text { min-width: 0; }
+.other-app-text a { display: inline-block; margin-top: 3px; }
+.other-app .other-app-close { position: absolute; top: 4px; right: 8px; font-size: 20px; line-height: 1; padding: 2px 4px; color: var(--muted); }
+.other-app .other-app-close:hover { color: var(--text); }
