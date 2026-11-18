@@ -8,29 +8,50 @@
   "up": 1
  },
  "readman-alarielle-early": {
-  "down": 0,
-  "up": 11
+  "down": 1,
+  "reasons": {
+   "campaign": 1
+  },
+  "up": 12
  },
  "readman-alarielle-late": {
   "down": 0,
   "up": 1
+ },
+ "readman-katarin-early": {
+  "down": 0,
+  "up": 3
  },
  "readman-miao-early": {
   "down": 1,
   "reasons": {
    "start": 1
   },
-  "up": 5
+  "up": 9
  },
  "readman-miao-late": {
   "down": 0,
-  "up": 1
+  "up": 3
  },
  "readman-morathi": {
+  "down": 1,
+  "reasons": {
+   "start": 1
+  },
+  "up": 4
+ },
+ "readman-sigvald-early": {
+  "down": 1,
+  "reasons": {
+   "campaign": 1
+  },
+  "up": 0
+ },
+ "readman-slaanesh-daemons-early": {
   "down": 0,
   "up": 1
  },
- "readman-sigvald-early": {
+ "readman-woc-early": {
   "down": 1,
   "reasons": {
    "campaign": 1
