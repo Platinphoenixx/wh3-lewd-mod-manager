@@ -153,7 +153,9 @@ community contributions. App UI and catalog texts are English.
   - Own mods (installed packs the catalog does not know): `src/shared/own.ts` keys them
     (`steamId:<id>` / `pack:<file>`), collects pack facts (dependencies, shared files, tables) and places
     them in a profile's load order with a reason; user moves are stored as `Profile.pins` (tested).
-    `renderer/src/OwnMods.tsx`: "Your mods" cards, drop-to-install, Workshop link. Titles of unknown
+    `renderer/src/OwnMods.tsx`: "Your mods" cards, drop-to-install, Workshop link; a name typed into that field instead
+    shows the mod in the profile, among the installed own mods and in the catalog (`src/shared/findmod.ts`, tested: case and
+    punctuation do not count, every word must be in the name or a pack file), else a link to the Workshop search. Titles of unknown
     Workshop items come from the player's Steam client once (userData/workshop-details.json);
     previews via the `wh3lmm://workshop/<id>` protocol.
   - `src/shared/importlist.ts`: mod lists of the CA launcher (`Launcher/20190104-moddata.dat`, `.twmods`)

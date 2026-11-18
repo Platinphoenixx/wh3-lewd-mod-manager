@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import type { InstalledPack } from '@shared/api'
 import { targetFor, targetKey, type CatalogIndex } from '@shared/match'
+import { workshopIdOf } from '@shared/findmod'
 import { checkOwnMod, type FactsReport, type OrderedEntry, type OwnCheck } from '@shared/own'
 import { useData, type AppData } from './data'
 
@@ -30,13 +31,16 @@ export function ownName(data: AppData, key: string, packs: InstalledPack[]): str
   return packs.length ? packs.map((p) => p.file.replace(/\.pack$/i, '')).join(' + ') : key.replace(/^(pack|steamId):/, '')
 }
 
-/** "Add your own mod": file picker, Workshop link; dropping files anywhere works too. */
-export function AddOwnMod() {
+/**
+ * "Add your own mod": file picker, Workshop link; dropping files anywhere works too. A name typed instead of a link
+ * shows what `find` gives for it (the profile editor: the mod in the profile, among the player's mods, in the catalog).
+ */
+export function AddOwnMod({ find }: { find?(text: string): ReactNode } = {}) {
   const data = useData()
   const [link, setLink] = useState('')
   const [busy, setBusy] = useState(false)
   const [msg, setMsg] = useState<string | null>(null)
-  const id = /(?:id=|^)(\d{6,12})\b/.exec(link.trim())?.[1]
+  const id = workshopIdOf(link)
 
   const fromFile = async () => {
     setBusy(true)
@@ -69,9 +73,11 @@ export function AddOwnMod() {
       <span className="small muted"> – drop .pack / .7z / .zip / .rar files anywhere on this window, or:</span>
       <div className="own-add-row">
         <button disabled={busy} onClick={fromFile}>Choose file…</button>
-        <input placeholder="Paste a Steam Workshop link" value={link} onChange={(e) => setLink(e.target.value)} />
+        <input placeholder={find ? 'Paste a Workshop link or type a mod name' : 'Paste a Steam Workshop link'} value={link}
+          onChange={(e) => { setLink(e.target.value); setMsg(null) }} onKeyDown={(e) => e.key === 'Escape' && setLink('')} />
         <button disabled={busy || !id} onClick={fromWorkshop}>Subscribe</button>
       </div>
+      {find && !id && link.trim().length >= 2 && find(link.trim())}
       {msg && <p className="small">{msg}</p>}
       <p className="small muted">The app reads each pack: what it needs, which files of other mods it changes, and places it in the load order with the reason shown.</p>
     </div>

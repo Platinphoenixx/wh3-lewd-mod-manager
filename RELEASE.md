@@ -14,6 +14,19 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.5
+
+**WH3 Lewd Mod Manager 0.1.5 – find a mod by its name. 18+ only.**
+
+- *Add a mod of your own* (profile editor, step 1) now takes a mod's name as well as a Workshop link. Typing a name
+  shows where that mod is: already in the profile (or switched off there – *Switch on*), among your installed mods
+  (*Switch on*), or in the catalog (*Add*). It also finds a mod by its pack file name, and ignores case and
+  punctuation ("grandolphs" finds "Grandolph's"). If the mod is not there, a link opens the Steam Workshop search
+  for that name; paste the mod's link back into the field.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.4
 
 **WH3 Lewd Mod Manager 0.1.4 – Azazel in Play. 18+ only.**

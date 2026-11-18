@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import type { Preset } from '@catalog/schema'
 import type { InstalledPack } from '@shared/api'
 import { matchInstalled, parseTargetKey } from '@shared/match'
@@ -12,6 +12,7 @@ import { InstallPanel, type UsedFix } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { pickVariants, planLaunch, variantGroups, variantLabels } from '@shared/launch'
 import { missingPacks } from '@shared/install'
+import { findMods } from '@shared/findmod'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
@@ -62,6 +63,40 @@ function OptionCard({ c, on, toggle }: { c: Candidate; on: boolean; toggle(): vo
         {c.mod && <a className="small" onClick={() => data.openMod(c.mod!.id)}>Details</a>}
       </div>
     </article>
+  )
+}
+
+/** One hit of a name typed into "Add a mod of your own". */
+interface Found { key: string; name: string; packs: string[]; status: string; action?: { label: string; run(): void }; cover: ReactNode; text?: (string | undefined)[] }
+
+const WORKSHOP_SEARCH = (q: string) => `https://steamcommunity.com/workshop/browse/?appid=1142710&searchtext=${encodeURIComponent(q)}`
+
+/** What a typed name finds: in this profile, among the player's installed mods, in the catalog (a few each, all on request). */
+function FindResults({ query, groups }: { query: string; groups: { title: string; items: Found[] }[] }) {
+  const [all, setAll] = useState(false)
+  const total = groups.reduce((n, g) => n + g.items.length, 0)
+  const shown = groups.map((g) => ({ ...g, items: all ? g.items : g.items.slice(0, g.title.startsWith('In the catalog') ? 4 : 3) }))
+  const hidden = total - shown.reduce((n, g) => n + g.items.length, 0)
+  return (
+    <div className="find-results">
+      {total === 0 && <p className="small muted find-none">No mod called “{query}” in this profile, among your mods or in the catalog.</p>}
+      {shown.filter((g) => g.items.length).map((g) => (
+        <div key={g.title}>
+          <div className="find-head small muted">{g.title} ({groups.find((x) => x.title === g.title)!.items.length})</div>
+          {g.items.map((f) => (
+            <div key={f.key} className="find-row">
+              <div className="find-thumb">{f.cover}</div>
+              <div className="find-name"><div>{f.name}</div><div className="small muted">{f.status}</div></div>
+              {f.action ? <button onClick={f.action.run}>{f.action.label}</button> : <span className="small ok-text">in this profile</span>}
+            </div>
+          ))}
+        </div>
+      ))}
+      <div className="find-foot small">
+        {hidden > 0 && <><a onClick={() => setAll(true)}>Show all {total} matches</a> · </>}
+        Not there? <a onClick={() => window.api.openExternal(WORKSHOP_SEARCH(query))}>Search the Steam Workshop for “{query}” ↗</a> and paste its link here.
+      </div>
+    </div>
   )
 }
 
@@ -320,6 +355,47 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     })
   }
 
+  // A name typed into "Add a mod of your own": the mod in this profile (on or switched off), among the player's
+  // installed mods that are not in it, or in the catalog.
+  const findIn = (text: string) => {
+    const packsOf = (k: string) => [...new Set([...(installed.get(k) ?? []).map((p) => p.file), ...(byKeyAll.get(k)?.packs ?? [])])]
+    const coverOf = (k: string) => {
+      const t = parseTargetKey(k)
+      const mod = 'mod' in t ? data.index.mods.get(t.mod) : undefined
+      if (mod) return <ModCover mods={withParents(data.index.mods, mod)} placeholder="" />
+      return 'steamId' in t ? <img src={`wh3lmm://workshop/${t.steamId}`} alt="" onError={(e) => (e.currentTarget.style.display = 'none')} /> : null
+    }
+    const ORIGIN = { base: 'from the template', extra: 'switched on', dependency: 'needed by another mod' } as const
+    const inList: Found[] = orderAll.map((o) => {
+      const on = isOn(o.key)
+      const origin = isOwnKey(o.key) ? 'your mod' : ORIGIN[byKeyAll.get(o.key)?.origin ?? 'extra']
+      return {
+        key: o.key, name: o.name, packs: packsOf(o.key), cover: coverOf(o.key),
+        status: on ? origin : `${origin} · switched off`,
+        action: on ? undefined : { label: 'Switch on', run: () => switchOne(o.key) }
+      }
+    })
+    const inProfile = new Set(orderAll.map((o) => o.key))
+    const own: Found[] = [...ownGroups.keys()].filter((k) => !inProfile.has(k)).map((k) => ({
+      key: k, name: ownName(data, k, installed.get(k) ?? []), packs: packsOf(k), cover: coverOf(k),
+      status: `your mod · ${(installed.get(k) ?? []).map((p) => p.file).join(', ')}`,
+      action: { label: 'Switch on', run: () => toggleExtra(k) }
+    }))
+    const cat: Found[] = options.filter((c) => !extras.has(c.key) && !inProfile.has(c.key)).map((c) => ({
+      key: c.key, name: c.name, packs: (c.mod?.packs ?? []).map((p) => p.file), cover: coverOf(c.key), text: [c.mod?.summary],
+      status: [c.mod ? KIND_LABEL[c.mod.kind] : '', c.conflicts.length ? `conflicts with ${c.conflicts.map((k) => nameOf(data.catalog, data.index, k)).join(', ')}` : '',
+        c.addsDependencies.length ? `also adds ${c.addsDependencies.map((k) => nameOf(data.catalog, data.index, k)).join(', ')}` : ''].filter(Boolean).join(' · '),
+      action: { label: 'Add', run: () => addExtras([c.key]) }
+    }))
+    return (
+      <FindResults key={text} query={text} groups={[
+        { title: 'In this profile', items: findMods(text, inList) },
+        { title: 'Your installed mods', items: findMods(text, own) },
+        { title: 'In the catalog', items: findMods(text, cat) }
+      ]} />
+    )
+  }
+
   const q = query.trim().toLowerCase()
   const visible = options.filter(
     (c) =>
@@ -520,7 +596,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           )}
           <section>
             <h3>Your mods ({ownKeys.length})</h3>
-            <AddOwnMod />
+            <AddOwnMod find={findIn} />
             {ownKeys.length > 0 && (
               <div className="options">
                 {ownKeys.map(({ k }) => {
