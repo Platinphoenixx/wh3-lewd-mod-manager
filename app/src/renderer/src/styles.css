@@ -584,3 +584,5 @@ table.entries tr.ask td { background: var(--panel-2); }
 .profile-find input { flex: 1; max-width: 520px; }
 .lightbox-close { margin-top: 14px; cursor: pointer; }
 .lightbox .small { margin-top: 6px; }
+.play-toggle .ph { cursor: zoom-in; }
+.play-opt .ph { cursor: pointer; }

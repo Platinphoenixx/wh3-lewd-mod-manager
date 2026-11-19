@@ -6,6 +6,13 @@
       "installNotes+": [
         "With Alarielle, Temptation's Bloom (ATB) turn off its MCT option \"Swap NKari and Snikch\" (on by default): ATB needs N'Kari to start in Ulthuan. The other swaps are separate options and can stay on (read from the pack's MCT settings; a player's flag, 2026-11-17)."
       ]
+    },
+    {
+      "id": "steam-3206075023",
+      "suggestOnly": "Rearms the whole Beastmen roster with guns – a gameplay change a player adds by choice, not part of a Play size (a player of Community Beastmen – Extended, 2026-11-19, the maintainer agrees).",
+      "knownIssues+": [
+        "With Community Beastmen (Extended list, game 9.0.5) a player saw badly deformed unit models and the ammunition bar on melee units such as Ungor Spearmen; switched off, the campaign ran fine (report with screenshots, 2026-11-19)."
+      ]
     }
   ]
 }

@@ -14,6 +14,19 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.9
+
+**WH3 Lewd Mod Manager 0.1.9 – details in Play's choices. 18+ only.**
+
+- *Play*: every mod in the "Which of these do you want?" step has a *details* link (its picture opens it too), so you can
+  read what a mod you don't know does before you keep or untick it.
+- From the catalog (no app update needed): *Bestial Gunners – Guns for Beastmen!* is no longer part of the Beastmen list's
+  sizes. It rearms the whole faction with guns, and a player saw deformed models and an ammunition bar on melee Ungors
+  with it; it stays available as a suggestion in the editor, with that note.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.8
 
 **WH3 Lewd Mod Manager 0.1.8 – no more closing the app by mistake. 18+ only.**

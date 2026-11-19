@@ -545,8 +545,12 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
                     {qol.map(({ key, mod }) => (
                       <label key={key} className="play-toggle">
                         <input type="checkbox" checked={!dropped.has(key)} onChange={(e) => setDropped((d) => { const n = new Set(d); if (e.target.checked) n.delete(key); else n.add(key); return n })} />
-                        <div className="ph"><ModCover mods={[mod]} /></div>
-                        <div><b>{mod.name}</b><div className="small muted">{mod.summary}</div></div>
+                        {/* The picture and "details" open the mod's page (the tick box and the rest of the card tick it). */}
+                        <div className="ph" title="Details" onClick={(e) => { e.preventDefault(); data.openMod(mod.id) }}><ModCover mods={[mod]} /></div>
+                        <div>
+                          <b>{mod.name}</b><div className="small muted">{mod.summary}</div>
+                          <a className="small" onClick={(e) => { e.preventDefault(); e.stopPropagation(); data.openMod(mod.id) }}>details</a>
+                        </div>
                       </label>
                     ))}
                   </div>
