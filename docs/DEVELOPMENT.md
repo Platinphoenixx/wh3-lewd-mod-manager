@@ -67,6 +67,17 @@ community contributions. App UI and catalog texts are English.
     fix" (`Profile.fixes`; the install step asks for the fix's files, `installFromFile(modId, fixId)` records them, the
     launch list takes them before the Workshop copy, no stale warning) and "Share a fix…" (contribution type `fix`). The
     review page shows Made by with the creators' support links.
+  - Back/forward (`renderer/src/nav.ts`): navigation state is `useNavState` (tab, open mod, Play's subject/size/setup/mod page/step,
+    the selected profile and its step); each change the player makes records a snapshot of the mounted values, mouse buttons 4/5 and
+    Alt+←/→ restore one (values of views not on screen wait in `pending` until they mount); a view's own default choice uses
+    `{ replace: true }` and joins the current place. `openPlace` goes to a place in one step (catalog → Play's page for a mod).
+  - Catalog buttons (`renderer/src/ModActions.tsx`, on cards and the mod's page): Subscribe (Steam, the mod and what it strictly
+    needs in one go) or Download (an install dialog with `InstallPanel` for LoversLab/Nexus/Discord); "+ N it needs"
+    (`missingNeeds`), and "Add to profile ▾" with how the mod fits each profile (`fitInProfile` in `src/shared/fit.ts`, tested:
+    in / switched off / fits + what comes along / avoided by the setup / conflict / alternative / another character's campaign /
+    does not start / outdated); "New profile with this mod…" opens Play's page for it.
+  - Profile search (`ProfileEditor.tsx`): one field below the steps filters the open step (load order, install list, choices)
+    by name or pack file (`matchScore`).
   - "Also by the same maker" (`renderer/src/OtherApps.tsx`, list `OTHER_APPS` in `src/shared/api.ts`, icon in
     `renderer/src/assets/`): a small card on Play below the Continue cards for the maintainer's other apps (the Stellaris Lewd
     Playset Builder, its LoversLab page); × hides it for good (localStorage `otherAppsHidden`), a new app in the list shows again.

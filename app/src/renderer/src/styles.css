@@ -569,3 +569,16 @@ table.entries tr.ask td { background: var(--panel-2); }
 .other-app-text a { display: inline-block; margin-top: 3px; }
 .other-app .other-app-close { position: absolute; top: 4px; right: 8px; font-size: 20px; line-height: 1; padding: 2px 4px; color: var(--muted); }
 .other-app .other-app-close:hover { color: var(--text); }
+
+/* the catalog's buttons per mod: get it, add it to a profile */
+.mod-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.drawer .mod-actions { margin: 4px 0 10px; }
+.add-profile { position: relative; display: inline-block; }
+.mod-card:has(.add-profile.open) { position: relative; z-index: 4; }
+.add-profile-pop { position: absolute; left: 0; top: 36px; z-index: 6; width: 380px; max-height: 420px; overflow-y: auto; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 10px 30px rgba(0, 0, 0, .5); cursor: default; }
+.add-profile-head { padding: 7px 12px; }
+.add-profile-row { display: flex; gap: 10px; align-items: center; padding: 7px 12px; border-top: 1px solid var(--line); }
+.add-profile-name { flex: 1; min-width: 0; }
+.modal.install-dialog { width: min(820px, 94vw); }
+.profile-find { display: flex; gap: 10px; align-items: center; margin: 10px 0 4px; }
+.profile-find input { flex: 1; max-width: 520px; }

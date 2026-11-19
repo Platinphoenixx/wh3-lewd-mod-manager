@@ -14,6 +14,24 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.7
+
+**WH3 Lewd Mod Manager 0.1.7 – back button, get mods from the catalog, find mods in a profile. 18+ only.**
+
+- **Back and forward:** the mouse's side buttons (and Alt+← / Alt+→) go back to where you were – the tab, a character's
+  page and step in Play, the profile and its step, an open mod.
+- **Catalog:** every mod has its own button. *Subscribe* for Steam Workshop mods, *Download* for LoversLab and Nexus Mods
+  (in the app's own window, with your login), *Open post* for Discord files. What the mod needs comes along
+  ("+ 2 it needs").
+- **Add to profile ▾** next to it lists your profiles and says how the mod fits each: already in it, fits (and what comes
+  along), the setup avoids it, conflicts with …, another character's campaign. *Add* puts it in the profile; the notice
+  takes you to the install step. *New profile with this mod…* starts Play with it.
+- **Profiles:** a search field below the steps finds a mod in the profile by its name or pack file – in the load order,
+  the install list and the choices.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.6
 
 **WH3 Lewd Mod Manager 0.1.6 – a new app by the same maker. 18+ only.**

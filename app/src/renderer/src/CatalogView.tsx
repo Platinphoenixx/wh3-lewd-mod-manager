@@ -3,6 +3,7 @@ import type { Mod } from '@catalog/schema'
 import { matchInstalled, targetKey } from '@shared/match'
 import { KIND_LABEL, useData } from './data'
 import { ModCover, withParents } from './ModCover'
+import { ModActions } from './ModActions'
 
 type Source = 'loverslab' | 'steam' | 'nexus' | 'discord'
 type Sort = 'name' | 'updated'
@@ -187,6 +188,7 @@ export function CatalogView() {
                     {m.status && m.status !== 'stable' && <span className={`chip status-${m.status}`}>{m.status}</span>}
                     {m.curation.confidence === 'low' && <span className="chip warn">unverified</span>}
                   </div>
+                  <ModActions mod={m} installed={installed} />
                 </div>
               </article>
             )

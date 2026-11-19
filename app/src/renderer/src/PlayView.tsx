@@ -22,6 +22,7 @@ import { OtherApps } from './OtherApps'
 import { keepStagesLabel, untilLabel } from './Suggestions'
 import { lookPoint, withFlag, type CheckPoint } from '@shared/check'
 import { dlcLine, ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
+import { useNavState } from './nav'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
 function sourceLabel(m: Mod): string {
@@ -39,15 +40,17 @@ function sourceLabel(m: Mod): string {
 export function PlayView() {
   const data = useData()
   const subjects = useMemo(() => subjectsOf(data.catalog, data.index), [data.catalog, data.index])
-  const [subjectKey, setSubjectKey] = useState<string | null>(null)
-  const [tier, setTier] = useState<Tier | null>(null)
-  const [setup, setSetup] = useState<Preset | null>(null)
+  // Each of these is a place the mouse's back button returns to (nav.ts).
+  const [subjectKey, setSubjectKey] = useNavState<string | null>('play.subject', null)
+  const [tier, setTier] = useNavState<Tier | null>('play.tier', null)
+  const [setup, setSetup] = useNavState<Preset | null>('play.setup', null)
   // "Play with a mod…": the mod's page, and the mod the chosen setup has to include.
-  const [withMod, setWithMod] = useState<string | null>(null)
-  const [pin, setPin] = useState<Pin | null>(null)
+  const [withMod, setWithMod] = useNavState<string | null>('play.withMod', null)
+  const [pin, setPin] = useNavState<Pin | null>('play.pin', null)
   // What every setup loads and offers, worked out once when the player starts searching.
   const [factsOn, setFactsOn] = useState(false)
-  const facts = useMemo(() => (factsOn ? subjectFacts(data.catalog, data.index, subjects) : null), [factsOn, data.catalog, data.index, subjects])
+  // A mod page the back button returns to needs them too.
+  const facts = useMemo(() => (factsOn || withMod ? subjectFacts(data.catalog, data.index, subjects) : null), [factsOn, withMod, data.catalog, data.index, subjects])
   const subject = subjects.find((s) => s.key === subjectKey)
   const home = () => { setTier(null); setSetup(null); setSubjectKey(null); setPin(null); setWithMod(null) }
   const start = (key: string, p?: Pin) => { setPin(p ?? null); setSubjectKey(key) }
@@ -440,7 +443,7 @@ function Guide({ subject, tier, pin, onBack, onHome }: { subject: Subject; tier:
     return m?.tags.includes('general') ? [{ key: e.key, mod: m }] : []
   }), [base, data.index])
   const steps = useMemo(() => stepsFor(subject, picks, qol.length > 0, !!subject.vanilla && tier.id === 'essentials'), [subject, picks, qol, tier])
-  const [at, setAt] = useState(0)
+  const [at, setAt] = useNavState('play.step', 0)
   // What is picked per choice: one key, or several where options go together (`PickOne.multi`).
   const [chosen, setChosen] = useState<Record<string, string[]>>({})
   const [dropped, setDropped] = useState<Set<string>>(new Set())

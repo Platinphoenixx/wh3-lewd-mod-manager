@@ -4,6 +4,8 @@ import type { DownloadFile, ModImage, Relation } from '@catalog/schema'
 import { matchInstalled, targetKey } from '@shared/match'
 import { KIND_LABEL, resolveTarget, steamUrl, useData } from './data'
 import { CreatorSection } from './Creators'
+import { ModActions } from './ModActions'
+import type { InstalledPack } from '@shared/api'
 
 const RELATION_TITLE: Record<Relation['kind'], string> = {
   requires: 'Requires',
@@ -70,7 +72,8 @@ export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
   const data = useData()
   const mod = data.index.mods.get(id)
   if (!mod) return null
-  const installed = data.scan ? matchInstalled(data.index, data.scan.packs).known.get(targetKey({ mod: mod.id })) : undefined
+  const known = data.scan ? matchInstalled(data.index, data.scan.packs).known : new Map<string, InstalledPack[]>()
+  const installed = known.get(targetKey({ mod: mod.id }))
   const byKind = new Map<Relation['kind'], Relation[]>()
   for (const r of mod.relations) byKind.set(r.kind, [...(byKind.get(r.kind) ?? []), r])
   const ll = mod.sources.loverslab
@@ -87,6 +90,7 @@ export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
           {installed ? <span className="badge ok">installed</span> : <span className="badge">not installed</span>}
           {mod.curation.confidence !== 'high' && <span className="badge warn">{mod.curation.confidence} confidence</span>}
         </div>
+        <ModActions mod={mod} installed={known} />
         {mod.authors.length > 0 && <p className="muted">by {mod.authors.join(', ')}</p>}
         <CreatorSection mod={mod} />
         {mod.communityReports && (

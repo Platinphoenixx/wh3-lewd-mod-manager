@@ -8,6 +8,7 @@ import { ModCover } from './ModCover'
 import { ProfileEditor } from './ProfileEditor'
 import { ImportDialog } from './ImportDialog'
 import { MadeBy, worksOf } from './Creators'
+import { useNavState } from './nav'
 
 /** KPW's guide for the characters of a preset (guides name characters loosely, e.g. "Miao"). */
 export function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
@@ -137,20 +138,26 @@ function presetCover(data: ReturnType<typeof useData>, p: Preset) {
   return [...new Set(ids)].map((id) => data.index.mods.get(id)).filter((m) => !!m)
 }
 
+/** The last openProfile request the Profiles tab followed (data.focus.at). */
+let focusSeen = 0
+
 export function ProfilesView() {
   const data = useData()
   const [profiles, setProfiles] = useState<Profile[]>([])
-  const [selected, setSelected] = useState<{ kind: 'profile' | 'preset'; id: string } | null>(null)
+  const [selected, setSelected] = useNavState<{ kind: 'profile' | 'preset'; id: string } | null>('profiles.selected', null)
   const [importing, setImporting] = useState(false)
 
   useEffect(() => {
     window.api.listProfiles().then((list) => {
       setProfiles(list)
       // A profile or template opened from Play comes first.
-      const f = data.focus
+      // Only a new request counts: going back to this tab keeps the profile the player had open then.
+      const f = data.focus && data.focus.at !== focusSeen ? data.focus : null
+      if (f) focusSeen = f.at
       const wanted = f?.profile && list.some((p) => p.id === f.profile) ? { kind: 'profile' as const, id: f.profile }
         : f?.preset ? { kind: 'preset' as const, id: f.preset } : null
-      setSelected((s) => wanted ?? s ?? (list[0] ? { kind: 'profile', id: list[0].id } : data.catalog.presets[0] && { kind: 'preset', id: data.catalog.presets[0].id }))
+      // Opening the tab picks a profile by itself; that is no step of its own for the back button.
+      setSelected((s) => wanted ?? s ?? (list[0] ? { kind: 'profile', id: list[0].id } : data.catalog.presets[0] && { kind: 'preset', id: data.catalog.presets[0].id }), wanted ? undefined : { replace: true })
     })
   }, [data.catalog, data.focus])
 

@@ -19,6 +19,7 @@ import { NoticeStack, useNotices } from './Notices'
 import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
 import { harmlessNote } from '@shared/health'
+import { useBackForwardKeys, useNavState } from './nav'
 
 const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings', 'review'] as const
 type Tab = (typeof TABS)[number]
@@ -30,7 +31,7 @@ export function App() {
   const [rules, setRules] = useState<UserRule[]>([])
   const [settings, setSettings] = useState<Settings>({})
   const [error, setError] = useState<string | null>(null)
-  const [tab, setTab] = useState<Tab>(() => {
+  const [tab, setTab] = useNavState<Tab>('tab', () => {
     const h = location.hash.slice(1).split('-')[0] // e.g. #profiles-order
     return (TABS as readonly string[]).includes(h) ? (h as Tab) : 'play'
   })
@@ -43,7 +44,8 @@ export function App() {
     setFocus({ ...target, at: Date.now() })
     setTab('profiles')
   }, [])
-  const [openModId, setOpenModId] = useState<string | null>(null)
+  const [openModId, setOpenModId] = useNavState<string | null>('mod', null)
+  useBackForwardKeys()
   const [contributing, setContributing] = useState<ContributeRequest | null>(null)
   const [blurImages, setBlurImages] = useState(() => localStorage.getItem('blurImages') === '1')
   const { notices, notify, dismiss } = useNotices()

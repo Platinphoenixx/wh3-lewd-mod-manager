@@ -12,7 +12,7 @@ import { InstallPanel, type UsedFix } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { pickVariants, planLaunch, variantGroups, variantLabels } from '@shared/launch'
 import { missingPacks } from '@shared/install'
-import { findMods } from '@shared/findmod'
+import { findMods, matchScore } from '@shared/findmod'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import type { LaunchSnapshot } from '@shared/report'
@@ -21,6 +21,7 @@ import { DecideChoices, SuggestedMods } from './Suggestions'
 import { ShareDialog } from './ShareDialog'
 import { ProfileCheck, ProfileIdeas } from './ProfileCheck'
 import { FlagDialog, FlagLink } from './FlagDialog'
+import { useNavState } from './nav'
 
 const GROUP_TITLE: Record<CandidateGroup, string> = {
   recommended: 'Recommended by mods in this profile',
@@ -108,7 +109,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   // profile opens where there is something to do: install while mods are missing, else load order & play.
   // An imported list also has Check (what the catalog would warn about) and Ideas (what fits it).
   type View = 'choices' | 'install' | 'order' | 'credits' | 'check' | 'ideas'
-  const [chosenView, setView] = useState<View | null>(() => {
+  const [chosenView, setView] = useNavState<View | null>('profile.view', () => {
     const m = location.hash.match(/-(choices|options|install|order|credits|check|ideas)$/)
     return m ? (m[1] === 'options' ? 'choices' : (m[1] as View)) : null
   })
@@ -397,6 +398,10 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   }
 
   const q = query.trim().toLowerCase()
+  // The search at the top of the profile: a mod by its name or one of its pack files, in the step that is open.
+  const hit = (key: string, name: string) => !q || matchScore(q, {
+    key, name, packs: [...(installed.get(key) ?? []).map((p) => p.file), ...(byKeyAll.get(key)?.packs ?? [])]
+  }) > 0
   const visible = options.filter(
     (c) =>
       (!hideConflicts || !c.conflicts.length || extras.has(c.key)) &&
@@ -413,8 +418,11 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     })
   const ownKeys = [...new Set([...ownGroups.keys(), ...profile.extras.filter(isOwnKey)])]
     .map((k) => ({ k, name: ownName(data, k, installed.get(k) ?? []) }))
-    .filter((o) => !q || o.name.toLowerCase().includes(q))
+    .filter((o) => hit(o.k, o.name))
     .sort((a, b) => Number(extras.has(b.k)) - Number(extras.has(a.k)) || a.name.localeCompare(b.name))
+  const findCount = view === 'order' ? `${orderAll.filter((o) => hit(o.key, o.name)).length} of ${orderAll.length} mods`
+    : view === 'install' ? `${missingEntries.filter((e) => hit(e.key, e.name)).length} of ${missingEntries.length} to install`
+    : `${onCards.filter((c) => hit(c.key, c.name)).length + ownKeys.length} in this profile · ${visible.length} more in the catalog`
   const groups: CandidateGroup[] = ['recommended', 'character', 'translation', 'other', 'general']
   const baseCount = resolved.entries.filter((e) => e.origin === 'base').length
   const groupsOf = (key: string) => {
@@ -527,6 +535,13 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
         <span className="spacer" />
         <button className={view === 'credits' ? 'active' : ''} onClick={() => goTo('credits')}>Made by</button>
       </nav>
+      {(view === 'choices' || view === 'install' || view === 'order') && (
+        <div className="profile-find">
+          <input placeholder="Find a mod in this profile – name or pack file" value={query} onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => e.key === 'Escape' && setQuery('')} />
+          {q && <span className="small muted">{findCount} · <a onClick={() => setQuery('')}>Clear</a></span>}
+        </div>
+      )}
       <p className="small muted">
         {imported ? 'Your list stays as it is until you change something; every step can be revisited, and the profile is saved as you go.' : 'Three steps: decide the optional parts, install what is missing, then press Play. Every step can be revisited; the profile is saved as you go.'}
       </p>
@@ -591,7 +606,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           {onCards.length > 0 && (
             <section>
               <h3>Switched on ({onCards.length})</h3>
-              <div className="options">{onCards.map((c) => <OptionCard key={c.key} c={c} on toggle={() => toggleExtra(c.key)} />)}</div>
+              <div className="options">{onCards.filter((c) => hit(c.key, c.name)).map((c) => <OptionCard key={c.key} c={c} on toggle={() => toggleExtra(c.key)} />)}</div>
             </section>
           )}
           <section>
@@ -611,13 +626,12 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
               </div>
             )}
           </section>
-          {browsing && (
+          {(browsing || q) && (
             <div className="filters inline">
-              <input placeholder="Search options…" value={query} onChange={(e) => setQuery(e.target.value)} />
               <label className="toggle"><input type="checkbox" checked={hideConflicts} onChange={(e) => setHideConflicts(e.target.checked)} /> Hide conflicting</label>
             </div>
           )}
-          {browsing && groups.map((g) => {
+          {(browsing || q) && groups.map((g) => {
             const list = visible.filter((c) => c.group === g)
             if (!list.length) return null
             const collapsible = g === 'other' || g === 'translation' || g === 'general'
@@ -642,7 +656,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'install' && (
         <section>
-          <InstallPanel missing={missingEntries} characters={preset.playAs} fixes={usedFixes} />
+          <InstallPanel missing={q ? missingEntries.filter((e) => hit(e.key, e.name)) : missingEntries} characters={preset.playAs} fixes={usedFixes} />
           <p className="step-next"><button onClick={() => goTo('order')}>Next: 3 · Load order &amp; play →</button></p>
         </section>
       )}
@@ -677,7 +691,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
           </p>
           <table className="entries">
             <tbody>
-              {orderAll.map((o) => {
+              {orderAll.filter((o) => hit(o.key, o.name)).map((o) => {
                 const on = isOn(o.key)
                 const e = byKeyAll.get(o.key)
                 const isInstalled = installed.has(o.key) && !incomplete.has(o.key)
