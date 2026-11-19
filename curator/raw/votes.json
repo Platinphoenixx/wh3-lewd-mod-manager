@@ -3,6 +3,10 @@
   "down": 0,
   "up": 1
  },
+ "derived-ll-52142": {
+  "down": 0,
+  "up": 1
+ },
  "kpw-miao": {
   "down": 0,
   "up": 1
@@ -12,7 +16,7 @@
   "reasons": {
    "campaign": 1
   },
-  "up": 12
+  "up": 15
  },
  "readman-alarielle-late": {
   "down": 0,
@@ -20,22 +24,24 @@
  },
  "readman-katarin-early": {
   "down": 0,
-  "up": 3
+  "up": 4
  },
  "readman-miao-early": {
-  "down": 1,
+  "down": 2,
   "reasons": {
+   "content": 1,
    "start": 1
   },
-  "up": 9
+  "up": 12
  },
  "readman-miao-late": {
   "down": 0,
   "up": 3
  },
  "readman-morathi": {
-  "down": 1,
+  "down": 2,
   "reasons": {
+   "content": 1,
    "start": 1
   },
   "up": 4
@@ -56,11 +62,11 @@
   "reasons": {
    "campaign": 1
   },
-  "up": 0
+  "up": 2
  },
  "setup-beastmen": {
   "down": 0,
-  "up": 4
+  "up": 5
  },
  "setup-corrupted-ascension": {
   "down": 0,
@@ -73,6 +79,10 @@
  "setup-imrik": {
   "down": 0,
   "up": 2
+ },
+ "vanilla-khalida": {
+  "down": 0,
+  "up": 1
  },
  "vanilla-sisters-of-twilight": {
   "down": 0,
