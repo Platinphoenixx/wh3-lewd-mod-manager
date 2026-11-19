@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T11:43:16+00:00",
+  "generatedAt": "2026-11-19T11:48:05+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -78876,71 +78876,6 @@
       "community": {
         "base": "readman-katarin-early",
         "game": "9.0.5"
-      }
-    },
-    {
-      "id": "community-58ef190441cf",
-      "name": "Multi",
-      "playAs": [
-        "Katarin"
-      ],
-      "phase": "any",
-      "origin": "community",
-      "source": {
-        "type": "community",
-        "author": "Saya",
-        "date": "2026-11-19"
-      },
-      "description": "For idiot, who tested launcher and fucked up our multiplayer mod list",
-      "entries": [
-        {
-          "pack": "_disable_intros.pack",
-          "from": "steam",
-          "steamId": "2789854789",
-          "target": {
-            "mod": "steam-2789854789"
-          }
-        },
-        {
-          "pack": "DeepWar_AI.pack",
-          "from": "steam",
-          "steamId": "2978779730",
-          "target": {
-            "mod": "steam-2978779730"
-          }
-        },
-        {
-          "pack": "QueBatAutResv1.pack",
-          "from": "steam",
-          "steamId": "2859802328",
-          "target": {
-            "mod": "steam-2859802328"
-          }
-        }
-      ],
-      "community": {
-        "base": "readman-katarin-early",
-        "far": "NOT LEWD",
-        "game": "9.0.5",
-        "own": [
-          "Workshop item 2790810152",
-          "Workshop item 2853210761",
-          "Workshop item 2836349002",
-          "Workshop item 3386537811",
-          "Workshop item 3620673720",
-          "Workshop item 2790221255",
-          "Workshop item 3807929920",
-          "Workshop item 2857518205",
-          "Workshop item 2790733660",
-          "Workshop item 2789899401",
-          "Workshop item 2961522612",
-          "Workshop item 3287245285",
-          "Workshop item 3278910036",
-          "Workshop item 2859526891",
-          "Workshop item 3465472245",
-          "Workshop item 3621692048",
-          "Workshop item 2862340751"
-        ]
       }
     },
     {

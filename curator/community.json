@@ -48,14 +48,6 @@
       "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/6",
       "issue": 6,
       "accepted": "2026-11-17"
-    },
-    {
-      "type": "setup",
-      "setupId": "58ef190441cf",
-      "name": "Multi",
-      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/7",
-      "issue": 7,
-      "accepted": "2026-11-19"
     }
   ],
   "setupEdits": [
@@ -68,6 +60,15 @@
       "why": "Plays Miao Ying through ATB (MrDustV's play-as-Miao pack, Lazy's Miao progression, Readman Miao MYM); the import had matched it to Alarielle's template.",
       "issue": 6,
       "date": "2026-11-17"
+    }
+  ],
+  "rejected": [
+    {
+      "type": "setup",
+      "setupId": "58ef190441cf",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/7",
+      "issue": 7,
+      "date": "2026-11-19"
     }
   ]
 }
