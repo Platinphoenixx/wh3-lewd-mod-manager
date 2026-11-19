@@ -5,7 +5,7 @@
  },
  "derived-ll-52142": {
   "down": 0,
-  "up": 1
+  "up": 2
  },
  "kpw-miao": {
   "down": 0,
@@ -16,7 +16,7 @@
   "reasons": {
    "campaign": 1
   },
-  "up": 15
+  "up": 17
  },
  "readman-alarielle-late": {
   "down": 0,
@@ -32,7 +32,7 @@
    "content": 1,
    "start": 1
   },
-  "up": 12
+  "up": 13
  },
  "readman-miao-late": {
   "down": 0,
@@ -44,7 +44,7 @@
    "content": 1,
    "start": 1
   },
-  "up": 4
+  "up": 5
  },
  "readman-sigvald-early": {
   "down": 1,
@@ -58,11 +58,11 @@
   "up": 1
  },
  "readman-woc-early": {
-  "down": 1,
+  "down": 2,
   "reasons": {
-   "campaign": 1
+   "campaign": 2
   },
-  "up": 2
+  "up": 3
  },
  "setup-beastmen": {
   "down": 0,
@@ -80,7 +80,18 @@
   "down": 0,
   "up": 2
  },
+ "vanilla-elspeth-von-draken": {
+  "down": 1,
+  "reasons": {
+   "content": 1
+  },
+  "up": 0
+ },
  "vanilla-khalida": {
+  "down": 0,
+  "up": 1
+ },
+ "vanilla-neferata": {
   "down": 0,
   "up": 1
  },
