@@ -298,8 +298,14 @@ def community_presets(presets: list, mods: dict, external: dict, pack_owner: dic
             for pack in packs:
                 if any(x["pack"].lower() == pack.lower() for x in entries):
                     continue
-                entries.append({"pack": pack, "from": "steam" if e.get("steamId") or (t and "steamId" in t) else "download",
-                                **({"steamId": e["steamId"]} if e.get("steamId") else {}), **({"target": t} if t else {})})
+                # Where the pack comes from: what the list says, else the catalog mod's own pack (a Workshop mod the
+                # app matched by its pack name is no download).
+                ref = next((x for x in (m or {}).get("packs", []) if x["file"].lower() == pack.lower()), None)
+                sid = e.get("steamId") or (ref or {}).get("steamId")
+                if not sid and not ref and m and not m.get("sources", {}).get("loverslab") and not m.get("sources", {}).get("nexus"):
+                    sid = next((x["id"] for x in m.get("sources", {}).get("steam") or []), None)  # a Workshop-only mod
+                src = "steam" if sid or (t and "steamId" in t) or (ref and ref.get("from") == "steam") else "download"
+                entries.append({"pack": pack, "from": src, **({"steamId": sid} if sid else {}), **({"target": t} if t else {})})
         # Workshop items and packs the app did not know when the list was shared, which the catalog knows now, become
         # entries (on top, where the app puts what a player adds); the others stay own mods.
         own, top = [], 0

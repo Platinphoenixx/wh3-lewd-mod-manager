@@ -940,5 +940,34 @@
     "description": "A small patch uploaded by a third party (credited as Daedra) after Corrupted Compendium moved to Steam: the Emissary could not be embedded into armies. It was loaded **above** the Steam Compendium.\n\nPassingbyPosts merged the fix into the official Steam Compendium (3705392682) on 2026-06-29 and shipped a further Loi/Emissary embed fix on 2026-08-02, so this upload is obsolete. Remove it and use only the official Steam Compendium.",
     "features": [],
     "recommendedFor": ""
+  },
+  "dc-archaon-chan-slaanesh-cultist-voiceovers": {
+    "summary": "Reskin by LazyIcarus that shows Archaon as a woman: new model, unit card, 2D portrait and campaign picture.",
+    "description": "LazyIcarus's Archaon-chan shows Archaon as a woman under the armour: a new model with a 4K face texture, slightly dishevelled hair and golden glowing eyes, plus her own unit card, 2D portrait and campaign picture. A small campaign script applies the look to Archaon at the start of each session.\n\nHer voice comes as a separate add-on: the voiced version recorded by a voice actress (2026-11-18), which replaces the older Slaanesh cultist voiceover.",
+    "features": [
+      "Archaon as a woman: new model, 4K face, golden eyes",
+      "Own unit card, 2D portrait and campaign picture",
+      "Voice as a separate add-on"
+    ],
+    "recommendedFor": "Anyone who plays or meets Archaon, for example on the Chaos route of Azazel's Realm."
+  },
+  "steam-3841828348": {
+    "summary": "Voice lines for Archaon-chan, recorded by a voice actress; replaces the older Slaanesh cultist voiceover.",
+    "description": "A full English voiceover for Archaon in campaign and battle, recorded by a professional voice actress for LazyIcarus's Archaon-chan (released 2026-11-18). It replaces Archaon's voice files and his random battle lines.\n\nThe author recommends it together with the Archaon-chan reskin. It cannot be used together with the older Slaanesh cultist voiceover, which it replaces.",
+    "features": [
+      "Recorded voice lines for Archaon-chan",
+      "Campaign and battle",
+      "Replaces the older cultist voiceover"
+    ],
+    "recommendedFor": "Players of Archaon-chan who want her to sound like her."
+  },
+  "steam-2866038031": {
+    "summary": "Older voice for Archaon-chan made from the game's Slaanesh cultist voices; deprecated since the voiced version is out.",
+    "description": "The first voice option for LazyIcarus's Archaon-chan: it gives Archaon the voice lines of the game's Slaanesh cultists in campaign and battle. Since 2026-11-18 its page calls it deprecated in favour of the voiced version recorded by a voice actress; the two cannot be used together.",
+    "features": [
+      "Slaanesh cultist voices for Archaon",
+      "Deprecated – use the voiced version"
+    ],
+    "recommendedFor": "Nobody new; kept for lists that still have it."
   }
 }

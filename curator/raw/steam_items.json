@@ -2249,7 +2249,7 @@
   ],
   "preview_url": "https://images.steamusercontent.com/ugc/1814411060134172480/5C665E1F52C6E549946C6C7AD963858492AED105/",
   "description": "Reskin of Archaon that comes with a unit card, 2D porthole, and campaign picture.\r\n\r\n[h1]Features[/h1]\r\n[list]\r\n[*]4K facial texture\r\n[*]slightly dishevelled hair\r\n[*]golden glowing iris\r\n[/list]\r\n\r\n[h1]Lore[/h1]\r\nTo combat Archaon, the order factions have resorted to propaganda. Painting her as an ugly, burnt man that's mutated beyond recognition, they hope that fewer people would willingly give themselves to chaos. It doesn't help that Archaon wears heavy armor and a full helmet all the time (with a voice modulator inside). This mod lets you see Archaon from her perspective.\r\n\r\n[h1]Voice[/h1]\r\nThis mod keeps Archaon's voicelines, but this [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866038031]mod: Lazy's Archaon-chan Slaanesh Cultist Voiceover[/url] will replace thevoicelines on the campaign and in battle with a Slaanesh cultist. Unfortunately doing custom voicelines is outside the scope of this project, but let me know if you want to tackle it.\r\n\r\n[h1]Related[/h1]\r\n[list]\r\n[*]Miao Ying (on discord / loverslab)\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2805809756]Katarin[/url]\r\n[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2860509927]Morathi[/url]\r\n[/list]\r\n\r\n[h1]Disclaimer[/h1]\r\n[list]\r\n[*][b]campaign only[/b]\r\n[/list]\r\n\r\n[h1]Credits[/h1]\r\n[list]\r\n[*] Beautiful screenshots from Not so Skelly Bones\r\n[*] Inspired by HellCross's Archaon-chan\r\n[/list]\r\n\r\n[h1]Changelog[/h1]\r\n[list]\r\n[*] 2024-12-31 update for 6.0\r\n[*] 2023-09-17 update for 4.0\r\n[*] 2023-05-26 update for 3.1\r\n[*] 2023-02-16 update for 2.4\r\n[*] 2022-11-22 update for 2.3\r\n[*] 2022-10-18 update for 2.2\r\n[/list]",
-  "subscriptions": 13222,
+  "subscriptions": 13295,
   "creator": "76561198008645727",
   "packs": [
    "li_archaon_first.pack"
@@ -2257,7 +2257,7 @@
  },
  "2866038031": {
   "public": true,
-  "title": "Lazy's Archaon-chan Slaanesh Cultist Voiceover",
+  "title": "(Deprecated, human VA voiceover out!) Lazy's Archaon-chan Slaanesh Cultist Voiceover",
   "updated": 1757107015,
   "filename": "",
   "tags": [
@@ -2265,8 +2265,8 @@
    "graphical"
   ],
   "preview_url": "https://images.steamusercontent.com/ugc/1814411060134173339/17170462B711B3BDBB301ECFDEFF7594697526E2/",
-  "description": "Optional voicelines for Archaon on the campaign and battles using a Slaanesh cultist for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866037946]Archaon-chan[/url]. Can be loaded in any order.",
-  "subscriptions": 8347,
+  "description": "DEPRECATED, way better human VA voiceover: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3841828348]https://steamcommunity.com/sharedfiles/filedetails/?id=3841828348[/url]\r\n\r\nOptional voicelines for Archaon on the campaign and battles using a Slaanesh cultist for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866037946]Archaon-chan[/url]. Can be loaded in any order.",
+  "subscriptions": 8353,
   "creator": "76561198008645727",
   "packs": [
    "li_archaon_voice.pack"
@@ -8597,5 +8597,21 @@
    "graphical"
   ],
   "description": "[h1]Living Diplomacy: talk to the leaders of WARHAMMER III[/h1]\r\nWrite to any faction leader in your own words, right inside the diplomacy screen, and they answer you in character. Greet them, bargain, flatter, threaten, or just talk.\r\n\r\n[list]\r\n[*]All [b]118 legendary lords[/b] have their own lore and personality.\r\n[*]Leaders weigh the balance of power and their culture: a weak realm flatters you, a strong one dictates terms, Chaos cares for no one.\r\n[*]Treacherous factions (Skaven, Dark Elves, Tzeentch...) can sign a treaty with you and then betray you in the middle of a letter.\r\n[*]Deals you accept are really signed in your campaign.\r\n[*]Leaders write letters to you on their own, gossip about each other, and remember what you promised them.\r\n[*]Works in all 13 languages of the game. Completely free.\r\n[/list]\r\n\r\n[h1]New in 0.45: roleplay and real bargaining[/h1]\r\n[list]\r\n[*][b]Roleplay.[/b] Describe what you do between asterisks: *throws the head of his general at his feet*. The leader reacts to it, and may answer the same way.\r\n[*][b]Leaders greet you first[/b] when you open the chat, in the language of your game.\r\n[*][b]They can end the audience.[/b] Insult a proud ruler one time too many and he sends you away: you can speak to him again next turn.\r\n[*][b]Brokered deals.[/b] Pay a ruler to make peace with a third realm, or to declare war on it. They only agree when it suits them, and never against you or your allies.\r\n[*][b]A price on every treaty.[/b] When a leader asks for gold for a pact, the price goes with the treaty: you pay only if the treaty is really signed.\r\n[*][b]Harder bargaining.[/b] Leaders no longer give away land and gold: they cede land only when they are losing a war or far weaker, never their capital, and their gold has limits.\r\n[*][b]Voice (optional).[/b] Switch on [b]Voice[/b] in the World tab and leaders speak their replies aloud through Player2, in English, Spanish, Italian, Brazilian Portuguese or Chinese. Letters are never read aloud. In other languages the switch is hidden.\r\n[*][b]Your own characters.[/b] Change a lord's personality or give the AI your own instructions in the [b]custom[/b] folder (AppData\\Roaming\\LivingDiplomacy\\custom). A README there explains how.\r\n[/list]\r\n\r\n[h1]READ THIS FIRST: the mod has two parts[/h1]\r\n[olist]\r\n[*][b]The mod[/b]. Steam installs it when you press Subscribe, and keeps it updated.\r\n[*][b]The companion[/b]. A small free program that lets the leaders answer. Steam cannot install programs, so you download it once from the link below. It then updates itself through the mod.\r\n[/olist]\r\n[b]Why?[/b] WARHAMMER III does not let mods connect to anything outside the game. Every AI mod needs a small program running next to the game.\r\n\r\n[b]If you only subscribe[/b], you will see the chat but the leaders will not answer. The game tells you when the companion is missing.\r\n\r\n[h1]Updating?[/h1]\r\n[b]From 0.43:[/b] nothing to download. Steam updates the mod and your companion runs the new version by itself.\r\n[b]From 0.42 or older:[/b] download the companion once from the link below and [b]extract it into the same folder as the old one[/b], replacing it. Your leaders' memories move to their new place automatically.\r\n\r\n[h1]What you need[/h1]\r\n[list]\r\n[*]Total War: WARHAMMER III on Windows, in a [b]single-player[/b] campaign.\r\n[*]The free [url=https://player2.game]Player2 app[/url], open and signed in. It is the AI that writes the replies. No API key and no payment needed.\r\n[*]The Living Diplomacy companion (free, link below).\r\n[*]An internet connection.\r\n[/list]\r\n\r\n[h1]Install (only once, about 5 minutes)[/h1]\r\n[olist]\r\n[*][b]Subscribe[/b] on this page, wait for Steam to finish, and make sure Living Diplomacy is enabled in the game launcher.\r\n[*][b]Install Player2[/b] from [url=https://player2.game]the Player2 website[/url] and sign in.\r\n[*][b]Download the companion:[/b] [url=https://github.com/ashleyia2c-dot/living-diplomacy/releases/latest/download/Living-Diplomacy-Companion.zip]click here to download it[/url].\r\n[*][b]Extract the ZIP[/b] into a folder you will keep, for example Documents\\Living Diplomacy. Inside is [b]WH3-LLM-Diplomacy-Companion.exe[/b].\r\n[/olist]\r\nYou do [b]not[/b] need Node.js, another mod, or a second copy of the mod file.\r\n\r\n[h1]Every time you play[/h1]\r\n[olist]\r\n[*]Open [b]Player2[/b].\r\n[*]Double-click [b]WH3-LLM-Diplomacy-Companion.exe[/b] and [b]leave its window open[/b]. It closes by itself when you quit the game.\r\n[*]Start WARHAMMER III and load a single-player campaign.\r\n[/olist]\r\n\r\n[h1]How to play[/h1]\r\nOpen diplomacy with any faction and click the [b]small hand icon next to the question mark[/b]. Type your message at the bottom and send it.\r\n\r\nThe [b]AI Diplomacy[/b] button opens the Living Diplomacy window: [b]Letters[/b] from other rulers, [b]Who can write to me[/b] to choose which factions write to you and take part in the living world, and [b]World[/b] for your court's report, the chronicle, the rumours and the switches (AI treaties, Romances, Voice).\r\n\r\n[h1]\"Windows protected your PC\"[/h1]\r\nThe companion is made by a single indie developer and is not signed with a paid certificate. Click [b]More info[/b] and then [b]Run anyway[/b]. The full source code is public on [url=https://github.com/ashleyia2c-dot/living-diplomacy]GitHub[/url].\r\n\r\n[h1]Alternative without the .exe (advanced)[/h1]\r\n[olist]\r\n[*]Install [url=https://nodejs.org]Node[/url] (the LTS version).\r\n[*]On the [url=https://github.com/ashleyia2c-dot/living-diplomacy/releases/latest]releases page[/url], under Assets, download the file that starts with [b]Living-Diplomacy-Steam-BAT[/b].\r\n[*]Extract it and run [b]START_PLAYER2.bat[/b] instead of the .exe, every time you play.\r\n[/olist]\r\nUse the .exe [b]or[/b] the BAT, never both at the same time.\r\n\r\n[h1]Something not working?[/h1]\r\n[list]\r\n[*][b]\"The Player2 companion is not answering\"[/b]: the companion window is not open. Open it, leave it open, and send your message again.\r\n[*][b]The companion is o"
+ },
+ "3841828348": {
+  "public": true,
+  "title": "Lazy's Archaon-Chan profession VA voiceover",
+  "updated": 1794989788,
+  "preview_url": "https://images.steamusercontent.com/ugc/18326794210691270737/AEA69DA3019FC721234CEE3B8A2110325D569F4A/",
+  "creator": "76561198008645727",
+  "subscriptions": 101,
+  "tags": [
+   "mod",
+   "graphical"
+  ],
+  "description": "Bratty profession VA voicelines for Archaon-chan\r\n\r\nCANNOT be used together with the cultist voice over [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2866038031]https://steamcommunity.com/sharedfiles/filedetails/?id=2866038031[/url]",
+  "packs": [
+   "li_archaon_voiced.pack"
+  ]
  }
 }

@@ -1,0 +1,154 @@
+{
+ "_comment": "Lazy's Archaon-chan and its two voiceovers, sorted out 2026-11-19 from the Workshop pages, LazyIcarus's Discord post of 2026-11-19 and the packs (read from the Workshop copies).",
+ "mods": [
+  {
+   "id": "dc-archaon-chan-slaanesh-cultist-voiceovers",
+   "name": "Lazy's Archaon-chan",
+   "authors": [
+    "LazyIcarus"
+   ],
+   "kind": "reskin",
+   "tags": [
+    "reskin",
+    "archaon",
+    "warriors of chaos",
+    "lazy"
+   ],
+   "packs": [
+    {
+     "file": "li_archaon_first.pack",
+     "from": "steam",
+     "steamId": "2866037946"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "recommends",
+     "target": {
+      "mod": "steam-3841828348"
+     },
+     "note": "Her voice: the author's voiced add-on, recorded by a voice actress (2026-11-18).",
+     "source": {
+      "type": "discord"
+     }
+    }
+   ],
+   "status": "stable",
+   "curation": {
+    "lastChecked": "2026-11-19",
+    "confidence": "high"
+   }
+  },
+  {
+   "id": "steam-3841828348",
+   "name": "Lazy's Archaon-chan – voiced (professional voice actress)",
+   "authors": [
+    "LazyIcarus"
+   ],
+   "kind": "submod",
+   "tags": [
+    "audio",
+    "voice",
+    "archaon",
+    "warriors of chaos",
+    "lazy"
+   ],
+   "sources": {
+    "steam": [
+     {
+      "id": "3841828348",
+      "title": "Lazy's Archaon-Chan profession VA voiceover",
+      "updated": "2026-11-18"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "li_archaon_voiced.pack",
+     "from": "steam",
+     "steamId": "3841828348"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "recommends",
+     "target": {
+      "mod": "dc-archaon-chan-slaanesh-cultist-voiceovers"
+     },
+     "note": "The author: play it together with the Archaon-chan reskin; the voice alone changes only how Archaon sounds.",
+     "source": {
+      "type": "discord"
+     }
+    },
+    {
+     "kind": "supersedes",
+     "target": {
+      "mod": "steam-2866038031"
+     },
+     "note": "Replaces the older Slaanesh cultist voiceover; the author says the two cannot be used together.",
+     "source": {
+      "type": "steam",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3841828348"
+     }
+    }
+   ],
+   "status": "stable",
+   "curation": {
+    "lastChecked": "2026-11-19",
+    "confidence": "high",
+    "openQuestions": [
+     "Released 2026-11-18; not launch-tested yet. Pack read: 522 English voice files and one table (audio_entity_random_vocalisations)."
+    ]
+   }
+  },
+  {
+   "id": "steam-2866038031",
+   "name": "Lazy's Archaon-chan – Slaanesh cultist voiceover (deprecated)",
+   "authors": [
+    "LazyIcarus"
+   ],
+   "kind": "submod",
+   "tags": [
+    "audio",
+    "voice",
+    "archaon",
+    "warriors of chaos",
+    "lazy"
+   ],
+   "sources": {
+    "steam": [
+     {
+      "id": "2866038031",
+      "title": "(Deprecated, human VA voiceover out!) Lazy's Archaon-chan Slaanesh Cultist Voiceover",
+      "updated": "2025-09-05"
+     }
+    ]
+   },
+   "packs": [
+    {
+     "file": "li_archaon_voice.pack",
+     "from": "steam",
+     "steamId": "2866038031"
+    }
+   ],
+   "relations": [
+    {
+     "kind": "extends",
+     "target": {
+      "mod": "dc-archaon-chan-slaanesh-cultist-voiceovers"
+     },
+     "note": "Optional voice lines for Archaon-chan from the game's Slaanesh cultist voices.",
+     "source": {
+      "type": "steam",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2866038031"
+     }
+    }
+   ],
+   "status": "superseded",
+   "curation": {
+    "lastChecked": "2026-11-19",
+    "confidence": "high"
+   }
+  }
+ ]
+}
