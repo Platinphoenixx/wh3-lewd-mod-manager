@@ -6,6 +6,7 @@ import { KIND_LABEL, resolveTarget, steamUrl, useData } from './data'
 import { CreatorSection } from './Creators'
 import { ModActions } from './ModActions'
 import type { InstalledPack } from '@shared/api'
+import { useEscape } from './escape'
 
 const RELATION_TITLE: Record<Relation['kind'], string> = {
   requires: 'Requires',
@@ -18,6 +19,7 @@ const RELATION_TITLE: Record<Relation['kind'], string> = {
 
 function Gallery({ images }: { images: ModImage[] }) {
   const [big, setBig] = useState<ModImage | null>(null)
+  useEscape(() => setBig(null), !!big)
   const [broken, setBroken] = useState<Set<string>>(new Set())
   images = images.filter((i) => !broken.has(i.url))
   if (!images.length) return null
@@ -35,6 +37,9 @@ function Gallery({ images }: { images: ModImage[] }) {
         <div className="lightbox" onClick={() => setBig(null)}>
           <img src={big.url} referrerPolicy="no-referrer" />
           {big.caption && <p>{big.caption}</p>}
+          {/* Under the picture, far from the window's own close button in the corner. */}
+          <button className="lightbox-close" onClick={() => setBig(null)}>Close picture (Esc)</button>
+          <span className="small muted">or click anywhere</span>
         </div>
       )}
     </>
@@ -71,6 +76,7 @@ function Downloads({ files }: { files: DownloadFile[] }) {
 export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
   const data = useData()
   const mod = data.index.mods.get(id)
+  useEscape(onClose)
   if (!mod) return null
   const known = data.scan ? matchInstalled(data.index, data.scan.packs).known : new Map<string, InstalledPack[]>()
   const installed = known.get(targetKey({ mod: mod.id }))
@@ -81,7 +87,8 @@ export function ModDetail({ id, onClose }: { id: string; onClose(): void }) {
   return (
     <div className="drawer-backdrop" onClick={onClose}>
       <aside className="drawer" onClick={(e) => e.stopPropagation()}>
-        <button className="close" onClick={onClose}>×</button>
+        {/* On the left: the window's own × sits right above the drawer's top-right corner. */}
+        <button className="drawer-close" title="Close (Esc)" onClick={onClose}>← Close</button>
         <h2>{mod.name}</h2>
         <div className="badges">
           <span className="badge">{KIND_LABEL[mod.kind]}</span>

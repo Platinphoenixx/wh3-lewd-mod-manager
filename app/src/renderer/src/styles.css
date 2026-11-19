@@ -125,7 +125,7 @@ input[type='checkbox'] { width: auto; padding: 0; accent-color: var(--accent); }
 
 .drawer-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: flex-end; }
 .drawer { width: min(760px, 92vw); height: 100%; overflow-y: auto; background: var(--panel); padding: 20px 24px; position: relative; }
-.drawer .close { position: absolute; top: 12px; right: 12px; }
+.drawer-close { display: inline-flex; align-items: center; gap: 6px; margin: 0 0 10px -6px; padding: 6px 12px; }
 .relations li { margin-bottom: 4px; }
 .links { list-style: none; padding: 0; }
 
@@ -582,3 +582,5 @@ table.entries tr.ask td { background: var(--panel-2); }
 .modal.install-dialog { width: min(820px, 94vw); }
 .profile-find { display: flex; gap: 10px; align-items: center; margin: 10px 0 4px; }
 .profile-find input { flex: 1; max-width: 520px; }
+.lightbox-close { margin-top: 14px; cursor: pointer; }
+.lightbox .small { margin-top: 6px; }

@@ -3,9 +3,11 @@ import { importPlan, keyForImported, profileFromImport, type ImportSource } from
 import type { Profile } from '@shared/profile'
 import { isOwnKey } from '@shared/own'
 import { useData } from './data'
+import { useEscape } from './escape'
 
 /** Turns a mod list of another launcher into a profile (closest template + extras + own mods). */
 export function ImportDialog({ onClose, onCreate }: { onClose(): void; onCreate(p: Profile): void }) {
+  useEscape(onClose)
   const data = useData()
   const [sources, setSources] = useState<ImportSource[] | null>(null)
   const [chosen, setChosen] = useState<ImportSource | null>(null)

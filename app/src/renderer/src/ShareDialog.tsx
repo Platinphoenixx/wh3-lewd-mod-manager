@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Profile } from '@shared/profile'
 import { setupFromProfile } from '@shared/setups'
 import { useData } from './data'
+import { useEscape } from './escape'
 
 /**
  * Shares a profile as a setup other players can install from Play (relay /setup). Only the mod list with its load
@@ -9,6 +10,7 @@ import { useData } from './data'
  * mods appears after the next daily catalog update; one with own mods too, marked as not reviewed until a maintainer looked at them.
  */
 export function ShareDialog({ profile: given, presetIds, onClose }: { profile?: Profile; presetIds?: string[]; onClose(): void }) {
+  useEscape(onClose)
   const data = useData()
   const [profiles, setProfiles] = useState<Profile[]>(given ? [given] : [])
   const [id, setId] = useState(given?.id ?? '')

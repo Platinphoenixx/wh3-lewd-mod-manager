@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Mod } from '@catalog/schema'
 import { CONTRIBUTION_LABEL, issueBody, issueUrl, type Contribution, type ContributionType, type UserRule } from '@shared/community'
 import { KIND_LABEL, useData } from './data'
+import { useEscape } from './escape'
 
 export interface ContributeRequest {
   type: ContributionType
@@ -45,6 +46,7 @@ function ModPicker({ value, onChange, exclude }: { value: string; onChange(v: st
 }
 
 export function ContributeDialog({ req, onClose }: { req: ContributeRequest; onClose(): void }) {
+  useEscape(onClose)
   const data = useData()
   const mod: Mod | undefined = req.modId ? data.index.mods.get(req.modId) : undefined
   const [f, setF] = useState<Record<string, string>>({ verdict: 'works', ruleKind: 'requires', far: 'Played 20+ turns', gameVersion: data.scan?.gameVersion ?? '', ...req.prefill })

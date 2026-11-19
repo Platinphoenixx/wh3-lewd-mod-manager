@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { matchInstalled, parseTargetKey } from '@shared/match'
 import { anonymize, buildReport, errorSignature, groupFailures, type LaunchSnapshot, type ReportOptions } from '@shared/report'
 import { resolveTarget, steamUrl, useData, type AppData } from './data'
+import { useEscape } from './escape'
 
 const WHERE = ['New Immortal Empires campaign', 'Running Immortal Empires campaign', 'Realm of Chaos campaign', 'Custom battle', 'Main menu / loading', 'Other']
 
@@ -26,6 +27,7 @@ export function packOwner(data: AppData, path: string): { name: string; url?: st
  * player sees the exact text and copies or saves it – nothing is sent by itself.
  */
 export function ReportDialog({ failure, onClose }: { failure: number; onClose(): void }) {
+  useEscape(onClose)
   const data = useData()
   const scripts = data.scripts!
   const f = scripts.failed[failure]

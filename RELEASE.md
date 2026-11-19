@@ -14,6 +14,18 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.8
+
+**WH3 Lewd Mod Manager 0.1.8 – no more closing the app by mistake. 18+ only.**
+
+- A mod's page closes with **← Close** at its top left, away from the window's own × in the corner.
+- A picture opened large has its own **Close picture** button right below it (a click anywhere still closes it too).
+- **Esc** closes what is open on top: the picture, then the mod's page, then a dialog. While you type in a field, Esc stays
+  with the field, so nothing you wrote is lost.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.7
 
 **WH3 Lewd Mod Manager 0.1.7 – back button, get mods from the catalog, find mods in a profile. 18+ only.**

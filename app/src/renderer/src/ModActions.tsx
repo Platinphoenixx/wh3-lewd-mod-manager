@@ -7,6 +7,7 @@ import { resolveProfile, type Profile, type ResolvedEntry } from '@shared/profil
 import { useData } from './data'
 import { InstallPanel } from './InstallPanel'
 import { openPlace } from './nav'
+import { useEscape } from './escape'
 
 /** Where the mod itself comes from, as its button says it. */
 function sourceOf(mod: Mod): { label: string; where: string } {
@@ -33,6 +34,7 @@ export function ModActions({ mod, installed }: { mod: Mod; installed: Map<string
   const [busy, setBusy] = useState(false)
   const [dialog, setDialog] = useState<ResolvedEntry[] | null>(null)
   const src = sourceOf(mod)
+  useEscape(() => { setDialog(null); data.rescan() }, !!dialog)
 
   const get = async () => {
     // The mod and what it needs, as a profile with only this mod would load them; what is installed is left out.

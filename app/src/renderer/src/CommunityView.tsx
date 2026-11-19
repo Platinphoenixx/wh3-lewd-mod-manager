@@ -3,6 +3,7 @@ import type { Preset } from '@catalog/schema'
 import { CONTRIBUTION_LABEL, type Contribution, type ContributionStatus, type SharedRecord } from '@shared/community'
 import { nameOf } from '@shared/profile'
 import { useData } from './data'
+import { useEscape } from './escape'
 
 const RULE_TEXT: Record<string, string> = {
   requires: 'requires', incompatible: 'is incompatible with', recommends: 'works well with', optional: 'optional for',
@@ -168,6 +169,7 @@ function ruleTitle(rule: string, data: ReturnType<typeof useData>): string {
 
 /** Changes the words of a setup this install shared; the relay accepts it only from this install. */
 function EditSetupDialog({ setup, onClose, onSaved }: { setup: SharedRecord; onClose(): void; onSaved(s: SharedRecord): void }) {
+  useEscape(onClose)
   const [name, setName] = useState(setup.name)
   const [shownAs, setShownAs] = useState(setup.shownAs ?? '')
   const [far, setFar] = useState(setup.far ?? '')

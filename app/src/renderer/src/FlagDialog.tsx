@@ -3,6 +3,7 @@ import type { CheckPoint } from '@shared/check'
 import type { RelayFlag } from '@shared/api'
 import { nameOf } from '@shared/profile'
 import { useData } from './data'
+import { useEscape } from './escape'
 
 const WHY: { value: NonNullable<RelayFlag['why']>; label: string }[] = [
   { value: 'works', label: 'They work together, I play them that way' },
@@ -17,6 +18,7 @@ const FAR = ['Main menu only', 'A few turns', 'A long campaign']
  * Sent through the relay; what the player writes becomes part of a public GitHub issue, and the dialog says so.
  */
 export function FlagDialog({ point, order, onClose, onSent }: { point: CheckPoint; order: string[]; onClose(): void; onSent(rule: string): void }) {
+  useEscape(onClose)
   const data = useData()
   const [why, setWhy] = useState<NonNullable<RelayFlag['why']>>('works')
   const [text, setText] = useState('')

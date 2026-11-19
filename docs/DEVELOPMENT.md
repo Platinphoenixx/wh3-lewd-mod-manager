@@ -76,6 +76,9 @@ community contributions. App UI and catalog texts are English.
     (`missingNeeds`), and "Add to profile ▾" with how the mod fits each profile (`fitInProfile` in `src/shared/fit.ts`, tested:
     in / switched off / fits + what comes along / avoided by the setup / conflict / alternative / another character's campaign /
     does not start / outdated); "New profile with this mod…" opens Play's page for it.
+  - Closing (`renderer/src/escape.ts`): Esc closes the topmost of picture → mod page → dialog (`useEscape`, not while typing in a
+    field); the mod page's close button sits at its top left ("← Close") and a large picture has "Close picture" below it, so nobody
+    hits the window's own × in the corner by mistake.
   - Profile search (`ProfileEditor.tsx`): one field below the steps filters the open step (load order, install list, choices)
     by name or pack file (`matchScore`).
   - "Also by the same maker" (`renderer/src/OtherApps.tsx`, list `OTHER_APPS` in `src/shared/api.ts`, icon in
