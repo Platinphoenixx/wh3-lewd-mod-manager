@@ -71,6 +71,19 @@ describe('guided setups', () => {
     expect(lateListOf(miao)?.id).toBe('miao-late')
   })
 
+  it('takes a general gameplay mod into a size only when players of the list want it, not because it fits the faction', () => {
+    const c: Catalog = { ...catalog, mods: [...catalog.mods,
+      mod('cathay-guns', { tags: ['general', 'cathay'] }), // fits the faction, rearms it: the editor offers it, no size takes it
+      mod('cathay-look', { kind: 'reskin', tags: ['general', 'cathay'] }), // only a look: fitting is enough
+      mod('miao-qol', { kind: 'utility', tags: ['general'], playAs: [{ character: 'Miao Ying' }] }) // made for her
+    ] }
+    const ix = buildIndex(c)
+    const sized = tiersFor(c, ix, subjectsOf(c, ix).find((s) => s.name === 'Miao Ying')!).flatMap((t) => t.extras)
+    expect(sized).not.toContain('mod:cathay-guns')
+    expect(sized).toEqual(expect.arrayContaining(['mod:cathay-look', 'mod:miao-qol']))
+    expect(suggestedFor(c, ix, c.presets[0]).general.map((x) => x.key)).toContain('mod:cathay-guns')
+  })
+
   it('asks for the character’s look first and ends with quality of life and the review', () => {
     const picks = suggestedFor(catalog, index, miao.presets[0]).picks
     const stagePick = (character: string, extra: object) => ({ pick: [{ key: 'mod:x', mod: { name: 'x' }, reasons: [] }], note: `They all change how ${character} looks`, score: 1, ...extra }) as unknown as PickOne

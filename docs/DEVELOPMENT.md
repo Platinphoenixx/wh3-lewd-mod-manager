@@ -16,7 +16,9 @@ community contributions. App UI and catalog texts are English.
     lists also play that have no lists of their own (`Subject.alsoAs`: Azazel's lists also play Archaon, Be'lakor, a Daemon Prince).
     A list for one character's campaign that other lords can also play is no theme (Readman's WoC list is Azazel's); per subject up to four sizes
     – Essentials (smallest guide/derived list), Full campaign (largest tested early list, recommended), Extended (+ the
-    editor's suggested mods), Everything (+ every lewd suggestion) – with what vouches for each (played by its author,
+    editor's suggested mods), Everything (+ every lewd suggestion); a general (non-lewd) mod joins a size only when players of
+    the list want it – tied to its mods or the setup's recommends, used in community lists for the character, or made for them –
+    not because it fits the faction (Bestial Gunners rearms all Beastmen); a reskin joins when it fits – with what vouches for each (played by its author,
     launch-tested). Then the pick-one choices as steps with pictures (the character's look, add-ons, looks the list
     already changes, other characters, quality-of-life mods to drop) and a review that saves an ordinary profile and
     opens it in the Profiles tab at the install step (`openProfile`). "Advanced" links lead to the full editor at

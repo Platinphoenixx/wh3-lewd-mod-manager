@@ -221,7 +221,15 @@ export function tiersFor(catalog: Catalog, index: CatalogIndex, subject: Subject
   // for its character or faction or used in lists for that character. A mod that is only popular in other characters'
   // lists (a camera mod in every Alarielle list) is no reason to add it to a Beastmen list.
   const belongs = (x: Suggestion) => x.strong || x.fits
-  const top = (xs: Suggestion[]) => [...xs.filter((x) => x.tied), ...xs.filter((x) => !x.tied && belongs(x)).slice(0, SUGGESTED)]
+  const topLewd = (xs: Suggestion[]) => [...xs.filter((x) => x.tied), ...xs.filter((x) => !x.tied && belongs(x)).slice(0, SUGGESTED)]
+  // A general mod (gameplay, units, campaign, UI) comes along only when players of this list want it: the template's mods or
+  // the setup's community recommend it or it builds on one of them, community lists for the same character use it, or it is
+  // made for the character. Only fitting the faction is no reason – Bestial Gunners fits the Beastmen and rearms all of them;
+  // such mods stay suggestions in the editor, for the player to add by choice. A reskin changes only a look, never how the
+  // game plays, so fitting the list is enough for it as before.
+  const wanted = (x: Suggestion) => x.strong || (x.mod.kind === 'reskin' && belongs(x))
+  const topGeneral = (xs: Suggestion[]) => [...xs.filter((x) => x.tied), ...xs.filter((x) => !x.tied && wanted(x)).slice(0, SUGGESTED)]
+  const top = (xs: Suggestion[]) => (xs === s.general ? topGeneral(xs) : topLewd(xs))
   // A lord in the game's own campaign has no list of its own: Lewd add-ons are what the setup names (its recommends),
   // everything else that fits is for Everything.
   const more = base === vanilla ? together([...s.lewd, ...s.general].filter((x) => x.tied)) : together([...top(s.lewd), ...top(s.general)])
