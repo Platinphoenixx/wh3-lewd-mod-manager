@@ -27,6 +27,8 @@ release is all it takes for players to hear about it.
   heroes, overhauls, skill trees – just because they fit the faction. Such a mod comes along only when the list's own mods
   or its community recommend it, community lists for the character use it, or it is made for the character; the editor
   still suggests the others.
+- Profiles: once you picked a look for a character (another Morathi look instead of the list's), the suggestions no longer
+  offer further looks that would only replace your pick. Looks for the list's own skins stay a choice.
 
 Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
 (*More info → Run anyway* / *Keep*).

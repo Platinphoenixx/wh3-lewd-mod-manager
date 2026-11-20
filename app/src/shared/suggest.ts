@@ -87,7 +87,9 @@ const norm = (s: string) => s.toLowerCase().replace(/[-_]/g, ' ').trim()
 const short = (n: number) => (n >= 10000 ? `${Math.round(n / 1000)}k` : n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n))
 
 export function suggestForProfile(
-  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>, options: Candidate[]
+  catalog: Catalog, index: CatalogIndex, preset: Preset, profile: Pick<Profile, 'extras' | 'removed' | 'imported'>, options: Candidate[],
+  /** The extras are the player's own decisions (a saved profile in the editor), not a size Play is putting together. */
+  how: { decided?: boolean } = {}
 ): { lewd: SuggestionEntry[]; general: SuggestionEntry[]; character: string } {
   const removed = new Set(profile.removed)
   const inProfile = new Set([...baseKeys(preset).filter((k) => !removed.has(k)), ...profile.extras])
@@ -142,6 +144,9 @@ export function suggestForProfile(
   const lead = preset.playAs[0] ?? preset.name
   const leadName = [...characters.values()].find((c) => norm(c).startsWith(norm(lead))) ?? lead
 
+  // Looks the player added (not the template's, not an imported list's own).
+  const chosenLooks = new Set(profile.extras.filter((k) => !templateKeys.includes(k) && !profile.imported?.order.includes(k))
+    .flatMap((k) => (k.startsWith('mod:') ? [index.mods.get(k.slice(4))] : [])).filter((m) => m?.kind === 'reskin').map((m) => m!.name))
   // Reskins already in the profile, by the character they change.
   const profileSkins = new Map<string, string[]>()
   for (const m of profileMods.filter((x) => x.kind === 'reskin')) for (const c of reskinSubjects(m, characters)) profileSkins.set(c, [...(profileSkins.get(c) ?? []), m.name])
@@ -233,6 +238,10 @@ export function suggestForProfile(
       // And the reskins in the list that replace some of the same unit models.
       ...profileMods.filter((p) => p.id !== m.id && sharedUnits(p, m)?.length).map((p) => p.name)
     ])].filter((n) => n !== m.name) : []
+    // A look the player picked is a decision: what would only replace looks the player chose (four more Morathi looks after
+    // Morathi sulivar was picked instead of the template's) is not offered again. The template's own looks stay a choice,
+    // and so do an imported list's (its mods are its template).
+    if (how.decided && replaces.length && replaces.every((n) => chosenLooks.has(n))) continue
     if (replaces.length) reasons.unshift(`Replaces ${replaces.join(', ')} in this list`)
     // An army's look is chosen with the other looks, whatever its tags say (Endo's Combined pack is tagged general).
     out[general && !m.factionLook?.length ? 'general' : 'lewd'].push({

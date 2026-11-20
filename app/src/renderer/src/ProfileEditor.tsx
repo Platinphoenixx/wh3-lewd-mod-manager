@@ -125,7 +125,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const active = useMemo(() => activeProfile(profile), [profile])
   const resolved = useMemo(() => resolveProfile(data.catalog, data.index, preset, active), [data.catalog, data.index, preset, active])
   const resolvedAll = useMemo(() => resolveProfile(data.catalog, data.index, preset, everythingOn(profile)), [data.catalog, data.index, preset, profile])
-  const suggestions = useMemo(() => suggestForProfile(data.catalog, data.index, preset, profile, options), [data.catalog, data.index, preset, profile, options])
+  const suggestions = useMemo(() => suggestForProfile(data.catalog, data.index, preset, profile, options, { decided: true }), [data.catalog, data.index, preset, profile, options])
   // Choices the player turned down stay away; pick-one choices go to "Decide", single suggestions to "Add more".
   const declined = new Set(profile.declined ?? [])
   const entries = [...suggestions.lewd, ...suggestions.general]

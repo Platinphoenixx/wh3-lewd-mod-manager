@@ -125,7 +125,8 @@ community contributions. App UI and catalog texts are English.
     together (`PickOne.multi`: Endo's Wood Elves with Female Auxiliaries and his Spellsingers) Play's cards and the editor's Decide
     tick boxes take several, picking one drops the picked ones it clashes with, and every preselectable option that goes with the
     others is selected at first (`preselects`); a mod an army pack holds whole joins that army's choice; a reskin of a character the
-    profile already reskins says what it replaces ("Replaces …", `Suggestion.replaces`). An option is selected at first
+    profile already reskins says what it replaces ("Replaces …", `Suggestion.replaces`). In the editor (`{ decided: true }`) a look that would only replace looks the
+    player added is not offered again; looks of the template (or an imported list's own) stay a choice. An option is selected at first
     only when players of this kind of list really use it (same-character lists, tied to a profile mod, or for the
     template's character) and it replaces nothing; otherwise "None". A fresh profile opens on these choices.
     UI: `renderer/src/Suggestions.tsx`.

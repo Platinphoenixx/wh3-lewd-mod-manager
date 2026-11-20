@@ -100,6 +100,21 @@ describe('profile suggestions', () => {
     expect(g.pick[0].reasons[0]).toBe('Replaces Lazy Miao Ying skins in this list')
   })
 
+  it('offers no look that would only replace a look the player picked; the template’s look stays a choice', () => {
+    const skinned = catalog.presets.find((p) => p.id === 'miao-skinned')!
+    const picked = { extras: ['mod:miao-skin'], removed: ['mod:lazy-skin'] }
+    const looks = (how: { decided?: boolean }) => suggestForProfile(catalog, index, skinned, picked, candidates(catalog, index, skinned, picked), how)
+      .lewd.flatMap((e) => (isPickOne(e) ? e.pick : [e])).map((x) => x.key)
+    // In the editor the pick is the player's decision: miao-skin-2 would only replace it.
+    expect(looks({ decided: true })).not.toContain('mod:miao-skin-2')
+    // While Play puts a size together its extras are no decision yet.
+    expect(looks({})).toContain('mod:miao-skin-2')
+    // With the template's look still in, the other looks replace that one: still a choice.
+    const kept = { extras: ['mod:miao-skin'], removed: [] }
+    const both = suggestForProfile(catalog, index, skinned, kept, candidates(catalog, index, skinned, kept), { decided: true })
+    expect(both.lewd.flatMap((e) => (isPickOne(e) ? e.pick : [e])).map((x) => x.key)).toContain('mod:miao-skin-2')
+  })
+
   it('explains each suggestion in at most two reasons', () => {
     const flat = [...s.lewd, ...s.general].flatMap((x) => (isPickOne(x) ? x.pick : [x]))
     const byKey = new Map(flat.map((x) => [x.key, x.reasons]))
