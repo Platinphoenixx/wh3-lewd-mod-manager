@@ -144,7 +144,7 @@ ipcMain.handle('steam:subscribe', (e, ids: string[]) => subscribeWorkshop(ids.fi
 // The snapshot of what was started is kept for problem reports; the renderer hears when the game closes.
 ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapshot) => {
   const startedAt = Date.now()
-  const r = await launchGame(await currentScan(), paths, (ranMs) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs }))
+  const r = await launchGame(await currentScan(), paths, (ranMs, code) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs, code }))
   if (r.ok && snapshot) await writeJson('last-launch.json', { ...snapshot, at: startedAt })
   return r
 })

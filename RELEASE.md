@@ -14,6 +14,17 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.11
+
+**WH3 Lewd Mod Manager 0.1.11 – a one-time thank-you. 18+ only.**
+
+- After a game the app started ends cleanly – at least 20 minutes played, quit normally, no mod failed – a small bubble
+  under *Support this app* asks once whether the app saved you time and points to Ko-fi. It never comes again, whatever
+  you click. When the app asks "Did it work?" after the same game, the bubble only follows an "It worked".
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.10
 
 **WH3 Lewd Mod Manager 0.1.10 – see how big downloads are doing. 18+ only.**

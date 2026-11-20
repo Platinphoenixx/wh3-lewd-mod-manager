@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type DragEvent } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type DragEvent } from 'react'
 import type { Catalog } from '@catalog/schema'
 import { DEFAULTS, SUPPORT_URL, type GameScan, type ScriptReport, type Settings } from '@shared/api'
 import { newsFor, withUserRules, type UserRule } from '@shared/community'
@@ -20,6 +20,34 @@ import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
 import { harmlessNote } from '@shared/health'
 import { useBackForwardKeys, useNavState } from './nav'
+
+const SUPPORT_ASKED = 'supportAsked'
+
+/** The one-time support bubble under "♥ Support this app" (mocks/d1_donate_bubble.png). */
+function SupportBubble({ onClose }: { onClose(): void }) {
+  const [at, setAt] = useState<{ top: number; right: number } | null>(null)
+  useLayoutEffect(() => {
+    const place = () => {
+      const r = document.querySelector('.topbar .support')?.getBoundingClientRect()
+      setAt(r ? { top: r.bottom + 12, right: Math.max(8, window.innerWidth - r.right) } : { top: 64, right: 16 })
+    }
+    place()
+    window.addEventListener('resize', place)
+    return () => window.removeEventListener('resize', place)
+  }, [])
+  if (!at) return null
+  return (
+    <div className="support-bubble" role="dialog" aria-label="Support this app" style={{ top: at.top, right: at.right }}>
+      <div className="support-bubble-arrow" />
+      <b>Glad your game ran well!</b>
+      <p className="small">If the app saved you the hours of piecing a mod list together, a small tip on Ko-fi helps keep the catalog current. This shows only once.</p>
+      <div className="support-bubble-actions">
+        <button className="primary" onClick={() => { void window.api.openExternal(SUPPORT_URL); onClose() }}>♥ Support on Ko-fi</button>
+        <button onClick={onClose}>No thanks</button>
+      </div>
+    </div>
+  )
+}
 
 const TABS = ['play', 'profiles', 'catalog', 'install', 'community', 'settings', 'review'] as const
 type Tab = (typeof TABS)[number]
@@ -49,6 +77,15 @@ export function App() {
   const [contributing, setContributing] = useState<ContributeRequest | null>(null)
   const [blurImages, setBlurImages] = useState(() => localStorage.getItem('blurImages') === '1')
   const { notices, notify, dismiss } = useNotices()
+  // "If the app saved you time …": shown once per player, after a clean game session (see the game-exit handler below).
+  const [supportAsk, setSupportAsk] = useState(false)
+  const askSupportOnce = useCallback(() => {
+    try {
+      if (localStorage.getItem(SUPPORT_ASKED)) return
+      localStorage.setItem(SUPPORT_ASKED, new Date().toISOString().slice(0, 10))
+    } catch { return } // without storage it could come again and again: better not at all
+    setSupportAsk(true)
+  }, [])
   const [tabCounts, setTabCounts] = useState<Partial<Record<Tab, { n: number; error?: boolean; title: string }>>>({})
   const setTabCount = useCallback<AppData['setTabCount']>((t, c) => setTabCounts((m) => {
     if (!c && !m[t]) return m
@@ -162,13 +199,18 @@ export function App() {
 
   // After a real session (20 minutes or more), one question per profile and day: did it work? The answer counts for
   // the template or shared setup the profile is based on (relay /vote; shown on the Play page after the daily update).
-  useEffect(() => window.api.onGameExited(async ({ ranMs }) => {
+  useEffect(() => window.api.onGameExited(async ({ startedAt, ranMs, code }) => {
     if (ranMs < 20 * 60 * 1000) return
+    // A clean session: the game quit normally (exit code 0), got far enough to write its log, and no mod failed in it. Only
+    // then the one-time support bubble may come – after "It worked" when the question is asked, else right away.
+    const s = await window.api.scriptReport().catch(() => null)
+    const clean = code === 0 && !!s?.written && s.written >= startedAt && !realFailures(s.failed).length
+    const thanks = () => { if (clean) askSupportOnce() }
     const snap = await window.api.lastLaunch().catch(() => null)
-    if (!snap?.template?.id) return
+    if (!snap?.template?.id) return thanks()
     const asked = `asked:${snap.profile.id}:${new Date().toISOString().slice(0, 10)}`
     try {
-      if (localStorage.getItem(asked)) return
+      if (localStorage.getItem(asked)) return thanks()
       localStorage.setItem(asked, '1')
     } catch { /* without storage it may ask twice a day */ }
     // Community fixes the profile uses get the same answer (shown with the fix on the mod's Play page).
@@ -190,12 +232,12 @@ export function App() {
       kind: 'info', timeout: 0,
       text: `Did “${snap.profile.name}” work for you? Your answer counts for “${snap.template.name}” on the Play page.`,
       actions: [
-        { label: '▲ It worked', run: () => void vote(true) },
+        { label: '▲ It worked', run: () => { void vote(true); thanks() } },
         { label: '▼ It didn’t', run: why },
         { label: 'Not now', run: () => {} }
       ]
     })
-  }), [notify])
+  }), [notify, askSupportOnce])
 
   const saveRules = useCallback((next: UserRule[]) => {
     setRules(next)
@@ -291,6 +333,7 @@ export function App() {
         {openModId && <ModDetail id={openModId} onClose={() => setOpenModId(null)} />}
         {contributing && <ContributeDialog req={contributing} onClose={() => setContributing(null)} />}
         {reportFor !== null && scripts?.failed[reportFor] && <ReportDialog failure={reportFor} onClose={() => setReportFor(null)} />}
+        {supportAsk && <SupportBubble onClose={() => setSupportAsk(false)} />}
         <NoticeStack notices={notices} dismiss={dismiss} />
       </div>
     </DataContext.Provider>

@@ -15,7 +15,7 @@ export interface LaunchResult {
  * Writes the mod list for `packPaths` (load order, highest priority first) into the game folder and
  * starts the game with it. Only packs found by the given scan are used.
  */
-export async function launchGame(scan: GameScan, packPaths: string[], onExit?: (ranMs: number) => void): Promise<LaunchResult> {
+export async function launchGame(scan: GameScan, packPaths: string[], onExit?: (ranMs: number, code: number | null) => void): Promise<LaunchResult> {
   if (!scan.gamePath) return { ok: false, message: 'The game folder was not found. Choose it in Settings.' }
   const byPath = new Map(scan.packs.map((p) => [p.path, p]))
   const packs = packPaths.map((p) => byPath.get(p)).filter((p) => !!p)
@@ -41,7 +41,8 @@ export async function launchGame(scan: GameScan, packPaths: string[], onExit?: (
   if (started) return { ok: false, message: `Could not start the game: ${started}`, modListPath }
   // The app still hears when the game closes (to check the script log), but does not keep it alive.
   const t0 = Date.now()
-  child.once('exit', () => onExit?.(Date.now() - t0))
+  // Its exit code too: 0 when the player quit the game, anything else when it crashed or was killed.
+  child.once('exit', (code) => onExit?.(Date.now() - t0, code))
   child.unref()
   return { ok: true, message: `Started with ${packs.length} mods.`, modListPath }
 }

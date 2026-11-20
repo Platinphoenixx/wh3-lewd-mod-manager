@@ -586,3 +586,8 @@ table.entries tr.ask td { background: var(--panel-2); }
 .lightbox .small { margin-top: 6px; }
 .play-toggle .ph { cursor: zoom-in; }
 .play-opt .ph { cursor: pointer; }
+/* the one-time support bubble under "Support this app" */
+.support-bubble { position: fixed; z-index: 30; width: 340px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, .5); }
+.support-bubble-arrow { position: absolute; top: -7px; right: 28px; width: 12px; height: 12px; background: var(--panel-2); border-left: 1px solid var(--line); border-top: 1px solid var(--line); transform: rotate(45deg); }
+.support-bubble p { margin: 4px 0 0; color: var(--text-2); }
+.support-bubble-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; }

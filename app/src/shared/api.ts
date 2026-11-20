@@ -217,7 +217,8 @@ export interface Api {
   /** What the app started last (load order, template, versions). */
   lastLaunch(): Promise<LaunchSnapshot | null>
   /** Called when a game the app started has closed; returns a function that stops listening. */
-  onGameExited(cb: (e: { startedAt: number; ranMs: number }) => void): () => void
+  /** `code`: the game's exit code (0 = the player quit it; null when it was ended by a signal). */
+  onGameExited(cb: (e: { startedAt: number; ranMs: number; code?: number | null }) => void): () => void
   appVersion(): Promise<string>
   /** When this build was made (local time) and from which commit; set by electron.vite.config.ts. */
   appBuild(): Promise<{ date: string; commit: string }>
