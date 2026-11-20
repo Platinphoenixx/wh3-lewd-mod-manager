@@ -80,6 +80,8 @@ export interface ReportOptions {
 export interface ReportInput {
   /** The mod the error belongs to (name as shown in the app). */
   modName: string
+  /** Heading of the error block (default "Script error"). */
+  title?: string
   /** Failure lines of the session with how often each appeared. */
   errors: { line: string; count: number }[]
   /** Pack files that contain the failing script. */
@@ -114,7 +116,7 @@ export function buildReport(r: ReportInput, short = false): string {
   else out.push('Load order: unknown (the game was not started from the app).')
   if (r.where?.trim()) out.push(`Where: ${r.where.trim()}`)
 
-  out.push('', '### Script error')
+  out.push('', `### ${r.title ?? 'Script error'}`)
   out.push('```', ...cut(r.errors, short ? 3 : Infinity, (e) => (e.count > 1 ? `${e.line}   (${e.count}×)` : e.line)), '```')
   if (r.packs.length) out.push(`In: ${r.packs.join(', ')}`)
 

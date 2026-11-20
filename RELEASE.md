@@ -14,6 +14,21 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.2.0
+
+**WH3 Lewd Mod Manager 0.2.0 – when the game stops while loading, the app says which mod. 18+ only.**
+
+- When a game the app started stops while loading its database ("crash to database"), the app reads the game's own
+  report and names the mod of your profile it came from – and whether you switched it on after the last start that
+  worked. *Switch it off and play again* does that in one click.
+- The load order keeps the hint until the next start: the mod's row is marked, with the table and entry the game named.
+  *Report it to the catalog* sends that report (you see the text first); once 3 or more players report the same stop,
+  the catalog shows it as a known problem of the mod.
+- The *Support on Ko-fi* button in the one-time thank-you bubble sat a little too high; it is in line now.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.11
 
 **WH3 Lewd Mod Manager 0.1.11 – a one-time thank-you. 18+ only.**

@@ -322,7 +322,7 @@ input[type='radio'] { accent-color: var(--accent); }
 .step-next { margin: 18px 0 8px; }
 .decide-actions { display: flex; align-items: center; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
 /* A primary button in a row lines up with its neighbours (the bottom margin is for primary buttons on their own). */
-:is(.decide-actions, .form-actions, .install-group, .review-decide, .row-actions, .subtabs, .notice-actions, .row) button.primary { margin-bottom: 0; }
+:is(.decide-actions, .form-actions, .install-group, .review-decide, .row-actions, .subtabs, .notice-actions, .support-bubble-actions, .stop-actions, .row) button.primary { margin-bottom: 0; }
 
 /* Play: the guided way to a profile (character or theme → how much → choices with pictures → review). */
 .content.play { padding: 24px 32px 48px; }
@@ -591,3 +591,10 @@ table.entries tr.ask td { background: var(--panel-2); }
 .support-bubble-arrow { position: absolute; top: -7px; right: 28px; width: 12px; height: 12px; background: var(--panel-2); border-left: 1px solid var(--line); border-top: 1px solid var(--line); transform: rotate(45deg); }
 .support-bubble p { margin: 4px 0 0; color: var(--text-2); }
 .support-bubble-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; }
+/* the last start stopped while the game loaded its database (ProfileEditor, mocks/e2_crash_list.png) */
+.stop-box { border: 1px solid rgba(208, 100, 79, 0.55); border-radius: 4px; padding: 14px 16px; margin: 0 0 14px; background: rgba(208, 100, 79, 0.07); }
+.stop-box p { margin: 6px 0 0; }
+.stop-head { font-weight: 600; color: var(--danger); }
+.stop-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
+.entries tr.stopped { background: rgba(208, 100, 79, 0.08); }
+.stop-line { color: var(--danger); margin-top: 2px; }

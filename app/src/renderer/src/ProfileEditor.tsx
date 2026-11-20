@@ -15,7 +15,9 @@ import { missingPacks } from '@shared/install'
 import { findMods, matchScore } from '@shared/findmod'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
-import type { LaunchSnapshot } from '@shared/report'
+import { buildReport, errorSignature, type LaunchSnapshot } from '@shared/report'
+import { dbStopLine, tableLabel } from '@shared/dbstop'
+import { clearDbStop, saveDbStop, useDbStop } from './dbstopStore'
 import { ideaGroups, isPickOne, suggestForProfile, type Suggestion } from '@shared/suggest'
 import { DecideChoices, SuggestedMods } from './Suggestions'
 import { ShareDialog } from './ShareDialog'
@@ -484,6 +486,65 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
     const r = await window.api.launchGame(launch.packs.map((p) => p.path), snapshot)
     data.notify({ id: 'launch', kind: r.ok ? 'done' : 'error', text: r.message })
   }
+  // The last start of this profile stopped while the game loaded its database (App.tsx reads the game's report):
+  // a banner over the load order and the mod's row marked while it is still on (mocks/e2_crash_list.png).
+  const dbStop = useDbStop(profile.id)
+  const stopOn = !!dbStop && (!dbStop.key || isOn(dbStop.key))
+  const [playAfterOff, setPlayAfterOff] = useState<string | null>(null)
+  const [stopReported, setStopReported] = useState(false)
+  const offAndPlay = (key: string) => {
+    switchKeys([key, ...dependentsOf(data.index, loadedKeys, key)], false)
+    setPlayAfterOff(key)
+  }
+  // Plays once the profile without it is in place.
+  useEffect(() => {
+    if (playAfterOff && !loadedKeys.includes(playAfterOff)) {
+      setPlayAfterOff(null)
+      void play()
+    }
+  }, [playAfterOff, order])
+  // The message card's "Switch it off and play again" is done here, once.
+  useEffect(() => {
+    if (dbStop?.act !== 'off-play') return
+    saveDbStop({ ...dbStop, act: undefined })
+    if (dbStop.key && isOn(dbStop.key)) offAndPlay(dbStop.key)
+  }, [dbStop?.act])
+  const reportStop = async () => {
+    if (!dbStop) return
+    const [snap, appVersion] = await Promise.all([window.api.lastLaunch().catch(() => null), window.api.appVersion().catch(() => '')])
+    const modName = dbStop.name ?? dbStop.pack ?? 'unknown pack'
+    const text = buildReport({
+      modName,
+      title: 'Game stopped while loading its database',
+      errors: [{ line: dbStopLine(dbStop), count: 1 }],
+      packs: dbStop.pack ? [dbStop.pack] : [],
+      snapshot: snap?.profile.id === profile.id ? snap : null,
+      game: { version: data.scan?.gameVersion, build: data.scan?.gameBuild },
+      appVersion,
+      catalogDate: data.catalog.generatedAt.slice(0, 10),
+      overlaps: [],
+      options: { versions: true, differences: true, stale: true, overlaps: false, fullOrder: false }
+    }, true)
+    if (!confirm(`Send this report to the catalog maintainers?
+
+${text}
+
+Only this text and a random id of this installation are sent. Once 3 or more players report the same stop, the catalog shows it as a known problem of the mod.`)) return
+    const key = dbStop.key ?? `pack:${dbStop.pack ?? 'unknown'}`
+    const r = await window.api.sendReport({
+      app: appVersion,
+      game: data.scan?.gameVersion,
+      catalog: data.catalog.generatedAt.slice(0, 10),
+      modId: key.startsWith('mod:') ? key.slice(4) : undefined,
+      modName,
+      signature: errorSignature(key, dbStopLine(dbStop)),
+      text
+    })
+    if (r.ok) setStopReported(true)
+    data.notify({ kind: r.ok ? 'done' : 'error', text: r.message })
+  }
+  const stopWhen = dbStop ? new Date(dbStop.at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+
   const sourceOf = (key: string): string | undefined => {
     const t = parseTargetKey(key)
     if ('steamId' in t) return `Workshop ${t.steamId}`
@@ -665,6 +726,24 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
 
       {view === 'order' && (
         <section>
+          {stopOn && dbStop && (
+            <div className="stop-box" role="alert">
+              <div className="stop-head">✕ Your last start stopped while the game loaded its database ({stopWhen})</div>
+              <p>
+                The game named <b>{dbStop.pack}</b>{dbStop.name ? <> from “{dbStop.name}”</> : <>, which is not a mod of this profile</>}.
+                {dbStop.added ? ' You switched it on after the last start that worked.' : ''}{' '}
+                Often the pack itself is broken for this game version; sometimes it needs a mod that is missing or loaded in the wrong place.
+              </p>
+              <p className="small muted">
+                From the game's own report: {dbStop.table ? <>table {tableLabel(dbStop.table)}</> : 'no table named'}{dbStop.record ? <>, entry {dbStop.record}</> : null}
+              </p>
+              <div className="stop-actions">
+                {dbStop.key && <button className="primary" onClick={() => offAndPlay(dbStop.key!)}>Switch it off and play</button>}
+                <button onClick={() => void reportStop()} disabled={stopReported}>{stopReported ? 'Reported – thank you' : 'Report it to the catalog'}</button>
+                <button className="link" onClick={() => clearDbStop(profile.id)}>{dbStop.key ? 'Keep it on' : 'Hide this'}</button>
+              </div>
+            </div>
+          )}
           {missingEntries.length > 0 && (
             <p className="callout warn small">
               {incomplete.size} mod{incomplete.size === 1 ? ' is' : 's are'} not installed yet.{' '}
@@ -697,7 +776,7 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                 const isInstalled = installed.has(o.key) && !incomplete.has(o.key)
                 const ask = asking?.key === o.key ? asking : null
                 return (
-                  <tr key={o.key} className={`${!on ? 'off' : isInstalled ? 'state-installed' : 'state-missing'}${ask ? ' ask' : ''}`}>
+                  <tr key={o.key} className={`${!on ? 'off' : isInstalled ? 'state-installed' : 'state-missing'}${ask ? ' ask' : ''}${on && stopOn && dbStop?.key === o.key ? ' stopped' : ''}`}>
                     <td className="sw">
                       <button className={`switch${on ? ' on' : ''}`} role="switch" aria-checked={on}
                         title={on ? 'Loaded – switch off to leave it out of the game' : e?.origin === 'dependency' ? `Comes with ${e.requiredBy} – switch on with it` : 'Switched off – not loaded'}
@@ -715,6 +794,9 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
                           </select>
                         </div>
                       ))}
+                      {on && stopOn && dbStop?.key === o.key && (
+                        <div className="small stop-line">✕ The game stopped at loading on {dbStop.pack} at your last start ({stopWhen})</div>
+                      )}
                       {stale.has(o.key) && (
                         <div className="small warn-text">
                           Older than the last major game update; changes game data.{' '}

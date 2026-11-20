@@ -86,6 +86,13 @@ community contributions. App UI and catalog texts are English.
   - Support bubble (`SupportBubble` in `App.tsx`, mocks/d1_donate_bubble.png): once per player (localStorage `supportAsked`, set when
     shown), after a clean session of a game the app started – 20+ minutes, exit code 0 (`launch.ts` passes it with `game:exited`),
     the script log written during it and no real script failure; after "It worked" when "Did it work?" is asked for that game.
+  - Database stops (`src/shared/dbstop.ts`, tested; mocks/e1_crash_card.png, e2_crash_list.png): when a game the app started stops
+    while loading its database, the game writes `crash_report/bad_mods_report.txt` (pack, table, entry); main reads it with
+    `game:exited` when it was written during this start (`WH3LMM_CRASH_DIR` for tests). App.tsx names the profile's mod that
+    started that pack (`culpritOf`) and whether it was loaded at the profile's last start that got to the main menu
+    (localStorage `goodStart:<profile>`), keeps the stop until the next start (`dbStop:<profile>`, `dbstopStore.ts`) and shows a
+    card; the load order shows a banner and marks the row ("Switch it off and play", "Report it to the catalog": relay report with
+    the signature `dbStopLine`, which the build turns into a known issue from 3 players on, like script errors).
   - "Also by the same maker" (`renderer/src/OtherApps.tsx`, list `OTHER_APPS` in `src/shared/api.ts`, icon in
     `renderer/src/assets/`): a small card on Play below the Continue cards for the maintainer's other apps (the Stellaris Lewd
     Playset Builder, its LoversLab page); × hides it for good (localStorage `otherAppsHidden`), a new app in the list shows again.

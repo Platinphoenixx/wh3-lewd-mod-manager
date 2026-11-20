@@ -20,6 +20,8 @@ import { ReportDialog } from './ReportDialog'
 import { groupFailures } from '@shared/report'
 import { harmlessNote } from '@shared/health'
 import { useBackForwardKeys, useNavState } from './nav'
+import { markFor } from '@shared/dbstop'
+import { clearDbStop, lastGoodStart, saveDbStop, saveGoodStart } from './dbstopStore'
 
 const SUPPORT_ASKED = 'supportAsked'
 
@@ -174,6 +176,42 @@ export function App() {
       actions: [{ label: 'Open download page', run: () => void window.api.openExternal(u.url) }]
     }), () => {})
   }, [notify])
+  // A start that stopped while the game loaded its database: the game's report names the pack; the card names the mod of
+  // the profile it belongs to and whether it came after the last start that worked (mocks/e1_crash_card.png). A start
+  // that got to the main menu (the script log was written) becomes the profile's last good start.
+  useEffect(() => window.api.onGameExited(async ({ startedAt, dbStop }) => {
+    const snap = await window.api.lastLaunch().catch(() => null)
+    if (!snap || snap.at !== startedAt) return
+    const profileId = snap.profile.id
+    if (!dbStop) {
+      clearDbStop(profileId) // the game got past its database this time
+      const s = await window.api.scriptReport().catch(() => null)
+      if (s?.written && s.written >= startedAt) saveGoodStart(profileId, snap.entries.map((e) => e.key))
+      return
+    }
+    const mark = markFor(dbStop, profileId, snap.entries, lastGoodStart(profileId))
+    saveDbStop(mark)
+    const show = () => openProfile({ profile: profileId }, 'order')
+    notify({
+      id: `dbstop:${profileId}`,
+      kind: 'error',
+      timeout: 0,
+      text: (
+        <>
+          <b>The game stopped while loading.</b> Its database check failed on <b>{dbStop.pack}</b>
+          {mark.name ? <> (“{mark.name}”) in {snap.profile.name}.</> : <> – a pack that is not in “{snap.profile.name}”.</>}
+          {mark.added ? ' You switched it on after the last start that worked.' : ''}
+        </>
+      ),
+      actions: mark.key
+        ? [
+            { label: 'Switch it off and play again', run: () => { saveDbStop({ ...mark, act: 'off-play' }); show() } },
+            { label: 'Show it in the list', run: show }
+          ]
+        : [{ label: 'Show the list', run: show }]
+    })
+  }), [notify, openProfile])
+
   useEffect(() => window.api.onGameExited(async ({ startedAt }) => {
     const s = await window.api.scriptReport().catch(() => null)
     setScripts(s)

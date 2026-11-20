@@ -6,6 +6,7 @@ import type { FileHint } from './install'
 import type { FactsReport } from './own'
 import type { ImportSource } from './importlist'
 import type { Profile } from './profile'
+import type { DbStop } from './dbstop'
 import type { LaunchSnapshot } from './report'
 import type { SharedSetup } from './setups'
 
@@ -217,8 +218,11 @@ export interface Api {
   /** What the app started last (load order, template, versions). */
   lastLaunch(): Promise<LaunchSnapshot | null>
   /** Called when a game the app started has closed; returns a function that stops listening. */
-  /** `code`: the game's exit code (0 = the player quit it; null when it was ended by a signal). */
-  onGameExited(cb: (e: { startedAt: number; ranMs: number; code?: number | null }) => void): () => void
+  /**
+   * `code`: the game's exit code (0 = the player quit it; null when it was ended by a signal). `dbStop`: the game's own
+   * report when it stopped while loading its database (written during this start).
+   */
+  onGameExited(cb: (e: { startedAt: number; ranMs: number; code?: number | null; dbStop?: DbStop }) => void): () => void
   appVersion(): Promise<string>
   /** When this build was made (local time) and from which commit; set by electron.vite.config.ts. */
   appBuild(): Promise<{ date: string; commit: string }>

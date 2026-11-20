@@ -1505,7 +1505,11 @@ def main():
             continue
         message = e["signature"].split(" | ", 1)[-1]
         games = f", game {', '.join(e['games'])}" if e.get("games") else ""
-        m.setdefault("knownIssues", []).append(f"Script error reported by {e['players']} players through the app{games}: {message}")
+        if message.startswith("game stopped at loading: "):  # the game's database report (app/src/shared/dbstop.ts)
+            m.setdefault("knownIssues", []).append(
+                f"Stopped the game while it loaded its database for {e['players']} players (reported through the app{games}): {message.split(': ', 1)[1]}")
+        else:
+            m.setdefault("knownIssues", []).append(f"Script error reported by {e['players']} players through the app{games}: {message}")
 
     # Support links often sit on other people's pages (a campaign page links its submodder's Patreon).
     # A link belongs to the author on whose mods it appears most, relative to how many mods they have;

@@ -7,6 +7,7 @@ import { app, BrowserWindow, crashReporter, dialog, ipcMain, net, protocol, shel
 import type { FileHint } from '@shared/install'
 import { DEFAULTS, type FlagDecision, type GameScan, type RelayContribution, type RelayFlag, type RelayReport, type RelayResult, type ScriptReport, type Settings } from '@shared/api'
 import { parseLuaLog } from '@shared/health'
+import { parseBadModsReport, type DbStop } from '@shared/dbstop'
 import { parseCaModdata, parseTwmods, parseWh3mm, type ImportSource } from '@shared/importlist'
 import type { Contribution, NewsSeen, SharedRecord, UserRule } from '@shared/community'
 import type { Profile } from '@shared/profile'
@@ -144,11 +145,26 @@ ipcMain.handle('steam:subscribe', (e, ids: string[]) => subscribeWorkshop(ids.fi
 // The snapshot of what was started is kept for problem reports; the renderer hears when the game closes.
 ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapshot) => {
   const startedAt = Date.now()
-  const r = await launchGame(await currentScan(), paths, (ranMs, code) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs, code }))
+  const r = await launchGame(await currentScan(), paths, (ranMs, code) => {
+    void dbStopSince(startedAt).then((dbStop) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs, code, dbStop }))
+  })
   if (r.ok && snapshot) await writeJson('last-launch.json', { ...snapshot, at: startedAt })
   return r
 })
-ipcMain.handle('game:lastLaunch', () => readJson<LaunchSnapshot | null>('last-launch.json', null))
+// The game's report when it stopped while loading its database – only one written since the app started it.
+// WH3LMM_CRASH_DIR points the tests at another folder.
+async function dbStopSince(since: number): Promise<DbStop | undefined> {
+  const dir = process.env.WH3LMM_CRASH_DIR || join(app.getPath('appData'), 'The Creative Assembly', 'Warhammer3', 'crash_report')
+  const file = join(dir, 'bad_mods_report.txt')
+  try {
+    const st = await stat(file)
+    if (st.mtimeMs < since) return undefined
+    return parseBadModsReport(await readFile(file, 'utf8'), st.mtimeMs) ?? undefined
+  } catch {
+    return undefined
+  }
+}
+ipcMain.handle('game:lastLaunch',() => readJson<LaunchSnapshot | null>('last-launch.json', null))
 ipcMain.handle('app:version', () => app.getVersion())
 ipcMain.handle('app:build', () => __BUILD_INFO__)
 ipcMain.handle('app:home', () => homedir())
