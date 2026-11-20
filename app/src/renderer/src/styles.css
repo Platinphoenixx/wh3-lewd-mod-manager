@@ -123,7 +123,7 @@ input[type='checkbox'] { width: auto; padding: 0; accent-color: var(--accent); }
 .chip + .chip::before { content: '·'; margin: 0 6px; }
 .chip.warn { color: var(--warn); }
 
-.drawer-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: flex-end; }
+.drawer-backdrop { position: fixed; inset: 0; z-index: 10; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: flex-end; }
 .drawer { width: min(760px, 92vw); height: 100%; overflow-y: auto; background: var(--panel); padding: 20px 24px; position: relative; }
 .drawer-close { display: inline-flex; align-items: center; gap: 6px; margin: 0 0 10px -6px; padding: 6px 12px; }
 .relations li { margin-bottom: 4px; }

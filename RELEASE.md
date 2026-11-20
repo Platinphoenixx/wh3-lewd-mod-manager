@@ -14,6 +14,16 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.2.1
+
+**WH3 Lewd Mod Manager 0.2.1 – a fix for the Slaanesh look. 18+ only.**
+
+- In the Slaanesh look, a mod's page opened behind the list instead of on top of it. It opens on top again, as in
+  the Bronze look.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.2.0
 
 **WH3 Lewd Mod Manager 0.2.0 – a Slaanesh look, and the app names the mod when the game stops while loading. 18+ only.**
