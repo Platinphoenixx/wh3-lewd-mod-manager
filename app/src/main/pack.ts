@@ -1,4 +1,5 @@
 import { open, stat } from 'node:fs/promises'
+import { zstdDecompressSync } from 'node:zlib'
 import { basename } from 'node:path'
 import { analyzeConflicts, type ConflictReport } from '@shared/conflicts'
 import { collectFacts, type FactsReport } from '@shared/own'
@@ -15,7 +16,8 @@ import { collectFacts, type FactsReport } from '@shared/own'
  *  then the dependency index: NUL-terminated pack names
  *  then the file index, per file: u32 size, [u32 timestamp], u8 compressed (PFH5+), NUL-terminated path
  *  then the file data in index order.
- * Only the header and the index are read; file data is read only for RPFM's small dependency note.
+ * Only the header and the index are read; file data is read only for RPFM's small dependency note and, with
+ * readPackFile, for one named file (the game's Slaanesh icon for the app's look).
  */
 
 const HAS_EXTENDED_HEADER = 0x100
@@ -25,6 +27,8 @@ const HAS_INDEX_WITH_TIMESTAMPS = 0x40
 export interface PackFileEntry {
   path: string // lower-case, forward slashes
   size: number
+  /** Stored compressed: a u32 with the unpacked size, then a zstd frame (the game's own packs). */
+  compressed?: boolean
 }
 
 export interface PackIndex {
@@ -65,12 +69,13 @@ export function parsePackIndex(buf: Buffer): { index: PackIndex; dataStart: numb
     const size = buf.readUInt32LE(pos)
     pos += 4
     if (flags & HAS_INDEX_WITH_TIMESTAMPS) pos += 4
-    pos += 1 // compressed flag (PFH5 and newer)
+    const compressed = buf[pos] === 1 // compressed flag (PFH5 and newer)
+    pos += 1
     const end = buf.indexOf(0, pos)
     if (end < 0 || end >= indexEnd) throw new Error('truncated pack index')
     const raw = buf.toString('utf8', pos, end)
     rawPaths.push(raw)
-    files.push({ path: raw.replace(/\\/g, '/').toLowerCase(), size })
+    files.push({ path: raw.replace(/\\/g, '/').toLowerCase(), size, ...(compressed ? { compressed } : {}) })
     pos = end + 1
   }
   return {
@@ -139,6 +144,38 @@ export async function packFacts(paths: string[]): Promise<FactsReport> {
   const report = collectFacts(packs)
   for (const p of unreadable) report.packs[p] = null
   return report
+}
+
+/**
+ * One file of a pack (path as in the pack, any case and slash), unpacked; null when the pack does not have it or stores
+ * it in a way this reader does not know (only zstd, which the game uses, is unpacked).
+ */
+export async function readPackFile(packPath: string, filePath: string): Promise<Buffer | null> {
+  const want = filePath.replace(/\\/g, '/').toLowerCase()
+  const fh = await open(packPath, 'r')
+  try {
+    const head = Buffer.alloc(48)
+    await fh.read(head, 0, 48, 0)
+    const flags = head.readUInt32LE(4)
+    const total = 28 + (flags & HAS_EXTENDED_HEADER ? 20 : 0) + head.readUInt32LE(12) + head.readUInt32LE(20)
+    const buf = Buffer.alloc(total)
+    await fh.read(buf, 0, total, 0)
+    const { index, dataStart } = parsePackIndex(buf)
+    let offset = dataStart
+    for (const f of index.files) {
+      if (f.path === want) {
+        const data = Buffer.alloc(f.size)
+        await fh.read(data, 0, f.size, offset)
+        if (!f.compressed) return data
+        if (data.readUInt32BE(4) !== 0x28b52ffd) return null // not zstd
+        return zstdDecompressSync(data.subarray(4))
+      }
+      offset += f.size
+    }
+    return null
+  } finally {
+    await fh.close()
+  }
 }
 
 export async function readPackIndex(path: string): Promise<PackIndex> {

@@ -22,6 +22,7 @@ import { harmlessNote } from '@shared/health'
 import { useBackForwardKeys, useNavState } from './nav'
 import { markFor } from '@shared/dbstop'
 import { clearDbStop, lastGoodStart, saveDbStop, saveGoodStart } from './dbstopStore'
+import { LookCorner, LookOffer, lookOffered } from './look'
 
 const SUPPORT_ASKED = 'supportAsked'
 
@@ -81,6 +82,8 @@ export function App() {
   const { notices, notify, dismiss } = useNotices()
   // "If the app saved you time …": shown once per player, after a clean game session (see the game-exit handler below).
   const [supportAsk, setSupportAsk] = useState(false)
+  // The new look is offered once (look.tsx, mocks/g6_look_popup.png).
+  const [offerLook, setOfferLook] = useState(() => !lookOffered())
   const askSupportOnce = useCallback(() => {
     try {
       if (localStorage.getItem(SUPPORT_ASKED)) return
@@ -339,7 +342,7 @@ export function App() {
       >
         {dragging && <div className="drop-overlay">Drop .pack, .7z, .zip or .rar files to install them</div>}
         <header className="topbar">
-          <h1>WH3 Lewd Mod Manager</h1>
+          <h1><span className="brand"><span className="brand-name">WH3 Lewd Mod Manager</span><span className="tagline">Excess in all things</span></span></h1>
           <nav>
             {TABS.filter((t) => t !== 'review' || maintainer).map((t) => (
               <button key={t} className={tab === t ? 'active' : ''} onClick={() => setTab(t)}>
@@ -371,7 +374,9 @@ export function App() {
         {openModId && <ModDetail id={openModId} onClose={() => setOpenModId(null)} />}
         {contributing && <ContributeDialog req={contributing} onClose={() => setContributing(null)} />}
         {reportFor !== null && scripts?.failed[reportFor] && <ReportDialog failure={reportFor} onClose={() => setReportFor(null)} />}
+        <LookCorner />
         {supportAsk && <SupportBubble onClose={() => setSupportAsk(false)} />}
+        {offerLook && <LookOffer onClose={() => setOfferLook(false)} />}
         <NoticeStack notices={notices} dismiss={dismiss} />
       </div>
     </DataContext.Provider>

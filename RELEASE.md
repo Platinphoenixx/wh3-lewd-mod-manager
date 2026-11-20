@@ -16,8 +16,12 @@ release is all it takes for players to hear about it.
 
 ## Notes for 0.2.0
 
-**WH3 Lewd Mod Manager 0.2.0 – when the game stops while loading, the app says which mod. 18+ only.**
+**WH3 Lewd Mod Manager 0.2.0 – a Slaanesh look, and the app names the mod when the game stops while loading. 18+ only.**
 
+- **A Slaanesh look.** Rose and lilac instead of bronze, silk in the background, the Prince's mark at the headings,
+  pictures from Slaanesh mods (a banner on *Play* and one in the corner, credited to their mods) and a few headings in
+  the Dark Prince's voice. The app asks once whether you want to try it; switch any time in *Settings → Look of the app*.
+  The mark is read from your own game installation; nothing of the game is shipped with the app.
 - When a game the app started stops while loading its database ("crash to database"), the app reads the game's own
   report and names the mod of your profile it came from – and whether you switched it on after the last start that
   worked. *Switch it off and play again* does that in one click.

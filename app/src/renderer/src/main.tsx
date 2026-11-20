@@ -2,6 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { App } from './App'
 import './styles.css'
+import { applyLook } from './look'
+
+// The chosen look before the first paint, so the app never flashes the other one.
+applyLook()
 
 // Images show a loading placeholder (styles.css) until they have loaded or failed.
 for (const type of ['load', 'error']) {

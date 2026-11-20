@@ -93,6 +93,14 @@ community contributions. App UI and catalog texts are English.
     (localStorage `goodStart:<profile>`), keeps the stop until the next start (`dbStop:<profile>`, `dbstopStore.ts`) and shows a
     card; the load order shows a banner and marks the row ("Switch it off and play", "Report it to the catalog": relay report with
     the signature `dbStopLine`, which the build turns into a known issue from 3 players on, like script errors).
+  - Looks (`renderer/src/look.tsx`, mocks/g1–g8): Bronze (default) or Slaanesh, per PC in localStorage `look`, set on
+    `<html data-theme>` before the first render (`main.tsx`); the Slaanesh look is a second set of tokens plus ornaments in
+    `styles.css` (`:root[data-theme="slaanesh"]`), a few headings in Play in the theme's voice (`useLook`; instructions stay
+    plain), and pictures from Slaanesh mods picked by the maintainer (`BANNERS`/`CORNERS`: mod id + a piece of the image
+    address, resolved through the catalog, credited on Play and in Settings, blurred with "Blur images"). Its mark is the
+    game's own Slaanesh icon, read at runtime from the player's `data/ui.pack` (`readPackFile` in `main/pack.ts`, zstd;
+    served as `wh3lmm://game/slaanesh-icon` with CORS for the CSS mask; `<html data-sla-icon="game">` once it loaded);
+    without the game a drawn rosette. `LookOffer` asks once (localStorage `lookOffered`).
   - "Also by the same maker" (`renderer/src/OtherApps.tsx`, list `OTHER_APPS` in `src/shared/api.ts`, icon in
     `renderer/src/assets/`): a small card on Play below the Continue cards for the maintainer's other apps (the Stellaris Lewd
     Playset Builder, its LoversLab page); × hides it for good (localStorage `otherAppsHidden`), a new app in the list shows again.

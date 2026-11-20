@@ -1,5 +1,9 @@
+import { mkdtempSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
+import { zstdCompressSync } from 'node:zlib'
 import { describe, expect, it } from 'vitest'
-import { parsePackIndex, parseRpfmDependencies } from './pack'
+import { parsePackIndex, parseRpfmDependencies, readPackFile } from './pack'
 
 /** Builds a minimal PFH5 mod pack index in memory. */
 function buildPack(deps: string[], files: [string, number][]): Buffer {
@@ -33,6 +37,32 @@ describe('parsePackIndex', () => {
 
   it('rejects other formats', () => {
     expect(() => parsePackIndex(Buffer.from('PFH4' + '\0'.repeat(40)))).toThrow(/unsupported/)
+  })
+})
+
+describe('readPackFile', () => {
+  it('reads one file, unpacking zstd the way the game stores it', async () => {
+    const plain = Buffer.from('plain text')
+    const icon = Buffer.from('PNG data of the icon '.repeat(20))
+    const packed = Buffer.concat([Buffer.alloc(4), zstdCompressSync(icon)])
+    packed.writeUInt32LE(icon.length, 0)
+    const entries: [string, Buffer, number][] = [['ui\\a.txt', plain, 0], ['ui\\flags\\Icon.png', packed, 1]]
+    const fileBuf = Buffer.concat(entries.map(([p, d, c]) => {
+      const h = Buffer.alloc(5)
+      h.writeUInt32LE(d.length, 0)
+      h[4] = c
+      return Buffer.concat([h, Buffer.from(p + '\0', 'utf8')])
+    }))
+    const header = Buffer.alloc(28)
+    header.write('PFH5', 0, 'latin1')
+    header.writeUInt32LE(1, 4)
+    header.writeUInt32LE(entries.length, 16)
+    header.writeUInt32LE(fileBuf.length, 20)
+    const file = join(mkdtempSync(join(tmpdir(), 'wh3lmm-pack-')), 'ui.pack')
+    writeFileSync(file, Buffer.concat([header, fileBuf, plain, packed]))
+    expect((await readPackFile(file, 'UI/flags/icon.png'))?.toString()).toBe(icon.toString())
+    expect((await readPackFile(file, 'ui/a.txt'))?.toString()).toBe('plain text')
+    expect(await readPackFile(file, 'ui/missing.png')).toBeNull()
   })
 })
 

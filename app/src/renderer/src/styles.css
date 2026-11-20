@@ -598,3 +598,93 @@ table.entries tr.ask td { background: var(--panel-2); }
 .stop-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; flex-wrap: wrap; }
 .entries tr.stopped { background: rgba(208, 100, 79, 0.08); }
 .stop-line { color: var(--danger); margin-top: 2px; }
+
+/* -- The Slaanesh look (look.tsx; mocks/g1-g8): rose and lilac, a six-petal rosette (no Games Workshop symbol), silk in
+   the background, pictures from Slaanesh mods. Everything else is the Bronze layout with other tokens. -- */
+:root[data-theme="slaanesh"] {
+  --bg: #130e16; --panel: #1b1320; --panel-2: #24192b; --hover: #2f2038; --line: #3d2a47; --line-soft: #2c1f34;
+  --text: #f3e7f0; --text-2: #dccadb; --muted: #a993a8; --accent: #e46aae; --on-accent: #22091a;
+  --ok: #8fc29a; --warn: #e3ab62; --danger: #ea6377; --link: #f0a6cf; --rosette: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23f6b3d9%27/%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23e46aae%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23b490e6%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20fill%3D%27url%28%23g%29%27%20fill-opacity%3D%27.9%27%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%280%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%2860%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28120%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28180%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28240%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28300%2012%2012%29%27/%3E%3C/g%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%272.3%27%20fill%3D%27%232a1530%27%20stroke%3D%27%23f6b3d9%27%20stroke-width%3D%27.8%27/%3E%3C/svg%3E");
+}
+:root[data-theme="slaanesh"] body { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20900%20700%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%3E%3Cpath%20d%3D%27M-40%20640%20C%20180%20520%2C%20260%20700%2C%20470%20560%20S%20760%20360%2C%20940%20470%27%20stroke%3D%27%23e46aae%27%20stroke-opacity%3D%27.09%27%20stroke-width%3D%272%27/%3E%3Cpath%20d%3D%27M-40%20600%20C%20160%20470%2C%20300%20660%2C%20500%20520%20S%20770%20300%2C%20940%20400%27%20stroke%3D%27%23b490e6%27%20stroke-opacity%3D%27.08%27%20stroke-width%3D%271.5%27/%3E%3Cpath%20d%3D%27M-40%20680%20C%20220%20580%2C%20320%20720%2C%20520%20610%20S%20800%20430%2C%20940%20540%27%20stroke%3D%27%23f6b3d9%27%20stroke-opacity%3D%27.06%27%20stroke-width%3D%273%27/%3E%3Cpath%20d%3D%27M120%20700%20C%20260%20600%2C%20420%20640%2C%20560%20500%20S%20760%20240%2C%20900%20260%27%20stroke%3D%27%23e46aae%27%20stroke-opacity%3D%27.05%27%20stroke-width%3D%276%27/%3E%3C/svg%3E") right bottom / 900px auto no-repeat fixed, radial-gradient(1200px 520px at 50% -180px, rgba(228, 106, 174, .12), transparent 70%), var(--bg); }
+:root[data-theme="slaanesh"] a { color: var(--link); }
+:root[data-theme="slaanesh"] .topbar { background: linear-gradient(180deg, #221628, #1b1320); border-bottom: 1px solid transparent; border-image: linear-gradient(90deg, transparent, #e46aae 25%, #b490e6 75%, transparent) 1; }
+:root[data-theme="slaanesh"] .topbar h1 { display: flex; align-items: center; gap: 9px; line-height: 1.1; font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 600; letter-spacing: .02em; }
+:root[data-theme="slaanesh"] .topbar h1::before { content: ''; flex: 0 0 24px; height: 24px; background: var(--rosette) center / contain no-repeat; }
+:root[data-theme="slaanesh"] .topbar h1 .brand-name { background: linear-gradient(90deg, #f6c6e2, #e46aae 45%, #b490e6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.topbar h1 .brand { display: flex; flex-direction: column; }
+.topbar h1 .tagline { display: none; }
+:root[data-theme="slaanesh"] .topbar h1 .tagline { display: block; font: 400 9.5px 'Segoe UI', system-ui, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+:root[data-theme="slaanesh"] .topbar nav button.active { border-bottom: 2px solid transparent; border-image: linear-gradient(90deg, #e46aae, #b490e6) 1; }
+:root[data-theme="slaanesh"] button.primary { background: linear-gradient(135deg, #ee86c0, #e46aae 45%, #b06fd8); border-color: transparent; box-shadow: 0 0 0 1px rgba(255, 210, 235, .12) inset, 0 4px 18px rgba(228, 106, 174, .28); }
+:root[data-theme="slaanesh"] button.primary:hover { box-shadow: 0 0 0 1px rgba(255, 210, 235, .25) inset, 0 4px 22px rgba(228, 106, 174, .45); }
+:root[data-theme="slaanesh"] .switch.on { background: linear-gradient(90deg, #e46aae, #b06fd8); }
+:root[data-theme="slaanesh"] .callout.warn { border-color: rgba(227, 171, 98, .35); }
+:root[data-theme="slaanesh"] ::selection { background: rgba(228, 106, 174, .45); color: #fff; }
+:root[data-theme="slaanesh"] h2, :root[data-theme="slaanesh"] .profile-name { font-family: Georgia, 'Times New Roman', serif; }
+/* headings: a rosette before, a line that fades out after */
+:root[data-theme="slaanesh"] .content h2 { display: flex; align-items: center; gap: 12px; }
+:root[data-theme="slaanesh"] .content h2::before { content: ''; flex: 0 0 18px; height: 18px; background: var(--rosette) center / contain no-repeat; }
+:root[data-theme="slaanesh"] .content h2::after { content: ''; flex: 1; height: 1px; max-width: 320px; background: linear-gradient(90deg, rgba(228, 106, 174, .6), rgba(180, 144, 230, .25), transparent); }
+:root[data-theme="slaanesh"] .sidebar-list h4 { color: #c993bd; }
+:root[data-theme="slaanesh"] .sidebar-list h4::before { content: '\2766  '; color: var(--accent); letter-spacing: 0; }
+:root[data-theme="slaanesh"] .play-card { transition: box-shadow .2s, border-color .2s, transform .2s; }
+:root[data-theme="slaanesh"] .play-card:hover { box-shadow: 0 0 0 1px rgba(228, 106, 174, .35), 0 10px 34px rgba(228, 106, 174, .22); transform: translateY(-2px); }
+:root[data-theme="slaanesh"] .play-card .name { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 19px; }
+/* pictures: the banner behind Play's heading and a faint one in the corner */
+.content.play { position: relative; }
+.content.play > :not(.look-banner):not(.look-banner-tint):not(.look-credit) { position: relative; z-index: 1; }
+.look-banner, .look-banner-tint { position: absolute; top: 0; right: 0; width: 62%; height: 300px; pointer-events: none; z-index: 0; }
+.look-banner { background: center 30% / cover no-repeat; opacity: .6; -webkit-mask-image: linear-gradient(to left, #000 30%, transparent), linear-gradient(to bottom, #000 45%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
+.look-banner-tint { background: linear-gradient(to left, rgba(120, 40, 110, .25), transparent 70%); mix-blend-mode: color; }
+.look-credit { position: absolute; top: 64px; right: 34px; z-index: 2; color: var(--muted); }
+.look-corner { position: fixed; right: -40px; bottom: -30px; width: 520px; height: 420px; pointer-events: none; z-index: 0; background: center / cover no-repeat; opacity: .16; -webkit-mask-image: radial-gradient(closest-side, #000 30%, transparent); mask-image: radial-gradient(closest-side, #000 30%, transparent); }
+.blur-images .look-banner, .blur-images .look-corner { filter: blur(14px); }
+:root[data-theme="slaanesh"] main { position: relative; z-index: 1; }
+/* drawn previews of both looks (Settings, the one-time question) */
+.look-preview { border: 1px solid #33302a; border-radius: 5px; overflow: hidden; background: #141311; font-family: 'Segoe UI', system-ui, sans-serif; text-align: left; }
+.look-preview .lp-bar { background: #1b1916; padding: 6px 8px; display: flex; justify-content: space-between; align-items: center; }
+.look-preview .lp-title { font-size: 11px; font-weight: 600; color: #ece6dc; }
+.look-preview .lp-play { font-size: 9px; font-weight: 600; padding: 2px 6px; border-radius: 3px; background: #c9a25a; color: #1a140a; }
+.look-preview .lp-line { height: 1px; background: #33302a; }
+.look-preview .lp-body { padding: 9px 9px 10px; }
+.look-preview .lp-head { font-size: 12px; font-weight: 600; color: #ece6dc; }
+.look-preview .lp-cards { display: flex; gap: 6px; margin-top: 8px; }
+.look-preview .lp-cards i { flex: 1; height: 58px; border-radius: 3px; border: 1px solid #33302a; background: linear-gradient(#24211d 66%, #1b1916 66%); }
+.look-preview .lp-cards i.hot { border-color: #c9a25a; }
+.look-preview.slaanesh { border-color: #e46aae; background: radial-gradient(260px 90px at 50% -30px, rgba(228, 106, 174, .22), transparent 70%), #130e16; }
+.look-preview.slaanesh .lp-bar { background: linear-gradient(180deg, #221628, #1b1320); }
+.look-preview.slaanesh .lp-title { font: italic 600 11px Georgia, serif; }
+.look-preview.slaanesh .lp-name { background: linear-gradient(90deg, #f6c6e2, #e46aae 45%, #b490e6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.look-preview.slaanesh .lp-play { background: linear-gradient(135deg, #ee86c0, #e46aae 45%, #b06fd8); color: #22091a; box-shadow: 0 3px 10px rgba(228, 106, 174, .35); }
+.look-preview.slaanesh .lp-line { background: linear-gradient(90deg, transparent, #e46aae 25%, #b490e6 75%, transparent); }
+.look-preview.slaanesh .lp-head { font: 600 12px Georgia, serif; color: #f3e7f0; }
+.look-preview.slaanesh .lp-cards i { border-color: #3d2a47; background: linear-gradient(#2a1d31 66%, #1b1320 66%); }
+.look-preview.slaanesh .lp-cards i.hot { border-color: #e46aae; box-shadow: 0 4px 14px rgba(228, 106, 174, .35); }
+.look-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.look-choices.settings { grid-template-columns: repeat(2, minmax(0, 280px)); margin: 8px 0 6px; }
+.look-choice { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--line); border-radius: 4px; padding: 10px; cursor: pointer; }
+.look-choice.on { border-color: var(--accent); }
+.look-choice input { display: none; }
+.look-cap { margin-top: 6px; text-align: center; }
+.look-cap.slaanesh { color: #e46aae; }
+.modal.look-offer { width: min(640px, 94vw); }
+.look-offer h2 { margin-bottom: 4px; }
+.look-offer-lead { margin: 0 0 14px; color: var(--text-2); }
+.look-offer-actions { display: flex; gap: 8px; margin-top: 18px; align-items: center; flex-wrap: wrap; }
+.look-offer-actions .muted { margin-left: auto; }
+.look-offer-actions button.primary { margin-bottom: 0; }
+.look-offer-actions .look-try { background: linear-gradient(135deg, #ee86c0, #e46aae 45%, #b06fd8); border-color: transparent; color: #22091a; box-shadow: 0 4px 16px rgba(228, 106, 174, .3); }
+/* the look's mark: the rosette, or the game's own Slaanesh icon once the app could read it (look.tsx, data-sla-icon) */
+:root { --rosette: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23f6b3d9%27/%3E%3Cstop%20offset%3D%27.55%27%20stop-color%3D%27%23e46aae%27/%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23b490e6%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20fill%3D%27url%28%23g%29%27%20fill-opacity%3D%27.9%27%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%280%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%2860%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28120%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28180%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28240%2012%2012%29%27/%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%276.2%27%20rx%3D%272.7%27%20ry%3D%275.6%27%20transform%3D%27rotate%28300%2012%2012%29%27/%3E%3C/g%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2712%27%20r%3D%272.3%27%20fill%3D%27%232a1530%27%20stroke%3D%27%23f6b3d9%27%20stroke-width%3D%27.8%27/%3E%3C/svg%3E"); }
+.sla-mark { display: inline-block; width: 1.05em; height: 1.05em; vertical-align: -0.16em; background: var(--rosette) center / contain no-repeat; }
+:root[data-sla-icon="game"] .sla-mark,
+:root[data-theme="slaanesh"][data-sla-icon="game"] .topbar h1::before,
+:root[data-theme="slaanesh"][data-sla-icon="game"] .content h2::before {
+  background: linear-gradient(45deg, #b490e6, #e46aae 50%, #f6b3d9);
+  -webkit-mask: var(--sla-icon) center / contain no-repeat; mask: var(--sla-icon) center / contain no-repeat;
+}
+:root[data-theme="slaanesh"][data-sla-icon="game"] .topbar h1::before { flex-basis: 27px; height: 27px; }
+:root[data-theme="slaanesh"][data-sla-icon="game"] .content h2::before { flex-basis: 22px; height: 22px; }
+.look-offer-actions .look-try .sla-mark { background: #22091a; -webkit-mask: var(--sla-icon) center / contain no-repeat; }
+:root:not([data-sla-icon="game"]) .look-offer-actions .look-try .sla-mark { background: var(--rosette) center / contain no-repeat; -webkit-mask: none; }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { DEFAULTS, type MaintainerStatus, type Settings } from '@shared/api'
 import type { LocalScan } from '@shared/localfiles'
 import { useData } from './data'
+import { LookSetting } from './look'
 
 export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
   const data = useData()
@@ -30,6 +31,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
 
   return (
     <div className="content settings">
+      <LookSetting />
       <section>
         <h2>Game folder</h2>
         <p className="small muted">Detected automatically from Steam. Choose it yourself only if detection fails.</p>

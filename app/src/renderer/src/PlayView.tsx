@@ -23,6 +23,7 @@ import { keepStagesLabel, untilLabel } from './Suggestions'
 import { lookPoint, withFlag, type CheckPoint } from '@shared/check'
 import { dlcLine, ModSearch, PlayWithPage, SubjectCard, type Pin } from './PlayWith'
 import { useNavState } from './nav'
+import { LookBanner, useLook } from './look'
 
 /** Where a mod comes from, as the player meets it (the order the installer uses: Steam > LoversLab > Discord > Nexus). */
 function sourceLabel(m: Mod): string {
@@ -84,13 +85,18 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
   const characters = subjects.filter((s) => s.kind === 'character' && !s.vanilla)
   const vanilla = subjects.filter((s) => s.vanilla).sort((a, b) => a.name.localeCompare(b.name))
   const themes = subjects.filter((s) => s.kind === 'theme')
+  // The Slaanesh look speaks in the theme's voice in its headings; instructions stay as they are.
+  const slaanesh = useLook() === 'slaanesh'
   return (
     <div className="content play">
+      <LookBanner />
       <div className="play-head">
-        <h2>Who do you want to play?</h2>
+        <h2>{slaanesh ? 'Who will you indulge as?' : 'Who do you want to play?'}</h2>
         <a className="play-advanced" onClick={() => data.goTab('profiles')}>Advanced: all templates and the full editor</a>
       </div>
-      <p className="play-lead">Pick a character or a theme – or start from a mod you want in your game. You choose how much content you want, the app walks you through the choices (looks, add-ons, heroes) and installs everything.</p>
+      <p className="play-lead">{slaanesh
+        ? 'Choose your desire – a character, a theme, or a mod you crave. Decide how much you want, and the app leads you through every temptation (looks, add-ons, heroes) and installs it all.'
+        : 'Pick a character or a theme – or start from a mod you want in your game. You choose how much content you want, the app walks you through the choices (looks, add-ons, heroes) and installs everything.'}</p>
       {search}
       <div className="play-mine">
         {recent.map((p) => (
@@ -114,7 +120,7 @@ function Home({ subjects, onOpen, search }: { subjects: Subject[]; onOpen(key: s
           }}
         />
       )}
-      <h3 className="play-section">Play as</h3>
+      <h3 className="play-section">{slaanesh ? 'Indulge as' : 'Play as'}</h3>
       <div className="play-grid">{characters.map(card)}</div>
       {themes.length > 0 && (
         <>

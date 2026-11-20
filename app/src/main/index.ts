@@ -17,7 +17,7 @@ import { loadCatalog } from './catalog'
 import { scanSourceFolders } from './localfiles'
 import type { LocalMatch, LocalScan } from '@shared/localfiles'
 import { scanGame } from './game'
-import { cachedPackIndex, packConflicts, packFacts } from './pack'
+import { cachedPackIndex, packConflicts, packFacts, readPackFile } from './pack'
 import { launchGame } from './launch'
 import { checkAppUpdate } from './appUpdate'
 import { accept, clearToken, decideFlag, listReview, reject, setToken, status as maintainerStatus } from './maintainer'
@@ -288,7 +288,8 @@ ipcMain.handle('dialog:pickFolder', async (_e, title?: string) => {
 })
 
 // wh3lmm://workshop/<id> serves the preview image Steam puts next to a Workshop item's pack.
-protocol.registerSchemesAsPrivileged([{ scheme: 'wh3lmm', privileges: { standard: true, secure: true } }])
+// corsEnabled: CSS masks (the Slaanesh look's mark) load their image with CORS.
+protocol.registerSchemesAsPrivileged([{ scheme: 'wh3lmm', privileges: { standard: true, secure: true, corsEnabled: true } }])
 
 async function workshopPreview(id: string): Promise<Response> {
   if (!/^\d{6,12}$/.test(id)) return new Response(null, { status: 404 })
@@ -298,6 +299,21 @@ async function workshopPreview(id: string): Promise<Response> {
     if (png) return net.fetch(pathToFileURL(join(item, png)).toString())
   }
   return new Response(null, { status: 404 })
+}
+
+// wh3lmm://game/slaanesh-icon serves the game's own Slaanesh mark for the Slaanesh look, read from the player's ui.pack
+// (nothing of the game is shipped with the app); without the game the look keeps its own rosette.
+const SLAANESH_ICON = 'ui/flags/wh3_main_sla_seducers_of_slaanesh/mon_icon.png'
+let slaaneshIcon: Promise<Buffer | null> | null = null
+async function gameIcon(name: string): Promise<Response> {
+  if (name !== 'slaanesh-icon') return new Response(null, { status: 404 })
+  slaaneshIcon ??= (async () => {
+    const game = (lastScan ?? (await currentScan())).gamePath
+    return game ? readPackFile(join(game, 'data', 'ui.pack'), SLAANESH_ICON).catch(() => null) : null
+  })()
+  const png = await slaaneshIcon
+  if (!png) slaaneshIcon = null // try again once the game is found
+  return png ? new Response(new Uint8Array(png), { headers: { 'content-type': 'image/png', 'access-control-allow-origin': '*' } }) : new Response(null, { status: 404 })
 }
 
 crashReporter.start({ uploadToServer: false })
@@ -316,6 +332,7 @@ app.on('will-quit', () => crashLog('app quits'))
 app.whenReady().then(() => {
   protocol.handle('wh3lmm', (req) => {
     const u = new URL(req.url)
+    if (u.host === 'game') return gameIcon(u.pathname.slice(1))
     return u.host === 'workshop' ? workshopPreview(u.pathname.slice(1)) : new Response(null, { status: 404 })
   })
   createWindow()
