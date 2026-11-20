@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T23:07:57+00:00",
+  "generatedAt": "2026-11-20T14:20:56+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-16T20:32:11+00:00",
+      "fetchedAt": "2026-11-20T14:20:52+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -66502,7 +66502,7 @@
         "ll-42028"
       ],
       "votes": {
-        "up": 17,
+        "up": 18,
         "down": 1,
         "reasons": {
           "campaign": 1
@@ -67419,7 +67419,7 @@
         "ll-23966"
       ],
       "votes": {
-        "up": 4,
+        "up": 5,
         "down": 0
       },
       "launchTest": {
@@ -69776,7 +69776,10 @@
       ],
       "votes": {
         "up": 1,
-        "down": 0
+        "down": 1,
+        "reasons": {
+          "content": 1
+        }
       },
       "launchTest": {
         "result": "main menu",
@@ -70652,7 +70655,7 @@
         }
       ],
       "votes": {
-        "up": 1,
+        "up": 2,
         "down": 0
       },
       "launchTest": {
@@ -70887,6 +70890,13 @@
           "note": "Use the fixed Soil assets from LL 48415 (pinned in #soiled-projects 2026-04-30) instead of the original asset pack; Kerberos 2026-10-29: delete the old LL files and get the pinned fixes. Pack name inside the 48415 archive is not confirmed (assumed unchanged)."
         }
       ],
+      "votes": {
+        "up": 0,
+        "down": 1,
+        "reasons": {
+          "campaign": 1
+        }
+      },
       "launchTest": {
         "result": "main menu",
         "game": "9.0.5",
@@ -71737,7 +71747,10 @@
       ],
       "votes": {
         "up": 5,
-        "down": 0
+        "down": 1,
+        "reasons": {
+          "other": 1
+        }
       },
       "launchTest": {
         "result": "main menu",
@@ -72067,7 +72080,7 @@
       ],
       "theme": "Khalida's corruption",
       "votes": {
-        "up": 2,
+        "up": 3,
         "down": 0
       },
       "launchTest": {
@@ -72112,6 +72125,10 @@
           }
         }
       ],
+      "votes": {
+        "up": 2,
+        "down": 0
+      },
       "launchTest": {
         "result": "main menu",
         "game": "9.0.5",
@@ -72169,6 +72186,10 @@
           }
         }
       ],
+      "votes": {
+        "up": 2,
+        "down": 0
+      },
       "launchTest": {
         "result": "main menu",
         "game": "9.0.5",
@@ -72211,7 +72232,7 @@
         }
       ],
       "votes": {
-        "up": 1,
+        "up": 2,
         "down": 0
       },
       "launchTest": {
@@ -73575,7 +73596,7 @@
         "base": "readman-alarielle-early",
         "game": "9.0.5"
       },
-      "uses": 1
+      "uses": 2
     },
     {
       "id": "community-d34ee286fa25",
@@ -77002,7 +77023,7 @@
         ],
         "corrected": true
       },
-      "uses": 1
+      "uses": 2
     },
     {
       "id": "community-2237b60d5e2d",
@@ -78228,7 +78249,14 @@
         "base": "readman-morathi",
         "game": "9.0.5"
       },
-      "uses": 1
+      "votes": {
+        "up": 0,
+        "down": 1,
+        "reasons": {
+          "start": 1
+        }
+      },
+      "uses": 2
     },
     {
       "id": "community-c281ff5b8eb0",

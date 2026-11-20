@@ -1,22 +1,44 @@
 {
- "derived-ll-27663": {
-  "down": 0,
-  "up": 1
+ "community-2237b60d5e2d": {
+  "down": 1,
+  "reasons": {
+   "start": 1
+  },
+  "up": 0
  },
- "derived-ll-52142": {
+ "derived-dc-shenzoo-faction-mod-passingbyposts": {
   "down": 0,
   "up": 2
  },
+ "derived-ll-24004": {
+  "down": 0,
+  "up": 2
+ },
+ "derived-ll-27663": {
+  "down": 0,
+  "up": 2
+ },
+ "derived-ll-52142": {
+  "down": 0,
+  "up": 3
+ },
+ "kpw-azazel-archaon-belakor-sigvald-daemon-pr": {
+  "down": 1,
+  "reasons": {
+   "campaign": 1
+  },
+  "up": 0
+ },
  "kpw-miao": {
   "down": 0,
-  "up": 1
+  "up": 2
  },
  "readman-alarielle-early": {
   "down": 1,
   "reasons": {
    "campaign": 1
   },
-  "up": 17
+  "up": 18
  },
  "readman-alarielle-late": {
   "down": 0,
@@ -24,7 +46,7 @@
  },
  "readman-katarin-early": {
   "down": 0,
-  "up": 4
+  "up": 5
  },
  "readman-miao-early": {
   "down": 2,
@@ -54,7 +76,10 @@
   "up": 0
  },
  "readman-slaanesh-daemons-early": {
-  "down": 0,
+  "down": 1,
+  "reasons": {
+   "content": 1
+  },
   "up": 1
  },
  "readman-woc-early": {
@@ -65,7 +90,10 @@
   "up": 3
  },
  "setup-beastmen": {
-  "down": 0,
+  "down": 1,
+  "reasons": {
+   "other": 1
+  },
   "up": 5
  },
  "setup-corrupted-ascension": {
