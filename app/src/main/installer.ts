@@ -3,13 +3,14 @@ import { appendFileSync, existsSync, mkdirSync, rmSync } from 'node:fs'
 import { copyFile, mkdir, mkdtemp, readdir, readFile, rename, rm, stat } from 'node:fs/promises'
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
-import { app, BrowserWindow, session, type DownloadItem } from 'electron'
+import { app, BrowserWindow, session, shell, type DownloadItem } from 'electron'
 import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
 import { catalogPackName, pickDownloads, type DownloadRow, type FileHint, hintsLeft } from '@shared/install'
 import type { PackRef } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress } from '@shared/api'
+import { progressText } from '@shared/progress'
 
 const run = promisify(execFile)
 
@@ -295,6 +296,92 @@ const markNexusScript = (hints: FileHint[]) => `;(async () => {
  */
 type WindowNeeds = { hints: FileHint[] } | { files: number }
 
+/**
+ * Shows a running download in its window (mocks/dl1.png): a block on top of the page with percent, size, speed and time
+ * left, the window's title and its taskbar button; after a minute without data a hint what to do. Returns how long no
+ * data has arrived, for the queue's patience.
+ */
+let tracked = 0
+function trackDownload(win: BrowserWindow, item: DownloadItem, title: string): { idle(): number } {
+  const id = `wh3lmm-progress-${++tracked}`
+  let prev = 0
+  let prevAt = Date.now()
+  let lastData = Date.now()
+  let speed = 0
+  const tick = () => {
+    if (win.isDestroyed()) return
+    const got = item.getReceivedBytes()
+    const now = Date.now()
+    if (got > prev) {
+      const inst = (got - prev) / Math.max(0.2, (now - prevAt) / 1000)
+      speed = speed ? speed * 0.7 + inst * 0.3 : inst
+      prev = got
+      prevAt = now
+      lastData = now
+    }
+    const t = progressText({ name: item.getFilename(), got, total: item.getTotalBytes(), speed, idle: now - lastData })
+    win.setTitle(`${t.title} – ${title}`)
+    win.setProgressBar(t.fraction ?? 2, { mode: t.warn ? 'paused' : t.fraction === undefined ? 'indeterminate' : 'normal' })
+    const show = `(() => {
+      const t = ${JSON.stringify(t)}
+      let b = document.getElementById(${JSON.stringify(id)})
+      if (!b) {
+        b = document.createElement('div')
+        b.id = ${JSON.stringify(id)}
+        b.style.cssText = 'position:sticky;top:0;z-index:2147483647;font:15px/1.45 system-ui,sans-serif;text-align:left;background:#22331f;color:#e4eedc;border-bottom:2px solid #6f9a5c'
+        b.innerHTML = '<div style="padding:12px 18px"><div style="display:flex;gap:14px;align-items:baseline;flex-wrap:wrap"><span data-p style="font-size:22px;color:#8fcf74;font-weight:700"></span><span data-h></span></div><div style="height:10px;background:#11180f;border-radius:5px;margin:10px 0 6px;overflow:hidden"><i data-bar style="display:block;height:100%;background:#6f9a5c;width:0"></i></div><div data-l style="font-size:13px;color:#b9c7b1"></div></div><div data-w style="display:none;background:#3a2f17;color:#f0d9a4;border-top:2px solid #b8913e;padding:10px 18px"></div>'
+        const banner = document.getElementById('wh3lmm-banner')
+        if (banner) banner.append(b); else document.body.prepend(b)
+      }
+      b.querySelector('[data-p]').textContent = t.percent
+      b.querySelector('[data-h]').textContent = t.head
+      b.querySelector('[data-l]').textContent = t.line
+      b.querySelector('[data-bar]').style.width = t.fraction === undefined ? '100%' : (t.fraction * 100).toFixed(1) + '%'
+      const w = b.querySelector('[data-w]')
+      w.style.display = t.warn ? 'block' : 'none'
+      w.textContent = t.warn || ''
+    })()`
+    void win.webContents.executeJavaScript(show).catch(() => {})
+  }
+  const timer = setInterval(tick, 1000)
+  tick()
+  item.once('done', (_e, state) => {
+    clearInterval(timer)
+    qlog(`done ${state} ${item.getFilename()} ${item.getReceivedBytes()}/${item.getTotalBytes()} bytes`)
+    if (!win.isDestroyed()) {
+      win.setProgressBar(-1)
+      win.setTitle(title)
+    }
+  })
+  return { idle: () => Date.now() - lastData }
+}
+
+/** A page that did not load says so, with a way to try again and the way out to the player's own browser. */
+const failedPage = (url: string, why: string) => 'data:text/html;charset=utf-8,' + encodeURIComponent(
+  `<!doctype html><meta charset="utf-8"><body style="margin:0;background:#151311;color:#e4eedc;font:16px/1.5 system-ui,sans-serif">` +
+  `<div style="background:#3a2f17;color:#f0d9a4;border-bottom:2px solid #b8913e;padding:14px 18px">The page did not load (${why.replace(/[<&"]/g, '')}).</div>` +
+  `<div style="padding:18px;display:flex;gap:18px"><a href="${url.replace(/"/g, '%22')}" style="color:#8fcf74">Reload</a>` +
+  `<a href="wh3lmm-browser:${encodeURIComponent(url)}" style="color:#8fcf74">Open in your browser</a></div>` +
+  `<div style="padding:0 18px;color:#b9c7b1;font-size:14px">In your browser: download the file there and drop it onto the app window – it is installed the same way.</div></body>`
+)
+
+/** What every download window does besides its downloads: log its pages, show a failed page, open the browser on request. */
+function watchWindow(win: BrowserWindow, label: string): void {
+  win.webContents.on('did-navigate', (_e, url, code) => qlog(`${label}: page ${code} ${url.slice(0, 160)}`))
+  win.webContents.on('did-fail-load', (_e, code, desc, url, mainFrame) => {
+    qlog(`${label}: load failed ${code} ${desc} ${url.slice(0, 160)}`)
+    // -3 is a navigation that turned into a download (or was replaced): nothing went wrong.
+    if (mainFrame && code !== -3 && !url.startsWith('data:') && !win.isDestroyed()) void win.loadURL(failedPage(url, desc)).catch(() => {})
+  })
+  win.webContents.on('will-navigate', (e, url) => {
+    if (!url.startsWith('wh3lmm-browser:')) return
+    e.preventDefault()
+    const target = decodeURIComponent(url.slice('wh3lmm-browser:'.length))
+    if (/^https:\/\//.test(target)) void shell.openExternal(target)
+  })
+  win.webContents.on('render-process-gone', (_e, d) => qlog(`${label}: page process gone (${d.reason})`))
+}
+
 function downloadInWindow(site: { url: string; partition: string; title: string; banner: string }, dataPath: string, modId: string | undefined, parent: BrowserWindow | null, needs: WindowNeeds = { files: 1 }): Promise<InstallResult> {
   const { url } = site
   const ses = session.fromPartition(site.partition)
@@ -319,6 +406,8 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
       const target = join(downloads, basename(item.getFilename()))
       rmSync(target, { force: true }) // a leftover of an earlier, interrupted run makes the download hang
       item.setSavePath(target)
+      qlog(`${site.title}: download ${item.getFilename()} (${item.getTotalBytes()} bytes)`)
+      trackDownload(win, item, site.title)
       item.once('done', async (_ev, state) => {
         if (state !== 'completed') return finish({ ok: false, message: `Download ${state}.`, packs: [] })
         const s = await stat(target)
@@ -342,7 +431,12 @@ function downloadInWindow(site: { url: string; partition: string; title: string;
     win.on('closed', () => finish(results.length ? combined() : { ok: false, message: 'Window closed without downloading.', packs: [] }))
     // Keep our title instead of the page's, and show what to do on every page.
     win.on('page-title-updated', (e) => e.preventDefault())
-    win.webContents.on('did-finish-load', () => void win.webContents.executeJavaScript(site.banner).catch(() => {}))
+    watchWindow(win, site.title)
+    win.webContents.on('did-finish-load', () => {
+      // Not on the app's own pages (a page that did not load): its boxes are about the site's page.
+      void win.webContents.executeJavaScript(`if (location.protocol !== 'data:') { ${site.banner} }`).catch(() => {})
+    })
+    qlog(`${site.title}: open ${url.slice(0, 160)}`)
     void win.loadURL(url)
   })
 }
@@ -359,6 +453,9 @@ const ROWS_JS = `[...document.querySelectorAll('li.ipsDataItem, .ipsDataItem')].
 }).filter(Boolean)`
 
 const FILE_LIMIT_MS = 15 * 60 * 1000
+/** A running download that got no data for this long is given up (the window has told the player what to do since the first minute). */
+const STALLED_MS = 10 * 60 * 1000
+const QUEUE_TITLE = 'LoversLab – downloads for your profile'
 
 /**
  * The sites' service workers (background scripts the sites register) are not needed in the download windows,
@@ -382,7 +479,7 @@ const IMAGE = /\.(png|jpe?g|gif|webp)$/i
 const statusPage = (text: string) => 'data:text/html;charset=utf-8,' + encodeURIComponent(
   `<!doctype html><meta charset="utf-8"><body style="margin:0;background:#151311;color:#e4eedc;font:16px/1.5 system-ui,sans-serif">` +
   `<div style="background:#22331f;border-bottom:2px solid #6f9a5c;padding:14px 18px">${text.replace(/[<&]/g, (c) => (c === '<' ? '&lt;' : '&amp;'))}</div>` +
-  `<div id="p" style="padding:24px 18px;font-size:28px;color:#8fcf74">…</div></body>`
+  `</body>`
 )
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
@@ -401,7 +498,10 @@ export async function downloadQueueFromLoversLab(
 ): Promise<{ modId: string; ok: boolean; message: string }[]> {
   const ses = session.fromPartition('persist:loverslab')
   await clearServiceWorkers(ses)
-  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: 'LoversLab – downloads for your profile', webPreferences: { session: ses } })
+  const win = new BrowserWindow({ width: 1100, height: 800, parent: parent ?? undefined, title: QUEUE_TITLE, webPreferences: { session: ses } })
+  // Running downloads and how long each has had no data: while one is running, the queue waits for it.
+  const active = new Set<DownloadItem>()
+  const watched = new Map<DownloadItem, { idle(): number }>()
   const downloads = join(app.getPath('userData'), 'downloads')
   await mkdir(downloads, { recursive: true })
   let cancelled = false
@@ -411,8 +511,7 @@ export async function downloadQueueFromLoversLab(
   win.on('closed', () => (cancelled = true))
   win.on('page-title-updated', (e) => e.preventDefault())
   qlog(`queue: ${jobs.length} jobs`)
-  win.webContents.on('did-navigate', (_e, url, code) => qlog(`page ${code} ${url.slice(0, 160)}`))
-  win.webContents.on('did-fail-load', (_e, code, desc, url) => qlog(`load failed ${code} ${desc} ${url.slice(0, 160)}`))
+  watchWindow(win, 'queue')
   const onLoversLab = () => !win.isDestroyed() && win.webContents.getURL().startsWith('https://www.loverslab.com/')
   win.webContents.on('did-finish-load', () => void (onLoversLab() && win.webContents.executeJavaScript(guide).catch(() => {})))
   const setGuide = (text: string, hints: FileHint[] = []) => {
@@ -433,22 +532,33 @@ export async function downloadQueueFromLoversLab(
     const target = join(downloads, basename(item.getFilename()))
     rmSync(target, { force: true }) // a leftover of an earlier, interrupted run makes the download hang
     item.setSavePath(target)
+    active.add(item)
     item.once('done', (_ev, state) => {
-      qlog(`done ${state} ${item.getFilename()}`)
+      active.delete(item)
       if (state === 'completed') finished.push(target)
       else failed = `Download ${state}.`
     })
-    // The download ends the page; show what is going on instead of an empty window.
-    item.on('updated', () => {
-      const total = item.getTotalBytes()
-      if (total > 0 && !win.isDestroyed() && win.webContents.getURL().startsWith('data:'))
-        void win.webContents.executeJavaScript(`document.getElementById('p').textContent = '${Math.floor((item.getReceivedBytes() / total) * 100)} %'`).catch(() => {})
-    })
-    if (!win.isDestroyed()) void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”${item.getTotalBytes() > 0 ? ` (${Math.round(item.getTotalBytes() / 1e6)} MB)` : ''}. Large files take a while – LoversLab sets the speed. It is installed when it is complete, then the next mod follows. Close this window to stop.`)).catch(() => {})
+    // The download ends the page; show what is going on instead of an empty window: the job, then the running download.
+    if (!win.isDestroyed()) {
+      void win.loadURL(statusPage(`${current}: downloading “${item.getFilename()}”. LoversLab sets the speed. It is installed when it is complete, then the next mod follows. Close this window to stop.`))
+        .catch(() => {}).finally(() => { if (!win.isDestroyed()) watched.set(item, trackDownload(win, item, QUEUE_TITLE)) })
+    }
   }
   ses.on('will-download', onDownload)
+  // The time limit is for a download to start; a running one may take as long as it needs while data arrives (a 2 GB
+  // file on a slow line), and only one that got nothing for STALLED_MS is given up.
   const waitFor = async (count: number) => {
-    for (const t0 = Date.now(); finished.length < count && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; ) await sleep(1000)
+    for (let t0 = Date.now(); finished.length < count && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; ) {
+      await sleep(1000)
+      if (!active.size) continue
+      t0 = Date.now()
+      const stuck = [...active].find((it) => (watched.get(it)?.idle() ?? 0) > STALLED_MS)
+      if (stuck) {
+        qlog(`stalled ${stuck.getFilename()}`)
+        stuck.cancel()
+        failed = `No data for ${STALLED_MS / 60_000} minutes – download it in your browser and drop it onto the app window.`
+      }
+    }
     return finished.length >= count
   }
 
@@ -471,6 +581,8 @@ export async function downloadQueueFromLoversLab(
       setGuide(`${current}${wanted.length ? `: taking ${wanted.join(' and ')}` : ''}. ${waitNote}`, hints)
       progress({ ...step, status: 'downloading' })
       const pageUrl = job.url.replace(/\/?$/, '/') + '?do=download'
+      // Something to see while LoversLab answers (or hands out the file at once): not an empty white window.
+      await win.loadURL(statusPage(`${current}: opening LoversLab… If LoversLab makes a download wait, the queue waits with it.`)).catch(() => {})
       let moved = false
       const onMove = () => (moved = true)
       win.webContents.once('did-navigate', onMove)
@@ -486,7 +598,7 @@ export async function downloadQueueFromLoversLab(
 
       // Either the file arrives, or the page lists several files (only on the first page, never on a file's own page).
       let expected = 1
-      for (const t0 = Date.now(); !finished.length && !failed && !cancelled && Date.now() - t0 < FILE_LIMIT_MS; await sleep(1000)) {
+      for (const t0 = Date.now(); !finished.length && !failed && !cancelled && !active.size && Date.now() - t0 < FILE_LIMIT_MS; await sleep(1000)) {
         if (!onLoversLab() || /[?&]r=/.test(win.webContents.getURL())) continue
         const rows: DownloadRow[] = await pageJs(ROWS_JS, [] as DownloadRow[])
         if (new Set(rows.map((r) => r.href)).size < 2) continue

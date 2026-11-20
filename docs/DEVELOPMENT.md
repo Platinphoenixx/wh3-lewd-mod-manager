@@ -156,7 +156,11 @@ community contributions. App UI and catalog texts are English.
     the setting `autoLoversLab` is false, one window
     downloads all missing LL mods of a profile in a row (`downloadQueueFromLoversLab`; file choice via
     `PackRef.archive` + `pickDownloads` in `src/shared/install.ts`, else the player picks; any wait is
-    LoversLab's own in that window, the app adds none and never gets around it); `src/shared/launch.ts` + `src/main/launch.ts`
+    LoversLab's own in that window, the app adds none and never gets around it); every download window shows the running download on top of
+    its page, in its title and taskbar button (`trackDownload`, texts from `src/shared/progress.ts`, tested: percent, size, speed, time left,
+    after a minute without data what to do), a page that does not load gets *Reload* / *Open in your browser* (`watchWindow`), the queue
+    shows a status page instead of an empty window and waits for a running download as long as data arrives (gives up after 10 minutes
+    without any), and every window logs to userData/queue.log; `src/shared/launch.ts` + `src/main/launch.ts`
     write `wh3lmm_mods.txt` (add_working_directory per Workshop folder, `mod "x.pack";` in priority
     order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
     `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).

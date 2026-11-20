@@ -14,6 +14,23 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.1.10
+
+**WH3 Lewd Mod Manager 0.1.10 – see how big downloads are doing. 18+ only.**
+
+- Every download window (LoversLab, Nexus Mods, the LoversLab queue) shows the running download on top: percent, how much
+  of how much, speed and time left; the window title and its taskbar button show it too.
+- After a minute without data a hint says so: keep the window open, it goes on by itself – and if nothing moves for five
+  minutes, download the file in your browser and drop it onto the app window.
+- The LoversLab queue no longer gives up on a big file after 15 minutes while data is still coming; only a download that
+  got nothing for 10 minutes is stopped.
+- No more empty white window while LoversLab answers: the queue says it is opening LoversLab. A page that does not load
+  says so, with *Reload* and *Open in your browser*.
+- The download windows write what they do to `queue.log` in the app's data folder, for finding out why one did not work.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.1.9
 
 **WH3 Lewd Mod Manager 0.1.9 – details in Play's choices, no gameplay surprises in the big sizes. 18+ only.**
