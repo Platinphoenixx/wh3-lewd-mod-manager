@@ -3861,5 +3861,70 @@
   ],
   "review": true,
   "shownAs": "Saya"
+ },
+ {
+  "app": "0.2.0",
+  "at": "2026-11-21T08:50:33.722Z",
+  "base": "setup-beastmen",
+  "catalog": "2026-11-19",
+  "entries": [
+   {
+    "mod": "steam-3679399151",
+    "pack": "@endo_cathay_reskin.pack"
+   },
+   {
+    "mod": "steam-3647419004",
+    "pack": "@endo_bretonnia.pack"
+   },
+   {
+    "mod": "steam-3621449095",
+    "pack": "@endo_empire.pack"
+   },
+   {
+    "mod": "steam-3301596500",
+    "pack": "@endo_kislev_reskin.pack"
+   },
+   {
+    "mod": "steam-3616082403",
+    "pack": "@endo_dark_elf_reskin.pack"
+   },
+   {
+    "mod": "steam-3672266382",
+    "pack": "@endo_wood_elf_reskin.pack"
+   },
+   {
+    "mod": "steam-3616234518",
+    "pack": "@endo_high_elf_reskin.pack"
+   },
+   {
+    "mod": "steam-3714453899",
+    "pack": "!@new_community_beastmen_FIX.pack"
+   },
+   {
+    "mod": "ll-46165",
+    "pack": "new_community_beastmen.pack",
+    "steamId": "3476784883"
+   },
+   {
+    "mod": "steam-2798690094",
+    "pack": "more_animation.pack",
+    "steamId": "2798690094"
+   },
+   {
+    "mod": "steam-3346259963",
+    "pack": "!Chop_Beastmen_Beastpaths.pack"
+   }
+  ],
+  "game": "9.0.5",
+  "id": "a244ba6bbb90",
+  "name": "Beastmen – Extended",
+  "playAs": [
+   "Khazrak",
+   "Malagor",
+   "Taurox",
+   "Morghur"
+  ],
+  "review": false,
+  "theme": "Beastmen"
  }
 ]

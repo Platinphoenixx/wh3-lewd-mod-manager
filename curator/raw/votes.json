@@ -8,11 +8,14 @@
  },
  "derived-dc-shenzoo-faction-mod-passingbyposts": {
   "down": 0,
-  "up": 2
+  "up": 3
  },
  "derived-ll-24004": {
-  "down": 0,
-  "up": 2
+  "down": 1,
+  "reasons": {
+   "campaign": 1
+  },
+  "up": 3
  },
  "derived-ll-27663": {
   "down": 0,
@@ -21,6 +24,10 @@
  "derived-ll-52142": {
   "down": 0,
   "up": 3
+ },
+ "kpw-alarielle": {
+  "down": 0,
+  "up": 1
  },
  "kpw-azazel-archaon-belakor-sigvald-daemon-pr": {
   "down": 1,
@@ -33,12 +40,17 @@
   "down": 0,
   "up": 2
  },
+ "kpw-n-kari-dechala-masque": {
+  "down": 0,
+  "up": 1
+ },
  "readman-alarielle-early": {
-  "down": 1,
+  "down": 2,
   "reasons": {
-   "campaign": 1
+   "campaign": 1,
+   "content": 1
   },
-  "up": 18
+  "up": 24
  },
  "readman-alarielle-late": {
   "down": 0,
@@ -46,7 +58,7 @@
  },
  "readman-katarin-early": {
   "down": 0,
-  "up": 5
+  "up": 6
  },
  "readman-miao-early": {
   "down": 2,
@@ -54,38 +66,37 @@
    "content": 1,
    "start": 1
   },
-  "up": 13
+  "up": 15
  },
  "readman-miao-late": {
   "down": 0,
   "up": 3
  },
  "readman-morathi": {
-  "down": 2,
+  "down": 1,
   "reasons": {
-   "content": 1,
    "start": 1
   },
-  "up": 5
+  "up": 7
  },
  "readman-sigvald-early": {
   "down": 1,
   "reasons": {
    "campaign": 1
   },
-  "up": 0
+  "up": 1
  },
  "readman-slaanesh-daemons-early": {
   "down": 1,
   "reasons": {
    "content": 1
   },
-  "up": 1
+  "up": 3
  },
  "readman-woc-early": {
-  "down": 2,
+  "down": 3,
   "reasons": {
-   "campaign": 2
+   "campaign": 3
   },
   "up": 3
  },
@@ -94,7 +105,7 @@
   "reasons": {
    "other": 1
   },
-  "up": 5
+  "up": 6
  },
  "setup-corrupted-ascension": {
   "down": 0,
@@ -102,11 +113,11 @@
  },
  "setup-greenskins": {
   "down": 0,
-  "up": 1
+  "up": 2
  },
  "setup-imrik": {
   "down": 0,
-  "up": 2
+  "up": 3
  },
  "vanilla-elspeth-von-draken": {
   "down": 1,
