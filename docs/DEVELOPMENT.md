@@ -82,7 +82,10 @@ community contributions. App UI and catalog texts are English.
     field); the mod page's close button sits at its top left ("← Close") and a large picture has "Close picture" below it, so nobody
     hits the window's own × in the corner by mistake.
   - Profile search (`ProfileEditor.tsx`): one field below the steps filters the open step (load order, install list, choices)
-    by name or pack file (`matchScore`).
+    by name or pack file (`matchScore`). The profile's name is saved a moment after the last key, on Enter or on leaving the
+    field (`ProfileName`), not per key. The Profiles tab opens the profile the player had open last (localStorage `lastProfile`)
+    and sorts the own profiles by last use (default, "used today"), name or the player's dragged order (`src/shared/profileSort.ts`,
+    tested; localStorage `profileSort`, `profileUsed`, `profileOrder`; mocks/h1_find_and_sort.png).
   - Support bubble (`SupportBubble` in `App.tsx`, mocks/d1_donate_bubble.png): once per player (localStorage `supportAsked`, set when
     shown), after a clean session of a game the app started – 20+ minutes, exit code 0 (`launch.ts` passes it with `game:exited`),
     the script log written during it and no real script failure; after "It worked" when "Did it work?" is asked for that game.
@@ -197,7 +200,9 @@ community contributions. App UI and catalog texts are English.
     them in a profile's load order with a reason; user moves are stored as `Profile.pins` (tested).
     `renderer/src/OwnMods.tsx`: "Your mods" cards, drop-to-install, Workshop link; a name typed into that field instead
     shows the mod in the profile, among the installed own mods and in the catalog (`src/shared/findmod.ts`, tested: case and
-    punctuation do not count, every word must be in the name or a pack file), else a link to the Workshop search. Titles of unknown
+    punctuation do not count, every word must be in the name or a pack file, a plural "s" may be missing), else a link to the
+    Workshop search. A hit's name and picture open its details (a Workshop item without catalog entry: its page); a mod found by
+    one of its packs says so ("Has Sons of Gork.pack – one of its 18 packs", `matchedPack`). Titles of unknown
     Workshop items come from the player's Steam client once (userData/workshop-details.json);
     previews via the `wh3lmm://workshop/<id>` protocol.
   - `src/shared/importlist.ts`: mod lists of the CA launcher (`Launcher/20190104-moddata.dat`, `.twmods`)

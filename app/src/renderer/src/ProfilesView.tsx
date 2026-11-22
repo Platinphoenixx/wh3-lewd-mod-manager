@@ -9,6 +9,7 @@ import { ProfileEditor } from './ProfileEditor'
 import { ImportDialog } from './ImportDialog'
 import { MadeBy, worksOf } from './Creators'
 import { useNavState } from './nav'
+import { moveProfile, sortProfiles, usedLabel, type ProfileSort } from '@shared/profileSort'
 
 /** KPW's guide for the characters of a preset (guides name characters loosely, e.g. "Miao"). */
 export function guideFor(guides: CampaignGuide[], preset: Preset): CampaignGuide | undefined {
@@ -141,11 +142,55 @@ function presetCover(data: ReturnType<typeof useData>, p: Preset) {
 /** The last openProfile request the Profiles tab followed (data.focus.at). */
 let focusSeen = 0
 
+/** The profile the player had open last, per PC: the Profiles tab opens it again instead of the first in the list. */
+const LAST_PROFILE = 'lastProfile'
+function lastProfile(): string | null {
+  try { return localStorage.getItem(LAST_PROFILE) } catch { return null }
+}
+function rememberProfile(id: string): void {
+  try { localStorage.setItem(LAST_PROFILE, id) } catch { /* then the first profile opens */ }
+}
+
+/** Per PC: how the own profiles are sorted, when each was opened last, and the player's own order (dragged). */
+function readStored<T>(key: string, fallback: T): T {
+  try {
+    const v = localStorage.getItem(key)
+    return v ? (JSON.parse(v) as T) : fallback
+  } catch {
+    return fallback
+  }
+}
+function store(key: string, value: unknown): void {
+  try { localStorage.setItem(key, JSON.stringify(value)) } catch { /* only for this session then */ }
+}
+
 export function ProfilesView() {
   const data = useData()
   const [profiles, setProfiles] = useState<Profile[]>([])
   const [selected, setSelected] = useNavState<{ kind: 'profile' | 'preset'; id: string } | null>('profiles.selected', null)
   const [importing, setImporting] = useState(false)
+  const [sortBy, setSortBy] = useState<ProfileSort>(() => readStored<ProfileSort>('profileSort', 'used'))
+  const [used, setUsed] = useState<Record<string, string>>(() => readStored('profileUsed', {}))
+  const [order, setOrder] = useState<string[]>(() => readStored('profileOrder', []))
+  const [dragging, setDragging] = useState<string | null>(null)
+  const sorted = useMemo(() => sortProfiles(profiles, sortBy, used, order), [profiles, sortBy, used, order])
+  const changeSort = (how: ProfileSort) => {
+    setSortBy(how)
+    store('profileSort', how)
+    // "Your order" starts from the order the player sees now.
+    if (how === 'own' && !order.length) {
+      const ids = sorted.map((x) => x.id)
+      setOrder(ids)
+      store('profileOrder', ids)
+    }
+  }
+  const drop = (onto: string) => {
+    if (!dragging) return
+    const ids = moveProfile(sorted.map((x) => x.id), dragging, onto)
+    setOrder(ids)
+    store('profileOrder', ids)
+    setDragging(null)
+  }
 
   useEffect(() => {
     window.api.listProfiles().then((list) => {
@@ -157,9 +202,22 @@ export function ProfilesView() {
       const wanted = f?.profile && list.some((p) => p.id === f.profile) ? { kind: 'profile' as const, id: f.profile }
         : f?.preset ? { kind: 'preset' as const, id: f.preset } : null
       // Opening the tab picks a profile by itself; that is no step of its own for the back button.
-      setSelected((s) => wanted ?? s ?? (list[0] ? { kind: 'profile', id: list[0].id } : data.catalog.presets[0] && { kind: 'preset', id: data.catalog.presets[0].id }), wanted ? undefined : { replace: true })
+      // Otherwise the profile the player had open last (also after a restart), else the first one.
+      const last = lastProfile()
+      const fallback = last && list.some((p) => p.id === last) ? { kind: 'profile' as const, id: last }
+        : list[0] ? { kind: 'profile' as const, id: list[0].id } : data.catalog.presets[0] && { kind: 'preset' as const, id: data.catalog.presets[0].id }
+      setSelected((s) => wanted ?? s ?? fallback, wanted ? undefined : { replace: true })
     })
   }, [data.catalog, data.focus])
+
+  useEffect(() => {
+    if (selected?.kind !== 'profile') return
+    rememberProfile(selected.id)
+    // Opening a profile counts as using it; the list re-sorts only on the next visit, so the row does not jump away.
+    const all = { ...readStored<Record<string, string>>('profileUsed', {}), [selected.id]: new Date().toISOString() }
+    store('profileUsed', all)
+  }, [selected])
+  useEffect(() => { setUsed(readStored('profileUsed', {})) }, [profiles.length])
 
   // Saving on every change keeps profiles safe; the editor calls this per toggle.
   const save = useCallback((p: Profile) => {
@@ -188,7 +246,17 @@ export function ProfilesView() {
   return (
     <div className="split">
       <div className="sidebar-list">
-        <h4>My profiles</h4>
+        <h4 className="profiles-head">
+          My profiles
+          {profiles.length > 1 && (
+            <select className="profile-sort" value={sortBy} title="Sort your profiles" onChange={(e) => changeSort(e.target.value as ProfileSort)}>
+              <option value="used">Last used</option>
+              <option value="name">Name</option>
+              <option value="own">Your order</option>
+            </select>
+          )}
+        </h4>
+        {sortBy === 'own' && profiles.length > 1 && <p className="small muted pad profile-sort-hint">Drag a profile to move it.</p>}
         <div className="pad"><button className="link" onClick={() => setImporting(true)}>Import a mod list from another launcher…</button></div>
         {importing && (
           <ImportDialog
@@ -202,15 +270,21 @@ export function ProfilesView() {
         )}
         {profiles.length === 0 && <p className="small muted pad">No profiles yet. Pick a template below and create one.</p>}
         <ul>
-          {profiles.map((p) => {
+          {sorted.map((p) => {
             const base = data.catalog.presets.find((x) => x.id === p.presetId)
             const cover = base ? presetCover(data, base) : []
             return (
-              <li key={p.id} className={selected?.kind === 'profile' && selected.id === p.id ? 'active' : ''} onClick={() => setSelected({ kind: 'profile', id: p.id })}>
+              <li key={p.id} className={[selected?.kind === 'profile' && selected.id === p.id ? 'active' : '', dragging === p.id ? 'dragging' : ''].filter(Boolean).join(' ')}
+                onClick={() => setSelected({ kind: 'profile', id: p.id })}
+                draggable={sortBy === 'own'} onDragStart={() => setDragging(p.id)} onDragEnd={() => setDragging(null)}
+                onDragOver={(e) => { if (dragging) e.preventDefault() }} onDrop={(e) => { e.preventDefault(); drop(p.id) }}>
                 <ModCover mods={cover} />
                 <div>
                   <strong>{p.name}</strong>
-                  <div className="small muted">{base?.name ?? 'template missing'} · {p.extras.length} extras</div>
+                  <div className="small muted">
+                    {base?.name ?? 'template missing'} · {p.extras.length} extras
+                    {sortBy === 'used' && usedLabel(used[p.id] ?? p.updatedAt) && <> · {usedLabel(used[p.id] ?? p.updatedAt)}</>}
+                  </div>
                 </div>
               </li>
             )

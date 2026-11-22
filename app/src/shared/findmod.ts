@@ -27,7 +27,9 @@ export function matchScore(typed: string, item: FindItem): number {
   const name = norm(item.name)
   const packs = (item.packs ?? []).map((p) => norm(p.replace(/\.pack$/i, '')))
   const texts = (item.text ?? []).flatMap((t) => (t ? [norm(t)] : []))
-  const has = (fields: string[]) => words.every((w) => fields.some((f) => f.includes(w)))
+  // A word also counts without a plural "s" ("lost worlds" finds "OvN Lost World").
+  const inField = (f: string, w: string) => f.includes(w) || (w.length > 3 && w.endsWith('s') && f.includes(w.slice(0, -1)))
+  const has = (fields: string[]) => words.every((w) => fields.some((f) => inField(f, w)))
   if (name === whole) return 100
   if (name.startsWith(whole)) return 90
   if (name.includes(whole)) return 80
@@ -36,6 +38,12 @@ export function matchScore(typed: string, item: FindItem): number {
   if (has([name, ...packs])) return 50
   if (has([name, ...packs, ...texts])) return 20
   return 0
+}
+
+/** The pack file a typed text found an item by, when its name alone does not fit (a mod made of several Workshop items). */
+export function matchedPack(typed: string, item: FindItem): string | undefined {
+  if (matchScore(typed, { key: item.key, name: item.name }) > 0) return undefined
+  return item.packs?.find((p) => matchScore(typed, { key: item.key, name: p.replace(/\.pack$/i, '') }) > 0)
 }
 
 /** The items that fit, best first (then by name). */

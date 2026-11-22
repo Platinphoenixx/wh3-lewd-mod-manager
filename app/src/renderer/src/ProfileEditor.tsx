@@ -12,7 +12,7 @@ import { InstallPanel, type UsedFix } from './InstallPanel'
 import { AddOwnMod, CheckLines, INSTALLED_EVENT, keysForInstalled, OwnCard, ownName, type InstalledDetail } from './OwnMods'
 import { pickVariants, planLaunch, variantGroups, variantLabels } from '@shared/launch'
 import { missingPacks } from '@shared/install'
-import { findMods, matchScore } from '@shared/findmod'
+import { findMods, matchedPack, matchScore } from '@shared/findmod'
 import { MadeBy, worksOf } from './Creators'
 import { lastMajorUpdate, olderThanGame } from '@shared/health'
 import { buildReport, errorSignature, type LaunchSnapshot } from '@shared/report'
@@ -70,7 +70,7 @@ function OptionCard({ c, on, toggle }: { c: Candidate; on: boolean; toggle(): vo
 }
 
 /** One hit of a name typed into "Add a mod of your own". */
-interface Found { key: string; name: string; packs: string[]; status: string; action?: { label: string; run(): void }; cover: ReactNode; text?: (string | undefined)[] }
+interface Found { key: string; name: string; packs: string[]; status: string; action?: { label: string; run(): void }; cover: ReactNode; text?: (string | undefined)[]; open?(): void }
 
 const WORKSHOP_SEARCH = (q: string) => `https://steamcommunity.com/workshop/browse/?appid=1142710&searchtext=${encodeURIComponent(q)}`
 
@@ -88,8 +88,12 @@ function FindResults({ query, groups }: { query: string; groups: { title: string
           <div className="find-head small muted">{g.title} ({groups.find((x) => x.title === g.title)!.items.length})</div>
           {g.items.map((f) => (
             <div key={f.key} className="find-row">
-              <div className="find-thumb">{f.cover}</div>
-              <div className="find-name"><div>{f.name}</div><div className="small muted">{f.status}</div></div>
+              <div className={`find-thumb${f.open ? ' open' : ''}`} title={f.open ? 'Details' : undefined} onClick={f.open}>{f.cover}</div>
+              <div className="find-name">
+                <div>{f.open ? <a onClick={f.open}>{f.name}</a> : f.name}</div>
+                <div className="small muted">{f.status}</div>
+                {matchedPack(query, f) && <div className="small">Has <strong>{matchedPack(query, f)}</strong>{f.packs.length > 1 ? ` – one of its ${f.packs.length} packs` : ''}</div>}
+              </div>
               {f.action ? <button onClick={f.action.run}>{f.action.label}</button> : <span className="small ok-text">in this profile</span>}
             </div>
           ))}
@@ -100,6 +104,30 @@ function FindResults({ query, groups }: { query: string; groups: { title: string
         Not there? <a onClick={() => window.api.openExternal(WORKSHOP_SEARCH(query))}>Search the Steam Workshop for “{query}” ↗</a> and paste its link here.
       </div>
     </div>
+  )
+}
+
+/**
+ * The profile's name. Typing stays in this field; the profile is saved a moment after the last key, on Enter or when the
+ * field loses focus – saving on every key re-drew the whole editor and made typing lag.
+ */
+function ProfileName({ name, onSave }: { name: string; onSave(name: string): void }) {
+  const [text, setText] = useState(name)
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const latest = useRef({ text, name, onSave })
+  latest.current = { text, name, onSave }
+  const commit = () => {
+    clearTimeout(timer.current)
+    const { text: t, name: n, onSave: save } = latest.current
+    if (t.trim() && t !== n) save(t)
+    else if (!t.trim()) setText(n)
+  }
+  useEffect(() => { setText(name) }, [name])
+  useEffect(() => () => commit(), [])
+  return (
+    <input className="profile-name" size={Math.min(64, Math.max(24, text.length + 2))} value={text}
+      onChange={(e) => { setText(e.target.value); clearTimeout(timer.current); timer.current = setTimeout(commit, 600) }}
+      onBlur={commit} onKeyDown={(e) => { if (e.key === 'Enter') e.currentTarget.blur() }} />
   )
 }
 
@@ -368,24 +396,30 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
       if (mod) return <ModCover mods={withParents(data.index.mods, mod)} placeholder="" />
       return 'steamId' in t ? <img src={`wh3lmm://workshop/${t.steamId}`} alt="" onError={(e) => (e.currentTarget.style.display = 'none')} /> : null
     }
+    const openOf = (k: string): (() => void) | undefined => {
+      const t = parseTargetKey(k)
+      if ('mod' in t && data.index.mods.has(t.mod)) return () => data.openMod(t.mod)
+      if ('steamId' in t) return () => window.api.openExternal(`https://steamcommunity.com/sharedfiles/filedetails/?id=${t.steamId}`)
+      return undefined
+    }
     const ORIGIN = { base: 'from the template', extra: 'switched on', dependency: 'needed by another mod' } as const
     const inList: Found[] = orderAll.map((o) => {
       const on = isOn(o.key)
       const origin = isOwnKey(o.key) ? 'your mod' : ORIGIN[byKeyAll.get(o.key)?.origin ?? 'extra']
       return {
-        key: o.key, name: o.name, packs: packsOf(o.key), cover: coverOf(o.key),
+        key: o.key, name: o.name, packs: packsOf(o.key), cover: coverOf(o.key), open: openOf(o.key),
         status: on ? origin : `${origin} · switched off`,
         action: on ? undefined : { label: 'Switch on', run: () => switchOne(o.key) }
       }
     })
     const inProfile = new Set(orderAll.map((o) => o.key))
     const own: Found[] = [...ownGroups.keys()].filter((k) => !inProfile.has(k)).map((k) => ({
-      key: k, name: ownName(data, k, installed.get(k) ?? []), packs: packsOf(k), cover: coverOf(k),
+      key: k, name: ownName(data, k, installed.get(k) ?? []), packs: packsOf(k), cover: coverOf(k), open: openOf(k),
       status: `your mod · ${(installed.get(k) ?? []).map((p) => p.file).join(', ')}`,
       action: { label: 'Switch on', run: () => toggleExtra(k) }
     }))
     const cat: Found[] = options.filter((c) => !extras.has(c.key) && !inProfile.has(c.key)).map((c) => ({
-      key: c.key, name: c.name, packs: (c.mod?.packs ?? []).map((p) => p.file), cover: coverOf(c.key), text: [c.mod?.summary],
+      key: c.key, name: c.name, packs: (c.mod?.packs ?? []).map((p) => p.file), cover: coverOf(c.key), open: openOf(c.key), text: [c.mod?.summary],
       status: [c.mod ? KIND_LABEL[c.mod.kind] : '', c.conflicts.length ? `conflicts with ${c.conflicts.map((k) => nameOf(data.catalog, data.index, k)).join(', ')}` : '',
         c.addsDependencies.length ? `also adds ${c.addsDependencies.map((k) => nameOf(data.catalog, data.index, k)).join(', ')}` : ''].filter(Boolean).join(' · '),
       action: { label: 'Add', run: () => addExtras([c.key]) }
@@ -566,7 +600,7 @@ Only this text and a random id of this installation are sent. Once 3 or more pla
   return (
     <div className="profile-editor">
       <div className="profile-head">
-        <input className="profile-name" size={Math.min(64, Math.max(24, profile.name.length + 2))} value={profile.name} onChange={(e) => onChange({ ...profile, name: e.target.value })} />
+        <ProfileName name={profile.name} onSave={(name) => onChange({ ...profile, name })} />
         <span className="muted small">based on “{preset.name}”</span>
         <span className="badge">{baseCount} from template</span>
         <span className="badge ok">{active.extras.length} switched on</span>

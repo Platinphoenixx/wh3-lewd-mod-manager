@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { findMods, matchScore, workshopIdOf } from './findmod'
+import { findMods, matchedPack, matchScore, workshopIdOf } from './findmod'
 
 const items = [
   { key: 'mod:a', name: "[9.0] Grandolph's Simple Dynamic Settlements Reborn", packs: ['grandolph_sds.pack'] },
@@ -35,5 +35,12 @@ describe('find a mod by name', () => {
     expect(workshopIdOf('https://steamcommunity.com/sharedfiles/filedetails/?id=3706296713')).toBe('3706296713')
     expect(workshopIdOf('3706296713')).toBe('3706296713')
     expect(workshopIdOf('Sisters of Twilight')).toBeUndefined()
+  })
+
+  it('finds a name typed in the plural and says which pack a bundle was found by', () => {
+    expect(matchScore('OvN Lost Worlds', { key: 'a', name: 'OvN Lost World', packs: ['ovn_lost_world.pack'] })).toBeGreaterThan(0)
+    const dovakin = { key: 'b', name: 'DOVAKIN reskin series', packs: ['Warrior of Chaos.pack', 'Sons of Gork.pack'] }
+    expect(matchedPack('sons of gork', dovakin)).toBe('Sons of Gork.pack')
+    expect(matchedPack('dovakin', dovakin)).toBeUndefined()
   })
 })

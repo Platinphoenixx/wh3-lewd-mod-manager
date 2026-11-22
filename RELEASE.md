@@ -14,6 +14,20 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.2.2
+
+**WH3 Lewd Mod Manager 0.2.2 – smoother profiles, a better mod search. 18+ only.**
+
+- Typing a profile's name no longer lags.
+- The *Profiles* tab opens the profile you had open last, also after coming back from another tab or a restart.
+- Your profiles can be sorted: *Last used* (the default, with "used today", "used 3 days ago" …), *Name*, or *Your order* –
+  drag a profile to its place.
+- *Add a mod of your own*: a name typed there finds mods with a missing or extra plural "s" ("OvN Lost Worlds"), says which
+  pack a mod was found by when it is one of several in a bundle, and the hits' names and bigger pictures open their details.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.2.1
 
 **WH3 Lewd Mod Manager 0.2.1 – a fix for the Slaanesh look. 18+ only.**
