@@ -8,14 +8,11 @@
  },
  "derived-dc-shenzoo-faction-mod-passingbyposts": {
   "down": 0,
-  "up": 3
+  "up": 6
  },
  "derived-ll-24004": {
-  "down": 1,
-  "reasons": {
-   "campaign": 1
-  },
-  "up": 3
+  "down": 0,
+  "up": 5
  },
  "derived-ll-27663": {
   "down": 0,
@@ -23,7 +20,7 @@
  },
  "derived-ll-52142": {
   "down": 0,
-  "up": 3
+  "up": 4
  },
  "kpw-alarielle": {
   "down": 0,
@@ -50,7 +47,7 @@
    "campaign": 1,
    "content": 1
   },
-  "up": 24
+  "up": 30
  },
  "readman-alarielle-late": {
   "down": 0,
@@ -58,33 +55,33 @@
  },
  "readman-katarin-early": {
   "down": 0,
-  "up": 6
+  "up": 10
  },
  "readman-miao-early": {
+  "down": 2,
+  "reasons": {
+   "start": 2
+  },
+  "up": 22
+ },
+ "readman-miao-late": {
+  "down": 0,
+  "up": 4
+ },
+ "readman-morathi": {
   "down": 2,
   "reasons": {
    "content": 1,
    "start": 1
   },
-  "up": 15
- },
- "readman-miao-late": {
-  "down": 0,
-  "up": 3
- },
- "readman-morathi": {
-  "down": 1,
-  "reasons": {
-   "start": 1
-  },
   "up": 7
  },
  "readman-sigvald-early": {
-  "down": 1,
+  "down": 2,
   "reasons": {
-   "campaign": 1
+   "campaign": 2
   },
-  "up": 1
+  "up": 0
  },
  "readman-slaanesh-daemons-early": {
   "down": 1,
@@ -94,18 +91,15 @@
   "up": 3
  },
  "readman-woc-early": {
-  "down": 3,
+  "down": 5,
   "reasons": {
-   "campaign": 3
+   "campaign": 5
   },
-  "up": 3
+  "up": 4
  },
  "setup-beastmen": {
-  "down": 1,
-  "reasons": {
-   "other": 1
-  },
-  "up": 6
+  "down": 0,
+  "up": 8
  },
  "setup-corrupted-ascension": {
   "down": 0,
@@ -113,7 +107,7 @@
  },
  "setup-greenskins": {
   "down": 0,
-  "up": 2
+  "up": 4
  },
  "setup-imrik": {
   "down": 0,
@@ -134,8 +128,12 @@
   "down": 0,
   "up": 1
  },
- "vanilla-sisters-of-twilight": {
+ "vanilla-repanse-de-lyonesse": {
   "down": 0,
   "up": 1
+ },
+ "vanilla-sisters-of-twilight": {
+  "down": 0,
+  "up": 2
  }
 }
