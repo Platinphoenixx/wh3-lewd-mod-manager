@@ -170,6 +170,18 @@ describe('missingPacks', () => {
     expect(missingPacks(atb, undefined, [{ file: 'kerb_alarielle_temptations_bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }]).map((p) => p.file)).toEqual(['stage_a.pack'])
     expect(missingPacks(atb, undefined, [{ file: 'kerb_Alarielle_Temptations_Bloom_steam.pack' }, { file: 'kerberos_mod_assets.pack' }, { file: 'stage_a.pack' }])).toEqual([])
   })
+
+  it('counts another installed version of a named pick-one pack (Ensign Loi from Steam instead of LoversLab)', () => {
+    const loi = {
+      ...mod('loi', {}),
+      packs: [
+        { file: '@@All_Loi_Variant_selector_steam.pack', from: 'steam' as const, steamId: '3503458514', exclusiveGroup: 'loi' },
+        { file: '@@All_Loi_Variant_selector.pack', from: 'download' as const, exclusiveGroup: 'loi' }
+      ]
+    }
+    expect(missingPacks(loi, '@@All_Loi_Variant_selector.pack', [{ file: '@@All_Loi_Variant_selector_steam.pack' }])).toEqual([])
+    expect(missingPacks(loi, '@@All_Loi_Variant_selector.pack', []).map((p) => p.file)).toEqual(['@@All_Loi_Variant_selector.pack'])
+  })
 })
 
 describe('catalogPackName', () => {

@@ -55,7 +55,8 @@ export function installSourceFor(
 /**
  * Packs of a mod that the profile needs and that are not installed: the pack its template names, the mod's
  * packs that are neither optional nor a variant, and of a required pick-one group at least one. A mod with
- * only some of them (e.g. Kerberos' shared assets without the main ATB pack) is not installed.
+ * only some of them (e.g. Kerberos' shared assets without the main ATB pack) is not installed. A named pack of a pick-one
+ * group is there when any version of that group is installed.
  */
 export function missingPacks(mod: Mod | undefined, templatePacks: string | string[] | undefined, installed: { file: string }[]): PackRef[] {
   const have = new Set(installed.map((p) => p.file.toLowerCase()))
@@ -65,7 +66,10 @@ export function missingPacks(mod: Mod | undefined, templatePacks: string | strin
   for (const t of listed) {
     const ref = mod?.packs.find((p) => p.file.toLowerCase() === t.toLowerCase())
     named ??= ref
-    if (!have.has(t.toLowerCase())) out.push(ref ?? { file: t, from: 'download' })
+    // Another version of the same pick-one group counts (the Steam copy of a mod the list names from LoversLab):
+    // the launch loads the version that is installed.
+    const otherVersion = !!ref?.exclusiveGroup && !!mod?.packs.some((p) => p.exclusiveGroup === ref.exclusiveGroup && have.has(p.file.toLowerCase()))
+    if (!have.has(t.toLowerCase()) && !otherVersion) out.push(ref ?? { file: t, from: 'download' })
   }
   const groups = new Map<string, PackRef[]>()
   for (const p of mod?.packs ?? []) {

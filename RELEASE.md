@@ -14,6 +14,18 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 
+## Notes for 0.2.3
+
+**WH3 Lewd Mod Manager 0.2.3 – fewer false "missing" and "old" hints. 18+ only.**
+
+- A mod a list names in one version no longer shows as missing when you have another version of it installed – for
+  example Ensign Loi from the Steam Workshop in a list that names the LoversLab copy. The game loads the version you have.
+- A mod that changes game data and is older than the last big game update is no longer marked in the load order when the
+  catalog's launch test has reached the main menu with it since that update.
+
+Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
 ## Notes for 0.2.2
 
 **WH3 Lewd Mod Manager 0.2.2 – smoother profiles, a better mod search. 18+ only.**

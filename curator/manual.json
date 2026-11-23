@@ -384,6 +384,78 @@
   },
   "mods": [
     {
+      "id": "ll-27230",
+      "_replaces": [
+        "packs"
+      ],
+      "_note": "Steam all-in-one first: the author moved the mod to the Workshop (LoversLab page, issue #13).",
+      "packs": [
+        {
+          "file": "@@All_Loi_Variant_selector_steam.pack",
+          "from": "steam",
+          "steamId": "3503458514",
+          "exclusiveGroup": "loi",
+          "note": "Steam all-in-one with Variant Selector"
+        },
+        {
+          "file": "@@All_Loi_Variant_selector.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "All-in-one for Variant Selector; replaces the individual packs",
+          "archive": "@@All_Loi_Variant_selector"
+        },
+        {
+          "file": "@@ A Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant A (assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ A Loi variant"
+        },
+        {
+          "file": "@@ B Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant B (assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ B Loi variant"
+        },
+        {
+          "file": "@@ C Loi variant_Stage4.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant C (stage 4 look; assets from Slaanesh Corrupted Cathay Roster)",
+          "archive": "@@ C Loi variant_Stage4"
+        },
+        {
+          "file": "@@ D Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant D (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ D Loi variant"
+        },
+        {
+          "file": "@@ E Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant E (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ E Loi variant"
+        },
+        {
+          "file": "@@ F Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant F (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ F Loi variant"
+        },
+        {
+          "file": "@@ DD Loi variant.pack",
+          "from": "download",
+          "exclusiveGroup": "loi",
+          "note": "Variant DD (assets from Blushing Moon Unit Replacer)",
+          "archive": "@@ DD Loi variant"
+        }
+      ]
+    },
+    {
       "id": "ll-42028",
       "harmlessScriptErrors": [
         {

@@ -163,7 +163,8 @@ community contributions. App UI and catalog texts are English.
     Discord > manual, tested; an added mod that names no pack comes from where the pack it loads is – Community Beastmen's Light
     version, the first of its pick-one group, from its download, not the Steam full version; a pack posted elsewhere than its mod's page has `PackRef.url`, e.g. Soil's Kislev units on
     Discord, and is fetched from there); every missing Workshop item of a mod is subscribed in one go, and every missing download pack of a mod is asked for in one
-    LoversLab/Nexus window (`packsToFetch`: a page with one file per pack, e.g. a base pack and six stage packs). The row names what a mod still lacks (`neededParts`: "Hair (one of 4)"), and a Nexus window says after each file what is still needed; another version of a part counts as done (`hintsLeft`). Discord drops a
+    LoversLab/Nexus window (`packsToFetch`: a page with one file per pack, e.g. a base pack and six stage packs). The row names what a mod still lacks (`neededParts`: "Hair (one of 4)"), and a Nexus window says after each file what is still needed; another version of a part counts as done (`hintsLeft`), and a pack a list names from a pick-one group counts as installed when another
+    version of that group is (Ensign Loi from the Workshop for a list that names the LoversLab copy; the launch loads the installed one). Discord drops a
     leading "@"/"!" from attached file names, so the installer gives such a pack its catalog name back
     (`catalogPackName`), and a pack the catalog marks optional for the mod never overwrites a file already in data (the old
     Soil asset pack vs. its fixed re-upload of the same name). A reskin the player adds goes on top of the load order
@@ -237,7 +238,8 @@ community contributions. App UI and catalog texts are English.
     conflict in one list, a mod without what it "needs", a mod that "does not start") have 5+ "Did it work?" votes, 80 %+ of
     them "it worked" (`AUTO_FLAGS`/`AUTO_VOTES`/`AUTO_SHARE` in `build_catalog.py`); other rule types wait for a maintainer.
     `src/shared/health.ts`: mods that change game data and are older than the last major game update
-    (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded),
+    (`catalog.gameUpdates`, read by update.py from the game's Steam announcements; hotfixes excluded; a launch test since then that
+    reached the main menu with the mod, `Mod.confirmed`, counts like an update),
     and script errors from `lua_mod_log.txt` mapped to their packs (tested); errors a mod's `harmlessScriptErrors` names
     (script + message text, e.g. ATB's `!kerb_alar.lua`) are listed as known and harmless and not counted.
   - Problem reports: `src/shared/report.ts` (tested) builds a Markdown report for modders from a launch
@@ -290,7 +292,8 @@ The project keeps itself current without anyone's manual work or paid service.
   maintainer and gets its Workshop item's id, title, picture and creator), shared setups → reviewed, fixes → `Mod.fixes`, http(s) links only;
   votes for a fix come with the votes of the setup that used it). Every run applies all open issues labelled `accepted`
   (GitHub keeps only one waiting run per concurrency group and cancels the others), starts from the newest main and,
-  when its push loses a race, rebuilds on the newer main instead of merging generated files; it can also be started by hand.
+  when its push loses a race, rebuilds on the newer main instead of merging generated files; it can also be started by hand. A mod
+  suggestion it accepts by itself is applied in the same run (the issue list can lag behind the label, and a label the bot sets starts no run).
 - Shared setups and votes (`.github/workflows/community-daily.yml`, daily, no crawl): `curator/fetch_community.py`
   reads the setups players shared and the "it worked / it didn't" votes from the relay → `curator/raw/community_setups.json`
   (mod list, template it builds on, name/notes/how far the sharer wrote) + `raw/votes.json` (counts per template id; no

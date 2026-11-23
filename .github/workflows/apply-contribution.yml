@@ -49,18 +49,23 @@ jobs:
           git config user.name "catalog-bot"
           git config user.email "catalog-bot@users.noreply.github.com"
           # Suggested mods that only link to Steam, LoversLab or Nexus Mods need no maintainer.
+          : > "$RUNNER_TEMP/auto.txt"
           gh issue list --repo "$GITHUB_REPOSITORY" --label new-mod --state open --limit 100 --json number,labels \
             --jq '.[] | select([.labels[].name] | index("accepted") | not) | .number' > "$RUNNER_TEMP/suggested.txt"
           while read -r n; do
             gh api "repos/$GITHUB_REPOSITORY/issues/$n" > "$RUNNER_TEMP/issue.json"
             if python curator/apply_contribution.py --auto-ok --issue-file "$RUNNER_TEMP/issue.json"; then
               gh issue edit "$n" --repo "$GITHUB_REPOSITORY" --add-label accepted
+              echo "$n" >> "$RUNNER_TEMP/auto.txt"
             fi
           done < "$RUNNER_TEMP/suggested.txt"
           # Shared setups a maintainer closed as not planned are no longer shown.
           gh issue list --repo "$GITHUB_REPOSITORY" --label setup --state closed --limit 200 --json number,stateReason \
             --jq '.[] | select(.stateReason == "NOT_PLANNED") | .number' > "$RUNNER_TEMP/rejected.txt"
-          gh issue list --repo "$GITHUB_REPOSITORY" --label accepted --state open --limit 100 --json number --jq '.[].number' > "$RUNNER_TEMP/issues.txt"
+          gh issue list --repo "$GITHUB_REPOSITORY" --label accepted --state open --limit 100 --json number --jq '.[].number' > "$RUNNER_TEMP/listed.txt"
+          # The list can lag behind a label set a moment ago (and a label the bot sets starts no run of its own), so the
+          # mods accepted above are applied in this run too.
+          cat "$RUNNER_TEMP/listed.txt" "$RUNNER_TEMP/auto.txt" | sort -un > "$RUNNER_TEMP/issues.txt"
           echo "accepted and open: $(tr '\n' ' ' < "$RUNNER_TEMP/issues.txt")"
           echo "rejected setups: $(tr '\n' ' ' < "$RUNNER_TEMP/rejected.txt")"
           if [ ! -s "$RUNNER_TEMP/issues.txt" ] && [ ! -s "$RUNNER_TEMP/rejected.txt" ]; then exit 0; fi

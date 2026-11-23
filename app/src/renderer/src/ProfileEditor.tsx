@@ -294,7 +294,14 @@ export function ProfileEditor({ profile, preset, onChange, onDelete }: {
   const changesData = (o: OrderedEntry) => o.paths.some((p) => (facts?.packs[p]?.tables.length ?? 0) > 0)
   // Compared with the last major game update (not hotfixes) the player has installed.
   const major = lastMajorUpdate(data.catalog.gameUpdates, data.scan?.gameUpdated)
-  const stale = new Set(orderAll.filter((o) => olderThanGame(updatedOf(o), major?.date, changesData(o))).map((o) => o.key))
+  // A launch test that reached the main menu with the mod since that update counts like an update (as in the suggestions).
+  const checkedOf = (o: OrderedEntry): number | undefined => {
+    const t = parseTargetKey(o.key)
+    const confirmed = 'mod' in t ? data.index.mods.get(t.mod)?.confirmed : undefined
+    const updated = updatedOf(o)
+    return confirmed ? Math.max(updated ?? 0, Date.parse(confirmed)) : updated
+  }
+  const stale = new Set(orderAll.filter((o) => olderThanGame(checkedOf(o), major?.date, changesData(o))).map((o) => o.key))
   const gameDate = major ? `${new Date(major.date).toISOString().slice(0, 10)} (“${major.title}”)` : ''
 
   // Switch on what was just installed (dropped files, file picker, Workshop link).
