@@ -89,6 +89,29 @@
       "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/16",
       "issue": 16,
       "accepted": "2026-11-23"
+    },
+    {
+      "type": "flag",
+      "rule": "conflict|mod:ll-34542|mod:ll-46165",
+      "title": "Community Beastmen ALL versions and Slaanesh Expanded - Vassal Dilemmas are both in the list",
+      "says": "Named on the maintainer's list; it can stop the third capture mission from firing.",
+      "source": "Discord post",
+      "decision": "keep",
+      "answer": "The rule comes from a post on the Community Beastmen maintainer's list: with Vassal Dilemmas the third capture mission can fail to fire, so the Community Beastmen setup leaves it out. A game that stops while loading is a separate problem – from app 0.2.0 on the app names the mod after such a stop, and you can report it from there.",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/11",
+      "issue": 11,
+      "accepted": "2026-11-23"
+    },
+    {
+      "type": "flag",
+      "rule": "old|mod:ll-26591|2026-09-24",
+      "title": "Slaanesh Corrupted Cathay Roster (updated 2023-11-29, last big game update 2026-09-24)",
+      "says": "It changes game data and was not updated since “Lords of the End Times”. Such mods can stop the game after a patch; many still work.",
+      "source": "Update date · last major game update",
+      "decision": "retire",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/15",
+      "issue": 15,
+      "accepted": "2026-11-23"
     }
   ],
   "setupEdits": [
