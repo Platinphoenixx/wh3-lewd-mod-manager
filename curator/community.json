@@ -76,6 +76,19 @@
       "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/9",
       "issue": 9,
       "accepted": "2026-11-23"
+    },
+    {
+      "type": "new-mod",
+      "name": "The Old World Campaign",
+      "links": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3081800026"
+      ],
+      "kind": "campaign",
+      "description": "This is a completely new campaign based around the Old World, a region of the Warhammer Fantasy universe.",
+      "requirements": "MIXER - Mixu's Unlocker",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/16",
+      "issue": 16,
+      "accepted": "2026-11-23"
     }
   ],
   "setupEdits": [
@@ -97,6 +110,20 @@
       "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/7",
       "issue": 7,
       "date": "2026-11-19"
+    },
+    {
+      "type": "setup",
+      "setupId": "c2a7c651d78f",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/12",
+      "issue": 12,
+      "date": "2026-11-23"
+    },
+    {
+      "type": "setup",
+      "setupId": "1bef2bd6c8b1",
+      "url": "https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/10",
+      "issue": 10,
+      "date": "2026-11-23"
     }
   ]
 }
