@@ -1,45 +1,27 @@
-# Catalog update 2026-11-16
+# Catalog update 2026-11-23
 
 ## New mods (automatic entries, please review)
-- WH3 Lewd Mod Manager 0.10 (`ll-52883`)
+- Lore Of Athel Loren (Updated 9.0) (`steam-3560344083`)
+- Naru the Huntress (`steam-3242912296`)
+- The Moonlight Twins - Legenday Heroes for Wood Elves (`steam-3566095272`)
+- Trajann's Katalin, The Wild Huntress (`steam-2959914930`)
+- Whores of the Wildwood, Elite Wood Elf Archers. 1.0.0 (`ll-53061`)
+- Wood Elf XxX Heroes and Lords submods 1.0.0 (`ll-53064`)
 
 ## Updated on Steam
-- Double Skill Points & Skill Dump
-- Artists' Guild - Get your faction items
-- 2791241084
-- Radious Total War Mod - Part 3
-- Radious Total War Mod - Part 1
-- Radious Total War Mod - Part 2
-- SFO: Grimhammer III - REALM OF RENOWN
-- Mixu's Legendary Lords
-- Tabletop Caps Compatibility Patch (Various - Loreful)
-- [SFO] Double Skill Points
-- Collabs Team: Hertz Province Patrols - Endtimes update 1.4
+- Hooveric Reskin (HV Reskin)
+- Improved LOD
 - Lily's Bretonnia Overhaul: Definitive Edition - 9.0
-- 2859968660
-- Cataph's Southern Realms (TEB)
-- Lustria Rises - Lizardmen Overhaul
-- 2953846693
-- Better Sound Levels Mod v8.1
-- Immortal Empires Expanded
-- Slaanesh Steals Faction Leaders
-- Just Good UI Mod
-- Lost Calm: Jurassic Normal SFO
-- 3117083206
+- Gifts of Athel Loren - Unit Upgrades for the Wood Elves
+- 2866037946
+- Marks of the Wild - Unit Upgrades for the Beastmen
+- Roar of the Jade Sea: Yin-Yin, the Sea Dragon: Jade Pirate Submod
+- Masterworks of Vaul's Anvil - Unit Upgrades for High Elves
+- Singe's Skills for Naestra and Arahan, the Sisters of Twilight
+- SCM Marienburg (9.0)
+- Just Good Babysitter
 - Victory Conditions Overhaul
-- Warband Upgrades for Radious
-- The Phoenix Court (High Elf Politics)
-- 3381165001
-- [9.x.x] Land Encounters And Points Of Interest - Events, Towers, Taverns, Boons & Curses + IEE + TOW
-- 3412814098
-- 3429217696
+- SCM: Tribes of the North - 9.0
+- Force AI Agent Embedding 9.x MOAR' FECTIVE' NOW
 - 3439800142
-- 3440622100
-- 3474483873
-- Campaign AI Tweaks
-- Wyccc's English Patch Collection
-- [EN patch] The Coming of Winter: Katarin Faction Expansion
-- Citadel of Dusk Standalone (Dust)
-- Alivia's Lake Tales (Heroes: Ymira, Nymeria and Lyra)
-- Female Auxiliaries - New Recruitable Units (Endotw)
 

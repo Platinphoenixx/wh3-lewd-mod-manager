@@ -133,7 +133,7 @@
     }
    ],
    "curation": {
-    "lastChecked": "2026-11-16",
+    "lastChecked": "2026-11-23",
     "confidence": "low",
     "openQuestions": [
      "Automatic entry: requirements, kind and description need review."
@@ -141,28 +141,102 @@
    }
   },
   {
-   "id": "ll-52883",
-   "name": "WH3 Lewd Mod Manager 0.10",
+   "id": "ll-53061",
+   "name": "Whores of the Wildwood, Elite Wood Elf Archers. 1.0.0",
    "authors": [
-    "Platinphoenixx"
+    "Dwjliel"
    ],
    "kind": "units",
-   "summary": "18+, Windows only. Free, source on GitHub.",
-   "description": "18+, Windows only. Free, source on GitHub.\n\n*Automatic entry from the LoversLab page; not reviewed yet.*",
+   "summary": "Please enjoy this balanced but naughty Elite Asrai Archer.",
+   "description": "Please enjoy this balanced but naughty Elite Asrai Archer.\n\n*Automatic entry from the LoversLab page; not reviewed yet.*",
    "tags": [],
    "sources": {
     "loverslab": {
-     "fileId": "52883",
-     "url": "https://www.loverslab.com/files/file/52883-wh3-lewd-mod-manager/",
+     "fileId": "53061",
+     "url": "https://www.loverslab.com/files/file/53061-whores-of-the-wildwood-elite-wood-elf-archers/",
      "version": null,
-     "updated": "2026-11-16T00:19:18Z",
+     "updated": "2026-11-22T23:17:14Z",
      "category": "mods"
     }
    },
    "packs": [],
    "relations": [],
    "curation": {
-    "lastChecked": "2026-11-16",
+    "lastChecked": "2026-11-23",
+    "confidence": "low",
+    "openQuestions": [
+     "Automatic entry: requirements, kind and description need review."
+    ]
+   }
+  },
+  {
+   "id": "ll-53064",
+   "name": "Wood Elf XxX Heroes and Lords submods 1.0.0",
+   "authors": [
+    "Dwjliel"
+   ],
+   "kind": "units",
+   "summary": "A collection for the woodelfs, nudifying some modded Lords and Heroes and rebalancing (nerfing) them.",
+   "description": "A collection for the woodelfs, nudifying some modded Lords and Heroes and rebalancing (nerfing) them.\n\n*Automatic entry from the LoversLab page; not reviewed yet.*",
+   "tags": [],
+   "sources": {
+    "loverslab": {
+     "fileId": "53064",
+     "url": "https://www.loverslab.com/files/file/53064-wood-elf-xxx-heroes-and-lords-submods/",
+     "version": null,
+     "updated": "2026-11-23T00:45:19Z",
+     "category": "mods"
+    }
+   },
+   "packs": [],
+   "relations": [
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "2959914930"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/53064-wood-elf-xxx-heroes-and-lords-submods/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3242912296"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/53064-wood-elf-xxx-heroes-and-lords-submods/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3566095272"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/53064-wood-elf-xxx-heroes-and-lords-submods/"
+     }
+    },
+    {
+     "kind": "recommends",
+     "target": {
+      "steamId": "3560344083"
+     },
+     "note": "Linked on the mod page (not reviewed: may be required).",
+     "source": {
+      "type": "loverslab",
+      "url": "https://www.loverslab.com/files/file/53064-wood-elf-xxx-heroes-and-lords-submods/"
+     }
+    }
+   ],
+   "curation": {
+    "lastChecked": "2026-11-23",
     "confidence": "low",
     "openQuestions": [
      "Automatic entry: requirements, kind and description need review."

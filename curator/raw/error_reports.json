@@ -1,1 +1,74 @@
-[]
+[
+ {
+  "signature": "pack:miaoyingcorrupted_compendium.pack | game stopped at loading: database table land_units_to_unit_abilites_junctions, entry hero__emissaryemm_arrogance_unbound_daemon_form (miaoyingcorrupted_compendium.pack)",
+  "modId": null,
+  "modName": "MiaoYingCorrupted_Compendium.pack",
+  "players": 6,
+  "reports": 7,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T00:04:02.547Z",
+  "last": "2026-11-22T20:19:22.198Z"
+ },
+ {
+  "signature": "mod:ll-24004 | game stopped at loading: database table land_units_to_unit_abilites_junctions, entry misao_heroes_issathwh3_main_lord_passive_soul_siphon (corrupted_valkia_compiled.pack)",
+  "modId": "ll-24004",
+  "modName": "Passing's Corrupted Valkia",
+  "players": 3,
+  "reports": 3,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T01:59:32.724Z",
+  "last": "2026-11-22T22:33:45.095Z"
+ },
+ {
+  "signature": "mod:steam-3140200173 | failed to load mod: [script\\_lib\\mod\\vco.lua]",
+  "modId": "steam-3140200173",
+  "modName": "Victory Conditions Overhaul",
+  "players": 2,
+  "reports": 2,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T06:04:22.882Z",
+  "last": "2026-11-22T02:43:50.674Z"
+ },
+ {
+  "signature": "mod:nx-22 | game stopped at loading: database table land_units_to_unit_abilites_junctions, entry wh3_main_tze_cha_herald_of_tzeentch_metal_2awh3_main_character_abilities_locus_of_conjuration (@total warmaidens iii.pack)",
+  "modId": "nx-22",
+  "modName": "Total Warmaidens III (Resource Pack and Total Conversion)",
+  "players": 1,
+  "reports": 1,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T10:30:09.758Z",
+  "last": "2026-11-21T10:30:09.758Z"
+ },
+ {
+  "signature": "mod:steam-2865263701 | game stopped at loading: database table land_units_to_unit_abilites_junctions, entry ty_hef_cha_tdq_1wh3_main_unit_passive_single_entity (ty_tdqueen3.pack)",
+  "modId": "steam-2865263701",
+  "modName": "TDQ - The Dragon Queen III",
+  "players": 1,
+  "reports": 1,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T07:00:51.792Z",
+  "last": "2026-11-21T07:00:51.792Z"
+ },
+ {
+  "signature": "steamid:2789871708 | game stopped at loading: database table character_skill_node_set_items, entry wh_dlc03_skill_node_set_emp_boris_todbringerwh3_main_skill_dump_emp_toddy_the_body (@com_4sp_dump.pack)",
+  "modId": null,
+  "modName": "Four Skill Points Per Level w/ Useful Skill Dump",
+  "players": 1,
+  "reports": 1,
+  "games": [
+   "9.0.5"
+  ],
+  "first": "2026-11-21T09:02:31.721Z",
+  "last": "2026-11-21T09:02:31.721Z"
+ }
+]
