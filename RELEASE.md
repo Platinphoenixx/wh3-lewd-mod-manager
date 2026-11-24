@@ -26,8 +26,17 @@ release is all it takes for players to hear about it.
 - A mod that changes game data and is older than the last big game update is no longer marked in the load order when the
   catalog's launch test has reached the main menu with it since that update.
 
-Windows only. Not code-signed: SmartScreen or your browser may warn once because the app is new
+Windows: not code-signed, so SmartScreen or your browser may warn once because the app is new
 (*More info → Run anyway* / *Keep*).
+
+**New: a Linux version to test – the "Potentially Shitty Vibecoded Version" (beta).** Take the `.AppImage` below, make it
+executable (`chmod +x`, or *Properties → Allow executing*) and start it. Start the game once from Steam with Proton first,
+so Proton sets it up; the app then starts it with the Proton Steam uses for the game (*Settings → Proton* shows which and
+lets you choose another). Nobody has played with it on Linux yet: if the game starts without your mods, or not at all,
+please say so on the LoversLab page or Discord and include `~/.config/wh3-lewd-mod-manager/launch.log`.
+
+(The AppImage was added to 0.2.3 afterwards; from the next release on the *Linux build* workflow attaches it. Keep the
+Linux paragraph in the notes of every release while it is a beta.)
 
 ## Notes for 0.2.2
 
