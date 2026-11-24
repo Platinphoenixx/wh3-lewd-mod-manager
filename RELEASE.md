@@ -31,8 +31,10 @@ release is all it takes for players to hear about it.
 Windows: not code-signed, so SmartScreen or your browser may warn once because the app is new
 (*More info → Run anyway* / *Keep*).
 
-Linux: the current Linux version (the "Potentially Shitty Vibecoded Version", beta) is the AppImage of
-[0.2.3](https://github.com/Platinphoenixx/wh3-lewd-mod-manager/releases/tag/v0.2.3).
+Linux (the "Potentially Shitty Vibecoded Version", beta): the AppImage below, added afterwards with a fix. In 0.2.3 the
+Linux version could not unpack .zip and .7z downloads, so most Nexus files and many LoversLab files were not
+installed and their download window just closed. That works now. Thanks for the report! If the app still closes or
+something is not installed, send `~/.config/wh3-lewd-mod-manager/queue.log`.
 
 ## Notes for 0.2.3
 

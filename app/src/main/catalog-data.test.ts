@@ -133,5 +133,5 @@ describe('catalog', () => {
       }
     }
     expect(bad).toEqual([])
-  })
+  }, 60_000) // every size of every character: a few seconds here, longer on a slower build machine
 })
