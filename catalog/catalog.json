@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T10:51:12+00:00",
+  "generatedAt": "2026-11-24T16:22:11+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-23T23:18:32+00:00",
+      "fetchedAt": "2026-11-24T16:22:02+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -67005,7 +67005,7 @@
         "ll-42028"
       ],
       "votes": {
-        "up": 43,
+        "up": 45,
         "down": 1,
         "reasons": {
           "content": 1
@@ -68353,7 +68353,7 @@
         "ll-23876"
       ],
       "votes": {
-        "up": 30,
+        "up": 32,
         "down": 2,
         "reasons": {
           "start": 2
@@ -69374,7 +69374,7 @@
         "ll-42028"
       ],
       "votes": {
-        "up": 11,
+        "up": 12,
         "down": 2,
         "reasons": {
           "content": 1,
@@ -80856,6 +80856,10 @@
       "community": {
         "base": "readman-alarielle-early"
       },
+      "votes": {
+        "up": 1,
+        "down": 0
+      },
       "uses": 1
     },
     {
@@ -83101,6 +83105,1534 @@
       ],
       "community": {
         "base": "readman-alarielle-early"
+      }
+    },
+    {
+      "id": "community-9a9859b8e5b4",
+      "name": "Alarielle – Everything Edited Personal Test",
+      "playAs": [
+        "Alarielle"
+      ],
+      "phase": "any",
+      "origin": "community",
+      "source": {
+        "type": "community",
+        "author": "anonymous",
+        "date": "2026-11-24"
+      },
+      "description": "Personal, just testing. Currently broken.",
+      "entries": [
+        {
+          "pack": "@zeta_Khalida_reskin_stockings.pack",
+          "from": "steam",
+          "steamId": "3808748835",
+          "target": {
+            "mod": "steam-3808748835"
+          }
+        },
+        {
+          "pack": "female_malus.pack",
+          "from": "steam",
+          "steamId": "3223598729",
+          "target": {
+            "mod": "steam-3223598729"
+          }
+        },
+        {
+          "pack": "Sigvald_female.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-26542"
+          }
+        },
+        {
+          "pack": "freeDechala.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-299"
+          }
+        },
+        {
+          "pack": "01_Hellebron_dirtyskin.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-197"
+          }
+        },
+        {
+          "pack": "@endo_slaanesh_marauders_slaaneshy.pack",
+          "from": "steam",
+          "steamId": "3693788049",
+          "target": {
+            "mod": "steam-3693788049"
+          }
+        },
+        {
+          "pack": "D's is Sister of Twilight.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-346"
+          }
+        },
+        {
+          "pack": "D's is n'Kari.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-401"
+          }
+        },
+        {
+          "pack": "[LIG]katarin(Lazy ver).pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-334"
+          }
+        },
+        {
+          "pack": "$free_the_morathi.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-16"
+          }
+        },
+        {
+          "pack": "[LIG]Handmaiden.pack",
+          "from": "steam",
+          "steamId": "2958844147",
+          "target": {
+            "mod": "steam-2958844147"
+          }
+        },
+        {
+          "pack": "!!!calm_nkari_reskin.pack",
+          "from": "steam",
+          "steamId": "3632214035",
+          "target": {
+            "mod": "steam-3632214035"
+          }
+        },
+        {
+          "pack": "BRNKAR.pack",
+          "from": "steam",
+          "steamId": "2927397735",
+          "target": {
+            "mod": "steam-2927397735"
+          }
+        },
+        {
+          "pack": "@endo_audio_merged.pack",
+          "from": "steam",
+          "steamId": "3622829128",
+          "target": {
+            "mod": "steam-3622829128"
+          }
+        },
+        {
+          "pack": "@endo_cathay_reskin.pack",
+          "from": "steam",
+          "steamId": "3679399151",
+          "target": {
+            "mod": "steam-3679399151"
+          }
+        },
+        {
+          "pack": "@endo_kislev_reskin.pack",
+          "from": "steam",
+          "steamId": "3301596500",
+          "target": {
+            "mod": "steam-3301596500"
+          }
+        },
+        {
+          "pack": "@endo_norsca.pack",
+          "from": "steam",
+          "steamId": "3720584550",
+          "target": {
+            "mod": "steam-3720584550"
+          }
+        },
+        {
+          "pack": "@endo_dark_elf_reskin.pack",
+          "from": "steam",
+          "steamId": "3616082403",
+          "target": {
+            "mod": "steam-3616082403"
+          }
+        },
+        {
+          "pack": "@endo_high_elf_reskin.pack",
+          "from": "steam",
+          "steamId": "3616234518",
+          "target": {
+            "mod": "steam-3616234518"
+          }
+        },
+        {
+          "pack": "alshua_cultists_slaanesh_pleasure.pack",
+          "from": "steam",
+          "steamId": "2881916371",
+          "target": {
+            "mod": "steam-2881916371"
+          }
+        },
+        {
+          "pack": "Cult_of_Slaanesh_Cultist_Reskin_Com.pack",
+          "from": "steam",
+          "steamId": "3672168482",
+          "target": {
+            "mod": "steam-3672168482"
+          }
+        },
+        {
+          "pack": "!lingling_cult_of_pleasure_expansion.pack",
+          "from": "steam",
+          "steamId": "3270391569",
+          "target": {
+            "mod": "steam-3270391569"
+          }
+        },
+        {
+          "pack": "!alshua_cultists_slaanesh_reskin.pack",
+          "from": "steam",
+          "steamId": "2821600897",
+          "target": {
+            "mod": "steam-2821600897"
+          }
+        },
+        {
+          "pack": "myl_lustful_daemonettes_varieties.pack",
+          "from": "steam",
+          "steamId": "2798840666",
+          "target": {
+            "mod": "dc-more-lustful-daemonettes-varieties-standalone"
+          }
+        },
+        {
+          "pack": "Nips_out_for_Khaine.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-414"
+          }
+        },
+        {
+          "pack": "Slaanesh.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-267"
+          }
+        },
+        {
+          "pack": "D's is Mage.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-352"
+          }
+        },
+        {
+          "pack": "D's is Death Hag.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-359"
+          }
+        },
+        {
+          "pack": "D's is Glade Captain.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-357"
+          }
+        },
+        {
+          "pack": "D's is Masque.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-395"
+          }
+        },
+        {
+          "pack": "!Silver_helm WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-166"
+          }
+        },
+        {
+          "pack": "Lin_Drycha_Reskin.pack",
+          "from": "steam",
+          "steamId": "3556592733",
+          "target": {
+            "mod": "steam-3556592733"
+          }
+        },
+        {
+          "pack": "!Ranger WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-152"
+          }
+        },
+        {
+          "pack": "!shadow warrior WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-167"
+          }
+        },
+        {
+          "pack": "!lothern_sea_guard WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-160"
+          }
+        },
+        {
+          "pack": "wood_elf_party.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-210"
+          }
+        },
+        {
+          "pack": "!ASwordmaster.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-163"
+          }
+        },
+        {
+          "pack": "!Silverin_Guard WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-153"
+          }
+        },
+        {
+          "pack": "Asrai Unit Pack Submod.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-129"
+          }
+        },
+        {
+          "pack": "!sisters_of_avelorn WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-156"
+          }
+        },
+        {
+          "pack": "Skimpinettes.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-276"
+          }
+        },
+        {
+          "pack": "@endo_druchii_anointed.pack",
+          "from": "steam",
+          "steamId": "3697128442",
+          "target": {
+            "mod": "steam-3697128442"
+          }
+        },
+        {
+          "pack": "@endo_hellstrider.pack",
+          "from": "steam",
+          "steamId": "3688586949",
+          "target": {
+            "mod": "steam-3688586949"
+          }
+        },
+        {
+          "pack": "@endo_spellsinger.pack",
+          "from": "steam",
+          "steamId": "3707419547",
+          "target": {
+            "mod": "steam-3707419547"
+          }
+        },
+        {
+          "pack": "lightBladeSinger.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-4"
+          }
+        },
+        {
+          "pack": "@def_hydra_nude.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-104"
+          }
+        },
+        {
+          "pack": "lightWarDancers.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-5"
+          }
+        },
+        {
+          "pack": "01_Malikav2.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-196"
+          }
+        },
+        {
+          "pack": "1568747233_WarriorofSlaanesh.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-24568"
+          }
+        },
+        {
+          "pack": "WH3_Dark_Elf_Debaucheries.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-7"
+          }
+        },
+        {
+          "pack": "@Queen's Maiden.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-42"
+          }
+        },
+        {
+          "pack": "@Darkmaidens.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-42"
+          }
+        },
+        {
+          "pack": "!!!!!!!!!!!!!!!!!Miao_Slaanesh_UI.pack",
+          "from": "steam",
+          "steamId": "3304325611",
+          "target": {
+            "mod": "steam-3304325611"
+          }
+        },
+        {
+          "pack": "!!!!!!!!!!!!!!!!Unique_Faction_UI_III.pack",
+          "from": "steam",
+          "steamId": "2789999718",
+          "target": {
+            "external": "ext-unique-faction-ui"
+          }
+        },
+        {
+          "pack": "!!!!readman_drycha_fix.pack",
+          "from": "steam",
+          "steamId": "3620414599",
+          "target": {
+            "mod": "steam-3620414599"
+          }
+        },
+        {
+          "pack": "zzz_miao_kos_transform.pack",
+          "from": "steam",
+          "steamId": "3756385010",
+          "target": {
+            "mod": "steam-3756385010"
+          }
+        },
+        {
+          "pack": "Seu_Reborn_workshop.pack",
+          "from": "steam",
+          "steamId": "3760606729",
+          "target": {
+            "mod": "dc-seu-s-miao-ying-expanded-mod-seu-miaoying-submod-extension"
+          }
+        },
+        {
+          "pack": "Corrupted Chars can Seduce",
+          "from": "download",
+          "target": {
+            "mod": "ll-33808"
+          }
+        },
+        {
+          "pack": "!!li_progression_framework_workshop.pack",
+          "from": "steam",
+          "steamId": "3464018577",
+          "target": {
+            "mod": "ll-23878"
+          }
+        },
+        {
+          "pack": "li_miaoying_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3464018577",
+          "target": {
+            "mod": "ll-23878"
+          }
+        },
+        {
+          "pack": "!Readman_AA_SSS.pack",
+          "from": "steam",
+          "steamId": "3613426737",
+          "target": {
+            "mod": "steam-3613426737"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_AAA.pack",
+          "from": "steam",
+          "steamId": "3497485581",
+          "target": {
+            "mod": "steam-3497485581"
+          }
+        },
+        {
+          "pack": "zli_morathi_reskins.pack",
+          "from": "steam",
+          "steamId": "3471884231",
+          "target": {
+            "mod": "steam-3471884231"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_BBB.pack",
+          "from": "steam",
+          "steamId": "3497485732",
+          "target": {
+            "mod": "steam-3497485732"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_CCC.pack",
+          "from": "steam",
+          "steamId": "3501984780",
+          "target": {
+            "mod": "steam-3501984780"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_DDD.pack",
+          "from": "steam",
+          "steamId": "3618278231",
+          "target": {
+            "mod": "steam-3618278231"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_GGG.pack",
+          "from": "steam",
+          "steamId": "3592882054",
+          "target": {
+            "mod": "steam-3592882054"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_MMM.pack",
+          "from": "steam",
+          "steamId": "3621087383",
+          "target": {
+            "mod": "steam-3621087383"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_OOO_savesafe.pack",
+          "from": "steam",
+          "steamId": "3513079088",
+          "target": {
+            "mod": "steam-3513079088"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_SSS.pack",
+          "from": "steam",
+          "steamId": "3623616009",
+          "target": {
+            "mod": "steam-3623616009"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_TTT.pack",
+          "from": "steam",
+          "steamId": "3508604193",
+          "target": {
+            "mod": "steam-3508604193"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_UUU.pack",
+          "from": "steam",
+          "steamId": "3534460647",
+          "target": {
+            "mod": "steam-3534460647"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_YYY.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-43977"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_ZZZ.pack",
+          "from": "steam",
+          "steamId": "3800728255",
+          "target": {
+            "mod": "steam-3800728255"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_ZZZ_alt.pack",
+          "from": "steam",
+          "steamId": "3800728339",
+          "target": {
+            "mod": "steam-3800728255"
+          }
+        },
+        {
+          "pack": "dusts_corrupted_heroes_workshop.pack",
+          "from": "steam",
+          "steamId": "3815990781",
+          "target": {
+            "mod": "dc-dust-s-corrupted-heroes-dch"
+          }
+        },
+        {
+          "pack": "!BSE.pack",
+          "from": "steam",
+          "steamId": "2870464661",
+          "target": {
+            "mod": "steam-2870464661"
+          }
+        },
+        {
+          "pack": "!b_mixer.pack",
+          "from": "steam",
+          "steamId": "2859968660",
+          "target": {
+            "external": "ext-mixu-unlocker"
+          }
+        },
+        {
+          "pack": "!battle_weather_overhaul!.pack",
+          "from": "steam",
+          "steamId": "3368217482",
+          "target": {
+            "mod": "steam-3368217482"
+          }
+        },
+        {
+          "pack": "!campaign_weather_overhaul!.pack",
+          "from": "steam",
+          "steamId": "2998630271",
+          "target": {
+            "mod": "steam-2998630271"
+          }
+        },
+        {
+          "pack": "Valkia_Workshop.pack",
+          "from": "steam",
+          "steamId": "3813939023",
+          "target": {
+            "mod": "ll-24004"
+          }
+        },
+        {
+          "pack": "corrupted_katarin_and_miaoying.pack",
+          "from": "steam",
+          "steamId": "3467363192",
+          "target": {
+            "mod": "steam-3467363192"
+          }
+        },
+        {
+          "pack": "!marthvariantselector.pack",
+          "from": "steam",
+          "steamId": "2888171970",
+          "target": {
+            "external": "ext-variant-selector"
+          }
+        },
+        {
+          "pack": "!max_traits.pack",
+          "from": "steam",
+          "steamId": "3029800597",
+          "target": {
+            "mod": "steam-3029800597"
+          }
+        },
+        {
+          "pack": "@@@bettercameramod.pack",
+          "from": "steam",
+          "steamId": "2789858755",
+          "target": {
+            "mod": "steam-2789858755"
+          }
+        },
+        {
+          "pack": "@@Compendium_Play_as_Azazel_Overwrite.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-27930"
+          }
+        },
+        {
+          "pack": "kerb_Azazel's_Realm_steam.pack",
+          "from": "steam",
+          "steamId": "3643871692",
+          "target": {
+            "mod": "ll-27930"
+          }
+        },
+        {
+          "pack": "@n_SlaaneshVassals.pack",
+          "from": "download",
+          "target": {
+            "mod": "dc-n-slaaneshvassals-dechala-fix"
+          }
+        },
+        {
+          "pack": "@n_SlaaneshVassals_Non_Slaanesh_Factions.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-34542"
+          }
+        },
+        {
+          "pack": "@n_SlaaneshVictories.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-36630"
+          }
+        },
+        {
+          "pack": "@red_hef_lords_public.pack",
+          "from": "steam",
+          "steamId": "2897366143",
+          "target": {
+            "external": "ext-lhec"
+          }
+        },
+        {
+          "pack": "BETTER_AI_ARMY_BUILDER.pack",
+          "from": "steam",
+          "steamId": "3617312541",
+          "target": {
+            "mod": "steam-3617312541"
+          }
+        },
+        {
+          "pack": "Better_Soundlevels_Mod-TWH3.pack",
+          "from": "steam",
+          "steamId": "2963986848",
+          "target": {
+            "mod": "steam-2963986848"
+          }
+        },
+        {
+          "pack": "Lin_AllInOne_en.pack",
+          "from": "steam",
+          "steamId": "3718883838",
+          "target": {
+            "mod": "dc-lin-allinone-en-translation-lin-allinone-en-pack"
+          }
+        },
+        {
+          "pack": "Lin_Corrupted_Drycha.pack",
+          "from": "steam",
+          "steamId": "3376933629",
+          "target": {
+            "mod": "ll-27663"
+          }
+        },
+        {
+          "pack": "Lin_Corrupted_Fay.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-32476"
+          }
+        },
+        {
+          "pack": "Lin_Summon_Servant.pack",
+          "from": "steam",
+          "steamId": "3552538974",
+          "target": {
+            "mod": "ll-43852"
+          }
+        },
+        {
+          "pack": "Lin_Generic_Framework.pack",
+          "from": "steam",
+          "steamId": "3376886102",
+          "target": {
+            "mod": "steam-3376886102"
+          }
+        },
+        {
+          "pack": "@@All_Loi_Variant_selector.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-27230"
+          }
+        },
+        {
+          "pack": "HuaJS258_corrupted_cathay.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-26591"
+          }
+        },
+        {
+          "pack": "MiaoYingCorrupted_Compendium_workshop.pack",
+          "from": "steam",
+          "steamId": "3705392682",
+          "target": {
+            "mod": "ll-23876"
+          }
+        },
+        {
+          "pack": "Lewd Flags and Loading Screens (Miao, Alarielle, others)",
+          "from": "download",
+          "target": {
+            "mod": "ll-41124"
+          }
+        },
+        {
+          "pack": "More_High_Angle_Fire_Arthas.pack",
+          "from": "steam",
+          "steamId": "3442905174",
+          "target": {
+            "mod": "steam-3442905174"
+          }
+        },
+        {
+          "pack": "_disable_intros.pack",
+          "from": "steam",
+          "steamId": "2789854789",
+          "target": {
+            "mod": "steam-2789854789"
+          }
+        },
+        {
+          "pack": "addandeith_experience_ranks.pack",
+          "from": "steam",
+          "steamId": "2790566124",
+          "target": {
+            "mod": "steam-2790566124"
+          }
+        },
+        {
+          "pack": "aigeneral_iii_pancake.pack",
+          "from": "steam",
+          "steamId": "2799316652",
+          "target": {
+            "mod": "steam-2799316652"
+          }
+        },
+        {
+          "pack": "Nymeria (9.0.3).pack",
+          "from": "steam",
+          "steamId": "3820276885",
+          "target": {
+            "mod": "steam-3820276885"
+          }
+        },
+        {
+          "pack": "alivia_whiteLion.pack",
+          "from": "steam",
+          "steamId": "2996269472",
+          "target": {
+            "mod": "steam-2996269472"
+          }
+        },
+        {
+          "pack": "chasedownhidden.pack",
+          "from": "steam",
+          "steamId": "3393253521",
+          "target": {
+            "mod": "steam-3393253521"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_WWW.pack",
+          "from": "steam",
+          "steamId": "3625969460",
+          "target": {
+            "mod": "steam-3625969460"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_LMM.pack",
+          "from": "steam",
+          "steamId": "3798367316",
+          "target": {
+            "mod": "steam-3798367316"
+          }
+        },
+        {
+          "pack": "corrupted_landmarks.pack",
+          "from": "steam",
+          "steamId": "3474483873",
+          "target": {
+            "mod": "ll-30462"
+          }
+        },
+        {
+          "pack": "soil_corrupted_units_asset.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-48415"
+          }
+        },
+        {
+          "pack": "tdw_corrupted_buildings_merged.pack",
+          "from": "download",
+          "target": {
+            "mod": "dc-tdw-corrupted-buildings-merged"
+          }
+        },
+        {
+          "pack": "cpecific_traits_manager.pack",
+          "from": "steam",
+          "steamId": "2789862740",
+          "target": {
+            "mod": "steam-2789862740"
+          }
+        },
+        {
+          "pack": "domek_redline_for_hef_units.pack",
+          "from": "steam",
+          "steamId": "3485418515",
+          "target": {
+            "mod": "steam-3485418515"
+          }
+        },
+        {
+          "pack": "erynn_grand_campaign_camera_wh3.pack",
+          "from": "steam",
+          "steamId": "3066410796",
+          "target": {
+            "mod": "steam-3066410796"
+          }
+        },
+        {
+          "pack": "groovy_mct.pack",
+          "from": "steam",
+          "steamId": "2927955021",
+          "target": {
+            "external": "ext-mct"
+          }
+        },
+        {
+          "pack": "Chaos_Subculture_Fix.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-52091"
+          }
+        },
+        {
+          "pack": "Alarielle_Morathi_expansion.pack",
+          "from": "download",
+          "target": {
+            "mod": "dc-alarielle-morathi-expansion"
+          }
+        },
+        {
+          "pack": "@Soil_Corrupted_Units_Merged.pack",
+          "from": "download",
+          "target": {
+            "mod": "dc-soil-merged-pack-azazel-miao-elf-corrupted-units"
+          }
+        },
+        {
+          "pack": "kerb_Alarielle_Temptations_Bloom_steam.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
+          "pack": "kerberos_mod_assets.pack",
+          "from": "steam",
+          "steamId": "3644437727",
+          "target": {
+            "mod": "ll-42028"
+          }
+        },
+        {
+          "pack": "kerb_Alarielle_corrupted_wef_units.pack",
+          "from": "steam",
+          "steamId": "3566849815",
+          "target": {
+            "mod": "steam-3566849815"
+          }
+        },
+        {
+          "pack": "levie_model_rotate.pack",
+          "from": "steam",
+          "steamId": "2793127003",
+          "target": {
+            "external": "ext-rotate-lords"
+          }
+        },
+        {
+          "pack": "li_katarin_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237570",
+          "target": {
+            "mod": "steam-3471237570"
+          }
+        },
+        {
+          "pack": "murranji_reinforcing_general_legendary_lord_defeat_traits.pack",
+          "from": "steam",
+          "steamId": "3559803702",
+          "target": {
+            "mod": "steam-3559803702"
+          }
+        },
+        {
+          "pack": "omlette_fudging_vassals.pack",
+          "from": "steam",
+          "steamId": "2794064207",
+          "target": {
+            "mod": "steam-2794064207"
+          }
+        },
+        {
+          "pack": "ovn_lost_world.pack",
+          "from": "steam",
+          "steamId": "3291116635",
+          "target": {
+            "external": "ext-ovn-lost-world"
+          }
+        },
+        {
+          "pack": "pj_console.pack",
+          "from": "steam",
+          "steamId": "2791241084",
+          "target": {
+            "external": "ext-pj-console"
+          }
+        },
+        {
+          "pack": "pj_recruitment_ui.pack",
+          "from": "steam",
+          "steamId": "2790774407",
+          "target": {
+            "mod": "steam-2790774407"
+          }
+        },
+        {
+          "pack": "speedyCamera.pack",
+          "from": "steam",
+          "steamId": "2792727547",
+          "target": {
+            "mod": "steam-2792727547"
+          }
+        },
+        {
+          "pack": "!li_katarin_remove_crown.pack",
+          "from": "steam",
+          "steamId": "2806964197",
+          "target": {
+            "mod": "dc-katarin-optional-crown-removal"
+          }
+        },
+        {
+          "pack": "Katarin Optional: Pubes instead of tattoo",
+          "from": "download",
+          "target": {
+            "mod": "dc-katarin-optional-pubes-instead-of-tattoo"
+          }
+        },
+        {
+          "pack": "zli_katarin_reskins.pack",
+          "from": "steam",
+          "steamId": "3471883808",
+          "target": {
+            "mod": "steam-3471883808"
+          }
+        },
+        {
+          "pack": "Soboro_Miao.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_scale_soboro_st1.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_fishnet_soboro_st2.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_ballet_soboro_st3.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_bare_soboro_st4.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_corset_soboro_st5.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "li_miaoying_plug_soboro_st6.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-28994"
+          }
+        },
+        {
+          "pack": "zli_miaoying_reskins.pack",
+          "from": "steam",
+          "steamId": "3471883632",
+          "target": {
+            "mod": "steam-3471883632"
+          }
+        },
+        {
+          "pack": "zzz_domek_def_anar.pack",
+          "from": "steam",
+          "steamId": "3480317584",
+          "target": {
+            "mod": "steam-3480317584"
+          }
+        },
+        {
+          "pack": "!Readman_Alarielle_LLL.pack",
+          "from": "steam",
+          "steamId": "3528693285",
+          "target": {
+            "mod": "steam-3528693285"
+          }
+        },
+        {
+          "pack": "Miao_Ying_Slaanesh_start_pos.pack",
+          "from": "steam",
+          "steamId": "2860381227",
+          "target": {
+            "mod": "dc-miao-ying-vs-slaanesh-start-positions-ie"
+          }
+        },
+        {
+          "pack": "!patched_UlrikHD_Morathi_cult_of_pleasure.pack",
+          "from": "steam",
+          "steamId": "3240401070",
+          "target": {
+            "mod": "dc-cult-of-pleasure-mechanics-morathi-9-0-patch"
+          }
+        },
+        {
+          "pack": "Corrupted Miao Audio Overhaul",
+          "from": "download",
+          "target": {
+            "mod": "ll-39349"
+          }
+        },
+        {
+          "pack": "@zzz_saved_value_bug_fix.pack",
+          "from": "steam",
+          "steamId": "3509062568",
+          "target": {
+            "mod": "steam-3509062568"
+          }
+        },
+        {
+          "pack": "Easy Cross Faction Confederation Scripts",
+          "from": "download",
+          "target": {
+            "mod": "ll-34242"
+          }
+        },
+        {
+          "pack": "@zeta_elf_expansion.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-61"
+          }
+        },
+        {
+          "pack": "@valkryie_legions.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-250"
+          }
+        },
+        {
+          "pack": "pleasurePikes.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-195"
+          }
+        },
+        {
+          "pack": "jhc_north_pro_demons_v1.5.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-24600"
+          }
+        },
+        {
+          "pack": "Corrupted_Cathay_Miao_flag.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-37353"
+          }
+        },
+        {
+          "pack": "!AHigh elves _WGX.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-46549"
+          }
+        },
+        {
+          "pack": "@Eliu_Art_Replacer.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-239"
+          }
+        },
+        {
+          "pack": "Corrupted_elves.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-277"
+          }
+        },
+        {
+          "pack": "Miao_Ying_vs_Slaanesh.pack",
+          "from": "steam",
+          "steamId": "2817813739",
+          "target": {
+            "mod": "dc-miao-ying-vs-slaanesh-campaign-balance-ie-and-roc"
+          }
+        },
+        {
+          "pack": "@SistersEnvyCard.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-236"
+          }
+        },
+        {
+          "pack": "@alt_endo_slaanesh_devotee.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-47812"
+          }
+        },
+        {
+          "pack": "Cult_of_Slaanesh_Endo_UnitCard.pack",
+          "from": "steam",
+          "steamId": "3822675029",
+          "target": {
+            "mod": "steam-3822675029"
+          }
+        },
+        {
+          "pack": "Freiya_Trade_Settlements.pack",
+          "from": "steam",
+          "steamId": "2931377022",
+          "target": {
+            "mod": "steam-2931377022"
+          }
+        },
+        {
+          "pack": "_hv_reskin_lod.pack",
+          "from": "steam",
+          "steamId": "2856019044",
+          "target": {
+            "mod": "steam-2856019044"
+          }
+        },
+        {
+          "pack": "Dragon Mounts for High Elves Legendary Lords",
+          "from": "steam",
+          "steamId": "2854699238",
+          "target": {
+            "mod": "steam-2854699238"
+          }
+        },
+        {
+          "pack": "@xou_bst_minos.pack",
+          "from": "steam",
+          "steamId": "2845365747",
+          "target": {
+            "mod": "steam-2845365747"
+          }
+        },
+        {
+          "pack": "MfHighElfSkills.pack",
+          "from": "steam",
+          "steamId": "3258529495",
+          "target": {
+            "mod": "steam-3258529495"
+          }
+        },
+        {
+          "pack": "@elf ice witch plus.pack",
+          "from": "steam",
+          "target": {
+            "mod": "steam-3804202775"
+          }
+        },
+        {
+          "pack": "Daughters of Chaos.pack",
+          "from": "steam",
+          "steamId": "2960261916",
+          "target": {
+            "mod": "steam-2960261916"
+          }
+        },
+        {
+          "pack": "@female_unit_cards.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-24914"
+          }
+        },
+        {
+          "pack": "@anime_loading_screens.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-117"
+          }
+        },
+        {
+          "pack": "inq_diplomatic_options.pack",
+          "from": "steam",
+          "steamId": "3032439976",
+          "target": {
+            "mod": "steam-3032439976"
+          }
+        },
+        {
+          "pack": "Removed_Loyalty.pack",
+          "from": "steam",
+          "steamId": "2853058175",
+          "target": {
+            "mod": "steam-2853058175"
+          }
+        },
+        {
+          "pack": "DD_gifts_athel_loren.pack",
+          "from": "steam",
+          "steamId": "2862579213",
+          "target": {
+            "mod": "steam-2862579213"
+          }
+        },
+        {
+          "pack": "morathi_seduce.pack",
+          "from": "steam",
+          "steamId": "2866300430",
+          "target": {
+            "mod": "steam-2866300430"
+          }
+        },
+        {
+          "pack": "dragon_breath_for_cathay.pack",
+          "from": "steam",
+          "steamId": "2848577238",
+          "target": {
+            "mod": "steam-2848577238"
+          }
+        },
+        {
+          "pack": "trojan_archer.pack",
+          "from": "steam",
+          "steamId": "2834367065",
+          "target": {
+            "mod": "steam-2834367065"
+          }
+        },
+        {
+          "pack": "Lyla.pack",
+          "from": "steam",
+          "steamId": "3004867930",
+          "target": {
+            "mod": "steam-3004867930"
+          }
+        },
+        {
+          "pack": "@emp_wolf_girls.pack",
+          "from": "steam",
+          "steamId": "3813041953",
+          "target": {
+            "mod": "steam-3813041953"
+          }
+        },
+        {
+          "pack": "@endo_idles.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-293"
+          }
+        },
+        {
+          "pack": "Tits Not Twitch",
+          "from": "download",
+          "target": {
+            "mod": "ll-49991"
+          }
+        },
+        {
+          "pack": "(X)_BattleAngel.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-52245"
+          }
+        },
+        {
+          "pack": "@LK_dark_dafashilingzhu.pack",
+          "from": "steam",
+          "steamId": "3700484893",
+          "target": {
+            "mod": "steam-3700484893"
+          }
+        },
+        {
+          "pack": "@reskin1.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-22"
+          }
+        },
+        {
+          "pack": "@reskin2.pack",
+          "from": "download",
+          "target": {
+            "mod": "nx-22"
+          }
+        },
+        {
+          "pack": "cipher_wef_units.pack",
+          "from": "steam",
+          "steamId": "2985506863",
+          "target": {
+            "mod": "steam-2985506863"
+          }
+        },
+        {
+          "pack": "@z_double_skill_points.pack",
+          "from": "steam",
+          "steamId": "2789845079",
+          "target": {
+            "mod": "steam-2789845079"
+          }
+        },
+        {
+          "pack": "@endo_slaanesh_devotee.pack",
+          "from": "steam",
+          "steamId": "3687970360",
+          "target": {
+            "mod": "steam-3687970360"
+          }
+        },
+        {
+          "pack": "!!!druchii_cosmetics.pack",
+          "from": "steam",
+          "steamId": "3497444261",
+          "target": {
+            "mod": "steam-3497444261"
+          }
+        },
+        {
+          "pack": "Daughter of Chaos 2.pack",
+          "from": "steam",
+          "steamId": "3139730079",
+          "target": {
+            "mod": "steam-3139730079"
+          }
+        },
+        {
+          "pack": "!!Cultist_Reborn.pack",
+          "from": "steam",
+          "steamId": "2860203054",
+          "target": {
+            "mod": "steam-2860203054"
+          }
+        },
+        {
+          "pack": "!cure_for_alopecia.pack",
+          "from": "steam",
+          "steamId": "2791323616",
+          "target": {
+            "mod": "steam-2791323616"
+          }
+        },
+        {
+          "pack": "@endo_cultist_of_slaanesh.pack",
+          "from": "steam",
+          "steamId": "3698854498",
+          "target": {
+            "mod": "steam-3698854498"
+          }
+        },
+        {
+          "pack": "!audio_mixer.pack",
+          "from": "steam",
+          "steamId": "3149445431",
+          "target": {
+            "mod": "steam-3149445431"
+          }
+        },
+        {
+          "pack": "li_morathi_progression_workshop.pack",
+          "from": "steam",
+          "steamId": "3471237702",
+          "target": {
+            "mod": "ll-23925"
+          }
+        },
+        {
+          "pack": "Selector_Submod_for_Lazy's_Corrupted_ReSkins.pack",
+          "from": "download",
+          "target": {
+            "mod": "ll-32460"
+          }
+        },
+        {
+          "pack": "@LK_dark_dafashilingzhuyingwen.pack",
+          "from": "steam",
+          "steamId": "3700484699",
+          "target": {
+            "mod": "steam-3700484699"
+          }
+        }
+      ],
+      "community": {
+        "base": "readman-alarielle-early",
+        "game": "9.0.5",
+        "own": [
+          "Workshop item 2789844959",
+          "Workshop item 3819336747",
+          "Workshop item 3827234491"
+        ],
+        "reviewed": false
       }
     },
     {
