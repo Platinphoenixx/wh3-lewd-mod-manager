@@ -1,0 +1,40 @@
+{
+ "_comment": "The Old World Campaign (Workshop 3081800026), suggested by a player in issue #16; curated 2026-11-24 from its Workshop page so it is filed as a general (non-adult) mod.",
+ "mods": [
+  {
+   "id": "steam-3081800026",
+   "name": "The Old World Campaign",
+   "authors": [
+    "ChaosRobie"
+   ],
+   "kind": "campaign",
+   "tags": [
+    "general",
+    "campaign",
+    "map"
+   ],
+   "summary": "A new campaign map of the Old World with 1317 settlements and many new factions, all playable.",
+   "description": "A new campaign on a map of the Old World: 1317 settlements and many new factions, all of them playable. Where possible, the game's own mechanics are carried over to the new map. Smaller sub-campaigns on the same map (Classic, Darklands) run faster and work in multiplayer; a visual Devastation add-on is optional.\n\nA normal (non-adult) campaign mod; it was suggested by a player (issue #16).",
+   "packs": [],
+   "relations": [],
+   "sources": {
+    "steam": [
+     {
+      "id": "3081800026",
+      "title": "The Old World Campaign"
+     }
+    ]
+   },
+   "installNotes": [
+    "Needs MIXER – Mixu's Unlocker (Workshop item 2859968660), as its Workshop page says."
+   ],
+   "curation": {
+    "lastChecked": "2026-11-24",
+    "confidence": "medium",
+    "openQuestions": [
+     "Pack name and compatibility with the lewd campaign mods not checked (not downloaded)."
+    ]
+   }
+  }
+ ]
+}
