@@ -54,6 +54,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
         <section>
           <h2>Proton</h2>
           <p className="small muted">
+            This is the Linux version – the "Potentially Shitty Vibecoded Version" (beta): if something does not work, please tell us.
             On Linux the game runs through Steam's Proton. The app starts it with the Proton Steam uses for the game. Choose
             another Proton folder only if the game does not start that way.
           </p>

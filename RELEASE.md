@@ -14,7 +14,7 @@ release is all it takes for players to hear about it.
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
 6. The *Linux build* workflow starts by itself when the release is published and attaches the AppImage
-   (`WH3-Lewd-Mod-Manager-<version>-x86_64.AppImage`) a few minutes later. Started by hand (Actions → Linux build →
+   (`WH3-Lewd-Mod-Manager-<version>-Linux-Potentially-Shitty-Vibecoded-Version-x86_64.AppImage`, the Linux beta's name) a few minutes later. Started by hand (Actions → Linux build →
    Run workflow) it builds one for testers without a release.
 
 ## Notes for 0.2.3

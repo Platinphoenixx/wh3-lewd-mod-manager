@@ -1,4 +1,4 @@
-# The Linux version (AppImage, beta). Built on Linux, so the programs it carries (7-Zip, Steam's library) keep their
+# The Linux version (AppImage, beta, the "Potentially Shitty Vibecoded Version"). Built on Linux, so the programs it carries (7-Zip, Steam's library) keep their
 # "executable" mark, which a build on Windows would lose. A published release gets the AppImage attached by itself;
 # started by hand, the AppImage is kept as the run's artifact for testers.
 name: Linux build
@@ -42,6 +42,6 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
-          name: wh3-lewd-mod-manager-linux
+          name: wh3-lewd-mod-manager-linux-potentially-shitty-vibecoded-version
           path: app/release/*.AppImage
           retention-days: 30

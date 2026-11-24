@@ -89,7 +89,7 @@
       "icon": "build/icon.png",
       "category": "Game",
       "synopsis": "Catalog, profiles and installer for Total War: Warhammer 3 lewd mods",
-      "artifactName": "WH3-Lewd-Mod-Manager-${version}-x86_64.${ext}",
+      "artifactName": "WH3-Lewd-Mod-Manager-${version}-Linux-Potentially-Shitty-Vibecoded-Version-x86_64.${ext}",
       "files": [
         "!node_modules/7zip-bin/{mac,win}/**",
         "!node_modules/steamworks.js/dist/{osx,win64}/**"

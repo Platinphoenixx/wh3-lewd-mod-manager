@@ -43,7 +43,7 @@ Steam Workshop, Nexus Mods and Discord.
 2. The app is not code-signed, so Windows SmartScreen may warn on first start: *More info → Run anyway*.
 3. Start it; it finds Steam and the game by itself (otherwise choose the game folder in *Settings*).
 
-**Linux (beta):** take the **AppImage** from the same release, make it executable (`chmod +x`) and start it. The game
+**Linux – the "Potentially Shitty Vibecoded Version" (beta):** take the **AppImage** from the same release, make it executable (`chmod +x`) and start it. The game
 runs through Steam's Proton as usual; the app starts it with the Proton Steam uses for the game (*Settings → Proton*
 shows which, and lets you choose another). Start the game once from Steam first, so Proton sets it up. This version is
 new: if the game starts without your mods, please tell us (and what `launch.log` in the app's data folder,
