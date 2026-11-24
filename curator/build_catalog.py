@@ -494,6 +494,21 @@ def apply_community(mods: dict, steam: dict | None = None) -> None:
 AUTO_FLAGS, AUTO_VOTES, AUTO_SHARE = 5, 5, 0.8
 
 
+def character_avoid(man: dict, mods: dict, presets: list) -> None:
+    """manual.json `characterAvoid`: mods that run against playing a character (the Slaanesh Legion packs make Azazel a
+    woman with Dechala's voice) are avoided by every list that plays that character – templates, guides and the setups
+    players shared – so no size and no suggestion brings them in; a player can still add one by hand."""
+    for character, items in (man.get("characterAvoid") or {}).items():
+        if character.startswith("_"):
+            continue
+        rules = [x for x in items if x["target"].get("mod") in mods]
+        for p in presets:
+            if not any(character.lower() == c.lower() for c in p.get("playAs") or []):
+                continue
+            have = {(x["target"].get("mod")) for x in p.get("avoid") or []}
+            p["avoid"] = (p.get("avoid") or []) + [x for x in rules if x["target"]["mod"] not in have]
+
+
 def wiki_spellings(mods: dict, presets: list) -> None:
     """Lords' names as the game writes them (work/vanilla-lords.json, from the Total War wiki): the sources spell them
     "Bel'akor", "Belakor" or "N'kari"; a name in a playable character or a template's name that differs from a lord's only
@@ -1646,6 +1661,7 @@ def main():
     presets += vanilla
 
     wiki_spellings(mods, presets)
+    character_avoid(man, mods, presets)
     rule_flags = apply_rule_flags(mods, presets)
 
     catalog = {

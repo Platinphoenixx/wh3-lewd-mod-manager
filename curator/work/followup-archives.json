@@ -1378,6 +1378,24 @@
         "cth_terracotta_sentinel_ror"
       ],
       "_note": "Pack comparison (2026-11-12): the base game's Cathay unit models it replaces (variant mesh definitions); reskins that share one dress the same units."
+    },
+    {
+      "id": "nx-41",
+      "knownIssues+": [
+        "The Slaanesh Legion packs also replace Azazel: a female model, new portraits and Dechala's voice lines (they set his voice to Dechala's). Lists that play Azazel avoid this mod. The Succubus packs leave him alone."
+      ]
+    },
+    {
+      "id": "nx-45",
+      "knownIssues+": [
+        "The Slaanesh Legion packs also replace Azazel: a female model, new portraits and Dechala's voice lines (they set his voice to Dechala's). Lists that play Azazel avoid this mod."
+      ]
+    },
+    {
+      "id": "nx-22",
+      "knownIssues+": [
+        "The all-in-one pack (@Total Warmaidens III.pack) also replaces Azazel: a female model, new portraits and Dechala's voice lines. The resource packs (@reskin1/@reskin2) do not."
+      ]
     }
   ]
 }

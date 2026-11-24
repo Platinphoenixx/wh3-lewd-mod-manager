@@ -396,6 +396,9 @@ over all layers – fix texts there.
   version of a mod ("with the full version") names that version's pack in `manual.json` `conditionPacks`, so the build
   sets `Relation.whenPack` and the app counts the conflict or requirement whenever that pack is loaded. Being popular in
   lists for other characters (camera or weather mods) is no reason to add a mod to a setup.
+  `manual.json` `characterAvoid` does the same for every list that plays a character (templates, guides, shared setups): the
+  Slaanesh Legion packs of Succubus Legion and League of Evil Girls make Azazel a woman with Dechala's voice (read from the packs),
+  so Azazel's lists avoid both mods (`character_avoid` in the build).
   `manual.json` `playCoverage` lists the communities that must stay reachable from Play (one of their mods in a template);
   `catalog-data.test.ts` fails when one is missing.
 - `curator/work/preset-desc.json` `theme`: a template about a group rather than one character ("Daemons of Slaanesh");

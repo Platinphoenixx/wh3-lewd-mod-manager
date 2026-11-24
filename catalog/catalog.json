@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T00:06:27+00:00",
+  "generatedAt": "2026-11-24T10:51:12+00:00",
   "sources": [
     {
       "source": "loverslab",
@@ -34207,6 +34207,9 @@
       "installNotes": [
         "The download also holds the Slaanesh Legion packs; they are the same files as Succubus Legion of the Dark Princess (listed there)."
       ],
+      "knownIssues": [
+        "The Slaanesh Legion packs also replace Azazel: a female model, new portraits and Dechala's voice lines (they set his voice to Dechala's). Lists that play Azazel avoid this mod."
+      ],
       "updated": "2026-09-24",
       "changesData": true,
       "confirmed": "2026-11-15"
@@ -56315,7 +56318,8 @@
         "note": "The author: put the Warmaidens packs at the top of the load order (highest priority)."
       },
       "knownIssues": [
-        "Changes skeletons and animations of Chaos Warriors and Chosen units, which can conflict with other mods."
+        "Changes skeletons and animations of Chaos Warriors and Chosen units, which can conflict with other mods.",
+        "The Slaanesh Legion packs also replace Azazel: a female model, new portraits and Dechala's voice lines (they set his voice to Dechala's). Lists that play Azazel avoid this mod. The Succubus packs leave him alone."
       ],
       "support": [
         {
@@ -58615,6 +58619,7 @@
         "Conflicts with mods that change the game's unit models (reskins), give heroes new mounts or change unit statistics (for example removing the elite unit limit).",
         "Set Unit Detail to Ultra in the graphics settings; lower settings can stretch limbs or lose textures.",
         "Most models missing: the resource pack is not active. With a DLC unlocker, turn off the blood packs.",
+        "The all-in-one pack (@Total Warmaidens III.pack) also replaces Azazel: a female model, new portraits and Dechala's voice lines. The resource packs (@reskin1/@reskin2) do not.",
         "The merged Community Beastmen mod is not compatible with the Warmaidens beastmen faction pack or the complete conversion (elf-based units such as Elf Breakers become invisible, minotaurs and skeletons break). Use only the individual race packs plus the resource pack, with Community Beastmen high in the load order.",
         "Conflicts with Lazy's Miao Ying reskins (bugged or invisible bodies), because Warmaidens changes an emission toggle that Lazy's Miao uses. Load Lazy's zli_ reskin packs above the Warmaidens packs, whatever the generic top-of-the-list advice says.",
         "With the resource pack (@reskin1/@reskin2) active, Miao Ying's face can be bugged in Azazel's Realm and Miao corruption. Fix: open zli_miaoying_reskins in the Asset Editor and set the face shader of each model from Emissive to Default."
@@ -70732,7 +70737,21 @@
         "result": "main menu",
         "game": "9.0.5",
         "date": "2026-11-14"
-      }
+      },
+      "avoid": [
+        {
+          "target": {
+            "mod": "nx-41"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign. The mod's smaller Succubus pack leaves him alone; add that one by hand if you want the Slaanesh warmaidens."
+        },
+        {
+          "target": {
+            "mod": "nx-45"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign."
+        }
+      ]
     },
     {
       "id": "kpw-alarielle",
@@ -71402,7 +71421,21 @@
         "result": "main menu",
         "game": "9.0.5",
         "date": "2026-11-14"
-      }
+      },
+      "avoid": [
+        {
+          "target": {
+            "mod": "nx-41"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign. The mod's smaller Succubus pack leaves him alone; add that one by hand if you want the Slaanesh warmaidens."
+        },
+        {
+          "target": {
+            "mod": "nx-45"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign."
+        }
+      ]
     },
     {
       "id": "kpw-morathi",
@@ -72589,7 +72622,21 @@
         "result": "main menu",
         "game": "9.0.5",
         "date": "2026-11-14"
-      }
+      },
+      "avoid": [
+        {
+          "target": {
+            "mod": "nx-41"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign. The mod's smaller Succubus pack leaves him alone; add that one by hand if you want the Slaanesh warmaidens."
+        },
+        {
+          "target": {
+            "mod": "nx-45"
+          },
+          "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign."
+        }
+      ]
     },
     {
       "id": "derived-ll-24004",

@@ -1,4 +1,21 @@
 {
+  "characterAvoid": {
+    "_comment": "Mods that run against playing a character; every list that plays the character avoids them (build_catalog.py character_avoid).",
+    "Azazel": [
+      {
+        "target": {
+          "mod": "nx-41"
+        },
+        "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign. The mod's smaller Succubus pack leaves him alone; add that one by hand if you want the Slaanesh warmaidens."
+      },
+      {
+        "target": {
+          "mod": "nx-45"
+        },
+        "note": "Its Slaanesh Legion packs turn Azazel himself into a woman – her own model, portraits and Dechala's voice lines (read from the packs) – which runs against an Azazel campaign."
+      }
+    ]
+  },
   "conditionPacks": {
     "_comment": "The pack behind a version's wording in a relation's condition, so the app can check it (build: Relation.whenPack).",
     "ll-46165": {"full version": "new_community_beastmen.pack", "main version": "new_community_beastmen.pack", "light version": "community_beastmen_light.pack"}
