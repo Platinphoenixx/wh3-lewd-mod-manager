@@ -4,9 +4,9 @@ import { copyFile, mkdir, mkdtemp, readdir, readFile, rename, rm, stat } from 'n
 import { basename, extname, join } from 'node:path'
 import { promisify } from 'node:util'
 import { app, BrowserWindow, session, shell, type DownloadItem } from 'electron'
-import { path7za } from '7zip-bin'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { readJson, writeJson } from './store'
+import { sevenZip } from './sevenzip'
 import { catalogPackName, pickDownloads, type DownloadRow, type FileHint, hintsLeft } from '@shared/install'
 import type { PackRef } from '@catalog/schema'
 import type { LoversLabJob, LoversLabProgress } from '@shared/api'
@@ -55,7 +55,7 @@ async function extract(archive: string, target: string): Promise<void> {
     for (const _ of extractor.extract().files) void _
   } else {
     // 7za keeps archive paths below the target (-o) and refuses absolute/parent paths by default.
-    await run(path7za.replace('app.asar', 'app.asar.unpacked'), ['x', '-y', `-o${target}`, archive], { windowsHide: true })
+    await run(await sevenZip(), ['x', '-y', `-o${target}`, archive], { windowsHide: true })
   }
 }
 

@@ -2,7 +2,7 @@ import { execFile } from 'node:child_process'
 import { appendFile, readdir, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, join } from 'node:path'
 import { promisify } from 'node:util'
-import { path7za } from '7zip-bin'
+import { sevenZip } from './sevenzip'
 import { createExtractorFromFile } from 'node-unrar-js'
 import { app } from 'electron'
 import { readJson, writeJson } from './store'
@@ -26,7 +26,7 @@ async function listArchive(file: string): Promise<{ name: string; size: number }
       .map((h) => ({ name: basename(h.name.replace(/\\/g, '/')), size: h.unpSize }))
   }
   // -slt prints one "Path = …" / "Size = …" block per entry; nothing is extracted.
-  const { stdout } = await run(path7za.replace('app.asar', 'app.asar.unpacked'), ['l', '-slt', '-ba', file], { windowsHide: true, maxBuffer: 64 * 1024 * 1024 })
+  const { stdout } = await run(await sevenZip(), ['l', '-slt', '-ba', file], { windowsHide: true, maxBuffer: 64 * 1024 * 1024 })
   const out: { name: string; size: number }[] = []
   for (const block of stdout.split(/\r?\n\r?\n/)) {
     const path = block.match(/^Path = (.+)$/m)?.[1]

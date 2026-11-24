@@ -194,7 +194,9 @@ community contributions. App UI and catalog texts are English.
     Warhammer3.exe wh3lmm_mods.txt;` with the STEAM_COMPAT_* variables). Workshop folders go into the list as drive Z:
     (`wineDrivePath`); crash reports and the CA launcher's list are read inside the prefix (`gameAppData`). Every start is
     logged to userData/launch.log. The game's version comes from the exe's own version block (`src/shared/pe.ts`), no
-    PowerShell. Untested with the real game on Linux so far.
+    PowerShell. The npm package's 7-Zip for Linux has no "executable" mark and the AppImage is read-only, so
+    `src/main/sevenzip.ts` runs a marked copy in userData/bin (and `build/after-pack.cjs` marks the packed one).
+    Untested with the real game on Linux so far.
     Packs the app installed are matched to their mod via userData/installed.json.
   - Files the player already has (Settings → Files you already have, `Settings.sourceFolders`, default this PC's Downloads):
     `src/main/localfiles.ts` lists the packs below those folders, loose or inside .7z/.zip/.rar archives (7-Zip / unrar

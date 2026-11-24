@@ -16,8 +16,9 @@ release is all it takes for players to hear about it.
 6. Linux (only when it needs a fix, or every few releases – Windows comes first): Actions → *Linux build* → Run workflow
    with the release's tag (e.g. `v0.2.5`) attaches the AppImage
    (`WH3-Lewd-Mod-Manager-<version>-Linux-Potentially-Shitty-Vibecoded-Version-x86_64.AppImage`) a few minutes later;
-   without a tag it only builds one for testers (the run's artifact). Releases without an AppImage say in their notes
-   which release has the current Linux version.
+   without a tag it only builds one for testers (the run's artifact). It builds the branch it is started on (main), so a
+   Linux fix after a release goes onto the newest release without a new Windows build (say so in its notes). Releases
+   without an AppImage say in their notes which release has the current Linux version.
 
 ## Notes for 0.2.4
 

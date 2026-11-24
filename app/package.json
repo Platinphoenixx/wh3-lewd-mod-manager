@@ -52,6 +52,7 @@
         "to": "catalog.json"
       }
     ],
+    "afterPack": "build/after-pack.cjs",
     "asarUnpack": [
       "node_modules/7zip-bin/**",
       "node_modules/steamworks.js/**"

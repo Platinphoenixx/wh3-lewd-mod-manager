@@ -1,7 +1,8 @@
 # The Linux version (AppImage, beta, the "Potentially Shitty Vibecoded Version"). Windows comes first: the Linux version
 # is only rebuilt when it needs a fix or every few releases, so this runs only by hand (Actions → Linux build → Run
-# workflow). With a release tag (e.g. v0.2.5) the AppImage is attached to that release; without one it is kept as the
-# run's artifact for testers. Built on Linux, so the programs it carries (7-Zip, Steam's library) keep their
+# workflow). It builds the branch it is started on (main), so a Linux fix made after a release can go out without a new
+# Windows release: with a release tag (e.g. v0.2.5) the AppImage is attached to that release (replacing one of the same
+# name); without one it is kept as the run's artifact for testers. Built on Linux, so the programs it carries (7-Zip, Steam's library) keep their
 # "executable" mark, which a build on Windows would lose.
 name: Linux build
 
@@ -25,8 +26,6 @@ jobs:
         working-directory: app
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ inputs.tag || github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
