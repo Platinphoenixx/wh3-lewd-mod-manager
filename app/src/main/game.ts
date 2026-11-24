@@ -1,9 +1,10 @@
-import { existsSync } from 'node:fs'
-import { readdir, readFile, stat } from 'node:fs/promises'
+import { existsSync, realpathSync } from 'node:fs'
+import { open, readdir, readFile, stat } from 'node:fs/promises'
+import { homedir } from 'node:os'
 import { join } from 'node:path'
 import type { GameScan, InstalledPack } from '@shared/api'
-import { execFile } from 'node:child_process'
 import { gameBuildFromManifest, gameUpdatedFromManifest } from '@shared/health'
+import { peProductVersion } from '@shared/pe'
 
 export const WH3_APP_ID = '1142710'
 const GAME_DIR = 'Total War WARHAMMER III'
@@ -13,16 +14,41 @@ export function parseLibraryFolders(vdf: string): string[] {
   return [...vdf.matchAll(/"path"\s+"([^"]+)"/g)].map((m) => m[1].replace(/\\\\/g, '\\'))
 }
 
+/**
+ * Where Steam itself is installed. On Linux Steam lives in the home folder (the native package, the Flatpak, and the
+ * ~/.steam links to either); links that point to the same folder count once.
+ */
 export function steamRoots(): string[] {
-  const candidates = [
-    process.env.WH3_STEAM_PATH,
-    process.env['ProgramFiles(x86)'] && join(process.env['ProgramFiles(x86)'], 'Steam'),
-    process.env.ProgramFiles && join(process.env.ProgramFiles, 'Steam')
-  ]
-  return candidates.filter((p): p is string => !!p && existsSync(p))
+  const home = homedir()
+  const candidates = process.platform === 'win32'
+    ? [
+      process.env.WH3_STEAM_PATH,
+      process.env['ProgramFiles(x86)'] && join(process.env['ProgramFiles(x86)'], 'Steam'),
+      process.env.ProgramFiles && join(process.env.ProgramFiles, 'Steam')
+    ]
+    : [
+      process.env.WH3_STEAM_PATH,
+      join(home, '.steam', 'steam'),
+      join(home, '.local', 'share', 'Steam'),
+      join(home, '.steam', 'root'),
+      join(home, '.var', 'app', 'com.valvesoftware.Steam', '.local', 'share', 'Steam'),
+      join(home, '.var', 'app', 'com.valvesoftware.Steam', 'data', 'Steam')
+    ]
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const p of candidates) {
+    if (!p || !existsSync(join(p, 'steamapps'))) continue
+    let real = p
+    try { real = realpathSync(p) } catch { /* keep as given */ }
+    if (seen.has(real)) continue
+    seen.add(real)
+    out.push(real)
+  }
+  return out
 }
 
-async function libraries(): Promise<string[]> {
+/** Every Steam library folder (the Steam folders and the libraries their libraryfolders.vdf lists). */
+export async function libraries(): Promise<string[]> {
   // WH3LMM_STEAM_LIBRARY: use only this Steam library (tests as a player with a fresh game and no Workshop items).
   if (process.env.WH3LMM_STEAM_LIBRARY) return [process.env.WH3LMM_STEAM_LIBRARY]
   const libs = new Set<string>()
@@ -116,16 +142,24 @@ export async function scanGame(gamePathOverride?: string, installed: { pack: str
 
 let versionCache: { path: string; mtime: number; version?: string } | null = null
 
-/** Product version of the game's exe ("9.0.4"), read by Windows once per exe file version. */
+/** Product version of the game's exe ("9.0.4"), read from the exe's own version block once per exe file version. */
 async function exeVersion(exe: string): Promise<string | undefined> {
   const mtime = (await stat(exe).catch(() => null))?.mtimeMs
   if (!mtime) return undefined
   if (versionCache?.path === exe && versionCache.mtime === mtime) return versionCache.version
-  const raw = await new Promise<string>((resolve) =>
-    execFile('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', `(Get-Item -LiteralPath '${exe.replace(/'/g, "''")}').VersionInfo.ProductVersion`],
-      { timeout: 15000, windowsHide: true }, (_e, out) => resolve(String(out ?? '').trim())))
-  // "9.0.4.0" -> "9.0.4"
-  const version = /^\d+(\.\d+)*$/.test(raw) ? raw.split('.').slice(0, 3).join('.') : undefined
+  let version: string | undefined
+  const file = await open(exe, 'r').catch(() => null)
+  if (file) {
+    try {
+      version = await peProductVersion(async (offset, length) => {
+        const buf = Buffer.alloc(length)
+        const { bytesRead } = await file.read(buf, 0, length, offset)
+        return buf.subarray(0, bytesRead)
+      })
+    } catch { /* unreadable: no version */ } finally {
+      await file.close()
+    }
+  }
   versionCache = { path: exe, mtime, version }
   return version
 }

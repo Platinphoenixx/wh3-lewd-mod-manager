@@ -17,11 +17,11 @@ export interface LaunchPlan {
  * per Workshop folder, then one `mod` line per pack in priority order, the first line winning.
  * Packs in the game's data folder need no working directory.
  */
-export function buildModList(packs: InstalledPack[]): string {
+export function buildModList(packs: InstalledPack[], gamePath: (path: string) => string = (path) => path): string {
   const dirs: string[] = []
   for (const p of packs) {
     if (p.source !== 'workshop') continue
-    const dir = p.path.replace(/[\\/][^\\/]+$/, '').replace(/\\/g, '/')
+    const dir = gamePath(p.path.replace(/[\\/][^\\/]+$/, '')).replace(/\\/g, '/')
     if (!dirs.includes(dir)) dirs.push(dir)
   }
   const seen = new Set<string>()

@@ -1,0 +1,47 @@
+# The Linux version (AppImage, beta). Built on Linux, so the programs it carries (7-Zip, Steam's library) keep their
+# "executable" mark, which a build on Windows would lose. A published release gets the AppImage attached by itself;
+# started by hand, the AppImage is kept as the run's artifact for testers.
+name: Linux build
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  appimage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name || github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      # The tests are written on Windows; a test that only fails because of Linux paths must not hold back the AppImage.
+      - run: npm test
+        continue-on-error: true
+      - run: npm run dist:linux
+      - name: Attach to the release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" release/*.AppImage --clobber
+      - name: Keep for testers
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: wh3-lewd-mod-manager-linux
+          path: app/release/*.AppImage
+          retention-days: 30

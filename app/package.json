@@ -10,7 +10,8 @@
     "start": "electron-vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
     "test": "vitest run",
-    "dist": "electron-vite build && electron-builder --win --publish never"
+    "dist": "electron-vite build && electron-builder --win --publish never",
+    "dist:linux": "electron-vite build && electron-builder --linux --publish never"
   },
   "dependencies": {
     "7zip-bin": "5.2.0",
@@ -43,9 +44,7 @@
     },
     "files": [
       "out/**",
-      "package.json",
-      "!node_modules/7zip-bin/{mac,linux}/**",
-      "!node_modules/steamworks.js/dist/{osx,linux64}/**"
+      "package.json"
     ],
     "extraResources": [
       {
@@ -72,7 +71,29 @@
           ]
         }
       ],
-      "icon": "build/icon.ico"
+      "icon": "build/icon.ico",
+      "files": [
+        "!node_modules/7zip-bin/{mac,linux}/**",
+        "!node_modules/steamworks.js/dist/{osx,linux64}/**"
+      ]
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "category": "Game",
+      "synopsis": "Catalog, profiles and installer for Total War: Warhammer 3 lewd mods",
+      "artifactName": "WH3-Lewd-Mod-Manager-${version}-x86_64.${ext}",
+      "files": [
+        "!node_modules/7zip-bin/{mac,win}/**",
+        "!node_modules/steamworks.js/dist/{osx,win64}/**"
+      ]
     },
     "nsis": {
       "oneClick": false,

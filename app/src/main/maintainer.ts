@@ -6,7 +6,7 @@ import type { FlagDecision, MaintainerStatus, ReviewItem } from '@shared/api'
 
 /**
  * Maintainer access: a GitHub token the maintainer enters in Settings (fine-grained, issues of the catalog repository).
- * It is kept encrypted with Windows' own protection (safeStorage) and only ever sent to api.github.com. With it the app
+ * It is kept encrypted with the system's own protection (safeStorage; on Linux a keyring) and only ever sent to api.github.com. With it the app
  * lists the contributions and shared setups waiting for review, and accepts (label "accepted" – the repository's
  * workflow does the rest) or rejects them (closed with a comment).
  */
@@ -15,8 +15,19 @@ const REVIEW_LABELS = ['flag', 'setup', 'fix', 'new-mod', 'feedback', 'rule', 'c
 // Tests point this at a local fake (WH3LMM_GITHUB_API=http://127.0.0.1:…); never set for players.
 const API = process.env.WH3LMM_GITHUB_API || 'https://api.github.com'
 
+/**
+ * Whether the token can be kept protected: on Windows by the system, on Linux only with a keyring (GNOME Keyring,
+ * KWallet); without one Electron falls back to a fixed key ("basic_text"), and the token is not stored.
+ */
+function canProtect(): boolean {
+  if (!safeStorage.isEncryptionAvailable()) return false
+  if (process.platform !== 'linux') return true
+  const backend = safeStorage.getSelectedStorageBackend()
+  return backend !== 'basic_text' && backend !== 'unknown'
+}
+
 async function token(): Promise<string | null> {
-  if (!existsSync(FILE()) || !safeStorage.isEncryptionAvailable()) return null
+  if (!existsSync(FILE()) || !canProtect()) return null
   return safeStorage.decryptString(await readFile(FILE()))
 }
 
@@ -38,7 +49,13 @@ async function github(repo: string, path: string, init: { method?: string; body?
 
 /** Stores the token after GitHub accepted it for reading the repository's issues. */
 export async function setToken(repo: string, t: string): Promise<MaintainerStatus> {
-  if (!safeStorage.isEncryptionAvailable()) return { hasToken: false, ok: false, message: 'Windows cannot encrypt it on this PC; not stored.' }
+  if (!canProtect()) {
+    return {
+      hasToken: false, ok: false, message: process.platform === 'linux'
+        ? 'No keyring (GNOME Keyring or KWallet) to keep it protected on this PC; not stored.'
+        : 'Windows cannot encrypt it on this PC; not stored.'
+    }
+  }
   try {
     await github(repo, '/issues?per_page=1', {}, t.trim())
   } catch (e) {

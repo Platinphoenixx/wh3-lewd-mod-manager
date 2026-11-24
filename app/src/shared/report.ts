@@ -66,7 +66,10 @@ export function anonymize(text: string, ctx: { home?: string; gamePath?: string 
   for (const w of ctx.workshopPaths ?? []) swap(w, '<workshop>')
   swap(ctx.gamePath, '<game>')
   swap(ctx.home, '<user folder>')
-  return out.replace(/([A-Za-z]:[\\/]Users[\\/])[^\\/\s]+/gi, '$1<user>')
+  // Windows user folders; Linux home folders, also as the game sees them under Proton (Z:/home/<name>).
+  return out
+    .replace(/([A-Za-z]:[\\/]Users[\\/])[^\\/\s]+/gi, '$1<user>')
+    .replace(/(^|[\s"'(=:\\/])(home[\\/])(?!<user>)[^\\/\s"')]+/g, '$1$2<user>')
 }
 
 export interface ReportOptions {

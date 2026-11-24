@@ -186,6 +186,15 @@ community contributions. App UI and catalog texts are English.
     write `wh3lmm_mods.txt` (add_working_directory per Workshop folder, `mod "x.pack";` in priority
     order, first line wins – confirmed in game) and start `Warhammer3.exe wh3lmm_mods.txt;` with
     `SteamAppId` set (without it the game restarts through Steam and the CA launcher drops the list).
+    Linux (beta, `src/main/proton.ts` + `src/shared/proton.ts`, tested): the game is the Windows game under Proton; the app
+    finds Steam in the home folder (native, Flatpak, ~/.steam links), the Proton Steam uses for the game (config.vdf
+    `CompatToolMapping`, the game's entry, else "0"; Valve's in steamapps/common, others in compatibilitytools.d; or
+    `Settings.protonPath`), the runtime its toolmanifest asks for (sniper's `_v2-entry-point`) and the prefix
+    (steamapps/compatdata/1142710), and runs what Steam runs (`… --verb=waitforexitandrun -- proton waitforexitandrun
+    Warhammer3.exe wh3lmm_mods.txt;` with the STEAM_COMPAT_* variables). Workshop folders go into the list as drive Z:
+    (`wineDrivePath`); crash reports and the CA launcher's list are read inside the prefix (`gameAppData`). Every start is
+    logged to userData/launch.log. The game's version comes from the exe's own version block (`src/shared/pe.ts`), no
+    PowerShell. Untested with the real game on Linux so far.
     Packs the app installed are matched to their mod via userData/installed.json.
   - Files the player already has (Settings → Files you already have, `Settings.sourceFolders`, default this PC's Downloads):
     `src/main/localfiles.ts` lists the packs below those folders, loose or inside .7z/.zip/.rar archives (7-Zip / unrar
@@ -269,7 +278,9 @@ community contributions. App UI and catalog texts are English.
     templates name current mods and their own packs once, contain every strict requirement of their mods and no
     conflict, and no preselected choice replaces or conflicts with a template mod. Run `npm test` after every build.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
-    (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md). `src/main/appUpdate.ts` asks
+    (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md); `npm run dist:linux` builds the
+    AppImage, on Linux only (`.github/workflows/release-linux.yml` attaches it to every published release, or keeps it as an
+    artifact when started by hand). `src/main/appUpdate.ts` asks
     GitHub's latest release at most daily and the app shows a card when it is newer; it never updates itself.
     Settings show the version with the build date and commit (`__BUILD_INFO__`, set in `electron.vite.config.ts`).
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.

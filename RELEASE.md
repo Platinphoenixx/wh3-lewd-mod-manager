@@ -13,6 +13,9 @@ release is all it takes for players to hear about it.
    gh release create v0.2.0 app/release/WH3-Lewd-Mod-Manager-Setup-0.2.0.exe app/release/WH3-Lewd-Mod-Manager-0.2.0-portable.exe --title "0.2.0" --notes-file notes.md
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
+6. The *Linux build* workflow starts by itself when the release is published and attaches the AppImage
+   (`WH3-Lewd-Mod-Manager-<version>-x86_64.AppImage`) a few minutes later. Started by hand (Actions → Linux build →
+   Run workflow) it builds one for testers without a release.
 
 ## Notes for 0.2.3
 

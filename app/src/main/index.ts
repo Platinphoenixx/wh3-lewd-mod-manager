@@ -19,6 +19,7 @@ import type { LocalMatch, LocalScan } from '@shared/localfiles'
 import { scanGame } from './game'
 import { cachedPackIndex, packConflicts, packFacts, readPackFile } from './pack'
 import { launchGame } from './launch'
+import { gameAppData, protonFor } from './proton'
 import { checkAppUpdate } from './appUpdate'
 import { accept, clearToken, decideFlag, listReview, reject, setToken, status as maintainerStatus } from './maintainer'
 import { contributionStatus } from './contribStatus'
@@ -145,7 +146,7 @@ ipcMain.handle('steam:subscribe', (e, ids: string[]) => subscribeWorkshop(ids.fi
 // The snapshot of what was started is kept for problem reports; the renderer hears when the game closes.
 ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapshot) => {
   const startedAt = Date.now()
-  const r = await launchGame(await currentScan(), paths, (ranMs, code) => {
+  const r = await launchGame(await currentScan(), paths, (await getSettings()).protonPath, (ranMs, code) => {
     void dbStopSince(startedAt).then((dbStop) => !e.sender.isDestroyed() && e.sender.send('game:exited', { startedAt, ranMs, code, dbStop }))
   })
   if (r.ok && snapshot) await writeJson('last-launch.json', { ...snapshot, at: startedAt })
@@ -154,7 +155,10 @@ ipcMain.handle('game:launch', async (e, paths: string[], snapshot?: LaunchSnapsh
 // The game's report when it stopped while loading its database – only one written since the app started it.
 // WH3LMM_CRASH_DIR points the tests at another folder.
 async function dbStopSince(since: number): Promise<DbStop | undefined> {
-  const dir = process.env.WH3LMM_CRASH_DIR || join(app.getPath('appData'), 'The Creative Assembly', 'Warhammer3', 'crash_report')
+  // On Linux the game writes it inside its Proton prefix.
+  const appData = gameAppData(lastScan ?? (await currentScan()), app.getPath('appData'))
+  const dir = process.env.WH3LMM_CRASH_DIR || (appData && join(appData, 'The Creative Assembly', 'Warhammer3', 'crash_report'))
+  if (!dir) return undefined
   const file = join(dir, 'bad_mods_report.txt')
   try {
     const st = await stat(file)
@@ -164,6 +168,11 @@ async function dbStopSince(since: number): Promise<DbStop | undefined> {
     return undefined
   }
 }
+ipcMain.handle('game:proton', async () => {
+  if (process.platform === 'win32') return null
+  const p = await protonFor(await currentScan(), [], (await getSettings()).protonPath)
+  return { proton: p.proton, error: p.error }
+})
 ipcMain.handle('game:lastLaunch',() => readJson<LaunchSnapshot | null>('last-launch.json', null))
 ipcMain.handle('app:version', () => app.getVersion())
 ipcMain.handle('app:build', () => __BUILD_INFO__)
@@ -236,7 +245,9 @@ ipcMain.handle('game:scan', () => currentScan())
 // Mod lists of other launchers on this PC; read only, never changed.
 ipcMain.handle('import:sources', async () => {
   const out: ImportSource[] = []
-  const ca = join(app.getPath('appData'), 'The Creative Assembly', 'Launcher', '20190104-moddata.dat')
+  // The CA launcher is a Windows program (on Linux it ran inside the game's Proton prefix); the WH3 Mod Manager may be native.
+  const caData = gameAppData(await currentScan(), app.getPath('appData'))
+  const ca = caData ? join(caData, 'The Creative Assembly', 'Launcher', '20190104-moddata.dat') : ''
   try {
     const mods = parseCaModdata(await readFile(ca, 'utf8'))
     if (mods.length) out.push({ id: 'ca:current', label: 'CA launcher – current mod list', mods })

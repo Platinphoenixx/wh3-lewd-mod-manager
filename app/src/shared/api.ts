@@ -79,6 +79,8 @@ export interface Settings {
   sourceMove?: boolean
   /** Download the new version when the found copy is older than the catalog's (on unless false). */
   preferNewer?: boolean
+  /** Linux: the Proton folder to start the game with. Unset = the one Steam uses for the game. */
+  protonPath?: string
 }
 
 /** What a problem report sends to the relay (the app adds a random install id). */
@@ -217,6 +219,8 @@ export interface Api {
   launchGame(paths: string[], snapshot?: LaunchSnapshot): Promise<{ ok: boolean; message: string; modListPath?: string }>
   /** What the app started last (load order, template, versions). */
   lastLaunch(): Promise<LaunchSnapshot | null>
+  /** Linux: the Proton the game would start with, or what is missing. Null on Windows (no Proton there). */
+  protonInfo(): Promise<{ proton?: string; error?: string } | null>
   /** Called when a game the app started has closed; returns a function that stops listening. */
   /**
    * `code`: the game's exit code (0 = the player quit it; null when it was ended by a signal). `dbStop`: the game's own

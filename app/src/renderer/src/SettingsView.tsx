@@ -12,6 +12,7 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
   const [build, setBuild] = useState<{ date: string; commit: string } | null>(null)
   const [local, setLocal] = useState<LocalScan | null>(null)
   const [looking, setLooking] = useState(false)
+  const [proton, setProton] = useState<{ proton?: string; error?: string } | null>(null)
 
   useEffect(() => {
     window.api.getSettings().then(setSettings)
@@ -19,6 +20,9 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
     window.api.appBuild().then(setBuild)
     window.api.localFiles().then(setLocal)
   }, [])
+  useEffect(() => {
+    window.api.protonInfo().then(setProton)
+  }, [settings?.protonPath, data.scan?.gamePath])
   if (!settings) return null
 
   const save = async (next: Settings) => {
@@ -46,6 +50,26 @@ export function SettingsView({ onSaved }: { onSaved(s: Settings): void }) {
         </button>{' '}
         {settings.gamePath && <button onClick={() => save({ ...settings, gamePath: undefined })}>Use auto-detection</button>}
       </section>
+      {proton && (
+        <section>
+          <h2>Proton</h2>
+          <p className="small muted">
+            On Linux the game runs through Steam's Proton. The app starts it with the Proton Steam uses for the game. Choose
+            another Proton folder only if the game does not start that way.
+          </p>
+          <p>{proton.proton ?? 'Not found'}</p>
+          {proton.error && <p className="small warn-text">{proton.error}</p>}
+          <button
+            onClick={async () => {
+              const dir = await window.api.pickFolder('Choose a Proton folder (it has a file called "proton")')
+              if (dir) await save({ ...settings, protonPath: dir })
+            }}
+          >
+            Choose Proton folder…
+          </button>{' '}
+          {settings.protonPath && <button onClick={() => save({ ...settings, protonPath: undefined })}>Use Steam's choice</button>}
+        </section>
+      )}
       <section>
         <h2>Catalog updates</h2>
         <p className="small muted">

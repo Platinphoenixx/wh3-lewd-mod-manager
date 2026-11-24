@@ -43,6 +43,12 @@ Steam Workshop, Nexus Mods and Discord.
 2. The app is not code-signed, so Windows SmartScreen may warn on first start: *More info → Run anyway*.
 3. Start it; it finds Steam and the game by itself (otherwise choose the game folder in *Settings*).
 
+**Linux (beta):** take the **AppImage** from the same release, make it executable (`chmod +x`) and start it. The game
+runs through Steam's Proton as usual; the app starts it with the Proton Steam uses for the game (*Settings → Proton*
+shows which, and lets you choose another). Start the game once from Steam first, so Proton sets it up. This version is
+new: if the game starts without your mods, please tell us (and what `launch.log` in the app's data folder,
+`~/.config/wh3-lewd-mod-manager`, says).
+
 A new version is announced inside the app; nothing updates or installs by itself.
 
 ## What the app talks to
@@ -56,7 +62,7 @@ A new version is announced inside the app; nothing updates or installs by itself
   setup or flag becomes a GitHub issue without needing a GitHub account; a vote is only counted; a problem
   report is stored privately and only counted (an error shows up in the catalog once three or more players
   reported it). You see exactly what is sent first; no names, no IP
-  addresses, and Windows user names and folders are removed from reports. See [`relay/`](relay/).
+  addresses, and user names and folders (Windows and Linux) are removed from reports. See [`relay/`](relay/).
 
 ## How the catalog stays current
 
@@ -73,6 +79,7 @@ npm install
 node node_modules/electron/install.js   # if npm skipped Electron's install script
 npm run build && npm run start          # run from source
 npm run dist                            # Windows installer + portable exe in app/release/
+npm run dist:linux                      # Linux AppImage (build it on Linux; the "Linux build" workflow does)
 ```
 
 Catalog pipeline (Python 3.12+): `pip install -r curator/requirements.txt`, then `python curator/update.py`.

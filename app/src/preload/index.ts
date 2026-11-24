@@ -20,6 +20,7 @@ const api: Api = {
   packConflicts: (paths) => ipcRenderer.invoke('packs:conflicts', paths),
   launchGame: (paths, snapshot) => ipcRenderer.invoke('game:launch', paths, snapshot),
   lastLaunch: () => ipcRenderer.invoke('game:lastLaunch'),
+  protonInfo: () => ipcRenderer.invoke('game:proton'),
   onGameExited: (cb) => {
     const listener = (_e: unknown, p: Parameters<typeof cb>[0]) => cb(p)
     ipcRenderer.on('game:exited', listener)
