@@ -13,9 +13,11 @@ release is all it takes for players to hear about it.
    gh release create v0.2.0 app/release/WH3-Lewd-Mod-Manager-Setup-0.2.0.exe app/release/WH3-Lewd-Mod-Manager-0.2.0-portable.exe --title "0.2.0" --notes-file notes.md
    ```
    The catalog is bundled as of the build; the app downloads newer catalogs by itself.
-6. The *Linux build* workflow starts by itself when the release is published and attaches the AppImage
-   (`WH3-Lewd-Mod-Manager-<version>-Linux-Potentially-Shitty-Vibecoded-Version-x86_64.AppImage`, the Linux beta's name) a few minutes later. Started by hand (Actions → Linux build →
-   Run workflow) it builds one for testers without a release.
+6. Linux (only when it needs a fix, or every few releases – Windows comes first): Actions → *Linux build* → Run workflow
+   with the release's tag (e.g. `v0.2.5`) attaches the AppImage
+   (`WH3-Lewd-Mod-Manager-<version>-Linux-Potentially-Shitty-Vibecoded-Version-x86_64.AppImage`) a few minutes later;
+   without a tag it only builds one for testers (the run's artifact). Releases without an AppImage say in their notes
+   which release has the current Linux version.
 
 ## Notes for 0.2.3
 
@@ -35,8 +37,8 @@ so Proton sets it up; the app then starts it with the Proton Steam uses for the 
 lets you choose another). Nobody has played with it on Linux yet: if the game starts without your mods, or not at all,
 please say so on the LoversLab page or Discord and include `~/.config/wh3-lewd-mod-manager/launch.log`.
 
-(The AppImage was added to 0.2.3 afterwards; from the next release on the *Linux build* workflow attaches it. Keep the
-Linux paragraph in the notes of every release while it is a beta.)
+(The AppImage was added to 0.2.3 afterwards. Later releases carry one only when the Linux version was rebuilt; the
+others get one line instead: "Linux: the current Linux version is the AppImage of <version>.")
 
 ## Notes for 0.2.2
 

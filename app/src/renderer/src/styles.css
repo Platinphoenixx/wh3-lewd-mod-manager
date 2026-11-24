@@ -636,6 +636,8 @@ table.entries tr.ask td { background: var(--panel-2); }
 /* pictures: the banner behind Play's heading and a faint one in the corner */
 .content.play { position: relative; }
 .content.play > :not(.look-banner):not(.look-banner-tint):not(.look-credit) { position: relative; z-index: 1; }
+/* each child above is a layer of its own, so the mod search's result list must lift its whole layer over the cards below */
+.content.play > .play-with:not(.look-banner):not(.look-banner-tint):not(.look-credit) { z-index: 3; }
 .look-banner, .look-banner-tint { position: absolute; top: 0; right: 0; width: 62%; height: 300px; pointer-events: none; z-index: 0; }
 .look-banner { background: center 30% / cover no-repeat; opacity: .6; -webkit-mask-image: linear-gradient(to left, #000 30%, transparent), linear-gradient(to bottom, #000 45%, transparent); -webkit-mask-composite: source-in; mask-composite: intersect; }
 .look-banner-tint { background: linear-gradient(to left, rgba(120, 40, 110, .25), transparent 70%); mix-blend-mode: color; }

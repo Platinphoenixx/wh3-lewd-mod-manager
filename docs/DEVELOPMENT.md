@@ -279,8 +279,8 @@ community contributions. App UI and catalog texts are English.
     conflict, and no preselected choice replaces or conflicts with a template mod. Run `npm test` after every build.
   - `src/renderer/` UI; commands in `app/`: `npm run typecheck`, `npm test`, `npm run build`, `npm run start`, `npm run dist`
     (electron-builder: Windows installer + portable exe in app/release/, see RELEASE.md); `npm run dist:linux` builds the
-    AppImage, on Linux only (`.github/workflows/release-linux.yml` attaches it to every published release, or keeps it as an
-    artifact when started by hand). `src/main/appUpdate.ts` asks
+    AppImage, on Linux only (`.github/workflows/release-linux.yml`, started by hand: Windows comes first, the Linux version is
+    rebuilt only for a fix or every few releases; with a release tag it attaches the AppImage there, else keeps it as an artifact). `src/main/appUpdate.ts` asks
     GitHub's latest release at most daily and the app shows a card when it is newer; it never updates itself.
     Settings show the version with the build date and commit (`__BUILD_INFO__`, set in `electron.vite.config.ts`).
   - Release defaults (catalog URL, contribution repo) live in `DEFAULTS` in `src/shared/api.ts`.
