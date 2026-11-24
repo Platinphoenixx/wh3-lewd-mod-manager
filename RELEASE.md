@@ -19,6 +19,20 @@ release is all it takes for players to hear about it.
    without a tag it only builds one for testers (the run's artifact). Releases without an AppImage say in their notes
    which release has the current Linux version.
 
+## Notes for 0.2.4
+
+**WH3 Lewd Mod Manager 0.2.4 – a fix for the mod search on Play. 18+ only.**
+
+- *Play with a mod…*: the list of mods found lay behind the *Continue* cards, so a hit was hard to see or click. It lies
+  on top again.
+- The app reads the game's version straight from the game's own file instead of asking Windows' PowerShell for it.
+
+Windows: not code-signed, so SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
+Linux: the current Linux version (the "Potentially Shitty Vibecoded Version", beta) is the AppImage of
+[0.2.3](https://github.com/Platinphoenixx/wh3-lewd-mod-manager/releases/tag/v0.2.3).
+
 ## Notes for 0.2.3
 
 **WH3 Lewd Mod Manager 0.2.3 – fewer false "missing" and "old" hints. 18+ only.**
