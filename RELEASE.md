@@ -20,6 +20,20 @@ release is all it takes for players to hear about it.
    Linux fix after a release goes onto the newest release without a new Windows build (say so in its notes). Releases
    without an AppImage say in their notes which release has the current Linux version.
 
+## Notes for 0.2.5
+
+**WH3 Lewd Mod Manager 0.2.5 – the catalog stays current while the app is open. 18+ only.**
+
+- The app now asks for a new catalog every two hours instead of once a day, also while it stays open. A newer catalog
+  (new setups players shared, votes, fixes and corrected rules) replaces the shown one without a restart. It is only
+  downloaded when it changed.
+
+Windows: not code-signed, so SmartScreen or your browser may warn once because the app is new
+(*More info → Run anyway* / *Keep*).
+
+Linux: the current Linux version (the "Potentially Shitty Vibecoded Version", beta) is the AppImage of
+[0.2.4](https://github.com/Platinphoenixx/wh3-lewd-mod-manager/releases/tag/v0.2.4).
+
 ## Notes for 0.2.4
 
 **WH3 Lewd Mod Manager 0.2.4 – a fix for the mod search on Play. 18+ only.**
