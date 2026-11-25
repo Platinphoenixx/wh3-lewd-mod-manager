@@ -53,7 +53,7 @@ A new version is announced inside the app; nothing updates or installs by itself
 
 ## What the app talks to
 
-- **GitHub**, at most once a day: the catalog (only when it changed) and whether a new app version exists.
+- **GitHub**: every two hours whether the catalog changed (downloaded only then), and once a day whether a new app version exists.
 - **Steam, LoversLab, Nexus Mods** only when you install a mod (Workshop subscriptions through your Steam client,
   the LoversLab or Nexus download page in a window with your login). Images are loaded from their sites.
 - **Your own folders** only on this PC: the folders you list under *Files you already have* are searched for

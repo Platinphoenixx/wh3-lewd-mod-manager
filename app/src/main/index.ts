@@ -13,7 +13,7 @@ import type { Contribution, NewsSeen, SharedRecord, UserRule } from '@shared/com
 import type { Profile } from '@shared/profile'
 import type { LaunchSnapshot } from '@shared/report'
 import type { SharedSetup } from '@shared/setups'
-import { loadCatalog } from './catalog'
+import { catalogCheckDue, loadCatalog } from './catalog'
 import { scanSourceFolders } from './localfiles'
 import type { LocalMatch, LocalScan } from '@shared/localfiles'
 import { scanGame } from './game'
@@ -62,6 +62,16 @@ setCatalogPacks(async (id) => {
   return id ? mods.find((m) => m.id === id)?.packs ?? [] : mods.flatMap((m) => m.packs)
 })
 ipcMain.handle('catalog:get', async () => (catalogNow = loadCatalog((await getSettings()).catalogUrl || DEFAULTS.catalogUrl)))
+// While the app stays open: a newer catalog when one was published since (null when it is not due or nothing changed).
+ipcMain.handle('catalog:refresh', async (_e, generatedAt: string) => {
+  const url = (await getSettings()).catalogUrl || DEFAULTS.catalogUrl
+  if (!(await catalogCheckDue(url))) return null
+  const next = loadCatalog(url)
+  const c = await next
+  if (c.generatedAt === generatedAt) return null
+  catalogNow = next
+  return c
+})
 ipcMain.handle('rules:list', () => listRules())
 ipcMain.handle('rules:save', (_e, r: UserRule[]) => saveRules(r))
 ipcMain.handle('contributions:list', () => listContributions())

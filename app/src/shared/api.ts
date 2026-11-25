@@ -187,6 +187,8 @@ export const OTHER_APPS: { id: string; name: string; pitch: string; url: string 
 /** What the renderer may call in the main process (exposed by the preload script). */
 export interface Api {
   getCatalog(): Promise<Catalog>
+  /** A newer catalog than the one of this date, when the two-hourly check found one; else null. */
+  refreshCatalog(generatedAt: string): Promise<Catalog | null>
   scanGame(): Promise<GameScan>
   openExternal(url: string): Promise<void>
   listProfiles(): Promise<Profile[]>

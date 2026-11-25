@@ -3,6 +3,7 @@ import type { Api } from '@shared/api'
 
 const api: Api = {
   getCatalog: () => ipcRenderer.invoke('catalog:get'),
+  refreshCatalog: (generatedAt: string) => ipcRenderer.invoke('catalog:refresh', generatedAt),
   scanGame: () => ipcRenderer.invoke('game:scan'),
   openExternal: (url) => ipcRenderer.invoke('shell:openExternal', url),
   listProfiles: () => ipcRenderer.invoke('profiles:list'),

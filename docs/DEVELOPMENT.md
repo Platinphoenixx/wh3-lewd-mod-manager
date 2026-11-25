@@ -8,8 +8,8 @@ community contributions. App UI and catalog texts are English.
 
 - `catalog/catalog.json` – the generated catalog the app reads; types in `catalog/schema.ts`.
 - `app/` – Electron 45 + electron-vite + React 19 + TypeScript.
-  - `src/main/` game/Workshop detection and pack scan (`game.ts`), catalog loading with daily ETag update
-    check (`catalog.ts`), JSON storage of profiles/settings/rules/contributions in the app's userData (`store.ts`)
+  - `src/main/` game/Workshop detection and pack scan (`game.ts`), catalog loading with an ETag update
+    check every two hours, also while the app stays open (`catalog.ts`, `catalog:refresh`; a newer catalog replaces the shown one quietly), JSON storage of profiles/settings/rules/contributions in the app's userData (`store.ts`)
   - "Play" (the start tab, `renderer/src/PlayView.tsx` + `src/shared/setups.ts`, tested): the guided way in. Templates
     are grouped by character ("Play as", the first playAs, spellings joined; lords' names take the game's spelling from
     `curator/work/vanilla-lords.json`, `wiki_spellings` in the build) or by `theme`; a character's card names the other lords its
@@ -316,7 +316,7 @@ The project keeps itself current without anyone's manual work or paid service.
   (or loose packs it named) has learned since become entries; its free text loses links and markup; `community.json` `setupEdits` lets a maintainer
   correct a setup's shown name and character, e.g. an imported list matched to the wrong character's template) and `votes`
   to every template. Commits only when something changed.
-- Apps download only `catalog.json` (at most daily, ETag); they never query LoversLab/Steam/Discord
+- Apps download only `catalog.json` (asked every two hours, downloaded only when it changed: ETag); they never query LoversLab/Steam/Discord
   except for showing images. Sending (reports, contributions, setups, votes) goes to the relay only when the player does it.
 
 ## Optional curation (by hand)

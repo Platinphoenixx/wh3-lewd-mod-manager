@@ -9,7 +9,7 @@ function bundledCatalogPath(): string {
   const candidates = [
     process.env.WH3_CATALOG,
     join(app.getAppPath(), '..', 'catalog', 'catalog.json'),
-    join(process.resourcesPath, 'catalog.json')
+    process.resourcesPath && join(process.resourcesPath, 'catalog.json')
   ].filter((p): p is string => !!p)
   const found = candidates.find((p) => existsSync(p))
   if (!found) throw new Error(`catalog.json not found (looked in: ${candidates.join(', ')})`)
@@ -18,7 +18,9 @@ function bundledCatalogPath(): string {
 
 const cachePath = () => join(app.getPath('userData'), 'catalog-cache.json')
 const metaPath = () => join(app.getPath('userData'), 'catalog-cache.meta.json')
-const CHECK_INTERVAL_MS = 24 * 60 * 60 * 1000
+/** How often the update URL is asked (a 304 when nothing changed); the daily community job and maintainers' fixes reach players within this time. */
+export const CHECK_INTERVAL_MS = 2 * 60 * 60 * 1000
+const RETRY_MS = 10 * 60 * 1000
 
 interface CacheMeta {
   url: string
@@ -36,9 +38,16 @@ async function readJson<T>(path: string): Promise<T | null> {
 
 /**
  * Newest catalog available: the cached download, else the bundled one (an older catalog is never used).
- * The update URL is checked at most once a day, and only downloaded when it changed (ETag), so a
- * community of users costs GitHub one tiny request per user per day, and LoversLab/Steam nothing.
+ * The update URL is checked at most every two hours, and only downloaded when it changed (ETag), so a
+ * community of users costs GitHub a tiny request per user every two hours, and LoversLab/Steam nothing.
  */
+/** Whether the update URL is due to be asked again (reads only the small meta file). */
+export async function catalogCheckDue(catalogUrl?: string): Promise<boolean> {
+  if (!catalogUrl || !/^https:\/\//.test(catalogUrl)) return false
+  const meta = await readJson<CacheMeta>(metaPath())
+  return meta?.url !== catalogUrl || Date.now() - meta.checkedAt >= CHECK_INTERVAL_MS
+}
+
 export async function loadCatalog(catalogUrl?: string): Promise<Catalog> {
   const bundled = (await readJson<Catalog>(bundledCatalogPath()))!
   let best = bundled
@@ -67,7 +76,9 @@ export async function loadCatalog(catalogUrl?: string): Promise<Catalog> {
     // 304 Not Modified: nothing to download, the cache is current.
     await writeFile(metaPath(), JSON.stringify(next), 'utf8')
   } catch {
-    // Offline or unreachable: keep the cached/bundled catalog and try again next start.
+    // Offline or unreachable: keep the cached/bundled catalog and ask again in ten minutes (not on every look).
+    const retry: CacheMeta = { url: catalogUrl, etag: sameUrl ? meta.etag : undefined, checkedAt: Date.now() - CHECK_INTERVAL_MS + RETRY_MS }
+    await writeFile(metaPath(), JSON.stringify(retry), 'utf8').catch(() => {})
   }
   return best
 }

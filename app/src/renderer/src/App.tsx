@@ -125,6 +125,20 @@ export function App() {
     rescan()
   }, [rescan])
 
+  // The catalog is asked for again every two hours while the app stays open (main decides when it is due); a newer one
+  // replaces the current one quietly.
+  const generatedAt = catalog?.generatedAt
+  useEffect(() => {
+    if (!generatedAt) return
+    const look = () => void window.api.refreshCatalog(generatedAt).then((c) => c && setCatalog(c), () => {})
+    const timer = setInterval(look, 10 * 60 * 1000)
+    window.addEventListener('focus', look)
+    return () => {
+      clearInterval(timer)
+      window.removeEventListener('focus', look)
+    }
+  }, [generatedAt])
+
   useEffect(() => localStorage.setItem('blurImages', blurImages ? '1' : '0'), [blurImages])
 
   // Script errors of the last game start: counted on the Installation tab, read again when a game the app started closes.
