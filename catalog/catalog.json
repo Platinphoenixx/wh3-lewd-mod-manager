@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T16:02:06+00:00",
+  "generatedAt": "2026-11-25T21:52:36+00:00",
   "sources": [
     {
       "source": "loverslab",
-      "fetchedAt": "2026-11-25T16:01:59+00:00",
+      "fetchedAt": "2026-11-25T21:52:25+00:00",
       "detail": "Club 208 Warhammer 3: Mods, Models, Textures, Translations"
     },
     {
@@ -47945,6 +47945,55 @@
       "changesData": true
     },
     {
+      "id": "steam-2793127003",
+      "name": "Rotate Lords and Heroes (v8.1.1)",
+      "authors": [
+        "Levie"
+      ],
+      "kind": "utility",
+      "summary": "This enables rotation of MOST Lord and Hero models while in the character details window",
+      "description": "This enables rotation of MOST Lord and Hero models while in the character details window\n\n*Suggested by a player; not reviewed yet.*",
+      "tags": [],
+      "packs": [],
+      "relations": [],
+      "sources": {
+        "steam": [
+          {
+            "id": "2793127003",
+            "title": "Rotate Lords and Heroes (v8.1.1)",
+            "updated": "2026-09-06",
+            "subscribers": 117216
+          }
+        ],
+        "downloads": []
+      },
+      "playAs": [],
+      "installNotes": [],
+      "curation": {
+        "lastChecked": "2026-11-25",
+        "confidence": "low",
+        "openQuestions": [
+          "Community suggestion, not reviewed in detail: https://github.com/Platinphoenixx/wh3-lewd-mod-manager/issues/19"
+        ]
+      },
+      "authorPages": [
+        {
+          "site": "steam",
+          "name": "Levie",
+          "url": "https://steamcommunity.com/profiles/76561198030955212/myworkshopfiles/?appid=1142710"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://images.steamusercontent.com/ugc/1814396368271472022/4E3D5B93B9943B92ADBE5C1222F6E1D3CD82C03D/",
+          "kind": "cover",
+          "source": "steam"
+        }
+      ],
+      "updated": "2026-09-06",
+      "changesData": true
+    },
+    {
       "id": "ll-28211",
       "name": "RS0371's Slaanesh's image and text",
       "authors": [
@@ -67005,7 +67054,7 @@
         "ll-42028"
       ],
       "votes": {
-        "up": 49,
+        "up": 51,
         "down": 1,
         "reasons": {
           "content": 1
@@ -72284,7 +72333,7 @@
         }
       ],
       "votes": {
-        "up": 12,
+        "up": 13,
         "down": 0
       },
       "launchTest": {
@@ -72519,7 +72568,7 @@
         }
       ],
       "votes": {
-        "up": 2,
+        "up": 3,
         "down": 0
       },
       "launchTest": {
