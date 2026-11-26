@@ -72,8 +72,11 @@
   "up": 1
  },
  "readman-katarin-early": {
-  "down": 0,
-  "up": 11
+  "down": 1,
+  "reasons": {
+   "content": 1
+  },
+  "up": 12
  },
  "readman-miao-early": {
   "down": 2,
@@ -92,7 +95,7 @@
    "content": 1,
    "start": 1
   },
-  "up": 13
+  "up": 14
  },
  "readman-sigvald-early": {
   "down": 2,
@@ -109,15 +112,15 @@
   "up": 5
  },
  "readman-woc-early": {
-  "down": 6,
+  "down": 5,
   "reasons": {
-   "campaign": 6
+   "campaign": 5
   },
-  "up": 8
+  "up": 9
  },
  "setup-beastmen": {
   "down": 0,
-  "up": 13
+  "up": 14
  },
  "setup-corrupted-ascension": {
   "down": 0,
@@ -143,6 +146,10 @@
   "up": 1
  },
  "vanilla-khalida": {
+  "down": 0,
+  "up": 1
+ },
+ "vanilla-nagash": {
   "down": 0,
   "up": 1
  },
