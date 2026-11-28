@@ -21,6 +21,14 @@
   "down": 0,
   "up": 1
  },
+ "community-da7d7af23650": {
+  "down": 0,
+  "up": 1
+ },
+ "community-f5823ff9e329": {
+  "down": 0,
+  "up": 1
+ },
  "community-fbe77e3ff203": {
   "down": 0,
   "up": 1
@@ -61,29 +69,30 @@
   "up": 1
  },
  "readman-alarielle-early": {
-  "down": 1,
+  "down": 2,
   "reasons": {
+   "campaign": 1,
    "content": 1
   },
-  "up": 54
+  "up": 60
  },
  "readman-alarielle-late": {
   "down": 0,
-  "up": 1
+  "up": 2
  },
  "readman-katarin-early": {
   "down": 1,
   "reasons": {
    "content": 1
   },
-  "up": 14
+  "up": 15
  },
  "readman-miao-early": {
   "down": 2,
   "reasons": {
    "start": 2
   },
-  "up": 34
+  "up": 38
  },
  "readman-miao-late": {
   "down": 0,
@@ -95,7 +104,7 @@
    "content": 1,
    "start": 1
   },
-  "up": 16
+  "up": 17
  },
  "readman-sigvald-early": {
   "down": 2,
@@ -116,15 +125,15 @@
   "reasons": {
    "campaign": 5
   },
-  "up": 10
+  "up": 11
  },
  "setup-beastmen": {
   "down": 0,
-  "up": 14
+  "up": 15
  },
  "setup-corrupted-ascension": {
   "down": 0,
-  "up": 3
+  "up": 4
  },
  "setup-greenskins": {
   "down": 0,
@@ -132,7 +141,7 @@
  },
  "setup-imrik": {
   "down": 0,
-  "up": 4
+  "up": 5
  },
  "vanilla-elspeth-von-draken": {
   "down": 1,
